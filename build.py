@@ -20,7 +20,7 @@ DOCS = HERE / "docs"
 
 # id, source folder, dossier number, dossier title, case, points, duration
 EXERCISES = [
-    ("ex03", "ex03_consolidation", 1, "Comptes de groupe", "Groupe ARGOS, règlement ANC 2020-01", 45, "1 h 45"),
+    ("ex03", "ex03_consolidation", 1, "Comptes de groupe", "Groupe ARGOS, règlement ANC 2020‑01", 45, "1 h 45"),
     ("ex05", "ex05_consolidation_ifrs", 1, "Comptes de groupe", "Groupe NORDAL, normes IFRS", 45, "1 h 45"),
     ("ex01", "ex01_restructurations", 2, "Opérations de restructuration", "Absorption d'ORION par HÉLIOS", 25, "1 h"),
     ("ex02", "ex02_apport_partiel", 2, "Opérations de restructuration", "Apport partiel d'actif d'ATLAS à BORÉE", 25, "1 h"),
