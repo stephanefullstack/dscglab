@@ -85,6 +85,8 @@ def exercise_meta(cfg: UEConfig, item: dict) -> tuple[dict, float, str]:
         data = yaml.safe_load((cfg.root / "exercices" / item["source"] / "corrige.yaml")
                               .read_text(encoding="utf-8"))
         pts = sum(float(q["points"]) for q in data["bareme"]["dossiers"][0]["questions"])
+    # Barème libre : l'exercice donne son propre titre et sa durée (site.exercices).
+    dossier = {**dossier, **{k: item[k] for k in ("titre", "duree") if item.get(k)}}
     return dossier, float(pts), str(dossier.get("duree", ""))
 
 
@@ -265,7 +267,10 @@ def build_ue_index(cfg: UEConfig) -> None:
                 lis += (f'<li><span class="cas">{esc(e["cas"])}</span>'
                         f'<span class="meta">{esc(meta)}</span>'
                         f'<span class="liens">{links("exercices", e["id"])}</span></li>')
-            body += f'<h3>Dossier {d["numero"]} : {esc(d["titre"])}</h3><ul class="dossiers">{lis}</ul>'
+            name = f"Dossier {d['numero']}"
+            if d["titre"] != name:
+                name += f" : {d['titre']}"
+            body += f'<h3>{esc(name)}</h3><ul class="dossiers">{lis}</ul>'
     if t.get("methode"):
         body += "\n<h2>Comment s'entraîner</h2>\n<ol class=\"methode\">\n" + "".join(
             f"<li>{esc(str(m))}</li>\n" for m in t["methode"]) + "</ol>\n"
