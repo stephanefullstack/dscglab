@@ -1,53 +1,100 @@
-"""Build the static site from the UE 4 training material.
+"""Build the static site for every UE that has a ue.yaml with a ``site`` section.
 
-Usage (from ue4/… or anywhere): python3 -I build.py
-Reads ../ue4/exercices and ../ue4/sujets, copies their Markdown into content/,
-converts it with pandoc and writes the site into docs/ (served by GitHub Pages).
+Usage (from anywhere): python3 -I build.py
+For each UE: copies the Markdown of its exercises and complete subjects into
+content/<ue>/, converts it with pandoc and writes docs/ (served by GitHub Pages).
+docs/index.html is the hub of the seven UE; each UE has docs/ueN/index.html.
+The UE 4 pages keep their historical URLs (docs/exercices/, docs/sujets/).
 """
 from __future__ import annotations
 
 import html
+import os
 import re
 import shutil
 import subprocess
 import sys
 from pathlib import Path
 
+import yaml
+
 HERE = Path(__file__).resolve().parent
-UE4 = HERE.parent / "ue4"
+ROOT = HERE.parent
 CONTENT = HERE / "content"
 DOCS = HERE / "docs"
+sys.path.insert(0, str(ROOT / "outils"))
+from dscgcheck.config import UEConfig, all_ues  # noqa: E402
 
-# id, source folder, dossier number, dossier title, case, points, duration
-EXERCISES = [
-    ("ex03", "ex03_consolidation", 1, "Comptes de groupe", "Groupe ARGOS, règlement ANC 2020‑01", 45, "1 h 45"),
-    ("ex05", "ex05_consolidation_ifrs", 1, "Comptes de groupe", "Groupe NORDAL, normes IFRS", 45, "1 h 45"),
-    ("ex01", "ex01_restructurations", 2, "Opérations de restructuration", "Absorption d'ORION par HÉLIOS", 25, "1 h"),
-    ("ex02", "ex02_apport_partiel", 2, "Opérations de restructuration", "Apport partiel d'actif d'ATLAS à BORÉE", 25, "1 h"),
-    ("ex04", "ex04_audit_durabilite", 3, "Audit", "NORDALIS, entité d'intérêt public", 30, "1 h 15"),
-    ("ex06", "ex06_audit_durabilite", 3, "Audit", "LUMIVERT et OPTIBOX, hors entité d'intérêt public", 30, "1 h 15"),
-]
-SUBJECTS = [
-    ("sujet-1", "sujet_complet_01", 1, ["ex03", "ex01", "ex04"]),
-    ("sujet-2", "sujet_complet_02", 2, ["ex03", "ex02", "ex04"]),
-    ("sujet-3", "sujet_complet_03", 3, ["ex05", "ex02", "ex06"]),
-]
-EX = {e[0]: e for e in EXERCISES}
-
-# Sentences that only make sense inside the working folder (tool, data files).
-INTERNAL = [
-    (r" ?Données structurées et écritures : `corrige\.yaml`, vérifié par `outils/ue4check` \([^)]*\)\.", ""),
-    (r"Les écritures complètes sont dans `corrige\.yaml`\. ", ""),
-    (r"Les écritures complètes \(comptes, intitulés, montants\) figurent dans `corrige\.yaml` \(R1 à R6\)\. "
-     r"Toutes sont équilibrées \(contrôle `ue4check`\)\. Schémas types : [^\n]*\.", "Toutes les écritures ci-dessous sont équilibrées."),
-    (r"Écritures complètes dans `corrige\.yaml` \(B1, B2\), toutes équilibrées\. Schéma type : [^\n]*\.",
-     "Les écritures B1 et B2 ci-dessous sont équilibrées."),
-    (r" ?Le barème et l'absence de références périmées ou hors programme sont vérifiés par `outils/ue4check` \(`corrige\.yaml`\)\.", ""),
-    (r"<!-- ue4check:ignorer -->", ""),
-]
+FONTS = ("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;"
+         "0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap")
+ICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E"
+        "%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' "
+        "stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E")
+FOOTER = ("Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs "
+          "de l'examen. Réglementation applicable au {date}. Les corrigés ont été contrôlés par un outil "
+          "de vérification automatique ; ils peuvent néanmoins comporter des erreurs.")
+IGNORE_RE = re.compile(r"\s*<!-- (?:ue4check|dscgcheck):ignorer -->")
 
 
-def clean(md: str, depth: int) -> str:
+def esc(s) -> str:
+    """HTML-escape prose: apostrophes are left as they are (attributes are double-quoted)."""
+    return html.escape(str(s), quote=False)
+
+
+def fr_date(iso: str) -> str:
+    mois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
+            "octobre", "novembre", "décembre"]
+    y, m, d = str(iso).split("-")
+    return f"{int(d)}{'er' if int(d) == 1 else ''} {mois[int(m) - 1]} {y}"
+
+
+def rel(page_dir: str, target: str) -> str:
+    """Relative href from the directory of a page to a target, both relative to docs/."""
+    return os.path.relpath(target, page_dir or ".").replace(os.sep, "/")
+
+
+def pandoc(md: str) -> str:
+    return subprocess.run(["pandoc", "-f", "gfm", "-t", "html5", "--wrap=none"],
+                          input=md, capture_output=True, text=True, check=True).stdout
+
+
+def write(path: Path, text: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding="utf-8")
+
+
+# --- per-UE paths and metadata -------------------------------------------------
+
+def ue_dir(cfg: UEConfig) -> str:
+    return f"ue{cfg.numero}"
+
+
+def pages_root(cfg: UEConfig) -> str:
+    return str(cfg.get("site.racine_pages", "") or "")
+
+
+def pair_dir(cfg: UEConfig, kind: str, item_id: str) -> str:
+    return f"{pages_root(cfg)}{kind}/{item_id}"
+
+
+def exercise_meta(cfg: UEConfig, item: dict) -> tuple[dict, float, str]:
+    """(dossier of ue.yaml, points, duration) of an exercise."""
+    dossier = cfg.bareme.dossier(int(item["dossier"])) or {"titre": f"Dossier {item['dossier']}"}
+    pts = dossier.get("points")
+    if pts is None:
+        data = yaml.safe_load((cfg.root / "exercices" / item["source"] / "corrige.yaml")
+                              .read_text(encoding="utf-8"))
+        pts = sum(float(q["points"]) for q in data["bareme"]["dossiers"][0]["questions"])
+    return dossier, float(pts), str(dossier.get("duree", ""))
+
+
+def fmt_pts(x: float) -> str:
+    return f"{x:g}".replace(".", ",")
+
+
+# --- markdown cleaning ----------------------------------------------------------
+
+def clean(md: str, cfg: UEConfig, page_dir: str) -> str:
     """Strip the title lines and the working-folder references; link the exercise paths."""
     lines = md.split("\n")
     if lines and lines[0].startswith("# "):
@@ -57,41 +104,50 @@ def clean(md: str, depth: int) -> str:
         if lines and lines[0].startswith("## "):
             lines = lines[1:]
     md = "\n".join(lines)
-    for pattern, repl in INTERNAL:
-        md = re.sub(pattern, repl, md)
-    root = "../" * depth
-    md = re.sub(r"`exercices/(ex\d\d)_[a-z_]+`",
-                lambda m: f"[{EX[m.group(1)][4]}]({root}exercices/{m.group(1)}/sujet.html)", md)
-    left = [w for w in ("corrige.yaml", "ue4check", "gabarits/") if w in md]
+    for rule in cfg.get("site.nettoyage") or []:
+        md = re.sub(rule["motif"], rule.get("remplacement", ""), md)
+    md = IGNORE_RE.sub("", md)
+    by_source = {e["source"]: e for e in cfg.get("site.exercices") or []}
+
+    def link(m: re.Match) -> str:
+        e = by_source.get(m.group(1))
+        if not e:
+            return m.group(0)
+        return f"[{e['cas']}]({rel(page_dir, pair_dir(cfg, 'exercices', e['id']) + '/sujet.html')})"
+
+    md = re.sub(r"`exercices/([a-z0-9_]+)`", link, md)
+    left = [w for w in ("corrige.yaml", "ue4check", "dscgcheck", "gabarits/") if w in md]
     if left:
-        print("ATTENTION, références internes restantes :", left, file=sys.stderr)
+        print(f"ATTENTION, références internes restantes (UE {cfg.numero}) :", left, file=sys.stderr)
     return md
 
 
-def pandoc(md: str) -> str:
-    return subprocess.run(["pandoc", "-f", "gfm", "-t", "html5", "--wrap=none"],
-                          input=md, capture_output=True, text=True, check=True).stdout
+# --- page skeleton ----------------------------------------------------------------
 
-
-def page(*, title: str, depth: int, margin: str, body: str, kind: str = "") -> str:
-    root = "../" * depth
+def page(*, title: str, page_dir: str, margin: str, body: str, kind: str, cfg: UEConfig | None,
+         description: str, date: str) -> str:
+    sigle = (f'<a class="sigle" href="{rel(page_dir, "index.html")}"><span>DSCG</span></a>'
+             if cfg is None else
+             f'<a class="sigle" href="{rel(page_dir, "index.html")}"><span>DSCG</span></a>'
+             f'<a class="sigle ue" href="{rel(page_dir, ue_dir(cfg) + "/index.html")}">'
+             f'<span>{esc(str(cfg.get("site.sigle", "UE " + str(cfg.numero))))}</span></a>')
     return f"""<!doctype html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(title)}</title>
-<meta name="description" content="Entraînement à l'UE 4 du DSCG, comptabilité et audit, session 2027 : sujets et corrigés.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<title>{esc(title)}</title>
+<meta name="description" content="{esc(description)}">
+<link rel="icon" href="{ICON}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}style.css">
+<link href="{FONTS}" rel="stylesheet">
+<link rel="stylesheet" href="{rel(page_dir, "style.css")}">
 </head>
 <body class="{kind}">
 <div class="copie">
 <aside class="marge">
-<a class="sigle" href="{root}index.html"><span>DSCG</span><span>UE 4</span></a>
+{sigle}
 {margin}
 </aside>
 <main>
@@ -99,7 +155,7 @@ def page(*, title: str, depth: int, margin: str, body: str, kind: str = "") -> s
 </main>
 </div>
 <footer>
-<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+<p>{FOOTER.format(date=date)}</p>
 </footer>
 </body>
 </html>
@@ -107,124 +163,179 @@ def page(*, title: str, depth: int, margin: str, body: str, kind: str = "") -> s
 
 
 def margin_block(items: list[str], links: list[tuple[str, str]], current: str = "") -> str:
-    out = "".join(f"<p>{html.escape(i)}</p>" for i in items)
+    out = "".join(f"<p>{esc(i)}</p>" for i in items)
     if links:
         out += "<nav>" + "".join(
-            f'<a href="{href}"{chr(32) + "aria-current=" + chr(34) + "page" + chr(34) if href == current else ""}>{html.escape(label)}</a>'
-            for label, href in links) + "</nav>"
+            f'<a href="{href}"{" aria-current=" + chr(34) + "page" + chr(34) if href == current else ""}>'
+            f'{esc(label)}</a>' for label, href in links) + "</nav>"
     return out
 
 
-def write(path: Path, text: str) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text, encoding="utf-8")
+# --- builders -------------------------------------------------------------------
 
-
-def build_exercise(e) -> None:
-    eid, src, dossier, dtitle, case, pts, dur = e
-    (CONTENT / eid).mkdir(parents=True, exist_ok=True)
+def build_pair(cfg: UEConfig, kind: str, item: dict, head: str, items: list[str], title: str) -> None:
+    """A sujet/corrigé pair: exercise or complete subject."""
+    src = cfg.root / kind / item["source"]
+    dst = CONTENT / ue_dir(cfg) / item["id"]
+    dst.mkdir(parents=True, exist_ok=True)
     for name in ("sujet.md", "corrige.md"):
-        shutil.copy(UE4 / "exercices" / src / name, CONTENT / eid / name)
-    sujet_md = clean((CONTENT / eid / "sujet.md").read_text(encoding="utf-8"), 2)
-    corr_md = clean((CONTENT / eid / "corrige.md").read_text(encoding="utf-8"), 2)
-    items = [f"Dossier {dossier}", f"{pts} points", dur]
+        shutil.copy(src / name, dst / name)
+    page_dir = pair_dir(cfg, kind, item["id"])
     links = [("Sujet", "sujet.html"), ("Corrigé", "corrige.html")]
-    head = f"<h1>{html.escape(dtitle)}</h1><p class=\"cas\">{html.escape(case)}</p>"
-    write(DOCS / "exercices" / eid / "sujet.html", page(
-        title=f"{dtitle} : {case}", depth=2, kind="sujet",
+    date = fr_date(cfg.data["date_reglementaire"])
+    desc = str(cfg.get("site.description_meta", ""))
+    sujet_md = clean((dst / "sujet.md").read_text(encoding="utf-8"), cfg, page_dir)
+    corr_md = clean((dst / "corrige.md").read_text(encoding="utf-8"), cfg, page_dir)
+    write(DOCS / page_dir / "sujet.html", page(
+        title=title, page_dir=page_dir, kind="sujet", cfg=cfg, description=desc, date=date,
         margin=margin_block(items, links, "sujet.html"),
         body=head + pandoc(sujet_md)
         + '<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>'))
-    write(DOCS / "exercices" / eid / "corrige.html", page(
-        title=f"Corrigé : {dtitle}, {case}", depth=2, kind="corrige",
+    avant = str(cfg.get("site.textes.avant_corrige", "Corrigé indicatif et barème."))
+    write(DOCS / page_dir / "corrige.html", page(
+        title=f"Corrigé : {title}", page_dir=page_dir, kind="corrige", cfg=cfg, description=desc, date=date,
         margin=margin_block(items, links, "corrige.html"),
-        body=head + '<p class="avant">Corrigé indicatif et barème. Les mentions [V] signalent une règle vérifiée sur le texte officiel ; les renvois F01 à F13 et JUR désignent des fiches de travail et les constats des rapports du jury.</p>'
-        + pandoc(corr_md)))
+        body=head + f'<p class="avant">{esc(avant)}</p>' + pandoc(corr_md)))
 
 
-def build_subject(s) -> None:
-    sid, src, num, parts = s
-    (CONTENT / sid).mkdir(parents=True, exist_ok=True)
-    for name in ("sujet.md", "corrige.md"):
-        shutil.copy(UE4 / "sujets" / src / name, CONTENT / sid / name)
-    sujet_md = clean((CONTENT / sid / "sujet.md").read_text(encoding="utf-8"), 2)
-    corr_md = clean((CONTENT / sid / "corrige.md").read_text(encoding="utf-8"), 2)
-    items = ["Sujet complet", "4 heures", "100 points"]
-    links = [("Sujet", "sujet.html"), ("Corrigé", "corrige.html")]
-    comp = " ; ".join(f"dossier {EX[p][2]}, {EX[p][4]}" for p in parts)
-    head = f"<h1>Sujet d'entraînement n° {num}</h1><p class=\"cas\">{html.escape(comp)}.</p>"
-    write(DOCS / "sujets" / sid / "sujet.html", page(
-        title=f"Sujet complet n° {num}", depth=2, kind="sujet",
-        margin=margin_block(items, links, "sujet.html"),
-        body=head + pandoc(sujet_md)
-        + '<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>'))
-    write(DOCS / "sujets" / sid / "corrige.html", page(
-        title=f"Corrigé du sujet complet n° {num}", depth=2, kind="corrige",
-        margin=margin_block(items, links, "corrige.html"),
-        body=head + '<p class="avant">Corrigé indicatif et barème. Les mentions [V] signalent une règle vérifiée sur le texte officiel ; les renvois F01 à F13 et JUR désignent des fiches de travail et les constats des rapports du jury.</p>'
-        + pandoc(corr_md)))
+def build_exercise(cfg: UEConfig, item: dict) -> None:
+    dossier, pts, dur = exercise_meta(cfg, item)
+    items = [f"Dossier {item['dossier']}", f"{fmt_pts(pts)} points"] + ([dur] if dur else [])
+    head = f"<h1>{esc(dossier['titre'])}</h1><p class=\"cas\">{esc(item['cas'])}</p>"
+    build_pair(cfg, "exercices", item, head, items, f"{dossier['titre']} : {item['cas']}")
 
 
-def build_index() -> None:
-    rows = []
-    for sid, _, num, parts in SUBJECTS:
-        cells = "".join(f"<td>{html.escape(EX[p][4])}</td>" for p in parts)
-        rows.append(f'<tr><th scope="row">N° {num}</th>{cells}'
-                    f'<td class="liens"><a href="sujets/{sid}/sujet.html">Sujet</a> <a href="sujets/{sid}/corrige.html">Corrigé</a></td></tr>')
-    subjects_table = f"""<table class="sujets">
-<thead><tr><th></th><th>Dossier 1<br><span>Comptes de groupe, 45 points</span></th><th>Dossier 2<br><span>Restructurations, 25 points</span></th><th>Dossier 3<br><span>Audit, 30 points</span></th><th></th></tr></thead>
-<tbody>{"".join(rows)}</tbody></table>"""
+def build_subject(cfg: UEConfig, item: dict) -> None:
+    by_id = {e["id"]: e for e in cfg.get("site.exercices") or []}
+    comp = " ; ".join(f"dossier {by_id[p]['dossier']}, {by_id[p]['cas']}" for p in item["composition"])
+    ep = cfg.data["epreuve"]
+    items = ["Sujet complet", f"{ep['duree_heures']} heures", f"{fmt_pts(cfg.bareme.total)} points"]
+    head = f"<h1>Sujet d'entraînement n° {item['numero']}</h1><p class=\"cas\">{esc(comp)}.</p>"
+    build_pair(cfg, "sujets", item, head, items, f"Sujet complet n° {item['numero']}")
 
-    groups = []
-    for d in (1, 2, 3):
-        es = [e for e in EXERCISES if e[2] == d]
-        lis = "".join(
-            f'<li><span class="cas">{html.escape(e[4])}</span>'
-            f'<span class="meta">{e[5]} points, {html.escape(e[6])}</span>'
-            f'<span class="liens"><a href="exercices/{e[0]}/sujet.html">Sujet</a> <a href="exercices/{e[0]}/corrige.html">Corrigé</a></span></li>'
-            for e in es)
-        groups.append(f"<h3>Dossier {d} : {html.escape(es[0][3])}</h3><ul class=\"dossiers\">{lis}</ul>")
+
+def build_ue_index(cfg: UEConfig) -> None:
+    t = cfg.get("site.textes") or {}
+    page_dir = ue_dir(cfg)
+    exercises = cfg.get("site.exercices") or []
+    subjects = cfg.get("site.sujets") or []
+    by_id = {e["id"]: e for e in exercises}
+    dossiers = sorted(cfg.bareme.dossiers, key=lambda d: int(d["numero"]))
+
+    def links(kind: str, item_id: str) -> str:
+        base = pair_dir(cfg, kind, item_id)
+        return (f'<a href="{rel(page_dir, base + "/sujet.html")}">Sujet</a> '
+                f'<a href="{rel(page_dir, base + "/corrige.html")}">Corrigé</a>')
 
     body = f"""
-<h1>Comptabilité et audit<br>s'entraîner pour la session 2027</h1>
-<p class="chapeau">Des sujets au format de l'épreuve de l'UE 4 du DSCG, avec leur corrigé et leur barème, construits sur le programme de l'arrêté du 4 août 2025 et sur la réglementation en vigueur au 31 décembre 2026.</p>
+<h1>{t.get("titre", cfg.data["intitule"])}</h1>
+<p class="chapeau">{esc(str(t.get("chapeau", "")))}</p>
+"""
+    if subjects:
+        heads = "".join(
+            f'<th>Dossier {d["numero"]}<br><span>{esc(d.get("titre_court", d["titre"]))}'
+            f'{", " + fmt_pts(float(d["points"])) + " points" if d.get("points") is not None else ""}</span></th>'
+            for d in dossiers)
+        rows = "".join(
+            f'<tr><th scope="row">N° {s["numero"]}</th>'
+            + "".join(f"<td>{esc(by_id[p]['cas'])}</td>" for p in s["composition"])
+            + f'<td class="liens">{links("sujets", s["id"])}</td></tr>' for s in subjects)
+        body += f"""
+<h2>{esc(str(t.get("titre_sujets", "Sujets complets")))}</h2>
+<p>{esc(str(t.get("presentation", "")))}</p>
+<table class="sujets">
+<thead><tr><th></th>{heads}<th></th></tr></thead>
+<tbody>{rows}</tbody></table>
+"""
+        if t.get("note_sujets"):
+            body += f'<p class="note">{esc(str(t["note_sujets"]))}</p>\n'
+    if exercises:
+        body += f"""
+<h2>{esc(str(t.get("titre_dossiers", "Dossiers à la pièce")))}</h2>
+<p>{esc(str(t.get("intro_dossiers", "")))}</p>
+"""
+        for d in dossiers:
+            es = [e for e in exercises if int(e["dossier"]) == int(d["numero"])]
+            if not es:
+                continue
+            lis = ""
+            for e in es:
+                _, pts, dur = exercise_meta(cfg, e)
+                meta = f"{fmt_pts(pts)} points" + (f", {dur}" if dur else "")
+                lis += (f'<li><span class="cas">{esc(e["cas"])}</span>'
+                        f'<span class="meta">{esc(meta)}</span>'
+                        f'<span class="liens">{links("exercices", e["id"])}</span></li>')
+            body += f'<h3>Dossier {d["numero"]} : {esc(d["titre"])}</h3><ul class="dossiers">{lis}</ul>'
+    if t.get("methode"):
+        body += "\n<h2>Comment s'entraîner</h2>\n<ol class=\"methode\">\n" + "".join(
+            f"<li>{esc(str(m))}</li>\n" for m in t["methode"]) + "</ol>\n"
+    if t.get("ce_que_vous_lisez"):
+        body += f"\n<h2>Ce que vous lisez</h2>\n<p>{esc(str(t['ce_que_vous_lisez']))}</p>\n"
+    write(DOCS / page_dir / "index.html", page(
+        title=f"DSCG UE {cfg.numero}, entraînement session 2027", page_dir=page_dir, kind="accueil", cfg=cfg,
+        description=str(cfg.get("site.description_meta", "")), date=fr_date(cfg.data["date_reglementaire"]),
+        margin=margin_block(["Entraînement", "session 2027"], []), body=body))
 
-<h2>Trois sujets complets</h2>
-<p>L'épreuve dure 4 heures, coefficient 1,5. Elle se compose de trois dossiers indépendants : comptes de groupe (45 points), opérations de restructuration (25 points) et audit (30 points, dont 12 sur la durabilité). Seul document autorisé : la liste des comptes du plan comptable général.</p>
-{subjects_table}
-<p class="note">Les sujets n° 1 et n° 2 partagent leurs dossiers 1 et 3 ; le sujet n° 3 est entièrement différent.</p>
 
-<h2>Six dossiers à la pièce</h2>
-<p>Pour travailler un dossier seul, dans le temps que lui laisserait l'épreuve.</p>
-{"".join(groups)}
-
+def build_hub(configs: dict[int, UEConfig]) -> None:
+    registry = yaml.safe_load((ROOT / "commun" / "ues.yaml").read_text(encoding="utf-8"))["ues"]
+    rows = ""
+    for ue in registry:
+        n = int(ue["numero"])
+        cfg = configs.get(n)
+        if cfg is not None and cfg.get("site.publier", False):
+            n_ex = len(cfg.get("site.exercices") or [])
+            n_su = len(cfg.get("site.sujets") or [])
+            what = []
+            if n_su:
+                what.append(f"{n_su} sujet{'s' if n_su > 1 else ''} complet{'s' if n_su > 1 else ''}")
+            if n_ex:
+                what.append(f"{n_ex} dossier{'s' if n_ex > 1 else ''} à la pièce")
+            status = f'<a href="{ue_dir(cfg)}/index.html">{esc(", ".join(what) or "Ouvrir")}</a>'
+            klass = ""
+        else:
+            status = "En préparation"
+            klass = ' class="attente"'
+        rows += (f'<li{klass}><span class="num">UE {n}</span><span class="cas">{esc(ue["intitule"])}</span>'
+                 f'<span class="meta">{esc(ue["format"])}</span><span class="liens">{status}</span></li>')
+    body = f"""
+<h1>DSCG<br>s'entraîner pour la session 2027</h1>
+<p class="chapeau">Des sujets au format de chaque épreuve, avec leur corrigé et leur barème, construits sur le programme de l'arrêté du 4 août 2025 et sur la réglementation en vigueur au 31 décembre 2026. Une unité d'enseignement à la fois : les autres arrivent.</p>
+<h2>Les sept unités d'enseignement</h2>
+<ul class="dossiers hub">{rows}</ul>
 <h2>Comment s'entraîner</h2>
 <ol class="methode">
-<li>Imprimez le sujet, ou affichez-le seul : les corrigés sont sur une page séparée.</li>
-<li>Composez dans le temps indiqué, avec la liste des comptes et une calculatrice sans mémoire. Écrivez vos hypothèses quand l'énoncé l'exige.</li>
-<li>Notez-vous avec le barème du corrigé, item par item. Les réponses tolérées y sont indiquées.</li>
-<li>Relisez la rubrique des erreurs fréquentes : elle reprend les reproches des rapports du jury.</li>
+<li>Choisissez une épreuve, puis un sujet complet ou un dossier seul.</li>
+<li>Composez dans le temps indiqué, dans les conditions de l'examen : les corrigés sont sur une page séparée.</li>
+<li>Notez-vous avec le barème, item par item, puis relisez les erreurs fréquentes relevées par les jurys.</li>
 </ol>
-
 <h2>Ce que vous lisez</h2>
-<p>Les cas sont originaux. Les corrigés citent les textes applicables (plan comptable général, règlement ANC 2020‑01, IFRS, code de commerce, normes d'exercice professionnel, lignes directrices de la H2A) et indiquent par la mention [V] les règles vérifiées sur le texte officiel. Les calculs, les écritures et les barèmes ont été contrôlés par un outil de vérification automatique. Comme le rappellent les corrigés officiels, il n'est pas attendu du candidat qu'il cite les numéros d'articles ou de normes.</p>
+<p>Les cas sont originaux. Les corrigés citent les textes applicables et signalent par la mention [V] les règles vérifiées sur le texte officiel ; leurs calculs et leurs barèmes ont été contrôlés par un outil de vérification automatique. Aucun document officiel (sujets d'annales, guide pédagogique, rapports du jury) n'est reproduit ici.</p>
 """
     write(DOCS / "index.html", page(
-        title="DSCG UE 4, entraînement session 2027", depth=0, kind="accueil",
-        margin=margin_block(["Entraînement", "session 2027"], []), body=body))
+        title="DSCG, entraînement session 2027", page_dir="", kind="accueil hub", cfg=None,
+        description="Entraînement au DSCG, session 2027 : sujets et corrigés pour les sept unités d'enseignement.",
+        date="31 décembre 2026", margin=margin_block(["Entraînement", "session 2027"], []), body=body))
 
 
 def main() -> None:
     if DOCS.exists():
         shutil.rmtree(DOCS)
+    if CONTENT.exists():
+        shutil.rmtree(CONTENT)
     DOCS.mkdir()
     (DOCS / ".nojekyll").write_text("")
     shutil.copy(HERE / "style.css", DOCS / "style.css")
-    for e in EXERCISES:
-        build_exercise(e)
-    for s in SUBJECTS:
-        build_subject(s)
-    build_index()
+    configs = {cfg.numero: cfg for cfg in all_ues() if cfg.data.get("site")}
+    for cfg in configs.values():
+        if not cfg.get("site.publier", False):
+            continue
+        for item in cfg.get("site.exercices") or []:
+            build_exercise(cfg, item)
+        for item in cfg.get("site.sujets") or []:
+            build_subject(cfg, item)
+        build_ue_index(cfg)
+    build_hub(configs)
     n = sum(1 for _ in DOCS.rglob("*.html"))
     print(f"{n} pages écrites dans {DOCS}")
 
