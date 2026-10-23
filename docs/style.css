@@ -1,0 +1,222 @@
+/* Copie d'examen : papier froid, encre bleu-noir, réglure bleue, marge rouge. */
+:root {
+  --papier: #fbfbf9;
+  --encre: #1c2230;
+  --encre-2: #5a6578;
+  --reglure: #a9c4e0;
+  --reglure-2: #dbe6f2;
+  --marge: #c8475d;
+  --surligne: #eef3f9;
+  --mesure: 70ch;
+  --col-marge: 9.5rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papier: #151921;
+    --encre: #e6e8ec;
+    --encre-2: #a3abb8;
+    --reglure: #33465c;
+    --reglure-2: #243241;
+    --marge: #e07a8c;
+    --surligne: #1c222c;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--papier);
+  color: var(--encre);
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  font-variant-numeric: tabular-nums;
+}
+a { color: inherit; text-decoration: underline; text-decoration-color: var(--reglure); text-underline-offset: 0.18em; }
+a:hover { text-decoration-color: var(--marge); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--marge); outline-offset: 2px; }
+
+/* La page : une marge à gauche, le corps à droite. */
+.copie {
+  display: grid;
+  grid-template-columns: var(--col-marge) minmax(0, 1fr);
+  min-height: 100vh;
+}
+.marge {
+  border-right: 2px solid var(--marge);
+  padding: 2rem 1rem 2rem 1.25rem;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  max-height: 100vh;
+  color: var(--encre-2);
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+.marge .sigle {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--encre);
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1.1;
+  margin-bottom: 1.75rem;
+}
+.marge p { margin: 0 0 0.25rem; }
+.marge p:first-of-type { color: var(--encre); font-weight: 600; }
+.marge nav { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.35rem; }
+.marge nav a { text-decoration: none; color: var(--encre); }
+.marge nav a[aria-current="page"] { color: var(--marge); font-weight: 600; }
+.marge nav a[aria-current="page"]::before { content: "— "; }
+
+main {
+  padding: 2rem 1.5rem 4rem 2.5rem;
+  max-width: calc(var(--mesure) + 4rem);
+}
+footer {
+  border-top: 1px solid var(--reglure);
+  color: var(--encre-2);
+  font-size: 0.875rem;
+  padding: 1.25rem 1.5rem 2rem calc(var(--col-marge) + 2.5rem);
+  max-width: calc(var(--col-marge) + var(--mesure) + 4rem);
+}
+footer p { margin: 0; }
+
+/* Titres : un seul alphabet, des graisses nettes. */
+h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.35rem;
+}
+.accueil h1 { font-size: 2.6rem; margin-bottom: 1rem; }
+.cas { color: var(--encre-2); font-size: 1.0625rem; margin: 0 0 2rem; }
+.chapeau { font-size: 1.1875rem; line-height: 1.5; margin: 0 0 2.5rem; }
+h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 2.75rem 0 0.75rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--reglure);
+}
+h3 { font-size: 1.125rem; font-weight: 700; margin: 2rem 0 0.5rem; }
+h4 { font-size: 1.0625rem; font-weight: 600; margin: 1.5rem 0 0.4rem; }
+p, ul, ol { margin: 0 0 0.9rem; }
+li { margin-bottom: 0.3rem; }
+strong { font-weight: 700; }
+hr { border: 0; border-top: 1px solid var(--reglure); margin: 2.25rem 0; }
+blockquote {
+  margin: 1rem 0;
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-left: 3px solid var(--reglure);
+  color: var(--encre-2);
+}
+code {
+  font-family: inherit;
+  font-size: inherit;
+  background: var(--surligne);
+  padding: 0 0.2em;
+  border-radius: 2px;
+}
+
+/* Tableaux : le grand-livre. Chiffres tabulaires, filets bleus, en-tête souligné. */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.35;
+}
+th, td {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--reglure-2);
+  vertical-align: top;
+  text-align: left;
+}
+thead th { border-bottom: 2px solid var(--reglure); font-weight: 600; }
+tbody th { font-weight: 600; }
+tbody tr:last-child td, tbody tr:last-child th { border-bottom: 1px solid var(--reglure); }
+td[style*="right"], th[style*="right"] { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* Accueil */
+.accueil main { max-width: calc(var(--mesure) + 14rem); }
+table.sujets thead th span { display: block; font-weight: 400; color: var(--encre-2); font-size: 0.875rem; }
+table.sujets tbody th { white-space: nowrap; }
+table.sujets td.liens, ul.dossiers .liens { white-space: nowrap; }
+table.sujets td.liens a, ul.dossiers .liens a, .vers-corrige a { font-weight: 600; }
+table.sujets td.liens a + a, ul.dossiers .liens a + a { margin-left: 0.75rem; }
+ul.dossiers { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+ul.dossiers li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 1.25rem;
+  align-items: baseline;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--reglure-2);
+  margin: 0;
+}
+ul.dossiers li:first-child { border-top: 1px solid var(--reglure); }
+ul.dossiers .meta { color: var(--encre-2); font-size: 0.9375rem; white-space: nowrap; }
+ol.methode { padding-left: 1.4rem; }
+ol.methode li { margin-bottom: 0.5rem; }
+.note { color: var(--encre-2); font-size: 0.9375rem; }
+
+/* Sujet et corrigé */
+.avant {
+  color: var(--encre-2);
+  font-size: 0.9375rem;
+  border-left: 3px solid var(--marge);
+  padding-left: 1rem;
+  margin: 0 0 2rem;
+}
+.vers-corrige {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--reglure);
+}
+
+/* Petits écrans : la marge passe au-dessus. */
+@media (max-width: 720px) {
+  .copie { grid-template-columns: minmax(0, 1fr); }
+  .marge {
+    position: static;
+    max-height: none;
+    border-right: 0;
+    border-bottom: 2px solid var(--marge);
+    padding: 1rem 1rem 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 1rem;
+  }
+  .marge .sigle { flex-direction: row; gap: 0.4rem; margin: 0 0.5rem 0 0; font-size: 1.125rem; }
+  .marge nav { margin: 0 0 0 auto; flex-direction: row; gap: 1rem; }
+  .marge nav a[aria-current="page"]::before { content: ""; }
+  main { padding: 1.5rem 1rem 3rem; }
+  footer { padding: 1rem 1rem 2rem; }
+  h1 { font-size: 1.625rem; }
+  .accueil h1 { font-size: 1.875rem; }
+  table { display: block; overflow-x: auto; }
+  ul.dossiers li { grid-template-columns: 1fr; gap: 0.15rem; }
+}
+
+/* Impression : le sujet seul, comme une copie à distribuer. */
+@media print {
+  :root { --papier: #fff; --encre: #000; --encre-2: #333; }
+  body { font-size: 11pt; }
+  .copie { display: block; }
+  .marge { position: static; border: 0; padding: 0; max-height: none; }
+  .marge .sigle { display: inline; font-size: 11pt; margin: 0; }
+  .marge .sigle span + span::before { content: " "; }
+  .marge p { display: inline; }
+  .marge p::before { content: " · "; }
+  .marge nav, footer, .vers-corrige { display: none; }
+  main { padding: 0; max-width: none; }
+  a { text-decoration: none; }
+  h2 { break-after: avoid; }
+  table, tr { break-inside: avoid; }
+}
