@@ -234,12 +234,14 @@ def build_ue_index(cfg: UEConfig) -> None:
 <p class="chapeau">{esc(str(t.get("chapeau", "")))}</p>
 """
     if subjects:
+        # Barème libre : un sujet peut n'utiliser que les premiers dossiers de la configuration.
+        cols = dossiers[:max(len(s["composition"]) for s in subjects)]
         heads = "".join(
             (f'<th>Dossier {d["numero"]}<br><span>{esc(d.get("titre_court", d["titre"]))}'
              f'{", " + fmt_pts(float(d["points"])) + " points" if d.get("points") is not None else ""}</span></th>'
              if d.get("points") is not None or d["titre"] != f"Dossier {d['numero']}"
              else f'<th>Dossier {d["numero"]}</th>')
-            for d in dossiers)
+            for d in cols)
         rows = "".join(
             f'<tr><th scope="row">N° {s["numero"]}</th>'
             + "".join(f"<td>{esc(by_id[p]['cas'])}</td>" for p in s["composition"])
