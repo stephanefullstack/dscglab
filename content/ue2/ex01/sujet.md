@@ -22,7 +22,7 @@ Il vous est demandé d'apporter un soin particulier à la présentation de votre
 
 La SAS ORVANE conçoit et fabrique des pompes à chaleur pour l'habitat collectif et les bâtiments tertiaires. Installée dans la région lyonnaise depuis 1998, elle emploie 410 salariés et a réalisé en 2026 un chiffre d'affaires de 80 000 k€ pour un EBITDA de 9 600 k€. Son capital, composé de 500 000 actions, est détenu à 100 % par la famille de sa fondatrice, Mme Hélène VARENNE, qui en assure la présidence.
 
-La rénovation énergétique des bâtiments soutient la demande, mais la concurrence des fabricants asiatiques et le coût de la recherche sur les fluides frigorigènes à faible impact climatique imposent un effort d'investissement soutenu. Pour le financer et préparer sa succession, Mme VARENNE envisage d'ouvrir 40 % du capital au fonds d'investissement MÉRIDIA Croissance, qui investit dans des ETI industrielles de la transition énergétique. Le fonds conditionne toute prise de participation à un prix fondé sur plusieurs méthodes d'évaluation et à une notation extra-financière selon sa propre grille.
+La rénovation énergétique des bâtiments soutient la demande, mais la concurrence des fabricants asiatiques et le coût de la recherche sur les fluides frigorigènes à faible impact climatique imposent un effort d'investissement soutenu. Pour préparer sa succession et associer un partenaire financier à ce développement, Mme VARENNE envisage de céder 40 % des actions détenues par sa famille au fonds d'investissement MÉRIDIA Croissance, qui investit dans des ETI industrielles de la transition énergétique. Le fonds conditionne toute prise de participation à un prix fondé sur plusieurs méthodes d'évaluation et à une notation extra-financière selon sa propre grille.
 
 Collaborateur du cabinet d'expertise comptable qui accompagne Mme VARENNE, vous êtes chargé de préparer la négociation. Les entreprises citées sont fictives.
 
@@ -44,7 +44,7 @@ Collaborateur du cabinet d'expertise comptable qui accompagne Mme VARENNE, vous 
 
 | Paramètre | Valeur retenue |
 |---|---|
-| Taux sans risque (OAT 10 ans, arrondi) | 4 % |
+| Taux sans risque (hypothèse retenue) | 4 % |
 | Prime de risque du marché actions, E(Rm) − rf | 5 % |
 | Prime de taille et d'illiquidité propre à ORVANE (société non cotée) | 2 % |
 | Taux auquel ORVANE peut s'endetter actuellement (avant impôt) | 5 % |
@@ -60,11 +60,11 @@ Conventions :
 
 ### ANNEXE 1.2 – Échantillon de sociétés cotées comparables (fabricants européens d'équipements thermiques)
 
-| Société | Capitalisation boursière au 31/12/2026 (M€) | Dettes financières nettes (M€) | Bêta des capitaux propres | EBITDA 2026 (M€) |
+| Comparable (société cotée) | Capitalisation boursière au 31/12/2026 (M€) | Dettes financières nettes (M€) | Bêta des capitaux propres | EBITDA 2026 (M€) |
 |---|---:|---:|---:|---:|
-| THERMALYS | 1 500 | 600 | 1,04 | 250 |
-| CALORIX | 800 | 640 | 1,44 | 180 |
-| NORDEVA | 2 700 | 900 | 1,10 | 450 |
+| Société A | 1 500 | 600 | 1,04 | 250 |
+| Société B | 800 | 640 | 1,44 | 180 |
+| Société C | 2 700 | 900 | 1,10 | 450 |
 
 Les dettes financières nettes des comparables sont supposées égales à leur valeur de marché. Le multiple de l'échantillon retenu est la **médiane** des multiples VGE / EBITDA. MÉRIDIA Croissance applique à ce multiple une **décote de 15 %** pour tenir compte de la taille et de l'absence de cotation d'ORVANE.
 
@@ -99,6 +99,6 @@ Chaque critère est noté sur 100 par l'équipe d'analyse du fonds. La note d'un
 
 Échelle : catégorie A pour une note globale d'au moins 75 ; B de 60 à moins de 75 ; C de 45 à moins de 60 ; D en dessous de 45.
 
-Politique d'investissement du fonds : aucune prise de participation en catégorie D. En catégorie C, l'entrée au capital est subordonnée à un plan de progrès contractuel et le fonds retient la borne basse de sa fourchette de prix. En catégorie A ou B, le prix est négocié sur l'ensemble de la fourchette.
+Politique d'investissement du fonds : aucune prise de participation en catégorie D. En catégorie C, l'entrée au capital est subordonnée à un plan de progrès contractuel et le fonds retient la borne basse de la fourchette de valeur issue des méthodes d'évaluation (flux actualisés et multiples). En catégorie A ou B, le prix est négocié sur l'ensemble de cette fourchette.
 
 Selon la direction d'ORVANE, la nomination de deux membres indépendants au comité stratégique, à laquelle Mme VARENNE est favorable, porterait la note du critère « Présence de membres indépendants au comité stratégique » de 40 à 80, toutes les autres notes restant inchangées.

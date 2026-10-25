@@ -235,8 +235,10 @@ def build_ue_index(cfg: UEConfig) -> None:
 """
     if subjects:
         heads = "".join(
-            f'<th>Dossier {d["numero"]}<br><span>{esc(d.get("titre_court", d["titre"]))}'
-            f'{", " + fmt_pts(float(d["points"])) + " points" if d.get("points") is not None else ""}</span></th>'
+            (f'<th>Dossier {d["numero"]}<br><span>{esc(d.get("titre_court", d["titre"]))}'
+             f'{", " + fmt_pts(float(d["points"])) + " points" if d.get("points") is not None else ""}</span></th>'
+             if d.get("points") is not None or d["titre"] != f"Dossier {d['numero']}"
+             else f'<th>Dossier {d["numero"]}</th>')
             for d in dossiers)
         rows = "".join(
             f'<tr><th scope="row">N° {s["numero"]}</th>'

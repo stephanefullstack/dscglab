@@ -6,7 +6,7 @@ Le sujet et son corrigé ont été construits sur la base de la réglementation 
 
 Textes intégrés (fiches datées) : F02 coût du capital, F03 évaluation, F08 gouvernance et ESG, F10 auteurs (à jour au 23/10/2026). Données structurées : `corrige.yaml`, vérifié par `outils/dscgcheck` (coût du capital, DCF, multiples, barème, liste noire, hors-programme).
 
-Bien que le corrigé mentionne des auteurs et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la pertinence et la cohérence du raisonnement, la justesse des calculs et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée.
+Bien que le corrigé mentionne des auteurs et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la pertinence et la cohérence du raisonnement, la justesse des calculs et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée. Une erreur n'est sanctionnée qu'une fois : les calculs qui en découlent sont notés en cohérence avec les résultats antérieurs du candidat.
 
 | Question | Compétence visée | Points |
 |---|---|---:|
@@ -35,9 +35,9 @@ Bien que le corrigé mentionne des auteurs et des textes, il n'est pas attendu d
 
 | Comparable | D/E | 1 + 0,75 × D/E | βe | βa |
 |---|---:|---:|---:|---:|
-| THERMALYS | 600 / 1 500 = 0,40 | 1,30 | 1,04 | **0,8000** |
-| CALORIX | 640 / 800 = 0,80 | 1,60 | 1,44 | **0,9000** |
-| NORDEVA | 900 / 2 700 = 0,3333 | 1,25 | 1,10 | **0,8800** |
+| Société A | 600 / 1 500 = 0,40 | 1,30 | 1,04 | **0,8000** |
+| Société B | 640 / 800 = 0,80 | 1,60 | 1,44 | **0,9000** |
+| Société C | 900 / 2 700 = 0,3333 | 1,25 | 1,10 | **0,8800** |
 | **Moyenne** | | | | **0,8600** |
 
 **Bêta réendetté d'ORVANE (0,5 pt)** : βe = 0,86 × (1 + 0,75 × 0,5) = 0,86 × 1,375 = **1,1825**.
@@ -125,11 +125,11 @@ Valeur terminale actualisée : 81 288 × 1,0919^−5 = 81 288 / 1,552081 = **52 
 
 **Commentaire (1 pt).** La valeur terminale représente 52 373 / 70 333 = **74,5 % de la VGE**. L'essentiel de la valeur repose donc sur des flux postérieurs à 2031, donc sur deux hypothèses fragiles : une croissance de 2 % à l'infini et le maintien d'un CMPC de 9,19 %. Une variation de l'écart CMPC − g modifie fortement le résultat : il faut présenter la valeur avec une analyse de sensibilité, et vérifier que le flux de 2031 est bien normatif (en 2031, les investissements égalent les dotations, ce qui est cohérent avec une croissance faible ; la variation du BFR de 300 k€ est proche de celle qu'impliquerait une croissance de 2 % du chiffre d'affaires, environ 290 k€). Cohérence de la structure financière : 23 000 / 47 333 = 0,49, proche du ratio cible de 0,5 retenu pour le CMPC.
 
-**Réponses tolérées** : valeur terminale calculée avec un flux normatif recalculé à partir des données de 2032, si l'hypothèse est écrite ; écarts d'arrondi de quelques k€ dus aux coefficients d'actualisation.
+**Réponses tolérées** : valeur terminale écrite VT = FTD 2032 / (CMPC − g), avec FTD 2032 = 5 730 × 1,02 = 5 844,6 (même résultat) ; écarts d'arrondi de quelques k€ dus aux coefficients d'actualisation.
 
 **Erreurs fréquentes**
 - Valeur terminale non actualisée, ou actualisée sur six ans.
-- `JUR-E01` — confusion entre VGE et VCP : la dette nette doit être retranchée pour obtenir la valeur revenant aux actionnaires.
+- Confusion entre VGE et VCP : la dette nette doit être retranchée pour obtenir la valeur revenant aux actionnaires.
 - Actualiser les FTD au coût des capitaux propres (11,91 %) au lieu du CMPC.
 
 ---
@@ -146,9 +146,9 @@ Valeur terminale actualisée : 81 288 × 1,0919^−5 = 81 288 / 1,552081 = **52 
 
 | Comparable | VGE (M€) | EBITDA (M€) | VGE / EBITDA |
 |---|---:|---:|---:|
-| THERMALYS | 1 500 + 600 = 2 100 | 250 | 8,4 |
-| CALORIX | 800 + 640 = 1 440 | 180 | 8,0 |
-| NORDEVA | 2 700 + 900 = 3 600 | 450 | 8,0 |
+| Société A | 1 500 + 600 = 2 100 | 250 | 8,4 |
+| Société B | 800 + 640 = 1 440 | 180 | 8,0 |
+| Société C | 2 700 + 900 = 3 600 | 450 | 8,0 |
 
 Médiane = **8,0** ; multiple décoté de 15 % : 8,0 × 0,85 = **6,8**.
 
@@ -190,8 +190,8 @@ Note globale = 0,40 × 65,0 + 0,30 × 61,5 + 0,30 × 35,0 = 26,00 + 18,45 + 10,5
 
 **Effet du comité stratégique (0,5 pt)** : la note de gouvernance passe à 0,50 × 80 + 0,50 × 30 = 55,0. La note globale gagne 0,30 × (55,0 − 35,0) = 6,00 points : 54,95 + 6,00 = **60,95**, soit la **catégorie B**.
 
-**Conclusion (1 pt).** Le point faible d'ORVANE n'est pas son activité, favorable à la transition énergétique (pilier environnemental à 65), mais sa **gouvernance** : présidente actionnaire unique, aucun regard extérieur au comité stratégique, aucun critère de durabilité dans sa rémunération. Pour un investisseur minoritaire, des membres indépendants réduisent les **coûts d'agence** : ils contrôlent la direction et protègent les minoritaires [F10 : Jensen et Meckling, 1976]. Engager la démarche avant la négociation a donc un double intérêt :
-- financier : en catégorie B, le prix se négocie sur toute la fourchette de la question 1.4, et non plus sur sa borne basse. L'enjeu atteint 18 933 − 16 912 = **2 021 k€** pour 40 % du capital ;
+**Conclusion (1 pt).** Le point faible d'ORVANE n'est pas son activité, favorable à la transition énergétique (pilier environnemental à 65), mais sa **gouvernance** : capital entièrement familial, présidente fondatrice, aucun regard extérieur au comité stratégique, aucun critère de durabilité dans sa rémunération. Pour un investisseur minoritaire, des membres indépendants réduisent les **coûts d'agence** : ils contrôlent la direction et protègent les minoritaires [F10 : Jensen et Meckling, 1976]. Engager la démarche avant la négociation a donc un double intérêt :
+- financier : en catégorie B, le prix se négocie sur toute la fourchette de la question 1.4, et non plus sur sa borne basse. L'enjeu peut atteindre 18 933 − 16 912 = **2 021 k€** au plus pour 40 % du capital ;
 - stratégique : la gouvernance ouverte prépare la succession de Mme VARENNE et l'arrivée d'un actionnaire extérieur.
 
 Recommandation : nommer les deux membres indépendants avant l'ouverture des négociations, et proposer un critère de durabilité dans la rémunération de la présidente, qui renforcerait encore le pilier de gouvernance (encore à 55).
@@ -213,6 +213,6 @@ Il n'est pas attendu du candidat qu'il cite le règlement (UE) 2024/3005 sur les
 |---|---|---|---|
 | Guide pédagogique DSCG, juillet 2026, p. 63-65 | MEDAF avec primes complémentaires, CMPC, FTD, valeur terminale, multiples | [V] | F02, F03 |
 | Hamada (1972) | désendettement et réendettement du bêta avec impôt | [S] | F02 § 3 |
-| Gordon et Shapiro (1956) | valeur terminale à croissance constante | [V programme] | F10 |
+| Gordon et Shapiro (1956) | valeur terminale à croissance constante | [V programme ; année S] | F10 |
 | Jensen et Meckling (1976) | théorie de l'agence, rôle des administrateurs indépendants | [V programme] | F10, F08 |
 | Règlement (UE) 2024/3005, art. 2 § 2 | exclusion des notations à usage interne | [V] | F08 § 3.2 |
