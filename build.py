@@ -16,13 +16,12 @@ import subprocess
 import sys
 from pathlib import Path
 
-import yaml
-
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 CONTENT = HERE / "content"
 DOCS = HERE / "docs"
-sys.path.insert(0, str(ROOT / "outils"))
+sys.path.insert(0, str(ROOT / "outils"))  # dscgcheck, et PyYAML déposé à côté sur le VPS
+import yaml  # noqa: E402
 from dscgcheck.config import UEConfig, all_ues  # noqa: E402
 
 FONTS = ("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;"
