@@ -287,7 +287,7 @@ La valeur de la branche à la fin de 2032, qui représente les flux des années 
 **Offre de rachat.** En février 2027, un industriel européen des ingrédients alimentaires a remis une offre pour 100 % des titres de TERRALBE Ingrédients SAS. Il prévoit de regrouper la production de la branche avec celle de ses propres usines. Les conditions sont les suivantes :
 - prix de 63 500 k€, payé comptant à la date de cession, la filiale étant cédée sans dette financière ni trésorerie ;
 - coûts de sortie à la charge de TERRALBE (honoraires de conseil et séparation des systèmes d'information et des contrats communs) : 1 500 k€, payés à la date de cession ;
-- impôt et frais fiscaux liés à la cession, estimés par la direction fiscale du groupe : 2 500 k€, payé à la date de cession. Ce montant est donné ; son calcul n'est pas demandé.
+- impôt et frais fiscaux liés à la cession, estimés par la direction fiscale du groupe : 2 500 k€, payés à la date de cession. Ce montant est donné ; son calcul n'est pas demandé.
 
 **Conventions.** La cession interviendrait le 31 décembre 2027, retenu comme date 0. Les flux de la branche conservée interviennent en fin d'année (2028 = année 1). Montants arrondis au k€.
 

@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Trésorerie de groupe et risque de taux : SOLVÉRAN : trésorerie de groupe et risque de taux</title>
+<meta name="description" content="Entraînement à l'UE 2 du DSCG, finance, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 2</span></a>
+<p>Dossier 3</p><p>15 points</p><p>55 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Trésorerie de groupe et risque de taux</h1><p class="cas">SOLVÉRAN : trésorerie de groupe et risque de taux</p><p class="avant">Corrigé indicatif et barème. Les mentions [V] signalent un point vérifié sur la source officielle ; les renvois F01 à F11 et JUR désignent des fiches de travail et les constats des rapports du jury.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F01 mathématiques financières, F07 risques de taux et de change et trésorerie de groupe, F10 auteurs et théories, F11 données de marché et F99 liste noire (à jour au 23/10/2026).</p>
+<p>Bien que le corrigé mentionne des auteurs, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la pertinence et la cohérence du raisonnement, la justesse des calculs et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée. Une erreur n'est sanctionnée qu'une fois : les calculs qui en découlent sont notés en cohérence avec les résultats antérieurs du candidat (par exemple un gain de centralisation calculé à partir d'un total sans centralisation erroné à la question 3.1).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1 Centralisation de la trésorerie du groupe</td>
+<td><code>6.1.a</code> Appliquer les mécanismes de centralisation de trésorerie</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td>3.2 Placement de l'excédent d'été et financement du creux d'hiver</td>
+<td><code>6.1.b</code> Discerner les différents types de financement et de placement</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td>3.3 Portefeuille obligataire de réserve et exposition au risque de taux</td>
+<td><code>6.2.a</code> Maîtriser la relation inverse entre la valeur et les taux d'intérêt</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td>3.4 Protection du taux du placement de l'été</td>
+<td><code>6.2.c</code> Maîtriser les contrats à terme et optionnels sur les marchés organisés et de gré à gré (taux) ; <code>6.2.b</code> Maîtriser les principaux instruments de couverture du risque de taux</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>15</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Part du calcul : environ 8,5 points (3.1-01 à 3.1-05, 3.3-01 à 3.3-06, 3.4-02 à 3.4-06). Part de l'analyse : environ 6,5 points. La question 3.2, entièrement rédigée, et les items d'analyse des autres questions ne doivent pas être sacrifiés faute de temps : ce dossier est le dernier de l'épreuve (<code>JUR-T15</code>).</p>
+<hr />
+<h3 id="31-centralisation-de-la-trésorerie-du-groupe-4-pts">3.1 Centralisation de la trésorerie du groupe (4 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1-01</td>
+<td>Intérêts de chaque société et de chaque trimestre sans centralisation (taux débiteur ou créditeur selon le signe du solde)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>3.1-02</td>
+<td>Total sans centralisation : produit net de 23 328 €</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.1-03</td>
+<td>Soldes nets trimestriels du groupe et intérêts du compte centralisateur : produit net de 116 461 €</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.1-04</td>
+<td>Résultat avec centralisation, frais compris (98 461 €) et gain de 75 133 €</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.1-05</td>
+<td>Origine du gain : compensation des soldes de signes contraires et meilleures conditions, illustrées par les chiffres du cas (par exemple, au T1, l'effet des seules conditions)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.1-06</td>
+<td>Prérequis et limites ; appréciation des conditions internes</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.1-07</td>
+<td>Cash pooling notionnel et netting : alternative ou complément</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Intérêts sans centralisation (1 pt).</strong> Intérêts d'un trimestre = solde moyen × taux × jours / 360, au taux débiteur si le solde est débiteur, au taux créditeur s'il est créditeur. Les intérêts de la holding sont donnés par l'annexe 3.1. Exemples : Plein Air au T1, − 4 600 000 × 4,15 % × 90 / 360 = − 47 725 € ; Plein Air au T3, 9 000 000 × 1,95 % × 92 / 360 = + 44 850 € ; Atlantique Nord au T2, 2 500 000 × 1,45 % × 91 / 360 = + 9 163 €.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Intérêts 2027 (€)</th>
+<th style="text-align: right;">T1 (90 j)</th>
+<th style="text-align: right;">T2 (91 j)</th>
+<th style="text-align: right;">T3 (92 j)</th>
+<th style="text-align: right;">T4 (92 j)</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SOLVÉRAN Holding (donnés)</td>
+<td style="text-align: right;">− 13 950</td>
+<td style="text-align: right;">− 14 105</td>
+<td style="text-align: right;">− 14 260</td>
+<td style="text-align: right;">− 14 260</td>
+<td style="text-align: right;">− 56 575</td>
+</tr>
+<tr class="even">
+<td>SOLVÉRAN Plein Air</td>
+<td style="text-align: right;">− 47 725</td>
+<td style="text-align: right;">+ 7 394</td>
+<td style="text-align: right;">+ 44 850</td>
+<td style="text-align: right;">+ 12 458</td>
+<td style="text-align: right;">+ 16 977</td>
+</tr>
+<tr class="odd">
+<td>Atlantique Nord</td>
+<td style="text-align: right;">− 12 125</td>
+<td style="text-align: right;">+ 9 163</td>
+<td style="text-align: right;">+ 25 939</td>
+<td style="text-align: right;">+ 5 558</td>
+<td style="text-align: right;">+ 28 535</td>
+</tr>
+<tr class="even">
+<td>Atlantique Sud</td>
+<td style="text-align: right;">− 9 700</td>
+<td style="text-align: right;">+ 7 331</td>
+<td style="text-align: right;">+ 22 233</td>
+<td style="text-align: right;">− 3 718</td>
+<td style="text-align: right;">+ 16 146</td>
+</tr>
+<tr class="odd">
+<td>Occitanie</td>
+<td style="text-align: right;">− 7 275</td>
+<td style="text-align: right;">+ 4 398</td>
+<td style="text-align: right;">+ 16 675</td>
+<td style="text-align: right;">+ 4 447</td>
+<td style="text-align: right;">+ 18 245</td>
+</tr>
+<tr class="even">
+<td><strong>Groupe</strong></td>
+<td style="text-align: right;"><strong>− 90 775</strong></td>
+<td style="text-align: right;"><strong>+ 14 181</strong></td>
+<td style="text-align: right;"><strong>+ 95 437</strong></td>
+<td style="text-align: right;"><strong>+ 4 485</strong></td>
+<td style="text-align: right;"><strong>+ 23 328</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total sans centralisation (0,5 pt).</strong> Le groupe paie 137 118 € d'agios et reçoit 160 446 € de rémunération : <strong>produit net de 23 328 €</strong> seulement, alors que son solde net moyen sur l'année est créditeur d'environ 6,8 M€. La holding, débitrice toute l'année à 4,65 %, perd 56 575 € pendant que les autres sociétés placent leurs excédents à 1,45 % ou 1,95 %.</p>
+<p><strong>Intérêts du compte centralisateur (0,5 pt).</strong> Le compte centralisateur porte la somme des soldes des cinq sociétés, aux conditions de la banque chef de file (3,90 % débiteur ; 2,20 % créditeur).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Compte centralisateur</th>
+<th style="text-align: right;">T1</th>
+<th style="text-align: right;">T2</th>
+<th style="text-align: right;">T3</th>
+<th style="text-align: right;">T4</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Solde net du groupe (k€)</td>
+<td style="text-align: right;">− 8 200</td>
+<td style="text-align: right;">+ 6 000</td>
+<td style="text-align: right;">+ 25 300</td>
+<td style="text-align: right;">+ 3 700</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Taux appliqué</td>
+<td style="text-align: right;">3,90 %</td>
+<td style="text-align: right;">2,20 %</td>
+<td style="text-align: right;">2,20 %</td>
+<td style="text-align: right;">2,20 %</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Intérêts (€)</td>
+<td style="text-align: right;">− 79 950</td>
+<td style="text-align: right;">+ 33 367</td>
+<td style="text-align: right;">+ 142 242</td>
+<td style="text-align: right;">+ 20 802</td>
+<td style="text-align: right;"><strong>+ 116 461</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Résultat avec centralisation et gain (0,5 pt).</strong> Résultat financier avec centralisation = 116 461 − 18 000 = <strong>98 461 €</strong>. Gain = 98 461 − 23 328 = <strong>75 133 €</strong> par an, soit plus de quatre fois les frais du dispositif.</p>
+<p><strong>Origine du gain (0,5 pt).</strong> Écart entre le compte centralisateur et la somme des comptes séparés, avant frais : T1 + 10 825 € ; T2 + 19 186 € ; T3 + 46 805 € ; T4 + 16 317 € ; total 93 133 €, dont il faut déduire les 18 000 € de frais.</p>
+<ul>
+<li><strong>Meilleures conditions</strong> obtenues sur des volumes regroupés : au T1, toutes les sociétés sont débitrices, il n'y a rien à compenser ; le gain de 10 825 € vient seulement du taux débiteur de 3,90 % au lieu de 4,15 % à 4,85 %. L'été, l'excédent est rémunéré à 2,20 % au lieu de 1,45 % à 1,95 %.</li>
+<li><strong>Compensation des soldes de signes contraires</strong> (fusion des soldes) : aux T2, T3 et T4, des sociétés débitrices (la holding toute l'année, Atlantique Sud au T4) paient 4,65 % ou 4,85 % pendant que les autres placent à 1,45 % ou 1,95 % ; avec la centralisation, l'excédent des unes finance directement le découvert des autres et seul le solde net porte intérêt. Au T4, par exemple, 1 500 k€ de soldes débiteurs et 5 200 k€ de soldes créditeurs se réduisent à un excédent net de 3 700 k€ : le groupe passe d'un produit de 4 485 € à 20 802 €.</li>
+</ul>
+<p><strong>Prérequis, limites et conditions internes (0,5 pt).</strong></p>
+<ul>
+<li><strong>Prérequis</strong> : une convention de trésorerie signée par chaque société (avances réciproques, conditions de rémunération, durée, sortie) ; l'ouverture des cinq comptes dans la banque chef de file (les deux autres banques du pool perdent des flux, ce qui peut peser sur la relation) ; un système d'information qui suive au jour le jour la position de chaque société envers le compte centralisateur ; une autorisation de découvert du compte centralisateur suffisante pour la pointe d'hiver (20 M€ pour une moyenne de 8,2 M€ au T1 2027 et une pointe de 17 M€ attendue en février 2028, annexe 3.2).</li>
+<li><strong>Limites</strong> : la société pilote concentre le risque de liquidité du groupe ; les filiales perdent leur autonomie de gestion de trésorerie et leur relation propre avec leur banque ; chaque société doit conserver son intérêt propre (les aspects juridiques et fiscaux des avances intragroupe ne sont pas développés ici) ; la centralisation ne crée pas de trésorerie : elle réduit le coût du découvert d'hiver mais ne le supprime pas (8,2 M€ de solde net au T1).</li>
+<li><strong>Conditions internes</strong> : chaque société y gagne par rapport à sa banque (débit à 3,90 % au lieu de 4,15 % à 4,85 % ; crédit à 2,45 % au lieu de 1,45 % à 1,95 %), ce qui facilite l'adhésion des dirigeants des filiales. Mais la société pilote rémunère les excédents à 2,45 % alors que le compte centralisateur ne lui rapporte que 2,20 % : elle perd 0,25 point sur chaque excédent et supporte seule les 18 000 € de frais. Avec ces conditions, les intérêts internes des cinq sociétés seraient au total un produit net de 124 379 €, soit un gain de 101 051 € par rapport à leurs conditions bancaires, tandis que le compte centralisateur perdrait 116 461 − 124 379 − 18 000 = 25 918 €. La holding étant à la fois société participante et pilote, il faut la prendre dans son ensemble : compte propre (− 47 450 €) et compte centralisateur (− 25 918 €), soit − 73 368 € contre − 56 575 € sans centralisation (− 16 793 €) ; les quatre autres sociétés gagnent 91 926 €. Le gain du groupe (75 133 €) va donc aux sociétés d'exploitation, au détriment de la holding. Un taux créditeur interne de 2,20 % (aligné sur celui de la banque) et une refacturation des frais au prorata des flux seraient plus cohérents, tout en restant proches des conditions de marché.</li>
+</ul>
+<p><strong>Cash pooling notionnel et netting (0,5 pt).</strong></p>
+<ul>
+<li><strong>Cash pooling notionnel</strong> : la banque calcule les intérêts sur la somme fictive des soldes sans virement entre comptes ; chaque société garde son compte et son solde réel. Il éviterait les avances intragroupe et la convention de prêts réciproques, mais suppose des garanties croisées entre sociétés et reste rare ou plus coûteux pour un groupe de cette taille ; dans un groupe franco-français, entièrement en euros et détenu à 100 %, le cash pooling physique, plus simple et mieux maîtrisé, est adapté.</li>
+<li><strong>Netting</strong> : la compensation périodique des dettes et créances intragroupe (refacturations de Plein Air, redevances des filiales) remplacerait une vingtaine de virements mensuels par un règlement du solde net de chaque société. Avec un cash pooling physique dans une seule banque et une seule devise, son intérêt est limité (moins de frais de virement, moins de travail administratif) : c'est un <strong>complément</strong> de gestion, pas une alternative. Il serait plus utile si le groupe avait des filiales à l'étranger, dans d'autres devises.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : intérêts calculés en k€ à une ou deux décimales, ou arrondis en fin de calcul seulement (écart de quelques euros sur les totaux) ; frais déduits trimestriellement (4 500 € par trimestre), même résultat annuel ; gain exprimé en pourcentage des frais financiers actuels ; conditions internes jugées acceptables si le candidat montre qu'elles transfèrent le gain aux filiales et que la holding pilote en supporte le coût ; mention de la théorie de l'agence (Jensen et Meckling, 1976) pour analyser la perte d'autonomie des dirigeants des filiales et le contrôle exercé par la holding.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Appliquer le taux débiteur à un solde créditeur (ou l'inverse), ou appliquer les conditions du compte centralisateur à chaque société au lieu de les appliquer au solde net du groupe.</li>
+<li>Calculer en base 365 ou en mois / 12 alors que l'annexe impose Exact/360 et donne le nombre de jours.</li>
+<li>Oublier les 18 000 € de frais dans le résultat avec centralisation.</li>
+<li><code>JUR-T07</code> — présenter seize calculs d'intérêts en ligne, sans tableau par société et par trimestre.</li>
+<li><code>JUR-T13</code> — réciter les avantages du cash pooling sans les relier aux chiffres du cas (découvert de 8,2 M€ au T1, holding débitrice toute l'année, excédents d'été rémunérés à 1,45 %).</li>
+</ul>
+<hr />
+<h3 id="32-placement-de-lexcédent-dété-et-financement-du-creux-dhiver-3-pts">3.2 Placement de l'excédent d'été et financement du creux d'hiver (3 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.2-01</td>
+<td>Diagnostic des horizons : excédent de 3 mois, excédent résiduel jusqu'à la fin de l'année, réserve à un an ; besoin de 4 mois avec une pointe</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.2-02</td>
+<td>Placement de l'excédent : supports retenus et écartés, justifiés par l'horizon, le rendement, le risque et la liquidité</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>3.2-03</td>
+<td>Financement du creux : supports retenus et écartés, justifiés</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>3.2-04</td>
+<td>Plan d'ensemble cohérent et appliqué au cas</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Diagnostic des horizons (0,5 pt).</strong> Un placement de trésorerie doit d'abord être <strong>disponible</strong> à la date du besoin : la liquidité et la sécurité du capital priment sur le rendement. Chez SOLVÉRAN :</p>
+<ul>
+<li>20 M€ sont disponibles <strong>pendant 90 jours</strong> (1er juillet - 29 septembre) : horizon court et connu ;</li>
+<li>environ 6 M€ restent disponibles jusqu'à la mi-novembre, puis 1 à 2 M€ jusqu'au 31 décembre : horizon de quelques semaines, plus incertain (fin de saison, arrière-saison) ;</li>
+<li>la réserve obligataire de 5 M€ servira en 2028 à une acquisition : horizon d'un an environ ;</li>
+<li>l'hiver, le besoin dure <strong>quatre mois</strong> (janvier-avril 2028, après le paiement des échéances annuelles de la dette bancaire début janvier), avec une moyenne de 12 M€ et une pointe de 17 M€ à la fin février : il est saisonnier, récurrent et variable d'un mois à l'autre.</li>
+</ul>
+<p><strong>Placement de l'excédent (1 pt).</strong></p>
+<ul>
+<li><strong>20 M€ sur trois mois</strong> : un <strong>compte à terme à 3 mois</strong> (2,40 % aujourd'hui) garantit le capital et un taux fixé à l'ouverture, avec une échéance qui coïncide avec le besoin ; des <strong>NEU CP</strong> à 3 mois rapportent davantage (2,75 %), mais exposent au risque de crédit de l'émetteur et doivent être conservés jusqu'à l'échéance : ils conviennent à une partie de l'excédent, répartie entre plusieurs émetteurs bien notés (au sens de Markowitz, 1952, la diversification réduit le risque propre à chaque émetteur), puisque l'horizon de trois mois est certain. Sur 20 M€ et 90 jours, l'écart entre 2,40 % et 2,75 % représente environ 17 500 € (120 000 € contre 137 500 €).</li>
+<li><strong>6 M€ jusqu'à la mi-novembre, le reliquat de fin d'année et le volant de sécurité</strong> : un <strong>OPCVM monétaire</strong> (environ 2,35 %, rachat en un jour) ou des comptes à terme à 1 mois (2,30 %) renouvelés : le rendement est un peu plus faible, mais la liquidité est quotidienne, ce qui convient à un horizon incertain.</li>
+<li><strong>Supports écartés</strong> : les <strong>obligations</strong> à 4 à 7 ans rapportent davantage (3,20 % à 4,00 %), mais leur revente au bout de trois mois expose à une perte en capital si les taux montent (− 3,71 % à − 6,00 % pour + 1 point, question 3.3), qui effacerait plusieurs années d'écart de rendement ; les <strong>OPCVM actions</strong> (rendement espéré d'environ 7 %, mais perte possible de 20 % ou plus sur un an) sont inadaptés à une trésorerie dont le groupe aura besoin dans quelques mois : le couple rendement-risque ne se juge qu'à horizon égal.</li>
+<li>Quel que soit le support, son taux sera fixé au 1er juillet : la protection de ce taux est étudiée à la question 3.4.</li>
+</ul>
+<p><strong>Financement du creux (1 pt).</strong></p>
+<ul>
+<li><strong>Ligne de crédit renouvelable confirmée</strong> (15 M€ jusqu'en 2030, 3,75 % pour un tirage à 3 mois, plus 0,35 % l'an sur la partie non tirée) : c'est le support adapté à un besoin saisonnier variable, puisque le groupe ne tire que ce dont il a besoin, quand il en a besoin, et que la banque ne peut pas retirer la ligne tant que la clause DFN / EBITDA ≤ 3,5 est respectée. Elle couvre le besoin moyen de 12 M€ et l'essentiel de la pointe.</li>
+<li><strong>Découvert</strong> (3,90 % sur le compte centralisateur, autorisation de 20 M€) : il absorbe la pointe de fin février au-delà de 15 M€ (environ 2 M€ pendant quelques semaines) ; c'est le financement le plus souple mais le plus cher, et l'autorisation est révocable : il ne doit pas financer le besoin de fond.</li>
+<li><strong>Crédit de campagne</strong> (12 M€, 3,65 %) : son taux est le plus faible, mais le groupe paie des intérêts sur 12 M€ pendant six mois, y compris en mai et en juin où le besoin est nul, et en janvier où il est encore inférieur à la pointe ; l'excédent ainsi emprunté serait replacé à un taux inférieur (environ 2,35 %). Il peut se justifier si la ligne de crédit renouvelable risque d'être indisponible (clause bancaire tendue), comme financement de secours ou en complément pour un montant plus faible.</li>
+<li><strong>Supports écartés</strong> : l'émission de NEU CP par SOLVÉRAN (notation ou garantie bancaire, frais fixes) et la mobilisation de créances (clients particuliers qui paient d'avance) sont sans objet ; vendre la réserve obligataire pour financer l'hiver exposerait à une moins-value si les taux ont monté et la priverait de son objet (acquisition de 2028).</li>
+</ul>
+<p><strong>Plan d'ensemble (0,5 pt).</strong> Une réponse possible : l'été, compte à terme à 3 mois pour l'essentiel des 20 M€ et NEU CP diversifiés pour une partie, OPCVM monétaire pour l'excédent résiduel et le volant de sécurité ; l'hiver, tirages de la ligne de crédit renouvelable ajustés mois par mois, le découvert couvrant la seule pointe. La centralisation (question 3.1) rend ce plan possible : la holding pilote place et emprunte pour le groupe sur la base du solde net, au lieu de cinq décisions séparées. Le groupe doit toutefois surveiller la clause bancaire : une saison dégradée qui ferait dépasser 3,5 fois l'EBITDA priverait le groupe de sa ligne au moment où il en a le plus besoin.</p>
+<p><strong>Réponses tolérées</strong> : placement de tout l'excédent de 20 M€ en compte à terme (sécurité maximale) ou d'une part plus élevée en NEU CP, si le risque de crédit et la diversification sont discutés ; financement de l'hiver par une combinaison de crédit de campagne pour une partie et de ligne renouvelable, si le coût du montant inutilisé est identifié ; tableau de synthèse par support (horizon, rendement, risque, liquidité) à la place d'une rédaction ; ordres de grandeur chiffrés des coûts, s'ils sont cohérents avec les annexes.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Choisir le support au seul taux affiché (obligations à 4 %, actions) sans tenir compte de l'horizon de trois mois ni du risque de perte en capital.</li>
+<li>Employer les anciennes appellations des NEU CP comme si elles étaient encore en vigueur.</li>
+<li><code>JUR-T12</code> — confondre le découvert (révocable, sur le montant utilisé) et la ligne de crédit confirmée (engagement de la banque, commission de non-utilisation).</li>
+<li><code>JUR-T13</code> — liste de supports sans lien avec le profil de trésorerie du groupe (20 M€ pendant 90 jours, besoin de 12 M€ en moyenne et de 17 M€ en pointe).</li>
+</ul>
+<hr />
+<h3 id="33-portefeuille-obligataire-de-réserve-et-exposition-au-risque-de-taux-4-pts">3.3 Portefeuille obligataire de réserve et exposition au risque de taux (4 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.3-01</td>
+<td>Prix d'une obligation A : 99,26 €</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.3-02</td>
+<td>Duration de l'obligation A : 3,828 ans</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.3-03</td>
+<td>Sensibilité de l'obligation A : − 3,709</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.3-04</td>
+<td>Hausse de 100 points de base : variation exacte − 3,60 € (− 3,62 %), estimée − 3,68 € (− 3,71 %) ; explication de l'écart</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.3-05</td>
+<td>Perte estimée du portefeuille : − 218,9 k€ (− 4,40 %)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.3-06</td>
+<td>Duration du portefeuille : 4,556 ans ; commentaire au regard de l'horizon de la réserve</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.3-07</td>
+<td>Exposition du groupe : positions, sens du risque, compensations et conclusion</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Prix et duration de l'obligation A (1 pt).</strong> Flux d'un titre : coupons de 3 € dans 1, 2 et 3 ans ; 103 € dans 4 ans ; taux du marché 3,20 %.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Année t</th>
+<th style="text-align: right;">Flux (€)</th>
+<th style="text-align: right;">Valeur actuelle à 3,20 %</th>
+<th style="text-align: right;">t × valeur actuelle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2,9070</td>
+<td style="text-align: right;">2,9070</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2,8168</td>
+<td style="text-align: right;">5,6337</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2,7295</td>
+<td style="text-align: right;">8,1885</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: right;">90,8068</td>
+<td style="text-align: right;">363,2273</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><strong>Total</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>99,2601</strong></td>
+<td style="text-align: right;"><strong>379,9565</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Prix = <strong>99,26 €</strong> (sous le pair, car le coupon de 3,00 % est inférieur au taux du marché de 3,20 %). Duration = 379,9565 / 99,2601 = <strong>3,828 ans</strong> : inférieure à la maturité de 4 ans, puisqu'une partie de la valeur est perçue avant l'échéance.</p>
+<p><strong>Sensibilité (0,5 pt).</strong> S = − 3,828 / 1,032 = <strong>− 3,709</strong> : pour une hausse d'un point des taux, le prix baisse d'environ 3,71 %.</p>
+<p><strong>Effet d'une hausse de 100 points de base (0,5 pt).</strong></p>
+<ul>
+<li><strong>Exactement</strong> : au taux de 4,20 %, prix = 3 / 1,042 + 3 / 1,042² + 3 / 1,042³ + 103 / 1,042⁴ = 2,8791 + 2,7630 + 2,6517 + 87,3708 = <strong>95,66 €</strong>, soit une baisse de <strong>3,60 €</strong> (− 3,62 %).</li>
+<li><strong>Par la sensibilité</strong> : − 3,709 % × 99,26 = <strong>− 3,68 €</strong> (− 3,71 %).</li>
+<li><strong>Écart</strong> : la sensibilité mesure la pente de la courbe prix-taux au point de départ ; la relation étant convexe (la baisse du prix ralentit à mesure que le taux monte), l'approximation linéaire surestime légèrement la baisse (0,08 € par titre). Elle est d'autant plus fiable que la variation de taux est faible.</li>
+</ul>
+<p><strong>Perte estimée du portefeuille (0,5 pt).</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Ligne</th>
+<th style="text-align: right;">Valeur (k€)</th>
+<th style="text-align: right;">Sensibilité</th>
+<th style="text-align: right;">Variation estimée (k€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A : 35 000 × 99,26 €</td>
+<td style="text-align: right;">3 474,1</td>
+<td style="text-align: right;">− 3,709</td>
+<td style="text-align: right;">− 128,9</td>
+</tr>
+<tr class="even">
+<td>B : 15 000 × 100,00 €</td>
+<td style="text-align: right;">1 500,0</td>
+<td style="text-align: right;">− 6,002</td>
+<td style="text-align: right;">− 90,0</td>
+</tr>
+<tr class="odd">
+<td><strong>Portefeuille</strong></td>
+<td style="text-align: right;"><strong>4 974,1</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>− 218,9 (− 4,40 %)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>La ligne B, plus longue, représente 30 % de la valeur mais 41 % de la perte. (Pour information, la variation exacte serait de − 125,8 k€ pour A et − 86,8 k€ pour B, soit − 212,6 k€ ou − 4,27 %.)</p>
+<p><strong>Duration du portefeuille (0,5 pt).</strong> (3 474,1 × 3,828 + 1 500,0 × 6,242) / 4 974,1 = 22 661,9 / 4 974,1 = <strong>4,556 ans</strong>. La réserve doit être utilisée en 2028, dans environ un an, alors que la duration du portefeuille est de 4,6 ans : les titres devront être vendus bien avant leur échéance, au prix du marché du moment. Le portefeuille n'est pas adossé à son horizon : une hausse de 100 points de base ferait perdre environ 219 k€, soit plus que les coupons d'une année (environ 165 k€). Pour un horizon d'un an, il faudrait une duration proche d'un an (titres courts, comptes à terme, NEU CP) ; la ligne B ajoute en outre un risque de crédit.</p>
+<p><strong>Exposition du groupe au risque de taux (1 pt).</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Position</th>
+<th>Montant</th>
+<th>Nature</th>
+<th>Effet d'une hausse des taux</th>
+<th>Variation redoutée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Portefeuille obligataire de réserve</td>
+<td>5,0 M€ de nominal</td>
+<td>actif à taux fixe</td>
+<td>perte de valeur (risque de prix)</td>
+<td><strong>hausse</strong></td>
+</tr>
+<tr class="even">
+<td>Placement de l'été</td>
+<td>20 M€ pendant 90 jours</td>
+<td>actif à taux variable (taux fixé au 1er juillet)</td>
+<td>produits plus élevés</td>
+<td><strong>baisse</strong></td>
+</tr>
+<tr class="odd">
+<td>Dette d'acquisition</td>
+<td>104 M€</td>
+<td>passif à taux variable, couvert en partie</td>
+<td>charges plus élevées</td>
+<td><strong>hausse</strong></td>
+</tr>
+<tr class="even">
+<td>Financements de l'hiver</td>
+<td>12 à 17 M€ pendant 4 mois</td>
+<td>passif à taux variable</td>
+<td>charges plus élevées</td>
+<td><strong>hausse</strong></td>
+</tr>
+</tbody>
+</table>
+<p>La <strong>relation inverse</strong> entre la valeur et les taux ne concerne que les positions à taux fixe : une hausse des taux réduit la valeur des obligations détenues (risque de prix, latent si les titres étaient conservés jusqu'à l'échéance) ; les positions à taux variable n'ont pas de risque de valeur, mais un risque sur les flux d'intérêts futurs. Le groupe est globalement <strong>emprunteur net à taux variable</strong> : la hausse des taux est son risque principal (sur la dette d'acquisition, un point de hausse coûte 1,04 M€ d'intérêts par an avant l'effet des couvertures en place). Les placements d'été à taux variable compensent un peu cette exposition, pour des montants et des durées bien plus faibles. Le placement de l'été, lui, craint la <strong>baisse</strong> : c'est une position particulière, couverte à la question 3.4, qui ne doit pas faire oublier le risque global.</p>
+<p><strong>Réponses tolérées</strong> : sensibilité exprimée en valeur absolue (3,709) si le sens de la variation du prix est correctement indiqué ; variation estimée du portefeuille calculée à partir de sa duration et d'un taux moyen explicité, si l'approximation est signalée ; variation exacte de la ligne B calculée en plus ; écarts d'arrondi de 0,01 € sur le prix ou de 0,001 sur la duration.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Confondre duration et maturité, ou oublier que le dernier flux comprend le coupon et le remboursement.</li>
+<li>Appliquer la sensibilité au nominal (100 €) au lieu du prix (99,26 €).</li>
+<li>Pondérer la duration du portefeuille par les nominaux sans le dire (résultat très proche ici, mais méthode inexacte en général).</li>
+<li>Conclure que le groupe craint seulement la baisse des taux, parce qu'il place l'été, en oubliant la dette d'acquisition à taux variable.</li>
+<li><code>JUR-T07</code> — calcul de duration sans tableau des flux actualisés.</li>
+</ul>
+<hr />
+<h3 id="34-protection-du-taux-du-placement-de-lété-4-pts">3.4 Protection du taux du placement de l'été (4 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.4-01</td>
+<td>Risque de baisse des taux ; sens de chaque couverture : vente du FRA, achat des contrats, achat du floor</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.4-02</td>
+<td>FRA : différentiel reçu de 34 834,54 € ou versé de 24 807,74 € ; produit total de 130 000 € et taux de 2,60 % dans les deux scénarios</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.4-03</td>
+<td>Contrats à terme : résultat de + 35 000 € ou − 25 000 € ; produit total de 130 000 € et taux de 2,60 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.4-04</td>
+<td>20 contrats ; dépôt de garantie de 10 000 € ; appel de marge de 3 500 € ; mécanisme des appels de marge</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.4-05</td>
+<td>Floor : prime de 15 000 € ; valeur intrinsèque de 5 000 € ; valeur temps de 10 000 €</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.4-06</td>
+<td>Floor : produit de 122 500 € (2,45 %) ou 140 000 € (2,80 %)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.4-07</td>
+<td>Comparaison (ferme / optionnel, gré à gré / marché organisé, point mort) et recommandation</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Risque et sens des couvertures (0,5 pt).</strong> SOLVÉRAN placera 20 M€ dans trois mois à un taux encore inconnu : elle craint la <strong>baisse</strong> de l'Euribor d'ici au 1er juillet, que plusieurs économistes anticipent. Elle se couvre en <strong>vendant</strong> le FRA (elle reçoit le différentiel si le taux constaté est inférieur au taux garanti), en <strong>achetant</strong> des contrats à terme (leur cours, 100 − taux, monte quand le taux baisse) et en <strong>achetant</strong> un floor (il verse la différence si le taux passe sous 2,75 %). Sans couverture, le placement rapporterait 20 000 000 × 1,90 % × 90 / 360 = <strong>95 000 €</strong> (1,90 %) dans le scénario de baisse et 155 000 € (3,10 %) dans le scénario de hausse.</p>
+<p><strong>FRA (0,5 pt).</strong> Différentiel (formule de l'annexe, vu de l'acheteur) :</p>
+<ul>
+<li>taux constaté de 1,90 % : 20 000 000 × (1,90 % − 2,60 %) × 90 / 360 / (1 + 1,90 % × 90 / 360) = − 35 000 / 1,00475 = <strong>− 34 834,54 €</strong> : la banque, acheteuse, <strong>verse</strong> 34 834,54 € à SOLVÉRAN le 1er juillet ; placés à 1,90 % pendant 90 jours, ils deviennent 35 000 € ;</li>
+<li>taux constaté de 3,10 % : 20 000 000 × 0,50 % × 90 / 360 / 1,00775 = <strong>24 807,74 €</strong>, que SOLVÉRAN <strong>verse</strong> à la banque ; empruntés à 3,10 %, ils coûtent 25 000 € au 29 septembre.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>FRA vendu à 2,60 %</th>
+<th style="text-align: right;">Euribor 1,90 %</th>
+<th style="text-align: right;">Euribor 3,10 %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intérêts du placement</td>
+<td style="text-align: right;">95 000</td>
+<td style="text-align: right;">155 000</td>
+</tr>
+<tr class="even">
+<td>Différentiel à la fin de la période</td>
+<td style="text-align: right;">+ 35 000</td>
+<td style="text-align: right;">− 25 000</td>
+</tr>
+<tr class="odd">
+<td><strong>Produit total</strong></td>
+<td style="text-align: right;"><strong>130 000</strong></td>
+<td style="text-align: right;"><strong>130 000</strong></td>
+</tr>
+<tr class="even">
+<td>Taux obtenu</td>
+<td style="text-align: right;">2,60 %</td>
+<td style="text-align: right;">2,60 %</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Contrats à terme : résultat (0,5 pt).</strong> SOLVÉRAN achète des contrats à 97,40 (taux implicite de 2,60 %). Au 1er juillet, le cours vaut 100 − Euribor constaté.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Achat de 20 contrats à 97,40</th>
+<th style="text-align: right;">Euribor 1,90 %</th>
+<th style="text-align: right;">Euribor 3,10 %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cours au 1er juillet</td>
+<td style="text-align: right;">98,10</td>
+<td style="text-align: right;">96,90</td>
+</tr>
+<tr class="even">
+<td>Variation en points de base</td>
+<td style="text-align: right;">+ 70</td>
+<td style="text-align: right;">− 50</td>
+</tr>
+<tr class="odd">
+<td>Résultat : 20 × variation × 25 €</td>
+<td style="text-align: right;">+ 35 000</td>
+<td style="text-align: right;">− 25 000</td>
+</tr>
+<tr class="even">
+<td>Intérêts du placement</td>
+<td style="text-align: right;">95 000</td>
+<td style="text-align: right;">155 000</td>
+</tr>
+<tr class="odd">
+<td><strong>Produit total</strong></td>
+<td style="text-align: right;"><strong>130 000</strong></td>
+<td style="text-align: right;"><strong>130 000</strong></td>
+</tr>
+<tr class="even">
+<td>Taux obtenu</td>
+<td style="text-align: right;">2,60 %</td>
+<td style="text-align: right;">2,60 %</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Contrats à terme : nombre, dépôt et appels de marge (0,5 pt).</strong> Nombre de contrats = 20 000 000 / 1 000 000 × (3 mois / 3 mois) = <strong>20</strong>. Dépôt de garantie = 20 × 500 = <strong>10 000 €</strong>, versé le 1er avril et restitué au dénouement. À l'issue de la première séance, le cours de compensation est de 97,33 : perte de 7 points de base, soit 20 × 7 × 25 = <strong>3 500 €</strong>, que SOLVÉRAN doit verser le lendemain (appel de marge). Mécanisme : la chambre de compensation, contrepartie de chaque acheteur et de chaque vendeur, réévalue chaque jour les positions au cours de compensation ; les pertes sont appelées et les gains crédités chaque jour, de sorte que la somme des appels de marge jusqu'au dénouement est égale au résultat final (+ 35 000 € ou − 25 000 €). Le risque de contrepartie disparaît, mais le groupe doit disposer de trésorerie pour faire face aux appels en cas de mouvement défavorable des taux, au printemps, alors que sa trésorerie est encore tendue.</p>
+<p><strong>Floor : prime, valeur intrinsèque et valeur temps (0,5 pt).</strong> Prime = 20 000 000 × 0,30 % × 90 / 360 = <strong>15 000 €</strong>. Valeur intrinsèque = 20 000 000 × (2,75 % − 2,65 %) × 90 / 360 = <strong>5 000 €</strong> : le floor est dans la monnaie au taux du jour. Valeur temps = 15 000 − 5 000 = <strong>10 000 €</strong> : elle rémunère la possibilité que l'Euribor baisse encore d'ici au 1er juillet ; elle diminue à mesure que l'échéance approche et s'annule à l'échéance. La prime est donnée par la banque : elle n'a pas à être calculée.</p>
+<p><strong>Floor : résultat (0,5 pt).</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Achat du floor 2,75 %</th>
+<th style="text-align: right;">Euribor 1,90 %</th>
+<th style="text-align: right;">Euribor 3,10 %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intérêts du placement</td>
+<td style="text-align: right;">95 000</td>
+<td style="text-align: right;">155 000</td>
+</tr>
+<tr class="even">
+<td>Versement du floor : 20 000 000 × (2,75 % − taux) × 90 / 360</td>
+<td style="text-align: right;">+ 42 500</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td>Prime</td>
+<td style="text-align: right;">− 15 000</td>
+<td style="text-align: right;">− 15 000</td>
+</tr>
+<tr class="even">
+<td><strong>Produit net</strong></td>
+<td style="text-align: right;"><strong>122 500</strong></td>
+<td style="text-align: right;"><strong>140 000</strong></td>
+</tr>
+<tr class="odd">
+<td>Taux obtenu</td>
+<td style="text-align: right;">2,45 %</td>
+<td style="text-align: right;">2,80 %</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Comparaison et recommandation (1 pt).</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Euribor au 1er juillet</th>
+<th style="text-align: right;">Sans couverture</th>
+<th style="text-align: right;">FRA</th>
+<th style="text-align: right;">Contrats à terme</th>
+<th style="text-align: right;">Floor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1,90 %</td>
+<td style="text-align: right;">1,90 %</td>
+<td style="text-align: right;">2,60 %</td>
+<td style="text-align: right;">2,60 %</td>
+<td style="text-align: right;">2,45 %</td>
+</tr>
+<tr class="even">
+<td>3,10 %</td>
+<td style="text-align: right;">3,10 %</td>
+<td style="text-align: right;">2,60 %</td>
+<td style="text-align: right;">2,60 %</td>
+<td style="text-align: right;">2,80 %</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Instruments fermes</strong> (FRA, contrats à terme) : ils fixent le rendement à 2,60 % quel que soit le taux ; sans coût initial, ils font renoncer au gain d'une hausse des taux (25 000 € dans le second scénario).</li>
+<li><strong>Instrument optionnel</strong> (floor) : il garantit un rendement minimal de 2,75 % − 0,30 % = 2,45 % et laisse profiter d'une hausse, contre une prime de 15 000 € perdue dans tous les cas. Il est préférable au FRA si le taux constaté le 1er juillet dépasse <strong>2,90 %</strong> (taux garanti de 2,60 % augmenté de la prime de 0,30 % l'an), moins bon en dessous.</li>
+<li><strong>Gré à gré ou marché organisé</strong> : le FRA et le floor sont négociés sur mesure avec la banque (montant, dates exactement alignés sur le placement), sans versement intermédiaire, mais avec un risque de contrepartie sur la banque, faible ici, et une sortie anticipée à négocier. Les contrats à terme sont standardisés (montant de 1 M€, échéances fixes : la coïncidence avec le 1er juillet est une hypothèse, et en pratique un écart de dates crée un risque de base), liquides, sans risque de contrepartie grâce à la chambre de compensation, mais ils immobilisent un dépôt de garantie et exigent de suivre et financer les appels de marge.</li>
+<li><strong>Recommandation</strong> : compte tenu des anticipations de baisse des taux, d'un trésorier qui cherche d'abord la sécurité du produit et d'une trésorerie encore tendue au printemps, le <strong>FRA</strong> est la solution la plus simple : il garantit 2,60 %, sur mesure, sans prime ni appel de marge. Le floor se justifie si M. PELLEGRIN ne veut pas renoncer à une hausse possible des taux et accepte un rendement minimal plus faible ; les contrats à terme apportent le même résultat que le FRA dans ce cas d'école, avec plus de contraintes pour une ETI.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : toute recommandation cohérente avec l'analyse (floor si la direction anticipe une remontée des taux ; combinaison d'un FRA sur une partie du montant et d'un floor sur l'autre) ; différentiel du FRA présenté non actualisé (35 000 € et 25 000 €) si le candidat indique qu'il le compare à sa valeur à la fin de la période ; résultat des contrats calculé en une fois (20 × 0,70 % × 1 000 000 × 3 / 12) ; valeur intrinsèque de 7 500 € et valeur temps de 7 500 € si le candidat la mesure, en le disant, par rapport au taux implicite des contrats (2,60 %), alors que l'annexe retient l'Euribor du jour : item 3.4-05 accordé pour moitié.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Acheter le FRA ou vendre les contrats, comme un emprunteur : la position de SOLVÉRAN est celle d'un prêteur, qui craint la baisse.</li>
+<li>Croire que le FRA porte sur le prêt lui-même : seul le différentiel est réglé, le placement est fait séparément au taux du marché.</li>
+<li>Confondre le cours du contrat et le taux (le cours monte quand le taux baisse), ou multiplier les points de base par le nominal au lieu de la valeur du point (25 € par contrat).</li>
+<li>Chercher à calculer la prime du floor par un modèle de valorisation d'option : elle est donnée, seule sa décomposition est demandée.</li>
+<li><code>JUR-T07</code> — résultats des trois couvertures sans tableau comparatif par scénario.</li>
+<li><code>JUR-T13</code> — recommandation générale sans lien avec les anticipations, la trésorerie de printemps et la taille du groupe.</li>
+</ul>
+<hr />
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programme DSCG UE 2 (arrêté du 4 août 2025), partie 6.1</td>
+<td>centralisations de trésorerie, mécanismes financiers et bancaires ; opérations intragroupe (netting, cash pooling) ; supports de financement et de placement (actions, obligations, OPCVM)</td>
+<td>[V]</td>
+<td>F07 § 0 ; <code>perimetre_ue2.yaml</code> (6.1)</td>
+</tr>
+<tr class="even">
+<td>Programme DSCG UE 2, partie 6.2</td>
+<td>relation inverse valeur-taux, duration, sensibilité ; FRA, cap, floor ; futures et options sur taux ; exclusion des modèles de valorisation des options</td>
+<td>[V]</td>
+<td>F07 § 0 et 2 ; <code>perimetre_ue2.yaml</code> (6.2)</td>
+</tr>
+<tr class="odd">
+<td>Guide pédagogique DSCG, juillet 2026, p. 77-78</td>
+<td>centralisation : intérêt, schémas (notionnel, physique, netting), prérequis, sans traitement juridique ni fiscal, conditions bancaires fournies ; choix d'un placement ou d'un financement selon l'horizon, le rendement-risque et la liquidité ; futures de taux (cotation, nombre de contrats, appels de marge en principe) ; valeur intrinsèque et valeur temps de l'option, prime donnée</td>
+<td>[V]</td>
+<td>F07 § 0 ; <code>perimetre_ue2.yaml</code></td>
+</tr>
+<tr class="even">
+<td>Cash pooling physique et notionnel, netting, conventions de trésorerie</td>
+<td>mécanismes, avantages, limites</td>
+<td>[S]</td>
+<td>F07 § 4.1 et 3.2</td>
+</tr>
+<tr class="odd">
+<td>Supports de placement et de financement à court terme ; NEU CP (ex-billets de trésorerie et ex-certificats de dépôt)</td>
+<td>horizon, liquidité, risque ; appellations à jour</td>
+<td>[S]</td>
+<td>F07 § 4.2 ; F99 § 2</td>
+</tr>
+<tr class="even">
+<td>Prix, duration de Macaulay, sensibilité, approximation linéaire</td>
+<td>formules usuelles</td>
+<td>[S]</td>
+<td>F07 § 2.1 ; F01</td>
+</tr>
+<tr class="odd">
+<td>FRA (différentiel actualisé), contrats à terme Euribor 3 mois (cotation 100 − taux, 25 € par point de base), floor (versement, prime, valeur intrinsèque et valeur temps)</td>
+<td>mécanismes et calculs</td>
+<td>[S]</td>
+<td>F07 § 2.2 et 2.3</td>
+</tr>
+<tr class="even">
+<td>Euribor 3 mois 2,65 % et €STR 2,45 %</td>
+<td>hypothèses plausibles fin 2026, posées par l'énoncé</td>
+<td>[V] séries BCE (valeurs arrondies)</td>
+<td>F11 § 1</td>
+</tr>
+<tr class="odd">
+<td>Markowitz (1952)</td>
+<td>diversification des émetteurs de NEU CP</td>
+<td>[V programme 5.3]</td>
+<td>F10 § 2</td>
+</tr>
+<tr class="even">
+<td>Jensen et Meckling (1976)</td>
+<td>théorie de l'agence (réponse tolérée, autonomie des filiales)</td>
+<td>[V programme 2.1]</td>
+<td>F10 § 3</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
