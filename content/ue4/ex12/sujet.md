@@ -138,7 +138,7 @@ CORVANE est commissaire aux comptes d'ALTIGLISSE depuis l'exercice 2024. Mme Lé
 
 **Activité et enneigement**
 - L'hiver procure environ les quatre cinquièmes du chiffre d'affaires des locations. Deux des cinq magasins sont situés dans des stations de basse altitude (environ 1 100 m). Dans ces deux magasins, le nombre de jours d'ouverture d'une saison d'hiver est passé de 120 à 84 en dix ans, faute de neige. Une étude climatique commandée par le conseil départemental prévoit une nouvelle réduction de la saison skiable à basse altitude d'ici 2040.
-- La location de vélos progresse de 18 % par an depuis 2023. ALTIGLISSE prévoit, en 2027, de retirer de la location 600 paires de skis des magasins de basse altitude, qu'elle revendra d'occasion, et d'acheter 400 VAE financés par le prêt de 1 500 000 € d'ALPINE CRÉDIT.
+- La location de vélos progresse de 18 % par an depuis 2023. ALTIGLISSE prévoit, en 2027, de retirer de la location 600 paires de skis des magasins de basse altitude (lot distinct des 800 paires facturées au revendeur, annexe 3.3), qu'elle revendra d'occasion, et d'acheter 400 VAE financés par le prêt de 1 500 000 € d'ALPINE CRÉDIT.
 - Au 31/12/2026, la valeur nette comptable du parc de skis et de snowboards s'élève à 1 800 000 €, dont 540 000 € pour les deux magasins de basse altitude. Le parc est amorti linéairement sur quatre ans.
 
 **Chaîne de valeur**
