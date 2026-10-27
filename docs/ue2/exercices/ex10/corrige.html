@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Valorisation et levée de fonds de série C : NAVÉLIA (propulsion électrique pour le nautisme, capital-risque) : valorisation et levée de fonds de série C</title>
+<meta name="description" content="Entraînement à l'UE 2 du DSCG, finance, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 2</span></a>
+<p>Dossier 1</p><p>17 points</p><p>1 h</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Valorisation et levée de fonds de série C</h1><p class="cas">NAVÉLIA (propulsion électrique pour le nautisme, capital-risque) : valorisation et levée de fonds de série C</p><p class="avant">Corrigé indicatif et barème. Les mentions [V] signalent un point vérifié sur la source officielle ; les renvois F01 à F11 et JUR désignent des fiches de travail et les constats des rapports du jury.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F02 coût du capital, F03 évaluation, F05 ingénierie financière, F10 auteurs et théories, F11 données de marché (toutes à jour au 23/10/2026).</p>
+<p>Bien que le corrigé mentionne des auteurs, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la pertinence et la cohérence du raisonnement, la justesse des calculs et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée. Une erreur n'est sanctionnée qu'une fois : les calculs qui en découlent sont notés en cohérence avec les résultats antérieurs du candidat (par exemple une répartition du capital calculée avec un autre prix par action à la question 1.2).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1 Multiples de l'échantillon et choix de l'inducteur</td>
+<td><code>3.2.a</code> Maîtriser et calculer les inducteurs de comparaison permettant de déterminer la VGE et la VCP ; <code>3.2.b</code> Savoir déterminer le multiple d'un échantillon pour valoriser l'entreprise</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td>1.2 Pré-money, prix par action, post-money et dilution</td>
+<td><code>3.2.a</code> ; <code>4.2.a</code> Repérer les stratégies des groupes dans la gestion de leur capital</td>
+<td style="text-align: right;">4,5</td>
+</tr>
+<tr class="odd">
+<td>1.3 Rentabilité exigée : MEDAF, Fama et French, TRI du fonds</td>
+<td><code>5.2.c</code> Maîtriser les principaux modèles d'évaluation du risque financier utilisés en finance ; <code>5.2.b</code> Calculer la rentabilité espérée ou la valeur théorique sur une période d'un titre financier</td>
+<td style="text-align: right;">4,5</td>
+</tr>
+<tr class="even">
+<td>1.4 Limites des modèles et stratégie de gestion du capital</td>
+<td><code>5.2.c</code> ; <code>4.2.a</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>17</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Part du calcul : environ 9 points (1.1-01 à 1.1-03, 1.2-01 à 1.2-04, 1.3-01 à 1.3-03, 1.4-02). Part de l'analyse : environ 8 points. Les questions 1.3 et 1.4, plus rédactionnelles, valent autant que les calculs de la question 1.1 : elles ne doivent pas être sacrifiées faute de temps (<code>JUR-T15</code>).</p>
+<hr />
+<h3 id="11-multiples-de-léchantillon-et-choix-de-linducteur-5-pts">1.1 Multiples de l'échantillon et choix de l'inducteur (5 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1-01</td>
+<td>Multiples des quatre sociétés cotées (VGE = capitalisation + dette nette) et médianes : VGE / CA 1,65 ; VGE / EBITDA 11,70 ; PER 20,00</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr class="even">
+<td>1.1-02</td>
+<td>Valeurs de NAVÉLIA par les sociétés cotées : VGE 62,7 M€ (CA) et 26,9 M€ (EBITDA), VCP 64,7 et 28,9 M€ ; VCP 8,0 M€ par le PER, soit une VGE de 6,0 M€</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>1.1-03</td>
+<td>Opérations récentes : VGE / CA 2,60 ; 2,25 ; 3,20 ; médiane 2,60 ; VGE 98,8 M€ ; multiples d'EBITDA non calculables ou non significatifs</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>1.1-04</td>
+<td>Fourchette de VGE (6,0 à 98,8 M€) ; distinction des inducteurs de VGE et de VCP</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>1.1-05</td>
+<td>Pertinence des inducteurs au regard de la croissance et de la maturité de NAVÉLIA ; choix motivé</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conventions rappelées</strong> : VGE d'une société cotée = capitalisation boursière + dette financière nette ; PER = capitalisation / résultat net ; multiple de l'échantillon = médiane (pour quatre sociétés, moyenne des deux valeurs centrales) des multiples arrondis à deux décimales ; agrégats 2026 ; VCP de NAVÉLIA = VGE + 2,0 M€ de trésorerie nette ; valeurs en M€ à une décimale.</p>
+<p><strong>Multiples des sociétés cotées (1,5 pt).</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Société</th>
+<th style="text-align: right;">VGE (M€)</th>
+<th style="text-align: right;">VGE / CA</th>
+<th style="text-align: right;">VGE / EBITDA</th>
+<th style="text-align: right;">PER</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NORELVA Marine</td>
+<td style="text-align: right;">480 + 150 = 630</td>
+<td style="text-align: right;">630 / 525 = 1,20</td>
+<td style="text-align: right;">630 / 70 = 9,00</td>
+<td style="text-align: right;">480 / 30 = 16,00</td>
+</tr>
+<tr class="even">
+<td>KESTRAVO</td>
+<td style="text-align: right;">380 + 115 = 495</td>
+<td style="text-align: right;">495 / 330 = 1,50</td>
+<td style="text-align: right;">495 / 45 = 11,00</td>
+<td style="text-align: right;">380 / 20 = 19,00</td>
+</tr>
+<tr class="odd">
+<td>AVELMOR Power</td>
+<td style="text-align: right;">462 + 96 = 558</td>
+<td style="text-align: right;">558 / 310 = 1,80</td>
+<td style="text-align: right;">558 / 45 = 12,40</td>
+<td style="text-align: right;">462 / 22 = 21,00</td>
+</tr>
+<tr class="even">
+<td>BRYZALE Electric</td>
+<td style="text-align: right;">300 + 60 = 360</td>
+<td style="text-align: right;">360 / 150 = 2,40</td>
+<td style="text-align: right;">360 / 12 = 30,00</td>
+<td style="text-align: right;">300 / 5 = 60,00</td>
+</tr>
+<tr class="odd">
+<td><strong>Médiane</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>(1,50 + 1,80) / 2 = 1,65</strong></td>
+<td style="text-align: right;"><strong>(11,00 + 12,40) / 2 = 11,70</strong></td>
+<td style="text-align: right;"><strong>(19,00 + 21,00) / 2 = 20,00</strong></td>
+</tr>
+<tr class="even">
+<td>Moyenne (pour comparaison)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1,73</td>
+<td style="text-align: right;">15,60</td>
+<td style="text-align: right;">29,00</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Valeurs de NAVÉLIA par les sociétés cotées (1 pt).</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Inducteur</th>
+<th>Nature</th>
+<th>Calcul</th>
+<th style="text-align: right;">VGE (M€)</th>
+<th style="text-align: right;">VCP (M€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chiffre d'affaires</td>
+<td>VGE</td>
+<td>38,0 × 1,65</td>
+<td style="text-align: right;">62,7</td>
+<td style="text-align: right;">62,7 + 2,0 = 64,7</td>
+</tr>
+<tr class="even">
+<td>EBITDA</td>
+<td>VGE</td>
+<td>2,3 × 11,70 = 26,91</td>
+<td style="text-align: right;">26,9</td>
+<td style="text-align: right;">26,9 + 2,0 = 28,9</td>
+</tr>
+<tr class="odd">
+<td>Résultat net (PER)</td>
+<td>VCP</td>
+<td>0,4 × 20,00</td>
+<td style="text-align: right;">8,0 − 2,0 = 6,0</td>
+<td style="text-align: right;">8,0</td>
+</tr>
+</tbody>
+</table>
+<p>La trésorerie nette s'ajoute à la VGE : la dette financière nette de NAVÉLIA est négative (− 2,0 M€), les actionnaires détiennent donc, en plus de l'actif économique, une trésorerie excédentaire.</p>
+<p><strong>Opérations récentes (0,5 pt).</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Société</th>
+<th style="text-align: right;">Croissance</th>
+<th style="text-align: right;">VGE / CA</th>
+<th>VGE / EBITDA</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OSTRALIS</td>
+<td style="text-align: right;">70 %</td>
+<td style="text-align: right;">62,4 / 24,0 = 2,60</td>
+<td>EBITDA négatif : non calculable</td>
+</tr>
+<tr class="even">
+<td>VELMARIS</td>
+<td style="text-align: right;">45 %</td>
+<td style="text-align: right;">45,0 / 20,0 = 2,25</td>
+<td>45,0 / 0,6 = 75 : non significatif</td>
+</tr>
+<tr class="odd">
+<td>TIDÉVO</td>
+<td style="text-align: right;">80 %</td>
+<td style="text-align: right;">112,0 / 35,0 = 3,20</td>
+<td>EBITDA négatif : non calculable</td>
+</tr>
+<tr class="even">
+<td><strong>Médiane</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>2,60</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>VGE de NAVÉLIA = 38,0 × 2,60 = <strong>98,8 M€</strong> ; VCP = 98,8 + 2,0 = <strong>100,8 M€</strong>.</p>
+<p><strong>Fourchette et inducteurs (0,5 pt).</strong> Les valeurs obtenues vont de <strong>6,0 M€ (PER) à 98,8 M€ (CA des opérations)</strong> de VGE : un rapport de 1 à 16, qui montre qu'un multiple n'a de sens que si l'inducteur est représentatif de la performance de l'entreprise évaluée.</p>
+<ul>
+<li>Les <strong>inducteurs de VGE</strong> (CA, EBITDA, résultat d'exploitation) sont mesurés avant la rémunération des prêteurs : ils valorisent l'actif économique, quelle que soit la structure financière. On en déduit la VCP en retranchant la dette financière nette (ici en ajoutant la trésorerie nette).</li>
+<li>Les <strong>inducteurs de VCP</strong> (résultat net, résultat courant avant impôt) sont mesurés après les charges financières et l'impôt : ils donnent directement la valeur des capitaux propres, mais dépendent de l'endettement et de la fiscalité. NAVÉLIA ne paie pas d'impôt (déficits antérieurs imputés), alors que le résultat net des sociétés cotées supporte normalement l'impôt : son résultat net n'est pas comparable au leur.</li>
+<li>Il faut rapprocher un multiple de VGE d'un inducteur de VGE et un multiple de VCP d'un inducteur de VCP : appliquer le multiple d'EBITDA puis comparer le résultat à une VCP sans tenir compte de la trésorerie est une erreur.</li>
+</ul>
+<p><strong>Pertinence au regard de la croissance et de la maturité (1,5 pt).</strong></p>
+<ul>
+<li><strong>EBITDA et résultat net ne sont pas représentatifs.</strong> 2026 est le premier exercice à EBITDA positif ; la marge d'EBITDA (2,3 / 38,0 = 6,1 %) est deux fois plus faible que celle des sociétés cotées matures (13 à 15 %) et le résultat net (0,4 M€, 1,1 % du CA) est presque nul. Capitaliser un résultat transitoire, encore pénalisé par les coûts de démarrage, sous-évalue fortement une entreprise dont le CA a crû de 58,3 % en 2026 (VGE de 26,9 et 6,0 M€ ; la VCP de 8,0 M€ obtenue par le PER est même inférieure aux capitaux propres comptables de 22 M€). Ces inducteurs redeviendront pertinents quand NAVÉLIA sera mature.</li>
+<li><strong>Le CA est le seul agrégat positif et significatif</strong>, mais il ignore la rentabilité : appliquer un multiple de CA suppose que NAVÉLIA atteindra la marge des sociétés de l'échantillon. Le plan d'affaires le rend plausible : la marge d'EBITDA passerait à 16,0 % en 2029 (14,4 / 90,0).</li>
+<li><strong>Les sociétés cotées sont plus matures et plus grandes</strong> : leur croissance est de 4 à 9 %, sauf BRYZALE (35 %), dont les multiples sont justement les plus élevés (2,40 fois le CA, 30 fois l'EBITDA, PER de 60). Le lien entre croissance et multiple apparaît clairement ; la médiane neutralise cette valeur extrême, alors que la moyenne la reflète (15,60 contre 11,70 pour l'EBITDA). Le multiple de CA médian des sociétés cotées (1,65) sous-estime donc la valeur d'une entreprise qui croît de 58 % par an : 62,7 M€ constitue un <strong>plancher</strong>.</li>
+<li><strong>Les opérations récentes sont les plus comparables par la maturité</strong> : sociétés non cotées de taille voisine (CA de 20 à 35 M€), en forte croissance (45 à 80 %), valorisées lors de levées de fonds minoritaires de série B ou C, comme celle que prépare NAVÉLIA ; leur VGE ne contient pas de prime de contrôle. Leurs limites : trois opérations seulement, des valeurs issues de négociations et sensibles au moment du marché.</li>
+<li><strong>Recoupements</strong> : la VGE de 98,8 M€ représente 1,83 fois le CA prévu pour 2027 (54,0 M€), proche du multiple médian des sociétés cotées, et 6,9 fois l'EBITDA prévu pour 2029 (14,4 M€), inférieur à leur multiple médian d'EBITDA (11,70) : elle anticipe la croissance du plan sans l'escompter entièrement.</li>
+<li><strong>Conclusion</strong> : retenir le <strong>multiple de CA des opérations récentes (VGE 98,8 M€)</strong> comme référence de la négociation, le multiple de CA des sociétés cotées (62,7 M€) comme plancher, et écarter les multiples d'EBITDA et de résultat net, non représentatifs à ce stade de développement.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : pour 1.1-05, trois arguments liés au cas suffisent pour la totalité des points ; médiane mal calculée sur quatre valeurs (valeur la plus proche du centre retenue) : 1.1-01 réduit de moitié ; multiples arrondis à une décimale si la méthode est juste ; moyenne calculée en complément de la médiane ; VGE implicite de la méthode du PER non présentée si la nature de l'inducteur est expliquée ; choix d'un multiple de CA intermédiaire entre les sociétés cotées et les opérations s'il est justifié par la croissance et la taille.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Calculer la VGE des sociétés cotées sans la dette nette (VGE / CA de NORELVA à 480 / 525 = 0,91) ou rapporter la capitalisation à l'EBITDA.</li>
+<li>Retrancher la trésorerie nette de la VGE de NAVÉLIA (98,8 − 2,0 = 96,8 M€) au lieu de l'ajouter : la dette financière nette est négative.</li>
+<li>Appliquer le PER pour obtenir une VGE, ou un multiple d'EBITDA pour obtenir directement une VCP (<code>JUR-E03</code> : croiser des méthodes sans homogénéiser VGE et VCP).</li>
+<li>Retenir la moyenne des valeurs obtenues par les quatre méthodes (48,6 M€ de VGE) sans discuter leur pertinence.</li>
+<li><code>JUR-T13</code> — discussion générale sur les multiples sans les données de NAVÉLIA (marge de 6,1 %, croissance de 58,3 %, premier EBITDA positif).</li>
+</ul>
+<hr />
+<h3 id="12-pré-money-prix-par-action-post-money-et-dilution-45-pts">1.2 Pré-money, prix par action, post-money et dilution (4,5 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.2-01</td>
+<td>Valeur pré-money = VCP = 98,8 + 2,0 = 100,8 M€</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>1.2-02</td>
+<td>Base entièrement diluée : 2 400 000 + 120 000 = 2 520 000 actions ; prix par action = 100 800 000 / 2 520 000 = 40,00 €</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>1.2-03</td>
+<td>Actions nouvelles : 18 000 000 / 40 = 450 000 ; post-money 118,8 M€ ; 2 970 000 actions après l'opération</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>1.2-04</td>
+<td>Tableau de répartition du capital après l'opération</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>1.2-05</td>
+<td>Dilution : taux de 15,15 % ; fondateurs de 46 % à 43,81 % puis 37,17 % ; dilution du contrôle sans perte de valeur ; trois fonds à 50,71 %</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conventions rappelées</strong> : prix par action = pré-money / (actions existantes + bons de créateur attribués), produit d'exercice des bons négligé ; actions nouvelles = montant / prix, rompus arrondis à l'unité inférieure ; post-money = pré-money + montant ; prix au centime ; pourcentages à deux décimales sur les nombres d'actions exacts.</p>
+<p><strong>Pré-money (0,5 pt).</strong> Les parties retiennent la VCP issue du multiple de CA médian des opérations : VCP = VGE − dette financière nette = 98,8 − (− 2,0) = <strong>100,8 M€</strong>. C'est la valeur des capitaux propres <strong>avant</strong> l'apport du fonds.</p>
+<p><strong>Prix par action (1 pt).</strong> Les 120 000 bons de créateur, attribués et exerçables à 12 €, bien en dessous de la valeur de l'action, seront exercés : ils doivent supporter leur part de la valeur. Base entièrement diluée : 2 400 000 + 120 000 = 2 520 000 actions. Prix = 100 800 000 / 2 520 000 = <strong>40,00 €</strong>.</p>
+<p><strong>Actions nouvelles et post-money (1 pt).</strong> Actions nouvelles = 18 000 000 / 40 = <strong>450 000</strong> (aucun rompu). Valeur post-money = 100,8 + 18,0 = <strong>118,8 M€</strong>, soit 2 970 000 actions × 40 € : le fonds paie le même prix que la valeur attribuée aux actions existantes.</p>
+<p><strong>Répartition du capital (1 pt).</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Actionnaires</th>
+<th style="text-align: right;">Actions</th>
+<th style="text-align: right;">Capital actuel</th>
+<th style="text-align: right;">Base diluée avant l'opération</th>
+<th style="text-align: right;">Après l'opération</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>M. Erwan KERDAVID</td>
+<td style="text-align: right;">600 000</td>
+<td style="text-align: right;">25,00 %</td>
+<td style="text-align: right;">23,81 %</td>
+<td style="text-align: right;"><strong>20,20 %</strong></td>
+</tr>
+<tr class="even">
+<td>Mme Lise ANTONETTI</td>
+<td style="text-align: right;">504 000</td>
+<td style="text-align: right;">21,00 %</td>
+<td style="text-align: right;">20,00 %</td>
+<td style="text-align: right;"><strong>16,97 %</strong></td>
+</tr>
+<tr class="odd">
+<td><em>Fondateurs</em></td>
+<td style="text-align: right;"><em>1 104 000</em></td>
+<td style="text-align: right;"><em>46,00 %</em></td>
+<td style="text-align: right;"><em>43,81 %</em></td>
+<td style="text-align: right;"><em><strong>37,17 %</strong></em></td>
+</tr>
+<tr class="even">
+<td>MARVENE Capital</td>
+<td style="text-align: right;">624 000</td>
+<td style="text-align: right;">26,00 %</td>
+<td style="text-align: right;">24,76 %</td>
+<td style="text-align: right;"><strong>21,01 %</strong></td>
+</tr>
+<tr class="odd">
+<td>SOLENTE Ventures</td>
+<td style="text-align: right;">432 000</td>
+<td style="text-align: right;">18,00 %</td>
+<td style="text-align: right;">17,14 %</td>
+<td style="text-align: right;"><strong>14,55 %</strong></td>
+</tr>
+<tr class="even">
+<td>Salariés</td>
+<td style="text-align: right;">240 000</td>
+<td style="text-align: right;">10,00 %</td>
+<td style="text-align: right;">9,52 %</td>
+<td style="text-align: right;"><strong>8,08 %</strong></td>
+</tr>
+<tr class="odd">
+<td>Bons de créateur (premier plan)</td>
+<td style="text-align: right;">120 000</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">4,76 %</td>
+<td style="text-align: right;"><strong>4,04 %</strong></td>
+</tr>
+<tr class="even">
+<td>BRÉCALDE Growth II</td>
+<td style="text-align: right;">450 000</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>15,15 %</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>2 970 000</strong></td>
+<td style="text-align: right;">100 % (2 400 000)</td>
+<td style="text-align: right;">100 % (2 520 000)</td>
+<td style="text-align: right;"><strong>100,00 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p>(Les pourcentages arrondis de la base diluée totalisent 99,99 %, écart d'arrondi.)</p>
+<p><strong>Dilution des fondateurs (1 pt).</strong></p>
+<ul>
+<li>Taux de dilution = actions nouvelles / actions après l'opération = 450 000 / 2 970 000 = <strong>15,15 %</strong> : chaque actionnaire existant conserve 84,85 % de sa part sur base diluée (43,81 % × 0,8485 = 37,17 %).</li>
+<li>Les fondateurs passent de <strong>46 %</strong> du capital actuel à <strong>43,81 %</strong> sur base diluée (exercice des bons de créateur, − 2,19 points), puis à <strong>37,17 %</strong> après la série C (− 6,64 points), soit 8,83 points de moins au total.</li>
+<li><strong>Dilution du contrôle, pas de la valeur</strong> : les actions nouvelles sont émises au prix de la valeur pré-money (40 €), si bien que la participation des fondateurs vaut toujours 1 104 000 × 40 = 44,2 M€ ; la société dispose en plus de 18,0 M€ de trésorerie pour financer sa croissance. Une émission à un prix inférieur à la valeur aurait au contraire transféré de la richesse vers le nouvel investisseur.</li>
+<li><strong>Pouvoir</strong> : les fondateurs restent le premier bloc d'actionnaires pris isolément, mais les trois fonds réunis détiennent désormais <strong>50,71 %</strong> du capital (21,01 + 14,55 + 15,15), contre 44 % aujourd'hui : s'ils votent ensemble, les fondateurs perdent la maîtrise des décisions à la majorité. Les bons de créateur non exercés ne votent pas : en droits de vote (2 850 000 actions émises), les trois fonds détiennent 52,84 % et les fondateurs 38,74 %. La conclusion est la même.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : prix calculé sur 2 400 000 actions (42,00 €, 428 571 actions nouvelles) : item 1.2-02 non accordé, la convention de l'annexe imposant la base diluée, items suivants notés en cohérence ; raisonnement sur le contrôle mené sur la base diluée ou sur les droits de vote, si la base est précisée ; répartition présentée par catégorie (fondateurs, fonds, salariés et bons) ; dilution exprimée en points perdus ou en taux, si la notion est expliquée.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Confondre pré-money et post-money : calculer le prix sur 118,8 M€ (47,14 €) ou retenir 100,8 M€ comme valeur après l'opération.</li>
+<li>Oublier les actions nouvelles dans le dénominateur de la répartition (fondateurs à 43,81 % « après »), ou oublier les bons de créateur.</li>
+<li>Prendre la VGE (98,8 M€) comme pré-money, sans la trésorerie nette (prix de 39,21 €).</li>
+<li><code>JUR-I03</code> — ne pas tirer les conséquences de la nouvelle structure du capital (fonds majoritaires ensemble).</li>
+<li><code>JUR-T07</code> — répartition du capital sans tableau.</li>
+</ul>
+<hr />
+<h3 id="13-rentabilité-exigée--medaf-fama-et-french-tri-du-fonds-45-pts">1.3 Rentabilité exigée : MEDAF, Fama et French, TRI du fonds (4,5 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.3-01</td>
+<td>MEDAF : 4 % + 1,60 × 5 % = 12,00 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>1.3-02</td>
+<td>Fama et French : 4 % + 1,30 × 5 % + 1,50 × 3 % − 0,50 × 4 % = 13,00 % (marché 6,50 ; taille + 4,50 ; valeur − 2,00 points)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>1.3-03</td>
+<td>TRI du fonds : 18,0 × (1 + TRI)⁵ = 54,0, soit TRI = 3,0^(1/5) − 1 = 24,57 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>1.3-04</td>
+<td>Comparaison et explication de l'écart entre le TRI visé et la rentabilité exigée par les modèles</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>1.3-05</td>
+<td>Interprétation des effets taille et valeur pour NAVÉLIA</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conventions rappelées</strong> : taux sans risque 4 % ; prime de risque du marché 5 % ; SMB 3 % ; HML 4 % ; sensibilités données ; flux en fin d'année ; taux à deux décimales.</p>
+<p><strong>MEDAF (0,5 pt).</strong> Selon le MEDAF (Sharpe, 1964), seul le risque systématique, mesuré par le bêta, est rémunéré : rentabilité exigée = 4 % + 1,60 × 5 % = <strong>12,00 %</strong>.</p>
+<p><strong>Modèle à trois facteurs (1 pt).</strong> Fama et French (1993) ajoutent au facteur de marché un facteur de taille (SMB) et un facteur de valeur (HML) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Facteur</th>
+<th style="text-align: right;">Sensibilité</th>
+<th style="text-align: right;">Prime</th>
+<th style="text-align: right;">Contribution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Taux sans risque</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">4,00 %</td>
+</tr>
+<tr class="even">
+<td>Marché</td>
+<td style="text-align: right;">1,30</td>
+<td style="text-align: right;">5 %</td>
+<td style="text-align: right;">6,50 %</td>
+</tr>
+<tr class="odd">
+<td>Taille (SMB)</td>
+<td style="text-align: right;">1,50</td>
+<td style="text-align: right;">3 %</td>
+<td style="text-align: right;">+ 4,50 %</td>
+</tr>
+<tr class="even">
+<td>Valeur (HML)</td>
+<td style="text-align: right;">− 0,50</td>
+<td style="text-align: right;">4 %</td>
+<td style="text-align: right;">− 2,00 %</td>
+</tr>
+<tr class="odd">
+<td><strong>Rentabilité exigée</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>13,00 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>TRI visé par le fonds (0,5 pt).</strong> BRÉCALDE Growth II investit 18,0 M€ en 2027 et vise 3,0 × 18,0 = 54,0 M€ en 2032, sans dividende : 18,0 × (1 + TRI)⁵ = 54,0, d'où TRI = 3,0^(1/5) − 1 = <strong>24,57 %</strong>.</p>
+<p><strong>Comparaison (1 pt).</strong> Le TRI visé (24,57 %) est presque le double de la rentabilité exigée par les modèles (12,00 % et 13,00 %) : l'écart atteint 11,57 points avec le modèle à trois facteurs. Placée à 13,00 % pendant cinq ans, la mise ne serait multipliée que par 1,13⁵ = 1,84, et non par 3,0. Cet écart tient à ce que les modèles ignorent :</p>
+<ul>
+<li><strong>l'illiquidité</strong> : le fonds ne pourra pas céder ses actions avant la sortie, alors que les modèles supposent des titres cotés, cessibles à tout moment ;</li>
+<li><strong>le risque d'échec</strong> : le multiple de 3,0 est un objectif en cas de réussite ; dans un portefeuille de capital-risque, certaines participations sont perdues, et les réussites doivent compenser ces pertes ; la rentabilité espérée du portefeuille est donc inférieure au TRI visé sur chaque ligne ;</li>
+<li><strong>le risque spécifique</strong> : le fonds détient un petit nombre de participations et n'est pas totalement diversifié, alors que le MEDAF et le modèle de Fama et French ne rémunèrent que les risques communs à tous les titres ;</li>
+<li><strong>l'asymétrie d'information</strong> (Akerlof, 1970) : les fondateurs connaissent mieux que le fonds la société et la crédibilité du plan d'affaires (CA multiplié par 2,4 de 2026 à 2029) ; le fonds s'en protège par un taux élevé ;</li>
+<li><strong>les frais du fonds et son rôle actif</strong> (présence au comité stratégique, réseau aux États-Unis), qu'il fait rémunérer.</li>
+</ul>
+<p>Pour NAVÉLIA, ces fonds propres coûtent donc bien plus cher que ce qu'indiquent les modèles : c'est une raison de limiter le montant levé auprès du fonds.</p>
+<p><strong>Effets taille et valeur (1,5 pt).</strong></p>
+<ul>
+<li><strong>Effet taille</strong> (s = 1,50 &gt; 0) : NAVÉLIA se comporte comme une petite capitalisation. Fama et French (1993) constatent que les petites sociétés ont dégagé en moyenne une rentabilité supérieure à celle des grandes, à bêta égal ; cette prime rémunère une information plus rare, une liquidité moindre et une plus grande fragilité face aux chocs. Avec une valeur post-money de 118,8 M€, 140 salariés et un seul exercice bénéficiaire, NAVÉLIA est bien plus petite que les sociétés cotées de l'échantillon (300 à 480 M€ de capitalisation) : le facteur de taille ajoute <strong>4,50 points</strong>.</li>
+<li><strong>Effet valeur</strong> (h = − 0,50 &lt; 0) : NAVÉLIA est une <strong>valeur de croissance</strong>. Ses capitaux propres comptables (22 M€) ne représentent que 21,8 % de la valeur pré-money (100,8 M€) : les investisseurs paient sa croissance future, non ses actifs. Les sociétés « de valeur », à rapport valeur comptable / valeur de marché élevé, ont historiquement rapporté plus que les sociétés de croissance, ce qui rémunère notamment leur risque de difficultés financières ; la sensibilité négative <strong>retranche 2,00 points</strong>.</li>
+<li><strong>Bilan des deux effets</strong> : la sensibilité au marché (1,30) est plus faible que le bêta du MEDAF (1,60), ce qui peut s'expliquer par le fait qu'une partie du risque que le MEDAF attribue au marché relève de la taille (le bêta et la sensibilité b proviennent d'échantillons différents). Au total, le modèle à trois facteurs donne une rentabilité exigée supérieure d'un point à celle du MEDAF (13,00 % contre 12,00 %) : le MEDAF sous-estime le risque d'une petite société, même si l'effet de croissance en compense une partie.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : TRI obtenu par essais successifs à la calculatrice (24,5 % à 24,6 %) ; interprétation de l'effet valeur fondée sur la seule préférence des investisseurs pour la croissance si le signe de la sensibilité est expliqué ; comparaison fondée sur le multiple (3,0 contre 1,84) plutôt que sur les taux.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Utiliser le bêta du MEDAF (1,60) dans le modèle à trois facteurs (14,50 %), ou ajouter les primes sans les multiplier par les sensibilités.</li>
+<li>Ajouter le terme de valeur au lieu de le retrancher (17,00 %) : la sensibilité est négative.</li>
+<li>Calculer le TRI comme (3,0 − 1) / 5 = 40 % : c'est un rendement moyen non composé.</li>
+<li><code>JUR-T14</code> — présenter Fama et French comme une théorie d'équilibre, ou ignorer qu'il prolonge le MEDAF en lui ajoutant deux facteurs.</li>
+<li><code>JUR-T13</code> — interprétation des facteurs sans les données de NAVÉLIA.</li>
+</ul>
+<hr />
+<h3 id="14-limites-des-modèles-et-stratégie-de-gestion-du-capital-3-pts">1.4 Limites des modèles et stratégie de gestion du capital (3 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.4-01</td>
+<td>Limites du MEDAF et du modèle de Fama et French pour une start-up non cotée</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>1.4-02</td>
+<td>Nouveau plan de 150 000 bons de créateur : 3 120 000 actions ; fondateurs 35,38 % ; trois fonds réunis 48,27 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>1.4-03</td>
+<td>Stratégie de gestion du capital : augmentation de capital réservée, plans de bons de créateur, maîtrise de la dilution, demandes du fonds</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>1.4-04</td>
+<td>Recommandation argumentée à M. KERDAVID</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Limites des modèles (1 pt).</strong></p>
+<ul>
+<li><strong>MEDAF</strong> : il repose sur des hypothèses fortes (marchés efficients, investisseurs rationnels et diversifiés, horizon d'une seule période, un seul facteur de risque) ; le bêta n'est pas stable dans le temps et le portefeuille de marché n'est pas observable (critique de Roll). Pour NAVÉLIA, non cotée, aucun cours ne permet de mesurer un bêta : celui de 1,60 est transposé de sociétés cotées plus grandes et plus matures.</li>
+<li><strong>Modèle de Fama et French</strong> : c'est un modèle empirique, qui constate des écarts de rentabilité sans en donner un fondement théorique incontesté ; les primes de taille et de valeur varient selon les périodes et les pays, et ont parfois été négatives pendant de longues années ; les sensibilités de NAVÉLIA sont transposées d'un portefeuille de sociétés cotées. D'autres facteurs ont été proposés depuis, par exemple le momentum (Carhart, 1997).</li>
+<li><strong>Limites communes pour une start-up</strong> : les deux modèles mesurent la rentabilité exigée d'un titre coté et liquide par un investisseur diversifié ; ils ignorent l'illiquidité, le risque d'échec et la concentration du patrimoine des fondateurs, qui détiennent 37,17 % d'une seule société. En pratique, le prix de la série C se fixe par la négociation, à partir des multiples et du TRI visé par le fonds ; les modèles fournissent seulement un plancher de rentabilité exigée.</li>
+</ul>
+<p><strong>Nouveau plan de bons de créateur (0,5 pt).</strong> Après la création de 150 000 bons : 2 970 000 + 150 000 = 3 120 000 actions sur base entièrement diluée.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Actionnaires</th>
+<th style="text-align: right;">Actions</th>
+<th style="text-align: right;">Après la série C</th>
+<th style="text-align: right;">Après le nouveau plan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fondateurs</td>
+<td style="text-align: right;">1 104 000</td>
+<td style="text-align: right;">37,17 %</td>
+<td style="text-align: right;"><strong>35,38 %</strong></td>
+</tr>
+<tr class="even">
+<td>Trois fonds (MARVENE, SOLENTE, BRÉCALDE)</td>
+<td style="text-align: right;">1 506 000</td>
+<td style="text-align: right;">50,71 %</td>
+<td style="text-align: right;"><strong>48,27 %</strong></td>
+</tr>
+<tr class="odd">
+<td>dont BRÉCALDE Growth II</td>
+<td style="text-align: right;">450 000</td>
+<td style="text-align: right;">15,15 %</td>
+<td style="text-align: right;">14,42 %</td>
+</tr>
+<tr class="even">
+<td>Salariés et premier plan de bons</td>
+<td style="text-align: right;">360 000</td>
+<td style="text-align: right;">12,12 %</td>
+<td style="text-align: right;">11,54 %</td>
+</tr>
+<tr class="odd">
+<td>Nouveau plan de bons</td>
+<td style="text-align: right;">150 000</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">4,81 %</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>3 120 000</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>100,00 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Les fondateurs auront perdu au total 10,62 points depuis 46 % ; les trois fonds réunis repassent sous la moitié du capital sur base entièrement diluée. Mais tant que les bons ne sont pas exercés, ils gardent 52,84 % des droits de vote (1 506 000 / 2 850 000) : le nouveau plan ne rend pas le contrôle aux fondateurs. Le plan étant créé <strong>après</strong> l'opération, il dilue aussi le fonds ; s'il avait été compté dans la base pré-money, le prix par action aurait baissé et toute la dilution aurait pesé sur les actionnaires actuels.</p>
+<p><strong>Stratégie de gestion du capital (1 pt).</strong></p>
+<ul>
+<li><strong>Augmentation de capital réservée</strong> : elle permet de choisir l'investisseur et d'apporter 18,0 M€ de fonds propres sans endettement, alors que l'autofinancement est faible (EBITDA de 2,3 M€) et que les banques limitent leurs concours. Ce choix est conforme au financement hiérarchique de Myers et Majluf (1984), l'émission d'actions venant après l'autofinancement et la dette, épuisés ici. L'arrivée d'un nouveau fonds qui accepte un prix de 40 € sert aussi de signal sur la valeur de la société et atténue l'asymétrie d'information pour les futurs partenaires.</li>
+<li><strong>Plans de bons de créateur</strong> : ils attirent et fidélisent les cadres, notamment aux États-Unis, sans décaissement. Ils alignent leurs intérêts sur ceux des actionnaires et réduisent les coûts d'agence (Jensen et Meckling, 1976). En contrepartie, ils diluent les actionnaires (4,81 % pour le nouveau plan).</li>
+<li><strong>Maîtrise de la dilution</strong> :
+<ul>
+<li>lever auprès du fonds le seul montant nécessaire (18 M€ sur 25 M€) et financer le complément par des ressources qui ne diluent pas, étudiées séparément ;</li>
+<li>prévoir une levée en deux tranches liées à des étapes du plan (mise en service de la deuxième ligne), la seconde à un prix plus élevé ;</li>
+<li>négocier la valeur pré-money dans le haut de la fourchette ;</li>
+<li>réserver une partie du nouveau plan aux dirigeants, sous condition de performance.</li>
+</ul></li>
+<li><strong>Demandes du fonds</strong>, évoquées sans développement juridique :
+<ul>
+<li>le siège au comité stratégique et le droit d'information sont des outils de surveillance usuels, qui réduisent l'asymétrie d'information ;</li>
+<li>la priorité de récupération de la mise protège le fonds si la société est cédée à bas prix : les fondateurs supportent alors l'essentiel de la perte ;</li>
+<li>la protection contre une levée future à un prix inférieur à 40 € reporte sur les fondateurs le risque d'une valorisation en baisse au prochain tour ;</li>
+<li>le droit de céder aux mêmes conditions que les fondateurs protège le fonds minoritaire en cas de changement de contrôle ;</li>
+<li>l'engagement de rester quatre ans attache la valeur de la société à ses dirigeants.</li>
+</ul></li>
+</ul>
+<p><strong>Recommandation (0,5 pt).</strong> Toute recommandation cohérente est acceptée. Une réponse possible :</p>
+<ul>
+<li><strong>accepter la série C</strong> au prix de 40 €. La valeur pré-money de 100,8 M€ est en haut de la fourchette des multiples. Elle valorise la participation des fondateurs à 44,2 M€ et finance la deuxième ligne d'assemblage sans endettement supplémentaire ;</li>
+<li><strong>limiter la dilution</strong> :
+<ul>
+<li>ne pas lever plus de 18 M€ auprès du fonds ;</li>
+<li>maintenir la création du nouveau plan après l'opération ;</li>
+<li>en réserver une partie aux fondateurs, pour qu'ils restent au-dessus de 35 % ;</li>
+</ul></li>
+<li><strong>négocier les protections du fonds</strong> :
+<ul>
+<li>limiter la priorité de récupération à la mise investie ;</li>
+<li>encadrer la protection contre une baisse de prix ;</li>
+<li>organiser la gouvernance pour que les trois fonds, majoritaires ensemble après l'opération, ne puissent pas décider sans les fondateurs des orientations stratégiques.</li>
+</ul></li>
+</ul>
+<p><strong>Réponses tolérées</strong> : pour 1.4-03, trois arguments liés au cas suffisent pour la totalité des points ; limites présentées sous forme de tableau ; recommandation de lever moins auprès du fonds et davantage par d'autres moyens, ou d'associer MARVENE et SOLENTE à la série C, si l'effet sur la dilution est expliqué ; calcul de la part des fondateurs sur 2 970 000 + 150 000 actions présenté sans le détail des fonds : 1.4-02 réduit de moitié.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Calculer la part des fondateurs après le nouveau plan sur 2 520 000 + 150 000 actions, en oubliant la série C.</li>
+<li>Confondre dilution du contrôle et perte de valeur : une émission au prix de la valeur ne réduit pas la richesse des fondateurs.</li>
+<li>Développer le régime juridique et fiscal des bons de créateur ou rédiger des clauses : c'est hors du champ de l'épreuve.</li>
+<li><code>JUR-T02</code> — recommandation sans lien avec la répartition du capital calculée.</li>
+</ul>
+<hr />
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Guide pédagogique DSCG, juillet 2026, p. 64-65</td>
+<td>inducteurs de VGE et de VCP, échantillon de comparables, multiple moyen ou médian, choix selon la maturité, approche comparative et non normative</td>
+<td>[V]</td>
+<td>F03 § 0 et 3 ; <code>perimetre_ue2.yaml</code></td>
+</tr>
+<tr class="even">
+<td>Programme UE 2, l. 521-528</td>
+<td>méthodes par les comparables : inducteurs de VGE (CA, EBITDA, EBIT) et de VCP (RN, RCAI), échantillons</td>
+<td>[V]</td>
+<td>F03 § 0</td>
+</tr>
+<tr class="odd">
+<td>Guide pédagogique DSCG, juillet 2026, p. 68</td>
+<td>gestion du capital : augmentation de capital, gestion de la dilution</td>
+<td>[V]</td>
+<td>F05 § 0 et 4</td>
+</tr>
+<tr class="even">
+<td>Guide pédagogique DSCG, juillet 2026, p. 74-75 ; programme l. 580-582</td>
+<td>MEDAF et ses limites ; modèle à trois facteurs pour interpréter le risque d'un titre, sans estimation des facteurs</td>
+<td>[V]</td>
+<td>F02 § 0, 2 et 7</td>
+</tr>
+<tr class="odd">
+<td>Sharpe (1964)</td>
+<td>MEDAF</td>
+<td>[V contexte]</td>
+<td>F10 § 2</td>
+</tr>
+<tr class="even">
+<td>Fama et French (1993)</td>
+<td>modèle à trois facteurs : marché, taille (SMB), valeur (HML)</td>
+<td>[V programme 5.2]</td>
+<td>F10 § 1 ; F02 § 7</td>
+</tr>
+<tr class="odd">
+<td>Critique de Roll ; Carhart (1997)</td>
+<td>limites du MEDAF ; facteur momentum</td>
+<td>[S]</td>
+<td>F02 § 2 et 7</td>
+</tr>
+<tr class="even">
+<td>Akerlof (1970)</td>
+<td>asymétrie d'information entre fondateurs et investisseurs</td>
+<td>[V programme 5.1]</td>
+<td>F10 § 1</td>
+</tr>
+<tr class="odd">
+<td>Jensen et Meckling (1976)</td>
+<td>coûts d'agence, alignement des intérêts des cadres</td>
+<td>[V programme 2.1]</td>
+<td>F10 § 3</td>
+</tr>
+<tr class="even">
+<td>Myers et Majluf (1984)</td>
+<td>financement hiérarchique</td>
+<td>[V programme 7.2]</td>
+<td>F10 § 3</td>
+</tr>
+<tr class="odd">
+<td>Taux sans risque 4 %, prime de risque du marché 5 %</td>
+<td>hypothèses d'énoncé, plausibles fin 2026</td>
+<td>[S]</td>
+<td>F11</td>
+</tr>
+<tr class="even">
+<td>Primes SMB 3 % et HML 4 %, sensibilités, bêta de 1,60</td>
+<td>hypothèses d'énoncé, sans valeur de marché</td>
+<td>—</td>
+<td>annexe 1.4</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
