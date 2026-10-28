@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Gestion du portefeuille de placements de la coopérative : ORNELAC : gestion du portefeuille de placements de la coopérative</title>
+<meta name="description" content="Entraînement à l'UE 2 du DSCG, finance, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 2</span></a>
+<p>Dossier 3</p><p>15 points</p><p>55 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Gestion du portefeuille de placements de la coopérative</h1><p class="cas">ORNELAC : gestion du portefeuille de placements de la coopérative</p><p class="avant">Corrigé indicatif et barème. Les mentions [V] signalent un point vérifié sur la source officielle ; les renvois F01 à F11 et JUR désignent des fiches de travail et les constats des rapports du jury.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F02 coût du capital, F06 marchés financiers et finance comportementale, F10 auteurs et théories, F11 données de marché et F99 liste noire (à jour au 23/10/2026).</p>
+<p>Bien que le corrigé mentionne des auteurs, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la pertinence et la cohérence du raisonnement, la justesse des calculs et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée. Une erreur n'est sanctionnée qu'une fois : les calculs qui en découlent sont notés en cohérence avec les résultats antérieurs du candidat (par exemple des ratios de Sharpe calculés à la question 3.4 avec un écart type erroné à la question 3.1).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1 Rentabilité et risque des fonds, de l'indice et du portefeuille actuel</td>
+<td><code>5.3.c</code> Mesurer la rentabilité et le risque du portefeuille de titres ; <code>5.2.b</code> Calculer la rentabilité espérée ou la valeur théorique sur une période d'un titre financier ; <code>5.3.b</code> Maîtriser les principes de diversification du portefeuille au sens de Markowitz (1952)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td>3.2 Diversification et choix de l'allocation</td>
+<td><code>5.3.b</code> Maîtriser les principes de diversification du portefeuille au sens de Markowitz (1952)</td>
+<td style="text-align: right;">2,5</td>
+</tr>
+<tr class="odd">
+<td>3.3 Risque systématique et risque spécifique ; MEDAF et panier agroalimentaire</td>
+<td><code>5.3.a</code> Maîtriser la différence et le lien entre le risque spécifique et le risque systématique ; <code>5.2.c</code> Maîtriser les principaux modèles d'évaluation du risque financier utilisés en finance ; <code>5.2.b</code> Calculer la rentabilité espérée ou la valeur théorique sur une période d'un titre financier</td>
+<td style="text-align: right;">3,5</td>
+</tr>
+<tr class="even">
+<td>3.4 Ratios de Sharpe et de Treynor</td>
+<td><code>5.3.c</code> Mesurer la rentabilité et le risque du portefeuille de titres ; <code>5.2.b</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td>3.5 Gestion active ou indicielle ; biais du conseil d'administration</td>
+<td><code>5.1.c</code> Maîtriser les grands enseignements de l'efficience informationnelle des marchés (Fama, 1970) ; <code>5.1.d</code> Maîtriser les grands enseignements de la finance comportementale</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>15</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Part du calcul : environ 8,5 points (3.1-01 à 3.1-05, 3.2-01, 3.2-02, 3.3-01 à 3.3-05, 3.4-01, 3.4-02, 3.5-01). Part de l'analyse : environ 6,5 points. Les questions 3.2 à 3.5 se terminent toutes par une recommandation au conseil : elles ne doivent pas être sacrifiées faute de temps, ce dossier étant le dernier de l'épreuve (<code>JUR-T15</code>).</p>
+<hr />
+<h3 id="31-rentabilité-et-risque-des-fonds-de-lindice-et-du-portefeuille-actuel-4-pts">3.1 Rentabilité et risque des fonds, de l'indice et du portefeuille actuel (4 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1-01</td>
+<td>Rentabilités espérées : fonds actions 8,00 %, fonds obligataire 5,00 %, indice 9,00 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.1-02</td>
+<td>Écarts types sur n − 1 : fonds actions 18,09 % (variance 0,032726), fonds obligataire 5,27 % (0,002774), indice 16,00 % (0,025600) ; 0,5 par série</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr class="odd">
+<td>3.1-03</td>
+<td>Covariance des deux fonds : 0,51 × 18,09 % × 5,27 % = 0,004859</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.1-04</td>
+<td>Rentabilité espérée du portefeuille actuel : 6,80 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.1-05</td>
+<td>Écart type du portefeuille actuel : 12,07 % (variance 0,014558)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.1-06</td>
+<td>Commentaire : le fonds actions rapporte moins que l'indice pour un risque plus élevé ; le fonds obligataire, moins rentable, est beaucoup moins risqué</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conventions rappelées.</strong> Rentabilité espérée = moyenne arithmétique des cinq rentabilités annuelles ; variance et covariance sur n − 1 = 4 ; calculs sans arrondi intermédiaire ; pourcentages à deux décimales, variances à six décimales.</p>
+<p><strong>Rentabilités espérées (0,5 pt).</strong></p>
+<ul>
+<li>Fonds actions : (− 12,1 + 19,4 − 11,3 + 19,7 + 24,3) / 5 = 40,0 / 5 = <strong>8,00 %</strong>.</li>
+<li>Fonds obligataire : (− 4,2 + 5,8 + 8,4 + 8,4 + 6,6) / 5 = 25,0 / 5 = <strong>5,00 %</strong>.</li>
+<li>Indice : (− 12 + 23 − 4 + 16 + 22) / 5 = 45 / 5 = <strong>9,00 %</strong>.</li>
+</ul>
+<p><strong>Variances et écarts types (1,5 pt).</strong> Calcul en pourcentage (variances en %²) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Écart à la moyenne (points de %)</th>
+<th style="text-align: right;">2022</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2026</th>
+<th style="text-align: right;">Somme des carrés</th>
+<th style="text-align: right;">Variance (÷ 4)</th>
+<th style="text-align: right;">Écart type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fonds actions</td>
+<td style="text-align: right;">− 20,1</td>
+<td style="text-align: right;">11,4</td>
+<td style="text-align: right;">− 19,3</td>
+<td style="text-align: right;">11,7</td>
+<td style="text-align: right;">16,3</td>
+<td style="text-align: right;">1 309,04</td>
+<td style="text-align: right;">327,26 %² = 0,032726</td>
+<td style="text-align: right;"><strong>18,09 %</strong></td>
+</tr>
+<tr class="even">
+<td>Fonds obligataire</td>
+<td style="text-align: right;">− 9,2</td>
+<td style="text-align: right;">0,8</td>
+<td style="text-align: right;">3,4</td>
+<td style="text-align: right;">3,4</td>
+<td style="text-align: right;">1,6</td>
+<td style="text-align: right;">110,96</td>
+<td style="text-align: right;">27,74 %² = 0,002774</td>
+<td style="text-align: right;"><strong>5,27 %</strong></td>
+</tr>
+<tr class="odd">
+<td>Indice</td>
+<td style="text-align: right;">− 21,0</td>
+<td style="text-align: right;">14,0</td>
+<td style="text-align: right;">− 13,0</td>
+<td style="text-align: right;">7,0</td>
+<td style="text-align: right;">13,0</td>
+<td style="text-align: right;">1 024,00</td>
+<td style="text-align: right;">256,00 %² = 0,025600</td>
+<td style="text-align: right;"><strong>16,00 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Covariance des deux fonds (0,5 pt).</strong> Le coefficient de corrélation est fourni (0,51) : cov(A, O) = ρ × σA × σO = 0,51 × 18,0903 × 5,2669 = 48,59 %², soit <strong>0,004859</strong>.</p>
+<p><strong>Portefeuille actuel (1 pt).</strong> Poids 60 % / 40 %.</p>
+<ul>
+<li>Rentabilité espérée : 0,60 × 8,00 % + 0,40 × 5,00 % = <strong>6,80 %</strong>.</li>
+<li>Variance : 0,60² × 327,26 + 0,40² × 27,74 + 2 × 0,60 × 0,40 × 48,59 = 117,81 + 4,44 + 23,32 = 145,58 %², soit 0,014558. Écart type : √0,014558 = <strong>12,07 %</strong>.</li>
+</ul>
+<p><strong>Commentaire (0,5 pt).</strong></p>
+<ul>
+<li>Le fonds actions a rapporté en moyenne 8,00 % par an, <strong>un point de moins que l'indice</strong> (9,00 %), avec un risque <strong>plus élevé</strong> (18,09 % contre 16,00 %) : sur la période, il fait moins bien que l'indice sur les deux plans, premier signal défavorable pour le mandat de gestion active.</li>
+<li>Le fonds obligataire rapporte moins (5,00 %), mais il est plus de trois fois moins risqué (5,27 %).</li>
+<li>Remarque facultative, non notée ici (voir question 3.2) : le portefeuille offre 6,80 % pour un écart type de 12,07 %, inférieur à la moyenne pondérée des écarts types (12,96 %) : la combinaison des deux fonds, imparfaitement corrélés, réduit le risque (question 3.2).</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : calcul en fraction (variance 0,025600, écart type 0,1600) ; covariance calculée avec les écarts types arrondis (48,62 %², soit 0,004862) ; écart type du portefeuille de 12,07 % dans les deux cas ; covariance des deux fonds calculée directement à partir des séries (0,004857), si la démarche est indiquée.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Diviser par n (5) au lieu de n − 1 (4) : écarts types de 16,18 %, 4,71 % et 14,31 %, contraires à la convention de l'annexe.</li>
+<li>Confondre variance et écart type, ou oublier le facteur 2 du terme de covariance dans la variance du portefeuille.</li>
+<li>Additionner les écarts types pondérés (12,96 %) au lieu de calculer la variance du portefeuille : c'est ignorer la corrélation.</li>
+<li><code>JUR-T07</code> — calculs présentés sans tableau des écarts à la moyenne.</li>
+</ul>
+<hr />
+<h3 id="32-diversification-et-choix-de-lallocation-25-pts">3.2 Diversification et choix de l'allocation (2,5 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.2-01</td>
+<td>Allocations proposées : prudente 30 / 70 : 5,90 % et 7,97 % ; dynamique 80 / 20 : 7,40 % et 15,04 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.2-02</td>
+<td>Résultat en 2022 : actuelle − 8,94 % (− 3 755 k€) ; prudente − 6,57 % (− 2 759 k€) ; dynamique − 10,52 % (− 4 418 k€)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.2-03</td>
+<td>Rôle de la corrélation au sens de Markowitz (1952), illustré par le portefeuille actuel (12,07 % &lt; 12,96 %)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.2-04</td>
+<td>Recommandation : confrontation aux deux contraintes, à l'horizon et à la finalité de la réserve ; maintien de l'allocation 60 / 40</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rentabilité et risque des deux propositions (0,5 pt).</strong> Même méthode qu'à la question 3.1, avec ρ = 0,51.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Allocation (actions / obligations)</th>
+<th style="text-align: right;">Rentabilité espérée</th>
+<th style="text-align: right;">Variance</th>
+<th style="text-align: right;">Écart type</th>
+<th style="text-align: right;">Moyenne pondérée des écarts types</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prudente 30 / 70</td>
+<td style="text-align: right;">0,3 × 8 + 0,7 × 5 = <strong>5,90 %</strong></td>
+<td style="text-align: right;">29,45 + 13,59 + 20,41 = 63,45 %² (0,006345)</td>
+<td style="text-align: right;"><strong>7,97 %</strong></td>
+<td style="text-align: right;">9,11 %</td>
+</tr>
+<tr class="even">
+<td>Actuelle 60 / 40</td>
+<td style="text-align: right;">6,80 %</td>
+<td style="text-align: right;">145,58 %² (0,014558)</td>
+<td style="text-align: right;">12,07 %</td>
+<td style="text-align: right;">12,96 %</td>
+</tr>
+<tr class="odd">
+<td>Dynamique 80 / 20</td>
+<td style="text-align: right;">0,8 × 8 + 0,2 × 5 = <strong>7,40 %</strong></td>
+<td style="text-align: right;">209,45 + 1,11 + 15,55 = 226,11 %² (0,022611)</td>
+<td style="text-align: right;"><strong>15,04 %</strong></td>
+<td style="text-align: right;">15,53 %</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Résultat en 2022 (0,5 pt).</strong> Rentabilités de 2022 : fonds actions − 12,1 %, fonds obligataire − 4,2 % ; encours de 42 000 k€.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Allocation</th>
+<th style="text-align: right;">Rentabilité 2022</th>
+<th style="text-align: right;">Résultat sur 42 000 k€</th>
+<th>Contrainte de 4 000 k€</th>
+<th>Objectif de 6 %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prudente 30 / 70</td>
+<td style="text-align: right;">0,3 × (− 12,1) + 0,7 × (− 4,2) = <strong>− 6,57 %</strong></td>
+<td style="text-align: right;"><strong>− 2 759 k€</strong></td>
+<td>respectée</td>
+<td>non atteint (5,90 %)</td>
+</tr>
+<tr class="even">
+<td>Actuelle 60 / 40</td>
+<td style="text-align: right;">0,6 × (− 12,1) + 0,4 × (− 4,2) = <strong>− 8,94 %</strong></td>
+<td style="text-align: right;"><strong>− 3 755 k€</strong></td>
+<td>respectée</td>
+<td>atteint (6,80 %)</td>
+</tr>
+<tr class="odd">
+<td>Dynamique 80 / 20</td>
+<td style="text-align: right;">0,8 × (− 12,1) + 0,2 × (− 4,2) = <strong>− 10,52 %</strong></td>
+<td style="text-align: right;"><strong>− 4 418 k€</strong></td>
+<td><strong>dépassée</strong></td>
+<td>atteint (7,40 %)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rôle de la corrélation (0,5 pt).</strong> Selon Markowitz (1952), le risque d'un portefeuille ne dépend pas seulement du risque de chacun de ses titres, mais aussi de leurs covariances : tant que la corrélation est inférieure à 1, l'écart type du portefeuille est inférieur à la moyenne pondérée des écarts types, sans que la rentabilité espérée (moyenne pondérée des rentabilités) soit réduite. En l'espèce, l'écart type du portefeuille actuel (12,07 %) est inférieur de 0,90 point à la moyenne pondérée (12,96 %), qui serait atteinte avec une corrélation de 1 ; avec une corrélation nulle, il tomberait à 11,06 % (calcul facultatif). Plus la corrélation est faible, plus le gain de diversification est fort. La corrélation de 0,51 limite ce gain : les deux fonds dépendent tous deux de la conjoncture de la zone euro et ont baissé ensemble en 2022, année de forte remontée des taux ; ils ont en revanche évolué en sens contraire en 2024 (− 11,3 % et + 8,4 %).</p>
+<p><strong>Recommandation (1 pt).</strong></p>
+<ul>
+<li>Aucune allocation ne domine les autres : la rentabilité espérée augmente avec le poids des actions, mais le risque aussi. Le choix dépend donc des objectifs et des contraintes de l'investisseur ; les ratios de Sharpe des trois allocations sont d'ailleurs très proches (0,24 pour la prudente, 0,23 pour les deux autres, calcul facultatif).</li>
+<li>La proposition <strong>dynamique</strong> est la plus rentable (7,40 %), et un horizon d'au moins huit ans plaide en faveur des actions. Mais elle aurait fait perdre 4 418 k€ en 2022 : elle <strong>viole la contrainte de perte</strong> fixée par la charte.</li>
+<li>La proposition <strong>prudente</strong> respecte largement cette contrainte (− 2 759 k€) mais <strong>n'atteint pas l'objectif de rentabilité</strong> (5,90 % &lt; 6 %).</li>
+<li>L'allocation <strong>actuelle 60 / 40</strong> est la seule qui respecte les deux conditions (6,80 % ; − 3 755 k€) : il est recommandé de la <strong>maintenir</strong>.</li>
+<li>Cette contrainte de perte est essentielle pour une coopérative : la réserve doit pouvoir être mobilisée en cas de crise laitière, qui peut coïncider avec une baisse des marchés ; l'horizon long ne suffit donc pas à justifier une allocation plus risquée. La présidente le rappelle (annexe 3.3). La marge restante est faible (245 k€), ce qui invite à réexaminer l'allocation chaque année.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : calcul des résultats de 2022 en M€ (− 3,75 ; − 2,76 ; − 4,42) ; recommandation différente (par exemple une allocation proche de 60 / 40, ou l'allocation prudente au nom de la sécurité de la réserve) si elle est confrontée explicitement aux deux contraintes de la charte ; mention de l'instabilité des corrélations en période de crise.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Recommander l'allocation dynamique au seul motif de sa rentabilité, sans vérifier la contrainte de perte.</li>
+<li>Croire que la diversification supprime tout risque : elle réduit le risque, mais ne supprime pas le risque commun aux deux fonds.</li>
+<li><code>JUR-T13</code> — recommandation générale, sans lien avec la finalité de la réserve et les chiffres de l'annexe 3.2.</li>
+<li><code>JUR-T14</code> — Markowitz cité sans expliquer le rôle de la corrélation.</li>
+</ul>
+<hr />
+<h3 id="33-risque-systématique-et-risque-spécifique--medaf-et-panier-agroalimentaire-35-pts">3.3 Risque systématique et risque spécifique ; MEDAF et panier agroalimentaire (3,5 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.3-01</td>
+<td>Covariance du fonds actions et de l'indice : 0,028160 ; bêta = 0,028160 / 0,025600 = 1,10, conforme à la donnée de la société de gestion</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.3-02</td>
+<td>Fonds actions : risque systématique 0,030976, soit 94,65 % de la variance ; risque spécifique 0,001750, soit 5,35 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.3-03</td>
+<td>Rentabilités exigées (MEDAF) : fonds actions 9,50 % (contre 8,00 % obtenus) ; panier 8,00 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.3-04</td>
+<td>Rentabilité espérée du panier (Gordon-Shapiro) : 2,4 % + 3,6 % = 6,00 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.3-05</td>
+<td>Panier : variance 0,062500 ; risque systématique 0,016384, soit 26,21 % ; risque spécifique 0,046116, soit 73,79 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.3-06</td>
+<td>Distinction des deux risques et conclusion sur le panier : risque spécifique non rémunéré, rentabilité espérée inférieure à la rentabilité exigée, concentration sur le secteur de la coopérative ; projet à écarter</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Covariance et bêta du fonds actions (0,5 pt).</strong> Produits des écarts à la moyenne (fonds actions × indice) : (− 20,1 × − 21) + (11,4 × 14) + (− 19,3 × − 13) + (11,7 × 7) + (16,3 × 13) = 422,1 + 159,6 + 250,9 + 81,9 + 211,9 = 1 126,4. Covariance : 1 126,4 / 4 = 281,6 %², soit <strong>0,028160</strong>. Bêta = cov(A, M) / var(M) = 0,028160 / 0,025600 = <strong>1,10</strong> : le bêta communiqué par KERLÉVAN Gestion est vérifié. Le fonds amplifie de 10 % les variations de l'indice.</p>
+<p><strong>Décomposition du risque du fonds actions (0,5 pt).</strong></p>
+<ul>
+<li>Risque systématique : β² × var(M) = 1,10² × 0,025600 = <strong>0,030976</strong>, soit 0,030976 / 0,032726 = <strong>94,65 %</strong> de la variance (écart type 17,60 %).</li>
+<li>Risque spécifique : 0,032726 − 0,030976 = <strong>0,001750</strong>, soit <strong>5,35 %</strong> (écart type 4,18 %).</li>
+</ul>
+<p><strong>Rentabilités exigées par le MEDAF (0,5 pt).</strong> E(Ri) = rf + βi × prime de risque du marché.</p>
+<ul>
+<li>Fonds actions : 4 % + 1,10 × 5 % = <strong>9,50 %</strong>, contre 8,00 % obtenus en moyenne : le fonds se situe 1,50 point sous la rentabilité que justifie son risque systématique.</li>
+<li>Panier agroalimentaire : 4 % + 0,80 × 5 % = <strong>8,00 %</strong>.</li>
+</ul>
+<p><strong>Rentabilité espérée du panier (0,5 pt).</strong> Avec une croissance constante et illimitée du dividende, le modèle de Gordon-Shapiro donne P0 = prochain dividende / (k − g), d'où la rentabilité espérée k = prochain dividende / P0 + g = 2,40 / 100 + 3,6 % = 2,4 % + 3,6 % = <strong>6,00 %</strong>.</p>
+<p><strong>Décomposition du risque du panier (0,5 pt).</strong> Variance totale : 0,25² = 0,062500. Risque systématique : 0,80² × 0,025600 = <strong>0,016384</strong>, soit <strong>26,21 %</strong> (écart type 12,80 %). Risque spécifique : 0,062500 − 0,016384 = <strong>0,046116</strong>, soit <strong>73,79 %</strong> (écart type 21,47 %).</p>
+<p><strong>Analyse et conclusion (1 pt).</strong></p>
+<ul>
+<li><strong>Deux risques.</strong> Le risque systématique (de marché) provient des facteurs qui affectent toutes les entreprises (croissance, taux, inflation) ; il ne peut pas être éliminé par la diversification et il est le seul que le marché rémunère, comme l'exprime le MEDAF par le bêta. Le risque spécifique est propre à chaque entreprise ou à chaque secteur (prix des matières premières agricoles, négociations avec la distribution, crise sanitaire) ; il se diversifie et n'est donc pas rémunéré.</li>
+<li><strong>Fonds actions.</strong> Bien diversifié, il ne porte presque plus que du risque systématique (94,65 %) : il se comporte presque comme l'indice, avec un bêta de 1,10. Son risque est donc rémunérable, mais il n'a pas obtenu la rentabilité exigée (8,00 % contre 9,50 %).</li>
+<li><strong>Panier.</strong> Concentré sur cinq valeurs d'un même secteur, il porte surtout du risque spécifique (73,79 %), qui ne serait pas rémunéré. Sa rentabilité espérée (6,00 %) est inférieure de 2 points à la rentabilité exigée (8,00 %) : au prix actuel, le panier serait trop cher (valeur théorique de 54,55 € pour 100 € investis au taux de 8 %, calcul facultatif). Les 12 % évoqués par un administrateur décrivent les trois dernières années, pas une espérance.</li>
+<li><strong>Spécificité coopérative.</strong> Ces sociétés sont des concurrents et des clients d'ORNELAC : leurs résultats dépendent des mêmes facteurs que ceux de la coopérative (prix du lait, demande de produits laitiers, relations avec la distribution). En cas de crise laitière, le panier perdrait probablement de la valeur au moment où la réserve doit être mobilisée. Le risque spécifique du panier est aussi celui de l'activité de la coopérative : pour ORNELAC, il ne se diversifie pas, il s'ajoute.</li>
+<li><strong>Conclusion</strong> : il est recommandé de ne pas investir 8 M€ (19,05 % de la réserve) dans le panier. Si le conseil tient à une exposition au secteur, elle doit rester marginale et passer par un fonds diversifié.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : une conclusion courte obtient tous les points si elle est reliée aux chiffres du cas (le développement ci-dessus va au-delà de l'attendu) ; part systématique calculée par le carré du coefficient de corrélation entre le fonds et l'indice (0,9729² = 94,65 %) ; parts exprimées en écarts types (17,60 % et 4,18 % pour le fonds) si la décomposition porte bien sur les variances ; conclusion fondée sur l'écart entre rentabilité espérée et rentabilité exigée (alpha de − 2 points), présentée par le candidat sous un autre nom.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Décomposer les écarts types au lieu des variances (17,60 % + 4,18 % ≠ 18,09 %).</li>
+<li>Appliquer le MEDAF avec la rentabilité du marché à la place de la prime (4 % + 0,80 × 9 % = 11,20 %).</li>
+<li>Prendre le rendement du dividende (2,4 %) pour la rentabilité espérée du panier, en oubliant la croissance.</li>
+<li>Juger le panier sur son écart type total sans distinguer le risque rémunéré du risque diversifiable.</li>
+<li><code>JUR-T13</code> — conclusion sans lien avec la situation de la coopérative, déjà exposée au secteur agroalimentaire par son activité.</li>
+</ul>
+<hr />
+<h3 id="34-ratios-de-sharpe-et-de-treynor-2-pts">3.4 Ratios de Sharpe et de Treynor (2 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.4-01</td>
+<td>Ratios de Sharpe : fonds actions 0,22 ; portefeuille 0,23 ; indice 0,31</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.4-02</td>
+<td>Bêta du portefeuille 0,74 ; ratios de Treynor : fonds actions 3,64 % ; portefeuille 3,78 % ; indice 5,00 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.4-03</td>
+<td>Interprétation : le fonds actions et le portefeuille font moins bien que l'indice par unité de risque total comme de risque systématique</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.4-04</td>
+<td>Limites : mesures passées sur cinq ans, sensibles à la période et au taux sans risque ; choix du ratio selon la diversification ; portefeuille mixte comparé à un indice d'actions</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Calculs (1 pt).</strong> Bêta du portefeuille : 0,60 × 1,10 + 0,40 × 0,20 = <strong>0,74</strong>.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Placement</th>
+<th style="text-align: right;">Rentabilité espérée</th>
+<th style="text-align: right;">Écart type</th>
+<th style="text-align: right;">Bêta</th>
+<th style="text-align: right;">Sharpe = (E − 4 %) / σ</th>
+<th style="text-align: right;">Treynor = (E − 4 %) / β</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fonds actions</td>
+<td style="text-align: right;">8,00 %</td>
+<td style="text-align: right;">18,09 %</td>
+<td style="text-align: right;">1,10</td>
+<td style="text-align: right;">4,00 / 18,09 = <strong>0,22</strong></td>
+<td style="text-align: right;">4,00 / 1,10 = <strong>3,64 %</strong></td>
+</tr>
+<tr class="even">
+<td>Portefeuille actuel</td>
+<td style="text-align: right;">6,80 %</td>
+<td style="text-align: right;">12,07 %</td>
+<td style="text-align: right;">0,74</td>
+<td style="text-align: right;">2,80 / 12,07 = <strong>0,23</strong></td>
+<td style="text-align: right;">2,80 / 0,74 = <strong>3,78 %</strong></td>
+</tr>
+<tr class="odd">
+<td>Indice</td>
+<td style="text-align: right;">9,00 %</td>
+<td style="text-align: right;">16,00 %</td>
+<td style="text-align: right;">1,00</td>
+<td style="text-align: right;">5,00 / 16,00 = <strong>0,31</strong></td>
+<td style="text-align: right;">5,00 / 1,00 = <strong>5,00 %</strong></td>
+</tr>
+<tr class="even">
+<td>Fonds obligataire (facultatif)</td>
+<td style="text-align: right;">5,00 %</td>
+<td style="text-align: right;">5,27 %</td>
+<td style="text-align: right;">0,20</td>
+<td style="text-align: right;">0,19</td>
+<td style="text-align: right;">5,00 %</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interprétation (0,5 pt).</strong> Le ratio de Sharpe (1966) mesure la prime de rentabilité obtenue par unité de risque total ; le ratio de Treynor (1965), par unité de risque systématique. Le fonds actions obtient 0,22 contre 0,31 pour l'indice selon le premier, et 3,64 % contre 5,00 % selon le second : quelle que soit la mesure du risque, la gestion active a rémunéré moins bien le risque pris que le simple placement dans l'indice. Le portefeuille actuel fait à peine mieux que le fonds actions (0,23 ; 3,78 %), grâce à la diversification apportée par le fonds obligataire, mais reste nettement derrière l'indice.</p>
+<p><strong>Limites (0,5 pt).</strong></p>
+<ul>
+<li>Mesures <strong>passées</strong>, sur cinq années seulement : elles dépendent fortement de la période retenue (une seule année comme 2022 ou 2024 pèse lourd) et ne préjugent pas de la performance future.</li>
+<li>Le taux sans risque de 4 % est une hypothèse simplificatrice pour 2022-2026 : un taux plus bas changerait le niveau des ratios, mais guère leur classement.</li>
+<li>Le <strong>ratio de Treynor</strong> suppose un portefeuille bien diversifié, dont le seul risque est systématique : il convient au fonds actions, pas au fonds obligataire, dont le bêta très faible lui donne un ratio flatteur (5,00 %). Pour une réserve qui constitue l'essentiel des placements de la coopérative, c'est le risque total qui compte : le <strong>ratio de Sharpe</strong> est le critère le plus pertinent.</li>
+<li>Le portefeuille mixte est comparé à un indice d'actions : la référence équitable serait une combinaison indicielle 60 / 40 (question 3.5). Les deux ratios reposent enfin sur un bêta et des écarts types estimés, instables dans le temps.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : ratios de Sharpe à trois décimales (0,221 ; 0,232 ; 0,313) ; ratio de Treynor en fraction (0,0364) ; indice à 0,3125 ; ratios du portefeuille calculés avec un écart type ou un bêta erronés, notés en cohérence.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Inverser les dénominateurs : Sharpe sur l'écart type, Treynor sur le bêta.</li>
+<li>Oublier de retrancher le taux sans risque (8 / 18,09 = 0,44).</li>
+<li>Juger un portefeuille mixte au seul ratio de Treynor.</li>
+<li><code>JUR-T02</code> — ratios calculés sans interprétation ni lien avec le renouvellement du mandat.</li>
+</ul>
+<hr />
+<h3 id="35-gestion-active-ou-indicielle--biais-du-conseil-dadministration-3-pts">3.5 Gestion active ou indicielle ; biais du conseil d'administration (3 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.5-01</td>
+<td>Frais : 462 k€ par an pour le mandat contre 84 k€ en gestion indicielle, économie de 378 k€ par an (0,90 point) ; fonds actions avant frais : 8,00 % + 1,50 % = 9,50 %, égal à la rentabilité exigée par le MEDAF</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.5-02</td>
+<td>Efficience informationnelle (Fama, 1970) : définition, trois formes, conséquence pour la gestion active</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.5-03</td>
+<td>Conclusion argumentée en faveur de la gestion indicielle, avec ses limites</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.5-04</td>
+<td>Deux biais identifiés, chacun relié à un extrait et aux chiffres du cas (0,5 par biais, dans la limite de 1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>3.5-05</td>
+<td>Règles de prémunition pour le conseil</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Frais et rentabilité avant frais (0,5 pt).</strong></p>
+<ul>
+<li>Frais du mandat : 25 200 × 1,50 % + 16 800 × 0,50 % = 378 + 84 = <strong>462 k€</strong> par an (1,10 % de l'actif).</li>
+<li>Gestion indicielle : 42 000 × 0,20 % = <strong>84 k€</strong> par an. Économie : <strong>378 k€ par an</strong>, soit 0,90 point de rentabilité chaque année (environ 3 M€ sur l'horizon de huit ans, sans capitalisation, calcul facultatif).</li>
+<li>Fonds actions avant frais : 8,00 % + 1,50 % = <strong>9,50 %</strong>, exactement la rentabilité exigée par le MEDAF compte tenu de son bêta (question 3.3). Avant frais, le gérant n'a rien obtenu de plus que la rémunération du risque systématique qu'il a pris ; les frais expliquent à eux seuls l'écart de 1,50 point. Un fonds indiciel aurait rapporté 9,00 % − 0,20 % = 8,80 %.</li>
+</ul>
+<p><strong>Efficience informationnelle (0,5 pt).</strong> Selon Fama (1970), un marché est efficient si les prix reflètent à tout instant toute l'information disponible. La forme faible porte sur les prix passés, la forme semi-forte sur toute l'information publique, la forme forte sur toute l'information, y compris privée. Sur un marché efficient au sens semi-fort, ce qu'est raisonnablement le marché des grandes actions de la zone euro, très suivies par les analystes, aucun gérant ne peut, avec l'information publique, obtenir durablement une rentabilité supérieure à celle que justifie son risque : la gestion active coûte des frais sans garantir de surcroît de rentabilité, et le choix du moment d'achat ou de vente a un rôle limité.</p>
+<p><strong>Conclusion (0,5 pt).</strong> Les résultats du mandat confirment cette lecture : rentabilité avant frais égale à celle qu'exige le MEDAF, rentabilité nette inférieure à l'indice, ratios de Sharpe et de Treynor inférieurs à ceux de l'indice, risque à 94,65 % systématique (le fonds suit presque l'indice tout en facturant une gestion active). Il est recommandé de <strong>passer à une gestion indicielle</strong> pour l'essentiel de la réserve, en conservant l'allocation 60 / 40 : la coopérative garde le même risque systématique et économise 378 k€ par an. Limites : cinq années ne suffisent pas à juger un gérant ; l'efficience est discutable pour certains compartiments (petites valeurs, obligations peu liquides), où une gestion active peut se justifier ; un fonds indiciel suit l'indice dans les baisses et n'offre aucune protection en 2022.</p>
+<p><strong>Biais comportementaux (1 pt).</strong> Deux biais pertinents, appliqués au cas, suffisent (finance comportementale, Kahneman et Tversky, 1973) :</p>
+<ul>
+<li><strong>Excès de confiance et extrapolation (représentativité)</strong> — le vice-président : deux années favorables (2025 et 2026) suffisent à conclure que les « choix de valeurs commencent à payer ». Il néglige les trois années précédentes (− 0,1 point, − 3,6 points et − 7,3 points par rapport à l'indice) et le fait qu'avec un bêta de 1,10, le fonds fait mécaniquement mieux que l'indice quand le marché monte fortement. Sur cinq ans, le fonds a gagné 38,51 % contre 47,05 % pour l'indice (calcul facultatif).</li>
+<li><strong>Préférence pour le familier, renforcée par l'excès de confiance</strong> — l'administrateur : « nous connaissons le lait et l'agroalimentaire mieux que n'importe quel gérant ». Connaître un secteur comme industriel ne donne pas d'avantage pour en évaluer les actions, dont les cours intègrent déjà l'information publique. Ce biais conduit à concentrer la réserve sur le risque que la coopérative porte déjà (question 3.3), sur la foi des 12 % des trois dernières années (extrapolation).</li>
+<li><strong>Effet de disposition et choix du moment</strong> — le trésorier : vendre la moitié du fonds actions « pour mettre ce gain à l'abri », c'est raisonner sur la plus-value acquise (près de 40 %) plutôt que sur les perspectives : les investisseurs tendent à vendre trop tôt leurs placements gagnants (Shefrin et Statman, 1985). Racheter « quand le marché aura baissé » suppose de prévoir les cours, ce que l'efficience rend illusoire ; cette vente ramènerait en outre les actions à 30 % du portefeuille (12 600 k€ sur 42 000 k€), en dehors de l’allocation retenue.</li>
+<li>La présidente, enfin, exprime une aversion aux pertes compréhensible ; elle est ici traduite en règle explicite (contrainte de 4 000 k€), ce qui la rend légitime.</li>
+</ul>
+<p><strong>Règles de prémunition (0,5 pt).</strong> Fixer par écrit, dans la charte de placement, l'allocation cible et la règle de rééquilibrage annuel, pour éviter les décisions d'opportunité ; mesurer la performance sur longue période, après frais et par rapport à un indice de référence ajusté du risque (ratios de Sharpe et de Treynor), et non sur les dernières années ; interdire ou plafonner les placements dans le secteur de la coopérative ; confier l'examen des placements à un comité financier comprenant un expert indépendant, qui présente au conseil des analyses chiffrées avant toute décision.</p>
+<p><strong>Réponses tolérées</strong> : une réponse courte obtient tous les points si elle est reliée aux chiffres du cas (les développements ci-dessus vont au-delà de l'attendu) ; autres biais pertinents s'ils sont reliés à un extrait (ancrage sur le gain de 40 % ou sur les 12 %, biais de confirmation, illusion de contrôle, comptabilité mentale) ; recommandation d'une gestion mixte (cœur indiciel et petite part active) si elle est argumentée par les frais et l'efficience ; efficience présentée sans les trois formes si son implication pour la gestion active est correcte.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Présenter les biais comme une liste de cours, sans les relier aux extraits ni aux chiffres du mandat (orientation « présentation psychologique générale », exclue par le programme).</li>
+<li>Attribuer à Fama la finance comportementale, ou commettre une erreur d'attribution signalée dans F99 et F10 (Kahneman a reçu le prix Nobel en 2002 ; son coauteur, décédé en 1996, ne l'a pas reçu).</li>
+<li>Conclure que la gestion indicielle supprime le risque : elle supprime le risque de mauvaise gestion et une partie des frais, pas le risque de marché.</li>
+<li><code>JUR-T14</code> — efficience évoquée sans en tirer la conséquence pour le choix du mode de gestion.</li>
+<li><code>JUR-T06</code> — réponse sans auteur ni théorie.</li>
+</ul>
+<hr />
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Guide pédagogique DSCG, juillet 2026, p. 73-77</td>
+<td>efficience (trois formes, rôle limité du timing) ; finance comportementale ; rentabilité espérée et bêta ; portefeuille de deux titres, corrélation fournie, Sharpe et Treynor ; vérifications statistiques des théories et optimisation de portefeuille exclues</td>
+<td>[V]</td>
+<td>F06 § 0, 3 et 4 ; <code>perimetre_ue2.yaml</code></td>
+</tr>
+<tr class="even">
+<td>Markowitz (1952)</td>
+<td>diversification, rôle de la corrélation</td>
+<td>[V programme 5.3]</td>
+<td>F10 § 2</td>
+</tr>
+<tr class="odd">
+<td>MEDAF (Sharpe, 1964) ; ratio de Sharpe (1966) ; ratio de Treynor (1965)</td>
+<td>seul le risque systématique est rémunéré ; mesures de performance</td>
+<td>[S]</td>
+<td>F10 § 2 ; F02</td>
+</tr>
+<tr class="even">
+<td>Gordon et Shapiro</td>
+<td>rentabilité espérée d'une action à croissance constante du dividende</td>
+<td>[V programme 5.2, sans année]</td>
+<td>F10 § 2</td>
+</tr>
+<tr class="odd">
+<td>Fama (1970)</td>
+<td>efficience informationnelle, trois formes</td>
+<td>[V programme 5.1]</td>
+<td>F10 § 1 ; F06 § 3</td>
+</tr>
+<tr class="even">
+<td>Kahneman et Tversky (1973)</td>
+<td>heuristiques et biais, représentativité</td>
+<td>[V programme 5.1 pour la référence ; S pour le contenu]</td>
+<td>F10 § 1 ; F06 § 4</td>
+</tr>
+<tr class="odd">
+<td>Shefrin et Statman (1985), facultatif</td>
+<td>effet de disposition</td>
+<td>[S]</td>
+<td>F10 § 1 ; F06 § 4.2</td>
+</tr>
+<tr class="even">
+<td>Préférence pour le familier</td>
+<td>biais décrit sans attribution d'auteur</td>
+<td>[S]</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Taux sans risque 4 % et prime de risque du marché 5 %</td>
+<td>hypothèses d'énoncé, plausibles fin 2026</td>
+<td>[S]</td>
+<td>F11 § 1 et 2</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
