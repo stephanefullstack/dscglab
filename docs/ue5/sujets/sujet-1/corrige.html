@@ -1,0 +1,1529 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Sujet complet n° 1</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Sujet complet</p><p>3 heures</p><p>40 points</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Sujet d'entraînement n° 1</h1><p class="cas">dossier 1, Comptoirs Ligériens, réseau coopératif de 46 épiceries : MCD et MLD d'un entrepôt de pilotage, gouvernance DAMA-DMBOK, dictionnaire, qualité des données, critique d'un tableau de bord ; dossier 2, Comptoirs Ligériens : régie, forfait et infogérance, SLA, pénalités et réversibilité, Gantt de la transition, modèle SECI ; dossier 3, Comptoirs Ligériens : trois projets d'IA au regard de l'AI Act daté, blockchain de consortium pour l'origine locale, Green IT et indicateurs.</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base d'une réglementation au 31/12/2026.</p>
+<p>Textes intégrés : fiches de travail datées et base des référentiels datés.</p>
+<p>Bien que le corrigé mentionne des textes juridiques et normatifs, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte avant tout sur la pertinence et la cohérence des réponses.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dossier</th>
+<th style="text-align: right;">Points</th>
+<th>Questions</th>
+<th>Exercice d'origine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 – Gouverner et modéliser les données de pilotage</td>
+<td style="text-align: right;">16</td>
+<td>1.1 à 1.4</td>
+<td><a href="../../exercices/ex01/sujet.html">Comptoirs Ligériens, réseau coopératif de 46 épiceries : MCD et MLD d'un entrepôt de pilotage, gouvernance DAMA-DMBOK, dictionnaire, qualité des données, critique d'un tableau de bord</a></td>
+</tr>
+<tr class="even">
+<td>2 – Infogérance, transition et transfert des connaissances</td>
+<td style="text-align: right;">14</td>
+<td>2.1 à 2.4</td>
+<td><a href="../../exercices/ex02/sujet.html">Comptoirs Ligériens : régie, forfait et infogérance, SLA, pénalités et réversibilité, Gantt de la transition, modèle SECI</a></td>
+</tr>
+<tr class="odd">
+<td>3 – Intelligence artificielle, traçabilité et numérique responsable</td>
+<td style="text-align: right;">10</td>
+<td>3.1 à 3.3</td>
+<td><a href="../../exercices/ex03/sujet.html">Comptoirs Ligériens : trois projets d'IA au regard de l'AI Act daté, blockchain de consortium pour l'origine locale, Green IT et indicateurs</a></td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>40</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-1--gouverner-et-modéliser-les-données-de-pilotage-16-points">DOSSIER 1 – GOUVERNER ET MODÉLISER LES DONNÉES DE PILOTAGE (16 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1 Modélisation de l'entrepôt de pilotage</td>
+<td><code>2.1.b</code> Modélisation des données (modèles conceptuels, logiques et physiques) ; <code>2.1.c</code> Architectures orientées données (datawarehouse, datalake, etc.)</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>1.2 Gouvernance des données</td>
+<td><code>2.3.c</code> Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK) ; <code>2.1.e</code> Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>1.3 Qualité des données</td>
+<td><code>2.1.e</code> Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données ; <code>2.2.b</code> Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>1.4 Critique du tableau de bord mensuel</td>
+<td><code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés ; <code>3.1.e</code> Revue et amélioration continue des dispositifs de pilotage</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 1 – Gouverner et modéliser les données de pilotage</strong></td>
+<td></td>
+<td><strong>16</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (définitions, règles de passage, référentiels) 3,5 points (items 1.1 b-1 et c-1, 1.2 a-1, a-2 et b-1, 1.3 a-1, 1.4 a-1) ; modélisation, analyse des annexes et recommandations 12,5 points. Durée conseillée : 16 points × 4,5 minutes ≈ 1 h 10.</p>
+<hr />
+<h3 id="11--modélisation-de-lentrepôt-de-pilotage-5-points">1.1 – Modélisation de l'entrepôt de pilotage (5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.b</code> « Modélisation des données (modèles conceptuels, logiques et physiques) » ; <code>2.1.c</code> « Architectures orientées données (datawarehouse, datalake, etc.) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (règles de gestion RG1 à RG6, objectif du projet Boussole) et 1.4 (attente de comparaison entre magasins).</p>
+<p><strong>Barème indicatif (5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Cinq entités avec identifiant souligné (Magasin, Produit, Famille, Fournisseur, Mois)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Attributs élémentaires correctement placés, aucun attribut calculé ni clé étrangère dans le MCD</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Associations <em>appartenir</em> et <em>fournir</em> avec cardinalités justifiées par RG3 et RG4</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Association ternaire <em>vendre</em> (Magasin, Produit, Mois) portant quantité vendue, chiffre d'affaires HT et quantité démarquée ; cardinalités 0,n / 0,n / 1,n justifiées par RG6</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Règles de passage énoncées (entité → table ; association à cardinalité maximale 1 → clé étrangère ; association n-aire → table à clé composée)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Table Produit avec deux clés étrangères</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Table Vente_mensuelle à clé composée de trois clés étrangères, avec les trois mesures</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Entrepôt défini et choix argumenté contre le lac de données (besoin de pilotage stable, données structurées, historique)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Lecture en étoile : table de faits au grain mensuel, trois dimensions (magasin, produit, mois) dont le temps, mesures additives ; famille et fournisseur en flocon, ou dénormalisées dans Produit</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>1.1 a) – Modèle conceptuel des données</em></p>
+<p>Le MCD représente les objets de gestion (entités), leurs propriétés et leurs liens (associations), avec des cardinalités qui traduisent les règles de gestion, indépendamment de toute technique.</p>
+<p>Entités (identifiant en premier, souligné sur la copie) :</p>
+<ul>
+<li>MAGASIN (<u>code_magasin</u>, nom_magasin, ville, surface_vente, date_adhesion) – RG1 ;</li>
+<li>PRODUIT (<u>code_produit</u>, libelle_produit, code_ean, label) – RG2 ;</li>
+<li>FAMILLE (<u>code_famille</u>, libelle_famille) – RG3 ;</li>
+<li>FOURNISSEUR (<u>code_fournisseur</u>, raison_sociale, commune, type_fournisseur, distance_km) – RG4 ;</li>
+<li>MOIS (<u>code_mois</u>, annee, numero_mois, trimestre) – RG5 (0,5 pt pour les entités, 0,5 pt pour les attributs).</li>
+</ul>
+<p>Associations et cardinalités :</p>
+<pre><code>FAMILLE (1,n) ---- appartenir ---- (1,1) PRODUIT (1,1) ---- fournir ---- (1,n) FOURNISSEUR
+
+MAGASIN (0,n) ---- vendre [quantite_vendue, ca_ht, quantite_demarquee] ---- (0,n) PRODUIT
+                                   |
+                                 (1,n)
+                                  MOIS</code></pre>
+<ul>
+<li><em>appartenir</em> : un produit appartient à une et une seule famille (1,1) ; une famille regroupe au moins un produit (1,n) – RG3 ;</li>
+<li><em>fournir</em> : un produit est fourni par un et un seul fournisseur (1,1) ; un fournisseur fournit au moins un produit (1,n) – RG4 (0,5 pt) ;</li>
+<li><em>vendre</em>, association ternaire : les trois mesures dépendent du couple magasin × produit × mois et ne peuvent être portées par aucune des trois entités ; un magasin qui vient d'adhérer peut n'avoir aucune vente (0,n), un produit peut n'être vendu nulle part un mois donné (0,n), chaque mois chargé comporte au moins une vente (1,n) – RG6 (1 pt).</li>
+</ul>
+<p><em>1.1 b) – Modèle logique des données</em></p>
+<p>Règles de passage (0,5 pt) : chaque entité devient une table dont l'identifiant est la clé primaire ; pour une association binaire dont une patte a une cardinalité maximale de 1 (<em>appartenir</em>, <em>fournir</em>), l'identifiant de l'entité côté n migre comme clé étrangère dans la table côté 1 (non nulle, puisque la cardinalité minimale est 1) ; une association ternaire devient une table dont la clé primaire est la concaténation des trois identifiants, chacun clé étrangère, et qui porte les attributs de l'association.</p>
+<ul>
+<li>Magasin (<u>code_magasin</u>, nom_magasin, ville, surface_vente, date_adhesion)</li>
+<li>Famille (<u>code_famille</u>, libelle_famille)</li>
+<li>Fournisseur (<u>code_fournisseur</u>, raison_sociale, commune, type_fournisseur, distance_km)</li>
+<li>Produit (<u>code_produit</u>, libelle_produit, code_ean, label, #code_famille, #code_fournisseur) (0,5 pt)</li>
+<li>Mois (<u>code_mois</u>, annee, numero_mois, trimestre)</li>
+<li>Vente_mensuelle (<u>#code_magasin, #code_produit, #code_mois</u>, quantite_vendue, ca_ht, quantite_demarquee) (0,5 pt)</li>
+</ul>
+<p>Le modèle physique (types, index, contraintes de non-nullité) se déduit du MLD lors de l'implantation dans le SGBD de l'entrepôt ; il n'est pas demandé.</p>
+<p><em>1.1 c) – Entrepôt plutôt que lac ; lecture en étoile</em></p>
+<p>Un entrepôt de données est une base orientée sujet, intégrée, historisée et non volatile, structurée pour l'analyse ; un lac de données stocke des données brutes et hétérogènes dont le schéma n'est défini qu'à la lecture, pour l'exploration. En l'espèce, le besoin est un pilotage récurrent par des indicateurs stables (chiffre d'affaires, démarque, part du local), à partir de sources structurées (caisses, ERP), avec un historique mensuel et des comparaisons entre magasins demandées par les gérants (annexe 1.4) : un entrepôt alimenté par une chaîne d'extraction, de transformation et de chargement répond à ce besoin ; un lac n'apporterait rien tant qu'aucune donnée non structurée n'est exploitée et exigerait une gouvernance que la coopérative n'a pas encore (0,5 pt).</p>
+<p>Le modèle obtenu est un schéma en étoile : Vente_mensuelle est la table de faits, au grain « magasin × produit × mois », qui porte des mesures additives (quantités, chiffre d'affaires) ; Magasin, Produit et Mois sont des dimensions, et la dimension temps est explicite. Famille et Fournisseur, rattachées à Produit et non à la table de faits, font du modèle un léger flocon ; les dénormaliser dans la dimension Produit le ramènerait à une étoile stricte et simplifierait les restitutions par famille ou par type de fournisseur (0,5 pt).</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Noms d'entités, d'associations ou d'attributs différents s'ils restent explicites (« Article », « Période », « Ligne_vente ») ; attributs complémentaires pertinents (prix de vente conseillé, région du magasin) ; notation « pattes de corbeau » ou UML lisible (format libre, JUR-T10).</li>
+<li>Entité VENTE_MENSUELLE à identifiant propre (id_vente) reliée par trois associations (1,1) à Magasin, Produit et Mois, si le candidat signale que le triplet doit rester unique : modélisation acceptée (barème de a-4 et b-3 maintenu si la contrainte d'unicité est mentionnée).</li>
+<li>Cardinalité 1,n côté Magasin si le candidat suppose explicitement que tout magasin chargé a déjà vendu : hypothèse acceptée.</li>
+<li>Réponse en c) qui recommande une architecture combinant un entrepôt et un référentiel de données maîtres (produits, fournisseurs) : valorisée.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>MCD et MLD confondus</em> — clés étrangères dessinées dans le MCD, MLD sans table issue de l'association ternaire ou clé de Vente_mensuelle réduite à un seul identifiant ; juste : le MCD ne comporte ni clé étrangère ni table, le MLD dérive de règles de passage énoncées.</li>
+<li><em>MCD et MLD confondus</em> (<code>JUR-T06</code>) — confondre « modéliser » et « décrire » : liste d'entités sans associations ni cardinalités ; juste : chaque cardinalité est justifiée par une règle de gestion.</li>
+<li><em>Entrepôt et lac de données confondus</em> — entrepôt et lac présentés comme équivalents ou le lac comme « entrepôt moderne » ; juste : finalités, schémas et gouvernance différents, et complémentaires.</li>
+<li><em>BI réduite à un outil</em> (<code>JUR-D02</code>) — réduire l'entrepôt à l'outil de restitution (« le projet consiste à acheter un outil de BI ») ; juste : chaîne collecte, transformation, entrepôt, restitution (JUR-D01).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Formalisme Merise (MCD, MLD, règles de passage)</td>
+<td>entités, associations, cardinalités</td>
+<td>F07 § 2 à 5</td>
+<td>manuels</td>
+</tr>
+<tr class="even">
+<td>Entrepôt et lac de données ; schéma en étoile</td>
+<td>définitions, faits, dimensions, grain</td>
+<td>F07 § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12--gouvernance-des-données-4-points">1.2 – Gouvernance des données (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.c</code> « Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK) ».</li>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.e</code> « Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (organisation, absence de responsable des données, articles créés en caisse), 1.2 (règles de gestion, constats) et 1.4 (témoignages de Mme BENALI, de M. FERNANDES et de Mme OUHIBI).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Gouvernance des données définie (décisions, rôles, règles, contrôle)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>DAMA-DMBOK présenté comme référentiel de bonnes pratiques, domaines prioritaires reliés au cas</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Propriétaire et intendant distingués</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Répartition pour les trois domaines, justifiée par les annexes (0,5 par domaine dans la limite de 1)</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Instance d'arbitrage : composition, fréquence, décisions</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c</td>
+<td>Deux entrées du dictionnaire complètes (0,5 chacune)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>1.2 a) – Gouvernance des données et DAMA-DMBOK</em></p>
+<p>La gouvernance des données est l'ensemble des décisions, des rôles, des règles et des contrôles qui organisent la responsabilité sur les données, leur qualité, leur sécurité et leur usage tout au long de leur cycle de vie ; elle fait de la donnée un actif partagé et non un sous-produit des applications (0,5 pt). À Comptoirs Ligériens, elle est absente : aucun responsable des données n'est désigné, les fiches sont saisies par la DSI sur formulaire et chaque magasin crée ses propres articles (annexe 1.1) ; la directrice des achats tient la qualité pour « un problème informatique » (annexe 1.4).</p>
+<p>Le DAMA-DMBOK (DAMA International, 2e édition) est un référentiel, c'est-à-dire un corpus de bonnes pratiques et non une norme certifiable, qui organise la gestion des données en onze domaines de connaissance autour de la gouvernance. Pour la coopérative, il fournit un vocabulaire commun et une grille pour hiérarchiser les chantiers : les domaines prioritaires sont la gouvernance (rôles, politiques), les données de référence et données maîtres (référentiel unique des produits et des fournisseurs), la qualité des données et les métadonnées (dictionnaire), puis l'entrepôt et le décisionnel, qui ne vaudront que si les trois premiers sont maîtrisés (0,5 pt).</p>
+<p><em>1.2 b) – Rôles par domaine et instance d'arbitrage</em></p>
+<p>Le propriétaire des données est le responsable métier d'un domaine : il définit les données, fixe les règles de gestion et le niveau de qualité attendu, autorise les accès et arbitre ; l'intendant met en œuvre ces règles au quotidien : il tient le dictionnaire, contrôle, corrige et anime les producteurs de données. Le propriétaire décide, l'intendant opère ; ni l'un ni l'autre n'est nécessairement à la DSI, qui fournit les outils et l'architecture (0,5 pt).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Domaine</th>
+<th>Propriétaire</th>
+<th>Intendant</th>
+<th>Justification tirée des annexes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Produits (catalogue, familles, labels)</td>
+<td>directrice des achats et de l'offre (Mme BENALI)</td>
+<td>l'une des deux assistantes de la DSI, rattachée fonctionnellement aux achats</td>
+<td>les achats définissent l'offre ; les fiches sont déjà saisies par ces assistantes (annexe 1.1) : l'intendance leur donne un mandat métier sans charge nouvelle pour Mme BENALI, qui craint de « corriger 9 000 fiches » (annexe 1.4)</td>
+</tr>
+<tr class="even">
+<td>Fournisseurs (producteurs et grossistes)</td>
+<td>directrice des achats et de l'offre, responsable du référencement</td>
+<td>la seconde assistante, avec la direction administrative et financière pour les données de paiement</td>
+<td>doublons et distances manquantes (annexe 1.2) relèvent du référencement ; la distance conditionne l'indicateur « local »</td>
+</tr>
+<tr class="odd">
+<td>Ventes et démarque</td>
+<td>directeur du réseau (M. ARNAUD), qui anime les magasins</td>
+<td>contrôleur de gestion (M. FERNANDES), appuyé d'un référent dans chaque magasin pour la démarque</td>
+<td>les ventes et la démarque sont produites par les magasins ; le contrôleur de gestion connaît les écarts (annexe 1.4) et sera libéré des rapprochements manuels</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt par domaine justifié, dans la limite de 1 pt.)</p>
+<p>Instance : un comité de gouvernance des données, présidé par le directeur général, réunissant les propriétaires, la DSI, le contrôle de gestion et deux gérants administrateurs (dont Mme OUHIBI), qui se réunit chaque trimestre ; il valide les règles de gestion et le dictionnaire, arbitre les conflits (création d'articles locaux par les magasins, définition du « produit local ») et suit les indicateurs de qualité (question 1.3). La présence des gérants est décisive dans une coopérative où les magasins sont autonomes (0,5 pt).</p>
+<p><em>1.2 c) – Entrées du dictionnaire de données</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Rubrique</th>
+<th>Distance du fournisseur</th>
+<th>Quantité démarquée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nom technique</td>
+<td>distance_km</td>
+<td>quantite_demarquee</td>
+</tr>
+<tr class="even">
+<td>Définition</td>
+<td>distance routière, en kilomètres, entre le lieu de production (ou l'entrepôt du grossiste) et la plateforme de Tours</td>
+<td>quantité d'un produit retirée de la vente dans un magasin au cours du mois (produits jetés ou donnés), en unité de vente</td>
+</tr>
+<tr class="odd">
+<td>Type et format</td>
+<td>entier positif ; 0 à 2 000</td>
+<td>décimal positif (deux décimales pour les produits au poids) ; agrégé au mois</td>
+</tr>
+<tr class="even">
+<td>Règle de gestion et de contrôle</td>
+<td>obligatoire pour tout fournisseur ; un fournisseur à moins de 150 km rend ses produits « locaux » ; contrôle de vraisemblance à la création</td>
+<td>obligatoire pour chaque magasin et chaque produit frais vendu ; valeur nulle saisie explicitement ; alerte si elle dépasse la quantité vendue</td>
+</tr>
+<tr class="odd">
+<td>Source</td>
+<td>fiche fournisseur de l'ERP, saisie au référencement</td>
+<td>logiciel de caisse (fonction de démarque), et non plus le tableur commun</td>
+</tr>
+<tr class="even">
+<td>Propriétaire / intendant</td>
+<td>directrice des achats / intendante fournisseurs</td>
+<td>directeur du réseau / contrôleur de gestion</td>
+</tr>
+<tr class="odd">
+<td>Sensibilité</td>
+<td>publique dans le réseau</td>
+<td>interne</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt par entrée comportant au moins définition, type, règle, source et propriétaire.)</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Désignation d'un <em>Chief Data Officer</em> ou d'un délégué aux données : acceptée si le candidat la justifie par la taille du réseau et rappelle que l'organisation de la gouvernance reste « illustrative, non normative » (programme 2.3).</li>
+<li>Propriétaire du domaine « ventes » confié au directeur administratif et financier : accepté s'il est justifié (fiabilité du chiffre d'affaires).</li>
+<li>Dictionnaire présenté sous forme de liste plutôt que de tableau ; rubriques supplémentaires (historique, durée de conservation) valorisées.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Norme, référentiel et solution confondus</em> (<code>JUR-S06</code>) — présenter le DAMA-DMBOK comme une norme internationale certifiable ou comme un logiciel ; juste : référentiel associatif de bonnes pratiques, non certifiable.</li>
+<li><code>JUR-T01</code> — gouvernance définie sans application au cas, ou réduite à un outil (catalogue de données) ; juste : rôles, règles et instances reliés aux témoignages.</li>
+<li>Confier la propriété des données à la DSI (« la DSI saisit, donc elle possède ») ; juste : la DSI est dépositaire technique, la responsabilité est métier (JUR-G10).</li>
+<li><em>MCD et MLD confondus</em> — confondre dictionnaire de données et MCD ; juste : le dictionnaire décrit chaque donnée (définition, format, règle, source, propriétaire), le MCD leurs relations.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DAMA-DMBOK, 2e édition (DAMA International)</td>
+<td>référentiel, onze domaines de connaissance</td>
+<td><code>dama_dmbok2</code> / F07 § 8.2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Rôles de propriétaire et d'intendant</td>
+<td>gouvernance illustrative</td>
+<td>F07 § 8.1</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13--qualité-des-données-4-points">1.3 – Qualité des données (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.e</code> « Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données ».</li>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.b</code> « Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (constats du profilage), 1.3 (indicateurs du mois) et 1.4 (témoignages).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Qualité des données définie (aptitude à l'usage, dimensions)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Quatre constats rattachés chacun à une dimension, avec la conséquence pour le pilotage (0,5 par constat)</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Plan d'action hiérarchisé : correction à la source, contrôles à la saisie, responsabilités</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Deux indicateurs de qualité à cinq champs (0,5 chacun)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>1.3 a) – Dimensions de la qualité appliquées aux constats</em></p>
+<p>La qualité des données est leur aptitude à l'usage prévu ; elle s'apprécie selon des dimensions décrites notamment par le modèle de qualité des données ISO/IEC 25012 (exactitude, complétude, cohérence, actualité, accessibilité) ; l'unicité est une dimension usuelle des référentiels de pratique, dont le DAMA-DMBOK (0,5 pt).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Constat (annexe 1.2)</th>
+<th>Dimension dégradée</th>
+<th>Conséquence pour le pilotage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Une vingtaine de doublons pour 430 fiches de fournisseurs</td>
+<td>unicité</td>
+<td>achats et volumes d'un même producteur dispersés : poids réel des producteurs locaux et négociations faussés</td>
+</tr>
+<tr class="even">
+<td>Distance non renseignée pour 12 % des producteurs</td>
+<td>complétude</td>
+<td>indicateur « part des ventes de produits locaux » (38 %, annexe 1.3) sous-estimé ou non calculable ; risque d'affichage « local » non étayé</td>
+</tr>
+<tr class="odd">
+<td>1 700 articles créés en caisse, sans famille ni fournisseur, libellés hétérogènes (4 % du chiffre d'affaires)</td>
+<td>cohérence (et conformité au référentiel)</td>
+<td>ventes non rattachables aux familles ni aux producteurs ; comparaisons entre magasins faussées</td>
+</tr>
+<tr class="even">
+<td>Démarque saisie par 31 magasins sur 46</td>
+<td>complétude</td>
+<td>taux de démarque de 2,9 % calculé sur un échantillon biaisé ; l'objectif du projet de prévision (annexe 3.1) ne pourra pas être mesuré</td>
+</tr>
+<tr class="odd">
+<td>Écart de 1,8 % entre le tableau de bord et les caisses</td>
+<td>exactitude</td>
+<td>chiffre d'affaires contesté par les gérants, perte de confiance dans tout le tableau de bord</td>
+</tr>
+<tr class="even">
+<td>Diffusion à J+12</td>
+<td>actualité</td>
+<td>décisions de commande prises avant la publication (annexe 1.4)</td>
+</tr>
+</tbody>
+</table>
+<p>(Quatre constats attendus, 0,5 pt chacun.)</p>
+<p><em>1.3 b) – Plan d'action et indicateurs</em></p>
+<p>Plan hiérarchisé (0,5 pt) :</p>
+<ol type="1">
+<li>avant le chargement de l'entrepôt (avril-mai 2027) : dédoublonner le référentiel des fournisseurs par le numéro SIRET et compléter les distances, sous la responsabilité de l'intendante des fournisseurs ; c'est la condition de l'indicateur « local » ;</li>
+<li>à la source : rendre la distance obligatoire au référencement, interdire la création d'articles en caisse hors catalogue ou la soumettre à une validation de la centrale sous 48 heures (décision du comité de gouvernance, question 1.2) ; faire saisir la démarque dans le logiciel de caisse par tous les magasins ;</li>
+<li>dans la chaîne de chargement : contrôles automatiques (rejet des articles sans famille, rapprochement du chiffre d'affaires de l'entrepôt avec les caisses), fin des ressaisies manuelles ;</li>
+<li>en continu : tableau de bord de qualité présenté au comité trimestriel, correction à la source plutôt que dans l'entrepôt.</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Taux de complétude de la distance des fournisseurs</td>
+<td>fiches de producteurs locaux actifs avec distance renseignée / fiches de producteurs locaux actifs</td>
+<td>référentiel des fournisseurs de l'ERP</td>
+<td>mensuelle</td>
+<td>100 % avant l'ouverture de l'entrepôt (88 % en février 2027)</td>
+<td>processus</td>
+</tr>
+<tr class="even">
+<td>Taux de magasins saisissant leur démarque</td>
+<td>magasins ayant transmis leur démarque du mois / magasins associés</td>
+<td>logiciel de caisse, chargement de l'entrepôt</td>
+<td>mensuelle</td>
+<td>46 sur 46, soit 100 %, fin 2027 (31 sur 46 en 2026)</td>
+<td>processus</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt par indicateur complet.)</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres indicateurs à cinq champs : taux de doublons de fournisseurs, part du chiffre d'affaires réalisée sur des articles hors catalogue (cible inférieure à 1 %), écart de chiffre d'affaires entre entrepôt et caisses (cible 0 %), délai de mise à disposition (J+2).</li>
+<li>Rattachement des articles locaux à la « conformité » ou à l'« exactitude » s'il est argumenté ; axe « gouvernance » (ESG) ou « apprentissage » accepté s'il est justifié.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Indicateurs génériques</em> (<code>JUR-A02</code>) — indicateurs génériques sans formule, source ni cible, ou sans lien avec les constats ; juste : chaque indicateur mesure la correction d'un constat de l'annexe 1.2.</li>
+<li>Corriger les données dans l'entrepôt sans traiter la cause à la source ; juste : correction et contrôle à la saisie, responsabilité du propriétaire.</li>
+<li><code>JUR-T03</code> — paraphrase des constats sans dimension ni conséquence ; juste : constat → dimension → effet sur une décision du réseau.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ISO/IEC 25012 — Modèle de qualité des données</td>
+<td>dimensions de la qualité</td>
+<td><code>iso_iec_25012</code> / F07 § 8.3</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="14--critique-du-tableau-de-bord-mensuel-3-points">1.4 – Critique du tableau de bord mensuel (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés ».</li>
+<li>§3.1 – Concevoir, construire et exploiter des outils de pilotage de la performance : <code>3.1.e</code> « Revue et amélioration continue des dispositifs de pilotage ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.3 (graphiques et indicateurs) et 1.4 (témoignages de Mme OUHIBI et de M. FERNANDES).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Tableau de bord de pilotage défini (indicateurs sélectionnés, reliés aux objectifs, avec cibles, au service d'une décision)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Trois défauts identifiés, chacun relié à un risque de décision erronée (0,5 par défaut)</td>
+<td>1,5</td>
+</tr>
+<tr class="odd">
+<td>b</td>
+<td>Principes de la nouvelle restitution : contenu et indicateurs à cible, représentations adaptées, comparaisons par groupes de magasins, délai (0,5 par principe, dans la limite de 1)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>1.4 a) – Trois défauts et leurs risques</em></p>
+<p>Un tableau de bord de pilotage est un ensemble restreint d'indicateurs, choisis en fonction des objectifs et des décisions de ses destinataires, assortis de cibles et de seuils d'alerte et diffusés à temps pour agir ; il n'est pas un recueil de toutes les données disponibles (0,5 pt). Une visualisation doit rendre une donnée fidèlement lisible ; sa lecture critique porte sur la représentation (échelle, type de graphique) et sur l'interprétation (biais, corrélation et causalité). Défauts attendus, trois parmi :</p>
+<ul>
+<li><strong>Axe tronqué et comparaison saisonnière inadaptée (graphique 1)</strong> : l'axe commence à 13,5 M€, si bien que la barre de janvier paraît huit fois plus courte que celle de décembre alors que le chiffre d'affaires ne baisse que d'environ 13 % (13,8 contre 15,9 M€) ; décembre est un mois de fêtes, et la bonne comparaison est janvier 2026 : 13,8 M€ contre 13,2 M€, soit une hausse d'environ 4,5 %. Risque : alarme injustifiée et mesures commerciales inutiles (promotions, baisse des commandes) (0,5 pt).</li>
+<li><strong>Corrélation présentée comme une causalité (graphique 3)</strong> : les magasins de centre-ville des grandes agglomérations cumulent forte utilisation de la carte et fort chiffre d'affaires au mètre carré ; un facteur commun (emplacement, clientèle, taille de l'agglomération) explique les deux variables. Risque : généraliser une remise de 5 % qui réduit la marge de tous les magasins sans effet démontré sur les ventes (0,5 pt).</li>
+<li><strong>Indicateur calculé sur un échantillon biaisé et signaux sans seuils (tableau)</strong> : le taux de démarque de 2,9 %, affiché en vert, ne porte que sur 31 magasins, sans doute les plus rigoureux ; les seuils des signaux ne sont pas documentés et la part du local (38 %) repose sur des distances incomplètes. Risque : sous-estimer la démarque et renoncer à des actions de réduction du gaspillage (0,5 pt).</li>
+<li><strong>Diagramme circulaire en trois dimensions à 46 secteurs (graphique 2)</strong> : illisible, la perspective déforme les surfaces et aucune comparaison n'est possible. Risque : aucune décision possible, perte de confiance des gérants (0,5 pt, en remplacement d'un des trois défauts précédents).</li>
+</ul>
+<p><em>1.4 b) – Principes de la nouvelle restitution</em></p>
+<ul>
+<li><strong>Contenu</strong> : un nombre limité d'indicateurs reliés aux objectifs du réseau (chiffre d'affaires, marge, démarque, part du local, panier moyen), chacun avec formule, source, cible et seuils d'alerte documentés ; la qualité des données affichée (part des magasins inclus).</li>
+<li><strong>Représentations</strong> : courbes sur treize mois glissants avec l'année précédente pour les évolutions, axes commençant à zéro pour les histogrammes, histogrammes classés plutôt que secteurs pour les comparaisons, nuages de points accompagnés d'une mise en garde sur la causalité.</li>
+<li><strong>Comparaisons et délai</strong> : comparaison de chaque magasin à des magasins de taille et d'emplacement comparables, comme le demande Mme OUHIBI ; diffusion à J+2 depuis l'entrepôt ; une page de synthèse pour le conseil et une page par magasin pour les gérants ; fin de l'ajout de graphiques au fil des comités (M. FERNANDES), revue annuelle du tableau de bord.</li>
+</ul>
+<p>(0,5 pt par principe justifié, dans la limite de 1 pt.)</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Tout autre défaut pertinent (absence de cible, absence de source, signal « orange » du panier moyen non expliqué), s'il est relié à un risque de décision.</li>
+<li>Variation de janvier exprimée en valeur (+0,6 M€) plutôt qu'en pourcentage ; ordre de grandeur de la baisse depuis décembre arrondi (« environ 2 M€ »).</li>
+<li>Mention d'outils de restitution du marché, à titre d'exemple seulement.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Corrélation prise pour une causalité</em> (<code>JUR-D06</code>) — valider la conclusion « la carte fait vendre » ; juste : corrélation n'est pas causalité, facteur commun à identifier, test sur des magasins comparables avant toute généralisation.</li>
+<li><em>BI réduite à un outil</em> (<code>JUR-D02</code>) — répondre par le changement d'outil de visualisation ; juste : la qualité du tableau de bord tient aux indicateurs, aux données et aux règles de représentation.</li>
+<li><em>Indicateurs génériques</em> — proposer une liste d'indicateurs sans cible ni seuil ; juste : chaque indicateur a une cible et un seuil d'alerte documentés.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Choix des représentations, biais de lecture, corrélation et causalité</td>
+<td>lecture critique</td>
+<td>F08 § 4 et 5</td>
+<td>guide p. 240</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-2--infogérance-transition-et-transfert-des-connaissances-14-points">DOSSIER 2 – INFOGÉRANCE, TRANSITION ET TRANSFERT DES CONNAISSANCES (14 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Choix des formes de contrat</td>
+<td><code>1.4.b</code> Typologie des contrats de prestation informatique (régie, forfait, infogérance, etc.) : méthodes d'intégration dans la stratégie SI et la gouvernance contractuelle ; <code>1.4.d</code> Méthodologie de négociation contractuelle et analyse des risques</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>2.2 Niveaux de service, pénalités et réversibilité</td>
+<td><code>1.4.c</code> Cadre juridique applicable : responsabilité, confidentialité, SLA, RGPD ; <code>1.4.e</code> Gouvernance de la relation client-prestataire (pilotage de la prestation, indicateurs de suivi, clauses d'audit)</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>2.3 Planification de la transition</td>
+<td><code>1.5.d</code> Planification des ressources, délais, coûts et qualité ; <code>1.5.e</code> Identification et gestion des risques (maintenance, évolutivité, sécurité)</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>2.4 Transfert des connaissances</td>
+<td><code>1.6.b</code> Architecture fonctionnelle des systèmes de knowledge management ; <code>1.6.c</code> Méthodes de gouvernance des dispositifs (rôles, responsabilités, indicateurs)</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 2 – Infogérance, transition et transfert des connaissances</strong></td>
+<td></td>
+<td><strong>14</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (définitions de la régie, du forfait, de l'infogérance, du SLA, de l'OLA, du modèle SECI : items 2.1 a, 2.2 a, 2.4 a) 3,5 points, la définition du chemin critique étant notée avec son identification (2.3 b-1) ; analyse du contrat et des niveaux de service, Gantt, dispositif de transfert 10,5 points. Durée conseillée : 14 points × 4,5 minutes ≈ 1 h 05.</p>
+<hr />
+<h3 id="21--choix-des-formes-de-contrat-4-points">2.1 – Choix des formes de contrat (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.4 – Gérer les relations contractuelles et opérationnelles avec les ESN : <code>1.4.b</code> « Typologie des contrats de prestation informatique (régie, forfait, infogérance, etc.) : méthodes d'intégration dans la stratégie SI et la gouvernance contractuelle » ; <code>1.4.d</code> « Méthodologie de négociation contractuelle et analyse des risques ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.4 (témoignages de M. LEMOINE et de Mme VASSEUR) et 2.1 (architecture, niveaux de service de 2026, offre de Nexalis, plan de transition).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Régie : mise à disposition de compétences au temps passé, sous la direction du client, qui porte le risque</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Forfait : livrable défini, prix et délai fixés, risque de dépassement porté par le prestataire</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Infogérance : prise en charge durable de tout ou partie du SI avec engagements de niveaux de service</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Limites de la régie actuelle tirées de l'annexe 2.1 et des témoignages (0,5 par limite, dans la limite de 1)</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Migration : forfait justifié (périmètre défini, recette, délai impératif)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Exploitation : infogérance avec SLA justifiée (continuité 7 jours sur 7, fin de la dépendance à une personne)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-4</td>
+<td>Conditions : compétence de pilotage conservée à la DSI, coût complet à comparer, dépendance maîtrisée</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>2.1 a) – Régie, forfait, infogérance</em></p>
+<ul>
+<li><strong>Régie</strong> (assistance technique) : l'ESN met à disposition des compétences facturées au temps passé (ici 90 jours à 650 € HT, soit 58 500 € HT en 2026) ; elle s'engage sur les moyens fournis, et le client, qui dirige les travaux, porte le risque de délai et de résultat (0,5 pt).</li>
+<li><strong>Forfait</strong> : l'ESN s'engage à livrer un résultat défini par un cahier des charges, à un prix et dans un délai fixés ; elle porte le risque de dépassement, sauf avenant si le besoin change (0,5 pt).</li>
+<li><strong>Infogérance</strong> : le client confie durablement à l'ESN tout ou partie de son SI (hébergement, exploitation, supervision, support) ; l'ESN s'engage sur des niveaux de service mesurables, assortis de pénalités ; le client reste responsable de son SI et de ses données et doit piloter la prestation (0,5 pt).</li>
+</ul>
+<p><em>2.1 b) – Limites de la régie actuelle et recommandations</em></p>
+<p>Limites de la régie pour Comptoirs Ligériens (1 pt pour deux limites étayées) :</p>
+<ul>
+<li>aucun engagement de niveau de service : disponibilité de 98,6 % sur la plage 6 h – 22 h, 14 incidents bloquants dont 9 un week-end, alors que les commandes du week-end préparent les livraisons du lundi, et 7 heures en moyenne pour rétablir le service, sans levier contractuel ;</li>
+<li>la régie suppose un client capable de diriger les intervenants ; or le pilotage repose sur M. LEMOINE seul, qui part le 30 juin 2027, et les ingénieurs d'Altinéa « changent tous les six mois » : aucune capitalisation ;</li>
+<li>des risques non maîtrisés : aucune restauration de sauvegarde testée, 22 nuits d'interface en échec ou corrigées à la main.</li>
+</ul>
+<p>Recommandations :</p>
+<ul>
+<li><strong>Migration de l'ERP et du portail : forfait</strong> (offre de 36 000 € HT, environnement recetté livré). Le besoin est ponctuel, son périmètre est connu (inventaire de la tâche B), le délai est impératif (30 juin 2027) : le forfait transfère le risque de dépassement à Nexalis, à condition de définir les livrables et les critères de recette (tâche D) et de lier le paiement à la recette (0,5 pt).</li>
+<li><strong>Exploitation durable : infogérance</strong> avec des niveaux de service adaptés au rythme des magasins (7 jours sur 7, 6 h – 22 h). Elle répond au souhait de Mme VASSEUR d'une DSI qui « pilote » au lieu de « surveiller des serveurs la nuit » et met fin à la dépendance envers une personne (0,5 pt).</li>
+<li><strong>Conditions</strong> : la DSI garde un responsable du contrat capable de contrôler les niveaux de service (sinon la dépendance envers M. LEMOINE devient une dépendance envers Nexalis, ce que redoute Mme VASSEUR) ; le surcoût apparent (168 000 € HT par an contre 58 500 € HT de régie en 2026) s'apprécie en coût complet, en ajoutant au coût actuel le remplacement de M. LEMOINE, le renouvellement de la salle informatique, une astreinte de week-end et le coût des incidents ; une réversibilité négociée dès la signature limite le risque d'enfermement (0,5 pt).</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Forfait de migration confié à un autre prestataire que l'infogérant, ou régie maintenue quelques mois en assistance à la transition, si la cohérence avec le délai et le pilotage est démontrée.</li>
+<li>Mention d'un hébergement en mode SaaS de l'ERP ou d'une tierce maintenance applicative pour l'interface, si elle est justifiée.</li>
+<li>Ordre de grandeur du coût complet, sans chiffrage poste par poste (non attendu).</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Régie, forfait et infogérance confondus</em> — confondre régie et forfait ou affirmer que la régie transfère le risque au prestataire ; juste : en régie, le client dirige et porte le risque ; au forfait, le prestataire s'engage sur le livrable.</li>
+<li><code>JUR-A05</code> / <code>JUR-G11</code> — présenter l'infogérance comme un transfert de responsabilité ; juste : le client reste responsable de son SI, de ses données et du pilotage de la prestation.</li>
+<li>Recommander un seul contrat pour deux besoins de nature différente (projet ponctuel et service récurrent).</li>
+<li><code>JUR-T01</code> — définitions sans exploitation des chiffres de l'annexe 2.1.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des contrats de prestation informatique</td>
+<td>régie, forfait, infogérance</td>
+<td>F04 § 1</td>
+<td>guide p. 255</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--niveaux-de-service-pénalités-et-réversibilité-4-points">2.2 – Niveaux de service, pénalités et réversibilité (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.4 – Gérer les relations contractuelles et opérationnelles avec les ESN : <code>1.4.c</code> « Cadre juridique applicable : responsabilité, confidentialité, SLA, RGPD » ; <code>1.4.e</code> « Gouvernance de la relation client-prestataire (pilotage de la prestation, indicateurs de suivi, clauses d'audit) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.1 (niveaux de service de 2026, articles du projet de contrat, observation de la DSI) et 3.3 (RGPD, NIS 2, Data Act).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>SLA défini : engagement contractuel sur des niveaux mesurables, avec mesure, reporting et conséquences</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>OLA distingué : accord interne entre équipes qui soutient le SLA</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Trois faiblesses des articles 6, 7 et 9 confrontées aux chiffres de 2026 (0,5 par faiblesse)</td>
+<td>1,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Rédactions ou indicateurs de remplacement mesurables</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Clause de réversibilité : contenu adapté au cas</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Deux autres clauses justifiées (sous-traitance des données personnelles, audit, sécurité et notification)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>2.2 a) – SLA et OLA</em></p>
+<p>La convention de niveau de service (<em>Service Level Agreement</em>) est l'engagement contractuel du prestataire envers son client sur des niveaux de service mesurables (disponibilité, délais de prise en charge et de rétablissement, sauvegardes), avec la méthode et la période de mesure, le reporting et les conséquences d'un manquement, dont les pénalités (0,5 pt). L'accord de niveau opérationnel (<em>Operational Level Agreement</em>) est un accord interne entre équipes d'une même organisation (par exemple, chez Nexalis, entre l'hébergement et le support) qui permet de tenir le SLA ; il n'engage pas le prestataire envers le client. Ces notions sont décrites par le référentiel ITIL (0,5 pt).</p>
+<p><em>2.2 b) – Trois faiblesses du projet de contrat</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Article</th>
+<th>Faiblesse au regard de 2026</th>
+<th>Rédaction ou indicateur proposé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>6 – plage de mesure</td>
+<td>disponibilité mesurée du lundi au vendredi, de 8 h à 18 h : 9 des 14 incidents bloquants de 2026 sont survenus un week-end, et les commandes du week-end préparent les livraisons du lundi ; un taux de 99,5 % ainsi mesuré peut coexister avec des week-ends sans service</td>
+<td>disponibilité mesurée de 6 h à 22 h, 7 jours sur 7, soit environ 480 heures par mois : 99,5 % tolère environ 2,4 heures d'indisponibilité par mois ; mesure par la supervision du client ou un outil partagé</td>
+</tr>
+<tr class="even">
+<td>6 – prise en charge</td>
+<td>prise en charge d'un incident bloquant en 4 heures « ouvrées » : un incident survenu le samedi matin peut n'être pris en charge que le lundi, alors que 9 des 14 incidents bloquants de 2026 sont survenus un week-end</td>
+<td>prise en charge en 30 minutes à 1 heure, 7 jours sur 7, sur la plage 6 h – 22 h (astreinte)</td>
+</tr>
+<tr class="odd">
+<td>6 – rétablissement</td>
+<td>« meilleurs efforts » : aucun engagement, alors que le rétablissement moyen a été de 7 heures en 2026</td>
+<td>garantie de temps de rétablissement d'un incident bloquant de 4 heures, y compris le week-end ; indicateur : part des incidents bloquants rétablis en moins de 4 heures, cible 95 %</td>
+</tr>
+<tr class="even">
+<td>7 – pénalités</td>
+<td>plafond de 5 % de la redevance mensuelle, soit 700 € HT au plus par mois ; déclenchement subordonné à une réclamation écrite dans les 15 jours d'un rapport trimestriel établi par le prestataire lui-même : peu dissuasif et facile à perdre</td>
+<td>pénalités automatiques, calculées sur un reporting mensuel contradictoire, plafond porté par exemple à 10 à 15 % de la redevance, et droit de résiliation en cas de manquements répétés</td>
+</tr>
+<tr class="odd">
+<td>9 – sauvegardes</td>
+<td>conservation de sept jours, aucun test de restauration, alors qu'aucune restauration n'a été testée en 2026 : une corruption découverte après une semaine serait irrécupérable</td>
+<td>perte de données maximale admissible (RPO) de 24 heures, rétention de 30 jours et archive mensuelle sur un an, copie dans un second site ; test de restauration chaque semestre avec procès-verbal ; indicateur : tests de restauration réussis / tests prévus, cible 100 %</td>
+</tr>
+</tbody>
+</table>
+<p>(Trois faiblesses attendues parmi les cinq, 0,5 pt chacune ; 0,5 pt pour des propositions mesurables.)</p>
+<p><em>2.2 c) – Réversibilité et autres clauses</em></p>
+<p>Clause de réversibilité (0,5 pt) : elle organise dès la signature la sortie du contrat, à son terme ou en cas de résiliation, sans interruption de service : restitution de toutes les données (ERP, portail, sauvegardes, historiques) dans un format ouvert et documenté, avec la documentation d'exploitation, en particulier celle de l'interface caisses-ERP ; assistance du prestataire sortant et transfert de compétences vers le repreneur ou la DSI ; maintien du service pendant une période de transition (par exemple six mois) ; prix et délais fixés au contrat, et non « à convenir » ; plan de réversibilité tenu à jour et testé. Pour un service d'informatique en nuage, le Data Act, applicable depuis le 12/09/2025, organise aussi le changement de fournisseur (portabilité des données, assistance à la sortie) (annexe 3.3) ; depuis le 12/01/2027, aucun frais de changement de fournisseur ne peut être facturé (article 29 § 1), à condition que l'hébergement de Nexalis soit un « service de traitement de données » au sens du règlement et non un service conçu en majorité sur mesure pour la coopérative (article 31). Le référentiel du cloud de confiance du Cigref rappelle que toute exigence opérationnelle doit être contractuellement exigible.</p>
+<p>Deux autres clauses, parmi (0,5 pt) :</p>
+<ul>
+<li><strong>Données personnelles</strong> : l'infogérant traite pour le compte de la coopérative des données personnelles (comptes des utilisateurs du portail, coordonnées des producteurs exploitants individuels) ; il est sous-traitant au sens de l'article 28 du RGPD, qui impose un contrat écrit (traitement sur instruction, confidentialité, sécurité, assistance, sort des données en fin de contrat) et interdit le recours à un autre sous-traitant sans autorisation écrite préalable, spécifique ou générale, du responsable du traitement (en cas d'autorisation générale, information préalable et droit d'objection) : l'article 14 doit être modifié en conséquence.</li>
+<li><strong>Audit</strong> : droit pour la coopérative, ou un tiers qu'elle mandate, d'auditer la prestation, la sécurité et le respect des niveaux de service, avec accès aux preuves et rapports d'audit indépendants.</li>
+<li><strong>Sécurité et notification des incidents</strong> : engagements de sécurité (authentification multifacteur des administrateurs, localisation des données dans l'Union européenne, chiffrement des sauvegardes) et notification sans délai de tout incident de sécurité. NIS 2 fait de la sécurité de la chaîne d'approvisionnement une mesure de gestion des risques ; sa transposition française n'est pas promulguée au 31/12/2026 (annexe 3.3), mais l'anticiper par contrat est une bonne pratique. La coopérative, centrale d'achat et grossiste alimentaire de plus de 50 salariés, entrerait elle-même dans le champ de NIS 2 comme entité importante dès l'entrée en vigueur de la loi de transposition (annexe II, point 4), et Nexalis, fournisseur de services gérés, également : la sécurité de la chaîne d'approvisionnement deviendrait alors une obligation, que le contrat doit anticiper dès 2027.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres valeurs cibles cohérentes avec le contexte (99,7 % sur 6 h – 22 h, rétablissement en 2 ou 6 heures, RPO de 12 heures) si elles sont justifiées par les commandes du week-end.</li>
+<li>Faiblesse relevée sur le reporting trimestriel produit par le seul prestataire, ou sur l'exclusion des « maintenances programmées » sans encadrement, en remplacement de l'une des trois attendues.</li>
+<li>Qualification de la coopérative comme future entité importante au sens de NIS 2 (grossiste alimentaire de plus de 50 salariés) et de Nexalis comme fournisseur de services gérés, présentée comme dépendante de la transposition française.</li>
+<li>Clause de durée et de sortie anticipée, ou clause d'évolution des prix, si elle est justifiée par le risque de dépendance.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>SLA et OLA confondus</em> — confondre SLA et OLA ; juste : le SLA engage le prestataire envers le client, l'OLA organise les équipes qui le tiennent.</li>
+<li><em>Indicateurs génériques</em> — proposer des niveaux de service sans plage ni méthode de mesure ; juste : un engagement vaut par sa mesure, sa période et sa conséquence.</li>
+<li><em>RTO et RPO inversés</em> — confondre perte de données admissible (RPO) et durée d'interruption admissible (RTO) dans l'article 9.</li>
+<li><em>NIS 2 confondue avec le RGPD ; Statut réglementaire affirmé sans date</em> — présenter NIS 2 comme applicable en droit français ou la confondre avec le RGPD ; juste : statut de l'annexe 3.3, et deux textes distincts (cybersécurité / données personnelles).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ITIL (PeopleCert)</td>
+<td>SLA, OLA, catalogue de services</td>
+<td><code>itil</code> / F04 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>RGPD, règlement (UE) 2016/679, art. 28</td>
+<td>sous-traitant, contrat écrit</td>
+<td><code>rgpd</code> / F15 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Data Act, règlement (UE) 2023/2854</td>
+<td>changement de fournisseur de services en nuage</td>
+<td><code>data_act</code> / F07 § 8.5</td>
+<td>applicable depuis le 12/09/2025</td>
+</tr>
+<tr class="even">
+<td>Directive (UE) 2022/2555 (NIS 2) et sa transposition française</td>
+<td>chaîne d'approvisionnement ; projet de loi non promulgué</td>
+<td><code>nis2</code>, <code>nis2_transposition_fr</code> / F12 § 6</td>
+<td>non promulguée au 31/12/2026</td>
+</tr>
+<tr class="odd">
+<td>Référentiel du cloud de confiance (Cigref)</td>
+<td>exigences contractuellement exigibles, réversibilité</td>
+<td><code>cigref_cloud_confiance</code> / F04 § 4</td>
+<td>publié</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--planification-de-la-transition-3-points">2.3 – Planification de la transition (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.5 – Planifier, organiser et conduire des projets de systèmes d'information : <code>1.5.d</code> « Planification des ressources, délais, coûts et qualité » ; <code>1.5.e</code> « Identification et gestion des risques (maintenance, évolutivité, sécurité) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.1 (plan de transition, contrainte sur M. LEMOINE, échéance du 30 juin 2027) et 1.4 (témoignage de M. LEMOINE).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Barres placées au plus tôt, antériorités respectées</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Jalons (signature, environnement prêt, recette, décision de bascule, bascule, fin de la régie)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Contrainte de ressource de M. LEMOINE vérifiée (B, E et F jamais simultanées)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Chemin critique défini (suite des tâches sans marge, qui fixe la durée minimale du projet) et identifié : A-C-D-F-G-H ; fin en semaine 15</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Échéance tenue avec une marge d'environ deux semaines et demie ; tâche A (puis D) à surveiller ; marges de B et E</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>2.3 a) – Diagramme de Gantt (semaine 1 = semaine du 1er mars 2027)</em></p>
+<pre><code>Tâche                          S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 S14 S15
+A Contrats (3)                 ██ ██ ██                                          ◆ J1 fin S3 : contrats signés
+B Inventaire, documentation (4)██ ██ ██ ██ ·· ··                                 (marge 2 semaines)
+C Environnement (3)                     ██ ██ ██                                 ◆ J2 fin S6 : environnement prêt
+D Migration à blanc, recette (4)                  ██ ██ ██ ██                    ◆ J3 fin S10 : recette validée
+E Transfert de compétences (3)             ██ ██ ██ ·· ·· ··                     (marge 3 semaines, voir b)
+F Restauration, répétition (2)                                ██  ██             ◆ J4 fin S12 : décision de bascule
+G Bascule, accompagnement (2)                                         ██  ██     ◆ J5 bascule le week-end des 29 et 30 mai
+H Fin de la régie, bilan (1)                                                  ██ ◆ J6 fin S15 : projet clos</code></pre>
+<p>Dates au plus tôt : A semaines 1 à 3 ; B semaines 1 à 4 ; C semaines 4 à 6 ; D semaines 7 à 10 (après B et C) ; E semaines 5 à 7 (après B) ; F semaines 11 et 12 ; G semaines 13 et 14 (après E et F) ; H semaine 15 (1 pt).</p>
+<p>Jalons : contrats signés (fin de la semaine 3, 21 mars), environnement prêt (fin de la semaine 6), recette validée (fin de la semaine 10), décision de bascule après la répétition générale (fin de la semaine 12, 23 mai), bascule (week-end du 29 et 30 mai, semaine 13), fin de la régie et bilan (semaine 15, du 7 au 13 juin) (0,5 pt).</p>
+<p>Ressource : M. LEMOINE intervient sur B (semaines 1 à 4), E (semaines 5 à 7) et F (semaines 11 et 12) : aucune semaine commune, le plan au plus tôt respecte la contrainte (0,5 pt).</p>
+<p><em>2.3 b) – Chemin critique, échéance et points de vigilance</em></p>
+<p>Le chemin critique est la suite des tâches dont la marge est nulle : tout retard sur l'une d'elles retarde d'autant la fin du projet, dont il fixe la durée minimale. Ici, c'est A-C-D-F-G-H : 3 + 3 + 4 + 2 + 2 + 1 = 15 semaines. Le projet s'achève à la fin de la semaine 15 (13 juin 2027) et la bascule a lieu fin mai : l'échéance du mercredi 30 juin (semaine 18) est tenue, avec une marge d'environ deux semaines et demie (0,5 pt).</p>
+<p>Vigilance (0,5 pt) :</p>
+<ul>
+<li>la tâche A est critique et c'est la plus exposée : la négociation des clauses de la question 2.2 peut l'allonger ; si elle dure 5 semaines au lieu de 3, le projet finit en semaine 17 (27 juin), sans plus aucune marge. Il faut donc lancer la négociation des niveaux de service et de la réversibilité dès la semaine 1, en priorité ;</li>
+<li>la tâche D (recette) dépend de la disponibilité des acheteurs et des magasins ;</li>
+<li>B a 2 semaines de marge ; E a 5 semaines de marge au regard des seules antériorités, mais seulement 3 si l'on tient compte de M. LEMOINE, qui doit aussi participer à F en semaines 11 et 12 : E ne doit pas glisser au-delà de la semaine 10.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Gantt dessiné à la main dans un autre format lisible (format libre, JUR-T10), jalons représentés autrement ; numérotation des semaines par dates.</li>
+<li>Bascule placée en fin de semaine 12 ou au début de la semaine 13, si le candidat le justifie.</li>
+<li>Mention d'un réseau PERT en complément, sans calcul développé.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><code>JUR-P01</code> — Gantt illisible, sans jalons, ou noyé de commentaires non demandés.</li>
+<li>Antériorités non respectées (D lancée avant la fin de B ; G avant la fin de E) ou contrainte de ressource ignorée (B, E et F en parallèle pour M. LEMOINE).</li>
+<li>Chemin critique confondu avec la liste des tâches les plus longues ; juste : la suite des tâches sans marge.</li>
+<li><em>Schéma directeur confondu avec un plan de projet</em> — confondre le plan de projet avec un schéma directeur.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Diagramme de Gantt, chemin critique, jalons</td>
+<td>planification à partir d'un texte</td>
+<td>F05 § 4</td>
+<td>guide p. 285</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--transfert-des-connaissances-3-points">2.4 – Transfert des connaissances (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.6 – Mettre en œuvre et piloter la gestion des connaissances au sein du système d'information : <code>1.6.b</code> « Architecture fonctionnelle des systèmes de knowledge management » ; <code>1.6.c</code> « Méthodes de gouvernance des dispositifs (rôles, responsabilités, indicateurs) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.4 (témoignage de M. LEMOINE) et 2.1 (interface, nuits corrigées à la main, tâches B, E et F du plan).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Connaissances tacites et explicites distinguées</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Modèle SECI : quatre modes de conversion en spirale</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Trois modes au moins appliqués au cas, chacun avec une action concrète (0,5 par mode)</td>
+<td>1,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Calendrier intégré au plan (B, E, F) et indicateur d'efficacité à cinq champs</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>2.4 a) – Connaissances tacites et explicites ; modèle SECI</em></p>
+<p>La connaissance explicite est formalisée et transmissible par un support (procédure, documentation, base de connaissances) ; la connaissance tacite est incorporée à la personne (savoir-faire, intuition, « je sais quels magasins posent problème ») et difficile à formuler (0,5 pt). Le modèle SECI (Nonaka et Takeuchi, 1995) décrit la création de connaissances par quatre conversions successives, en spirale : socialisation (tacite vers tacite, par l'observation et la pratique partagée), externalisation (tacite vers explicite, par la formalisation), combinaison (explicite vers explicite, par l'assemblage et la diffusion) et internalisation (explicite vers tacite, par la mise en pratique) (0,5 pt).</p>
+<p><em>2.4 b) – Dispositif de transfert des savoirs de M. LEMOINE</em></p>
+<p>Le savoir critique de M. LEMOINE (corrections nocturnes de l'interface, clôture mensuelle des stocks) est presque entièrement tacite : « ce n'est écrit nulle part ». Dispositif :</p>
+<ul>
+<li><strong>Externalisation (tâche B, semaines 1 à 4)</strong> : entretiens d'explicitation menés par la DSI ; rédaction, avec M. LEMOINE, des procédures de l'interface et de la clôture, de la liste des magasins dont les fichiers posent problème et des corrections types ; chaque correction manuelle est décrite comme une anomalie à traiter à la source (contrôle de complétude du fichier de caisse) (0,5 pt).</li>
+<li><strong>Socialisation (tâche E, semaines 5 à 7)</strong> : binôme entre M. LEMOINE et l'ingénieur de Nexalis et le technicien de la DSI qui reprendront l'exploitation ; observation des chargements de 6 heures et de la clôture de mars, puis travail à deux sur les corrections réelles (0,5 pt).</li>
+<li><strong>Combinaison (tâches E et F)</strong> : intégration des procédures dans la base de connaissances de la DSI et dans la documentation d'exploitation de Nexalis, rapprochement avec la documentation livrée par Altinéa en 2019, et inscription de ces documents dans le plan de réversibilité (question 2.2) (0,5 pt).</li>
+<li><strong>Internalisation (tâche F, semaines 11 et 12, et clôture de mai)</strong> : les repreneurs exécutent seuls les procédures pendant la répétition générale de la bascule et la clôture de mai, M. LEMOINE n'intervenant qu'en observateur ; les écarts enrichissent la documentation (0,5 pt, si trois modes ne sont pas déjà notés).</li>
+</ul>
+<p>Indicateur et pilotage (0,5 pt) : taux de procédures critiques exécutées sans aide par un repreneur = procédures critiques exécutées seules avec succès / procédures critiques recensées en tâche B ; source : registre de la répétition générale et des clôtures ; fréquence : hebdomadaire jusqu'à la bascule ; cible : 100 % à la décision de bascule (fin de la semaine 12) ; axe : apprentissage. Un référent de la DSI est responsable de la base de connaissances après le départ de M. LEMOINE.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Indicateur différent s'il mesure l'appropriation et non la seule production de documents (nombre de nuits d'anomalie traitées sans M. LEMOINE, cible : toutes à partir de mai).</li>
+<li>Proposition de solliciter M. LEMOINE pour un appui ponctuel après son départ, présentée comme une mesure de secours et non comme la solution.</li>
+<li>Mobilisation d'outils (wiki, base de connaissances, vidéos de démonstration), valorisée si elle est rattachée à un mode du modèle.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Gestion des connaissances réduite à la GED</em> — réduire la gestion des connaissances à la rédaction de documents ou à une GED ; juste : dispositif systémique (outils, processus, culture) qui organise aussi la pratique partagée.</li>
+<li>Inverser les modes du modèle (l'externalisation va du tacite vers l'explicite) ; dater ou attribuer le modèle à tort (Polanyi a introduit la connaissance tacite, il n'est pas l'auteur du modèle SECI).</li>
+<li>Dispositif hors calendrier, qui commence après le départ de M. LEMOINE ou ignore sa contrainte de disponibilité.</li>
+<li>Confondre transfert des connaissances et gestion prévisionnelle des emplois (relève des ressources humaines, hors de la question).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nonaka et Takeuchi, <em>The Knowledge-Creating Company</em> (1995)</td>
+<td>modèle SECI</td>
+<td><code>nonaka_takeuchi_seci</code> / F06 § 1</td>
+<td>publié</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-3--intelligence-artificielle-traçabilité-et-numérique-responsable-10-points">DOSSIER 3 – INTELLIGENCE ARTIFICIELLE, TRAÇABILITÉ ET NUMÉRIQUE RESPONSABLE (10 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1 Projets d'intelligence artificielle</td>
+<td><code>1.3.d</code> Fonctionnement et usages des technologies émergentes : blockchain, registres distribués, IA, … ; <code>4.1.d</code> Référentiels et cadres réglementaires : RGPD, NEP, ISO 27001, etc.</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>3.2 Traçabilité de l'origine locale</td>
+<td><code>3.3.b</code> Fonctionnement des technologies de registres distribués (DLT) ; <code>3.3.e</code> Analyse de la valeur ajoutée, des coûts et des limites d'un projet blockchain</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>3.3 Indicateurs du numérique responsable</td>
+<td><code>4.3.d</code> Bonnes pratiques Green IT : éco-conception, mutualisation, cycle de vie des équipements ; <code>4.3.e</code> Outils et indicateurs de mesure de l'impact environnemental des SI</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td><strong>Dossier 3 – Intelligence artificielle, traçabilité et numérique responsable</strong></td>
+<td></td>
+<td><strong>10</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (familles d'IA, blockchain, Green IT et sobriété : items 3.1 a, 3.2 a, 3.3 a-1) 2,5 points ; qualification des projets au regard des textes datés, gouvernance, évaluation de la proposition de Tracéo, indicateurs 7,5 points. Durée conseillée : 10 points × 4,5 minutes = 45 minutes.</p>
+<hr />
+<h3 id="31--projets-dintelligence-artificielle-4-points">3.1 – Projets d'intelligence artificielle (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.3 – Diagnostiquer et piloter l'évolution des architectures et de l'urbanisation des systèmes d'information : <code>1.3.d</code> « Fonctionnement et usages des technologies émergentes : blockchain, registres distribués, IA, … ».</li>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.d</code> « Référentiels et cadres réglementaires : RGPD, NEP, ISO 27001, etc. ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 3.1 (projets A, B et C), 3.3 (AI Act et RGPD datés) et 1.4 (témoignage de Mme PERRAULT).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Apprentissage automatique et IA générative distingués</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Projets A et B rattachés à l'apprentissage automatique, projet C à l'IA générative</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Projet A : risque minimal, contrôle du gérant ; mention de l'article 4 (maîtrise de l'IA) attendue pour au moins un projet</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Projet B, module de notation : haut risque (annexe III), obligations à compter du 02/12/2027, à anticiper ; analyse d'impact au titre du RGPD</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Projet B, option vidéo : pratique interdite depuis le 02/02/2025</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-4</td>
+<td>Projet C : obligations de transparence depuis le 02/08/2026 ; risque propre (allergènes)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c</td>
+<td>Deux mesures de gouvernance contextualisées (0,5 chacune)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>3.1 a) – Deux familles d'IA</em></p>
+<p>L'apprentissage automatique regroupe les méthodes par lesquelles un modèle apprend, à partir de données, à prédire, classer ou noter ; ses résultats se mesurent par un taux d'erreur. L'IA générative, famille de l'apprentissage profond fondée sur de grands modèles pré-entraînés, produit des contenus nouveaux (textes, images) plausibles mais non garantis exacts, avec un risque propre d'hallucination (0,5 pt). Le projet A (prévision des commandes à partir des ventes, de la démarque et de la météo) et le module de notation du projet B (note de 0 à 100) relèvent de l'apprentissage automatique ; l'option vidéo du projet B relève aussi de modèles d'apprentissage, appliqués à l'image et à la voix ; le projet C (rédaction de fiches, agent conversationnel) relève de l'IA générative (0,5 pt).</p>
+<p><em>3.1 b) – Qualification au regard du règlement européen sur l'IA (annexe 3.3)</em></p>
+<p>Le règlement (UE) 2024/1689 classe les systèmes selon leur niveau de risque : pratiques interdites, haut risque, risque soumis à des obligations de transparence, risque minimal.</p>
+<ul>
+<li><strong>Projet A – prévision des commandes</strong> : il ne figure ni parmi les pratiques interdites ni parmi les domaines à haut risque ; risque minimal : aucune obligation propre à ce niveau de risque, mais, comme pour tout système d'IA déployé, l'obligation de maîtrise de l'IA (article 4, depuis le 02/02/2025, assouplie par le règlement (UE) 2026/1744) : la coopérative prend des mesures pour former les gérants et les équipes qui utilisent le module. Le gérant valide chaque proposition, ce qui limite les effets d'une erreur ; l'enjeu est la qualité des données d'apprentissage, à commencer par la démarque, saisie par 31 magasins sur 46 seulement (dossier 1) (0,5 pt).</li>
+<li><strong>Projet B – module de notation des candidatures</strong> : un système destiné au recrutement et à la sélection des candidats relève du haut risque de l'annexe III. Les obligations correspondantes s'appliquent à compter du 02/12/2027, date reportée par le règlement (UE) 2026/1744 : elles ne sont pas encore applicables en mars 2027 ; elles s'appliqueront au module s'il est mis en service à partir du 02/12/2027 ou s'il subit ensuite des modifications importantes (article 111 § 2 modifié par le règlement 2026/1744), ce qui est probable pour un logiciel en mode SaaS régulièrement mis à jour : il est prudent de les anticiper dès le choix de l'outil ; la coopérative, en tant qu'utilisatrice, devra assurer un contrôle humain effectif, utiliser le système conformément aux instructions de l'éditeur, en surveiller le fonctionnement et informer les candidats. Le traitement de leurs données relève dès maintenant du RGPD : un tel profilage justifie une analyse d'impact (0,5 pt).</li>
+<li><strong>Projet B – option « entretien vidéo augmenté »</strong> : inférer la motivation ou la résistance au stress à partir des expressions du visage et de la voix est une reconnaissance des émotions sur le lieu de travail, interdite depuis le 02/02/2025 hors raisons médicales ou de sécurité ; les lignes directrices de la Commission (C(2025) 5052 final, point 254) étendent la notion de lieu de travail aux candidats pendant la sélection et le recrutement. L'option doit être refusée, quel que soit le gain de temps espéré par les gérants (0,5 pt).</li>
+<li><strong>Projet C – assistant et agent conversationnel</strong> : les obligations de transparence s'appliquent depuis le 02/08/2026 : les clients du site doivent être informés qu'ils dialoguent avec une IA, et les contenus générés sont marqués par le fournisseur de l'outil. Au-delà du texte, les réponses sur les allergènes exposent la coopérative à une hallucination aux conséquences sanitaires : elles ne doivent provenir que des fiches produits validées, et les fiches rédigées doivent être relues avant publication (0,5 pt).</li>
+</ul>
+<p><em>3.1 c) – Deux mesures de gouvernance</em></p>
+<ul>
+<li><strong>Comité IA et inventaire</strong> : un comité réunissant la DSI, les ressources humaines, la direction du réseau, la communication et le délégué à la protection des données recense les usages, y compris ceux proposés par les éditeurs de logiciels déjà en place, et les classe selon les niveaux de risque du règlement avant toute activation ; décision immédiate : refuser l'option vidéo et conditionner le module de notation à une analyse d'impact (0,5 pt).</li>
+<li><strong>Contrôle humain et charte d'usage</strong> : aucune candidature écartée sans examen par le gérant ; aucune réponse sur les allergènes générée hors des fiches validées ; charte interdisant la saisie de données personnelles de candidats ou de clients dans un outil non contractualisé ; formation des utilisateurs (maîtrise de l'IA) ; indicateur de suivi, par exemple la part des notes de présélection modifiées par les gérants ou le taux de fiches générées corrigées en relecture (0,5 pt).</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Qualification de l'option vidéo comme système à haut risque plutôt qu'interdit, aucun point pour la qualification, mais 0,5 point sur l'item b-3 si le candidat recommande et justifie l'abandon de l'option (le barème de l'UE 5 est au pas de 0,5).</li>
+<li>Mention de la norme ISO/IEC 42001 (système de management de l'IA) comme cadre possible de la gouvernance, valorisée sans être exigée.</li>
+<li>Projet A analysé aussi sous l'angle de la sobriété (consommation du modèle) : valorisé, en lien avec la question 3.3.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>IA générative confondue avec l'apprentissage automatique</em> — confondre IA générative et apprentissage automatique ; juste : prédiction ou classement d'un côté, production de contenu de l'autre.</li>
+<li><em>Statut réglementaire affirmé sans date</em> — dater faux le règlement : affirmer que les obligations du haut risque s'appliquaient dès 2026 ; juste : 02/12/2027 pour l'annexe III, après le report décidé par le règlement (UE) 2026/1744 (omnibus numérique).</li>
+<li><em>Opportunités présentées sans les risques</em> — présenter les projets sans leurs risques, ou une gouvernance purement technique ; juste : rôles, validation humaine, charte, indicateurs.</li>
+<li>Oublier le RGPD pour le recrutement (analyse d'impact, information des candidats) ; renvoyer le droit des personnes en détail : il relève de l'UE 1.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2024/1689 (AI Act)</td>
+<td>niveaux de risque, interdictions, transparence, haut risque</td>
+<td><code>ai_act</code> / F13 § 5</td>
+<td>en vigueur, application échelonnée</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2026/1744 (omnibus numérique sur l'IA)</td>
+<td>report du haut risque de l'annexe III au 02/12/2027 ; article 4 et article 111 § 2 modifiés</td>
+<td><code>omnibus_numerique_ia</code> / F13 § 5.2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Lignes directrices de la Commission sur les pratiques interdites, C(2025) 5052 final (29/07/2025), point 254</td>
+<td>lieu de travail étendu aux candidats</td>
+<td><code>ai_act_lignes_directrices_pratiques_interdites</code></td>
+<td>publié, non contraignant</td>
+</tr>
+<tr class="even">
+<td>RGPD, règlement (UE) 2016/679</td>
+<td>analyse d'impact, information des personnes</td>
+<td><code>rgpd</code> / F15</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO/IEC 42001:2023</td>
+<td>système de management de l'IA (réponse tolérée)</td>
+<td><code>iso_42001_2023</code> / F13 § 4</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="32--traçabilité-de-lorigine-locale-3-points">3.2 – Traçabilité de l'origine locale (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.3 – Appréhender les usages et les enjeux des technologies de la blockchain et des cryptoactifs : <code>3.3.b</code> « Fonctionnement des technologies de registres distribués (DLT) » ; <code>3.3.e</code> « Analyse de la valeur ajoutée, des coûts et des limites d'un projet blockchain ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 3.1 (proposition de Tracéo, incident de septembre 2026, piste de la DSI), 1.4 (témoignage de Mme OUHIBI) et 1.1 (410 producteurs locaux).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Blockchain définie : registre partagé, consensus, blocs chaînés, ajout seul</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Distinction avec une base de données distribuée (administrateur unique, absence de consensus entre parties)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Trois arguments d'évaluation tirés des annexes (0,5 chacun)</td>
+<td>1,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Recommandation argumentée et alternative</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>3.2 a) – Blockchain et base distribuée</em></p>
+<p>Une blockchain est un registre distribué, répliqué chez plusieurs participants (nœuds), dans lequel les transactions sont regroupées en blocs horodatés et chaînés par une empreinte cryptographique, ajoutés selon une règle de consensus ; toute modification d'un bloc passé rompt la chaîne, ce qui rend le registre pratiquement inaltérable (0,5 pt). Une base de données distribuée répartit des données sur plusieurs serveurs sous l'autorité d'un administrateur unique, qui peut les modifier ; la blockchain, elle, organise la confiance entre des acteurs qui ne se font pas mutuellement confiance, au prix de la performance et de la complexité. La blockchain de consortium proposée par Tracéo est permissionnée : seuls des nœuds autorisés valident, par vote, sans minage (0,5 pt).</p>
+<p><em>3.2 b) – Pertinence de la proposition et recommandation</em></p>
+<p>Arguments (0,5 pt chacun, trois attendus) :</p>
+<ul>
+<li><strong>Le problème n'est pas l'intégrité du registre mais la vérité de la donnée saisie et de l'étiquette</strong> : la fraude de septembre 2026 a eu lieu à l'étiquetage, en magasin ; une blockchain garantit que ce qui est enregistré n'est pas modifié, pas que ce qui est enregistré ou affiché est vrai (problème de l'« oracle ») ; un magasin pourrait toujours coller une étiquette « local » sur un lot importé.</li>
+<li><strong>Un tiers de confiance existe déjà</strong> : la coopérative référence les producteurs, approvisionne les magasins et fixe les règles du réseau ; les cinq nœuds sont tenus par la coopérative et Tracéo, si bien que le registre est quasi centralisé, et Mme OUHIBI rappelle que les clients « croient sur parole » le réseau. Une base centralisée, auditée et journalisée, apporte la même preuve à moindre coût.</li>
+<li><strong>Coût et adoption</strong> : 45 000 € HT puis 1 200 € HT par mois, soit 59 400 € HT la première année ; saisie lot par lot imposée à 410 producteurs, dont les deux tiers sont de très petites exploitations et 40 % n'utilisent pas de smartphone pour leur activité : saisies incomplètes ou tardives probables, qui videraient la preuve de son sens.</li>
+<li><strong>Points favorables, à mentionner</strong> : consensus sans minage, donc consommation énergétique faible ; QR code utile pour la communication. Aucune donnée personnelle des producteurs exploitants individuels ne doit être inscrite en clair dans un registre inaltérable (RGPD).</li>
+</ul>
+<p>Recommandation au conseil d'administration (0,5 pt) : ne pas lancer la blockchain de Tracéo en 2027. Traiter la cause : retenir la piste de la DSI (gestion des lots et des attestations d'origine dans l'ERP, contrôlées par sondage), faire produire les étiquettes « local » par la centrale à partir du numéro de lot, et non plus en magasin, contrôler les magasins et prévoir des sanctions dans le règlement intérieur de la coopérative ; publier l'origine par un QR code alimenté par l'ERP. Réexaminer une blockchain si un besoin multi-acteurs sans tiers de confiance apparaît, par exemple une filière partagée avec d'autres réseaux ou des transformateurs.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Recommandation d'un pilote limité à une filière (fraises, produits laitiers) avec des indicateurs d'adoption et de fraude, si les limites ci-dessus sont traitées.</li>
+<li>Typologie publique, privée, de consortium développée, si elle sert l'argumentation.</li>
+<li>Mention du vocabulaire normalisé des registres distribués (ISO 22739), sans en faire un argument.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Blockchain confondue avec une base de données distribuée</em> — confondre blockchain et base de données distribuée ; juste : consensus entre parties qui ne se font pas confiance.</li>
+<li><em>Opportunités présentées sans les risques</em> — présenter les seuls apports (transparence, image) sans les limites (oracle, coût, adoption, gouvernance du consortium).</li>
+<li>Présenter la blockchain comme une garantie de vérité de l'information ; juste : elle garantit l'intégrité de l'enregistrement.</li>
+<li>Hors sujet : développer le règlement MiCA ou la technique de programmation du registre ; aucun jeton n'est émis ni échangé dans le projet de Tracéo.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ISO 22739 — Chaînes de blocs et registres distribués, vocabulaire</td>
+<td>définitions (réponse tolérée)</td>
+<td><code>iso_22739_2024</code> / F11 § 1</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>RGPD, règlement (UE) 2016/679</td>
+<td>minimisation, données personnelles et registre inaltérable</td>
+<td><code>rgpd</code> / F11 § 2.3</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="33--indicateurs-du-numérique-responsable-3-points">3.3 – Indicateurs du numérique responsable (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.3 – Intégrer les enjeux de durabilité et de sobriété numérique dans le management des SI : <code>4.3.d</code> « Bonnes pratiques Green IT : éco-conception, mutualisation, cycle de vie des équipements » ; <code>4.3.e</code> « Outils et indicateurs de mesure de l'impact environnemental des SI ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 3.2 (situation de 2026 et engagements 2029), 3.1 (projets d'IA), 2.1 (migration vers Nexalis) et 3.3 (loi REEN, RGESN).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Green IT et sobriété numérique définis et distingués</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Levier des équipements démontré à partir de l'annexe 3.2 (part de la fabrication, durée d'usage)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b</td>
+<td>Quatre indicateurs à cinq champs, dont un pour l'hébergement chez Nexalis ou les projets d'IA (0,5 par indicateur)</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>3.3 a) – Green IT, sobriété et levier des équipements</em></p>
+<p>Le Green IT consiste à concevoir, acheter, utiliser et faire recycler les équipements et services numériques de façon à réduire leur impact environnemental (écoconception, mutualisation, allongement de la durée de vie, reconditionnement) ; la sobriété numérique interroge d'abord le besoin : renoncer aux équipements, aux données et aux usages qui n'apportent pas de valeur suffisante. Le premier réduit l'impact de ce que l'on fait, la seconde réduit ce que l'on fait ; aucune ne se réduit à l'économie d'énergie (0,5 pt).</p>
+<p>En l'espèce, 72 % des 310 tCO2e du SI viennent de la fabrication des équipements, soit environ 223 tCO2e, alors que l'électricité de la salle informatique du siège en représente moins de 1 % (annexe 3.2) : la fermeture de la salle ne fera que déplacer une consommation modeste chez Nexalis. L'engagement de − 25 % (environ 78 tCO2e) passe donc par les équipements : porter la durée d'usage de 4 à 6 ans réduit d'un tiers les renouvellements annuels ; si l'on suppose que l'essentiel des émissions de fabrication tient aux postes et terminaux, annualisées sur leur durée d'usage, le gain atteint au plus un tiers de 223 tCO2e, soit environ 74 tCO2e par an à parc constant et en régime de croisière, l'ordre de grandeur de l'engagement de − 25 % (environ 78 tCO2e) ; le reconditionnement (5 % des achats en 2026, 30 % visés) réduit l'impact de chaque achat. La sobriété complète ce levier : ticket de caisse dématérialisé, stabilisation des 42 To stockés (+ 30 % par an), usages d'IA limités à ceux qui créent de la valeur (0,5 pt).</p>
+<p><em>3.3 b) – Quatre indicateurs</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Durée d'usage moyenne des postes remplacés</td>
+<td>somme des durées d'usage des postes retirés du service / nombre de postes retirés</td>
+<td>inventaire du parc de la DSI</td>
+<td>annuelle</td>
+<td>6 ans en 2029 (4 ans en 2026)</td>
+<td>environnement</td>
+</tr>
+<tr class="even">
+<td>Part d'équipements reconditionnés dans les achats</td>
+<td>équipements reconditionnés achetés / équipements achetés dans l'année</td>
+<td>achats informatiques, inventaire du parc</td>
+<td>semestrielle</td>
+<td>30 % en 2029 (5 % en 2026)</td>
+<td>environnement</td>
+</tr>
+<tr class="odd">
+<td>Électricité consommée pour l'ERP et le portail hébergés chez Nexalis</td>
+<td>consommation des serveurs affectés à la coopérative × indicateur d'efficacité énergétique (PUE) du centre de données</td>
+<td>reporting environnemental de Nexalis, à rendre contractuel (avenant, question 2.2)</td>
+<td>trimestrielle</td>
+<td>au plus 38 MWh par an (niveau de la salle du siège en 2026), puis en baisse</td>
+<td>environnement</td>
+</tr>
+<tr class="even">
+<td>Part des salariés sensibilisés au numérique responsable</td>
+<td>salariés de la coopérative et des magasins ayant suivi la sensibilisation / effectif total</td>
+<td>registre des formations des ressources humaines mutualisées</td>
+<td>semestrielle</td>
+<td>80 % en 2029 (10 % en 2026)</td>
+<td>social</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt par indicateur complet ; l'indicateur relatif à l'hébergement ou à l'IA est obligatoire.)</p>
+<p>Ces indicateurs s'intègrent au tableau de bord SI à côté des indicateurs de coût et de qualité de service, et non dans une liste séparée ; les émissions totales du SI, recalculées chaque année selon la même méthode (Bilan Carbone, scopes 1 à 3), servent d'indicateur de résultat, les quatre ci-dessus d'indicateurs d'action.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres indicateurs complets et contextualisés : taux de tickets de caisse dématérialisés (cible 50 %), EcoIndex moyen du site de retrait (de E à C, en lien avec le RGESN), volume de données stockées (stabilisé à 42 To), consommation électrique par proposition de commande du projet A ou par millier de conversations de l'agent du projet C, émissions totales du SI (cible environ 230 tCO2e en 2029).</li>
+<li>Axe « processus » ou « gouvernance » s'il est justifié ; présentation sous forme de liste.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Sobriété numérique réduite à l'économie d'énergie</em> — confondre sobriété numérique et économie d'énergie, ou sobriété et Green IT.</li>
+<li><em>Empreinte du SI limitée à l'électricité</em> — limiter l'empreinte du SI à l'électricité ; juste : la fabrication des équipements (scope 3) domine, 72 % ici.</li>
+<li><em>Indicateurs génériques</em> — indicateurs sans formule, source ou cible, ou isolés du tableau de bord SI.</li>
+<li>Considérer que la migration vers Nexalis supprime l'impact de l'hébergement : il est déplacé, et doit être mesuré par contrat.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Loi n° 2021-1485 du 15 novembre 2021 (REEN)</td>
+<td>réduction de l'empreinte environnementale du numérique</td>
+<td><code>loi_reen</code> / F14</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>RGESN, version 2 (2024)</td>
+<td>écoconception des services numériques</td>
+<td><code>rgesn_2024</code> / F14</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>EcoIndex</td>
+<td>indicateur relatif d'une page web</td>
+<td><code>ecoindex</code> / F14</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Méthode Bilan Carbone</td>
+<td>estimation des émissions du SI</td>
+<td><code>methode_bilan_carbone</code> / F14</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>GHG Protocol</td>
+<td>scopes 1, 2 et 3</td>
+<td><code>ghg_protocol</code> / F14</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

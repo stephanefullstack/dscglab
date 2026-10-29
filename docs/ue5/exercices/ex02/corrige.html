@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Infogérance, transition et transfert des connaissances : Comptoirs Ligériens : régie, forfait et infogérance, SLA, pénalités et réversibilité, Gantt de la transition, modèle SECI</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>14 points</p><p>1 h 05</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Infogérance, transition et transfert des connaissances</h1><p class="cas">Comptoirs Ligériens : régie, forfait et infogérance, SLA, pénalités et réversibilité, Gantt de la transition, modèle SECI</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F04 relations avec les ESN et contrats, F05 projets et changement, F06 gestion des connaissances, F12 sécurité et résilience, F15 RGPD opérationnel, et la base des référentiels datés (vérifiés les 25 et 26/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). L'analyse juridique approfondie des contrats est hors programme (programme 1.4) : seuls les principes de gestion de la relation avec l'ESN sont attendus. La répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Choix des formes de contrat</td>
+<td><code>1.4.b</code> Typologie des contrats de prestation informatique (régie, forfait, infogérance, etc.) : méthodes d'intégration dans la stratégie SI et la gouvernance contractuelle ; <code>1.4.d</code> Méthodologie de négociation contractuelle et analyse des risques</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>2.2 Niveaux de service, pénalités et réversibilité</td>
+<td><code>1.4.c</code> Cadre juridique applicable : responsabilité, confidentialité, SLA, RGPD ; <code>1.4.e</code> Gouvernance de la relation client-prestataire (pilotage de la prestation, indicateurs de suivi, clauses d'audit)</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>2.3 Planification de la transition</td>
+<td><code>1.5.d</code> Planification des ressources, délais, coûts et qualité ; <code>1.5.e</code> Identification et gestion des risques (maintenance, évolutivité, sécurité)</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>2.4 Transfert des connaissances</td>
+<td><code>1.6.b</code> Architecture fonctionnelle des systèmes de knowledge management ; <code>1.6.c</code> Méthodes de gouvernance des dispositifs (rôles, responsabilités, indicateurs)</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 2 – Infogérance, transition et transfert des connaissances</strong></td>
+<td></td>
+<td><strong>14</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (définitions de la régie, du forfait, de l'infogérance, du SLA, de l'OLA, du modèle SECI : items 2.1 a, 2.2 a, 2.4 a) 3,5 points, la définition du chemin critique étant notée avec son identification (2.3 b-1) ; analyse du contrat et des niveaux de service, Gantt, dispositif de transfert 10,5 points. Durée conseillée : 14 points × 4,5 minutes ≈ 1 h 05.</p>
+<hr />
+<h3 id="21--choix-des-formes-de-contrat-4-points">2.1 – Choix des formes de contrat (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.4 – Gérer les relations contractuelles et opérationnelles avec les ESN : <code>1.4.b</code> « Typologie des contrats de prestation informatique (régie, forfait, infogérance, etc.) : méthodes d'intégration dans la stratégie SI et la gouvernance contractuelle » ; <code>1.4.d</code> « Méthodologie de négociation contractuelle et analyse des risques ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.4 (témoignages de M. LEMOINE et de Mme VASSEUR) et 2.1 (architecture, niveaux de service de 2026, offre de Nexalis, plan de transition).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Régie : mise à disposition de compétences au temps passé, sous la direction du client, qui porte le risque</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Forfait : livrable défini, prix et délai fixés, risque de dépassement porté par le prestataire</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Infogérance : prise en charge durable de tout ou partie du SI avec engagements de niveaux de service</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Limites de la régie actuelle tirées de l'annexe 2.1 et des témoignages (0,5 par limite, dans la limite de 1)</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Migration : forfait justifié (périmètre défini, recette, délai impératif)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Exploitation : infogérance avec SLA justifiée (continuité 7 jours sur 7, fin de la dépendance à une personne)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-4</td>
+<td>Conditions : compétence de pilotage conservée à la DSI, coût complet à comparer, dépendance maîtrisée</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>2.1 a) – Régie, forfait, infogérance</em></p>
+<ul>
+<li><strong>Régie</strong> (assistance technique) : l'ESN met à disposition des compétences facturées au temps passé (ici 90 jours à 650 € HT, soit 58 500 € HT en 2026) ; elle s'engage sur les moyens fournis, et le client, qui dirige les travaux, porte le risque de délai et de résultat (0,5 pt).</li>
+<li><strong>Forfait</strong> : l'ESN s'engage à livrer un résultat défini par un cahier des charges, à un prix et dans un délai fixés ; elle porte le risque de dépassement, sauf avenant si le besoin change (0,5 pt).</li>
+<li><strong>Infogérance</strong> : le client confie durablement à l'ESN tout ou partie de son SI (hébergement, exploitation, supervision, support) ; l'ESN s'engage sur des niveaux de service mesurables, assortis de pénalités ; le client reste responsable de son SI et de ses données et doit piloter la prestation (0,5 pt).</li>
+</ul>
+<p><em>2.1 b) – Limites de la régie actuelle et recommandations</em></p>
+<p>Limites de la régie pour Comptoirs Ligériens (1 pt pour deux limites étayées) :</p>
+<ul>
+<li>aucun engagement de niveau de service : disponibilité de 98,6 % sur la plage 6 h – 22 h, 14 incidents bloquants dont 9 un week-end, alors que les commandes du week-end préparent les livraisons du lundi, et 7 heures en moyenne pour rétablir le service, sans levier contractuel ;</li>
+<li>la régie suppose un client capable de diriger les intervenants ; or le pilotage repose sur M. LEMOINE seul, qui part le 30 juin 2027, et les ingénieurs d'Altinéa « changent tous les six mois » : aucune capitalisation ;</li>
+<li>des risques non maîtrisés : aucune restauration de sauvegarde testée, 22 nuits d'interface en échec ou corrigées à la main.</li>
+</ul>
+<p>Recommandations :</p>
+<ul>
+<li><strong>Migration de l'ERP et du portail : forfait</strong> (offre de 36 000 € HT, environnement recetté livré). Le besoin est ponctuel, son périmètre est connu (inventaire de la tâche B), le délai est impératif (30 juin 2027) : le forfait transfère le risque de dépassement à Nexalis, à condition de définir les livrables et les critères de recette (tâche D) et de lier le paiement à la recette (0,5 pt).</li>
+<li><strong>Exploitation durable : infogérance</strong> avec des niveaux de service adaptés au rythme des magasins (7 jours sur 7, 6 h – 22 h). Elle répond au souhait de Mme VASSEUR d'une DSI qui « pilote » au lieu de « surveiller des serveurs la nuit » et met fin à la dépendance envers une personne (0,5 pt).</li>
+<li><strong>Conditions</strong> : la DSI garde un responsable du contrat capable de contrôler les niveaux de service (sinon la dépendance envers M. LEMOINE devient une dépendance envers Nexalis, ce que redoute Mme VASSEUR) ; le surcoût apparent (168 000 € HT par an contre 58 500 € HT de régie en 2026) s'apprécie en coût complet, en ajoutant au coût actuel le remplacement de M. LEMOINE, le renouvellement de la salle informatique, une astreinte de week-end et le coût des incidents ; une réversibilité négociée dès la signature limite le risque d'enfermement (0,5 pt).</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Forfait de migration confié à un autre prestataire que l'infogérant, ou régie maintenue quelques mois en assistance à la transition, si la cohérence avec le délai et le pilotage est démontrée.</li>
+<li>Mention d'un hébergement en mode SaaS de l'ERP ou d'une tierce maintenance applicative pour l'interface, si elle est justifiée.</li>
+<li>Ordre de grandeur du coût complet, sans chiffrage poste par poste (non attendu).</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Régie, forfait et infogérance confondus</em> — confondre régie et forfait ou affirmer que la régie transfère le risque au prestataire ; juste : en régie, le client dirige et porte le risque ; au forfait, le prestataire s'engage sur le livrable.</li>
+<li><code>JUR-A05</code> / <code>JUR-G11</code> — présenter l'infogérance comme un transfert de responsabilité ; juste : le client reste responsable de son SI, de ses données et du pilotage de la prestation.</li>
+<li>Recommander un seul contrat pour deux besoins de nature différente (projet ponctuel et service récurrent).</li>
+<li><code>JUR-T01</code> — définitions sans exploitation des chiffres de l'annexe 2.1.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des contrats de prestation informatique</td>
+<td>régie, forfait, infogérance</td>
+<td>F04 § 1</td>
+<td>guide p. 255</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--niveaux-de-service-pénalités-et-réversibilité-4-points">2.2 – Niveaux de service, pénalités et réversibilité (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.4 – Gérer les relations contractuelles et opérationnelles avec les ESN : <code>1.4.c</code> « Cadre juridique applicable : responsabilité, confidentialité, SLA, RGPD » ; <code>1.4.e</code> « Gouvernance de la relation client-prestataire (pilotage de la prestation, indicateurs de suivi, clauses d'audit) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.1 (niveaux de service de 2026, articles du projet de contrat, observation de la DSI) et 3.3 (RGPD, NIS 2, Data Act).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>SLA défini : engagement contractuel sur des niveaux mesurables, avec mesure, reporting et conséquences</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>OLA distingué : accord interne entre équipes qui soutient le SLA</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Trois faiblesses des articles 6, 7 et 9 confrontées aux chiffres de 2026 (0,5 par faiblesse)</td>
+<td>1,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Rédactions ou indicateurs de remplacement mesurables</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Clause de réversibilité : contenu adapté au cas</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Deux autres clauses justifiées (sous-traitance des données personnelles, audit, sécurité et notification)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>2.2 a) – SLA et OLA</em></p>
+<p>La convention de niveau de service (<em>Service Level Agreement</em>) est l'engagement contractuel du prestataire envers son client sur des niveaux de service mesurables (disponibilité, délais de prise en charge et de rétablissement, sauvegardes), avec la méthode et la période de mesure, le reporting et les conséquences d'un manquement, dont les pénalités (0,5 pt). L'accord de niveau opérationnel (<em>Operational Level Agreement</em>) est un accord interne entre équipes d'une même organisation (par exemple, chez Nexalis, entre l'hébergement et le support) qui permet de tenir le SLA ; il n'engage pas le prestataire envers le client. Ces notions sont décrites par le référentiel ITIL (0,5 pt).</p>
+<p><em>2.2 b) – Trois faiblesses du projet de contrat</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Article</th>
+<th>Faiblesse au regard de 2026</th>
+<th>Rédaction ou indicateur proposé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>6 – plage de mesure</td>
+<td>disponibilité mesurée du lundi au vendredi, de 8 h à 18 h : 9 des 14 incidents bloquants de 2026 sont survenus un week-end, et les commandes du week-end préparent les livraisons du lundi ; un taux de 99,5 % ainsi mesuré peut coexister avec des week-ends sans service</td>
+<td>disponibilité mesurée de 6 h à 22 h, 7 jours sur 7, soit environ 480 heures par mois : 99,5 % tolère environ 2,4 heures d'indisponibilité par mois ; mesure par la supervision du client ou un outil partagé</td>
+</tr>
+<tr class="even">
+<td>6 – prise en charge</td>
+<td>prise en charge d'un incident bloquant en 4 heures « ouvrées » : un incident survenu le samedi matin peut n'être pris en charge que le lundi, alors que 9 des 14 incidents bloquants de 2026 sont survenus un week-end</td>
+<td>prise en charge en 30 minutes à 1 heure, 7 jours sur 7, sur la plage 6 h – 22 h (astreinte)</td>
+</tr>
+<tr class="odd">
+<td>6 – rétablissement</td>
+<td>« meilleurs efforts » : aucun engagement, alors que le rétablissement moyen a été de 7 heures en 2026</td>
+<td>garantie de temps de rétablissement d'un incident bloquant de 4 heures, y compris le week-end ; indicateur : part des incidents bloquants rétablis en moins de 4 heures, cible 95 %</td>
+</tr>
+<tr class="even">
+<td>7 – pénalités</td>
+<td>plafond de 5 % de la redevance mensuelle, soit 700 € HT au plus par mois ; déclenchement subordonné à une réclamation écrite dans les 15 jours d'un rapport trimestriel établi par le prestataire lui-même : peu dissuasif et facile à perdre</td>
+<td>pénalités automatiques, calculées sur un reporting mensuel contradictoire, plafond porté par exemple à 10 à 15 % de la redevance, et droit de résiliation en cas de manquements répétés</td>
+</tr>
+<tr class="odd">
+<td>9 – sauvegardes</td>
+<td>conservation de sept jours, aucun test de restauration, alors qu'aucune restauration n'a été testée en 2026 : une corruption découverte après une semaine serait irrécupérable</td>
+<td>perte de données maximale admissible (RPO) de 24 heures, rétention de 30 jours et archive mensuelle sur un an, copie dans un second site ; test de restauration chaque semestre avec procès-verbal ; indicateur : tests de restauration réussis / tests prévus, cible 100 %</td>
+</tr>
+</tbody>
+</table>
+<p>(Trois faiblesses attendues parmi les cinq, 0,5 pt chacune ; 0,5 pt pour des propositions mesurables.)</p>
+<p><em>2.2 c) – Réversibilité et autres clauses</em></p>
+<p>Clause de réversibilité (0,5 pt) : elle organise dès la signature la sortie du contrat, à son terme ou en cas de résiliation, sans interruption de service : restitution de toutes les données (ERP, portail, sauvegardes, historiques) dans un format ouvert et documenté, avec la documentation d'exploitation, en particulier celle de l'interface caisses-ERP ; assistance du prestataire sortant et transfert de compétences vers le repreneur ou la DSI ; maintien du service pendant une période de transition (par exemple six mois) ; prix et délais fixés au contrat, et non « à convenir » ; plan de réversibilité tenu à jour et testé. Pour un service d'informatique en nuage, le Data Act, applicable depuis le 12/09/2025, organise aussi le changement de fournisseur (portabilité des données, assistance à la sortie) (annexe 3.3) ; depuis le 12/01/2027, aucun frais de changement de fournisseur ne peut être facturé (article 29 § 1), à condition que l'hébergement de Nexalis soit un « service de traitement de données » au sens du règlement et non un service conçu en majorité sur mesure pour la coopérative (article 31). Le référentiel du cloud de confiance du Cigref rappelle que toute exigence opérationnelle doit être contractuellement exigible.</p>
+<p>Deux autres clauses, parmi (0,5 pt) :</p>
+<ul>
+<li><strong>Données personnelles</strong> : l'infogérant traite pour le compte de la coopérative des données personnelles (comptes des utilisateurs du portail, coordonnées des producteurs exploitants individuels) ; il est sous-traitant au sens de l'article 28 du RGPD, qui impose un contrat écrit (traitement sur instruction, confidentialité, sécurité, assistance, sort des données en fin de contrat) et interdit le recours à un autre sous-traitant sans autorisation écrite préalable, spécifique ou générale, du responsable du traitement (en cas d'autorisation générale, information préalable et droit d'objection) : l'article 14 doit être modifié en conséquence.</li>
+<li><strong>Audit</strong> : droit pour la coopérative, ou un tiers qu'elle mandate, d'auditer la prestation, la sécurité et le respect des niveaux de service, avec accès aux preuves et rapports d'audit indépendants.</li>
+<li><strong>Sécurité et notification des incidents</strong> : engagements de sécurité (authentification multifacteur des administrateurs, localisation des données dans l'Union européenne, chiffrement des sauvegardes) et notification sans délai de tout incident de sécurité. NIS 2 fait de la sécurité de la chaîne d'approvisionnement une mesure de gestion des risques ; sa transposition française n'est pas promulguée au 31/12/2026 (annexe 3.3), mais l'anticiper par contrat est une bonne pratique. La coopérative, centrale d'achat et grossiste alimentaire de plus de 50 salariés, entrerait elle-même dans le champ de NIS 2 comme entité importante dès l'entrée en vigueur de la loi de transposition (annexe II, point 4), et Nexalis, fournisseur de services gérés, également : la sécurité de la chaîne d'approvisionnement deviendrait alors une obligation, que le contrat doit anticiper dès 2027.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres valeurs cibles cohérentes avec le contexte (99,7 % sur 6 h – 22 h, rétablissement en 2 ou 6 heures, RPO de 12 heures) si elles sont justifiées par les commandes du week-end.</li>
+<li>Faiblesse relevée sur le reporting trimestriel produit par le seul prestataire, ou sur l'exclusion des « maintenances programmées » sans encadrement, en remplacement de l'une des trois attendues.</li>
+<li>Qualification de la coopérative comme future entité importante au sens de NIS 2 (grossiste alimentaire de plus de 50 salariés) et de Nexalis comme fournisseur de services gérés, présentée comme dépendante de la transposition française.</li>
+<li>Clause de durée et de sortie anticipée, ou clause d'évolution des prix, si elle est justifiée par le risque de dépendance.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>SLA et OLA confondus</em> — confondre SLA et OLA ; juste : le SLA engage le prestataire envers le client, l'OLA organise les équipes qui le tiennent.</li>
+<li><em>Indicateurs génériques</em> — proposer des niveaux de service sans plage ni méthode de mesure ; juste : un engagement vaut par sa mesure, sa période et sa conséquence.</li>
+<li><em>RTO et RPO inversés</em> — confondre perte de données admissible (RPO) et durée d'interruption admissible (RTO) dans l'article 9.</li>
+<li><em>NIS 2 confondue avec le RGPD ; Statut réglementaire affirmé sans date</em> — présenter NIS 2 comme applicable en droit français ou la confondre avec le RGPD ; juste : statut de l'annexe 3.3, et deux textes distincts (cybersécurité / données personnelles).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ITIL (PeopleCert)</td>
+<td>SLA, OLA, catalogue de services</td>
+<td><code>itil</code> / F04 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>RGPD, règlement (UE) 2016/679, art. 28</td>
+<td>sous-traitant, contrat écrit</td>
+<td><code>rgpd</code> / F15 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Data Act, règlement (UE) 2023/2854</td>
+<td>changement de fournisseur de services en nuage</td>
+<td><code>data_act</code> / F07 § 8.5</td>
+<td>applicable depuis le 12/09/2025</td>
+</tr>
+<tr class="even">
+<td>Directive (UE) 2022/2555 (NIS 2) et sa transposition française</td>
+<td>chaîne d'approvisionnement ; projet de loi non promulgué</td>
+<td><code>nis2</code>, <code>nis2_transposition_fr</code> / F12 § 6</td>
+<td>non promulguée au 31/12/2026</td>
+</tr>
+<tr class="odd">
+<td>Référentiel du cloud de confiance (Cigref)</td>
+<td>exigences contractuellement exigibles, réversibilité</td>
+<td><code>cigref_cloud_confiance</code> / F04 § 4</td>
+<td>publié</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--planification-de-la-transition-3-points">2.3 – Planification de la transition (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.5 – Planifier, organiser et conduire des projets de systèmes d'information : <code>1.5.d</code> « Planification des ressources, délais, coûts et qualité » ; <code>1.5.e</code> « Identification et gestion des risques (maintenance, évolutivité, sécurité) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.1 (plan de transition, contrainte sur M. LEMOINE, échéance du 30 juin 2027) et 1.4 (témoignage de M. LEMOINE).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Barres placées au plus tôt, antériorités respectées</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Jalons (signature, environnement prêt, recette, décision de bascule, bascule, fin de la régie)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Contrainte de ressource de M. LEMOINE vérifiée (B, E et F jamais simultanées)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Chemin critique défini (suite des tâches sans marge, qui fixe la durée minimale du projet) et identifié : A-C-D-F-G-H ; fin en semaine 15</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Échéance tenue avec une marge d'environ deux semaines et demie ; tâche A (puis D) à surveiller ; marges de B et E</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>2.3 a) – Diagramme de Gantt (semaine 1 = semaine du 1er mars 2027)</em></p>
+<pre><code>Tâche                          S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 S14 S15
+A Contrats (3)                 ██ ██ ██                                          ◆ J1 fin S3 : contrats signés
+B Inventaire, documentation (4)██ ██ ██ ██ ·· ··                                 (marge 2 semaines)
+C Environnement (3)                     ██ ██ ██                                 ◆ J2 fin S6 : environnement prêt
+D Migration à blanc, recette (4)                  ██ ██ ██ ██                    ◆ J3 fin S10 : recette validée
+E Transfert de compétences (3)             ██ ██ ██ ·· ·· ··                     (marge 3 semaines, voir b)
+F Restauration, répétition (2)                                ██  ██             ◆ J4 fin S12 : décision de bascule
+G Bascule, accompagnement (2)                                         ██  ██     ◆ J5 bascule le week-end des 29 et 30 mai
+H Fin de la régie, bilan (1)                                                  ██ ◆ J6 fin S15 : projet clos</code></pre>
+<p>Dates au plus tôt : A semaines 1 à 3 ; B semaines 1 à 4 ; C semaines 4 à 6 ; D semaines 7 à 10 (après B et C) ; E semaines 5 à 7 (après B) ; F semaines 11 et 12 ; G semaines 13 et 14 (après E et F) ; H semaine 15 (1 pt).</p>
+<p>Jalons : contrats signés (fin de la semaine 3, 21 mars), environnement prêt (fin de la semaine 6), recette validée (fin de la semaine 10), décision de bascule après la répétition générale (fin de la semaine 12, 23 mai), bascule (week-end du 29 et 30 mai, semaine 13), fin de la régie et bilan (semaine 15, du 7 au 13 juin) (0,5 pt).</p>
+<p>Ressource : M. LEMOINE intervient sur B (semaines 1 à 4), E (semaines 5 à 7) et F (semaines 11 et 12) : aucune semaine commune, le plan au plus tôt respecte la contrainte (0,5 pt).</p>
+<p><em>2.3 b) – Chemin critique, échéance et points de vigilance</em></p>
+<p>Le chemin critique est la suite des tâches dont la marge est nulle : tout retard sur l'une d'elles retarde d'autant la fin du projet, dont il fixe la durée minimale. Ici, c'est A-C-D-F-G-H : 3 + 3 + 4 + 2 + 2 + 1 = 15 semaines. Le projet s'achève à la fin de la semaine 15 (13 juin 2027) et la bascule a lieu fin mai : l'échéance du mercredi 30 juin (semaine 18) est tenue, avec une marge d'environ deux semaines et demie (0,5 pt).</p>
+<p>Vigilance (0,5 pt) :</p>
+<ul>
+<li>la tâche A est critique et c'est la plus exposée : la négociation des clauses de la question 2.2 peut l'allonger ; si elle dure 5 semaines au lieu de 3, le projet finit en semaine 17 (27 juin), sans plus aucune marge. Il faut donc lancer la négociation des niveaux de service et de la réversibilité dès la semaine 1, en priorité ;</li>
+<li>la tâche D (recette) dépend de la disponibilité des acheteurs et des magasins ;</li>
+<li>B a 2 semaines de marge ; E a 5 semaines de marge au regard des seules antériorités, mais seulement 3 si l'on tient compte de M. LEMOINE, qui doit aussi participer à F en semaines 11 et 12 : E ne doit pas glisser au-delà de la semaine 10.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Gantt dessiné à la main dans un autre format lisible (format libre, JUR-T10), jalons représentés autrement ; numérotation des semaines par dates.</li>
+<li>Bascule placée en fin de semaine 12 ou au début de la semaine 13, si le candidat le justifie.</li>
+<li>Mention d'un réseau PERT en complément, sans calcul développé.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><code>JUR-P01</code> — Gantt illisible, sans jalons, ou noyé de commentaires non demandés.</li>
+<li>Antériorités non respectées (D lancée avant la fin de B ; G avant la fin de E) ou contrainte de ressource ignorée (B, E et F en parallèle pour M. LEMOINE).</li>
+<li>Chemin critique confondu avec la liste des tâches les plus longues ; juste : la suite des tâches sans marge.</li>
+<li><em>Schéma directeur confondu avec un plan de projet</em> — confondre le plan de projet avec un schéma directeur.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Diagramme de Gantt, chemin critique, jalons</td>
+<td>planification à partir d'un texte</td>
+<td>F05 § 4</td>
+<td>guide p. 285</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--transfert-des-connaissances-3-points">2.4 – Transfert des connaissances (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.6 – Mettre en œuvre et piloter la gestion des connaissances au sein du système d'information : <code>1.6.b</code> « Architecture fonctionnelle des systèmes de knowledge management » ; <code>1.6.c</code> « Méthodes de gouvernance des dispositifs (rôles, responsabilités, indicateurs) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.4 (témoignage de M. LEMOINE) et 2.1 (interface, nuits corrigées à la main, tâches B, E et F du plan).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Connaissances tacites et explicites distinguées</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Modèle SECI : quatre modes de conversion en spirale</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Trois modes au moins appliqués au cas, chacun avec une action concrète (0,5 par mode)</td>
+<td>1,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Calendrier intégré au plan (B, E, F) et indicateur d'efficacité à cinq champs</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>2.4 a) – Connaissances tacites et explicites ; modèle SECI</em></p>
+<p>La connaissance explicite est formalisée et transmissible par un support (procédure, documentation, base de connaissances) ; la connaissance tacite est incorporée à la personne (savoir-faire, intuition, « je sais quels magasins posent problème ») et difficile à formuler (0,5 pt). Le modèle SECI (Nonaka et Takeuchi, 1995) décrit la création de connaissances par quatre conversions successives, en spirale : socialisation (tacite vers tacite, par l'observation et la pratique partagée), externalisation (tacite vers explicite, par la formalisation), combinaison (explicite vers explicite, par l'assemblage et la diffusion) et internalisation (explicite vers tacite, par la mise en pratique) (0,5 pt).</p>
+<p><em>2.4 b) – Dispositif de transfert des savoirs de M. LEMOINE</em></p>
+<p>Le savoir critique de M. LEMOINE (corrections nocturnes de l'interface, clôture mensuelle des stocks) est presque entièrement tacite : « ce n'est écrit nulle part ». Dispositif :</p>
+<ul>
+<li><strong>Externalisation (tâche B, semaines 1 à 4)</strong> : entretiens d'explicitation menés par la DSI ; rédaction, avec M. LEMOINE, des procédures de l'interface et de la clôture, de la liste des magasins dont les fichiers posent problème et des corrections types ; chaque correction manuelle est décrite comme une anomalie à traiter à la source (contrôle de complétude du fichier de caisse) (0,5 pt).</li>
+<li><strong>Socialisation (tâche E, semaines 5 à 7)</strong> : binôme entre M. LEMOINE et l'ingénieur de Nexalis et le technicien de la DSI qui reprendront l'exploitation ; observation des chargements de 6 heures et de la clôture de mars, puis travail à deux sur les corrections réelles (0,5 pt).</li>
+<li><strong>Combinaison (tâches E et F)</strong> : intégration des procédures dans la base de connaissances de la DSI et dans la documentation d'exploitation de Nexalis, rapprochement avec la documentation livrée par Altinéa en 2019, et inscription de ces documents dans le plan de réversibilité (question 2.2) (0,5 pt).</li>
+<li><strong>Internalisation (tâche F, semaines 11 et 12, et clôture de mai)</strong> : les repreneurs exécutent seuls les procédures pendant la répétition générale de la bascule et la clôture de mai, M. LEMOINE n'intervenant qu'en observateur ; les écarts enrichissent la documentation (0,5 pt, si trois modes ne sont pas déjà notés).</li>
+</ul>
+<p>Indicateur et pilotage (0,5 pt) : taux de procédures critiques exécutées sans aide par un repreneur = procédures critiques exécutées seules avec succès / procédures critiques recensées en tâche B ; source : registre de la répétition générale et des clôtures ; fréquence : hebdomadaire jusqu'à la bascule ; cible : 100 % à la décision de bascule (fin de la semaine 12) ; axe : apprentissage. Un référent de la DSI est responsable de la base de connaissances après le départ de M. LEMOINE.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Indicateur différent s'il mesure l'appropriation et non la seule production de documents (nombre de nuits d'anomalie traitées sans M. LEMOINE, cible : toutes à partir de mai).</li>
+<li>Proposition de solliciter M. LEMOINE pour un appui ponctuel après son départ, présentée comme une mesure de secours et non comme la solution.</li>
+<li>Mobilisation d'outils (wiki, base de connaissances, vidéos de démonstration), valorisée si elle est rattachée à un mode du modèle.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Gestion des connaissances réduite à la GED</em> — réduire la gestion des connaissances à la rédaction de documents ou à une GED ; juste : dispositif systémique (outils, processus, culture) qui organise aussi la pratique partagée.</li>
+<li>Inverser les modes du modèle (l'externalisation va du tacite vers l'explicite) ; dater ou attribuer le modèle à tort (Polanyi a introduit la connaissance tacite, il n'est pas l'auteur du modèle SECI).</li>
+<li>Dispositif hors calendrier, qui commence après le départ de M. LEMOINE ou ignore sa contrainte de disponibilité.</li>
+<li>Confondre transfert des connaissances et gestion prévisionnelle des emplois (relève des ressources humaines, hors de la question).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nonaka et Takeuchi, <em>The Knowledge-Creating Company</em> (1995)</td>
+<td>modèle SECI</td>
+<td><code>nonaka_takeuchi_seci</code> / F06 § 1</td>
+<td>publié</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gouverner et modéliser les données de pilotage : Comptoirs Ligériens, réseau coopératif de 46 épiceries : MCD et MLD d'un entrepôt de pilotage, gouvernance DAMA-DMBOK, dictionnaire, qualité des données, critique d'un tableau de bord</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 1</p><p>16 points</p><p>1 h 10</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Gouverner et modéliser les données de pilotage</h1><p class="cas">Comptoirs Ligériens, réseau coopératif de 46 épiceries : MCD et MLD d'un entrepôt de pilotage, gouvernance DAMA-DMBOK, dictionnaire, qualité des données, critique d'un tableau de bord</p><p><strong>DOSSIER 1 – GOUVERNER ET MODÉLISER LES DONNÉES DE PILOTAGE (16 points)</strong></p>
+<p>Durée conseillée : 1 h 10 (16 points sur 40, pour une épreuve de 3 heures, coefficient 1 ; environ 4,5 minutes par point).</p>
+<p>Réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document et matériel autorisés</strong> : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Ce dossier est l'un des trois dossiers indépendants du sujet d'entraînement complet n° 1, construits sur un même cas : la présentation et les annexes sont communes aux trois dossiers.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en mars 2027. Comptoirs Ligériens est une société coopérative de commerçants détaillants créée en 1998 à Tours. Elle fédère 46 épiceries indépendantes spécialisées dans les produits locaux et biologiques, installées en Centre-Val de Loire et en Pays de la Loire. Chaque magasin est une entreprise autonome dont le gérant est associé de la coopérative. La coopérative, qui emploie 140 salariés, assure pour son réseau la centrale d'achat, la plateforme logistique de Tours, le référencement de quelque 410 producteurs locaux, des services mutualisés (informatique, ressources humaines, communication) et le pilotage commercial du réseau. Les organisations, les personnes, les produits et les données de ce cas sont fictifs.</p>
+<p>Le système d'information de la coopérative et de ses magasins est porté par une direction des systèmes d'information (DSI) de neuf personnes, dirigée par Mme Claire VASSEUR. Trois sujets dominent son agenda de 2027 :</p>
+<ul>
+<li>les gérants réclament un pilotage plus rapide et plus fiable : le tableau de bord mensuel du réseau, consolidé à la main, est diffusé douze jours après la fin du mois et ses chiffres sont contestés ;</li>
+<li>le contrat de régie qui assure l'exploitation de l'ERP de la centrale prend fin le 30 juin 2027, le jour où part à la retraite le technicien qui connaît seul l'interface entre les caisses des magasins et l'ERP ;</li>
+<li>l'assemblée générale de juin 2026 a adopté une charte du numérique responsable, alors que plusieurs projets d'intelligence artificielle et de traçabilité sont proposés à la coopérative.</li>
+</ul>
+<p>Vous venez de rejoindre la DSI comme adjoint(e) de Mme VASSEUR, chargé(e) des données et des projets. Le directeur général, M. Hervé GALLIEN, vous confie une mission articulée autour de trois axes : gouverner et modéliser les données de pilotage du réseau (dossier 1) ; réussir le passage de la régie à l'infogérance sans perdre les savoirs du technicien sortant (dossier 2) ; encadrer les projets d'intelligence artificielle et de traçabilité et mesurer l'empreinte du système d'information (dossier 3).</p>
+<p>Les annexes 1.1 à 3.3 sont communes aux trois dossiers, qui sont indépendants. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-de-comptoirs-ligériens-et-chiffres-clés">ANNEXE 1.1 – Présentation de Comptoirs Ligériens et chiffres clés</h3>
+<p>La coopérative est administrée par un conseil d'administration de neuf gérants associés, présidé par M. Yann LE GOFF, gérant du magasin d'Angers. Autour du directeur général, M. Hervé GALLIEN, se répartissent la direction des achats et de l'offre (Mme Sonia BENALI), la direction du réseau, chargée de l'animation commerciale des magasins (M. Paul ARNAUD), la direction logistique, la direction administrative et financière, dont relève le contrôle de gestion (M. Loïc FERNANDES), les ressources humaines mutualisées (Mme Agnès PERRAULT) et la DSI (Mme Claire VASSEUR).</p>
+<p>Aucun responsable des données n'est désigné. Les fiches des produits et des fournisseurs sont créées dans l'ERP par deux assistantes de la DSI, à partir des formulaires transmis par la direction des achats ; les magasins peuvent aussi créer des « articles locaux » directement dans leur logiciel de caisse.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Chiffres clés</th>
+<th>2024</th>
+<th>2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Magasins associés</td>
+<td>42</td>
+<td>46</td>
+</tr>
+<tr class="even">
+<td>Chiffre d'affaires hors taxes cumulé des magasins</td>
+<td>150 M€</td>
+<td>168 M€</td>
+</tr>
+<tr class="odd">
+<td>Chiffre d'affaires hors taxes de la coopérative (ventes aux magasins et services)</td>
+<td>84 M€</td>
+<td>96 M€</td>
+</tr>
+<tr class="even">
+<td>Salariés de la coopérative (dont DSI)</td>
+<td>125 (8)</td>
+<td>140 (9)</td>
+</tr>
+<tr class="odd">
+<td>Références actives au catalogue de la centrale</td>
+<td>8 200</td>
+<td>9 000</td>
+</tr>
+<tr class="even">
+<td>dont produits de producteurs situés à moins de 150 km de la plateforme de Tours</td>
+<td>3 100</td>
+<td>3 600</td>
+</tr>
+<tr class="odd">
+<td>Producteurs locaux référencés</td>
+<td>360</td>
+<td>410</td>
+</tr>
+<tr class="even">
+<td>Porteurs de la carte de fidélité commune aux magasins</td>
+<td>170 000</td>
+<td>210 000</td>
+</tr>
+<tr class="odd">
+<td>Budget du système d'information de la coopérative (fonctionnement et investissement)</td>
+<td>2,0 M€</td>
+<td>2,4 M€ (2,5 % du chiffre d'affaires de la coopérative)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-12--projet-dentrepôt-de-pilotage--note-de-la-dsi-février-2027">ANNEXE 1.2 – Projet d'entrepôt de pilotage : note de la DSI (février 2027)</h3>
+<p>Aujourd'hui, le contrôleur de gestion consolide chaque mois des extractions de l'ERP de la centrale, des logiciels de caisse des 46 magasins et d'un tableur de démarque tenu par les magasins ; le tableau de bord du réseau est diffusé à J+12. Le projet « Boussole » vise un entrepôt de données alimenté chaque nuit par les caisses et par l'ERP, qui permettra de diffuser le tableau de bord à J+2 et de comparer les magasins entre eux. Le grain retenu est mensuel : le détail des tickets reste dans le logiciel de caisse. L'entrepôt ne contiendra aucune donnée relative aux porteurs de la carte de fidélité.</p>
+<p>Règles de gestion retenues, validées avec la direction des achats et le contrôle de gestion :</p>
+<ul>
+<li>RG1 – Un magasin associé est identifié par un code (ex. M027) ; on conserve son nom, sa ville, sa surface de vente et sa date d'adhésion.</li>
+<li>RG2 – Un produit est identifié par un code article attribué par la centrale (ex. P104520) ; on conserve son libellé, son code EAN lorsqu'il existe et son label (biologique, local, sans label).</li>
+<li>RG3 – Chaque produit appartient à une et une seule famille (crèmerie, fruits et légumes, épicerie, boissons, vrac…), identifiée par un code et dotée d'un libellé ; une famille regroupe au moins un produit.</li>
+<li>RG4 – Chaque produit est fourni par un et un seul fournisseur référencé ; un fournisseur fournit au moins un produit. Un fournisseur est identifié par un code ; on conserve sa raison sociale, sa commune, son type (producteur local ou grossiste) et la distance, en kilomètres, entre son exploitation ou son entrepôt et la plateforme de Tours.</li>
+<li>RG5 – Le mois est identifié par un code (ex. 2027-01) ; on conserve l'année, le numéro du mois et le trimestre.</li>
+<li>RG6 – Pour chaque magasin, chaque produit et chaque mois, l'entrepôt conserve la quantité vendue, le chiffre d'affaires hors taxes et la quantité démarquée (produits jetés ou donnés). Un produit peut n'être vendu dans aucun magasin un mois donné, et un magasin qui vient d'adhérer peut ne pas encore avoir de ventes ; chaque mois chargé dans l'entrepôt comporte au moins une vente.</li>
+</ul>
+<p>Constats du profilage des données sources (février 2027) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Constat</th>
+<th>Données concernées</th>
+<th>Mesure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fiches de fournisseurs en double (ex. « Ferme des Noues » et « EARL des Noues », même numéro SIRET)</td>
+<td>référentiel des fournisseurs de l'ERP</td>
+<td>430 fiches pour environ 410 producteurs réels, soit une vingtaine de doublons</td>
+</tr>
+<tr class="even">
+<td>Distance à la plateforme non renseignée</td>
+<td>fiches des producteurs locaux</td>
+<td>12 % des fiches</td>
+</tr>
+<tr class="odd">
+<td>Articles créés dans les caisses des magasins, hors catalogue de la centrale, sans famille ni fournisseur, aux libellés libres (ex. « Tomme vache 200g » et « TOMME DE VACHE 200 G » pour un même produit)</td>
+<td>articles locaux des caisses</td>
+<td>1 700 articles, 4 % du chiffre d'affaires du réseau</td>
+</tr>
+<tr class="even">
+<td>Démarque saisie dans le tableur commun</td>
+<td>quantité démarquée</td>
+<td>31 magasins sur 46</td>
+</tr>
+<tr class="odd">
+<td>Écart entre le chiffre d'affaires du tableau de bord et celui des caisses</td>
+<td>chiffre d'affaires hors taxes de décembre 2026</td>
+<td>1,8 %, dû aux ressaisies manuelles lors de la consolidation</td>
+</tr>
+<tr class="even">
+<td>Délai de mise à disposition du tableau de bord</td>
+<td>toutes</td>
+<td>J+12</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-13--extrait-du-tableau-de-bord-mensuel-du-réseau-janvier-2027">ANNEXE 1.3 – Extrait du tableau de bord mensuel du réseau (janvier 2027)</h3>
+<p><strong>Graphique 1 – Chiffre d'affaires hors taxes du réseau.</strong> Histogramme ; l'axe vertical est gradué de 13,5 M€ à 16 M€.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Mois</th>
+<th>Octobre 2026</th>
+<th>Novembre 2026</th>
+<th>Décembre 2026</th>
+<th>Janvier 2027</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chiffre d'affaires HT (M€)</td>
+<td>14,1</td>
+<td>14,3</td>
+<td>15,9</td>
+<td>13,8</td>
+</tr>
+</tbody>
+</table>
+<p>Commentaire publié avec le graphique : « Effondrement des ventes en janvier : la barre de janvier est huit fois plus courte que celle de décembre. » Le chiffre d'affaires de janvier 2026 (13,2 M€) n'est pas présenté dans le tableau de bord.</p>
+<p><strong>Graphique 2 – Répartition du chiffre d'affaires de janvier 2027 par magasin.</strong> Diagramme circulaire en trois dimensions, 46 secteurs, légende par code de magasin.</p>
+<p><strong>Graphique 3 – Carte de fidélité et performance des magasins.</strong> Nuage de points, un point par magasin : en abscisse, la part des ventes réalisées avec la carte de fidélité ; en ordonnée, le chiffre d'affaires par mètre carré. Les huit magasins de centre-ville des quatre plus grandes agglomérations du réseau occupent le coin supérieur droit du nuage. Commentaire publié avec le graphique : « Les magasins où la carte est la plus utilisée vendent le plus au mètre carré : la carte fait vendre. Proposition : porter la remise de fidélité de 3 % à 5 % dans tout le réseau. »</p>
+<p><strong>Indicateurs du mois</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Janvier 2027</th>
+<th>Signal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Taux de démarque</td>
+<td>2,9 %</td>
+<td>vert</td>
+</tr>
+<tr class="even">
+<td>Panier moyen</td>
+<td>31 €</td>
+<td>orange</td>
+</tr>
+<tr class="odd">
+<td>Part des ventes de produits locaux (fournisseur à moins de 150 km)</td>
+<td>38 %</td>
+<td>vert</td>
+</tr>
+<tr class="even">
+<td>Nombre de références vendues</td>
+<td>8 450</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>Notes : le taux de démarque est calculé sur les 31 magasins qui saisissent leur démarque ; les seuils qui déclenchent les signaux ne sont pas documentés.</p>
+<h3 id="annexe-14--témoignages-recueillis-en-février-2027">ANNEXE 1.4 – Témoignages (recueillis en février 2027)</h3>
+<p><strong>Mme Sonia BENALI, directrice des achats et de l'offre</strong> : « Les fiches des produits et des fournisseurs, c'est la DSI qui les saisit à partir de nos formulaires : quand un chiffre est faux, c'est un problème informatique. Je veux bien valider des règles, mais je n'ai personne pour corriger 9 000 fiches. Et quand un gérant crée un article pour le fromager de son village, nous ne l'apprenons qu'au moment où le producteur demande à être référencé. »</p>
+<p><strong>M. Loïc FERNANDES, contrôleur de gestion</strong> : « Je passe huit jours par mois à rapprocher les extractions. Les associés m'ont demandé des graphiques plus parlants, alors j'en ajoute à chaque comité. Le taux de démarque, je le calcule avec les magasins qui la saisissent : les autres ne doivent pas en avoir beaucoup. »</p>
+<p><strong>Mme Nadia OUHIBI, gérante du magasin de Saumur, administratrice</strong> : « Je veux me comparer à des magasins de ma taille, pas à la moyenne du réseau. Et à J+12, mes commandes du mois suivant sont déjà passées. Quant à la blockchain qu'on nous propose, nos clients nous croient sur parole ; ce qu'il faut, c'est qu'aucun magasin ne vende plus de fraises importées comme des fraises locales. »</p>
+<p><strong>M. Bernard LEMOINE, technicien de la DSI depuis 1998, en retraite le 30 juin 2027</strong> : « L'interface des caisses, Altinéa l'a livrée en 2019 et je l'ai reprise depuis. Quand le fichier d'un magasin arrive incomplet, je le corrige à la main avant le chargement de 6 heures : je sais quels magasins posent problème. Ce n'est écrit nulle part. Pour la clôture mensuelle des stocks, c'est pareil. Les ingénieurs d'Altinéa changent tous les six mois. »</p>
+<p><strong>Mme Agnès PERRAULT, responsable des ressources humaines mutualisées</strong> : « Nous recrutons pour les magasins 150 saisonniers et 60 salariés en contrat à durée indéterminée par an. L'éditeur de notre logiciel de recrutement propose un module d'IA qui note les candidatures, et une option qui analyse les vidéos d'entretien pour évaluer la motivation des candidats à partir des expressions de leur visage. Les gérants seraient ravis de gagner du temps. »</p>
+<p><strong>Mme Claire VASSEUR, directrice des systèmes d'information</strong> : « Avec neuf personnes, la DSI doit piloter des prestataires et des données, pas surveiller des serveurs la nuit. Mais je ne veux pas remplacer une dépendance envers Bernard par une dépendance envers un infogérant. »</p>
+<h3 id="annexe-21--exploitation-du-si--architecture-niveaux-de-service-de-2026-projet-de-contrat-dinfogérance-et-plan-de-transition">ANNEXE 2.1 – Exploitation du SI : architecture, niveaux de service de 2026, projet de contrat d'infogérance et plan de transition</h3>
+<p><strong>A. Architecture actuelle</strong></p>
+<ul>
+<li>Logiciel de caisse des 46 magasins en mode SaaS (éditeur Encaisso), qui gère aussi la carte de fidélité ; les tickets sont transmis chaque nuit à l'ERP de la centrale par une interface spécifique livrée en 2019.</li>
+<li>ERP de la centrale (achats, ventes aux magasins, stocks, comptabilité) et portail de commande des magasins, installés dans la salle informatique du siège ; sauvegarde quotidienne, copiée chaque semaine sur un support conservé hors du siège.</li>
+<li>Logiciel de gestion de la plateforme logistique en mode SaaS ; messagerie et bureautique en ligne.</li>
+<li>Exploitation de l'ERP, du portail et des sauvegardes : contrat de régie avec l'ESN Altinéa Services (deux ingénieurs à temps partiel, 90 jours facturés en 2026 à 650 € HT par jour), qui prend fin le 30 juin 2027 ; M. LEMOINE assure le suivi quotidien.</li>
+<li>Les gérants passent leurs commandes sur le portail 7 jours sur 7, de 6 h à 22 h ; les commandes du samedi et du dimanche préparent les livraisons du lundi, les plus importantes de la semaine.</li>
+</ul>
+<p><strong>B. Niveaux de service constatés en 2026 (ERP et portail de commande)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Disponibilité du portail sur la plage 6 h – 22 h, 7 jours sur 7</td>
+<td>98,6 %</td>
+</tr>
+<tr class="even">
+<td>Incidents bloquants (commande impossible pour au moins un magasin)</td>
+<td>14</td>
+</tr>
+<tr class="odd">
+<td>dont incidents survenus un samedi ou un dimanche</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>Délai moyen de rétablissement d'un incident bloquant</td>
+<td>7 heures</td>
+</tr>
+<tr class="odd">
+<td>Nuits où l'interface caisses-ERP a échoué ou a été corrigée à la main</td>
+<td>22</td>
+</tr>
+<tr class="even">
+<td>Tests de restauration des sauvegardes réalisés</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. Extraits du projet de contrat d'infogérance proposé par l'ESN Nexalis (offre du 15 février 2027)</strong></p>
+<ul>
+<li>Article 2 – Objet : hébergement de l'ERP et du portail dans le centre de données de Nexalis, situé dans l'Union européenne ; exploitation, supervision, sauvegardes et support de niveau 2. Durée : quatre ans. Redevance : 14 000 € HT par mois. Une offre distincte prévoit la migration de l'ERP et du portail au prix forfaitaire de 36 000 € HT, environnement recetté livré.</li>
+<li>Article 6 – Niveaux de service : « Disponibilité mensuelle de 99,5 %, mesurée du lundi au vendredi de 8 h à 18 h, hors maintenances programmées. Prise en charge d'un incident bloquant dans un délai de 4 heures ouvrées. Rétablissement : le prestataire met en œuvre ses meilleurs efforts. Le prestataire adresse au client un rapport trimestriel. »</li>
+<li>Article 7 – Pénalités : « 1 % de la redevance mensuelle par tranche de 0,1 point de disponibilité manquant, dans la limite de 5 % de la redevance mensuelle, sous réserve d'une réclamation écrite du client dans les 15 jours qui suivent le rapport trimestriel. »</li>
+<li>Article 9 – Sauvegardes : « Sauvegardes quotidiennes, conservées sept jours. »</li>
+<li>Article 12 – Fin du contrat : « À l'expiration du contrat, le prestataire restitue les données du client, sur demande de celui-ci, selon des modalités et à un prix à convenir entre les parties. »</li>
+<li>Article 14 – Sous-traitance : « Le prestataire peut confier tout ou partie des prestations à des sous-traitants de son choix. »</li>
+<li>Observation de la DSI : le projet ne comporte ni clause d'audit ni stipulation relative aux données personnelles (comptes des utilisateurs du portail, coordonnées des producteurs exploitants individuels), ni engagement de notification des incidents de sécurité.</li>
+</ul>
+<p><strong>D. Plan de transition préparé par la DSI (semaine 1 = semaine du lundi 1er mars 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Tâche</th>
+<th>Description</th>
+<th>Durée</th>
+<th>Tâches antérieures</th>
+<th>Intervenants</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>Négociation et signature du contrat d'infogérance et du forfait de migration</td>
+<td>3 semaines</td>
+<td>–</td>
+<td>DSI, direction financière</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>Inventaire de l'existant ; documentation de l'interface caisses-ERP et de la clôture mensuelle des stocks</td>
+<td>4 semaines</td>
+<td>–</td>
+<td>M. LEMOINE, DSI</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>Préparation de l'environnement d'hébergement</td>
+<td>3 semaines</td>
+<td>A</td>
+<td>Nexalis</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>Migration à blanc de l'ERP et du portail, recette par les utilisateurs</td>
+<td>4 semaines</td>
+<td>B, C</td>
+<td>Nexalis, DSI, achats</td>
+</tr>
+<tr class="odd">
+<td>E</td>
+<td>Transfert de compétences vers Nexalis et la DSI (interface, clôture des stocks)</td>
+<td>3 semaines</td>
+<td>B</td>
+<td>M. LEMOINE, Nexalis, DSI</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>Test de restauration des sauvegardes et répétition générale de la bascule</td>
+<td>2 semaines</td>
+<td>D</td>
+<td>Nexalis, DSI, M. LEMOINE</td>
+</tr>
+<tr class="odd">
+<td>G</td>
+<td>Bascule en production (un week-end), puis accompagnement renforcé des magasins</td>
+<td>2 semaines</td>
+<td>E, F</td>
+<td>Nexalis, DSI</td>
+</tr>
+<tr class="even">
+<td>H</td>
+<td>Fin de la régie Altinéa et bilan du projet</td>
+<td>1 semaine</td>
+<td>G</td>
+<td>DSI</td>
+</tr>
+</tbody>
+</table>
+<p>M. LEMOINE ne peut pas travailler sur deux tâches au cours de la même semaine. La bascule doit être achevée avant son départ et la fin de la régie, le mercredi 30 juin 2027 (semaine 18).</p>
+<h3 id="annexe-31--projets-dintelligence-artificielle-et-de-traçabilité-à-létude-mars-2027">ANNEXE 3.1 – Projets d'intelligence artificielle et de traçabilité à l'étude (mars 2027)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Projet</th>
+<th>Description</th>
+<th>Porteur</th>
+<th>Données utilisées</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A – Prévision des commandes de produits frais</td>
+<td>Module proposé par l'éditeur du logiciel de caisse : à partir de l'historique des ventes, de la démarque, de la météo et du calendrier, il établit chaque matin une proposition de commande de fruits et légumes, de crèmerie et de pain pour chaque magasin ; le gérant valide ou corrige. Abonnement : 1 500 € HT par mois pour le réseau.</td>
+<td>Direction du réseau</td>
+<td>ventes par article et par magasin, démarque, météo</td>
+</tr>
+<tr class="even">
+<td>B – Présélection des candidatures</td>
+<td>Module du logiciel de recrutement : il attribue à chaque candidature une note de 0 à 100 et propose au gérant une liste restreinte. Option « entretien vidéo augmenté » : analyse des expressions du visage et de la voix pendant l'entretien vidéo pour estimer la motivation et la résistance au stress du candidat.</td>
+<td>Ressources humaines mutualisées</td>
+<td>CV, lettres de motivation, vidéos d'entretien</td>
+</tr>
+<tr class="odd">
+<td>C – Assistant de rédaction et agent conversationnel</td>
+<td>Outil d'IA générative accessible par abonnement : rédaction des fiches des 3 600 produits locaux sur le site de retrait en magasin ; réponses automatiques aux questions des clients du site (horaires, disponibilité des produits, allergènes).</td>
+<td>Communication</td>
+<td>fiches produits, questions des clients</td>
+</tr>
+</tbody>
+</table>
+<p>En 2026, la démarque des produits frais a représenté 4,8 % de leurs ventes dans les 31 magasins qui la mesurent ; la direction du réseau vise 3,5 % en 2028 grâce au projet A.</p>
+<p><strong>Proposition de la jeune entreprise Tracéo.</strong> En septembre 2026, un journaliste local a révélé qu'un magasin du réseau vendait des fraises importées sous l'étiquette « producteur local » ; l'étiquetage des produits frais est réalisé dans chaque magasin. Tracéo propose une blockchain de consortium réservée aux producteurs, à la coopérative et aux magasins : chaque lot de produit local est enregistré par le producteur sur une application mobile (date de récolte ou de fabrication, lieu, quantité), puis complété par la plateforme logistique et par le magasin ; un QR code imprimé sur l'étiquette permet au client de consulter l'origine du lot. Les blocs sont validés par cinq nœuds tenus par la coopérative et par Tracéo, selon un vote des nœuds autorisés, sans minage. Coût : 45 000 € HT de mise en place, puis 1 200 € HT par mois. Les deux tiers des 410 producteurs locaux sont des exploitations de moins de trois personnes, et 40 % d'entre eux n'utilisent pas de smartphone pour leur activité. La DSI suggère une autre piste : ajouter à l'ERP la gestion des lots et des attestations d'origine des producteurs, contrôlées par sondage.</p>
+<h3 id="annexe-32--indicateurs-de-durabilité-du-si--situation-de-2026-et-engagements-de-la-charte-pour-2029">ANNEXE 3.2 – Indicateurs de durabilité du SI : situation de 2026 et engagements de la charte pour 2029</h3>
+<p>La charte du numérique responsable adoptée en juin 2026 engage la coopérative à réduire de 25 % d'ici 2029 les émissions de gaz à effet de serre de son système d'information par rapport à 2026.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>2026</th>
+<th>Engagement 2029</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Émissions de gaz à effet de serre du SI de la coopérative et des magasins (estimation 2026 selon la méthode Bilan Carbone, scopes 1 à 3)</td>
+<td>310 tCO2e, dont 72 % liés à la fabrication des équipements et moins de 1 % lié à l'électricité de la salle informatique du siège</td>
+<td>− 25 %</td>
+</tr>
+<tr class="even">
+<td>Postes de travail et terminaux de caisse en service (siège et magasins)</td>
+<td>420</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Durée d'usage moyenne des postes de travail remplacés</td>
+<td>4 ans</td>
+<td>6 ans</td>
+</tr>
+<tr class="even">
+<td>Part d'équipements reconditionnés dans les achats de l'année</td>
+<td>5 %</td>
+<td>30 %</td>
+</tr>
+<tr class="odd">
+<td>Électricité consommée par la salle informatique du siège</td>
+<td>38 MWh</td>
+<td>salle fermée après la migration (annexe 2.1)</td>
+</tr>
+<tr class="even">
+<td>Volume de données stockées, sauvegardes comprises</td>
+<td>42 To (+ 30 % par an depuis 2024)</td>
+<td>stabilisé</td>
+</tr>
+<tr class="odd">
+<td>Tickets de caisse imprimés</td>
+<td>9,5 millions</td>
+<td>− 50 % (ticket dématérialisé proposé au client)</td>
+</tr>
+<tr class="even">
+<td>EcoIndex moyen des pages du site de retrait en magasin</td>
+<td>E</td>
+<td>C</td>
+</tr>
+<tr class="odd">
+<td>Salariés de la coopérative et des magasins sensibilisés au numérique responsable</td>
+<td>10 %</td>
+<td>80 %</td>
+</tr>
+</tbody>
+</table>
+<p>Notes : après la migration, l'électricité nécessaire à l'ERP sera consommée dans le centre de données de Nexalis, dont l'offre ne mentionne aucun indicateur environnemental. Les projets A et C de l'annexe 3.1 n'ont fait l'objet d'aucune estimation de consommation.</p>
+<h3 id="annexe-33--repères-réglementaires-au-31122026">ANNEXE 3.3 – Repères réglementaires (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Texte</th>
+<th>Objet principal</th>
+<th>Situation au 31/12/2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2024/1689 sur l'intelligence artificielle (« AI Act »), modifié par le règlement (UE) 2026/1744 du 8 juillet 2026 (omnibus numérique sur l'IA)</td>
+<td>Approche par les risques : pratiques interdites, systèmes à haut risque, obligations de transparence, modèles d'IA à usage général. Sont notamment interdites la notation sociale et la reconnaissance des émotions sur le lieu de travail, sauf pour des raisons médicales ou de sécurité. Relèvent notamment du haut risque (annexe III) les systèmes destinés au recrutement et à la sélection des candidats, ou à l'évaluation des salariés.</td>
+<td>Pratiques interdites : depuis le 02/02/2025 ; deux interdictions ajoutées par le règlement (UE) 2026/1744 (contenus sexuels générés sans consentement, matériel pédopornographique) : depuis le 02/12/2026. Maîtrise de l'IA (article 4, modifié par le règlement (UE) 2026/1744 : les fournisseurs et les déployeurs prennent des mesures pour favoriser la maîtrise de l'IA de leur personnel) : depuis le 02/02/2025. Modèles d'IA à usage général : depuis le 02/08/2025. Transparence (information des personnes qui dialoguent avec une IA, marquage des contenus générés) : depuis le 02/08/2026 ; marquage par les systèmes génératifs mis sur le marché avant le 02/08/2026 : au plus tard le 02/12/2026. Haut risque de l'annexe III : à compter du 02/12/2027, date reportée par l'omnibus ; haut risque de l'annexe I (produits réglementés) : 02/08/2028.</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>Protection des données personnelles : registre des traitements, contrat écrit avec tout sous-traitant (article 28), analyse d'impact pour les traitements susceptibles d'engendrer un risque élevé, notification des violations de données à l'autorité de contrôle dans les 72 heures</td>
+<td>Applicable depuis le 25/05/2018</td>
+</tr>
+<tr class="odd">
+<td>Directive (UE) 2022/2555 (« NIS 2 »)</td>
+<td>Cybersécurité des entités essentielles et importantes, dont les prestataires de services informatiques gérés et certaines entreprises du secteur alimentaire : gestion des risques, y compris la sécurité de la chaîne d'approvisionnement ; notification des incidents importants (alerte sous 24 heures, notification sous 72 heures, rapport final sous un mois) ; responsabilité des organes de direction</td>
+<td>Délai de transposition expiré le 17/10/2024. En France, le projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité, adopté par le Sénat le 12/03/2025, n'est ni adopté par l'Assemblée nationale ni promulgué à la date de rédaction du sujet (octobre 2026) ; le candidat retiendra cette situation au 31/12/2026.</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2023/2854 (« Data Act »)</td>
+<td>Accès aux données et changement de fournisseur de services d'informatique en nuage (portabilité des données, assistance à la sortie)</td>
+<td>Applicable depuis le 12/09/2025</td>
+</tr>
+<tr class="odd">
+<td>Loi n° 2021-1485 du 15 novembre 2021 visant à réduire l'empreinte environnementale du numérique (REEN) ; référentiel général d'écoconception de services numériques (RGESN, version 2 de 2024)</td>
+<td>Réduction de l'empreinte environnementale du numérique ; écoconception des services numériques</td>
+<td>Loi REEN : en vigueur. RGESN : référentiel publié le 17/05/2024, d'application volontaire pour les entreprises.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>Le directeur général veut que le projet « Boussole » (annexe 1.2) ne se réduise pas à un chantier informatique : à la fin de 2027, les gérants doivent disposer de chiffres fiables, comparables et diffusés à J+2. Vous mobiliserez pour cela les annexes 1.1 à 1.4 ainsi que vos connaissances professionnelles.</p>
+<p><strong>1.1 – Modélisation de l'entrepôt de pilotage (5 points)</strong></p>
+<p>a) À partir des règles de gestion de l'annexe 1.2, établissez le modèle conceptuel des données (MCD) de l'entrepôt de pilotage, en précisant les identifiants, les attributs et les cardinalités.</p>
+<p>b) Déduisez-en le modèle logique des données (MLD), en explicitant les règles de passage appliquées.</p>
+<p>c) Après avoir défini l'entrepôt de données, expliquez pourquoi la DSI a retenu un entrepôt plutôt qu'un lac de données, et montrez en quoi le modèle obtenu s'apparente à un schéma en étoile.</p>
+<p><strong>1.2 – Gouvernance des données (4 points)</strong></p>
+<p>a) Après avoir défini la gouvernance des données, présentez l'apport du référentiel DAMA-DMBOK pour Comptoirs Ligériens.</p>
+<p>b) Distinguez le propriétaire et l'intendant des données, puis proposez, pour les domaines « produits », « fournisseurs » et « ventes », une répartition des rôles justifiée par les annexes 1.1 et 1.4, ainsi que l'instance chargée des arbitrages.</p>
+<p>c) Rédigez l'entrée du dictionnaire de données pour les données « distance du fournisseur » et « quantité démarquée ».</p>
+<p><strong>1.3 – Qualité des données (4 points)</strong></p>
+<p>a) Après avoir défini la qualité des données, rattachez quatre constats de l'annexe 1.2 à la dimension de la qualité qu'ils dégradent, en précisant leur conséquence pour le pilotage du réseau.</p>
+<p>b) Proposez un plan d'action hiérarchisé pour fiabiliser les données avant l'ouverture de l'entrepôt, assorti de deux indicateurs de qualité. Pour chaque indicateur, précisez la formule, la source, la fréquence, la cible et l'axe du tableau de bord.</p>
+<p><strong>1.4 – Critique du tableau de bord mensuel (3 points)</strong></p>
+<p>a) Après avoir défini le tableau de bord de pilotage, identifiez trois défauts de représentation ou d'interprétation dans l'extrait de l'annexe 1.3 et expliquez le risque de décision erronée que chacun fait courir.</p>
+<p>b) Proposez les principes de la nouvelle restitution destinée aux gérants (contenu, représentations, comparaisons, délai), en tenant compte des témoignages de l'annexe 1.4.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
