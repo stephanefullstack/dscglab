@@ -1,13 +1,21 @@
 """Build the static site for every UE that has a ue.yaml with a ``site`` section.
 
-Usage (from anywhere): python3 -I build.py
+Usage (from anywhere): python3 -I build.py [--inclure-non-publiees] [--sortie DOSSIER]
+  --inclure-non-publiees  build also the UE whose ue.yaml has ``site.publier: false``
+                          (rendering check before publication; the real ue.yaml is not changed)
+  --sortie DOSSIER        write content/ and docs/ under DOSSIER instead of this folder
+                          (to try a build without touching the published docs/)
 For each UE: copies the Markdown of its exercises and complete subjects into
 content/<ue>/, converts it with pandoc and writes docs/ (served by GitHub Pages).
 docs/index.html is the hub of the seven UE; each UE has docs/ueN/index.html.
 The UE 4 pages keep their historical URLs (docs/exercices/, docs/sujets/).
+Vocabulary by ``epreuve.nature``: written UE (ecrit) list « dossiers à la pièce » ; the oral
+(UE 6) lists « Sujet d'oral n° N » and the dissertation (UE 7) « Exercice méthodologique n° N »,
+numbered in the order of ``site.exercices`` (or by their ``numero`` key), without dossier grouping.
 """
 from __future__ import annotations
 
+import argparse
 import html
 import os
 import re
@@ -33,6 +41,19 @@ FOOTER = ("Supports d'entraînement non officiels, sans lien avec le ministère 
           "de l'examen. Réglementation applicable au {date}. Les corrigés ont été contrôlés par un outil "
           "de vérification automatique ; ils peuvent néanmoins comporter des erreurs.")
 IGNORE_RE = re.compile(r"\s*<!-- (?:ue4check|dscgcheck):ignorer -->")
+# Fichiers du dossier de travail cités entre accents graves (`regles/x.yaml`, `fiches/F01.md`…).
+INTERNE_RE = re.compile(r"`[^`\n]*\.(?:yaml|md|py)`|`(?:ue\d/)?(?:fiches|regles|gabarits|outils)/[^`\n]*`")
+LIGNE_RE = re.compile(r"^L(\d{1,3}) ")
+PARA_RE = re.compile(r"<p>([^<]*(?:<(?!/p>)[^<]*)*)</p>")   # boucle déroulée : temps linéaire
+
+# Épreuves sans « dossiers » : vocabulaire propre (epreuve.nature de ue.yaml).
+VOCABULAIRE = {
+    "oral": {"unite": "Sujet d'oral", "rubrique": "Sujets d'oral",
+             "pluriel": ("sujet d'oral", "sujets d'oral"), "note": "Grille indicative sur {pts}"},
+    "memoire": {"unite": "Exercice méthodologique", "rubrique": "Exercices méthodologiques",
+                "pluriel": ("exercice méthodologique", "exercices méthodologiques"),
+                "note": "Auto-évaluation sur {pts}"},
+}
 
 
 def esc(s) -> str:
@@ -76,6 +97,30 @@ def pair_dir(cfg: UEConfig, kind: str, item_id: str) -> str:
     return f"{pages_root(cfg)}{kind}/{item_id}"
 
 
+def vocab(cfg: UEConfig) -> dict | None:
+    """Vocabulary of an oral or dissertation UE, None for a written one (dossiers)."""
+    return VOCABULAIRE.get(str((cfg.data.get("epreuve") or {}).get("nature", "ecrit")))
+
+
+def numero(cfg: UEConfig, item: dict) -> int:
+    if item.get("numero") is not None:
+        return int(item["numero"])
+    return [e["id"] for e in cfg.get("site.exercices") or []].index(item["id"]) + 1
+
+
+def titre_numerote(cfg: UEConfig, item: dict, titre: str) -> str:
+    """« Sujet d'oral n° 1 : titre », sans doubler le préfixe s'il est déjà dans le titre."""
+    prefixe = f"{vocab(cfg)['unite']} n° {numero(cfg, item)}"
+    return titre if titre.startswith(prefixe) else f"{prefixe} : {titre}"
+
+
+def duree_oral(ep: dict) -> str:
+    prep = int(ep.get("preparation_minutes", 0))
+    prep_txt = f"{prep // 60} h" if prep % 60 == 0 else f"{prep} min"
+    return (f"{prep_txt} de préparation, puis {ep.get('expose_minutes')} min d'exposé "
+            f"et {ep.get('entretien_minutes')} min d'entretien")
+
+
 def exercise_meta(cfg: UEConfig, item: dict) -> tuple[dict, float, str]:
     """(dossier of ue.yaml, points, duration) of an exercise."""
     dossier = cfg.bareme.dossier(int(item["dossier"])) or {"titre": f"Dossier {item['dossier']}"}
@@ -86,6 +131,8 @@ def exercise_meta(cfg: UEConfig, item: dict) -> tuple[dict, float, str]:
         pts = sum(float(q["points"]) for q in data["bareme"]["dossiers"][0]["questions"])
     # Barème libre : l'exercice donne son propre titre et sa durée (site.exercices).
     dossier = {**dossier, **{k: item[k] for k in ("titre", "duree") if item.get(k)}}
+    if vocab(cfg) and cfg.data["epreuve"].get("nature") == "oral" and not item.get("duree"):
+        dossier["duree"] = duree_oral(cfg.data["epreuve"])
     return dossier, float(pts), str(dossier.get("duree", ""))
 
 
@@ -120,7 +167,27 @@ def clean(md: str, cfg: UEConfig, page_dir: str) -> str:
     left = [w for w in ("corrige.yaml", "ue4check", "dscgcheck", "gabarits/") if w in md]
     if left:
         print(f"ATTENTION, références internes restantes (UE {cfg.numero}) :", left, file=sys.stderr)
+    cites = sorted(set(INTERNE_RE.findall(md)))
+    if cites:
+        print(f"À VÉRIFIER, fichiers de travail cités (UE {cfg.numero}, {page_dir}) :", cites, file=sys.stderr)
     return md
+
+
+def lignes_numerotees(body: str) -> str:
+    """Paragraphs made of hard-broken lines with « L05 » markers: one block per line, number in margin."""
+    def para(m: re.Match) -> str:
+        if "<br />\n" not in m.group(1):
+            return m.group(0)
+        lines = m.group(1).split("<br />\n")
+        if not any(LIGNE_RE.match(li) for li in lines):
+            return m.group(0)
+        out = []
+        for li in lines:
+            n = LIGNE_RE.match(li)
+            num = f'<span class="num">{int(n.group(1))}</span> ' if n else ""
+            out.append(f'<span class="ligne">{num}{li[n.end():] if n else li}</span>')
+        return '<p class="lignes-numerotees">' + "\n".join(out) + "</p>"
+    return PARA_RE.sub(para, body)
 
 
 # --- page skeleton ----------------------------------------------------------------
@@ -190,17 +257,24 @@ def build_pair(cfg: UEConfig, kind: str, item: dict, head: str, items: list[str]
     write(DOCS / page_dir / "sujet.html", page(
         title=title, page_dir=page_dir, kind="sujet", cfg=cfg, description=desc, date=date,
         margin=margin_block(items, links, "sujet.html"),
-        body=head + pandoc(sujet_md)
+        body=head + lignes_numerotees(pandoc(sujet_md))
         + '<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>'))
     avant = str(cfg.get("site.textes.avant_corrige", "Corrigé indicatif et barème."))
     write(DOCS / page_dir / "corrige.html", page(
         title=f"Corrigé : {title}", page_dir=page_dir, kind="corrige", cfg=cfg, description=desc, date=date,
         margin=margin_block(items, links, "corrige.html"),
-        body=head + f'<p class="avant">{esc(avant)}</p>' + pandoc(corr_md)))
+        body=head + f'<p class="avant">{esc(avant)}</p>' + lignes_numerotees(pandoc(corr_md))))
 
 
 def build_exercise(cfg: UEConfig, item: dict) -> None:
     dossier, pts, dur = exercise_meta(cfg, item)
+    v = vocab(cfg)
+    if v:
+        titre = titre_numerote(cfg, item, dossier["titre"])
+        items = [f"{v['unite']} n° {numero(cfg, item)}", v["note"].format(pts=fmt_pts(pts))] + ([dur] if dur else [])
+        head = f"<h1>{esc(titre)}</h1><p class=\"cas\">{esc(item['cas'])}</p>"
+        build_pair(cfg, "exercices", item, head, items, titre)
+        return
     items = [f"Dossier {item['dossier']}", f"{fmt_pts(pts)} points"] + ([dur] if dur else [])
     head = f"<h1>{esc(dossier['titre'])}</h1><p class=\"cas\">{esc(item['cas'])}</p>"
     build_pair(cfg, "exercices", item, head, items, f"{dossier['titre']} : {item['cas']}")
@@ -254,7 +328,21 @@ def build_ue_index(cfg: UEConfig) -> None:
 """
         if t.get("note_sujets"):
             body += f'<p class="note">{esc(str(t["note_sujets"]))}</p>\n'
-    if exercises:
+    v = vocab(cfg)
+    if exercises and v:
+        lis = ""
+        for e in sorted(exercises, key=lambda e: numero(cfg, e)):
+            dossier, pts, dur = exercise_meta(cfg, e)
+            meta = v["note"].format(pts=fmt_pts(pts)) + (f" ; {dur}" if dur else "")
+            lis += (f'<li><span class="cas"><strong>{esc(titre_numerote(cfg, e, dossier["titre"]))}</strong>'
+                    f'<span class="sous-titre">{esc(e["cas"])}</span>'
+                    f'<span class="meta">{esc(meta)}</span></span>'
+                    f'<span class="liens">{links("exercices", e["id"])}</span></li>')
+        body += f"""
+<h2>{esc(str(t.get("titre_dossiers", v["rubrique"])))}</h2>
+<p>{esc(str(t.get("intro_dossiers", "")))}</p>
+<ul class="dossiers numerotes">{lis}</ul>"""
+    elif exercises:
         body += f"""
 <h2>{esc(str(t.get("titre_dossiers", "Dossiers à la pièce")))}</h2>
 <p>{esc(str(t.get("intro_dossiers", "")))}</p>
@@ -295,6 +383,10 @@ def build_hub(configs: dict[int, UEConfig]) -> None:
             n_ex = len(cfg.get("site.exercices") or [])
             n_su = len(cfg.get("site.sujets") or [])
             what = []
+            v = vocab(cfg)
+            if v and n_ex:
+                what.append(f"{n_ex} {v['pluriel'][n_ex > 1]}")
+                n_ex = 0
             if n_su:
                 what.append(f"{n_su} sujet{'s' if n_su > 1 else ''} complet{'s' if n_su > 1 else ''}")
             if n_ex:
@@ -326,7 +418,18 @@ def build_hub(configs: dict[int, UEConfig]) -> None:
         date="31 décembre 2026", margin=margin_block(["Entraînement", "session 2027"], []), body=body))
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
+    global DOCS, CONTENT
+    parser = argparse.ArgumentParser(description="Génère le site statique des sept UE.")
+    parser.add_argument("--inclure-non-publiees", action="store_true",
+                        help="construire aussi les UE dont site.publier vaut false (essai de rendu)")
+    parser.add_argument("--sortie", metavar="DOSSIER",
+                        help="écrire content/ et docs/ dans ce dossier plutôt qu'à côté de build.py")
+    args = parser.parse_args(argv)
+    if args.sortie:
+        DOCS = Path(args.sortie).resolve() / "docs"
+        CONTENT = Path(args.sortie).resolve() / "content"
+        DOCS.parent.mkdir(parents=True, exist_ok=True)
     if DOCS.exists():
         shutil.rmtree(DOCS)
     if CONTENT.exists():
@@ -335,6 +438,9 @@ def main() -> None:
     (DOCS / ".nojekyll").write_text("")
     shutil.copy(HERE / "style.css", DOCS / "style.css")
     configs = {cfg.numero: cfg for cfg in all_ues() if cfg.data.get("site")}
+    if args.inclure_non_publiees:
+        for cfg in configs.values():
+            cfg.data["site"]["publier"] = True     # en mémoire seulement : ue.yaml n'est pas modifié
     for cfg in configs.values():
         if not cfg.get("site.publier", False):
             continue

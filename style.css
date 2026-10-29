@@ -193,6 +193,38 @@ ol.methode li { margin-bottom: 0.5rem; }
   border-top: 1px solid var(--reglure);
 }
 
+/* Support d'oral : lignes numérotées (marqueurs L05 de la source), numéro dans la marge du texte. */
+p.lignes-numerotees {
+  --col-num: 3rem;
+  padding-left: var(--col-num);
+  overflow-wrap: anywhere;
+  /* Une ligne source = une ligne affichée sur grand écran : le support peut déborder la mesure. */
+  width: max-content;
+  max-width: calc(100vw - var(--col-marge) - 5rem);
+  font-size: 1rem;
+}
+/* Retrait suspendu : sur un écran étroit, la suite d'une ligne source repliée est décalée. */
+p.lignes-numerotees .ligne { display: block; position: relative; padding-left: 1.25em; text-indent: -1.25em; }
+p.lignes-numerotees .num { text-indent: 0; }
+p.lignes-numerotees .num {
+  position: absolute;
+  left: calc(-1 * var(--col-num));
+  width: calc(var(--col-num) - 0.9rem);
+  text-align: right;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.8125rem;
+  color: var(--encre-2);
+  user-select: none;
+}
+
+/* Sujets d'oral et exercices méthodologiques : liste numérotée, sans dossiers. */
+ul.dossiers.numerotes li { grid-template-columns: minmax(0, 1fr) auto; }
+ul.dossiers.numerotes .cas { margin: 0; color: var(--encre); }
+ul.dossiers.numerotes .cas strong, ul.dossiers.numerotes .sous-titre,
+ul.dossiers.numerotes .cas .meta { display: block; }
+ul.dossiers.numerotes .sous-titre { color: var(--encre-2); }
+ul.dossiers.numerotes .cas .meta { white-space: normal; margin-top: 0.15rem; }
+
 /* Petits écrans : la marge passe au-dessus. */
 @media (max-width: 720px) {
   .copie { grid-template-columns: minmax(0, 1fr); }
@@ -218,6 +250,9 @@ ol.methode li { margin-bottom: 0.5rem; }
   .accueil h1 { font-size: 1.875rem; }
   table { display: block; overflow-x: auto; }
   ul.dossiers li { grid-template-columns: 1fr; gap: 0.15rem; }
+  ul.dossiers.numerotes li { grid-template-columns: minmax(0, 1fr); }
+  ul.dossiers.hub .liens { white-space: normal; }   /* « 3 sujets complets, 6 dossiers… » sous 375 px */
+  p.lignes-numerotees { --col-num: 2.25rem; width: auto; max-width: none; }
 }
 
 /* Impression : le sujet seul, comme une copie à distribuer. */
