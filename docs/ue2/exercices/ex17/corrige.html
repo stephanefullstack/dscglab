@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Sécuriser la ressource en eau : choix d'investissement et risque de sécheresse : ONDÉRIS : choix d'investissement et risque de sécheresse</title>
+<meta name="description" content="Entraînement à l'UE 2 du DSCG, finance, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 2</span></a>
+<p>Dossier 2</p><p>17 points</p><p>1 h</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Sécuriser la ressource en eau : choix d'investissement et risque de sécheresse</h1><p class="cas">ONDÉRIS : choix d'investissement et risque de sécheresse</p><p class="avant">Corrigé indicatif et barème. Les mentions [V] signalent un point vérifié sur la source officielle ; les renvois F01 à F11 et JUR désignent des fiches de travail et les constats des rapports du jury.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F01 mathématiques financières et critères d'investissement, F02 coût du capital, F07 risques climatiques et matières premières, F10 auteurs et théories, F11 données de marché et F99 liste noire (à jour au 23/10/2026).</p>
+<p>Bien que le corrigé mentionne des textes et des auteurs, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la pertinence et la cohérence du raisonnement, la justesse des calculs et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée. Une erreur n'est sanctionnée qu'une fois : les calculs qui en découlent sont notés en cohérence avec les résultats antérieurs du candidat (par exemple des VAN calculées à un CMPC erroné à la question 2.1, ou un choix de projet à la question 2.3 cohérent avec des VAN fausses).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Rentabilité exigée et CMPC du projet</td>
+<td><code>5.2.a</code> Identifier la relation entre incertitude et rentabilité exigée par le marché ; <code>5.2.c</code> Maîtriser les principaux modèles d'évaluation du risque financier utilisés en finance ; <code>5.3.a</code> Maîtriser la différence et le lien entre le risque spécifique et le risque systématique ; <code>7.1.a</code> Évaluer et classer des projets en milieu certain (taux d'actualisation d'un projet)</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td>2.2 VAN, TRI, indice de profitabilité et conflit de classement</td>
+<td><code>7.1.a</code> Évaluer et classer des projets en milieu certain</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td>2.3 Durées inégales : annuité équivalente, VAN et TRI globaux, recommandation</td>
+<td><code>7.1.a</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td>2.4 Seuils de volume et de prix du projet A</td>
+<td><code>7.1.b</code> Évaluer et classer des projets en milieu incertain</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td>2.5 Risque de sécheresse, option climatique, assurance et prix de l'électricité</td>
+<td><code>6.4.a</code> Sensibiliser aux instruments de couverture des risques physiques et financiers liés au changement climatique et à la raréfaction des ressources naturelles</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>17</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Part du calcul : environ 10,5 points (2.1-03 à 2.1-06, 2.2-01 à 2.2-05, 2.3-01 à 2.3-03, 2.4-01, 2.4-02, 2.5-02, 2.5-03). Part de l'analyse : environ 6,5 points (2.1-01, 2.1-02, 2.1-07, 2.2-06, 2.3-04, 2.4-03, 2.5-01, 2.5-04). Les commentaires et la recommandation valent plus du tiers du dossier : ils ne doivent pas être sacrifiés faute de temps (<code>JUR-T15</code>).</p>
+<hr />
+<h3 id="21-rentabilité-exigée-et-cmpc-du-projet-5-pts">2.1 Rentabilité exigée et CMPC du projet (5 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1-01</td>
+<td>Relation entre incertitude et rentabilité exigée ; critique argumentée des deux propositions (4,60 % et 4 %)</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="even">
+<td>2.1-02</td>
+<td>Risque spécifique et risque systématique ; seul le second est rémunéré ; choix d'Hydrévia plutôt qu'AMBRELIS justifié</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>2.1-03</td>
+<td>Bêta désendetté d'Hydrévia : 0,5200</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2.1-04</td>
+<td>Bêta des fonds propres du projet : 0,9100</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>2.1-05</td>
+<td>Coût des fonds propres du projet (MEDAF) : 8,55 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2.1-06</td>
+<td>Coût net de la dette 3,45 % (0,25) ; CMPC du projet 6,00 % (0,75)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>2.1-07</td>
+<td>Le CMPC actualise des flux d'exploitation qui rémunèrent tous les apporteurs ; deux limites du MEDAF</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Incertitude et rentabilité exigée (0,75 pt)</strong></p>
+<p>Les apporteurs de capitaux ont de l'aversion pour le risque : ils n'acceptent de supporter l'incertitude d'un investissement que contre une rentabilité espérée supérieure à celle d'un placement sans risque. La rentabilité exigée est donc la somme du taux sans risque (rémunération du temps) et d'une prime de risque (rémunération de l'incertitude), d'autant plus élevée que le risque est fort. C'est un <strong>coût d'opportunité</strong> : la rentabilité que les apporteurs obtiendraient sur un placement de même risque. Un projet ne crée de la valeur que s'il rapporte plus que ce coût.</p>
+<ul>
+<li><strong>Proposition de M. CASTÉRAN (4,60 %, taux du prêt)</strong> : elle confond le coût d'une source de financement et la rentabilité exigée de l'actif. Le taux d'actualisation dépend du risque du projet, non de la façon dont il est financé. Le prêt ne finance que la moitié du projet, et la dette accroît le risque supporté par les actionnaires (leur rentabilité exigée augmente, question ci-dessous). Actualiser à 4,60 % (voire 3,45 % après impôt) surestimerait les VAN et conduirait à accepter des projets qui détruisent de la valeur.</li>
+<li><strong>Proposition de l'administrateur de la métropole (4 %, taux sans risque)</strong> : les flux des deux projets ne sont pas certains (volumes, prix renégociés, procédé nouveau, sécheresse). L'actionnaire public supporte ce risque comme les autres : il renonce à d'autres emplois de ses fonds (désendettement, autres équipements publics). Les partenaires privés, ALVÉDRA Environnement (28 %) et la Banque SORNAY (12 %), attendent une rémunération de marché. Le taux sans risque surévaluerait les projets et répartirait mal un capital rare (95 M€ de programme, projets exclusifs). La mission de service public peut justifier d'accepter un projet peu rentable, mais ce choix doit être fait en connaissant son coût, c'est-à-dire sa VAN au bon taux.</li>
+</ul>
+<p><strong>Risque spécifique, risque systématique et choix de la société de référence (1 pt)</strong></p>
+<ul>
+<li>Le risque total d'un actif se décompose en <strong>risque systématique</strong> (ou de marché), lié à la conjoncture générale (taux d'intérêt, inflation, prix de l'énergie, activité économique), qui touche tous les actifs et ne se diversifie pas, et en <strong>risque spécifique</strong>, propre à l'entreprise ou au projet (panne de l'unité, refus d'autorisation sanitaire, défaillance du syndicat voisin), que l'investisseur élimine en diversifiant son portefeuille.</li>
+<li>Selon Markowitz (1952), la diversification réduit le risque spécifique, non le risque systématique. Le MEDAF (Sharpe, 1964) en tire la conséquence : un investisseur diversifié n'est rémunéré que pour le risque systématique, mesuré par le bêta. Le risque spécifique n'entre donc pas dans le taux : il se traite dans les flux et par l'analyse de sensibilité (question 2.4).</li>
+<li><strong>Hydrévia</strong> n'exerce que le métier de l'eau : son bêta mesure le risque systématique de cette activité, peu cyclique (demande de première nécessité, tarifs encadrés). <strong>AMBRELIS</strong> est diversifiée vers les déchets et l'énergie, plus sensibles à la conjoncture (bêta 1,12) ; son bêta mêle des risques étrangers au projet. La diversification d'AMBRELIS réduit son risque spécifique, pas son risque systématique, qui est celui de son portefeuille d'activités : retenir son bêta surestimerait la rentabilité exigée du projet.</li>
+<li>Nuance : Valcroze Métropole, actionnaire à 60 %, n'est pas un investisseur diversifié ; le risque spécifique de ses projets la concerne directement, ce qui plaide pour l'analyse de sensibilité et la couverture du risque de sécheresse.</li>
+</ul>
+<p><strong>Calculs (2,5 pts)</strong></p>
+<p>Hydrévia : D / CP = 1 600 / 2 400 = 2/3.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Calcul</th>
+<th style="text-align: right;">Résultat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bêta désendetté d'Hydrévia</td>
+<td>0,78 / [1 + 0,75 × 2/3] = 0,78 / 1,5</td>
+<td style="text-align: right;"><strong>0,5200</strong></td>
+</tr>
+<tr class="even">
+<td>Structure cible du projet</td>
+<td>50 % de dette, 50 % de fonds propres : D / CP = 1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>Bêta des fonds propres du projet</td>
+<td>0,52 × [1 + 0,75 × 1] = 0,52 × 1,75</td>
+<td style="text-align: right;"><strong>0,9100</strong></td>
+</tr>
+<tr class="even">
+<td>Coût des fonds propres (MEDAF)</td>
+<td>4 % + 0,91 × 5 %</td>
+<td style="text-align: right;"><strong>8,55 %</strong></td>
+</tr>
+<tr class="odd">
+<td>Coût net de la dette</td>
+<td>4,60 % × (1 − 0,25)</td>
+<td style="text-align: right;"><strong>3,45 %</strong></td>
+</tr>
+<tr class="even">
+<td>CMPC du projet</td>
+<td>50 % × 8,55 % + 50 % × 3,45 % = 4,275 % + 1,725 %</td>
+<td style="text-align: right;"><strong>6,00 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p>La prime de risque exigée par les actionnaires du projet est de 0,91 × 5 % = 4,55 points : le risque systématique du projet, une fois tenu compte de l'endettement, est un peu inférieur à celui du marché (bêta 0,91 &lt; 1).</p>
+<p><strong>Pourquoi le CMPC du projet, et limites du MEDAF (0,75 pt)</strong></p>
+<ul>
+<li>Les flux des projets sont des <strong>flux d'exploitation</strong> calculés avant frais financiers (annexe 2.4) : ils servent à rémunérer à la fois les prêteurs et les actionnaires. Il faut donc les actualiser au coût moyen de l'ensemble des capitaux, pondéré selon la structure cible, soit le CMPC. Le coût des fonds propres (8,55 %) ne s'appliquerait qu'à des flux revenant aux actionnaires après service de la dette ; le taux du prêt ne rémunère que les prêteurs.</li>
+<li>Il s'agit du CMPC <strong>du projet</strong>, construit à partir du risque de l'activité eau et de la structure de financement propre au projet, et non du coût du capital moyen du groupe, qui ne vaut que pour des projets de même risque et de même financement. Retenir un taux unique pour A et B suppose que les deux projets ont le même risque systématique, celui du métier de l'eau ; les risques propres à A (procédé nouveau, clientèle agricole) sont spécifiques et traités par l'analyse de sensibilité de la question 2.4.</li>
+<li><strong>Limites du MEDAF</strong> (deux attendues) : hypothèses fortes (marchés efficients, investisseurs rationnels et diversifiés, une seule période) ; bêta mesuré sur des données passées, instable, et emprunté ici à une société cotée de taille et de marché différents ; un seul facteur de risque, alors que Fama et French (1993) montrent que la taille et le rapport valeur comptable / valeur de marché expliquent aussi les rentabilités ; prime de risque du marché estimée, et sensibilité du résultat à cette estimation (une prime de 6 % donnerait un coût des fonds propres de 9,46 % et un CMPC de 6,455 %, soit près d'un demi-point de plus).</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : bêtas à deux décimales (0,52 ; 0,91), sans effet sur les résultats ; CMPC présenté comme 6 % ; bêta réendetté calculé avec D / V au lieu de D / CP si l'erreur est isolée (sanctionnée en 2.1-04 seulement, suite notée en cohérence).</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Moyenne des bêtas d'Hydrévia et d'AMBRELIS, ou bêta d'AMBRELIS retenu sans justification.</li>
+<li>Réendetter avec la structure d'Hydrévia (D / CP = 2/3) au lieu de la structure cible du projet ; oublier le facteur (1 − t) de la formule donnée.</li>
+<li>Actualiser les flux d'exploitation au coût des fonds propres ou au taux du prêt.</li>
+<li>Prime de marché prise pour la rentabilité du marché (4 % + 0,91 × 9 %).</li>
+<li><code>JUR-E02</code> — démarche par comparables incomplète (désendettement puis réendettement, MEDAF, CMPC avec la formule donnée) ; <code>JUR-T14</code> — risque spécifique et risque systématique confondus ; <code>JUR-T13</code> — critique des deux propositions sans les données du cas.</li>
+</ul>
+<hr />
+<h3 id="22-van-tri-indice-de-profitabilité-et-conflit-de-classement-4-pts">2.2 VAN, TRI, indice de profitabilité et conflit de classement (4 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.2-01</td>
+<td>Flux du projet A : 4,35 M€ par an de 2028 à 2041, 5,85 M€ en 2042</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2.2-02</td>
+<td>Flux du projet B : 4,20 M€ par an de 2028 à 2031, 4,95 M€ en 2032</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>2.2-03</td>
+<td>VAN au CMPC de 6,00 % : A 6,87 M€ ; B 3,25 M€ (0,5 par projet)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>2.2-04</td>
+<td>TRI : A 8,76 % (8,77 % par interpolation) ; B 13,48 % (13,49 % par interpolation)</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="odd">
+<td>2.2-05</td>
+<td>Indices de profitabilité : A 1,19 ; B 1,22</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2.2-06</td>
+<td>Conflit de classement et son origine (taille, durée, hypothèse de réinvestissement implicite)</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Flux nets de trésorerie (1 pt)</strong> (M€)</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">Projet A (2028 à 2042)</th>
+<th style="text-align: right;">Projet B (2028 à 2032)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chiffre d'affaires (volume × prix)</td>
+<td style="text-align: right;">6,0 × 1,20 = 7,20</td>
+<td style="text-align: right;">4,0 × 1,50 = 6,00</td>
+</tr>
+<tr class="even">
+<td>− Charges variables</td>
+<td style="text-align: right;">6,0 × 0,20 = − 1,20</td>
+<td style="text-align: right;">4,0 × 0,20 = − 0,80</td>
+</tr>
+<tr class="odd">
+<td>− Charges fixes décaissées</td>
+<td style="text-align: right;">− 1,00</td>
+<td style="text-align: right;">− 0,60</td>
+</tr>
+<tr class="even">
+<td><strong>EBE</strong></td>
+<td style="text-align: right;"><strong>5,00</strong></td>
+<td style="text-align: right;"><strong>4,60</strong></td>
+</tr>
+<tr class="odd">
+<td>− Amortissement</td>
+<td style="text-align: right;">36,00 / 15 = − 2,40</td>
+<td style="text-align: right;">15,00 / 5 = − 3,00</td>
+</tr>
+<tr class="even">
+<td>Résultat d'exploitation</td>
+<td style="text-align: right;">2,60</td>
+<td style="text-align: right;">1,60</td>
+</tr>
+<tr class="odd">
+<td>− IS à 25 %</td>
+<td style="text-align: right;">− 0,65</td>
+<td style="text-align: right;">− 0,40</td>
+</tr>
+<tr class="even">
+<td><strong>Flux annuel (EBE − IS)</strong></td>
+<td style="text-align: right;"><strong>4,35</strong></td>
+<td style="text-align: right;"><strong>4,20</strong></td>
+</tr>
+<tr class="odd">
+<td>Valeur résiduelle nette d'IS (dernière année)</td>
+<td style="text-align: right;">2,00 × 0,75 = 1,50</td>
+<td style="text-align: right;">1,00 × 0,75 = 0,75</td>
+</tr>
+<tr class="even">
+<td><strong>Flux de la dernière année</strong></td>
+<td style="text-align: right;"><strong>5,85</strong> (2042)</td>
+<td style="text-align: right;"><strong>4,95</strong> (2032)</td>
+</tr>
+<tr class="odd">
+<td>Investissement à la date 0</td>
+<td style="text-align: right;">− 36,00</td>
+<td style="text-align: right;">− 15,00</td>
+</tr>
+</tbody>
+</table>
+<p><strong>VAN au CMPC de 6,00 % (1 pt)</strong></p>
+<ul>
+<li>A : 4,35 × [1 − 1,06^−15] / 0,06 + 1,50 × 1,06^−15 − 36,00 = 4,35 × 9,712249 + 1,50 × 0,417265 − 36,00 = 42,25 + 0,63 − 36,00 = <strong>6,87 M€</strong>.</li>
+<li>B : 4,20 × [1 − 1,06^−5] / 0,06 + 0,75 × 1,06^−5 − 15,00 = 4,20 × 4,212364 + 0,75 × 0,747258 − 15,00 = 17,69 + 0,56 − 15,00 = <strong>3,25 M€</strong>.</li>
+</ul>
+<p>Les deux VAN sont positives : chaque projet, pris isolément, crée de la valeur. Les projets étant exclusifs, la VAN classe <strong>A devant B</strong>.</p>
+<p><strong>TRI (0,75 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">Taux 1</th>
+<th style="text-align: right;">VAN au taux 1</th>
+<th style="text-align: right;">Taux 2</th>
+<th style="text-align: right;">VAN au taux 2</th>
+<th style="text-align: right;">TRI interpolé</th>
+<th style="text-align: right;">TRI exact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td style="text-align: right;">8 %</td>
+<td style="text-align: right;">+ 1,71</td>
+<td style="text-align: right;">9 %</td>
+<td style="text-align: right;">− 0,52</td>
+<td style="text-align: right;">8 % + 1 % × 1,71 / (1,71 + 0,52) = <strong>8,77 %</strong></td>
+<td style="text-align: right;"><strong>8,76 %</strong></td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td style="text-align: right;">13 %</td>
+<td style="text-align: right;">+ 0,18</td>
+<td style="text-align: right;">14 %</td>
+<td style="text-align: right;">− 0,19</td>
+<td style="text-align: right;">13 % + 1 % × 0,18 / (0,18 + 0,19) = <strong>13,49 %</strong></td>
+<td style="text-align: right;"><strong>13,48 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Détail : à 8 %, 4,35 × 8,559479 + 1,50 × 0,315242 − 36,00 = 1,71 ; à 9 %, 4,35 × 8,060688 + 1,50 × 0,274538 − 36,00 = − 0,52 ; à 13 %, 4,20 × 3,517231 + 0,75 × 0,542760 − 15,00 = 0,18 ; à 14 %, 4,20 × 3,433081 + 0,75 × 0,519369 − 15,00 = − 0,19.</p>
+<p>Les deux TRI dépassent le CMPC de 6,00 % ; le TRI classe <strong>B devant A</strong>.</p>
+<p><strong>Indices de profitabilité (0,5 pt)</strong> : IP = flux actualisés / investissement = 1 + VAN / investissement.</p>
+<ul>
+<li>A : 42,87 / 36,00 = <strong>1,19</strong> ; B : 18,25 / 15,00 = <strong>1,22</strong>. L'IP classe <strong>B devant A</strong> : chaque euro investi dans B rapporte un peu plus de valeur actuelle.</li>
+</ul>
+<p><strong>Conflit de classement et origine (0,75 pt)</strong></p>
+<ul>
+<li>La VAN place A en tête (6,87 M€ contre 3,25 M€) ; le TRI (13,48 % contre 8,76 %) et l'IP (1,22 contre 1,19) placent B en tête.</li>
+<li>Origines :
+<ul>
+<li><strong>taille</strong> : A demande 36,00 M€, B 15,00 M€ ; la VAN mesure une création de valeur en euros, le TRI et l'IP une rentabilité relative ;</li>
+<li><strong>durée et profil des flux</strong> : B dure cinq ans, A quinze ; un TRI élevé sur une courte durée crée moins de valeur qu'un TRI plus faible sur un montant plus important et une durée longue ;</li>
+<li><strong>hypothèse de réinvestissement implicite</strong> : la VAN suppose que les flux intermédiaires sont réinvestis au CMPC (6 %), le TRI qu'ils le sont au TRI lui-même, soit 13,48 % pour B, rendement peu réaliste pour un groupe dont les projets courants rapportent autour de 6 %.</li>
+</ul></li>
+<li>Les profils de VAN se croisent : A a la VAN la plus forte pour un taux d'actualisation inférieur à environ 7,70 % (taux d'indifférence, où les deux VAN valent 2,42 M€), B au-delà. Au taux de 6,00 %, la VAN, cohérente avec l'objectif de création de valeur, est le critère de référence pour des projets exclusifs ; mais la comparaison est faussée par l'écart de durée, ce qu'examine la question 2.3.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : TRI de A de 8,76 % à 8,77 % et de B de 13,48 % à 13,49 % ; interpolation entre d'autres taux encadrants (par exemple 8 % et 10 %) si elle est annoncée, avec l'écart d'approximation qui en résulte ; VAN à ± 0,01 M€ près (facteurs arrondis) ; taux d'indifférence non demandé.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Oublier la valeur résiduelle ou ne pas l'imposer ; imposer l'EBE au lieu du résultat d'exploitation ; retrancher l'amortissement du flux.</li>
+<li>Déduire des frais financiers du prêt dans les flux alors qu'ils sont pris en compte par le CMPC.</li>
+<li>Conclure sur le seul TRI pour des projets exclusifs de tailles différentes.</li>
+<li><code>JUR-I05</code> — VAN et TRI calculés sans analyse de leur divergence ; <code>JUR-T04</code> — acquis du DCG (VAN, TRI) mal maîtrisés ; <code>JUR-T07</code> — flux présentés sans tableau.</li>
+</ul>
+<hr />
+<h3 id="23-durées-inégales--annuité-équivalente-van-et-tri-globaux-recommandation-3-pts">2.3 Durées inégales : annuité équivalente, VAN et TRI globaux, recommandation (3 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.3-01</td>
+<td>Annuités équivalentes : A 0,71 M€ ; B 0,77 M€ ; hypothèse de renouvellement à l'identique</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="even">
+<td>2.3-02</td>
+<td>Valeurs acquises en 2042 (A 91,91 M€ ; B 36,85 M€) et VAN globales : A 2,35 M€ ; B 0,38 M€</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="odd">
+<td>2.3-03</td>
+<td>TRI globaux : A 6,45 % ; B 6,17 %</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2.3-04</td>
+<td>Recommandation argumentée, reliée aux deux hypothèses et aux données du cas</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Annuité équivalente (0,75 pt)</strong> : AE = VAN / [(1 − (1 + k)^−n) / k], VAN répartie en annuités constantes sur la durée du projet.</p>
+<ul>
+<li>A : 6,87 / 9,712249 = <strong>0,71 M€ par an</strong> ; B : 3,25 / 4,212364 = <strong>0,77 M€ par an</strong>.</li>
+<li>B l'emporte, mais ce critère suppose que B puisse être <strong>renouvelé à l'identique</strong> (même investissement, mêmes flux, même taux) jusqu'à l'horizon de A et au-delà. Contrôle : B renouvelé deux fois sur 15 ans a une VAN de 3,25 × (1 + 1,06^−5 + 1,06^−10) = 7,50 M€ (= 0,77 × 9,712249), supérieure aux 6,87 M€ de A.</li>
+</ul>
+<p><strong>VAN globale et TRI global sur 15 ans, B non renouvelé (1,25 pt)</strong> : les flux sont capitalisés au taux de réinvestissement de 4,5 % jusqu'en 2042, puis la valeur acquise est actualisée au CMPC.</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">Projet A</th>
+<th style="text-align: right;">Projet B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Valeur acquise en 2042</td>
+<td style="text-align: right;">4,35 × (1,045^15 − 1) / 0,045 + 1,50 = 4,35 × 20,784054 + 1,50 = <strong>91,91</strong></td>
+<td style="text-align: right;">[4,20 × (1,045^5 − 1) / 0,045 + 0,75] × 1,045^10 = (4,20 × 5,470710 + 0,75) × 1,552969 = 23,73 × 1,552969 = <strong>36,85</strong></td>
+</tr>
+<tr class="even">
+<td>Valeur actuelle à 6 %</td>
+<td style="text-align: right;">91,91 × 1,06^−15 = 91,91 × 0,417265 = 38,35</td>
+<td style="text-align: right;">36,85 × 0,417265 = 15,38</td>
+</tr>
+<tr class="odd">
+<td><strong>VAN globale</strong></td>
+<td style="text-align: right;">38,35 − 36,00 = <strong>2,35 M€</strong></td>
+<td style="text-align: right;">15,38 − 15,00 = <strong>0,38 M€</strong></td>
+</tr>
+<tr class="even">
+<td><strong>TRI global</strong></td>
+<td style="text-align: right;">(91,91 / 36,00)^(1/15) − 1 = <strong>6,45 %</strong></td>
+<td style="text-align: right;">(36,85 / 15,00)^(1/15) − 1 = <strong>6,17 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Avec un réinvestissement explicite à 4,5 %, inférieur au CMPC, les deux VAN globales sont inférieures aux VAN mais restent positives, et les deux TRI globaux dépassent 6 %. Les deux critères placent <strong>A devant B</strong> : le conflit de la question 2.2 disparaît quand on abandonne l'hypothèse irréaliste d'un réinvestissement au TRI de 13,48 %.</p>
+<p><strong>Recommandation (1 pt)</strong> : le choix dépend de l'hypothèse retenue pour l'après-2032. B n'est préférable que s'il peut être renouvelé à l'identique ; s'il ne l'est pas, A l'emporte. Le cas conduit à recommander <strong>le projet A</strong> :</p>
+<ul>
+<li>le renouvellement de B à l'identique est peu probable : la convention avec le syndicat voisin sera renégociée à un prix inconnu, les pompes et équipements du forage devront être remplacés, et la nappe profonde comme le syndicat voisin sont exposés aux mêmes sécheresses que le groupe ; B fournit de l'eau précisément quand elle risque de manquer aussi chez ses fournisseurs (risque corrélé) ;</li>
+<li>A crée une ressource qui dépend peu de la pluie, et la demande des irrigants augmente les années sèches : le projet réduit l'exposition du groupe au risque de sécheresse (lien avec la question 2.5) et sécurise la ressource sur quinze ans, ce qui est l'objet du programme d'investissement ;</li>
+<li>A crée le plus de valeur sur l'horizon commun (VAN globale 2,35 M€ contre 0,38 M€) et a la plus forte VAN ;</li>
+<li>réserves : A mobilise 36,00 M€, soit plus du tiers du programme de 95 M€, dans un procédé nouveau pour le groupe ; sa marge de sécurité doit être mesurée (question 2.4) et les contrats de quinze ans avec la métropole et les irrigants doivent être signés avant l'engagement.</li>
+</ul>
+<p><strong>Grille de l'item 2.3-04</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Note</th>
+<th>Descripteur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>Absence de choix ou choix sans justification</td>
+</tr>
+<tr class="even">
+<td>0,5</td>
+<td>Choix fondé sur un seul critère chiffré, ou arguments généraux sans données du cas</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Choix relié à l'hypothèse de renouvellement et à au moins deux éléments du cas (durée de la convention, exposition du syndicat et de la nappe à la sécheresse, résilience de A, montant investi)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong> : choix de B accepté (au plus 0,5 point sur 2.3-04) s'il est explicitement fondé sur la possibilité de renouveler B à l'identique et discute ce risque ; comparaison sur 15 ans par la VAN de B renouvelé deux fois (7,50 M€) à la place de l'annuité équivalente ; VAN globale et TRI global de B calculés sur 5 ans seulement, si le candidat explique ensuite la nécessité d'un horizon commun (0,25 point sur 2.3-02 et 2.3-03).</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Comparer directement les VAN de projets de durées différentes sans annuité équivalente ni horizon commun.</li>
+<li>Capitaliser au CMPC au lieu du taux de réinvestissement, ou actualiser la valeur acquise au taux de réinvestissement.</li>
+<li>Calculer le TRI global de B sur 5 ans, puis le comparer à celui de A sur 15 ans.</li>
+<li><code>JUR-I05</code> — divergence des critères constatée sans être résolue ; <code>JUR-T13</code> — recommandation sans lien avec le cas ; <code>JUR-T01</code> — absence de posture de conseil (pas de recommandation au conseil d'administration).</li>
+</ul>
+<hr />
+<h3 id="24-seuils-de-volume-et-de-prix-du-projet-a-2-pts">2.4 Seuils de volume et de prix du projet A (2 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.4-01</td>
+<td>Volume annuel qui annule la VAN : 5,06 millions de m³, soit 15,73 % sous la prévision</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="even">
+<td>2.4-02</td>
+<td>Prix du m³ qui annule la VAN : 1,04 €, soit 13,11 % sous la prévision</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="odd">
+<td>2.4-03</td>
+<td>Commentaire relié aux risques propres au projet et aux limites de l'analyse</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Démarche</strong> : la VAN est une fonction linéaire du volume et du prix. Un million de m³ de plus ou de moins modifie chaque flux annuel de la marge sur coût variable après IS, et la VAN de ce montant multiplié par le facteur d'annuité sur 15 ans.</p>
+<p><strong>Volume d'équilibre (0,75 pt)</strong></p>
+<ul>
+<li>Effet d'un million de m³ sur la VAN : (1,20 − 0,20) × 0,75 × 9,712249 = 7,28 M€.</li>
+<li>Volume d'équilibre : 6,0 − 6,87 / 7,28 = <strong>5,06 millions de m³</strong> par an (5,0563 sans arrondi), soit une baisse de 0,94 million de m³ ou <strong>15,73 %</strong> de la prévision.</li>
+</ul>
+<p><strong>Prix d'équilibre (0,75 pt)</strong></p>
+<ul>
+<li>Effet d'1 € par m³ sur la VAN : 6,0 × 0,75 × 9,712249 = 43,71 M€.</li>
+<li>Prix d'équilibre : 1,20 − 6,87 / 43,71 = <strong>1,04 € par m³</strong> (1,0427 sans arrondi), soit une baisse de <strong>13,11 %</strong>.</li>
+<li>Contrôle : dans les deux cas, le flux annuel d'équilibre est de 3,64 M€ (3,6422 sans arrondi, au lieu de 4,35 M€) : 3,6422 × 9,712249 + 1,50 × 0,417265 − 36,00 = 0.</li>
+</ul>
+<p><strong>Commentaire (0,5 pt)</strong></p>
+<ul>
+<li>La marge de sécurité est réelle mais limitée : la VAN devient nulle si les volumes vendus sont inférieurs de 16 % aux prévisions, ou le prix de 13 %. Le projet est plus sensible au prix qu'au volume, mais le prix est fixé par des contrats de quinze ans, ce qui réduit ce risque ; le risque principal porte sur les volumes : démarrage d'un procédé nouveau pour le groupe, autorisation sanitaire des usages, acceptation de l'eau recyclée par les agriculteurs, durée effective des contrats.</li>
+<li>Ces risques sont propres au projet (risque spécifique) : ils ne sont pas dans le CMPC, d'où l'intérêt de cette analyse. À l'inverse, la sécheresse augmente la demande des irrigants : sur ce point, le volume de A varie dans le sens favorable au groupe.</li>
+<li>Les charges variables (électricité surtout) devraient passer de 0,20 € à 0,36 € par m³ (+ 79 %) pour annuler la VAN : le risque sur le prix de l'électricité pèse moins sur ce projet.</li>
+<li>Limites : un seul paramètre varie à la fois ; une sécheresse ou une hausse des coûts combinée à un retard de démarrage réduirait la marge de sécurité ; l'analyse ne donne pas de probabilité. Recommandation : engager le projet après signature des contrats avec des volumes minimaux garantis.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : volume à 5,05 ou 5,06 millions de m³ et baisse de 15,7 % à 15,8 % selon les arrondis ; baisse du prix calculée à partir du prix arrondi (13,33 %) ; raisonnement par le flux annuel d'équilibre (3,64 M€) puis le volume ou le prix correspondant.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Oublier l'IS sur la variation de marge, ou faire varier aussi l'amortissement.</li>
+<li>Faire varier le chiffre d'affaires sans les charges variables pour le volume.</li>
+<li>Confondre seuil de rentabilité comptable (résultat nul) et seuil de VAN nulle.</li>
+<li><code>JUR-T13</code> — sensibilité calculée sans commentaire sur les risques du cas ; <code>JUR-T02</code> — calcul non relié à la notion de risque spécifique.</li>
+</ul>
+<hr />
+<h3 id="25-risque-de-sécheresse-option-climatique-assurance-et-prix-de-lélectricité-3-pts">2.5 Risque de sécheresse, option climatique, assurance et prix de l'électricité (3 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.5-01</td>
+<td>Risques physiques et de transition liés à la sécheresse et leurs effets sur la trésorerie, appliqués au cas</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="even">
+<td>2.5-02</td>
+<td>Indemnités : 0 ; 1,60 M€ ; 3,20 M€ (plafond)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>2.5-03</td>
+<td>Effets nets sur l'EBITDA : + 0,15 ; − 1,25 ; − 1,75 M€, comparés à l'absence de couverture et commentés</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="even">
+<td>2.5-04</td>
+<td>Assurance paramétrique et réassurance ; couverture du prix de l'électricité</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Risques et effets sur la trésorerie (0,75 pt)</strong></p>
+<ul>
+<li><strong>Risques physiques</strong> : aigus (sécheresses de 2022 et de 2025, canicules) et chroniques (baisse durable des nappes, étiages plus longs, hausse des températures qui accroît la demande de pointe). Effets : restrictions d'usage et baisse des volumes vendus, alors que les charges sont surtout fixes (réseaux, stations, personnel) ; achats d'eau d'appoint, pompage plus profond et traitement plus coûteux ; investissements anticipés (programme de 95 M€).</li>
+<li><strong>Risques de transition</strong> : réglementation plus stricte des prélèvements et objectifs de sobriété qui réduisent durablement les volumes vendus ; hausse du prix de l'énergie et du carbone ; procédés nouveaux à maîtriser (réutilisation des eaux usées) ; réputation et acceptabilité des usages.</li>
+<li><strong>Effets sur la trésorerie</strong> : moindres encaissements et décaissements accrus, d'autant plus marqués que les tarifs, fixés avec la métropole, ne répercutent pas immédiatement les hausses de coûts ; besoin de financement accru pour un groupe déjà endetté. L'annexe chiffre la sensibilité : 0,03 M€ d'EBITDA par millimètre de pluie.</li>
+</ul>
+<p><strong>Option climatique (1,25 pt)</strong> : indemnité = 0,04 × max(0 ; 280 − indice), plafonnée à 3,20 M€ (plafond atteint dès 200 mm) ; effet de la pluviométrie sur l'EBITDA = 0,03 × (indice − 320) ; prime de 0,45 M€.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Scénario (M€)</th>
+<th style="text-align: right;">Humide, 340 mm</th>
+<th style="text-align: right;">Sécheresse modérée, 240 mm</th>
+<th style="text-align: right;">Sécheresse sévère, 170 mm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Effet de la pluviométrie sur l'EBITDA</td>
+<td style="text-align: right;">0,03 × 20 = + 0,60</td>
+<td style="text-align: right;">0,03 × (− 80) = − 2,40</td>
+<td style="text-align: right;">0,03 × (− 150) = − 4,50</td>
+</tr>
+<tr class="even">
+<td>Indemnité de l'option</td>
+<td style="text-align: right;">0 (option non exercée)</td>
+<td style="text-align: right;">0,04 × 40 = <strong>1,60</strong></td>
+<td style="text-align: right;">min(0,04 × 110 = 4,40 ; 3,20) = <strong>3,20</strong></td>
+</tr>
+<tr class="odd">
+<td>− Prime</td>
+<td style="text-align: right;">− 0,45</td>
+<td style="text-align: right;">− 0,45</td>
+<td style="text-align: right;">− 0,45</td>
+</tr>
+<tr class="even">
+<td><strong>Effet net avec couverture</strong></td>
+<td style="text-align: right;"><strong>+ 0,15</strong></td>
+<td style="text-align: right;"><strong>− 1,25</strong></td>
+<td style="text-align: right;"><strong>− 1,75</strong></td>
+</tr>
+<tr class="odd">
+<td>Effet sans couverture</td>
+<td style="text-align: right;">+ 0,60</td>
+<td style="text-align: right;">− 2,40</td>
+<td style="text-align: right;">− 4,50</td>
+</tr>
+</tbody>
+</table>
+<p>Lecture :</p>
+<ul>
+<li>l'option réduit fortement la perte en cas de sécheresse (− 1,25 au lieu de − 2,40 ; − 1,75 au lieu de − 4,50) ; en année humide, la prime est perdue mais compensée par des ventes plus fortes : c'est le coût certain de la protection ;</li>
+<li>la couverture est imparfaite : aucune indemnité entre 320 et 280 mm (perte non couverte jusqu'à 40 × 0,03 = 1,20 M€, qui joue comme une franchise) ; plafond de 3,20 M€ au-delà de 200 mm ; entre 280 et 200 mm, l'option verse 0,04 M€ par millimètre pour une perte de 0,03 M€ : l'indemnité rattrape progressivement la franchise, et à 200 mm la perte non couverte n'est plus que de 0,40 M€ (3,60 − 3,20) avant prime ;</li>
+<li><strong>risque de base</strong> : l'indice relevé à une seule station, d'avril à septembre, ne reproduit pas exactement les pertes du groupe (les nappes se rechargent surtout l'hiver) ;</li>
+<li><strong>risque de contrepartie</strong> sur la Banque SORNAY, qui est déjà actionnaire et prêteur du groupe : concentration des relations ;</li>
+<li>l'option couvre un <strong>risque de volume</strong> pour une saison ; elle ne réduit pas le risque physique, que seuls les investissements de sécurisation (projet A) traitent durablement.</li>
+</ul>
+<p><strong>Assurance paramétrique, réassurance et électricité (1 pt)</strong></p>
+<ul>
+<li><strong>Assurance paramétrique</strong> : même logique d'indice (indemnité forfaitaire dès qu'un seuil est franchi, versée rapidement, sans expertise des pertes), mais sous la forme d'un contrat d'assurance. Les assurances classiques couvrent mal une perte de chiffre d'affaires sans dommage matériel, d'où l'intérêt de ces solutions indicielles. Le choix entre option et assurance se fait sur le coût (prime), le seuil et le plafond, le risque de base et la solidité de la contrepartie.</li>
+<li><strong>Réassurance</strong> : l'assureur mutualise les risques de ses assurés et en cède une partie à un réassureur (traités en quote-part ou en excédent de sinistre), qui peut lui-même les transférer aux marchés financiers par des obligations catastrophe ; une sécheresse touchant toute une région frappe en même temps de nombreux assurés, ce qui rend la réassurance indispensable à l'assureur et pèse sur le prix de la protection.</li>
+<li><strong>Prix de l'électricité</strong> : 7,40 M€ d'achats à prix indexé sur le marché de gros, sans répercussion immédiate dans les tarifs. Le groupe peut fixer son prix d'achat : contrat de fourniture à prix fixe sur plusieurs années, achat à terme d'électricité (contrats à terme sur les marchés de l'énergie ou de gré à gré), échange d'un prix variable contre un prix fixe, contrat d'achat de long terme auprès d'un producteur d'électricité renouvelable ; il peut aussi réduire son exposition par la sobriété énergétique et la production propre (biométhane, solaire sur ses sites). Il s'agit d'une couverture de <strong>prix</strong>, complémentaire de la couverture de <strong>volume</strong> apportée par l'option climatique.</li>
+</ul>
+<p><strong>Grille de l'item 2.5-04</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Note</th>
+<th>Descripteur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>Absence de réponse ou réponse non pertinente</td>
+</tr>
+<tr class="even">
+<td>0,5</td>
+<td>Deux des trois points traités (assurance paramétrique, réassurance, électricité), ou réponse générale sans le cas</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Les trois points traités, avec au moins un instrument précis de couverture du prix de l'électricité et un lien avec le cas</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong> : présentation en résultat avant impôt ou après impôt (effets nets × 0,75) si elle est annoncée ; prime traitée comme une charge de l'exercice 2027 ; mention du régime des catastrophes naturelles en complément, sans développement juridique.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Oublier le plafond de l'indemnité (4,40 M€ au lieu de 3,20 M€) ou la prime dans le résultat net.</li>
+<li>Calculer l'indemnité à partir de l'année normale (320 mm) au lieu du prix d'exercice (280 mm).</li>
+<li>Présenter l'option comme une couverture du prix de l'eau ou de l'électricité, ou chercher à calculer sa valeur (la prime est donnée).</li>
+<li><code>JUR-T05</code> — risque climatique traité sans lien avec la performance durable et les projets du groupe ; <code>JUR-T13</code> — liste générale de risques sans les données du cas.</li>
+</ul>
+<hr />
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Guide pédagogique DSCG, juillet 2026, p. 74-76 ; programme l. 578-592</td>
+<td>relation incertitude et rentabilité exigée, prime de risque, MEDAF et ses limites, Fama-French pour interpréter le risque, risque spécifique et systématique</td>
+<td>[V]</td>
+<td>F02 § 0, 2 et 7 ; <code>perimetre_ue2.yaml</code></td>
+</tr>
+<tr class="even">
+<td>Formule de Hamada avec IS</td>
+<td>désendettement et réendettement du bêta, donnée dans l'énoncé</td>
+<td>[S]</td>
+<td>F02 § 3</td>
+</tr>
+<tr class="odd">
+<td>CMPC</td>
+<td>pondération en valeurs de marché, coût de la dette net d'IS, taux d'actualisation des flux d'exploitation</td>
+<td>[V]</td>
+<td>F02 § 5</td>
+</tr>
+<tr class="even">
+<td>Markowitz (1952)</td>
+<td>diversification : réduction du risque spécifique, non du risque systématique</td>
+<td>[V programme 5.3]</td>
+<td>F10 § 2</td>
+</tr>
+<tr class="odd">
+<td>Sharpe (1964)</td>
+<td>MEDAF : seul le risque systématique, mesuré par le bêta, est rémunéré</td>
+<td>[V contexte ; MEDAF au programme 5.2]</td>
+<td>F10 § 2</td>
+</tr>
+<tr class="even">
+<td>Fama et French (1993)</td>
+<td>modèle à trois facteurs (marché, taille, valeur), limite du MEDAF</td>
+<td>[V programme 5.2]</td>
+<td>F10 § 2 ; F02 § 7</td>
+</tr>
+<tr class="odd">
+<td>Guide pédagogique DSCG, juillet 2026, p. 80-81 ; programme l. 642-647</td>
+<td>VAN, VANG, TRI, IP, projets mutuellement exclusifs, analyse de sensibilité</td>
+<td>[V]</td>
+<td>F01 § 0, 4 et 5</td>
+</tr>
+<tr class="even">
+<td>VAN globale, TRI global, annuité équivalente, conflit VAN / TRI</td>
+<td>formules et hypothèses de réinvestissement et de renouvellement</td>
+<td>[S]</td>
+<td>F01 § 4</td>
+</tr>
+<tr class="odd">
+<td>Guide pédagogique DSCG, juillet 2026, p. 79-80 ; programme l. 635-639</td>
+<td>risques physiques et de transition, effets sur la trésorerie, assurance et réassurance, dérivés climatiques et sur matières premières, prime donnée</td>
+<td>[V]</td>
+<td>F07 § 5</td>
+</tr>
+<tr class="even">
+<td>Dérivés climatiques, risque de base, réassurance, obligations catastrophe</td>
+<td>mécanismes de place</td>
+<td>[S]</td>
+<td>F07 § 5</td>
+</tr>
+<tr class="odd">
+<td>Taux sans risque 4 %, prime de risque du marché 5 %</td>
+<td>hypothèses d'énoncé, plausibles fin 2026</td>
+<td>[S]</td>
+<td>F11 § 1 et 2</td>
+</tr>
+<tr class="even">
+<td>Données des projets, sociétés de référence, sensibilité à la pluviométrie, option climatique</td>
+<td>hypothèses d'énoncé, à utiliser telles quelles</td>
+<td>—</td>
+<td>annexes 2.1 à 2.3</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
