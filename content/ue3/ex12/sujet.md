@@ -1,0 +1,178 @@
+# DSCG UE 3 — Contrôle de gestion et stratégie — Exercice d'entraînement n° 12
+
+**DOSSIER 1 – ORGANISATION DU DÉVELOPPEMENT ET CHOIX DES CANAUX DE DISTRIBUTION (10 points)**
+
+Durée conseillée : 2 h (sur une épreuve de 4 heures, coefficient 1,5, notée sur 20).
+
+Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.
+
+**Document autorisé** : aucun.
+
+**Matériel autorisé** : calculatrice avec mode examen actif, ou calculatrice sans mémoire « type collège ». Tout autre matériel est interdit.
+
+### AVERTISSEMENT
+
+Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.
+
+Pour chaque question, il est nécessaire de présenter les concepts et outils avant de les mobiliser, puis de conclure. Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.
+
+---
+
+## Présentation
+
+Les Chantiers ORLANVEL SAS conçoivent, construisent et vendent des voiliers de croisière de 9 à 13 mètres. L'entreprise a été fondée en 1974 à Rochefort (Charente-Maritime) par Jean ORLANVEL ; sa fille, Mme Claire ORLANVEL, la préside depuis 2015, et le capital est détenu en totalité par la famille. La gamme compte trois modèles, l'Orlanvel 31, l'Orlanvel 36 et l'Orlanvel 42, construits à l'unité sur commande : le chantier stratifie les coques et les ponts en matériaux composites dans des moules qui lui appartiennent et réalise la menuiserie intérieure ; il achète les mâts, les voiles, les moteurs et l'électronique. Fin 2026, il emploie 165 salariés : 118 en production (stratification 46, menuiserie 30, montage et accastillage 42), 14 au bureau d'études, 13 au service commercial et après-vente, 10 aux achats et à la logistique, 10 à l'administration et aux finances. Chaque responsable de service rend compte directement à la présidente ; le bureau d'études dessine les nouveaux modèles, puis transmet les plans à la production.
+
+En 2026, le chantier a livré 122 voiliers (52 Orlanvel 31, 46 Orlanvel 36 et 24 Orlanvel 42) et réalisé un chiffre d'affaires de 23 600 k€, dont 22 400 k€ de ventes de voiliers et 1 200 k€ de pièces, d'options et de prestations d'après-vente. 85 % des voiliers sont vendus par un réseau de 18 concessionnaires indépendants, 8 en France et 10 dans six autres pays européens, souvent multimarques, qui achètent les bateaux au chantier avec une remise sur le prix public, les exposent, les remettent aux clients et en assurent l'après-vente ; les 15 % restants sont vendus en direct, lors des salons nautiques ou à d'anciens clients. Le résultat d'exploitation est passé de 1 450 k€ en 2025 à 610 k€ en 2026 : les prix des résines et de l'accastillage ont augmenté, les grands constructeurs européens et le marché de l'occasion pèsent sur les prix, et le développement de l'Orlanvel 36, lancé en 2025 avec cinq mois de retard et un budget dépassé de 18 %, a fait manquer au chantier la saison des salons et une partie des commandes qui s'y prennent.
+
+En novembre 2026, Mme ORLANVEL a arrêté le plan « ORLANVEL 2030 », qui comporte trois axes : renouveler la gamme, à commencer par l'Orlanvel 39, un voilier à quille relevable conçu pour la navigation côtière, dont le projet a démarré en octobre 2026 et dont le prototype doit être présenté à flot au grand salon nautique de septembre 2027 ; réorganiser le développement des nouveaux modèles pour ne plus subir les retards du passé ; redéfinir la distribution, alors que plusieurs concessionnaires réclament une remise plus élevée et qu'une place de marché en ligne spécialisée dans le nautisme propose au chantier de vendre ses voiliers neufs en direct. Vous occupez le poste de contrôle de gestion créé en janvier 2027, rattaché à M. Laurent VASSEROT, directeur administratif et financier, et vous travaillez à la demande de Mme ORLANVEL. Les entreprises, les personnes et les articles cités sont fictifs.
+
+Le plan « ORLANVEL 2030 » prévoit un nouveau modèle tous les deux ans. Pour ne pas revivre les dérives de l'Orlanvel 36, M. Gaël TRÉVANNEC, directeur technique, qui dirige le bureau d'études, propose de changer la manière dont le chantier développe ses modèles. Dans le même temps, les concessionnaires attendent une réponse à leur demande de remise avant la fin du mois de mars 2027, et la place de marché en ligne ESCALVOILE souhaite connaître la décision du chantier pour référencer ses voiliers dès la saison 2028.
+
+Mme ORLANVEL vous demande, en février 2027, d'éclairer ces deux décisions, l'organisation du développement des modèles et la politique de distribution, avant la réunion qu'elle tiendra avec ses responsables de service en mars. Les données utiles figurent dans les annexes 1.1 à 1.5 ; les conventions de calcul y sont précisées.
+
+### Travail à faire
+
+**Base documentaire : annexes 1.1 à 1.5**
+
+**1.1.** À partir de la présentation et des annexes 1.1 et 1.2, analyser la forme structurelle actuelle des Chantiers ORLANVEL et ses effets sur le développement des nouveaux modèles. *(1,5 point)*
+
+**1.2.** Préconiser une forme structurelle pour le développement des nouveaux modèles, en discutant le projet du directeur technique (annexe 1.5), et en tirer les conséquences pour le contrôle de gestion. Vous appuierez votre préconisation sur un chiffrage qui compare le coût de la coordination proposée au coût des dérives du projet de l'Orlanvel 36 (annexes 1.2 et 1.5). *(2 points)*
+
+**1.3.** Calculer, pour 2028, la contribution annuelle de chacune des trois politiques de distribution présentées en annexe 1.4, puis le nombre de voiliers que les points de vente en propre devraient vendre pour que l'option (b) devienne plus favorable que l'option (a), et mesurer l'effet sur l'option (c) du départ annoncé du premier concessionnaire. Apprécier ensuite ces politiques au regard des frontières du chantier (ce qu'il doit faire lui-même ou confier à d'autres) et de sa dépendance à l'égard des concessionnaires (annexes 1.3 et 1.4), puis argumenter la politique que vous recommandez, éventuellement une combinaison des options. *(2,5 points)*
+
+**1.4.** Qualifier le changement que représente la nouvelle organisation du développement et identifier ses leviers, analyser les résistances prévisibles, puis proposer une démarche d'accompagnement de ce changement (annexes 1.2 et 1.5). *(2 points)*
+
+**1.5.** Rédiger, à l'intention de Mme ORLANVEL, une note structurée (20 lignes au maximum) qui relie l'organisation du développement que vous préconisez, la politique de distribution que vous recommandez et le plan « ORLANVEL 2030 », et qui indique les limites de vos chiffrages. *(2 points)*
+
+### ANNEXE 1.1 – Organigramme et fonctionnement actuel du chantier
+
+**Organigramme simplifié au 1er février 2027**
+
+Mme Claire ORLANVEL, présidente, dirige directement les sept responsables ci-dessous ; il n'existe aucun niveau hiérarchique intermédiaire entre eux et elle.
+
+| Service | Responsable | Effectif | Missions |
+|---|---|---:|---|
+| Bureau d'études | M. Gaël TRÉVANNEC, directeur technique | 14 | conception des nouveaux modèles, plans de détail, calculs, évolutions des modèles existants, appui technique à l'après-vente |
+| Stratification | M. Didier BRÉHAMET | 46 | moules, stratification des coques et des ponts |
+| Menuiserie | responsable de la menuiserie | 30 | aménagements intérieurs en bois |
+| Montage et accastillage | responsable du montage | 42 | pose du moteur, de l'électricité, du gréement et de l'accastillage ; essais avant livraison |
+| Commercial et après-vente | Mme Sophie MERLANDOU | 13 | animation du réseau de concessionnaires, ventes directes, salons, après-vente |
+| Achats et logistique | responsable des achats | 10 | achats des mâts, voiles, moteurs, électronique, résines ; approvisionnement des ateliers |
+| Administration et finances | M. Laurent VASSEROT | 10 | comptabilité, trésorerie, paie, contrôle de gestion (poste créé en janvier 2027) |
+| **Total** | | **165** | |
+
+**Fonctionnement observé** (note de M. VASSEROT, janvier 2027)
+
+- Mme ORLANVEL réunit ses sept responsables chaque lundi matin : planning des ateliers, avancement des commandes, difficultés du moment. En dehors des points que tient, depuis octobre 2026, le chef de projet de l'Orlanvel 39 désigné à titre d'essai (annexe 1.5), aucune réunion ne rassemble les services autour des nouveaux modèles.
+- Le bureau d'études conçoit un modèle seul, puis transmet à la production un dossier de plans validé par la présidente. Toute modification d'un plan après sa transmission, tout changement d'équipement (moteur, gréement) et tout dépassement de coût doivent être approuvés par Mme ORLANVEL.
+- Chaque voilier est construit à l'unité, sur commande, en dix à quatorze semaines selon le modèle, dans un ordre fixé par le planning hebdomadaire des ateliers. Les gammes de fabrication de chaque modèle sont écrites, mais l'essentiel du savoir-faire est détenu par les compagnons stratifieurs, menuisiers et monteurs (ancienneté moyenne : 17 ans), qui le transmettent à l'atelier.
+- Les clients personnalisent leur voilier (aménagements, options) : les ateliers et le bureau d'études règlent les adaptations au cas par cas, souvent par un appel à la présidente.
+- Le contrôle de gestion suit un budget de charges annuel par service. Le budget d'un développement est arrêté au lancement du projet, mais il n'est pas suivi en cours de projet : le coût réel n'est connu qu'à la clôture des comptes. L'essai engagé pour l'Orlanvel 39 (annexe 1.5) est la première exception.
+
+### ANNEXE 1.2 – Retour d'expérience sur le développement de l'Orlanvel 36
+
+**Budget de développement et coûts réels** (en k€)
+
+| Poste | Budget | Réel | Écart |
+|---|---:|---:|---:|
+| Études et plans (bureau d'études, dont reprises de plans) | 420 | 540 | + 120 |
+| Moules de coque et de pont | 480 | 560 | + 80 |
+| Prototype (matériaux et main-d'œuvre) | 450 | 520 | + 70 |
+| Essais et mise au point | 150 | 150 | 0 |
+| **Total** | **1 500** | **1 770** | **+ 270** |
+
+**Calendrier.** Le projet a démarré en janvier 2024. Le prototype devait être à flot en avril 2025, au début de la saison des salons nautiques, au cours de laquelle se prennent une grande partie des commandes livrées l'année suivante ; il ne l'a été qu'en septembre 2025, avec cinq mois de retard, après la plupart des salons de la saison.
+
+**Commandes perdues.** Le service commercial estime que ce retard a fait perdre 10 commandes d'Orlanvel 36 qui auraient été livrées en 2026 : 6 ventes directes (salons) et 4 ventes par le réseau. La marge sur coûts variables d'un Orlanvel 36 est de 62 500 € en vente directe et de 40 000 € par le réseau (prix et coûts de 2026, annexe 1.4).
+
+**Convention de calcul.** Coût des dérives du projet = dépassement du budget de développement + marge sur coûts variables des commandes perdues. Les charges fixes du chantier n'ont pas été modifiées par le retard. Montants arrondis à l'euro (au k€ dans les tableaux), pourcentages à deux décimales.
+
+**Ce que disent les acteurs** (entretiens menés par M. VASSEROT, janvier 2027)
+
+- *M. TRÉVANNEC, directeur technique* : « Nous avons livré les plans du pont dans les délais, mais l'atelier a découvert au moulage que les cadènes étaient impossibles à poser. Personne ne nous l'avait dit avant. Nous avons repris 30 % des plans. »
+- *M. BRÉHAMET, responsable de la stratification* (31 ans d'ancienneté) : « Le bureau d'études dessine dans son coin et ne descend jamais à l'atelier. Quand on voit un problème, on appelle Mme ORLANVEL, et on attend. »
+- *Mme MERLANDOU, responsable commercial et après-vente* : « Personne ne nous a demandé ce que voulaient les clients avant de figer l'aménagement intérieur : il a fallu redessiner la cuisine après les premiers retours des concessionnaires. »
+- *Responsable des achats* : « Le moteur a changé trois fois ; à chaque fois, deux mois de délai fournisseur. Je l'ai appris par le planning de l'atelier. »
+- *Mme ORLANVEL* : « Tout remontait à moi. J'ai tranché 37 désaccords entre services en dix-huit mois, souvent trop tard, parce que je découvrais les problèmes le lundi. »
+
+### ANNEXE 1.3 – La distribution des voiliers neufs : concessionnaires, places de marché et occasion
+
+*Extrait d'un article fictif, « Voiliers neufs : la bataille de la distribution », La Lettre du nautisme (fictif), 12 janvier 2027. Les chiffres cités sont fictifs.*
+
+En Europe, sept voiliers neufs sur dix sont encore vendus par un concessionnaire. Celui-ci fait bien plus que vendre : il expose les bateaux à flot, fait essayer, reprend l'ancien voilier du client, l'aide à obtenir un financement, prépare et remet le bateau neuf (mise à l'eau, mâtage, prise en main) et en assure l'entretien et la garantie pendant des années. Ces services exigent des pontons, des techniciens formés à chaque modèle et une clientèle locale fidèle, que les concessionnaires ont mis des années à constituer.
+
+La plupart des concessionnaires sont multimarques : un même point de vente propose souvent trois ou quatre chantiers. Les grands constructeurs européens leur accordent des remises de 22 % à 25 % du prix public et des primes de volume, et exigent en contrepartie des bateaux d'exposition. Les petits chantiers, qui offrent moins, voient leurs modèles relégués au fond du port. « Je mets en avant la marque qui me fait vivre », résume un concessionnaire de Bretagne sud.
+
+Les places de marché en ligne du nautisme, nées sur le marché de l'occasion, où elles réalisent l'essentiel de leurs transactions, se tournent vers le neuf. Elles facturent un abonnement annuel et une commission sur chaque vente, et revendiquent 40 % des premiers contacts entre acheteurs et vendeurs de bateaux ; elles ne représentent pourtant que 4 % des ventes de voiliers neufs, car les acheteurs veulent essayer, négocier la reprise de leur ancien bateau et savoir qui assurera l'après-vente. Les chantiers qui vendent en ligne au même prix que leurs concessionnaires s'exposent à leurs représailles : plusieurs concessionnaires ont cessé en 2026 de distribuer une marque qui les concurrençait sur Internet.
+
+Quelques chantiers ont enfin ouvert leurs propres points de vente sur les grands ports de plaisance : ils y récupèrent la remise des concessionnaires, mais supportent des pontons, des bateaux d'exposition et une équipe de vente et d'après-vente, et doivent reconstituer une clientèle locale, ce qui demande, selon les intéressés, deux à trois saisons.
+
+### ANNEXE 1.4 – Données des trois politiques de distribution étudiées pour 2028
+
+**Prix, remises et coûts variables de 2026** (prix publics moyens HT, options comprises)
+
+| Modèle | Prix public moyen | Coût variable de production unitaire | Voiliers vendus par le réseau | Voiliers vendus en direct |
+|---|---:|---:|---:|---:|
+| Orlanvel 31 | 165 000 € | 113 000 € | 47 | 5 |
+| Orlanvel 36 | 225 000 € | 140 000 € | 38 | 8 |
+| Orlanvel 42 | 355 000 € | 229 000 € | 19 | 5 |
+| **Total** | | | **104** | **18** |
+
+Les concessionnaires achètent les voiliers au chantier au prix public diminué d'une remise de 20 %. Les ventes directes sont consenties au prix public diminué d'une remise commerciale moyenne de 10 %. Avec ces prix, les ventes de voiliers de 2026 s'élèvent à 18 440 k€ par le réseau et à 3 960 k€ en direct, soit 22 400 k€. Le coût variable de production comprend les matières, les équipements achetés et la main-d'œuvre des ateliers.
+
+**Hypothèses communes pour 2028**
+
+- Les prix publics, les coûts variables de production et la composition des ventes par modèle de 2026 sont inchangés ; l'Orlanvel 39 n'est pas pris en compte dans ces prévisions. Les calculs portent sur un voilier moyen, au prix public de 225 000 € et au coût variable de production de 146 000 € (moyennes des chiffres ci-dessus pondérées par les ventes de 2026).
+- Le service commercial prévoit, si la distribution est conservée en l'état, 110 ventes par le réseau et 20 ventes directes historiques (salons, anciens clients). Ces 20 ventes directes sont identiques dans les trois options et ne sont pas étudiées.
+- Les concessionnaires demandent que leur remise passe de 20 % à 23 % du prix public à partir de 2028. Dans les trois options, les concessionnaires qui continuent de distribuer la marque obtiennent cette remise de 23 %.
+
+**Option (a) – Conserver le réseau de concessionnaires indépendants** en accordant la remise de 23 % : 110 voiliers vendus par le réseau ; aucune charge fixe nouvelle.
+
+**Option (b) – Ouvrir deux points de vente en propre** sur deux grands ports de plaisance, l'un en Bretagne sud, l'autre en Méditerranée, dans les zones des trois concessionnaires qui y représentent aujourd'hui le chantier ; leurs accords arrivant à échéance fin 2027, le chantier ne travaillerait plus avec eux. Ces trois concessionnaires auraient vendu 20 Orlanvel en 2028 ; les 90 autres ventes du réseau sont inchangées.
+
+- Volume attendu des deux points de vente : 24 voiliers par an, vendus au prix public diminué d'une remise commerciale moyenne de 10 %.
+- La préparation, la remise au client et l'après-vente, assurées aujourd'hui par les concessionnaires, seraient à la charge du chantier : 6 500 € par voilier vendu.
+- Charges fixes annuelles des deux points de vente : personnel (deux équipes de trois salariés : un responsable, un vendeur, un technicien) 300 000 € ; pontons et locaux 90 000 € ; trois bateaux d'exposition (dépréciation, financement, entretien) 165 000 €.
+
+**Option (c) – Référencer les voiliers neufs sur la place de marché ESCALVOILE**, en conservant le réseau :
+
+- Abonnement annuel : 30 000 € ; commission : 4 % du prix de vente payé par le client.
+- Prix de vente sur la place de marché : prix public diminué d'une remise de 10 %, comme en vente directe.
+- Remise au client et après-vente assurées par le chantier, faute de concessionnaire chargé de l'acheteur : 8 400 € par voilier vendu (déplacement de techniciens).
+- Volume attendu : 12 voiliers vendus sur la place de marché en 2028, dont 6 à de nouveaux clients et 6 à des clients qui auraient sinon acheté chez un concessionnaire ; le réseau ne vendrait donc plus que 104 voiliers.
+- Le premier concessionnaire du réseau, multimarque, qui vendra 14 Orlanvel en 2028 si la distribution reste en l'état, a fait savoir qu'il cesserait de distribuer la marque si le chantier vendait ses voiliers neufs en ligne. S'il partait, ses 14 ventes seraient perdues pour le chantier, en plus des 6 ventes que la place de marché prendrait au réseau.
+
+**Conventions de calcul**
+
+- Marge sur coûts variables unitaire = prix encaissé par le chantier − coût variable de production − coûts variables de distribution supportés par le chantier (commission, préparation, remise au client et après-vente) ; prix encaissé = prix public × (1 − remise) pour un concessionnaire, prix payé par le client pour une vente directe.
+- Contribution annuelle d'une option = somme des marges sur coûts variables des voiliers vendus par le réseau et par le nouveau canal − charges fixes propres à l'option. Les charges fixes communes du chantier ne sont pas réparties.
+- Montants arrondis à l'euro ; nombres de voiliers et seuils à deux décimales.
+
+### ANNEXE 1.5 – Le projet d'organisation du développement présenté par le directeur technique
+
+*Note de M. TRÉVANNEC à Mme ORLANVEL, 25 janvier 2027 (extraits).*
+
+Pour l'Orlanvel 39, vous avez désigné en octobre 2026, à titre d'essai, un ingénieur du bureau d'études comme chef de projet, sans autorité sur les ateliers ni sur les achats. Je propose de généraliser et de formaliser cette organisation pour tous les nouveaux modèles :
+
+- un **chef de projet à temps plein**, rattaché à la présidente, responsable du coût, du délai et de la qualité de chaque développement ; il dispose d'un budget par projet et arbitre lui-même les questions techniques dans la limite de ce budget ;
+- une **équipe projet** de sept personnes par modèle, détachées à temps partiel par leurs services (deux dessinateurs du bureau d'études, un stratifieur, un menuisier, un monteur, un acheteur et un commercial) : elles restent rattachées à leur responsable de service, mais reçoivent du chef de projet leurs priorités et leurs échéances pour les tâches du projet ;
+- une **réunion hebdomadaire** de l'équipe projet d'une heure, à l'atelier ;
+- des **revues de jalon** (conception validée, plans figés, moules terminés, prototype à flot, présérie) : dix revues de trois heures par an, réunissant le chef de projet et les six responsables de service concernés (tous sauf l'administration et les finances), présidées par Mme ORLANVEL, qui y prend les seules décisions qui dépassent le budget ou modifient la date de présentation.
+
+**Coûts de la coordination proposée** (estimation de M. VASSEROT)
+
+| Élément | Données |
+|---|---|
+| Chef de projet à temps plein | coût annuel chargé : 90 000 € |
+| Revues de jalon | 10 revues par an × 3 heures × 6 responsables ; coût horaire chargé moyen d'un responsable : 70 € |
+| Réunions hebdomadaires de l'équipe projet | 44 semaines par an × 1 heure × 7 membres ; coût horaire chargé moyen d'un membre : 50 € |
+
+Convention : seuls le poste de chef de projet et le temps passé en réunions de coordination sont des coûts supplémentaires ; le temps que les membres de l'équipe consacrent aux tâches du projet (plans, moules, prototype) est déjà consommé aujourd'hui et n'est pas compté. Un développement de modèle dure environ vingt mois, de la conception à la présérie ; le plan prévoit un nouveau modèle tous les deux ans.
+
+**Réactions recueillies par M. VASSEROT** (février 2027)
+
+- *Responsable du montage* : « Si le chef de projet donne des priorités à mon monteur, qui décide quand un bateau client est en retard ? Moi, je suis jugé sur les livraisons. »
+- *M. BRÉHAMET* : « Chez ORLANVEL, on a toujours réglé les problèmes entre nous, avec la présidente. Un chef de projet qui n'a jamais tenu un rouleau de stratification va nous expliquer notre métier ? »
+- *Mme MERLANDOU* : favorable, à condition que le commercial de l'équipe projet ne soit pas pris sur la période des salons.
+- *Un dessinateur du bureau d'études* : « Travailler avec l'atelier dès le début, c'est ce qu'on attend depuis des années. Mais avec deux chefs, on risque d'avoir deux fois plus de travail. »
+- *Mme ORLANVEL* : « Je sais que je dois déléguer. Mais je veux garder la main sur le style de nos bateaux : c'est l'histoire de la maison. »
