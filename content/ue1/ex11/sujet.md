@@ -1,0 +1,116 @@
+# DSCG UE 1 — Gestion juridique, fiscale et sociale — Exercice d'entraînement n° 11
+
+**DOSSIER 3 – SOUS-TRAITANCE, ASSURANCES ET FINANCEMENT D'UNE ENTREPRISE DU BÂTIMENT (10 points sur 40, soit 5 points sur 20)**
+
+Durée conseillée : 1 h (10 points sur 40, à raison de 6 minutes par point, sur une épreuve de 4 heures, coefficient 1,5).
+
+Réglementation applicable au 31/12/2026, sauf mention contraire. Année de référence des faits : 2026 (exercices 2024 à 2026, chaque exercice correspondant à l'année civile ; les questions vous sont posées le 10 décembre 2026).
+
+**Document autorisé** : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est INTERDIT et constituerait une fraude.
+
+### AVERTISSEMENT
+
+Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.
+
+Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.
+
+---
+
+## Présentation
+
+*Réglementation applicable au 31/12/2026, sauf mention contraire. Année de référence des faits : 2026 (exercices 2024 à 2026).*
+
+**SAS LOUVRANCE BÂTIMENT**
+
+La SAS LOUVRANCE BÂTIMENT (ci-après « LOUVRANCE »), société par actions simplifiée soumise à l'impôt sur les sociétés, a son siège à Saint-Aignan-des-Marais (Loire-Atlantique). Elle exerce une activité de gros œuvre et de maçonnerie pour des maîtres d'ouvrage publics et privés. Elle emploie 120 salariés et a réalisé en 2025 un chiffre d'affaires de 26 M€ hors taxes. Elle est propriétaire du terrain et du bâtiment de son dépôt, où sont entreposés ses grues, ses engins et ses stocks de matériaux.
+
+Son président, M. Hervé LOUVRANCE, 58 ans, détient 80 % du capital ; les 20 % restants appartiennent à deux cadres de la société, Mme Solène KERVADEC, directrice des travaux, et M. Yann MORVILLE, responsable administratif et financier. M. LOUVRANCE est le seul dirigeant à détenir les qualifications et les relations qui permettent à la société d'obtenir les grands chantiers.
+
+Le cabinet d'expertise comptable dans lequel vous êtes collaborateur (collaboratrice) accompagne LOUVRANCE. Les sociétés, les personnes et les lieux d'activité cités sont fictifs. Sauf indication contraire, les montants sont exprimés hors taxes et la TVA est ignorée.
+
+**Le chantier de l'immeuble de bureaux**
+
+En février 2026, LOUVRANCE a conclu avec la SCI HORIZON VERDELIÈRE, société civile immobilière à capitaux privés, un marché de travaux de 6 000 000 € pour la construction d'un immeuble de bureaux ; la SCI est le maître de l'ouvrage et LOUVRANCE l'entrepreneur principal. En mars 2026, LOUVRANCE a confié l'exécution du lot « cloisons et plâtrerie » à la SARL PLÂTRES DE L'ERDRE, qui réalise sur le chantier, avec son propre personnel, les cloisons et les plafonds définis par les plans de l'architecte, pour un prix forfaitaire de 400 000 € (annexe 3.1). LOUVRANCE n'a pas présenté PLÂTRES DE L'ERDRE à la SCI. Le maître d'œuvre de la SCI a pourtant relevé, dans ses comptes rendus de chantier de septembre 2026, adressés à la SCI, la présence des équipes de PLÂTRES DE L'ERDRE ; la SCI n'a fait aucune démarche.
+
+PLÂTRES DE L'ERDRE a facturé à LOUVRANCE des situations de travaux pour 250 000 €, dont 100 000 € seulement ont été payés. Par lettre recommandée reçue le 3 novembre 2026, elle a mis LOUVRANCE en demeure de lui payer les 150 000 € restants et en a adressé copie à la SCI, qui l'a reçue le même jour. À cette date, la SCI restait devoir 90 000 € à LOUVRANCE au titre du marché ; depuis le début du mois de septembre 2026, elle ne lui a fait aucun paiement et n'a reçu d'elle aucune nouvelle situation. LOUVRANCE, dont la trésorerie est tendue, n'a rien payé ; elle entend en outre retenir 8 000 € de pénalités, au motif que PLÂTRES DE L'ERDRE a achevé les cloisons du deuxième étage avec vingt jours de retard.
+
+Pour ce même chantier, LOUVRANCE achète son béton à la SAS CENTRALE BÉTON DU MARAIS, dans le cadre d'un contrat-cadre d'approvisionnement conclu en 2025 qui fixe les prix et les conditions de livraison ; chaque commande de béton prêt à l'emploi, de formulation standard, est livrée par camion-toupie sur le chantier. Impayée de 30 000 € sur ses livraisons d'octobre 2026, CENTRALE BÉTON DU MARAIS envisage, elle aussi, de réclamer ce montant à la SCI.
+
+### Travail à faire
+
+**3.1** Qualifiez les contrats conclus par LOUVRANCE avec PLÂTRES DE L'ERDRE et avec CENTRALE BÉTON DU MARAIS. Quelles obligations la loi impose-t-elle à LOUVRANCE envers PLÂTRES DE L'ERDRE, et quelles sont les conséquences de leur méconnaissance ? PLÂTRES DE L'ERDRE et CENTRALE BÉTON DU MARAIS peuvent-elles obtenir paiement de la SCI HORIZON VERDELIÈRE, et dans quelle limite ?
+
+**3.2** En vous appuyant sur les annexes 3.1 et 3.2, relevez les clauses du sous-traité qui vous paraissent irrégulières ou que LOUVRANCE ne peut pas opposer à PLÂTRES DE L'ERDRE, en justifiant votre réponse. Proposez une rédaction corrigée des clauses relatives au paiement et à sa garantie.
+
+**La couverture des risques**
+
+M. LOUVRANCE vous interroge sur les assurances de la société. Outre l'assurance de responsabilité décennale obligatoire des constructeurs, qui ne couvre que cette responsabilité et n'est pas en cause ici, la société n'est couverte que par un contrat multirisque garantissant les bâtiments et le matériel du dépôt contre l'incendie, le dégât des eaux et le vol. Il s'inquiète de trois risques :
+
+- son propre décès ou une incapacité prolongée, qui priverait la société pendant plusieurs mois de l'accès aux grands chantiers ;
+- un incendie du dépôt, qui détruirait les engins et pourrait arrêter les chantiers pendant plusieurs mois ;
+- les dommages causés aux tiers : le 14 octobre 2026, un salarié de LOUVRANCE a endommagé, en manœuvrant une nacelle sur un chantier, la façade d'un bâtiment voisin ; le propriétaire réclame 40 000 € à la société.
+
+Depuis le 1er octobre 2026, LOUVRANCE a installé dans le dépôt un atelier de découpe du bois de coffrage, avec un stock permanent de bois ; M. LOUVRANCE n'en a pas encore informé l'assureur du contrat multirisque.
+
+### Travail à faire
+
+**3.3** Quels contrats d'assurance conseillez-vous à LOUVRANCE pour couvrir chacun de ces trois risques ? Présentez leur mécanisme et, dans ses principes, leur traitement fiscal. Quelle obligation LOUVRANCE doit-elle respecter envers l'assureur du contrat multirisque à la suite de l'installation de l'atelier, et que risque-t-elle si elle s'en abstient ?
+
+**Le financement des investissements**
+
+LOUVRANCE doit renouveler en 2027 deux grues et plusieurs engins de chantier, pour une valeur de 1 200 000 €, dont la durée d'utilisation est estimée à dix ans. Deux offres lui sont faites :
+
+- un crédit-bail mobilier proposé par la société de financement LOCABAIL DES MARAIS, d'une durée de six ans, moyennant un loyer annuel de 220 000 €, avec une option d'achat en fin de contrat fixée à 1 % de la valeur d'origine du matériel ;
+- un prêt de 1 200 000 €, remboursable en six ans, proposé par la Banque MARENNIS, établissement de crédit, dont le coût total des intérêts s'élève à 108 000 € ; la banque demanderait des garanties sur le matériel financé.
+
+LOUVRANCE veut aussi agrandir son dépôt (coût des travaux : 800 000 €), financés par un prêt de la Banque MARENNIS sur douze ans. La banque demande une sûreté réelle et propose, au choix, une hypothèque sur le dépôt ou un nantissement du fonds de commerce de LOUVRANCE. En juin 2026, à la suite du retard de paiement d'un client, LOUVRANCE a obtenu du comptable public un plan d'apurement échelonné de 180 000 € de TVA et de l'URSSAF un échéancier pour 60 000 € de cotisations ; elle respecte ces deux plans ainsi que ses obligations fiscales et sociales courantes.
+
+### Travail à faire
+
+**3.4** Comparez, au regard de la situation de LOUVRANCE, le crédit-bail et le prêt proposés pour le renouvellement des grues et des engins, et conseillez la société. Quelle sûreté réelle conseillez-vous de consentir à la banque pour le prêt destiné au dépôt, et comment la rendre efficace ? Les dettes fiscales et sociales de LOUVRANCE peuvent-elles réduire l'efficacité de cette garantie ?
+
+### ANNEXE 3.1 – Extrait du sous-traité conclu le 12 mars 2026 entre la SAS LOUVRANCE BÂTIMENT et la SARL PLÂTRES DE L'ERDRE
+
+*Document fictif, établi pour les besoins du sujet.*
+
+> **Article 1 – Objet.** L'entrepreneur principal confie au sous-traitant, qui l'accepte, l'exécution du lot « cloisons et plâtrerie » de l'immeuble de bureaux construit pour le compte de la SCI HORIZON VERDELIÈRE, conformément aux plans de l'architecte et au calendrier d'exécution annexés. Le sous-traitant exécute les travaux avec son propre personnel, qu'il encadre seul.
+>
+> **Article 2 – Prix.** Le prix forfaitaire des travaux est fixé à 400 000 € hors taxes.
+>
+> **Article 3 – Présentation au maître de l'ouvrage.** L'entrepreneur principal présentera le sous-traitant au maître de l'ouvrage lors de la réception des travaux, si celui-ci en fait la demande.
+>
+> **Article 4 – Paiement.** Les situations mensuelles de travaux du sous-traitant sont payées dans les dix jours qui suivent l'encaissement par l'entrepreneur principal des sommes correspondantes versées par le maître de l'ouvrage. Le sous-traitant reconnaît qu'aucune somme ne lui est due tant que le maître de l'ouvrage n'a pas payé l'entrepreneur principal.
+>
+> **Article 5 – Pénalités de retard.** Tout retard dans l'exécution d'une tranche de travaux par rapport au calendrier d'exécution donne lieu, sans mise en demeure préalable, à une pénalité de 1/1 000 du prix forfaitaire par jour de retard, retenue sur les paiements dus au sous-traitant.
+>
+> **Article 6 – Garantie de paiement.** Compte tenu de l'ancienneté de leurs relations, le sous-traitant dispense l'entrepreneur principal de lui fournir une caution ; aucune délégation de paiement ne sera demandée au maître de l'ouvrage.
+>
+> **Article 7 – Recours.** Le sous-traitant renonce à exercer toute action contre le maître de l'ouvrage, y compris l'action directe.
+
+### ANNEXE 3.2 – Loi n° 75-1334 du 31 décembre 1975 relative à la sous-traitance (extraits)
+
+*Source : Légifrance, version en vigueur lue le 09/11/2026 (article 3 dans sa version du 03/01/1976 ; article 12 dans sa version en vigueur depuis le 01/10/1994 ; article 14 dans sa version en vigueur depuis le 01/10/2016).*
+
+> **Article 3**
+>
+> L'entrepreneur qui entend exécuter un contrat ou un marché en recourant à un ou plusieurs sous-traitants doit, au moment de la conclusion et pendant toute la durée du contrat ou du marché, faire accepter chaque sous-traitant et agréer les conditions de paiement de chaque contrat de sous-traitance par le maître de l'ouvrage ; l'entrepreneur principal est tenu de communiquer le ou les contrats de sous-traitance au maître de l'ouvrage lorsque celui-ci en fait la demande.
+>
+> Lorsque le sous-traitant n'aura pas été accepté ni les conditions de paiement agréées par le maître de l'ouvrage dans les conditions prévues à l'alinéa précédent, l'entrepreneur principal sera néanmoins tenu envers le sous-traitant mais ne pourra invoquer le contrat de sous-traitance à l'encontre du sous-traitant.
+>
+> **Article 12**
+>
+> Le sous-traitant a une action directe contre le maître de l'ouvrage si l'entrepreneur principal ne paie pas, un mois après en avoir été mis en demeure, les sommes qui sont dues en vertu du contrat de sous-traitance ; copie de cette mise en demeure est adressée au maître de l'ouvrage.
+>
+> Toute renonciation à l'action directe est réputée non écrite.
+>
+> Cette action directe subsiste même si l'entrepreneur principal est en état de liquidation des biens, de règlement judiciaire ou de suspension provisoire des poursuites.
+>
+> Les dispositions du deuxième alinéa de l'article 1799-1 du code civil sont applicables au sous-traitant qui remplit les conditions édictées au présent article.
+>
+> **Article 14**
+>
+> A peine de nullité du sous-traité les paiements de toutes les sommes dues par l'entrepreneur au sous-traitant, en application de ce sous-traité, sont garantis par une caution personnelle et solidaire obtenue par l'entrepreneur d'un établissement qualifié, agréé dans des conditions fixées par décret. Cependant, la caution n'aura pas lieu d'être fournie si l'entrepreneur délègue le maître de l'ouvrage au sous-traitant dans les termes de l'article 1338 du code civil, à concurrence du montant des prestations exécutées par le sous-traitant.
+>
+> (…)
+
+*Le renvoi à l'article 1338 du code civil vise la délégation, régie depuis le 1er octobre 2016 par les articles 1336 à 1340 du même code.*
