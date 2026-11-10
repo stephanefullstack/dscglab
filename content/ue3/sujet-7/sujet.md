@@ -1,0 +1,472 @@
+# DSCG UE 3 — Contrôle de gestion et stratégie — Sujet d'entraînement complet n° 7
+
+Durée de l'épreuve : 4 heures – Coefficient : 1,5
+
+Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026.
+
+**Document autorisé** :
+Aucun.
+
+**Matériel autorisé** :
+- l'usage de la calculatrice avec mode examen actif ;
+- l'usage de la calculatrice sans mémoire, « type collège ».
+
+Tout autre matériel ou document est INTERDIT.
+
+Le sujet se présente sous la forme de 3 dossiers indépendants :
+
+| Dossier | Intitulé | Points | Durée conseillée |
+|---|---|---:|---|
+| DOSSIER 1 | RELANCER LE TRAFIC : FORMATION DU RÉSULTAT, PARTAGE DE LA VALEUR ET PRIX DES PARKINGS | 6 points | 1 h 12 |
+| DOSSIER 2 | GARDER OU CONFIER L'ASSISTANCE EN ESCALE | 6 points | 1 h 12 |
+| DOSSIER 3 | DÉCARBONER L'EXPLOITATION ET PILOTER LA PERFORMANCE GLOBALE | 8 points | 1 h 36 |
+
+Le sujet comporte 15 annexes.
+
+| Dossier | Annexe | Intitulé |
+|---|---|---|
+| DOSSIER 1 | Annexe 1.1 | Les aéroports régionaux entre compagnies à bas coûts et train |
+|  | Annexe 1.2 | Le compte de résultat simplifié de la SEMAC en 2025 et en 2026 |
+|  | Annexe 1.3 | La proposition de la compagnie à bas coûts |
+|  | Annexe 1.4 | Les parcs de stationnement : situation actuelle et projet de réservation en ligne |
+|  | Annexe 1.5 | Points de vue sur le projet |
+| DOSSIER 2 | Annexe 2.1 | L'organisation de la SEMAC |
+|  | Annexe 2.2 | Activité et coûts de l'assistance en escale : réalisations 2026 et hypothèses 2028 |
+|  | Annexe 2.3 | La proposition de TARVELIS Services |
+|  | Annexe 2.4 | Incidents et retards de l'assistance en escale en 2026 |
+|  | Annexe 2.5 | Points de vue sur la proposition |
+| DOSSIER 3 | Annexe 3.1 | Le périmètre du bilan carbone retenu par la direction |
+|  | Annexe 3.2 | Données d'activité de 2026 et facteurs d'émission retenus pour le cas |
+|  | Annexe 3.3 | Les actions de réduction proposées |
+|  | Annexe 3.4 | Données de pilotage de l'aéroport en 2025 et en 2026 |
+|  | Annexe 3.5 | L'acceptabilité des aéroports régionaux : article et points de vue |
+
+### AVERTISSEMENT
+
+Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.
+
+Pour chaque question, il est nécessaire de présenter les concepts et outils avant de les mobiliser, puis de conclure. Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.
+
+---
+
+## Présentation
+
+La société d'économie mixte de l'aéroport de Corvanne (SEMAC) exploite depuis 1998 l'aéroport d'une agglomération de 280 000 habitants du Sud-Ouest, en vertu d'un contrat conclu jusqu'en 2041 avec la communauté d'agglomération, propriétaire des pistes et de l'aérogare. Les collectivités locales détiennent 70 % de son capital et un groupe privé spécialisé dans la gestion d'aéroports, 30 %. La SEMAC est dirigée par M. Bastien ROUVEYRE, directeur général. En 2026, onze compagnies ont desservi 24 destinations (9 en France, 15 en Europe) et l'aéroport a accueilli 1 180 000 passagers, contre 1 240 000 en 2025. Fin 2026, la SEMAC emploie 312 salariés : 96 dans l'assistance en escale (enregistrement, embarquement, bagages et piste), 74 dans la sécurité incendie et les opérations aéroportuaires, 58 dans les parcs de stationnement et les services aux passagers, 44 dans la maintenance des installations et 40 au siège (direction, finances, commercial, ressources humaines, environnement). L'inspection-filtrage des passagers et des bagages est confiée à un prestataire.
+
+En 2026, la SEMAC a réalisé un chiffre d'affaires de 41 800 k€ : 19 400 k€ de redevances aéronautiques payées par les compagnies (passagers, atterrissage, stationnement des avions), 9 200 k€ de recettes des parcs de stationnement, 6 300 k€ de redevances versées par les commerces et les restaurants de l'aérogare, 4 100 k€ de prestations d'assistance en escale facturées aux compagnies et 2 800 k€ de recettes immobilières et diverses. Le résultat d'exploitation est passé de 3 650 k€ en 2025 à 2 480 k€ en 2026 : une compagnie a fermé en avril 2026 la ligne vers Paris, concurrencée par le train, et la hausse des prix de l'énergie et des salaires a pesé sur des charges qui varient peu avec le trafic.
+
+En décembre 2026, le directeur général a arrêté le plan « Corvanne 2032 », qui comporte trois axes : relancer le trafic et les recettes, alors qu'une compagnie européenne à bas coûts propose d'installer à Corvanne, à partir d'avril 2028, une base de deux avions desservant huit nouvelles destinations, en échange de remises sur les redevances et d'une contribution à la promotion de ses lignes, et que les parcs de stationnement pourraient passer à la réservation en ligne à prix variables ; recentrer l'organisation sur les métiers de l'exploitant, en décidant de l'avenir de l'assistance en escale, déficitaire, qu'un prestataire spécialisé propose de reprendre ; réduire de moitié entre 2026 et 2032 les émissions de gaz à effet de serre dont la SEMAC a la maîtrise et piloter la performance globale de l'aéroport à l'égard de son territoire (riverains, emploi, accessibilité). Vous occupez le poste de contrôle de gestion, rattaché à Mme Laure ESTAGNOL, directrice administrative et financière, et vous travaillez à la demande du directeur général. Les entreprises, les personnes, les lieux et les articles cités sont fictifs.
+
+---
+
+## DOSSIER 1 – RELANCER LE TRAFIC : FORMATION DU RÉSULTAT, PARTAGE DE LA VALEUR ET PRIX DES PARKINGS (6 points)
+
+Le premier axe du plan doit être tranché au printemps 2027 : la compagnie attend une réponse avant la fin du mois de mai pour ouvrir ses ventes, et le nouveau système des parcs de stationnement serait mis en service à l'automne. Les attentes sont partagées : les collectivités comptent sur l'aéroport pour soutenir l'emploi et le tourisme, le groupe privé actionnaire attend que chaque nouvel accord améliore le résultat d'exploitation, et une association de riverains s'inquiète des vols matinaux.
+
+M. ROUVEYRE vous demande d'expliquer pourquoi le résultat a autant reculé en 2026, de chiffrer ce que l'accord rapporterait à la SEMAC et de montrer qui en tirerait profit, d'évaluer la tarification proposée pour les parcs, puis de lui adresser une note. Les données utiles figurent dans les annexes 1.1 à 1.5 ; les conventions de calcul y sont précisées. Tous les montants sont hors taxes ; les résultats sont calculés avant impôt sur les sociétés.
+
+### Travail à faire
+
+**Base documentaire : annexes 1.1 à 1.5**
+
+**1.1.** Analyser la formation du résultat d'exploitation de la SEMAC en 2025 et en 2026. Pour cela, après avoir distingué, d'après leur comportement, les produits et les charges qui varient avec le trafic de ceux qui n'en dépendent pas, calculer pour chacune des deux années la marge sur coûts variables, totale et par passager, et le levier opérationnel ; expliquer ensuite pourquoi une baisse du trafic de 4,84 % a fait reculer le résultat d'exploitation de 32,05 %, puis conclure sur ce que cette structure de coûts implique pour la stratégie de l'aéroport. *(1,5 point)*
+
+**1.2.** Chiffrer le résultat annuel que la base de la compagnie à bas coûts apporterait à la SEMAC en régime de croisière, avant puis après la prise en charge du coût de la nuisance sonore que demandent les riverains, et apprécier la sensibilité de ce résultat au trafic de la base ainsi que les conséquences non financières de cette nuisance. Analyser ensuite le partage de la valeur créée par l'accord entre la compagnie, la SEMAC, les passagers, le territoire et les riverains de l'aéroport, en précisant les attentes et les contre-pouvoirs de chacun. *(2 points)*
+
+**1.3.** Apprécier le projet de réservation en ligne à prix variables des parcs de stationnement de longue durée. Pour cela, identifier les segments de clientèle des parcs, ceux que le projet vise et le positionnement à adopter face aux autres moyens de se rendre à l'aéroport ; calculer la recette annuelle attendue de la grille proposée, en tenant compte du nombre de places, et la comparer à celle du tarif unique actuel ; expliquer le rôle des places protégées, puis présenter les conditions de réussite du projet et ses effets sur la relation avec les clients. *(1,5 point)*
+
+**1.4.** Rédiger, à l'intention de M. ROUVEYRE, une note de synthèse structurée (20 lignes au maximum) sur la formation du résultat de l'aéroport, l'intérêt et les conditions de l'accord avec la compagnie à bas coûts et la tarification des parcs, en formulant des préconisations sur le modèle de revenus de la SEMAC. *(1 point)*
+
+### ANNEXE 1.1 – Les aéroports régionaux entre compagnies à bas coûts et train
+
+*Extrait d'un article fictif, « La Lettre des escales » (publication fictive), 18 janvier 2027. Les données chiffrées de cet article sont fictives.*
+
+Pour beaucoup d'aéroports régionaux, la croissance vient désormais des compagnies à bas coûts : elles assureraient plus de la moitié du trafic des plateformes de moins de deux millions de passagers. Leur arrivée change la vie d'un aéroport : des vols vers des destinations de loisirs, des départs très matinaux pour faire voler chaque avion quatre à six fois par jour, des escales réduites à vingt-cinq minutes. Elle change aussi ses comptes. Les compagnies installent leurs avions là où on leur fait les meilleures conditions : remises sur les redevances pendant plusieurs années, participation à la promotion de leurs lignes. « Une base se négocie comme une usine qui s'installe, sauf qu'un avion repart en une nuit », résume le directeur d'une plateforme de l'Ouest, qui a perdu en 2025 deux des trois avions basés chez lui.
+
+Sur les lignes intérieures, le train gagne du terrain. Quand le trajet vers la capitale passe sous les quatre heures, les voyageurs d'affaires délaissent l'avion ; plusieurs lignes ont fermé en deux ans, et avec elles une clientèle qui laissait sa voiture deux jours au parking et consommait à l'aérogare.
+
+Les gestionnaires cherchent donc à dépendre moins des redevances payées par les compagnies. Les recettes non aéronautiques (parcs de stationnement, commerces et restaurants, locations de bureaux et de terrains) représenteraient en moyenne 45 % du chiffre d'affaires des aéroports régionaux, contre 38 % il y a dix ans. Les parkings en sont le premier poste ; ils sont aussi exposés aux parcs privés installés à quelques kilomètres, qui proposent une navette et des prix réservés en ligne, et aux liaisons par autocar. Plusieurs aéroports ont adopté la réservation en ligne, avec des prix qui varient selon la date de réservation et l'affluence prévue, comme dans le transport aérien ou l'hôtellerie : la place de parking se vend désormais en même temps que le billet d'avion. Le système suppose de connaître ses clients et de leur faire accepter que deux voisins de place n'aient pas payé le même prix.
+
+Reste le poids des charges fixes. Un aéroport ouvert dix-sept heures par jour paie ses pompiers, ses agents d'exploitation, son chauffage et son éclairage, qu'il accueille un ou deux millions de passagers. « Notre problème n'est pas le coût d'un passager de plus, c'est le passager qui manque », résume un directeur financier.
+
+### ANNEXE 1.2 – Le compte de résultat simplifié de la SEMAC en 2025 et en 2026
+
+**Produits et charges d'exploitation (k€), avec la note de la direction financière sur chaque poste**
+
+| Poste | Note de la direction financière | 2025 | 2026 |
+|---|---|---:|---:|
+| Redevances aéronautiques | payées par les compagnies pour chaque passager embarqué, chaque atterrissage et le stationnement de leurs avions ; tarifs relevés au 1er janvier 2026 | 19 900 | 19 400 |
+| Recettes des parcs de stationnement | payées par les voyageurs et leurs accompagnants selon la durée de stationnement (annexe 1.4) | 9 800 | 9 200 |
+| Redevances des commerces et restaurants | pourcentage du chiffre d'affaires réalisé par les boutiques et les restaurants de l'aérogare auprès des passagers | 6 400 | 6 300 |
+| Assistance en escale facturée aux compagnies | prix fixé par vol traité | 4 200 | 4 100 |
+| Recettes immobilières et diverses | loyers annuels fixes des bureaux, hangars et terrains loués aux entreprises de la plateforme | 2 700 | 2 800 |
+| **Chiffre d'affaires** | | **43 000** | **41 800** |
+| Charges de personnel | 312 salariés, effectif stable ; les postes sont fixés par les plages d'ouverture de l'aéroport et les règles de sécurité de la plateforme ; augmentation générale des salaires au 1er janvier 2026 | 18 300 | 18 620 |
+| Énergie | chauffage, climatisation et éclairage de l'aérogare, des pistes et des parcs ; la consommation dépend des surfaces et des heures d'ouverture ; hausse des prix en 2026 | 2 100 | 2 380 |
+| Inspection-filtrage des passagers et des bagages | prestataire rémunéré 4,00 € par passager | 4 960 | 4 720 |
+| Redevance versée à la communauté d'agglomération | 2,50 € par passager | 3 100 | 2 950 |
+| Consommables d'exploitation et d'assistance | carburant des engins de piste, produits de dégivrage, fournitures des services aux passagers ; ils suivent le nombre de vols, lui-même lié au trafic : 1,50 € par passager en moyenne | 1 860 | 1 770 |
+| Maintenance et entretien des installations | contrats annuels et travaux programmés | 2 600 | 2 500 |
+| Nettoyage et gardiennage de l'aérogare | contrats annuels forfaitaires | 1 450 | 1 450 |
+| Impôts et taxes | assis sur les installations et les salaires | 1 180 | 1 180 |
+| Dotations aux amortissements | équipements de la SEMAC (engins de piste, matériels de sécurité, équipements des parcs) | 2 400 | 2 350 |
+| Autres charges externes | assurances, honoraires, télécommunications, promotion de l'aéroport | 1 400 | 1 400 |
+| **Total des charges d'exploitation** | | **39 350** | **39 320** |
+| **Résultat d'exploitation** | | **3 650** | **2 480** |
+| Passagers accueillis (arrivées et départs) | | 1 240 000 | 1 180 000 |
+
+**Conventions de calcul**
+
+- Le trafic est mesuré par le nombre de passagers accueillis (arrivées et départs). Marge sur coûts variables par passager = marge sur coûts variables / nombre de passagers de l'année.
+- Pour expliquer la variation du résultat d'exploitation entre 2025 et 2026, la direction financière distingue : l'**effet du trafic** = (passagers 2026 − passagers 2025) × marge sur coûts variables par passager de 2025 ; l'**effet de la marge par passager** = marge sur coûts variables 2026 − passagers 2026 × marge sur coûts variables par passager de 2025 ; l'**effet des éléments indépendants du trafic** = variation des produits qui ne dépendent pas du trafic − variation des charges qui n'en dépendent pas.
+- Arrondis : montants en k€ sans décimale ; montants par passager au centime ; pourcentages et coefficients à deux décimales.
+
+### ANNEXE 1.3 – La proposition de la compagnie à bas coûts
+
+*Proposition reçue en janvier 2027 ; données retenues par la direction commerciale et la direction financière de la SEMAC (hypothèses du cas).*
+
+**La base et l'accord proposé**
+
+| Élément | Proposition |
+|---|---|
+| Avions basés | 2 avions de 186 sièges, à partir d'avril 2028 ; 8 nouvelles destinations européennes de loisirs, aucune n'étant desservie aujourd'hui depuis Corvanne |
+| Trafic attendu en régime de croisière (à partir de 2029, année pleine) | 600 000 passagers par an (arrivées et départs), qui s'ajouteraient tous au trafic actuel de l'aéroport (hypothèse du cas : aucun report depuis les lignes existantes) ; un voyageur qui fait l'aller et le retour compte pour deux passagers |
+| Mouvements d'avions | 3 600 décollages et atterrissages par an, dont 720 entre 6 h et 7 h ; en 2026, l'aéroport a compté 14 400 mouvements d'avions commerciaux, aucun avant 7 h |
+| Durée | cinq ans à compter d'avril 2028 ; la compagnie peut retirer un avion basé avec un préavis de six mois |
+| Redevances aéronautiques | tarif public de la SEMAC pour ce type d'avion : 15,00 € par passager ; remise demandée : 50 % pendant toute la durée de l'accord |
+| Contribution de la SEMAC à la promotion des lignes | 1 500 k€ par an, quel que soit le trafic |
+| Assistance en escale | confiée par la compagnie à un prestataire de son choix : aucune recette pour la SEMAC |
+| Locaux | bureaux et local technique loués à la compagnie : 100 k€ par an |
+| Prix des billets annoncé par la compagnie | 45 € en moyenne pour un aller simple ; ces destinations exigent aujourd'hui une correspondance, pour 140 € en moyenne et un temps de trajet doublé |
+
+**Conséquences pour la SEMAC (étude de la direction financière, montants annuels en régime de croisière)**
+
+- Recettes non aéronautiques par passager de la base : parcs de stationnement 3,00 € ; redevances des commerces et restaurants 3,50 € (passagers qui voyagent souvent avec un seul bagage en cabine, dont une partie vient en autocar).
+- Charges qui dépendent du trafic : identiques, par passager, à celles de l'exploitation actuelle (annexe 1.2).
+- Ouverture de l'aéroport à 5 h 30 au lieu de 6 h 30 : 12 agents supplémentaires (sécurité incendie, opérations, accueil), 660 k€ par an ; énergie et nettoyage de l'heure d'ouverture supplémentaire, 140 k€ par an.
+- Aménagement d'une seconde salle d'embarquement : 1 000 k€, amortis sur cinq ans, soit 200 k€ par an.
+- Étude de trafic et de marché commandée en 2026 à un cabinet : 90 k€, déjà payés.
+- Programme d'isolation acoustique demandé par l'association de riverains (annexe 1.5) : 300 maisons situées sous l'axe de la piste, exposées aux départs avant 7 h, pour un coût moyen de 9 000 € par maison ; si la SEMAC l'accepte, elle le finance à parts égales sur les cinq années de l'accord (hypothèse du cas). L'isolation protège l'intérieur des maisons, pas les jardins ni les sorties.
+- Les onze compagnies présentes paient le tarif public ; deux d'entre elles ont fait savoir qu'elles demanderaient des conditions comparables si l'accord était signé.
+
+**Retombées pour le territoire (estimations de l'office de tourisme de l'agglomération, hypothèses du cas)**
+
+- 40 % des 300 000 voyageurs de la base (600 000 passagers / 2) seraient des visiteurs venus d'autres pays, qui dépenseraient en moyenne 320 € chacun pendant leur séjour dans l'agglomération et sa région ; 60 % seraient des habitants de la région partant en voyage.
+- Emplois créés : 90 par la compagnie (pilotes, personnels de cabine, mécaniciens) ; une trentaine chez les prestataires de la plateforme (inspection-filtrage, assistance en escale) ; 12 à la SEMAC.
+
+**Conventions de calcul** : le résultat de la base est celui d'une année de croisière, en k€ sans décimale, montants par passager au centime.
+
+### ANNEXE 1.4 – Les parcs de stationnement : situation actuelle et projet de réservation en ligne
+
+**Situation en 2026**
+
+- Parc de courte durée (400 places, devant l'aérogare) : accompagnants qui déposent ou attendent un voyageur, tarif horaire ; recette 2026 : 830 k€. Il n'est pas concerné par le projet.
+- Parcs de longue durée (3 000 places, à 300 et 600 mètres de l'aérogare) : tarif unique de 12 € par jour, sans réservation ; recette 2026 : 8 370 k€. Durée moyenne de stationnement : 2 jours pour les voyageurs d'affaires, 7 jours pour les voyageurs de loisirs.
+
+| Parcs de longue durée, 2026 (véhicules présents par jour, en moyenne) | Période de pointe (100 jours : vacances scolaires et ponts) | Période creuse (265 jours) |
+|---|---:|---:|
+| Demande des voyageurs d'affaires | 400 | 700 |
+| Demande des voyageurs de loisirs | 3 000 | 800 |
+| Véhicules accueillis | 3 000 (parcs complets) | 1 500 |
+
+Autres moyens de se rendre à l'aéroport : deux parcs privés situés à 3 km proposent 7 € par jour, réservés en ligne, avec une navette toutes les 20 minutes ; un autocar relie la gare de Corvanne à l'aérogare en 25 minutes pour 8 € par personne et par trajet ; une course de taxi depuis le centre-ville coûte 35 €. Les accompagnants qui déposent un voyageur évitent aussi le stationnement de longue durée.
+
+**Projet de la direction commerciale (mise en service à l'automne 2027)**
+
+- Réservation et paiement en ligne, reconnaissance des plaques d'immatriculation à l'entrée ; les clients sans réservation paient le prix d'une réservation tardive.
+- Prix par jour de stationnement (€) :
+
+| Prix par jour (€) | Réservation au moins 15 jours à l'avance | Réservation moins de 15 jours à l'avance, ou sans réservation |
+|---|---:|---:|
+| Jours où le remplissage prévu est inférieur à 90 % (période creuse) | 8 | 14 |
+| Jours où le remplissage prévu atteint au moins 90 % (période de pointe) | 13 | 19 |
+
+- Places protégées : les jours de pointe, 1 000 places sont réservées aux clients qui réservent moins de 15 jours à l'avance ou viennent sans réservation ; les réservations faites au moins 15 jours à l'avance sont acceptées dans la limite des 2 000 autres places.
+- Demande attendue avec la nouvelle grille (étude de la direction commerciale, véhicules présents par jour en moyenne) ; en pointe, la garantie d'une place réservée ramènerait des voyageurs qui se rendent aujourd'hui dans les parcs privés de peur de trouver les parcs complets :
+
+| Demande attendue | Pointe : au moins 15 jours | Pointe : moins de 15 jours | Creux : au moins 15 jours | Creux : moins de 15 jours |
+|---|---:|---:|---:|---:|
+| Voyageurs d'affaires | 0 | 400 | 100 | 600 |
+| Voyageurs de loisirs | 2 600 | 700 | 1 000 | 100 |
+
+- Coût annuel du service de réservation en ligne (abonnement, frais de paiement, reconnaissance des plaques) : 250 k€.
+
+**Conventions de calcul**
+
+- Année de 365 jours : 100 jours de pointe, 265 jours creux. Recette d'un jour = nombre de véhicules présents × prix par jour, selon la catégorie de réservation.
+- Dans chaque catégorie, les places sont attribuées dans l'ordre des réservations ; une demande qui ne trouve pas de place est perdue (le client se reporte sur un parc privé ou sur un autre moyen d'accès).
+- Montants annuels en k€ sans décimale ; recettes journalières en euros ; pourcentages à deux décimales.
+
+### ANNEXE 1.5 – Points de vue sur le projet
+
+*Propos fictifs recueillis par la directrice administrative et financière en janvier et en février 2027.*
+
+**M. Arnaud SAUVANÈRE, directeur commercial de la SEMAC.** « Sans cette base, nous resterons sous 1,2 million de passagers et chaque hausse des salaires ou de l'énergie nous coûtera du résultat. Les compagnies à bas coûts négocient dur, mais elles remplissent leurs avions. Mon inquiétude, ce sont les autres compagnies, qui paient le tarif public : elles nous demanderont le même geste. Pour les parkings, nous laissons partir chaque été des centaines de clients vers les parcs privés faute de place, et nous vendons au même prix un mardi de novembre et un samedi d'août. »
+
+**Mme Josiane LABRUGÈRE, présidente d'une association de riverains.** « Nous vivons sous l'axe de la piste. Aujourd'hui, le premier avion passe à 7 h. Avec des départs dès 6 h, ce sont nos nuits qu'on vend. Nous demandons qu'aucun décollage n'ait lieu avant 7 h et qu'une partie des recettes de l'aéroport finance l'isolation des maisons les plus exposées. Si nous ne sommes pas entendus, nous saisirons les élus de nos communes et la presse. »
+
+**M. Michel ESCOUBAT, président de l'office de tourisme de l'agglomération.** « Huit destinations nouvelles, ce sont des visiteurs étrangers toute l'année, pas seulement l'été : nos hôtels sont à moitié vides de novembre à mars. Mais ces vols serviront aussi aux habitants pour partir en vacances ailleurs ; à nous de faire venir plus de visiteurs qu'il ne part d'habitants. »
+
+**Nadia, ingénieure commerciale dans une entreprise de matériel agricole de l'agglomération.** « Je pars deux ou trois fois par mois, souvent décidé la veille. Depuis la fermeture de la ligne vers Paris, je prends le train pour Paris et l'avion pour le reste de l'Europe. Le parking à 12 €, je ne le discute pas : ma voiture est à cinq minutes de l'aérogare. À 19 € la journée, je ferai le calcul avec le taxi, et je n'aimerais pas apprendre que mon voisin de place a payé 8 €. »
+
+---
+
+## DOSSIER 2 – GARDER OU CONFIER L'ASSISTANCE EN ESCALE (6 points)
+
+Le deuxième axe du plan porte d'abord sur l'assistance en escale. En janvier 2027, la société TARVELIS Services, prestataire spécialisé qui assiste les avions dans une dizaine d'aéroports européens, a proposé de prendre en charge l'assistance des avions à Corvanne à partir du 1er janvier 2028, pour cinq ans ; elle attend une réponse avant la fin du mois de juin 2027. Selon le tableau de répartition des charges de la direction financière, l'activité a perdu 3 428 k€ en 2026. La décision est sensible : les collectivités tiennent à l'emploi local et à la qualité du service rendu aux compagnies, le groupe privé actionnaire attend une amélioration durable du résultat d'exploitation, et les salariés de l'assistance s'inquiètent de leur avenir.
+
+M. ROUVEYRE vous demande d'analyser l'organisation de la SEMAC et la place qu'y tient l'assistance en escale, de chiffrer ce que rapporterait réellement la proposition de TARVELIS, d'en identifier les risques et de concevoir la manière de piloter le prestataire si l'activité lui était confiée, puis de lui adresser une note. Les données utiles figurent dans les annexes 2.1 à 2.5 ; les conventions de calcul y sont précisées. Tous les montants sont hors taxes ; les résultats sont calculés avant impôt sur les sociétés.
+
+### Travail à faire
+
+**Base documentaire : annexes 2.1 à 2.5**
+
+**2.1.** Caractériser la structure de la SEMAC et la configuration structurelle dont elle se rapproche, en précisant la place qu'y occupe l'assistance en escale et la manière dont celle-ci se coordonne avec les compagnies. Situer ensuite la décision envisagée parmi les choix de gestion du périmètre qui s'offrent à la SEMAC pour cette activité, et apprécier ces choix au regard des caractéristiques des transactions d'assistance en escale. *(1 point)*
+
+**2.2.** Comparer, pour 2028, ce que coûterait à la SEMAC l'assistance en escale conservée en interne et confiée à TARVELIS. Pour cela, après avoir reconstitué les produits de l'activité et apprécié la perte de 3 428 k€ annoncée pour 2026, distinguer les charges qui disparaîtraient avec l'activité de celles qui resteraient à la charge de la SEMAC ; chiffrer l'écart entre les deux solutions en 2028, puis en année pleine après la transition, et apprécier sa sensibilité au nombre de rotations traitées. Conclure. *(2 points)*
+
+**2.3.** Identifier les risques que ferait courir à la SEMAC le recours à TARVELIS, en tenant compte de l'intérêt que TARVELIS trouve lui-même à son offre, et les hiérarchiser de manière argumentée. Concevoir ensuite le dispositif de pilotage du prestataire : engagements de niveau de service, quatre indicateurs (formule, cible, périodicité), dont vous calculerez la valeur de 2026 lorsque les données le permettent et que vous comparerez aux engagements proposés par TARVELIS, pénalités, contrôles et plan de continuité du service. *(2 points)*
+
+**2.4.** Rédiger, à l'intention de M. ROUVEYRE, une note de synthèse structurée (20 lignes au maximum) qui présente la décision que vous préconisez sur l'assistance en escale, les conditions à obtenir de TARVELIS (prix, engagements de service, emploi des salariés) et la manière de maîtriser les risques de cette décision. *(1 point)*
+
+### ANNEXE 2.1 – L'organisation de la SEMAC
+
+**Organigramme simplifié au 31 décembre 2026 (effectifs)**
+
+| Rattachement | Direction ou service | Missions | Effectif |
+|---|---|---|---:|
+| Directeur général | Siège : direction générale, direction administrative et financière (comptabilité, contrôle de gestion, achats), direction commerciale (relations avec les compagnies, parcs, commerces, immobilier), ressources humaines, mission environnement, mission qualité et sécurité | stratégie, négociation des accords et des tarifs avec les compagnies, budgets, recrutement et formation, règles de sécurité et procédures écrites de chaque service | 40 |
+| Directeur des opérations, M. Romain ESTÉBENET | Sécurité incendie et opérations aéroportuaires, dont le centre de coordination des opérations | sauvetage et lutte contre l'incendie, surveillance des pistes, affectation des postes de stationnement des avions ; le centre de coordination, ouvert de 6 h 30 à 23 h 30, suit chaque vol en temps réel avec les compagnies et les services | 74 |
+| Directeur des opérations | Assistance en escale, responsable : Mme Sylvie MONTAUZÉ | enregistrement et embarquement des passagers, chargement et déchargement des bagages et du fret, guidage et repoussage des avions, dégivrage ; 8 chefs d'escale, 88 agents | 96 |
+| Directeur des opérations | Suivi du contrat d'inspection-filtrage | un cadre suit le prestataire d'inspection-filtrage, rémunéré par passager depuis 2015 | (compris dans les 74) |
+| Directrice des services aux passagers | Parcs de stationnement, accueil et information, assistance aux personnes à mobilité réduite | — | 58 |
+| Directeur technique | Maintenance des installations | entretien des bâtiments, des pistes, du balisage et des équipements | 44 |
+| **Total** | | | **312** |
+
+**Fonctionnement de l'assistance en escale (note de la direction des opérations)**
+
+- Chaque compagnie signe avec la SEMAC un accord annuel d'assistance, négocié par la direction commerciale, qui fixe le prix par rotation (une rotation = l'arrivée d'un avion et son départ). Les onze compagnies présentes en 2026 confient toutes leur assistance à la SEMAC ; la compagnie à bas coûts qui doit installer une base en avril 2028 confiera la sienne à un prestataire de son choix.
+- Chaque compagnie remet son manuel d'escale (temps d'escale, ordre de chargement, consignes de sécurité) : les agents l'appliquent à la lettre. Ils détiennent des habilitations (conduite sur l'aire de trafic, chargement, dégivrage) délivrées après formation et renouvelées chaque année.
+- Le planning des équipes est établi par saison, à partir du programme de vols que les compagnies communiquent trois mois à l'avance. Les vols se concentrent sur deux vagues, de 7 h à 9 h 30 et de 17 h à 20 h, alors que l'aéroport est ouvert dix-sept heures par jour (de 6 h 30 à 23 h 30).
+- Pendant chaque escale, le chef d'escale dirige l'équipe affectée à l'avion et règle les imprévus avec l'équipage et le centre de coordination (retard à l'arrivée, bagage manquant, passager absent).
+- Matériel : 42 engins de piste (tracteurs à bagages, tapis, escaliers, groupes électriques, repousseurs, une dégivreuse), propriété de la SEMAC, entretenus par un contrat annuel.
+
+### ANNEXE 2.2 – Activité et coûts de l'assistance en escale : réalisations 2026 et hypothèses 2028
+
+**Activité 2026 et tarifs**
+
+| Catégorie d'avions | Rotations traitées en 2026 | Prix facturé par rotation en 2026 | Prix facturé par rotation en 2028 | Heures de travail affectées à une rotation |
+|---|---:|---:|---:|---:|
+| Avions de moins de 100 sièges | 3 200 | 500 € | 520 € | 7 h |
+| Avions de 100 sièges et plus | 4 000 | 625 € | 650 € | 13 h |
+
+- Heures payées en 2026 : 1 550 heures par salarié, pour 96 salariés. Les heures qui ne sont pas affectées à une rotation correspondent à l'attente entre les vagues de vols, à la formation et aux absences.
+- Hypothèses 2028 : les onze compagnies présentes conservent le programme de 2026 (mêmes rotations, même répartition) ; les prix facturés aux compagnies sont ceux du tableau ; les charges de personnel augmentent de 5 % au total entre 2026 et 2028, à effectif inchangé ; les autres charges, les charges du siège et celles des installations sont inchangées.
+
+**Tableau de répartition des charges de l'assistance en escale, 2026 (k€, direction financière)**
+
+| Poste | Note de la direction financière | 2026 |
+|---|---|---:|
+| Prestations facturées aux compagnies | rotations × prix par rotation | 4 100 |
+| Charges de personnel (96 salariés) | salaires et charges sociales | − 4 000 |
+| Consommables | carburant des engins, produits de dégivrage, fournitures : 40 € par rotation | − 288 |
+| Entretien des engins de piste | contrat annuel forfaitaire | − 220 |
+| Amortissement des engins de piste | engins de la SEMAC, valeur nette comptable de 1 080 k€ au 31/12/2027 | − 360 |
+| Formation, tenues de travail, assurance des engins | propres à l'activité | − 140 |
+| Quote-part des charges du siège | 5 440 k€ répartis au prorata des effectifs hors siège (272 salariés), soit 20 k€ par salarié | − 1 920 |
+| Quote-part des charges des installations | 7 500 k€ (énergie, entretien des bâtiments, nettoyage, impôts sur les installations) répartis au prorata des surfaces occupées : 8 % pour l'assistance (comptoirs, salle de tri des bagages, locaux du personnel, abri des engins) | − 600 |
+| **Résultat de l'activité** | | **− 3 428** |
+
+**Conventions de calcul**
+
+- La comparaison se fait aux conditions de 2028 (hypothèses ci-dessus). L'« année pleine après la transition » reprend les conditions de 2028 sans les coûts de transition.
+- Montants en k€ sans décimale ; coûts et prix par rotation en euros, à deux décimales ; pénalités en euros ; pourcentages à deux décimales.
+
+### ANNEXE 2.3 – La proposition de TARVELIS Services
+
+*Proposition reçue le 18 janvier 2027 ; données retenues par la direction financière (hypothèses du cas).*
+
+| Élément | Proposition de TARVELIS |
+|---|---|
+| Objet et durée | assistance de tous les avions des compagnies clientes de la SEMAC, du 1er janvier 2028 au 31 décembre 2032 ; la SEMAC reste le seul interlocuteur des compagnies, à qui elle continue de facturer l'assistance à ses propres prix |
+| Prix payé par la SEMAC | 475 € par rotation d'un avion de moins de 100 sièges ; 600 € par rotation d'un avion de 100 sièges et plus ; prix fixes en 2028, révisés ensuite chaque année selon l'évolution du coût de la main-d'œuvre, dans la limite de 3 % par an |
+| Volume | prix appliqué aux rotations effectivement traitées, avec un minimum de 5 500 rotations facturées par an |
+| Salariés | TARVELIS emploierait 80 des 96 salariés de l'assistance, avec leur ancienneté et leur rémunération (hypothèse du cas) ; les 16 autres occuperaient les 16 postes que la SEMAC doit pourvoir en 2028 à la suite de départs en retraite (sécurité incendie, opérations, accueil des passagers), à une rémunération égale à celle des postes à pourvoir : la SEMAC renoncerait à ces 16 recrutements |
+| Engins de piste | rachetés par TARVELIS au 1er janvier 2028 à leur valeur nette comptable (1 080 k€) : la cession ne dégage ni plus-value ni moins-value |
+| Locaux | comptoirs, salle de tri, locaux du personnel et abri des engins loués à TARVELIS 80 k€ par an ; les charges de ces locaux restent supportées par la SEMAC |
+| Engagements de service proposés | départs sans retard de plus de quinze minutes imputable à l'assistance : au moins 96 % des rotations ; bagages mal acheminés (non chargés, chargés sur un autre vol, endommagés) : au plus 2,5 pour 1 000 bagages ; dernier bagage livré moins de 30 minutes après l'arrivée de l'avion : au moins 88 % des rotations ; rapport mensuel d'activité remis par TARVELIS |
+| Pénalités proposées | 100 € par départ retardé du fait de l'assistance au-delà de l'engagement de ponctualité, dans la limite de 1 % du prix annuel |
+| Autres éléments | TARVELIS assure l'assistance de la compagnie à bas coûts dans quatre autres aéroports et a répondu à son appel d'offres pour la base de Corvanne ; ses équipes seraient communes aux deux contrats |
+
+**Charges qui resteraient à la SEMAC ou qui seraient créées (étude de la direction financière, 2028)**
+
+- Siège : la gestion administrative du personnel de l'assistance (paie, plannings de formation, recrutements) disparaîtrait, soit 120 k€ par an ; les autres charges du siège ne changeraient pas.
+- Suivi du contrat : un responsable du contrat rattaché à la direction des opérations (85 k€ par an) et des contrôles sur l'aire de trafic et auprès des compagnies (35 k€ par an), soit 120 k€ par an.
+- Coûts de transition, supportés en 2028 seulement : formation des 16 salariés à leur nouveau poste (5 k€ par salarié), période de recouvrement des équipes en janvier 2028 (120 k€), accompagnement des salariés et information des compagnies (100 k€).
+
+### ANNEXE 2.4 – Incidents et retards de l'assistance en escale en 2026
+
+*Compte rendu fictif de M. Romain ESTÉBENET, directeur des opérations, janvier 2027.*
+
+« En 2026, l'assistance a traité 7 200 rotations. 252 départs ont été retardés de plus de quinze minutes pour une cause imputable à l'assistance (enregistrement, embarquement, chargement, repoussage), dont 120 en juillet et en août, qui comptent 1 600 rotations : l'été, l'absentéisme a atteint 9 % et nous avons manqué d'agents habilités au chargement. Deux journées de grève, en juillet, liées aux plannings d'été, ont entraîné l'annulation de six vols.
+
+Sur 472 000 bagages enregistrés au départ, 944 ont été mal acheminés (non chargés, chargés sur un autre vol ou endommagés). À l'arrivée, le dernier bagage a été livré moins de trente minutes après l'arrivée de l'avion pour 6 480 rotations.
+
+Nous avons relevé 18 incidents de sécurité sur l'aire de trafic imputables à l'assistance (heurt d'un avion ou d'un équipement par un engin, chute d'objets, engin mal stationné), dont un sérieux en août : un tracteur à bagages a heurté la soute d'un avion, immobilisé trente heures ; la compagnie a annulé deux vols. Les compagnies ont adressé 46 réclamations écrites à la SEMAC.
+
+L'expérience de l'inspection-filtrage doit nous instruire : le contrat ne prévoit qu'un rapport annuel et aucune pénalité ; deux fois en 2026, l'attente au contrôle a dépassé quarante minutes un matin de départs en vacances, et nous n'avons rien pu exiger. »
+
+**Conventions de calcul des indicateurs**
+
+- Valeur d'un indicateur = numérateur / dénominateur, multipliée par 100 pour un taux en % ou par 1 000 pour un nombre « pour 1 000 » ; valeurs arrondies à deux décimales.
+- Écart à la cible = valeur − cible ; la cible est atteinte si la valeur lui est supérieure ou égale (indicateur à faire progresser) ou inférieure ou égale (indicateur à faire baisser).
+
+### ANNEXE 2.5 – Points de vue sur la proposition
+
+*Propos fictifs recueillis par la directrice administrative et financière en février 2027.*
+
+**Mme Sylvie MONTAUZÉ, responsable de l'assistance en escale.** « Nos agents connaissent chaque compagnie et chaque avion ; en vingt-cinq minutes d'escale, c'est ce qui fait la différence. Notre problème, ce sont les heures payées entre les deux vagues de vols, pas la compétence. TARVELIS fera mieux sur ce point avec nos propres agents parce qu'il partagera ses équipes avec la base à bas coûts. Mais si nous vendons nos engins et laissons partir nos chefs d'escale, nous ne saurons plus faire : dans cinq ans, nous serons à sa merci. »
+
+**M. Yannick TRAMASSET, représentant du personnel de l'assistance en escale.** « Les 80 collègues garderont leur salaire et leur ancienneté, et après ? Les 16 autres devront apprendre un autre métier. L'été dernier, nous avons fait deux jours de grève pour les plannings ; un prestataire qui partage ses équipes entre deux clients ne fera pas mieux au mois d'août, quand tous les avions partent à la même heure. »
+
+**Mme Aurélie KERDANET, directrice des opérations au sol d'une compagnie régionale cliente (1 500 rotations par an d'avions de 100 sièges et plus).** « Nous achetons des avions à l'heure et des bagages qui arrivent. Peu nous importe qui porte le gilet : c'est la SEMAC qui signe avec nous et qui doit répondre de la qualité. Si l'assistance est confiée à un prestataire, nous voulons des engagements au moins égaux au service d'aujourd'hui et des pénalités qui comptent ; sinon, nous lancerons notre propre appel d'offres et choisirons nous-mêmes notre prestataire. »
+
+---
+
+## DOSSIER 3 – DÉCARBONER L'EXPLOITATION ET PILOTER LA PERFORMANCE GLOBALE (8 points)
+
+Le troisième axe du plan doit être chiffré avant l'été 2027. La SEMAC établit pour la première fois, de sa propre initiative, un bilan carbone de l'aéroport, qu'elle publiera dans un rapport volontaire destiné aux habitants, aux compagnies et aux collectivités. La responsable environnement a rassemblé les données de 2026 et chiffré quatre actions de réduction. Les attentes sont fortes et contradictoires : une association de riverains conteste un bilan qui laisserait de côté les vols, les collectivités veulent un aéroport qui crée des emplois sans dégrader le cadre de vie, et le groupe privé actionnaire veut savoir ce que coûtera la réduction des émissions alors que le résultat d'exploitation a reculé.
+
+M. ROUVEYRE vous demande de délimiter et d'établir le bilan carbone de 2026, de vérifier que les actions proposées permettent de tenir l'objectif du plan et à quel coût, de proposer les indicateurs qui permettront de suivre la démarche, puis de concevoir le tableau de bord de la performance globale de l'aéroport. Les données utiles figurent dans les annexes 3.1 à 3.5 ; les conventions de calcul y sont précisées. Tous les montants sont hors taxes.
+
+### Travail à faire
+
+**Base documentaire : annexes 3.1 à 3.5**
+
+**3.1.** Sélectionner, parmi les données d'activité de l'annexe 3.2, celles qui entrent dans le bilan carbone de 2026 selon le périmètre retenu par la direction (annexe 3.1). Classer les postes retenus par catégorie d'émissions, en distinguant les émissions que la SEMAC maîtrise, celles qu'elle peut influencer et celles qu'elle ne fait que constater, et justifier chacune des exclusions. Conclure sur ce que ce périmètre permet de piloter et sur ses limites. *(1,5 point)*
+
+**3.2.** Établir le bilan carbone de 2026 de l'aéroport par poste et par catégorie, apprécier le poids de chaque poste et l'incertitude du résultat. Vérifier ensuite si les quatre actions de l'annexe 3.3 permettent d'atteindre en 2032 l'objectif du plan « Corvanne 2032 » sur les émissions maîtrisées, calculer le coût de la tonne évitée par chaque action et conclure sur le plan d'action. *(2,5 points)*
+
+**3.3.** Concevoir quatre indicateurs de durabilité reliés à la stratégie de l'aéroport (formule, cible, périodicité, enjeu suivi), dont un indicateur rapporté au passager et un indicateur portant sur l'accès des passagers à l'aéroport ; calculer leur valeur de 2026 lorsque les données le permettent. *(1 point)*
+
+**3.4.** Concevoir, à l'aide de l'outil approprié, le tableau de bord stratégique de la performance globale de l'aéroport, en reliant ses indicateurs aux facteurs clés de succès d'un aéroport régional et aux attentes des parties prenantes du territoire (compagnies, passagers, riverains, collectivités, salariés). Calculer la valeur de 2025 et de 2026 des indicateurs de votre tableau de bord que les annexes permettent de calculer et interpréter leur évolution, notamment les tensions entre la croissance du trafic, le bruit et les émissions. *(2 points)*
+
+**3.5.** Rédiger, à l'intention de M. ROUVEYRE, une note de synthèse structurée (20 lignes au maximum) sur la trajectoire carbone de la SEMAC et sur la performance globale de l'aéroport, en formulant des préconisations qui relient performance économique, sociale et environnementale. *(1 point)*
+
+### ANNEXE 3.1 – Le périmètre du bilan carbone retenu par la direction
+
+*Note de Mme Clémence ARNAUDIÈS, responsable environnement de la SEMAC, approuvée par le directeur général, janvier 2027.*
+
+**Périmètre organisationnel.** Le bilan porte sur les installations et les activités dont la SEMAC a le contrôle opérationnel, c'est-à-dire celles qu'elle exploite et dont elle fixe les règles de fonctionnement : aérogare, pistes et voies de circulation, parcs de stationnement, véhicules et engins de la SEMAC. Les activités des entreprises qui occupent des locaux ou des terrains de la plateforme (commerces et restaurants de l'aérogare, loueurs de voitures, entreprise de maintenance des avions, société pétrolière qui avitaille les avions) n'en font pas partie, même lorsque leurs consommations passent par les compteurs de la SEMAC et leur sont refacturées.
+
+**Catégories d'émissions retenues.**
+
+| Catégorie | Contenu |
+|---|---|
+| 1. Émissions directes | combustion de carburants et de combustibles par les installations, les véhicules et les engins de la SEMAC ; fuites de fluides frigorigènes de ses installations |
+| 2. Émissions indirectes liées à l'énergie achetée | production de l'électricité achetée et consommée par la SEMAC |
+| 3. Autres émissions indirectes retenues | achats de biens et de services (hors énergie) ; déplacements des salariés de la SEMAC entre leur domicile et leur lieu de travail ; trajets des passagers pour se rendre à l'aéroport ou en repartir ; avions sur la plateforme et à ses abords : roulage entre la piste et le poste de stationnement, stationnement au poste (groupes auxiliaires de puissance des avions), phases d'approche et d'atterrissage, de décollage et de montée initiale |
+
+Les vols eux-mêmes, au-delà de la montée initiale et jusqu'à leur destination, ne sont pas retenus : la direction considère qu'ils relèvent des compagnies, qui en publient les émissions.
+
+**Définitions retenues pour le pilotage.**
+
+- Émissions **maîtrisées** : émissions des catégories 1 et 2, qui dépendent directement des équipements et des décisions de la SEMAC. Ce sont elles que vise l'objectif du plan « Corvanne 2032 » : **émissions maîtrisées de 2032 au plus égales à la moitié de celles de 2026**.
+- Émissions **influencées** : autres émissions indirectes que la SEMAC peut réduire par ses choix (fournisseurs, organisation, équipements mis à la disposition des compagnies, offre d'accès, tarifs), sans en avoir la maîtrise.
+- Émissions **constatées** : émissions que la SEMAC mesure mais sur lesquelles elle ne dispose d'aucun levier direct, parce qu'elles dépendent des avions exploités par les compagnies et des procédures de la navigation aérienne.
+
+**Hypothèse de la trajectoire.** La trajectoire 2026-2032 est établie **à périmètre 2026 constant** : l'avenir de l'assistance en escale n'est pas encore décidé ; ses salariés et ses engins de piste restent comptés dans ceux de la SEMAC. Elle est également établie à activité 2026 constante : hors actions de réduction, les émissions de 2032 sont supposées égales à celles de 2026.
+
+### ANNEXE 3.2 – Données d'activité de 2026 et facteurs d'émission retenus pour le cas
+
+*Données rassemblées par la responsable environnement à partir des factures, des compteurs, des relevés d'exploitation et d'enquêtes. Les facteurs d'émission sont des **hypothèses du cas** (valeurs pédagogiques fictives), retenues par la SEMAC pour ce bilan.*
+
+| N° | Donnée | Donnée d'activité 2026 | Facteur d'émission (kg CO2e par unité) |
+|---:|---|---:|---:|
+| 1 | Gazole des véhicules de service et des engins de piste de la SEMAC (tracteurs et tapis à bagages, escaliers mobiles, véhicules de suivi des avions), dont 200 000 litres pour les engins de l'assistance en escale | 280 000 litres | 2,5 par litre |
+| 2 | Gazole des véhicules de sécurité incendie de la SEMAC | 40 000 litres | 2,5 par litre |
+| 3 | Gaz naturel des chaudières de l'aérogare | 9 000 MWh | 200 par MWh |
+| 4 | Gaz naturel du hangar loué à l'entreprise de maintenance des avions (compteur propre, facturé directement à l'entreprise) | 1 500 MWh | 200 par MWh |
+| 5 | Fioul du groupe électrogène de secours (essais et coupures) | 20 000 litres | 3,0 par litre |
+| 6 | Fluides frigorigènes rechargés dans les installations de climatisation de l'aérogare (fuites) | 70 kg | 2 000 par kg |
+| 7 | Électricité achetée par la SEMAC, dont 2 400 MWh refacturés aux commerces, aux restaurants et aux loueurs de voitures de l'aérogare | 14 400 MWh | 50 par MWh |
+| 8 | Achats de biens et de services hors énergie (maintenance, nettoyage, gardiennage, inspection-filtrage, fournitures) | 14 000 k€ | 100 par k€ |
+| 9 | Déplacements des salariés entre leur domicile et l'aéroport, en voiture (enquête auprès des salariés) | 2 500 000 km | 0,20 par km |
+| 10 | Trajets des passagers pour se rendre à l'aéroport ou en repartir (enquête auprès des passagers) : 40 km en moyenne par passager ; 80 % des passagers en voiture (personnelle, déposés par un proche, taxi), 20 % en transports collectifs (autocar, navette) | 1 180 000 passagers | voiture : 0,125 par passager-kilomètre ; transports collectifs : 0,025 par passager-kilomètre |
+| 11 | Roulage des avions entre la piste et le poste de stationnement | 14 400 mouvements | 150 par mouvement |
+| 12 | Groupes auxiliaires de puissance des avions au poste de stationnement (production d'électricité et de climatisation à bord, moteur du groupe alimenté en kérosène) | 7 200 escales | 250 par escale |
+| 13 | Approche et atterrissage, décollage et montée initiale des avions | 14 400 mouvements | 500 par mouvement |
+| 14 | Carburant livré aux avions par la société pétrolière de la plateforme | 36 000 m³ | — |
+| 15 | Vols au départ de Corvanne, au-delà de la montée initiale et jusqu'à destination (estimation d'une étude commandée par la communauté d'agglomération) | 210 000 t CO2e | — |
+
+Un mouvement est un atterrissage ou un décollage ; une escale comprend un atterrissage et un décollage. Un passager est compté une fois par passage à l'aéroport (à l'arrivée ou au départ) ; un passager-kilomètre est un passager transporté sur un kilomètre.
+
+**Incertitude retenue par catégorie** (part du résultat de la catégorie) : émissions maîtrisées **± 7 %** (données issues des factures et des compteurs) ; émissions influencées **± 40 %** (données d'enquête et facteurs moyens) ; émissions constatées **± 25 %** (facteurs moyens par mouvement). Par prudence, l'incertitude d'un total est la somme des incertitudes, en tonnes, des catégories qui le composent.
+
+**Conventions de calcul.** Émissions (t CO2e) = donnée d'activité × facteur d'émission / 1 000, arrondies à la tonne ; incertitudes en tonnes, arrondies à la tonne ; parts et pourcentages à deux décimales ; émissions par passager en kg CO2e à deux décimales.
+
+### ANNEXE 3.3 – Les actions de réduction proposées
+
+*Études de la responsable environnement et de la direction technique, février 2027 ; données retenues par la SEMAC (hypothèses du cas). Toutes les actions seraient en service au plus tard en 2030.*
+
+| Action | Effet attendu | Électricité supplémentaire consommée par la SEMAC | Surcoût annuel net (k€) |
+|---|---|---:|---:|
+| A1. Électrification des véhicules de service et des engins de piste (les véhicules de sécurité incendie ne sont pas concernés) | supprime 80 % du gazole de la donnée n° 1 | 800 MWh par an | 260 |
+| A2. Pompes à chaleur à la place des chaudières au gaz de l'aérogare | supprime 80 % du gaz de la donnée n° 3 | 2 400 MWh par an | 330 |
+| A3. Centrale solaire sur les ombrières des parcs de stationnement | 3 000 MWh par an produits et consommés par la SEMAC, qui n'ont plus à être achetés | — | − 60 |
+| A4. Alimentation électrique et climatisation des avions au poste de stationnement, fournies par la SEMAC | supprime 75 % des émissions des groupes auxiliaires de puissance (donnée n° 12) | 1 800 MWh par an | 378 |
+
+**Précisions.**
+
+- Le surcoût annuel net est donné par la direction financière et **est à utiliser tel quel** : il comprend l'amortissement des équipements, leur entretien et l'énergie consommée, diminués des économies de gazole, de gaz et d'électricité. Un surcoût négatif est une économie nette.
+- L'électricité supplémentaire est achetée au réseau, avec le facteur d'émission de l'annexe 3.2 ; l'électricité produite par la centrale solaire est comptée sans émission (hypothèse du cas).
+- Les compagnies ne paieraient pas l'électricité fournie aux avions au poste de stationnement pendant les deux premières années, puis un prix fixé avec elles. L'électricité fournie aux avions au poste de stationnement alimente des équipements que la SEMAC exploite : elle reste comptée dans les émissions liées à l'énergie achetée par la SEMAC, y compris lorsqu'elle est facturée aux compagnies (hypothèse du cas).
+
+**Conventions de calcul.** Tonnes évitées par une action = émissions supprimées − émissions de l'électricité supplémentaire, toutes catégories confondues, en t CO2e arrondies à la tonne. Coût de la tonne évitée = surcoût annuel net / tonnes évitées par an, en euros par t CO2e arrondis à l'euro.
+
+### ANNEXE 3.4 – Données de pilotage de l'aéroport en 2025 et en 2026
+
+| Donnée | 2025 | 2026 |
+|---|---:|---:|
+| Passagers accueillis (arrivées et départs) | 1 240 000 | 1 180 000 |
+| Chiffre d'affaires (k€) | 43 000 | 41 800 |
+| dont redevances aéronautiques (k€) | 19 900 | 19 400 |
+| Résultat d'exploitation (k€) | 3 650 | 2 480 |
+| Destinations desservies | 25 | 24 |
+| Mouvements d'avions commerciaux | 15 200 | 14 400 |
+| Départs à l'heure (moins de 15 minutes de retard, toutes causes confondues) | 6 384 | 5 904 |
+| Passagers interrogés lors de l'enquête annuelle de satisfaction | 2 000 | 2 000 |
+| dont passagers « satisfaits » ou « très satisfaits » | 1 640 | 1 560 |
+| Plaintes de riverains liées au bruit des avions | 190 | 216 |
+| Arrivées d'avions après 23 h (vols retardés) | 96 | 132 |
+| Passagers venus à l'aéroport ou repartis en transports collectifs (enquête) | 223 200 | 236 000 |
+| Émissions maîtrisées (t CO2e ; 2025 : bilan reconstitué avec la même méthode et les mêmes facteurs) | 3 472 | annexe 3.2 |
+| Emplois sur la plateforme, toutes entreprises confondues (SEMAC, compagnies, prestataires, commerces, administrations) | 1 450 | 1 380 |
+| Effectif de la SEMAC au 31 décembre | 312 | 312 |
+| Heures travaillées par les salariés de la SEMAC | 480 000 | 480 000 |
+| Accidents du travail avec arrêt (salariés de la SEMAC) | 18 | 21 |
+| Heures de formation des salariés de la SEMAC | 7 800 | 6 864 |
+
+Le nombre de départs est égal à la moitié des mouvements. Chaque compagnie fait savoir chaque année qu'elle choisit ses aéroports sur trois critères : le coût de l'escale (redevances et assistance), la rapidité et la ponctualité de l'escale, le potentiel de passagers de la zone desservie.
+
+**Objectifs du plan « Corvanne 2032 » pour 2032** : résultat d'exploitation d'au moins 3,00 € par passager ; au moins 85 % de départs à l'heure ; au moins 85 % de passagers satisfaits ; au moins 30 % des passagers venant ou repartant en transports collectifs ; émissions maîtrisées au plus égales à la moitié de celles de 2026.
+
+**Conventions de calcul.** Indicateur = numérateur / dénominateur (× 100 pour un pourcentage, × 1 000 pour une valeur pour 1 000 mouvements, × 1 000 000 / heures travaillées pour le taux de fréquence des accidents du travail) ; valeurs arrondies à deux décimales ; écart à l'objectif = valeur − objectif ; un objectif est atteint si la valeur est au moins égale à l'objectif (indicateur à faire progresser) ou au plus égale (indicateur à faire baisser).
+
+### ANNEXE 3.5 – L'acceptabilité des aéroports régionaux : article et points de vue
+
+*Extrait d'un article fictif, « Aéroports régionaux : prouver qu'on est utile », Territoires et mobilités (revue fictive), 12 janvier 2027.*
+
+Longtemps, un aéroport régional se jugeait à son trafic. Ce temps est révolu. Les riverains comptent les avions au-dessus de leur toit, les associations de défense du climat rappellent que l'essentiel des émissions d'un aéroport vient des avions qu'il accueille, et les élus des collectivités propriétaires demandent ce que la plateforme rapporte au territoire en emplois, en tourisme et en désenclavement. Plusieurs gestionnaires ont engagé des plans de réduction de leurs émissions : véhicules électriques, chauffage sans gaz, panneaux solaires, alimentation électrique des avions au sol. Les critiques jugent ces plans commodes : « Un aéroport qui réduit de moitié les émissions de ses tracteurs à bagages pendant que son trafic double n'a rien réglé », résume une militante.
+
+Les gestionnaires répondent qu'ils ne pilotent pas les avions des compagnies mais qu'ils peuvent agir sur ce qui se passe au sol et autour de la plateforme : le temps de roulage, l'usage des moteurs auxiliaires, l'accès des passagers par les transports collectifs, qui pèse souvent plus que l'exploitation de l'aérogare. Certains modulent leurs redevances selon le bruit et l'heure des vols ; d'autres publient chaque trimestre le nombre de plaintes et de vols tardifs. « La confiance se gagne avec des chiffres que l'on ne choisit pas soi-même », note le directeur d'une plateforme du Centre, qui associe un comité de riverains au choix de ses indicateurs.
+
+Reste la question de l'emploi. Un aéroport régional fait vivre plusieurs centaines de salariés sur sa plateforme, souvent dans des métiers peu qualifiés et exposés aux accidents du travail, comme la manutention des bagages. Pour beaucoup d'élus, la performance d'un aéroport se mesure d'abord aux emplois qu'il maintient et aux destinations qu'il offre.
+
+*Propos fictifs recueillis par la directrice administrative et financière en février 2027.*
+
+**Mme Clémence ARNAUDIÈS, responsable environnement de la SEMAC.** « Nos émissions maîtrisées, ce sont d'abord le gaz de l'aérogare et le gazole de nos engins. Nous pouvons les diviser par deux d'ici 2032. Mais je ne veux pas d'un bilan qui ne montrerait que ce qui nous arrange : les trajets des passagers pèsent plus lourd que tout notre parc, et l'alimentation des avions au sol fera monter notre consommation d'électricité alors qu'elle évite surtout des émissions des compagnies. »
+
+**Mme Josiane LABRUGÈRE, présidente d'une association de riverains.** « En 2026, il y a eu moins d'avions, mais plus de vols après 23 h et plus de plaintes. Une base à bas coûts, ce sont des départs à l'aube. Votre bilan carbone oublie les vols, et votre tableau de bord oubliera nos nuits si nous ne sommes pas associés au choix des indicateurs. »
+
+**M. Patrice SARRAMÉJAC, adjoint au maire d'une commune voisine, chargé de l'économie.** « Notre commune vit en partie de la plateforme : 1 380 emplois, c'est soixante-dix de moins qu'en 2025. Je veux bien des panneaux solaires, mais l'aéroport doit d'abord garder ses destinations. Et si l'on veut que les passagers viennent en autocar, il faut des autocars plus fréquents, ce que la SEMAC ne décide pas seule. »
