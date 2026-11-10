@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auditer la sécurité du SI et fonder une politique de sécurité : Institut LORVANNE : audit de sécurité et politique de sécurité après le rançongiciel de novembre 2026</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>14 points</p><p>1 h 05</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Auditer la sécurité du SI et fonder une politique de sécurité</h1><p class="cas">Institut LORVANNE : audit de sécurité et politique de sécurité après le rançongiciel de novembre 2026</p><p><strong>DOSSIER 2 – AUDITER LA SÉCURITÉ DU SI ET FONDER UNE POLITIQUE DE SÉCURITÉ (14 points)</strong></p>
+<p>Durée conseillée : 1 h 05 (14 points sur 40, pour une épreuve de 3 heures, coefficient 1 ; environ 4,5 minutes par point).</p>
+<p>Réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document et matériel autorisés</strong> : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Ce dossier est l'un des trois dossiers indépendants du sujet d'entraînement complet n° 2, construits sur un même cas : la présentation et l'annexe 1.1 sont communes aux trois dossiers ; chaque dossier comporte en outre ses propres annexes.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en avril 2027. L'Institut LORVANNE est une école de management privée, constituée en association régie par la loi du 1er juillet 1901 et créée en 1987 à Dijon. Elle forme 4 900 étudiants, dont 1 450 apprentis, dans un bachelor, un programme grande école, six mastères spécialisés et des formations courtes destinées aux cadres en activité. Elle est implantée sur trois campus : Dijon, siège de l'association (2 900 étudiants), Besançon (1 400 étudiants) et Chalon-sur-Saône, ouvert en 2023 (600 étudiants). Elle emploie 610 salariés, dont 140 enseignants-chercheurs, et fait appel chaque année à quelque 450 intervenants vacataires. Ses produits de l'exercice 2025-2026, clos le 31 août 2026, s'élèvent à 68 millions d'euros, dont 2,9 millions d'euros consacrés au système d'information. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>En juin 2026, le conseil d'administration, présidé par M. Didier LAMBRESC, a adopté le plan stratégique « LORVANNE 2030 », porté par la directrice générale, Mme Agnès FERRIOL : doubler le chiffre d'affaires de la formation des cadres grâce à une offre en ligne, développer l'apprentissage et les partenariats internationaux, améliorer l'expérience des étudiants et des entreprises partenaires. Le système d'information ne suit pas : chaque campus a gardé sa propre équipe informatique et une partie de ses applications, l'école n'a plus de directeur des systèmes d'information depuis le départ du précédent titulaire en 2025, et un rançongiciel a paralysé le campus de Besançon pendant neuf jours en novembre 2026. La plateforme pédagogique en ligne, hébergée sur les serveurs de l'école depuis 2014, arrive par ailleurs en fin de vie.</p>
+<p>Consultant(e) dans un cabinet de conseil en management des systèmes d'information, vous êtes missionné(e) par Mme FERRIOL sur trois axes : aligner la stratégie du système d'information sur le plan « LORVANNE 2030 » et refonder la gouvernance de la fonction informatique (dossier 1) ; auditer la sécurité du système d'information après l'incident de Besançon et fonder une politique de sécurité (dossier 2) ; conduire le projet de nouvelle plateforme pédagogique et en piloter les coûts (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-de-linstitut-lorvanne-et-chiffres-clés">ANNEXE 1.1 – Présentation de l'Institut LORVANNE et chiffres clés</h3>
+<p>L'Institut LORVANNE est une association régie par la loi du 1er juillet 1901, créée en 1987 à Dijon. École de management privée, il est financé par les frais de scolarité, par le financement de l'apprentissage et par la formation des cadres. Son exercice court du 1er septembre au 31 août.</p>
+<p><strong>Chiffres clés de l'exercice 2025-2026 (clos le 31 août 2026)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Étudiants</td>
+<td>4 900, dont 1 450 apprentis</td>
+</tr>
+<tr class="even">
+<td>Répartition par campus</td>
+<td>Dijon, siège de l'association : 2 900 ; Besançon : 1 400 ; Chalon-sur-Saône (ouvert en 2023) : 600</td>
+</tr>
+<tr class="odd">
+<td>Formations</td>
+<td>un bachelor, un programme grande école, six mastères spécialisés, des formations courtes destinées aux cadres en activité</td>
+</tr>
+<tr class="even">
+<td>Salariés</td>
+<td>610, dont 140 enseignants-chercheurs</td>
+</tr>
+<tr class="odd">
+<td>Intervenants vacataires</td>
+<td>environ 450 par an</td>
+</tr>
+<tr class="even">
+<td>Produits de l'exercice</td>
+<td>68 M€</td>
+</tr>
+<tr class="odd">
+<td>Budget du système d'information</td>
+<td>2,9 M€ (environ 4 % des produits)</td>
+</tr>
+<tr class="even">
+<td>Fonction informatique</td>
+<td>21 personnes : 6 au siège, 15 rattachées aux directeurs de campus</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Organigramme simplifié de la direction et de la fonction informatique (avril 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Fonction</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conseil d'administration</td>
+<td>président</td>
+<td>M. Didier LAMBRESC</td>
+</tr>
+<tr class="even">
+<td>Direction générale</td>
+<td>directrice générale, qui porte le plan « LORVANNE 2030 »</td>
+<td>Mme Agnès FERRIOL</td>
+</tr>
+<tr class="odd">
+<td>Comité de direction</td>
+<td>directrice des programmes (bachelor, programme grande école, mastères spécialisés, formation des cadres)</td>
+<td>Mme Laure ROUVIÈRE</td>
+</tr>
+<tr class="even">
+<td>Comité de direction</td>
+<td>directeur administratif et financier</td>
+<td>M. Antoine DELORMEAU</td>
+</tr>
+<tr class="odd">
+<td>Comité de direction</td>
+<td>directeur du campus de Dijon</td>
+<td>M. Rémi VERCLOS</td>
+</tr>
+<tr class="even">
+<td>Comité de direction</td>
+<td>directrice du campus de Besançon</td>
+<td>Mme Hélène MARCOIRE</td>
+</tr>
+<tr class="odd">
+<td>Comité de direction</td>
+<td>directeur du campus de Chalon-sur-Saône</td>
+<td>M. Karim SADOUNI</td>
+</tr>
+<tr class="even">
+<td>Fonction informatique du siège (6 personnes : applications de gestion, plateforme pédagogique)</td>
+<td>responsable informatique du siège ; il assure l'intérim de la direction des systèmes d'information depuis le départ du précédent directeur en 2025, sans autorité sur les équipes informatiques des campus</td>
+<td>M. Fabien CORNAVIN</td>
+</tr>
+<tr class="odd">
+<td>Fonction informatique des campus (15 personnes : support des utilisateurs et infrastructures locales)</td>
+<td>équipes rattachées aux directeurs de campus</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-21--lincident-de-novembre-2026--chronologie-et-conséquences">ANNEXE 2.1 – L'incident de novembre 2026 : chronologie et conséquences</h3>
+<p><strong>A. Chronologie (reconstituée en décembre 2026 par le prestataire de réponse aux incidents de sécurité)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Événement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mardi 3 novembre 2026</td>
+<td>Une gestionnaire du service de scolarité du campus de Besançon reçoit un courriel qui imite un avertissement de la messagerie de l'école (« votre boîte aux lettres sera désactivée ») et saisit son identifiant et son mot de passe sur la page frauduleuse indiquée.</td>
+</tr>
+<tr class="even">
+<td>Du 4 au 13 novembre</td>
+<td>L'attaquant utilise ce compte depuis l'étranger, par la messagerie en ligne et par l'accès à distance aux serveurs du campus, qui ne demandent qu'un mot de passe. Sur le serveur de fichiers, il trouve un tableur qui contient le mot de passe d'un compte d'administration utilisé en commun par les cinq informaticiens du campus. Il copie environ 40 Go de fichiers et commence à explorer les serveurs du siège, accessibles depuis le réseau du campus. Aucune alerte n'est relevée.</td>
+</tr>
+<tr class="odd">
+<td>Nuit du samedi 14 au dimanche 15 novembre</td>
+<td>Chiffrement du serveur de fichiers du campus, du serveur qui héberge l'installation du progiciel de scolarité propre au campus et de la sauvegarde en ligne de ces deux serveurs, accessible avec le même compte d'administration. Une demande de rançon est déposée sur les serveurs : l'attaquant menace de publier les fichiers copiés.</td>
+</tr>
+<tr class="even">
+<td>Lundi 16 novembre, 8 h</td>
+<td>Les premiers personnels arrivés constatent que les fichiers sont illisibles. La directrice du campus, Mme Hélène MARCOIRE, prévient M. Fabien CORNAVIN, qui fait couper à 10 h les liaisons entre le campus et le reste de l'école. Aucune procédure de crise n'existe : une cellule de crise est improvisée autour de Mme FERRIOL, de Mme MARCOIRE, de M. CORNAVIN et de M. DELORMEAU. Une plainte est déposée le jour même ; l'école décide de ne pas payer la rançon.</td>
+</tr>
+<tr class="odd">
+<td>Mardi 17 novembre</td>
+<td>Intervention d'un prestataire spécialisé dans la réponse aux incidents de sécurité.</td>
+</tr>
+<tr class="even">
+<td>Mercredi 18 novembre</td>
+<td>L'attaquant publie sur un site de divulgation un échantillon des fichiers copiés.</td>
+</tr>
+<tr class="odd">
+<td>Vendredi 20 novembre</td>
+<td>La violation de données personnelles est notifiée à l'autorité de contrôle.</td>
+</tr>
+<tr class="even">
+<td>Mardi 24 novembre</td>
+<td>Reprise des services essentiels du campus sur des serveurs reconstruits. Le serveur de fichiers repart vide. La base de scolarité du campus est restaurée à partir d'une extraction transmise au siège le 30 septembre 2026 pour les statistiques de rentrée, seule copie restée intacte.</td>
+</tr>
+<tr class="odd">
+<td>Vendredi 27 novembre</td>
+<td>Information par courriel des étudiants, des vacataires et des entreprises dont les données ont été copiées.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Conséquences de l'incident</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Domaine</th>
+<th>Conséquences</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Examens et jurys</td>
+<td>Les jurys de diplôme des mastères spécialisés du campus (180 diplômés), prévus les 19 et 20 novembre, se tiennent le 10 décembre ; 25 diplômés attendus par leur nouvel employeur reçoivent leur attestation de réussite avec trois semaines de retard. Les 2 600 copies numérisées des partiels d'octobre, que les enseignants corrigeaient à partir du serveur de fichiers, sont perdues : 2 000 sont reconstituées à partir des originaux papier ; pour les 600 autres, les étudiants concernés repassent l'épreuve en janvier 2027.</td>
+</tr>
+<tr class="even">
+<td>Scolarité</td>
+<td>Les quelque 9 000 notes saisies entre le 30 septembre et le 14 novembre sont perdues, puis ressaisies en décembre à partir des relevés des enseignants. Pendant neuf jours, le campus ne peut délivrer ni attestation de scolarité ni relevé de notes.</td>
+</tr>
+<tr class="odd">
+<td>Paie</td>
+<td>Les états d'heures de novembre des 130 vacataires du campus, tenus dans des tableurs du serveur de fichiers, sont perdus : leur rémunération est versée avec dix jours de retard. La paie des salariés, traitée au siège par le progiciel commun, est versée à la date habituelle.</td>
+</tr>
+<tr class="even">
+<td>Apprentissage</td>
+<td>La facturation des contrats des 550 apprentis du campus prévue en novembre (environ 1,3 M€) est émise avec cinq semaines de retard, faute d'accès aux justificatifs d'assiduité conservés sur le serveur de fichiers.</td>
+</tr>
+<tr class="odd">
+<td>Données personnelles</td>
+<td>Les fichiers copiés comprennent l'identité, les coordonnées et les résultats des 1 400 étudiants du campus, les contrats des apprentis avec les coordonnées de 420 entreprises employeuses, ainsi que les relevés d'identité bancaire des vacataires.</td>
+</tr>
+<tr class="even">
+<td>Coût et image</td>
+<td>Coût direct estimé à 0,3 M€ (prestataire de réponse à incident, matériels remplacés, heures supplémentaires), hors temps passé par les équipes. Plusieurs entreprises employeuses d'apprentis ont demandé par écrit quelles mesures l'école avait prises.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. Témoignages (recueillis en mars 2027)</strong></p>
+<p><strong>Mme Agnès FERRIOL, directrice générale</strong> : « En décembre, le conseil d'administration m'a demandé qui était responsable de la sécurité à l'école : je n'ai pas su répondre. Je veux un diagnostic objectif pour le conseil de juin et une organisation claire. »</p>
+<p><strong>Mme Hélène MARCOIRE, directrice du campus de Besançon</strong> : « Mes cinq informaticiens ont travaillé jour et nuit pour remettre le campus debout. Le tableur des mots de passe servait à se dépanner quand l'un d'eux était absent. Si l'audit sert à désigner des coupables, vous n'obtiendrez pas grand-chose de mes équipes. »</p>
+<p><strong>Mme Nathalie QUERVEL, responsable de la scolarité du campus de Besançon</strong> : « Pendant neuf jours, nous avons travaillé sur des listes papier. Personne ne savait ce qui passait en premier : les jurys, les attestations réclamées par les apprentis ou les relevés de notes attendus par nos universités partenaires. En décembre, nous avons tout ressaisi à la main. »</p>
+<p><strong>Mme Isabelle TRÉVANS, juriste du siège, déléguée à la protection des données</strong> : « J'ai appris l'incident le jeudi 19 novembre. Il a fallu reconstituer les données touchées sans registre à jour, d'où une notification le vendredi. Je consacre à cette fonction un dixième de mon temps. »</p>
+<p><strong>M. Antoine DELORMEAU, directeur administratif et financier</strong> : « Je découvre que nos sauvegardes n'avaient jamais été restaurées pour de vrai. Je veux bien financer la sécurité, mais je veux savoir ce que nous achetons et comment nous saurons que cela fonctionne. »</p>
+<p><strong>M. Fabien CORNAVIN, responsable informatique du siège</strong> : « Au siège, nous testons une restauration de temps en temps ; la dernière date de 2023. Chaque campus a ses comptes, ses sauvegardes et ses règles. Je n'ai ni le mandat ni le temps d'imposer une politique de sécurité, et il n'en existe pas d'écrite. Je compte bien participer à l'audit : je connais l'existant mieux que personne. »</p>
+<h3 id="annexe-22--audit-flash-de-la-sécurité-février-2027-et-lettre-de-mission">ANNEXE 2.2 – Audit flash de la sécurité (février 2027) et lettre de mission</h3>
+<p><strong>A. Constats de l'audit flash</strong> (réalisé en deux semaines, en février 2027, par le prestataire de réponse aux incidents, sur le siège et les trois campus)</p>
+<table>
+<thead>
+<tr class="header">
+<th>N°</th>
+<th>Domaine</th>
+<th>Constat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Comptes des utilisateurs</td>
+<td>Trois annuaires de comptes distincts, un par campus. 1 200 comptes d'intervenants vacataires sont actifs ; seuls 450 d'entre eux correspondent à un vacataire qui intervient en 2026-2027 ; les plus anciens de ces comptes datent de 2018. Aucune procédure ne prévoit la désactivation d'un compte à la fin d'une vacation ou au départ d'un salarié : chaque campus crée les comptes à la demande et ne les supprime jamais.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Authentification</td>
+<td>Aucune authentification multifacteur, ni pour la messagerie en ligne, ni pour l'accès à distance, ni pour les comptes d'administration. Après l'incident, les mots de passe n'ont été changés qu'à Besançon.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Comptes d'administration</td>
+<td>Neuf comptes d'administration génériques sont partagés par les 21 informaticiens de l'école ; deux d'entre eux ont le même mot de passe sur les trois campus. Aucune opération d'administration ne peut être attribuée à une personne.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Cloisonnement</td>
+<td>Sur chaque campus, les postes en libre-service des étudiants, les postes des services administratifs et les serveurs partagent le même réseau, relié sans cloisonnement à ceux des autres campus et du siège.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Sauvegardes</td>
+<td>Les sauvegardes de chaque campus sont copiées sur un service en ligne accessible avec les comptes d'administration ordinaires ; il n'existe aucune copie déconnectée. Aucun test de restauration n'a jamais été réalisé sur les campus ; au siège, le dernier date de 2023. À Besançon, la base de scolarité n'était sauvegardée qu'une fois par semaine.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Continuité</td>
+<td>Ni plan de continuité ni plan de reprise d'activité ; aucune liste des processus critiques ni des délais d'interruption qu'ils supportent ; aucune procédure de gestion de crise.</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Gouvernance et sensibilisation</td>
+<td>Aucun responsable de la sécurité des systèmes d'information n'est désigné et aucune politique de sécurité n'est écrite. La charte informatique de 2015 est signée par les salariés, mais ni par les vacataires ni par les étudiants. Dernière action de sensibilisation : 2020. Lors d'un exercice d'hameçonnage simulé mené en février 2027 auprès des 610 salariés, 120 ont cliqué sur le lien et 60 ont saisi leur mot de passe.</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Inventaire et données personnelles</td>
+<td>L'inventaire tenu au siège recense 38 applications ; l'audit flash en identifie 55, dont des services en ligne souscrits par les campus ou par des enseignants sans validation. Le registre des activités de traitement, tenu par la déléguée à la protection des données désignée en 2019, compte 22 traitements et n'a pas été mis à jour depuis 2021 ; il ne mentionne pas le logiciel de gestion des relations avec les entreprises utilisé en mode SaaS par le campus de Besançon.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Lettre de mission de Mme FERRIOL au cabinet (1er avril 2027)</strong></p>
+<ul>
+<li>Objet : évaluer la gouvernance de la sécurité, le niveau de sécurité et la capacité de continuité du système d'information de l'école ; proposer une politique de sécurité et un plan d'action priorisé.</li>
+<li>Durée : huit semaines, du lundi 12 avril au vendredi 4 juin 2027 ; restitution au conseil d'administration le jeudi 24 juin 2027.</li>
+<li>Moyens : deux consultants du cabinet ; accès aux documents, aux personnes et aux sites ; M. CORNAVIN est l'interlocuteur désigné.</li>
+<li>Demande du conseil d'administration : que le rapport précise « qui est responsable de quoi ».</li>
+</ul>
+<h3 id="annexe-23--repères-réglementaires-et-méthodologiques-au-31122026-et-échelle-de-cotation-des-risques">ANNEXE 2.3 – Repères réglementaires et méthodologiques (au 31/12/2026) et échelle de cotation des risques</h3>
+<p><strong>A. Textes et référentiels</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Texte ou référentiel</th>
+<th>Nature et objet</th>
+<th>Situation au 31/12/2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>Protection des données personnelles. Le responsable du traitement met en œuvre des mesures de sécurité appropriées au risque et tient un registre des activités de traitement ; le délégué à la protection des données, lorsqu'il est désigné, informe et conseille le responsable du traitement et contrôle le respect du règlement. Toute violation de données personnelles présentant un risque est notifiée à l'autorité de contrôle dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance ; les personnes concernées sont informées si le risque est élevé ; toutes les violations sont consignées dans un registre interne.</td>
+<td>Applicable depuis le 25/05/2018</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27001:2022</td>
+<td>Norme d'exigences, certifiable, d'un système de management de la sécurité de l'information : engagement de la direction, appréciation et traitement des risques, mesure de l'efficacité, amélioration continue. Son annexe A comporte 93 mesures (organisationnelles, liées aux personnes, physiques et technologiques), détaillées par le guide ISO/IEC 27002:2022.</td>
+<td>En vigueur ; la version de 2013 est remplacée</td>
+</tr>
+<tr class="odd">
+<td>ISO 22301:2019</td>
+<td>Norme d'exigences d'un système de management de la continuité d'activité.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="even">
+<td>COBIT 2019 (ISACA)</td>
+<td>Référentiel de gouvernance et de management de l'informatique : 40 objectifs répartis en cinq domaines (évaluer, diriger et surveiller ; aligner, planifier et organiser ; bâtir, acquérir et mettre en œuvre ; délivrer, servir et soutenir ; surveiller, évaluer et apprécier).</td>
+<td>En vigueur</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique de l'ANSSI (version de 2017)</td>
+<td>Guide de 42 mesures de sécurité de base, de niveau standard ou renforcé, destiné à toute organisation.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="even">
+<td>EBIOS Risk Manager (ANSSI, version 1.5 de 2024)</td>
+<td>Méthode d'appréciation et de traitement des risques numériques, en cinq ateliers, compatible avec la norme ISO/IEC 27005:2022.</td>
+<td>En vigueur</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Échelle de cotation des risques retenue par l'école</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Note</th>
+<th>Probabilité</th>
+<th>Gravité</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Rare : moins d'une occurrence en dix ans</td>
+<td>Mineure : gêne interne, sans effet sur les étudiants ni sur les partenaires</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Possible : une occurrence en dix ans</td>
+<td>Significative : activité d'un campus perturbée moins de deux jours, sans perte ni divulgation de données</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Probable : une occurrence en trois ans</td>
+<td>Grave : activité d'un campus interrompue plusieurs jours, ou perte ou divulgation de données personnelles</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Quasi certaine : au moins une occurrence par an</td>
+<td>Critique : processus critique de plusieurs campus interrompu plus d'une semaine, divulgation massive de données personnelles ou atteinte durable à la réputation de l'école</td>
+</tr>
+</tbody>
+</table>
+<p>Niveau de risque = probabilité × gravité : de 1 à 3, faible (risque accepté et surveillé) ; de 4 à 6, modéré (traitement planifié dans l'année) ; 8 ou 9, élevé (traitement prioritaire dans les six mois) ; 12 ou 16, critique (traitement immédiat, suivi par la direction générale).</p>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>Mme FERRIOL vous confie l'audit de la sécurité du système d'information et la préparation d'une politique de sécurité, dont les conclusions seront présentées au conseil d'administration du 24 juin 2027. Vous mobiliserez pour cela les annexes 1.1, 2.1, 2.2 et 2.3 ainsi que vos connaissances professionnelles.</p>
+<p><strong>2.1 – Méthodologie de la mission d'audit (4 points)</strong></p>
+<p>a) Après avoir défini l'audit du système d'information, présentez la méthodologie de la mission que vous conduirez à l'Institut LORVANNE : périmètre et objectifs, trois référentiels de l'annexe 2.3 en précisant ce que chacun apporte à la mission, étapes et livrables.</p>
+<p>b) Indiquez quatre critères de performance ou de conformité que la mission évaluera, en illustrant chacun par un point de contrôle tiré des annexes.</p>
+<p>c) Présentez deux facteurs de succès et deux points de vigilance propres à cette mission d'audit.</p>
+<p><strong>2.2 – Analyse des risques révélés par l'incident (3 points)</strong></p>
+<p>a) Classez les risques révélés par l'incident et par l'audit flash selon la typologie des risques du système d'information (cybermenaces, défaillances opérationnelles, risques réglementaires, risques métiers), en illustrant chaque catégorie par des faits des annexes.</p>
+<p>b) Après avoir défini l'analyse d'impact sur l'activité, analysez l'impact de l'incident sur quatre processus critiques de l'école et sur la continuité de ses activités.</p>
+<p>c) Cotez cinq risques sur l'échelle de l'annexe 2.3 en justifiant la probabilité et la gravité retenues, puis indiquez les risques à traiter en priorité.</p>
+<p><strong>2.3 – Politique de sécurité et continuité (4 points)</strong></p>
+<p>a) Après avoir rappelé les objectifs de la sécurité de l'information, présentez les principes d'une politique de sécurité du système d'information fondée sur l'analyse des risques et adaptée à l'Institut LORVANNE.</p>
+<p>b) Proposez quatre mesures prioritaires — gestion des identités et des accès sur tout le cycle de vie des comptes, authentification, segmentation, sauvegardes — en précisant pour chacune son principe, sa pertinence au regard de l'annexe 2.2 et un indicateur d'efficacité (formule, source, fréquence, cible et axe du tableau de bord prospectif).</p>
+<p>c) Distinguez le plan de continuité d'activité (PCA) et le plan de reprise d'activité (PRA), puis fixez, en les définissant, un RTO et un RPO justifiés pour deux processus de l'école.</p>
+<p><strong>2.4 – Note de synthèse au conseil d'administration (3 points)</strong></p>
+<p>Rédigez, à l'attention du conseil d'administration présidé par M. LAMBRESC, une note de synthèse de 20 lignes au maximum qui présente le diagnostic d'audit établi à partir des annexes (appréciation globale et trois constats majeurs), les priorités d'action assorties d'une échéance, et la répartition des rôles et des responsabilités dans la gouvernance de la sécurité entre le conseil d'administration, la direction générale, le futur responsable de la sécurité des systèmes d'information (RSSI), la déléguée à la protection des données, les propriétaires des processus et les directeurs de campus.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

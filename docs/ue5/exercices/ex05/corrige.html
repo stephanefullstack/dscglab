@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Auditer la sécurité du SI et fonder une politique de sécurité : Institut LORVANNE : audit de sécurité et politique de sécurité après le rançongiciel de novembre 2026</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>14 points</p><p>1 h 05</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Auditer la sécurité du SI et fonder une politique de sécurité</h1><p class="cas">Institut LORVANNE : audit de sécurité et politique de sécurité après le rançongiciel de novembre 2026</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F02 gouvernance et référentiels, F10 audit du SI, F12 sécurité et résilience, F15 RGPD opérationnel, et la base des référentiels datés (vérifiés les 25 et 26/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Les tests techniques de sécurité, le paramétrage des équipements, la démarche de certification d'une norme, l'analyse juridique du RGPD au-delà du délégué à la protection des données, du registre et de la notification de l'annexe 2.3, ainsi que toute évaluation de l'incidence de l'incident sur les comptes de l'école, sont hors programme et ne sont pas attendus. La répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Méthodologie de la mission d'audit</td>
+<td><code>3.2.a</code> Conduire des missions d'audit et de contrôle des systèmes d'information afin d'évaluer leur performance, leur conformité réglementaire et la qualité de leur gouvernance ; <code>3.2.b</code> Méthodologies d'audit SI : cartographie des processus, évaluation des risques, contrôles internes ; <code>3.2.c</code> Critères de performance et de conformité : fiabilité, efficacité, sécurité, conformité RGPD, etc. ; <code>3.2.e</code> Facteurs de succès et points de vigilance spécifiques à l'audit SI</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>2.2 Analyse des risques révélés par l'incident</td>
+<td><code>4.1.a</code> Détecter, évaluer et traiter les risques associés aux systèmes d'information, en intégrant les dimensions réglementaires, éthiques et technologiques, y compris les apports de l'IA ; <code>4.1.b</code> Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers ; <code>4.1.c</code> Méthodes d'analyse d'impact sur les processus, la continuité de service et les états financiers ; <code>4.1.d</code> Référentiels et cadres réglementaires : RGPD, NEP, ISO 27001, etc.</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>2.3 Politique de sécurité et continuité</td>
+<td><code>4.2.a</code> Définir et piloter une politique de sécurité du SI, en intégrant les enjeux de cybersécurité, de résilience organisationnelle et de gouvernance des systèmes critiques ; <code>4.2.b</code> Élaboration d'une politique de cybersécurité fondée sur l'analyse des risques ; <code>4.2.c</code> Notions d'architecture de confiance (authentification, chiffrement, segmentation) ; <code>4.2.d</code> Dispositifs de surveillance et de résilience : IAM, PCA/PRA</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>2.4 Note de synthèse au conseil d'administration</td>
+<td><code>3.2.d</code> Techniques de rédaction d'un diagnostic d'audit et d'une note de synthèse ; <code>4.2.e</code> Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 2 – Auditer la sécurité du SI et fonder une politique de sécurité</strong></td>
+<td></td>
+<td><strong>14</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (définitions de l'audit du SI, de l'analyse d'impact sur l'activité, des objectifs de sécurité, du PCA et du PRA : items 2.1 a-1, 2.2 b-1, 2.3 a-1 et c-1) 2 points, la typologie des risques et les notions de RTO et de RPO étant notées avec leur application au cas ; analyse des annexes et recommandations 12 points. Durée conseillée : 14 points × 4,5 minutes ≈ 1 h 05.</p>
+<hr />
+<h3 id="21--méthodologie-de-la-mission-daudit-4-points">2.1 – Méthodologie de la mission d'audit (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.2 – Auditer, contrôler et évaluer la performance et la conformité des systèmes d'information : <code>3.2.a</code> « Conduire des missions d'audit et de contrôle des systèmes d'information afin d'évaluer leur performance, leur conformité réglementaire et la qualité de leur gouvernance » ; <code>3.2.b</code> « Méthodologies d'audit SI : cartographie des processus, évaluation des risques, contrôles internes » ; <code>3.2.c</code> « Critères de performance et de conformité : fiabilité, efficacité, sécurité, conformité RGPD, etc. » ; <code>3.2.e</code> « Facteurs de succès et points de vigilance spécifiques à l'audit SI ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (organisation de l'école et de la fonction informatique), 2.1 (incident et témoignages), 2.2 (audit flash, lettre de mission) et 2.3 (référentiels).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Audit du SI défini : examen indépendant et méthodique, au regard d'un référentiel, de la gouvernance, de la performance, de la sécurité et de la conformité du SI, conclu par des recommandations</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Périmètre (siège et trois campus, domaines retenus) et objectifs tirés de la lettre de mission</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Trois référentiels de l'annexe 2.3, chacun avec son apport distinct (gouvernance, sécurité, risques ou continuité, conformité)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Étapes ordonnées et livrables, calés sur les huit semaines et la restitution du 24 juin 2027</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Quatre critères de performance ou de conformité, chacun illustré par un point de contrôle tiré des annexes (0,5 par paire de critères)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Deux facteurs de succès propres à la mission</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Deux points de vigilance propres à la mission</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>2.1 a) – Définition et méthodologie de la mission</em></p>
+<p>L'audit du système d'information est un examen indépendant et méthodique qui apprécie, au regard d'un référentiel (norme, référentiel de bonnes pratiques, texte, politique interne), la gouvernance, la performance, la sécurité et la conformité du SI, et qui débouche sur des constats étayés et des recommandations hiérarchisées. Ici, il s'agit d'un audit externe contractuel, commandé par la directrice générale, à distinguer de l'audit légal (0,5 pt).</p>
+<p>Périmètre et objectifs (0,5 pt) :</p>
+<ul>
+<li><strong>périmètre</strong> : le siège et les trois campus, puisque l'audit flash montre que les faiblesses de Besançon (comptes partagés, sauvegardes accessibles, absence de cloisonnement) existent partout (annexe 2.2) ; domaines retenus : gouvernance de la sécurité (rôles, politique, charte), gestion des identités et des accès, authentification, cloisonnement, sauvegardes et continuité, conformité au RGPD (délégué, registre, procédure de violation), inventaire des applications et services en ligne souscrits hors validation ; processus critiques étudiés : examens et jurys, scolarité, paie, facturation de l'apprentissage ;</li>
+<li><strong>objectifs</strong> (lettre de mission) : évaluer la gouvernance de la sécurité, le niveau de sécurité et la capacité de continuité ; proposer une politique de sécurité et un plan d'action priorisé ; répondre à la demande du conseil d'administration sur « qui est responsable de quoi ».</li>
+</ul>
+<p>Trois référentiels de l'annexe 2.3, d'utilité distincte (0,5 pt) :</p>
+<ul>
+<li><strong>COBIT 2019</strong> (référentiel de gouvernance) : il sert à apprécier la gouvernance de la sécurité et de la continuité (qui évalue, dirige et surveille : domaine « évaluer, diriger et surveiller » ; organisation et processus des domaines « aligner, planifier et organiser » et « délivrer, servir et soutenir ») et à poser la question des responsabilités soulevée par le conseil ;</li>
+<li><strong>ISO/IEC 27001:2022</strong> (norme d'exigences d'un système de management de la sécurité) et ses 93 mesures détaillées par ISO/IEC 27002:2022 : elle fournit la grille d'évaluation des mesures de sécurité (contrôle d'accès, authentification, sauvegardes, sensibilisation, gestion des incidents) et la logique d'amélioration continue sur laquelle fonder la future politique, sans viser une certification à ce stade ;</li>
+<li><strong>EBIOS Risk Manager</strong> (méthode d'appréciation des risques de l'ANSSI) : elle structure l'analyse des scénarios de risque (sources de risque, scénarios, traitement) qui fondera les priorités ; à défaut, le <strong>guide d'hygiène informatique de l'ANSSI</strong> (42 mesures de base) donne un socle rapide à confronter aux constats, et <strong>ISO 22301:2019</strong> la référence pour la continuité ; le <strong>RGPD</strong> est le référentiel de conformité pour les données personnelles.</li>
+</ul>
+<p>Étapes et livrables, sur huit semaines du 12 avril au 4 juin 2027 (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Semaines</th>
+<th>Contenu à LORVANNE</th>
+<th>Livrable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Cadrage</td>
+<td>1</td>
+<td>réunion de lancement avec Mme FERRIOL, comité de pilotage (directrice générale, directeurs de campus, M. DELORMEAU, M. CORNAVIN, déléguée à la protection des données), confirmation du périmètre et des référentiels, calendrier des entretiens</td>
+<td>note de cadrage validée</td>
+</tr>
+<tr class="even">
+<td>2. Prise de connaissance</td>
+<td>1 à 2</td>
+<td>entretiens (directeurs de campus, responsables de scolarité, paie, apprentissage, informaticiens), revue des documents existants (charte de 2015, registre de 2021, rapport du prestataire de réponse à incident, audit flash), inventaire des applications</td>
+<td>cartographie des processus critiques et des applications</td>
+</tr>
+<tr class="odd">
+<td>3. Analyse des risques</td>
+<td>3</td>
+<td>scénarios de risque et cotation sur l'échelle de l'annexe 2.3</td>
+<td>cartographie des risques</td>
+</tr>
+<tr class="even">
+<td>4. Programme de travail</td>
+<td>3</td>
+<td>points de contrôle par domaine : désactivation des comptes, comptes d'administration, authentification, sauvegardes et restauration, procédure de violation, registre</td>
+<td>programme de travail</td>
+</tr>
+<tr class="odd">
+<td>5. Collecte et évaluation</td>
+<td>4 à 6</td>
+<td>revue documentaire, entretiens, revue des comptes actifs sur échantillon, observation d'une restauration et d'un exercice de crise, contrôle du registre</td>
+<td>feuilles de constats (constat, cause, risque, recommandation, priorité, responsable, échéance)</td>
+</tr>
+<tr class="even">
+<td>6. Restitution</td>
+<td>7 à 8</td>
+<td>validation contradictoire des constats avec les audités, puis restitution à la direction générale</td>
+<td>rapport détaillé, note de synthèse au conseil, plan d'action priorisé</td>
+</tr>
+<tr class="odd">
+<td>7. Suivi</td>
+<td>après le 24 juin</td>
+<td>revue de l'avancement du plan d'action, audit de suivi à six mois</td>
+<td>tableau de suivi du plan d'action</td>
+</tr>
+</tbody>
+</table>
+<p><em>2.1 b) – Critères de performance et de conformité</em></p>
+<p>Quatre critères parmi les suivants, chacun illustré (1 pt, 0,5 par paire) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Point de contrôle tiré des annexes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sécurité, volet confidentialité</td>
+<td>les comptes sont-ils désactivés à la fin d'une vacation ? (1 200 comptes de vacataires actifs pour 450 vacataires en activité)</td>
+</tr>
+<tr class="even">
+<td>Sécurité, volet traçabilité</td>
+<td>chaque opération d'administration est-elle attribuable à une personne ? (neuf comptes génériques partagés)</td>
+</tr>
+<tr class="odd">
+<td>Disponibilité et efficacité des mesures de résilience</td>
+<td>les sauvegardes sont-elles isolées et restaurables dans le délai requis ? (aucun test sur les campus ; sauvegarde en ligne chiffrée avec les serveurs)</td>
+</tr>
+<tr class="even">
+<td>Fiabilité et intégrité des données</td>
+<td>les notes et les copies sont-elles protégées contre la perte ? (9 000 notes et 2 600 copies perdues)</td>
+</tr>
+<tr class="odd">
+<td>Conformité au RGPD</td>
+<td>registre à jour et complet, délégué disposant des moyens nécessaires, procédure de notification des violations dans les 72 heures (registre de 2021, logiciel des relations entreprises absent, notification le 20 novembre pour une découverte le 16)</td>
+</tr>
+<tr class="even">
+<td>Conformité aux règles internes</td>
+<td>la charte est-elle signée par tous les utilisateurs ? (ni vacataires ni étudiants)</td>
+</tr>
+<tr class="odd">
+<td>Efficience</td>
+<td>les moyens consacrés à la sécurité sont-ils proportionnés aux risques ? (0,3 M€ de coût direct de l'incident, environ 10 % du budget annuel du SI, à mettre en regard du coût des mesures ; M. DELORMEAU veut « savoir ce que nous achetons »)</td>
+</tr>
+<tr class="even">
+<td>Gouvernance</td>
+<td>les responsabilités sont-elles définies ? (aucun responsable de la sécurité, aucune politique écrite)</td>
+</tr>
+</tbody>
+</table>
+<p><em>2.1 c) – Facteurs de succès et points de vigilance</em></p>
+<p>Deux facteurs de succès parmi (0,5 pt) :</p>
+<ul>
+<li>un <strong>commanditaire</strong> au plus haut niveau : Mme FERRIOL et le conseil, qui attend une réponse sur les responsabilités, donnent à la mission l'autorité qui manque à M. CORNAVIN sur les campus ;</li>
+<li>l'<strong>adhésion des audités</strong> : présenter l'audit comme une démarche d'amélioration et non comme la recherche de coupables, comme le craint Mme MARCOIRE ; valider les constats de façon contradictoire ;</li>
+<li>l'<strong>accès</strong> aux personnes, aux documents et aux sites des trois campus, prévu par la lettre de mission ;</li>
+<li>des <strong>compétences pluridisciplinaires</strong> : sécurité, continuité, métiers de la scolarité et de l'apprentissage, protection des données ;</li>
+<li>un <strong>plan d'action</strong> suivi après la restitution, avec responsables et échéances.</li>
+</ul>
+<p>Deux points de vigilance parmi (0,5 pt) :</p>
+<ul>
+<li>l'<strong>indépendance</strong> : M. CORNAVIN, interlocuteur désigné, « compte bien participer à l'audit » alors que la mission évalue aussi son périmètre ; il facilite l'accès mais ne peut ni conduire les entretiens ni valider seul les constats ; même vigilance à l'égard du prestataire de réponse à incident, auteur de l'audit flash ;</li>
+<li>un <strong>périmètre réaliste</strong> : quatre sites et huit semaines imposent de concentrer la collecte sur les processus critiques et sur les sauvegardes ;</li>
+<li>la <strong>confidentialité</strong> des constats : le rapport décrit des faiblesses exploitables ; diffusion restreinte et version de synthèse pour le conseil ;</li>
+<li>la <strong>posture critique sur la gouvernance</strong> : ne pas réduire l'audit à une liste de défauts techniques ; l'incident révèle d'abord l'absence de responsable et de règles communes ;</li>
+<li>le <strong>respect du programme</strong> : l'audit s'appuie sur des entretiens, des revues documentaires et des observations ; il ne prévoit pas de tests techniques de sécurité, qui seraient confiés si nécessaire à un prestataire spécialisé.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Choix d'autres référentiels de l'annexe 2.3 (guide d'hygiène informatique de l'ANSSI à la place d'EBIOS Risk Manager, ISO 22301:2019 pour la continuité, RGPD pour la conformité) dès lors que leurs apports sont distingués ; mention d'ITIL pour la gestion des incidents, si elle est justifiée.</li>
+<li>Découpage en cinq ou six étapes, ou échéancier présenté sous forme de diagramme de Gantt, s'il tient dans les huit semaines et respecte la restitution du 24 juin.</li>
+<li>Critère de « conformité aux engagements contractuels des prestataires » (contrat du logiciel de relations entreprises en mode SaaS) en remplacement d'un critère attendu.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Méthodologie d'audit incomplète</em> (<code>JUR-A01</code>) — périmètre, livrables ou échéancier absents ; juste : périmètre, objectifs, référentiels, étapes, livrables et calendrier de huit semaines.</li>
+<li><em>Référentiel de gouvernance confondu avec un référentiel de sécurité</em> (<code>JUR-G04</code>, <code>ET-11</code>) — « COBIT 2019 pour la sécurité, ISO 27001 pour la gouvernance » ; juste : COBIT 2019 évalue la gouvernance et les processus, ISO/IEC 27001:2022 les exigences de sécurité.</li>
+<li><em>Norme, référentiel, méthode et solution confondus</em> (<code>JUR-S06</code>, <code>ET-01</code>) — « installer ISO 27001 » ou présenter EBIOS Risk Manager comme un logiciel ; juste : ISO/IEC 27001:2022 est une norme d'exigences, COBIT 2019 un référentiel, EBIOS Risk Manager une méthode.</li>
+<li><em>Audit du SI confondu avec l'audit légal</em> (<code>ET-34</code>) — mission présentée comme un contrôle des comptes ; juste : audit externe contractuel de gouvernance, de sécurité et de conformité du SI.</li>
+<li><em>Tests techniques proposés comme diligences</em> (F10, piège 3) — hors programme (partie 3.2) ; juste : entretiens, revues documentaires, revue de comptes sur échantillon, observation.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Audit du SI : définition, démarche, livrables</td>
+<td>étapes, feuilles de constats, note de synthèse</td>
+<td>F10 § 1</td>
+<td>guide p. 266 ; rapport du jury 2025 p. 35</td>
+</tr>
+<tr class="even">
+<td>COBIT 2019 (ISACA)</td>
+<td>gouvernance et management, cinq domaines</td>
+<td><code>cobit_2019</code> ; F02 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO/IEC 27001:2022 ; ISO/IEC 27002:2022</td>
+<td>SMSI, 93 mesures de l'annexe A</td>
+<td><code>iso_27001_2022</code>, <code>iso_27002_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>EBIOS Risk Manager (ANSSI, v1.5, 2024)</td>
+<td>méthode d'appréciation des risques en cinq ateliers</td>
+<td><code>ebios_rm_1_5</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique (ANSSI, 2017)</td>
+<td>42 mesures de base</td>
+<td><code>guide_hygiene_anssi_2017</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>ISO 22301:2019</td>
+<td>management de la continuité d'activité</td>
+<td><code>iso_22301_2019</code> ; F12 § 4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>RGPD, règlement (UE) 2016/679</td>
+<td>registre, délégué, notification des violations</td>
+<td><code>rgpd</code> ; F15 § 1, 2, 6</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--analyse-des-risques-révélés-par-lincident-3-points">2.2 – Analyse des risques révélés par l'incident (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.a</code> « Détecter, évaluer et traiter les risques associés aux systèmes d'information, en intégrant les dimensions réglementaires, éthiques et technologiques, y compris les apports de l'IA » ; <code>4.1.b</code> « Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers » ; <code>4.1.c</code> « Méthodes d'analyse d'impact sur les processus, la continuité de service et les états financiers » ; <code>4.1.d</code> « Référentiels et cadres réglementaires : RGPD, NEP, ISO 27001, etc. ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.1 (chronologie, conséquences, témoignages), 2.2 (audit flash) et 2.3 (RGPD, échelle de cotation).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Cybermenaces et défaillances opérationnelles, illustrées par les annexes</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Risques réglementaires et risques métiers, illustrés par les annexes</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Analyse d'impact sur l'activité définie (processus critiques, effets d'une interruption dans le temps, délais tolérables)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Impacts sur quatre processus critiques et sur la continuité, étayés par les chiffres de l'annexe 2.1</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Cinq risques cotés, probabilité et gravité justifiées par les annexes</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Priorités déduites de l'échelle (risques critiques puis élevés)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>2.2 a) – Typologie des risques</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Catégorie</th>
+<th>Risques révélés à LORVANNE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cybermenaces</td>
+<td>hameçonnage d'un compte de la scolarité (60 salariés sur 610 ont encore saisi leur mot de passe lors de l'exercice simulé de février 2027) ; rançongiciel avec copie des données puis publication d'un échantillon (double extorsion) ; mouvements de l'attaquant vers le siège ; risque d'usurpation des 750 comptes d'anciens vacataires encore actifs</td>
+</tr>
+<tr class="even">
+<td>Défaillances opérationnelles</td>
+<td>sauvegardes accessibles avec les comptes d'administration ordinaires et chiffrées avec les serveurs, jamais testées ; sauvegarde hebdomadaire seulement de la scolarité de Besançon ; mot de passe d'administration conservé dans un tableur ; absence de surveillance (onze jours de présence de l'attaquant sans alerte) ; absence de procédure de crise</td>
+</tr>
+<tr class="odd">
+<td>Risques réglementaires</td>
+<td>violation de données personnelles (1 400 étudiants, 420 entreprises, relevés bancaires des vacataires) notifiée le 20 novembre pour une découverte le 16, soit au-delà des 72 heures ; registre des traitements non tenu à jour depuis 2021 et incomplet ; délégué à la protection des données disposant d'un dixième de son temps</td>
+</tr>
+<tr class="even">
+<td>Risques métiers</td>
+<td>jurys de diplôme reportés de trois semaines, épreuves à repasser, relevés et attestations impossibles à délivrer, rémunération des vacataires retardée, facturation de l'apprentissage retardée de cinq semaines, perte de confiance des entreprises employeuses et des étudiants, alors que le plan « LORVANNE 2030 » vise à développer l'apprentissage et l'expérience des étudiants et des entreprises</td>
+</tr>
+</tbody>
+</table>
+<p><em>2.2 b) – Analyse d'impact sur l'activité</em></p>
+<p>L'analyse d'impact sur l'activité (<em>business impact analysis</em>) recense les processus critiques de l'organisation, mesure les effets d'une interruption ou d'une perte de données dans le temps (pédagogiques, financiers, réglementaires, d'image), identifie leurs dépendances (applications, données, personnes, prestataires) et en déduit la durée d'interruption et la perte de données tolérables, qui fondent le PCA et le PRA (0,5 pt).</p>
+<p>Impacts de l'incident sur quatre processus critiques (0,5 pt, avec la continuité) :</p>
+<ul>
+<li><strong>examens et jurys</strong> : perte des 2 600 copies numérisées (600 irrécupérables, épreuves repassées en janvier 2027) et report de trois semaines des jurys de 180 diplômés de mastère spécialisé ; l'impact dépend du calendrier : maximal en période de jurys ;</li>
+<li><strong>scolarité</strong> : perte de 9 000 notes, soit environ six semaines de saisies, parce que la seule copie intacte datait du 30 septembre ; neuf jours sans attestation ni relevé, au détriment des apprentis et des échanges internationaux (témoignage de Mme QUERVEL) ;</li>
+<li><strong>paie</strong> : paie des salariés préservée parce qu'elle est traitée au siège, mais rémunération des 130 vacataires du campus versée avec dix jours de retard, les états d'heures étant tenus dans des tableurs locaux ;</li>
+<li><strong>facturation des contrats d'apprentissage</strong> : facturation d'environ 1,3 M€ émise avec cinq semaines de retard, faute d'accès aux justificatifs d'assiduité ; relation avec 420 entreprises employeuses fragilisée.</li>
+</ul>
+<p>Continuité : aucun processus critique ni délai tolérable n'avait été défini ; il n'existait ni mode dégradé (listes papier improvisées, sans priorités), ni sauvegarde isolée permettant une reprise, ni cellule de crise. L'impact a été contenu au campus de Besançon par la coupure des liaisons le 16 novembre ; mais le réseau non cloisonné et les comptes d'administration communs exposent le siège et les autres campus, notamment la paie centralisée, à un incident de portée générale.</p>
+<p><em>2.2 c) – Cotation de cinq risques</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Risque</th>
+<th>Probabilité</th>
+<th>Gravité</th>
+<th>Niveau</th>
+<th>Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R1 – Compromission d'un compte par hameçonnage suivie d'un rançongiciel étendu à plusieurs campus</td>
+<td>4</td>
+<td>4</td>
+<td>16, critique</td>
+<td>incident déjà survenu ; 10 % des salariés saisissent leur mot de passe ; aucune authentification multifacteur ; réseau non cloisonné et comptes d'administration communs : plusieurs campus touchés plus d'une semaine</td>
+</tr>
+<tr class="even">
+<td>R2 – Accès illégitime aux données par un compte d'ancien vacataire ou un compte d'administration partagé</td>
+<td>3</td>
+<td>3</td>
+<td>9, élevé</td>
+<td>probabilité 3 : 750 comptes d'anciens vacataires actifs, mots de passe inchangés hors de Besançon depuis l'incident, comptes génériques ; gravité 3 : divulgation de données personnelles</td>
+</tr>
+<tr class="odd">
+<td>R3 – Perte définitive de données faute de sauvegarde isolée et restaurable</td>
+<td>3</td>
+<td>4</td>
+<td>12, critique</td>
+<td>probabilité 3 : sauvegardes en ligne accessibles avec les comptes ordinaires, jamais testées sur les campus ; une panne, une erreur ou une attaque suffit ; gravité 4 : les mêmes comptes donnent accès aux sauvegardes de tous les campus ; sans copie restaurable, la reprise de la scolarité et des jurys de plusieurs campus dépasse une semaine</td>
+</tr>
+<tr class="even">
+<td>R4 – Manquement aux obligations du RGPD (registre, délai de notification, traitements inconnus)</td>
+<td>3</td>
+<td>3</td>
+<td>9, élevé</td>
+<td>probabilité 3 : délai de 72 heures déjà dépassé en 2026, registre de 2021 incomplet, 17 applications hors inventaire ; gravité 3 : manquements portant sur les données personnelles d'étudiants, de vacataires et d'entreprises, qui entament la confiance des entreprises employeuses, sans interruption d'activité</td>
+</tr>
+<tr class="odd">
+<td>R5 – Indisponibilité ou fuite d'une application souscrite sans validation</td>
+<td>2</td>
+<td>3</td>
+<td>6, modéré</td>
+<td>services en ligne souscrits par les campus ou par des enseignants, inconnus de l'informatique du siège et du registre</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt pour cinq risques justifiés ; une cotation qui s'écarte d'un point est acceptée si elle est argumentée.)</p>
+<p>Priorités (0,5 pt) : les risques critiques R1 et R3 appellent un traitement immédiat, suivi par la direction générale : authentification multifacteur, comptes d'administration nominatifs, sauvegardes déconnectées et testées. Les risques élevés R2 et R4 sont à traiter dans les six mois : revue et désactivation des comptes, procédure de violation, mise à jour du registre. R5 est traité dans l'année par l'inventaire et une règle d'acquisition des services en ligne.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres risques cotés de façon cohérente : défaillance d'une liaison ou d'un serveur, départ d'un informaticien clé, fraude au faux ordre de virement, attaque par un prestataire.</li>
+<li>Probabilité 4 pour R4, au motif que les manquements sont déjà constatés (registre non tenu) : admise si elle est justifiée (niveau 12, critique).</li>
+<li>Classement d'un même risque dans deux catégories (la publication des données est à la fois une cybermenace et un risque réglementaire), s'il est justifié.</li>
+<li>Mention des apports de l'intelligence artificielle à la détection (analyse comportementale des connexions inhabituelles depuis l'étranger), non attendue.</li>
+<li>Mention d'un coût direct de 0,3 M€, environ 10 % du budget annuel du SI, pour mesurer l'enjeu : admise ; aucune évaluation de l'incidence sur les comptes n'est attendue (UE 4).</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Typologie récitée sans faits du cas</em> (<code>JUR-T01</code>, <code>ET-39</code>) — liste générique de menaces ; juste : chaque catégorie est illustrée par des faits datés et chiffrés des annexes.</li>
+<li><em>Impact réduit au coût de l'incident ou dérive comptable</em> (F10, pièges 2 et 7 ; quantification exclue : périmètre 4.1) — chiffrage de pertes ou traitement comptable ; juste : impacts sur les processus, les délais, les étudiants, les partenaires et la continuité.</li>
+<li><em>Cotation sans justification ni échelle</em> (<code>JUR-T03</code>) — notes attribuées sans lien avec les définitions de l'annexe 2.3 ; juste : probabilité et gravité justifiées par les constats.</li>
+<li><em>Continuité confondue avec la seule restauration informatique</em> (<code>ET-02</code>) — oublier le mode dégradé des métiers pendant la crise.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des risques SI, analyse d'impact sur l'activité</td>
+<td>cybermenaces, défaillances, risques réglementaires et métiers ; BIA</td>
+<td>F12 § 0, 4 et 5</td>
+<td>programme l. 1445-1449</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27005:2022 ; EBIOS Risk Manager</td>
+<td>appréciation des risques (citées comme démarches)</td>
+<td><code>iso_27005_2022</code>, <code>ebios_rm_1_5</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>RGPD, articles 30 et 33</td>
+<td>registre ; notification dans les 72 heures</td>
+<td><code>rgpd</code> ; F15 § 2 et 6</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--politique-de-sécurité-et-continuité-4-points">2.3 – Politique de sécurité et continuité (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.a</code> « Définir et piloter une politique de sécurité du SI, en intégrant les enjeux de cybersécurité, de résilience organisationnelle et de gouvernance des systèmes critiques » ; <code>4.2.b</code> « Élaboration d'une politique de cybersécurité fondée sur l'analyse des risques » ; <code>4.2.c</code> « Notions d'architecture de confiance (authentification, chiffrement, segmentation) » ; <code>4.2.d</code> « Dispositifs de surveillance et de résilience : IAM (Identity &amp; Access Management), PCA/PRA (plans de continuité et de reprise d'activité) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.1 (conséquences de l'incident), 2.2 (constats de l'audit flash) et 2.3 (ISO/IEC 27001:2022, ISO 22301:2019, guide d'hygiène informatique).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Objectifs de sécurité (confidentialité, intégrité, disponibilité, traçabilité) définis et illustrés à LORVANNE</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Principes d'une politique fondée sur les risques et adaptée à l'école</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Gestion des identités et des accès : principe, pertinence (annexe 2.2), indicateur complet</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Authentification multifacteur : principe, pertinence, indicateur complet</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Segmentation : principe, pertinence, indicateur complet</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-4</td>
+<td>Sauvegardes isolées et testées : principe, pertinence, indicateur complet</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>PCA et PRA distingués</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>RTO et RPO définis et justifiés pour deux processus</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p><em>2.3 a) – Objectifs et principes de la politique de sécurité</em></p>
+<p>Objectifs (0,5 pt) : la sécurité de l'information vise la <strong>confidentialité</strong> (seules les personnes autorisées accèdent aux données des étudiants, des vacataires et des entreprises, divulguées en novembre), l'<strong>intégrité</strong> (les notes et les copies sont exactes et complètes, ce qui fonde les diplômes), la <strong>disponibilité</strong> (la scolarité, les jurys, la paie et la facturation fonctionnent quand l'école en a besoin, et non après neuf jours d'arrêt) et la <strong>traçabilité</strong> (toute opération est attribuable à une personne, ce que les comptes d'administration partagés empêchent).</p>
+<p>Principes de la politique de sécurité du système d'information (PSSI) (0,5 pt) :</p>
+<ul>
+<li><strong>fondée sur l'analyse des risques</strong> : les mesures sont choisies et hiérarchisées à partir de la cotation (2.2 c) selon une méthode reconnue (EBIOS Risk Manager), et révisées chaque année ou après tout incident ;</li>
+<li><strong>portée par la direction</strong> : approuvée par le conseil d'administration et la direction générale, qui fixent le niveau de risque accepté et les moyens ;</li>
+<li><strong>un périmètre unique</strong> : la même politique pour le siège et les trois campus, pour tous les utilisateurs (salariés, vacataires, étudiants) et pour les prestataires ;</li>
+<li><strong>des rôles définis</strong> : RSSI, déléguée à la protection des données, propriétaires des processus, directeurs de campus, équipes informatiques ;</li>
+<li><strong>une déclinaison opérationnelle</strong> : charte informatique opposable à tous les utilisateurs, procédures (gestion des comptes, sauvegardes, gestion des incidents et des violations), plan de sensibilisation, à partir des 93 mesures de l'annexe A d'ISO/IEC 27001:2022 ou des 42 mesures du guide d'hygiène informatique ;</li>
+<li><strong>une approche systémique</strong> : mesures organisationnelles, humaines et techniques, et non une liste d'équipements ;</li>
+<li><strong>un contrôle et une amélioration continue</strong> (logique PDCA) : indicateurs, revues, exercices, audit de suivi.</li>
+</ul>
+<p>Un indicateur accompagne la sensibilisation : taux de saisie du mot de passe lors des exercices d'hameçonnage simulé (60 salariés sur 610 en février 2027, environ 10 %), à ramener sous 2 %.</p>
+<p><em>2.3 b) – Quatre mesures prioritaires</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Mesure (0,5 pt chacune)</th>
+<th>Principe</th>
+<th>Pertinence au regard de l'annexe 2.2</th>
+<th>Indicateur d'efficacité</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gestion des identités et des accès sur tout le cycle de vie des comptes</td>
+<td>annuaire commun à l'école ; création, modification et désactivation des comptes déclenchées par les événements de gestion (contrat de vacation, embauche, départ) ; droits attribués par rôle selon le moindre privilège ; revue semestrielle des comptes et des droits par les responsables</td>
+<td>750 comptes d'anciens vacataires actifs, trois annuaires distincts, aucune procédure de départ (constat 1)</td>
+<td>taux de comptes de vacataires désactivés dans les sept jours suivant la fin de leur vacation ; cible 100 %</td>
+</tr>
+<tr class="even">
+<td>Authentification multifacteur</td>
+<td>preuve de l'identité par au moins deux facteurs de nature différente (mot de passe et téléphone ou clé, par exemple), en commençant par les comptes d'administration, la messagerie en ligne et l'accès à distance ; comptes d'administration nominatifs, réservés aux tâches d'administration</td>
+<td>le compte hameçonné et le compte d'administration volé ne demandaient qu'un mot de passe ; neuf comptes d'administration partagés (constats 2 et 3)</td>
+<td>taux de comptes protégés par une authentification multifacteur ; cible 100 % des comptes d'administration et d'accès à distance en septembre 2027, puis de tous les comptes</td>
+</tr>
+<tr class="odd">
+<td>Segmentation</td>
+<td>cloisonnement du réseau en zones (postes des étudiants, postes administratifs, serveurs de chaque campus, serveurs du siège), avec des échanges limités à ceux qui sont nécessaires, pour contenir la propagation d'une attaque</td>
+<td>l'attaquant a pu explorer les serveurs du siège depuis Besançon ; postes des étudiants et serveurs sur le même réseau (constat 4)</td>
+<td>part des serveurs des processus critiques placés dans une zone cloisonnée ; cible 100 % fin 2027</td>
+</tr>
+<tr class="even">
+<td>Sauvegardes isolées et testées</td>
+<td>au moins une copie déconnectée ou non modifiable, inaccessible avec les comptes ordinaires ; fréquence adaptée au RPO de chaque processus ; tests de restauration programmés, avec procès-verbal</td>
+<td>sauvegarde en ligne chiffrée avec les serveurs ; aucun test sur les campus ; scolarité sauvegardée chaque semaine (constat 5) ; six semaines de notes perdues (annexe 2.1)</td>
+<td>taux de réussite des tests de restauration dans le délai fixé par le RTO ; cible 100 %</td>
+</tr>
+</tbody>
+</table>
+<p>Les cinq indicateurs proposés (les quatre mesures et la sensibilisation) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Désactivation des comptes de vacataires</td>
+<td>comptes de vacataires désactivés dans les sept jours suivant la fin de la vacation / vacations terminées</td>
+<td>annuaire commun et contrats de vacation</td>
+<td>mensuelle</td>
+<td>100 % (point de départ : 750 comptes d'anciens vacataires actifs en février 2027)</td>
+<td>processus</td>
+</tr>
+<tr class="even">
+<td>Couverture de l'authentification multifacteur</td>
+<td>comptes protégés par une authentification multifacteur / comptes actifs</td>
+<td>annuaire commun</td>
+<td>mensuelle</td>
+<td>100 % des comptes d'administration et d'accès à distance en septembre 2027 ; 100 % de tous les comptes fin 2027 (0 % en février 2027)</td>
+<td>processus</td>
+</tr>
+<tr class="odd">
+<td>Cloisonnement des serveurs critiques</td>
+<td>serveurs des processus critiques placés dans une zone cloisonnée / serveurs des processus critiques recensés</td>
+<td>inventaire et cartographie des zones</td>
+<td>trimestrielle</td>
+<td>100 % fin 2027</td>
+<td>processus</td>
+</tr>
+<tr class="even">
+<td>Réussite des tests de restauration</td>
+<td>restaurations réussies dans le délai du RTO / tests de restauration programmés</td>
+<td>procès-verbaux de tests</td>
+<td>trimestrielle</td>
+<td>100 % (aucun test sur les campus avant 2027)</td>
+<td>processus</td>
+</tr>
+<tr class="odd">
+<td>Résistance à l'hameçonnage</td>
+<td>salariés ayant saisi leur mot de passe lors de l'exercice / salariés destinataires de l'exercice</td>
+<td>résultats des exercices d'hameçonnage simulé</td>
+<td>semestrielle</td>
+<td>&lt; 2 % (environ 10 % en février 2027)</td>
+<td>apprentissage</td>
+</tr>
+</tbody>
+</table>
+<p><em>2.3 c) – PCA, PRA, RTO et RPO</em></p>
+<p>Le <strong>plan de continuité d'activité</strong> (PCA) organise le maintien des activités critiques pendant la crise, au besoin en mode dégradé : priorités entre processus, procédures manuelles (listes d'émargement, relevés de notes papier, états d'heures sur formulaire), moyens de secours, cellule de crise et communication. Le <strong>plan de reprise d'activité</strong> (PRA) organise la reprise des systèmes et le retour à la normale après le sinistre : ordre de restauration, sauvegardes isolées, serveurs de remplacement, vérification de l'intégrité des données. Ils découlent de la PSSI et de l'analyse d'impact, et ne valent que s'ils sont testés ; en novembre 2026, l'école n'avait ni l'un ni l'autre (0,5 pt).</p>
+<p>Le <strong>RTO</strong> (<em>Recovery Time Objective</em>) est la durée maximale d'interruption admissible d'un processus ; le <strong>RPO</strong> (<em>Recovery Point Objective</em>) est la perte de données maximale admissible, exprimée par l'ancienneté de la dernière sauvegarde exploitable. Pour deux processus (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Processus</th>
+<th>RTO</th>
+<th>RPO</th>
+<th>Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Scolarité, examens et jurys, en période d'examens et de jurys</td>
+<td>48 heures</td>
+<td>24 heures</td>
+<td>un jury reporté retarde les diplômes et l'insertion (25 diplômés attendus par un employeur) ; au-delà d'une journée, les notes ne sont plus ressaisissables sans perte, alors que la seule copie disponible en 2026 avait six semaines ; hors période d'examens, un RTO de cinq jours ouvrés peut être admis</td>
+</tr>
+<tr class="even">
+<td>Paie, dans les cinq jours ouvrés qui précèdent le versement</td>
+<td>24 heures</td>
+<td>24 heures</td>
+<td>le versement des rémunérations ne peut pas être différé (dix jours de retard pour les vacataires en 2026) ; les éléments variables saisis dans la journée restent ressaisissables à partir des états d'heures</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Toute valeur de RTO et de RPO cohérente et justifiée par le calendrier des processus ; RTO et RPO fixés pour la facturation des contrats d'apprentissage (par exemple cinq jours ouvrés et 24 heures).</li>
+<li>Présentation des mesures dans une démarche Zero Trust, si elle est décrite comme un cadre d'architecture (aucune confiance implicite, vérification de chaque accès) et non comme un produit.</li>
+<li>Indicateurs d'efficacité différents mais complets (stock de comptes de vacataires actifs sans vacation en cours, cible 0 ; délai moyen de désactivation, nombre de comptes d'administration partagés, cible 0 ; délai réel de restauration constaté lors d'un test), de même que le chiffrement des données sensibles ou la journalisation centralisée des accès, proposés en complément.</li>
+<li>Mention de NIS2, non attendue (absente de l'annexe 2.3) : admise si le candidat précise que la directive n'est pas transposée en France au 31/12/2026 et que son applicabilité à l'école n'est pas établie.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>PCA et PRA confondus ; RTO et RPO inversés ou omis</em> (<code>JUR-S02</code>, <code>ET-02</code>, <code>ET-03</code>) — « le PRA est le plan pendant la crise », « le RPO est le délai de reprise » ; juste : PCA pendant la crise, PRA pour le retour à la normale ; RTO = durée d'interruption, RPO = perte de données.</li>
+<li><em>PSSI confondue avec la charte informatique</em> (<code>ET-27</code>) — juste : la PSSI fixe les objectifs, les règles et les responsabilités ; la charte décline les règles d'usage opposables aux utilisateurs.</li>
+<li><em>Authentification multifacteur confondue avec un mot de passe complexe</em> (<code>ET-28</code>) — juste : au moins deux facteurs de nature différente.</li>
+<li><em>Zero Trust présenté comme un produit</em> (<code>JUR-S03</code>, <code>ET-04</code>) — juste : un cadre d'architecture qui combine gestion des identités, authentification forte, cloisonnement et surveillance.</li>
+<li><em>Mesures techniques détaillées ou indicateurs génériques</em> (<code>JUR-S05</code>, <code>ET-18</code>) — paramétrage d'équipements, ou « taux de sécurité » sans formule ni cible ; juste : mesures organisationnelles et d'architecture, chacune reliée à un constat et à un indicateur complet.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ISO/IEC 27001:2022 ; ISO/IEC 27002:2022</td>
+<td>PSSI fondée sur les risques, mesures de l'annexe A, PDCA</td>
+<td><code>iso_27001_2022</code>, <code>iso_27002_2022</code> ; F12 § 1-2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Guide d'hygiène informatique (ANSSI, 2017)</td>
+<td>comptes, authentification, cloisonnement, sauvegardes</td>
+<td><code>guide_hygiene_anssi_2017</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO 22301:2019</td>
+<td>PCA, analyse d'impact</td>
+<td><code>iso_22301_2019</code> ; F12 § 4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Modèle Zero Trust (avis de l'ANSSI, 2021)</td>
+<td>cadre d'architecture (réponses tolérées)</td>
+<td><code>zero_trust_anssi</code> ; F12 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Directive (UE) 2022/2555 (NIS 2) ; transposition française</td>
+<td>mention tolérée, statut daté</td>
+<td><code>nis2</code>, <code>nis2_transposition_fr</code> ; F12 § 6</td>
+<td>non transposée au 31/12/2026</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--note-de-synthèse-au-conseil-dadministration-3-points">2.4 – Note de synthèse au conseil d'administration (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.2 – Auditer, contrôler et évaluer la performance et la conformité des systèmes d'information : <code>3.2.d</code> « Techniques de rédaction d'un diagnostic d'audit et d'une note de synthèse ».</li>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.e</code> « Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (organigramme), 2.1 (incident et témoignages) et 2.2 (audit flash, demande du conseil).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>f-1</td>
+<td>Forme : destinataire, objet, 20 lignes au maximum, structure hiérarchisée, vocabulaire accessible à des administrateurs</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>f-2</td>
+<td>Diagnostic : appréciation globale et trois constats majeurs étayés par les annexes</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>f-3</td>
+<td>Priorités d'action assorties d'une échéance réaliste</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>f-4</td>
+<td>Rôles et responsabilités des six acteurs, dont le positionnement du RSSI et l'indépendance de la déléguée à la protection des données</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse indicative</strong></p>
+<p>Note modèle (environ 18 lignes) :</p>
+<!-- note -->
+
+<p><strong>À l'attention du conseil d'administration — Objet : sécurité du système d'information, diagnostic et priorités (24 juin 2027)</strong></p>
+<p>Appréciation globale : la sécurité n'est ni gouvernée ni pilotée ; l'incident de Besançon (neuf jours d'arrêt, données de 1 400 étudiants dérobées, dont un échantillon publié) en est la conséquence et peut toucher toute l'école.</p>
+<p>Constats majeurs : 1) des accès non maîtrisés : 750 comptes d'anciens vacataires actifs, aucune authentification multifacteur, neuf comptes d'administration partagés ; 2) des sauvegardes jamais testées ni isolées, sans plan de continuité : six semaines de notes perdues ; 3) aucun responsable de la sécurité, aucune politique écrite, un registre des traitements non tenu depuis 2021.</p>
+<p>Priorités : dès juillet 2027, désigner un RSSI ; d'ici septembre, authentification multifacteur des comptes sensibles, revue de tous les comptes, sauvegardes déconnectées testées chaque trimestre ; d'ici décembre, cloisonnement des réseaux, politique de sécurité adoptée, plan de continuité testé avant les jurys de novembre.</p>
+<p>Rôles : le conseil fixe le niveau de risque accepté, approuve la politique et suit un tableau de bord semestriel ; la direction générale porte la politique, arbitre et finance ; le RSSI, rattaché à la directrice générale et indépendant des équipes informatiques, pilote les risques, les mesures et les incidents ; la déléguée à la protection des données, dotée du temps nécessaire, tient le registre et conseille ; les propriétaires des processus fixent les délais tolérables et valident les accès ; les directeurs de campus appliquent la politique et en rendent compte.</p>
+<!-- /note -->
+
+<p>Éléments d'appréciation :</p>
+<ul>
+<li><strong>diagnostic</strong> (1 pt) : appréciation globale et trois constats parmi les accès, l'authentification, les sauvegardes et la continuité, la gouvernance, la conformité au RGPD ; chacun chiffré ;</li>
+<li><strong>priorités</strong> (0,5 pt) : cohérentes avec la cotation (risques critiques d'abord), datées, réalistes au regard des 21 informaticiens et du budget ;</li>
+<li><strong>rôles</strong> (1 pt) : le conseil d'administration fixe l'appétence au risque et contrôle ; la direction générale est responsable de la politique ; le RSSI, positionné auprès de la directrice générale avec une autorité fonctionnelle sur les trois campus, est distinct des équipes qu'il contrôle ; la déléguée à la protection des données informe, conseille et contrôle la conformité au RGPD, sans être responsable du traitement ni cumuler la fonction de RSSI ; les propriétaires des processus (scolarité, paie, apprentissage) expriment les besoins de continuité et valident les droits ; les directeurs de campus déploient la politique et font remonter les incidents.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Note rédigée en paragraphes ou en tirets, ou priorités présentées en tableau, dans la limite des 20 lignes.</li>
+<li>RSSI externalisé ou mutualisé à temps partiel dans l'attente d'un recrutement, s'il reste rattaché à la direction générale.</li>
+<li>Mention d'un comité de sécurité réunissant la direction générale, le RSSI, la déléguée et les directeurs de campus, ou d'un budget de sécurité à arbitrer par le conseil.</li>
+</ul>
+<p><strong>Erreurs types</strong></p>
+<ul>
+<li><em>Note trop longue, technique ou non hiérarchisée</em> (<code>JUR-S07</code>, <code>JUR-T07</code>) — dépasser 20 lignes, détailler des réglages techniques devant le conseil ; juste : appréciation, constats, priorités, rôles.</li>
+<li><em>RSSI présenté comme un technicien ou subordonné aux équipes qu'il contrôle</em> (<code>ET-15</code>) — juste : rattachement à la direction générale, autorité fonctionnelle transverse.</li>
+<li><em>Délégué à la protection des données confondu avec le RSSI</em> (<code>ET-29</code>) — juste : deux fonctions distinctes, la déléguée portant la conformité au RGPD.</li>
+<li><em>Responsabilités attribuées à l'informatique seule</em> (<code>JUR-T11</code>) — juste : la sécurité engage le conseil, la direction, les métiers et les campus.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Note de synthèse d'audit</td>
+<td>appréciation, constats, recommandations, échéances</td>
+<td>F10 § 5</td>
+<td>guide p. 266</td>
+</tr>
+<tr class="even">
+<td>Acteurs de la sécurité</td>
+<td>conseil et direction, RSSI, délégué à la protection des données</td>
+<td>F12 § 1 ; F15 § 1</td>
+<td>guide p. 336 ; corrigé du sujet zéro p. 353</td>
+</tr>
+<tr class="odd">
+<td>RGPD</td>
+<td>missions du délégué à la protection des données ; registre</td>
+<td><code>rgpd</code> ; F15 § 1-2</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
