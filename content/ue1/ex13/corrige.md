@@ -1,0 +1,239 @@
+# ÉLÉMENTS INDICATIFS DE CORRIGÉ ET DE BARÈME
+
+## UE 1 – Gestion juridique, fiscale et sociale — Exercice d'entraînement n° 13 — Dossier 1 (9 points sur 40)
+
+Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire ; année de référence des faits : 2026 (exercices 2024 à 2026 ; questions posées le 16 novembre 2026).
+
+Bien que le corrigé mentionne des textes juridiques, il n'est pas attendu des candidats qu'ils en citent les références.
+
+**Remarque à l'attention des correcteurs** : la référence aux textes de lois ou articles de codes n'est pas exigée des candidats. Elle est indiquée dans le corrigé à titre informatif. L'évaluation porte avant tout sur la pertinence et la cohérence des éléments de réponse : énoncé de la règle, application aux faits, conclusion.
+
+| Question | Compétence visée | Points |
+|---|---|---:|
+| 1.1 | `1.2.a` — Expliquer le rôle des acteurs internes et externes de la gouvernance (directoire, conseil de surveillance, assemblée, commissaires aux comptes, CSE) | 1,5 |
+| 1.2 | `1.2.b` — Relations entre les dirigeants et les associés : convention réglementée par personne interposée, convention interdite | 2 |
+| 1.3 | `1.2.b` — Relations entre les dirigeants et les associés : révocation d'un membre du directoire, cumul avec un contrat de travail | 1,5 |
+| 1.4 | `1.2.d` — Résolution climatique (inscription à l'ordre du jour, portée) ; préjudice écologique | 2 |
+| 1.5 | `1.2.g` — Distribution de dividendes fictifs ; révélation des faits délictueux par le commissaire aux comptes | 2 |
+| **Dossier 1 – Organes d'une SA à directoire : conventions, révocation, dividendes et responsabilité environnementale** | | **9** |
+
+---
+
+### 1.1 Rôle des acteurs de la gouvernance d'une SA à directoire (1,5 point)
+
+**Type de question** : question de cours ciblée, appliquée à la société.
+
+| Item | Attendu | Temps | Points |
+|---|---|---|---:|
+| 1.1-01 | Directoire : direction de la société, pouvoirs les plus étendus dans la limite de l'objet social et des pouvoirs du conseil de surveillance et de l'assemblée ; conseil de surveillance : nomination du directoire, contrôle permanent de la gestion, autorisations préalables (statuts, cautions et garanties, conventions réglementées), sans pouvoir de gestion | règle et application | 0,5 |
+| 1.1-02 | Assemblée générale : nomination et révocation du conseil de surveillance, approbation des comptes et affectation du résultat, vote sur les conventions réglementées (et révocation possible du directoire) ; commissaires aux comptes : contrôle externe (certification des comptes et des situations servant à un acompte, rapport spécial sur les conventions, signalement des irrégularités, révélation au procureur, alerte) | règle et application | 0,5 |
+| 1.1-03 | CSE : 640 salariés ≥ 50 → information et consultation sur l'organisation, la gestion et la marche générale de l'entreprise, y compris leurs conséquences environnementales ; deux membres de la délégation du personnel assistent avec voix consultative à toutes les séances du conseil de surveillance ; conclusion : séparation de la direction et du contrôle | règle, application et conclusion | 0,5 |
+
+**Réponse attendue**
+
+*Une société à deux organes : l'un dirige, l'autre contrôle.* La SA ALTIGRÈVE a choisi, dans ses statuts, la formule du directoire et du conseil de surveillance ; elle reste soumise aux règles des sociétés anonymes, à l'exclusion de celles du conseil d'administration (C. com. L. 225-57). (0,5 pt)
+- Le **directoire** dirige la société, sous le contrôle du conseil de surveillance (L. 225-58). Il est investi des **pouvoirs les plus étendus** pour agir en toute circonstance au nom de la société, dans la limite de l'objet social et sous réserve des pouvoirs attribués par la loi au conseil de surveillance et aux assemblées ; il détermine les orientations de l'activité, conformément à l'intérêt social, en considérant les **enjeux sociaux et environnementaux** de l'activité ; les limitations statutaires de ses pouvoirs sont inopposables aux tiers (L. 225-64). Ici, M. Antoine BERTHOLIER, Mme Claire VERNASSAL et M. Olivier PRÉMONT conduisent l'entreprise et la représentent.
+- Le **conseil de surveillance** nomme les membres du directoire et désigne son président (L. 225-59) ; il exerce le **contrôle permanent de la gestion** (L. 225-68) : il reçoit au moins chaque trimestre un rapport du directoire, vérifie les comptes annuels, opère à toute époque les vérifications qu'il juge opportunes, présente à l'assemblée un rapport sur le gouvernement d'entreprise ; il donne les **autorisations préalables** prévues par les statuts (article 18 des statuts d'ALTIGRÈVE) et par la loi (cautions, avals et garanties ; conventions réglementées, L. 225-86). Il ne gère pas : Mme Hélène BERTHOLIER préside un organe de contrôle, non de direction.
+
+*Les actionnaires et le contrôle externe.* (0,5 pt)
+- L'**assemblée générale** des actionnaires nomme et révoque les membres du conseil de surveillance (L. 225-75) ; l'assemblée ordinaire annuelle approuve les comptes présentés par le directoire, décide de l'affectation du résultat et des dividendes (L. 225-100, L. 232-12) et statue sur les **conventions réglementées** (L. 225-88) ; elle peut aussi révoquer les membres du directoire (L. 225-61). L'assemblée extraordinaire modifie les statuts.
+- Les **commissaires aux comptes**, organe de contrôle externe et indépendant, certifient les comptes ; ils présentent un **rapport spécial** sur les conventions réglementées (L. 225-88) ; ils certifient le bilan intermédiaire sur lequel repose un acompte sur dividende (L. 232-12) ; ils signalent à la plus prochaine assemblée les irrégularités relevées et **révèlent au procureur de la République les faits délictueux** dont ils ont connaissance (L. 821-10) ; ils déclenchent la **procédure d'alerte** s'ils relèvent des faits de nature à compromettre la continuité de l'exploitation (L. 234-1).
+
+*Les salariés.* Les attributions du CSE dépendent de l'effectif (C. trav. L. 2312-1) ; dans les entreprises d'au moins **50 salariés**, il est **informé et consulté** sur les questions intéressant l'organisation, la gestion et la marche générale de l'entreprise, ainsi que sur leurs conséquences environnementales (L. 2312-8). Avec 640 salariés, ALTIGRÈVE est dans ce cas. En outre, **deux membres** de la délégation du personnel du CSE (l'un de la catégorie des cadres, techniciens et agents de maîtrise, l'autre de celle des employés et ouvriers ; quatre si trois collèges électoraux sont constitués) assistent, **avec voix consultative**, à toutes les séances du conseil de surveillance (L. 2312-72). *Conclusion* : la gouvernance d'ALTIGRÈVE sépare la direction (directoire) du contrôle (conseil de surveillance), sous la décision souveraine des actionnaires sur les comptes et les conventions, le contrôle externe des commissaires aux comptes et l'expression des salariés. (0,5 pt)
+
+**Note à l'attention des correcteurs**
+- La question porte sur le **rôle essentiel** de chaque acteur ; une description de la composition (nombre de membres, durée des mandats) n'est pas attendue et ne rapporte pas de points.
+- 1.1-02 : accorder le point si le candidat cite, pour les commissaires aux comptes, la certification des comptes et au moins deux autres missions (rapport spécial, révélation, alerte, certification de la situation intermédiaire).
+- 1.1-03 : le nombre exact des représentants du CSE au conseil n'est pas exigé ; la présence de représentants du CSE avec voix consultative et la consultation à partir de 50 salariés le sont.
+
+**Erreurs fréquentes**
+- `JUR-J08` — attribuer au conseil de surveillance les pouvoirs de gestion d'un conseil d'administration, ou parler d'« administrateurs » et de « directeur général » dans une SA à directoire.
+- `JUR-J06` — décrire chaque organe (composition, durée des mandats) au lieu d'expliquer son rôle dans la gouvernance, ce que le programme exclut.
+
+**Références**
+
+| Référence | Contenu mobilisé |
+|---|---|
+| C. com. L. 225-57, L. 225-58, L. 225-59, L. 225-64 | SA à directoire ; direction par le directoire, pouvoirs, enjeux sociaux et environnementaux |
+| C. com. L. 225-68, L. 225-75 | contrôle permanent du conseil de surveillance, autorisations préalables ; nomination et révocation de ses membres par l'assemblée |
+| C. com. L. 225-100, L. 225-88, L. 232-12 | assemblée annuelle, conventions réglementées, dividendes |
+| C. com. L. 821-10, L. 234-1 | signalement des irrégularités, révélation des faits délictueux, alerte |
+| C. trav. L. 2312-1, L. 2312-8, L. 2312-72 | attributions du CSE selon l'effectif ; information et consultation ; représentants au conseil de surveillance |
+
+---
+
+### 1.2 Le bail de l'entrepôt et le prêt à un membre du conseil de surveillance (2 points)
+
+**Type de question** : qualification juridique, conditions et application, exploitation de l'annexe 1.1.
+
+| Item | Attendu | Temps | Points |
+|---|---|---|---:|
+| 1.2-01 | Qualification : convention conclue par personne interposée avec une SCI dont un membre du directoire est gérant et associé à 90 % (intérêt indirect) → convention réglementée ; pas une opération courante à conditions normales (loyer de 260 000 € au lieu de 200 000 €, + 30 %) ; bail de neuf ans également soumis à autorisation par l'article 18, 2° des statuts | règle et application | 0,5 |
+| 1.2-02 | Procédure : information du conseil par l'intéressé, autorisation préalable et motivée du conseil de surveillance, avis aux commissaires aux comptes, rapport spécial, vote de l'assemblée sans M. Antoine BERTHOLIER, dont les 16 800 voix ne sont pas prises en compte | règle et application | 0,5 |
+| 1.2-03 | Sanctions : nullité facultative si conséquences dommageables (surcoût de 60 000 € par an), action prescrite par trois ans à compter du 1er mars 2026, point de départ reporté à la révélation si la convention a été dissimulée ; nullité couverte par un vote de l'assemblée sur rapport spécial des commissaires aux comptes ; responsabilité de M. Antoine BERTHOLIER, à qui les conséquences préjudiciables peuvent être imputées | règle et application | 0,5 |
+| 1.2-04 | Prêt à M. Julien BERTHOLIER, membre personne physique du conseil de surveillance : convention interdite, à peine de nullité ; l'autorisation du conseil n'y change rien (interdiction étendue au conjoint, aux ascendants et descendants et aux personnes interposées) → le prêt ne doit pas être consenti | règle, application et conclusion | 0,5 |
+
+**Réponse attendue**
+
+*Qualification du bail.* Doit être soumise à l'**autorisation préalable du conseil de surveillance** toute convention intervenant, **directement ou par personne interposée**, entre la société et un membre du directoire ou du conseil de surveillance ou un actionnaire disposant de plus de **10 %** des droits de vote ; il en est de même des conventions auxquelles une de ces personnes est **indirectement intéressée**, et des conventions conclues avec une entreprise dont un membre du directoire est propriétaire, associé indéfiniment responsable, gérant ou dirigeant (C. com. L. 225-86). Échappent à la procédure les conventions portant sur des **opérations courantes conclues à des conditions normales** (L. 225-87). Au cas présent, le bail est conclu avec la SCI LES ESSARTS DE VIZELLE, dont M. Antoine BERTHOLIER, président du directoire, est le **gérant** et détient **90 %** des parts : la SCI est une personne interposée, et il est indirectement intéressé au bail, dont il perçoit l'essentiel des loyers. Le loyer de 260 000 € dépasse de 30 % le prix du marché (200 000 € × 1,3 = 260 000 €) : la convention n'est pas conclue à des conditions normales. C'est une **convention réglementée**. Le bail, d'une durée de neuf ans, relevait en outre de l'autorisation préalable statutaire (annexe 1.1, article 18, 2° : bail de plus de trois ans). (0,5 pt)
+
+*Procédure qui aurait dû être suivie.* L'intéressé informe le conseil de surveillance dès qu'il a connaissance de la convention ; le conseil donne une **autorisation préalable motivée**, en justifiant de l'intérêt de la convention pour la société et en précisant ses conditions financières (L. 225-86, al. 4) ; un membre du conseil intéressé ne prend part ni aux délibérations ni au vote. Le président du conseil de surveillance donne **avis aux commissaires aux comptes** des conventions autorisées et conclues ; ceux-ci présentent un **rapport spécial** à l'assemblée, qui statue ; **la personne intéressée ne prend pas part au vote** et ses actions ne sont pas prises en compte pour le calcul de la majorité (L. 225-88). Au cas présent, M. Antoine BERTHOLIER aurait dû informer le conseil avant de signer ; Mme Hélène BERTHOLIER aurait ensuite avisé Mme Sophie MALGOVERT et le cabinet ALPES AUDIT CERTIFICATION, et l'assemblée de juin 2027 aurait statué sans les **16 800 voix** de M. Antoine BERTHOLIER (annexe 1.1). (0,5 pt)
+
+*Conséquences de l'absence d'autorisation.* Sans préjudice de la responsabilité de l'intéressé, la convention conclue sans autorisation préalable **peut être annulée si elle a eu des conséquences dommageables pour la société** ; l'action en nullité se prescrit par **trois ans** à compter de la date de la convention, mais le délai ne court que du jour de sa **révélation** si elle a été dissimulée ; la nullité peut être **couverte** par un vote de l'assemblée sur un rapport spécial des commissaires aux comptes exposant les circonstances pour lesquelles la procédure n'a pas été suivie, l'intéressé ne votant pas (L. 225-90). Au cas présent, le bail coûte à la société **60 000 €** de plus par an que le prix du marché (260 000 − 200 000), soit des conséquences dommageables : il peut être annulé. L'action est ouverte jusqu'au **1er mars 2029** au moins ; le conseil de surveillance n'ayant pas été informé, la convention peut être regardée comme dissimulée, ce qui reporterait le point de départ à sa révélation. L'assemblée pourra soit couvrir la nullité, de préférence après une renégociation du loyer au prix du marché, soit la laisser poursuivre. Dans tous les cas, M. Antoine BERTHOLIER engage sa **responsabilité** envers la société : le surcoût peut être mis à sa charge (L. 225-90, al. 1 ; pour une convention désapprouvée, L. 225-89) ; la méconnaissance des statuts est aussi une faute de gestion, qui peut justifier sa révocation. (0,5 pt)
+
+*Le prêt demandé par M. Julien BERTHOLIER.* Il est interdit, **à peine de nullité du contrat**, aux membres du directoire et aux membres du conseil de surveillance autres que les personnes morales de contracter, sous quelque forme que ce soit, des **emprunts auprès de la société**, de se faire consentir un découvert ou de faire cautionner ou avaliser leurs engagements par elle ; l'interdiction s'étend aux représentants permanents des personnes morales membres du conseil, aux conjoint, ascendants et descendants et à toute personne interposée ; seules les sociétés exploitant un établissement bancaire ou financier y échappent pour leurs opérations courantes (L. 225-91). Au cas présent, M. Julien BERTHOLIER est un membre personne physique du conseil de surveillance et ALTIGRÈVE n'est pas un établissement financier : le prêt de 80 000 € est une **convention interdite**. L'autorisation du conseil de surveillance, prévue par l'article 18, 4° des statuts pour les prêts, ne peut pas la rendre valable : elle ne vaut que pour les conventions réglementées. *Conclusion* : le directoire doit refuser ; un prêt consenti à son épouse ou à une société interposée serait tout aussi nul. M. Julien BERTHOLIER doit s'adresser à une banque, sans caution de la société. (0,5 pt)
+
+**Note à l'attention des correcteurs**
+- 1.2-01 : accepter l'un quelconque des fondements de L. 225-86 (personne interposée, intérêt indirect, entreprise dont un membre du directoire est gérant ou associé indéfiniment responsable, ou actionnaire à 16,8 % des droits de vote) ; l'exclusion des conventions courantes à conditions normales doit être écartée par le loyer.
+- 1.2-03 : valoriser, sans l'exiger, l'inopposabilité aux tiers des limitations statutaires des pouvoirs du directoire (L. 225-64) : la violation de l'article 18 des statuts ne suffit pas, à elle seule, à priver le bail d'effet ; c'est la procédure des conventions réglementées qui permet l'annulation.
+- 1.2-04 : accepter « nullité absolue » ou « nullité » ; l'essentiel est que l'autorisation du conseil ne régularise pas l'opération.
+
+**Erreurs fréquentes**
+- `JUR-J07` — appliquer les règles du conseil d'administration (L. 225-38 et s.) ou de la SAS (L. 227-10 : la convention produit ses effets) au lieu de celles de la SA à directoire.
+- `JUR-J01` — affirmer que la convention « est nulle » sans vérifier la condition des conséquences dommageables, ni la prescription, ni la possibilité de couverture par l'assemblée.
+- `JUR-J08` — confondre convention réglementée et convention interdite : un prêt à un membre personne physique du conseil n'est pas « soumis à autorisation », il est interdit.
+
+**Références**
+
+| Référence | Contenu mobilisé |
+|---|---|
+| C. com. L. 225-86, L. 225-87 | conventions réglementées de la SA à directoire, personne interposée, intérêt indirect, conventions courantes exclues |
+| C. com. L. 225-88, L. 225-89, L. 225-90 | procédure, rapport spécial, vote sans l'intéressé ; effets ; nullité, prescription de trois ans, couverture |
+| C. com. L. 225-91 | conventions interdites |
+| C. com. L. 225-64 | inopposabilité aux tiers des limitations statutaires |
+
+---
+
+### 1.3 Révocation d'un membre du directoire salarié (1,5 point)
+
+**Type de question** : conditions et application, exploitation de l'annexe 1.1, conseil.
+
+| Item | Attendu | Temps | Points |
+|---|---|---|---:|
+| 1.3-01 | Organe compétent : l'assemblée et, si les statuts le prévoient, le conseil de surveillance ; article 16 des statuts → le conseil peut révoquer Mme VERNASSAL ; révocation sans juste motif possible mais ouvrant droit à des dommages-intérêts ; aucun motif avancé → la société s'expose à l'indemniser | règle et application | 0,5 |
+| 1.3-02 | Cumul avec le contrat de travail : permis pour un membre du directoire si emploi effectif, fonctions techniques distinctes du mandat, lien de subordination, rémunération distincte ; au cas présent, contrat de 2012, bureau des méthodes, autorité du président du directoire, salaire distinct → cumul régulier ; la révocation ne résilie pas le contrat | règle et application | 0,5 |
+| 1.3-03 | Conclusion : la délibération du conseil ne peut pas mettre fin au contrat de travail ; Mme VERNASSAL reste salariée ; la rupture éventuelle relève de l'employeur (la société représentée par le directoire) et du droit du travail, avec un motif propre à la relation de travail et la procédure applicable ; la révocation n'en est pas un | conclusion et conseil | 0,5 |
+
+**Réponse attendue**
+
+*La révocation.* Les membres du directoire peuvent être révoqués par l'**assemblée générale** ainsi que, **si les statuts le prévoient, par le conseil de surveillance** ; si la révocation est décidée **sans juste motif**, elle peut donner lieu à **dommages-intérêts** (C. com. L. 225-61). La révocation est donc toujours possible, mais elle a un coût lorsqu'elle n'est pas justifiée (faute, désaccord grave sur la gestion compromettant l'intérêt social, par exemple) ; elle ne doit pas non plus intervenir dans des conditions brutales ou vexatoires, et l'intéressée doit avoir été mise en mesure de présenter ses observations avant la décision. Au cas présent, l'article 16 des statuts (annexe 1.1) permet au **conseil de surveillance** de révoquer les membres du directoire : il est compétent, comme l'assemblée. Aucun motif n'étant avancé, la révocation serait prononcée **sans juste motif** : la société s'exposerait à verser des dommages-intérêts à Mme VERNASSAL. (0,5 pt)
+
+*L'incidence sur le contrat de travail.* Aucun texte n'interdit à un membre du directoire d'être salarié de la société : la loi prévoit au contraire que, si l'intéressé a conclu un contrat de travail avec la société, **la révocation de ses fonctions de membre du directoire n'a pas pour effet de résilier ce contrat** (L. 225-61). Le cumul suppose un **emploi effectif**, correspondant à des **fonctions techniques distinctes** du mandat, exercées dans un **lien de subordination** et donnant lieu à une **rémunération distincte**. Au cas présent, Mme VERNASSAL est salariée depuis 2012, bien avant sa nomination en 2021 ; elle dirige le bureau des méthodes de l'usine, sous l'autorité du président du directoire pour ces fonctions techniques, et perçoit un salaire distinct de sa rémunération de mandataire : le cumul est régulier, et son contrat survivra à la révocation. (0,5 pt)
+
+*Conclusion et conseil.* La délibération du conseil de surveillance ne peut pas « mettre fin » au contrat de travail : le conseil n'est pas l'employeur et la révocation du mandat est sans effet sur le contrat. Mme VERNASSAL resterait responsable du bureau des méthodes, avec son salaire. Si la société voulait rompre ce contrat, la décision appartiendrait à l'employeur, c'est-à-dire à la société représentée par le directoire, et obéirait au **droit du travail** : un motif tenant à la relation de travail elle-même (la révocation du mandat n'en est pas un) et le respect de la procédure applicable, à défaut de quoi la société devrait réparer le préjudice né d'une rupture injustifiée, en plus des dommages-intérêts dus pour une révocation sans juste motif. Il convient de conseiller au conseil de surveillance de formuler et de justifier un motif de révocation, d'entendre Mme VERNASSAL avant de délibérer, et de dissocier le sort du mandat de celui du contrat de travail. (0,5 pt)
+
+**Note à l'attention des correcteurs**
+- 1.3-01 : accepter « révocable pour juste motif » ; sanctionner la réponse « révocable *ad nutum*, sans aucune indemnité », qui est celui des administrateurs et du président du conseil d'administration, non celui du directoire. Le respect du contradictoire est valorisé, non exigé.
+- 1.3-02 : accorder le point dès que trois des quatre conditions du cumul (emploi effectif, fonctions techniques distinctes, subordination, rémunération distincte) sont appliquées aux faits.
+- 1.3-03 : le détail de la procédure de rupture du contrat de travail (relevant du DCG) n'est pas attendu ; il suffit d'indiquer qu'elle obéit au droit du travail et que la révocation ne la justifie pas.
+
+**Erreurs fréquentes**
+- `JUR-J08` — confondre le régime de révocation du directoire (dommages-intérêts en l'absence de juste motif) avec la révocation *ad nutum* des administrateurs, ou avec le régime statutaire du président de SAS.
+- `JUR-J07` — croire que la révocation du mandat entraîne la perte de l'emploi salarié, ou que le cumul d'un mandat et d'un contrat de travail est interdit au membre du directoire.
+
+**Références**
+
+| Référence | Contenu mobilisé |
+|---|---|
+| C. com. L. 225-61 | révocation par l'assemblée ou, si les statuts le prévoient, par le conseil de surveillance ; dommages-intérêts sans juste motif ; maintien du contrat de travail |
+| C. com. L. 225-59 | nomination des membres du directoire par le conseil de surveillance |
+
+---
+
+### 1.4 Résolution climatique et préjudice écologique (2 points)
+
+**Type de question** : exploitation des annexes 1.1 à 1.3, calcul simple, analyse d'une situation (« répondez aux arguments »).
+
+| Item | Attendu | Temps | Points |
+|---|---|---|---:|
+| 1.4-01 | Inscription : actionnaires représentant au moins 5 % du capital ; réduction du pourcentage seulement au-delà de 750 000 € de capital ; capital de 600 000 € → 5 % × 60 000 = 3 000 actions ; le fonds en détient 3 600 (6 %) → il peut requérir l'inscription, peu important ses 3,6 % des droits de vote ; demande au siège (lettre recommandée ou voie électronique), texte du projet, refus contestable devant le tribunal de commerce | annexe et calcul | 0,5 |
+| 1.4-02 | Portée : le directoire a la compétence de gestion ; l'assemblée ne peut pas lui imposer la stratégie → résolution consultative, non contraignante ; aucune obligation légale de vote sur la stratégie climatique dans une société non cotée qui ne se réfère à aucun code ; conclusion : M. BERTHOLIER se trompe sur le poids du fonds, non sur la portée | règle, application et conclusion | 0,5 |
+| 1.4-03 | Préjudice écologique : atteinte non négligeable aux éléments ou fonctions des écosystèmes (poissons sur deux kilomètres, berges sur 400 mètres), distincte des dommages personnels ; la société en est responsable ; qualité pour agir des associations agréées ou créées depuis au moins cinq ans ayant pour objet la protection de la nature → SARCENNE NATURE (agréée, créée en 2009) peut agir sans dommage personnel | annexe et application | 0,5 |
+| 1.4-04 | Réparation par priorité en nature (repeuplement, restauration des berges) ; à défaut, dommages-intérêts affectés à la réparation de l'environnement, versés au demandeur ou à l'État → pas d'indemnité librement disponible ; prescription de dix ans à compter de la connaissance de la manifestation du préjudice (mai 2026 → mai 2036) → M. BERTHOLIER se trompe sur les trois points | règle, application et conclusion | 0,5 |
+
+**Réponse attendue**
+
+*Le fonds peut-il faire inscrire son projet ?* Un ou plusieurs actionnaires représentant **au moins 5 % du capital** peuvent requérir l'inscription de points ou de projets de résolution à l'ordre du jour de l'assemblée (C. com. L. 225-105, al. 2, annexe 1.2) ; ce pourcentage n'est réduit, par tranches, que lorsque le capital est **supérieur à 750 000 €** (R. 225-71, al. 2). La demande est adressée au siège social par lettre recommandée avec demande d'avis de réception ou par voie électronique, accompagnée du texte du projet de résolution ; les auteurs justifient de l'inscription de leurs titres en compte ; le refus d'inscription peut être contesté devant le tribunal de commerce, qui statue selon la procédure accélérée au fond. Au cas présent, le capital d'ALTIGRÈVE (600 000 €) n'excède pas 750 000 € : le seuil est de 5 % du capital, soit 5 % × 60 000 = **3 000 actions**. SÉRAVAL PARTENAIRES détient **3 600 actions**, soit 6 % du capital (annexe 1.1) : il peut requérir seul l'inscription. Le seuil s'apprécie en **capital** et non en droits de vote : que le fonds ne dispose que de 3,6 % des voix, faute de droit de vote double (article 12 des statuts, inscription nominative depuis moins de deux ans au 31 octobre 2026), est sans incidence ; il bénéficiera du vote double à partir de mars 2027, ce qui reste tout aussi indifférent pour le seuil, apprécié en capital. (0,5 pt)
+
+*Quelle serait la portée de la résolution ?* Le directoire est investi des pouvoirs les plus étendus pour agir au nom de la société, sous réserve des pouvoirs que la loi attribue expressément au conseil de surveillance et aux assemblées ; c'est lui qui détermine les orientations de l'activité, en considérant les enjeux sociaux et environnementaux (L. 225-64). L'assemblée ne peut donc pas lui imposer une décision de gestion : une résolution qui « demande » au directoire de présenter un plan de transition a une **portée consultative** ; adoptée, elle exprimerait la volonté des actionnaires, sans contraindre juridiquement le directoire, qui s'exposerait seulement à leur défiance (et, le cas échéant, à une révocation). Aucune disposition légale n'impose à une société non cotée de soumettre sa stratégie climatique au vote de l'assemblée. Le code AFEP-MEDEF recommande seulement que cette stratégie soit présentée à l'assemblée générale ordinaire, à intervalles réguliers et en cas de modification significative, sans prévoir de vote ; il ne s'applique qu'aux sociétés qui s'y réfèrent, ce que ne fait pas ALTIGRÈVE. *Conclusion* : M. Antoine BERTHOLIER se trompe sur le poids du fonds, qui peut faire inscrire son projet ; il a raison sur sa portée, qui n'est pas contraignante. (0,5 pt)
+
+*L'action de l'association : le préjudice et la qualité pour agir.* Toute personne responsable d'un **préjudice écologique** est tenue de le réparer (C. civ. 1246) ; ce préjudice consiste en une **atteinte non négligeable aux éléments ou aux fonctions des écosystèmes** ou aux bénéfices collectifs tirés par l'homme de l'environnement (1247) : c'est l'atteinte à la nature elle-même, distincte des dommages subis par des personnes. L'action est ouverte à toute personne ayant qualité et intérêt à agir, notamment l'État, l'Office français de la biodiversité, les collectivités concernées, les établissements publics et les **associations agréées ou créées depuis au moins cinq ans** à la date d'introduction de l'instance qui ont pour objet la protection de la nature et la défense de l'environnement (1248) (annexe 1.3). Au cas présent, la mortalité des poissons sur deux kilomètres et la destruction de la végétation des berges sur 400 mètres sont une atteinte non négligeable aux éléments et aux fonctions de l'écosystème du torrent ; la fuite provient de la cuve de l'atelier de la société, qui en est responsable en sa qualité de gardienne de la cuve (responsabilité du fait des choses), ou pour défaut d'entretien du raccord. L'association SARCENNE NATURE, **agréée**, créée en 2009 et dont l'objet est la protection de la nature, a qualité pour agir ; il lui suffit de remplir l'une des deux conditions (agrément ou ancienneté), elle remplit les deux. Elle n'a pas à justifier d'un dommage personnel : M. Antoine BERTHOLIER se trompe. (0,5 pt)
+
+*La réparation et la prescription.* La réparation s'effectue **par priorité en nature** ; en cas d'impossibilité ou d'insuffisance des mesures de réparation, le juge condamne le responsable à verser des dommages-intérêts **affectés à la réparation de l'environnement**, au demandeur ou, si celui-ci ne peut prendre les mesures utiles, à l'État (1249). L'action se prescrit par **dix ans** à compter du jour où le titulaire de l'action a connu ou aurait dû connaître la manifestation du préjudice écologique (C. civ. 2226-1). Au cas présent, le juge ordonnera d'abord des mesures de remise en état (repeuplement du torrent, restauration des berges) ; une éventuelle indemnité serait affectée à la réparation du milieu, et non librement utilisable par l'association. Le préjudice s'est manifesté le 18 mai 2026 : l'action est ouverte jusqu'en **mai 2036**, et non pendant cinq ans. *Conclusion* : les trois arguments de M. Antoine BERTHOLIER sont erronés ; la société a intérêt à proposer elle-même des mesures de réparation en nature. (0,5 pt)
+
+**Note à l'attention des correcteurs**
+- 1.4-01 : le calcul peut être présenté en pourcentage (6 % ≥ 5 %) ou en actions (3 600 ≥ 3 000) ; le point exige la référence au capital et non aux droits de vote. Les conditions de forme (lettre recommandée, texte du projet) sont valorisées, non exigées.
+- 1.4-02 : la portée d'une résolution climatique d'actionnaires est discutée. Accepter le candidat qui soutient que l'auteur de la convocation pourrait refuser d'inscrire une résolution empiétant sur les compétences du directoire, sous le contrôle du tribunal de commerce, et qui conseille au fonds de demander l'inscription d'un **point** motivé à l'ordre du jour ou de rédiger une résolution expressément consultative. Ne pas exiger la mention du code AFEP-MEDEF.
+- 1.4-03 et 1.4-04 : seule la responsabilité civile du Code civil est attendue ; ne pas valoriser les développements sur le régime administratif de l'atelier ou sur des sanctions du droit de l'environnement, qui sont hors programme. Accepter la mention, non exigée, des préjudices personnels que des tiers (pêcheurs, riverains) pourraient réclamer en plus du préjudice écologique.
+
+**Erreurs fréquentes**
+- `JUR-J09` — ne pas exploiter les annexes : comparer la part des droits de vote (3,6 %) au seuil, au lieu de la part du capital, ou ignorer la condition « agréées ou créées depuis au moins cinq ans ».
+- `JUR-J08` — confondre préjudice écologique et préjudice personnel de l'association, ou prêter à une résolution d'actionnaires la force d'une décision qui s'impose au directoire.
+
+**Références**
+
+| Référence | Contenu mobilisé |
+|---|---|
+| C. com. L. 225-105, al. 2 ; R. 225-71 (décret n° 2026-94) | seuil de 5 % du capital, réduction au-delà de 750 000 €, forme de la demande, contestation du refus |
+| C. com. L. 225-64 | compétence de gestion du directoire, enjeux sociaux et environnementaux |
+| C. civ. 1246 à 1249 | préjudice écologique : définition, qualité pour agir, réparation en nature, dommages-intérêts affectés |
+| C. civ. 2226-1 | prescription de dix ans |
+
+---
+
+### 1.5 Acompte sur dividende, dividendes fictifs et obligations du commissaire aux comptes (2 points)
+
+**Type de question** : conditions et application, calcul simple, qualification pénale, question piège (révélation ou alerte).
+
+| Item | Attendu | Temps | Points |
+|---|---|---|---:|
+| 1.5-01 | Acompte régulier : bilan intermédiaire certifié par un commissaire aux comptes ; bénéfice réalisé depuis la clôture, après amortissements et provisions nécessaires ; montant au plus égal à ce bénéfice ; décision du directoire ; au cas présent : certification refusée ; stock à ramener à 500 000 € : 4 000 000 − 500 000 = 3 500 000 € de surévaluation ; 3 200 000 − 3 500 000 = perte de 300 000 € → aucun bénéfice ; les réserves facultatives ne peuvent pas financer un acompte → acompte irrégulier, dividende fictif | calcul et application | 0,5 |
+| 1.5-02 | Infraction : distribution de dividendes fictifs, applicable aux membres du directoire ; éléments : répartition effective entre les actionnaires, dividende fictif, absence d'inventaire ou inventaire frauduleux (situation surévaluée en connaissance de cause), mauvaise foi ; auteurs : les membres du directoire qui décident et réalisent la distribution ; peines : cinq ans d'emprisonnement et 375 000 € d'amende | règle et application | 0,5 |
+| 1.5-03 | Commissaire aux comptes : refus de certifier, signalement des irrégularités à la plus prochaine assemblée ; si l'acompte est versé, révélation au procureur de la République des faits délictueux, sans engager sa responsabilité ; à défaut, délit de non-révélation : cinq ans d'emprisonnement et 75 000 € d'amende | règle et application | 0,5 |
+| 1.5-04 | Alerte ≠ révélation : l'alerte vise les faits de nature à compromettre la continuité de l'exploitation, sans rapport ici (société prospère) ; elle ne dispense pas de la révélation → Mme MALGOVERT ne peut pas s'en contenter | conclusion | 0,5 |
+
+**Réponse attendue**
+
+*Les conditions d'un acompte régulier.* Des acomptes sur dividendes peuvent être distribués avant l'approbation des comptes de l'exercice lorsqu'un **bilan établi au cours ou à la fin de l'exercice et certifié par un commissaire aux comptes** fait apparaître que la société, depuis la clôture de l'exercice précédent, **après constitution des amortissements et provisions nécessaires**, déduction faite des pertes antérieures et des sommes à porter en réserve, et compte tenu du report bénéficiaire, **a réalisé un bénéfice** ; le montant des acomptes ne peut excéder ce bénéfice ; **tout dividende distribué en violation de ces règles est un dividende fictif** (C. com. L. 232-12, al. 2 et 3). Le directoire a qualité pour décider l'acompte et en fixer le montant et la date (R. 232-17). Au cas présent : (0,5 pt)
+- la situation au 30 septembre 2026 n'est **pas certifiée**, et Mme Sophie MALGOVERT ne peut pas la certifier en l'état ;
+- le stock des collections de 2024 doit être ramené à la valeur à laquelle il pourra être vendu, 500 000 €, inférieure à son coût de production (2 500 000 €) : la situation le surévalue de 4 000 000 − 500 000 = **3 500 000 €** ; le résultat de la période devient 3 200 000 − 3 500 000 = **− 300 000 €** : la société n'a réalisé **aucun bénéfice** depuis la clôture, et il n'y a ni report bénéficiaire ni bénéfice antérieur à prendre en compte ;
+- les 6 000 000 € de réserves facultatives ne peuvent pas servir à un acompte : seul le bénéfice intermédiaire le peut ; une distribution de réserves suppose une décision de l'assemblée qui indique les postes prélevés (L. 232-11, al. 2).
+
+L'acompte de 3 000 000 € ne peut donc pas être régulièrement versé : ce serait un **dividende fictif**.
+
+*L'infraction et les peines.* Est puni de **cinq ans d'emprisonnement et de 375 000 € d'amende** le fait, pour les dirigeants d'une société anonyme, d'opérer entre les actionnaires la **répartition de dividendes fictifs**, **en l'absence d'inventaire ou au moyen d'inventaires frauduleux** (C. com. L. 242-6, 1°) ; ces peines sont applicables, selon leurs attributions respectives, aux membres du directoire et du conseil de surveillance (L. 242-30) ; seuls les membres du directoire décident et réalisent la répartition. L'infraction suppose : la **répartition** effective d'un dividende entre les actionnaires ; un dividende **fictif**, c'est-à-dire non prélevé sur un bénéfice distribuable réel ; l'absence d'inventaire ou un **inventaire frauduleux**, établi en connaissance de sa fausseté ; la **mauvaise foi** de l'auteur, qui connaît le caractère fictif du dividende. Au cas présent, le versement du 15 décembre 2026 réaliserait la répartition ; le dividende serait fictif ; la situation au 30 septembre, qui maintient le stock à son prix de vente alors que le directoire reconnaît sa valeur réelle et a été averti par la commissaire aux comptes, constitue un inventaire frauduleux ; la mauvaise foi résulte de ces circonstances. Les **membres du directoire** qui ont décidé et réaliseraient la distribution, M. Antoine BERTHOLIER, Mme Claire VERNASSAL et M. Olivier PRÉMONT, en seraient les auteurs et encourraient chacun cinq ans d'emprisonnement et 375 000 € d'amende. Tant que l'acompte n'est pas versé, l'infraction n'est pas constituée : le directoire doit renoncer à la distribution. (0,5 pt)
+
+*Les obligations de Mme Sophie MALGOVERT.* Le commissaire aux comptes signale à la plus prochaine assemblée générale les irrégularités et inexactitudes relevées au cours de sa mission ; il **révèle au procureur de la République les faits délictueux** dont il a eu connaissance à l'occasion de sa mission, **sans que sa responsabilité puisse être engagée** par cette révélation (L. 821-10). Le fait pour un commissaire aux comptes de **ne pas révéler** au procureur de la République les faits délictueux dont il a eu connaissance est puni de **cinq ans d'emprisonnement et de 75 000 € d'amende** (L. 821-9). Au cas présent, Mme Sophie MALGOVERT doit refuser de certifier la situation intermédiaire, en informer le directoire et le conseil de surveillance, et signaler l'irrégularité à la prochaine assemblée ; si l'acompte est versé le 15 décembre 2026, elle devra **révéler** au procureur de la République la distribution de dividendes fictifs, sans attendre, sous peine de commettre elle-même le délit de non-révélation. L'obligation pèse aussi sur le cabinet ALPES AUDIT CERTIFICATION, co-commissaire aux comptes, dès lors qu'il a connaissance des faits. (0,5 pt)
+
+*Révélation et alerte.* La **procédure d'alerte** permet au commissaire aux comptes qui relève des **faits de nature à compromettre la continuité de l'exploitation** d'en informer le président du directoire, puis le conseil de surveillance, l'assemblée et le président du tribunal de commerce (L. 234-1). Elle n'a ni le même objet ni le même destinataire que la révélation : ALTIGRÈVE, qui réalise 148 000 000 € de chiffre d'affaires et dispose de 6 000 000 € de réserves, ne connaît pas de difficulté menaçant la continuité de son exploitation, et le déclenchement d'une alerte ne la dispenserait pas de révéler un délit. *Conclusion* : Mme Sophie MALGOVERT ne peut pas se contenter d'une alerte ; elle doit refuser la certification et, si l'acompte est versé, révéler les faits au procureur de la République. (0,5 pt)
+
+**Note à l'attention des correcteurs**
+- 1.5-01 : le calcul doit faire apparaître l'absence de bénéfice ; accepter un raisonnement fondé sur le coût de production comme plafond (2 500 000 €), dès lors que le candidat retient la valeur de réalisation de 500 000 €, inférieure. Ne pas exiger de développement comptable sur la dépréciation des stocks (UE 4).
+- 1.5-02 : valoriser, sans l'exiger, la possibilité pour la société d'exiger des actionnaires la restitution des dividendes s'ils connaissaient le caractère irrégulier de la distribution ou ne pouvaient l'ignorer (L. 232-17), et les peines complémentaires (interdiction de gérer). Les membres du conseil de surveillance ne sont pas les auteurs de la distribution. Ne pas attendre de développement sur l'abus de biens sociaux ni sur la délégation de pouvoirs.
+- 1.5-04 : la réponse fondée sur la seule procédure d'alerte, sans la révélation, ne reçoit aucun point aux items 1.5-03 et 1.5-04.
+
+**Erreurs fréquentes**
+- `JUR-S07` — répondre par la procédure d'alerte, alors que la réponse attendue porte sur l'obligation de révélation des faits délictueux au procureur de la République.
+- `JUR-S08` — qualifier le délit sans en énoncer les éléments constitutifs (répartition, caractère fictif, inventaire frauduleux, mauvaise foi), ou le confondre avec la présentation de comptes infidèles, qui vise les comptes annuels.
+- `JUR-J01` — affirmer que l'acompte est impossible sans vérifier le bénéfice intermédiaire ; ou, à l'inverse, admettre un acompte prélevé sur les réserves.
+
+**Références**
+
+| Référence | Contenu mobilisé |
+|---|---|
+| C. com. L. 232-11, L. 232-12, L. 232-17 ; R. 232-17 | bénéfice distribuable, distribution de réserves ; acompte sur dividende, dividende fictif ; restitution ; compétence du directoire |
+| C. com. L. 242-6, 1° ; L. 242-30 | distribution de dividendes fictifs ; application aux membres du directoire |
+| C. com. L. 821-9, L. 821-10 | non-révélation des faits délictueux ; signalement des irrégularités et révélation |
+| C. com. L. 234-1 | procédure d'alerte du commissaire aux comptes dans la SA |
+
+---
+
+## Points à vérifier avant publication
+
+> **À vérifier** :
+> - Légifrance n'a pas été lu directement : tous les articles cités ont été lus le 10/11/2026 dans la base LEGI consolidée (miroir codes.droit.org ; Code de commerce mis à jour au 01/10/2026, Code civil au 29/07/2026, Code du travail au 06/11/2026) ; contrôle Légifrance recommandé, en particulier pour les textes reproduits en annexes 1.2 et 1.3 (R. 225-71 dans sa version issue du décret n° 2026-94 du 13/02/2026).
+> - Règles datées ajoutées le 10/11/2026 (DSC-640) : `cse_representants_conseil_surveillance` (L. 2312-72) et `resolution_actionnaires_capital_seuil_reduction` (R. 225-71). Les entrées `conventions_reglementees_seuil_droits_vote` et `conventions_nullite_prescription` citent L. 225-38 et L. 225-42 (SA à conseil d'administration) ; les articles de la SA à directoire, L. 225-86 et L. 225-90, posent les mêmes valeurs (10 %, trois ans), lus le 10/11/2026.
+> - Conditions du cumul d'un mandat de membre du directoire et d'un contrat de travail (emploi effectif, fonctions techniques distinctes, subordination), respect du contradictoire dans la révocation et notion de juste motif : règles jurisprudentielles énoncées sans référence, aucun arrêt n'étant vérifié dans `regles/jurisprudence.md`.
+> - Portée d'une résolution climatique d'actionnaires et possibilité de refuser son inscription : question discutée, traitée par une note aux correcteurs.
+>
+> Aucune règle de ce corrigé ne repose sur un texte non promulgué. <!-- dscgcheck:ignorer -->
