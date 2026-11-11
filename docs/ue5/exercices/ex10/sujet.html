@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exploiter les données de télérelève pour réduire les pertes et piloter le programme : Régie des eaux de l'agglomération de MORVÈZE, établissement public de l'eau et de l'assainissement : données de télérelève, réduction des pertes et pilotage du programme</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 1</p><p>14 points</p><p>1 h 03</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Exploiter les données de télérelève pour réduire les pertes et piloter le programme</h1><p class="cas">Régie des eaux de l'agglomération de MORVÈZE, établissement public de l'eau et de l'assainissement : données de télérelève, réduction des pertes et pilotage du programme</p><p><strong>DOSSIER 1 – EXPLOITER LES DONNÉES DE TÉLÉRELÈVE POUR RÉDUIRE LES PERTES ET PILOTER LE PROGRAMME (14 points)</strong></p>
+<p>Durée conseillée : 1 h 03 (14 points sur 40, pour une épreuve de 3 heures, coefficient 1 ; environ 4,5 minutes par point).</p>
+<p>Réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document et matériel autorisés</strong> : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Ce dossier est l'un des trois dossiers indépendants du sujet d'entraînement complet n° 4, construits sur un même cas : la présentation et l'annexe 1.1 sont communes aux trois dossiers ; chaque dossier comporte en outre ses propres annexes.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en mars 2027. La Régie des eaux de l'agglomération de MORVÈZE est un établissement public local à caractère industriel et commercial, créé en 2016 par la communauté d'agglomération de Morvèze (32 communes, 310 000 habitants) pour gérer en direct le service public de l'eau potable et de l'assainissement. Elle emploie 380 agents et dessert 160 000 abonnés. Elle exploite deux usines de production d'eau potable, cinq stations de traitement des eaux usées et 2 400 kilomètres de canalisations ; 120 sites (réservoirs, stations de pompage, usines) sont pilotés à distance par un système de supervision centralisé. Ses recettes de l'exercice 2026 s'élèvent à 70 millions d'euros, dont 38 millions pour l'eau potable et 32 millions pour l'assainissement ; 3,5 millions d'euros sont consacrés au système d'information. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>Après l'été 2026, marqué par une sécheresse et par des restrictions d'usage de l'eau, le conseil d'administration de la régie a adopté en décembre 2026 le plan stratégique « MORVÈZE EAU 2032 ». Il fixe trois priorités : réduire les pertes du réseau grâce aux données des compteurs en télérelève, qui équipent 60 000 abonnés et seront généralisés d'ici 2029 ; renforcer la sécurité des installations, après une connexion suspecte détectée en novembre 2026 sur le système de supervision ; moderniser la relation avec les abonnés, dont 40 % utilisent déjà le portail en ligne de la régie. La directrice générale, Mme Mathilde ROCHEVAL, rend compte de la mise en œuvre du plan au conseil d'administration, présidé par M. Gilles VAUQUIERS, vice-président de la communauté d'agglomération.</p>
+<p>Vous venez de rejoindre la régie comme chargé(e) de mission auprès de la directrice générale. Mme ROCHEVAL vous confie trois travaux : exploiter les données de télérelève pour réduire les pertes et piloter le programme qui leur est consacré (dossier 1) ; sécuriser le système de supervision des installations et les accès à celui-ci (dossier 2) ; auditer le portail des abonnés et orienter la stratégie de la relation numérique (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-de-la-régie-des-eaux-de-lagglomération-de-morvèze-et-chiffres-clés">ANNEXE 1.1 – Présentation de la Régie des eaux de l'agglomération de MORVÈZE et chiffres clés</h3>
+<p>La Régie des eaux de l'agglomération de MORVÈZE est un établissement public local à caractère industriel et commercial, créé en 2016 par la communauté d'agglomération de Morvèze, qui lui a confié la gestion directe du service public de l'eau potable et de l'assainissement sur ses 32 communes. Elle est administrée par un conseil d'administration, présidé par M. Gilles VAUQUIERS, vice-président de la communauté d'agglomération, et dirigée par une directrice générale. Ses abonnés sont des particuliers, des entreprises et des collectivités. Son exercice coïncide avec l'année civile.</p>
+<p><strong>Chiffres clés de l'exercice 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Activité</td>
+<td>production et distribution d'eau potable ; collecte et traitement des eaux usées</td>
+</tr>
+<tr class="even">
+<td>Territoire desservi</td>
+<td>communauté d'agglomération de Morvèze : 32 communes, 310 000 habitants</td>
+</tr>
+<tr class="odd">
+<td>Abonnés</td>
+<td>160 000 (particuliers, entreprises, collectivités)</td>
+</tr>
+<tr class="even">
+<td>Agents</td>
+<td>380</td>
+</tr>
+<tr class="odd">
+<td>Recettes</td>
+<td>70 M€ : eau potable 38 M€, assainissement 32 M€</td>
+</tr>
+<tr class="even">
+<td>Budget du système d'information</td>
+<td>3,5 M€ (5 % des recettes)</td>
+</tr>
+<tr class="odd">
+<td>Installations</td>
+<td>deux usines de production d'eau potable ; cinq stations de traitement des eaux usées ; 2 400 km de canalisations</td>
+</tr>
+<tr class="even">
+<td>Supervision</td>
+<td>120 sites (réservoirs, stations de pompage, usines) pilotés à distance par un système de supervision centralisé</td>
+</tr>
+<tr class="odd">
+<td>Télérelève</td>
+<td>60 000 abonnés équipés de compteurs en télérelève fin 2026 ; généralisation aux 160 000 abonnés d'ici 2029</td>
+</tr>
+<tr class="even">
+<td>Plan « MORVÈZE EAU 2032 » (adopté en décembre 2026)</td>
+<td>réduire les pertes du réseau grâce aux données de télérelève ; renforcer la sécurité des installations après la connexion suspecte de novembre 2026 sur la supervision ; moderniser la relation avec les abonnés (40 % utilisent le portail en ligne)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Organigramme simplifié (mars 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Fonction</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conseil d'administration</td>
+<td>président, vice-président de la communauté d'agglomération</td>
+<td>M. Gilles VAUQUIERS</td>
+</tr>
+<tr class="even">
+<td>Direction générale</td>
+<td>directrice générale, qui rend compte au conseil d'administration de la mise en œuvre du plan « MORVÈZE EAU 2032 »</td>
+<td>Mme Mathilde ROCHEVAL</td>
+</tr>
+<tr class="odd">
+<td>Rattaché(e) à la directrice générale</td>
+<td>chargé(e) de mission (poste créé en 2027)</td>
+<td>vous</td>
+</tr>
+<tr class="even">
+<td>Rattachée à la directrice générale</td>
+<td>déléguée à la protection des données</td>
+<td>Mme Hélène BARJOLLE</td>
+</tr>
+<tr class="odd">
+<td>Comité de direction</td>
+<td>directeur de l'exploitation (usines, stations de traitement des eaux usées, réseaux, équipes d'intervention, centre de supervision)</td>
+<td>M. Thierry SALVANHAC</td>
+</tr>
+<tr class="even">
+<td>Comité de direction</td>
+<td>directrice de la clientèle (accueil, facturation, relève des compteurs, portail des abonnés)</td>
+<td>Mme Élodie FARGEMONT</td>
+</tr>
+<tr class="odd">
+<td>Comité de direction</td>
+<td>responsable de la direction des systèmes d'information (DSI, 14 agents)</td>
+<td>Mme Nathalie CORVESSE</td>
+</tr>
+<tr class="even">
+<td>Rattaché à la responsable de la DSI</td>
+<td>responsable de la sécurité des systèmes d'information (fonction exercée à mi-temps)</td>
+<td>M. Yannick LORBEL</td>
+</tr>
+<tr class="odd">
+<td>Comité de direction</td>
+<td>directeur administratif et financier (budget, comptabilité, contrôle de gestion)</td>
+<td>M. Laurent CHAZELON</td>
+</tr>
+<tr class="even">
+<td>Rattaché au directeur administratif et financier</td>
+<td>responsable du contrôle de gestion</td>
+<td>M. Sébastien VELOUZE</td>
+</tr>
+<tr class="odd">
+<td>Comité de direction</td>
+<td>directrice des ressources humaines</td>
+<td>Mme Claire AUBRESPIN</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-12--les-données-disponibles-et-leur-circulation">ANNEXE 1.2 – Les données disponibles et leur circulation</h3>
+<p><strong>Note de M. Thierry SALVANHAC, directeur de l'exploitation, à la directrice générale (février 2027)</strong></p>
+<p><strong>A. Les sources de données</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Données</th>
+<th>Outil et fréquence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Compteurs en télérelève (60 000 abonnés)</td>
+<td>un index de consommation par compteur et par jour, transmis par radio</td>
+<td>plateforme de télérelève d'un prestataire, sur abonnement ; export quotidien d'un fichier de 60 000 lignes, soit environ 22 millions de lignes par an</td>
+</tr>
+<tr class="even">
+<td>Autres compteurs (100 000 abonnés)</td>
+<td>index relevé sur place par les releveurs</td>
+<td>relevé semestriel, saisi dans le logiciel de facturation ; entre deux relevés, la consommation est estimée à partir de l'année précédente</td>
+</tr>
+<tr class="odd">
+<td>Débitmètres d'entrée des secteurs</td>
+<td>volumes entrant dans chacun des cinq secteurs du réseau, mesurés toutes les quinze minutes par 40 débitmètres</td>
+<td>système de supervision ; extraction mensuelle par un technicien</td>
+</tr>
+<tr class="even">
+<td>Casses et réparations</td>
+<td>fiche d'intervention saisie par les équipes : date, adresse, matériau et diamètre de la canalisation, cause, durée de la réparation</td>
+<td>logiciel des interventions, saisie sur tablette ou, à défaut, sur papier puis ressaisie</td>
+</tr>
+<tr class="odd">
+<td>Caractéristiques des canalisations</td>
+<td>tronçons, matériau, diamètre, date de pose, secteur de rattachement</td>
+<td>base patrimoniale du réseau, tenue par le bureau d'études</td>
+</tr>
+</tbody>
+</table>
+<p>Chaque compteur est rattaché à un secteur du réseau dans le logiciel de facturation ; les pertes d'un secteur sont estimées en retranchant des volumes entrés dans le secteur les consommations des compteurs qui lui sont rattachés.</p>
+<p><strong>B. Les défauts constatés (relevés de janvier 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Défaut</th>
+<th>Mesure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Compteurs en télérelève qui ne transmettent pas leur index du jour</td>
+<td>3 000 en moyenne chaque jour (5 %), dont 600 muets depuis plus d'un mois (pile usée, émetteur défaillant) ; les jours manquants sont laissés vides dans les exports</td>
+</tr>
+<tr class="even">
+<td>Index aberrants</td>
+<td>environ 2 000 par mois : index inférieur à celui de la veille, consommation journalière d'un particulier supérieure à 10 m³ ; certains correspondent à de vraies fuites après compteur, chez l'abonné</td>
+</tr>
+<tr class="odd">
+<td>Limites de secteurs non mises à jour</td>
+<td>le lotissement neuf des Prés-Hauts (2 000 abonnés, environ 0,2 million de m³ consommés par an), mis en service en septembre 2025, est alimenté par le secteur Faubourgs nord ; ses compteurs ont été rattachés par erreur au secteur Plateau est dans le logiciel de facturation</td>
+</tr>
+<tr class="even">
+<td>Débitmètres en panne</td>
+<td>4 des 40 débitmètres ont été en panne plus d'un mois en 2026 ; les valeurs manquantes ont été remplacées à la main par la moyenne du mois précédent, sans que la correction soit signalée</td>
+</tr>
+<tr class="odd">
+<td>Fiches de casse incomplètes</td>
+<td>30 % des 650 fiches de 2026 n'indiquent ni l'adresse précise ni le matériau de la canalisation (le secteur, lui, est toujours indiqué) ; les fiches papier sont ressaisies avec deux à trois semaines de retard</td>
+</tr>
+<tr class="even">
+<td>Date de pose des canalisations inconnue</td>
+<td>25 % du linéaire (600 km) ; l'âge moyen des canalisations est calculé sur les seuls tronçons dont la date est connue</td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. Les outils actuels</strong></p>
+<p>Les exports de la plateforme de télérelève, de la supervision et du logiciel des interventions sont copiés dans une dizaine de classeurs de tableur ; le technicien qui les tient ne conserve que des totaux mensuels, faute de pouvoir manipuler les fichiers quotidiens. Il consacre deux jours par mois au rapport mensuel de l'exploitation, diffusé vers le 20 du mois suivant. Chacun des trois services concernés (exploitation, clientèle, bureau d'études) tient sa propre liste des secteurs.</p>
+<h3 id="annexe-13--premiers-chiffres-et-questions-de-la-direction">ANNEXE 1.3 – Premiers chiffres et questions de la direction</h3>
+<p><strong>A. Volumes de l'exercice 2026 (millions de m³)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Volumes mis en distribution (sortie des deux usines)</th>
+<th>Volumes consommés comptabilisés</th>
+<th>dont relevés par télérelève</th>
+<th>dont relevés semestriellement ou estimés</th>
+<th>Pertes estimées</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>25</td>
+<td>20</td>
+<td>8</td>
+<td>12</td>
+<td>5, soit 20 % des volumes mis en distribution</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Les cinq secteurs du réseau en 2026 (chiffres arrondis)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Secteur</th>
+<th>Longueur de canalisations (km)</th>
+<th>Abonnés</th>
+<th>Part des abonnés en télérelève</th>
+<th>Pertes estimées (millions de m³)</th>
+<th>Pertes par km de canalisation (milliers de m³ par an)</th>
+<th>Débit nocturne minimal moyen (m³/h) : 2024 → 2026</th>
+<th>Âge moyen des canalisations (ans)</th>
+<th>Casses en 2026 (pour 100 km)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Centre ancien</td>
+<td>200</td>
+<td>50 000</td>
+<td>60 %</td>
+<td>1,6</td>
+<td>8</td>
+<td>300 → 300</td>
+<td>55</td>
+<td>180 (90)</td>
+</tr>
+<tr class="even">
+<td>Faubourgs nord</td>
+<td>400</td>
+<td>40 000</td>
+<td>20 %</td>
+<td>1,6</td>
+<td>4</td>
+<td>200 → 260</td>
+<td>45</td>
+<td>220 (55)</td>
+</tr>
+<tr class="odd">
+<td>Zone d'activités ouest</td>
+<td>300</td>
+<td>10 000</td>
+<td>70 %</td>
+<td>0,3</td>
+<td>1</td>
+<td>50 → 50</td>
+<td>20</td>
+<td>30 (10)</td>
+</tr>
+<tr class="even">
+<td>Plateau est</td>
+<td>500</td>
+<td>30 000</td>
+<td>40 %</td>
+<td>0,7</td>
+<td>1,4</td>
+<td>130 → 130</td>
+<td>30</td>
+<td>70 (14)</td>
+</tr>
+<tr class="odd">
+<td>Coteaux sud (communes rurales)</td>
+<td>1 000</td>
+<td>30 000</td>
+<td>10 %</td>
+<td>0,8</td>
+<td>0,8</td>
+<td>110 → 110</td>
+<td>40</td>
+<td>150 (15)</td>
+</tr>
+<tr class="even">
+<td><strong>Ensemble</strong></td>
+<td><strong>2 400</strong></td>
+<td><strong>160 000</strong></td>
+<td><strong>37,5 %</strong></td>
+<td><strong>5</strong></td>
+<td><strong>2,1</strong></td>
+<td>—</td>
+<td>—</td>
+<td><strong>650</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Le débit nocturne minimal est le plus faible débit entrant dans le secteur entre 2 heures et 5 heures du matin, quand la consommation des abonnés est au plus bas : une hausse durable signale en général une fuite. Dans la zone d'activités ouest, trois usines agroalimentaires consomment de l'eau la nuit.</p>
+<p><strong>C. Évolution du débit nocturne du secteur Faubourgs nord (description du graphique joint au rapport de janvier 2027)</strong></p>
+<p>La courbe mensuelle du débit nocturne minimal reste comprise entre 195 et 205 m³/h de janvier 2024 à août 2025. Elle passe à 250 m³/h en septembre 2025, puis monte lentement jusqu'à 265 m³/h en janvier 2027. L'axe vertical du graphique commence à 180 m³/h.</p>
+<p><strong>D. Les trois questions de la directrice générale</strong></p>
+<ol type="1">
+<li>Où et combien perdons-nous d'eau aujourd'hui, secteur par secteur ?</li>
+<li>Quels facteurs semblent liés aux pertes (âge et matériau des canalisations, casses, densité des abonnés) ?</li>
+<li>Pouvons-nous anticiper les casses des deux prochaines années, pour programmer le renouvellement des canalisations et l'activité de l'équipe de recherche de fuites ?</li>
+</ol>
+<p><strong>E. Les outils envisagés (note de Mme Nathalie CORVESSE, responsable de la DSI)</strong></p>
+<ul>
+<li><strong>Tableur avancé</strong>, dont disposent tous les cadres : solution actuelle ; aucun coût supplémentaire.</li>
+<li><strong>Outil de visualisation du marché</strong> : connexion directe à la plateforme de télérelève, à la supervision, au logiciel des interventions et à la base patrimoniale du réseau ; rafraîchissement programmé chaque nuit ; tableaux de bord interactifs, cartes des secteurs, consultation sur ordinateur, tablette et téléphone ; abonnement de 25 000 € par an pour 30 utilisateurs et formation de 10 000 € la première année. Un agent de la DSI l'a déjà utilisé dans un emploi précédent.</li>
+</ul>
+<h3 id="annexe-14--le-programme--télérelève-et-réduction-des-pertes-">ANNEXE 1.4 – Le programme « télérelève et réduction des pertes »</h3>
+<p><strong>A. Objectifs à fin 2029 (plan « MORVÈZE EAU 2032 »)</strong></p>
+<ul>
+<li>Ramener les pertes de 5 millions de m³ (2026) à 3,5 millions de m³ par an, soit 1,5 million de m³ d'eau économisés chaque année ; trajectoire : 4,5 millions en 2027, 4 millions en 2028, 3,5 millions en 2029.</li>
+<li>Équiper en télérelève les 100 000 abonnés qui ne le sont pas encore (160 000 abonnés équipés fin 2029).</li>
+<li>Réparer une fuite signalée en trois jours au plus, contre dix jours en moyenne en 2026.</li>
+</ul>
+<p><strong>B. Coûts annuels prévus de 2027 à 2029 (note de M. Sébastien VELOUZE, responsable du contrôle de gestion)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Poste</th>
+<th>Coût annuel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pose de 100 000 compteurs en télérelève en trois ans (90 € par compteur posé)</td>
+<td>3 M€</td>
+</tr>
+<tr class="even">
+<td>Abonnement à la plateforme de télérelève</td>
+<td>0,3 M€</td>
+</tr>
+<tr class="odd">
+<td>Équipe de recherche de fuites créée en 2027 (six agents et leur matériel)</td>
+<td>0,6 M€</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td><strong>3,9 M€</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. Extrait du rapport mensuel de l'exploitation (janvier 2027, diffusé le 21 février 2027)</strong></p>
+<blockquote>
+<p>Volume produit : 2,1 millions de m³ — Casses réparées : 48 — Compteurs en télérelève posés : 61 200 — Débit de nuit des Faubourgs nord : 265 m³/h.</p>
+</blockquote>
+<p><strong>D. Attentes exprimées</strong></p>
+<p><strong>Mme Mathilde ROCHEVAL, directrice générale</strong> : « Ce rapport ne me dit pas si nous sommes sur la trajectoire de 2029. Je veux une page que je lise en cinq minutes avant chaque comité de direction, qui me dise où nous en sommes, ce qui dérape et qui agit. »</p>
+<p><strong>M. Gilles VAUQUIERS, président du conseil d'administration</strong> : « Après l'été 2026, les élus veulent savoir chaque trimestre combien d'eau nous avons cessé de perdre et ce que chaque mètre cube économisé nous coûte. Je ne veux plus découvrir un problème dans la presse. »</p>
+<p><strong>M. Thierry SALVANHAC, directeur de l'exploitation</strong> : « Mes équipes ont besoin de savoir chaque matin où chercher. Mais si les chiffres sont faux, nous enverrons l'équipe de recherche de fuites au mauvais endroit. »</p>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>Mme ROCHEVAL veut que les données de télérelève et du réseau deviennent l'outil de la réduction des pertes, et que le programme qui leur est consacré soit piloté par un tableau de bord digne de ce nom. Vous mobiliserez pour cela les annexes 1.1 à 1.4 ainsi que vos connaissances professionnelles.</p>
+<p><strong>1.1 – Chaîne de traitement des données de pertes (3 points)</strong></p>
+<p>a) Définissez la chaîne de traitement des données et décrivez ses cinq étapes (collecte, nettoyage, structuration, analyse, restitution) appliquées aux sources de l'annexe 1.2.</p>
+<p>b) Pour trois défauts constatés de l'annexe 1.2, indiquez l'étape de la chaîne concernée et le traitement à prévoir, puis montrez en quoi la maîtrise de cette chaîne conditionne les décisions de la régie.</p>
+<p><strong>1.2 – Méthodes d'analyse (3 points)</strong></p>
+<p>a) Associez à chacune des trois questions de la directrice générale (annexe 1.3 D) une méthode d'analyse de données (descriptive, exploratoire ou prédictive), en précisant pour chacune les données mobilisées et le résultat attendu.</p>
+<p>b) Montrez deux limites de ces analyses qui ressortent des annexes.</p>
+<p><strong>1.3 – Diagnostic, visualisations et outil décisionnel (4 points)</strong></p>
+<p>a) À partir des annexes 1.2 et 1.3, formulez en quinze lignes au maximum un diagnostic argumenté des pertes du réseau : deux secteurs prioritaires, deux facteurs apparents et deux précautions de lecture.</p>
+<p>b) Proposez deux visualisations, l'une destinée au directeur de l'exploitation, l'autre au conseil d'administration. Pour chacune, précisez le message, le type de représentation et l'indicateur représenté (formule, source, fréquence, cible et axe).</p>
+<p>c) Recommandez, en le justifiant, l'un des deux outils de l'annexe 1.3 E.</p>
+<p><strong>1.4 – Tableau de bord du programme (4 points)</strong></p>
+<p>a) Proposez le tableau de bord du programme « télérelève et réduction des pertes » destiné à la directrice générale : quatre indicateurs qui équilibrent performance, risques et coûts, chacun précisé par sa formule, sa source, sa fréquence, sa cible et son axe.</p>
+<p>b) Montrez, en trois arguments, en quoi ce tableau de bord corrige l'extrait du rapport mensuel de l'annexe 1.4 C.</p>
+<p>c) Proposez le dispositif de revue et d'amélioration continue de ce tableau de bord : instance, fréquence, règle d'ajustement des cibles et règle de retrait d'un indicateur.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

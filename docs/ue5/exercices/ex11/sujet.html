@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sécuriser le système de supervision des installations et ses accès : Régie des eaux de MORVÈZE : risques, politique de cybersécurité, architecture de confiance, gestion des identités et gouvernance de la sécurité de la supervision</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Sécuriser le système de supervision des installations et ses accès</h1><p class="cas">Régie des eaux de MORVÈZE : risques, politique de cybersécurité, architecture de confiance, gestion des identités et gouvernance de la sécurité de la supervision</p><p><strong>DOSSIER 2 – SÉCURISER LE SYSTÈME DE SUPERVISION DES INSTALLATIONS ET SES ACCÈS (13 points)</strong></p>
+<p>Durée conseillée : 59 min (13 points sur 40, pour une épreuve de 3 heures, coefficient 1 ; environ 4,5 minutes par point).</p>
+<p>Réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document et matériel autorisés</strong> : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Ce dossier est l'un des trois dossiers indépendants du sujet d'entraînement complet n° 4, construits sur un même cas : la présentation et l'annexe 1.1 sont communes aux trois dossiers ; chaque dossier comporte en outre ses propres annexes.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en mars 2027. La Régie des eaux de l'agglomération de MORVÈZE est un établissement public local à caractère industriel et commercial, créé en 2016 par la communauté d'agglomération de Morvèze (32 communes, 310 000 habitants) pour gérer en direct le service public de l'eau potable et de l'assainissement. Elle emploie 380 agents et dessert 160 000 abonnés. Elle exploite deux usines de production d'eau potable, cinq stations de traitement des eaux usées et 2 400 kilomètres de canalisations ; 120 sites (réservoirs, stations de pompage, usines) sont pilotés à distance par un système de supervision centralisé. Ses recettes de l'exercice 2026 s'élèvent à 70 millions d'euros, dont 38 millions pour l'eau potable et 32 millions pour l'assainissement ; 3,5 millions d'euros sont consacrés au système d'information. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>Après l'été 2026, marqué par une sécheresse et par des restrictions d'usage de l'eau, le conseil d'administration de la régie a adopté en décembre 2026 le plan stratégique « MORVÈZE EAU 2032 ». Il fixe trois priorités : réduire les pertes du réseau grâce aux données des compteurs en télérelève, qui équipent 60 000 abonnés et seront généralisés d'ici 2029 ; renforcer la sécurité des installations, après une connexion suspecte détectée en novembre 2026 sur le système de supervision ; moderniser la relation avec les abonnés, dont 40 % utilisent déjà le portail en ligne de la régie. La directrice générale, Mme Mathilde ROCHEVAL, rend compte de la mise en œuvre du plan au conseil d'administration, présidé par M. Gilles VAUQUIERS, vice-président de la communauté d'agglomération.</p>
+<p>Vous venez de rejoindre la régie comme chargé(e) de mission auprès de la directrice générale. Mme ROCHEVAL vous confie trois travaux : exploiter les données de télérelève pour réduire les pertes et piloter le programme qui leur est consacré (dossier 1) ; sécuriser le système de supervision des installations et les accès à celui-ci (dossier 2) ; auditer le portail des abonnés et orienter la stratégie de la relation numérique (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-de-la-régie-des-eaux-de-lagglomération-de-morvèze-et-chiffres-clés">ANNEXE 1.1 – Présentation de la Régie des eaux de l'agglomération de MORVÈZE et chiffres clés</h3>
+<p>La Régie des eaux de l'agglomération de MORVÈZE est un établissement public local à caractère industriel et commercial, créé en 2016 par la communauté d'agglomération de Morvèze, qui lui a confié la gestion directe du service public de l'eau potable et de l'assainissement sur ses 32 communes. Elle est administrée par un conseil d'administration, présidé par M. Gilles VAUQUIERS, vice-président de la communauté d'agglomération, et dirigée par une directrice générale. Ses abonnés sont des particuliers, des entreprises et des collectivités. Son exercice coïncide avec l'année civile.</p>
+<p><strong>Chiffres clés de l'exercice 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Activité</td>
+<td>production et distribution d'eau potable ; collecte et traitement des eaux usées</td>
+</tr>
+<tr class="even">
+<td>Territoire desservi</td>
+<td>communauté d'agglomération de Morvèze : 32 communes, 310 000 habitants</td>
+</tr>
+<tr class="odd">
+<td>Abonnés</td>
+<td>160 000 (particuliers, entreprises, collectivités)</td>
+</tr>
+<tr class="even">
+<td>Agents</td>
+<td>380</td>
+</tr>
+<tr class="odd">
+<td>Recettes</td>
+<td>70 M€ : eau potable 38 M€, assainissement 32 M€</td>
+</tr>
+<tr class="even">
+<td>Budget du système d'information</td>
+<td>3,5 M€ (5 % des recettes)</td>
+</tr>
+<tr class="odd">
+<td>Installations</td>
+<td>deux usines de production d'eau potable ; cinq stations de traitement des eaux usées ; 2 400 km de canalisations</td>
+</tr>
+<tr class="even">
+<td>Supervision</td>
+<td>120 sites (réservoirs, stations de pompage, usines) pilotés à distance par un système de supervision centralisé</td>
+</tr>
+<tr class="odd">
+<td>Télérelève</td>
+<td>60 000 abonnés équipés de compteurs en télérelève fin 2026 ; généralisation aux 160 000 abonnés d'ici 2029</td>
+</tr>
+<tr class="even">
+<td>Plan « MORVÈZE EAU 2032 » (adopté en décembre 2026)</td>
+<td>réduire les pertes du réseau grâce aux données de télérelève ; renforcer la sécurité des installations après la connexion suspecte de novembre 2026 sur la supervision ; moderniser la relation avec les abonnés (40 % utilisent le portail en ligne)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Organigramme simplifié (mars 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Fonction</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conseil d'administration</td>
+<td>président, vice-président de la communauté d'agglomération</td>
+<td>M. Gilles VAUQUIERS</td>
+</tr>
+<tr class="even">
+<td>Direction générale</td>
+<td>directrice générale, qui rend compte au conseil d'administration de la mise en œuvre du plan « MORVÈZE EAU 2032 »</td>
+<td>Mme Mathilde ROCHEVAL</td>
+</tr>
+<tr class="odd">
+<td>Rattaché(e) à la directrice générale</td>
+<td>chargé(e) de mission (poste créé en 2027)</td>
+<td>vous</td>
+</tr>
+<tr class="even">
+<td>Rattachée à la directrice générale</td>
+<td>déléguée à la protection des données</td>
+<td>Mme Hélène BARJOLLE</td>
+</tr>
+<tr class="odd">
+<td>Comité de direction</td>
+<td>directeur de l'exploitation (usines, stations de traitement des eaux usées, réseaux, équipes d'intervention, centre de supervision)</td>
+<td>M. Thierry SALVANHAC</td>
+</tr>
+<tr class="even">
+<td>Comité de direction</td>
+<td>directrice de la clientèle (accueil, facturation, relève des compteurs, portail des abonnés)</td>
+<td>Mme Élodie FARGEMONT</td>
+</tr>
+<tr class="odd">
+<td>Comité de direction</td>
+<td>responsable de la direction des systèmes d'information (DSI, 14 agents)</td>
+<td>Mme Nathalie CORVESSE</td>
+</tr>
+<tr class="even">
+<td>Rattaché à la responsable de la DSI</td>
+<td>responsable de la sécurité des systèmes d'information (fonction exercée à mi-temps)</td>
+<td>M. Yannick LORBEL</td>
+</tr>
+<tr class="odd">
+<td>Comité de direction</td>
+<td>directeur administratif et financier (budget, comptabilité, contrôle de gestion)</td>
+<td>M. Laurent CHAZELON</td>
+</tr>
+<tr class="even">
+<td>Rattaché au directeur administratif et financier</td>
+<td>responsable du contrôle de gestion</td>
+<td>M. Sébastien VELOUZE</td>
+</tr>
+<tr class="odd">
+<td>Comité de direction</td>
+<td>directrice des ressources humaines</td>
+<td>Mme Claire AUBRESPIN</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-21--le-système-de-supervision-et-ses-accès">ANNEXE 2.1 – Le système de supervision et ses accès</h3>
+<p><strong>Note de Mme Nathalie CORVESSE, responsable de la DSI, à la directrice générale (janvier 2027)</strong></p>
+<p><strong>A. Fonctionnement</strong></p>
+<p>Le système de supervision, renouvelé en 2019, permet de surveiller et de piloter à distance les 120 sites de la régie : deux usines de production d'eau potable, cinq stations de traitement des eaux usées, 70 réservoirs et 43 stations de pompage. Sur chaque site, des automates appliquent les consignes envoyées par la supervision (niveaux de remplissage des réservoirs, marche et arrêt des pompes, dosage des réactifs de traitement dans les usines) et lui renvoient les mesures et les alarmes.</p>
+<ul>
+<li><strong>Centre de supervision</strong> : situé à l'usine de production principale, il compte six postes de supervision, occupés par les opérateurs de 7 heures à 19 heures en semaine. Le logiciel de supervision est fourni et maintenu par l'éditeur KERVALDIS ; l'intégrateur BRÉMONTAL a programmé les automates des sites et en assure la maintenance ; le fabricant PURIMANE maintient les équipements de traitement des deux usines.</li>
+<li><strong>Liaisons avec les sites</strong> : 40 sites sont reliés au centre par les liaisons de la régie, 80 par le réseau d'un opérateur de téléphonie mobile ; les échanges entre le centre et les sites ne sont pas chiffrés.</li>
+<li><strong>Réseau</strong> : les postes de supervision sont reliés au même réseau que les 300 postes de bureautique des agents, sans cloisonnement : depuis un poste de bureautique, on peut joindre un poste de supervision. Les postes de supervision ont accès à la messagerie et à internet ; quatre des six fonctionnent avec un système d'exploitation dont l'éditeur ne fournit plus de mises à jour de sécurité depuis 2023.</li>
+<li><strong>Accès à distance</strong> : un logiciel de prise en main à distance, installé sur les postes de supervision et joignable depuis internet, est utilisé la nuit et le week-end par les huit agents d'astreinte depuis leur domicile (trois d'entre eux avec leur ordinateur personnel), et à toute heure par les techniciens des trois prestataires, qui n'ont pas à prévenir la régie. Les accès des prestataires sont ouverts en permanence.</li>
+<li><strong>Authentification</strong> : un identifiant et un mot de passe pour tous les comptes ; aucune authentification multifacteur, y compris pour les accès à distance.</li>
+<li><strong>Journaux</strong> : le logiciel de supervision enregistre les connexions et les modifications de consignes ; les journaux sont conservés 30 jours et ne sont consultés qu'après un incident ; aucune alerte n'est émise en cas de connexion inhabituelle.</li>
+</ul>
+<p><strong>B. Inventaire des comptes d'accès à la supervision (état au 20 novembre 2026, avant l'incident)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Type de compte</th>
+<th>Nombre</th>
+<th>Constats</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Comptes nominatifs d'agents (opérateurs, automaticiens, agents d'exploitation)</td>
+<td>28</td>
+<td>5 appartiennent à des agents partis ou mutés : la direction des ressources humaines ne signale pas les départs et les mutations à la direction de l'exploitation</td>
+</tr>
+<tr class="even">
+<td>Comptes génériques partagés (« exploitation », « astreinte », « maintenance »)</td>
+<td>3</td>
+<td>utilisés par environ 45 personnes ; mots de passe inchangés de 2019 à novembre 2026 ; aucune action ne peut être attribuée à une personne</td>
+</tr>
+<tr class="odd">
+<td>Comptes de télémaintenance des prestataires</td>
+<td>25 : KERVALDIS 12, BRÉMONTAL 8, PURIMANE 5</td>
+<td>10 sont au nom de techniciens qui ne travaillent plus chez le prestataire ; aucune revue depuis 2019 ; les contrats de maintenance n'obligent pas les prestataires à signaler le départ de leurs techniciens</td>
+</tr>
+<tr class="even">
+<td>Comptes d'administration (droits complets : consignes, seuils d'alarme, création des comptes)</td>
+<td>4</td>
+<td>dont un compte générique « admin » partagé par les trois automaticiens et l'éditeur</td>
+</tr>
+<tr class="odd">
+<td><strong>Ensemble</strong></td>
+<td><strong>60 comptes</strong></td>
+<td>un quart des comptes (15) appartiennent à des personnes parties ; 52 comptes peuvent modifier les consignes des sites, seuls 8 sont limités à la consultation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. Organisation de la sécurité</strong></p>
+<ul>
+<li>Le directeur de l'exploitation, M. Thierry SALVANHAC, est responsable des installations et du système de supervision, qu'administre une équipe de trois automaticiens de sa direction.</li>
+<li>La DSI (14 agents) gère le réseau, la bureautique, les applications de gestion et les comptes de messagerie, mais pas les comptes de la supervision.</li>
+<li>M. Yannick LORBEL exerce la fonction de responsable de la sécurité des systèmes d'information à mi-temps ; il consacre l'autre moitié de son temps aux infrastructures de la DSI, dont il relève. La politique de sécurité des systèmes d'information adoptée en 2021 couvre la bureautique et les applications de gestion : la supervision n'y figure pas et n'a jamais fait l'objet d'une analyse des risques.</li>
+<li>En 2025, un audit de l'éditeur KERVALDIS avait recommandé une authentification multifacteur pour les accès à distance ; la recommandation n'a pas été suivie, faute de budget et de responsable désigné.</li>
+<li>Budget de la sécurité en 2026 : 100 000 €, soit moins de 3 % du budget du système d'information. Le plan « MORVÈZE EAU 2032 » prévoit 200 000 € par an de 2027 à 2029 pour la sécurité des installations.</li>
+<li>Avant décembre 2026, le conseil d'administration n'avait jamais examiné la sécurité du système d'information.</li>
+</ul>
+<p><strong>D. Points de vue recueillis en janvier 2027</strong></p>
+<p><strong>M. Thierry SALVANHAC, directeur de l'exploitation</strong> : « La supervision, c'est l'eau au robinet. Si un agent d'astreinte ne peut pas se connecter à 3 heures du matin parce qu'une règle informatique l'en empêche, c'est un réservoir vide au réveil. Je veux de la sécurité, mais pas au détriment de nos interventions. »</p>
+<p><strong>Mme Nathalie CORVESSE, responsable de la DSI</strong> : « Notre réseau transporte les échanges de la supervision sans que nous sachions qui s'y connecte. La supervision et la bureautique sont deux mondes qui partagent les mêmes câbles. »</p>
+<p><strong>M. Yannick LORBEL, responsable de la sécurité des systèmes d'information</strong> : « Je n'ai aucun droit de regard sur la supervision. J'ai appris la connexion suspecte le lundi à 11 heures, plus d'un jour après les faits. »</p>
+<p><strong>Mme Mathilde ROCHEVAL, directrice générale</strong> : « Je veux pouvoir dire au conseil d'administration quels risques nous réduisons, lesquels nous acceptons, qui en répond et dans quels délais. »</p>
+<h3 id="annexe-22--la-connexion-suspecte-de-novembre-2026">ANNEXE 2.2 – La connexion suspecte de novembre 2026</h3>
+<p><strong>Compte rendu établi par M. Yannick LORBEL (décembre 2026)</strong></p>
+<p><strong>A. Chronologie</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Date et heure</th>
+<th>Faits</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fin juin 2026</td>
+<td>Un technicien de l'intégrateur BRÉMONTAL quitte l'entreprise. Son compte de télémaintenance reste actif : ni BRÉMONTAL ni la régie ne le désactivent.</td>
+</tr>
+<tr class="even">
+<td>Nuit du mardi 3 au mercredi 4 novembre, 1 h 50</td>
+<td>Connexion de ce compte à la supervision pendant vingt minutes, sans modification ; personne ne la remarque (elle sera retrouvée dans les journaux après l'incident).</td>
+</tr>
+<tr class="odd">
+<td>Nuit du samedi 21 au dimanche 22 novembre, 2 h 10</td>
+<td>Nouvelle connexion du même compte, par l'accès à distance.</td>
+</tr>
+<tr class="even">
+<td>2 h 25</td>
+<td>Les pompes qui alimentent le réservoir de la Combe-Martel, rempli à 80 % de sa capacité, sont mises à l'arrêt et l'alarme de niveau bas de ce réservoir est désactivée. Le réservoir dessert environ 12 000 habitants de trois communes, dont un établissement d'hébergement pour personnes âgées dépendantes.</td>
+</tr>
+<tr class="odd">
+<td>5 h 40</td>
+<td>Un agent d'astreinte, connecté depuis son domicile pour une alarme sur une autre station de pompage, remarque par hasard que le réservoir n'est plus rempli qu'à 45 %.</td>
+</tr>
+<tr class="even">
+<td>5 h 50</td>
+<td>L'agent remet les pompes en marche et rétablit l'alarme ; le remplissage reprend. Faute de procédure, il ne sait pas s'il doit couper les accès à distance et ne le fait pas.</td>
+</tr>
+<tr class="odd">
+<td>6 h 10</td>
+<td>Il prévient M. SALVANHAC, qui décide d'attendre le lundi.</td>
+</tr>
+<tr class="even">
+<td>Lundi 23 novembre, 8 h 30</td>
+<td>M. SALVANHAC informe Mme CORVESSE.</td>
+</tr>
+<tr class="odd">
+<td>9 h 40</td>
+<td>Le compte est désactivé, 28 heures après la détection.</td>
+</tr>
+<tr class="even">
+<td>11 h</td>
+<td>M. LORBEL est informé.</td>
+</tr>
+<tr class="odd">
+<td>12 h</td>
+<td>La directrice générale est informée.</td>
+</tr>
+<tr class="even">
+<td>Mercredi 25 novembre</td>
+<td>Les neuf autres comptes de prestataires au nom de techniciens partis sont désactivés.</td>
+</tr>
+<tr class="odd">
+<td>Vendredi 27 novembre</td>
+<td>Les mots de passe des trois comptes génériques sont changés.</td>
+</tr>
+<tr class="even">
+<td>Jeudi 10 décembre</td>
+<td>Le conseil d'administration est informé, lors de l'adoption du plan « MORVÈZE EAU 2032 ».</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Conséquences et constats</strong></p>
+<ul>
+<li>Aucune conséquence sur la distribution ni sur la qualité de l'eau. Selon la direction de l'exploitation, sans l'intervention fortuite de l'agent d'astreinte, le réservoir aurait été vide vers 8 h 30, au moment de la pointe de consommation du matin.</li>
+<li>Entre la connexion et la détection, 3 h 30 se sont écoulées ; la détection est due au hasard, non à une alerte.</li>
+<li>Les journaux, conservés 30 jours et extraits le 22 novembre, ne permettent pas de savoir si le compte a été utilisé avant le 23 octobre 2026. Les investigations n'ont établi ni qui a utilisé le compte, ni comment son mot de passe a été obtenu.</li>
+<li>Coût direct de l'incident : 25 000 € (investigation par un prestataire spécialisé dans la réponse aux incidents, 20 000 € ; heures supplémentaires, 5 000 €).</li>
+<li>Aucune procédure ne précise qui doit être alerté, qui décide de couper les accès ni qui informe la direction générale.</li>
+</ul>
+<p><strong>C. Le scénario redouté par la direction de l'exploitation</strong></p>
+<p>« Un attaquant qui, une même nuit, modifierait les consignes de plusieurs réservoirs et le dosage des réactifs de traitement d'une usine pourrait priver d'eau des quartiers entiers et mettre en distribution une eau impropre à la consommation. Les analyseurs des usines déclenchent une alarme en cas d'anomalie de la qualité de l'eau, mais cette alarme remonte par la supervision elle-même. Les usines et les principales stations peuvent être conduites sur place, en mode manuel, mais il faut environ deux heures pour mobiliser une équipe la nuit. »</p>
+<h3 id="annexe-23--repères-méthodologiques-et-réglementaires-au-31122026">ANNEXE 2.3 – Repères méthodologiques et réglementaires (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu</th>
+<th>Situation au 31/12/2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EBIOS Risk Manager (ANSSI, version 1.5 de 2024)</td>
+<td>Méthode d'appréciation et de traitement des risques numériques, en cinq ateliers : 1. cadrage et socle de sécurité ; 2. sources de risque et objectifs qu'elles visent ; 3. scénarios stratégiques, qui examinent l'écosystème de l'organisation (prestataires, partenaires) ; 4. scénarios opérationnels ; 5. traitement du risque (plan de mesures, risques résiduels). Compatible avec les lignes directrices ISO/IEC 27005:2022 sur la gestion des risques.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27001:2022 et ISO/IEC 27002:2022 (à titre de référence)</td>
+<td>ISO/IEC 27001:2022 : norme d'exigences, certifiable, d'un système de management de la sécurité de l'information fondé sur l'appréciation et le traitement des risques, l'engagement de la direction et l'amélioration continue ; son annexe A comporte 93 mesures (organisationnelles, liées aux personnes, physiques et technologiques), détaillées par le guide ISO/IEC 27002:2022.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique de l'ANSSI (version de 2017)</td>
+<td>Guide de 42 mesures de sécurité de base, de niveau standard ou renforcé, destiné à toute organisation.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="even">
+<td>Le modèle Zero Trust (avis de l'ANSSI, 2021)</td>
+<td>Modèle d'architecture : aucune confiance implicite n'est accordée à un utilisateur ou à un terminal du fait de sa position sur le réseau ; chaque accès à une ressource est authentifié, autorisé et évalué selon le contexte. L'ANSSI le présente comme une évolution progressive, qui ne remplace pas la défense en profondeur.</td>
+<td>Avis publié</td>
+</tr>
+<tr class="odd">
+<td>Directive (UE) 2022/2555 (« NIS 2 »)</td>
+<td>Cybersécurité d'entités dites essentielles ou importantes, selon leur secteur et leur taille. Les organes de direction approuvent les mesures de gestion des risques, en supervisent la mise en œuvre, peuvent être tenus pour responsables et suivent une formation. Les mesures couvrent notamment l'analyse des risques, la gestion des incidents, la continuité des activités, la sécurité de la chaîne d'approvisionnement (relations avec les prestataires), le contrôle d'accès, le chiffrement et l'authentification multifacteur. Les incidents importants sont notifiés : alerte précoce sous 24 heures, notification sous 72 heures, rapport final sous un mois.</td>
+<td>Transposition en droit français due au 17/10/2024, non promulguée au 31/12/2026 : le projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité, adopté par le Sénat le 12/03/2025, est en cours d'examen à l'Assemblée nationale.</td>
+</tr>
+</tbody>
+</table>
+<p>Il n'est pas demandé d'apprécier si la régie entre dans le champ de la directive NIS 2.</p>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>Mme ROCHEVAL veut présenter au conseil d'administration de juin 2027 une politique de sécurité du système de supervision et une organisation claire des responsabilités, qui tirent les leçons de la connexion suspecte de novembre 2026. Vous mobiliserez pour cela les annexes 1.1, 2.1, 2.2 et 2.3 ainsi que vos connaissances professionnelles.</p>
+<p><strong>2.1 – Risques pesant sur le système de supervision (4 points)</strong></p>
+<p>a) Après avoir présenté la typologie des risques du système d'information, identifiez six risques pesant sur le système de supervision, tirés des annexes 2.1 et 2.2, et classez-les en cybermenaces, défaillances opérationnelles, risques réglementaires et risques métiers, avec au moins un risque par catégorie.</p>
+<p>b) Après avoir défini l'analyse d'impact sur l'activité, analysez les conséquences du scénario redouté par la direction de l'exploitation (annexe 2.2 C) sur trois plans : les processus de la régie, la continuité du service aux abonnés et la santé des usagers.</p>
+<p>c) Montrez, en trois constats tirés de l'annexe 2.2, ce que l'incident de novembre 2026 révèle des faiblesses de la régie dans la détection et dans le traitement de ses risques.</p>
+<p><strong>2.2 – Démarche et principes de la politique de cybersécurité (3 points)</strong></p>
+<p>a) Après avoir défini la politique de sécurité du système d'information, présentez les étapes de son élaboration à partir d'une analyse des risques, en vous appuyant sur la méthode EBIOS Risk Manager (annexe 2.3) et en illustrant chaque étape par un élément du cas.</p>
+<p>b) Proposez quatre principes de cette politique propres à un système critique comme la supervision, en justifiant chacun par les annexes.</p>
+<p><strong>2.3 – Architecture de confiance (2 points)</strong></p>
+<p>Après avoir présenté le modèle Zero Trust, proposez trois mesures d'architecture de confiance — l'une d'authentification, l'une de chiffrement, l'une de segmentation entre la bureautique et la supervision —, en précisant pour chacune le constat de l'annexe 2.1 auquel elle répond et une condition de sa réussite.</p>
+<p><strong>2.4 – Gestion des identités et surveillance des connexions (2 points)</strong></p>
+<p>a) Proposez quatre règles de gestion des identités et des accès à la supervision, applicables aux agents et aux prestataires, portant respectivement sur le cycle de vie des comptes, les comptes génériques, les comptes à privilèges et la revue périodique des droits.</p>
+<p>b) Proposez un dispositif de surveillance des connexions à la supervision et deux indicateurs de son efficacité, chacun précisé par sa formule, sa source, sa fréquence, sa cible et son axe.</p>
+<p><strong>2.5 – Gouvernance de la sécurité de la supervision (2 points)</strong></p>
+<p>a) Après avoir précisé l'intérêt d'une matrice de responsabilités, construisez celle qui répartit les rôles (réalise, approuve, consulté, informé) entre le conseil d'administration, la directrice générale, le responsable de la sécurité des systèmes d'information, le directeur de l'exploitation, la responsable de la DSI et les prestataires pour quatre activités : l'approbation de la politique de sécurité de la supervision, l'analyse des risques, la gestion des accès des prestataires et le traitement d'un incident.</p>
+<p>b) Justifiez deux évolutions de l'organisation actuelle de la sécurité, dont le positionnement du responsable de la sécurité des systèmes d'information.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

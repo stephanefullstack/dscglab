@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Exploiter les données de télérelève pour réduire les pertes et piloter le programme : Régie des eaux de l'agglomération de MORVÈZE, établissement public de l'eau et de l'assainissement : données de télérelève, réduction des pertes et pilotage du programme</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 1</p><p>14 points</p><p>1 h 03</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Exploiter les données de télérelève pour réduire les pertes et piloter le programme</h1><p class="cas">Régie des eaux de l'agglomération de MORVÈZE, établissement public de l'eau et de l'assainissement : données de télérelève, réduction des pertes et pilotage du programme</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F07 données et gouvernance, F08 décisionnel et visualisation, F09 performance du SI, et la base des référentiels datés (vérifiés les 25 et 26/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles et des référentiels, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1 Chaîne de traitement des données de pertes</td>
+<td><code>2.2.a</code> Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation ; <code>2.2.b</code> Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>1.2 Méthodes d'analyse</td>
+<td><code>2.2.c</code> Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model ; <code>2.2.a</code> Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>1.3 Diagnostic, visualisations et outil décisionnel</td>
+<td><code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés ; <code>2.2.d</code> Outils décisionnels : Excel avancé, Power BI, Tableau, etc.</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>1.4 Tableau de bord du programme</td>
+<td><code>3.1.a</code> Mettre en œuvre des dispositifs de pilotage de la performance SI, en intégrant une analyse fine des coûts, des indicateurs et des leviers d'optimisation via des tableaux de bord ; <code>3.1.d</code> Construction et suivi de tableaux de bord SI (KPI, équilibrage performance / risques / coûts) ; <code>3.1.e</code> Revue et amélioration continue des dispositifs de pilotage</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 1 – Exploiter les données de télérelève pour réduire les pertes et piloter le programme</strong></td>
+<td></td>
+<td><strong>14</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (définitions de la chaîne de traitement et des méthodes d'analyse, principes de choix d'une représentation et d'un outil, structure d'un tableau de bord) 2,75 points (items 1.1 a-1, 1.1 a-2 pour moitié, 1.2 a pour un tiers, 1.3 c-2 pour moitié, 1.4 a pour un quart, 1.4 c pour moitié) ; analyse des annexes et recommandations 11,25 points, soit environ 80 %. Durée conseillée : 14 points × 4,5 minutes = 63 minutes, soit 1 h 03.</p>
+<hr />
+<h3 id="11--chaîne-de-traitement-des-données-de-pertes-3-points">1.1 – Chaîne de traitement des données de pertes (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.a</code> « Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation » ; <code>2.2.b</code> « Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (télérelève, réseau, plan « MORVÈZE EAU 2032 »), 1.2 (sources, défauts constatés, outils actuels) et 1.3 (volumes, secteurs).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Chaîne de traitement définie (suite organisée d'étapes qui transforme des données brutes de sources hétérogènes en informations fiables restituées pour décider), avec l'idée que sa valeur dépend de son maillon le plus faible</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Cinq étapes décrites dans l'ordre et appliquées aux sources de l'annexe 1.2 ; 0,5 pour trois étapes appliquées</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Trois défauts rattachés à la bonne étape, chacun avec un traitement précis (à la source et dans la chaîne) ; 0,5 pour deux défauts</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Conséquence démontrée sur les décisions de la régie (secteur prioritaire, affectation de l'équipe de recherche de fuites, renouvellement, compte rendu au conseil d'administration)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.1 a) – Définition et application aux sources</em></p>
+<p>La <strong>chaîne de traitement des données</strong> est la suite organisée des opérations qui transforment des données brutes, issues de sources hétérogènes, en informations fiables, structurées et restituées à ceux qui décident : collecte, nettoyage, structuration, analyse, restitution. Elle relève d'une démarche décisionnelle, et non d'un outil : chaque étape a ses règles, ses responsables et ses contrôles, et la valeur de l'ensemble se perd au maillon le plus faible (F08 § 1) (0,5 pt).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Application aux données de pertes de la régie</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Collecte</strong></td>
+<td>index quotidiens des 60 000 compteurs en télérelève (plateforme du prestataire) ; index semestriels des 100 000 autres compteurs (logiciel de facturation) ; volumes entrant dans les cinq secteurs, mesurés toutes les quinze minutes par 40 débitmètres (supervision) ; fiches de casse et de réparation (logiciel des interventions) ; caractéristiques des canalisations (base patrimoniale). La collecte est automatisée et régulière : extraction quotidienne de la plateforme, de la supervision et des interventions au lieu de copies manuelles mensuelles</td>
+</tr>
+<tr class="even">
+<td><strong>Nettoyage</strong></td>
+<td>repérage et traitement des index manquants (3 000 par jour), des index aberrants (2 000 par mois), des valeurs de débitmètres manquantes ou remplacées ; contrôle de complétude des fiches de casse ; chaque correction est tracée dans un journal des rejets et des corrections</td>
+</tr>
+<tr class="odd">
+<td><strong>Structuration</strong></td>
+<td>rattachement de chaque compteur, de chaque débitmètre et de chaque tronçon à un secteur, selon un référentiel unique et daté des secteurs ; agrégation à un même pas de temps (jour, mois, douze mois glissants) ; historisation dans une base décisionnelle commune (entrepôt de données), qui remplace la dizaine de classeurs et les trois listes de secteurs</td>
+</tr>
+<tr class="even">
+<td><strong>Analyse</strong></td>
+<td>bilan des volumes entrés et consommés par secteur, suivi du débit nocturne, croisement des pertes et des casses avec l'âge, le matériau et la densité des abonnés, anticipation des casses (question 1.2)</td>
+</tr>
+<tr class="odd">
+<td><strong>Restitution</strong></td>
+<td>tableaux de bord adaptés aux destinataires : équipes de l'exploitation chaque matin, directrice générale avant chaque comité de direction, conseil d'administration chaque trimestre (questions 1.3 et 1.4), au lieu d'un rapport établi à la main en deux jours et diffusé vers le 20 du mois suivant</td>
+</tr>
+</tbody>
+</table>
+<p>(1 pt pour les cinq étapes appliquées ; 0,5 pt pour trois.)</p>
+<p><em>1.1 b) – Trois défauts, leur étape et leur traitement</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Défaut (annexe 1.2 B)</th>
+<th>Étape concernée</th>
+<th>Traitement à prévoir</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>3 000 compteurs muets chaque jour</strong>, dont 600 depuis plus d'un mois ; jours manquants laissés vides</td>
+<td>collecte et nettoyage</td>
+<td>à la source : liste quotidienne des compteurs muets transmise aux équipes pour remplacer piles et émetteurs (les 600 muets depuis un mois d'abord) ; dans la chaîne : valeur manquante complétée par une estimation signalée comme telle (interpolation entre deux index reçus), jamais par un zéro, et taux de complétude publié avec chaque résultat</td>
+</tr>
+<tr class="even">
+<td><strong>2 000 index aberrants par mois</strong></td>
+<td>nettoyage</td>
+<td>règles de détection documentées (index en baisse, consommation journalière supérieure à un seuil) ; mise en quarantaine et vérification plutôt que suppression d'office, car certains révèlent de vraies fuites après compteur, à signaler à l'abonné ; correction tracée</td>
+</tr>
+<tr class="odd">
+<td><strong>Lotissement des Prés-Hauts</strong> (2 000 abonnés, 0,2 million de m³) alimenté par les Faubourgs nord mais rattaché au Plateau est</td>
+<td>structuration</td>
+<td>référentiel unique et daté des secteurs, avec un propriétaire (le bureau d'études) et une procédure de mise à jour à chaque modification du réseau, que la facturation, l'exploitation et le bureau d'études utilisent tous ; recalcul des bilans 2025 et 2026 des deux secteurs</td>
+</tr>
+<tr class="even">
+<td><strong>4 débitmètres en panne</strong> plus d'un mois, valeurs remplacées à la main sans signalement</td>
+<td>collecte et nettoyage</td>
+<td>alerte automatique de panne, réparation prioritaire ; valeur de remplacement marquée comme estimée et conservée à côté de la valeur mesurée</td>
+</tr>
+<tr class="odd">
+<td><strong>30 % des fiches de casse incomplètes</strong>, ressaisies avec deux à trois semaines de retard</td>
+<td>collecte</td>
+<td>correction à la source : saisie sur tablette au moment de l'intervention, adresse localisée automatiquement, matériau et diamètre obligatoires (repris de la base patrimoniale), fin des fiches papier</td>
+</tr>
+<tr class="even">
+<td><strong>Date de pose inconnue pour 25 % du linéaire</strong></td>
+<td>collecte et structuration</td>
+<td>complétude progressive de la base patrimoniale à chaque intervention ; âge publié avec la part du linéaire couverte</td>
+</tr>
+</tbody>
+</table>
+<p>(1 pt pour trois défauts traités ; 0,5 pt pour deux.)</p>
+<p><strong>En quoi la maîtrise de la chaîne conditionne les décisions</strong> (0,5 pt) : les décisions du plan reposent directement sur ces données ; un maillon défaillant les fausse. Avec le lotissement mal rattaché, les pertes des Faubourgs nord sont surestimées d'environ 0,2 million de m³ (1,4 au lieu de 1,6) et celles du Plateau est sous-estimées d'autant (0,9 au lieu de 0,7) : l'équipe de recherche de fuites (0,6 M€ par an) risque d'être envoyée au mauvais endroit, ce que redoute M. SALVANHAC. Les fiches de casse incomplètes empêchent de cibler le renouvellement des canalisations ; les compteurs muets et les estimations semestrielles rendent incertain le bilan de chaque secteur ; le conseil d'administration recevrait un chiffre de pertes évitées qu'on ne saurait justifier. La qualité de la chaîne est donc une condition de la crédibilité du programme (11,7 M€ sur trois ans) et de l'objectif de 3,5 millions de m³ en 2029.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Chaîne présentée selon le vocabulaire décisionnel (collecte, ETL — extraction, transformation, chargement —, entrepôt, restitution) ou en six étapes, avec la décision et l'action en dernier maillon, si les cinq étapes du programme y figurent.</li>
+<li>Dimensions de la qualité des données nommées d'après ISO/IEC 25012 (complétude, exactitude, cohérence, actualité) pour qualifier les défauts.</li>
+<li>Défauts différents de ceux du corrigé, dès lors qu'ils sont tirés de l'annexe 1.2 et rattachés à la bonne étape.</li>
+<li>Fiches de casse incomplètes rattachées à l'étape de nettoyage, si le candidat prévoit aussi la correction à la source.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Chaîne de traitement réduite à un outil</em> (<code>JUR-D02</code> BI réduite à un simple outil ; <code>ET-05</code>) — « il suffit d'acheter un logiciel de visualisation » ; juste : règles, responsables et contrôles à chaque étape.</li>
+<li><em>Étape du nettoyage ou de la structuration oubliée</em> (<code>JUR-D01</code> chaîne de valeur de la BI) — alors que c'est le maillon faible du cas ; juste : cinq étapes, le nettoyage et le référentiel des secteurs au centre.</li>
+<li><em>Suppression des valeurs aberrantes sans vérification</em> — une consommation anormale peut être une fuite chez l'abonné ; juste : quarantaine, vérification, trace.</li>
+<li><em>Morceau de cours</em> (<code>JUR-T01</code> contextualiser chaque notion) — étapes récitées sans les compteurs muets, le lotissement ni les fiches de casse ; juste : chaque étape porte un exemple tiré de l'annexe 1.2.</li>
+<li><em>Modélisation de données détaillée</em> — schéma de tables ou de clés pour l'entrepôt ; juste : la structuration est décrite dans son principe (référentiel des secteurs, pas de temps commun, historisation).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chaîne décisionnelle : collecte, ETL, entrepôt, restitution ; qualité d'un extrait (valeurs manquantes, aberrantes, incohérences)</td>
+<td>étapes, traitements, correction à la source</td>
+<td>F08 § 1 et 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Données de référence et référentiel unique</td>
+<td>référentiel des secteurs</td>
+<td>F07 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>ISO/IEC 25012 (2008) — Modèle de qualité des données</td>
+<td>dimensions de la qualité, à titre d'exemple</td>
+<td><code>iso_iec_25012</code> / F07 § 8.3</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12--méthodes-danalyse-3-points">1.2 – Méthodes d'analyse (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.c</code> « Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model » ; <code>2.2.a</code> « Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique ». Limite : « Le développement d'algorithmes de machine learning n'est pas attendu. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (sources, défauts), 1.3 (volumes, secteurs, questions de la directrice générale) et 1.4 (objectifs 2029, équipe de recherche de fuites).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Question 1 → analyse <strong>descriptive</strong>, avec données mobilisées et résultat attendu</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Question 2 → analyse <strong>exploratoire</strong>, avec données mobilisées et résultat attendu</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Question 3 → analyse <strong>prédictive</strong>, avec données mobilisées et résultat attendu, la prévision étant interprétée et non construite</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Première limite tirée des annexes : corrélation n'est pas causalité (âge des canalisations et densité des abonnés, débit nocturne de la zone d'activités)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Seconde limite tirée des annexes : biais des données manquantes ou inégales (télérelève de 10 % à 70 % selon les secteurs, compteurs muets, dates de pose inconnues, fiches incomplètes, historique court)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Conséquence des limites pour la décision et précaution proposée (vérification sur le terrain, comparaison de secteurs semblables, part des données couvertes publiée)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.2 a) – Une méthode par question</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Question de la directrice générale</th>
+<th>Méthode</th>
+<th>Données mobilisées</th>
+<th>Résultat attendu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Où et combien perdons-nous d'eau ?</td>
+<td><strong>descriptive</strong> : que s'est-il passé ? Agrégats, répartitions, évolutions, écarts à une cible</td>
+<td>volumes mis en distribution (25 millions de m³), consommations relevées ou estimées (20 millions), volumes entrant dans chaque secteur, débit nocturne, longueur des secteurs</td>
+<td>pertes par secteur en volume et rapportées au kilomètre de canalisation, sur douze mois glissants, et leur évolution : 5 millions de m³ en 2026, dont 64 % dans le Centre ancien et les Faubourgs nord</td>
+</tr>
+<tr class="even">
+<td>2. Quels facteurs semblent liés aux pertes ?</td>
+<td><strong>exploratoire</strong> : pourquoi ? Croisements, comparaisons, recherche de régularités et de valeurs atypiques</td>
+<td>pertes par km, casses pour 100 km, âge et matériau des canalisations (base patrimoniale), densité des abonnés, causes des casses (fiches d'intervention)</td>
+<td>facteurs associés aux pertes à confirmer : pertes et casses plus élevées là où le réseau est ancien et dense ; pistes à vérifier sur le terrain, pas une démonstration</td>
+</tr>
+<tr class="odd">
+<td>3. Pouvons-nous anticiper les casses des deux prochaines années ?</td>
+<td><strong>prédictive</strong> : que va-t-il se passer ? Estimation, pour chaque tronçon, d'un risque de casse à deux ans</td>
+<td>historique des casses de plusieurs années, caractéristiques des tronçons (âge, matériau, diamètre), débits</td>
+<td>classement des tronçons par niveau de risque, qui oriente le programme de renouvellement et le planning de l'équipe de recherche de fuites ; la régie n'a pas à construire le modèle, mais à en apprécier la fiabilité et à le confronter aux constats des équipes</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt par ligne complète : méthode juste, données et résultat appliqués au cas.)</p>
+<p>Les trois méthodes s'enchaînent : la prévision n'a de valeur que si la description est fiable et si l'exploration a validé les facteurs. Une analyse prescriptive (quel tronçon renouveler en premier, à budget donné) peut prolonger la démarche.</p>
+<p><em>1.2 b) – Deux limites qui ressortent des annexes</em></p>
+<ol type="1">
+<li><strong>Corrélation n'est pas causalité</strong> (0,5 pt). Les pertes par km suivent l'âge des canalisations dans les secteurs urbains (8 milliers de m³ par km pour 55 ans dans le Centre ancien, 1 millier pour 20 ans dans la zone d'activités), mais les Coteaux sud, dont le réseau a 40 ans, perdent le moins par km (0,8) : l'âge n'explique pas tout. Le Centre ancien est aussi le plus dense (250 abonnés par km, contre 30 dans les Coteaux sud) : les branchements, nombreux en ville, sont un facteur commun possible. De même, le débit nocturne de la zone d'activités comprend la consommation de nuit de trois usines, qui n'est pas une fuite. Conclure « renouveler les canalisations les plus anciennes réduira les pertes » sans contrôler la densité serait une causalité supposée.</li>
+<li><strong>Biais des données manquantes ou inégales</strong> (0,5 pt). La télérelève couvre 60 % des abonnés du Centre ancien mais 10 % des Coteaux sud et 20 % des Faubourgs nord : ailleurs, les consommations sont relevées deux fois par an ou estimées sur l'année précédente, de sorte que les pertes de ces secteurs sont les moins sûres, et le sont davantage les années de sécheresse, quand la consommation change. S'y ajoutent les 3 000 compteurs muets par jour, l'âge calculé sur 75 % du linéaire seulement, 30 % de fiches de casse sans localisation ni matériau et un historique de casses fiable sur peu d'années : une prévision construite sur ces données reproduirait leurs lacunes et surestimerait le risque là où les données sont les mieux tenues.</li>
+</ol>
+<p><strong>Conséquence et précaution</strong> (0,5 pt) : ces analyses orientent la recherche de fuites et le renouvellement, elles ne les décident pas seules ; chaque résultat est publié avec la part des données qu'il couvre, comparé entre secteurs semblables (urbains denses entre eux), puis vérifié sur le terrain (campagne de recherche de fuites ciblée) avant d'engager des travaux ; la prévision des casses est réévaluée chaque année à mesure que la télérelève et les fiches complètes s'étendent.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Analyse <strong>diagnostique</strong> citée pour la question 2, à la place de l'exploratoire ou en complément.</li>
+<li>Limites différentes, dès lors qu'elles sont tirées des annexes : extrapolation d'une année de sécheresse, limites de secteurs non mises à jour, échelle tronquée du graphique, historique trop court pour une prévision à deux ans.</li>
+<li>Mention de l'apprentissage automatique comme technique possible de la prévision, sans choix ni description de modèle.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Corrélation présentée comme causalité</em> (<code>ET-26</code> ; <code>JUR-D06</code> prudence d'interprétation) — « l'âge cause les pertes » ; juste : facteur commun (densité), autres explications, vérification.</li>
+<li><em>Développement d'un modèle de prévision</em> — choix d'un algorithme, variables à paramétrer ; juste : apprécier la fiabilité et les conditions d'usage de la prévision (limite du programme).</li>
+<li><em>Méthodes définies sans application</em> (<code>JUR-T01</code>) — descriptive, exploratoire, prédictive récitées sans les données ni le résultat attendu pour la régie.</li>
+<li><em>Science des données confondue avec la BI</em> (<code>ET-25</code>) — la description relève du décisionnel ; l'exploration et la prévision mobilisent d'autres compétences.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Méthodes d'analyse descriptive, exploratoire, prédictive, prescriptive</td>
+<td>association aux questions de la direction</td>
+<td>F08 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Corrélation et causalité, biais de sélection et de données manquantes</td>
+<td>limites</td>
+<td>F08 § 5</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13--diagnostic-visualisations-et-outil-décisionnel-4-points">1.3 – Diagnostic, visualisations et outil décisionnel (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés » ; <code>2.2.d</code> « Outils décisionnels : Excel avancé, Power BI, Tableau, etc. ». Limites : « L'usage des outils ne dispense pas d'une lecture critique des corrélations et biais » ; « L'interprétation doit être reliée à la stratégie globale ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (défauts, outils actuels), 1.3 (volumes, tableau des secteurs, graphique des Faubourgs nord, outils envisagés) et 1.4 (trajectoire 2029, attentes).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Deux secteurs prioritaires justifiés par les chiffres de l'annexe 1.3 (Centre ancien, Faubourgs nord)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux facteurs apparents (âge des canalisations et casses ; densité des abonnés et branchements), présentés comme des associations</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Deux précautions de lecture tirées des annexes (lotissement des Prés-Hauts et hausse de septembre 2025, axe tronqué, volume ou taux par km, fiabilité inégale selon la télérelève, débit nocturne de la zone d'activités)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Diagnostic conclu par une orientation reliée au plan (fiabiliser, puis cibler la recherche de fuites et le renouvellement), en quinze lignes au maximum</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Visualisation pour le directeur de l'exploitation : message, représentation adaptée, indicateur complet</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Visualisation pour le conseil d'administration : message, représentation adaptée, indicateur complet</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Outil de visualisation recommandé et justifié par les besoins du cas (volumes, sources, fraîcheur, cartes, mobilité, coût modeste)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Conditions de réussite : la BI est une démarche (référentiel des secteurs, définitions partagées, propriétaires des données, compétences et formation) ; place résiduelle du tableur</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.3 a) – Diagnostic argumenté (note modèle)</em></p>
+<!-- note -->
+
+<p>Les pertes atteignent 5 millions de m³ en 2026 (20 % de l'eau distribuée) ; deux secteurs en font 64 % sur le quart du réseau. Le <strong>Centre ancien</strong> est la première priorité : 8 milliers de m³ perdus par km, près de quatre fois la moyenne, 90 casses pour 100 km, un réseau de 55 ans, un débit nocturne élevé et stable (fuites anciennes, diffuses). Puis les <strong>Faubourgs nord</strong> : 4 milliers de m³ par km, 55 casses pour 100 km, débit nocturne en hausse de 30 % depuis 2024. Deux facteurs apparaissent : l'âge des canalisations, lié aux casses, et la densité des branchements (250 abonnés par km au Centre ancien). Ce sont des associations : les Coteaux sud (40 ans) perdent le moins par km. Deux précautions s'imposent. La hausse des Faubourgs nord coïncide avec le raccordement des Prés-Hauts (septembre 2025), qui change le périmètre du secteur : elle ne prouve pas une fuite tant que la série n'est pas recalculée à périmètre constant, et un axe commençant à 180 m³/h l'amplifie ; les compteurs du lotissement, rattachés au Plateau est, y gonflent les pertes d'environ 0,2 million de m³. Les pertes des secteurs peu équipés en télérelève (Coteaux sud, Faubourgs nord) sont les moins sûres. Il faut corriger le rattachement des secteurs, puis concentrer l'équipe de recherche de fuites sur les Faubourgs nord et le renouvellement sur le Centre ancien.</p>
+<!-- /note -->
+
+<p>(0,5 pt par item : secteurs, facteurs, précautions, conclusion.)</p>
+<p><em>1.3 b) – Deux visualisations pour deux décideurs</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Destinataire</th>
+<th>Message</th>
+<th>Représentation</th>
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Directeur de l'exploitation</td>
+<td>où chercher une fuite ce matin ?</td>
+<td>carte des secteurs colorée selon l'écart du débit nocturne à la référence (vert, orange, rouge), complétée par la courbe des 90 derniers jours de chaque secteur avec la ligne du seuil d'alerte ; consultable sur tablette par les équipes</td>
+<td>Écart du débit nocturne minimal à la référence du secteur</td>
+<td>(débit nocturne minimal du jour − débit nocturne de référence du secteur) / débit nocturne de référence du secteur ; la référence est recalculée après chaque campagne de recherche de fuites et chaque modification des limites du secteur</td>
+<td>débitmètres d'entrée des secteurs (supervision), rapprochés du référentiel des secteurs</td>
+<td>quotidienne, chaque matin</td>
+<td>écart inférieur à 10 % ; au-delà, recherche de fuites engagée dans les 48 heures</td>
+<td>processus</td>
+</tr>
+<tr class="even">
+<td>Conseil d'administration</td>
+<td>sommes-nous sur la trajectoire de 2029 ?</td>
+<td>courbe trimestrielle des pertes sur douze mois glissants de 2026 à 2029, axe partant de zéro, avec la trajectoire cible en pointillés et une barre par secteur en appui</td>
+<td>Volume de pertes sur douze mois glissants</td>
+<td>volumes mis en distribution − volumes consommés comptabilisés, sur les douze derniers mois</td>
+<td>compteurs de sortie des usines (supervision) ; consommations de la plateforme de télérelève et du logiciel de facturation</td>
+<td>trimestrielle</td>
+<td>4,5 millions de m³ fin 2027, 4 fin 2028, 3,5 fin 2029 (5 en 2026)</td>
+<td>environnement (ESG)</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt par visualisation adaptée à son destinataire, avec un indicateur complet.)</p>
+<p>Le directeur de l'exploitation a besoin d'un détail quotidien et localisé pour agir ; le conseil d'administration d'une tendance trimestrielle comparée à l'engagement, lisible sans connaissance technique. Les deux représentations évitent les biais relevés : taux et écarts plutôt que valeurs brutes, axe à zéro pour la courbe du conseil, cible toujours affichée.</p>
+<p><em>1.3 c) – Outil décisionnel recommandé</em></p>
+<p><strong>Outil de visualisation du marché</strong> (0,5 pt), parce qu'il répond aux besoins du cas que le tableur ne couvre pas :</p>
+<ul>
+<li><strong>volume</strong> : 60 000 index par jour, environ 22 millions de lignes par an, que le technicien ne peut manipuler au tableur et réduit à des totaux mensuels ; la généralisation à 160 000 compteurs multipliera ce volume par près de trois ;</li>
+<li><strong>sources</strong> : connexion directe aux quatre sources (télérelève, supervision, interventions, base patrimoniale) au lieu d'une dizaine de classeurs alimentés par copie ;</li>
+<li><strong>fraîcheur</strong> : rafraîchissement chaque nuit, contre un rapport diffusé vers le 20 du mois suivant ; le directeur de l'exploitation veut savoir chaque matin où chercher ;</li>
+<li><strong>représentation</strong> : cartes des secteurs et consultation sur tablette et téléphone pour les équipes ;</li>
+<li><strong>coût</strong> : 85 000 € sur trois ans (25 000 € par an et 10 000 € de formation), modeste au regard du programme (11,7 M€ sur trois ans) et de l'équipe de recherche de fuites qu'il doit orienter.</li>
+</ul>
+<p><strong>Conditions</strong> (0,5 pt) : l'outil n'est qu'un maillon d'une démarche décisionnelle ; sans référentiel unique des secteurs, définitions partagées des pertes et du débit nocturne, propriétaires des données (exploitation, clientèle, bureau d'études) et formation des utilisateurs, il afficherait plus vite les mêmes chiffres faux. La compétence repose aujourd'hui sur un seul agent de la DSI : il faut la partager (formation d'un référent à l'exploitation). Le tableur reste utile pour des analyses ponctuelles sur des extraits agrégés.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Secteur Plateau est cité comme troisième priorité après correction du rattachement (0,9 million de m³, 1,8 millier par km), si le candidat l'argumente.</li>
+<li>Faubourgs nord placés en première priorité en raison de la hausse du débit nocturne, si la précaution liée au lotissement est faite.</li>
+<li>Hausse de septembre 2025 interprétée comme une fuite possible sur le raccordement du lotissement, à vérifier sur le terrain, si la rupture de périmètre est signalée.</li>
+<li>Autres indicateurs complets pour les visualisations : pertes par km de canalisation par secteur (barres triées), délai de réparation des fuites signalées, casses pour 100 km.</li>
+<li>Tableur avancé retenu pour une phase transitoire de quelques mois, si ses limites sont montrées et le passage à l'outil de visualisation prévu.</li>
+<li>Indicateur du conseil rattaché à l'axe processus, ou aux axes environnement et financier à la fois.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>BI réduite à un outil</em> (<code>JUR-D02</code> ; <code>ET-05</code>) — « l'outil de visualisation résoudra le problème des pertes » ; juste : démarche, données fiables, rôles, compétences.</li>
+<li><em>Diagnostic sans précaution de lecture</em> (<code>ET-26</code> ; <code>JUR-D06</code>) — la hausse de 30 % des Faubourgs nord lue comme une fuite certaine, sans voir qu'elle coïncide avec le raccordement du lotissement, ni l'axe tronqué.</li>
+<li><em>Classement en valeur absolue</em> — les Coteaux sud placés devant le Plateau est sur le volume, sans rapporter les pertes à la longueur du réseau ; juste : comparer des taux.</li>
+<li><em>Même visualisation pour tous les destinataires</em> (<code>JUR-A04</code> bon destinataire) — le détail quotidien des secteurs présenté aux élus ; juste : niveau de détail et fréquence adaptés à la décision de chacun.</li>
+<li><em>Manipulation d'outil</em> — formules, mesures ou étapes de construction du tableau de bord dans l'outil ; juste : choix argumenté et structure sur papier.</li>
+<li><em>Indicateur incomplet</em> (<code>JUR-A02</code> ; <code>ET-18</code>) — « pertes » sans formule, source, fréquence ni cible.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Choix du graphique, biais de lecture (axe tronqué, valeurs absolues, données manquantes), corrélation et causalité</td>
+<td>diagnostic et visualisations</td>
+<td>F08 § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Outils décisionnels : fonctions, limites, critères de choix</td>
+<td>recommandation de l'outil</td>
+<td>F08 § 6</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Fiche d'indicateur à cinq champs</td>
+<td>indicateurs des visualisations</td>
+<td>F08 § 3 ; F09 § 4</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="14--tableau-de-bord-du-programme-4-points">1.4 – Tableau de bord du programme (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.1 – Concevoir, construire et exploiter des outils de pilotage de la performance : <code>3.1.a</code> « Mettre en œuvre des dispositifs de pilotage de la performance SI, en intégrant une analyse fine des coûts, des indicateurs et des leviers d'optimisation via des tableaux de bord » ; <code>3.1.d</code> « Construction et suivi de tableaux de bord SI (KPI, équilibrage performance / risques / coûts) » ; <code>3.1.e</code> « Revue et amélioration continue des dispositifs de pilotage ». Limites : pas d'approfondissement des méthodes classiques de suivi des écarts au budget ; comptes rendus exigés par une autorité exclus ; recul critique sur les indicateurs.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.4 (objectifs, coûts, extrait du rapport, attentes), 1.2 (défauts) et 1.3 (volumes, secteurs), 1.1 (gouvernance de la régie).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a</td>
+<td>Quatre indicateurs complets (formule, source, fréquence, cible chiffrée tirée de l'annexe 1.4, axe), couvrant la performance, les risques et les coûts ; 0,5 par indicateur complet et pertinent</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>b</td>
+<td>Trois arguments tirés de l'extrait du rapport (indicateurs d'activité sans mesure du résultat, absence de cible et de référence, absence de source et de fréquence, absence de coûts et de risques, destinataire mal défini) ; 0,5 pour deux arguments</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Instance et fréquence de revue précisées (comité de pilotage du programme, compte rendu au conseil d'administration)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Règle d'ajustement des cibles et règle de retrait d'un indicateur, inscrites dans une boucle d'amélioration continue</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.4 a) – Quatre indicateurs équilibrés</em></p>
+<p>Un tableau de bord est un ensemble restreint d'indicateurs choisis pour piloter un objectif, présentés pour décider (cible, tendance, alerte, responsable) ; celui du programme suit l'esprit du Balanced Scorecard (Kaplan et Norton) en équilibrant résultat, processus, risques et coûts (F09 § 4).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Performance (résultat)</td>
+<td>Volume de pertes sur douze mois glissants</td>
+<td>volumes mis en distribution − volumes consommés comptabilisés, sur les douze derniers mois</td>
+<td>compteurs de sortie des usines (supervision) ; plateforme de télérelève et logiciel de facturation</td>
+<td>mensuelle (trimestrielle pour le conseil d'administration)</td>
+<td>4,5 millions de m³ fin 2027, 4 fin 2028, 3,5 fin 2029 (5 en 2026)</td>
+<td>environnement (ESG)</td>
+</tr>
+<tr class="even">
+<td>Performance (processus)</td>
+<td>Délai moyen de réparation d'une fuite signalée</td>
+<td>somme des délais entre le signalement et la fin de la réparation / nombre de fuites réparées dans le mois</td>
+<td>logiciel des interventions</td>
+<td>mensuelle</td>
+<td>3 jours au plus fin 2029 (10 jours en 2026)</td>
+<td>processus</td>
+</tr>
+<tr class="odd">
+<td>Risques (fiabilité des données)</td>
+<td>Taux d'index de télérelève exploitables</td>
+<td>index quotidiens reçus et validés, ni manquants ni aberrants / (compteurs en télérelève posés × jours du mois)</td>
+<td>plateforme de télérelève, journal des contrôles de nettoyage</td>
+<td>mensuelle, contrôlée chaque jour</td>
+<td>au moins 98 % (environ 95 % en janvier 2027)</td>
+<td>processus</td>
+</tr>
+<tr class="even">
+<td>Coûts</td>
+<td>Coût de fonctionnement du programme par m³ de pertes évitées</td>
+<td>(abonnement à la plateforme + coût de l'équipe de recherche de fuites, sur douze mois) / (pertes de 2026 − pertes des douze derniers mois)</td>
+<td>contrôle de gestion ; indicateur de volume de pertes</td>
+<td>trimestrielle</td>
+<td>0,60 € par m³ au plus en 2029 (0,9 M€ / 1,5 million de m³)</td>
+<td>financier</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt par indicateur complet et pertinent.)</p>
+<p>Le premier indicateur mesure l'objectif du plan, le deuxième le levier opérationnel (l'équipe de recherche de fuites), le troisième le risque principal du programme (décider sur des données fausses : 5 % de compteurs muets chaque jour), le quatrième répond à la question du président du conseil d'administration sur le coût de chaque mètre cube économisé. Le coût de pose des compteurs, investissement de 3 M€ par an, est suivi à part : l'inclure donnerait 2,60 € par m³ en 2029 (3,9 M€ / 1,5 million de m³), sans rendre compte de l'efficacité courante du programme. Aucun écart budgétaire n'est calculé : l'indicateur rapproche un coût d'un résultat.</p>
+<p><em>1.4 b) – En quoi ce tableau de bord corrige le rapport actuel</em></p>
+<ol type="1">
+<li><strong>Du compte rendu d'activité à la mesure du résultat</strong> : le rapport aligne un volume produit, un nombre de casses réparées, un nombre de compteurs posés et un débit de nuit, mais aucun ne mesure les pertes, objet du programme ; le tableau de bord part de l'objectif 2029 et le mesure directement.</li>
+<li><strong>Des chiffres sans référence aux cibles et aux tendances</strong> : 61 200 compteurs posés ne disent rien sans trajectoire ; rapportés à l'objectif, ils révèlent un retard (1 200 posés en janvier quand 100 000 en 36 mois en demandent près de 2 800 par mois) ; 265 m³/h ne disent rien sans la référence du secteur ; le volume produit d'un mois varie avec la saison. Chaque indicateur porte désormais une cible, une trajectoire et une tendance sur douze mois glissants.</li>
+<li><strong>Des chiffres sans source, ni fréquence, ni fiabilité</strong> : un rapport établi à la main en deux jours et diffusé à J+20 ; le tableau de bord fixe pour chaque indicateur sa source et sa fréquence dans une fiche, l'alimente automatiquement et affiche la fiabilité des données.</li>
+<li><strong>Un équilibre absent</strong> : ni coût, ni risque, ni destinataire défini (un débit de secteur relève de l'exploitation, pas de la direction générale) ; le tableau de bord en quatre indicateurs, lisible en cinq minutes, répond à la directrice générale et au conseil d'administration.</li>
+</ol>
+<p>(1 pt pour trois arguments ; 0,5 pt pour deux.)</p>
+<p><em>1.4 c) – Revue et amélioration continue</em></p>
+<ul>
+<li><strong>Instance et fréquence</strong> (0,5 pt) : un <strong>comité de pilotage du programme</strong>, présidé par la directrice générale, animé par le chargé de mission, réunissant le directeur de l'exploitation, la directrice de la clientèle (relève des compteurs, facturation), la responsable de la DSI et le responsable du contrôle de gestion, chaque mois, avant le comité de direction ; chaque indicateur a un responsable qui commente l'écart et propose une action ; compte rendu trimestriel au conseil d'administration ; <strong>revue annuelle</strong> du tableau de bord lui-même, à l'automne, après la période de forte consommation et avant l'arbitrage du budget.</li>
+<li><strong>Règles</strong> (0,5 pt), dans une boucle planifier, réaliser, vérifier, ajuster :
+<ul>
+<li><strong>ajustement des cibles</strong> : une fois par an, lors de la revue annuelle ; seulement pour une cause documentée (changement de périmètre comme le rattachement d'un lotissement, cible atteinte durablement, hypothèse démentie par les mesures) ; la cible de 3,5 millions de m³ en 2029, fixée par le plan, n'est modifiée que par le conseil d'administration ; chaque modification est datée dans la fiche de l'indicateur, pour que les séries restent comparables ;</li>
+<li><strong>retrait d'un indicateur</strong> : un indicateur qui n'a déclenché aucune décision pendant deux revues, ou dont la cible est tenue douze mois de suite, sort du tableau de bord de la direction générale et rejoint le tableau de bord opérationnel de l'exploitation (le taux d'index exploitables, une fois stable au-dessus de 98 %) ; le suivi de la pose des compteurs disparaît fin 2029 ; tout retrait est décidé par le comité, motivé, et le nombre d'indicateurs reste limité (quatre à six) pour que le tableau de bord reste lisible.</li>
+</ul></li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Indicateur d'avancement de la pose des compteurs (compteurs posés / 100 000 compteurs à poser, cible : 2 800 par mois en moyenne, 160 000 abonnés équipés fin 2029, axe processus) à la place du taux d'index exploitables, comme indicateur de risque de retard du programme.</li>
+<li>Coût par m³ calculé avec la pose des compteurs (2,60 € en 2029), si le candidat explique ce que mesure ce choix.</li>
+<li>Volume de pertes rattaché à l'axe processus ; délai de réparation rattaché à l'axe client.</li>
+<li>Boucle d'amélioration continue nommée roue de Deming (PDCA).</li>
+<li>Revue annuelle placée en fin d'exercice ou au moment du rapport d'activité au conseil d'administration.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Indicateurs incomplets ou génériques</em> (<code>JUR-A02</code> distinguer et justifier les indicateurs ; <code>ET-18</code>) — « nombre de fuites » sans formule, source, fréquence ni cible ; juste : cinq champs, cibles de l'annexe 1.4.</li>
+<li><em>Tableau de bord limité à la performance</em> (<code>ET-18</code>) — aucun indicateur de coût ni de risque, contrairement à la consigne d'équilibre.</li>
+<li><em>Calcul d'écarts budgétaires</em> — décomposition des écarts entre coûts prévus et réalisés ; juste : un ratio de deux chiffres ronds rapproche coût et résultat (limite du programme).</li>
+<li><em>Indicateurs réglementaires du service d'eau ou rapport annuel réglementaire</em> — hors du sujet et du programme ; juste : indicateurs de pilotage du programme.</li>
+<li><em>Revue sans règle</em> (<code>JUR-T03</code> analyser et argumenter) — « on revoit le tableau de bord régulièrement » ; juste : instance, fréquence, règles d'ajustement et de retrait.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Balanced Scorecard (Kaplan et Norton, 1992) adapté au SI</td>
+<td>structure et équilibre du tableau de bord</td>
+<td>F09 § 4.1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Fiche d'indicateur à cinq champs ; tableau de bord restreint</td>
+<td>indicateurs</td>
+<td>F08 § 3 ; F09 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Critique d'un reporting existant, plan d'amélioration</td>
+<td>revue et amélioration continue</td>
+<td>F09 § 4.3</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

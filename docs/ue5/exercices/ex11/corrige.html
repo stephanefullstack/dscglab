@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Sécuriser le système de supervision des installations et ses accès : Régie des eaux de MORVÈZE : risques, politique de cybersécurité, architecture de confiance, gestion des identités et gouvernance de la sécurité de la supervision</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Sécuriser le système de supervision des installations et ses accès</h1><p class="cas">Régie des eaux de MORVÈZE : risques, politique de cybersécurité, architecture de confiance, gestion des identités et gouvernance de la sécurité de la supervision</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F12 sécurité et résilience, F10 audit et fiabilisation (habilitations, moindre privilège, revue des droits), F02 et F05 (matrice de responsabilités), et la base des référentiels datés (vérifiés le 25/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles et des référentiels, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Risques pesant sur le système de supervision</td>
+<td><code>4.1.a</code> Détecter, évaluer et traiter les risques associés aux systèmes d'information, en intégrant les dimensions réglementaires, éthiques et technologiques ; <code>4.1.b</code> Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers ; <code>4.1.c</code> Méthodes d'analyse d'impact sur les processus, la continuité de service et les états financiers</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>2.2 Démarche et principes de la politique de cybersécurité</td>
+<td><code>4.2.a</code> Définir et piloter une politique de sécurité du SI, en intégrant les enjeux de cybersécurité, de résilience organisationnelle et de gouvernance des systèmes critiques ; <code>4.2.b</code> Élaboration d'une politique de cybersécurité fondée sur l'analyse des risques</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>2.3 Architecture de confiance</td>
+<td><code>4.2.c</code> Notions d'architecture de confiance (authentification, chiffrement, segmentation)</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>2.4 Gestion des identités et surveillance des connexions</td>
+<td><code>4.2.d</code> Dispositifs de surveillance et de résilience : IAM (Identity &amp; Access Management), PCA/PRA</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>2.5 Gouvernance de la sécurité de la supervision</td>
+<td><code>4.2.e</code> Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques ; <code>4.2.a</code> Définir et piloter une politique de sécurité du SI […] de gouvernance des systèmes critiques</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td><strong>Dossier 2 – Sécuriser le système de supervision des installations et ses accès</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (typologie des risques, analyse d'impact sur l'activité, politique de sécurité et étapes d'EBIOS Risk Manager, modèle Zero Trust, intérêt d'une matrice de responsabilités) 3 points (items 2.1 a-1, 2.1 b-1, 2.2 a-1, 2.2 a-2 pour moitié, 2.3-1, 2.5 a pour un quart) ; analyse des annexes et recommandations 10 points, soit environ 77 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 59 minutes.</p>
+<hr />
+<h3 id="21--risques-pesant-sur-le-système-de-supervision-4-points">2.1 – Risques pesant sur le système de supervision (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.a</code> « Détecter, évaluer et traiter les risques associés aux systèmes d'information, en intégrant les dimensions réglementaires, éthiques et technologiques, y compris les apports de l'IA » ; <code>4.1.b</code> « Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers » ; <code>4.1.c</code> « Méthodes d'analyse d'impact sur les processus, la continuité de service et les états financiers ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (120 sites supervisés, organisation), 2.1 (fonctionnement, inventaire des comptes, organisation de la sécurité), 2.2 (chronologie, constats, scénario redouté) et 2.3 (NIS 2 et son statut).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Typologie présentée : quatre catégories définies (cybermenaces, défaillances opérationnelles, risques réglementaires, risques métiers), un risque étant formulé comme un événement redouté, avec sa cause et sa conséquence</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Six risques tirés des annexes, chacun formulé et rattaché à la bonne catégorie, au moins un par catégorie ; 0,5 pour quatre risques correctement classés</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Analyse d'impact sur l'activité définie (processus critiques, conséquences dans le temps, interruption tolérable, priorités)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Conséquences du scénario analysées sur les trois plans (processus, continuité du service, santé des usagers), avec les chiffres et les faits des annexes et une conclusion sur la criticité ; 0,5 pour deux plans</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>c</td>
+<td>Trois constats tirés de l'annexe 2.2 : détection fortuite et tardive, traitement lent et sans procédure, risques connus non traités faute de propriétaire ; 0,5 pour deux constats</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.1 a) – Typologie et classement de six risques</em></p>
+<p>Un <strong>risque du système d'information</strong> est un événement possible qui, s'il survient, porte atteinte à la disponibilité, à l'intégrité, à la confidentialité ou à la traçabilité de l'information et des traitements, et par là aux missions de l'organisation ; on le formule par sa cause, l'événement redouté et sa conséquence. Le programme en distingue quatre catégories : les <strong>cybermenaces</strong> (actes malveillants délibérés : usurpation de compte, logiciel malveillant, rançongiciel, attaque par un prestataire), les <strong>défaillances opérationnelles</strong> (erreurs, pannes, obsolescence, procédures absentes ou mal appliquées), les <strong>risques réglementaires</strong> (non-respect d'obligations présentes ou à venir, responsabilité des dirigeants) et les <strong>risques métiers</strong> (atteinte aux missions, à la santé, à la confiance, aux finances) (F12 § 0 et 5) (0,5 pt).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Catégorie</th>
+<th>Risque (cause → événement redouté → conséquence)</th>
+<th>Faits des annexes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cybermenace</strong></td>
+<td>1. Usurpation d'un compte de prestataire ou d'un compte générique, par l'accès à distance protégé par un seul mot de passe → modification des consignes ou désactivation des alarmes d'un site → réservoir vidé, traitement de l'eau altéré</td>
+<td>incident du 22 novembre : compte d'un technicien parti fin juin ; 10 des 25 comptes de prestataires (40 %) au nom de techniciens partis ; accès ouverts en permanence ; aucune authentification multifacteur</td>
+</tr>
+<tr class="even">
+<td><strong>Cybermenace</strong></td>
+<td>2. Logiciel malveillant (rançongiciel, pièce jointe piégée) introduit par la messagerie, internet ou un poste de bureautique et propagé jusqu'aux postes de supervision → perte du pilotage à distance des 120 sites</td>
+<td>réseau commun aux 300 postes de bureautique et aux six postes de supervision, sans cloisonnement ; messagerie et internet sur les postes de supervision ; quatre postes sans mises à jour de sécurité depuis 2023 ; trois agents d'astreinte sur leur ordinateur personnel</td>
+</tr>
+<tr class="odd">
+<td><strong>Cybermenace</strong> (chaîne d'approvisionnement)</td>
+<td>3. Compromission d'un des trois prestataires ou de son poste de télémaintenance → accès à la supervision sans contrôle de la régie</td>
+<td>KERVALDIS, BRÉMONTAL et PURIMANE se connectent à toute heure sans prévenir ; contrats sans obligation de signaler les départs</td>
+</tr>
+<tr class="even">
+<td><strong>Défaillance opérationnelle</strong></td>
+<td>4. Actions non imputables et droits excessifs → erreur de manipulation ou acte malveillant interne impossible à retrouver</td>
+<td>3 comptes génériques pour environ 45 personnes, mots de passe inchangés de 2019 à novembre 2026 ; 52 des 60 comptes peuvent modifier les consignes ; compte « admin » partagé avec l'éditeur ; un quart des comptes (15) appartiennent à des personnes parties</td>
+</tr>
+<tr class="odd">
+<td><strong>Défaillance opérationnelle</strong></td>
+<td>5. Absence de surveillance et de procédure d'incident → attaque détectée tard ou pas du tout, réaction improvisée</td>
+<td>journaux conservés 30 jours, jamais consultés, aucune alerte ; connexion du 4 novembre passée inaperçue ; 3 h 30 avant une détection fortuite ; compte désactivé 28 heures après la détection</td>
+</tr>
+<tr class="even">
+<td><strong>Risque réglementaire</strong></td>
+<td>6. Écart entre les pratiques de la régie et les exigences qu'impose la directive NIS 2 aux entités qui entrent dans son champ (analyse des risques, chaîne d'approvisionnement, contrôle d'accès, authentification multifacteur, notification sous 24 heures, responsabilité des organes de direction) → mise en conformité tardive et coûteuse, responsabilité des dirigeants exposée, si la régie y était soumise, ce que le dossier ne demande pas d'apprécier</td>
+<td>directive non transposée en droit français au 31/12/2026 (annexe 2.3) : le risque est <strong>à venir</strong> et appelle une anticipation ; conseil d'administration informé 18 jours après l'incident ; aucune procédure de notification</td>
+</tr>
+<tr class="odd">
+<td><strong>Risque métier</strong></td>
+<td>7. Interruption de la distribution ou mise en distribution d'une eau impropre → atteinte à la santé des usagers, perte de confiance des abonnés et des élus de la communauté d'agglomération, coûts</td>
+<td>réservoir de la Combe-Martel : 12 000 habitants, dont un établissement pour personnes âgées dépendantes, qui auraient manqué d'eau vers 8 h 30 ; scénario redouté (annexe 2.2 C) ; coût direct de 25 000 € pour un incident sans conséquence</td>
+</tr>
+</tbody>
+</table>
+<p>(1 pt pour six risques correctement formulés et classés, au moins un par catégorie ; 0,5 pt pour quatre. Le corrigé en propose sept ; six suffisent.)</p>
+<p><em>2.1 b) – Analyse d'impact du scénario redouté</em></p>
+<p>L'<strong>analyse d'impact sur l'activité</strong> (BIA) identifie les processus critiques d'une organisation, mesure, dans le temps, les conséquences de leur interruption ou de leur altération (humaines, opérationnelles, financières, d'image, juridiques) et fixe la durée d'interruption tolérable de chacun ; elle sert à hiérarchiser les mesures de sécurité et de continuité. C'est une démarche, distincte du plan de continuité, qu'elle prépare (F12 § 4) (0,5 pt).</p>
+<p>Application au scénario de l'annexe 2.2 C (modification, une même nuit, des consignes de plusieurs réservoirs et du dosage des réactifs d'une usine) (1 pt) :</p>
+<ul>
+<li><strong>Processus de la régie</strong> : sont atteints à la fois la <strong>production</strong> (dosage des réactifs dans une usine), la <strong>distribution</strong> (remplissage des réservoirs, marche des pompes) et le <strong>contrôle de la qualité de l'eau</strong> : l'alarme des analyseurs remonte par la supervision elle-même, de sorte qu'un attaquant qui la contrôle peut aussi aveugler la détection. La supervision est un <strong>point unique</strong> de pilotage et de détection pour 120 sites ; les interventions d'astreinte, l'accueil et l'information des abonnés sont ensuite saturés. La facturation, elle, n'est pas atteinte : l'impact ne se mesure pas d'abord en euros.</li>
+<li><strong>Continuité du service</strong> : dans l'incident réel, un seul réservoir dont les pompes ont été arrêtées à 2 h 25 aurait été vide vers 8 h 30, soit en six heures environ, au moment de la pointe du matin ; plusieurs réservoirs modifiés en même temps priveraient d'eau ou de pression des quartiers entiers. Le mode manuel existe, mais il faut environ deux heures pour mobiliser une équipe la nuit, et huit agents d'astreinte ne peuvent pas conduire sur place 120 sites : la durée d'interruption tolérable se compte en heures et dépend de la détection. Le retour à la normale (remise en eau, vérification des installations, reprise du pilotage à distance de confiance) prolongerait l'interruption au-delà de l'attaque elle-même.</li>
+<li><strong>Santé des usagers</strong> : une eau mal traitée (excès ou insuffisance de réactif) peut être distribuée avant toute détection, puisque l'alarme de qualité passe par le système compromis ; les personnes vulnérables (établissement pour personnes âgées dépendantes de la Combe-Martel) sont les plus exposées ; une perte de pression dans les canalisations aggrave le risque sanitaire ; la régie devrait alors restreindre la consommation et fournir de l'eau autrement.</li>
+<li><strong>Conclusion</strong> : la gravité est maximale (atteinte possible à la santé de milliers d'habitants), et la vraisemblance n'est pas faible (un quart des comptes appartiennent à des personnes parties, accès à distance par simple mot de passe, incident déjà survenu). La supervision est un <strong>système critique</strong> dont la disponibilité et l'intégrité priment ; la régie a besoin d'une détection qui ne dépende pas de la seule supervision et d'un mode manuel préparé.</li>
+</ul>
+<p><em>2.1 c) – Ce que l'incident révèle</em> (1 pt)</p>
+<ol type="1">
+<li><strong>Une détection fortuite et tardive</strong> : 3 h 30 entre la connexion et la détection, due au hasard (un agent d'astreinte connecté pour une autre alarme), et 3 h 15 après l'arrêt des pompes, que l'attaquant avait masqué en désactivant l'alarme de niveau bas ; la connexion du 4 novembre est passée inaperçue ; les journaux, conservés 30 jours et jamais consultés, ne permettent pas de savoir si le compte a servi avant le 23 octobre. La régie ne surveille pas ses accès : elle découvre les attaques quand elles produisent un effet visible.</li>
+<li><strong>Un traitement lent et improvisé</strong> : faute de procédure, l'agent ne coupe pas les accès ; le directeur de l'exploitation attend le lundi ; le compte est désactivé 28 heures après la détection, le responsable de la sécurité des systèmes d'information informé plus de 29 heures après, la directrice générale à midi le lundi, le conseil d'administration 18 jours plus tard ; les neuf autres comptes de prestataires au nom de techniciens partis ne sont désactivés que le 25 novembre et les mots de passe génériques changés le 27. Personne ne sait qui décide ni qui alerte.</li>
+<li><strong>Des risques connus mais non traités, faute de propriétaire</strong> : la supervision est hors du champ de la politique de sécurité de 2021 et n'a jamais fait l'objet d'une analyse des risques ; la recommandation d'authentification multifacteur de 2025 n'a pas été suivie « faute de budget et de responsable désigné » ; les comptes ne sont pas revus depuis 2019 ; les contrats n'obligent pas les prestataires à signaler les départs ; la sécurité représente moins de 3 % du budget du SI. Le risque n'a pas été accepté par une décision : il l'a été par défaut.</li>
+</ol>
+<p>L'incident n'est donc pas un accident isolé : il révèle une gouvernance de la sécurité absente pour le système le plus critique de la régie.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Typologie en trois catégories (risques réglementaires et métiers regroupés, comme dans l'intitulé du programme), si les six risques sont correctement formulés.</li>
+<li>Risque d'interception ou d'altération des échanges non chiffrés avec les 80 sites reliés par l'opérateur classé en cybermenace ; obsolescence des quatre postes classée en défaillance opérationnelle.</li>
+<li>Dépendance à l'égard des prestataires (savoir-faire détenu par l'éditeur et l'intégrateur) présentée comme un risque métier.</li>
+<li>Analyse d'impact présentée sous forme de tableau (processus, conséquence à 1 heure, 6 heures, 24 heures) ou accompagnée d'une cotation probabilité × gravité, si elle est justifiée par les annexes.</li>
+<li>Constat sur le partage des responsabilités entre l'exploitation et la DSI (« deux mondes ») au titre de la troisième faiblesse.</li>
+<li>Responsabilité de la régie à l'égard des usagers en cas de distribution d'une eau impropre, présentée sans analyse juridique et classée en risque réglementaire ou en risque métier.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Morceau de cours</em> (<code>JUR-T01</code> contextualiser chaque notion) — typologie récitée sans les comptes, les accès à distance ni la Combe-Martel ; juste : chaque risque porte un fait chiffré des annexes.</li>
+<li><em>Annexes survolées</em> (<code>JUR-T08</code> exploiter toutes les annexes) — connexion du 4 novembre, durée de conservation des journaux ou désactivation de l'alarme oubliées ; juste : ce sont les faits qui montrent les faiblesses de détection.</li>
+<li><em>Statut de NIS 2 affirmé sans date</em> (<code>ET-41</code>) — présenter NIS 2 comme déjà applicable en droit français à la régie, ou trancher son assujettissement ; juste : directive non transposée au 31/12/2026 (annexe 2.3), risque à anticiper.</li>
+<li><em>Analyse d'impact confondue avec le plan de continuité</em> (<code>ET-02</code>) — elle mesure les conséquences et fixe les priorités ; le plan organise le maintien de l'activité.</li>
+<li><em>Impact réduit au coût de l'incident</em> (<code>JUR-T03</code> analyser et argumenter) — les 25 000 € ne mesurent pas l'enjeu ; juste : santé des usagers et continuité de la distribution.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des risques du SI, menaces (chaîne d'approvisionnement, compromission de comptes)</td>
+<td>classement des risques</td>
+<td>F12 § 0 et 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Analyse d'impact sur l'activité (BIA)</td>
+<td>conséquences du scénario, interruption tolérable</td>
+<td>F12 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Directive (UE) 2022/2555 (« NIS 2 »)</td>
+<td>risque réglementaire à venir, mesures et responsabilité des organes de direction</td>
+<td><code>nis2</code> / F12 § 6.1</td>
+<td>en vigueur ; transposition due au 17/10/2024</td>
+</tr>
+<tr class="even">
+<td>Transposition française de NIS 2</td>
+<td>statut au 31/12/2026</td>
+<td><code>nis2_transposition_fr</code> / F12 § 6.2</td>
+<td>non transposée au 31/12/2026</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--démarche-et-principes-de-la-politique-de-cybersécurité-3-points">2.2 – Démarche et principes de la politique de cybersécurité (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.a</code> « Définir et piloter une politique de sécurité du SI, en intégrant les enjeux de cybersécurité, de résilience organisationnelle et de gouvernance des systèmes critiques » ; <code>4.2.b</code> « Élaboration d'une politique de cybersécurité fondée sur l'analyse des risques ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.1 (fonctionnement, comptes, politique de 2021, points de vue), 2.2 (incident, scénario redouté) et 2.3 (EBIOS Risk Manager, ISO/IEC 27001:2022, guide d'hygiène, NIS 2).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Politique de sécurité du SI définie (document approuvé par la direction : objectifs de disponibilité, d'intégrité, de confidentialité et de traçabilité, périmètre, principes, organisation, règles, contrôle), distinguée de la charte</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Les cinq ateliers d'EBIOS Risk Manager présentés dans l'ordre, chacun illustré par un élément du cas ; la formalisation, l'approbation, la déclinaison et la revue de la politique sont valorisées mais non exigées ; 0,5 pour trois ateliers illustrés</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>b</td>
+<td>Quatre principes propres à un système critique, chacun justifié par les annexes ; 1 pour trois, 0,5 pour deux</td>
+<td>1,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.2 a) – Définition et démarche</em></p>
+<p>La <strong>politique de sécurité du système d'information</strong> (PSSI) est le document de référence, approuvé par la direction, qui fixe les <strong>objectifs</strong> de sécurité (disponibilité, intégrité, confidentialité et traçabilité de l'information), le <strong>périmètre</strong>, les <strong>principes</strong>, l'<strong>organisation</strong> (rôles et responsabilités), les <strong>règles</strong> et le <strong>dispositif de contrôle</strong> ; elle se décline en procédures et en une charte opposable aux utilisateurs, qui n'en est qu'une déclinaison (F12 § 1) (0,5 pt). Fondée sur l'analyse des risques, elle proportionne les mesures aux risques réels au lieu d'empiler des règles.</p>
+<p>Étapes, en s'appuyant sur EBIOS Risk Manager, méthode de l'ANSSI (annexe 2.3) (1 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Contenu</th>
+<th>Application à la supervision</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Cadrage et socle de sécurité</td>
+<td>périmètre, missions et biens à protéger, événements redoutés et leur gravité ; écart au socle de règles de base</td>
+<td>périmètre : centre de supervision, 120 sites, liaisons, accès à distance, comptes ; missions : produire et distribuer en continu une eau potable, traiter les eaux usées ; événements redoutés : consignes altérées, alarmes neutralisées, perte du pilotage ; écarts au guide d'hygiène de l'ANSSI et aux mesures de l'ISO/IEC 27002:2022 : pas d'authentification multifacteur, comptes génériques, postes obsolètes, réseau non cloisonné</td>
+</tr>
+<tr class="even">
+<td>2. Sources de risque</td>
+<td>qui pourrait attaquer et dans quel but</td>
+<td>ancien technicien ou ancien agent mécontent, cybercriminel cherchant une rançon, attaquant opportuniste qui trouve un accès à distance ouvert sur internet, acteur cherchant à nuire à une infrastructure</td>
+</tr>
+<tr class="odd">
+<td>3. Scénarios stratégiques</td>
+<td>chemins d'attaque par l'écosystème</td>
+<td>trois prestataires à accès permanent, opérateur de téléphonie mobile, agents d'astreinte à domicile dont trois sur un ordinateur personnel : chaque tiers est évalué selon son exposition et la confiance qu'on peut lui accorder</td>
+</tr>
+<tr class="even">
+<td>4. Scénarios opérationnels</td>
+<td>modes opératoires détaillés et vraisemblance</td>
+<td>compte de prestataire inactif → accès à distance → arrêt des pompes d'un réservoir et désactivation de son alarme (scénario réalisé en novembre 2026) ; message piégé ouvert sur un poste de bureautique → rebond vers un poste de supervision</td>
+</tr>
+<tr class="odd">
+<td>5. Traitement du risque</td>
+<td>plan de mesures priorisé, risques résiduels</td>
+<td>mesures des questions 2.3 et 2.4, échéancées sur l'enveloppe de 200 000 € par an ; risques résiduels acceptés par décision de la direction générale et présentés au conseil d'administration</td>
+</tr>
+</tbody>
+</table>
+<p>Puis la PSSI est <strong>formalisée</strong> en étendant celle de 2021 à la supervision, <strong>approuvée</strong> par la direction générale et présentée au conseil d'administration, <strong>déclinée</strong> en procédures (gestion des accès, gestion d'incident), en charte pour les agents et en exigences de sécurité dans les contrats des prestataires, enfin <strong>revue</strong> chaque année et après chaque incident, dans une logique d'amélioration continue analogue à celle de l'ISO/IEC 27001:2022 (planifier, réaliser, vérifier, ajuster), sans qu'une certification soit visée.</p>
+<p><em>2.2 b) – Quatre principes propres à un système critique</em> (1,5 pt)</p>
+<ol type="1">
+<li><strong>Priorité à la disponibilité et à l'intégrité du service</strong> : pour la supervision, l'enjeu premier est que l'eau soit distribuée et correctement traitée, avant la confidentialité ; aucune mesure ne doit empêcher une intervention légitime de nuit, comme le redoute M. SALVANHAC ; chaque mesure est conçue avec l'exploitation et prévoit une procédure de secours. Justification : scénario redouté, réservoir vide en six heures.</li>
+<li><strong>Cloisonnement et défense en profondeur</strong> : la supervision est isolée de la bureautique, de la messagerie et d'internet, et protégée par plusieurs barrières successives, de sorte qu'une faille unique ne suffise pas. Justification : réseau commun aux 300 postes de bureautique, messagerie et internet sur les postes de supervision, quatre postes obsolètes.</li>
+<li><strong>Moindre privilège et imputabilité</strong> : chacun n'a que les droits nécessaires à son rôle, sur un compte nominatif ; toute action est tracée et attribuable ; les actions les plus sensibles (seuils d'alarme, dosage des réactifs, création de comptes) sont réservées à quelques personnes et enregistrées. Justification : 52 comptes sur 60 peuvent modifier les consignes, trois comptes génériques pour environ 45 personnes, compte « admin » partagé avec l'éditeur.</li>
+<li><strong>Maîtrise des tiers</strong> (sécurité de la chaîne d'approvisionnement) : un prestataire n'accède à la supervision que sur demande, pour une durée limitée, sous le contrôle de la régie, avec des obligations contractuelles (signalement des départs, règles d'accès, droit de contrôle). Justification : 25 comptes de prestataires dont 10 au nom de techniciens partis, accès ouverts en permanence, incident venu d'un compte de BRÉMONTAL ; NIS 2 range cette sécurité parmi les mesures attendues (annexe 2.3).</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Démarche présentée selon les étapes de l'ISO/IEC 27005:2022 (identification, analyse, évaluation, traitement, acceptation des risques) ou selon les six fonctions du NIST Cybersecurity Framework 2.0 (gouverner, identifier, protéger, détecter, répondre, rétablir), si elle part de l'analyse des risques et est appliquée au cas.</li>
+<li>Principe de <strong>détection et de réaction</strong> (surveiller en continu, alerter, savoir qui décide) ou de <strong>responsabilité</strong> (un propriétaire du risque désigné pour la supervision) à la place de l'un des quatre principes.</li>
+<li>Principe d'un <strong>mode dégradé maîtrisé</strong> (conduite manuelle des sites préparée), s'il reste énoncé comme un principe et n'est pas développé en plan de continuité.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>PSSI confondue avec la charte informatique</em> (<code>ET-27</code>) — la charte n'en est qu'une déclinaison destinée aux utilisateurs.</li>
+<li><em>Norme, méthode et solution confondues</em> (<code>JUR-S06</code> confondre référentiels, normes et solutions ; <code>ET-01</code>) — « installer ISO 27001 », EBIOS Risk Manager présenté comme un logiciel ; juste : ISO/IEC 27001:2022 est une norme d'exigences, EBIOS Risk Manager une méthode, le guide d'hygiène un guide.</li>
+<li><em>Objectifs de sécurité oubliés</em> (<code>JUR-S01</code> triade CID) — la politique doit dire ce qu'elle protège : disponibilité et intégrité d'abord, pour la supervision.</li>
+<li><em>Principes génériques</em> (<code>JUR-T01</code>) — « sensibiliser le personnel » sans lien avec la supervision ; juste : principes propres à un système qui pilote des installations.</li>
+<li><em>Démarche de certification proposée</em> — hors programme et hors de la demande ; juste : la norme sert de référence.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EBIOS Risk Manager (ANSSI, version 1.5 de 2024)</td>
+<td>cinq ateliers appliqués à la supervision</td>
+<td><code>ebios_rm_1_5</code> / F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27005:2022</td>
+<td>gestion des risques (réponse tolérée)</td>
+<td><code>iso_27005_2022</code> / F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO/IEC 27001:2022 et ISO/IEC 27002:2022</td>
+<td>amélioration continue, mesures de référence</td>
+<td><code>iso_27001_2022</code>, <code>iso_27002_2022</code> / F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Guide d'hygiène informatique de l'ANSSI (2017)</td>
+<td>socle de mesures de base</td>
+<td><code>guide_hygiene_anssi_2017</code> / F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>NIST Cybersecurity Framework 2.0 (2024)</td>
+<td>six fonctions (réponse tolérée)</td>
+<td><code>nist_csf_2_0</code> / F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>PSSI, triade CID et traçabilité</td>
+<td>définition et objectifs</td>
+<td>F12 § 1</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--architecture-de-confiance-2-points">2.3 – Architecture de confiance (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.c</code> « Notions d'architecture de confiance (authentification, chiffrement, segmentation) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.1 (liaisons, réseau, accès à distance, authentification, points de vue) et 2.3 (modèle Zero Trust).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Modèle Zero Trust présenté comme un modèle d'architecture (aucune confiance implicite, vérification de chaque accès selon l'identité, le terminal et le contexte, démarche progressive), et non comme un produit, et appliqué à la régie (fin de la confiance accordée au réseau commun et aux accès à distance ouverts)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Mesure d'authentification, rattachée à son constat, avec une condition de réussite</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Mesure de chiffrement, rattachée à son constat, avec une condition de réussite</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Mesure de segmentation entre la bureautique et la supervision, rattachée à son constat, avec une condition de réussite</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p>Le <strong>modèle Zero Trust</strong> est un modèle d'architecture fondé sur le principe « ne jamais faire confiance par défaut, toujours vérifier » : aucune confiance n'est accordée à un utilisateur ou à un terminal du seul fait qu'il est connecté au réseau de la régie ; chaque accès à une ressource est authentifié, autorisé et évalué selon le contexte (identité, état du terminal, sensibilité de la ressource, horaire), avec le moindre privilège et une surveillance continue. Ce n'est ni un produit ni un logiciel que l'on achète : c'est une démarche progressive de transformation, qui ne remplace pas la défense en profondeur (avis de l'ANSSI, annexe 2.3). À la régie, il conduit à ne plus considérer comme sûr un poste du simple fait qu'il est sur le réseau commun, et à vérifier chaque connexion à la supervision (0,5 pt).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Mesure</th>
+<th>Constat de l'annexe 2.1</th>
+<th>Condition de réussite</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Authentification multifacteur</strong> pour tous les accès à distance (agents d'astreinte, prestataires) et pour les comptes d'administration, sur des comptes nominatifs ; accès à distance depuis des terminaux fournis et gérés par la régie (fin des ordinateurs personnels) ; accès d'un prestataire autorisé seulement pendant une intervention demandée (0,5 pt)</td>
+<td>identifiant et mot de passe pour tous les comptes ; accès à distance joignable depuis internet ; recommandation de 2025 non suivie ; trois agents d'astreinte sur leur ordinateur personnel ; incident venu d'un mot de passe obtenu on ne sait comment</td>
+<td>être utilisable à 3 heures du matin : facteur de possession remis à chaque agent d'astreinte, procédure de secours en cas de perte, essai avec l'exploitation avant généralisation (point de vue de M. SALVANHAC) ; mêmes exigences imposées aux prestataires par contrat</td>
+</tr>
+<tr class="even">
+<td><strong>Chiffrement</strong> des échanges entre le centre de supervision et les sites, en priorité les 80 sites reliés par l'opérateur de téléphonie mobile, et des sessions d'accès à distance (0,5 pt)</td>
+<td>échanges entre le centre et les sites non chiffrés ; 80 sites reliés par un réseau extérieur</td>
+<td>le chiffrement protège surtout l'<strong>intégrité</strong> et l'authenticité des consignes (une consigne ne doit pas pouvoir être modifiée en chemin) ; il suppose de vérifier avec BRÉMONTAL la compatibilité des automates, de commencer par les sites les plus critiques (usines, grands réservoirs) et d'organiser la gestion des clés</td>
+</tr>
+<tr class="odd">
+<td><strong>Segmentation</strong> : zone réservée à la supervision, séparée de la bureautique ; aucun accès à la messagerie ni à internet depuis les postes de supervision ; tous les flux interdits sauf ceux qui sont explicitement autorisés ; accès à distance par un point d'entrée unique, contrôlé et journalisé ; découpage plus fin par type de site pour limiter les mouvements latéraux (0,5 pt)</td>
+<td>réseau commun aux 300 postes de bureautique et aux six postes de supervision, sans cloisonnement ; messagerie et internet sur les postes de supervision ; « deux mondes qui partagent les mêmes câbles »</td>
+<td>inventaire préalable des échanges légitimes, conduit ensemble par la DSI et l'exploitation ; remplacement ou isolement des quatre postes sans mises à jour, qui resteraient le maillon faible ; règle de gestion des exceptions validée par le responsable de la sécurité des systèmes d'information</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Gestion des terminaux mobiles (MDM, <em>Mobile Device Management</em>) des ordinateurs portables d'astreinte au titre de l'authentification ou d'une condition de réussite.</li>
+<li>Accès conditionnel (refus d'une connexion de prestataire hors d'une fenêtre d'intervention, ou depuis un terminal non conforme) présenté comme application du Zero Trust.</li>
+<li>Mesure de segmentation qui prévoit une passerelle unique d'échange entre la supervision et la bureautique pour les rares données qui doivent circuler (rapports d'exploitation).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Zero Trust présenté comme un produit</em> (<code>JUR-S03</code> Zero Trust cadre architectural et non solution logicielle ; <code>ET-04</code>) — « acheter le Zero Trust d'un éditeur » ; juste : modèle et démarche progressive.</li>
+<li><em>Authentification multifacteur confondue avec un mot de passe complexe</em> (<code>ET-28</code>) — juste : au moins deux facteurs de nature différente.</li>
+<li><em>Micro-segmentation confondue avec une segmentation applicative</em> (<code>ET-14</code>) — juste : cloisonnement des flux entre zones pour limiter les mouvements latéraux.</li>
+<li><em>Réponse technique</em> (<code>JUR-T12</code> moins de technique, plus de management) — description du réglage des équipements de sécurité, ligne par ligne : hors programme ; juste : mesure, constat, condition.</li>
+<li><em>Mesure sans condition de réussite</em> (<code>JUR-T03</code>) — une authentification forte qui bloque l'astreinte serait contournée.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Le modèle Zero Trust (avis de l'ANSSI, 2021)</td>
+<td>définition, démarche progressive</td>
+<td><code>zero_trust_anssi</code> / F12 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Authentification multifacteur, segmentation, micro-segmentation, chiffrement</td>
+<td>trois mesures</td>
+<td>F12 § 3</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Directive (UE) 2022/2555 (« NIS 2 »)</td>
+<td>chiffrement et authentification multifacteur parmi les mesures</td>
+<td><code>nis2</code> / F12 § 6.1</td>
+<td>en vigueur ; non transposée en France au 31/12/2026</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--gestion-des-identités-et-surveillance-des-connexions-2-points">2.4 – Gestion des identités et surveillance des connexions (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.d</code> « Dispositifs de surveillance et de résilience : IAM (Identity &amp; Access Management), PCA/PRA (plans de continuité et de reprise d'activité) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.1 (inventaire des comptes, accès à distance, journaux, organisation) et 2.2 (chronologie, constats).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a</td>
+<td>Quatre règles de gestion des identités et des accès (cycle de vie, comptes génériques, comptes à privilèges, revue périodique), applicables aux agents et aux prestataires, chacune rattachée à un constat de l'inventaire ; 0,5 pour deux règles</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Dispositif de surveillance : journaux centralisés et conservés plus longtemps, règles d'alerte propres à la supervision, traitement des alertes à toute heure, revue des connexions des prestataires</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Deux indicateurs d'efficacité complets (formule, source, fréquence, cible, axe) ; 0 si un seul indicateur est complet</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.4 a) – Quatre règles de gestion des identités et des accès</em> (1 pt)</p>
+<p>La gestion des identités et des accès (IAM) organise, pour chaque personne, l'attribution, l'évolution et le retrait des droits sur tout le cycle de vie, selon son rôle et le principe du moindre privilège (F12 § 3 ; F10 § 3.1). Le directeur de l'exploitation, propriétaire de la supervision, décide des droits ; la DSI les met en œuvre ; le responsable de la sécurité des systèmes d'information contrôle.</p>
+<ol type="1">
+<li><strong>Cycle de vie des comptes</strong> : tout compte est créé sur demande validée, rattaché à une personne et à un rôle, modifié à chaque mutation et désactivé le jour du départ. Pour les agents, la direction des ressources humaines signale chaque arrivée, mutation et départ ; pour les prestataires, le contrat oblige à signaler le départ d'un technicien sous 24 heures, et les comptes expirent d'eux-mêmes à la fin du contrat ou après une période sans usage. Constat : 15 comptes (un quart) appartiennent à des personnes parties ; le compte utilisé le 22 novembre était actif depuis près de cinq mois après le départ du technicien.</li>
+<li><strong>Comptes génériques</strong> : suppression des trois comptes « exploitation », « astreinte » et « maintenance » au profit d'un compte nominatif pour chacune des quelque 45 personnes ; toute exception (poste de consultation du centre) est limitée à la lecture et justifiée. Constat : aucune action n'est attribuable ; mots de passe inchangés de 2019 à novembre 2026.</li>
+<li><strong>Comptes à privilèges</strong> : les quatre comptes d'administration deviennent nominatifs, distincts du compte quotidien, protégés par une authentification multifacteur et utilisés par le point d'entrée contrôlé, avec enregistrement des sessions ; suppression du compte « admin » partagé avec l'éditeur ; les prestataires n'obtiennent des droits que sur demande, pour la durée de l'intervention, après validation par l'exploitation ; les droits de modification des consignes sont réservés aux rôles qui en ont besoin (opérateurs, astreinte), les autres en consultation. Constat : 52 comptes sur 60 peuvent modifier les consignes.</li>
+<li><strong>Revue périodique des droits</strong> : revue semestrielle des 60 comptes par le directeur de l'exploitation, la liste des comptes de chaque prestataire étant confirmée par celui-ci, sous le contrôle du responsable de la sécurité des systèmes d'information ; tout compte non confirmé est désactivé ; revue supplémentaire après chaque incident. Constat : aucune revue des comptes de prestataires depuis 2019.</li>
+</ol>
+<p><em>2.4 b) – Surveillance des connexions et indicateurs</em></p>
+<p><strong>Dispositif</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>Journalisation</strong> : les journaux de la supervision, de l'accès à distance et des comptes d'administration sont centralisés hors de la supervision et conservés au moins un an, pour reconstituer un incident (30 jours aujourd'hui, ce qui interdit de savoir si le compte a servi avant le 23 octobre).</li>
+<li><strong>Règles d'alerte</strong> propres à la supervision : connexion d'un prestataire sans demande d'intervention ouverte ; connexion de nuit d'un compte qui n'est pas d'astreinte ; modification d'une consigne ou désactivation d'une alarme hors des heures d'exploitation ; échecs répétés de connexion ; connexion d'un compte inactif depuis plusieurs semaines. L'incident du 22 novembre aurait déclenché au moins trois de ces alertes.</li>
+<li><strong>Traitement des alertes à toute heure</strong> : le responsable de la sécurité des systèmes d'information, à mi-temps, ne peut pas veiller seul ; la régie confie la surveillance à un centre opérationnel de sécurité (SOC) externe ou mutualisé, appuyé sur un outil de collecte et de corrélation des journaux (SIEM), qui alerte l'agent d'astreinte et le responsable de la sécurité selon une procédure d'escalade (qui coupe les accès, qui prévient la directrice générale) ; les alarmes critiques de qualité de l'eau sont doublées par une voie qui ne dépend pas de la supervision.</li>
+<li><strong>Revue hebdomadaire</strong> par l'exploitation de la liste des connexions de prestataires, rapprochée des interventions demandées.</li>
+</ul>
+<p><strong>Indicateurs d'efficacité</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Délai de détection d'une connexion anormale</td>
+<td>moyenne, sur les connexions anormales du mois, de (heure de prise en charge de l'alerte − heure de la connexion)</td>
+<td>journaux centralisés et registre des alertes du centre opérationnel de sécurité</td>
+<td>mensuelle</td>
+<td>moins de 15 minutes (3 h 30, et par hasard, en novembre 2026)</td>
+<td>processus</td>
+</tr>
+<tr class="even">
+<td>Taux de connexions de prestataires autorisées</td>
+<td>connexions de prestataires rattachées à une demande d'intervention validée / connexions de prestataires</td>
+<td>journaux de l'accès à distance et registre des demandes d'intervention</td>
+<td>mensuelle</td>
+<td>100 % (accès aujourd'hui ouverts en permanence, sans demande)</td>
+<td>processus</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Rôles (RBAC) définis par métier (opérateur, agent d'astreinte, automaticien, prestataire) en guise de règle sur le cycle de vie ou sur les privilèges.</li>
+<li>Revue trimestrielle des comptes de prestataires et semestrielle des comptes d'agents.</li>
+<li>Indicateur « taux de comptes désactivés dans les 24 heures suivant le départ » (comptes désactivés dans les 24 heures suivant le départ de la personne (ou son signalement par le prestataire) / départs du mois ; source : signalements de la direction des ressources humaines et des prestataires, inventaire des comptes ; mensuelle ; cible 100 % ; axe processus) ou « part des comptes nominatifs » (comptes nominatifs / comptes actifs de la supervision ; source : inventaire des comptes ; trimestrielle ; cible 100 % fin 2027 ; axe processus), s'il est relié au dispositif de surveillance ou de gestion des accès.</li>
+<li>Analyse comportementale des connexions, éventuellement appuyée sur l'intelligence artificielle, pour repérer les écarts aux habitudes d'un compte, avec ses limites (faux positifs, réglage initial).</li>
+<li>Indicateur rattaché à l'axe « apprentissage » ou à l'axe ESG « gouvernance », si le choix est justifié.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Plan de continuité ou de reprise développé à la place de la surveillance</em> (<code>ET-02</code> PCA et PRA ; <code>JUR-S02</code>) — la question porte sur l'IAM et la détection ; le PCA et le PRA ne sont pas demandés.</li>
+<li><em>Identification, authentification et autorisation confondues</em> (<code>ET-28</code>) — un compte nominatif identifie, l'authentification multifacteur prouve l'identité, la revue des droits règle l'autorisation.</li>
+<li><em>IAM réduit à un outil</em> (<code>JUR-S05</code> mesures opérationnelles cohérentes) — l'IAM est d'abord un processus (demande, validation, retrait, revue) avec des responsables.</li>
+<li><em>Indicateurs incomplets ou génériques</em> (<code>ET-18</code>) — « nombre d'incidents » sans formule, source ni cible ; juste : cinq champs, point de départ de l'annexe.</li>
+<li><em>Surveillance confiée au seul responsable de la sécurité à mi-temps</em> (<code>JUR-T03</code>) — l'incident a eu lieu un samedi à 2 heures du matin.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>IAM : cycle de vie, rôles, comptes à privilèges, revues ; SIEM et SOC en principe</td>
+<td>quatre règles, dispositif de surveillance</td>
+<td>F12 § 0 et 3 ; glossaire (SIEM)</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Habilitations, moindre privilège, revue semestrielle des droits</td>
+<td>revue périodique</td>
+<td>F10 § 3.1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Indicateurs d'efficacité des mesures (délai de détection, délai de révocation des droits)</td>
+<td>deux indicateurs</td>
+<td>F12 § 3</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>IA défensive : analyse comportementale (réponse tolérée)</td>
+<td>surveillance</td>
+<td>F13 ; F12 § 0</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="25--gouvernance-de-la-sécurité-de-la-supervision-2-points">2.5 – Gouvernance de la sécurité de la supervision (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.e</code> « Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques » ; <code>4.2.a</code> « Définir et piloter une politique de sécurité du SI, en intégrant les enjeux de cybersécurité, de résilience organisationnelle et de gouvernance des systèmes critiques ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (organigramme), 2.1 (organisation de la sécurité, points de vue), 2.2 (chronologie de l'information des acteurs) et 2.3 (NIS 2 : responsabilité des organes de direction).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a</td>
+<td>Intérêt de la matrice précisé (qui réalise, qui approuve — un seul par activité —, qui est consulté, qui est informé ; éviter les vides et les doublons de responsabilité) et matrice cohérente pour les quatre activités et les six acteurs ; 0,5 pour deux activités correctement réparties</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>b</td>
+<td>Deux évolutions de l'organisation justifiées par les annexes, dont le positionnement du responsable de la sécurité des systèmes d'information ; 0,5 par évolution</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.5 a) – Matrice de responsabilités</em> (1 pt)</p>
+<p>Une <strong>matrice de responsabilités</strong> (RACI) indique, pour chaque activité, qui la <strong>réalise</strong> (R), qui l'<strong>approuve</strong> et en répond (A, un seul par activité), qui est <strong>consulté</strong> avant la décision (C) et qui est <strong>informé</strong> après (I) (F05 § 1 ; F02 § 0). Elle répond au défaut que révèle l'incident : personne ne savait qui décidait de couper les accès ni qui informait la direction (annexe 2.2), et la supervision n'était sous la responsabilité de sécurité de personne.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Activité</th>
+<th>Conseil d'administration</th>
+<th>Directrice générale</th>
+<th>Responsable de la sécurité des SI</th>
+<th>Directeur de l'exploitation</th>
+<th>Responsable de la DSI</th>
+<th>Prestataires</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Approbation de la politique de sécurité de la supervision</td>
+<td><strong>A</strong> (approuve les orientations et le niveau de risque accepté, suit leur mise en œuvre)</td>
+<td>R (porte la politique et arbitre les moyens)</td>
+<td>R (élabore)</td>
+<td>C</td>
+<td>C</td>
+<td>I</td>
+</tr>
+<tr class="even">
+<td>Analyse des risques de la supervision</td>
+<td>I</td>
+<td><strong>A</strong> (accepte les risques résiduels)</td>
+<td>R (pilote la méthode)</td>
+<td>R (missions, événements redoutés, scénarios)</td>
+<td>C</td>
+<td>C (écosystème, scénarios)</td>
+</tr>
+<tr class="odd">
+<td>Gestion des accès des prestataires</td>
+<td>—</td>
+<td>I</td>
+<td>C (fixe les règles, contrôle la revue)</td>
+<td><strong>A</strong> (valide chaque ouverture d'accès)</td>
+<td>R (crée, ouvre, ferme, désactive)</td>
+<td>R (demandent les accès, signalent les départs)</td>
+</tr>
+<tr class="even">
+<td>Traitement d'un incident</td>
+<td>I (sans délai si l'incident est grave)</td>
+<td><strong>A</strong> (dirige la cellule de crise, décide de la communication)</td>
+<td>R (coordonne la réponse, qualifie l'incident)</td>
+<td>R (protège les installations, passe en mode manuel)</td>
+<td>R (coupe les accès, conserve les traces)</td>
+<td>C (investigation, correction)</td>
+</tr>
+</tbody>
+</table>
+<p><em>2.5 b) – Deux évolutions de l'organisation</em> (1 pt)</p>
+<ol type="1">
+<li><strong>Repositionner le responsable de la sécurité des systèmes d'information</strong> : le rattacher à la directrice générale et non plus à la DSI, étendre sa mission à la supervision (droit de regard, accès aux journaux, contrôle des comptes) et en faire une fonction à temps plein, au besoin appuyée par un prestataire. Justification : à mi-temps et rattaché à la DSI dont il gère aussi les infrastructures, il est juge et partie ; il n'a « aucun droit de regard » sur le système le plus critique et a été informé plus de 29 heures après la détection. L'enveloppe de 200 000 € par an permet de financer ce temps et la surveillance externe.</li>
+<li><strong>Installer une gouvernance de la sécurité au niveau de la direction et du conseil</strong> : un comité de sécurité trimestriel (directrice générale, responsable de la sécurité, directeur de l'exploitation, responsable de la DSI, directrice des ressources humaines pour le cycle de vie des comptes) qui suit le plan de traitement et les indicateurs ; un examen annuel de la sécurité par le conseil d'administration, une information sans délai en cas d'incident grave (au lieu de 18 jours) et une formation des administrateurs, en anticipation de la responsabilité que NIS 2 donne aux organes de direction, sans préjuger de son application à la régie (annexe 2.3). Justification : avant décembre 2026, le conseil n'avait jamais examiné la sécurité ; Mme ROCHEVAL veut dire « qui en répond et dans quels délais ».</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Directrice générale en A pour l'approbation de la politique, le conseil d'administration étant informé et approuvant les orientations et l'enveloppe, si le choix est justifié.</li>
+<li>Directeur de l'exploitation en A pour l'analyse des risques, comme propriétaire de la supervision, la directrice générale arbitrant les risques résiduels les plus graves.</li>
+<li>Évolution portant sur la désignation du directeur de l'exploitation comme <strong>propriétaire du risque</strong> de la supervision, avec un correspondant sécurité parmi les automaticiens, ou sur l'ajout de clauses de sécurité dans les contrats des trois prestataires (signalement des départs, accès sur demande, droit de contrôle), sans analyse juridique des contrats.</li>
+<li>Matrice présentée avec les activités en colonnes et les acteurs en lignes.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Responsable de la sécurité vu comme un technicien ou maintenu sous la DSI sans indépendance</em> (<code>ET-15</code>) — juste : il pilote la politique et contrôle, y compris la DSI.</li>
+<li><em>Deux « A » sur une même activité</em> — la matrice perd son intérêt : une seule personne approuve et répond.</li>
+<li><em>Prestataires absents de la matrice</em> (<code>JUR-T08</code>) — alors que l'incident vient d'un compte de prestataire.</li>
+<li><em>Conseil d'administration chargé de réaliser</em> — il approuve et contrôle, il n'exécute pas.</li>
+<li><em>Recommandations irréalistes</em> (<code>JUR-G05</code> déséquilibres organisationnels et recommandations réalistes) — créer une direction de la sécurité de dix personnes pour une DSI de 14 agents ; juste : temps plein, rattachement, appui externe.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Matrice RACI</td>
+<td>répartition des rôles</td>
+<td>F05 § 1 ; F02 § 0 ; glossaire</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Rôles du responsable de la sécurité des SI, de la direction, des prestataires</td>
+<td>positionnement, indépendance</td>
+<td>F12 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Directive (UE) 2022/2555 (« NIS 2 »)</td>
+<td>responsabilité et formation des organes de direction, en anticipation</td>
+<td><code>nis2</code> / F12 § 6.1</td>
+<td>en vigueur ; transposition due au 17/10/2024</td>
+</tr>
+<tr class="even">
+<td>Transposition française de NIS 2</td>
+<td>statut au 31/12/2026</td>
+<td><code>nis2_transposition_fr</code> / F12 § 6.2</td>
+<td>non transposée au 31/12/2026</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
