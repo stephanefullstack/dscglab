@@ -1,0 +1,324 @@
+# ÉLÉMENTS INDICATIFS DE CORRIGÉ ET DE BARÈME
+
+## UE 3 – Contrôle de gestion et stratégie — Exercice d'entraînement n° 24 — Dossier 2 (7 points)
+
+Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.
+
+Textes intégrés (fiches datées) : F01 diagnostic et choix stratégiques (§ 6, choix concurrentiels), F04 production et coûts (§ 5, facteur rare), F10 gestion prévisionnelle (§ 2, boucle du pilotage et ordre des budgets ; § 5, écarts sur chiffre d'affaires et sur marge), F12 performance globale (§ 2, facteurs clés de succès et indicateurs ; § 3, tableaux de bord stratégiques), F13 registre des auteurs (toutes à jour au 25/10/2026). Données structurées : `corrige.yaml`, vérifié par `outils/dscgcheck` (écart sur marge à trois gammes : marge unitaire, volume global, composition, recalculés ; écart sur chiffre d'affaires ; sous-écarts de taille du marché et de part de marché, schéma complet ; comptes de résultat prévisionnels de la division, révisé, proposé et avec ouverture le samedi ; indicateurs clés et ratios avec cibles recalculés ; heures de ligne, classement, allocation de la capacité et budget de production en calculs divers recalculés par script ; barème partiel sur 7 ; liste noire ; hors-programme).
+
+Bien que le corrigé mentionne des auteurs, des textes et des données, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur le choix et la justification des outils, la justesse des calculs, la pertinence de l'analyse au regard du cas et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet) ; pour chaque question, la présentation des concepts et outils avant leur mobilisation puis la conclusion sont notées. Une erreur n'est sanctionnée qu'une fois : les calculs et les analyses qui en découlent sont notés en cohérence avec les résultats antérieurs du candidat.
+
+| Question | Compétence visée | Points |
+|---|---|---:|
+| 2.1 Schéma d'analyse de l'écart sur marge sur coût variable de 2026 : marge unitaire, composition, volume global décomposé en taille du marché et part de marché | `3.1.c` Concevoir et mettre en œuvre des outils de contrôle budgétaire adaptés au contexte | 2 |
+| 2.2 Interprétation des écarts au regard du marché, de la concurrence et des choix commerciaux ; ce qu'ils révèlent de la stratégie concurrentielle | `3.1.d` Interpréter les résultats obtenus ; `3.1.a` S'approprier la boucle du pilotage stratégique ; `1.2.a` Catégoriser et analyser les choix stratégiques réalisés par l'organisation | 1 |
+| 2.3 Faisabilité du budget proposé, budget révisé de 2027 à partir de la capacité de conditionnement (ventes, production, marge, résultat), comparaison, ouverture le samedi, boucle du pilotage | `3.1.b` Élaborer des documents prévisionnels (budgets et états financiers prévisionnels) à partir de prévisions ; `3.1.a` S'approprier la boucle du pilotage stratégique | 2 |
+| 2.4 Trois ou quatre indicateurs clés reliés aux facteurs clés de succès, calcul pour 2026 et interprétation au regard des cibles | `3.3.a` Concevoir et mettre en œuvre des outils de pilotage de la performance globale ; `3.3.b` Interpréter les résultats obtenus | 1 |
+| 2.5 Note au directeur administratif et financier (20 lignes au maximum) : marge de 2026, budget 2027 retenu, indicateurs, préconisations | `3.1.e` Élaborer des préconisations ; `3.1.f` Produire une synthèse rédigée et structurée portant sur la gestion prévisionnelle ; `3.3.c` Élaborer des préconisations | 1 |
+| **Dossier 2 – Expliquer la marge de la dermocosmétique et revoir son budget 2027** | | **7** |
+
+---
+
+## DOSSIER 2 – EXPLIQUER LA MARGE DE LA DERMOCOSMÉTIQUE ET REVOIR SON BUDGET 2027 (7 points)
+
+### 2.1 Concevoir et calculer un schéma d'analyse de l'écart sur marge sur coût variable de 2026 (2 pts)
+
+**Compétence visée :**
+- `3.1.c` — Concevoir et mettre en œuvre des outils de contrôle budgétaire adaptés au contexte
+
+**Barème (2 pts)**
+
+| Item | Attendu | Points |
+|---|---|---:|
+| 2.1-01 | Schéma justifié : l'enjeu est la **marge**, pas le chiffre d'affaires ; les coûts variables réels sont égaux aux standards, donc l'écart sur marge unitaire est un pur effet des prix nets ; le volume et la composition sont valorisés aux marges unitaires budgétées ; l'écart sur volume global est expliqué par le marché. Marges unitaires budgétées 10,10 / 5,30 / 5,90 € et réelles 9,20 / 3,90 / 5,80 € ; MCV budgétée **31 770 k€** (taux de MCV 63,57 %, non exigé), MCV réelle **28 980 k€** (chiffre d'affaires de 48 300 k€) ; écart total **− 2 790 k€, défavorable** ; taux de MCV (60,00 %) et écart relatif (− 8,78 %) non exigés | 0,5 |
+| 2.1-02 | Écart sur marge unitaire **− 3 858 k€ (D)** : visage − 1 197, solaires − 2 492, peaux atopiques − 169 | 0,5 |
+| 2.1-03 | Marge moyenne budgétée **7,06 €** ; écart sur volume global (4 800 − 4 500) × 7,06 = **+ 2 118 k€ (F)** ; volumes réels à la composition budgétée 1 600 / 1 920 / 1 280 ; écart de composition **− 1 050 k€ (D)** : visage − 2 727, solaires − 742, peaux atopiques + 2 419 | 0,5 |
+| 2.1-04 | Parts de marché globales budgétée **5,00 %** et réelle **5,45 %** ; volume attendu avec la part budgétée 5 % × 88 000 = 4 400 ; écart de taille du marché **− 706 k€ (D)** ; écart de part de marché **+ 2 824 k€ (F)** ; vérification : − 3 858 − 706 + 2 824 − 1 050 = − 2 790 ; schéma présenté en arbre ou en tableau, sens de chaque écart indiqué | 0,5 |
+
+**Choix de l'outil et alternatives acceptées**
+
+- Outil retenu : un **écart sur marge sur coût variable à plusieurs produits**, décomposé en écart sur marge unitaire, écart de composition des ventes et écart sur volume global, puis un écart sur volume global **expliqué par le marché** (taille du marché et part de marché). Il est adapté parce que la division a vendu davantage (+ 6,67 % de volume) mais gagné moins : seul un schéma sur la marge montre que l'effet volume favorable a été plus qu'absorbé par les prix et par la composition. Les coûts variables étant égaux aux standards, il n'y a aucun écart sur coûts : l'écart sur marge unitaire se confond avec l'écart sur prix. Enfin, la décomposition par le marché sépare ce que la division ne maîtrise pas (un marché inférieur aux prévisions, après un été pluvieux) de ce qui mesure sa performance commerciale (sa part de marché). C'est la démarche que le guide pédagogique attend : « concevoir des schémas d'analyse adaptés à des situations spécifiques ».
+- Alternatives acceptées : un écart sur chiffre d'affaires calculé en complément (− 1 680 k€ : prix − 3 858, volume global + 3 332, composition − 1 154), s'il n'est pas présenté comme la réponse ; une décomposition du marché **par segment**, qui remplace le volume global et la composition par une taille de marché et une part de marché propres à chaque gamme (voir les réponses tolérées) ; un ordre de présentation différent (volume global avant prix), puisque les formules de l'annexe ne dépendent pas de l'ordre. Non accepté : un écart sur chiffre d'affaires seul, ou un écart sur quantité non décomposé.
+
+**Réponse attendue**
+
+*Concepts.* Le contrôle budgétaire compare les réalisations aux prévisions et explique l'écart par des causes sur lesquelles on peut agir. Avec plusieurs produits, l'écart sur quantités se décompose en **écart sur volume global** (on a vendu plus ou moins d'unités au total, à la composition budgétée) et en **écart de composition des ventes** (les ventes se sont déplacées vers des produits plus ou moins rentables). Quand le budget repose sur une prévision de marché, l'écart sur volume global se décompose à son tour en **écart de taille du marché**, qui mesure l'effet d'un marché plus ou moins grand que prévu, et en **écart de part de marché**, qui mesure la performance propre de l'entreprise face à ses concurrents.
+
+*Schéma conçu pour le cas (k€ ; F = favorable, D = défavorable).*
+
+```
+Écart sur MCV  − 2 790 (D)   = MCV réelle 28 980 − MCV budgétée 31 770
+├── Écart sur marge unitaire (prix nets)        − 3 858 (D)
+└── Écart sur quantités                          + 1 068 (F)
+    ├── Écart de composition des ventes          − 1 050 (D)
+    └── Écart sur volume global                  + 2 118 (F)
+        ├── Écart de taille du marché              − 706 (D)
+        └── Écart de part de marché              + 2 824 (F)
+```
+
+| Gamme | MCV budgétée | MCV réelle | Écart sur marge unitaire | Part de l'écart sur volume global | Écart de composition | Écart total |
+|---|---:|---:|---:|---:|---:|---:|
+| Soins du visage | 15 150 | 12 236 | − 1 197 | + 1 010 | − 2 727 | − 2 914 |
+| Protection solaire | 9 540 | 6 942 | − 2 492 | + 636 | − 742 | − 2 598 |
+| Peaux atopiques et bébés | 7 080 | 9 802 | − 169 | + 472 | + 2 419 | + 2 722 |
+| **Total** | **31 770** | **28 980** | **− 3 858** | **+ 2 118** | **− 1 050** | **− 2 790** |
+
+**Conclusion** : l'effet volume favorable (+ 2 118 k€) est entièrement dû à la part de marché (+ 2 824 k€), dans un marché plus petit que prévu (− 706 k€). Il est plus qu'absorbé par la baisse des prix nets (− 3 858 k€) et par une composition des ventes défavorable (− 1 050 k€). La division a vendu davantage en baissant ses prix, et elle a vendu proportionnellement moins de sa gamme la plus rentable.
+
+**Calculs détaillés**
+
+- Marges unitaires (prix net moyen − coût variable standard) : budget 15,00 − 4,90 = 10,10 ; 8,60 − 3,30 = 5,30 ; 10,00 − 4,10 = 5,90. Réel 14,10 − 4,90 = 9,20 ; 7,20 − 3,30 = 3,90 ; 9,90 − 4,10 = 5,80.
+- MCV budgétée : 1 500 × 10,10 + 1 800 × 5,30 + 1 200 × 5,90 = 15 150 + 9 540 + 7 080 = 31 770 ; chiffre d'affaires budgété 22 500 + 15 480 + 12 000 = 49 980 ; taux de MCV 63,57 %.
+- MCV réelle : 1 330 × 9,20 + 1 780 × 3,90 + 1 690 × 5,80 = 12 236 + 6 942 + 9 802 = 28 980 ; chiffre d'affaires réel 18 753 + 12 816 + 16 731 = **48 300** (donnée du cas retrouvée) ; taux de MCV 60,00 %. Avec 20 580 k€ de charges fixes, le résultat de la division est de 8 400 k€ (11 190 k€ au budget).
+- Écart sur marge unitaire : (9,20 − 10,10) × 1 330 = − 1 197 ; (3,90 − 5,30) × 1 780 = − 2 492 ; (5,80 − 5,90) × 1 690 = − 169 ; total − 3 858.
+- Marge moyenne budgétée : 31 770 / 4 500 = 7,06 € ; écart sur volume global : (4 800 − 4 500) × 7,06 = + 2 118 (par gamme, 1/15 de la MCV budgétée de chaque gamme : + 1 010, + 636, + 472).
+- Volumes réels à la composition budgétée : 4 800 × 1 500 / 4 500 = 1 600 ; 4 800 × 1 800 / 4 500 = 1 920 ; 4 800 × 1 200 / 4 500 = 1 280. Écart de composition : (1 330 − 1 600) × 10,10 = − 2 727 ; (1 780 − 1 920) × 5,30 = − 742 ; (1 690 − 1 280) × 5,90 = + 2 419 ; total − 1 050.
+- Marché : budget 90 000, réel 88 000 (− 2,22 %). Parts de marché globales : 4 500 / 90 000 = 5,00 % ; 4 800 / 88 000 = 5,45 %. Volume attendu avec la part budgétée : 5 % × 88 000 = 4 400. Écart de taille du marché : (4 400 − 4 500) × 7,06 = − 706 ; écart de part de marché : (4 800 − 4 400) × 7,06 = + 2 824 ; somme + 2 118.
+- Parts de marché par segment (utiles aux questions 2.2 et 2.4) : visage 1 500 / 40 000 = 3,75 % → 1 330 / 41 000 = 3,24 % ; solaires 1 800 / 30 000 = 6,00 % → 1 780 / 26 000 = 6,85 % ; peaux atopiques 1 200 / 20 000 = 6,00 % → 1 690 / 21 000 = 8,05 %. Marchés : visage + 2,50 %, solaires − 13,33 %, peaux atopiques + 5,00 % par rapport au budget.
+
+**Réponses tolérées**
+- Décomposition par segment (taille du marché et part de marché de chaque gamme, à la marge unitaire budgétée de la gamme) : taille du marché visage (41 000 − 40 000) × 3,75 % × 10,10 = + 379, solaires (26 000 − 30 000) × 6 % × 5,30 = − 1 272, peaux atopiques (21 000 − 20 000) × 6 % × 5,90 = + 354, soit − 539 ; part de marché visage (1 330 − 1 537,5) × 10,10 = − 2 096, solaires (1 780 − 1 560) × 5,30 = + 1 166, peaux atopiques (1 690 − 1 260) × 5,90 = + 2 537, soit + 1 607 ; total + 1 068 = écart sur quantités. Acceptée pour les items 2.1-03 et 2.1-04 si elle est justifiée : elle montre mieux le recul du visage et la chute du marché des solaires, mais ne fait plus apparaître l'écart de composition.
+- Parts de marché arrondies (5,45 %) utilisées dans le calcul : écart de part de marché (5,45 % − 5,00 %) × 88 000 × 7,06 = 2 796, avec un écart de calcul signalé. Accepté si l'arrondi est dit.
+- Sens des écarts exprimé par « + » et « − » avec la convention de l'annexe rappelée, sans les mots favorable et défavorable.
+
+**Erreurs fréquentes**
+- `JUR-P01` — Appliquer mécaniquement l'écart sur chiffre d'affaires du DCG au lieu de concevoir un schéma sur la marge, adapté à une division qui « vend plus mais gagne moins ».
+- `JUR-P02` — Ne pas appliquer les formules de l'annexe : volume global valorisé au prix moyen au lieu de la marge moyenne, composition calculée sur les volumes budgétés au lieu des volumes réels.
+- `JUR-P03` — Décomposition qui ne boucle pas (la somme des sous-écarts ne retrouve pas − 2 790) ou sens des écarts inversé (écart sur marge négatif présenté comme favorable).
+
+**Références**
+
+| Référence | Contenu mobilisé | Statut | Fiche |
+|---|---|---|---|
+| Programme UE 3, partie 3.1 (« contrôle budgétaire : calculs et analyse d'écarts » ; « techniques de calcul d'écarts […] au profit de situations complexes et adaptées à des contextes variés ») ; guide pédagogique juillet 2026 p. 125 (« concevoir des schémas d'analyse adaptés à des situations spécifiques ») | schéma conçu pour le cas | [V] | F10 § 0, § 5, § 7 |
+| Sujet DSCG 2024, annexe 4 (écarts sur chiffre d'affaires : prix, quantité, composition, volume global) | décomposition à plusieurs produits | [S] | F10 § 5 |
+
+---
+
+### 2.2 Interpréter les écarts et dire ce qu'ils révèlent de la stratégie concurrentielle de la dermocosmétique (1 pt)
+
+**Compétences visées :**
+- `3.1.d` — Interpréter les résultats obtenus
+- `3.1.a` — S'approprier la boucle du pilotage stratégique
+- `1.2.a` — Catégoriser et analyser les choix stratégiques réalisés par l'organisation
+
+**Barème (1 pt)**
+
+| Item | Attendu | Points |
+|---|---|---:|
+| 2.2-01 | Chaque écart relié à une cause du cas, avec les chiffres : prix (− 3 858) : solaires d'entrée de gamme et promotions (prix − 16,28 %), remises promotionnelles d'avril à juin sur le visage (− 6,00 %), prix des soins des peaux atopiques presque tenus (− 1,00 %) ; composition (− 1 050) : le visage, gamme la plus rentable, passe d'un tiers des volumes à 27,71 % ; taille du marché (− 706) : été pluvieux, marché des solaires inférieur de 13,33 % au budget, hypothèse du budget non maîtrisable ; part de marché (+ 2 824) : gain réel sur les peaux atopiques (6,00 % → 8,05 %, à prix stable), gain acheté par le prix sur les solaires (6,00 % → 6,85 %), recul sur le visage malgré les promotions (3,75 % → 3,24 %) face aux deux grands laboratoires | 0,5 |
+| 2.2-02 | Lecture stratégique : une division différenciée (eau thermale, légitimité dermatologique, vente sur conseil en pharmacie : différenciation ou focalisation par différenciation au sens de Porter, sophistication avec surprix sur l'horloge de Faulkner et Bowman) qui a dérivé vers la concurrence par les prix (promotions, ligne d'entrée de gamme) sans en avoir la taille ni les coûts ; son avantage réel est sur les peaux atopiques ; boucle du pilotage : les écarts invalident deux hypothèses du budget (été normal, reconquête du visage par les promotions) et conduisent à réorienter les choix (moins de promotions, priorité aux peaux atopiques, repositionnement du visage par la valeur) | 0,5 |
+
+**Choix de l'outil et alternatives acceptées**
+
+- Outil retenu : la lecture des écarts **par cause**, croisée avec les **parts de marché par segment** et avec l'analyse de la **stratégie concurrentielle**. Les stratégies génériques de Porter (1980) qualifient la stratégie de la division, et l'horloge stratégique de Faulkner et Bowman (1995) permet de lire la dérive des prix en termes de valeur perçue. Interpréter, c'est relier chaque écart au micro-environnement (concurrents, pharmacies, acheteurs) et au macro-environnement (météo), puis dire ce qui relève de la performance de la division et ce qui n'en relève pas.
+- Alternatives acceptées : lecture par les facteurs clés de succès (le conseil du pharmacien explique le succès des soins des peaux atopiques, la promotion ne crée pas de recommandation) ; référence à l'enlisement dans la voie médiane (Porter) pour qualifier le risque, nuancée par l'horloge stratégique. Non accepté : la paraphrase des écarts (« l'écart sur prix est défavorable de 3 858 k€ ») sans cause ni conséquence stratégique.
+
+**Réponse attendue**
+
+*Concepts.* Interpréter un écart, c'est en identifier la cause (environnement, concurrence, décision interne), dire qui en est responsable et en tirer une action. Le contrôle budgétaire boucle ainsi le pilotage stratégique : les écarts confirment ou infirment les hypothèses du budget et, au-delà, les choix stratégiques.
+
+*Lecture des écarts (0,5 pt).*
+
+1. **Les prix expliquent l'essentiel du recul (− 3 858 k€).** Les deux tiers de cet écart viennent des solaires (− 2 492 k€) : leur prix net moyen a baissé de 16,28 %, parce que la ligne d'entrée de gamme lancée en avril, vendue moins cher, a représenté près de la moitié des ventes de solaires. Le visage perd 1 197 k€ : ses prix ont reculé de 6,00 % avec les remises promotionnelles accordées aux pharmacies d'avril à juin pour répondre aux lancements des deux grands laboratoires. En revanche, les soins des peaux atopiques ont presque tenu leur prix (− 1,00 %, − 169 k€), alors que leurs volumes dépassaient de 40,83 % le budget : un produit recommandé n'a pas besoin de promotion.
+2. **La composition des ventes s'est dégradée (− 1 050 k€).** Le visage, dont la marge unitaire budgétée (10,10 €) est la plus forte, passe d'un tiers des volumes au budget à 27,71 % ; les soins des peaux atopiques montent de 26,67 % à 35,21 %. Or leur marge unitaire budgétée (5,90 €) est inférieure à la marge moyenne budgétée (7,06 €) : le succès de l'année dilue la marge moyenne. L'écart de composition est donc la traduction du recul du visage plus qu'un défaut des soins des peaux atopiques.
+3. **Le marché a été plus petit que prévu (− 706 k€).** L'ensemble des trois segments est inférieur de 2,22 % au budget, et les solaires de 13,33 %, à cause d'un été pluvieux en France et en Espagne. Cet écart ne relève pas de la performance de la division : il révèle une hypothèse de budget trop optimiste (« un été normal ») sur le segment le plus exposé à la météo.
+4. **La part de marché progresse (+ 2 824 k€), mais pas pour les mêmes raisons selon les gammes.** La part globale passe de 5,00 % à 5,45 %. Sur les **peaux atopiques**, le gain est réel et sain (6,00 % → 8,05 %, à prix stable) : il repose sur le baume conçu avec les dermatologues de la station et sur la recommandation des pharmaciens. Sur les **solaires**, le gain (6,00 % → 6,85 %) a été acheté par le prix, avec un produit « de rayon, pas de conseil » selon la pharmacienne. Sur le **visage**, la division perd des parts (3,75 % → 3,24 %) dans un marché en hausse de 2,50 %, malgré les promotions : les grands laboratoires l'emportent par la recherche et par les visites d'officines, et la promotion n'a fait qu'attirer des acheteuses occasionnelles.
+
+*Ce que les écarts révèlent de la stratégie (0,5 pt).* La dermocosmétique d'ORBELLANE repose sur une stratégie de **différenciation**, plus précisément de **focalisation par différenciation** au sens de Porter (1980) : un circuit étroit (la pharmacie), une légitimité dermatologique tirée de l'eau thermale et des médecins de la station, une vente sur conseil. Sur l'horloge stratégique de Faulkner et Bowman, elle se situe en **sophistication avec surprix**. En 2026, elle a glissé vers la concurrence par les prix : des promotions sur le visage, une ligne de solaires d'entrée de gamme proche de l'**épuration**. Or une marque de taille moyenne n'a ni le volume ni les coûts des grands laboratoires et des marques à petit prix : elle gagne des unités mais perd de la marge (− 8,78 %), et risque de brouiller son image auprès des pharmaciens. Les écarts montrent aussi où se trouve son avantage réel : les soins des peaux atopiques, cohérents avec la réputation dermatologique de la source, gagnent des parts de marché sans baisser leurs prix. **Conclusion** dans la logique de la boucle du pilotage : le contrôle de 2026 invalide deux hypothèses du budget (un été normal, la défense du visage par les promotions) et conduit à **réorienter** les choix pour 2027. Il faut réduire les promotions (c'est ce que prévoient les prix de 2027), donner la priorité aux soins des peaux atopiques et repositionner le visage par la valeur perçue (efficacité démontrée, conseil) plutôt que par le prix.
+
+**Réponses tolérées**
+- Stratégie qualifiée de différenciation (cible large : France et sept pays) plutôt que de focalisation : acceptée si l'argument porte sur la valeur perçue et le circuit.
+- Ligne d'entrée de gamme jugée défendable (elle a limité la perte de volume des solaires et occupe un segment menacé par les marques à petit prix), si le candidat montre son coût en marge et le risque pour l'image.
+- Lecture de l'écart de composition par heure de ligne : la ligne étant saturée en 2026, la composition « défavorable » par unité cache un glissement favorable par heure (peaux atopiques 7 733 € par heure, visage 5 750 €) ; valorisée si le recul du visage est aussi relevé, car elle prépare la question 2.3.
+- Lecture de l'écart de composition comme un effet mécanique du succès des soins des peaux atopiques, si le recul du visage est aussi relevé.
+
+**Erreurs fréquentes**
+- `JUR-G02` — Décrire les écarts au lieu de les interpréter : ne pas distinguer ce qui relève de la météo (taille du marché) de ce qui relève des décisions de la division (prix, promotions).
+- `JUR-T03` — Paraphraser l'annexe 2.1 sans exploiter les parts de marché par segment, qui montrent que les trois gammes ne racontent pas la même histoire.
+- `JUR-S03` — Qualifier la stratégie sans définir la différenciation ni la relier aux prix et aux marges du cas ; se tromper d'auteurs pour l'horloge stratégique (Faulkner et Bowman).
+
+**Références**
+
+| Référence | Contenu mobilisé | Statut | Fiche |
+|---|---|---|---|
+| Programme UE 3, partie 3.1 (« boucle du pilotage stratégique : articulation stratégie / plans / budgets / écarts / adaptation ») ; guide pédagogique juillet 2026 p. 125 (« interpréter les résultats obtenus ») | interprétation, boucle | [V] | F10 § 2, § 5 |
+| Porter (1980), stratégies génériques : domination par les coûts, différenciation, focalisation | stratégie concurrentielle | [V] programme ; [S] ouvrage | F13 § 2 ; F01 § 6.1 |
+| Faulkner et Bowman (1995), horloge stratégique : sophistication, épuration, hybride | dérive vers les prix | [V] guide p. 116 ; [S] ouvrage | F13 § 2 ; F01 § 6.2 |
+
+---
+
+### 2.3 Vérifier la faisabilité du budget proposé, construire le budget révisé de 2027, le comparer, apprécier l'ouverture le samedi et la boucle du pilotage (2 pts)
+
+**Compétences visées :**
+- `3.1.b` — Élaborer des documents prévisionnels (budgets et états financiers prévisionnels) à partir de prévisions
+- `3.1.a` — S'approprier la boucle du pilotage stratégique
+
+**Barème (2 pts)**
+
+| Item | Attendu | Points |
+|---|---|---:|
+| 2.3-01 | Faisabilité : production du budget proposé 1 590 / 1 900 / 2 280 milliers d'unités, soit 2 544 + 1 140 + 1 710 = **5 394 heures** pour 4 500 disponibles (+ 894 h, + 19,87 %) : budget irréalisable, la ligne de conditionnement est la **ressource rare** et le budget se construit à partir d'elle ; classement par **marge par heure de ligne** : peaux atopiques **8 000 €**, solaires **7 500 €**, visage **6 000 €**, alors que le visage a la plus forte marge unitaire (9,60 €) | 0,5 |
+| 2.3-02 | Allocation : engagements minimaux d'abord (3 864 h, reste 636 h), puis peaux atopiques jusqu'à la demande (+ 600, 450 h), puis solaires avec les 186 h restantes (+ 310) ; ventes **1 150 / 1 710 / 2 200** ; budget des ventes 16 675 + 13 338 + 22 220 = **52 233 k€** ; budget de production **1 140 / 1 610 / 2 280**, soit 1 824 + 966 + 1 710 = 4 500 h ; sans les engagements minimaux, le visage tomberait à 1 041 milliers d'unités | 0,5 |
+| 2.3-03 | MCV **31 935 k€** (11 040 + 7 695 + 13 200 ; taux 61,14 %) ; résultat **9 335 k€** (8 400 en 2026) ; budget proposé : chiffre d'affaires 61 020, MCV 37 560, résultat 14 960 k€, irréalisable ; écart MCV − 5 625 k€ (visage − 4 320, solaires − 1 305) ; samedi : 174 h pour satisfaire la demande de solaires (+ 1 305 k€), 96 h pour 60 milliers de soins du visage (+ 576 k€), surcoût 405 k€, **gain net 1 476 k€**, résultat 10 811 k€ : ouverture recommandée | 0,5 |
+| 2.3-04 | Boucle du pilotage : le budget décline le deuxième axe du plan et révèle que la capacité, et non la demande, fixe le niveau d'activité de 2027 ; il oblige à des choix stratégiques (priorité aux soins des peaux atopiques ; visage rationné alors qu'il ouvre les marchés étrangers, selon Mme CASTELBRUN) ; actions de retour sur la stratégie et les plans : ouverture le samedi, étui simplifié du visage, hausse du prix du visage tant que sa demande excède la capacité, avance de l'extension du laboratoire, répartition du visage entre la France et l'étranger | 0,5 |
+
+**Choix de l'outil et alternatives acceptées**
+
+- Outil retenu : le **budget de la ressource rare**, construit en premier parce que la capacité de la ligne de conditionnement est inférieure à la demande (le guide pédagogique précise qu'en cas de pénurie, c'est elle qui définit le niveau d'activité). Les volumes sont choisis par **marge sur coût variable par heure de ligne**, après les engagements minimaux, puis le budget des ventes, le budget de production et le résultat prévisionnel s'en déduisent. Le raisonnement marginal est adapté parce qu'il n'y a qu'une contrainte de capacité. La valeur d'une heure supplémentaire est la marge par heure de la gamme qui en bénéficierait : c'est elle qu'il faut comparer au surcoût d'une ouverture le samedi.
+- Alternatives acceptées : un programme linéaire à une contrainte, qui donne le même résultat ; une présentation qui part des ventes et soustrait les heures liées aux variations de stocks (− 16 h au total : − 16 pour le visage, − 60 pour les solaires, + 60 pour les peaux atopiques), puis répartit 4 516 heures « de ventes ». Non accepté : un classement par marge unitaire ou par taux de marge, ou un budget qui dépasse la capacité.
+
+**Réponse attendue**
+
+*Concepts.* Le budget des ventes est d'ordinaire le budget de départ, dont découlent la production et les autres budgets. Quand une ressource est insuffisante, c'est le budget de cette **ressource rare** qu'il faut établir d'abord : il fixe le niveau d'activité. Pour la répartir entre les produits, on raisonne à la marge : chaque heure de ligne doit aller au produit qui dégage la plus forte marge sur coût variable **par heure**, et non par unité, une fois respectés les engagements qu'il faut tenir.
+
+*Faisabilité du budget proposé (0,5 pt).* Pour vendre ce que propose M. CHASTELVIN, il faudrait produire 1 590 milliers de soins du visage (1 600 + 100 − 110), 1 900 de solaires (2 000 + 200 − 300) et 2 280 de soins des peaux atopiques (2 200 + 150 − 70), soit 2 544 + 1 140 + 1 710 = **5 394 heures de ligne**, pour 4 500 disponibles : il manque 894 heures (19,87 % de la capacité). Le budget proposé n'est pas réalisable. La marge par heure de ligne classe les gammes dans l'ordre inverse de leur marge unitaire pour le visage : peaux atopiques 6,00 / 0,75 = **8 000 €**, solaires 4,50 / 0,60 = **7 500 €**, visage 9,60 / 1,60 = **6 000 €**. Le visage, qui rapporte le plus par unité, est celui qui rapporte le moins par heure de la ressource rare : son pot en verre, sa pompe et son étui demandent près de trois fois le temps d'un solaire.
+
+*Budget révisé (0,5 pt).*
+
+| Étape | Visage | Solaires | Peaux atopiques | Heures utilisées | Heures restantes |
+|---|---:|---:|---:|---:|---:|
+| Engagements minimaux (ventes) | 1 150 | 1 400 | 1 600 | | |
+| Production correspondante | 1 140 | 1 300 | 1 680 | 1 824 + 780 + 1 260 = 3 864 | 636 |
+| 1. Peaux atopiques jusqu'à la demande | | | + 600 | 450 | 186 |
+| 2. Solaires avec les heures restantes | | + 310 | | 186 | 0 |
+| 3. Visage | + 0 | | | 0 | 0 |
+| **Ventes retenues** | **1 150** | **1 710** | **2 200** | | |
+| **Production** (ventes + stock final − stock initial) | **1 140** | **1 610** | **2 280** | **4 500** | |
+
+| Budget 2027 révisé (k€) | Visage | Solaires | Peaux atopiques | Total |
+|---|---:|---:|---:|---:|
+| Ventes (milliers d'unités) | 1 150 | 1 710 | 2 200 | 5 060 |
+| Chiffre d'affaires | 16 675 | 13 338 | 22 220 | 52 233 |
+| Coûts variables | 5 635 | 5 643 | 9 020 | 20 298 |
+| Marge sur coût variable | 11 040 | 7 695 | 13 200 | 31 935 |
+| Charges fixes | | | | 22 600 |
+| **Résultat de la division** | | | | **9 335** |
+
+Les engagements minimaux ne sont pas une formalité : sans eux, le classement servirait les peaux atopiques puis les solaires jusqu'à leur demande, et le visage n'aurait que les 1 650 heures restantes : 1 041 milliers d'unités vendues, en dessous des quantités promises aux pharmacies et aux distributeurs. Tenir l'engagement sur le visage coûte 174 heures prises aux solaires, soit 174 × (7 500 − 6 000) = 261 k€ de marge.
+
+*Comparaison et ouverture le samedi (0,5 pt).* Le budget proposé affichait 61 020 k€ de chiffre d'affaires, 37 560 k€ de MCV et 14 960 k€ de résultat, mais il était irréalisable. Le budget révisé retient 52 233 k€ (− 8 787 k€), 31 935 k€ de MCV (− 5 625 k€ : 450 milliers de soins du visage, − 4 320 k€, et 290 milliers de solaires, − 1 305 k€) et 9 335 k€ de résultat. Il reste en progrès sur 2026 : + 8,14 % de chiffre d'affaires, taux de MCV de 61,14 % contre 60,00 %, résultat de 9 335 k€ contre 8 400 k€. L'ouverture le samedi apporte 270 heures. Les 174 premières vont aux solaires jusqu'à leur demande (290 milliers d'unités, + 1 305 k€) ; les 96 suivantes permettent 60 milliers de soins du visage de plus (+ 576 k€). La MCV gagne 1 881 k€ pour un surcoût de 405 k€ (270 × 1 500 €) : **+ 1 476 k€**, et le résultat passe à 10 811 k€. Chaque heure du samedi rapporte 7 500 €, puis 6 000 €, pour 1 500 € de surcoût : l'ouverture est recommandée, sous réserve de la charge des équipes et des créneaux de maintenance signalés par M. ROUSSARGUES.
+
+*Boucle du pilotage (0,5 pt).* Le budget décline le deuxième axe du plan « ORBELLANE 2031 » (restaurer la marge de la dermocosmétique) en volumes, en heures et en marge. En révélant que la capacité, et non la demande, fixe le niveau d'activité de 2027, il fait remonter vers la stratégie une question que le directeur de la division n'avait pas posée. Le raisonnement marginal sacrifie le visage, alors que c'est la gamme qui ouvre les marchés étrangers (plus de la moitié des ventes hors de France) au moment où le troisième axe du plan veut ouvrir de nouveaux pays. La révision conduit donc à des actions sur les plans et sur la stratégie : ouvrir le samedi ; réduire le temps de conditionnement du visage par l'étui simplifié dès l'automne ; relever le prix du visage tant que sa demande dépasse ce que la ligne peut produire, puisque la hausse ne fait perdre que des ventes qui ne pourraient pas être servies ; réserver une partie des soins du visage aux distributeurs étrangers plutôt qu'aux promotions en France ; confirmer, voire avancer, l'extension du laboratoire de 2028. **Conclusion** : le budget révisé de 2027, avec l'ouverture le samedi, est réalisable et améliore le résultat ; il transforme une contrainte de production en choix stratégiques, ce qui est la fonction de la boucle stratégie, plans, budgets, écarts, adaptation.
+
+**Calculs détaillés**
+
+- Marges unitaires 2027 : 14,50 − 4,90 = 9,60 ; 7,80 − 3,30 = 4,50 ; 10,10 − 4,10 = 6,00. Marges par heure : 9,60 × 1 000 / 1,60 = 6 000 ; 4,50 × 1 000 / 0,60 = 7 500 ; 6,00 × 1 000 / 0,75 = 8 000.
+- Heures du budget proposé : 1 590 × 1,60 = 2 544 ; 1 900 × 0,60 = 1 140 ; 2 280 × 0,75 = 1 710 ; total 5 394.
+- Engagements minimaux : production 1 150 + 100 − 110 = 1 140 (1 824 h) ; 1 400 + 200 − 300 = 1 300 (780 h) ; 1 600 + 150 − 70 = 1 680 (1 260 h) ; total 3 864 h ; reste 636 h. Peaux atopiques : 600 × 0,75 = 450 h ; reste 186 h ; solaires : 186 / 0,60 = 310.
+- Classement sans engagements minimaux : 1 710 h pour les peaux atopiques et 1 140 h pour les solaires à leur demande, reste 1 650 h, soit 1 031,25 milliers de soins du visage produits et 1 041,25 vendus ; MCV 32 196 k€ (31 935 + 261).
+- Budget proposé : chiffre d'affaires 23 200 + 15 600 + 22 220 = 61 020 ; coûts variables 7 840 + 6 600 + 9 020 = 23 460 ; MCV 15 360 + 9 000 + 13 200 = 37 560 (taux 61,55 %) ; résultat 37 560 − 22 600 = 14 960.
+- Révisé : variation du résultat sur 2026 + 935 k€ (+ 11,13 %) ; MCV par heure de ligne des unités vendues (définition de l'annexe 2.3) : 1 150 × 1,60 + 1 710 × 0,60 + 2 200 × 0,75 = 1 840 + 1 026 + 1 650 = 4 516 h, et 31 935 000 / 4 516 = 7 071,52 €.
+- Samedi : solaires (2 000 − 1 710) × 0,60 = 174 h, 290 × 4,50 = 1 305 ; visage 96 / 1,60 = 60, 60 × 9,60 = 576 ; surcoût 270 × 1 500 = 405 k€ ; résultat 9 335 + 1 881 − 405 = 10 811. Ventes avec samedi : 1 210 / 2 000 / 2 200 ; production 1 200 / 1 900 / 2 280 ; heures 1 920 + 1 140 + 1 710 = 4 770.
+
+**Réponses tolérées**
+- Ventes du visage arrondies ou non entières dans un calcul intermédiaire (1 041,25), si le candidat en tire la conclusion sur les engagements minimaux.
+- Ouverture le samedi présentée comme une variante du budget plutôt qu'intégrée au budget retenu, si le gain net est chiffré et la décision justifiée.
+- Choix stratégique de garder plus de soins du visage que le raisonnement marginal ne le dit (au détriment des solaires), au nom de l'international : accepté s'il est chiffré (1 500 € de marge perdus par heure déplacée des solaires vers le visage) et présenté comme une décision de la direction, non comme le résultat du calcul.
+
+**Erreurs fréquentes**
+- `JUR-V02` — Ne pas reconnaître la ressource rare et classer les gammes par marge unitaire : le visage passerait en premier.
+- `JUR-T10` — Construire le budget des ventes sans le budget de production (variations de stocks oubliées) ou calculer les heures sur les ventes au lieu de la production.
+- `JUR-T05` — S'arrêter au calcul sans relier le budget révisé au plan stratégique et à l'international.
+
+**Références**
+
+| Référence | Contenu mobilisé | Statut | Fiche |
+|---|---|---|---|
+| Programme UE 3, partie 3.1 (« budgets et plans prévisionnels opérationnels : ventes, achats, personnel etc ») ; guide pédagogique juillet 2026 p. 125 (en cas de pénurie, commencer par le budget de la ressource rare) | ordre des budgets, ressource rare | [V] | F10 § 2 |
+| Rapport du jury 2024 p. 26 (« méthode du facteur rare ») ; marge par unité de ressource rare, minima imposés | classement par marge par heure | [V] rapport ; [S] méthode | F04 § 5 |
+
+---
+
+### 2.4 Proposer trois ou quatre indicateurs clés reliés aux facteurs clés de succès, les calculer pour 2026 et les interpréter (1 pt)
+
+**Compétences visées :**
+- `3.3.a` — Concevoir et mettre en œuvre des outils de pilotage de la performance globale
+- `3.3.b` — Interpréter les résultats obtenus
+
+**Barème (1 pt)**
+
+| Item | Attendu | Points |
+|---|---|---:|
+| 2.4-01 | Trois ou quatre indicateurs, chacun relié explicitement à un facteur clé de succès, avec formule, cible et sens : taux de recommandation (recommandation par le pharmacien) ; taux de réachat à six mois (efficacité perçue) ; taux de service (disponibilité en officine) ; un indicateur financier relié à la ressource rare (MCV par heure de conditionnement) ou au marché (part de marché par gamme) | 0,5 |
+| 2.4-02 | Valeurs de 2026 et lecture par rapport aux cibles : recommandation **32,00 %** (cible 35 %, non atteinte, − 3,00 points) ; réachat **63,60 %** (60 %, atteinte, + 3,60 points) ; taux de service **89,60 %** (97 %, non atteinte, − 7,40 points ; peaux atopiques 80,00 %) ; MCV par heure **6 492,66 €** (7 000 €, non atteinte) ; ou parts de marché 3,24 % / 6,85 % / 8,05 % contre 3,75 % / 6,00 % / 6,00 % ; interprétation par les liens de cause à effet (disponibilité → recommandation → part de marché → marge) et conséquence pour 2027 (stock final des soins des peaux atopiques, 7 071,52 € par heure au budget révisé) | 0,5 |
+
+**Choix de l'outil et alternatives acceptées**
+
+- Outil retenu : **quelques indicateurs clés de performance déduits des facteurs clés de succès**, financiers et non financiers, avec leur formule, leur cible et leur sens. C'est la démarche du programme (« facteurs clés de succès, avantage concurrentiel et indicateurs clés de performance ») : chaque indicateur suit la maîtrise d'un facteur clé de succès, et l'indicateur financier montre si cette maîtrise se traduit en marge. Un tableau de bord complet n'est pas demandé.
+- Alternatives acceptées : la part de marché par gamme (résultat commun des trois facteurs clés de succès) ou le taux de MCV (60,00 % contre 63,57 % au budget) comme indicateur financier ; des indicateurs non chiffrables avec les annexes s'ils sont reliés à un facteur et définis (nombre de visites d'officines par délégué, part des ventes faites sous promotion, nombre d'études cliniques publiées). Le rattachement aux axes du Balanced Scorecard de Kaplan et Norton (1992) est accepté s'il reste au service des facteurs clés de succès. Non accepté : une liste d'indicateurs sans lien avec les facteurs, ou sans cible.
+
+**Réponse attendue**
+
+*Concepts.* Un **facteur clé de succès** est ce que toute entreprise du secteur doit maîtriser pour réussir ; un **indicateur clé de performance** mesure la maîtrise de ce facteur, avec une formule, une cible et un sens attendu. La performance globale ne se réduit pas à la marge : les indicateurs non financiers (clients, processus) en sont les déterminants avancés.
+
+| Facteur clé de succès | Indicateur (formule) | Cible | 2026 | Lecture |
+|---|---|---:|---:|---|
+| Recommandation par le pharmacien | Taux de recommandation = pharmacies qui conseillent ORBELLANE en premier / pharmacies interrogées = 192 / 600 | 35 % (hausse) | **32,00 %** | non atteinte (− 3,00 points) |
+| Efficacité perçue des soins | Taux de réachat à six mois = acheteurs qui rachètent / acheteurs suivis = 1 113 / 1 750 | 60 % (hausse) | **63,60 %** | atteinte (+ 3,60 points) |
+| Disponibilité en officine | Taux de service = lignes livrées complètes dans les 48 heures / lignes reçues = 179 200 / 200 000 | 97 % (hausse) | **89,60 %** (visage 95,00 %, solaires 97,00 %, peaux atopiques 80,00 %) | non atteinte (− 7,40 points) |
+| Traduction financière, sous la contrainte de capacité | MCV par heure de conditionnement = 28 980 k€ / 4 463,5 h | 7 000 € (hausse) | **6 492,66 €** (visage 5 750, solaires 6 500, peaux atopiques 7 733) | non atteinte (− 507,34 €) |
+
+*Interprétation.* Les acheteurs qui essaient un soin ORBELLANE en sont satisfaits : le réachat dépasse sa cible. Le produit n'est donc pas en cause. Les points faibles sont en amont : la recommandation (32,00 % pour 35 %) et la disponibilité (89,60 % pour 97 %). Le taux de service des soins des peaux atopiques n'est que de 80,00 % : la division a manqué de produits là où elle est la plus recommandée, et la pharmacienne le dit (« elles sont reparties avec une autre marque »). Une rupture fait perdre la vente et, au-delà, la confiance du pharmacien qui conseille : la disponibilité conditionne la recommandation, qui conditionne la part de marché, puis la marge. La marge par heure (6 492,66 € pour 7 000 €) traduit les promotions et le poids du visage, gamme la moins rentable par heure (5 750 €). Le budget révisé de 2027 atteint 7 071,52 € par heure, grâce à la priorité donnée aux soins des peaux atopiques et à la réduction des promotions. Il relève aussi le stock final des soins des peaux atopiques de 70 à 150 milliers d'unités pour améliorer le taux de service. **Conclusion** : il faut piloter la division sur la disponibilité et la recommandation, pas sur les volumes vendus en promotion.
+
+**Calculs détaillés**
+
+Heures de ligne des unités vendues en 2026 : 1 330 × 1,60 + 1 780 × 0,60 + 1 690 × 0,75 = 2 128 + 1 068 + 1 267,5 = 4 463,5 h ; MCV par heure 28 980 000 / 4 463,5 = 6 492,66 € ; par gamme 9,20 × 1 000 / 1,60 = 5 750, 3,90 × 1 000 / 0,60 = 6 500, 5,80 × 1 000 / 0,75 = 7 733,33. Taux de service par gamme : 57 000 / 60 000 = 95,00 % ; 58 200 / 60 000 = 97,00 % ; 64 000 / 80 000 = 80,00 %. Taux de réalisation : recommandation 91,43 % ; réachat 106,00 % ; taux de service 92,37 % ; marge par heure 92,75 %.
+
+**Réponses tolérées**
+- Parts de marché par gamme retenues comme quatrième indicateur, avec les cibles du budget : visage 3,24 % (cible 3,75 %, non atteinte), solaires 6,85 % (6,00 %, atteinte), peaux atopiques 8,05 % (6,00 %, atteinte) ; part globale 5,45 % (5,00 %).
+- Trois indicateurs seulement, s'ils couvrent les trois facteurs clés de succès et si l'un d'eux au moins est relié à la marge dans l'interprétation.
+
+**Erreurs fréquentes**
+- `JUR-T03` — Liste d'indicateurs sans lien avec les facteurs clés de succès, sans formule ou sans cible.
+- `JUR-T02` — Indicateurs génériques (chiffre d'affaires, résultat) sans application aux données de l'annexe 2.3.
+
+**Références**
+
+| Référence | Contenu mobilisé | Statut | Fiche |
+|---|---|---|---|
+| Programme UE 3, partie 3.3 (« facteurs clés de succès, avantage concurrentiel et indicateurs clés de performance (KPI) ») ; guide pédagogique juillet 2026 p. 126 (« Les KPI seront étudiés en référence aux facteurs clés de succès » ; pas de « listes d'indicateurs à la Prévert ») | indicateurs reliés aux facteurs | [V] | F12 § 2 |
+| Kaplan et Norton (1992), Balanced Scorecard (alternative de présentation) | relations de cause à effet | [V] hbr.org ; [S] axes | F13 § 7 ; F12 § 3.2 |
+
+---
+
+### 2.5 Note au directeur administratif et financier (20 lignes au maximum) (1 pt)
+
+**Compétences visées :**
+- `3.1.e` — Élaborer des préconisations
+- `3.1.f` — Produire une synthèse rédigée et structurée portant sur la gestion prévisionnelle
+- `3.3.c` — Élaborer des préconisations
+
+**Barème (1 pt)**
+
+| Item | Attendu | Points |
+|---|---|---:|
+| 2.5-01 | Note structurée et bornée : explication chiffrée de la marge de 2026 (− 2 790 k€ : prix − 3 858, composition − 1 050, marché − 706, part de marché + 2 824) et budget 2027 retenu (capacité de 4 500 h, priorité par marge par heure, 52 233 k€ de chiffre d'affaires, 31 935 k€ de MCV, 9 335 k€ de résultat, 10 811 k€ avec le samedi) avec ses conditions (engagements tenus, stocks finals, maintenance) | 0,5 |
+| 2.5-02 | Indicateurs à suivre (recommandation, taux de service, réachat, MCV par heure) et préconisations hiérarchisées et faisables : moins de promotions, visage repositionné par la valeur et rehaussé en prix, priorité aux soins des peaux atopiques, ligne d'entrée de gamme des solaires réexaminée, ouverture le samedi, étui simplifié et extension du laboratoire, arbitrage du visage avec l'international | 0,5 |
+
+**Réponse attendue** (exemple de note, 20 lignes)
+
+> **À M. PERRIGNAC, DAF — Objet : marge 2026 et budget 2027 de la dermocosmétique**
+>
+> **1. La marge de 2026.** La division a vendu 6,67 % d'unités de plus que prévu, mais sa MCV (28 980 k€) est inférieure de 2 790 k€ au budget. Le gain de part de marché (+ 2 824 k€) a compensé l'été pluvieux (marché − 706 k€). La baisse des prix nets (− 3 858 k€ : promotions sur le visage, solaires d'entrée de gamme) et le recul du visage, gamme la plus rentable par unité (composition − 1 050 k€), l'ont emporté. Seuls les soins atopiques gagnent des parts à prix stable.
+>
+> **2. Le budget 2027.** Le budget proposé exige 5 394 heures de conditionnement pour 4 500 disponibles : il est irréalisable. Le budget retenu sert d'abord les engagements, puis les gammes par marge par heure (peaux atopiques 8 000 €, solaires 7 500 €, visage 6 000 €) : 52 233 k€ de chiffre d'affaires, 31 935 k€ de MCV, 9 335 k€ de résultat (8 400 k€ en 2026). Conditions : pas de promotions exceptionnelles, stocks finals tenus, ligne disponible toute l'année.
+>
+> **3. Indicateurs à suivre chaque mois** : taux de service (89,60 % ; 80,00 % sur les peaux atopiques ; cible 97 %), taux de recommandation (32,00 % ; 35 %), taux de réachat (63,60 % ; 60 %), MCV par heure de ligne (6 493 € ; 7 000 €).
+>
+> **4. Préconisations.** (1) Ouvrir la ligne le samedi : + 1 476 k€, résultat de 10 811 k€. (2) Réduire les promotions, défendre le visage par l'efficacité et le conseil, et relever son prix tant que la ligne le rationne. (3) Privilégier les soins des peaux atopiques et réexaminer les solaires d'entrée de gamme. (4) Lancer l'étui simplifié et confirmer l'extension de 2028. (5) Arbitrer avec l'international la part du visage réservée aux distributeurs étrangers.
+
+**Réponses tolérées**
+- Note qui retient le budget sans ouverture le samedi par prudence (charge des équipes, maintenance), si le gain est cité et la condition de réexamen indiquée.
+- Plan en trois parties (constat, budget, préconisations) intégrant les indicateurs dans les préconisations.
+
+**Erreurs fréquentes**
+- `JUR-T01` — Note qui récite la méthode des écarts ou du facteur rare au lieu de conclure sur le cas.
+- `JUR-T05` — Préconisations purement financières, sans lien avec la stratégie de différenciation ni avec l'international.
+- `JUR-T06` — Note de plus de 20 lignes, non structurée.
+
+**Références**
+
+| Référence | Contenu mobilisé | Statut | Fiche |
+|---|---|---|---|
+| Programme UE 3, parties 3.1 et 3.3 (préconisations, synthèse) ; guide pédagogique juillet 2026 p. 125-126 | synthèse et préconisations | [V] | F10 § 0 ; F12 § 6 |
