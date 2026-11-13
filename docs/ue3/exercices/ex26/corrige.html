@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Concevoir le C-NAT 80 sous coût cible et partager la valeur dans la filière : CALDÉRINE : coût cible, analyse de la valeur et partage de la valeur dans la filière d'une pompe à chaleur</title>
+<meta name="description" content="Entraînement à l'UE 3 du DSCG, contrôle de gestion et stratégie, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 3</span></a>
+<p>Dossier 1</p><p>7 points</p><p>1 h 24</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Concevoir le C-NAT 80 sous coût cible et partager la valeur dans la filière</h1><p class="cas">CALDÉRINE : coût cible, analyse de la valeur et partage de la valeur dans la filière d'une pompe à chaleur</p><p class="avant">Corrigé indicatif et barème. Les mentions [V] signalent un point vérifié sur la source officielle ; les renvois F01 à F13 et JUR désignent des fiches de travail et les constats des rapports du jury.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F02 valeur et business model, F04 pilotage des processus de production, F13 registre des auteurs (toutes à jour au 25/10/2026).</p>
+<p>Bien que le corrigé mentionne des auteurs, des textes et des données, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur le choix et la justification des outils, la justesse des calculs, la pertinence de l'analyse au regard du cas et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet) ; pour chaque question, la présentation des concepts et outils avant leur mobilisation puis la conclusion sont notées. Une erreur n'est sanctionnée qu'une fois : les calculs qui en découlent sont notés en cohérence avec les résultats antérieurs du candidat.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1 Installation type : valeur captée par chaque acteur, marge sur coût variable de CALDÉRINE, partage de la valeur et pouvoir de négociation des parties prenantes</td>
+<td><code>1.3.c</code> Analyser le mode de partage de la valeur créée ; <code>1.3.a</code> Analyser la formation du résultat</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>1.2 Coût cible du C-NAT 80 : prix accepté, marge exigée, coût de production estimé, coûts irrécupérables, écart à résorber</td>
+<td><code>2.1.c</code> Élaborer et mettre en œuvre des outils de gestion adaptés au contexte ; <code>2.1.a</code> Analyser la situation de gestion</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr class="odd">
+<td>1.3 Analyse de la valeur : coût et coût cible par fonction, écarts, indices de valeur, pistes de reconception, atteinte du coût cible</td>
+<td><code>2.1.c</code> Élaborer et mettre en œuvre des outils de gestion adaptés au contexte ; <code>2.1.b</code> Sélectionner des outils de gestion adaptés au contexte ; <code>2.1.e</code> Élaborer des préconisations en matière de gestion des processus de production</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>1.4 Note au président (20 lignes au maximum)</td>
+<td><code>2.1.f</code> Produire une synthèse rédigée et structurée portant sur les décisions concernant les processus de production ; <code>1.3.d</code> Formuler des préconisations adaptées à l'organisation</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 1 – Concevoir le C-NAT 80 sous coût cible et partager la valeur dans la filière</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>7</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-1--concevoir-le-c-nat-80-sous-coût-cible-et-partager-la-valeur-dans-la-filière-7-points">DOSSIER 1 – CONCEVOIR LE C-NAT 80 SOUS COÛT CIBLE ET PARTAGER LA VALEUR DANS LA FILIÈRE (7 points)</h2>
+<h3 id="11-calculer-la-valeur-captée-par-chaque-acteur-de-linstallation-type-et-la-marge-sur-coût-variable-de-caldérine-puis-analyser-le-partage-de-la-valeur-et-le-pouvoir-de-négociation-des-parties-prenantes-2-pts">1.1 Calculer la valeur captée par chaque acteur de l'installation type et la marge sur coût variable de CALDÉRINE, puis analyser le partage de la valeur et le pouvoir de négociation des parties prenantes (2 pts)</h3>
+<p><strong>Compétences visées :</strong></p>
+<ul>
+<li><code>1.3.c</code> — Analyser le mode de partage de la valeur créée (création et captation de la valeur par les parties prenantes, attentes et contre-pouvoirs)</li>
+<li><code>1.3.a</code> — Analyser la formation du résultat (marge sur coût variable, structure de coûts, charges fixes à couvrir)</li>
+</ul>
+<p><strong>Barème (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1-01</td>
+<td>Concepts présentés : partie prenante au sens de Freeman ; valeur créée pour une partie prenante = avantages − sacrifices, valeur captée = part que chaque acteur en retient, selon son pouvoir de négociation ; outil justifié : analyse du partage de la valeur le long de la filière (de l'achat des composants aux locataires), complétée par les pouvoirs de négociation des fournisseurs et des clients des cinq forces (+ 1) de Porter (1979) ; marge sur coût variable définie (modèle coût-volume-profit)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>1.1-02</td>
+<td>Valeur captée chiffrée par acteur : fabricant de compresseurs <strong>2 800 €</strong> (40 % de 7 000), autres fournisseurs <strong>1 190 €</strong>, installateur <strong>9 000 €</strong> de marge (15,00 % du prix) et 13 500 € de main-d'œuvre de pose (22,50 %) ; bailleur : aide <strong>18 000 €</strong> (30,00 % du prix), coût net <strong>42 000 €</strong> (700 € par logement) ; locataires <strong>9 000 € par an</strong>, <strong>135 000 €</strong> sur 15 ans ; partage du prix de 60 000 € présenté (pompe à chaleur 52,50 %)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>1.1-03</td>
+<td>Marge sur coût variable de CALDÉRINE : 31 500 − 18 900 − 2 520 = <strong>10 080 €</strong>, soit <strong>32,00 %</strong> du prix ; achats de composants 60,00 % du prix ; la marge du fabricant de compresseurs représente <strong>27,78 %</strong> de la marge sur coût variable de CALDÉRINE, gagnée sur un seul composant, qui pèse 22,22 % du prix ; la marge doit couvrir les charges fixes : résultat d'exploitation approché (convention de l'annexe 1.2) = 31 500 × 3,64 % = <strong>1 147 €</strong> par pompe à chaleur, moins de la moitié de la marge du fabricant de compresseurs</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>1.1-04</td>
+<td>Partage et pouvoirs analysés avec les faits du cas : fournisseur dominant (marché concentré, composant clé, + 12 % en deux ans, conception actuelle à deux compresseurs du même fabricant) ; installateurs prescripteurs (choix de la marque, offres asiatiques à 24 000 €, poids du temps de chantier) ; bailleurs qui raisonnent en coût global, aidés à 30 % mais sans capter l'économie de charges ; locataires, premiers bénéficiaires sans pouvoir ; riverains (plaintes) et pouvoirs publics (aide en partie captée par la hausse des prix) ; conclusion : CALDÉRINE est prise en étau et doit regagner de la valeur par ses coûts et par les fonctions valorisées en aval, pas par son prix</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choix de l'outil et alternatives acceptées</strong></p>
+<ul>
+<li>Outil retenu : l'analyse de la <strong>valeur créée et captée par les parties prenantes</strong> de la filière, au sens de Freeman, appuyée sur la décomposition du prix de l'installation type (annexe 1.2) : qui paie, qui reçoit, quelle part chacun retient. La question porte sur des relations de marché entre acteurs successifs : les <strong>pouvoirs de négociation des fournisseurs et des clients</strong> des cinq forces (+ 1) de Porter expliquent pourquoi la valeur se répartit ainsi. La <strong>marge sur coût variable</strong> (modèle coût-volume-profit) mesure ce que CALDÉRINE retient avant ses charges fixes.</li>
+<li>Alternatives acceptées : une analyse complète du micro-environnement par les cinq forces (+ 1), si elle reste centrée sur le partage de la valeur de l'installation ; une hiérarchisation des parties prenantes par une matrice pouvoir / intérêt (dite de Mendelow) ou par le pouvoir, la légitimité et l'urgence (Mitchell, Agle et Wood), en complément. Non accepté : un Business Model Canvas ou une analyse du modèle de revenus de CALDÉRINE au lieu du partage de la valeur dans la filière ; une répartition comptable de la valeur ajoutée (UE 2) ; un coût complet de la pompe à chaleur construit avec des clés de répartition des charges fixes.</li>
+</ul>
+<p><strong>Conventions rappelées</strong> (annexe 1.2)</p>
+<ul>
+<li>Valeur captée : marge estimée pour les fournisseurs (40 % pour le compresseur, 10 % pour les autres composants), marge sur coût variable pour CALDÉRINE, marge pour l'installateur ; coût net pour le bailleur = prix payé − aide ; économie de charges pour les locataires, cumulée sur 15 ans sans actualisation.</li>
+</ul>
+<p><strong>Réponse attendue</strong></p>
+<p><em>Concepts (1.1-01).</em> Une partie prenante, selon les travaux de Edward Freeman, désigne tout acteur pouvant affecter ou être affecté par l'activité de l'entreprise. Une installation de pompe à chaleur <strong>crée de la valeur</strong> pour chacune lorsqu'elle lui apporte des avantages supérieurs aux sacrifices qu'elle consent. Cette valeur se <strong>partage</strong> le long de la filière : chaque acteur en <strong>capte</strong> une part, d'autant plus grande que son pouvoir de négociation est fort. Les cinq forces (+ 1) de Porter (1979) décrivent ce pouvoir pour les fournisseurs et pour les clients : concentration, caractère indispensable du produit, coûts de changement, possibilité de se tourner vers des offres concurrentes. La <strong>marge sur coût variable</strong> (prix − charges variables) mesure ce que l'installation laisse à CALDÉRINE pour couvrir ses charges fixes et dégager un résultat.</p>
+<p><em>Calcul de la valeur captée (1.1-02).</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Acteur</th>
+<th style="text-align: right;">Ce qu'il reçoit (€)</th>
+<th style="text-align: right;">Ce qu'il paie (€)</th>
+<th style="text-align: right;">Valeur captée (€)</th>
+<th style="text-align: right;">Part du prix de 60 000 €</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fabricant de compresseurs</td>
+<td style="text-align: right;">7 000</td>
+<td style="text-align: right;">coûts propres 4 200</td>
+<td style="text-align: right;"><strong>2 800</strong> (40 %)</td>
+<td style="text-align: right;">4,67 %</td>
+</tr>
+<tr class="even">
+<td>Autres fournisseurs de composants</td>
+<td style="text-align: right;">11 900</td>
+<td style="text-align: right;">coûts propres 10 710</td>
+<td style="text-align: right;"><strong>1 190</strong> (10 %)</td>
+<td style="text-align: right;">1,98 %</td>
+</tr>
+<tr class="odd">
+<td>CALDÉRINE</td>
+<td style="text-align: right;">31 500</td>
+<td style="text-align: right;">composants 18 900 ; main-d'œuvre d'assemblage et autres charges variables 2 520</td>
+<td style="text-align: right;"><strong>10 080</strong> (marge sur coût variable)</td>
+<td style="text-align: right;">16,80 %</td>
+</tr>
+<tr class="even">
+<td>Installateur</td>
+<td style="text-align: right;">60 000</td>
+<td style="text-align: right;">pompe à chaleur 31 500 ; fournitures 6 000 ; main-d'œuvre de pose 13 500</td>
+<td style="text-align: right;"><strong>9 000</strong> (marge)</td>
+<td style="text-align: right;">15,00 %</td>
+</tr>
+<tr class="odd">
+<td>Salariés de l'installateur</td>
+<td style="text-align: right;">13 500</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">rémunération de la pose</td>
+<td style="text-align: right;">22,50 %</td>
+</tr>
+<tr class="even">
+<td>Bailleur</td>
+<td style="text-align: right;">aide 18 000 ; immeuble rénové</td>
+<td style="text-align: right;">60 000</td>
+<td style="text-align: right;">coût net <strong>42 000</strong>, soit <strong>700 €</strong> par logement</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="odd">
+<td>Pouvoirs publics</td>
+<td style="text-align: right;">rénovation du parc, baisse des charges</td>
+<td style="text-align: right;">aide 18 000</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">30,00 %</td>
+</tr>
+<tr class="even">
+<td>Locataires</td>
+<td style="text-align: right;">150 € par logement et par an</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>9 000 € par an</strong> ; <strong>135 000 €</strong> sur 15 ans</td>
+<td style="text-align: right;">—</td>
+</tr>
+</tbody>
+</table>
+<p>Décomposition du prix de 60 000 € : marges des fournisseurs 3 990 € (6,65 %), coûts des fournisseurs 14 910 € (24,85 %), autres charges variables de CALDÉRINE 2 520 € (4,20 %), marge sur coût variable de CALDÉRINE 10 080 € (16,80 %), fournitures de pose 6 000 € (10,00 %), main-d'œuvre de pose 13 500 € (22,50 %), marge de l'installateur 9 000 € (15,00 %) ; total 100 %. La pompe à chaleur pèse 52,50 % du prix, la pose 47,50 %.</p>
+<p><em>Marge sur coût variable et formation du résultat (1.1-03).</em> CALDÉRINE vend la pompe à chaleur 31 500 €. Elle achète pour 18 900 € de composants (60,00 % de son prix) et supporte 2 520 € d'autres charges variables. Sa <strong>marge sur coût variable est de 10 080 €, soit 32,00 %</strong> du prix. C'est la plus forte marge en euros de la filière, mais c'est une marge <strong>avant charges fixes</strong> : études, commercial, service après-vente, structure. En 2026, le résultat d'exploitation de CALDÉRINE ne représente que 3,64 % de son chiffre d'affaires (2 600 / 71 400). Selon la convention de l'annexe 1.2, le résultat d'exploitation approché de cette pompe à chaleur est de 31 500 × 3,64 % = <strong>1 147 €</strong>. Le fabricant de compresseurs, lui, retient <strong>2 800 €</strong> sur un seul composant, qui pèse 22,22 % du prix de la machine, soit <strong>27,78 %</strong> de la marge sur coût variable de CALDÉRINE. Le fabricant qui conçoit, assemble, garantit et entretient la machine gagne donc moins que son fournisseur principal.</p>
+<p><em>Partage de la valeur et pouvoirs de négociation (1.1-04).</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Partie prenante</th>
+<th>Attentes</th>
+<th>Pouvoir de négociation et contre-pouvoirs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fabricant de compresseurs</td>
+<td>marge, volume</td>
+<td><strong>fort</strong> : deux fabricants fournissent l'essentiel du marché européen, le compresseur est le cœur de la machine et sa conception en dépend (coût de changement élevé), tarifs relevés de 12 % en deux ans ; la conception actuelle du C-NAT 80 prévoit deux compresseurs du même fabricant, ce qui accroît la dépendance</td>
+</tr>
+<tr class="even">
+<td>Installateurs</td>
+<td>marge, chantiers courts, machines fiables, service après-vente réactif</td>
+<td><strong>fort</strong> : clients directs et prescripteurs (« je pose la marque que mes équipes connaissent ») ; ils captent 37,50 % du prix (marge et pose) et peuvent se tourner vers des offres à 24 000 € ; leur coût principal est le temps de chantier (13 500 €), qui rend précieuse une machine rapide à poser</td>
+</tr>
+<tr class="odd">
+<td>Bailleurs</td>
+<td>coût global sur quinze ans, fiabilité, silence, suivi à distance</td>
+<td><strong>fort et croissant</strong> : ils paient l'installation, comparent les offres sur le coût global et imposent leurs cahiers des charges ; l'aide couvre 30 % du prix, mais l'économie de charges va aux locataires (« pas à nos comptes ») : ils sont très sensibles au prix d'achat</td>
+</tr>
+<tr class="even">
+<td>Locataires</td>
+<td>baisse des charges, confort</td>
+<td><strong>nul</strong> : premiers bénéficiaires (135 000 € sur 15 ans, plus de trois fois le coût net de 42 000 €), jamais consultés</td>
+</tr>
+<tr class="odd">
+<td>Riverains</td>
+<td>absence de bruit</td>
+<td><strong>contre-pouvoir réel</strong> : leurs plaintes ont obligé un bailleur à capoter deux machines</td>
+</tr>
+<tr class="even">
+<td>Pouvoirs publics</td>
+<td>rénovation du parc, baisse des charges</td>
+<td>financent 18 000 € ; une partie de l'aide est captée par la filière quand « tout le monde remonte ses prix »</td>
+</tr>
+<tr class="odd">
+<td>VESTRAHOLM</td>
+<td>résultat d'exploitation de 8 % du chiffre d'affaires en 2030</td>
+<td>fixe l'objectif et l'enveloppe du projet</td>
+</tr>
+</tbody>
+</table>
+<p>L'installation crée beaucoup de valeur, surtout pour les locataires et pour la collectivité. Mais <strong>CALDÉRINE en capte peu</strong> : elle est prise en étau entre un fournisseur dominant en amont et des clients puissants en aval, installateurs prescripteurs et bailleurs, qui comparent son prix (31 500 €) à des offres de 24 000 € à 26 500 €. Elle ne peut ni répercuter la hausse des compresseurs, ni augmenter son prix. Conclusion : le C-NAT 80 doit permettre à CALDÉRINE de <strong>regagner de la valeur par ses coûts</strong> (prix accepté par le marché, coût maîtrisé), de <strong>réduire sa dépendance</strong> envers le fabricant de compresseurs, et d'offrir aux installateurs et aux bailleurs les fonctions qu'ils valorisent (pose rapide, fiabilité, silence), plutôt que de compter sur une hausse de prix.</p>
+<p><strong>Calculs détaillés</strong></p>
+<ul>
+<li>Marges des fournisseurs : 7 000 × 40 % = 2 800 € ; (4 200 + 3 150 + 4 550) × 10 % = 11 900 × 10 % = 1 190 €.</li>
+<li>Installateur : 60 000 − 31 500 − 6 000 − 13 500 = 9 000 € ; marge et pose : 22 500 €, soit 37,50 % du prix.</li>
+<li>Bailleur : aide 300 × 60 = 18 000 € ; coût net 60 000 − 18 000 = 42 000 €, soit 700 € par logement.</li>
+<li>Locataires : 150 × 60 = 9 000 € par an ; 9 000 × 15 = 135 000 €.</li>
+<li>CALDÉRINE : 31 500 − 21 420 = 10 080 € ; 10 080 / 31 500 = 32,00 % ; 2 800 / 10 080 = 27,78 % ; 2 600 / 71 400 = 3,64 % ; 31 500 × 3,64 % = 1 146,60, soit 1 147 € (même résultat avec le taux non arrondi : 1 147,06 €).</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Valeur captée par l'installateur présentée comme 22 500 € (marge et main-d'œuvre de pose), si la marge de 9 000 € est distinguée.</li>
+<li>Résultat d'exploitation approché calculé avec le taux non arrondi (1 147,06 €).</li>
+<li>Analyse limitée à cinq parties prenantes bien choisies, si les attentes et les pouvoirs sont précis et chiffrés.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><code>JUR-T01</code> — Définir les parties prenantes et les cinq forces en général sans exploiter la décomposition de l'annexe 1.2.</li>
+<li><code>JUR-T03</code> — Recopier la décomposition de l'annexe 1.2 en listant les acteurs sans leurs attentes ni leur pouvoir de négociation, ou oublier les locataires et les riverains, qui n'achètent rien.</li>
+<li><code>JUR-T05</code> — Séparer le calcul de la marge et l'analyse stratégique : la faiblesse du résultat après charges fixes explique la stratégie du C-NAT 80 ; oublier les fournisseurs dans le partage, alors que le fabricant de compresseurs capte 27,78 % de la marge de CALDÉRINE.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Freeman (1984) : « selon les travaux de Edward Freeman » (corrigé du sujet zéro p. 152) ; valeur créée = avantages − sacrifices (p. 152-153)</td>
+<td>parties prenantes, valeur créée et captée</td>
+<td>[V corrigé] ; [S] 1984</td>
+<td>F13 § 3 ; F02 § 5.1, § 5.3</td>
+</tr>
+<tr class="even">
+<td>Programme UE 3, partie 1.3 (l. 748-751 : valeur, création et captation par les différentes parties prenantes ; attentes et contre-pouvoirs) ; guide p. 117 (valeur dans son acception globale)</td>
+<td>partage de la valeur</td>
+<td>[V]</td>
+<td>F02 § 0, § 5</td>
+</tr>
+<tr class="odd">
+<td>Porter, « How Competitive Forces Shape Strategy », 1979 (cinq forces ; « + 1 » de la tradition française)</td>
+<td>pouvoir de négociation des fournisseurs et des clients</td>
+<td>[V] hbr.org ; [V] guide p. 114</td>
+<td>F13 § 1</td>
+</tr>
+<tr class="even">
+<td>Modèle coût-volume-profit, marge sur coût variable (guide p. 116-117)</td>
+<td>formation du résultat</td>
+<td>[V]</td>
+<td>F02 § 2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12-déterminer-le-coût-de-production-à-ne-pas-dépasser-pour-le-c-nat-80-le-comparer-au-coût-de-la-conception-actuelle-et-mesurer-lécart-à-résorber-en-écartant-les-coûts-qui-ne-doivent-pas-peser-sur-la-décision-15-pt">1.2 Déterminer le coût de production à ne pas dépasser pour le C-NAT 80, le comparer au coût de la conception actuelle et mesurer l'écart à résorber, en écartant les coûts qui ne doivent pas peser sur la décision (1,5 pt)</h3>
+<p><strong>Compétences visées :</strong></p>
+<ul>
+<li><code>2.1.c</code> — Élaborer et mettre en œuvre des outils de gestion adaptés au contexte (coût cible, démarche de gestion stratégique des coûts)</li>
+<li><code>2.1.a</code> — Analyser la situation de gestion (coûts pertinents, coûts irrécupérables)</li>
+</ul>
+<p><strong>Barème (1,5 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.2-01</td>
+<td>Démarche du <strong>coût cible</strong> présentée comme une démarche de gestion stratégique des coûts : partir du prix que le marché accepte et de la marge exigée pour en déduire le coût à ne pas dépasser, dès la conception, à l'inverse de la logique « coût + marge = prix » du bureau d'études ; prix accepté : (26 500 + 24 000 + 24 500) / 3 = 25 000 € × 1,12 = <strong>28 000 €</strong>, sous l'offre européenne à fluide naturel (− 1 400 €) et 3 500 € (11,11 %) sous le modèle actuel</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>1.2-02</td>
+<td>Marge exigée : 22 % de charges fixes + 8 % de résultat d'exploitation visé = <strong>30 %</strong> du prix, soit <strong>8 400 €</strong> ; <strong>coût cible : 28 000 − 8 400 = 19 600 €</strong></td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>1.2-03</td>
+<td>Coût de production estimé : composants <strong>21 000 €</strong> + fabrication <strong>1 400 €</strong> (500 + 630 + 270, 29 heures) = <strong>22 400 €</strong> ; les quote-parts du premier prototype (120 €) et du banc d'essai acoustique (30 €) sont exclues : coûts déjà payés, <strong>irrécupérables</strong>, identiques quelle que soit la conception retenue, et charges fixes déjà couvertes par la marge (sinon double compte) ; <strong>écart à résorber : 2 800 € par unité</strong> (12,50 % du coût estimé), et non 2 950 € (éléments valorisants, non exigés : marge de 20,00 % au prix accepté sans reconception, 1 960 k€ de marge manquante en 2030, prix de 32 214,29 € par la logique « coût + marge »)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choix de l'outil et alternatives acceptées</strong></p>
+<ul>
+<li>Outil retenu : le <strong>coût cible</strong>. Le prix ne se décide plus à partir du coût : il est imposé par le marché (offres concurrentes, écart toléré pour un fluide naturel), et l'objectif de VESTRAHOLM impose la marge. Le coût est donc la seule variable sur laquelle CALDÉRINE peut agir, et il se joue à la conception, avant l'industrialisation. Le coût cible n'est pas un mode de calcul du coût de revient : c'est une <strong>démarche de gestion stratégique des coûts</strong>, reliée au prix de marché et aux fonctions attendues par les clients (guide p. 120), qui se prolonge par l'analyse de la valeur (question 1.3).</li>
+<li>Alternatives acceptées : un prix accepté plafonné par l'offre européenne à fluide naturel (29 400 €), si le candidat justifie de ne pas utiliser l'enquête ; le candidat est alors noté en cohérence (coût cible 20 580 €, écart 1 820 €). Non accepté : un prix fixé à partir du coût estimé (« coût + marge ») ; une méthode de coût complet avec répartition des charges fixes sur le C-NAT 80 ; un calcul actualisé ou un critère de choix d'investissement (UE 2).</li>
+</ul>
+<p><strong>Conventions rappelées</strong> (annexe 1.3)</p>
+<ul>
+<li>Prix accepté = prix moyen des offres à fluide synthétique × (1 + 12 %) ; taux de marge exigé = charges fixes prévues (22 % du chiffre d'affaires) + résultat d'exploitation visé (8 %).</li>
+<li>Coût de production unitaire = composants + heures × coût horaire de l'atelier ; les charges fixes, dont les études et les équipements d'essai, sont couvertes par la marge.</li>
+</ul>
+<p><strong>Réponse attendue</strong></p>
+<p><em>Concept et prix accepté (1.2-01).</em> Le <strong>coût cible</strong> est le coût que le produit ne doit pas dépasser pour être vendu au prix que le marché accepte en dégageant la marge exigée : <strong>coût cible = prix accepté − marge exigée</strong>. La démarche part du client et des concurrents, et non des coûts de l'entreprise. Elle s'applique dès la conception, phase où se décide l'essentiel du coût d'un produit (choix des composants, nombre d'heures de fabrication). Elle s'oppose à la logique du bureau d'études, qui ajoute une marge à son coût pour fixer le prix. Elle se poursuit par l'analyse de la valeur, qui répartit l'effort entre les fonctions attendues par les clients.</p>
+<p>Les offres à fluide synthétique (B, C, D) valent en moyenne (26 500 + 24 000 + 24 500) / 3 = <strong>25 000 €</strong>. Les installateurs et les bailleurs acceptent de payer 12 % de plus pour un fluide naturel : le <strong>prix accepté est de 25 000 × 1,12 = 28 000 €</strong>. Il se situe 1 400 € sous l'offre européenne à fluide naturel (29 400 €) et <strong>3 500 € sous le modèle actuel</strong> (31 500 €, soit − 11,11 %). Le C-NAT 80 se positionne comme une machine à fluide naturel vendue avec un supplément de prix modéré par rapport aux machines à fluide synthétique, et non comme la machine la plus chère du marché.</p>
+<p><em>Marge exigée et coût cible (1.2-02).</em> La marge sur coût de production doit couvrir les charges fixes prévues en 2030 (22 % du chiffre d'affaires) et le résultat d'exploitation visé par VESTRAHOLM (8 %) : <strong>30 % du prix</strong>, soit 28 000 × 30 % = <strong>8 400 €</strong>. Le <strong>coût cible est de 28 000 − 8 400 = 19 600 €</strong> par unité.</p>
+<p><em>Coût estimé, coûts irrécupérables et écart (1.2-03).</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Élément</th>
+<th style="text-align: right;">€ par unité</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Composants (nomenclature) : 7 200 + 4 300 + 2 400 + 3 100 + 1 900 + 1 300 + 800</td>
+<td style="text-align: right;">21 000</td>
+</tr>
+<tr class="even">
+<td>Brasage : 10 h × 50 €</td>
+<td style="text-align: right;">500</td>
+</tr>
+<tr class="odd">
+<td>Assemblage et câblage : 14 h × 45 €</td>
+<td style="text-align: right;">630</td>
+</tr>
+<tr class="even">
+<td>Essais : 5 h × 54 €</td>
+<td style="text-align: right;">270</td>
+</tr>
+<tr class="odd">
+<td><strong>Coût de production estimé</strong> (29 heures de fabrication)</td>
+<td style="text-align: right;"><strong>22 400</strong></td>
+</tr>
+<tr class="even">
+<td>Coût cible</td>
+<td style="text-align: right;">19 600</td>
+</tr>
+<tr class="odd">
+<td><strong>Écart à résorber</strong></td>
+<td style="text-align: right;"><strong>2 800</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Le bureau d'études ajoute 150 € par unité : 120 € pour les études du premier prototype (432 000 € / 3 600) et 30 € pour le banc d'essai acoustique (108 000 € / 3 600). Ces sommes <strong>ne doivent pas peser sur la décision</strong>. Elles sont déjà payées : ce sont des <strong>coûts irrécupérables</strong>, que CALDÉRINE supporte quelle que soit la conception retenue, et même si le C-NAT 80 n'était pas lancé. Les « récupérer » en les ajoutant au coût, comme le souhaite le responsable du bureau d'études, rendrait le produit plus cher sans rien changer à ce qui a été dépensé. Ce sont en outre des charges fixes, déjà couvertes par les 22 % de la marge : les ajouter au coût serait un double compte. Le banc acoustique sert d'ailleurs à toute la gamme.</p>
+<p>L'<strong>écart à résorber est de 2 800 € par unité</strong>, soit 12,50 % du coût estimé (14,29 % du coût cible), et non de 2 950 €. Sans reconception, le C-NAT 80 vendu 28 000 € ne dégagerait que 5 600 € de marge (20,00 % du prix), dix points sous l'exigence : il manquerait <strong>1 960 k€</strong> de marge en 2030 sur 700 unités. À l'inverse, la logique du bureau d'études (coût + marge) conduirait à un prix de 22 550 / 0,70 = <strong>32 214,29 €</strong> (32 000 € sans les coûts irrécupérables), au-dessus du modèle actuel dont les ventes reculent déjà (− 21,31 % de 2024 à 2026). Conclusion : la conception actuelle n'est pas viable ; il faut réduire son coût de 2 800 € sans renoncer aux fonctions que les clients paient.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Prix accepté plafonné à 29 400 € (offre A), si le choix est justifié : coût cible 20 580 €, écart 1 820 €, noté en cohérence.</li>
+<li>Écart exprimé seulement en euros, ou seulement en pourcentage du coût cible.</li>
+<li>Marge sans reconception, manque de marge en 2030 et prix « coût + marge » non calculés : non pénalisés.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><code>JUR-P02</code> — Ne pas appliquer la convention de l'annexe : moyenne calculée sur les cinq offres, ou écart de 12 % appliqué au prix du modèle actuel.</li>
+<li><code>JUR-T10</code> — Garder les 150 € de coûts déjà payés dans le coût estimé (écart de 2 950 €), ou présenter le coût cible comme une méthode de répartition des charges, alors qu'il s'agit d'une démarche de gestion stratégique des coûts.</li>
+<li><code>JUR-T07</code> — Fixer le prix par « coût + marge » (32 214,29 €) sans voir que le marché impose le prix.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programme UE 3, partie 2.1 (l. 780-781 : analyse de la valeur, coûts cibles ; l. 786-787 : structure de coûts, approche marginale, coûts pertinents et sunk costs)</td>
+<td>coût cible, coûts irrécupérables</td>
+<td>[V]</td>
+<td>F04 § 0, § 7, § 8</td>
+</tr>
+<tr class="even">
+<td>Guide p. 120 : analyse de la valeur et coûts cibles « étudiés conjointement », démarche de gestion stratégique des coûts, « intérêt, limites et adaptations »</td>
+<td>présentation de la démarche</td>
+<td>[V]</td>
+<td>F04 § 7</td>
+</tr>
+<tr class="odd">
+<td>Coût cible = prix − marge ; coût pertinent, coût irrécupérable</td>
+<td>calculs</td>
+<td>[S]</td>
+<td>F04 § 7, § 8</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13-répartir-le-coût-estimé-entre-les-fonctions-de-service-calculer-coûts-cibles-par-fonction-écarts-et-indices-de-valeur-apprécier-les-quatre-pistes-de-reconception-et-dire-si-le-coût-cible-est-atteint-2-pts">1.3 Répartir le coût estimé entre les fonctions de service, calculer coûts cibles par fonction, écarts et indices de valeur, apprécier les quatre pistes de reconception et dire si le coût cible est atteint (2 pts)</h3>
+<p><strong>Compétences visées :</strong></p>
+<ul>
+<li><code>2.1.c</code> — Élaborer et mettre en œuvre des outils de gestion adaptés au contexte (analyse de la valeur et coûts cibles, étudiés conjointement)</li>
+<li><code>2.1.b</code> — Sélectionner des outils de gestion adaptés au contexte (choix de l'analyse de la valeur pour répartir l'effort de réduction)</li>
+<li><code>2.1.e</code> — Élaborer des préconisations en matière de gestion des processus de production (pistes retenues et écartées)</li>
+</ul>
+<p><strong>Barème (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.3-01</td>
+<td>Outil justifié : l'<strong>analyse de la valeur</strong> répartit le coût entre les fonctions de service attendues par les clients pour savoir où réduire sans dégrader ce qu'ils paient, plutôt qu'une réduction au prorata du coût des composants, qui couperait aussi dans les fonctions sous-dotées ; coût estimé par fonction : F1 <strong>8 205 €</strong>, F2 <strong>3 275 €</strong>, F3 <strong>2 810 €</strong>, F4 <strong>2 510 €</strong>, F5 <strong>2 205 €</strong>, F6 <strong>3 395 €</strong> (total 22 400 €)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>1.3-02</td>
+<td>Coûts cibles par fonction (6 860, 3 920, 1 960, 2 940, 980, 2 940 €), écarts (+ 1 345, − 645, + 850, − 430, + 1 225, + 455 €, total + 2 800 €) et indices de valeur (<strong>0,96 ; 1,37 ; 0,80 ; 1,34 ; 0,51 ; 0,99</strong>) ; lecture : pilotage à distance (F5) et silence (F3) coûtent plus qu'ils ne valent aux yeux des clients ; la fonction principale (F1) porte le plus gros écart en euros mais un indice proche de 1 ; eau chaude (F2) et pose rapide (F4) sont sous-dotées</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>1.3-03</td>
+<td>Pistes appréciées : <strong>P1</strong> (− 800 € sur F3, sous le niveau des cahiers des charges) et <strong>P2</strong> (− 1 200 € sur F5, mêmes informations transmises) portent sur les fonctions trop coûteuses sans les dégrader : retenues ; <strong>P4</strong> (− 900 €, sans effet sur les fonctions, effet de série) : retenue ; <strong>P3</strong> (− 1 500 € sur F1) dégrade la fonction la plus importante (72 kW à − 15 °C, appoint électrique qui alourdit le coût global du bailleur, plus de secours en cas de panne, durée de vie non éprouvée) : écartée pour le lancement, gardée comme piste à qualifier pour réduire la dépendance envers le fabricant de compresseurs</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>1.3-04</td>
+<td>Atteinte du coût cible : P1 + P2 + P4 = − 2 900 € → <strong>19 500 €</strong>, soit <strong>100 €</strong> sous le coût cible (marge 8 500 €, <strong>30,36 %</strong>) ; P1 et P2 seules ne suffisent pas (20 400 €) ; atteinte de justesse, que la moindre hausse du compresseur effacerait ; après pistes, F1 reste au-dessus de sa cible (+ 895 €) et F2, F4 restent sous-dotées : préconisations (sécuriser le prix du compresseur et qualifier un second fournisseur, améliorer progressivement le coût en série, consacrer une éventuelle marge à la pose rapide)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choix de l'outil et alternatives acceptées</strong></p>
+<ul>
+<li>Outil retenu : l'<strong>analyse de la valeur</strong>, étudiée avec le coût cible (guide p. 120). Le coût cible fixe le montant global à atteindre ; l'analyse de la valeur dit <strong>où</strong> le chercher. Elle décompose le produit en <strong>fonctions de service</strong>, c'est-à-dire ce que le produit fait pour ses utilisateurs, et compare le coût de chaque fonction à l'importance que lui accordent les clients. La matrice éléments × fonctions de l'annexe 1.4 permet de passer du coût des composants au coût des fonctions ; l'indice de valeur repère les fonctions sur-dotées (sur-qualité) et sous-dotées.</li>
+<li>Alternatives acceptées : un indice calculé comme le rapport coût cible de la fonction / coût estimé de la fonction (0,84 ; 1,20 ; 0,70 ; 1,17 ; 0,44 ; 0,87), si la formule est écrite : il classe les fonctions dans le même ordre ; un graphique de la part du coût en fonction de l'importance (« zone de valeur »), en complément ; une décision sur P3 réservée (lancement avec P3 après essais concluants), si le risque sur F1 est analysé et si le coût cible reste atteint sans elle. Non accepté : retenir les pistes par ordre d'économie décroissante sans examiner leurs effets sur les fonctions ; répartir l'effort de réduction au prorata du coût des composants.</li>
+</ul>
+<p><strong>Conventions rappelées</strong> (annexe 1.4)</p>
+<ul>
+<li>Coût estimé d'une fonction = Σ coût de l'élément × part consacrée à la fonction ; coût cible de la fonction = 19 600 € × importance relative ; écart = coût estimé − coût cible (positif : fonction trop coûteuse).</li>
+<li>Indice de valeur = importance relative / part du coût estimé (inférieur à 1 : la fonction coûte plus qu'elle ne vaut aux yeux des clients).</li>
+<li>Économies des pistes additives, imputées aux fonctions indiquées.</li>
+</ul>
+<p><strong>Réponse attendue</strong></p>
+<p><em>Concept et coût par fonction (1.3-01).</em> L'<strong>analyse de la valeur</strong> examine un produit à travers ses <strong>fonctions de service</strong> : ce qu'il doit faire pour ses utilisateurs, indépendamment des solutions techniques. Elle mesure le coût de chaque fonction et le compare à l'importance que les clients lui accordent. Une fonction qui coûte plus qu'elle ne vaut signale une sur-qualité, à réduire ; une fonction qui coûte moins qu'elle ne vaut peut être améliorée. Combinée au coût cible, elle évite de réduire le coût « à l'aveugle » en dégradant ce que le client paie.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Élément (€)</th>
+<th style="text-align: right;">F1</th>
+<th style="text-align: right;">F2</th>
+<th style="text-align: right;">F3</th>
+<th style="text-align: right;">F4</th>
+<th style="text-align: right;">F5</th>
+<th style="text-align: right;">F6</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Compresseurs</td>
+<td style="text-align: right;">5 040</td>
+<td style="text-align: right;">1 440</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">720</td>
+<td style="text-align: right;">7 200</td>
+</tr>
+<tr class="even">
+<td>Échangeurs</td>
+<td style="text-align: right;">2 150</td>
+<td style="text-align: right;">1 290</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">860</td>
+<td style="text-align: right;">4 300</td>
+</tr>
+<tr class="odd">
+<td>Ventilateurs et carrosserie</td>
+<td style="text-align: right;">480</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1 800</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">2 400</td>
+</tr>
+<tr class="even">
+<td>Électronique et régulation</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">310</td>
+<td style="text-align: right;">310</td>
+<td style="text-align: right;">2 015</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">3 100</td>
+</tr>
+<tr class="odd">
+<td>Circuit frigorifique</td>
+<td style="text-align: right;">380</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">380</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">760</td>
+<td style="text-align: right;">1 900</td>
+</tr>
+<tr class="even">
+<td>Module hydraulique</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">910</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1 300</td>
+</tr>
+<tr class="odd">
+<td>Châssis, plots, emballage</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">320</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">800</td>
+</tr>
+<tr class="even">
+<td>Fabrication</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">700</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">700</td>
+<td style="text-align: right;">1 400</td>
+</tr>
+<tr class="odd">
+<td><strong>Coût estimé de la fonction</strong></td>
+<td style="text-align: right;"><strong>8 205</strong></td>
+<td style="text-align: right;"><strong>3 275</strong></td>
+<td style="text-align: right;"><strong>2 810</strong></td>
+<td style="text-align: right;"><strong>2 510</strong></td>
+<td style="text-align: right;"><strong>2 205</strong></td>
+<td style="text-align: right;"><strong>3 395</strong></td>
+<td style="text-align: right;"><strong>22 400</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Coûts cibles, écarts et indices (1.3-02).</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Fonction</th>
+<th style="text-align: right;">Importance</th>
+<th style="text-align: right;">Coût estimé (€)</th>
+<th style="text-align: right;">Part du coût estimé</th>
+<th style="text-align: right;">Coût cible (€)</th>
+<th style="text-align: right;">Écart (€)</th>
+<th style="text-align: right;">Indice de valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F1 Chauffer par grand froid</td>
+<td style="text-align: right;">35 %</td>
+<td style="text-align: right;">8 205</td>
+<td style="text-align: right;">36,63 %</td>
+<td style="text-align: right;">6 860</td>
+<td style="text-align: right;">+ 1 345</td>
+<td style="text-align: right;"><strong>0,96</strong></td>
+</tr>
+<tr class="even">
+<td>F2 Produire l'eau chaude</td>
+<td style="text-align: right;">20 %</td>
+<td style="text-align: right;">3 275</td>
+<td style="text-align: right;">14,62 %</td>
+<td style="text-align: right;">3 920</td>
+<td style="text-align: right;">− 645</td>
+<td style="text-align: right;"><strong>1,37</strong></td>
+</tr>
+<tr class="odd">
+<td>F3 Fonctionner sans bruit</td>
+<td style="text-align: right;">10 %</td>
+<td style="text-align: right;">2 810</td>
+<td style="text-align: right;">12,54 %</td>
+<td style="text-align: right;">1 960</td>
+<td style="text-align: right;">+ 850</td>
+<td style="text-align: right;"><strong>0,80</strong></td>
+</tr>
+<tr class="even">
+<td>F4 Se poser et se mettre en service vite</td>
+<td style="text-align: right;">15 %</td>
+<td style="text-align: right;">2 510</td>
+<td style="text-align: right;">11,21 %</td>
+<td style="text-align: right;">2 940</td>
+<td style="text-align: right;">− 430</td>
+<td style="text-align: right;"><strong>1,34</strong></td>
+</tr>
+<tr class="odd">
+<td>F5 Être piloté à distance</td>
+<td style="text-align: right;">5 %</td>
+<td style="text-align: right;">2 205</td>
+<td style="text-align: right;">9,84 %</td>
+<td style="text-align: right;">980</td>
+<td style="text-align: right;">+ 1 225</td>
+<td style="text-align: right;"><strong>0,51</strong></td>
+</tr>
+<tr class="even">
+<td>F6 Durer</td>
+<td style="text-align: right;">15 %</td>
+<td style="text-align: right;">3 395</td>
+<td style="text-align: right;">15,16 %</td>
+<td style="text-align: right;">2 940</td>
+<td style="text-align: right;">+ 455</td>
+<td style="text-align: right;"><strong>0,99</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>100 %</strong></td>
+<td style="text-align: right;"><strong>22 400</strong></td>
+<td style="text-align: right;"><strong>100 %</strong></td>
+<td style="text-align: right;"><strong>19 600</strong></td>
+<td style="text-align: right;"><strong>+ 2 800</strong></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>Lecture. Le <strong>pilotage à distance (F5)</strong> est la fonction la plus sur-dotée : elle absorbe 9,84 % du coût pour 5 % de l'importance (indice 0,51), à cause du module de communication conçu par CALDÉRINE et de l'écran tactile. Le <strong>silence (F3)</strong> coûte aussi plus qu'il ne vaut (0,80) : la carrosserie à double paroi va au-delà de ce que demandent les bailleurs. Ces deux fonctions portent 2 075 € des 2 800 € d'écart : c'est la « machine la plus silencieuse et la plus communicante du marché » voulue par le bureau d'études, que les clients ne paient pas. La <strong>fonction principale (F1)</strong> porte le plus gros écart en euros (+ 1 345 €), mais son indice est proche de 1 (0,96) : on peut y chercher des économies, pas la dégrader. La <strong>durée (F6)</strong> est à l'équilibre (0,99). L'<strong>eau chaude (F2)</strong> et la <strong>pose rapide (F4)</strong> sont sous-dotées (1,37 et 1,34) : les clients leur accordent plus d'importance qu'elles ne coûtent. Il ne faut pas y réduire les coûts ; F4 mériterait même un effort, puisque le temps de chantier est le premier coût de l'installateur.</p>
+<p><em>Appréciation des pistes (1.3-03).</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Piste</th>
+<th style="text-align: right;">Économie</th>
+<th>Fonction touchée (indice)</th>
+<th>Effet sur les fonctions</th>
+<th>Décision</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P1 Carrosserie à simple paroi</td>
+<td style="text-align: right;">800 €</td>
+<td>F3 (0,80)</td>
+<td>+ 2 dB(A), toujours sous le niveau maximal des cahiers des charges de tous les bailleurs interrogés</td>
+<td><strong>retenue</strong></td>
+</tr>
+<tr class="even">
+<td>P2 Passerelle du commerce, afficheur simple</td>
+<td style="text-align: right;">1 200 €</td>
+<td>F5 (0,51)</td>
+<td>mêmes informations transmises, compatibles avec les outils des bailleurs ; réglages sur place moins confortables</td>
+<td><strong>retenue</strong></td>
+</tr>
+<tr class="odd">
+<td>P3 Compresseur unique d'un second fabricant</td>
+<td style="text-align: right;">1 500 €</td>
+<td>F1 (0,96, 35 % de l'importance)</td>
+<td>72 kW au lieu de 80 kW à − 15 °C ; appoint électrique dans les immeubles exposés (électricité supplémentaire, coût global du bailleur alourdi) ; plus de secours en cas de panne (« soixante familles sans chauffage ») ; durée de vie non éprouvée (F6)</td>
+<td><strong>écartée pour le lancement</strong></td>
+</tr>
+<tr class="even">
+<td>P4 Échangeurs standard de la plateforme</td>
+<td style="text-align: right;">900 €</td>
+<td>F1, F2, F6</td>
+<td>performances inchangées ; effet de série</td>
+<td><strong>retenue</strong></td>
+</tr>
+</tbody>
+</table>
+<p>P1 et P2 réduisent les deux fonctions sur-dotées sans dégrader le service attendu : ce sont les pistes typiques de l'analyse de la valeur, qui suppriment la sur-qualité. P4 réduit le coût sans toucher aux fonctions, grâce à la standardisation et aux volumes de la gamme. P3 apporte la plus forte économie, mais au détriment de la fonction pour laquelle les clients paient d'abord la machine : elle ferait atteindre le coût en vendant un produit qui chauffe moins par grand froid et qui tombe en panne sans secours. Elle a pourtant un intérêt stratégique : un second fabricant de compresseurs réduirait la dépendance envers le fournisseur dominant (question 1.1). Elle doit être qualifiée par les essais d'endurance de 2027, pour une version ultérieure ou un modèle moins exposé au froid.</p>
+<p><em>Atteinte du coût cible (1.3-04).</em> Avec P1, P2 et P4, le coût de production devient 22 400 − 800 − 1 200 − 900 = <strong>19 500 €</strong>, soit <strong>100 € sous le coût cible</strong>. La marge est de 28 000 − 19 500 = <strong>8 500 €</strong>, soit <strong>30,36 %</strong> du prix ; elle représente 5 950 k€ en 2030 sur 700 unités. P1 et P2 seules ne suffisent pas (20 400 €, 800 € au-dessus). Le coût cible est donc <strong>atteint, mais de justesse</strong> (0,51 % du coût cible) : une hausse de 12 % du prix des compresseurs, comparable à celle des deux dernières années, coûterait 864 € par unité et l'effacerait.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Après P1, P2 et P4</th>
+<th style="text-align: right;">F1</th>
+<th style="text-align: right;">F2</th>
+<th style="text-align: right;">F3</th>
+<th style="text-align: right;">F4</th>
+<th style="text-align: right;">F5</th>
+<th style="text-align: right;">F6</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coût estimé (€)</td>
+<td style="text-align: right;">7 755</td>
+<td style="text-align: right;">3 005</td>
+<td style="text-align: right;">2 010</td>
+<td style="text-align: right;">2 510</td>
+<td style="text-align: right;">1 005</td>
+<td style="text-align: right;">3 215</td>
+<td style="text-align: right;">19 500</td>
+</tr>
+<tr class="even">
+<td>Écart au coût cible (€)</td>
+<td style="text-align: right;">+ 895</td>
+<td style="text-align: right;">− 915</td>
+<td style="text-align: right;">+ 50</td>
+<td style="text-align: right;">− 430</td>
+<td style="text-align: right;">+ 25</td>
+<td style="text-align: right;">+ 275</td>
+<td style="text-align: right;">− 100</td>
+</tr>
+<tr class="odd">
+<td>Indice de valeur</td>
+<td style="text-align: right;">0,88</td>
+<td style="text-align: right;">1,30</td>
+<td style="text-align: right;">0,97</td>
+<td style="text-align: right;">1,17</td>
+<td style="text-align: right;">0,97</td>
+<td style="text-align: right;">0,91</td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>F3 et F5 reviennent à leur cible. F1 reste au-dessus (+ 895 €) : c'est là que se trouvent les économies suivantes, par les achats de compresseurs plutôt que par la conception. F2 et F4 restent sous-dotées. Préconisations : retenir P1, P2 et P4 ; sécuriser le prix des compresseurs avant le lancement et qualifier un second fournisseur ; poursuivre la baisse des coûts en production (temps de brasage et d'assemblage, achats en série) ; consacrer la marge supplémentaire obtenue en priorité à la pose rapide (F4), que les installateurs valorisent.</p>
+<p><strong>Calculs détaillés</strong></p>
+<ul>
+<li>F1 = 7 200 × 70 % + 4 300 × 50 % + 2 400 × 20 % + 3 100 × 5 % + 1 900 × 20 % = 5 040 + 2 150 + 480 + 155 + 380 = 8 205 €.</li>
+<li>Parts : 8 205 / 22 400 = 36,63 % ; indice F1 = 35 / 36,63 = 0,96 ; F5 = 5 / 9,84 = 0,51.</li>
+<li>Coûts cibles : 19 600 × 35 % = 6 860 € ; × 20 % = 3 920 € ; × 10 % = 1 960 € ; × 15 % = 2 940 € ; × 5 % = 980 €.</li>
+<li>Après pistes : F1 = 8 205 − 450 = 7 755 € ; F2 = 3 275 − 270 = 3 005 € ; F3 = 2 810 − 800 = 2 010 € ; F5 = 2 205 − 1 200 = 1 005 € ; F6 = 3 395 − 180 = 3 215 €.</li>
+<li>Avec les quatre pistes : 18 000 € ; avec P1, P2 et P3 : 18 900 € (coût atteint, mais en dégradant F1).</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Indice calculé comme coût cible / coût estimé de la fonction, si la formule est écrite (même classement des fonctions).</li>
+<li>P3 retenue sous condition d'essais concluants, si l'analyse de ses effets sur F1 et F6 est faite et si le candidat montre que le coût cible est atteint sans elle.</li>
+<li>Coût par fonction après pistes non recalculé, si le coût total après pistes et la lecture par fonction sont justes.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><code>JUR-T08</code> — Retenir les pistes par ordre d'économie décroissante (P3 en premier) sans examiner leurs effets sur les fonctions : c'est l'erreur que l'analyse de la valeur doit éviter.</li>
+<li><code>JUR-T03</code> — Calculer les indices sans les interpréter, ou lire un écart en euros sans le rapporter à l'importance de la fonction (F1 a le plus gros écart, mais n'est pas la fonction la plus sur-dotée).</li>
+<li><code>JUR-T05</code> — Conclure « coût cible atteint » sans dire qu'il l'est de 100 € seulement, ni relier cette faiblesse au pouvoir du fabricant de compresseurs.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programme UE 3, partie 2.1 (l. 780-781 : analyse de la valeur, coûts cibles) ; guide p. 120 (étudiés conjointement ; intérêt, limites et adaptations)</td>
+<td>analyse de la valeur et coût cible</td>
+<td>[V]</td>
+<td>F04 § 0, § 7</td>
+</tr>
+<tr class="even">
+<td>Coût cible par fonction = coût cible × importance ; indice de valeur = importance / part du coût</td>
+<td>calculs</td>
+<td>[S]</td>
+<td>F04 § 7</td>
+</tr>
+<tr class="odd">
+<td>Guide p. 120 (préconisations sur les processus de production)</td>
+<td>pistes retenues et écartées</td>
+<td>[V]</td>
+<td>F04 § 0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="14-note-au-président-20-lignes-au-maximum-15-pt">1.4 Note au président (20 lignes au maximum) (1,5 pt)</h3>
+<p><strong>Compétences visées :</strong></p>
+<ul>
+<li><code>2.1.f</code> — Produire une synthèse rédigée et structurée portant sur les décisions concernant les processus de production</li>
+<li><code>1.3.d</code> — Formuler des préconisations adaptées à l'organisation (partage de la valeur avec les installateurs et les fournisseurs)</li>
+</ul>
+<p><strong>Barème (1,5 pt)</strong> — grille de notation d'une réponse rédigée (six critères : concept défini et attribué ; mobilisation pertinente ; faits du cas ; analyse et non description ; préconisation faisable ; forme et longueur).</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Note</th>
+<th>Descripteur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td>Absence de réponse, hors sujet ou cours récité sans aucun fait du cas</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0,5</td>
+<td>Note qui résume les calculs sans prise de position sur la conception, ou qui dépasse nettement les 20 lignes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Coût cible, pistes retenues et atteinte présentés avec leurs chiffres clés, mais sans limites de la démarche, ou sans conséquences sur le partage de la valeur avec les installateurs et les fournisseurs</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1,5</td>
+<td>Six critères satisfaits : note structurée (objet, coût à atteindre et pistes, intérêt et limites de la démarche, partage de la valeur, préconisations, conclusion) ; chiffres clés repris sans recalcul (prix accepté 28 000 €, coût cible 19 600 €, écart 2 800 €, coût de 19 500 € avec P1, P2 et P4, marge de 30,36 %, P3 écartée) ; au moins deux limites tirées du cas (pondération des fonctions, risque de dégrader la qualité, raisonnement sur le cycle de vie) ; préconisations faisables ; 20 lignes au maximum</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choix de l'outil et alternatives acceptées</strong></p>
+<ul>
+<li>Outil retenu : une note de <strong>décision</strong> qui arrête la conception, apprécie la démarche et en tire les conséquences sur la filière.</li>
+<li>Alternatives acceptées : une position qui retient P3 sous condition d'essais, si elle est argumentée et cohérente avec les chiffres ; d'autres préconisations sur le partage de la valeur (partage avec l'installateur du gain de temps de pose, contrat de maintenance associé à la durée de vie), si elles découlent des faits du cas.</li>
+</ul>
+<p><strong>Réponse attendue</strong> (modèle de note, 20 lignes au maximum)</p>
+<p><strong>Objet : conception du C-NAT 80.</strong></p>
+<p><strong>1. Le coût à atteindre est tenu, de justesse.</strong> Le marché accepte 28 000 € pour une machine à fluide naturel ; avec la marge de 30 % qu'exige l'objectif de VESTRAHOLM, le C-NAT 80 ne doit pas coûter plus de 19 600 €. La conception actuelle coûte 22 400 € (les 150 € d'études déjà payées n'y ont pas leur place). Je propose de retenir la carrosserie simplifiée, la passerelle de communication du commerce et les échangeurs standard : le coût tombe à 19 500 € (marge 30,36 %). J'écarte le compresseur unique : il réduirait la puissance par grand froid, fonction que nos clients placent en tête.</p>
+<p><strong>2. Une démarche utile, à manier avec prudence.</strong> Partir du prix de marché et des fonctions attendues a montré que nous payions une sur-qualité (silence, écran) que les clients ne demandent pas. Mais la pondération des fonctions vient d'une enquête auprès de 40 clients ; réduire les coûts peut dégrader la fiabilité ; et les bailleurs jugent sur quinze ans, ce qu'un coût de production unitaire ne mesure pas.</p>
+<p><strong>3. Regagner de la valeur dans la filière.</strong> Sur le modèle actuel, le fabricant de compresseurs capte 2 800 € par machine, plus du double de notre résultat : il faut sécuriser son prix et qualifier un second fournisseur. Aux installateurs, la pose rapide fait gagner 1 200 € par jour de chantier : c'est la fonction à améliorer en priorité, et l'argument qui défendra notre prix face aux offres à 24 000 €.</p>
+<p><strong>Conclusion.</strong> Arrêter la conception avec ces trois pistes, suivre le coût réel dès la présérie et ne pas sacrifier la fiabilité à 100 € de marge.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Position différente sur P3 ou sur l'usage de la marge, si elle est argumentée et cohérente avec les chiffres des questions 1.2 et 1.3.</li>
+<li>Préconisations différentes sur le partage de la valeur, si elles découlent des faits du cas (fournisseur dominant, installateurs prescripteurs, bailleurs en coût global).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><code>JUR-T06</code> — Dépasser les 20 lignes ; absence de structure ou de conclusion.</li>
+<li><code>JUR-T03</code> — Résumer les calculs sans prendre position sur la conception ni sur les pistes.</li>
+<li><code>JUR-T05</code> — Traiter le coût cible comme un calcul isolé, sans conséquences sur les installateurs et les fournisseurs.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programme UE 3, parties 2.1 (synthèse sur les décisions de production) et 1.3 (préconisations) ; guide p. 120 (intérêt, limites et adaptations du coût cible)</td>
+<td>périmètre de la note</td>
+<td>[V]</td>
+<td>F04 § 0, § 7 ; F02 § 0</td>
+</tr>
+<tr class="even">
+<td>Grille à six critères des réponses rédigées</td>
+<td>notation</td>
+<td>[V]</td>
+<td>grille de notation du gabarit de corrigé</td>
+</tr>
+</tbody>
+</table>
+<hr />
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

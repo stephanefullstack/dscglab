@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concevoir le C-NAT 80 sous coût cible et partager la valeur dans la filière : CALDÉRINE : coût cible, analyse de la valeur et partage de la valeur dans la filière d'une pompe à chaleur</title>
+<meta name="description" content="Entraînement à l'UE 3 du DSCG, contrôle de gestion et stratégie, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 3</span></a>
+<p>Dossier 1</p><p>7 points</p><p>1 h 24</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Concevoir le C-NAT 80 sous coût cible et partager la valeur dans la filière</h1><p class="cas">CALDÉRINE : coût cible, analyse de la valeur et partage de la valeur dans la filière d'une pompe à chaleur</p><p><strong>DOSSIER 1 – CONCEVOIR LE C-NAT 80 SOUS COÛT CIBLE ET PARTAGER LA VALEUR DANS LA FILIÈRE (7 points)</strong></p>
+<p>Durée conseillée : 1 h 24 (sur une épreuve de 4 heures, coefficient 1,5, notée sur 20).</p>
+<p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document autorisé</strong> : aucun.</p>
+<p><strong>Matériel autorisé</strong> : calculatrice avec mode examen actif, ou calculatrice sans mémoire « type collège ». Tout autre matériel est interdit.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Pour chaque question, il est nécessaire de présenter les concepts et outils avant de les mobiliser, puis de conclure. Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>CALDÉRINE SAS conçoit et fabrique des pompes à chaleur de grande puissance (de 40 à 150 kW) destinées au chauffage et à l'eau chaude des immeubles de logements collectifs. Fondée en 1974 à Mérevieux (Isère) comme fabricant de chaudières, elle est depuis 2013 une filiale à 100 % de VESTRAHOLM AB, un groupe industriel suédois non coté qui emploie 4 800 salariés en Europe. Depuis 2019, elle ne fabrique plus que des pompes à chaleur, sur son unique site de Mérevieux. Ses clients directs sont des installateurs, entreprises de génie climatique qui posent les équipements chez les bailleurs sociaux et dans les copropriétés ; elle vend aussi des modules hydrauliques et des ballons, ainsi que la mise en service et la maintenance des équipements. Fin 2026, CALDÉRINE emploie 262 salariés : 164 en production, 36 au bureau d'études et aux méthodes, 40 au service commercial et au service après-vente, 22 dans les fonctions support.</p>
+<p>En 2026, CALDÉRINE a vendu 1 640 pompes à chaleur et réalisé un chiffre d'affaires de 71 400 k€ : 52 480 k€ de pompes à chaleur, 10 220 k€ de modules hydrauliques et de ballons, 8 700 k€ de mise en service et de maintenance. Son résultat d'exploitation est tombé de 5 100 k€ en 2025 à 2 600 k€ en 2026. Des groupes européens et des fabricants asiatiques proposent des équipements moins chers, les prix des compresseurs et des composants électroniques ont augmenté, et les bailleurs sociaux comparent désormais les offres sur le coût global de l'installation. VESTRAHOLM demande à sa filiale de porter son résultat d'exploitation à 8 % de son chiffre d'affaires en 2030.</p>
+<p>En janvier 2027, M. Thibault MARCENAT, président de CALDÉRINE, a présenté le plan « CALDÉRINE 2030 », qui comporte trois axes. Le premier consiste à concevoir d'ici 2028 un nouveau modèle de 80 kW à fluide frigorigène naturel, le C-NAT 80, à un prix accepté par les installateurs et les bailleurs. Le deuxième prévoit d'industrialiser ce modèle sur une nouvelle ligne d'assemblage, qui doit produire ses premières séries en septembre 2028, avant la saison de chauffe, dans l'enveloppe accordée par VESTRAHOLM. Le troisième vise à réunir les compétences qu'exige la nouvelle ligne (brasage, manipulation des fluides inflammables, régulation électronique, mise en service), alors qu'une partie des soudeurs-braseurs partira à la retraite d'ici 2030. Vous occupez le poste de contrôle de gestion de CALDÉRINE, rattaché à Mme Sandrine VOLLERAY, directrice administrative et financière, et vous travaillez à la demande du président. Les entreprises, les personnes, les lieux et les articles cités sont fictifs.</p>
+<p>Le C-NAT 80 remplacera en septembre 2028 le modèle actuel de 80 kW, qui fonctionne avec un fluide synthétique et dont les ventes reculent depuis deux ans. Le bureau d'études a remis en janvier 2027 une première conception, plus silencieuse et plus communicante que le modèle actuel, mais son responsable reconnaît qu'elle « coûte trop cher pour le prix que le marché acceptera ». Les installateurs, qui choisissent le plus souvent la marque qu'ils posent, et les bailleurs, qui paient l'installation, ont été interrogés par le service commercial.</p>
+<p>M. MARCENAT veut arrêter la conception du C-NAT 80 en mars 2027. Il vous demande de lui montrer comment la valeur d'une installation se partage aujourd'hui entre les acteurs de la filière, de fixer le coût que le C-NAT 80 ne doit pas dépasser, d'apprécier les pistes de reconception du bureau d'études, puis de lui présenter vos conclusions. Les données utiles figurent dans les annexes 1.1 à 1.5 ; les conventions de calcul y sont précisées. Tous les montants sont hors taxes.</p>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p><strong>Base documentaire : annexes 1.1 à 1.5</strong></p>
+<p><strong>1.1.</strong> Pour l'installation type décrite en annexe 1.2, calculer la valeur captée par chaque acteur de la filière et la marge sur coût variable que CALDÉRINE retire de la pompe à chaleur, en la rapportant à son prix de vente, à la marge du fournisseur de compresseurs et au résultat d'exploitation que CALDÉRINE dégage en moyenne sur une pompe à chaleur. Analyser ensuite, à l'aide de l'outil approprié, le partage de la valeur entre les parties prenantes de la filière et le pouvoir de négociation de chacune, puis conclure sur la position de CALDÉRINE (annexes 1.1, 1.2 et 1.5). <em>(2 points)</em></p>
+<p><strong>1.2.</strong> Déterminer, à l'aide de l'outil approprié, le coût de production unitaire que le C-NAT 80 ne doit pas dépasser pour être vendu au prix que le marché accepte tout en respectant l'objectif de VESTRAHOLM. Comparer ce coût au coût de la conception actuelle du bureau d'études et mesurer l'écart à résorber, en distinguant, parmi les éléments retenus par le bureau d'études, ceux qui ne doivent pas peser sur la décision (annexes 1.1, 1.3 et 1.5). <em>(1,5 point)</em></p>
+<p><strong>1.3.</strong> Répartir le coût de production estimé du C-NAT 80 entre ses fonctions de service, puis calculer pour chaque fonction le coût que justifie l'importance que lui accordent les clients, l'écart et l'indice de valeur ; interpréter les résultats. Apprécier les quatre pistes de reconception proposées par le bureau d'études, au regard de leurs économies et de leurs effets sur les fonctions, dire lesquelles retenir et si le coût à ne pas dépasser est atteint (annexes 1.3 à 1.5). <em>(2 points)</em></p>
+<p><strong>1.4.</strong> Rédiger, à l'intention de M. MARCENAT, une note structurée (20 lignes au maximum). Elle présente le coût à atteindre et les pistes de reconception que vous retenez. Elle apprécie l'intérêt et les limites de la démarche suivie dans le cas du C-NAT 80. Elle indique les conséquences de la nouvelle conception sur le partage de la valeur avec les installateurs et les fournisseurs, et formule vos préconisations. <em>(1,5 point)</em></p>
+<h3 id="annexe-11--pompes-à-chaleur-collectives--la-course-au-prix-extrait-dun-article-fictif">ANNEXE 1.1 – Pompes à chaleur collectives : la course au prix (extrait d'un article fictif)</h3>
+<p><em>Extrait d'un article fictif, « Pompes à chaleur collectives : la course au prix a commencé », Le Courrier du génie climatique (publication fictive), 14 janvier 2027. Les chiffres cités sont fictifs.</em></p>
+<p>La rénovation des immeubles chauffés au gaz ou au fioul fait croître le marché des pompes à chaleur de grande puissance pour le logement collectif. Les bailleurs sociaux remplacent leurs chaufferies par des pompes à chaleur collectives, souvent installées en toiture ou en pied d'immeuble, et les copropriétés commencent à suivre. Ce marché attire de nouveaux concurrents : des groupes européens qui misent sur les fluides frigorigènes naturels, dont l'effet sur le climat est bien plus faible que celui des fluides synthétiques, et des fabricants asiatiques qui proposent des machines à fluide synthétique 15 à 25 % moins chères que celles des fabricants français.</p>
+<p>Les fabricants ne maîtrisent pas tous leurs coûts. Le compresseur, cœur de la machine, représente près du quart de son prix ; deux fabricants de compresseurs fournissent l'essentiel du marché européen, et le premier d'entre eux a relevé ses tarifs de 12 % en deux ans. Les composants électroniques ont suivi la même pente.</p>
+<p>En aval, l'installateur reste le prescripteur : « Je pose la marque que mes équipes connaissent, dont les pièces arrivent vite et dont le service après-vente répond », résume le gérant d'une entreprise de génie climatique. Le temps de pose, de raccordement et de mise en service pèse lourd dans son devis. Les bailleurs, eux, ne regardent plus seulement le prix d'achat : ils comparent le coût global de l'installation (achat, aides déduites, électricité, maintenance) sur quinze ans, exigent des machines silencieuses depuis les plaintes de riverains dans plusieurs quartiers, et demandent à suivre leurs équipements à distance. Les locataires, premiers bénéficiaires de la baisse des charges, ne sont presque jamais consultés.</p>
+<h3 id="annexe-12--ce-que-coûte-et-ce-que-rapporte-une-installation-type">ANNEXE 1.2 – Ce que coûte et ce que rapporte une installation type</h3>
+<p><strong>Installation type retenue par le contrôle de gestion</strong> (données du cas, montants à utiliser tels quels) : un immeuble de 60 logements d'un bailleur social, dont la chaufferie au gaz est remplacée par une pompe à chaleur de 80 kW du <strong>modèle actuel</strong> de CALDÉRINE.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Élément de l'installation type</th>
+<th style="text-align: right;">€</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prix payé par le bailleur à l'installateur</strong> (installation posée et mise en service)</td>
+<td style="text-align: right;"><strong>60 000</strong></td>
+</tr>
+<tr class="even">
+<td>dont prix de la pompe à chaleur facturé par CALDÉRINE à l'installateur</td>
+<td style="text-align: right;">31 500</td>
+</tr>
+<tr class="odd">
+<td>dont fournitures de pose achetées par l'installateur (raccordements, supports, levage)</td>
+<td style="text-align: right;">6 000</td>
+</tr>
+<tr class="even">
+<td>dont main-d'œuvre de pose et de raccordement de l'installateur</td>
+<td style="text-align: right;">13 500</td>
+</tr>
+<tr class="odd">
+<td>dont marge de l'installateur</td>
+<td style="text-align: right;">9 000</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>Coûts de CALDÉRINE pour une pompe à chaleur du modèle actuel</th>
+<th style="text-align: right;">€</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Compresseur, acheté au premier fabricant de compresseurs</td>
+<td style="text-align: right;">7 000</td>
+</tr>
+<tr class="even">
+<td>Échangeurs</td>
+<td style="text-align: right;">4 200</td>
+</tr>
+<tr class="odd">
+<td>Électronique de puissance et régulation</td>
+<td style="text-align: right;">3 150</td>
+</tr>
+<tr class="even">
+<td>Autres composants (ventilateurs, carrosserie, circuit frigorifique, fluide)</td>
+<td style="text-align: right;">4 550</td>
+</tr>
+<tr class="odd">
+<td>Main-d'œuvre d'assemblage et autres charges variables de fabrication</td>
+<td style="text-align: right;">2 520</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Autres données du cas.</strong></p>
+<ul>
+<li>Marges estimées par le service des achats de CALDÉRINE : le fabricant de compresseurs dégage une marge de <strong>40 %</strong> de son prix de vente ; les fournisseurs des autres composants, une marge de <strong>10 %</strong> de leur prix de vente.</li>
+<li>Aide à la rénovation énergétique retenue pour le cas : <strong>300 € par logement</strong>, versée au bailleur.</li>
+<li>Économie de charges de chauffage et d'eau chaude estimée par le bailleur pour ses locataires, par rapport à l'ancienne chaufferie : <strong>150 € par logement et par an</strong>. Durée de vie retenue pour l'installation : <strong>15 ans</strong>.</li>
+</ul>
+<p><strong>Conventions.</strong></p>
+<ul>
+<li>Valeur captée par un fournisseur de composants = marge estimée sur les composants vendus à CALDÉRINE pour cette installation.</li>
+<li>Valeur captée par CALDÉRINE = marge sur coût variable = prix de la pompe à chaleur − achats de composants − main-d'œuvre d'assemblage et autres charges variables de fabrication.</li>
+<li>Valeur captée par l'installateur = sa marge ; la main-d'œuvre de pose rémunère ses salariés.</li>
+<li>Coût net de l'installation pour le bailleur = prix payé − aide reçue.</li>
+<li>Valeur captée par les locataires = économie de charges, annuelle et cumulée sur la durée de vie retenue, sans actualisation.</li>
+<li>Résultat d'exploitation approché d'une pompe à chaleur = prix de la pompe à chaleur × taux de résultat d'exploitation de CALDÉRINE en 2026 (résultat d'exploitation / chiffre d'affaires, en pourcentage à deux décimales).</li>
+<li>Montants en euros, sans décimale ; pourcentages à deux décimales.</li>
+</ul>
+<h3 id="annexe-13--le-prix-accepté-la-marge-exigée-et-le-coût-de-la-conception-actuelle">ANNEXE 1.3 – Le prix accepté, la marge exigée et le coût de la conception actuelle</h3>
+<p><strong>Le modèle actuel de 80 kW</strong> (données du contrôle de gestion) : 610 unités vendues en 2024, 540 en 2025, 480 en 2026, au prix moyen de 31 500 € en 2026.</p>
+<p><strong>Prix des offres concurrentes de 80 kW aux installateurs, début 2027</strong> (relevés du service commercial, données du cas)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Offre</th>
+<th>Fluide frigorigène</th>
+<th style="text-align: right;">Prix de vente à l'installateur (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Groupe européen A</td>
+<td>naturel</td>
+<td style="text-align: right;">29 400</td>
+</tr>
+<tr class="even">
+<td>Groupe européen B</td>
+<td>synthétique</td>
+<td style="text-align: right;">26 500</td>
+</tr>
+<tr class="odd">
+<td>Fabricant asiatique C</td>
+<td>synthétique</td>
+<td style="text-align: right;">24 000</td>
+</tr>
+<tr class="even">
+<td>Fabricant asiatique D</td>
+<td>synthétique</td>
+<td style="text-align: right;">24 500</td>
+</tr>
+<tr class="odd">
+<td>CALDÉRINE, modèle actuel</td>
+<td>synthétique</td>
+<td style="text-align: right;">31 500</td>
+</tr>
+</tbody>
+</table>
+<p>Les offres concurrentes relevées sont, comme le C-NAT 80, équipées d'un module hydraulique intégré ; le modèle actuel de CALDÉRINE est vendu sans module.</p>
+<p><strong>Enquête du service commercial auprès de 40 installateurs et bailleurs</strong> (décembre 2026, données du cas) : pour une machine à fluide naturel, de puissance et de garanties équivalentes, les personnes interrogées acceptent de payer au plus <strong>12 %</strong> de plus que le prix moyen des offres concurrentes à fluide synthétique.</p>
+<p><strong>Marge exigée par la direction financière.</strong> Pour que CALDÉRINE atteigne l'objectif de VESTRAHOLM, chaque modèle doit dégager une marge sur coût de production qui couvre les charges fixes et le résultat d'exploitation visé. Les charges fixes (études, structure, commercial et service après-vente, amortissements) sont prévues à <strong>22 % du chiffre d'affaires en 2030</strong> (hypothèse du cas).</p>
+<p><strong>Coût estimé du C-NAT 80 par le bureau d'études</strong> (fiche de janvier 2027, par unité)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Nomenclature (composants achetés)</th>
+<th style="text-align: right;">€</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Compresseurs pour fluide naturel (deux compresseurs en tandem, premier fabricant de compresseurs)</td>
+<td style="text-align: right;">7 200</td>
+</tr>
+<tr class="even">
+<td>Échangeurs</td>
+<td style="text-align: right;">4 300</td>
+</tr>
+<tr class="odd">
+<td>Ventilateurs et carrosserie acoustique à double paroi</td>
+<td style="text-align: right;">2 400</td>
+</tr>
+<tr class="even">
+<td>Électronique de puissance et régulation (variateur, module de communication conçu par CALDÉRINE, écran tactile)</td>
+<td style="text-align: right;">3 100</td>
+</tr>
+<tr class="odd">
+<td>Circuit frigorifique (vannes, détendeur, sécurités, fluide)</td>
+<td style="text-align: right;">1 900</td>
+</tr>
+<tr class="even">
+<td>Module hydraulique intégré</td>
+<td style="text-align: right;">1 300</td>
+</tr>
+<tr class="odd">
+<td>Châssis, plots antivibratiles, emballage</td>
+<td style="text-align: right;">800</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>Gamme de fabrication</th>
+<th style="text-align: right;">Heures par unité</th>
+<th style="text-align: right;">Coût horaire de la main-d'œuvre directe et des charges variables de l'atelier (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Brasage du circuit frigorifique</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td>Assemblage et câblage</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr class="odd">
+<td>Essais en charge et contrôle d'étanchéité</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">54</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>Autres éléments ajoutés par le bureau d'études</th>
+<th style="text-align: right;">€ par unité</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Quote-part des études et essais du premier prototype, abandonné en 2026 (432 000 €, déjà payés), répartis sur les 3 600 unités prévues</td>
+<td style="text-align: right;">120</td>
+</tr>
+<tr class="even">
+<td>Quote-part du banc d'essai acoustique acheté en 2026 et utilisé pour toute la gamme (108 000 €, déjà payés), répartie sur les 3 600 unités prévues</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="odd">
+<td><strong>Coût estimé retenu par le bureau d'études</strong></td>
+<td style="text-align: right;"><strong>22 550</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Volumes prévus du C-NAT 80</strong> (hypothèses du cas) : 200 unités de septembre à décembre 2028, 600 en 2029, 700 par an de 2030 à 2033, soit 3 600 unités.</p>
+<p><strong>Conventions.</strong></p>
+<ul>
+<li>Prix accepté par le marché = prix moyen des offres concurrentes à fluide synthétique × (1 + écart de prix toléré pour un fluide naturel).</li>
+<li>Taux de marge exigé, en % du prix de vente = charges fixes prévues en % du chiffre d'affaires + résultat d'exploitation visé en % du chiffre d'affaires.</li>
+<li>Coût de production unitaire = composants + fabrication (heures × coût horaire de la main-d'œuvre directe et des charges variables de l'atelier). Les charges fixes, dont les études et les équipements d'essai, sont couvertes par la marge.</li>
+<li>Prix et coûts unitaires en euros (arrondis à deux décimales si nécessaire) ; montants annuels en k€ ; pourcentages à deux décimales.</li>
+</ul>
+<h3 id="annexe-14--les-fonctions-du-c-nat-80-et-les-pistes-de-reconception">ANNEXE 1.4 – Les fonctions du C-NAT 80 et les pistes de reconception</h3>
+<p><strong>Fonctions de service et importance accordée par les clients</strong> (enquête de décembre 2026 auprès de 40 installateurs et bailleurs ; moyenne des notes, ramenée à un total de 100 ; données du cas)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Fonction de service</th>
+<th style="text-align: right;">Importance relative (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F1 – Chauffer l'immeuble par basse température extérieure (puissance de 80 kW maintenue jusqu'à − 15 °C)</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr class="even">
+<td>F2 – Produire l'eau chaude des logements</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="odd">
+<td>F3 – Fonctionner sans bruit pour les riverains</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td>F4 – Se poser et se mettre en service vite</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td>F5 – Être piloté et surveillé à distance</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td>F6 – Durer (fiabilité, maintenance réduite)</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>100</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Contribution des éléments du coût aux fonctions</strong> (estimation du bureau d'études ; part du coût de chaque élément consacrée à chaque fonction, en %)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Élément du coût de production</th>
+<th style="text-align: right;">F1</th>
+<th style="text-align: right;">F2</th>
+<th style="text-align: right;">F3</th>
+<th style="text-align: right;">F4</th>
+<th style="text-align: right;">F5</th>
+<th style="text-align: right;">F6</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Compresseurs</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td>Échangeurs</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="odd">
+<td>Ventilateurs et carrosserie acoustique</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td>Électronique de puissance et régulation</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="odd">
+<td>Circuit frigorifique</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td>Module hydraulique intégré</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="odd">
+<td>Châssis, plots antivibratiles, emballage</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td>Fabrication (brasage, assemblage et câblage, essais)</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">100</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pistes de reconception proposées par le bureau d'études</strong> (février 2027 ; économies par unité, données du cas)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Piste</th>
+<th style="text-align: right;">Économie par unité (€)</th>
+<th>Fonctions dont le coût diminue</th>
+<th>Effets attendus sur les fonctions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P1 – Carrosserie à simple paroi et ventilateurs ralentis la nuit</td>
+<td style="text-align: right;">800</td>
+<td>F3 : 800</td>
+<td>niveau sonore supérieur de 2 dB(A) à celui de la conception actuelle, qui reste inférieur au niveau maximal fixé dans les cahiers des charges de tous les bailleurs interrogés</td>
+</tr>
+<tr class="even">
+<td>P2 – Passerelle de communication du commerce au lieu du module conçu par CALDÉRINE ; afficheur simple au lieu de l'écran tactile</td>
+<td style="text-align: right;">1 200</td>
+<td>F5 : 1 200</td>
+<td>mêmes informations transmises à distance, lisibles par les outils de télésurveillance des bailleurs ; réglages sur place moins confortables pour les techniciens</td>
+</tr>
+<tr class="odd">
+<td>P3 – Un compresseur unique à vitesse variable, proposé par un second fabricant de compresseurs, au lieu des deux compresseurs en tandem</td>
+<td style="text-align: right;">1 500</td>
+<td>F1 : 1 500</td>
+<td>puissance disponible à − 15 °C réduite de 10 % (72 kW au lieu de 80 kW), ce qui impose un appoint électrique dans les immeubles les plus exposés au froid ; durée de vie du compresseur non encore éprouvée (essais d'endurance à mener jusqu'à fin 2027) ; plus de secours si le compresseur unique tombe en panne</td>
+</tr>
+<tr class="even">
+<td>P4 – Échangeurs standard de la plateforme commune aux modèles de 60 à 120 kW, achetés en plus grande série</td>
+<td style="text-align: right;">900</td>
+<td>F1 : 450 ; F2 : 270 ; F6 : 180</td>
+<td>performances inchangées selon les calculs du bureau d'études</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conventions.</strong></p>
+<ul>
+<li>Coût estimé d'une fonction = Σ (coût de l'élément × part de l'élément consacrée à la fonction).</li>
+<li>Coût que justifie une fonction = coût de production unitaire à ne pas dépasser × importance relative de la fonction.</li>
+<li>Écart d'une fonction = coût estimé − coût que justifie la fonction (un écart positif signale une fonction qui coûte plus que ce que les clients lui accordent).</li>
+<li>Indice de valeur = importance relative de la fonction / part de la fonction dans le coût estimé ; un indice inférieur à 1 signale une fonction qui coûte plus qu'elle ne vaut aux yeux des clients.</li>
+<li>Les économies des pistes s'additionnent ; une piste ne modifie que le coût des fonctions indiquées.</li>
+<li>Coûts en euros, sans décimale ; parts en pourcentage à deux décimales ; indices à deux décimales.</li>
+</ul>
+<h3 id="annexe-15--ce-quen-disent-les-intéressés">ANNEXE 1.5 – Ce qu'en disent les intéressés</h3>
+<p><em>Propos recueillis par le service de contrôle de gestion en février 2027.</em></p>
+<ul>
+<li><em>M. Aurélien CHAMBOVET, responsable du bureau d'études</em> : « Notre C-NAT 80 sera la machine la plus silencieuse et la plus communicante du marché. Avec notre coût de 22 550 € et la marge de la direction financière, il faudrait la vendre plus de 32 000 € ; le marché ne suivra pas, je le sais. Le compresseur unique ferait gagner beaucoup, et nous libérerait de notre fournisseur, mais je n'ai pas encore les essais à − 15 °C. Et je ne veux pas qu'on oublie le premier prototype : 432 000 € d'études, il faut bien les récupérer quelque part. »</li>
+<li><em>M. Joël SARRAZOLLE, gérant d'une entreprise d'installation de génie climatique de 45 salariés</em> : « Je pose du CALDÉRINE depuis vingt ans parce que vos machines tiennent et que votre service après-vente décroche. Mais à 31 500 €, contre 24 000 € pour une machine asiatique, je ne peux plus défendre vos prix devant un bailleur. Ce qui me coûte, c'est le chantier : deux techniciens pendant trois semaines, une grue, la mise en service. Une machine qui se pose en un jour de moins, c'est 1 200 € d'économie pour moi. Quant aux aides, quand elles augmentent, tout le monde remonte ses prix. »</li>
+<li><em>Mme Murielle QUENTARD, directrice du patrimoine d'un bailleur social de l'agglomération grenobloise</em> : « Nous raisonnons sur quinze ans : l'achat, l'électricité, la maintenance. Une machine qui tombe en panne en plein hiver, ce sont soixante familles sans chauffage, et c'est moi qui reçois les plaintes. Le bruit aussi : nous avons dû capoter deux machines l'an dernier après des plaintes de riverains. Les économies de charges profitent à nos locataires, pas à nos comptes ; nous ne pouvons pas payer plus cher sans aide. »</li>
+</ul>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
