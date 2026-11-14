@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exploiter les données des clients au service du conseil : CORLANDEAU Expertise : exploitation des données des clients au service du conseil</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Exploiter les données des clients au service du conseil</h1><p class="cas">CORLANDEAU Expertise : exploitation des données des clients au service du conseil</p><p><strong>DOSSIER 2 – EXPLOITER LES DONNÉES DES CLIENTS AU SERVICE DU CONSEIL (13 points)</strong></p>
+<p>Durée conseillée : 59 min (13 points sur 40, pour une épreuve de 3 heures, coefficient 1 ; environ 4,5 minutes par point).</p>
+<p>Réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document et matériel autorisés</strong> : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Ce dossier est l'un des trois dossiers indépendants du sujet d'entraînement complet n° 6, construits sur un même cas : la présentation et l'annexe 1.1 sont communes aux trois dossiers ; chaque dossier comporte en outre ses propres annexes.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en mai 2027. CORLANDEAU Expertise est une société par actions simplifiée d'expertise comptable, détenue par ses quatorze associés experts-comptables. Son siège est à Poitiers et elle compte cinq autres bureaux, à Niort, La Rochelle, Angoulême, Saintes et Châtellerault. Elle emploie 180 salariés et accompagne environ 3 000 clients, surtout des TPE et des PME, mais aussi des associations et des professions libérales : tenue et révision de la comptabilité, comptes annuels, déclarations fiscales, paie et conseil aux dirigeants. Son chiffre d'affaires de l'exercice 2026 s'élève à 22 millions d'euros ; 1,1 million d'euros est consacré au système d'information. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>Le plan « CORLANDEAU 2030 », adopté par les associés en décembre 2026, fixe trois priorités : sécuriser l'organisation de travail hybride, puisque la moitié des collaborateurs travaillent à distance deux jours par semaine et que les échanges avec les clients sont presque tous dématérialisés ; tirer parti des données que les clients confient au cabinet pour développer une offre de conseil, alors que les honoraires de tenue comptable baissent sous l'effet de l'automatisation ; capitaliser la connaissance technique du cabinet, aujourd'hui dispersée entre les bureaux et concentrée chez quelques associés. La présidente, Mme Hélène VARENNAT, en rend compte chaque trimestre au comité des associés.</p>
+<p>Vous avez rejoint CORLANDEAU Expertise en janvier 2027 comme chargé(e) de mission « systèmes d'information et transformation numérique », rattaché(e) à Mme VARENNAT. Elle vous confie trois travaux : sécuriser le système d'information d'un cabinet qui travaille à distance (dossier 1) ; exploiter les données des clients au service du conseil (dossier 2) ; évaluer le pilote de la base de connaissances du cabinet et en conduire la généralisation (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-de-corlandeau-expertise-et-chiffres-clés">ANNEXE 1.1 – Présentation de CORLANDEAU Expertise et chiffres clés</h3>
+<p>CORLANDEAU Expertise est une société par actions simplifiée d'expertise comptable, détenue par ses quatorze associés experts-comptables. Elle accompagne environ 3 000 clients, surtout des TPE et des PME, mais aussi des associations et des professions libérales, depuis son siège de Poitiers et cinq autres bureaux, à Niort, La Rochelle, Angoulême, Saintes et Châtellerault. Son exercice coïncide avec l'année civile. Son activité connaît une forte période de janvier à mai, qui réunit les clôtures des comptes au 31 décembre et les déclarations fiscales. Les experts-comptables sont tenus au secret professionnel, qui s'étend aux informations que les clients confient au cabinet.</p>
+<p><strong>Chiffres clés de l'exercice 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Activité</td>
+<td>tenue et révision de la comptabilité, comptes annuels, déclarations fiscales, paie, conseil aux dirigeants</td>
+</tr>
+<tr class="even">
+<td>Clients</td>
+<td>environ 3 000 : TPE et PME surtout, associations, professions libérales</td>
+</tr>
+<tr class="odd">
+<td>Chiffre d'affaires</td>
+<td>22 M€</td>
+</tr>
+<tr class="even">
+<td>Effectif</td>
+<td>180 salariés, dont les 14 associés experts-comptables</td>
+</tr>
+<tr class="odd">
+<td>Organisation du travail</td>
+<td>la moitié des collaborateurs travaillent à distance deux jours par semaine ; les échanges avec les clients sont presque tous dématérialisés</td>
+</tr>
+<tr class="even">
+<td>Budget du système d'information</td>
+<td>1,1 M€ (5 % du chiffre d'affaires)</td>
+</tr>
+<tr class="odd">
+<td>Plan « CORLANDEAU 2030 » (adopté en décembre 2026)</td>
+<td>sécuriser l'organisation de travail hybride ; tirer parti des données des clients pour développer une offre de conseil ; capitaliser la connaissance technique du cabinet</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Répartition des salariés entre les bureaux (décembre 2026)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Bureau</th>
+<th>Salariés</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Poitiers (siège)</td>
+<td>60</td>
+</tr>
+<tr class="even">
+<td>Niort</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>La Rochelle</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Angoulême</td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td>Saintes</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>Châtellerault</td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>180</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Organigramme simplifié (mai 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Fonction</th>
+<th>Rôle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Direction</td>
+<td>présidente, Mme Hélène VARENNAT</td>
+<td>dirige le cabinet, met en œuvre le plan « CORLANDEAU 2030 » et en rend compte chaque trimestre au comité des associés</td>
+</tr>
+<tr class="even">
+<td>Direction</td>
+<td>comité des associés (les 14 associés)</td>
+<td>adopte les orientations et le budget, arbitre les décisions qui engagent le cabinet</td>
+</tr>
+<tr class="odd">
+<td>Production</td>
+<td>six bureaux, chacun dirigé par un associé responsable de bureau</td>
+<td>chefs de mission et collaborateurs comptables : tenue, révision, comptes annuels, déclarations fiscales, conseil aux clients du bureau</td>
+</tr>
+<tr class="even">
+<td>Expertise</td>
+<td>pôle technique, au siège, animé par un associé</td>
+<td>veille juridique, fiscale et comptable, réponse aux questions techniques des bureaux</td>
+</tr>
+<tr class="odd">
+<td>Expertise</td>
+<td>pôle social, au siège, animé par un associé</td>
+<td>paie et déclarations sociales des clients, conseil en droit social</td>
+</tr>
+<tr class="even">
+<td>Fonctions support</td>
+<td>rattachées à la présidente</td>
+<td>administration et finances, ressources humaines, informatique</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-21--la-collecte-des-données-des-clients-aujourdhui">ANNEXE 2.1 – La collecte des données des clients aujourd'hui</h3>
+<p><em>Note de M. Bastien ORTELIER, chef de mission au bureau de Niort, à Mme VARENNAT (février 2027)</em></p>
+<p><strong>A. Les pièces reçues en 2026, par canal</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Canal</th>
+<th>Pièces reçues (milliers)</th>
+<th>Part intégrée automatiquement dans le dossier, sans ressaisie</th>
+<th>Délai moyen entre la date de la pièce et son intégration dans le dossier</th>
+<th>Clients dont c'est le canal principal</th>
+<th>Part de ces clients dont le dossier était incomplet à la clôture 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Portail d'échange (dépôt de fichiers par le client)</td>
+<td>250</td>
+<td>60 %</td>
+<td>10 jours</td>
+<td>1 500</td>
+<td>20 %</td>
+</tr>
+<tr class="even">
+<td>Application mobile (photographie de la pièce)</td>
+<td>100</td>
+<td>40 %</td>
+<td>10 jours</td>
+<td>450</td>
+<td>20 %</td>
+</tr>
+<tr class="odd">
+<td>Courriel adressé au collaborateur</td>
+<td>150</td>
+<td>20 %</td>
+<td>20 jours</td>
+<td>600</td>
+<td>40 %</td>
+</tr>
+<tr class="even">
+<td>Papier (dépôt au bureau ou envoi postal)</td>
+<td>100</td>
+<td>0 %</td>
+<td>45 jours</td>
+<td>450</td>
+<td>60 %</td>
+</tr>
+<tr class="odd">
+<td><strong>Ensemble</strong></td>
+<td><strong>600</strong></td>
+<td><strong>220 000 pièces, un peu plus d'une sur trois</strong></td>
+<td>—</td>
+<td><strong>3 000</strong></td>
+<td><strong>30 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Ce qui se passe ensuite</strong></p>
+<ol type="1">
+<li><strong>Relevés bancaires.</strong> Pour 1 200 clients (40 %), les relevés arrivent chaque jour par un flux automatisé que propose l'éditeur du logiciel de production comptable ; chaque client doit l'autoriser auprès de sa banque. Pour les 1 800 autres, les relevés arrivent en PDF ou sur papier, chaque mois, chaque trimestre ou à la clôture, et les opérations sont rapprochées des pièces à la main.</li>
+<li><strong>Lecture automatique des pièces.</strong> Le logiciel lit la date, le montant, la TVA et le fournisseur des pièces déposées sur le portail ou photographiées, et de celles que les collaborateurs y déposent depuis leur messagerie. Une pièce lue sur dix comporte une erreur sur l'un de ces champs, corrigée par le collaborateur, souvent à la révision, plusieurs semaines plus tard.</li>
+<li><strong>Formats.</strong> Photographies floues ou coupées, fichiers PDF qui regroupent plusieurs factures, relevés de ventes extraits des logiciels de caisse ou de facturation des clients, chacun dans son format. Depuis septembre 2026, une partie des factures d'achat parviennent aux clients sous forme électronique structurée ; ils nous les transmettent pourtant en PDF ou imprimées, et le logiciel doit les relire comme des images.</li>
+<li><strong>Nommage et rattachement.</strong> Les fichiers arrivent sous des noms comme « scan_0012.pdf » ou « facture.pdf » ; chaque collaborateur les renomme et les classe à sa façon. Un même fournisseur est parfois enregistré sous plusieurs libellés dans le dossier d'un client (« Garage Belmontier », « GARAGE BELMONTIER SARL »), ce qui fausse les soldes par fournisseur.</li>
+<li><strong>Doublons.</strong> Environ 5 % des pièces nous parviennent deux fois, par exemple par courriel puis sur le portail, soit 30 000 pièces par an à repérer.</li>
+<li><strong>Pièces manquantes.</strong> À la clôture 2026, il manquait des pièces dans 30 % des dossiers (tableau A). Chaque collaborateur relance ses clients par courriel, sans liste commune des pièces attendues ni suivi des relances.</li>
+<li><strong>Restitution.</strong> Les comptes annuels sont remis en moyenne 98 jours après la clôture. Une situation en cours d'année n'est produite que pour 10 % des clients, à la main, dans un tableur.</li>
+<li><strong>Organisation.</strong> Chaque bureau organise la collecte à sa façon : depuis 2025, le bureau de Poitiers exige le portail de tout nouveau client ; ceux de Saintes et de Châtellerault acceptent les dépôts de papier sans limite.</li>
+</ol>
+<p><strong>C. Ce que propose l'éditeur du logiciel de production comptable</strong></p>
+<p>L'éditeur propose, dans l'abonnement actuel, des connexions par API à la plupart des banques et à une vingtaine de logiciels de caisse et de facturation du marché, ainsi que la récupération des factures électroniques reçues par les clients, dans leur format structuré, avec leur accord. Aucune de ces connexions n'est activée aujourd'hui, à l'exception des flux bancaires des 1 200 clients cités plus haut.</p>
+<h3 id="annexe-22--le-projet-doffre--pilotage-dirigeant-">ANNEXE 2.2 – Le projet d'offre « Pilotage dirigeant »</h3>
+<p><strong>A. L'offre envisagée (note de M. Laurent CHAMPEYRAC, associé chargé du conseil aux dirigeants, mars 2027)</strong></p>
+<p>L'offre comprendrait trois services, proposés sur abonnement aux clients volontaires à partir de septembre 2027 :</p>
+<ol type="1">
+<li><strong>un tableau de bord mensuel</strong> : trésorerie, marge brute, délais de paiement des clients et des fournisseurs, comparés au mois précédent et au même mois de l'année précédente ;</li>
+<li><strong>un entretien trimestriel</strong> avec le chef de mission, pour comprendre les écarts : pourquoi la marge baisse (par activité, par client, selon la saison), pourquoi la trésorerie se tend ;</li>
+<li><strong>un outil d'alerte</strong> qui estime, pour chaque client, le risque qu'il connaisse une difficulté de trésorerie dans les douze mois.</li>
+</ol>
+<p><strong>B. L'outil d'alerte</strong></p>
+<p>Mme Léa MONTÉGRIER, analyste de données recrutée par le cabinet en 2026, en a construit un prototype. Il classe chaque client en trois niveaux de risque (faible, moyen, élevé), à partir des données que le client confie au cabinet : retards de paiement de ses propres clients, niveau et évolution de sa trésorerie, retards de dépôt de ses déclarations fiscales et sociales, secteur d'activité. Le modèle a été établi par apprentissage automatique sur l'historique 2022-2024 des clients des bureaux de Poitiers et de Niort. Une alerte est émise au niveau élevé. L'écran affiche le niveau, sans les éléments qui l'ont déterminé.</p>
+<p><strong>C. Résultats d'un premier essai (janvier 2027)</strong></p>
+<p>Le prototype a été appliqué aux données arrêtées au 31/12/2025 de 400 clients des bureaux de Poitiers et de Niort ; ses alertes ont ensuite été comparées à ce qui s'est réellement passé en 2026. Une difficulté de trésorerie s'entend ici d'un découvert non autorisé de plus de trois mois, d'un incident de paiement d'une échéance fiscale ou sociale ou d'un échéancier demandé à un créancier.</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Difficulté de trésorerie en 2026</th>
+<th>Pas de difficulté en 2026</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Alerte émise</td>
+<td>30</td>
+<td>70</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>Pas d'alerte</td>
+<td>10</td>
+<td>290</td>
+<td>300</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>40</strong></td>
+<td><strong>360</strong></td>
+<td><strong>400</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Observations de l'analyste de données :</p>
+<ul>
+<li>35 des 70 alertes sans difficulté concernent des entreprises de la restauration et du bâtiment, qui ne représentent que 80 clients de l'échantillon ;</li>
+<li>8 des 10 difficultés non détectées concernent des clients dont les relevés bancaires n'arrivent pas par flux automatisé et dont les pièces arrivent par trimestre ou à la clôture ;</li>
+<li>un retard de dépôt d'une déclaration fait monter le niveau de risque, même lorsqu'il vient de pièces que le cabinet attendait encore.</li>
+</ul>
+<p><strong>D. Avis recueillis</strong></p>
+<p><strong>M. Laurent CHAMPEYRAC, associé chargé du conseil aux dirigeants</strong> : « Trois difficultés sur quatre repérées à l'avance : c'est un argument décisif face aux plateformes en ligne. Ouvrons l'outil à tous les clients dès septembre, avec une alerte envoyée automatiquement au dirigeant. »</p>
+<p><strong>Mme Léa MONTÉGRIER, analyste de données</strong> : « Le prototype repose sur deux bureaux et trois années d'historique, et il ne voit bien que les clients dont les données sont fraîches. Il indique quels clients ressemblent à ceux qui ont connu des difficultés, pas pourquoi ils en connaîtraient. Je suis seule pour tout le cabinet, et personne n'a décidé qui vérifie une alerte avant qu'elle parte. »</p>
+<p><strong>M. Bastien ORTELIER, chef de mission, bureau de Niort</strong> : « Dans mes dossiers, l'outil a signalé un restaurant en pleine forme et ignoré une entreprise de maçonnerie que je savais fragile, dont les pièces n'arrivent qu'à la clôture. Je ne peux pas appeler un dirigeant pour lui dire qu'un logiciel le juge en danger sans pouvoir lui expliquer pourquoi. Et un tableau de bord mensuel suppose des pièces mensuelles : chez la moitié de mes clients, elles arrivent par trimestre. »</p>
+<h3 id="annexe-23--indicateurs-de-production-du-cabinet-par-bureau">ANNEXE 2.3 – Indicateurs de production du cabinet par bureau</h3>
+<p><strong>A. Tableau des indicateurs (2025 → 2026, chiffres arrondis)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Bureau</th>
+<th>Clients (2026)</th>
+<th>Part des pièces reçues sous forme dématérialisée</th>
+<th>Délai moyen de remise des comptes annuels (jours après la clôture)</th>
+<th>Heures de saisie et de rapprochement par client et par an</th>
+<th>Taux d'utilisation du portail (part des clients qui y déposent leurs pièces, application comprise)</th>
+<th>Honoraires de conseil (part des honoraires du bureau)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Poitiers</td>
+<td>1 000</td>
+<td>80 % → 90 %</td>
+<td>100 → 85</td>
+<td>12 → 8</td>
+<td>60 % → 80 %</td>
+<td>7 % → 8 %</td>
+</tr>
+<tr class="even">
+<td>Niort</td>
+<td>500</td>
+<td>80 % → 90 %</td>
+<td>100 → 110</td>
+<td>12 → 8</td>
+<td>65 % → 80 %</td>
+<td>7 % → 8 %</td>
+</tr>
+<tr class="odd">
+<td>La Rochelle</td>
+<td>500</td>
+<td>80 % → 90 %</td>
+<td>100 → 85</td>
+<td>12 → 8</td>
+<td>55 % → 80 %</td>
+<td>7 % → 14 %</td>
+</tr>
+<tr class="even">
+<td>Angoulême</td>
+<td>400</td>
+<td>70 % → 75 %</td>
+<td>110 → 100</td>
+<td>14 → 12</td>
+<td>45 % → 50 %</td>
+<td>6 % → 7 %</td>
+</tr>
+<tr class="odd">
+<td>Saintes</td>
+<td>350</td>
+<td>60 % → 65 %</td>
+<td>120 → 120</td>
+<td>16 → 15</td>
+<td>20 % → 25 %</td>
+<td>6 % → 6 %</td>
+</tr>
+<tr class="even">
+<td>Châtellerault</td>
+<td>250</td>
+<td>60 % → 65 %</td>
+<td>120 → 120</td>
+<td>16 → 15</td>
+<td>20 % → 25 %</td>
+<td>6 % → 6 %</td>
+</tr>
+<tr class="odd">
+<td><strong>Cabinet</strong></td>
+<td><strong>3 000</strong></td>
+<td><strong>75 % → 83 %</strong></td>
+<td><strong>105 → 98</strong></td>
+<td><strong>13 → 10</strong></td>
+<td><strong>50 % → 65 %</strong></td>
+<td><strong>7 % → 9 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Ligne Cabinet, honoraires de conseil : part des honoraires totaux du cabinet (annexe 2.4 A).</p>
+<p><strong>B. Précisions apportées par les bureaux</strong></p>
+<ul>
+<li>Niort : trois collaborateurs sont partis au premier semestre 2026 et n'ont été remplacés qu'en janvier 2027.</li>
+<li>La Rochelle : l'associée responsable du bureau a créé en 2026 une cellule de deux collaborateurs consacrée au conseil et formé ses chefs de mission à l'entretien avec les dirigeants.</li>
+<li>Saintes et Châtellerault : la clientèle compte davantage d'artisans, d'exploitations agricoles et d'associations, qui déposent plus souvent leurs pièces sur papier ou par courriel.</li>
+<li>Les heures sont déclarées par les collaborateurs dans le logiciel de temps ; à Niort, le délai des comptes annuels court jusqu'à leur signature par le client, dans les autres bureaux jusqu'à leur envoi.</li>
+<li>Les honoraires de tenue de l'ensemble du cabinet ont baissé de 0,5 M€ en 2026 (annexe 2.4).</li>
+</ul>
+<p><strong>C. Les outils d'analyse disponibles</strong></p>
+<ul>
+<li><strong>Tableur avancé</strong> : chaque bureau tient ses indicateurs dans son propre classeur, alimenté chaque mois par des extractions du logiciel de production et du logiciel de temps ; la synthèse du cabinet est refaite à la main chaque trimestre par l'assistante de la présidente.</li>
+<li><strong>Outil de visualisation</strong> acquis en septembre 2026 (15 licences, 12 k€ par an) : il peut se connecter directement au logiciel de production et au logiciel de temps, rafraîchir les données chaque nuit et publier des tableaux de bord interactifs consultables sur ordinateur et sur tablette. Trois personnes l'utilisent régulièrement : l'analyste de données et deux associés.</li>
+</ul>
+<h3 id="annexe-24--le-modèle-économique-en-question">ANNEXE 2.4 – Le modèle économique en question</h3>
+<p><em>Extrait du compte rendu du séminaire des associés (janvier 2027)</em></p>
+<p><strong>A. Les honoraires (M€)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Activité</th>
+<th>2025</th>
+<th>2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tenue, révision, comptes annuels et déclarations fiscales</td>
+<td>14,5</td>
+<td>14,0</td>
+</tr>
+<tr class="even">
+<td>Paie et social</td>
+<td>5,5</td>
+<td>6,0</td>
+</tr>
+<tr class="odd">
+<td>Conseil aux dirigeants</td>
+<td>1,5</td>
+<td>2,0</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td><strong>21,5</strong></td>
+<td><strong>22,0</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Constats présentés au séminaire</strong></p>
+<ul>
+<li><strong>Prix de la tenue</strong> : le forfait annuel moyen de tenue d'une TPE a baissé de 10 % en deux ans, sous l'effet de renégociations demandées par les clients.</li>
+<li><strong>Concurrence</strong> : des plateformes en ligne proposent aux TPE une tenue automatisée (connexion à la banque, lecture automatique des pièces) et les comptes annuels pour moins de 100 € par mois ; 150 clients, des TPE, sont partis vers ces plateformes en 2026, soit 5 % de la clientèle.</li>
+<li><strong>Attentes des clients</strong> (enquête de satisfaction 2026, 1 000 répondants) : 60 % souhaitent un point régulier sur leur trésorerie en cours d'année ; 45 % estiment que le cabinet « intervient trop tard, au moment des comptes annuels » ; 30 % se disent prêts à payer un tableau de bord mensuel.</li>
+<li><strong>Temps des collaborateurs comptables</strong> (enquête de temps 2026) : 25 % pour la saisie, le rapprochement et les relances de pièces ; 65 % pour la révision, les comptes annuels et les déclarations ; 10 % pour le conseil. Le coût horaire moyen d'un collaborateur comptable, charges comprises, est de 50 €.</li>
+<li><strong>Budget du système d'information</strong> (1,1 M€) : 80 % pour faire fonctionner l'existant (abonnements aux logiciels de production comptable et de paie, postes de travail, assistance), 20 % pour les projets. Le cabinet compte une seule analyste de données.</li>
+</ul>
+<p><strong>C. Objectifs retenus par le séminaire pour fin 2029</strong></p>
+<p>95 % des pièces reçues sous forme dématérialisée ; 80 % des pièces intégrées automatiquement ; relevés bancaires par flux automatisé pour 80 % des clients ; 6 heures de saisie et de rapprochement par client et par an ; 10 % de dossiers incomplets à la clôture ; comptes annuels remis en 75 jours en moyenne ; honoraires de conseil portés à 20 % du chiffre d'affaires en 2030.</p>
+<p><strong>D. Positions exprimées</strong></p>
+<p><strong>Mme Hélène VARENNAT, présidente</strong> : « La saisie disparaît ; ce que nos clients attendent, c'est que nous les aidions à décider. Je ne veux pas d'un projet informatique de plus : je veux savoir ce que notre système d'information doit devenir pour servir cette ambition. »</p>
+<p><strong>M. Laurent CHAMPEYRAC, associé chargé du conseil aux dirigeants</strong> : « Nous connaissons nos clients mieux que leur banquier : leurs données sont notre meilleur atout. Le conseil doit devenir notre premier métier. »</p>
+<p><strong>Mme Odile FERNIAC, associée au bureau de Saintes</strong> : « Automatisons d'abord la tenue pour rester compétitifs face aux plateformes : c'est elle qui paie les salaires. Nos collaborateurs sont des comptables, pas des consultants, et beaucoup de nos clients ne veulent pas du portail. »</p>
+<p><strong>E. Repères au 31/12/2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu utile au dossier</th>
+<th>Situation au 31/12/2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Généralisation de la facturation électronique et du e-reporting (article 91 de la loi de finances pour 2024 ; code général des impôts)</td>
+<td>Les factures entre entreprises assujetties à la TVA établies en France sont émises, transmises et reçues sous forme électronique par l'intermédiaire d'une plateforme agréée par l'administration ; les formats admis sont Factur-X, UBL et CII.</td>
+<td>Depuis le 01/09/2026 : réception obligatoire pour toutes les entreprises ; émission obligatoire pour les grandes entreprises et les entreprises de taille intermédiaire. À compter du 01/09/2027 : émission obligatoire pour les PME et les micro-entreprises.</td>
+</tr>
+</tbody>
+</table>
+<p>Aucune analyse des obligations issues de cette réforme n'est attendue.</p>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>Mme VARENNAT présentera au comité des associés de juin 2027 la manière dont le cabinet compte tirer parti des données de ses clients pour développer le conseil. Elle attend de vous une organisation de la collecte des données, un avis sur l'offre « Pilotage dirigeant » et son outil d'alerte, un diagnostic de la production, des indicateurs pour piloter sa transformation et une analyse du modèle économique du cabinet. Vous mobiliserez pour cela les annexes 1.1, 2.1, 2.2, 2.3 et 2.4 ainsi que vos connaissances professionnelles.</p>
+<p><strong>2.1 – Chaîne de traitement et organisation de la collecte (3 points)</strong></p>
+<p>a) Après avoir défini la chaîne de traitement des données, décrivez celle des données des clients du cabinet, de la collecte à la restitution, puis identifiez, à partir de l'annexe 2.1, quatre faiblesses en les rattachant à l'étape concernée.</p>
+<p>b) Après avoir défini l'interopérabilité, proposez une organisation cible de la collecte en quatre mesures qui garantissent la qualité et la circulation des données : formats structurés et ouverts, connexions par API aux banques et aux logiciels des clients, règles de nommage et de rapprochement, accompagnement des clients. Pour chaque mesure, précisez ce qui change pour les clients. Aucun détail technique des échanges ni aucune modélisation de données n'est attendu.</p>
+<p><strong>2.2 – Méthodes d'analyse et outil d'alerte (3 points)</strong></p>
+<p>a) Présentez les méthodes d'analyse descriptive, exploratoire et prédictive, en rattachant chacune à l'un des trois services de l'offre « Pilotage dirigeant » (annexe 2.2 A).</p>
+<p>b) Analysez les résultats de l'essai de l'outil d'alerte (annexe 2.2 C) sous quatre angles : fausses alertes et difficultés non détectées, corrélation et causalité, biais des données, explicabilité au client. Aucun calcul statistique n'est attendu.</p>
+<p>c) Formulez trois conditions pour faire de cet outil une aide à la décision des chefs de mission, puis prenez position, en la justifiant, sur la proposition de M. CHAMPEYRAC.</p>
+<p><strong>2.3 – Diagnostic de la production et restitution au comité des associés (2 points)</strong></p>
+<p>a) À partir de l'annexe 2.3, formulez, en douze lignes au maximum, un diagnostic argumenté de la production du cabinet : deux constats, une hypothèse d'explication pour chacun et deux précautions de lecture.</p>
+<p>b) Proposez, pour chacun des deux constats, la représentation visuelle la plus adaptée au comité des associés, puis recommandez, en le justifiant, l'outil décisionnel de l'annexe 2.3 C qui convient pour la produire. Aucune manipulation d'outil n'est attendue.</p>
+<p><strong>2.4 – Indicateurs de pilotage de la transformation de la production (2 points)</strong></p>
+<p>Après avoir précisé ce qu'est un tableau de bord équilibré, proposez quatre indicateurs pour piloter la transformation de la production du cabinet, qui équilibrent performance, risques et coûts, chacun précisé par sa formule, sa source, sa fréquence, sa cible et son axe.</p>
+<p><strong>2.5 – Modèle économique et stratégie du système d'information (3 points)</strong></p>
+<p>a) Après avoir défini le modèle économique d'une organisation, analysez l'effet de l'automatisation de la saisie et de l'exploitation des données des clients sur celui du cabinet, sous trois angles : la proposition de valeur, les ressources et les revenus.</p>
+<p>b) Après avoir défini l'alignement stratégique, recommandez une stratégie du système d'information alignée sur l'objectif de développer le conseil, sous la forme de trois priorités hiérarchisées et justifiées par les annexes.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
