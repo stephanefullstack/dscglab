@@ -1,0 +1,174 @@
+# DSCG UE 1 — Gestion juridique, fiscale et sociale — Exercice d'entraînement n° 33
+
+**DOSSIER 1 – UN RÉSEAU DE SALLES D'ESCALADE : RÉUTILISATION ET DROITS SUR LES DONNÉES DES MEMBRES, CONTRÔLE DE LA CNIL, ABONNEMENT CONCLU DANS L'APPLICATION ET CONCURRENCE DÉLOYALE D'UN ANCIEN DIRECTEUR (8 points sur 40, soit 4 points sur 20)**
+
+Durée conseillée : 48 min (8 points sur 40, à raison de 6 minutes par point, sur une épreuve de 4 heures, coefficient 1,5).
+
+Réglementation applicable au 31/12/2026, sauf mention contraire. Année de référence des faits : 2026 (exercices 2024 à 2026, chaque exercice correspondant à l'année civile ; les questions vous sont posées le 16 novembre 2026 ; toutes les opérations envisagées ont lieu avant le 31/12/2026, sauf mention contraire).
+
+**Document autorisé** : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est INTERDIT et constituerait une fraude.
+
+### AVERTISSEMENT
+
+Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.
+
+Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.
+
+---
+
+## Présentation
+
+*Réglementation applicable au 31/12/2026, sauf mention contraire. Année de référence des faits : 2026 (exercices 2024 à 2026).*
+
+**SAS ROCAMBRE**
+
+La SAS ROCAMBRE (ci-après « ROCAMBRE »), créée en 2014, a son siège à Rennes (Ille-et-Vilaine). Elle exploite six salles d'escalade (bloc et voies) : deux à Rennes (Rennes-Centre et Rennes-Nord), une à Saint-Malo, une à Vannes, une à Lorient et une à Nantes. Elle emploie 85 salariés, dont 40 moniteurs, et a réalisé en 2025 un chiffre d'affaires de 8 400 000 € HT, entièrement en France ; le chiffre d'affaires de 2026 sera du même ordre. Elle est soumise à l'impôt sur les sociétés et ses comptes sont certifiés par un commissaire aux comptes. Son président et fondateur, M. Yannick LE GOFFIC, détient 65 % du capital ; les 35 % restants appartiennent à la SAS KERVALEC INVESTISSEMENT, fonds d'investissement régional. La dénomination « ROCAMBRE », qui sert aussi d'enseigne aux six salles et de nom à l'application, n'a pas été déposée à titre de marque.
+
+Les membres de ROCAMBRE sont des particuliers. L'application « ROCAMBRE » leur permet de souscrire l'abonnement mensuel, de réserver un créneau, d'entrer dans la salle en présentant un code QR et de suivre leur progression : le membre enregistre lui-même les voies qu'il a réussies ; l'application en déduit un niveau (débutant, intermédiaire ou confirmé) et affiche sa fréquentation. ROCAMBRE compte 14 000 membres actifs et conserve, depuis 2014, les comptes complets de 22 000 anciens membres (identité, coordonnées, paiements, entrées, voies réussies et niveau). L'application ne recueille aucune information sur l'état de santé des membres. Depuis 2021, ROCAMBRE adresse à tous ses membres et anciens membres une lettre électronique mensuelle présentant ses offres. L'option « Recevoir les offres de ROCAMBRE », activée par défaut à la création du compte sans être présentée au membre, peut être désactivée dans les réglages de l'application.
+
+Le cabinet d'expertise comptable dans lequel vous êtes collaborateur (collaboratrice) accompagne ROCAMBRE. Les sociétés, les personnes et les lieux d'activité cités sont fictifs. M. LE GOFFIC vous consulte le 16 novembre 2026.
+
+**Les projets d'exploitation des données.** ROCAMBRE envisage, à partir de décembre 2026, deux nouveaux usages des données de ses membres :
+
+- utiliser les voies réussies, le niveau et la fréquentation de chaque membre pour lui adresser, par courrier électronique, des offres de stages payants organisés par ROCAMBRE et adaptés à son niveau ;
+- transmettre à la SAS GRIFFALDE, fabricant de chaussons d'escalade avec lequel elle a conclu un partenariat, la liste des 3 000 membres actifs de niveau confirmé, avec leur nom et leur adresse électronique, pour que GRIFFALDE leur adresse ses propres offres commerciales.
+
+La politique de confidentialité de l'application, acceptée par chaque membre lors de son inscription, est reproduite en annexe 1.1.
+
+**La demande de Mme KERDRAON.** Mme Gwenola KERDRAON a été membre de ROCAMBRE, à Lorient, du 1er mars 2022 au 31 août 2026 ; elle s'est inscrite depuis dans une salle d'escalade concurrente. Par un courriel reçu par ROCAMBRE le mardi 3 novembre 2026, elle demande :
+
+- une copie de toutes les données que ROCAMBRE détient sur elle ;
+- la transmission, dans un format réutilisable, de ses données à sa nouvelle salle ;
+- l'effacement de son compte ;
+- l'arrêt des courriels promotionnels qu'elle reçoit encore de ROCAMBRE.
+
+Le responsable informatique de ROCAMBRE répond qu'« il est impossible d'effacer un compte avant dix ans » et que la transmission à une salle concurrente « n'est pas prévue ».
+
+### Travail à faire
+
+**1.1** En vous appuyant sur l'annexe 1.1, indiquez si ROCAMBRE peut utiliser les données de ses membres pour les deux projets envisagés et, le cas échéant, à quelles conditions. Que doit-elle faire des comptes des 22 000 anciens membres ?
+
+**1.2** Quels droits Mme KERDRAON exerce-t-elle ? Indiquez, pour chacune de ses demandes, la suite que ROCAMBRE doit lui donner, et la date limite de sa réponse.
+
+**Le contrôle de la CNIL.** En juin 2026, un ancien membre, dont l'abonnement a pris fin le 30 septembre 2024, a saisi la Commission nationale de l'informatique et des libertés (CNIL) : le jour même de la fin de son abonnement, il avait désactivé, dans l'application, l'option « Recevoir les offres de ROCAMBRE », mais il reçoit encore, deux ans plus tard, des courriels promotionnels de ROCAMBRE, qui ne comportent aucun lien de désinscription. Après un contrôle en ligne réalisé le 6 octobre 2026, la présidente de la CNIL a notifié à ROCAMBRE, le 30 octobre 2026, une mise en demeure dont un extrait figure en annexe 1.2. Une vingtaine d'anciens membres, réunis en un collectif sans statut, envisagent d'agir en justice contre ROCAMBRE au moyen d'une « action de groupe ». Les textes utiles figurent en annexe 1.3.
+
+### Travail à faire
+
+**1.3** En vous appuyant sur les annexes 1.2 et 1.3, expliquez à M. LE GOFFIC la portée de la mise en demeure et les suites que la CNIL peut lui donner, en précisant le montant maximal des sanctions pécuniaires encourues. Les anciens membres peuvent-ils agir contre ROCAMBRE, et par quelle voie ? Quelles mesures recommandez-vous ?
+
+**L'abonnement conclu dans l'application.** L'abonnement se souscrit en trois écrans de l'application, après la création d'un compte protégé par un identifiant et un mot de passe :
+
+- écran 1 : choix de la salle et de la formule (55 € par mois, avec un engagement minimal de douze mois, et 30 € de frais d'inscription) ; les conditions générales d'abonnement sont consultables par un lien en bas de l'écran, sur une page qui ne peut être ni téléchargée ni imprimée ;
+- écran 2 : saisie de l'identité et case à cocher « J'ai lu et j'accepte le règlement de sécurité et la décharge de responsabilité » ; selon ROCAMBRE, cette case « tient lieu de signature ». Le règlement de sécurité, consultable par un lien, comporte notamment la clause suivante : « Le membre décharge ROCAMBRE de toute responsabilité en cas d'accident survenu dans la salle, quelle qu'en soit la cause » ;
+- écran 3 : saisie des coordonnées bancaires et bouton « Valider », qui déclenche immédiatement le paiement des frais d'inscription et du premier mois.
+
+Aucun écran ne récapitule la formule choisie et le prix total avant le paiement, et aucune confirmation n'est adressée au membre après le paiement : l'application affiche seulement « Bienvenue chez ROCAMBRE ! ».
+
+### Travail à faire
+
+**1.4** Le parcours de souscription de l'abonnement est-il conforme aux règles de formation des contrats conclus par voie électronique ? Quelle valeur la case cochée a-t-elle comme signature ? Quelles corrections proposez-vous ?
+
+**Le départ de l'ancien directeur de Rennes-Nord.** M. Erwan PÉRON a dirigé la salle de Rennes-Nord, en qualité de salarié, de 2019 à 2026. Son contrat de travail ne comportait aucune clause de non-concurrence. Il a démissionné et a quitté ROCAMBRE le 31 août 2026. Le 5 octobre 2026, la SAS VERTIGALE, qu'il a constituée et qu'il préside, a ouvert une salle d'escalade de bloc à 800 mètres de la salle de Rennes-Nord, sous l'enseigne « ROC'AMBRE », dont le logo reprend le vert et l'orange des salles ROCAMBRE.
+
+Entre le 7 et le 30 septembre 2026, quatre des neuf moniteurs de Rennes-Nord ont quitté ROCAMBRE au terme du préavis de leur démission et ont été embauchés par VERTIGALE ; M. PÉRON connaissait les plannings et les rémunérations de chacun. Faute de moniteurs, ROCAMBRE a dû ramener les cours collectifs de Rennes-Nord de 40 à 20 par semaine à partir du 1er octobre 2026. En octobre 2026, 180 des 1 200 abonnés de Rennes-Nord ont résilié leur abonnement, et plusieurs ont écrit à ROCAMBRE pour demander si « la nouvelle salle ROC'AMBRE » acceptait leur abonnement.
+
+### Travail à faire
+
+**1.5** M. LE GOFFIC estime que M. PÉRON « n'avait pas le droit » d'ouvrir une salle concurrente ni d'embaucher les moniteurs. Qu'en pensez-vous ? Quelles actions ROCAMBRE peut-elle engager, sur quel fondement, et que doit-elle prouver ?
+
+### ANNEXE 1.1 – Politique de confidentialité de l'application « ROCAMBRE » (extraits, version du 1er janvier 2020)
+
+*Document fictif.*
+
+> **1. Responsable du traitement.** La SAS ROCAMBRE, dont le siège est à Rennes, est responsable du traitement de vos données.
+>
+> **2. Données collectées.** Nom, prénom, date de naissance, adresse postale, adresse électronique, numéro de téléphone ; coordonnées bancaires ; réservations et entrées en salle ; voies réussies que vous enregistrez, niveau et fréquentation.
+>
+> **3. Finalités.** Vos données sont utilisées pour :
+> - la gestion de votre abonnement (souscription, paiement, facturation) ;
+> - la réservation des créneaux et le contrôle de l'accès aux salles par code QR ;
+> - l'affichage de votre progression dans votre espace personnel.
+>
+> **4. Base légale.** Ces traitements sont nécessaires à l'exécution de votre contrat d'abonnement.
+>
+> **5. Destinataires.** Vos données sont destinées au personnel habilité de ROCAMBRE et à son prestataire de paiement. Elles ne sont jamais transmises à des tiers à des fins commerciales.
+>
+> **6. Durée de conservation.** Vos données sont conservées tant que votre compte existe.
+>
+> **7. Vos droits.** Vous pouvez demander l'accès à vos données et leur rectification en écrivant à donnees@rocambre.example.
+
+### ANNEXE 1.2 – Mise en demeure notifiée à la SAS ROCAMBRE par la présidente de la CNIL le 30 octobre 2026 (extraits)
+
+*Document fictif.*
+
+> (…) Il ressort des constatations effectuées en ligne le 6 octobre 2026 et des éléments communiqués par la société que :
+>
+> 1. la société adresse des courriels de prospection commerciale à des personnes qui s'y sont opposées en désactivant l'option prévue à cet effet dans l'application, et ces courriels ne comportent aucun moyen simple de s'opposer à leur réception ;
+>
+> 2. la société conserve, sans limitation de durée, l'ensemble des données des comptes de 22 000 anciens membres, dont certains ont quitté la société depuis 2015 ;
+>
+> 3. la politique de confidentialité n'informe les personnes ni de la durée de conservation de leurs données, ni de leur droit de s'opposer à la prospection, ni de leurs droits à l'effacement et à la portabilité, ni de leur droit d'introduire une réclamation auprès de la CNIL.
+>
+> Ces faits constituent des manquements aux articles 5, paragraphe 1, e), 12, 13 et 21 du règlement (UE) 2016/679 du 27 avril 2016.
+>
+> En conséquence, la SAS ROCAMBRE est mise en demeure, dans un délai de deux mois à compter de la notification de la présente décision :
+> - de respecter les oppositions à la prospection et de permettre à toute personne de s'opposer simplement, dans chaque message, à la réception de courriels de prospection ;
+> - de définir et de mettre en œuvre une durée de conservation des données proportionnée à chaque finalité, et de supprimer ou d'anonymiser les données conservées au-delà ;
+> - de compléter l'information des personnes ;
+> - de justifier auprès de la CNIL, dans ce délai, de l'ensemble des mesures prises.
+>
+> À l'issue de ce délai, si la société s'est conformée à la présente mise en demeure, il sera considéré que la procédure est close. Dans le cas contraire, la formation restreinte de la CNIL pourra être saisie en vue du prononcé de l'une des mesures prévues à l'article 20 de la loi n° 78-17 du 6 janvier 1978. La présente mise en demeure n'est pas rendue publique.
+
+### ANNEXE 1.3 – Sanctions de la CNIL et action de groupe (textes en vigueur au 16 novembre 2026)
+
+**A. Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, article 20 (extraits), version en vigueur depuis le 17 février 2024 (consultée sur Légifrance le 15/11/2026)**
+
+> III. – Lorsque le responsable de traitement ou son sous-traitant ne respecte pas les obligations résultant du règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 précité ou de la présente loi (…), le président de la Commission nationale de l'informatique et des libertés peut le rappeler à ses obligations légales ou, si le manquement constaté est susceptible de faire l'objet d'une mise en conformité, prononcer à son égard une mise en demeure, dans le délai qu'il fixe : 1° De satisfaire aux demandes présentées par la personne concernée en vue d'exercer ses droits ; 2° De mettre les opérations de traitement en conformité avec les dispositions applicables ; (…) 4° De rectifier ou d'effacer des données à caractère personnel, ou de limiter le traitement de ces données. (…)
+>
+> Le président peut demander qu'il soit justifié de la mise en conformité dans un délai qu'il fixe. Ce délai peut être fixé à vingt-quatre heures en cas d'urgence. Le président prononce, le cas échéant, la clôture de la procédure de mise en demeure.
+>
+> Le président peut demander au bureau de rendre publique la mise en demeure. (…)
+>
+> IV. – Lorsque le responsable de traitement ou son sous-traitant ne respecte pas les obligations résultant du règlement (UE) 2016/679 du 27 avril 2016 ou de la présente loi, le président de la Commission nationale de l'informatique et des libertés peut également, le cas échéant après lui avoir adressé l'avertissement prévu au I du présent article ou après avoir prononcé à son encontre une ou plusieurs des mesures correctrices prévues au III, saisir la formation restreinte de la commission en vue du prononcé, après procédure contradictoire, de l'une ou de plusieurs des mesures suivantes :
+>
+> 1° Un rappel à l'ordre ;
+>
+> 2° Une injonction de mettre en conformité le traitement avec les obligations résultant du règlement (UE) 2016/679 du 27 avril 2016 ou de la présente loi ou de satisfaire aux demandes présentées par la personne concernée en vue d'exercer ses droits, qui peut être assortie, sauf dans des cas où le traitement est mis en œuvre par l'Etat, d'une astreinte dont le montant ne peut excéder 100 000 € par jour de retard à compter de la date fixée par la formation restreinte ;
+>
+> (…)
+>
+> 7° A l'exception des cas où le traitement est mis en œuvre par l'Etat, une amende administrative ne pouvant excéder 10 millions d'euros ou, s'agissant d'une entreprise, 2 % du chiffre d'affaires annuel mondial total de l'exercice précédent, le montant le plus élevé étant retenu. Dans les hypothèses mentionnées aux 5 et 6 de l'article 83 du règlement (UE) 2016/679 du 27 avril 2016, ces plafonds sont portés, respectivement, à 20 millions d'euros et 4 % dudit chiffre d'affaires. (…)
+
+*Note : l'article 83, paragraphe 5, du règlement (UE) 2016/679 vise notamment les violations des principes de base d'un traitement, y compris les conditions applicables au consentement (articles 5, 6, 7 et 9), et des droits dont bénéficient les personnes concernées (articles 12 à 22).*
+
+**B. Loi n° 78-17 du 6 janvier 1978, article 22-1 (extraits), version en vigueur depuis le 28 mai 2026 (loi n° 2026-403 du 26 mai 2026), consultée sur Légifrance le 15/11/2026**
+
+> Le président de la Commission nationale de l'informatique et des libertés peut, lorsqu'il estime que les conditions mentionnées aux deuxième et troisième alinéas sont réunies, engager les poursuites selon une procédure simplifiée. Le président de la formation restreinte ou l'un de ses membres désigné à cet effet statue seul sur l'affaire.
+>
+> Le président de la commission peut engager les poursuites selon la procédure simplifiée lorsqu'il estime que les mesures correctrices prévues aux 1°, 2° et 7° du IV (…) de l'article 20 constituent la réponse appropriée à la gravité des manquements constatés, sous réserve que l'amende administrative encourue (…) n'excède pas un montant de 20 000 € et que l'astreinte encourue (…) n'excède pas un montant de 100 € par jour de retard à compter de la date fixée par la décision. Lorsque le chiffre d'affaires annuel mondial total de l'exercice précédent du responsable de traitement est supérieur à 50 millions d'euros, ces montants sont portés, respectivement, à 100 000 euros d'amende et à 500 euros par jour d'astreinte.
+>
+> En outre, le président de la Commission nationale de l'informatique et des libertés ne peut engager les poursuites selon la procédure simplifiée que lorsque l'affaire ne présente pas de difficulté particulière, eu égard à l'existence d'une jurisprudence établie, des décisions précédemment rendues par la formation restreinte de la commission ou de la simplicité des questions de fait et de droit qu'elle présente à trancher.
+>
+> (…) Il statue ensuite et ne peut rendre publiques les décisions qu'il prend. (…)
+
+**C. Loi n° 2025-391 du 30 avril 2025 portant diverses dispositions d'adaptation au droit de l'Union européenne (…), article 16, I (extraits), consulté sur Légifrance le 15/11/2026**
+
+*L'article 37 de la loi n° 78-17, qui organisait une action de groupe propre à la protection des données, a été abrogé par ce même article 16, à compter du 3 mai 2025 : l'action de groupe relève désormais du régime commun ci-dessous.*
+
+> Une action de groupe est exercée en justice par un demandeur mentionné au C du présent I pour le compte de plusieurs personnes physiques ou morales, placées dans une situation similaire, résultant d'un même manquement ou d'un manquement de même nature à ses obligations légales ou contractuelles commis par une personne agissant dans l'exercice ou à l'occasion de son activité professionnelle (…).
+>
+> L'action de groupe est exercée afin d'obtenir soit la cessation du manquement mentionné au premier alinéa du présent A, soit la réparation des préjudices, quelle qu'en soit la nature, subis du fait de ce manquement, soit la satisfaction de ces deux prétentions.
+>
+> (…)
+>
+> C. – 1. L'action de groupe est exercée par les associations agréées à cette fin. L'agrément peut être octroyé par l'autorité administrative chargée de sa délivrance à toute association régulièrement déclarée, à but non lucratif, qui remplit les conditions suivantes :
+>
+> 1° Elle justifie, à la date du dépôt de sa demande d'agrément, de l'exercice d'une activité effective et publique de douze mois consécutifs en vue de la défense d'intérêts auxquels il a été porté atteinte ;
+>
+> 2° Son objet statutaire comporte la défense d'intérêts auxquels il a été porté atteinte ;
+>
+> (…)
+>
+> L'action de groupe qui tend à la seule cessation du manquement peut également être exercée par les associations à but non lucratif régulièrement déclarées depuis deux ans au moins qui justifient de l'exercice d'une activité effective et publique de vingt-quatre mois consécutifs et dont l'objet statutaire comporte la défense d'intérêts auxquels il a été porté atteinte. (…)
+>
+> Le ministère public peut exercer, en qualité de partie principale, l'action de groupe en cessation du manquement. (…)
