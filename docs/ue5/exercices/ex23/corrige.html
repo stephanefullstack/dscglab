@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Organiser et exploiter les données des commandes et des missions : QUENTALIS Emploi : entrepôt des données des missions, taux de service et planification du projet « Pilotage des missions »</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Organiser et exploiter les données des commandes et des missions</h1><p class="cas">QUENTALIS Emploi : entrepôt des données des missions, taux de service et planification du projet « Pilotage des missions »</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F07 données, entrepôt et gouvernance, F08 décisionnel et visualisation, F03 cloud et souveraineté, F05 projets, F15 RGPD opérationnel, et la base des référentiels datés (vérifiés les 25 et 26/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Entrepôt ou lac de données</td>
+<td><code>2.1.c</code> Architectures orientées données (datawarehouse, datalake, etc.)</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td>2.2 Fiabilité des données et échanges avec les grands comptes</td>
+<td><code>2.1.e</code> Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données ; <code>2.1.d</code> Normes et standards d'interopérabilité (XML, API, formats ouverts) ; <code>2.3.c</code> Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK)</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>2.3 Chaîne de traitement et diagnostic du taux de service</td>
+<td><code>2.2.b</code> Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution ; <code>2.2.d</code> Outils décisionnels : Excel avancé, Power BI, Tableau, etc. ; <code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés ; <code>2.2.c</code> Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model ; <code>2.2.a</code> Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>2.4 Cycle de vie et hébergement des données</td>
+<td><code>2.3.b</code> Étapes du cycle de vie des données : création, stockage, usage, archivage, suppression ; <code>2.3.d</code> Enjeux du Big Data, cloud computing, datacenters et souveraineté numérique</td>
+<td>1,5</td>
+</tr>
+<tr class="odd">
+<td>2.5 Planification et risques du projet « Pilotage des missions »</td>
+<td><code>1.5.d</code> Planification des ressources, délais, coûts et qualité ; <code>1.5.e</code> Identification et gestion des risques (maintenance, évolutivité, sécurité) ; <code>1.5.a</code> Piloter un projet de système d'information, depuis la rédaction du cahier des charges jusqu'à l'analyse des risques et du plan qualité, dans une logique de performance durable</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td><strong>Dossier 2 – Organiser et exploiter les données des commandes et des missions</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (entrepôt et lac de données, dictionnaire de données, chaîne de traitement, cycle de vie, souveraineté numérique) environ 2,5 points (items 2.1 a-1, 2.2 a-1, 2.3 a-1, 2.4 a-1 et la définition de 2.4 b) ; analyse des annexes et recommandations environ 10,5 points, soit environ 80 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 59 minutes.</p>
+<hr />
+<h3 id="21--entrepôt-ou-lac-de-données-25-points">2.1 – Entrepôt ou lac de données (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.c</code> « Architectures orientées données (datawarehouse, datalake, etc.) ». La modélisation des données n'est pas demandée.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.3 A et B (objectif, deux options, position de M. DUQUESNEL), 2.1 (sources, formes et volumes des données, constats de qualité), 1.1 (46 agences, aucune équipe d'analyse des données, budget du SI) et 2.4 (RGPD, minimisation).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Entrepôt de données et lac de données définis et distingués (données intégrées et structurées avant le chargement pour le pilotage ; données brutes de toute forme, structurées à la lecture, pour l'exploration)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Quatre critères (finalité, structuration, utilisateurs, coûts) appliqués aux deux options de l'annexe 2.3 B, avec les montants ; 0,5 pour deux critères</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Recommandation de l'entrepôt de données, justifiée par trois besoins tirés des annexes</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Réponse argumentée à M. DUQUESNEL par au moins deux arguments tirés des annexes (valeur non démontrée sans finalité ni analyste, coût de fonctionnement, qualité des données, minimisation et durées de conservation des données personnelles)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.1 a) – Comparaison des deux architectures</em></p>
+<p>Un <strong>entrepôt de données</strong> est une base orientée sujet, intégrée, historisée et non volatile, destinée à l'analyse : les données de plusieurs applications y sont extraites, nettoyées et rapprochées selon des définitions communes <strong>avant</strong> d'être chargées dans un modèle fixé à l'avance (schéma défini à l'écriture). Un <strong>lac de données</strong> conserve des données <strong>brutes</strong> de toutes formes (structurées, textes, documents, images), sans transformation à l'entrée ; leur structure n'est définie qu'au moment de chaque analyse (schéma défini à la lecture) ; sans gouvernance, il devient un « marécage de données » (F07 § 6.2) (0,5 pt).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Option 1 – Entrepôt de données</th>
+<th>Option 2 – Lac de données</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Finalité</strong></td>
+<td>pilotage par des indicateurs stables et comparables : taux de service, délai de pourvoi, fidélisation des intérimaires, par agence, secteur, métier et client, historisés depuis 2024</td>
+<td>exploration de données variées pour des questions qui ne sont pas encore posées (« nous ne savons pas encore ce que nous en ferons »)</td>
+</tr>
+<tr class="even">
+<td><strong>Structuration</strong></td>
+<td>données structurées des trois applications (100 milliers de commandes, 140 milliers de contrats, 300 milliers de relevés d'heures par an) ; règles de transformation fixées une fois (définition unique de la commande pourvue, liste unique des codes métiers, dédoublonnage des candidats)</td>
+<td>toutes les données, y compris les 150 milliers de documents, les curriculum vitae, les 40 milliers de notes en texte libre et les courriels ; préparation à chaque analyse, avec les défauts actuels (quatorze libellés de cariste, 10 % de doublons)</td>
+</tr>
+<tr class="odd">
+<td><strong>Utilisateurs</strong></td>
+<td>46 directeurs d'agence et leurs chargés de recrutement, comité de direction, contrôle de gestion : des utilisateurs métiers, non spécialistes, qui consultent des tableaux de bord prêts à l'emploi</td>
+<td>un analyste de données, à recruter : QUENTALIS Emploi n'en compte aucun ; les agences n'auraient pas d'accès direct</td>
+</tr>
+<tr class="even">
+<td><strong>Coûts</strong> (k€, hors temps interne)</td>
+<td>mise en place 120 ; fonctionnement 30 par an, plus 40 (H1) ou 60 (H2) d'hébergement, soit 70 à 90 par an</td>
+<td>mise en place 80 ; fonctionnement 90 par an (dont l'analyste, 70), plus 30 ou 50 d'hébergement, soit 120 à 140 par an ; mise en place puis trois années de fonctionnement avec H2 : environ 500, contre 390 pour l'entrepôt</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt pour deux critères appliqués, 1 pt pour les quatre.)</p>
+<p>Le lac est moins cher à mettre en place (80 contre 120 k€) parce qu'il reporte le travail de préparation sur chaque analyse ; il coûte plus cher à faire vivre (analyste, stockage de données volumineuses), et ne produit pas par lui-même les tableaux de bord hebdomadaires des agences.</p>
+<p><em>2.1 b) – Recommandation et réponse à M. DUQUESNEL</em></p>
+<p><strong>Recommandation : l'entrepôt de données (option 1)</strong>, justifiée par trois besoins (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Des indicateurs comparables entre agences</strong> : l'objectif de 90 % en 2028 est « mesuré de la même façon dans toutes les agences » (annexe 2.3 A) ; aujourd'hui chaque agence a sa définition de la commande pourvue (annexe 2.1 C) ; l'entrepôt impose les définitions communes au chargement, le lac les laisserait à chaque analyse.</li>
+<li><strong>Des restitutions régulières pour des utilisateurs non spécialistes</strong> : un tableau de bord hebdomadaire pour chacune des 46 agences et un tableau de bord mensuel pour la direction, qui reçoit aujourd'hui le taux du réseau trois semaines après la fin du mois ; c'est l'usage type de l'entrepôt.</li>
+<li><strong>Des moyens limités et des données surtout structurées</strong> : aucune compétence d'analyse de données en interne, une équipe informatique de neuf personnes qui doit faire fonctionner l'existant ; les données utiles au pilotage sont déjà structurées dans le logiciel de gestion et les portails ; les volumes, de quelques centaines de milliers de lignes par an, ne relèvent pas du Big Data.</li>
+</ol>
+<p><strong>Réponse à M. DUQUESNEL</strong> (0,5 pt) : « tout garder » n'est pas une stratégie de données. La valeur d'une donnée tient à son usage : sans question à traiter, sans analyste et sans données fiables (doublons, codes métiers, notes en texte libre), le lac accumulerait des coûts (90 k€ par an hors hébergement) sans produire de décision. Il contredit en outre la <strong>minimisation</strong> et la <strong>limitation de la conservation</strong> des données personnelles (annexe 2.4 ; durées de l'annexe 2.3 G) : conserver sans finalité les curriculum vitae, les notes sur les intérimaires (« à ne plus proposer chez tel client ») et les courriels des clients exposerait QUENTALIS Emploi. Une ouverture reste possible : une fois l'entrepôt fiable et la gouvernance des données en place, un espace d'exploration limité à une question précise (par exemple les causes des commandes non pourvues dans la logistique) pourra être envisagé, avec les seules données nécessaires.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Entrepôt défini par les quatre caractéristiques d'Inmon (orienté sujet, intégré, historisé, non volatil) sans les nommer, si l'idée de données intégrées et historisées pour l'analyse apparaît.</li>
+<li>Recommandation d'une architecture mixte (entrepôt pour le pilotage, lac plus tard pour l'exploration) ou d'une architecture unifiée de type « lakehouse », si le pilotage des agences par l'entrepôt est prioritaire et si le lac est borné par une finalité et par les durées de conservation.</li>
+<li>Coûts comparés sur une autre durée ou sans l'hébergement, si les ordres de grandeur sont justes et si le coût de l'analyste est pris en compte.</li>
+<li>Mention d'un référentiel de données maîtres (candidats, clients, métiers) comme complément de l'entrepôt.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Entrepôt et lac confondus</em> (<code>ET-24</code>) — « le lac est un entrepôt moderne, plus complet » ; juste : finalités, structuration et utilisateurs différents.</li>
+<li><em>Comparaison sans application au cas</em> (<code>JUR-T01</code> contextualiser chaque notion) — tableau de cours sans les montants, les utilisateurs ni les données de l'annexe 2.3 B.</li>
+<li><em>Choix fondé sur le seul coût de mise en place</em> — retenir le lac parce qu'il coûte 80 k€ au lieu de 120 k€ ; juste : coût de fonctionnement, analyste à recruter, absence de restitutions pour les agences.</li>
+<li><em>Modélisation des données</em> (schéma en étoile, tables de faits et de dimensions détaillées) — non demandée.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Entrepôt, lac, référentiel de données maîtres : choisir</td>
+<td>définitions, critères de comparaison</td>
+<td>F07 § 6.2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>minimisation, limitation de la conservation (annexe 2.4)</td>
+<td><code>rgpd</code> / F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--fiabilité-des-données-et-échanges-avec-les-grands-comptes-2-points">2.2 – Fiabilité des données et échanges avec les grands comptes (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.e</code> « Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données » ; <code>2.1.d</code> « Normes et standards d'interopérabilité (XML, API, formats ouverts) ». Limites : l'interopérabilité est abordée sur le plan technique et sur le plan organisationnel ; le détail technique des échanges est exclu.</li>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.c</code> « Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK) » (propriétaires, intendants, instance de gouvernance). Limite : le rôle du <em>Chief Data Officer</em> et la structuration de la gouvernance sont illustratifs, non normatifs.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.1 B et C (relevés d'heures des grands comptes, constats de qualité), 2.2 (définition du taux de service), 2.3 A et F (objectif de 90 %, exigences de qualité), 2.4 (DAMA-DMBOK) et 1.1 (organigramme).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Dictionnaire de données défini ; six rubriques de la consigne renseignées pour la commande pourvue et pour le taux de service</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Trois règles de qualité, chacune rattachée à un constat de l'annexe 2.1 C et assortie d'un contrôle</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Propriétaires métiers et intendants désignés pour les données du projet, la DSI administrant sans être propriétaire</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b</td>
+<td>Échanges des relevés d'heures : intérêt montré par rapport à l'annexe 2.1 B ; plan technique (API, format ouvert ou portail selon le profil des grands comptes) et plan organisationnel (convention d'échange, responsables)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.2 a) – Dictionnaire, règles de qualité et responsables</em></p>
+<p>Le <strong>dictionnaire de données</strong> est le document de référence, partagé et gouverné, qui décrit chaque donnée utilisée : son nom, sa définition métier, sa règle de gestion ou de calcul, son format et ses valeurs admises, sa source, son propriétaire et sa fréquence de mise à jour. Il donne le même sens à une donnée dans toutes les agences et toutes les restitutions (F07 § 1 et § 8 ; métadonnées dans le DAMA-DMBOK).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Rubrique</th>
+<th>Commande pourvue</th>
+<th>Taux de service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Définition métier</td>
+<td>commande dont tous les postes demandés sont occupés, le premier jour prévu, par un intérimaire présent</td>
+<td>part des commandes reçues qui ont été entièrement pourvues</td>
+</tr>
+<tr class="even">
+<td>Règle de gestion ou formule</td>
+<td>statut fixé à la fin du premier jour prévu ; postes demandés et postes occupés enregistrés ; une commande annulée par le client avant le début de la mission n'est ni pourvue ni non pourvue</td>
+<td>commandes entièrement pourvues / (commandes reçues − commandes annulées par le client avant le début de la mission) ; indicateur complémentaire : postes occupés / postes demandés</td>
+</tr>
+<tr class="odd">
+<td>Valeurs admises</td>
+<td>entièrement pourvue, partiellement pourvue, non pourvue, annulée par le client</td>
+<td>pourcentage de 0 à 100 %</td>
+</tr>
+<tr class="even">
+<td>Source</td>
+<td>logiciel de gestion : commande (date et heure de réception), contrat de mission, confirmation de présence le premier jour</td>
+<td>entrepôt, alimenté chaque nuit par le logiciel de gestion</td>
+</tr>
+<tr class="odd">
+<td>Propriétaire</td>
+<td>directeur du réseau et des agences</td>
+<td>directeur du réseau et des agences</td>
+</tr>
+<tr class="even">
+<td>Fréquence de mise à jour</td>
+<td>quotidienne</td>
+<td>hebdomadaire pour les agences, mensuelle pour la direction</td>
+</tr>
+<tr class="odd">
+<td>Cible, exemple</td>
+<td>une commande de dix caristes dont huit sont présents est « partiellement pourvue » (Lens)</td>
+<td>90 % en 2028, selon cette seule définition (85 % en 2026 selon des définitions hétérogènes) ; axe client</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt pour la définition et les rubriques appliquées aux deux données.)</p>
+<p><strong>Trois règles de qualité</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Règle</th>
+<th>Constat de l'annexe 2.1 C</th>
+<th>Dimension de la qualité</th>
+<th>Contrôle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Toute commande est saisie dans le logiciel de gestion dès sa réception, avec sa date et son heure, qu'elle soit pourvue ou non ; les tableurs de suivi des commandes non pourvues sont supprimés après leur reprise</td>
+<td>4 milliers de commandes jamais saisies ; heure de réception absente pour environ 40 % des commandes</td>
+<td>complétude, actualité</td>
+<td>part des commandes saisies dans l'heure de leur réception : cible 95 % fin 2027</td>
+</tr>
+<tr class="even">
+<td>2. Toute commande porte un code de la liste unique des métiers ; les 250 codes locaux sont rattachés à cette liste ; le code « autre » est réservé aux cas validés par l'intendant</td>
+<td>650 codes en usage, quatorze libellés de cariste, 25 % de « autre »</td>
+<td>cohérence, validité</td>
+<td>part des commandes codées dans la liste unique hors « autre » : cible 98 % à la mise en production</td>
+</tr>
+<tr class="odd">
+<td>3. Un contrôle de doublon est fait à l'inscription d'un candidat (nom, date de naissance, téléphone ou courriel) ; les fiches en double sont fusionnées par l'agence de rattachement</td>
+<td>environ 8 000 doublons (10 % des fiches)</td>
+<td>unicité</td>
+<td>taux de doublons de candidats : cible moins de 1 % fin 2027</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responsables de la donnée</strong> (0,5 pt), à titre illustratif (le programme n'impose aucune organisation) :</p>
+<ul>
+<li><strong>propriétaires</strong> (responsables métiers, qui fixent les définitions, les règles et les droits d'accès) : le directeur du réseau et des agences pour les commandes, les missions et les candidats ; la responsable du centre de services pour les relevés d'heures et la facturation ; le directeur commercial et des grands comptes pour les données des clients ;</li>
+<li><strong>intendants</strong> (qui appliquent les règles au quotidien, corrigent et animent) : les six référents d'agence pendant le projet, puis un correspondant dans chaque agence ;</li>
+<li>la <strong>direction des systèmes d'information</strong> administre l'entrepôt, les flux et les droits, sans être propriétaire des données ; le délégué à la protection des données veille au respect des durées de conservation ;</li>
+<li>en complément, non exigé par la consigne, une <strong>instance de gouvernance des données</strong> (trimestrielle, présidée par la directrice générale ou par son représentant, avec les propriétaires, le directeur des systèmes d'information et le contrôleur de gestion) valide le dictionnaire, suit les indicateurs de qualité et arbitre les désaccords de définition. Le DAMA-DMBOK, référentiel de bonnes pratiques, place cette gouvernance au centre de la gestion des données.</li>
+</ul>
+<p><em>2.2 b) – Échanges des relevés d'heures avec les grands comptes</em></p>
+<p>L'<strong>interopérabilité</strong> est la capacité de systèmes différents à échanger des données et à les utiliser sans ressaisie ; elle est technique (API, formats), sémantique (même sens des données) et organisationnelle (engagements et responsabilités des parties) (F07 § 7). Une <strong>API</strong> est une interface documentée qui permet à une application d'échanger des données avec une autre de manière automatisée ; un <strong>format ouvert</strong> est un format dont la spécification est publique, qui ne dépend pas d'un éditeur ou d'un client (0,5 pt pour l'ensemble de la réponse b).</p>
+<ul>
+<li><strong>Plan technique</strong> : relier par API les grands comptes qui disposent d'un logiciel de gestion des temps, en commençant par les trois volontaires, puis les dix qui envoient aujourd'hui un fichier dans leur format propre ; à défaut, faire déposer les relevés dans le <strong>format ouvert et standardisé</strong> publié par l'éditeur, qui remplace les dix macros propres à chaque client ; faire saisir ou valider les relevés sur le portail des clients par les douze grands comptes qui écrivent par courriel.</li>
+<li><strong>Plan sémantique</strong> : un référentiel commun aux deux parties (identifiant du contrat de mission et de l'intérimaire, types d'heures, période) pour que chaque heure se rattache sans interprétation.</li>
+<li><strong>Plan organisationnel</strong> : une convention d'échange avec chaque grand compte (données transmises, échéance hebdomadaire, contrôles, traitement des anomalies, interlocuteurs), portée par le directeur commercial et des grands comptes auprès des clients et par la responsable du centre de services, propriétaire des relevés ; suivi de la part des relevés reçus sous forme structurée.</li>
+<li><strong>Gains</strong> : 70 milliers de relevés par an aujourd'hui ressaisis ou retraités, le temps de trois personnes du centre de services, 1 500 avoirs de 2026, une facturation plus rapide ; et, pour le projet, des heures fiables et disponibles chaque nuit dans l'entrepôt.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres rubriques du dictionnaire (exemples, date de validation, durée de conservation, niveau de sensibilité), si les principales sont présentes.</li>
+<li>Autre définition de la commande pourvue (à la signature du contrat, par exemple), si elle est unique, précise et justifiée, et si le cas des commandes partielles et annulées est réglé ; taux de service calculé en postes plutôt qu'en commandes, s'il est défini sans ambiguïté.</li>
+<li>Deuxième donnée clé traitée sous l'angle du code métier ou du délai de pourvoi en plus du taux de service.</li>
+<li>Règle de qualité portant sur la définition de la commande pourvue (constat 1) à la place de l'une des trois règles ; dimensions de la qualité nommées d'après ISO/IEC 25012.</li>
+<li>Mention d'un responsable des données au niveau de la direction générale (<em>Chief Data Officer</em>), si elle est présentée comme une possibilité et non comme une obligation.</li>
+<li>Échange de données informatisé ou portail présenté comme solution pour une partie des grands comptes, si le principe du format structuré et commun est respecté.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Dictionnaire réduit à une liste de champs techniques</em> (type, longueur) — sans définition métier, propriétaire ni règle de gestion ; juste : le sens partagé de la donnée.</li>
+<li><em>Interopérabilité seulement technique</em> (<code>ET-36</code>) — API sans convention d'échange, sans référentiel commun ni responsable.</li>
+<li><em>Détail technique des échanges</em> — description des messages, des méthodes d'appel ou de l'authentification d'une API ; non attendu.</li>
+<li><em>La DSI propriétaire des données</em> — juste : propriétaires métiers, la DSI administre.</li>
+<li><em>DAMA-DMBOK présenté comme une norme ou un logiciel</em> (<code>ET-01</code>) — juste : référentiel de bonnes pratiques.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dictionnaire de données, rôles (propriétaire, intendant), qualité</td>
+<td>définitions, règles, responsables</td>
+<td>F07 § 1 et § 8.1 à 8.3</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>DAMA-DMBOK, 2e édition (2017), révision 2024 (DAMA International)</td>
+<td>gouvernance au centre de la gestion des données (annexe 2.4)</td>
+<td><code>dama_dmbok2</code> / F07 § 8.2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO/IEC 25012 (2008) — Modèle de qualité des données</td>
+<td>dimensions de la qualité, en réponse tolérée</td>
+<td><code>iso_iec_25012</code> / F07 § 8.3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Interopérabilité : technique, sémantique, organisationnelle ; API, formats ouverts</td>
+<td>échanges des relevés d'heures</td>
+<td>F07 § 7</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--chaîne-de-traitement-et-diagnostic-du-taux-de-service-4-points">2.3 – Chaîne de traitement et diagnostic du taux de service (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.b</code> « Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution » ; <code>2.2.d</code> « Outils décisionnels » ; <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés » ; <code>2.2.c</code> « Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model » ; <code>2.2.a</code> « Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique ». Limites : « L'usage des outils ne dispense pas d'une lecture critique des corrélations et biais » ; « L'interprétation doit être reliée à la stratégie globale ». Aucun calcul statistique ni aucune manipulation d'outil.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.2 (taux de service par secteur et par agence, deux lectures), 2.1 (sources, constats de qualité, restitution actuelle) et 2.3 (objectif, restitutions prévues, exigences de qualité).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Chaîne de traitement définie comme une démarche organisée en cinq étapes</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Cinq étapes appliquées au projet (sources, nettoyage, entrepôt, indicateurs, tableaux de bord des agences et de la direction)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Outil de visualisation décisionnelle connecté à l'entrepôt, justifié par les besoins des restitutions (par exemple au regard des tableurs actuels)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Trois constats chiffrés tirés de l'annexe 2.2, avec une hypothèse d'explication pour chacun ; 0,5 pour deux constats avec leur hypothèse</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Deux précautions de lecture et appréciation argumentée de la proposition de M. HAVERCQ</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Méthode descriptive pour le suivi hebdomadaire, exploratoire pour la recherche des causes, justifiées</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Deux représentations visuelles adaptées à leur destinataire et justifiées</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.3 a) – Chaîne de traitement et outil décisionnel</em></p>
+<p>La <strong>chaîne de traitement des données</strong> est la suite organisée des opérations qui transforment des données brutes, issues de sources hétérogènes, en informations fiables restituées à ceux qui décident : collecte, nettoyage, structuration, analyse, restitution. C'est une démarche, non un outil : chaque étape a ses règles, ses responsables et ses contrôles, et la qualité du résultat dépend du maillon le plus faible (F08 § 1) (0,5 pt).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Chaîne du projet « Pilotage des missions »</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Collecte</strong></td>
+<td>extraction chaque nuit, par les interfaces des applications, des commandes, contrats de mission, relevés d'heures et factures du logiciel de gestion, des fiches du portail des intérimaires et des commandes et validations du portail des clients ; reprise unique des tableurs des agences pendant le nettoyage, puis abandon de ces tableurs</td>
+</tr>
+<tr class="even">
+<td><strong>Nettoyage</strong></td>
+<td>application des règles du dictionnaire : dédoublonnage des candidats, rattachement des codes locaux à la liste unique des métiers, contrôle des commandes sans date ni heure de réception, statut de la commande selon la définition unique ; journal des rejets (au plus 1 % des lignes, chaque rejet expliqué)</td>
+</tr>
+<tr class="odd">
+<td><strong>Structuration</strong></td>
+<td>chargement dans l'entrepôt, historisé depuis 2024 : faits (commandes, missions, heures) analysés selon des axes communs (date, agence, secteur et client, métier) ; calcul des indicateurs selon le dictionnaire ; rapprochement mensuel du nombre de commandes avec le logiciel de gestion</td>
+</tr>
+<tr class="even">
+<td><strong>Analyse</strong></td>
+<td>taux de service, délai de pourvoi, commandes non pourvues, missions renouvelées et intérimaires délégués de nouveau, par agence, secteur, métier et client, comparés à la cible de 90 % et à la période précédente</td>
+</tr>
+<tr class="odd">
+<td><strong>Restitution</strong></td>
+<td>tableau de bord hebdomadaire de chaque agence (données de la veille disponibles à 7 heures, accès limité à l'agence et aux totaux du réseau), tableau de bord mensuel de la direction ; puis décisions et actions (plan d'action des agences, revue en comité de direction)</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt pour la chaîne appliquée.)</p>
+<p><strong>Outil décisionnel adapté</strong> (0,5 pt) : un <strong>outil de visualisation décisionnelle</strong> (informatique décisionnelle en libre-service gouverné), connecté à l'entrepôt : rafraîchissement automatique chaque nuit, publication à 46 agences et à la direction, droits d'accès par agence, indicateurs calculés une seule fois selon le dictionnaire, filtres par secteur, métier et client. Le tableur avancé, outil actuel, ne convient pas à ces restitutions : un classeur par agence, des définitions divergentes, des versions multiples, une synthèse obtenue trois semaines après la fin du mois ; il reste utile pour des analyses ponctuelles du contrôle de gestion à partir de l'entrepôt. L'outil ne suffit pas : il suppose des définitions partagées, des propriétaires et la formation des directeurs d'agence (l'informatique décisionnelle est une démarche).</p>
+<p><em>2.3 b) – Diagnostic du taux de service</em></p>
+<p><strong>Trois constats et leurs hypothèses</strong> (1 pt) :</p>
+<ol type="1">
+<li><strong>Une baisse de trois points concentrée sur la logistique.</strong> Le taux du réseau passe de 88 % à 85 % ; l'industrie (90 %) et le bâtiment (89 % → 90 %) sont stables, la logistique perd sept points (87 % → 80 %) et le tertiaire deux (82 % → 80 %). La logistique pèse 40 % des commandes mais 8 des 15 milliers de commandes non pourvues, plus de la moitié. <em>Hypothèse</em> : des commandes passées très tard et pour plusieurs postes à la fois (délai moyen de pourvoi d'un jour, d'une demi-journée à Lens ; commandes « la veille à 17 heures pour le lendemain à 5 heures ») : l'agence doit trouver dans la soirée plusieurs intérimaires disponibles, ce que l'absence de disponibilités enregistrées rend difficile.</li>
+<li><strong>Le taux de service est plus faible là où les intérimaires sont moins fidélisés.</strong> Dans la logistique, 30 % des missions sont renouvelées et 50 % des intérimaires sont délégués de nouveau dans les trois mois, contre 50 % et 70 % dans l'industrie ; à Lens, 25 % et 40 %, contre 60 % et 80 % à Évreux. <em>Hypothèse</em> : faute d'être rappelés à la fin de leur mission, les intérimaires de la logistique ne restent pas dans le vivier de QUENTALIS Emploi (« nous les perdons ») ; l'agence doit alors chercher de nouveaux candidats à chaque commande urgente. C'est une corrélation : la nature des missions (courtes, pour des pointes d'activité) peut expliquer à la fois une fidélisation et un taux de service plus faibles.</li>
+<li><strong>Les écarts entre agences mêlent performance et mesure.</strong> Évreux affiche 95 % et Lens 75 %, vingt points d'écart ; mais Lens applique la définition la plus stricte (intérimaire présent le premier jour, commande partielle comptée comme non pourvue), Évreux la plus large (candidat proposé, commandes annulées exclues), et Saint-Quentin ne saisit pas toutes ses commandes non pourvues. Les profils diffèrent aussi : 70 % des commandes de Lens viennent de la logistique, 60 % de celles d'Évreux de l'industrie. <em>Hypothèse</em> : une partie de l'écart tient à la définition et au secteur, non à la qualité du travail de l'agence ; comparée à la logistique du réseau (80 %, selon des définitions elles-mêmes hétérogènes), Lens reste en dessous, mais l'écart réel est bien inférieur à vingt points.</li>
+</ol>
+<p>(0,5 pt pour deux constats chiffrés avec leur hypothèse, 1 pt pour trois.)</p>
+<p><strong>Deux précautions de lecture et appréciation de la proposition de M. HAVERCQ</strong> (0,5 pt) :</p>
+<ul>
+<li><em>Des données incomplètes et hétérogènes</em> : chaque agence a sa définition, et environ 4 000 commandes non pourvues n'ont jamais été saisies ; en les réintégrant, le taux du réseau serait plutôt de l'ordre de 82 % (85 milliers sur 104), et non de 85 %. Le délai de pourvoi est fragile : l'heure de réception manque pour environ 40 % des commandes.</li>
+<li><em>Des comparaisons à manier avec prudence</em> : deux années seulement, des moyennes qui masquent la dispersion entre clients et entre métiers, un effet de structure (une agence orientée vers la logistique paraît moins performante qu'une agence orientée vers l'industrie) et des corrélations qui ne prouvent pas de causalité ; le biais de confirmation guette celui qui cherche dans les chiffres la preuve d'une conviction (« la méthode d'Évreux »).</li>
+</ul>
+<p><em>La proposition de M. HAVERCQ</em> : l'objectif de 90 % est celui du plan, mais <strong>le classement mensuel des agences est prématuré</strong>. Établi sur ces chiffres, il récompenserait la définition la plus large et pénaliserait les agences qui mesurent strictement ; il inciterait Lens à changer de définition plutôt que de pratiques (effet pervers), comme le dit Mme DESVRAINE. Il faut d'abord la définition unique du dictionnaire et la saisie de toutes les commandes, puis des cibles par secteur ou des comparaisons entre agences de profil voisin ; ce que fait Évreux pour fidéliser ses intérimaires mérite d'être étudié, mais n'est pas démontré par ces seuls chiffres.</p>
+<p><em>2.3 c) – Méthodes d'analyse et représentations visuelles</em></p>
+<p><strong>Méthodes</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>Suivi hebdomadaire des agences : analyse descriptive.</strong> Il s'agit de constater ce qui s'est passé (taux de service, délai, commandes non pourvues de la semaine), de le comparer à la cible et à la période précédente, avec des indicateurs stables et définis une fois pour toutes ; le directeur d'agence agit sur ce constat.</li>
+<li><strong>Causes de la baisse dans la logistique : analyse exploratoire.</strong> Il s'agit de chercher pourquoi, sans hypothèse arrêtée : croiser le taux de service avec le délai entre la commande et le début de la mission, le nombre de postes par commande, le métier, le client, l'heure de la commande et la fidélisation des intérimaires, repérer des régularités et des cas atypiques. Les pistes trouvées sont à vérifier avec les agences avant d'en tirer des décisions. Une analyse prédictive n'est pas adaptée aujourd'hui : les données ne sont ni fiables ni homogènes, et QUENTALIS Emploi ne compte aucun analyste de données.</li>
+</ul>
+<p><strong>Deux représentations visuelles</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>Pour les directeurs d'agence</strong> : une <strong>jauge ou une barre de progression</strong> du taux de service de la semaine par rapport à la cible de 90 %, accompagnée d'un <strong>diagramme en barres horizontales triées</strong> des commandes non pourvues de la semaine par métier ou par client. Le directeur voit d'un coup d'œil s'il atteint la cible et où agir ; les barres triées se lisent sans calcul.</li>
+<li><strong>Pour le comité de direction</strong> : des <strong>courbes mensuelles du taux de service par secteur</strong> (quatre courbes, sur au moins douze mois), avec la ligne de la cible de 90 %, sur un axe dont l'origine est indiquée et qui n'amplifie pas artificiellement les écarts. Le comité voit la tendance, le décrochage de la logistique et l'écart à l'objectif du plan. Un classement brut des agences, un diagramme circulaire ou un graphique en trois dimensions sont à éviter.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Chaîne présentée avec le vocabulaire décisionnel (collecte, ETL, entrepôt, restitution), si les cinq étapes du programme y figurent ; la décision et l'action ajoutées comme sixième étape.</li>
+<li>Autres constats tirés de l'annexe 2.2, s'ils sont chiffrés : délai de pourvoi plus long dans le tertiaire (4 jours) pour un taux de service bas, ou situation de Saint-Quentin, stable à 90 % mais dont le taux est surestimé.</li>
+<li>Autres hypothèses plausibles et présentées comme telles : manque de caristes disponibles, horaires des agences, pratiques des clients qui passent commande à plusieurs agences.</li>
+<li>Autre précaution : faiblesse de l'échantillon des trois agences (8 500 commandes sur 100 000), taux reconstitué non calculé si le sens de l'effet (surestimation) est donné.</li>
+<li>Acceptation de l'objectif de 90 % pour chaque agence, si la définition unique et la saisie complète sont posées comme préalables et si le classement est rejeté ou différé.</li>
+<li>Représentation pour la direction sous forme de barres groupées par agence et par secteur, de carte des agences en taux (et non en volumes) ou de tableau croisé avec mise en forme conditionnelle, si le choix est justifié et les biais évités ; outil cité comme exemple de catégorie, jamais comme solution en soi.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Informatique décisionnelle réduite à un outil</em> (<code>JUR-D02</code> BI réduite à un simple outil ; <code>ET-05</code>) — « il suffit d'acheter un outil de visualisation » ; juste : chaîne, définitions, propriétaires, formation.</li>
+<li><em>Corrélation présentée comme causalité</em> (<code>ET-26</code>) — « la fidélisation fait le taux de service » ; juste : hypothèse à vérifier, facteur commun possible.</li>
+<li><em>Lecture des chiffres sans critique de leur production</em> (<code>JUR-D06</code> prudence d'interprétation) — comparer Évreux et Lens sans voir que leurs définitions diffèrent ; reprendre le classement de M. HAVERCQ.</li>
+<li><em>Constats non chiffrés ou paraphrase de l'annexe</em> (<code>JUR-T03</code> analyser, ne pas décrire) — juste : constat, hypothèse, conséquence pour la décision.</li>
+<li><em>Calcul statistique ou analyse prédictive proposée</em> — non demandés, et non adaptés à des données non fiables.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chaîne décisionnelle : collecte, nettoyage, structuration, analyse, restitution</td>
+<td>définition et application</td>
+<td>F08 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Analyses descriptive, exploratoire, prédictive</td>
+<td>choix de la méthode</td>
+<td>F08 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Choix et critique d'une représentation ; biais de lecture ; corrélation et causalité</td>
+<td>représentations, précautions</td>
+<td>F08 § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Outils décisionnels en principe (tableur avancé, outils de visualisation)</td>
+<td>choix de l'outil</td>
+<td>F08 § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--cycle-de-vie-et-hébergement-des-données-15-point">2.4 – Cycle de vie et hébergement des données (1,5 point)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.b</code> « Étapes du cycle de vie des données : création, stockage, usage, archivage, suppression » ; <code>2.3.d</code> « Enjeux du Big Data, cloud computing, datacenters et souveraineté numérique ». Limites : « L'expertise technique des infrastructures (serveurs, réseaux) n'est pas attendue » ; aucune analyse juridique, les durées de conservation sont données.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.3 C et G (options d'hébergement, données concernées, exigence d'un grand compte, durées de conservation), 2.1 C (fiches sans contact, notes des agences), 2.4 (RGPD, Data Act, SecNumCloud) et 1.1 (budget du SI).</p>
+<p><strong>Barème indicatif (1,5 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Cinq étapes du cycle de vie présentées et appliquées aux données des candidats et des intérimaires, avec les durées de l'annexe 2.3 G</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux écarts entre la pratique et les durées, tirés des annexes (par exemple les fiches sans contact depuis plus de deux ans et les notes des agences jamais supprimées), avec leur conséquence pour le projet</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b</td>
+<td>Souveraineté numérique définie ; deux options appréciées selon les trois critères de la consigne ; recommandation justifiée par le cas (sensibilité des données, exigence du grand compte)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.4 a) – Cycle de vie des données des candidats et des intérimaires</em></p>
+<p>Le <strong>cycle de vie des données</strong> décrit les étapes qu'une donnée traverse, de sa création à sa suppression, avec pour chacune une règle, un lieu et un responsable (F07 § 8.4).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Données des candidats et des intérimaires de QUENTALIS Emploi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Création</strong></td>
+<td>inscription sur le portail des intérimaires ou en agence, dépôt des documents, création d'une seule fiche par personne (contrôle de doublon) et des seules données nécessaires</td>
+</tr>
+<tr class="even">
+<td><strong>Stockage</strong></td>
+<td>base active du logiciel de gestion et du portail ; dans l'entrepôt, les seules données utiles au pilotage, avec un accès limité selon l'agence</td>
+</tr>
+<tr class="odd">
+<td><strong>Usage</strong></td>
+<td>recherche et proposition des candidats, délégation, relevés d'heures et facturation, pilotage du taux de service et de la fidélisation dans l'entrepôt</td>
+</tr>
+<tr class="even">
+<td><strong>Archivage</strong></td>
+<td>contrats de mission et relevés d'heures archivés, avec un accès réservé au centre de services, jusqu'à la fin de la cinquième année qui suit la fin de la mission</td>
+</tr>
+<tr class="odd">
+<td><strong>Suppression</strong></td>
+<td>fiche et documents d'un candidat jamais délégué deux ans après le dernier contact ; fiche et documents non liés à une mission deux ans après la dernière mission d'un intérimaire ; contrats et relevés à la fin de l'archivage ; seules les statistiques qui ne permettent plus d'identifier une personne sont conservées sans limite</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt.)</p>
+<p><strong>Deux écarts et leur conséquence pour le projet</strong> (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Environ 24 000 fiches (30 %) sans mission ni contact depuis plus de deux ans</strong> : selon la politique interne, celles des candidats jamais délégués et des intérimaires sans mission depuis deux ans auraient dû être supprimées. <em>Conséquence</em> : purger ces fiches <strong>avant</strong> le nettoyage et le chargement (tâche C), plutôt que de les dédoublonner et de les charger dans l'entrepôt ; programmer ensuite la suppression automatique à l'échéance, dans les applications sources comme dans l'entrepôt.</li>
+<li><strong>Les notes des agences sur les intérimaires ne sont couvertes par aucune durée et ne sont jamais supprimées</strong> ; en texte libre, elles contiennent des appréciations sur les personnes. <em>Conséquence</em> : ne pas les charger dans l'entrepôt (et ne pas les verser dans un lac) ; demander au délégué à la protection des données et au propriétaire des données de compléter la politique, puis structurer ce qui est utile (par exemple des disponibilités) et purger le reste. La durée de conservation devient une rubrique du dictionnaire de données.</li>
+</ol>
+<p><em>2.4 b) – Souveraineté numérique et choix de l'hébergement</em></p>
+<p>La <strong>souveraineté numérique</strong> est la capacité d'une organisation à garder la maîtrise de ses données et de ses traitements : leur localisation, le droit auquel est soumis celui qui les héberge, sa dépendance à l'égard d'un fournisseur (réversibilité) et ses compétences (F07 § 8.5 ; F03 § 5.3). Elle ne se réduit pas à la localisation des centres de données.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>H1 – Fournisseur de cloud public</th>
+<th>H2 – Prestataire français</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Droit applicable</td>
+<td>soumis au droit de son pays d'origine, qui peut permettre à ses autorités de demander l'accès aux données, même hébergées dans l'Union européenne : la localisation européenne ne protège pas de ce risque</td>
+<td>offre qualifiée SecNumCloud, référentiel qui tient compte de la protection contre l'application de lois extra-européennes (annexe 2.4)</td>
+</tr>
+<tr class="even">
+<td>Dépendance et réversibilité</td>
+<td>traitements construits avec les services intégrés du fournisseur, à reconstruire en cas de départ ; le Data Act facilite le changement de fournisseur, sans supprimer cette dépendance</td>
+<td>restitution des données et des traitements dans des formats ouverts, assistance comprise</td>
+</tr>
+<tr class="odd">
+<td>Services</td>
+<td>nombreux services d'analyse prêts à l'emploi</td>
+<td>services plus limités, suffisants pour un entrepôt et ses tableaux de bord</td>
+</tr>
+<tr class="even">
+<td>Coût</td>
+<td>40 k€ par an pour l'entrepôt</td>
+<td>60 k€ par an, soit 20 k€ de plus, environ 0,6 % du budget du SI de 3,5 M€</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommandation : H2</strong>, parce que l'entrepôt contiendra l'identité, les qualifications et les missions de dizaines de milliers de candidats et d'intérimaires, ainsi que les tarifs et les heures facturées des clients ; parce qu'un grand compte de l'industrie aéronautique l'exige depuis janvier 2027 et que d'autres pourraient suivre ; et parce que la réversibilité y est meilleure, pour un surcoût faible. Dans les deux cas, l'hébergeur est un sous-traitant qui agit sur instructions de QUENTALIS Emploi, dans le cadre d'un contrat écrit (RGPD, article 28) (0,5 pt pour l'ensemble de la réponse b).</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Cycle de vie présenté en six ou sept étapes (collecte, stockage, traitement, partage, archivage, destruction), si les cinq étapes du programme y figurent et si les durées sont appliquées.</li>
+<li>Autre écart pertinent : doublons de fiches qui prolongent la conservation d'une personne au-delà de la durée prévue, ou proposition de M. DUQUESNEL de tout conserver dans un lac.</li>
+<li>Anonymisation des données avant leur conservation sans limite, présentée comme condition des statistiques de l'entrepôt.</li>
+<li>Recommandation de H1 assortie de conditions (données des clients sensibles hébergées ailleurs, chiffrement dont QUENTALIS garde les clés, plan de réversibilité), si le risque lié au droit applicable est identifié et si l'exigence du grand compte est traitée.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Hébergement « souverain » assimilé à un hébergement en Europe ou en France</em> (<code>ET-37</code>) — juste : le droit applicable au prestataire et la dépendance comptent autant que la localisation.</li>
+<li><em>Analyse juridique des durées ou des transferts</em> — détermination de durées légales, régime des transferts hors de l'Union européenne ; non attendue : les durées sont données.</li>
+<li><em>Statut d'un texte affirmé sans date</em> (<code>ET-41</code>) — juste : renvoi à l'annexe 2.4, datée au 31/12/2026.</li>
+<li><em>Expertise technique des infrastructures</em> — description des serveurs, du stockage ou du réseau de l'hébergeur ; non attendue.</li>
+<li><em>Cycle de vie récité sans application</em> (<code>JUR-T01</code>) — juste : étapes appliquées aux fiches, documents, contrats et notes de QUENTALIS Emploi.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cycle de vie et archivage ; souveraineté et portabilité</td>
+<td>étapes, durées, purge ; définition de la souveraineté</td>
+<td>F07 § 8.4 et § 8.5 ; F03 § 5.3</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>minimisation, limitation de la conservation, sous-traitant (article 28)</td>
+<td><code>rgpd</code> / F15 § 5</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+<tr class="odd">
+<td>Règlement (UE) 2023/2854 (Data Act)</td>
+<td>changement de fournisseur d'informatique en nuage</td>
+<td><code>data_act</code> / F07 § 8.5</td>
+<td>applicable depuis le 12/09/2025</td>
+</tr>
+<tr class="even">
+<td>SecNumCloud, version 3.2 (ANSSI)</td>
+<td>qualification des offres d'informatique en nuage, protection contre les lois extra-européennes</td>
+<td><code>secnumcloud_3_2</code> / F03 § 5.3</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="25--planification-et-risques-du-projet--pilotage-des-missions--3-points">2.5 – Planification et risques du projet « Pilotage des missions » (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.5 – Planifier, organiser et conduire des projets de systèmes d'information : <code>1.5.d</code> « Planification des ressources, délais, coûts et qualité » ; <code>1.5.e</code> « Identification et gestion des risques (maintenance, évolutivité, sécurité) » ; <code>1.5.a</code> « Piloter un projet de système d'information, depuis la rédaction du cahier des charges jusqu'à l'analyse des risques et du plan qualité, dans une logique de performance durable ». Limite : le chiffrage budgétaire poste par poste du projet ne relève pas du programme (programme l. 1346-1347).</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.3 D à F (tâches, durées, ressources, contraintes, première estimation, coûts, exigences de qualité), 2.3 B (prestations externes), 2.1 C (qualité des données) et 1.1 (équipe informatique, rotation des chargés de recrutement).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Affectation des ressources et enchaînement : référents sur A, C, E, F et G, donc C et E en série ; ingénieur de données sur B puis D, en parallèle ; diagramme de Gantt lisible</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Durée totale de 18 semaines de travail, pause d'été de huit semaines, mise en production la semaine du 25 octobre 2027 ; critique de l'estimation à 15 semaines</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Quatre jalons datés, cohérents avec le planning</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Enveloppe de 250 k€, temps interne compris (120 + 80 + 30 + 20), et contrôle des exigences de qualité à la recette</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b</td>
+<td>Trois risques avec leur cause, leur effet et leur traitement ; 0,5 pour deux risques</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.5 a) – Planning, durée, jalons, enveloppe et qualité</em></p>
+<p><strong>Affectation des ressources et enchaînement</strong> (0,5 pt). Les référents d'agence interviennent sur A, C, E, F et G et ne peuvent pas mener deux tâches en même temps : C et E, qui ne dépendent que de A, sont donc enchaînées. L'ordre C puis E est préférable : les tableaux de bord sont conçus sur des données nettoyées, et le consultant, qui travaille sur D avec l'ingénieur de données jusqu'au début de juillet, est libre pour E à la rentrée. L'ingénieur de données mène B puis D ; ce chemin (4 + 5 = 9 semaines) se déroule en parallèle et se termine le 2 juillet ; l'ingénieur et le consultant n'étant pas concernés par la pause d'été, D pourrait glisser jusqu'à la fin d'août sans retarder la recette ni obliger le consultant à mener D et E en même temps (environ huit semaines de marge).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Tâche</th>
+<th>Ressources</th>
+<th>Semaines de travail</th>
+<th>Calendrier 2027</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A Cadrage et dictionnaire</td>
+<td>cheffe de projet, consultant, référents</td>
+<td>1 à 3</td>
+<td>3 au 21 mai</td>
+</tr>
+<tr class="even">
+<td>B Hébergement et environnements</td>
+<td>ingénieur de données</td>
+<td>1 à 4</td>
+<td>3 au 28 mai</td>
+</tr>
+<tr class="odd">
+<td>C Nettoyage des données sources</td>
+<td>référents, centre de services</td>
+<td>4 à 9</td>
+<td>24 mai au 2 juillet</td>
+</tr>
+<tr class="even">
+<td>D Flux de collecte et de chargement</td>
+<td>ingénieur de données, consultant</td>
+<td>5 à 9</td>
+<td>31 mai au 2 juillet</td>
+</tr>
+<tr class="odd">
+<td><em>Référents indisponibles</em></td>
+<td>—</td>
+<td>—</td>
+<td><em>5 juillet au 27 août</em></td>
+</tr>
+<tr class="even">
+<td>E Tableaux de bord</td>
+<td>consultant, référents</td>
+<td>10 à 12</td>
+<td>30 août au 17 septembre</td>
+</tr>
+<tr class="odd">
+<td>F Recette dans six agences pilotes</td>
+<td>référents, cheffe de projet</td>
+<td>13 à 15</td>
+<td>20 septembre au 8 octobre</td>
+</tr>
+<tr class="even">
+<td>G Formation</td>
+<td>référents, cheffe de projet</td>
+<td>16 et 17</td>
+<td>11 au 22 octobre</td>
+</tr>
+<tr class="odd">
+<td>H Mise en production</td>
+<td>équipe informatique</td>
+<td>18</td>
+<td>25 au 29 octobre</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Durée, jalons et critique de l'estimation</strong> (0,5 pt pour la durée, la date et la critique ; 0,5 pt pour quatre jalons datés) :</p>
+<ul>
+<li><strong>Durée totale du travail</strong> : 3 + 6 + 3 + 3 + 2 + 1 = <strong>18 semaines</strong> sur le chemin des référents ; avec les huit semaines d'indisponibilité de l'été, <strong>26 semaines</strong> de calendrier : mise en production la semaine du <strong>25 au 29 octobre 2027</strong>, hors des périodes de pointe et deux semaines avant le gel du 15 novembre.</li>
+<li><strong>Jalons</strong> (quatre suffisent) : dictionnaire des données validé par le comité de direction (21 mai) ; environnements d'hébergement prêts (28 mai) ; données nettoyées et flux de chargement opérationnels (2 juillet) ; procès-verbal de recette (8 octobre) ; mise en production dans le réseau (29 octobre) ; bilan d'usage trois mois plus tard (fin janvier 2028).</li>
+<li><strong>Critique de l'estimation à 15 semaines</strong> : elle suppose que les référents mènent C et E en même temps, ce qu'ils ne peuvent pas faire, et ignore leur indisponibilité de juillet et d'août ; elle conduit à une mise en production le 13 août 2027, en pleine période de pointe où elle est interdite, avec une recette prévue en juillet sans les référents.</li>
+</ul>
+<p><strong>Enveloppe et exigences de qualité</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>Enveloppe du projet</strong> : 120 k€ de prestations externes + 80 k€ de temps de l'équipe informatique + 30 k€ de temps des référents + 20 k€ de réserve pour aléas = <strong>250 k€</strong>, soit la moitié de l'enveloppe des projets de 2027 (500 k€) ; le fonctionnement relève du budget courant, hors enveloppe : l'hébergement dès sa mise en place en mai 2027 (60 k€ par an avec H2, annexe 2.3 E), les licences et la maintenance des flux (30 k€ par an) à partir de 2028, soit 90 k€ par an. L'enveloppe est suivie globalement, à chaque jalon, sans gestion poste par poste.</li>
+<li><strong>Contrôle des exigences de qualité</strong> : elles deviennent les <strong>critères d'acceptation de la recette</strong> (tâche F) dans les six agences pilotes : données de la veille disponibles à 7 heures chaque jour de la recette ; au plus 1 % de lignes rejetées à chaque chargement, chaque rejet expliqué ; nombre de commandes du mois identique dans l'entrepôt et dans le logiciel de gestion ; taux de service recalculé à la main sur un échantillon de commandes de chaque agence pilote selon la définition du dictionnaire ; droits d'accès vérifiés (un directeur ne voit que son agence et les totaux du réseau). Le procès-verbal de recette, sans réserve bloquante, conditionne la mise en production ; l'usage (90 % des directeurs d'agence chaque semaine) est mesuré à trois mois.</li>
+</ul>
+<p><em>2.5 b) – Trois risques du projet</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Risque</th>
+<th>Cause</th>
+<th>Effet</th>
+<th>Traitement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Indisponibilité des référents d'agence</strong></td>
+<td>une journée par semaine prise sur l'activité de l'agence, forte rotation des chargés de recrutement, pointes d'activité</td>
+<td>glissement de C, E, F et G, recette écourtée ; mise en production repoussée après le gel du 15 novembre, donc en janvier 2028</td>
+<td>engagement écrit des directeurs d'agence, un suppléant pour chaque référent, calendrier des journées fixé dès mai, suivi des jalons en comité de projet ; la marge de deux semaines avant le gel est préservée</td>
+</tr>
+<tr class="even">
+<td><strong>2. Données sources de mauvaise qualité et définitions non adoptées</strong></td>
+<td>10 % de doublons, 650 codes métiers, commandes non saisies, définitions propres à chaque agence</td>
+<td>indicateurs contestés par les agences, retour aux tableurs, perte de confiance dans l'entrepôt</td>
+<td>dictionnaire validé par le comité de direction au premier jalon, règles de saisie et propriétaires (question 2.2), nettoyage avant chargement, recette sur des données réelles rapprochées du logiciel de gestion, communication sur le changement de définition</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Maintenance et évolutivité des flux de chargement</strong></td>
+<td>flux construits sur un logiciel de gestion en mode SaaS, que l'éditeur met à jour plusieurs fois par an ; connaissance concentrée sur un ingénieur et un consultant</td>
+<td>flux interrompus ou données fausses après une mise à jour, sans que les agences s'en aperçoivent</td>
+<td>utiliser l'API documentée plutôt que des extractions ad hoc, contrôle du journal des rejets et du rapprochement après chaque mise à jour, maintenance corrective et évolutive prévue (10 k€ par an), documentation des flux et transfert des compétences du consultant à l'équipe informatique</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt pour deux risques complets, 1 pt pour trois.)</p>
+<p>Le planning tient compte des ressources réelles et du calendrier de l'activité, les exigences de qualité sont vérifiées avant la mise en production et les risques renvoient aux constats des annexes : c'est le pilotage d'un projet dans une logique de performance durable (valeur pour les agences, qualité, maîtrise de la maintenance).</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Ordre E puis C : si C est interrompue par la pause d'été (trois semaines avant, trois après), même durée de 18 semaines et même date de mise en production ; si C n'est pas interrompue (du 30 août au 8 octobre), F, G et H glissent et la mise en production tombe la semaine du 15 novembre, dans le gel : elle est reportée à janvier 2028. Ce planning est accepté si le report est vu et justifié ; il montre l'intérêt de l'ordre C puis E. Dans les deux cas, le chevauchement de E et de D pour le consultant est à signaler.</li>
+<li>Hébergement des mois de 2027 (à partir de mai) ajouté à l'enveloppe, s'il est présenté comme une hypothèse.</li>
+<li>Diagramme de Gantt dessiné à la main avec des barres et des losanges pour les jalons, en semaines ou en dates, sans tableau.</li>
+<li>Autres jalons pertinents (choix de l'hébergement, fin de la formation), s'ils sont datés et cohérents avec le planning.</li>
+<li>Autres risques appuyés sur les annexes : confidentialité des données des intérimaires pendant la recette ou droits d'accès mal réglés entre agences ; dépendance au consultant ; adoption insuffisante par les directeurs d'agence ; retard de l'hébergeur.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Gantt sans ressources ni jalons</em> (<code>JUR-P01</code> Gantt lisible et pertinent) — tâches enchaînées au plus tôt sans voir que les référents ne mènent qu'une tâche à la fois.</li>
+<li><em>Reprise de l'estimation à 15 semaines</em> — mise en production en août, période interdite.</li>
+<li><em>Risques génériques</em> (<code>JUR-P02</code> facteurs clés de succès et risques dans le contexte) — « risque de retard », sans cause tirée des annexes ni traitement.</li>
+<li><em>Chiffrage du projet poste par poste</em> (coûts par tâche, écarts, valeur acquise) — non attendu : une enveloppe en sommes rondes suffit.</li>
+<li><em>Qualité réduite à des tests techniques</em> — juste : critères d'acceptation métiers (définition du taux de service, rapprochement, droits) et mesure de l'usage.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Planification : WBS et Gantt à partir d'un texte, contraintes de ressources, jalons</td>
+<td>planning, durée, critique de l'estimation</td>
+<td>F05 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Risques projet : identifier, coter, traiter, suivre</td>
+<td>trois risques et leur traitement</td>
+<td>F05 § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Recette, critères d'acceptation, maintenance corrective et évolutive</td>
+<td>contrôle des exigences de qualité, risque 3</td>
+<td>F05 § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

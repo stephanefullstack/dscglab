@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Organiser et exploiter les données des commandes et des missions : QUENTALIS Emploi : entrepôt des données des missions, taux de service et planification du projet « Pilotage des missions »</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Organiser et exploiter les données des commandes et des missions</h1><p class="cas">QUENTALIS Emploi : entrepôt des données des missions, taux de service et planification du projet « Pilotage des missions »</p><p><strong>DOSSIER 2 – ORGANISER ET EXPLOITER LES DONNÉES DES COMMANDES ET DES MISSIONS (13 points)</strong></p>
+<p>Durée conseillée : 59 min (13 points sur 40, pour une épreuve de 3 heures, coefficient 1 ; environ 4,5 minutes par point).</p>
+<p>Réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document et matériel autorisés</strong> : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Ce dossier est l'un des trois dossiers indépendants du sujet d'entraînement complet n° 8, construits sur un même cas : la présentation et l'annexe 1.1 sont communes aux trois dossiers ; chaque dossier comporte en outre ses propres annexes.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en mars 2027. QUENTALIS Emploi est une entreprise de travail temporaire indépendante dont le siège est à Amiens. Fondée en 1994 par M. Arnaud VERQUELLE, qui la préside toujours, elle est constituée en société par actions simplifiée, détenue à 70 % par la famille fondatrice et à 30 % par vingt-cinq cadres et directeurs d'agence. Elle exploite un réseau de 46 agences en Hauts-de-France et en Normandie, qui délèguent des intérimaires auprès d'environ 3 200 entreprises clientes de l'industrie, de la logistique, du bâtiment et du tertiaire ; un centre de services installé à Amiens assure la paie des intérimaires, la facturation et la relation avec les intérimaires. QUENTALIS Emploi emploie 310 salariés permanents et a délégué en 2026 environ 19 000 intérimaires différents, soit 5 800 personnes en équivalent temps plein. Son chiffre d'affaires de 2026 s'élève à 290 millions d'euros ; 3,5 millions d'euros sont consacrés au système d'information. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>Le plan « QUENTALIS 2030 », adopté par le comité de direction en décembre 2026, fixe trois priorités : défendre et moderniser le modèle d'agence de proximité face aux plateformes numériques de mise en relation ; mieux exploiter les données des commandes, des missions et des intérimaires pour servir plus vite et plus sûrement les clients ; sécuriser le système d'information, transmettre les savoir-faire des équipes et réduire l'empreinte du numérique. La directrice générale, Mme Nadia BRÉQUEMONT, en rend compte chaque trimestre au président.</p>
+<p>Vous êtes contrôleur de gestion de QUENTALIS Emploi depuis 2025, rattaché à la directrice administrative et financière, et chargé du pilotage économique du système d'information et des projets de transformation. Mme BRÉQUEMONT vous demande trois travaux : éclairer la stratégie du système d'information et en piloter les coûts (dossier 1) ; organiser et exploiter les données des commandes et des missions (dossier 2) ; sécuriser le système d'information du réseau, transmettre les savoir-faire et rendre le numérique plus responsable (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-de-quentalis-emploi-et-chiffres-clés">ANNEXE 1.1 – Présentation de QUENTALIS Emploi et chiffres clés</h3>
+<p>QUENTALIS Emploi est une société par actions simplifiée, entreprise de travail temporaire indépendante fondée en 1994, dont le siège est à Amiens. Elle est détenue à 70 % par la famille fondatrice et à 30 % par vingt-cinq cadres et directeurs d'agence. Ses agences recrutent des intérimaires et les délèguent auprès d'entreprises clientes ; le centre de services d'Amiens établit la paie des intérimaires et la facturation des clients et répond aux questions des intérimaires. L'exercice social coïncide avec l'année civile : l'exercice 2026 est le dernier exercice clos.</p>
+<p><strong>Chiffres clés de 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chiffre d'affaires</td>
+<td>290 M€ : industrie 40 % (116 M€), logistique 30 % (87 M€), bâtiment 20 % (58 M€), tertiaire 10 % (29 M€)</td>
+</tr>
+<tr class="even">
+<td>Clients</td>
+<td>environ 3 200 entreprises clientes, dont une trentaine de grands comptes qui représentent environ 35 % du chiffre d'affaires</td>
+</tr>
+<tr class="odd">
+<td>Intérimaires et candidats</td>
+<td>environ 19 000 intérimaires différents délégués dans l'année, soit 5 800 personnes en équivalent temps plein ; environ 80 000 candidats inscrits dans le fichier</td>
+</tr>
+<tr class="even">
+<td>Réseau</td>
+<td>46 agences en Hauts-de-France et en Normandie ; un centre de services à Amiens ; le siège à Amiens</td>
+</tr>
+<tr class="odd">
+<td>Effectif permanent</td>
+<td>310 salariés : environ 200 dans les agences (directeurs d'agence, chargés de recrutement, assistants), 70 au centre de services (paie des intérimaires, facturation, relation avec les intérimaires), 40 au siège, dont une équipe informatique de 9 personnes ; forte rotation des chargés de recrutement</td>
+</tr>
+<tr class="even">
+<td>Système d'information</td>
+<td>un logiciel de gestion du travail temporaire, en mode SaaS, fourni par un éditeur spécialisé (commandes des clients, contrats de mission, relevés d'heures, paie des intérimaires, facturation) ; un portail et une application mobile des intérimaires ; un portail des clients</td>
+</tr>
+<tr class="odd">
+<td>Budget du système d'information</td>
+<td>3,5 M€ (environ 1,2 % du chiffre d'affaires)</td>
+</tr>
+<tr class="even">
+<td>Plan « QUENTALIS 2030 » (adopté en décembre 2026)</td>
+<td>défendre et moderniser le modèle d'agence de proximité face aux plateformes numériques de mise en relation ; mieux exploiter les données des commandes, des missions et des intérimaires pour servir plus vite et plus sûrement les clients ; sécuriser le système d'information, transmettre les savoir-faire des équipes et réduire l'empreinte du numérique</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Organigramme simplifié (mars 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Fonction</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Présidence</td>
+<td>président fondateur</td>
+<td>M. Arnaud VERQUELLE</td>
+</tr>
+<tr class="even">
+<td>Direction générale</td>
+<td>directrice générale, qui porte le plan « QUENTALIS 2030 » et anime le comité de direction</td>
+<td>Mme Nadia BRÉQUEMONT</td>
+</tr>
+<tr class="odd">
+<td>Rattaché à la directrice générale</td>
+<td>directeur du réseau et des agences (46 directeurs d'agence)</td>
+<td>M. Julien HAVERCQ</td>
+</tr>
+<tr class="even">
+<td>Rattaché à la directrice générale</td>
+<td>directeur commercial et des grands comptes</td>
+<td>M. Stéphane DUQUESNEL</td>
+</tr>
+<tr class="odd">
+<td>Rattachée à la directrice générale</td>
+<td>responsable du centre de services (paie des intérimaires, facturation, relation avec les intérimaires)</td>
+<td>Mme Aurélie CAMBRELIN</td>
+</tr>
+<tr class="even">
+<td>Rattachée à la directrice générale</td>
+<td>directrice administrative et financière (comptabilité, contrôle de gestion, juridique, achats)</td>
+<td>Mme Claire MAUBRECQ</td>
+</tr>
+<tr class="odd">
+<td>Rattaché à la directrice administrative et financière</td>
+<td>contrôleur de gestion</td>
+<td>vous</td>
+</tr>
+<tr class="even">
+<td>Rattaché à la directrice générale</td>
+<td>directeur des systèmes d'information (équipe informatique de 9 personnes)</td>
+<td>M. Thomas ROUVELIN</td>
+</tr>
+<tr class="odd">
+<td>Rattachée à la directrice générale</td>
+<td>responsable des ressources humaines des salariés permanents</td>
+<td>Mme Virginie DORVELLE</td>
+</tr>
+</tbody>
+</table>
+<p>Le comité de direction réunit chaque mois la directrice générale et les six responsables qui lui sont rattachés.</p>
+<h3 id="annexe-21--les-données-des-commandes-et-des-missions-note-de-m-thomas-rouvelin-directeur-des-systèmes-dinformation-février-2027">ANNEXE 2.1 – Les données des commandes et des missions (note de M. Thomas ROUVELIN, directeur des systèmes d'information, février 2027)</h3>
+<p><strong>A. D'où viennent nos données (volumes de 2026)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Données</th>
+<th>Volume 2026</th>
+<th>Forme</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Logiciel de gestion du travail temporaire (SaaS)</td>
+<td>commandes des clients, saisies par les agences (90 %) ou par les clients sur le portail des clients (10 %)</td>
+<td>100 milliers de commandes</td>
+<td>données structurées</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>contrats de mission, renouvellements compris</td>
+<td>140 milliers</td>
+<td>données structurées</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>relevés d'heures hebdomadaires</td>
+<td>300 milliers</td>
+<td>données structurées, après saisie ou validation</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>factures</td>
+<td>60 milliers</td>
+<td>données structurées</td>
+</tr>
+<tr class="odd">
+<td>Portail et application des intérimaires</td>
+<td>fiches des candidats (identité, coordonnées, métiers recherchés, qualifications), saisies par les candidats ou par les agences</td>
+<td>80 milliers de fiches</td>
+<td>données structurées</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>documents déposés (pièces d'identité, diplômes, habilitations, curriculum vitae)</td>
+<td>150 milliers de fichiers</td>
+<td>images et documents</td>
+</tr>
+<tr class="odd">
+<td>Fichiers tenus par les agences</td>
+<td>tableurs de suivi des commandes non pourvues, tenus par 30 agences sur 46, chacune avec ses colonnes</td>
+<td>environ 12 milliers de lignes</td>
+<td>tableurs, formats propres à chaque agence</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>notes sur les intérimaires (« fiable », « à ne plus proposer chez tel client », disponibilités)</td>
+<td>environ 40 milliers de notes</td>
+<td>texte libre, dans des tableurs ou dans un champ de commentaire du logiciel</td>
+</tr>
+</tbody>
+</table>
+<p>Les disponibilités des intérimaires ne sont saisies nulle part de manière structurée : les chargés de recrutement les notent après chaque appel, chacun à sa façon.</p>
+<p><strong>B. Les relevés d'heures des grands comptes</strong></p>
+<p>La trentaine de grands comptes nous transmettent environ 100 milliers des 300 milliers de relevés d'heures de l'année.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Mode de transmission</th>
+<th>Grands comptes</th>
+<th>Relevés d'heures 2026</th>
+<th>Traitement au centre de services</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Courriel avec un tableur ou un PDF, dans la présentation propre au client</td>
+<td>12</td>
+<td>35 milliers</td>
+<td>ressaisie dans le logiciel de gestion</td>
+</tr>
+<tr class="even">
+<td>Fichier extrait du logiciel de gestion des temps du client, dans son format propre, déposé sur un espace d'échange</td>
+<td>10</td>
+<td>35 milliers</td>
+<td>retraitement par une macro différente pour chaque client, puis contrôle</td>
+</tr>
+<tr class="odd">
+<td>Saisie par le client sur le portail des clients</td>
+<td>7</td>
+<td>20 milliers</td>
+<td>aucune ressaisie</td>
+</tr>
+<tr class="even">
+<td>Échange automatisé entre le logiciel de gestion des temps du client et notre logiciel de gestion, par une interface de programmation (API)</td>
+<td>1</td>
+<td>10 milliers</td>
+<td>aucune ressaisie</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>30</strong></td>
+<td><strong>100 milliers</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Trois personnes du centre de services consacrent l'essentiel de leur temps à ces ressaisies et retraitements. En 2026, 1 500 factures des grands comptes ont été corrigées par un avoir à la suite d'une erreur sur les heures ; chaque changement de présentation d'un fichier par un client oblige à refaire sa macro. Le grand compte relié par API l'a demandé lui-même en 2025 ; trois autres ont proposé en 2026 d'ouvrir le même échange. Notre logiciel de gestion dispose d'une API documentée et accepte l'import de relevés d'heures dans un format ouvert et standardisé, publié par l'éditeur.</p>
+<p><strong>C. Constats sur la qualité des données</strong></p>
+<ol type="1">
+<li><strong>« Commande pourvue »</strong> : chaque agence a sa définition. Certaines comptent une commande comme pourvue dès qu'un candidat est proposé au client, d'autres à la signature du contrat de mission, d'autres seulement si l'intérimaire est présent le premier jour. Une commande de dix caristes dont huit postes sont occupés est « pourvue » dans certaines agences, « non pourvue » dans d'autres. Les commandes annulées par le client sont tantôt exclues, tantôt comptées comme non pourvues.</li>
+<li><strong>Commandes non saisies</strong> : environ un tiers des lignes des tableurs de suivi des commandes non pourvues, soit 4 milliers, correspondent à des commandes reçues par téléphone qui n'ont jamais été saisies dans le logiciel de gestion. La date et l'heure de réception d'une commande ne sont enregistrées que si l'assistant la saisit dès l'appel, ce qui n'est pas le cas d'environ 40 % des commandes.</li>
+<li><strong>Codes métiers</strong> : le logiciel de gestion propose une liste de 400 codes métiers ; les agences y ont ajouté 250 codes locaux. Le métier de cariste apparaît sous quatorze libellés différents, et 25 % des commandes portent le code « autre ».</li>
+<li><strong>Doublons de candidats</strong> : un candidat inscrit sur le portail puis reçu en agence, ou inscrit dans deux agences, a souvent deux fiches ; nous estimons les doublons à environ 8 000 fiches sur 80 000 (10 %). Environ 24 000 fiches (30 %) n'ont donné lieu à aucune mission ni à aucun contact depuis plus de deux ans.</li>
+<li><strong>Restitution</strong> : chaque mois, l'équipe informatique extrait du logiciel de gestion un fichier qu'elle adresse au directeur du réseau et des agences ; chaque agence calcule en outre son taux de service dans son propre tableur. Le comité de direction reçoit le taux du réseau environ trois semaines après la fin du mois.</li>
+</ol>
+<h3 id="annexe-22--le-taux-de-service-en-2026">ANNEXE 2.2 – Le taux de service en 2026</h3>
+<p>Le taux de service rapporte les commandes pourvues aux commandes reçues. Chiffres arrondis, établis à partir du logiciel de gestion selon la définition propre à chaque agence.</p>
+<p><strong>A. Par secteur des clients</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Secteur</th>
+<th>Commandes reçues 2026</th>
+<th>Commandes pourvues 2026</th>
+<th>Taux de service 2025 → 2026</th>
+<th>Délai moyen de pourvoi 2026</th>
+<th>Part des missions renouvelées 2026</th>
+<th>Part des intérimaires délégués de nouveau dans les trois mois 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Industrie</td>
+<td>30 milliers</td>
+<td>27 milliers</td>
+<td>90 % → 90 %</td>
+<td>2 jours</td>
+<td>50 %</td>
+<td>70 %</td>
+</tr>
+<tr class="even">
+<td>Logistique</td>
+<td>40 milliers</td>
+<td>32 milliers</td>
+<td>87 % → 80 %</td>
+<td>1 jour</td>
+<td>30 %</td>
+<td>50 %</td>
+</tr>
+<tr class="odd">
+<td>Bâtiment</td>
+<td>20 milliers</td>
+<td>18 milliers</td>
+<td>89 % → 90 %</td>
+<td>3 jours</td>
+<td>40 %</td>
+<td>60 %</td>
+</tr>
+<tr class="even">
+<td>Tertiaire</td>
+<td>10 milliers</td>
+<td>8 milliers</td>
+<td>82 % → 80 %</td>
+<td>4 jours</td>
+<td>30 %</td>
+<td>50 %</td>
+</tr>
+<tr class="odd">
+<td><strong>Réseau</strong></td>
+<td><strong>100 milliers</strong></td>
+<td><strong>85 milliers</strong></td>
+<td><strong>88 % → 85 %</strong></td>
+<td><strong>2 jours</strong></td>
+<td><strong>38 %</strong></td>
+<td><strong>58 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Trois agences</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Agence</th>
+<th>Profil</th>
+<th>Commandes reçues 2026</th>
+<th>Commandes pourvues 2026</th>
+<th>Taux de service 2025 → 2026</th>
+<th>Délai moyen de pourvoi 2026</th>
+<th>Part des missions renouvelées 2026</th>
+<th>Part des intérimaires délégués de nouveau dans les trois mois 2026</th>
+<th>Définition de la commande pourvue appliquée par l'agence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lens</td>
+<td>logistique, 70 % de ses commandes</td>
+<td>4 000</td>
+<td>3 000</td>
+<td>82 % → 75 %</td>
+<td>0,5 jour</td>
+<td>25 %</td>
+<td>40 %</td>
+<td>intérimaire présent le premier jour ; commande partiellement pourvue comptée comme non pourvue</td>
+</tr>
+<tr class="even">
+<td>Évreux</td>
+<td>industrie, 60 % de ses commandes</td>
+<td>2 000</td>
+<td>1 900</td>
+<td>94 % → 95 %</td>
+<td>3 jours</td>
+<td>60 %</td>
+<td>80 %</td>
+<td>candidat proposé au client ; commandes annulées exclues</td>
+</tr>
+<tr class="odd">
+<td>Saint-Quentin</td>
+<td>généraliste</td>
+<td>2 500</td>
+<td>2 250</td>
+<td>90 % → 90 %</td>
+<td>2 jours</td>
+<td>40 %</td>
+<td>60 %</td>
+<td>contrat de mission signé ; commandes non pourvues suivies dans un tableur, en partie non saisies dans le logiciel</td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. Deux lectures (comité de direction de février 2027)</strong></p>
+<p><strong>M. Julien HAVERCQ, directeur du réseau et des agences</strong> : « Nous avons perdu trois points en un an. Évreux est à 95 %, Lens à 75 % : la méthode d'Évreux doit s'appliquer partout. Je propose de fixer à chaque agence un objectif de 90 % dès le second semestre et de publier chaque mois le classement des agences. »</p>
+<p><strong>Mme Coralie DESVRAINE, directrice de l'agence de Lens</strong> : « À Lens, une commande n'est pourvue que si l'intérimaire est là le premier matin, et une commande de dix caristes dont nous plaçons huit compte comme non pourvue ; à Évreux, proposer un nom suffit. Nos clients logisticiens commandent la veille à 17 heures pour le lendemain à 5 heures. Et quand nos bons intérimaires ne sont pas rappelés dans la semaine qui suit la fin de leur mission, nous les perdons. Un classement établi sur ces chiffres découragera les agences qui mesurent honnêtement. »</p>
+<h3 id="annexe-23--le-projet--pilotage-des-missions--note-de-cadrage-de-m-thomas-rouvelin-directeur-des-systèmes-dinformation-et-de-mme-claire-maubrecq-directrice-administrative-et-financière-mars-2027">ANNEXE 2.3 – Le projet « Pilotage des missions » (note de cadrage de M. Thomas ROUVELIN, directeur des systèmes d'information, et de Mme Claire MAUBRECQ, directrice administrative et financière, mars 2027)</h3>
+<p><strong>A. Objectif</strong></p>
+<p>Alimenter chaque nuit un dépôt de données commun à partir du logiciel de gestion, du portail des intérimaires et du portail des clients, pour produire :</p>
+<ul>
+<li>pour chaque agence, un tableau de bord hebdomadaire : commandes reçues et pourvues, taux de service, délai de pourvoi, commandes non pourvues par métier et par client ;</li>
+<li>pour la direction, un tableau de bord mensuel : taux de service par secteur, par agence et par grand compte, fidélisation des intérimaires.</li>
+</ul>
+<p>Objectif du plan « QUENTALIS 2030 » : un taux de service de 90 % en 2028, mesuré de la même façon dans toutes les agences. Le comité de direction choisira l'architecture et l'hébergement en avril 2027.</p>
+<p><strong>B. Deux options d'architecture (montants en milliers d'euros, hors temps interne)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Option 1 – Entrepôt de données</th>
+<th>Option 2 – Lac de données</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contenu</td>
+<td>données structurées des trois applications, nettoyées et rapprochées selon des définitions communes avant leur chargement, historisées depuis 2024</td>
+<td>toutes les données, structurées ou non (fiches, documents et curriculum vitae, notes des agences, courriels des clients), conservées brutes, sans transformation à l'entrée</td>
+</tr>
+<tr class="even">
+<td>Préparation des données</td>
+<td>règles de transformation fixées une fois pour toutes, avant le chargement</td>
+<td>préparation au moment de chaque analyse</td>
+</tr>
+<tr class="odd">
+<td>Utilisateurs prévus</td>
+<td>46 directeurs d'agence et leurs chargés de recrutement, comité de direction, contrôle de gestion</td>
+<td>un analyste de données, à recruter (QUENTALIS Emploi n'en compte aucun)</td>
+</tr>
+<tr class="even">
+<td>Mise en place</td>
+<td>120 : consultant décisionnel (60 jours à 1 000 €), raccordement des trois applications (30), licences de l'outil de restitution la première année (20), formation (10)</td>
+<td>80</td>
+</tr>
+<tr class="odd">
+<td>Fonctionnement annuel, hors hébergement</td>
+<td>30 : licences de l'outil de restitution (20), maintenance des flux de chargement (10)</td>
+<td>90 : licences (20), analyste de données (70)</td>
+</tr>
+<tr class="even">
+<td>Hébergement annuel</td>
+<td>40 (H1) ou 60 (H2)</td>
+<td>30 (H1) ou 50 (H2)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>M. Stéphane DUQUESNEL, directeur commercial et des grands comptes</strong> : « Prenons le lac : gardons tout, curriculum vitae, notes et courriels compris. Nous ne savons pas encore ce que nous en ferons, mais un jour ces données vaudront de l'or. »</p>
+<p><strong>C. Deux options d'hébergement</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>H1 – Fournisseur de cloud public</th>
+<th>H2 – Prestataire français</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fournisseur</td>
+<td>grand fournisseur dont le siège est situé hors de l'Union européenne ; il reste soumis au droit de son pays d'origine, qui peut, dans certains cas, permettre aux autorités de ce pays de lui demander l'accès aux données qu'il héberge, y compris en Europe</td>
+<td>prestataire dont le capital est majoritairement détenu en France ; offre qualifiée SecNumCloud</td>
+</tr>
+<tr class="even">
+<td>Localisation des données</td>
+<td>centres de données situés dans l'Union européenne</td>
+<td>centres de données situés en France</td>
+</tr>
+<tr class="odd">
+<td>Services</td>
+<td>nombreux services d'analyse intégrés, prêts à l'emploi</td>
+<td>services d'analyse plus limités</td>
+</tr>
+<tr class="even">
+<td>Fin de contrat</td>
+<td>export des données possible ; les traitements construits avec les services intégrés du fournisseur sont à reconstruire ailleurs</td>
+<td>restitution des données et des traitements dans des formats ouverts, assistance comprise</td>
+</tr>
+</tbody>
+</table>
+<p>Données concernées : identité, coordonnées, qualifications et missions des candidats et des intérimaires ; commandes, tarifs et heures facturées des clients. Un grand compte de l'industrie aéronautique demande, depuis janvier 2027, que les données relatives à ses commandes soient hébergées par un prestataire qui ne relève pas d'un droit extérieur à l'Union européenne.</p>
+<p><strong>D. Tâches, durées et ressources (option 1)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Tâche</th>
+<th>Contenu</th>
+<th>Durée</th>
+<th>Ressources</th>
+<th>Antériorités</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>Cadrage et dictionnaire des données (définitions communes, dont celle de la commande pourvue, liste unique des codes métiers)</td>
+<td>3 semaines</td>
+<td>cheffe de projet, consultant, référents d'agence</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>Choix et mise en place de l'hébergement et des environnements</td>
+<td>4 semaines</td>
+<td>ingénieur de données de l'équipe informatique</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>Nettoyage des données sources (doublons de candidats, codes métiers, commandes des tableurs)</td>
+<td>6 semaines</td>
+<td>référents d'agence, assistants du centre de services</td>
+<td>A</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>Construction des flux de collecte et de chargement</td>
+<td>5 semaines</td>
+<td>ingénieur de données, consultant</td>
+<td>A, B</td>
+</tr>
+<tr class="odd">
+<td>E</td>
+<td>Conception des tableaux de bord des agences et de la direction</td>
+<td>3 semaines</td>
+<td>consultant, référents d'agence</td>
+<td>A</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>Recette des données et des tableaux de bord dans six agences pilotes</td>
+<td>3 semaines</td>
+<td>référents d'agence, cheffe de projet</td>
+<td>C, D, E</td>
+</tr>
+<tr class="odd">
+<td>G</td>
+<td>Formation des directeurs d'agence et des chargés de recrutement</td>
+<td>2 semaines</td>
+<td>référents d'agence, cheffe de projet</td>
+<td>F</td>
+</tr>
+<tr class="even">
+<td>H</td>
+<td>Mise en production dans tout le réseau</td>
+<td>1 semaine</td>
+<td>équipe informatique</td>
+<td>G</td>
+</tr>
+</tbody>
+</table>
+<p>Ressources et contraintes :</p>
+<ul>
+<li>la cheffe de projet est une personne de l'équipe informatique, à plein temps sur le projet ; l'ingénieur de données aussi ; les sept autres personnes de l'équipe continuent à faire fonctionner l'existant ;</li>
+<li>les six référents sont des directeurs d'agence ou des chargés de recrutement des agences pilotes ; ils consacrent une journée par semaine au projet et ne peuvent pas mener deux tâches en même temps ; ils ne sont pas disponibles du lundi 5 juillet au vendredi 27 août 2027, en pleine période de remplacements d'été ;</li>
+<li>aucune mise en production n'est possible du 1er juillet au 31 août ni du 15 novembre au 31 décembre, périodes de pointe de l'activité ;</li>
+<li>le projet commence le lundi 3 mai 2027.</li>
+</ul>
+<p>Première estimation de l'équipe informatique : « En enchaînant les tâches au plus tôt, le projet dure 15 semaines : mise en production à la mi-août 2027. »</p>
+<p><strong>E. Coûts du projet (option 1)</strong></p>
+<p>Outre les 120 k€ de prestations externes (B), le temps de l'équipe informatique consacré au projet est valorisé à 80 k€ et celui des référents d'agence à 30 k€ ; la directrice administrative et financière demande une réserve pour aléas de 20 k€. L'hébergement est imputé au budget courant du système d'information dès sa mise en place ; il ne fait pas partie de l'enveloppe du projet. L'enveloppe des projets du budget du système d'information de 2027 est de 500 k€.</p>
+<p><strong>F. Exigences de qualité retenues par le comité de direction</strong></p>
+<ul>
+<li>données de la veille disponibles chaque matin à 7 heures ;</li>
+<li>au plus 1 % de lignes rejetées à chaque chargement, chaque rejet étant expliqué ;</li>
+<li>un taux de service calculé selon la seule définition du dictionnaire, identique dans toutes les restitutions ;</li>
+<li>un nombre de commandes du mois identique dans l'entrepôt et dans le logiciel de gestion ;</li>
+<li>chaque directeur d'agence ne voit que les données de son agence et les totaux du réseau ;</li>
+<li>trois mois après la mise en production, 90 % des directeurs d'agence consultent leur tableau de bord chaque semaine.</li>
+</ul>
+<p><strong>G. Durées de conservation fixées par la politique interne de QUENTALIS Emploi</strong></p>
+<p>Établies en 2024 avec l'avocat de l'entreprise et le délégué à la protection des données ; elles ne sont pas à discuter.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Données</th>
+<th>Durée et sort final</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fiche et documents d'un candidat jamais délégué</td>
+<td>deux ans après le dernier contact, puis suppression</td>
+</tr>
+<tr class="even">
+<td>Fiche et documents d'un intérimaire</td>
+<td>en base active tant qu'il est délégué et pendant deux ans après sa dernière mission ; puis suppression de la fiche et des documents qui ne sont pas liés à une mission</td>
+</tr>
+<tr class="odd">
+<td>Contrats de mission et relevés d'heures</td>
+<td>archivés, avec un accès réservé au centre de services, jusqu'à la fin de la cinquième année qui suit la fin de la mission, puis supprimés</td>
+</tr>
+<tr class="even">
+<td>Statistiques de l'entrepôt</td>
+<td>conservées sans limite si elles ne permettent plus d'identifier une personne (agrégats par agence, métier, client et mois)</td>
+</tr>
+</tbody>
+</table>
+<p>Les notes des agences sur les intérimaires ne sont pas mentionnées dans la politique ; elles ne sont jamais supprimées.</p>
+<h3 id="annexe-24--repères-sur-les-données-et-leur-hébergement-au-31122026">ANNEXE 2.4 – Repères sur les données et leur hébergement (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Texte ou référentiel</th>
+<th>Repères utiles</th>
+<th>Situation au 31/12/2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2016/679 du 27 avril 2016 (RGPD)</td>
+<td>Les données personnelles sont collectées pour des finalités déterminées, limitées à ce qui est nécessaire au regard de ces finalités (minimisation) et conservées sous une forme permettant d'identifier les personnes pendant une durée qui n'excède pas celle nécessaire à ces finalités. Le prestataire qui traite des données pour le compte de l'entreprise (sous-traitant) agit sur ses instructions, dans le cadre d'un contrat écrit (article 28).</td>
+<td>Applicable depuis le 25/05/2018</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2023/2854 (« Data Act »)</td>
+<td>Organise notamment le changement de fournisseur de services d'informatique en nuage : portabilité des données, assistance à la sortie.</td>
+<td>Applicable depuis le 12/09/2025</td>
+</tr>
+<tr class="odd">
+<td>SecNumCloud, version 3.2 (ANSSI)</td>
+<td>Référentiel d'exigences qui permet de qualifier des offres de services d'informatique en nuage, y compris au regard de leur protection contre l'application de lois extra-européennes.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="even">
+<td>DAMA-DMBOK, 2e édition (2017), révision 2024 (DAMA International)</td>
+<td>Référentiel de bonnes pratiques de gestion des données, organisé en onze domaines de connaissance autour de la gouvernance des données (dont la qualité des données, les métadonnées, les entrepôts de données et l'informatique décisionnelle).</td>
+<td>En vigueur</td>
+</tr>
+</tbody>
+</table>
+<p>Aucune analyse juridique n'est attendue : les durées de conservation sont celles de l'annexe 2.3 G.</p>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>Mme BRÉQUEMONT veut que les données servent la deuxième priorité du plan « QUENTALIS 2030 » : servir plus vite et plus sûrement les clients. Avant la décision du comité de direction d'avril 2027, elle vous demande d'éclairer le choix de l'architecture et de l'hébergement du projet « Pilotage des missions », d'organiser la fiabilité des données et de leurs échanges, de porter un diagnostic sur le taux de service et de planifier le projet. Vous mobiliserez pour cela les annexes 1.1, 2.1, 2.2, 2.3 et 2.4 ainsi que vos connaissances professionnelles.</p>
+<p><strong>2.1 – Entrepôt ou lac de données (2,5 points)</strong></p>
+<p>a) Comparez l'entrepôt de données et le lac de données selon quatre critères : la finalité, la structuration des données, les utilisateurs et les coûts, en appliquant chaque critère aux deux options de l'annexe 2.3 B.</p>
+<p>b) Recommandez, en la justifiant par trois besoins de QUENTALIS Emploi tirés des annexes, l'architecture à retenir pour le projet, puis répondez à la proposition de M. DUQUESNEL.</p>
+<p><strong>2.2 – Fiabilité des données et échanges avec les grands comptes (2 points)</strong></p>
+<p>a) Après avoir défini le dictionnaire de données, fixez ses rubriques (définition, règle de gestion ou formule, valeurs admises, source, propriétaire, fréquence de mise à jour) pour deux données clés du projet, la commande pourvue et le taux de service ; proposez ensuite trois règles de qualité, chacune rattachée à un constat de l'annexe 2.1 C, et désignez les responsables de la donnée (propriétaires et intendants).</p>
+<p>b) Proposez l'organisation des échanges des relevés d'heures avec les grands comptes, en montrant l'intérêt des API et des formats ouverts par rapport à la situation de l'annexe 2.1 B, sur les plans technique et organisationnel. Aucun détail technique des échanges n'est attendu.</p>
+<p><strong>2.3 – Chaîne de traitement et diagnostic du taux de service (4 points)</strong></p>
+<p>a) Après avoir défini la chaîne de traitement des données, décrivez celle qui produira les tableaux de bord du projet, de la collecte à la restitution, puis indiquez, en le justifiant, le type d'outil décisionnel adapté à ces restitutions.</p>
+<p>b) À partir de l'annexe 2.2, formulez un diagnostic argumenté du taux de service : trois constats, une hypothèse d'explication pour chacun et deux précautions de lecture, puis appréciez la proposition de M. HAVERCQ. Aucun calcul statistique n'est attendu.</p>
+<p>c) Indiquez, en la justifiant, la méthode d'analyse (descriptive ou exploratoire) adaptée à chacun des deux besoins suivants : le suivi hebdomadaire des agences et la recherche des causes de la baisse du taux de service dans la logistique ; proposez ensuite deux représentations visuelles, l'une pour les directeurs d'agence, l'autre pour le comité de direction. Aucune manipulation d'outil n'est attendue.</p>
+<p><strong>2.4 – Cycle de vie et hébergement des données (1,5 point)</strong></p>
+<p>a) Présentez les cinq étapes du cycle de vie des données des candidats et des intérimaires (création, stockage, usage, archivage, suppression), en les appliquant aux durées de l'annexe 2.3 G, puis relevez deux écarts entre la pratique actuelle et ces durées, en indiquant leur conséquence pour le projet.</p>
+<p>b) Après avoir défini la souveraineté numérique, appréciez les deux options d'hébergement de l'annexe 2.3 C selon trois critères (le droit applicable au prestataire, la dépendance et la réversibilité, le coût) et recommandez-en une. Aucune expertise technique des infrastructures n'est attendue.</p>
+<p><strong>2.5 – Planification et risques du projet « Pilotage des missions » (3 points)</strong></p>
+<p>a) À partir de l'annexe 2.3 D à F, planifiez le projet sous la forme d'un diagramme de Gantt simplifié en semaines : affectation des ressources, enchaînement des tâches, durée totale du travail et date de mise en production, quatre jalons datés ; critiquez la première estimation de l'équipe informatique, puis indiquez l'enveloppe de coûts du projet et la manière dont les exigences de qualité seront contrôlées avant la mise en production.</p>
+<p>b) Identifiez trois risques du projet, en précisant pour chacun sa cause, son effet et son traitement.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
