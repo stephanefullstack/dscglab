@@ -1,0 +1,228 @@
+# DSCG UE 4 — Comptabilité et audit — Exercice d'entraînement n° 37
+
+**DOSSIER 1 – COMPTES DE GROUPE (45 points)**
+
+Durée conseillée : 1 h 45 (sur une épreuve de 4 heures, coefficient 1,5).
+
+Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026.
+
+**Document autorisé** : liste des comptes du plan comptable général, à l'exclusion de toute autre information.
+
+**Matériel autorisé** : calculatrice avec mode examen actif, ou calculatrice sans mémoire « type collège ».
+
+### AVERTISSEMENT
+
+Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.
+
+Toute information calculée devra être justifiée. Les écritures comptables devront comporter les numéros et les noms des comptes et un libellé.
+
+---
+
+## Présentation
+
+Le groupe SEMÉLIANE sélectionne, produit et commercialise des semences de grandes cultures (blé, colza, tournesol), des semences potagères et des semences de plantes fourragères, vendues aux négociants, aux distributeurs agricoles et aux maraîchers de France et d'Europe. Sa société de tête, la SAS SEMÉLIANE, société par actions simplifiée installée à Chartres (Eure-et-Loir), est détenue à 62 % par un fonds d'investissement, TALVIÈRE Croissance II, le solde du capital étant réparti entre la famille fondatrice et les dirigeants ; aucun de ses titres n'est admis aux négociations sur un marché, et elle établit ses comptes consolidés selon le règlement ANC n° 2020-01. Le groupe emploie 860 salariés et son chiffre d'affaires consolidé s'est élevé à 238 M€ en 2026.
+
+Ailleurs en Centre-Val de Loire, d'autres sociétés de la région préparent des décisions importantes. À Bourges (Cher), la SA AUTOCARS BRIAMONT, qui exploite des lignes régulières et des circuits scolaires pour la Région et les communes, envisage d'absorber la SAS ÉTANGLÈRE Voyages, son agence de voyages en autocar de Romorantin-Lanthenay (Loir-et-Cher), dont elle détient 85 % du capital depuis 2019. À Tours (Indre-et-Loire), la SA ÉLASTRIVE, dont les actions sont admises aux négociations sur Euronext Paris, fabrique des pièces techniques en caoutchouc (joints, durites, supports antivibratoires) pour les constructeurs d'automobiles et de poids lourds ; avec ses filiales, elle emploie 2 900 salariés et réalise un chiffre d'affaires consolidé de 640 M€. Aucune de ces sociétés n'a de lien en capital avec SEMÉLIANE.
+
+Vous êtes collaborateur ou collaboratrice du cabinet LISÉRAC Audit et Conseil, société d'expertise comptable et de commissariat aux comptes installée à Orléans (Loiret), avec un bureau à Tours. Le cabinet, qui n'est pas commissaire aux comptes de SEMÉLIANE, assiste la direction financière du groupe dans l'établissement de ses comptes consolidés. Il est l'un des deux commissaires aux comptes de la SA ÉLASTRIVE et certifie aussi les informations en matière de durabilité que la société publie depuis l'exercice 2024. Il conseille enfin AUTOCARS BRIAMONT dans son projet de fusion. Les organisations et les personnes citées sont fictives.
+
+La SAS SEMÉLIANE détient quatre filiales et une participation : la SAS SEMÉLIANE Recherche, station de sélection variétale créée en janvier 2025 ; la SAS SEMÉLIANE Distribution, qui vend les semences du groupe aux négociants et aux distributeurs agricoles et qui a acheté un entrepôt en 2026 ; la SAS GRAINES DU GÂTINAIS, producteur de semences potagères acquis en 2020 ; la SAS SEMENCES DU BOISCHAUT, spécialiste des semences fourragères et des couverts végétaux, dont elle a acquis 80 % des actions le 01/01/2026 ; enfin la SAS BEAUCERONNE Traitement des semences, qui traite et ensache des semences et dont le groupe détient 40 % du capital depuis 2020, la moitié par l'intermédiaire de GRAINES DU GÂTINAIS.
+
+En janvier 2027, M. Bertrand FAUCHELIER, directeur administratif et financier de SEMÉLIANE, vous confie une partie des travaux de consolidation de l'exercice 2026. Il vous demande aussi de préparer la réponse à une question posée par le fonds TALVIÈRE Croissance II, qui envisage de transformer SEMÉLIANE en société anonyme puis de faire admettre ses actions aux négociations sur un marché réglementé d'ici trois ans.
+
+**Hypothèses générales**
+- Toutes les sociétés clôturent leur exercice le 31 décembre et établissent leurs comptes individuels selon le plan comptable général. Leurs comptes individuels ne comportent ni provision réglementée ni amortissement dérogatoire.
+- Les sociétés sont soumises à l'impôt sur les sociétés au taux de 25 % et imposées séparément : aucune ne fait partie d'un groupe d'intégration fiscale. Les impôts différés sont calculés au taux de 25 % ; les impôts différés actifs sont recouvrables.
+- Le groupe consolide selon l'approche directe. Les écritures de consolidation sont présentées au bilan, puis au compte de résultat.
+- Chaque action donne droit à une voix. Aucun pourcentage de détention n'a varié en 2026.
+- Montants en euros, arrondis à l'euro, y compris pour les résultats intermédiaires. La TVA est ignorée.
+- Pour les questions 1.2 et 1.10 c, les comptes de l'exercice 2026 établis selon les normes IFRS relèveraient d'IAS 1, IFRS 18 n'étant pas appliquée par anticipation.
+
+### Travail à faire
+
+À l'aide des annexes 1.1 à 1.9 :
+
+**A. Obligation de consolider, référentiel et périmètre**
+
+**1.1.** À partir des annexes 1.1 et 1.2, indiquer si SEMÉLIANE est tenue d'établir des comptes consolidés pour l'exercice 2026 et selon quel référentiel, et ce que changerait, pour ce référentiel, l'admission de ses actions aux négociations sur un marché réglementé. *(2 points)*
+
+**1.2.** Pour répondre à la question du fonds (annexe 1.2), présenter l'objectif de l'information financière à usage général et ses principaux utilisateurs selon le cadre conceptuel de l'IASB, puis appliquer la définition d'un actif aux frais d'établissement de SEMÉLIANE Recherche et au portefeuille de variétés protégées de SEMENCES DU BOISCHAUT ; indiquer si le traitement de ces deux éléments dans les comptes consolidés serait différent en IFRS. *(2 points)*
+
+**1.3.** À partir des annexes 1.1 et 1.8 :
+- a. présenter, sous la forme d'un tableau, le pourcentage de contrôle, la nature du contrôle, la méthode de consolidation et les pourcentages d'intérêt du groupe et des minoritaires dans les cinq sociétés détenues au 31/12/2026, en justifiant les calculs et la nature du contrôle exercé sur BEAUCERONNE ; *(2 points)*
+- b. indiquer ce que l'intégration globale et la mise en équivalence font apparaître, dans les comptes consolidés, du chiffre d'affaires, de l'endettement et du résultat de GRAINES DU GÂTINAIS et de BEAUCERONNE. *(1 point)*
+
+**B. Retraitements d'homogénéisation**
+
+**1.4.** À partir des annexes 1.3 et 1.4, justifier le retraitement des frais d'établissement de SEMÉLIANE Recherche, présenter le tableau de ses incidences (réserves, résultat, impôt différé) et enregistrer au 31/12/2026 les écritures de consolidation correspondantes. *(4 points)*
+
+**1.5.** À partir des annexes 1.3 et 1.5, justifier le retraitement des droits et frais liés à l'achat de l'entrepôt de SEMÉLIANE Distribution, calculer leur répartition entre le terrain et le bâtiment et l'amortissement de 2026, présenter le tableau des incidences et enregistrer au 31/12/2026 les écritures de consolidation correspondantes. *(4 points)*
+
+**C. Opérations internes**
+
+**1.6.** À partir des annexes 1.3 et 1.6, justifier le traitement retenu et enregistrer au 31/12/2026 les écritures de consolidation relatives :
+- a. aux ventes de semences de GRAINES DU GÂTINAIS à SEMÉLIANE Distribution et aux marges comprises dans les stocks d'ouverture et de clôture, en indiquant comment l'élimination se répartit entre le groupe et les minoritaires ; *(3,5 points)*
+- b. aux dividendes versés en 2026 par GRAINES DU GÂTINAIS et par BEAUCERONNE ; *(1,5 point)*
+- c. aux comptes réciproques de GRAINES DU GÂTINAIS et de SEMÉLIANE Distribution, après avoir expliqué leur écart. *(1 point)*
+
+**D. Acquisition de SEMENCES DU BOISCHAUT, partage des capitaux propres et mise en équivalence**
+
+**1.7.** À partir des annexes 1.3 et 1.7 :
+- a. déterminer l'actif net réévalué de SEMENCES DU BOISCHAUT au 01/01/2026 et indiquer comment chaque écart d'évaluation est suivi en 2026 ; *(2,5 points)*
+- b. calculer le coût d'acquisition des titres SEMENCES DU BOISCHAUT et l'écart d'acquisition ; *(2,5 points)*
+- c. justifier le traitement de l'écart d'acquisition en 2026 et indiquer ce qui changerait si sa durée d'utilisation n'était pas limitée, puis enregistrer au 31/12/2026 les écritures relatives aux écarts d'évaluation, aux frais d'acquisition des titres et à l'écart d'acquisition. *(3 points)*
+
+**1.8.** À partir des annexes 1.1, 1.8 et 1.9 et de vos résultats :
+- a. présenter les tableaux de partage des capitaux propres de GRAINES DU GÂTINAIS et de SEMENCES DU BOISCHAUT au 31/12/2026 ; *(2,5 points)*
+- b. présenter le tableau de mise en équivalence de BEAUCERONNE au 31/12/2026, en distinguant les titres détenus par SEMÉLIANE et ceux que détient GRAINES DU GÂTINAIS, et en tenant compte de l'écart d'acquisition constaté lors de l'acquisition ; *(2,5 points)*
+- c. enregistrer au 31/12/2026 les écritures d'élimination des titres et de partage des capitaux propres de GRAINES DU GÂTINAIS et de SEMENCES DU BOISCHAUT, puis les écritures relatives à BEAUCERONNE, au bilan puis au compte de résultat. *(2 points)*
+
+**E. Processus de consolidation et documents de synthèse**
+
+**1.9.** À partir de l'annexe 1.9 et de vos résultats, présenter le passage des capitaux propres cumulés des sociétés intégrées globalement, tels qu'ils figurent dans leurs comptes individuels, aux capitaux propres de l'ensemble consolidé au 31/12/2026, en rangeant chaque retraitement et chaque élimination du dossier dans sa phase du processus de consolidation ; en déduire les capitaux propres part du groupe et les intérêts minoritaires. *(3 points)*
+
+**1.10.** À partir de vos résultats et de l'annexe 1.9 :
+- a. présenter l'extrait du compte de résultat consolidé de 2026, selon le modèle par nature du règlement ANC n° 2020-01, du résultat d'exploitation avant dotations aux amortissements des écarts d'acquisition au résultat net part du groupe, en indiquant le calcul de chaque montant et, pour les impôts sur les résultats, la part des impôts différés ; *(3 points)*
+- b. indiquer les informations que l'annexe consolidée de 2026 devra donner sur l'entrée de SEMENCES DU BOISCHAUT dans le périmètre et sur son écart d'acquisition ; *(1,5 point)*
+- c. en lien avec la question 1.2, indiquer deux différences de présentation qu'entraînerait l'établissement des comptes consolidés de 2026 selon les normes IFRS. *(1,5 point)*
+
+---
+
+### ANNEXE 1.1 – ORGANIGRAMME ET PRÉSENTATION DES SOCIÉTÉS DU GROUPE
+
+Participations au 31/12/2026 (aucune n'a varié en 2026) :
+
+| Société détenue | Activité | Siège | Détenue par | % du capital | Depuis |
+|---|---|---|---|---:|---|
+| SAS SEMÉLIANE Recherche | Sélection variétale | Chartres (Eure-et-Loir) | SAS SEMÉLIANE | 100 % | sa création, en janvier 2025 |
+| SAS SEMÉLIANE Distribution | Distribution des semences du groupe | Châteaudun (Eure-et-Loir) | SAS SEMÉLIANE | 100 % | sa création, en 2011 |
+| SAS GRAINES DU GÂTINAIS | Semences potagères | Pithiviers (Loiret) | SAS SEMÉLIANE | 70 % | 02/01/2020 |
+| SAS SEMENCES DU BOISCHAUT | Semences fourragères et de couverts végétaux | Châteauroux (Indre) | SAS SEMÉLIANE | 80 % | 01/01/2026 |
+| SAS BEAUCERONNE Traitement des semences | Traitement et ensachage de semences | Toury (Eure-et-Loir) | SAS SEMÉLIANE | 20 % | 02/01/2020 |
+| | | | SAS GRAINES DU GÂTINAIS | 20 % | 02/01/2020 |
+
+- **SEMÉLIANE Recherche** et **SEMÉLIANE Distribution** ont été créées par SEMÉLIANE, qui a souscrit la totalité de leur capital à sa valeur nominale.
+- **GRAINES DU GÂTINAIS** : les 30 % restants appartiennent à son fondateur, M. Gilles PERDRIAUX.
+- **SEMENCES DU BOISCHAUT** : les 20 % restants appartiennent à la famille fondatrice (annexe 1.7).
+- **BEAUCERONNE** : les 60 % restants sont détenus par la SAS DARNÉVILLE Grains, négociant en céréales de Janville (Eure-et-Loir), qui n'a aucun lien avec le groupe (annexe 1.8).
+- Les sociétés du groupe ne détiennent aucune autre participation.
+
+### ANNEXE 1.2 – LE FONDS TALVIÈRE CROISSANCE II ET SA QUESTION
+
+**Le fonds.** TALVIÈRE Croissance II est un fonds d'investissement géré par la société de gestion TALVIÈRE Partenaires. Il détient 62 % du capital et des droits de vote de SEMÉLIANE depuis 2021 ; la famille fondatrice en détient 30 % et les dirigeants 8 %. Ni le fonds ni sa société de gestion n'établissent de comptes consolidés qui incluent SEMÉLIANE (hypothèse à retenir).
+
+**Données de l'ensemble formé par SEMÉLIANE et les sociétés qu'elle contrôle** (cumul des comptes individuels après élimination des opérations internes, établi par la direction financière) :
+
+| | Exercice 2025 | Exercice 2026 |
+|---|---:|---:|
+| Total du bilan | 196 M€ | 231 M€ |
+| Montant net du chiffre d'affaires | 214 M€ | 238 M€ |
+| Nombre moyen de salariés | 790 | 860 |
+
+**Note du service juridique de SEMÉLIANE.** Un ensemble constitue un grand groupe lorsqu'il dépasse, à la date de clôture, au moins deux des trois seuils suivants : total du bilan de 30 000 000 €, montant net du chiffre d'affaires de 60 000 000 €, nombre moyen de 250 salariés ; les seuils sont réputés franchis lorsqu'ils le sont à la clôture de deux exercices consécutifs. Aucune société de l'ensemble n'est un établissement de crédit, une entreprise d'assurance ou une entité dont des titres sont admis aux négociations sur un marché réglementé.
+
+**Question de Mme Hélène VARCLOS, directrice de participations chez TALVIÈRE Partenaires** (courriel du 12/01/2027) : « Si nous transformons SEMÉLIANE en société anonyme pour faire admettre ses actions à la cote d'ici trois ans, les comptes consolidés devront suivre les normes internationales. On me dit qu'elles reposent sur un cadre conceptuel : à quoi sert-il, et pour qui ces comptes sont-ils faits ? Je voudrais aussi savoir si deux éléments de nos comptes seraient traités autrement : les frais de création de SEMÉLIANE Recherche, que la filiale a inscrits à son actif, et les variétés protégées de SEMENCES DU BOISCHAUT, qui ne figuraient pas à son bilan. »
+
+### ANNEXE 1.3 – EXTRAIT DU MANUEL DE CONSOLIDATION DU GROUPE
+
+- **Méthodes de référence.** Le groupe applique les méthodes que le règlement ANC n° 2020-01 rend obligatoires dans les comptes consolidés ; les comptes individuels établis selon une autre méthode sont retraités.
+- **Frais d'établissement** (frais de constitution, de transformation et de premier établissement) : comptabilisés en charges de l'exercice au cours duquel ils sont engagés.
+- **Droits de mutation, honoraires, commissions et frais d'actes liés à l'acquisition d'une immobilisation** : inclus dans son coût. Lorsque l'acquisition porte sur un ensemble immobilier, ces frais sont répartis entre le terrain et la construction au prorata de leur prix d'acquisition ; la part de la construction est amortie avec elle.
+- **Bâtiments** : amortissement linéaire sur 25 ans à compter de la date d'acquisition, au prorata du nombre de mois, en un seul composant, sans valeur résiduelle. Les terrains ne sont pas amortis.
+- **Frais d'acquisition des titres de participation** : inclus dans le coût d'acquisition des titres des sociétés consolidées pour leur montant net de l'économie d'impôt correspondante.
+- **Écart d'acquisition positif** : inscrit à l'actif immobilisé. Sa durée d'utilisation, limitée ou non, est déterminée lors de l'acquisition par une analyse documentée de l'opération ; lorsqu'elle est limitée, l'écart est amorti linéairement sur cette durée, à compter de la date d'acquisition. L'écart d'acquisition d'une société mise en équivalence est présenté de la même façon que celui d'une société intégrée globalement.
+- **Opérations internes** : les ventes, les achats, les créances et les dettes réciproques sont éliminés ; les marges internes comprises dans les stocks sont éliminées en totalité et réparties entre le groupe et les minoritaires de la société qui les a réalisées ; les dividendes reçus des sociétés consolidées sont éliminés.
+- **Impôts différés** : taux de 25 %, sans actualisation ; l'impôt différé lié à une marge interne est rattaché à la société qui l'a réalisée. La différence entre la valeur fiscale des titres des sociétés consolidées et leur valeur en consolidation ne donne lieu à aucun impôt différé, pas plus que les dividendes.
+- **Mise en équivalence** : les titres sont remplacés par la quote-part des capitaux propres de la société qu'ils représentent ; la quote-part revenant indirectement aux minoritaires d'une filiale détentrice des titres est présentée dans les intérêts minoritaires.
+
+### ANNEXE 1.4 – FRAIS D'ÉTABLISSEMENT DE SEMÉLIANE RECHERCHE
+
+- SEMÉLIANE Recherche a été constituée le 02/01/2025 au capital de 2 000 000 €. Elle met au point des variétés nouvelles de blé et de colza, qu'elle fait protéger à son nom et sur lesquelles elle concède des licences à des semenciers étrangers ; elle n'a réalisé aucune opération avec les autres sociétés du groupe en 2025 et en 2026.
+- En janvier 2025, elle a inscrit à son actif des frais de constitution de **60 000 €** (honoraires de juristes, frais d'immatriculation ; compte 2011) et des frais de premier établissement de **300 000 €** (études préalables, recrutement de l'équipe de sélectionneurs, frais de démarrage de la station ; compte 2012). Elle les amortit linéairement sur **cinq ans** à compter du 01/01/2025 (compte 68111 Dotations aux amortissements des immobilisations incorporelles et des frais d'établissement).
+- **Fiscalité** : ces frais sont déduits du résultat fiscal de SEMÉLIANE Recherche au rythme de leur amortissement dans ses comptes individuels.
+
+### ANNEXE 1.5 – ENTREPÔT DE SEMÉLIANE DISTRIBUTION
+
+- Le **01/04/2026**, SEMÉLIANE Distribution a acheté à Châteaudun un entrepôt de stockage de semences, mis en service le jour même, pour un prix de **2 000 000 €**, dont **500 000 €** pour le terrain (compte 2115 Terrains bâtis) et **1 500 000 €** pour le bâtiment (compte 2131 Bâtiments).
+- Les frais liés à l'achat ont été comptabilisés **en charges** de 2026 : droits de mutation, **116 000 €** (compte 6354 Droits d'enregistrement et de timbre) ; honoraires du notaire, **24 000 €** (compte 6226 Honoraires) ; frais d'actes et de formalités, **4 000 €** (compte 6227 Frais d'actes et de contentieux).
+- SEMÉLIANE Distribution amortit le bâtiment selon le plan du manuel (annexe 1.3) : dotation de 2026, 45 000 €.
+- **Fiscalité** : ces frais ont été déduits du résultat fiscal de 2026 de SEMÉLIANE Distribution ; la base fiscale de l'entrepôt ne les comprend pas.
+
+### ANNEXE 1.6 – OPÉRATIONS INTERNES ET DIVIDENDES DE 2026
+
+**Ventes de semences potagères.** GRAINES DU GÂTINAIS vend à SEMÉLIANE Distribution une partie de ses semences potagères, que celle-ci revend aux distributeurs agricoles et aux maraîchers.
+- Ventes de 2026 : **1 800 000 €** dans les comptes de GRAINES DU GÂTINAIS (compte 701 Ventes de produits finis) et dans ceux de SEMÉLIANE Distribution (compte 607 Achats de marchandises).
+- GRAINES DU GÂTINAIS fixe ses prix de vente à SEMÉLIANE Distribution en majorant son coût de production de **25 %** (taux de marge exprimé sur le coût de production) ; ce taux n'a pas changé depuis 2024.
+- Semences achetées à GRAINES DU GÂTINAIS figurant dans le stock de SEMÉLIANE Distribution (compte 37 Stocks de marchandises, au prix d'achat) : **300 000 €** au 31/12/2025 et **420 000 €** au 31/12/2026.
+
+**Comptes réciproques au 31/12/2026.** La liasse de GRAINES DU GÂTINAIS fait apparaître une créance de **318 000 €** sur SEMÉLIANE Distribution (compte 4111) ; celle de SEMÉLIANE Distribution, une dette de **246 000 €** envers GRAINES DU GÂTINAIS (compte 4011). Le 29/12/2026, SEMÉLIANE Distribution a adressé à GRAINES DU GÂTINAIS un chèque de **72 000 €** en règlement de factures de novembre, qu'elle a enregistré à cette date au débit du compte 4011 et au crédit du compte 512 Banques ; GRAINES DU GÂTINAIS ne l'a reçu que le 05/01/2027 et l'a enregistré à cette date.
+
+**Dividendes versés en 2026** (prélevés sur le résultat de 2025 ; les impôts éventuellement liés à ces dividendes sont ignorés) :
+- GRAINES DU GÂTINAIS : **400 000 €** au total, dont 280 000 € à SEMÉLIANE et 120 000 € à M. PERDRIAUX ;
+- BEAUCERONNE : **300 000 €** au total, dont 60 000 € à SEMÉLIANE, 60 000 € à GRAINES DU GÂTINAIS et 180 000 € à DARNÉVILLE Grains.
+
+Les sociétés bénéficiaires ont comptabilisé leur part au compte 7611 Revenus des titres de participation. Aucune autre société du groupe n'a versé de dividende en 2026, et il n'existe pas d'autre opération entre les sociétés intégrées globalement.
+
+### ANNEXE 1.7 – ACQUISITION DE SEMENCES DU BOISCHAUT
+
+**Prix et frais.** Le 01/01/2026, SEMÉLIANE a acquis 80 % des actions de SEMENCES DU BOISCHAUT pour **6 380 000 €**, payés comptant. Les frais d'acquisition (honoraires d'avocats, d'experts-comptables et d'évaluateurs, **176 000 €**) ont été comptabilisés **en charges** (compte 6226 Honoraires) dans les comptes individuels de SEMÉLIANE de 2026 et sont considérés, pour ce dossier, comme déduits en totalité de son résultat fiscal de 2026.
+
+**Capitaux propres individuels de SEMENCES DU BOISCHAUT**
+
+| | 01/01/2026 | 31/12/2026 |
+|---|---:|---:|
+| Capital | 1 800 000 | 1 800 000 |
+| Réserves | 2 900 000 | 3 400 000 |
+| Résultat | 500 000 (2025) | 720 000 (2026) |
+| **Total** | **5 200 000** | **5 920 000** |
+
+Le résultat de 2025 a été porté en totalité aux réserves. SEMENCES DU BOISCHAUT n'a versé aucun dividende en 2026.
+
+**Évaluations de l'expert au 01/01/2026**
+
+| Élément | Valeur nette comptable | Valeur d'entrée | Observation |
+|---|---:|---:|---|
+| Portefeuille de 46 variétés de luzerne, de trèfle, de ray-grass et de couverts végétaux protégées par des certificats d'obtention végétale (compte 205) | 0 | 1 600 000 | variétés obtenues par la société, dont les dépenses de sélection ont été comptabilisées en charges ; durée résiduelle de commercialisation : 8 ans (amortissement linéaire) |
+| Parcelles d'essais variétaux de Déols, terrain nu (compte 2111) | 400 000 | 720 000 | non amortissable |
+
+- Les certificats d'obtention végétale confèrent à leur titulaire le droit exclusif de produire et de commercialiser les semences des variétés protégées ; ils peuvent être cédés ou concédés en licence séparément de la société.
+- Les écarts d'évaluation donnent lieu à impôt différé, y compris celui du terrain. Les autres actifs et passifs identifiables de SEMENCES DU BOISCHAUT ont une valeur d'entrée égale à leur valeur comptable ; ses comptes sont établis selon les méthodes du groupe.
+
+**Analyse documentée de l'acquisition** (dossier établi par la direction financière en janvier 2026) :
+- le prix payé au-delà de l'actif net réévalué rémunère le programme de sélection en cours (lignées en essai, savoir-faire de l'équipe de sélectionneurs), dont aucun élément n'est identifiable séparément, et les économies attendues de la mise en commun des essais avec SEMÉLIANE Recherche ;
+- les variétés issues de ce programme seront inscrites au catalogue en 2027 et commercialisées jusqu'en 2037 ; au-delà, le renouvellement des gammes fourragères reposera sur les programmes propres de SEMÉLIANE Recherche ;
+- la direction en conclut que la durée d'utilisation de l'écart d'acquisition est limitée et qu'elle peut être déterminée de façon fiable : **12 ans**, de 2026 à 2037.
+
+### ANNEXE 1.8 – BEAUCERONNE TRAITEMENT DES SEMENCES
+
+- **Acquisition.** Le 02/01/2020, le jour même où SEMÉLIANE acquérait 70 % de GRAINES DU GÂTINAIS, DARNÉVILLE Grains, alors seule associée de BEAUCERONNE, a cédé 20 % du capital de celle-ci à SEMÉLIANE et 20 % à GRAINES DU GÂTINAIS, pour **600 000 €** chacune. Les capitaux propres de BEAUCERONNE s'élevaient alors à 2 400 000 € (capital 1 000 000 €, réserves 1 400 000 €) ; ses actifs et passifs identifiables avaient une valeur d'entrée égale à leur valeur comptable. L'écart d'acquisition constaté à cette date, **240 000 €**, a été jugé de durée limitée et est amorti linéairement sur **10 ans** dans les comptes consolidés depuis 2020.
+- **Pacte d'associés.** BEAUCERONNE est dirigée par un comité de direction de cinq membres statuant à la majorité simple : DARNÉVILLE Grains en désigne trois, SEMÉLIANE un et GRAINES DU GÂTINAIS un. Aucune décision n'est soumise à l'accord des associés du groupe. BEAUCERONNE traite et ensache principalement les semences de céréales de DARNÉVILLE Grains ; elle traite aussi, au prix du marché, une partie des semences de SEMÉLIANE et de GRAINES DU GÂTINAIS. Les semences traitées pour le groupe en 2026 ont toutes été vendues avant le 31/12/2026 : aucun résultat interne n'est compris dans les actifs du groupe à la clôture.
+- **Capitaux propres de BEAUCERONNE au 31/12/2026** : capital 1 000 000 € ; réserves 2 150 000 € ; résultat de 2026, 500 000 € (total 3 650 000 €). Ses comptes sont établis selon les méthodes du groupe.
+- Les titres BEAUCERONNE figurent pour 600 000 € dans les comptes individuels de SEMÉLIANE et pour 600 000 € dans ceux de GRAINES DU GÂTINAIS.
+
+### ANNEXE 1.9 – CAPITAUX PROPRES INDIVIDUELS, TITRES ET CUMUL DES COMPTES DE RÉSULTAT
+
+**Capitaux propres individuels au 31/12/2026 des sociétés intégrées globalement (en euros)**
+
+| Société | Capital | Réserves | Résultat de 2026 | Total |
+|---|---:|---:|---:|---:|
+| SAS SEMÉLIANE | 12 000 000 | 26 800 000 | 4 260 000 | 43 060 000 |
+| SEMÉLIANE Recherche | 2 000 000 | 140 000 | 260 000 | 2 400 000 |
+| SEMÉLIANE Distribution | 3 000 000 | 4 600 000 | 1 150 000 | 8 750 000 |
+| GRAINES DU GÂTINAIS | 1 500 000 | 3 580 000 | 780 000 | 5 860 000 |
+| SEMENCES DU BOISCHAUT | 1 800 000 | 3 400 000 | 720 000 | 5 920 000 |
+
+- Le résultat de 2025 de SEMÉLIANE Recherche (140 000 €) a été porté en totalité en réserves.
+- **Titres détenus par SEMÉLIANE** (comptes individuels) : SEMÉLIANE Recherche 2 000 000 € ; SEMÉLIANE Distribution 3 000 000 € ; GRAINES DU GÂTINAIS 2 660 000 € ; SEMENCES DU BOISCHAUT 6 380 000 € ; BEAUCERONNE 600 000 €.
+- **GRAINES DU GÂTINAIS** : lors de son acquisition, le 02/01/2020, ses capitaux propres s'élevaient à 3 800 000 € (capital 1 500 000 €, réserves 2 300 000 €) ; ses actifs et passifs identifiables avaient une valeur d'entrée égale à leur valeur comptable, et le prix payé (2 660 000 €) n'a fait apparaître aucun écart d'acquisition. Ses titres BEAUCERONNE (600 000 €) figurent parmi ses immobilisations financières.
+- Le résultat de 2026 de SEMÉLIANE comprend les dividendes reçus et les frais d'acquisition des titres SEMENCES DU BOISCHAUT ; celui de GRAINES DU GÂTINAIS, le dividende reçu de BEAUCERONNE. Aucune de ces sociétés ne comptabilise d'impôt différé dans ses comptes individuels.
+
+**Cumul des comptes de résultat de 2026 des cinq sociétés intégrées globalement**, avant toute écriture de consolidation (à utiliser tel quel) :
+
+| Poste | Montant |
+|---|---:|
+| Résultat d'exploitation | 9 380 000 |
+| Résultat financier (dont revenus des titres de participation, 400 000) | 180 000 |
+| Résultat exceptionnel | – 40 000 |
+| Impôts sur les bénéfices (impôt exigible) | – 2 350 000 |
+| **Résultat net cumulé** | **7 170 000** |

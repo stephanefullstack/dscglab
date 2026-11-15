@@ -1,0 +1,552 @@
+# ÉLÉMENTS INDICATIFS DE CORRIGÉ ET DE BARÈME
+
+## UE 4 – Comptabilité et audit — Exercice d'entraînement n° 37 — Dossier 1 (45 points)
+
+Le sujet et son corrigé ont été construits sur la base d'une réglementation au 31/12/2026.
+
+Textes intégrés (fiches datées) : F03 obligation de consolider, périmètre, méthodes et cadre conceptuel (à jour au 22/10/2026, complétée du 30/10/2026 au 15/11/2026) ; F04 retraitements (à jour au 29/10/2026, complétée du 10/11/2026 au 14/11/2026) ; F05 écarts d'acquisition, partage et mise en équivalence (à jour au 23/10/2026, complétée du 09/11/2026 au 14/11/2026) ; F14 états de synthèse consolidés (à jour au 27/10/2026, complétée le 14/11/2026) ; F99 liste noire. Textes relus sur la source le 15/11/2026 : règlement ANC n° 2020-01 consolidé au 01/01/2026, art. 262-2 et 262-3 (p. 49), 272-5 et 272-6 (p. 54-55) ; règlement (UE) 2023/1803, IAS 38 § 11 à 15 et IFRS 3 § B31 (F03 § 11) ; liste des comptes du PCG au 01/01/2026 (comptes 2011, 2012, 2801, 2111, 2115, 2131, 2813, 205, 2805, 37, 6037, 5112, 6354, 6227, 68111, 68112).
+
+Bien que le corrigé mentionne des textes juridiques et normatifs, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte avant tout sur la pertinence et la cohérence des réponses.
+
+| Question | Compétence visée | Points |
+|---|---|---:|
+| 1.1 Obligation de consolider et référentiel | `2.1.b` Contexte réglementaire et légal de la consolidation | 2 |
+| 1.2 Cadre conceptuel de l'IASB, frais d'établissement et variétés protégées | `2.1.a` Cadre conceptuel de l'IASB ; `2.1.d` Conséquences du référentiel | 2 |
+| 1.3 a Périmètre, pourcentages et méthodes | `2.1.c` Périmètre de consolidation | 2 |
+| 1.3 b Conséquences des méthodes sur l'information financière | `2.1.d` Conséquences du référentiel et des méthodes | 1 |
+| 1.4 Frais d'établissement de SEMÉLIANE Recherche | `2.2.c` Homogénéisation, thèmes communs | 4 |
+| 1.5 Droits de mutation et frais de l'entrepôt | `2.2.c` Homogénéisation, thèmes communs | 4 |
+| 1.6 a Ventes internes et marges sur stocks | `2.2.f` Comptes réciproques et résultats internes | 3,5 |
+| 1.6 b Dividendes | `2.2.f` Comptes réciproques et résultats internes | 1,5 |
+| 1.6 c Comptes réciproques et chèque en transit | `2.2.f` Comptes réciproques et résultats internes | 1 |
+| 1.7 a Actif net réévalué de SEMENCES DU BOISCHAUT | `2.2.g` Écarts d'évaluation et d'acquisition | 2,5 |
+| 1.7 b Coût d'acquisition et écart d'acquisition | `2.2.g` Écarts d'évaluation et d'acquisition | 2,5 |
+| 1.7 c Durée d'utilisation de l'écart et écritures | `2.2.g` Écarts d'évaluation et d'acquisition | 3 |
+| 1.8 a Partage des capitaux propres de deux filiales | `2.2.h` Partage des capitaux propres | 2,5 |
+| 1.8 b Mise en équivalence de BEAUCERONNE | `2.2.h` Partage des capitaux propres | 2,5 |
+| 1.8 c Écritures d'élimination des titres et de mise en équivalence | `2.2.h` Partage des capitaux propres | 2 |
+| 1.9 Passage aux capitaux propres consolidés | `2.2.a` Processus d'élaboration d'une consolidation | 3 |
+| 1.10 a Extrait du compte de résultat consolidé | `2.3.a` Documents de synthèse consolidés | 3 |
+| 1.10 b Annexe consolidée | `2.3.a` Documents de synthèse consolidés | 1,5 |
+| 1.10 c Deux différences de présentation en IFRS | `2.3.a` Documents de synthèse consolidés ; `2.1.d` Conséquences du référentiel | 1,5 |
+| **Total** | | **45** |
+
+Comptes de consolidation utilisés dans les écritures : `RSV` / `RST` = réserves / résultat de l'entité avant partage ; `CAP_ELIM` = capital de l'entité, à éliminer ; `RSV_G` / `RST_G` = réserves / résultat consolidés, part du groupe ; `RSV_M` / `RST_M` = intérêts minoritaires (réserves / résultat) ; `EA` = écart d'acquisition ; `AMO_EA` = amortissements de l'écart d'acquisition ; `DOT_EA` = ligne « dotations aux amortissements et dépréciations des écarts d'acquisition » du compte de résultat ; `TME` = titres mis en équivalence ; `QP_MEE` = ligne « résultat net lié aux entités mises en équivalence » ; `IDA` / `IDP` = impôt différé actif / passif ; `CH_ID` = charge ou produit d'impôt différé ; `RES_CR` = contrepartie au compte de résultat. Le suffixe d'un compte désigne l'entité (`261.GATINAIS` : titres détenus par GRAINES DU GÂTINAIS ; `RSV.RECHERCHE` : réserves de SEMÉLIANE Recherche).
+
+---
+
+### 1.1 Obligation de consolider et référentiel (2 pts)
+
+**Obligation (1 pt).**
+- **Principe (0,25).** Les sociétés commerciales établissent et publient des comptes consolidés dès lors qu'elles contrôlent de manière exclusive ou conjointe une ou plusieurs autres entreprises [V C. com. L. 233-16 ; F03 § 1.1]. La SAS SEMÉLIANE, société commerciale, contrôle exclusivement SEMÉLIANE Recherche, SEMÉLIANE Distribution, GRAINES DU GÂTINAIS et SEMENCES DU BOISCHAUT (question 1.3 a) : l'obligation est née.
+- **Exemption de la société contrôlée (0,25).** Elle ne joue que si la société est incluse dans les comptes consolidés publiés d'une entité qui la contrôle, et sauf opposition d'actionnaires représentant au moins le dixième du capital [V L. 233-17, 1° ; F03 § 1.1]. SEMÉLIANE est contrôlée par le fonds TALVIÈRE Croissance II (62 %), mais ni le fonds ni sa société de gestion n'établissent de comptes consolidés qui l'incluent : l'exemption est exclue. La famille fondatrice, qui détient 30 % du capital, pourrait au surplus s'y opposer.
+- **Exemption des ensembles qui ne sont pas un grand groupe (0,25).** Un grand groupe dépasse, à la clôture, deux des trois seuils (bilan 30 M€, chiffre d'affaires net 60 M€, 250 salariés), sur deux exercices consécutifs [V L. 230-2, 3° et D. 230-2 ; F03 § 1.1]. L'ensemble dépasse les trois seuils en 2025 (196 M€, 214 M€, 790 salariés) et en 2026 (231 M€, 238 M€, 860) : l'exemption du 2° ne joue pas. L'intérêt négligeable des filiales [V L. 233-17-1] est exclu au vu de leur taille.
+- **Conclusion (0,25).** SEMÉLIANE doit établir et publier des comptes consolidés de 2026.
+
+**Référentiel (0,5 pt).** Les IFRS adoptées par l'Union européenne ne sont obligatoires, pour les comptes consolidés, que pour les sociétés dont des titres sont admis aux négociations sur un marché réglementé d'un État membre à la date de clôture [V règlement (CE) n° 1606/2002, art. 4 ; F03 § 1.2]. Aucun titre de SEMÉLIANE n'étant admis sur un marché, elle applique le règlement ANC n° 2020-01 ou **peut opter** pour les IFRS adoptées [V L. 233-24 ; F03 § 1.2] ; elle n'a pas exercé cette option.
+
+**Admission des actions (0,5 pt).** Si ses actions étaient admises aux négociations sur un marché réglementé, les IFRS adoptées deviendraient **obligatoires** pour ses comptes consolidés à compter du premier exercice clos alors que les titres sont admis [V règlement (CE) n° 1606/2002, art. 4 ; F03 § 1.2]. Une SAS ne pouvant pas faire admettre ses actions aux négociations sur un marché réglementé, la société serait au préalable transformée en société anonyme, comme le prévoit le fonds [V C. com. L. 227-2] ; ce point de droit des sociétés n'est pas noté. Une admission sur un marché qui n'est pas réglementé laisserait le choix du référentiel ouvert [application, S].
+
+---
+
+### 1.2 Cadre conceptuel de l'IASB, frais d'établissement et variétés protégées (2 pts)
+
+- **Objectif et utilisateurs (0,5 pt).** Le cadre conceptuel énonce les concepts qui guident l'IASB dans l'élaboration des normes et aident les entités à définir une méthode lorsqu'aucune norme ne s'applique [V page « Conceptual Framework », ifrs.org ; IAS 8 § 11 ; F03 § 7.2]. L'information financière à usage général doit être utile aux **investisseurs, prêteurs et autres créanciers, actuels et potentiels**, pour leurs décisions relatives à la fourniture de ressources à l'entité [S ; F03 § 7.2]. Pour SEMÉLIANE : le fonds et la famille fondatrice (investisseurs actuels), les futurs actionnaires si les actions sont admises (investisseurs potentiels), les banques et les fournisseurs (prêteurs et créanciers).
+- **Définition d'un actif (0,5 pt).** Ressource contrôlée par l'entité du fait d'événements passés, et dont on attend des avantages économiques futurs [V IAS 38 § 8 ; F03 § 9] ; une immobilisation incorporelle doit en outre être **identifiable**, c'est-à-dire séparable ou issue de droits contractuels ou légaux [V IAS 38 § 12 ; F03 § 11]. Le cadre de 2018 parle d'une ressource économique actuelle, c'est-à-dire d'un droit qui a le potentiel de produire des avantages économiques [S ; F03 § 9].
+- **Frais d'établissement (0,5 pt).** Les honoraires de constitution et les frais de démarrage de la station ne donnent à SEMÉLIANE Recherche aucun droit ni aucune ressource contrôlée distincte de la société elle-même : ce ne sont pas des actifs. Les IFRS les passent en charges [V IAS 38 § 69 a) ; F04 R5], tout comme le règlement ANC dans les comptes consolidés [V ANC art. 272-5, p. 54 ; F04 R5] (question 1.4) : le passage aux IFRS ne changerait rien aux comptes consolidés, seule l'option des comptes individuels de la filiale [V PCG art. 212-9, p. 15] en diffère.
+- **Variétés protégées (0,5 pt).** Les certificats d'obtention végétale sont des **droits légaux** : ils donnent à SEMENCES DU BOISCHAUT le droit exclusif de produire et de vendre les semences de ces variétés (contrôle et restriction de l'accès des tiers [V IAS 38 § 13]), ils résultent d'événements passés (sélection et obtention des titres), ils procurent des ventes futures et ils peuvent être cédés ou concédés en licence : ils sont identifiables [V IAS 38 § 12 ; F03 § 11]. Bien qu'ils ne figurent pas au bilan de la filiale, ils sont comptabilisés séparément de l'écart d'acquisition dans un regroupement [V IFRS 3 § B31 ; F03 § 11], comme en ANC, où les éléments identifiables comprennent des éléments non comptabilisés par l'entité acquise [V ANC art. 231-7, p. 21 ; F05 § 1.2] (question 1.7 a). Les IFRS ne changeraient donc pas non plus leur traitement. Le savoir-faire de l'équipe de sélectionneurs, en revanche, n'est pas contrôlé [V IAS 38 § 15] : il reste compris dans l'écart d'acquisition.
+
+Les différences tiendraient ailleurs : écart d'acquisition non amorti, frais d'acquisition des titres en charges [V IFRS 3 § 53 ; F05 § 2 et 5], présentation (question 1.10 c).
+
+---
+
+### 1.3 Périmètre et méthodes (3 pts)
+
+#### a. Tableau et justification (2 pts)
+
+| Société | % de contrôle | Nature du contrôle | Méthode | % d'intérêt du groupe | % d'intérêt des minoritaires |
+|---|---|---|---|---|---|
+| SAS SEMÉLIANE | — | Société consolidante | — | 100 % | — |
+| SEMÉLIANE Recherche | 100 % | Exclusif | Intégration globale | 100 % | 0 % |
+| SEMÉLIANE Distribution | 100 % | Exclusif | Intégration globale | 100 % | 0 % |
+| GRAINES DU GÂTINAIS | 70 % | Exclusif | Intégration globale | 70 % | 30 % |
+| SEMENCES DU BOISCHAUT | 80 % | Exclusif | Intégration globale | 80 % | 20 % |
+| BEAUCERONNE | 20 % + 20 % = **40 %** | Influence notable | Mise en équivalence | 20 % + 70 % × 20 % = **34 %** | 40 % – 34 % = **6 %** |
+
+(Quatre filiales : 0,25 chacune, soit 1 ; BEAUCERONNE : 0,5.) La majorité des droits de vote donne le contrôle exclusif [V ANC art. 211-3, p. 12-13 ; F03 § 2], qui conduit à l'intégration globale ; l'influence notable conduit à la mise en équivalence [V art. 221-1, p. 18 ; F03 § 3].
+
+- **Pourcentages de BEAUCERONNE.** Le pourcentage de contrôle additionne les droits de vote détenus par la consolidante et par les entités qu'elle contrôle exclusivement, sans multiplication : 20 % (SEMÉLIANE) + 20 % (GRAINES DU GÂTINAIS, contrôlée exclusivement) = 40 % [V art. 211-6, p. 14 ; F03 § 4.1]. Le pourcentage d'intérêt fait la somme, sur chaque chaîne, du produit des pourcentages de capital : 20 % + 70 % × 20 % = 34 % [S, méthode du corrigé du sujet zéro ; F03 § 4.1]. Les 6 % restants sont la part des minoritaires de GRAINES DU GÂTINAIS dans la quote-part détenue indirectement (30 % × 20 %), présentée dans les intérêts minoritaires.
+- **Nature du contrôle exercé sur BEAUCERONNE (0,5 pt).** Avec 40 % des droits de vote, le groupe n'a pas la majorité. La présomption de contrôle exclusif fondée sur la désignation de la majorité des dirigeants suppose une fraction **supérieure à 40 %** des droits de vote, sans qu'aucun autre associé détienne une fraction supérieure [V art. 211-3, p. 12-13 ; F03 § 2]. Elle ne joue pas ici à double titre : le groupe ne détient que 40 %, et DARNÉVILLE Grains détient 60 % et désigne trois des cinq membres du comité de direction ; c'est elle qui contrôle BEAUCERONNE. Aucun accord ne prévoit un contrôle conjoint [V art. 211-4, p. 13]. Le groupe détient plus de 20 % des droits de vote et deux sièges sur cinq, et BEAUCERONNE traite une partie de ses semences : **influence notable** [V art. 211-5, p. 13 ; F03 § 2].
+
+#### b. Conséquences des méthodes sur l'information financière (1 pt)
+
+- **GRAINES DU GÂTINAIS, intégration globale (0,5).** Ses produits, ses charges, ses actifs et ses dettes sont repris à 100 %, après élimination des opérations internes [V art. 221-2, p. 18-19 ; F03 § 3] : le chiffre d'affaires consolidé comprend toutes ses ventes aux tiers (pas ses ventes à SEMÉLIANE Distribution), l'endettement consolidé toutes ses dettes, bien que le groupe n'en détienne que 70 % ; le résultat est repris en totalité puis partagé, la part de M. PERDRIAUX apparaissant dans les intérêts minoritaires.
+- **BEAUCERONNE, mise en équivalence (0,5).** Ni son chiffre d'affaires ni ses dettes n'apparaissent dans les comptes consolidés : une seule ligne à l'actif (titres mis en équivalence, quote-part de ses capitaux propres) et une seule ligne au compte de résultat (résultat net lié aux entités mises en équivalence), après le résultat des entités intégrées [V art. 262-3, p. 49 ; art. 281-2, p. 67 ; F14 § 1.3]. Le chiffre d'affaires et l'endettement du groupe ne traduisent donc que l'activité des sociétés qu'il contrôle ; le résultat comprend sa quote-part du résultat de BEAUCERONNE.
+
+---
+
+### 1.4 Frais d'établissement de SEMÉLIANE Recherche (4 pts)
+
+**Justification (1 pt).** Le PCG permet d'inscrire à l'actif les frais de constitution et de premier établissement, l'inscription en charges étant la méthode de référence [V PCG art. 212-9, p. 15 ; art. 121-5, p. 10-11 ; F04 R5 et § 1] ; SEMÉLIANE Recherche les a activés et les amortit sur cinq ans. Dans les comptes consolidés, ils sont **obligatoirement comptabilisés en charges** de l'exercice au cours duquel ils ont été encourus [V ANC art. 272-5, p. 54 ; F04 R5] ; les comptes de la filiale sont retraités pour appliquer les méthodes du groupe [V art. 271-5, p. 52 ; F04 § 1]. En consolidation, la totalité des 360 000 € est une charge de 2025 ; les dotations de 2025 (dans les réserves) et de 2026 (dans le résultat) sont annulées. Selon l'hypothèse de l'énoncé, les frais sont déduits fiscalement au rythme de leur amortissement : leur base fiscale au 31/12/2026 est la valeur nette restante (216 000 €), leur valeur consolidée est nulle, d'où un **impôt différé actif** [V art. 272-8, p. 57 ; F04 R5], recouvrable selon l'énoncé.
+
+**Tableau des incidences (1,5 pt)**
+
+| | 2025 (ouverture, réserves) | 2026 (résultat) | Clôture (31/12/2026) |
+|---|---:|---:|---:|
+| Comptes individuels : dotations (360 000 / 5) | 72 000 | 72 000 | VNC 216 000 |
+| Comptes consolidés : charges | 360 000 | 0 | VNC 0 |
+| **Écart avant impôt** (0,5) | **– 288 000** | **+ 72 000** | **– 216 000** |
+| Impôt différé actif (25 %) (0,5) | + 72 000 | – 18 000 | **+ 54 000** |
+| **Net** (0,5) | **– 216 000** (réserves) | **+ 54 000** (résultat) | – 162 000 |
+
+Le retraitement augmente le résultat consolidé de 2026, puisque la charge a été constatée en 2025 ; l'impôt différé actif de 72 000 € à l'ouverture est repris de 18 000 € en 2026.
+
+**C1 (bilan, 1 pt)**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| 2801 Amortissements des frais d'établissement (72 000 × 2) | 144 000 | |
+| RSV.RECHERCHE Réserves SEMÉLIANE Recherche (288 000 × 75 %) | 216 000 | |
+| IDA Impôt différé actif (216 000 × 25 %) | 54 000 | |
+| 2011 Frais de constitution | | 60 000 |
+| 2012 Frais de premier établissement | | 300 000 |
+| RST.RECHERCHE Résultat SEMÉLIANE Recherche (72 000 × 75 %) | | 54 000 |
+| *Annulation des frais d'établissement* | **414 000** | **414 000** |
+
+**C1R (compte de résultat, 0,5 pt)**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| RES_CR Résultat | 54 000 | |
+| CH_ID Charge d'impôt différé (72 000 × 25 %) | 18 000 | |
+| 68111 Dotations aux amortissements des immobilisations incorporelles et des frais d'établissement | | 72 000 |
+| *Annulation de la dotation de 2026* | **72 000** | **72 000** |
+
+SEMÉLIANE Recherche étant détenue à 100 %, le retraitement revient en totalité au groupe.
+
+---
+
+### 1.5 Droits de mutation et frais de l'entrepôt de SEMÉLIANE Distribution (4 pts)
+
+**Justification (1 pt).** Le PCG laisse le choix entre l'inscription en charges et le rattachement au coût de l'immobilisation des droits de mutation, honoraires, commissions et frais d'actes liés à son acquisition, le rattachement étant la méthode de référence [V PCG art. 213-8, p. 17 ; F04 R4]. SEMÉLIANE Distribution a choisi les charges. Dans les comptes consolidés, ces coûts sont **obligatoirement comptabilisés à l'actif** [V ANC art. 272-6, p. 54-55 ; F04 R4] : les 144 000 € (116 000 + 24 000 + 4 000) sont retirés des charges de 2026 et ajoutés au coût du terrain et du bâtiment. Déduits fiscalement en 2026, ils ne figurent pas dans la base fiscale de l'entrepôt : la valeur consolidée dépasse la base fiscale, d'où un **impôt différé passif** [V art. 272-8, p. 57 ; F04 R4].
+
+**Répartition et amortissement (1 pt)**
+
+| | Calcul | Montant |
+|---|---|---:|
+| Part du terrain (0,25) | 144 000 × 500 000 / 2 000 000 | 36 000 |
+| Part du bâtiment (0,25) | 144 000 × 1 500 000 / 2 000 000 | 108 000 |
+| Amortissement complémentaire de 2026 (0,5) | 108 000 / 25 × 9/12 (01/04 au 31/12/2026) | 3 240 |
+
+Le terrain n'est pas amorti : sa part des frais reste à l'actif sans dotation. Le bâtiment est inscrit en consolidation pour 1 608 000 € ; la dotation des comptes individuels (1 500 000 / 25 × 9/12 = 45 000 €) n'est pas modifiée, seul le complément s'y ajoute.
+
+**Tableau des incidences (1 pt)**
+
+| | Comptes individuels | Comptes consolidés | Écart (résultat 2026) |
+|---|---:|---:|---:|
+| Droits et frais en charges | 144 000 | 0 | + 144 000 |
+| Dotation sur la part des frais affectée au bâtiment | 0 | 3 240 | – 3 240 |
+| **Écart avant impôt** (0,5) | | | **+ 140 760** |
+| Impôt différé passif (25 %) (0,25) | | | – 35 190 |
+| **Net** (0,25) | | | **+ 105 570** |
+
+Acheté en 2026, l'entrepôt n'a aucune incidence sur les réserves.
+
+**C2 (bilan) et C2R (compte de résultat), 1 pt**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| 2115 Terrains bâtis | 36 000 | |
+| 2131 Bâtiments | 108 000 | |
+| 2813 Amortissements des constructions | | 3 240 |
+| IDP Impôt différé passif (140 760 × 25 %) | | 35 190 |
+| RST.DISTRIB Résultat SEMÉLIANE Distribution (140 760 × 75 %) | | 105 570 |
+| *C2 – Inscription des droits et frais au coût de l'entrepôt* | **144 000** | **144 000** |
+| 68112 Dotations aux amortissements des immobilisations corporelles | 3 240 | |
+| CH_ID Charge d'impôt différé | 35 190 | |
+| RES_CR Résultat | 105 570 | |
+| 6354 Droits d'enregistrement et de timbre | | 116 000 |
+| 6226 Honoraires | | 24 000 |
+| 6227 Frais d'actes et de contentieux | | 4 000 |
+| *C2R – Annulation des charges et amortissement complémentaire* | **144 000** | **144 000** |
+
+---
+
+### 1.6 Opérations internes (6 pts)
+
+#### a. Ventes de semences et marges sur stocks (3,5 pts)
+
+**Justification (1 pt).** Les ventes et achats réciproques sont éliminés en totalité, sans incidence sur le résultat [V ANC art. 251-1, p. 45 ; F04 R14]. Les profits internes compris dans les stocks sont éliminés **en totalité**, puis répartis entre le groupe et les minoritaires **de l'entité qui les a réalisés**, ici GRAINES DU GÂTINAIS (70 % / 30 %) ; l'impôt est corrigé [V art. 251-2, p. 45 ; F04 R14]. La marge comprise dans le stock d'ouverture a déjà été éliminée des comptes consolidés de 2025 : elle réduit les réserves, puis, les semences ayant été revendues en 2026, elle est réalisée en 2026 ; celle du stock de clôture réduit le résultat de 2026. L'élimination ramène le stock au-dessous de sa base fiscale (prix payé par SEMÉLIANE Distribution) : **impôt différé actif**, rattaché à GRAINES DU GÂTINAIS selon le manuel.
+
+**Calculs (0,75 pt).** Le taux de 25 % est exprimé sur le coût : la marge représente 25 / 125 = 20 % du prix de vente.
+
+| | Ouverture (31/12/2025) | Clôture (31/12/2026) | Incidence de 2026 |
+|---|---:|---:|---:|
+| Stock acheté à GRAINES DU GÂTINAIS | 300 000 | 420 000 | |
+| Marge comprise (× 25/125) | 60 000 | 84 000 | |
+| Incidence avant impôt | – 60 000 (réserves) | – 84 000 | – 24 000 (résultat : + 60 000 – 84 000) |
+| Impôt différé actif (25 %) | 15 000 | 21 000 | + 6 000 |
+| **Net** | **– 45 000** (réserves) | | **– 18 000** (résultat) |
+
+**Répartition (0,75 pt).** L'élimination réduit les capitaux propres retraités de GRAINES DU GÂTINAIS (question 1.8 a) ; elle est supportée à 70 % par le groupe et à 30 % par M. PERDRIAUX, minoritaire de la société vendeuse : réserves – 31 500 € (groupe) et – 13 500 € (minoritaires) ; résultat – 12 600 € et – 5 400 €. Si SEMÉLIANE Distribution, détenue à 100 %, avait été la société vendeuse, le groupe aurait supporté toute l'élimination.
+
+**C3, C4 et C4R (1 pt)**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| 701 Ventes de produits finis (GRAINES DU GÂTINAIS) | 1 800 000 | |
+| 607 Achats de marchandises (SEMÉLIANE Distribution) | | 1 800 000 |
+| *C3 – Élimination des ventes internes (compte de résultat)* | **1 800 000** | **1 800 000** |
+| RSV.GATINAIS Réserves GRAINES DU GÂTINAIS (60 000 × 75 %) | 45 000 | |
+| IDA Impôt différé actif (84 000 × 25 %) | 21 000 | |
+| RST.GATINAIS Résultat GRAINES DU GÂTINAIS (24 000 × 75 %) | 18 000 | |
+| 37 Stocks de marchandises (stock de SEMÉLIANE Distribution) | | 84 000 |
+| *C4 – Élimination des marges internes sur stocks (bilan)* | **84 000** | **84 000** |
+| 6037 Variation des stocks de marchandises (84 000 – 60 000) | 24 000 | |
+| CH_ID Produit d'impôt différé (24 000 × 25 %) | | 6 000 |
+| RES_CR Résultat | | 18 000 |
+| *C4R – Variation de la marge interne (compte de résultat)* | **24 000** | **24 000** |
+
+#### b. Dividendes (1,5 pt)
+
+- **GRAINES DU GÂTINAIS (0,5).** Les dividendes reçus des sociétés consolidées sont éliminés en totalité [V art. 251-2, p. 45 ; F04 R14]. SEMÉLIANE a reçu 280 000 € (70 % de 400 000), prélevés sur le résultat de 2025 de GRAINES DU GÂTINAIS déjà compris dans les réserves consolidées : ils sortent du résultat de SEMÉLIANE et rejoignent ses réserves. Les 120 000 € versés à M. PERDRIAUX ont quitté le groupe : ils réduisent les réserves de la filiale, donc les intérêts minoritaires, sans autre écriture.
+- **BEAUCERONNE (0,75).** Les dividendes reçus d'une entité mise en équivalence sont éliminés du compte de résultat de l'entité qui détient les titres et portés en augmentation des réserves consolidées [V ANC art. 262-3, p. 49 ; F05 § 4]. Les deux détenteurs sont concernés : SEMÉLIANE (60 000 €) et GRAINES DU GÂTINAIS (60 000 €). L'élimination chez GRAINES DU GÂTINAIS réduit son résultat retraité, partagé à 70 / 30 (question 1.8 a). La quote-part de BEAUCERONNE est ensuite prise sur ses capitaux propres après distribution (question 1.8 b) : le dividende n'est pas compté deux fois.
+
+**C5, C5R, C6 et C6R (0,25)**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| RST.SEMELIANE Résultat SAS SEMÉLIANE | 280 000 | |
+| RSV.SEMELIANE Réserves SAS SEMÉLIANE | | 280 000 |
+| *C5 – Élimination du dividende reçu de GRAINES DU GÂTINAIS (bilan)* | **280 000** | **280 000** |
+| 7611 Revenus des titres de participation | 280 000 | |
+| RES_CR Résultat | | 280 000 |
+| *C5R – Même élimination au compte de résultat* | **280 000** | **280 000** |
+| RST.SEMELIANE Résultat SAS SEMÉLIANE | 60 000 | |
+| RST.GATINAIS Résultat GRAINES DU GÂTINAIS | 60 000 | |
+| RSV.SEMELIANE Réserves SAS SEMÉLIANE | | 60 000 |
+| RSV.GATINAIS Réserves GRAINES DU GÂTINAIS | | 60 000 |
+| *C6 – Élimination des dividendes reçus de BEAUCERONNE (bilan)* | **120 000** | **120 000** |
+| 7611 Revenus des titres de participation | 120 000 | |
+| RES_CR Résultat | | 120 000 |
+| *C6R – Même élimination au compte de résultat* | **120 000** | **120 000** |
+
+#### c. Comptes réciproques et chèque en transit (1 pt)
+
+**Explication (0,5).** Créance de GRAINES DU GÂTINAIS 318 000 € – dette de SEMÉLIANE Distribution 246 000 € = 72 000 €, montant du chèque émis le 29/12/2026, enregistré par l'acheteur mais reçu par le vendeur le 05/01/2027. Le chèque est en transit à la clôture : il ne s'agit pas d'une erreur de l'une des sociétés, mais d'un décalage d'enregistrement, sans incidence sur le résultat. Il est enregistré chez GRAINES DU GÂTINAIS en chèque à encaisser, ce qui ramène sa créance à 246 000 €, égale à la dette [V art. 251-1, p. 45 ; F04 R14].
+
+**C7 et C8 (0,5)**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| 5112 Chèques à encaisser (GRAINES DU GÂTINAIS) | 72 000 | |
+| 4111 Clients (créance de GRAINES DU GÂTINAIS) | | 72 000 |
+| *C7 – Chèque en transit au 31/12/2026* | **72 000** | **72 000** |
+| 4011 Fournisseurs (dette de SEMÉLIANE Distribution) | 246 000 | |
+| 4111 Clients (créance de GRAINES DU GÂTINAIS : 318 000 – 72 000) | | 246 000 |
+| *C8 – Élimination des soldes réciproques* | **246 000** | **246 000** |
+
+---
+
+### 1.7 Acquisition de SEMENCES DU BOISCHAUT (8 pts)
+
+#### a. Actif net réévalué au 01/01/2026 et suivi des écarts (2,5 pts)
+
+| Élément | Montant |
+|---|---:|
+| Capitaux propres individuels au 01/01/2026, résultat de 2025 compris (0,25) | 5 200 000 |
+| Écart d'évaluation du portefeuille de variétés protégées (1 600 000 – 0) (0,25) | + 1 600 000 |
+| Écart d'évaluation des parcelles d'essais (720 000 – 400 000) (0,25) | + 320 000 |
+| Impôt différé passif sur les écarts ((1 600 000 + 320 000) × 25 %) (0,5) | – 480 000 |
+| **Actif net réévalué** (0,25) | **6 640 000** |
+
+- **Principe (0,5 pt).** Les éléments identifiables de l'entité acquise sont ceux qui peuvent être évalués séparément ; ils peuvent comprendre des éléments qu'elle n'avait pas comptabilisés [V ANC art. 231-7, p. 21 ; F05 § 1.2] : c'est le cas des variétés obtenues par SEMENCES DU BOISCHAUT, dont les dépenses de sélection ont été passées en charges. L'écart d'évaluation est la différence entre la valeur d'entrée et la valeur comptable [V art. 231-9, p. 22] ; les impôts différés sur ces écarts sont comptabilisés [V art. 232-1, p. 24], en contrepartie de l'écart d'acquisition [V art. 272-13, p. 59 ; F05 § 1.2]. L'exception prévue pour les incorporels généralement non amortis qui ne peuvent être cédés séparément de l'entité acquise [V art. 272-10, p. 58] ne vise pas ce portefeuille, amortissable et cessible séparément : il donne lieu à impôt différé, comme le terrain selon l'énoncé.
+- **Suivi en 2026 (0,5 pt).** Le portefeuille est amorti sur sa durée résiduelle de commercialisation : 1 600 000 / 8 = **200 000 €** par an ; l'impôt différé passif correspondant est repris de 50 000 € ; au 31/12/2026, il s'élève à (1 600 000 – 200 000) × 25 % = **350 000 €**. Les parcelles d'essais, non amortissables, gardent leur écart de 320 000 € et leur impôt différé passif de **80 000 €** tant qu'elles restent dans le groupe.
+
+#### b. Coût d'acquisition et écart d'acquisition (2,5 pts)
+
+- **Frais (0,75 pt).** Dans ses comptes individuels, SEMÉLIANE a passé les honoraires en charges, ce que permet le PCG [V PCG art. 121-5 ; F05 § 1.1], et les a déduits fiscalement. En consolidation, le coût d'acquisition comprend les coûts directement imputables, dont les honoraires de consultants et d'experts externes, **nets de l'économie d'impôt** [V ANC art. 231-2 et 231-3, p. 20 ; F05 § 1.1] : les 176 000 € sont retirés des charges de 2026 et ajoutés au coût des titres pour 176 000 × 75 % = 132 000 €.
+- **Coût d'acquisition (0,75 pt)** : 6 380 000 + 132 000 = **6 512 000 €**.
+- **Écart d'acquisition (1 pt)** : 6 512 000 – 80 % × 6 640 000 = 6 512 000 – 5 312 000 = **1 200 000 €**, positif, inscrit à l'actif immobilisé, en immobilisations incorporelles, ligne « dont écarts d'acquisition positifs » [V art. 231-9, p. 22 ; art. 231-11, p. 23 ; F05 § 1.3]. Il ne porte que sur la part de l'acquéreur ; les droits des minoritaires sont calculés sur l'actif net réévalué : 20 % × 6 640 000 = 1 328 000 € [V art. 232-1, p. 24 ; F05 § 1.3]. Il ne donne lieu à aucun impôt différé [V art. 272-10, p. 58].
+
+#### c. Durée d'utilisation, amortissement et écritures (3 pts)
+
+**Durée et amortissement (1 pt).** L'entité détermine la durée d'utilisation, limitée ou non, de l'écart d'acquisition par une analyse documentée de l'opération, sur ses aspects techniques, économiques et juridiques ; ce n'est pas une option ; le cycle de vie des produits issus de l'acquisition et les synergies attendues comptent parmi les critères [V ANC art. 231-11 et IR3, p. 23 ; F05 § 1.3 et 9]. Ici, l'écart rémunère un programme de sélection dont les variétés seront commercialisées jusqu'en 2037 et des économies d'essais ; au-delà, les gammes seront renouvelées par SEMÉLIANE Recherche. La durée est **limitée** et déterminée de façon fiable : **12 ans**. Dotation de 2026 : 1 200 000 / 12 = **100 000 €** ; valeur nette au 31/12/2026 : **1 100 000 €**. La dotation figure sur la ligne propre aux écarts d'acquisition, entre le résultat d'exploitation avant et après ces dotations [V IR3 sous art. 231-12, p. 24 ; art. 281-2, p. 67 ; F05 § 1.3] ; elle ne réduit que le résultat part du groupe. Le groupe apprécie en outre, à chaque clôture, s'il existe un indice de perte de valeur [V art. 231-11, p. 23] ; l'énoncé n'en signale aucun.
+
+**Si la durée n'était pas limitée (0,75 pt).** L'écart ne serait **pas amorti** ; sa valeur nette comptable serait comparée à sa valeur actuelle **au moins une fois par exercice**, qu'il existe ou non un indice de perte de valeur, et une dépréciation serait constatée si la valeur actuelle était inférieure, sans reprise possible [V art. 231-11, p. 23 ; F05 § 1.3 et 9]. Une durée limitée mais impossible à déterminer de façon fiable aurait conduit à un amortissement sur 10 ans [V art. 231-11, p. 23]. Le calcul de la valeur actuelle n'est pas demandé.
+
+**C9 (bilan) et C9R (compte de résultat), 0,75 pt**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| 205 Concessions et droits similaires (portefeuille de variétés protégées) | 1 600 000 | |
+| 2111 Terrains nus (parcelles d'essais) | 320 000 | |
+| RST.BOISCHAUT Résultat SEMENCES DU BOISCHAUT (200 000 × 75 %) | 150 000 | |
+| 2805 Amortissements des concessions et droits similaires (1 600 000 / 8) | | 200 000 |
+| IDP Impôt différé passif (350 000 + 80 000) | | 430 000 |
+| RSV.BOISCHAUT Réserves SEMENCES DU BOISCHAUT ((1 600 000 + 320 000) × 75 %) | | 1 440 000 |
+| *C9 – Écarts d'évaluation nets d'impôt et amortissement de 2026* | **2 070 000** | **2 070 000** |
+| 68111 Dotations aux amortissements des immobilisations incorporelles | 200 000 | |
+| CH_ID Produit d'impôt différé (200 000 × 25 %) | | 50 000 |
+| RES_CR Résultat | | 150 000 |
+| *C9R – Amortissement de l'écart d'évaluation du portefeuille* | **200 000** | **200 000** |
+
+**C10 (bilan) et C10R (compte de résultat), 0,25 pt**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| 261 Titres de participation SEMENCES DU BOISCHAUT (176 000 × 75 %) | 132 000 | |
+| RST.SEMELIANE Résultat SAS SEMÉLIANE | | 132 000 |
+| *C10 – Incorporation des frais nets d'impôt au coût des titres* | **132 000** | **132 000** |
+| 695 Impôts sur les bénéfices (économie d'impôt incorporée au coût des titres) | 44 000 | |
+| RES_CR Résultat | 132 000 | |
+| 6226 Honoraires | | 176 000 |
+| *C10R – Annulation des frais d'acquisition des titres* | **176 000** | **176 000** |
+
+**C11 (bilan) et C11R (compte de résultat), 0,25 pt**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| RST_G Résultat consolidé – part du groupe | 100 000 | |
+| AMO_EA Amortissements de l'écart d'acquisition SEMENCES DU BOISCHAUT | | 100 000 |
+| *C11 – Amortissement de 2026 de l'écart d'acquisition* | **100 000** | **100 000** |
+| DOT_EA Dotations aux amortissements et dépréciations des écarts d'acquisition | 100 000 | |
+| RES_CR Résultat | | 100 000 |
+| *C11R – Dotation de 2026 au compte de résultat* | **100 000** | **100 000** |
+
+(Écriture C11 présentée après l'élimination des titres C12, qui inscrit l'écart d'acquisition à l'actif.)
+
+---
+
+### 1.8 Partage des capitaux propres et mise en équivalence (7 pts)
+
+#### a. Tableaux de partage au 31/12/2026 (2,5 pts)
+
+**GRAINES DU GÂTINAIS (1,25 pt)**
+
+Réserves retraitées : 3 580 000 + 60 000 (dividende de BEAUCERONNE, C6) – 45 000 (marge d'ouverture nette, C4) = **3 595 000 €** ; résultat retraité : 780 000 – 60 000 – 18 000 = **702 000 €** (0,5).
+
+| | Total | Groupe (70 %) | Intérêts minoritaires (30 %) |
+|---|---:|---:|---:|
+| Capital | 1 500 000 | 1 050 000 | 450 000 |
+| Réserves retraitées | 3 595 000 | 2 516 500 | 1 078 500 |
+| **Capitaux propres retraités hors résultat** | **5 095 000** | **3 566 500** | **1 528 500** |
+| Élimination des titres (prix payé en 2020) | | – 2 660 000 | |
+| **Réserves consolidées** | | **906 500** | |
+| Résultat retraité de 2026 | 702 000 | 491 400 | 210 600 |
+| **Intérêts minoritaires au 31/12/2026** (avant la quote-part de BEAUCERONNE) | | | **1 739 100** |
+
+(Partage et titres : 0,5 ; résultat et minoritaires : 0,25.) Les titres, payés 70 % des capitaux propres de 2020 sans écart d'évaluation, ne laissent aucun écart d'acquisition : les réserves consolidées sont 70 % des réserves retraitées accumulées depuis l'acquisition, 70 % × (3 595 000 – 2 300 000) = 906 500 €. Les titres BEAUCERONNE que détient la filiale font partie de ses capitaux propres partagés ; leur remplacement par une valeur d'équivalence est traité en b.
+
+**SEMENCES DU BOISCHAUT (1,25 pt)**
+
+Réserves retraitées : 3 400 000 + 1 440 000 (écarts d'évaluation nets) = 4 840 000 € ; résultat retraité : 720 000 – 150 000 (amortissement net du portefeuille) = **570 000 €** (0,25).
+
+| | Total | Groupe (80 %) | Intérêts minoritaires (20 %) |
+|---|---:|---:|---:|
+| Capital | 1 800 000 | 1 440 000 | 360 000 |
+| Réserves (2 900 000 + résultat de 2025 affecté 500 000) | 3 400 000 | 2 720 000 | 680 000 |
+| Écarts d'évaluation nets d'impôt différé (à l'acquisition) | 1 440 000 | 1 152 000 | 288 000 |
+| **Capitaux propres retraités hors résultat** | **6 640 000** | **5 312 000** | **1 328 000** |
+| Élimination des titres (coût d'acquisition) | | – 6 512 000 | |
+| Écart d'acquisition (inscrit à l'actif) | | + 1 200 000 | |
+| **Réserves consolidées** | | **0** | |
+| Résultat retraité de 2026 | 570 000 | 456 000 | 114 000 |
+| **Intérêts minoritaires au 31/12/2026** | | | **1 442 000** |
+
+(Capitaux propres retraités : 0,25 ; titres, écart et réserves nulles : 0,25 ; résultat et minoritaires : 0,5.) Acquise le 01/01/2026, la société n'apporte aucune réserve consolidée. Sa contribution au résultat part du groupe est de 456 000 – 100 000 = **356 000 €**.
+
+#### b. Mise en équivalence de BEAUCERONNE (2,5 pts)
+
+**Écart d'acquisition de 2020 (0,5).** Chaque détenteur a payé 600 000 € pour 20 % de capitaux propres de 2 400 000 €, soit 480 000 € : écart de 120 000 € chacun, **240 000 €** au total, présenté comme un écart d'acquisition d'intégration globale [V ANC art. 262-2, p. 49 ; F05 § 4], donc reclassé hors des titres avant leur remplacement par la valeur d'équivalence. Amorti sur 10 ans : 24 000 € par an, dont 12 000 € sur l'écart de SEMÉLIANE (groupe) et 12 000 € sur celui de GRAINES DU GÂTINAIS (70 % groupe, 30 % minoritaires). Au 31/12/2026, sept annuités : amortissements cumulés 168 000 €, valeur nette **72 000 €**. Les dotations figurent sur la ligne « résultat net lié aux entités mises en équivalence » [V art. 262-3, p. 49 ; F14 § 1.3].
+
+**Tableau (2 pts : valeur d'équivalence 0,5 ; partage des réserves 0,5 ; partage du résultat 0,5 ; titres par détenteur et part des minoritaires 0,5)**
+
+| | Total (40 %) | Groupe (34 %) | Minoritaires de GRAINES DU GÂTINAIS (6 %) |
+|---|---:|---:|---:|
+| Capitaux propres au 31/12/2026 hors résultat (1 000 000 + 2 150 000 = 3 150 000) | 1 260 000 | 1 071 000 | 189 000 |
+| Titres hors écart d'acquisition : SEMÉLIANE 480 000 (100 % groupe) ; GRAINES DU GÂTINAIS 480 000 (70 % / 30 %) | – 960 000 | – 816 000 | – 144 000 |
+| Réserves avant amortissement de l'écart (quote-part de 750 000 de réserves accumulées depuis 2020) | 300 000 | 255 000 | 45 000 |
+| Amortissements de l'écart de 2020 à 2025 (6 × 24 000) | – 144 000 | – 122 400 | – 21 600 |
+| **Réserves consolidées** | **156 000** | **132 600** | **23 400** |
+| Résultat de 2026 (500 000) | 200 000 | 170 000 | 30 000 |
+| Dotation de 2026 à l'amortissement de l'écart | – 24 000 | – 20 400 | – 3 600 |
+| **Résultat net lié à BEAUCERONNE** | **176 000** | **149 600** | **26 400** |
+| **Titres mis en équivalence** : 40 % × 3 650 000 | **1 460 000** | | |
+| Écart d'acquisition net (240 000 – 168 000) | 72 000 | | |
+
+La valeur d'équivalence est calculée au pourcentage de **contrôle** (40 %) : les titres de GRAINES DU GÂTINAIS sont remplacés en totalité, et la part du gain qui revient à M. PERDRIAUX (30 % de la participation indirecte, soit 6 %) est portée dans les intérêts minoritaires, selon le manuel. Contrôle : titres mis en équivalence 1 460 000 + écart net 72 000 – titres éliminés 1 200 000 = 332 000 € = réserves 156 000 + résultat 176 000. Les actifs et passifs identifiables de BEAUCERONNE avaient une valeur d'entrée égale à leur valeur comptable : aucun écart d'évaluation ; l'écart d'acquisition, lui, est pris en compte, avec son amortissement passé (`JUR-G03`). Aucun résultat interne n'étant compris dans les actifs du groupe, aucune autre élimination n'est nécessaire [V art. 262-4, p. 49-50 ; F04 R14].
+
+#### c. Écritures (2 pts)
+
+**C12 (bilan, 0,5 pt)**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| CAP_ELIM Capital SEMENCES DU BOISCHAUT | 1 800 000 | |
+| RSV.BOISCHAUT Réserves retraitées (3 400 000 + 1 440 000) | 4 840 000 | |
+| RST.BOISCHAUT Résultat retraité | 570 000 | |
+| EA Écart d'acquisition SEMENCES DU BOISCHAUT | 1 200 000 | |
+| 261 Titres de participation (6 380 000 + 132 000) | | 6 512 000 |
+| RSV_M Intérêts minoritaires – capital et réserves (20 % × 6 640 000) | | 1 328 000 |
+| RST_G Résultat consolidé – part du groupe (80 % × 570 000) | | 456 000 |
+| RST_M Intérêts minoritaires – résultat (20 % × 570 000) | | 114 000 |
+| *Élimination des titres SEMENCES DU BOISCHAUT, écart d'acquisition et partage* | **8 410 000** | **8 410 000** |
+
+**C13 (bilan, 0,5 pt)**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| CAP_ELIM Capital GRAINES DU GÂTINAIS | 1 500 000 | |
+| RSV.GATINAIS Réserves retraitées | 3 595 000 | |
+| RST.GATINAIS Résultat retraité | 702 000 | |
+| 261 Titres de participation GRAINES DU GÂTINAIS | | 2 660 000 |
+| RSV_G Réserves consolidées – part du groupe | | 906 500 |
+| RSV_M Intérêts minoritaires – capital et réserves (30 % × 5 095 000) | | 1 528 500 |
+| RST_G Résultat consolidé – part du groupe (70 % × 702 000) | | 491 400 |
+| RST_M Intérêts minoritaires – résultat (30 % × 702 000) | | 210 600 |
+| *Élimination des titres GRAINES DU GÂTINAIS et partage (70 % / 30 %)* | **5 797 000** | **5 797 000** |
+
+**C14 à C16R (BEAUCERONNE, 1 pt)**
+
+| Compte | Débit | Crédit |
+|---|---:|---:|
+| EA Écart d'acquisition BEAUCERONNE | 240 000 | |
+| 261 Titres BEAUCERONNE détenus par SEMÉLIANE | | 120 000 |
+| 261 Titres BEAUCERONNE détenus par GRAINES DU GÂTINAIS | | 120 000 |
+| *C14 – Reclassement de l'écart d'acquisition compris dans le coût des titres* | **240 000** | **240 000** |
+| RSV_G Réserves consolidées – part du groupe ((12 000 + 8 400) × 6) | 122 400 | |
+| RSV_M Intérêts minoritaires – réserves (3 600 × 6) | 21 600 | |
+| RST_G Résultat consolidé – part du groupe | 20 400 | |
+| RST_M Intérêts minoritaires – résultat | 3 600 | |
+| AMO_EA Amortissements de l'écart d'acquisition BEAUCERONNE (240 000 × 7/10) | | 168 000 |
+| *C15 – Amortissements de l'écart d'acquisition, 2020 à 2026* | **168 000** | **168 000** |
+| TME Titres mis en équivalence (40 % × 3 650 000) | 1 460 000 | |
+| 261 Titres BEAUCERONNE détenus par SEMÉLIANE (600 000 – 120 000) | | 480 000 |
+| 261 Titres BEAUCERONNE détenus par GRAINES DU GÂTINAIS (600 000 – 120 000) | | 480 000 |
+| RSV_G Réserves consolidées – part du groupe (34 % × 750 000) | | 255 000 |
+| RSV_M Intérêts minoritaires – réserves (6 % × 750 000) | | 45 000 |
+| RST_G Résultat consolidé – part du groupe (34 % × 500 000) | | 170 000 |
+| RST_M Intérêts minoritaires – résultat (6 % × 500 000) | | 30 000 |
+| *C16 – Mise en équivalence des titres BEAUCERONNE* | **1 460 000** | **1 460 000** |
+| QP_MEE Résultat net lié aux entités mises en équivalence (dotation 2026) | 24 000 | |
+| RES_CR Résultat | | 24 000 |
+| *C15R – Dotation de 2026 de l'écart d'acquisition au compte de résultat* | **24 000** | **24 000** |
+| RES_CR Résultat | 200 000 | |
+| QP_MEE Résultat net lié aux entités mises en équivalence (40 % × 500 000) | | 200 000 |
+| *C16R – Quote-part de résultat de BEAUCERONNE* | **200 000** | **200 000** |
+
+La ligne « résultat net lié aux entités mises en équivalence » s'établit à 200 000 – 24 000 = **176 000 €**, dont 26 400 € reviennent aux minoritaires de GRAINES DU GÂTINAIS.
+
+---
+
+### 1.9 Passage aux capitaux propres consolidés (3 pts)
+
+**Principe.** L'intégration globale cumule les comptes des entités consolidées après retraitements, élimine les opérations internes et partage les capitaux propres entre le groupe et les intérêts minoritaires ; la mise en équivalence substitue aux titres la quote-part des capitaux propres [V ANC art. 221-2 et 221-4, p. 18-19 ; F03 § 3]. Le tableau fait ce chemin pour les capitaux propres de l'ensemble.
+
+**Tableau (2 pts : rattachement des opérations aux phases 1 ; montants 1)**
+
+| Phase | Opération (question, écriture) | Effet sur les capitaux propres de l'ensemble |
+|---|---|---:|
+| 0. Cumul des comptes individuels | Capitaux propres des cinq sociétés intégrées globalement (annexe 1.9) | 65 990 000 |
+| 1. Homogénéisation des méthodes | Frais d'établissement de SEMÉLIANE Recherche (1.4, C1) : réserves – 216 000, résultat + 54 000 | – 162 000 |
+| | Droits et frais de l'entrepôt de SEMÉLIANE Distribution (1.5, C2) | + 105 570 |
+| | Frais d'acquisition des titres SEMENCES DU BOISCHAUT, nets d'impôt (1.7 b, C10) | + 132 000 |
+| 2. Évaluation de l'entité acquise | Écarts d'évaluation nets de SEMENCES DU BOISCHAUT (1 440 000) et amortissement net de 2026 (– 150 000) (1.7 a, C9) | + 1 290 000 |
+| 3. Élimination des opérations internes | Marges sur stocks (1.6 a, C4) : réserves – 45 000, résultat – 18 000 | – 63 000 |
+| | Ventes et achats internes (C3), dividendes (C5, C6 : transfert du résultat aux réserves), soldes réciproques et chèque en transit (C7, C8) | 0 |
+| 4. Élimination des titres, écart d'acquisition et partage | Titres des quatre filiales intégrées : 2 000 000 + 3 000 000 + 2 660 000 + 6 512 000 (1.8, C12, C13) | – 14 172 000 |
+| | Écart d'acquisition de SEMENCES DU BOISCHAUT net d'amortissement : 1 200 000 – 100 000 (C11, C12) | + 1 100 000 |
+| | Partage entre le groupe et les minoritaires | 0 |
+| 5. Mise en équivalence | Titres BEAUCERONNE éliminés (C14, C16) | – 1 200 000 |
+| | Titres mis en équivalence (C16) | + 1 460 000 |
+| | Écart d'acquisition net de BEAUCERONNE : 240 000 – 168 000 (C14, C15) | + 72 000 |
+| **Capitaux propres de l'ensemble consolidé** | | **54 552 570** |
+
+**Partage (1 pt)**
+
+| | Montant |
+|---|---:|
+| Intérêts minoritaires : GRAINES DU GÂTINAIS 1 739 100 + SEMENCES DU BOISCHAUT 1 442 000 + BEAUCERONNE (23 400 + 26 400) 49 800 | **3 230 900** |
+| dont résultat : 210 600 + 114 000 + 26 400 | 351 000 |
+| **Capitaux propres part du groupe** : 54 552 570 – 3 230 900 | **51 321 670** |
+
+Contrôle par les contributions des sociétés :
+
+| Société | Réserves consolidées | Résultat net part du groupe |
+|---|---:|---:|
+| SAS SEMÉLIANE | 26 800 000 + 280 000 + 60 000 (C5, C6) = 27 140 000 | 4 260 000 – 340 000 (C5, C6) + 132 000 (C10) = 4 052 000 |
+| SEMÉLIANE Recherche | 140 000 – 216 000 (C1) = – 76 000 | 260 000 + 54 000 = 314 000 |
+| SEMÉLIANE Distribution | 4 600 000 | 1 150 000 + 105 570 = 1 255 570 |
+| GRAINES DU GÂTINAIS | 906 500 | 491 400 |
+| SEMENCES DU BOISCHAUT | 0 | 456 000 – 100 000 = 356 000 |
+| BEAUCERONNE | 132 600 | 149 600 |
+| **Total** | **32 703 100** | **6 618 570** |
+
+Capital de SEMÉLIANE 12 000 000 + réserves consolidées 32 703 100 + résultat 6 618 570 = **51 321 670 €**. Les titres de SEMÉLIANE Recherche et de SEMÉLIANE Distribution, souscrits à la création pour la valeur de leur capital, n'apportent aucun écart ; leurs réserves retraitées reviennent en totalité au groupe. Le cumul ne serait pas un point de départ correct sans les phases 1 et 2 : on partage des capitaux propres **retraités** et **réévalués** (`JUR-G01`).
+
+---
+
+### 1.10 Documents de synthèse (6 pts)
+
+#### a. Extrait du compte de résultat consolidé de 2026 (3 pts)
+
+Modèle par nature du règlement ANC [V art. 281-2, p. 67 ; F14 § 1.3].
+
+| Poste | Calcul | Montant |
+|---|---|---:|
+| Résultat d'exploitation avant dotations aux amortissements et dépréciations des écarts d'acquisition (0,75) | 9 380 000 + 72 000 (C1R) + 144 000 – 3 240 (C2R) – 24 000 (C4R) – 200 000 (C9R) + 176 000 (C10R) ; ventes internes (C3) sans effet | 9 544 760 |
+| Dotations aux amortissements et dépréciations des écarts d'acquisition (0,25) | SEMENCES DU BOISCHAUT (C11R) | – 100 000 |
+| Résultat d'exploitation après dotations aux amortissements et dépréciations des écarts d'acquisition | | 9 444 760 |
+| Charges et produits financiers (0,25) | 180 000 – 280 000 (C5R) – 120 000 (C6R) | – 220 000 |
+| Charges et produits exceptionnels | cumul, sans retraitement | – 40 000 |
+| Impôts sur les résultats (0,75) | exigibles : 2 350 000 + 44 000 (C10R) = 2 394 000 ; différés : 18 000 (C1R) + 35 190 (C2R) – 6 000 (C4R) – 50 000 (C9R) = – 2 810 (produit net) | – 2 391 190 |
+| **Résultat net des entités intégrées** | | **6 793 570** |
+| Résultat net lié aux entités mises en équivalence (0,5) | 200 000 (C16R) – 24 000 (C15R) | 176 000 |
+| **Résultat net de l'ensemble consolidé** (0,5 pour les trois dernières lignes) | | **6 969 570** |
+| Intérêts minoritaires | 210 600 + 114 000 + 30 000 – 3 600 | – 351 000 |
+| **Résultat net (part du groupe)** | | **6 618 570** |
+
+- L'impôt de 44 000 € (économie d'impôt sur les frais d'acquisition) est un impôt exigible : en consolidation, l'économie est incorporée au coût des titres et non au résultat.
+- La dotation à l'amortissement de l'écart d'acquisition de BEAUCERONNE ne figure pas sur la ligne des écarts d'acquisition des entités intégrées, mais dans le résultat net lié aux entités mises en équivalence [V art. 262-3, p. 49], ventilé dans l'annexe [V art. 282-29, 2, p. 86 ; F14 § 1.3].
+- Contrôle : le résultat part du groupe égale le total des contributions de la question 1.9 (6 618 570 €). Les lignes « résultat par action » sont facultatives pour un groupe dont les titres ne sont pas négociés [V art. 281-2, note (4), p. 67 ; F14 § 1.4] et ne sont pas demandées.
+
+#### b. Annexe consolidée (1,5 pt)
+
+L'annexe forme un tout avec le bilan et le compte de résultat ; elle ne donne que les informations significatives et présente les chiffres de l'exercice précédent [V art. 111-4, p. 8 ; art. 282-1, p. 74 ; F14 § 1.1 et 1.4].
+- **Entrée de SEMENCES DU BOISCHAUT dans le périmètre (0,75)** : date (01/01/2026), pourcentage acquis (80 %), méthode (intégration globale), prix et frais, effets de l'entrée sur les principaux postes du bilan et du compte de résultat ; liste des sociétés consolidées, avec les pourcentages de contrôle et d'intérêt et les méthodes, BEAUCERONNE comprise (influence notable à 40 %) [V art. 282-3 à 282-8, intitulés ; F14 § 1.4 ; S pour le contenu].
+- **Écart d'acquisition (0,75)** : calcul (coût de 6 512 000 €, frais nets d'impôt compris ; actif net réévalué de 6 640 000 € ; écarts d'évaluation du portefeuille de variétés et des parcelles), durée d'utilisation limitée de 12 ans et analyse qui la fonde, dotation de 100 000 € et valeur nette de 1 100 000 € ; méthode de l'écart d'acquisition de BEAUCERONNE (amorti sur 10 ans, valeur nette 72 000 €, dotation comprise dans le résultat des entités mises en équivalence) [V art. 282-19 à 282-30, intitulés ; art. 282-29, 2, p. 86 ; F14 § 1.4].
+
+#### c. Deux différences de présentation en IFRS (1,5 pt, 0,75 par différence)
+
+Pour l'exercice 2026, la présentation relèverait d'IAS 1 ; IFRS 18 ne s'applique qu'aux exercices ouverts à compter du 01/01/2027 et n'est pas appliquée par anticipation [V règlement (UE) 2026/338 ; F14 § 0]. Deux différences parmi :
+- les **participations ne donnant pas le contrôle** (1 739 100 + 1 442 000 + 49 800 €) seraient présentées **au sein des capitaux propres**, séparément des capitaux propres attribuables aux propriétaires de la mère [V IAS 1 § 54 q) ; IFRS 10 § 22 ; F14 § 4], alors qu'en ANC les intérêts minoritaires forment une rubrique distincte ;
+- l'écart d'acquisition n'étant pas amorti en IFRS [F05 § 2] (question 1.2), le compte de résultat ne comporterait aucune ligne de dotation aux écarts d'acquisition : aucun poste n'est imposé pour les pertes de valeur du goodwill [V F05 § 5 ; F14 § 4] ;
+- le goodwill de BEAUCERONNE serait **inclus dans la valeur de la participation** mise en équivalence [V IAS 28 § 32 a) ; F05 § 5], et non présenté parmi les écarts d'acquisition ;
+- aucun produit ni charge ne pourrait être présenté comme extraordinaire [V IAS 1 § 87 ; F14 § 4] : la rubrique « charges et produits exceptionnels » du modèle ANC n'aurait pas d'équivalent ; un état du résultat net et des autres éléments du résultat global serait présenté [V F14 § 4] ; le bilan distinguerait les éléments courants et non courants [V IAS 1 § 60 ; F14 § 4].
+
+---
+
+### Réponses tolérées
+- **1.1** : seuils des grands groupes cités sans la condition des deux exercices consécutifs, si le candidat constate qu'ils sont largement dépassés ; transformation de la SAS évoquée sans incidence sur la note.
+- **1.2** : définition de l'actif tirée du seul cadre de 2018 ; identifiabilité non mentionnée, si le contrôle des droits légaux est expliqué.
+- **1.3 a** : colonne des minoritaires laissée vide pour BEAUCERONNE, si le candidat indique que 6 % de sa quote-part revient indirectement aux minoritaires de GRAINES DU GÂTINAIS.
+- **1.4** : écritures de bilan présentées en deux temps (annulation du brut et des amortissements, puis impôt différé), si les montants sont justes.
+- **1.5** : frais affectés en totalité au bâtiment, si le candidat l'écrit comme hypothèse : – 0,25 (le manuel impose la répartition) ; amortissement calculé sur 12 mois : – 0,25.
+- **1.6 a** : élimination de la marge présentée en deux écritures (ouverture et clôture), si les réserves, le résultat et l'impôt différé sont justes.
+- **1.6 c** : chèque enregistré au compte 512 plutôt qu'au compte 5112, ou au crédit d'un compte de dette chez SEMÉLIANE Distribution (annulation de son règlement), si les soldes réciproques éliminés sont égaux et le résultat inchangé (`JUR-F08`).
+- **1.8 b** : écart d'acquisition de BEAUCERONNE laissé dans la valeur des titres mis en équivalence (présentation des IFRS), si l'écart et son amortissement sont calculés : – 0,25 ; valeur d'équivalence présentée au seul pourcentage d'intérêt (34 % × 3 650 000 = 1 241 000 €), si le candidat montre la part des minoritaires de GRAINES DU GÂTINAIS dans ses tableaux : – 0,5.
+- **1.8 c** : écritures C14 à C16 regroupées en une seule écriture de bilan, si elle est équilibrée.
+- **1.9** : frais d'acquisition des titres rattachés à la phase d'élimination des titres ; écarts d'évaluation présentés avec les retraitements d'homogénéisation ; autre découpage en phases, si chaque opération du dossier y figure et que le total est juste.
+- **Tous** : montants cohérents avec les erreurs antérieures du candidat (erreur non sanctionnée deux fois).
+
+### Erreurs fréquentes
+- **Obligation et référentiel** : exemption du 1° retenue au motif que SEMÉLIANE est contrôlée par le fonds, sans vérifier que celui-ci la consolide ; IFRS présentées comme obligatoires dès aujourd'hui ; anciens seuils de consolidation cités.
+- **Cadre conceptuel** : définitions récitées sans application aux deux éléments du cas ; utilisateurs limités aux actionnaires ; variétés protégées confondues avec l'écart d'acquisition (`JUR-F07`).
+- **Périmètre** : pourcentage de contrôle de BEAUCERONNE calculé en multipliant (20 % + 14 % = 34 %) ; contrôle exclusif retenu à 40 % alors qu'un associé détient 60 % ; intérêt arrêté à 20 %, la chaîne indirecte étant oubliée.
+- **Frais d'établissement** : dotation de 2026 maintenue ; totalité de l'écart portée en résultat de 2026 ; impôt différé omis ou inversé ; tableau des incidences non présenté (`JUR-F05`, `JUR-G06`).
+- **Droits de mutation** : frais affectés au seul bâtiment, ou amortis sur le terrain ; amortissement sur une année pleine ; impôt différé actif au lieu de passif.
+- **Opérations internes** : marge calculée sur le prix de vente (420 000 × 25 %) au lieu du coût ; marge d'ouverture oubliée ou portée en résultat ; élimination imputée au seul groupe ; dividende de GRAINES DU GÂTINAIS éliminé pour 400 000 € (part du minoritaire comprise) ; dividende reçu par GRAINES DU GÂTINAIS oublié ; écart de 72 000 € traité comme une erreur à corriger en résultat.
+- **Acquisition** : frais d'acquisition omis ou retenus pour leur montant brut (`JUR-G02`) ; portefeuille de variétés non réévalué parce qu'il ne figurait pas au bilan ; impôt différé omis sur le portefeuille ou sur le terrain ; amortissement de l'écart d'acquisition partagé avec les minoritaires ; écart non amorti malgré la durée limitée.
+- **Mise en équivalence** : écart d'acquisition de 2020 et ses amortissements ignorés (`JUR-G03`) ; titres de GRAINES DU GÂTINAIS oubliés ; part des minoritaires de GRAINES DU GÂTINAIS attribuée au groupe ; dividende de BEAUCERONNE compté à la fois dans le résultat des détenteurs et dans la quote-part ; écritures non équilibrées (`JUR-F04`).
+- **Processus et compte de résultat** : partage effectué sur les capitaux propres individuels non retraités (`JUR-G01`) ; dotation de l'écart d'acquisition de BEAUCERONNE portée sur la ligne des entités intégrées ; impôts différés non distingués de l'impôt exigible ; montants sans calcul (`JUR-F02`).
