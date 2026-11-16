@@ -1,0 +1,186 @@
+# DSCG UE 2 — Finance — Exercice d'entraînement n° 45
+
+**DOSSIER 3 – RACHETER UN STUDIO INDÉPENDANT EN CROISSANCE : MÉTHODES SELON LE CYCLE DE VIE, COMPLÉMENT DE PRIX, CRÉATION DE VALEUR ET FINANCEMENT (18 points)**
+
+Durée conseillée : 1 h 05 (sur une épreuve de 3 heures, coefficient 1, notée sur 50).
+
+Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.
+
+**Document autorisé** : aucun.
+
+**Matériel autorisé** : calculatrice avec mode examen actif, ou calculatrice sans mémoire « type collège ».
+
+### AVERTISSEMENT
+
+Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.
+
+Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.
+
+---
+
+## Présentation
+
+NOCTÉVAL Interactive SA est une société anonyme à conseil d'administration dont les actions sont cotées sur le compartiment B d'Euronext Paris depuis 2019. Son siège est à Bordeaux (Gironde). Elle conçoit, développe et édite des jeux vidéo pour consoles et ordinateurs, vendus surtout en téléchargement sur les boutiques numériques des fabricants de consoles et des plateformes de distribution. Le groupe emploie 760 salariés, dont 610 dans ses trois studios de Bordeaux, Lyon et Rennes, les deux derniers étant des filiales détenues à 100 %. Son jeu de rôle « Les Brumes d'Aldrec », sorti en mars 2026, a porté le chiffre d'affaires consolidé à 236 M€ en 2026, contre 142 M€ en 2025 ; la suite de ce jeu est en développement pour une sortie prévue à l'automne 2028. Les comptes consolidés sont établis selon les normes IFRS.
+
+Le capital est divisé en 24 000 000 actions. Les deux fondateurs, Mme Inès VARLOTTE, présidente-directrice générale, et M. Julien ESCAMBRE, directeur de la création, détiennent ensemble 44 % du capital et 58 % des droits de vote grâce aux droits de vote double. Les salariés détiennent 3 % du capital ; le reste est dans le public, dont de nombreux actionnaires individuels, souvent joueurs eux-mêmes. M. Hugo PERNELLAC est directeur financier. Au 31 décembre 2026, la trésorerie disponible du groupe atteint 268 M€, sans dette bancaire. Pour 2027, le conseil d'administration étudie trois décisions : rendre une partie de cette trésorerie aux actionnaires, placer la réserve qui financera la suite des « Brumes d'Aldrec », et racheter un studio indépendant.
+
+Nous sommes en avril 2027. NOCTÉVAL négocie le rachat de la totalité du capital de VELTRANE Studio SAS, studio nantais de 74 salariés créé en 2020, qui a connu un premier succès avec « Les Lanternes de Morvaigne » et développe un second jeu. Avant de présenter une offre ferme au conseil d'administration, Mme Inès VARLOTTE et M. Hugo PERNELLAC vous demandent d'évaluer le studio par des méthodes adaptées à son stade de développement, d'apprécier le prix demandé par les vendeurs et la valeur que l'opération créerait pour NOCTÉVAL, de choisir le financement et d'analyser les informations extra-financières recueillies lors de l'audit d'acquisition.
+
+Collaborateur du cabinet d'expertise comptable et de conseil qui accompagne le groupe, vous intervenez à la demande de Mme Inès VARLOTTE et de M. Hugo PERNELLAC. Les entreprises, les personnes et les jeux cités sont fictifs.
+
+### Travail à faire
+
+**Base documentaire : annexes 3.1 à 3.7**
+
+**3.1.** À l'aide de la présentation et des annexes 3.1 et 3.6, présenter les motifs qui conduisent NOCTÉVAL à racheter un studio indépendant comme VELTRANE, puis les principaux risques de l'opération pour le groupe. *(1,5 point)*
+
+**3.2.** À l'aide des annexes 3.1 et 3.2, situer VELTRANE dans son cycle de vie et en déduire les méthodes d'évaluation pertinentes. Calculer l'actif net comptable (ANC) et l'actif net comptable corrigé (ANCC) du studio au 31 décembre 2026. Expliquer pourquoi l'approche patrimoniale a une portée limitée pour un tel studio. *(2 points)*
+
+**3.3.** À l'aide de l'annexe 3.3, appliquer la méthode du capital-risque à la totalité du capital de VELTRANE : valeur de sortie à la fin de 2031, valeur actuelle au taux de rentabilité interne (TRI) exigé par le comité d'investissement, puis aux TRI de 15 % et de 25 %. Calculer le TRI qu'obtiendrait NOCTÉVAL si elle payait la seule partie fixe du prix et si la valeur de sortie était atteinte. Expliquer pourquoi cette méthode convient à une jeune entreprise et ce qu'elle laisse de côté. *(2 points)*
+
+**3.4.** À l'aide des annexes 3.2 et 3.4, évaluer VELTRANE au 31 décembre 2026 par l'actualisation des flux de trésorerie disponibles : valeur actuelle des flux de 2027 à 2031, valeur terminale à la fin de 2031 et sa valeur actuelle, valeur globale de l'entreprise (VGE), puis valeur des capitaux propres (VCP). Commenter le poids de la valeur terminale et la sensibilité du résultat. *(2,5 points)*
+
+**3.5.** À l'aide des annexes 3.2 et 3.4, calculer la VGE et la VCP de VELTRANE par le multiple des transactions récentes. Comparer les valeurs obtenues aux questions 3.2 à 3.5 et retenir une fourchette de valeur pour les capitaux propres du studio. *(1 point)*
+
+**3.6.** À l'aide des annexes 3.1, 3.4 et 3.5 et de vos résultats précédents :
+- calculer le montant espéré du complément de prix et sa valeur actuelle au 31 décembre 2026 ; expliquer comment ce complément partage le risque entre vendeurs et acheteur et réduit l'asymétrie d'information entre eux ;
+- calculer la valeur actuelle des synergies, la création de valeur espérée de l'opération pour NOCTÉVAL et la prime payée aux vendeurs par rapport à la valeur du studio seul obtenue à la question 3.4 ;
+- calculer la valeur actuelle nette (VAN) de l'acquisition dans chacun des trois scénarios, son espérance et son écart-type, puis les mêmes grandeurs si NOCTÉVAL payait à la date 0, sans complément, un prix fixe égal au prix espéré ; commenter ;
+- conclure sur l'opportunité de l'opération et sur ses conditions. *(5 points)*
+
+**3.7.** À l'aide de l'annexe 3.5, calculer le coût actuariel avant et après impôt de l'emprunt proposé par la Banque ORSELINE et le comparer au coût du financement par la trésorerie disponible. Mesurer l'effet de chaque solution sur la trésorerie, la dette financière et la trésorerie nette du groupe juste après l'opération, ainsi que le coût de portage de l'emprunt la première année. Recommander un financement en vous appuyant sur la théorie du financement hiérarchique (Myers et Majluf, 1984). Le coût après impôt de l'emprunt pourra être approché par le coût avant impôt × (1 − 25 %). *(2 points)*
+
+**3.8.** À l'aide de l'annexe 3.6, appliquer le principe de double matérialité aux enjeux relevés lors de l'audit d'acquisition : pour chaque enjeu, présenter l'impact du studio sur les personnes ou l'environnement et l'effet possible sur la valeur du studio. Indiquer ce que l'état de durabilité consolidé de NOCTÉVAL devra présenter sur ces enjeux une fois VELTRANE intégré au groupe. *(2 points)*
+
+### ANNEXE 3.1 – VELTRANE Studio, motifs du rachat et conditions de l'offre
+
+**Le studio**
+- VELTRANE Studio SAS, siège à Nantes (Loire-Atlantique), créée en 2020 par Mme Maud TANCREMONT, présidente et directrice de la création, et M. Bastien CORDEIL, directeur technique, qui a conçu le moteur de jeu du studio (le logiciel sur lequel ses jeux sont construits). 74 salariés au 31 décembre 2026, dont 61 développeurs.
+- Capital détenu à 70 % par les deux fondateurs et à 30 % par le fonds KESTRALIA Capital, entré en 2022 pour financer le premier jeu ; le fonds souhaite céder sa participation en 2027.
+- « Les Lanternes de Morvaigne », jeu d'aventure sorti en octobre 2024 sur ordinateurs seulement, édité par le studio lui-même : 2,1 millions d'exemplaires vendus à fin 2026. Chiffre d'affaires du studio : 26,0 M€ en 2025 et 22,0 M€ en 2026 ; EBITDA de 2026 : 7,40 M€.
+- « Les Cartographes d'Ysmer », jeu coopératif en ligne, est en développement ; sa sortie est prévue en mars 2028.
+
+**Motifs avancés par la direction de NOCTÉVAL**
+- « Les Brumes d'Aldrec » et sa suite portent l'essentiel du chiffre d'affaires et des perspectives du groupe ; NOCTÉVAL veut réduire sa dépendance à une seule licence.
+- Le recrutement de développeurs expérimentés est long et difficile ; VELTRANE apporterait une équipe déjà formée, son moteur de jeu et la propriété de la licence des « Lanternes de Morvaigne ».
+- NOCTÉVAL éditerait et distribuerait les jeux du studio : adaptation des « Lanternes de Morvaigne » aux consoles, sur lesquelles le studio n'est pas présent, commercialisation, négociation avec les boutiques numériques.
+- Un éditeur concurrent, PARVIGNE Entertainment, a aussi approché les fondateurs.
+
+**Conditions demandées par les vendeurs (rachat de 100 % du capital)**
+- **Partie fixe** : 58,00 M€, payée en numéraire à la date de la prise de contrôle.
+- **Complément de prix**, versé aux vendeurs en proportion de leurs actions, fonction du chiffre d'affaires réalisé par « Les Cartographes d'Ysmer » en 2028 : aucun complément si ce chiffre d'affaires est inférieur à 15 M€ ; 8,00 M€ s'il est compris entre 15 et 30 M€ ; 20,00 M€ s'il dépasse 30 M€.
+- Les deux fondateurs resteraient à la direction du studio au moins jusqu'à la fin de 2029.
+- Le plan d'affaires qui fonde le prix demandé a été établi par les fondateurs (annexe 3.3).
+
+**Scénarios retenus par la direction financière de NOCTÉVAL** (hypothèses d'énoncé)
+
+| Scénario | Faible | Central | Fort |
+|---|---:|---:|---:|
+| Chiffre d'affaires des « Cartographes d'Ysmer » en 2028 (M€) | 10 | 22 | 36 |
+| Probabilité | 0,30 | 0,50 | 0,20 |
+| Écart de valeur des capitaux propres du studio seul, par rapport à la valeur obtenue par les flux de l'annexe 3.4 (M€) | − 18,00 | 0,00 | + 27,00 |
+
+Les flux de l'annexe 3.4 correspondent au scénario central. Les écarts de valeur ont été estimés par la direction financière, synergies non comprises ; ils sont à utiliser tels quels.
+
+### ANNEXE 3.2 – Bilan résumé de VELTRANE au 31 décembre 2026 et corrections pour l'ANCC
+
+**Bilan résumé (M€)**
+
+| Actif | Montant | Passif | Montant |
+|---|---:|---|---:|
+| Moteur de jeu développé en interne (valeur nette) | 1,40 | Capital et primes | 2,00 |
+| Coûts de développement des « Cartographes d'Ysmer » | 5,20 | Réserves et report à nouveau | 8,60 |
+| Coûts d'un projet de jeu abandonné en 2026 | 0,60 | Résultat de 2026 | 5,40 |
+| Matériel informatique et agencements | 1,30 | Emprunt bancaire | 1,80 |
+| Créances sur les boutiques numériques et autres créances | 3,90 | Dettes d'exploitation (fournisseurs, dettes sociales et fiscales) | 4,70 |
+| Disponibilités | 10,10 | | |
+| **Total** | **22,50** | **Total** | **22,50** |
+
+**Corrections retenues pour l'ANCC** (liste limitative)
+- Le moteur de jeu est évalué à 5,00 M€, son coût de reconstitution estimé par un expert indépendant.
+- Le projet de jeu abandonné en 2026 n'a aucune valeur.
+- Les coûts de développement des « Cartographes d'Ysmer » et les autres postes sont retenus pour leur valeur comptable.
+- Impôt latent : 25 % de la plus-value sur le moteur de jeu. L'élimination du projet abandonné est retenue sans effet d'impôt.
+- L'équipe de développeurs, la licence des « Lanternes de Morvaigne » et la communauté des joueurs ne sont pas inscrites au bilan ; elles ne sont pas prises en compte dans l'ANCC.
+
+### ANNEXE 3.3 – Données de la méthode du capital-risque
+
+- Pour le rachat d'un jeune studio, le comité d'investissement de NOCTÉVAL applique la méthode du capital-risque à 100 % du capital, avec un horizon de sortie de cinq ans : la valeur de sortie est estimée au 31 décembre 2031.
+- Résultat net de 2031 du plan d'affaires des fondateurs : 7,75 M€. Ce plan prévoit la sortie d'un troisième jeu en 2030 ; la direction financière de NOCTÉVAL le juge optimiste.
+- Multiple de sortie : 16 fois le résultat net (rapport cours / bénéfice des cessions récentes d'éditeurs de jeux de taille moyenne ; hypothèse d'énoncé).
+- TRI exigé par le comité d'investissement pour le rachat d'un jeune studio : 20 %.
+
+### ANNEXE 3.4 – Flux de trésorerie disponibles, coût du capital et multiple des transactions
+
+**Flux de trésorerie disponibles de VELTRANE, studio seul, sans synergies** (prévisions de la direction financière de NOCTÉVAL, scénario central, à utiliser telles quelles ; M€)
+
+| Année | 2027 | 2028 | 2029 | 2030 | 2031 |
+|---|---:|---:|---:|---:|---:|
+| Flux de trésorerie disponible | 2,00 | 6,00 | 5,40 | 5,40 | 5,40 |
+
+- Le flux de 2027 est réduit par la fin du développement des « Cartographes d'Ysmer » ; celui de 2028 intègre la sortie du jeu.
+- Après 2031, les flux croissent de 2,0 % par an à l'infini.
+- Coût moyen pondéré du capital (CMPC) de VELTRANE : 11,00 % (fourni ; il intègre une prime de taille et de risque propre à un studio de cette taille).
+- La dette financière nette est déterminée à partir du bilan de l'annexe 3.2 (emprunt bancaire moins disponibilités).
+
+**Transactions récentes** : lors des rachats de studios indépendants européens comparables conclus de 2024 à 2026, la VGE a représenté en médiane 8,5 fois l'EBITDA de l'année précédant la transaction (hypothèse d'énoncé). Ces acheteurs étaient, pour la plupart, des éditeurs de jeux.
+
+### ANNEXE 3.5 – Synergies, coûts d'intégration et financements
+
+**Synergies et coûts d'intégration** (estimations de la direction de NOCTÉVAL ; hypothèses d'énoncé)
+- Synergies d'édition et de distribution : hausse de l'EBITDA de 2,20 M€ par an à partir de 2027, constante et sans limite de durée (adaptation des « Lanternes de Morvaigne » aux consoles, commercialisation et mise en avant des jeux du studio sur les boutiques numériques par NOCTÉVAL). Elles sont imposées à 25 % et n'exigent ni investissement ni besoin en fonds de roulement supplémentaire. Elles ont le même risque que les flux du studio.
+- Coûts d'intégration : 4,00 M€ avant impôt, payés à la date de la prise de contrôle (primes de fidélisation de vingt développeurs clés, migration des outils de production et des systèmes de gestion) ; déductibles du résultat imposable.
+
+**Besoin de financement à la prise de contrôle** : partie fixe du prix (58,00 M€) et coûts d'intégration (4,00 M€), soit 62,00 M€. Le complément de prix éventuel serait payé, en 2028, par la trésorerie du groupe.
+
+**Solution 1 : trésorerie disponible du groupe**
+- Les 62,00 M€ sont prélevés sur la trésorerie disponible de 268 M€.
+- Les placements de trésorerie du groupe devraient rapporter en moyenne 3,00 % par an avant impôt sur les cinq prochaines années (hypothèse d'énoncé) ; leurs produits sont imposables.
+
+**Solution 2 : emprunt bancaire et trésorerie**
+- Emprunt proposé par la Banque ORSELINE : 60,00 M€, au taux de 4,40 % par an, sur cinq ans, remboursable par amortissements constants ; intérêts payés en fin d'année ; frais de dossier de 0,30 M€ payés à la mise en place, déductibles. Aucune garantie n'est demandée.
+- Les 2,00 M€ restants et les frais de dossier (0,30 M€) sont prélevés sur la trésorerie disponible.
+
+**Contraintes rappelées par M. Hugo PERNELLAC**
+- La production de la suite des « Brumes d'Aldrec », prévue pour l'automne 2028, sera financée par la trésorerie jusqu'à sa sortie ; les deux autres décisions étudiées par le conseil mobiliseraient aussi une partie de la trésorerie.
+- Les fondateurs de NOCTÉVAL ont écarté une émission d'actions nouvelles pour financer le rachat.
+
+### ANNEXE 3.6 – Informations extra-financières recueillies lors de l'audit d'acquisition
+
+VELTRANE ne publie aucun rapport de durabilité et n'est tenue à aucune obligation de le faire. Les informations ci-dessous ont été recueillies par l'équipe d'audit d'acquisition de NOCTÉVAL en février et mars 2027 ; elles n'ont été vérifiées par aucun organisme tiers.
+
+**Conditions de travail et départs**
+
+| Indicateur | 2025 | 2026 |
+|---|---:|---:|
+| Effectif au 31 décembre | 68 | 74 |
+| Taux de départs volontaires des développeurs (départs / effectif moyen) | 9 % | 19 % |
+| Responsables d'équipe partis dans l'année (sur 9) | 0 | 3 |
+
+- Pendant les six mois qui ont précédé la sortie des « Lanternes de Morvaigne » (avril à septembre 2024), chaque développeur a effectué en moyenne 340 heures supplémentaires. Aucun plan de charge n'est encore établi pour la fin de production des « Cartographes d'Ysmer ».
+- M. Bastien CORDEIL a indiqué qu'il souhaitait se consacrer à un projet personnel après 2029.
+
+**Achats intégrés dans les jeux**
+- « Les Lanternes de Morvaigne » est classé pour les joueurs à partir de 7 ans. En 2026, les achats intégrés au jeu (tenues, objets, « coffres à surprise » payants au contenu tiré au hasard) ont représenté 6,82 M€ du chiffre d'affaires, dont 2,64 M€ pour les coffres à surprise.
+- Le contrôle parental des achats est désactivé par défaut. Le studio a reçu 1 450 demandes de remboursement de parents en 2026 pour des achats faits par des enfants. Une association de consommateurs a publié en janvier 2027 une enquête critique sur ces pratiques.
+- Deux boutiques numériques ont annoncé qu'à partir de 2028 elles refuseraient les coffres à surprise payants dans les jeux classés pour les moins de 12 ans. « Les Cartographes d'Ysmer » prévoit aussi des achats intégrés.
+
+**Consommation des serveurs**
+- Les fonctions en ligne des « Lanternes de Morvaigne » sont hébergées par un prestataire d'informatique en nuage : 1 200 MWh d'électricité consommés en 2026. Pour « Les Cartographes d'Ysmer », jeu en ligne, le prestataire estime la consommation à 4 000 MWh par an. L'origine de l'électricité n'est pas connue et aucune mesure des émissions de gaz à effet de serre n'a été faite.
+
+**Information extra-financière de NOCTÉVAL**
+- NOCTÉVAL publie dans son rapport de gestion un état de durabilité consolidé, établi conformément aux ESRS. Le conseil d'administration a décidé de continuer à le publier à partir de l'exercice 2027, volontairement si le groupe n'y était plus tenu. Son analyse de double matérialité de 2026 retient comme matérielles les conditions de travail des développeurs ; elle juge non matérielles la protection des jeunes joueurs (ses jeux sont destinés aux adultes) et la consommation d'énergie des serveurs.
+
+### ANNEXE 3.7 – Conventions de calcul
+
+- **Date d'évaluation** : pour simplifier, la prise de contrôle est supposée réalisée le 31 décembre 2026 (date 0) ; la partie fixe et les coûts d'intégration sont payés à cette date, l'économie d'impôt sur les coûts d'intégration et sur les frais de dossier de l'emprunt est obtenue à cette date. Les flux de trésorerie disponibles, les synergies, les intérêts et les remboursements sont payés en fin d'année (31 décembre 2027 à 31 décembre 2031). Le complément de prix, calculé après l'arrêté des comptes de 2028, est supposé payé le 31 décembre 2028 (fin de l'année 2).
+- **Taux d'IS** : 25 % pour toutes les entités ; le groupe est bénéficiaire et imposable chaque année.
+- **ANCC** = ANC + plus-values − moins-values et éléments sans valeur, nets de l'impôt latent selon les règles de l'annexe 3.2.
+- **Méthode du capital-risque** : valeur actuelle = valeur de sortie / (1 + TRI)^5 ; TRI obtenu = (valeur de sortie / prix payé)^(1/5) − 1, sans aucun flux entre la date 0 et la sortie.
+- **Flux actualisés** : valeur terminale à la fin de 2031 = flux de 2031 × (1 + 2,0 %) / (CMPC − 2,0 %) ; VGE = valeur actuelle des flux de 2027 à 2031 + valeur actuelle de la valeur terminale ; VCP = VGE − dette financière nette.
+- **Synergies** : valeur actuelle au CMPC du studio d'une rente perpétuelle constante, la première synergie étant reçue à la fin de 2027.
+- **Complément de prix** : actualisé au CMPC du studio, son risque étant celui du second jeu. Prix espéré = partie fixe + valeur actuelle du complément espéré.
+- **Création de valeur et VAN de l'acquisition** = VCP du studio seul + valeur actuelle des synergies nettes d'impôt − coûts d'intégration nets d'impôt − partie fixe − valeur actuelle du complément de prix ; dans chaque scénario, la VCP du studio seul est corrigée de l'écart de valeur de l'annexe 3.1. Espérance de la VAN = Σ probabilité × VAN ; variance = Σ probabilité × (VAN − espérance)² ; écart-type = racine carrée de la variance. Prime payée = prix espéré − VCP du studio seul.
+- **Coût actuariel** : taux qui annule la valeur actuelle des flux de l'emprunteur (montant reçu net des frais, positif ; intérêts et remboursements, négatifs) ; après impôt, les intérêts et les frais sont diminués de l'économie d'impôt de 25 %. Il peut être obtenu par interpolation linéaire entre deux taux entiers. Coût du financement par la trésorerie = rendement des placements auxquels le groupe renonce, avant et après impôt.
+- **Situation du groupe juste après l'opération** : trésorerie et dette financière de NOCTÉVAL au 31 décembre 2026, après les encaissements et décaissements de la date 0, augmentées de celles de VELTRANE, avant prise en compte des économies d'impôt ; les autres décisions du conseil et les dettes locatives sont ignorées. Coût de portage de la première année = intérêts de l'emprunt − produits de placement de 60,00 M€ (montant emprunté), avant et après impôt.
+- **Arrondis** : montants en M€ à deux décimales (coefficients d'actualisation non arrondis ; la valeur terminale non arrondie est actualisée) ; taux, TRI, coûts actuariels, parts et primes en pourcentage à deux décimales ; multiples à deux décimales.
