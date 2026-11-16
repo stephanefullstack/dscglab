@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Organiser et exploiter les données des parcelles et des apports ; authentifier les bouteilles : Vignerons de ROCALDÈNE : modèle des données des parcelles et des apports, qualité des données et authentification des bouteilles par jetons non fongibles</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Organiser et exploiter les données des parcelles et des apports ; authentifier les bouteilles</h1><p class="cas">Vignerons de ROCALDÈNE : modèle des données des parcelles et des apports, qualité des données et authentification des bouteilles par jetons non fongibles</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F07 données, modélisation et gouvernance, F08 décisionnel et visualisation, F11 blockchain et crypto-actifs, F15 RGPD opérationnel, et la base des référentiels datés (vérifiés les 25 et 26/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Modèle conceptuel des données des parcelles et des apports</td>
+<td><code>2.1.b</code> Modélisation des données (modèles conceptuels, logiques et physiques)</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>2.2 Cohérence, interopérabilité et qualité des données</td>
+<td><code>2.1.a</code> Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes ; <code>2.1.e</code> Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>2.3 Rôles et responsabilités sur les données</td>
+<td><code>2.3.c</code> Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2.4 Chaîne de valeur des données et analyse des apports de la vendange 2026</td>
+<td><code>2.2.a</code> Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation ; <code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés ; <code>2.2.c</code> Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model</td>
+<td>4,5</td>
+</tr>
+<tr class="odd">
+<td>2.5 Le projet d'authentification des cuvées exportées</td>
+<td><code>3.3.c</code> Typologie des applications : traçabilité, certification, finance décentralisée, NFT ; <code>3.3.a</code> Évaluer les opportunités, les risques et le cadre réglementaire associés à la mise en œuvre de solutions fondées sur la blockchain et les cryptoactifs dans les organisations ; <code>3.3.e</code> Analyse de la valeur ajoutée, des coûts et des limites d'un projet blockchain ; <code>3.3.d</code> Cadres réglementaires émergents : règlement MiCA (Markets in Crypto-Assets), NEP, normes ISO</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td><strong>Dossier 2 – Organiser et exploiter les données des parcelles et des apports ; authentifier les bouteilles</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (formalisme du MCD, interopérabilité, dictionnaire de données, DAMA-DMBOK, chaîne de valeur des données, méthodes d'analyse, blockchain, champ de MiCA) environ 3 points (la moitié des items 2.1 a-1 à a-4, et la moitié des items 2.2 a-1, 2.2 b-1, 2.3-1, 2.4 a-1, 2.4 c-1, 2.5 a et 2.5 c) ; analyse des annexes et recommandations environ 10 points, soit environ 77 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 59 minutes.</p>
+<hr />
+<h3 id="21--modèle-conceptuel-des-données-des-parcelles-et-des-apports-2-points">2.1 – Modèle conceptuel des données des parcelles et des apports (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.b</code> « Modélisation des données (modèles conceptuels, logiques et physiques) ». Seul le modèle conceptuel est demandé.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.1 (règles de gestion RG1 à RG8 ; constats 3 et 4 de la partie B pour la justification de l'adhésion et du rattachement de l'apport à la parcelle).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Six entités avec identifiant souligné et attributs élémentaires correctement placés (Adhérent, Cave, Parcelle, Cépage, Apport, Prélèvement), sans clé étrangère ni attribut répété</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Association n:m <em>adhérer</em> entre Adhérent et Cave, porteuse de la date d'adhésion (1,n / 1,n, RG3) ; association <em>exploiter</em> (Adhérent 1,n / Parcelle 1,1, RG4)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Association <em>planter</em> (Parcelle 1,1 / Cépage 0,n, RG5) et associations de l'apport <em>livrer</em>, <em>recevoir</em>, <em>provenir</em> (Apport 1,1 / 0,n, RG6)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Association <em>donner lieu</em> (Prélèvement 1,1 / Apport 1,n, RG7) et justification de chaque cardinalité par une règle de gestion ; la justification du lien direct <em>livrer</em> et la contrainte sur la cave d'adhésion sont valorisées, non exigées</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p>Le modèle conceptuel des données (MCD) représente les objets de gestion (entités), leurs propriétés (attributs) et leurs liens (associations), avec des cardinalités qui traduisent les règles de gestion, indépendamment de toute technique (F07 § 1).</p>
+<p>Entités (identifiant en premier, souligné sur la copie) (0,5 pt) :</p>
+<ul>
+<li>ADHÉRENT (<u>num_adherent</u>, nom, prenom, commune, telephone, courriel) – RG1 ;</li>
+<li>CAVE (<u>code_cave</u>, nom_cave, departement) – RG2 ;</li>
+<li>PARCELLE (<u>num_parcelle</u>, commune_parcelle, lieu_dit, surface_ha, annee_plantation) – RG4 ;</li>
+<li>CÉPAGE (<u>code_cepage</u>, libelle_cepage, couleur) – RG5 ;</li>
+<li>APPORT (<u>num_apport</u>, date_apport, heure_pesee, poids_kg, degre_potentiel, etat_sanitaire) – RG6 ;</li>
+<li>PRÉLÈVEMENT (<u>num_prelevement</u>, date_analyse, acidite_totale, ph) – RG7.</li>
+</ul>
+<p>Associations et cardinalités :</p>
+<pre><code>ADHÉRENT    (1,n) ──── adhérer [date_adhesion] ──── (1,n) CAVE
+ADHÉRENT    (1,n) ──── exploiter ────────────────── (1,1) PARCELLE
+PARCELLE    (1,1) ──── planter ──────────────────── (0,n) CÉPAGE
+APPORT      (1,1) ──── livrer ───────────────────── (0,n) ADHÉRENT
+APPORT      (1,1) ──── recevoir ─────────────────── (0,n) CAVE
+APPORT      (1,1) ──── provenir ─────────────────── (0,n) PARCELLE
+PRÉLÈVEMENT (1,1) ──── donner_lieu ──────────────── (1,n) APPORT</code></pre>
+<p>Sur la copie, chaque entité n'est dessinée qu'une fois : APPORT au centre, relié à ADHÉRENT, CAVE, PARCELLE et PRÉLÈVEMENT ; ADHÉRENT relié aussi à CAVE et à PARCELLE ; PARCELLE reliée à CÉPAGE.</p>
+<ul>
+<li><em>adhérer</em>, association n:m porteuse de la date d'adhésion : un adhérent adhère à une ou plusieurs caves (environ 40 viticulteurs livrent deux caves, constat 3) ; chaque cave compte au moins un adhérent (1,n de part et d'autre) ; la date d'adhésion ne dépend ni de l'adhérent seul ni de la cave seule, mais du couple – RG3 ;</li>
+<li><em>exploiter</em> : une parcelle est exploitée par un et un seul adhérent (1,1) ; un adhérent exploite au moins une parcelle (1,n) – RG4 (0,5 pt pour ces deux associations) ;</li>
+<li><em>planter</em> : une parcelle est plantée d'un seul cépage (1,1) ; un cépage peut n'être planté sur aucune parcelle, s'il est retenu pour les replantations (0,n) – RG5 ;</li>
+<li><em>livrer</em>, <em>recevoir</em>, <em>provenir</em> : un apport est livré par un seul adhérent, à une seule cave, et porte sur une seule parcelle (1,1) ; un adhérent, une cave ou une parcelle peut n'avoir aucun apport (0,n) – RG6 (0,5 pt pour ces quatre associations) ;</li>
+<li><em>donner_lieu</em> : un prélèvement concerne un seul apport (1,1) ; un apport donne lieu à au moins un prélèvement (1,n) – RG7.</li>
+</ul>
+<p>Justification du lien direct <em>livrer</em> (valorisée, non exigée : RG6 impose déjà ce lien) : on pourrait retrouver l'adhérent par la parcelle, mais RG4 n'enregistre que l'exploitant <strong>actuel</strong> ; si une parcelle change d'exploitant, les apports passés doivent rester attribués à celui qui les a livrés. Le lien direct permet en outre un contrôle de cohérence (l'adhérent qui livre est l'exploitant de la parcelle déclarée), utile au constat 4. De même, la cave qui reçoit l'apport ne se déduit pas de l'adhérent, qui peut adhérer à deux caves : <em>recevoir</em> est indispensable.</p>
+<p>RG8 ne crée ni entité ni association. Une contrainte non représentable par les cardinalités peut être signalée : l'apport ne peut être reçu que par une cave à laquelle l'adhérent qui livre adhère. Le modèle logique, non demandé, comporterait sept tables, dont une table Adhesion à clé composée (#num_adherent, #code_cave) portant la date d'adhésion.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Noms d'entités, d'associations ou d'attributs différents s'ils restent explicites (« Viticulteur », « Livraison », « Analyse ») ; notation « pattes de corbeau » ou UML lisible (format libre, <code>JUR-T10</code>).</li>
+<li>Omission de l'association <em>livrer</em> si le candidat la justifie explicitement (l'adhérent se déduit de la parcelle) et signale la limite liée au changement d'exploitant.</li>
+<li>Adhésion modélisée comme une entité ADHÉSION à identifiant propre reliée par deux associations 1,1 à Adhérent et à Cave, si le candidat signale l'unicité du couple adhérent × cave.</li>
+<li>Entité supplémentaire justifiée (COMMUNE, STATION) si elle ne contredit pas RG8 ; pas de pénalité pour une commune modélisée en entité, pas de bonification non plus.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>MCD et MLD confondus</em> (<code>ET-23</code>, <code>JUR-T06</code>) — clés étrangères (num_adherent dans PARCELLE, num_apport dans PRÉLÈVEMENT) dessinées dans le MCD ; juste : le MCD ne comporte ni clé étrangère ni table.</li>
+<li><em>Attribut d'association mal placé</em> — date d'adhésion portée par l'adhérent ou par la cave, ce qui interdit de décrire l'adhérent qui livre deux caves ; juste : elle dépend du couple.</li>
+<li><em>Adhérent rattaché à une seule cave</em> (1,1) — le modèle reproduit les doublons du constat 3 ; juste : association n:m.</li>
+<li><em>Cardinalités non justifiées</em> (<code>JUR-T01</code>) — liste d'entités sans renvoi aux règles ; juste : chaque cardinalité est rattachée à une règle de gestion.</li>
+<li><em>Hors sujet technique</em> — modèle logique détaillé, requêtes ou scripts de création de tables, que la question exclut.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Formalisme Merise (MCD, cardinalités, association porteuse)</td>
+<td>entités, associations, cardinalités</td>
+<td>F07 § 1 à 3</td>
+<td>manuels</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--cohérence-interopérabilité-et-qualité-des-données-3-points">2.2 – Cohérence, interopérabilité et qualité des données (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.a</code> « Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes » ; <code>2.1.e</code> « Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (neuf logiciels de cave de quatre éditeurs, aucun informaticien dans les caves, équipe informatique de 6 personnes), 2.1 (sources, constats 1 à 7, règles de gestion) et 2.2 (notes du tableau : conversions, échelles sanitaires).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Interopérabilité définie ; référentiel commun des données de référence (adhérents, caves, parcelles, cépages) tenu par l'union et alimentant les neuf logiciels de cave et le laboratoire</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Identifiants uniques attribués par l'union, non signifiants et stables, avec table de correspondance des anciens numéros ; reprise (fusion des doublons, mise à jour des surfaces)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Circulation des données sur les trois plans : technique (échanges automatisés, formats ouverts, lecture du numéro de bon), sémantique (nomenclature des cépages, unités, échelle sanitaire), organisationnel (qui crée, qui valide, calendrier, engagement des éditeurs)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Dictionnaire de données défini et quatre rubriques choisies et justifiées</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Entrées du degré potentiel et de l'état sanitaire cohérentes avec les constats (unité unique, échelle commune définie note par note, source, propriétaire)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c</td>
+<td>Trois règles de qualité, chacune rattachée à une dimension (unicité, complétude, cohérence, exactitude, actualité, validité) et à un constat de l'annexe 2.1 B</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.2 a) – Référentiel commun, identifiants uniques et circulation des données</em></p>
+<p>L'<strong>interopérabilité</strong> est la capacité de systèmes hétérogènes à échanger des données et à les utiliser sans intervention manuelle ; elle est à la fois <strong>technique</strong> (échanges, formats), <strong>sémantique</strong> (même sens des données) et <strong>organisationnelle</strong> (processus, responsabilités) (F07 § 7 ; le niveau syntaxique, celui des formats, est ici rattaché au plan technique). À ROCALDÈNE, neuf logiciels de quatre éditeurs, des tableurs et un laboratoire décrivent les mêmes objets sans langage commun : neuf extractions envoyées chaque lundi et des tableaux établis à la main.</p>
+<p><strong>Référentiel commun</strong> (0,5 pt avec la définition) : l'union tient un référentiel des <strong>données de référence</strong> (gestion des données de référence) : adhérents, caves, parcelles et cépages, selon le modèle de la question 2.1. Il est la <strong>seule source</strong> de ces données : les logiciels de cave, le laboratoire et les outils d'analyse s'y alimentent au lieu de tenir chacun leur fichier. Les caves restent maîtresses de la réception de la vendange dans leur logiciel ; elles cessent de créer chacune leurs parcelles et leurs adhérents.</p>
+<p><strong>Identifiants uniques</strong> (0,5 pt) : numéro d'adhérent et numéro de parcelle attribués par l'union (RG1, RG4), <strong>non signifiants</strong> (ni la cave, ni la commune, qui peuvent changer), <strong>stables</strong> et jamais réattribués ; code de cépage commun (RG5) ; numéro de bon unique pour l'union (préfixé par le code de la cave, par exemple « SBZ-2026-01877 » : ce préfixe est acceptable pour un bon, car la cave qui reçoit un apport ne change jamais, mais non pour une parcelle ou un adhérent). Une <strong>table de correspondance</strong> conserve les anciens numéros de chaque cave pendant la transition (« P-0123 » de sept caves devient sept numéros distincts). La <strong>reprise</strong> fusionne les 40 adhérents en double (une fiche, deux adhésions), rapproche les 11 000 parcelles et corrige l'écart de 150 hectares (6 650 contre 6 500) avec les caves avant la vendange 2027.</p>
+<p><strong>Circulation des données sur les trois plans</strong> (0,5 pt) :</p>
+<ul>
+<li><em>technique</em> : les logiciels de cave reçoivent du référentiel les listes d'adhérents, de parcelles et de cépages et renvoient chaque jour de vendange les apports à l'union par des échanges automatisés (interfaces de programmation ou fichiers dans un format ouvert décrit par le dictionnaire), au lieu des neuf extractions du lundi ; le laboratoire lit le numéro du bon (code imprimé sur l'échantillon) au lieu de le ressaisir ; les relevés des stations sont récupérés dans le même format ;</li>
+<li><em>sémantique</em> : nomenclature unique des 12 cépages (fin des 31 codes), degré potentiel toujours en % vol., échelle sanitaire commune définie note par note, définitions du dictionnaire (b) partagées par les neuf caves et le laboratoire ;</li>
+<li><em>organisationnel</em> : règles de création et de validation (la cave déclare une parcelle nouvelle, l'union la valide et lui attribue son numéro), calendrier (mise à jour des parcelles chaque hiver, hors vendanges), engagement des quatre éditeurs à lire et à transmettre les données au format commun, formation des agents de réception et des saisonniers, appui de l'équipe informatique aux caves, qui n'ont pas d'informaticien.</li>
+</ul>
+<p><em>2.2 b) – Dictionnaire de données</em></p>
+<p>Le <strong>dictionnaire de données</strong> est le référentiel qui décrit chaque donnée de façon unique et partagée : nom, définition, unité ou format, valeurs admises, règle de mesure ou de calcul, source, propriétaire, fréquence de mise à jour ; il fixe le sens commun des données, ce qui le distingue du MCD, qui décrit les relations entre les données (F07 § 1). Pour l'union, il met fin aux mesures hétérogènes du constat 6 : sans lui, deux caves qui écrivent « 3 » ne disent pas la même chose.</p>
+<p>Quatre rubriques suffisent (0,5 pt avec la définition) ; le tableau en propose six, parmi lesquelles le candidat en retient quatre : <strong>définition</strong> (sens partagé), <strong>unité et valeurs admises</strong> (contrôle à la saisie, comparabilité), <strong>règle de mesure</strong> (qui mesure, quand, comment), <strong>source de référence</strong>, <strong>propriétaire</strong>, <strong>fréquence de mise à jour</strong>.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Rubrique</th>
+<th>Degré potentiel de l'apport</th>
+<th>État sanitaire de l'apport</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Définition</td>
+<td>teneur en alcool que donnerait la vendange de l'apport si tous ses sucres étaient transformés, mesurée à la réception</td>
+<td>proportion de raisins atteints par des maladies ou des altérations dans l'apport, appréciée à la réception</td>
+</tr>
+<tr class="even">
+<td>Unité et valeurs admises</td>
+<td>% vol., une décimale ; valeurs plausibles de 8,0 à 16,0, toute valeur hors de cette plage étant bloquée et vérifiée ; jamais en grammes de sucres par litre (la conversion de LAURADEL et de CABRISSAC disparaît)</td>
+<td>échelle commune de 1 (sain) à 4 (très dégradé), chaque note étant définie par une part de raisins atteints et illustrée par des photographies de référence ; « dégradé » = notes 3 et 4 dans les neuf caves</td>
+</tr>
+<tr class="odd">
+<td>Règle de mesure</td>
+<td>mesure à la pesée sur l'échantillon de l'apport, avec un appareil étalonné selon une procédure commune</td>
+<td>note attribuée par un agent de réception formé, et non laissée aux seuls saisonniers ; note contrôlée sur un échantillon d'apports par le laboratoire</td>
+</tr>
+<tr class="even">
+<td>Source de référence</td>
+<td>logiciel de cave, transmis au référentiel le jour même</td>
+<td>logiciel de cave, transmis au référentiel le jour même</td>
+</tr>
+<tr class="odd">
+<td>Propriétaire</td>
+<td>directrice de la production et de la qualité de l'union</td>
+<td>directrice de la production et de la qualité de l'union</td>
+</tr>
+<tr class="even">
+<td>Fréquence de mise à jour</td>
+<td>à chaque apport ; définition revue chaque hiver</td>
+<td>à chaque apport ; échelle revue chaque hiver avec les directeurs de cave</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt pour les deux entrées.) Sont valorisées : l'unité imposée et la fin des conversions ; l'échelle commune définie note par note, qui répond directement aux critiques de Mme TARASCOUL ; la formation des agents.</p>
+<p><em>2.2 c) – Trois règles de qualité</em> (0,5 pt)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Règle</th>
+<th>Dimension</th>
+<th>Constat de l'annexe 2.1 B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Un viticulteur, un seul numéro d'adhérent : recherche obligatoire dans le référentiel avant toute création ; les 40 doublons sont fusionnés</td>
+<td>unicité</td>
+<td>3 (adhérents en double)</td>
+</tr>
+<tr class="even">
+<td>Aucun apport sans parcelle du référentiel : la pesée exige un numéro de parcelle existant, choisi dans la liste des parcelles de l'adhérent qui livre, et non une déclaration orale</td>
+<td>complétude et cohérence</td>
+<td>4 (plus d'un tiers des volumes sans parcelle)</td>
+</tr>
+<tr class="odd">
+<td>Cépage choisi dans la nomenclature commune ; degré en % vol. et état sanitaire sur l'échelle commune, valeurs hors plage bloquées</td>
+<td>validité (conformité)</td>
+<td>2 et 6 (31 codes pour 12 cépages, mesures non homogènes)</td>
+</tr>
+<tr class="even">
+<td>Surfaces revues chaque hiver avec les adhérents ; arrachages et cessions enregistrés dans le mois</td>
+<td>exactitude et actualité</td>
+<td>5 (6 650 ha dans les fichiers pour 6 500 ha en production)</td>
+</tr>
+<tr class="odd">
+<td>Tout prélèvement rattaché à un apport existant, par lecture du numéro du bon et non par ressaisie</td>
+<td>cohérence (intégrité des liens)</td>
+<td>7 (1 100 prélèvements orphelins, 5 %)</td>
+</tr>
+<tr class="even">
+<td>Identifiant de parcelle unique pour l'union</td>
+<td>unicité</td>
+<td>1 (même numéro dans sept caves)</td>
+</tr>
+</tbody>
+</table>
+<p>Trois règles sont attendues, chacune avec sa dimension et son constat.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Plateforme d'échange ou bus d'intégration cité, si le principe (référentiel unique, fin des fichiers du lundi) reste au premier plan ; référentiel placé dans le futur progiciel commun, si son rôle de source unique est préservé.</li>
+<li>Échelle sanitaire commune de 1 à 3 ou de 1 à 5, si elle est définie note par note et appliquée dans les neuf caves.</li>
+<li>Rubriques différentes du dictionnaire (type, exemple, sensibilité, durée de conservation) si elles sont justifiées.</li>
+<li>Dimensions de la qualité nommées autrement (intégrité, conformité, fraîcheur) ou citées d'après ISO/IEC 25012 ; un indicateur de suivi proposé en plus n'est pas exigé.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Interopérabilité seulement technique</em> (<code>ET-36</code>) — interfaces proposées sans nomenclature commune ni règles de création ; juste : technique, sémantique et organisationnelle ensemble.</li>
+<li><em>Sigle employé seul</em> (<code>ET-13</code>) — « mettre en place un MDM » sans dire qu'il s'agit de la gestion des données de référence ; juste : écrire en toutes lettres.</li>
+<li><em>Identifiant signifiant</em> — numéro de parcelle construit avec le code de la cave ou de la commune : il change quand la parcelle change d'exploitant ou de cave ; juste : identifiant non signifiant et stable.</li>
+<li><em>Dictionnaire confondu avec le MCD</em> — liste des entités au lieu de la description de chaque donnée ; juste : le dictionnaire décrit le sens, l'unité, la mesure et la source.</li>
+<li><em>Qualité laissée à l'informatique</em> (<code>JUR-T03</code>) — « l'équipe informatique corrigera les fichiers » ; juste : la règle est fixée par le métier et appliquée à la saisie dans les caves.</li>
+<li><em>Détail technique hors attente</em> (<code>JUR-T12</code>) — description de formats ou de serveurs ; la question l'exclut.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ISO/IEC 25012 (2008) — Modèle de qualité des données</td>
+<td>dimensions de la qualité, à titre d'exemple</td>
+<td><code>iso_iec_25012</code> / F07 § 8.3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Interopérabilité (niveaux technique, sémantique, organisationnel) ; données de référence ; dictionnaire</td>
+<td>définitions, principes</td>
+<td>F07 § 1, 6.2 et 7</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--rôles-et-responsabilités-sur-les-données-1-point">2.3 – Rôles et responsabilités sur les données (1 point)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.c</code> « Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (organigramme, directeurs de cave, aucun informaticien dans les caves), 2.1 (sources, agents de réception, laboratoire, techniciens) et 2.4 (DAMA-DMBOK, RGPD).</p>
+<p><strong>Barème indicatif (1 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>DAMA-DMBOK présenté comme un référentiel de bonnes pratiques (et non une norme ni un logiciel), qui place la gouvernance au centre et décrit les rôles de propriétaire et d'intendant</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Trois rôles avec missions et titulaires, répartis entre l'union et les caves (propriétaire à l'union, intendants dans les caves et au laboratoire, troisième rôle : instance commune, dépositaire technique ou délégué à la protection des données)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p>Le <strong>DAMA-DMBOK</strong> (2e édition, 2017, révision 2024) est un <strong>référentiel</strong> de bonnes pratiques de gestion des données, organisé en onze domaines de connaissance autour de la gouvernance des données ; il distingue notamment le <strong>propriétaire</strong> des données, responsable métier qui en fixe les définitions, les règles et la qualité attendue, et l'<strong>intendant</strong>, qui les applique au quotidien. Ce n'est ni une norme ni un logiciel, et ses rôles sont illustratifs, non normatifs (annexe 2.4 ; F07 § 8.1-8.2) (0,5 pt). Pour l'union, les domaines prioritaires sont les données de référence, la qualité et les métadonnées (dictionnaire).</p>
+<p>Répartition proposée entre l'union et les caves (0,5 pt pour trois rôles avec missions et titulaires) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Rôle</th>
+<th>Missions</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Propriétaire</strong> des données des parcelles et des apports</td>
+<td>fixe les définitions et les règles (dictionnaire, échelle sanitaire), arbitre les désaccords entre caves, valide les données qui serviront au conseil</td>
+<td>Mme Claire BOUSQUIÉRAN, directrice de la production et de la qualité de l'union</td>
+</tr>
+<tr class="even">
+<td><strong>Intendants</strong> des données</td>
+<td>appliquent les règles à la saisie, contrôlent les apports sans parcelle et les valeurs hors plage, mettent à jour les parcelles chaque hiver, signalent les anomalies</td>
+<td>dans chaque cave, un agent de réception ou l'adjoint du directeur, désigné par le directeur de cave ; au laboratoire, un technicien pour le rattachement des prélèvements</td>
+</tr>
+<tr class="odd">
+<td><strong>Comité des données</strong> des parcelles et des apports</td>
+<td>réunit la propriétaire, les neuf directeurs de cave et le responsable du système d'information ; adopte le dictionnaire et l'échelle sanitaire, suit la qualité chaque trimestre, prépare ce qui sera présenté au conseil</td>
+<td>instance présidée par la directrice de la production et de la qualité, avant chaque vendange et chaque trimestre</td>
+</tr>
+<tr class="even">
+<td><strong>Dépositaire technique</strong></td>
+<td>met en œuvre le référentiel, les échanges, les droits d'accès et la sécurité, sans décider du contenu</td>
+<td>M. Sébastien CAUSSINEL, responsable du système d'information</td>
+</tr>
+<tr class="odd">
+<td><strong>Délégué à la protection des données</strong></td>
+<td>conseille sur les données des adhérents exploitants en nom propre, qui sont des données personnelles (annexe 2.4) : finalités, minimisation, durée de conservation, mise à jour du registre des traitements</td>
+<td>délégué de l'union s'il en a été désigné un (désignation facultative ici, mais recommandée), mutualisable avec les caves</td>
+</tr>
+</tbody>
+</table>
+<p>Sont valorisés : la responsabilité métier à l'union, la saisie et le contrôle là où naît la donnée (les caves), et la place des directeurs de cave dans les décisions, qui conditionne l'acceptation des données par les présidents (annexe 2.2 D).</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Propriété des données d'apport confiée à chaque directeur de cave pour ses apports, l'union restant propriétaire des données de référence et des définitions communes, si la répartition est justifiée.</li>
+<li>Administrateur des données (CDO) proposé à titre illustratif, sans être présenté comme obligatoire.</li>
+<li>Le candidat peut s'attribuer la coordination du dispositif, comme responsable du projet de refonte.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Norme / référentiel / solution</em> (<code>ET-01</code>, <code>JUR-S06</code>) — « installer DAMA-DMBOK » ou « certifier l'union DAMA » ; juste : référentiel de bonnes pratiques.</li>
+<li><em>Qualité confiée à l'informatique</em> — le responsable du système d'information désigné propriétaire des données ; juste : il est dépositaire technique, la propriété est métier.</li>
+<li><em>Rôles sans titulaire ni application au cas</em> (<code>JUR-T01</code>) — liste de rôles récitée ; juste : qui, dans l'union ou dans les caves, fait quoi.</li>
+<li><em>Organisation normative</em> — présenter un organigramme de gouvernance comme imposé par le référentiel ; le programme la veut illustrative.</li>
+<li><em>Délégué confondu avec un responsable informatique</em> (<code>ET-29</code>) — le délégué ne tient pas les outils et ne décide pas des moyens.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DAMA-DMBOK, 2e édition (2017), révision 2024</td>
+<td>domaines de connaissance, rôles de propriétaire et d'intendant (repères de l'annexe 2.4)</td>
+<td><code>dama_dmbok2</code> / F07 § 8.1-8.2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD), applicable depuis le 25/05/2018</td>
+<td>données personnelles des adhérents exploitants en nom propre, registre, délégué (repères de l'annexe 2.4)</td>
+<td><code>rgpd</code> / F15</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--chaîne-de-valeur-des-données-et-analyse-des-apports-de-la-vendange-2026-45-points">2.4 – Chaîne de valeur des données et analyse des apports de la vendange 2026 (4,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.a</code> « Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation » ; <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés » ; <code>2.2.c</code> « Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (plan « ROCALDÈNE 2030 », neuf caves), 2.1 (sources, constats, établissement manuel des tableaux) et 2.2 (tableau par cave, pluies, projet du conseil, positions de M. SOULAGNET et de Mme TARASCOUL, prévision proposée par le prestataire).</p>
+<p><strong>Barème indicatif (4,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Chaîne de valeur des données définie et appliquée au cas, de la parcelle au conseil : collecte, préparation et rapprochement, stockage et structuration, analyse, restitution, décision</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Apport de la chaîne à la décision de mieux rémunérer la qualité : critères objectivés, comparables entre caves, traçables jusqu'à la parcelle et acceptés par les caves</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Premier constat argumenté, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Deuxième constat argumenté, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Troisième constat argumenté, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-4</td>
+<td>Appréciation des deux positions (biais de confirmation de M. SOULAGNET ; critiques fondées mais hypothèse météorologique invérifiable de Mme TARASCOUL) et conséquence pour le conseil</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Méthode recommandée et justifiée : analyse exploratoire, après une analyse descriptive fiabilisée</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Prévision par parcelle prématurée : deux arguments tirés des annexes</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>d</td>
+<td>Deux représentations visuelles, l'une pour le conseil, l'autre pour les directeurs de cave, chacune avec son message et le piège de lecture à éviter</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.4 a) – La chaîne de valeur des données, de la parcelle au conseil</em></p>
+<p>La <strong>chaîne de valeur des données</strong> décrit les étapes par lesquelles une donnée brute devient une information utile à la décision : collecte, préparation (nettoyage, rapprochement), stockage et structuration, analyse, restitution, puis décision et action ; la valeur se crée à chaque étape et se perd au maillon le plus faible (F08 § 1). Appliquée au cas (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Collecte</strong> : à la parcelle (fichier des parcelles, sondes, stations, observations des techniciens), à la réception (bon d'apport : poids, degré, état sanitaire, parcelle), au laboratoire (acidité, pH) et aux assemblages (part retenue pour les cuvées haut de gamme) ;</li>
+<li><strong>Préparation</strong> : rapprochement par les identifiants uniques du référentiel (question 2.2), conversion supprimée par l'unité commune, fusion des doublons, rattachement des prélèvements orphelins, traitement des apports sans parcelle ;</li>
+<li><strong>Stockage et structuration</strong> : base d'analyse de l'union organisée selon le modèle de la question 2.1, historisée vendange après vendange ;</li>
+<li><strong>Analyse</strong> : comparaisons par cave, par cépage, par secteur et par parcelle, croisements entre état sanitaire, pluie, rendement et destination des vins ;</li>
+<li><strong>Restitution</strong> : représentations commentées pour le conseil et pour chaque cave (d), avec leurs précautions ;</li>
+<li><strong>Décision</strong> : choix par le conseil des critères de qualité communs et de leur calendrier.</li>
+</ol>
+<p><strong>Apport à la décision</strong> (0,5 pt) : aujourd'hui, la chaîne est rompue dès la collecte (mesures non homogènes, un tiers des volumes sans parcelle) et la préparation est manuelle (neuf extractions, tableaux établis à la main) ; toute rémunération de la qualité serait contestée, comme le montre Mme TARASCOUL. Une chaîne maîtrisée permet au conseil de fonder les critères de qualité sur des données <strong>définies en commun, comparables entre les neuf caves, traçables jusqu'à la parcelle et acceptées</strong> par les caves qui les produisent ; elle permet d'apprécier à l'avance l'effet de chaque critère sur chaque cave et de suivre ensuite ses effets, au service de la deuxième priorité du plan « ROCALDÈNE 2030 ». Les modalités de calcul ne relèvent pas de la question.</p>
+<p><em>2.4 b) – Trois constats argumentés et leurs précautions</em> (0,5 pt par constat avec sa précaution ; trois constats parmi les quatre suivants)</p>
+<ol type="1">
+<li><strong>L'état sanitaire paraît nettement plus dégradé dans l'Aude</strong> : 15 % à 25 % des apports dans trois caves de l'Aude (PECHAUROUX 25 %, CABRISSAC 20 %, LAURADEL 15 %), 10 % à VALCROZIÈRES, contre 3 % à 6 % dans les cinq caves de l'Hérault ; les deux stations de l'Aude ont relevé 70 et 110 mm de pluie du 10 au 25 septembre, contre 20 et 30 mm dans l'Hérault. <em>Hypothèse</em> : les pluies de septembre ont favorisé les maladies. <em>Précaution</em> : les échelles diffèrent (« dégradé » couvre les notes 3 à 5 sur cinq dans l'Aude, la seule note 3 sur trois dans l'Hérault), les notes sont souvent posées par des saisonniers sans définition écrite, et les deux caves les plus touchées (PECHAUROUX, CABRISSAC) n'ont pas de station : l'écart est en partie un <strong>effet de mesure</strong>, et la pluie une hypothèse non vérifiée pour elles.</li>
+<li><strong>Les caves aux rendements les plus faibles fournissent le plus de vins haut de gamme</strong> : SAINT-BRÉZIAN (45 hl/ha, 14,0 % vol., 30 % en haut de gamme), TERRAGOUSSE et VALCROZIÈRES (50 hl/ha, 20 %), contre CAUSSELAC (70 hl/ha, 5 %). <em>Hypothèse</em> : des rendements plus faibles donnent des raisins plus concentrés, mieux valorisés. <em>Précaution</em> : c'est une <strong>corrélation</strong>, non une causalité ; un <strong>facteur commun</strong> (situation des vignes, âge des vignes, cépages) peut expliquer à la fois le faible rendement et la qualité ; surtout, la part haut de gamme est <strong>décidée par l'union</strong> selon la qualité des cuves et ses besoins commerciaux (environ 44 milliers d'hl, soit environ 12 % de la vendange) : elle mesure aussi les choix de l'union, comme le dit Mme TARASCOUL ; enfin, les fichiers des parcelles n'étant pas à jour (constat 5), aucun rendement ne peut encore être calculé par parcelle.</li>
+<li><strong>La traçabilité jusqu'à la parcelle est inégale et faible là où l'état sanitaire est le plus dégradé</strong> : environ 62 % des volumes sont rattachés à une parcelle, de 95 % à SAINT-BRÉZIAN à 30 % à PECHAUROUX et 40 % à CABRISSAC ; dans l'Aude, moins de la moitié des volumes l'est. <em>Conséquence</em> : une reconnaissance de la qualité <strong>par parcelle</strong> est impossible aujourd'hui pour plus d'un tiers de la vendange. <em>Précaution</em> : les données manquantes <strong>ne sont pas réparties au hasard</strong> (biais de sélection) : les moyennes calculées sur les seuls apports rattachés représentent mal les caves les moins renseignées.</li>
+<li><strong>Le degré, critère actuel de rémunération, est un indicateur ambigu de la qualité</strong> : il va de 12,5 à 14,0 % vol. et suit la part haut de gamme, mais le plan « ROCALDÈNE 2030 » veut adapter l'offre au changement climatique, ce qui ne pousse pas à récompenser toujours plus de degré. <em>Précaution</em> : les degrés de LAURADEL et de CABRISSAC sont convertis à partir des sucres, et une moyenne par cave masque la dispersion entre parcelles et entre cépages.</li>
+</ol>
+<p>Précautions communes, valorisées si elles sont citées : <strong>une seule vendange</strong> (aucune tendance), données <strong>agrégées par cave</strong> (rien sur les parcelles ni les viticulteurs), tableau <strong>établi à la main</strong> pour la première fois.</p>
+<p><strong>Appréciation des deux positions</strong> (0,5 pt) : M. SOULAGNET lit le tableau dans le sens qui favorise sa cave (<strong>biais de confirmation</strong>) et en tire une conclusion que les données ne portent pas : la part haut de gamme dépend des choix de l'union, et l'état sanitaire n'est pas mesuré de la même façon partout. Mme TARASCOUL relève à juste titre deux défauts de comparabilité (échelles, part haut de gamme décidée par l'union), mais son explication par la pluie n'est pas vérifiable pour sa cave, sans station, et ne vaut pas preuve. Conclusion pour le conseil : ce tableau peut ouvrir le débat, il ne peut pas fonder une rémunération ; il faut d'abord des mesures communes (dictionnaire, échelle, parcelle obligatoire) dès la vendange 2027, puis décider sur des données comparables, éventuellement après une année d'observation.</p>
+<p><em>2.4 c) – Méthode d'analyse et prévision par parcelle</em></p>
+<p><strong>Méthode</strong> (0,5 pt) : l'annexe 2.2 relève de l'analyse <strong>descriptive</strong> (moyennes et parts par cave, ce qui s'est passé), encore fragile. L'étape suivante est une analyse <strong>exploratoire</strong> : au niveau de l'apport et de la parcelle, rechercher les profils et les facteurs associés à la qualité (cépage, âge des vignes, secteur, pluie, rendement, date d'apport), repérer les valeurs aberrantes, et tester les hypothèses du b) (rôle de la pluie, effet de l'échelle, effet du rendement). Elle sert la question du conseil (quels critères de qualité retenir et sont-ils équitables entre caves) et reste explicable aux présidents. Elle suppose les données harmonisées de la question 2.2 ; sur la vendange 2026, elle se limite aux caves et aux apports rattachés.</p>
+<p><strong>Prévision par parcelle prématurée</strong> (0,5 pt pour deux arguments, parmi les suivants) :</p>
+<ol type="1">
+<li><strong>Pas d'historique fiable au niveau de la parcelle</strong> : une seule vendange rassemblée, à la main ; identifiants de parcelle non uniques ; plus d'un tiers des volumes sans parcelle ; un modèle de prévision apprend sur des exemples passés, qui n'existent pas.</li>
+<li><strong>Des données de qualité non comparables</strong> : la variable à prévoir (l'état sanitaire, le degré) est mesurée sur des échelles et dans des unités différentes ; le modèle apprendrait les différences de notation entre caves plutôt que la qualité.</li>
+<li><strong>Une couverture météorologique trop partielle</strong> : quatre stations pour neuf secteurs, des sondes dans 30 parcelles sur 11 000, des observations dispersées dans trois tableurs personnels.</li>
+<li><strong>Un usage à fort enjeu et peu explicable</strong> : fixer des primes avant les vendanges sur une prévision opaque, pour 1 400 adhérents, serait contesté par les caves dès la première erreur ; la décision doit rester humaine et fondée sur des critères compris. La prévision pourra être reconsidérée après plusieurs vendanges de données propres, comme aide aux techniciens plutôt que comme base de rémunération.</li>
+</ol>
+<p><em>2.4 d) – Deux représentations visuelles</em> (0,5 pt)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Destinataire</th>
+<th>Représentation</th>
+<th>Message</th>
+<th>Piège à éviter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conseil de l'union</td>
+<td>barres horizontales triées par cave de la part des apports à l'état sanitaire dégradé (à partir de la vendange 2027, sur l'échelle commune ; pour 2026, en séparant les deux échelles), avec la part des volumes rattachés à une parcelle affichée à côté (ou nuage de points rendement / part haut de gamme, une bulle par cave proportionnelle au volume)</td>
+<td>où sont les écarts de qualité et quelle confiance leur accorder</td>
+<td>comparer des notes d'échelles différentes ; axe tronqué qui grossit les écarts ; lire une corrélation comme une causalité ; volumes absolus au lieu de taux</td>
+</tr>
+<tr class="even">
+<td>Directeurs de cave</td>
+<td>carte des parcelles de la cave colorée selon l'état sanitaire moyen des apports (ou histogramme de la répartition des apports de la cave par note, comparé à celle de l'union)</td>
+<td>quelles parcelles et quels secteurs améliorer ou mieux renseigner</td>
+<td>carte en valeurs brutes, qui fait ressortir les grandes parcelles ; couleurs non signifiantes ; parcelles sans apport rattaché laissées vides sans le signaler</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Chaîne de valeur présentée selon les étapes de la chaîne décisionnelle (collecte, extraction, transformation et chargement, entrepôt, restitution), si la décision du conseil la termine.</li>
+<li>Autres constats tirés de l'annexe 2.2 (CAUSSELAC, première cave en volume, la moins valorisée ; écart de structure entre Hérault et Aude) s'ils sont assortis d'une précaution.</li>
+<li>Position recommandant une rémunération limitée à un critère déjà fiable (par exemple l'apport rattaché à une parcelle), si elle est argumentée.</li>
+<li>Analyse descriptive fiabilisée recommandée pour la vendange 2027, avant l'exploratoire, si le candidat le justifie par la qualité des données.</li>
+<li>Autres représentations adaptées (barres empilées à 100 % par note sanitaire, carte choroplèthe en taux), si le message et le piège sont précisés.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Corrélation = causalité</em> (<code>ET-26</code>) — « les faibles rendements font la qualité » ou « la pluie explique l'état sanitaire de l'Aude » ; juste : hypothèses à vérifier, facteurs communs et effets de mesure examinés.</li>
+<li><em>Extrapolation sans précaution</em> (<code>JUR-D06</code>) — conclusions tirées d'une seule vendange ; juste : une année ne fait pas une tendance.</li>
+<li><em>Interprétation isolée de la décision</em> (<code>JUR-T03</code>) — constats décrits sans conséquence pour le conseil ; juste : chaque constat dit ce que le conseil peut ou ne peut pas décider.</li>
+<li><em>Science des données = BI</em> (<code>ET-25</code>) — confondre l'analyse descriptive du tableau et la prévision du prestataire ; juste : finalités et exigences de données différentes.</li>
+<li><em>Calculs inutiles ou hors sujet</em> (<code>JUR-T07</code>) — moyennes pondérées recalculées, barème de primes construit ; juste : interpréter les écarts lus, sans calcul de rémunération.</li>
+<li><em>IA générative confondue avec l'apprentissage automatique</em> (<code>ET-09</code>) — le service de prévision présenté comme un assistant conversationnel ; juste : une prévision apprend des régularités sur des données passées.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chaîne décisionnelle et chaîne de valeur des données</td>
+<td>étapes, points de vigilance</td>
+<td>F08 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Analyses descriptive, exploratoire, prédictive</td>
+<td>finalités, prérequis, limites</td>
+<td>F08 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Choix des représentations, biais de lecture, corrélation et causalité</td>
+<td>graphiques adaptés, pièges</td>
+<td>F08 § 5</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="25--le-projet-dauthentification-des-cuvées-exportées-25-points">2.5 – Le projet d'authentification des cuvées exportées (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.3 – Appréhender les usages et les enjeux des technologies de la blockchain et des cryptoactifs : <code>3.3.c</code> « Typologie des applications : traçabilité, certification, finance décentralisée, NFT » ; <code>3.3.a</code> « Évaluer les opportunités, les risques et le cadre réglementaire associés à la mise en œuvre de solutions fondées sur la blockchain et les cryptoactifs dans les organisations » ; <code>3.3.e</code> « Analyse de la valeur ajoutée, des coûts et des limites d'un projet blockchain » ; <code>3.3.d</code> « Cadres réglementaires émergents : règlement MiCA (Markets in Crypto-Assets), NEP, normes ISO ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (export 25 % du chiffre d'affaires, budget du SI de 2 200 k€, plan « ROCALDÈNE 2030 » et empreinte environnementale), 2.3 (problème signalé, proposition de SCELLAVIN, coûts, alternative, avis) et 2.4 (MiCA, RGPD, ISO 22739).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a</td>
+<td>Blockchain définie (registre distribué, consensus, inaltérabilité pratique, confiance sans tiers) et distinguée d'une base centralisée ; projet situé dans la typologie : certification d'authenticité et traçabilité, au moyen de jetons non fongibles</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Deux opportunités et trois risques ou limites tirés de l'annexe 2.3 (dont l'oracle : la chaîne garantit l'enregistrement, pas la bouteille)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Comparaison avec l'alternative : coûts de tête sur trois ans (930 k€ contre 330 k€), apports et limites du code signé</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Recommandation argumentée et conditionnée</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c</td>
+<td>Condition d'exclusion du champ de MiCA (jetons réellement uniques et non fongibles) et respect du RGPD pour les prénoms et les villes des consommateurs ; la remarque sur la revente séparée est valorisée</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.5 a) – Blockchain et typologie</em> (0,5 pt)</p>
+<p>Une <strong>blockchain</strong> est un registre distribué, répliqué entre plusieurs nœuds, dont les blocs de transactions sont chaînés par des empreintes cryptographiques et validés par un mécanisme de consensus (ici la preuve d'enjeu) ; elle permet à des acteurs qui ne se font pas confiance de partager une information horodatée et pratiquement inaltérable, <strong>sans tiers de confiance</strong>. Une <strong>base de données centralisée</strong> est tenue par un administrateur unique (ici l'union), qui peut la modifier et en qui les utilisateurs doivent avoir confiance ; elle est plus simple, moins coûteuse et plus rapide (F11 § 1 ; ISO 22739:2024 pour le vocabulaire).</p>
+<p>Le projet de SCELLAVIN relève de deux usages de la typologie : la <strong>certification d'authenticité</strong> (preuve que la bouteille vient de l'union) et la <strong>traçabilité</strong> (historique des détenteurs successifs), au moyen d'un <strong>jeton non fongible (NFT)</strong> par bouteille, sorte de double numérique de l'objet physique. Il ne relève ni de la finance décentralisée ni de la tokenisation d'un actif financier ; la revente envisagée des jetons sur une place de marché le ferait glisser vers un usage spéculatif.</p>
+<p><em>2.5 b) – Opportunités, risques et comparaison avec l'alternative</em></p>
+<p><strong>Deux opportunités</strong> (parmi les suivantes) :</p>
+<ol type="1">
+<li>une <strong>preuve d'origine vérifiable par des tiers</strong> sans compte chez l'union ni confiance dans son site, ce que demande le distributeur canadien ;</li>
+<li>un <strong>historique horodaté des détenteurs</strong>, qui permettrait de repérer des bouteilles sorties du circuit prévu ;</li>
+<li>une <strong>étiquette connectée</strong> qui se détruit au décollage, plus difficile à copier qu'une étiquette imprimée ;</li>
+<li>une <strong>image de modernité</strong> auprès des importateurs asiatiques (M. SALVERNAC), à ne pas surestimer.</li>
+</ol>
+<p><strong>Trois risques ou limites</strong> (0,5 pt avec les opportunités, parmi les suivants) :</p>
+<ol type="1">
+<li><strong>Le problème de l'oracle</strong> : la blockchain garantit que l'enregistrement n'a pas été modifié, non qu'il est vrai, ni que la bouteille est celle qui a été enregistrée (« si nos données de départ sont fausses, la blockchain les gardera fausses pour toujours ») ; la protection contre la copie tient à l'étiquette, non à la blockchain.</li>
+<li><strong>Un seul acteur écrit l'origine</strong> : l'union est la seule source des informations de départ ; selon la grille d'opportunité (plusieurs acteurs qui écrivent et ne se font pas confiance), une base centralisée tenue par l'union, propriétaire de la marque, suffit (F11 § 2.2).</li>
+<li><strong>Des données personnelles inscrites sur une blockchain publique</strong> : prénoms et villes des consommateurs ne pourraient plus être effacés, ce qui heurte la minimisation et l'effacement prévus par le RGPD (annexe 2.4).</li>
+<li><strong>Coût et proportionnalité</strong> : environ 2 000 bouteilles contrefaites signalées, soit environ 0,3 % des 600 000 bouteilles exportées, pour un projet de 930 k€ sur trois ans.</li>
+<li><strong>Dépendance</strong> envers une jeune entreprise qui choisit seule la blockchain et tient la place de marché ; avenir des jetons et de la vérification si elle disparaît.</li>
+<li><strong>Empreinte environnementale</strong> : la preuve d'enjeu consomme peu d'énergie, mais une puce électronique jetable sur 600 000 bouteilles par an produit des déchets électroniques, à rebours de la priorité du plan « ROCALDÈNE 2030 » sur l'empreinte environnementale.</li>
+</ol>
+<p><strong>Comparaison avec l'alternative</strong> (0,5 pt) : estimation de tête, sans actualisation :</p>
+<ul>
+<li>SCELLAVIN : 120 + 90 + 3 × (180 + 60) = 210 + 720 = <strong>930 k€</strong> sur trois ans, soit environ 310 k€ par an (environ 14 % du budget annuel du SI de 2 200 k€) ;</li>
+<li>alternative : 150 + 3 × (30 + 30) = 150 + 180 = <strong>330 k€</strong> sur trois ans, soit environ 110 k€ par an (environ 5 % du budget du SI) ; écart : 600 k€.</li>
+</ul>
+<p>L'alternative répond au besoin principal (prouver l'origine, lire le code avec un téléphone, signaler un code déjà lu ailleurs), garde les données et la maîtrise à l'union, n'inscrit aucune donnée personnelle dans un registre inaltérable et ne met pas de puce sur chaque bouteille. Ses limites : un code imprimé peut être <strong>copié</strong> sur une fausse bouteille (d'où la détection des lectures multiples, et éventuellement une capsule ou une étiquette inviolable), et les tiers doivent faire confiance au site de l'union, ce qui est acceptable puisque l'union est le producteur et le propriétaire de la marque.</p>
+<p><strong>Recommandation</strong> (0,5 pt) : retenir l'alternative centralisée, en pilote d'une campagne sur le marché de Hong Kong, complétée si besoin par un dispositif inviolable sur la capsule ; mesurer les lectures multiples et les retours des importateurs ; ne pas inscrire de données de consommateurs. Reconsidérer une blockchain, plutôt <strong>permissionnée et partagée avec les importateurs et distributeurs</strong>, seulement si plusieurs acteurs doivent écrire dans le registre sans se fier à l'union et si le coût se justifie. Refuser en tout état de cause la revente séparée des jetons.</p>
+<p><em>2.5 c) – Cadre réglementaire</em> (0,5 pt)</p>
+<p>D'après les repères de l'annexe 2.4, le règlement (UE) 2023/1114 « MiCA », applicable depuis le 30/12/2024, exclut de son champ les crypto-actifs <strong>uniques et non fongibles</strong> (article 2 § 3) : les jetons de SCELLAVIN y échappent <strong>à condition d'être réellement uniques et non fongibles</strong> : un jeton par bouteille, non interchangeable et non fractionné. La revente des jetons séparément des bouteilles ne relève pas de cette condition, mais elle détacherait la preuve d'authenticité de la bouteille et donnerait au projet un caractère spéculatif ; un avis spécialisé serait utile avant de l'envisager (remarque valorisée, non exigée). Le projet doit en revanche respecter le <strong>RGPD</strong> (applicable depuis le 25/05/2018) pour les prénoms et villes des consommateurs, comme pour les données des adhérents : finalités, minimisation, durée de conservation, effacement, ce qu'une inscription sur une blockchain publique rend impossible. ISO 22739:2024 n'est qu'une norme de vocabulaire : elle ne crée aucune exigence ni certification.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Projet situé seulement dans la traçabilité ou seulement dans la certification, si le rôle du jeton non fongible est expliqué.</li>
+<li>Recommandation de l'étiquette connectée sans blockchain, adossée au registre centralisé de l'union, si le coût et l'empreinte des puces sont discutés.</li>
+<li>Pilote limité du projet de SCELLAVIN sur une cuvée, si le candidat exige l'absence de données personnelles sur la chaîne, la réversibilité et l'abandon de la revente séparée.</li>
+<li>Coûts estimés par an plutôt que sur trois ans, si la comparaison reste juste.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Blockchain = base de données distribuée</em> (<code>ET-08</code>) — « la blockchain est une base partagée plus sûre » ; juste : registre de confiance entre acteurs qui ne se font pas confiance, au prix de la performance.</li>
+<li><em>Opportunités sans risques</em> (<code>ET-19</code>) — reprendre l'enthousiasme de M. SALVERNAC sans l'oracle, le coût ni le RGPD.</li>
+<li><em>Inaltérabilité = vérité</em> — croire que l'inscription prouve l'authenticité de la bouteille ; juste : la chaîne garantit l'intégrité de l'enregistrement, pas l'exactitude des données saisies.</li>
+<li><em>MiCA appliqué à tout jeton</em> (<code>ET-35</code>) — affirmer que les jetons de SCELLAVIN exigent un agrément ; juste : exclusion des crypto-actifs uniques et non fongibles, sous condition.</li>
+<li><em>Analyse juridique, fiscale ou comptable</em> (<code>JUR-T07</code>) — développements sur le statut juridique des jetons ou leur traitement dans les comptes ; juste : s'en tenir aux repères fournis.</li>
+<li><em>Énergie oubliée ou exagérée</em> — preuve d'enjeu confondue avec la preuve de travail ; juste : consommation modérée, mais déchets des puces à prendre en compte.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2023/1114 « MiCA », applicable depuis le 30/12/2024</td>
+<td>définition du crypto-actif, exclusion des crypto-actifs uniques et non fongibles (article 2 § 3) (repères de l'annexe 2.4)</td>
+<td><code>mica</code> / F11 § 3 ; <code>commun/fiches/sapin2_lcbft_mica.md</code> § 3.1</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD), applicable depuis le 25/05/2018</td>
+<td>minimisation, effacement, données des consommateurs</td>
+<td><code>rgpd</code> / F15</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO 22739:2024</td>
+<td>vocabulaire des chaînes de blocs et des registres distribués</td>
+<td><code>iso_22739_2024</code> / F11 § 3.4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Typologie des usages, grille d'opportunité, limites (oracle, énergie, gouvernance)</td>
+<td>analyse du projet</td>
+<td>F11 § 1 et 2</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,2511 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Sujet complet n° 9</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Sujet complet</p><p>3 heures</p><p>40 points</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Sujet d'entraînement n° 9</h1><p class="cas">dossier 1, Vignerons de ROCALDÈNE, union de caves coopératives viticoles : alignement du SI, processus « commande → expédition », gouvernance, méthode et contrat de la refonte ; dossier 2, Vignerons de ROCALDÈNE : modèle des données des parcelles et des apports, qualité des données et authentification des bouteilles par jetons non fongibles ; dossier 3, Vignerons de ROCALDÈNE : continuité du SI pendant les vendanges, IA et audit du module des apports, hébergement responsable.</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base d'une réglementation au 31/12/2026.</p>
+<p>Textes intégrés : fiches de travail datées et base des référentiels datés.</p>
+<p>Bien que le corrigé mentionne des textes juridiques et normatifs, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte avant tout sur la pertinence et la cohérence des réponses.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dossier</th>
+<th style="text-align: right;">Points</th>
+<th>Questions</th>
+<th>Exercice d'origine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 – Éclairer la stratégie du système d'information et préparer sa refonte</td>
+<td style="text-align: right;">14</td>
+<td>1.1 à 1.5</td>
+<td><a href="../../exercices/ex25/sujet.html">Vignerons de ROCALDÈNE, union de caves coopératives viticoles : alignement du SI, processus « commande → expédition », gouvernance, méthode et contrat de la refonte</a></td>
+</tr>
+<tr class="even">
+<td>2 – Organiser et exploiter les données des parcelles et des apports ; authentifier les bouteilles</td>
+<td style="text-align: right;">13</td>
+<td>2.1 à 2.5</td>
+<td><a href="../../exercices/ex26/sujet.html">Vignerons de ROCALDÈNE : modèle des données des parcelles et des apports, qualité des données et authentification des bouteilles par jetons non fongibles</a></td>
+</tr>
+<tr class="odd">
+<td>3 – Assurer la continuité du système d'information pendant les vendanges, fiabiliser les apports et choisir un hébergement responsable</td>
+<td style="text-align: right;">13</td>
+<td>3.1 à 3.6</td>
+<td><a href="../../exercices/ex27/sujet.html">Vignerons de ROCALDÈNE : continuité du SI pendant les vendanges, IA et audit du module des apports, hébergement responsable</a></td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>40</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-1--éclairer-la-stratégie-du-système-dinformation-et-préparer-sa-refonte-14-points">DOSSIER 1 – ÉCLAIRER LA STRATÉGIE DU SYSTÈME D'INFORMATION ET PRÉPARER SA REFONTE (14 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1 Alignement du système d'information sur le plan « ROCALDÈNE 2030 »</td>
+<td><code>1.1.b</code> Principes d'alignement stratégique SI/métier (modèle SAM, chaîne de valeur, etc.) ; <code>1.1.a</code> Définir une stratégie des systèmes d'information alignée sur les objectifs métiers, en intégrant les opportunités offertes par les technologies émergentes</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>1.2 Le processus « commande → expédition » et l'urbanisation du système d'information</td>
+<td><code>1.3.f</code> Analyse des processus métiers et rôle des architectures SI dans leur rationalisation ; <code>1.3.a</code> Concevoir, cartographier et évaluer l'architecture des systèmes d'information dans une logique d'urbanisation cohérente, en intégrant les technologies émergentes ; <code>1.3.e</code> Impacts organisationnels, juridiques et comptables des nouvelles architectures sur la transformation des métiers (impacts organisationnels seulement)</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>1.3 Gouvernance du programme de refonte</td>
+<td><code>1.2.a</code> Mettre en œuvre une gouvernance des systèmes d'information intégrant les parties prenantes clés, des indicateurs de performance et des critères de durabilité ; <code>1.2.c</code> Enjeux relationnels entre DSI, direction générale et directions métiers</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>1.4 Méthode, cahier des charges et plan qualité du projet</td>
+<td><code>1.5.b</code> Méthodologies de gestion de projet (cycle en V, agile, hybride) ; <code>1.5.c</code> Élaboration d'un cahier des charges fonctionnel et technique ; <code>1.5.f</code> Mise en œuvre et contrôle du plan qualité</td>
+<td>2,5</td>
+</tr>
+<tr class="odd">
+<td>1.5 Contrat d'intégration avec VALTRÉMIS Intégration</td>
+<td><code>1.4.a</code> Concevoir, négocier et sécuriser des relations contractuelles avec des prestataires de services numériques (ESN), en tenant compte des enjeux opérationnels et juridiques</td>
+<td>1,5</td>
+</tr>
+<tr class="even">
+<td><strong>Dossier 1 – Éclairer la stratégie du système d'information et préparer sa refonte</strong></td>
+<td></td>
+<td><strong>14</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (alignement stratégique et modèle de Henderson et Venkatraman, urbanisation, gouvernance du SI) 1,5 point (items 1.1 a-1, 1.2 b-1, 1.3 a-1) ; analyse des annexes et recommandations 12,5 points, soit environ 89 %. Les définitions demandées en 1.4 et 1.5 (méthodes, formes de contrat) sont notées avec leur application. Durée conseillée : 14 points × 4,5 minutes = 63 minutes, soit 1 h 03.</p>
+<hr />
+<h3 id="11--alignement-du-système-dinformation-sur-le-plan--rocaldène-2030--4-points">1.1 – Alignement du système d'information sur le plan « ROCALDÈNE 2030 » (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.1 – Élaborer et aligner la stratégie des SI : <code>1.1.b</code> « Principes d'alignement stratégique SI/métier (modèle SAM, chaîne de valeur, etc.) » ; <code>1.1.a</code> « Définir une stratégie des systèmes d'information alignée sur les objectifs métiers, en intégrant les opportunités offertes par les technologies émergentes ». Limite : « Ne pas confondre alignement stratégique et simple adéquation technique. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (enjeux de la première priorité du plan, état du SI, projets de 2025 et 2026, témoignages), 1.3 (cartographie et chiffres du processus « commande → expédition ») et 1.1 (organisation de l'union et des caves, système d'information, organigramme).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Alignement stratégique défini (mise en cohérence permanente de la stratégie du SI et de la stratégie de l'organisation) ; modèle de Henderson et Venkatraman présenté : deux axes (ajustement stratégique, intégration fonctionnelle), quatre domaines</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Trois désalignements, chacun situé sur un axe ou entre deux domaines du modèle et appuyé sur des faits chiffrés des annexes 1.2 et 1.3 (0,5 par désalignement)</td>
+<td>1,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Pourquoi le remplacement du progiciel ne suffit pas (processus, caves, gouvernance, compétences) ; perspective d'alignement à suivre, justifiée</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b</td>
+<td>Trois orientations de la stratégie du SI, chacune reliée à un enjeu du plan ; l'une intègre une technologie émergente adaptée, avec son apport et une limite (0,5 par orientation)</td>
+<td>1,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.1 a) – Alignement actuel du SI sur la première priorité du plan</em></p>
+<p>L'<strong>alignement stratégique</strong> est la mise en cohérence permanente entre la stratégie de l'organisation et la stratégie de son système d'information : le SI doit servir les choix stratégiques, et ses possibilités peuvent en retour ouvrir de nouvelles options. Il est <strong>dynamique</strong> (à refaire quand la stratégie change, ici avec le plan de décembre 2026) et <strong>organisationnel</strong> autant que technique (0,5 pt avec le modèle).</p>
+<p>Le <strong>modèle d'alignement stratégique</strong> (<em>Strategic Alignment Model</em>, SAM) de Henderson et Venkatraman (1993) croise deux axes : l'<strong>ajustement stratégique</strong>, entre le niveau externe (choix de marchés, d'offre, de compétences distinctives) et le niveau interne (structures, processus, compétences) ; l'<strong>intégration fonctionnelle</strong>, entre le domaine des métiers et celui des technologies de l'information. Il en résulte quatre domaines : stratégie de l'organisation, stratégie des technologies de l'information, infrastructure et processus organisationnels, infrastructure et processus du SI. L'alignement suppose que les quatre domaines soient cohérents deux à deux.</p>
+<p><strong>Trois désalignements</strong> (0,5 pt chacun) :</p>
+<ol type="1">
+<li><strong>Une stratégie métier sans stratégie du SI</strong> (intégration fonctionnelle au niveau stratégique, entre la stratégie de l'union et la stratégie des technologies de l'information) : le plan, adopté en décembre 2026, fixe l'export à 35 % du chiffre d'affaires en 2030 et une vente en ligne dès 2028, mais aucune stratégie du SI n'en découle ; le responsable du SI « n'a jamais pu présenter un plan » et ne siège pas au comité de direction. Les 160 k€ de projets choisis en 2025 et 2026 (site vitrine sans vente en ligne, bornes du caveau, notes de frais) ne servent pas la priorité 1, et le seul outil de l'export a été souscrit hors du SI. Le SI répond aux demandes au fil de l'eau, pas à la stratégie.</li>
+<li><strong>Un SI incapable de porter les marchés visés</strong> (ajustement stratégique côté SI, entre la stratégie des technologies et l'infrastructure du SI) : le progiciel, non maintenu après 2028, ne gère ni plusieurs devises, ni plusieurs langues, ni la vente aux particuliers ; les documents d'export et les fiches techniques sont faits sous tableur et traitement de texte ; l'équipe de six personnes est absorbée par la maintenance et l'assistance aux caves. Les capacités du SI ne correspondent ni à l'export en Amérique du Nord et en Asie ni à la boutique en ligne prévue en 2028.</li>
+<li><strong>Des processus de l'union et des caves que le SI ne relie pas</strong> (intégration fonctionnelle au niveau opérationnel, entre infrastructure et processus organisationnels et infrastructure du SI) : les vins disponibles dans les neuf caves sont connus une fois par semaine par neuf fichiers consolidés à la main, « déjà faux le jeudi », alors que les assemblages adaptés exigent une vision à jour ; deux flux sur onze seulement sont automatisés dans le processus « commande → expédition » ; 88 % des commandes de la grande distribution sont livrées complètes et à l'heure contre 98 % exigés, avec 350 k€ de pénalités, et 80 % à l'export, avec un délai de 12 jours ouvrés. L'organisation fédérale de l'union, dont chaque cave code ses cuves à sa manière, n'a pas d'équivalent dans le SI.</li>
+</ol>
+<p><strong>Pourquoi le seul remplacement du progiciel ne suffit pas</strong> (0,5 pt) : l'alignement n'est pas l'adoption d'un logiciel unique. Un progiciel commun reproduirait les ruptures actuelles si les processus (disponibilité des vins, promesse de livraison, documents d'export) ne sont pas repensés avant son paramétrage, si les caves ne l'adoptent pas (« l'union décide sans nous »), si aucune instance ne relie les priorités du plan aux choix du SI et si l'équipe informatique reste cantonnée à l'exploitation. La perspective à suivre est celle de la <strong>transformation technologique</strong> : partir de la stratégie de l'union pour définir d'abord une stratégie du SI (canaux de l'export et de la vente en ligne, partage des informations avec les caves), puis choisir l'infrastructure et le progiciel qui la portent ; elle s'accompagne d'une logique d'<strong>exécution de la stratégie</strong> pour la refonte des processus de l'union et des caves.</p>
+<p><em>1.1 b) – Trois orientations de la stratégie du système d'information</em></p>
+<ol type="1">
+<li><strong>Un socle de gestion partagé par l'union et les caves, organisé autour des processus communs</strong> (enjeux : offre adaptée et fiabilité des livraisons ; 0,5 pt) : un référentiel commun des vins et des cuves, une disponibilité des vins des neuf caves connue chaque jour, un processus « commande → expédition » intégré de la réception à la facture. Il est conçu avec les caves et non imposé : chacune y retrouve ses informations et voit ce que deviennent ses vins. C'est l'objet de la refonte, à condition que les processus soient revus avant le paramétrage.</li>
+<li><strong>Des canaux numériques pour les nouveaux marchés</strong> (enjeux : export à 35 % et vente en ligne à 3 % du chiffre d'affaires en 2030 ; 0,5 pt) : gestion des commandes et des documents de l'export en plusieurs devises et langues, suivi des importateurs dans un outil relié au socle (fin du logiciel isolé de l'export), boutique en ligne aux particuliers ouverte en 2028 et reliée en temps réel aux stocks, aux prix et à la facturation.</li>
+<li><strong>Une prévision des ventes par apprentissage automatique pour piloter les assemblages et le conditionnement</strong> (technologie émergente ; enjeux : assemblages adaptés et livraisons fiables ; 0,5 pt) : l'apprentissage automatique apprend, à partir de l'historique des commandes par cuvée, enseigne, pays et saison, à prévoir les volumes à venir, pour préparer les assemblages et programmer les lignes d'embouteillage plus tôt. <strong>Apport</strong> : sortir de l'assemblage « sur la base des ventes de l'année précédente » (M. SALVERNAC) et réduire les ruptures. <strong>Limite</strong> : le climat et les nouveaux marchés rendent l'historique moins représentatif (nouvelles cuvées sans historique, volumes plus variables) ; les prévisions ne valent que si les données du socle sont fiables, et la décision d'assemblage reste celle de la directrice de la production. L'outil est donc à expérimenter après la mise en service du socle.</li>
+</ol>
+<p>Ces orientations supposent une gouvernance qui arbitre les demandes au regard du plan (question 1.3) et une part du budget du SI consacrée aux projets supérieure aux 400 k€ de 2026, alors qu'en 2025 et 2026 les mises à jour imposées ont absorbé 240 k€ et que 160 k€ seulement ont financé des projets demandés, sans lien avec le plan.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Désalignements situés selon les quatre domaines du modèle plutôt que selon ses axes, s'ils sont appuyés sur les annexes ; désalignement tiré du logiciel de l'export souscrit hors du SI (informatique parallèle) ou de la relation entre l'union et les caves, à la place de l'un des trois.</li>
+<li>Perspective d'<strong>exécution de la stratégie</strong> retenue seule, si elle est justifiée par l'existence d'un plan déjà adopté que l'organisation et le SI doivent servir ; perspective du <strong>potentiel concurrentiel</strong> évoquée pour la vente en ligne, si elle reste secondaire.</li>
+<li>Technologie émergente fondée sur l'<strong>IA générative</strong> (rédaction des fiches techniques et des descriptions de la boutique en ligne dans les langues des importateurs, assistance au service clients), si elle est distinguée de l'apprentissage automatique et assortie d'une validation humaine (risque d'erreur sur les données techniques du vin) ; ou sur l'automatisation des échanges avec les importateurs et les transitaires, si son apport métier est démontré.</li>
+<li>Orientation sur la gouvernance du SI (portefeuille unique des projets arbitré au regard du plan), si elle est reliée à un enjeu du plan.</li>
+<li>IT Balanced Scorecard ou chaîne de valeur mobilisés en complément du modèle demandé.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Alignement réduit au choix du progiciel</em> (<code>JUR-G02</code> alignement réduit à un choix technique ou à une standardisation logicielle ; <code>ET-06</code>) — « le nouveau progiciel commun rétablira l'alignement » ; juste : processus, caves, gouvernance et compétences avant le logiciel.</li>
+<li><em>Modèle récité sans application</em> (<code>JUR-T01</code> contextualiser chaque notion ; <code>JUR-G03</code> avis motivé fondé sur la théorie) — quatre domaines décrits sans les faits de l'annexe ; juste : chaque désalignement situé dans le modèle et chiffré.</li>
+<li><em>Modèle mal attribué</em> (<code>ET-40</code> réponse sans référence explicite au modèle attendu) — « modèle de Porter » ; juste : Henderson et Venkatraman (1993).</li>
+<li><em>IA générative confondue avec l'apprentissage automatique</em> (<code>ET-09</code>) — « une IA générative prévoit les ventes » ; juste : la prévision relève de l'apprentissage automatique, la rédaction de textes de l'IA générative.</li>
+<li><em>Technologie sans enjeu métier ni limite</em> (<code>ET-19</code> opportunités sans risques) — « installer de l'IA » ; juste : apport relié au plan et limite explicite.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Modèle d'alignement stratégique (SAM), Henderson et Venkatraman (1993)</td>
+<td>deux axes, quatre domaines, perspectives d'alignement</td>
+<td><code>henderson_venkatraman_1993</code> ; F01 § 1</td>
+<td>publié (modèle théorique)</td>
+</tr>
+<tr class="even">
+<td>Alignement stratégique</td>
+<td>mise en cohérence permanente ; erreur de la standardisation logicielle</td>
+<td>F01 § 1 et § 8 ; <code>erreurs_types.md</code> ET-06</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Apprentissage automatique et IA générative</td>
+<td>familles distinctes, usages et limites</td>
+<td>F13 ; <code>erreurs_types.md</code> ET-09</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12--le-processus--commande--expédition--et-lurbanisation-du-système-dinformation-3-points">1.2 – Le processus « commande → expédition » et l'urbanisation du système d'information (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.3 – Diagnostiquer et piloter l'évolution des architectures et de l'urbanisation des SI : <code>1.3.f</code> « Analyse des processus métiers et rôle des architectures SI dans leur rationalisation » ; <code>1.3.a</code> « Concevoir, cartographier et évaluer l'architecture des systèmes d'information dans une logique d'urbanisation cohérente » ; <code>1.3.e</code> « Impacts organisationnels, juridiques et comptables des nouvelles architectures sur la transformation des métiers » (seuls les impacts organisationnels sont demandés). Limite : « Ne pas réduire l'urbanisation à une vision strictement technique : elle s'inscrit dans une stratégie globale. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.3 (étapes des deux commandes, cartographie des onze flux, chiffres de 2026), 1.2 (état du SI, témoignages de M. SALVERNAC et de Mme BOUSQUIÉRAN) et 1.1 (caves, effectifs du conditionnement, de la logistique et du service clients).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Trois dysfonctionnements, chacun avec ses effets chiffrés et sa cause dans l'architecture (0,5 pour deux dysfonctionnements complets)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Appréciation d'ensemble de l'architecture : silos, flux point à point et manuels, absence de référentiel commun et de zone d'échange, caves hors du SI de l'union, inadaptation aux marchés visés</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Urbanisation définie (découpage en zones, quartiers, îlots faiblement couplés ; une donnée de référence, un propriétaire ; échanges par une zone d'échange ; démarche stratégique)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Architecture cible appliquée au processus, en schéma ou en tableau : zones, référentiels, échanges, ce qui disparaît</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c</td>
+<td>Impacts organisationnels sur les trois métiers demandés, chacun appuyé sur le cas</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.2 a) – Trois dysfonctionnements et l'architecture actuelle</em></p>
+<ol type="1">
+<li><strong>Des ressaisies multiples qui créent des erreurs</strong> : une commande est saisie deux fois pour la grande distribution et quatre fois à l'export (flux F1, F2, F3, F5, F6, F8, F9) ; 540 réclamations de la grande distribution (6 % des commandes), surtout des quantités ou des références erronées, et 120 à l'export (10 %), surtout des documents erronés. <em>Cause</em> : la plateforme d'échange avec les enseignes, le logiciel de l'export et les tableurs ne sont pas reliés au progiciel ; les échanges sont point à point et manuels (neuf flux sur onze).</li>
+<li><strong>Une promesse de livraison impossible à tenir</strong> : la disponibilité des vins dans les caves n'est connue qu'une fois par semaine (F4), le planning du conditionnement est tenu hors du progiciel (F5, F6) et le stock de matières sèches est souvent faux ; 88 % des commandes de la grande distribution sont livrées complètes et à l'heure contre 98 % exigés, 350 k€ de pénalités logistiques, 4 jours ouvrés de délai contre 3 exigés ; le directeur commercial met deux ou trois jours à répondre à un importateur. <em>Cause</em> : les neuf logiciels de cave ne sont reliés ni entre eux ni au progiciel, et chaque cave code ses cuves et ses vins à sa manière : il n'existe aucun référentiel commun des vins.</li>
+<li><strong>Un aval du processus manuel et dédoublé</strong> : les quantités préparées sont notées sur papier et saisies le lendemain (F7), ce qui retarde d'autant la facture ; à l'export, la facture est établie en moyenne 3 jours ouvrés après l'expédition et deux factures coexistent (en euros dans le progiciel, en devise dans un tableur), avec des documents refaits à la main et 12 jours ouvrés de délai. <em>Cause</em> : le progiciel ne gère ni devises ni langues, il n'y a pas de saisie à la source dans l'entrepôt, et les outils bureautiques comblent les manques du progiciel.</li>
+</ol>
+<p><strong>Appréciation d'ensemble</strong> (0,5 pt) : l'architecture est une juxtaposition de <strong>silos</strong> reliés par des flux <strong>point à point</strong> dont la plupart sont des ressaisies, des courriels ou du papier ; les mêmes données (commandes, vins, clients) existent en plusieurs endroits sans propriétaire ni référentiel commun ; le processus dépend de quelques personnes (l'assistante qui consolide les fichiers des caves, l'assistante export) ; les caves sont en dehors du SI de l'union ; un outil métier a été ajouté hors de toute règle (logiciel de l'export). Elle ne peut absorber ni la hausse de l'export ni la vente en ligne, et elle arrive en fin de support : elle doit être urbanisée, et non simplement remplacée.</p>
+<p><em>1.2 b) – Une architecture cible urbanisée</em></p>
+<p><strong>Urbaniser</strong> le SI consiste à l'organiser, par analogie avec l'urbanisme d'une ville, en <strong>zones</strong>, <strong>quartiers</strong> et <strong>îlots</strong> fonctionnels faiblement couplés, reliés par une <strong>zone d'échange</strong>, avec des <strong>référentiels</strong> uniques (une donnée de référence, un propriétaire) et une fonction implantée une seule fois, pour que le SI évolue au rythme de la stratégie sans tout reconstruire. C'est une démarche stratégique, qui part des processus métier et non d'un inventaire des serveurs (0,5 pt).</p>
+<p><strong>Cible proposée</strong> (0,5 pt ; un schéma lisible et légendé vaut ce tableau) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Zone</th>
+<th>Quartiers et îlots</th>
+<th>Support cible</th>
+<th>Ce qui disparaît</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Relation clients et canaux</td>
+<td>commandes de la grande distribution, commandes export, boutique en ligne, suivi des importateurs</td>
+<td>progiciel commun (commandes) ; boutique en ligne et outil de relation client reliés au progiciel</td>
+<td>ressaisie des commandes (F1, F2, F3) ; logiciel isolé de l'export</td>
+</tr>
+<tr class="even">
+<td>Production</td>
+<td>réception et cuves dans les caves, assemblage et élevage, planning du conditionnement, matières sèches</td>
+<td>progiciel commun, partagé par l'union et les neuf caves</td>
+<td>tableur des disponibilités (F4), tableur du planning (F5, F6)</td>
+</tr>
+<tr class="odd">
+<td>Logistique</td>
+<td>préparation (saisie à la source par lecture de codes-barres), expédition, transport</td>
+<td>progiciel commun ; transporteurs et transitaire reliés par la zone d'échange</td>
+<td>bons papier et saisie du lendemain (F7) ; réservations ressaisies (F8)</td>
+</tr>
+<tr class="even">
+<td>Gestion</td>
+<td>facturation en plusieurs devises, documents d'export, comptabilité</td>
+<td>progiciel commun</td>
+<td>tableur des documents d'export (F9), double facture</td>
+</tr>
+<tr class="odd">
+<td>Référentiels</td>
+<td>vins et cuves (codification commune aux neuf caves), articles et matières sèches, clients (enseignes, importateurs, particuliers), transporteurs</td>
+<td>référentiels uniques du progiciel, chacun avec un propriétaire désigné (production, commercial, logistique)</td>
+<td>codifications propres à chaque cave</td>
+</tr>
+<tr class="even">
+<td>Échanges</td>
+<td>plateforme d'échange avec les enseignes, boutique en ligne, transporteurs et transitaire</td>
+<td>zone d'échange (interfaces de programmation, ou API, publiées et supervisées)</td>
+<td>flux point à point spécifiques</td>
+</tr>
+<tr class="odd">
+<td>Pilotage</td>
+<td>suivi des commandes, des délais et des disponibilités</td>
+<td>restitutions alimentées par le progiciel</td>
+<td>consolidations manuelles</td>
+</tr>
+</tbody>
+</table>
+<p>Commentaire attendu : la cible ne se réduit pas au progiciel commun ; elle fixe les règles (référentiels uniques, zone d'échange, saisie unique à la source) qui permettront d'ajouter la boutique en ligne ou de remplacer un îlot sans tout reprendre. Les objectifs de la cible se mesurent sur les indicateurs du processus :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Part des commandes de la grande distribution livrées complètes et à l'heure</td>
+<td>commandes livrées complètes à la date convenue / commandes livrées</td>
+<td>progiciel commun et avis d'expédition</td>
+<td>mensuelle</td>
+<td>98 % (88 % en 2026)</td>
+<td>client</td>
+</tr>
+<tr class="even">
+<td>Délai moyen entre la réception d'une commande export et son expédition</td>
+<td>somme des délais en jours ouvrés / nombre de commandes export expédiées</td>
+<td>progiciel commun</td>
+<td>mensuelle</td>
+<td>7 jours ouvrés (12 en 2026)</td>
+<td>processus</td>
+</tr>
+</tbody>
+</table>
+<p><em>1.2 c) – Impacts organisationnels sur trois métiers</em> (0,5 pt)</p>
+<ul>
+<li><strong>Service clients</strong> : il passe de la saisie à la <strong>relation et à la gestion des exceptions</strong> ; les commandes arrivent sans ressaisie, la date de livraison possible est consultée directement, le temps libéré sert le suivi des enseignes et des importateurs. Il faut faire évoluer les fiches de poste, former aux nouveaux outils et aux langues de l'export, et accompagner la crainte de la perte des tâches de saisie.</li>
+<li><strong>Conditionnement et logistique</strong> : le planning des lignes est construit à partir des commandes, des vins disponibles et des matières sèches du progiciel ; le responsable du conditionnement devient <strong>planificateur</strong> ; les préparateurs saisissent à la source, ce qui exige discipline et formation ; la fiabilité du stock de matières sèches devient l'affaire de tous.</li>
+<li><strong>Caves</strong> : les directeurs et le personnel des caves quittent leur logiciel pour un outil commun, avec une <strong>codification partagée</strong> et des informations visibles par l'union au fil de l'eau ; ils perdent une part d'autonomie, mais gagnent la fin de la ressaisie du lundi et la visibilité sur ce que deviennent leurs vins (demande de M. MALVEIRAC) ; formation des saisonniers avant chaque campagne et utilisateurs clés dans chaque cave, sans informaticien.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres dysfonctionnements tirés de l'annexe 1.3 (arrêt d'une ligne faute d'étiquettes, étiquette d'un pays commandée après confirmation, informations dispersées entre courriel et tableurs), s'ils sont chiffrés ou datés et rattachés à une cause d'architecture.</li>
+<li>Cartographie de processus en couloirs (service clients, production, conditionnement, entrepôt, caves) au lieu d'un tableau, si elle est lisible et légendée ; aucune norme de modélisation n'est exigée.</li>
+<li>Cible en couches (métier, fonctionnelle, applicative, technique) ou fondée sur une approche par meilleure solution dans chaque domaine (<em>best of breed</em>) reliée par une zone d'échange, si les référentiels communs et la suppression des ressaisies apparaissent.</li>
+<li>Bus d'intégration ou plateforme d'échange nommés au lieu des interfaces de programmation, sans détail technique.</li>
+<li>Impacts sur les compétences (langues, relation client, rigueur de saisie) ou sur le pouvoir de décision des caves, s'ils sont reliés aux trois métiers.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Urbanisation réduite à un inventaire technique ou au remplacement du progiciel</em> (<code>ET-20</code> urbanisation réduite à une vision technique ; <code>JUR-G07</code> le pourquoi puis le comment de l'urbanisation) — juste : zones, référentiels et échanges au service du processus.</li>
+<li><em>Interopérabilité seulement technique</em> (<code>ET-36</code>) — oublier la codification commune des vins et les responsabilités des caves ; juste : niveaux sémantique et organisationnel.</li>
+<li><em>Dysfonctionnements sans chiffres ni cause</em> (<code>JUR-T08</code> exploiter toutes les annexes) — « le processus est lent » ; juste : 88 % contre 98 %, 350 k€, 540 et 120 réclamations, 2 et 4 saisies.</li>
+<li><em>Schéma illisible ou sans légende</em> (<code>JUR-T10</code> schémas et tableaux lisibles).</li>
+<li><em>Décrire les modules d'un progiciel de gestion intégré</em> — acquis du DCG, hors des attentes ; juste : choix d'architecture et effets sur le processus.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Urbanisation du SI</td>
+<td>zones, quartiers, îlots ; référentiels uniques ; zone d'échange</td>
+<td>F03 § 1 et § 6</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Cartographies et interopérabilité</td>
+<td>flux point à point, interfaces de programmation, niveaux d'interopérabilité</td>
+<td>F03 § 2 et § 3 ; <code>erreurs_types.md</code> ET-36</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13--gouvernance-du-programme-de-refonte-3-points">1.3 – Gouvernance du programme de refonte (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.2 – Concevoir et piloter la gouvernance des SI : <code>1.2.a</code> « Mettre en œuvre une gouvernance des systèmes d'information intégrant les parties prenantes clés, des indicateurs de performance et des critères de durabilité » ; <code>1.2.c</code> « Enjeux relationnels entre DSI, direction générale et directions métiers ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (projets sans lien avec le plan, absence de règle d'arbitrage, témoignages) et 1.1 (conseil de l'union, organigramme, rattachement du responsable du SI, comité de direction, réunion trimestrielle des directeurs de cave).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Gouvernance du SI définie (évaluer, diriger, surveiller ; distincte du management) ; rôle de chaque partie prenante citée, appliqué au cas</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Trois instances (composition, fréquence, rôle) adaptées à l'union et aux caves ; quatre critères d'arbitrage justifiés par le cas (0,5 + 0,5)</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Trois tensions analysées (SI et direction générale, SI et directions de l'union, union et caves), chacune appuyée sur un témoignage ou un fait</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Trois leviers concrets, chacun relié à une tension (0,5 pour deux leviers pertinents)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.3 a) – Gouvernance du programme</em></p>
+<p>La <strong>gouvernance du SI</strong> est l'ensemble des structures, des processus et des règles par lesquels la direction <strong>évalue</strong> les besoins et les options, <strong>oriente</strong> les décisions et <strong>surveille</strong> la performance et les risques du SI au service de la stratégie (modèle « évaluer, diriger, surveiller » d'ISO/IEC 38500:2024) ; elle se distingue du management, qui exécute. Pour la refonte, elle doit associer une union et neuf caves autonomes.</p>
+<p><strong>Rôle des parties prenantes</strong> (0,5 pt avec la définition) :</p>
+<ul>
+<li><strong>Conseil de l'union</strong> (présidents des neuf caves, présidé par M. ESCOURBIAC) : valide les orientations et l'enveloppe du programme, tranche les choix qui engagent les caves (logiciel commun, codification partagée), décide de la mise en service ; il est informé à chaque réunion.</li>
+<li><strong>Directrice générale</strong> : commanditaire (<em>sponsor</em>) du programme, préside le comité de pilotage, arbitre et rend compte au conseil.</li>
+<li><strong>Directions de l'union</strong> (commerciale, production et qualité, administrative et financière) : maîtrise d'ouvrage ; expriment les besoins, désignent les utilisateurs clés, recettent, conduisent le changement dans leurs équipes.</li>
+<li><strong>Responsable du SI</strong> : maîtrise d'œuvre interne et garant de l'architecture cible ; pilote techniquement l'intégrateur avec le responsable administratif et financier adjoint, chef du programme.</li>
+<li><strong>Caves</strong> (présidents et directeurs) : représentées au comité de pilotage, elles désignent des utilisateurs clés, participent au cahier des charges et à la recette du module des caves.</li>
+<li><strong>Adhérents</strong> : informés et consultés par leur cave et par le portail ; représentés par leurs présidents au conseil.</li>
+</ul>
+<p><strong>Trois instances</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Instance</th>
+<th>Composition</th>
+<th>Fréquence</th>
+<th>Rôle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conseil de l'union, en formation de comité stratégique du programme</td>
+<td>présidents des neuf caves, directrice générale, chef du programme ; responsable du SI invité</td>
+<td>à chaque réunion du conseil, au moins trimestrielle</td>
+<td>valide les orientations, le périmètre et l'enveloppe ; arbitre les choix qui engagent les caves ; autorise chaque mise en service</td>
+</tr>
+<tr class="even">
+<td>Comité de pilotage du programme</td>
+<td>directrice générale (présidente), trois directeurs de l'union, responsable du SI, chef du programme, deux directeurs de cave et un président de cave représentant les neuf caves, intégrateur pour la partie qui le concerne</td>
+<td>mensuelle, hors période de vendanges pour les représentants des caves</td>
+<td>suit délais, coûts, risques et qualité ; arbitre les demandes selon les critères ; décide des lots et des fenêtres de mise en service</td>
+</tr>
+<tr class="odd">
+<td>Comité des utilisateurs clés</td>
+<td>chef du programme, responsable du SI, utilisateurs clés de chaque direction et un par cave, intégrateur</td>
+<td>toutes les deux semaines pendant la conception et la recette, suspendu de mi-août à fin octobre</td>
+<td>exprime et valide les besoins, prépare et réalise la recette, relaie l'information dans les équipes et les caves</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Quatre critères d'arbitrage</strong> (0,5 pt) : contribution au plan « ROCALDÈNE 2030 » (priorité 1 d'abord : export, vente en ligne, assemblages) ; caractère obligatoire ou urgent (fin du support du progiciel en 2028, fenêtres hors vendanges) ; valeur pour les métiers et les caves, mesurée (pénalités de 350 k€, réclamations, ressaisies supprimées) ; risque et capacité (équipe de six personnes, disponibilité des caves, dépendance à l'intégrateur) ; coût dans l'enveloppe validée. Quatre critères suffisent.</p>
+<p><em>1.3 b) – Tensions et leviers</em></p>
+<p><strong>Trois tensions</strong> (0,5 pt) :</p>
+<ol type="1">
+<li><strong>SI et direction générale</strong> : le responsable du SI est rattaché au directeur administratif et financier, absent du comité de direction, et n'a « jamais pu présenter un plan » ; le plan a été adopté sans volet SI. Le SI est cantonné à l'exploitation, alors que la direction attend de lui la transformation.</li>
+<li><strong>SI et directions de l'union</strong> : « l'informatique ne suit pas » (M. SALVERNAC) contre « on me demande tout en même temps » (M. CAUSSINEL) ; les demandes arrivent directement par courriel, chacune jugée prioritaire, sans liste commune ni règle ; faute de réponse, la direction commerciale a souscrit son propre logiciel, payé hors du budget du SI et découvert après coup. Chacun voit l'autre comme l'obstacle.</li>
+<li><strong>Union et caves</strong> : « l'union décide sans nous » (M. MALVEIRAC) ; un logiciel commun est annoncé sans consultation à des caves qui ont choisi le leur et le maîtrisent, qui ressaisissent déjà chaque lundi pour l'union et qui craignent de perdre leur autonomie, tout en se disant prêtes à partager si elles voient ce que deviennent leurs vins.</li>
+</ol>
+<p><strong>Trois leviers</strong> (1 pt) :</p>
+<ol type="1">
+<li><strong>Un portefeuille unique des demandes et des projets</strong>, alimenté par toutes les directions et les caves, arbitré par le comité de pilotage selon les critères publiés ; plus de demande directe par courriel ; tout outil métier est souscrit dans ce cadre (réponse aux tensions 1 et 2).</li>
+<li><strong>Repositionner le responsable du SI</strong> : participation au comité de direction pour les sujets du SI, rattachement fonctionnel à la directrice générale pour le programme, mission de proposer la stratégie du SI qui découle du plan ; des correspondants dans chaque direction pour traduire les besoins (tensions 1 et 2).</li>
+<li><strong>Associer les caves dès la conception</strong> : représentants au comité de pilotage, utilisateurs clés par cave, ateliers du cahier des charges tenus hors vendanges, restitution aux caves des informations sur leurs vins, communication portée par le président du conseil, assistance de proximité par l'union (tension 3).</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Instances nommées autrement (comité de programme, comité de projet, club des utilisateurs des caves), si leur composition, leur fréquence et leur rôle sont adaptés à l'union et aux caves.</li>
+<li>Matrice RACI des principales décisions (cahier des charges, recette, mise en service) au lieu d'une liste de rôles.</li>
+<li>Recours à COBIT 2019 (domaine « évaluer, diriger, surveiller ») au lieu d'ISO/IEC 38500 pour définir la gouvernance, si le référentiel est correctement qualifié.</li>
+<li>Levier fondé sur la conduite du changement (ADKAR : comprendre, vouloir, savoir, pouvoir, ancrer) auprès des caves, s'il répond à une tension identifiée.</li>
+<li>Création d'un poste de directeur des systèmes d'information rattaché à la directrice générale, si elle reste un levier de la relation et non une analyse complète du modèle d'organisation de la fonction SI.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Gouvernance confondue avec le management du projet</em> (<code>JUR-G06</code> vocabulaire précis de la gouvernance) — un planning de tâches au lieu des instances et des règles de décision ; juste : qui évalue, oriente, surveille et arbitre.</li>
+<li><em>Oublier les caves ou les adhérents</em> (<code>JUR-T08</code> exploiter tous les témoignages) — une gouvernance limitée aux services de l'union ; juste : les caves représentées et associées.</li>
+<li><em>Leviers génériques</em> (<code>JUR-G05</code> recommandations réalistes et opérationnelles) — « mieux communiquer » ; juste : portefeuille unique, place du responsable du SI, association des caves.</li>
+<li><em>Référentiel présenté comme une norme ou une solution</em> (<code>ET-01</code>) — « installer COBIT » ; juste : COBIT 2019 est un référentiel, ISO/IEC 38500 une norme de lignes directrices.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ISO/IEC 38500:2024, gouvernance des technologies de l'information</td>
+<td>évaluer, diriger, surveiller ; principes de gouvernance</td>
+<td><code>iso_38500_2024</code> ; F02 § 4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Comitologie du SI</td>
+<td>comité stratégique, comité de pilotage, comité de projet</td>
+<td>F02 § 6</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Relations entre DSI, direction générale et métiers</td>
+<td>rattachement du responsable du SI, DSI fournisseur ou partenaire</td>
+<td>F01 § 4</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="14--méthode-cahier-des-charges-et-plan-qualité-du-projet-25-points">1.4 – Méthode, cahier des charges et plan qualité du projet (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.5 – Planifier, organiser et conduire des projets de SI : <code>1.5.b</code> « Méthodologies de gestion de projet (cycle en V, agile, hybride) » ; <code>1.5.c</code> « Élaboration d'un cahier des charges fonctionnel et technique » ; <code>1.5.f</code> « Mise en œuvre et contrôle du plan qualité ». Limites : aspect budgétaire détaillé et approfondissement des approches de livraison continue exclus.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.4 (objet, calendrier et contrainte des vendanges, deux méthodes, brouillon du cahier des charges, montée de version de 2022), 1.3 (volumes de commandes) et 1.1 (caves sans informaticien, saisonniers).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Les deux méthodes caractérisées et comparées au regard de la contrainte des vendanges, de la disponibilité des caves et de la fin du support</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Méthode recommandée (hybride) et justifiée : ce qui relève d'un cycle séquentiel, ce qui relève d'itérations, déploiement dans les caves</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Trois exigences réécrites, chacune précise, mesurable et assortie d'un critère de recette</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Structure du cahier des charges fonctionnel, appliquée au projet</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c</td>
+<td>Quatre éléments du plan qualité (recette, critères d'acceptation, revues), reliés aux défauts de 2022</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.4 a) – Méthode de conduite du projet</em></p>
+<p>Le <strong>cycle en V</strong> enchaîne expression du besoin, spécifications, conception et réalisation, puis des tests en miroir jusqu'à la recette ; il convient à un besoin stable et documenté. Les <strong>méthodes agiles</strong> (Scrum : Product Owner, Scrum Master, Developers ; itérations courtes ou <em>sprints</em> ; backlog priorisé) livrent par incréments en impliquant les utilisateurs à chaque itération ; elles conviennent à un besoin évolutif.</p>
+<p><strong>Comparaison</strong> (0,5 pt) :</p>
+<ul>
+<li><em>Méthode 1 (cycle en V, bascule unique en mars 2028)</em> : elle sécurise le socle (comptabilité, stocks, codes communs, reprise des données) et se prête au forfait. Mais les spécifications sont prévues de juin à octobre 2027, quand les caves sont indisponibles de mi-août à fin octobre : leurs besoins seraient mal exprimés. La bascule simultanée de l'union et des neuf caves concentre les risques ; un retard au-delà de juillet ferait perdre la fenêtre de 2028 jusqu'en décembre, c'est-à-dire jusqu'à la fin du support du progiciel.</li>
+<li><em>Méthode 2 (agile intégrale)</em> : elle montre tôt la boutique en ligne et le portail et associe les utilisateurs. Mais elle prévoit des mises en service à l'automne, interdites ; les caves ne peuvent assister aux revues d'itération pendant les vendanges ; le socle doit être complet dès le premier jour (remarque de M. CAUSSINEL) ; elle exige un Product Owner disponible et se contractualise mal au forfait.</li>
+</ul>
+<p><strong>Recommandation : une démarche hybride</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>le socle</strong> (référentiels communs des vins et des cuves, stocks, commandes, conditionnement, facturation, comptabilité, reprise des données) suit un cycle séquentiel : spécifications rédigées avec les directions de l'union à l'été 2027 et avec les caves en novembre, après les vendanges ; recette formelle ; mise en service à l'union dans une fenêtre du printemps 2028, qui laisse une fenêtre de repli avant la fin du support ;</li>
+<li><strong>le module des caves</strong> est déployé après les vendanges de 2028, dans l'hiver 2028-2029, après une recette sur une journée de réception simulée ; les logiciels de cave, maintenus jusqu'en 2030, servent encore pour la campagne de 2028 ; une cave pilote volontaire peut ouvrir la voie ;</li>
+<li><strong>la boutique en ligne, le portail et les outils de l'export</strong> sont construits par itérations, avec un Product Owner désigné par la direction commerciale, et mis en service par incréments hors de la période d'août à novembre, pour une ouverture de la boutique en 2028.</li>
+</ul>
+<p><em>1.4 b) – Exigences vérifiables et cahier des charges fonctionnel</em></p>
+<p>Une exigence <strong>vérifiable</strong> est précise, mesurable, non ambiguë, priorisée (méthode MoSCoW : <em>Must, Should, Could, Won't</em>) et assortie d'un critère de recette. Trois réécritures parmi les suivantes (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Exigence du brouillon</th>
+<th>Réécriture vérifiable</th>
+<th>Critère de recette</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>E1 « simple à utiliser »</td>
+<td>Après une demi-journée de formation, un employé du service clients enregistre une commande de 20 lignes en moins de 3 minutes ; après une heure de formation, un saisonnier de cave enregistre une réception sans assistance (Must)</td>
+<td>test chronométré sur 10 utilisateurs, dont 3 saisonniers ; 9 sur 10 atteignent le seuil</td>
+</tr>
+<tr class="even">
+<td>E2 « gérer les apports »</td>
+<td>Chaque réception de vendange est enregistrée au poste de réception de la cave (adhérent, date et heure, poids, cuve de destination) en moins d'une minute et le contenu de la cuve est mis à jour aussitôt dans le logiciel commun, consultable par l'union (Must)</td>
+<td>journée de réception simulée dans une cave, avec contrôle des contenus de cuve</td>
+</tr>
+<tr class="odd">
+<td>E3 « traitées rapidement »</td>
+<td>Une commande reçue par la plateforme d'échange avec les enseignes est intégrée sans ressaisie en moins de 15 minutes, et la date de livraison possible, calculée à partir des stocks, des vins disponibles dans les caves et du planning du conditionnement, s'affiche en moins d'une minute (Must)</td>
+<td>200 commandes réelles de 2026 rejouées ; aucune ressaisie</td>
+</tr>
+<tr class="even">
+<td>E4 « permettre l'export » (ambiguë : vente à l'étranger ou extraction de données)</td>
+<td>Le logiciel gère les commandes en euros, dollars américains et canadiens et en au moins deux autres devises, et édite sans ressaisie la facture en devise et la liste de colisage en français et en anglais ; il permet par ailleurs d'extraire toutes les données dans un format ouvert et documenté (Must)</td>
+<td>30 commandes export de 2026 traitées de bout en bout ; documents conformes</td>
+</tr>
+<tr class="odd">
+<td>E5 « voir leurs informations »</td>
+<td>Chaque directeur de cave consulte, selon ses droits, les volumes de ses vins retenus dans les assemblages et les cuvées dans lesquelles ils ont été vendus, mis à jour chaque jour, sans accès aux données des autres caves (Should)</td>
+<td>test des droits sur deux caves</td>
+</tr>
+<tr class="even">
+<td>E6 « compatible avec la vente en ligne »</td>
+<td>Le logiciel met à disposition de la boutique en ligne, par des interfaces de programmation documentées, les stocks disponibles et les prix en temps réel, et intègre les commandes des particuliers sans ressaisie (Must pour 2028)</td>
+<td>50 commandes de test de la boutique intégrées et facturées</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Structure du cahier des charges fonctionnel</strong> (0,5 pt) : contexte et objectifs (plan « ROCALDÈNE 2030 », fin du support en 2028, objectifs mesurables : livraisons complètes et à l'heure, délais, suppression des ressaisies) ; périmètre (union et neuf caves ; inclus et exclus : licences du progiciel traitées à part) ; acteurs et utilisateurs (220 utilisateurs et les saisonniers) ; processus cibles (commande → expédition, assemblage, réception dans les caves, export, vente en ligne) ; exigences fonctionnelles priorisées et règles de gestion ; volumétrie (9 000 commandes de la grande distribution, 1 200 à l'export, 380 milliers d'hectolitres) ; contraintes (fenêtres hors vendanges, interopérabilité avec les enseignes et la boutique en ligne, réversibilité, sécurité) ; critères de recette ; livrables et modalités de réponse. Il est rédigé par la maîtrise d'ouvrage avec les utilisateurs, dont les caves et le service clients, et non par la seule équipe informatique ; le cahier des charges technique le complète (architecture, interfaces, performances, exploitation).</p>
+<p><em>1.4 c) – Plan qualité du projet</em> (0,5 pt)</p>
+<p>Le <strong>plan qualité</strong> fixe l'organisation, les règles et les contrôles qui garantissent que le projet livre ce qui est attendu. Quatre éléments, en réponse aux défauts de la montée de version de 2022 :</p>
+<ol type="1">
+<li><strong>Une recette par les utilisateurs</strong> : la recette fonctionnelle est conduite par la maîtrise d'ouvrage (service clients, comptabilité, production, utilisateurs clés des caves), après la recette technique de l'intégrateur, et non par l'équipe informatique seule.</li>
+<li><strong>Un cahier de recette relié aux exigences</strong> : chaque exigence a ses cas de test ; des scénarios de bout en bout (commande d'une enseigne de la plateforme d'échange à la facture, commande export en devise, journée de réception simulée dans une cave), les conditions tarifaires des douze enseignes, une reprise des données à blanc, sur des volumes réels de 2026 et non sur 30 commandes types.</li>
+<li><strong>Des critères d'acceptation écrits et un procès-verbal</strong> : aucune anomalie bloquante, anomalies majeures corrigées ou assorties d'un contournement accepté, toutes les exigences « Must » validées, factures de test conformes pour toutes les enseignes ; procès-verbal signé par la maîtrise d'ouvrage, avec ou sans réserves (jamais une recette tacite).</li>
+<li><strong>Des revues et une décision de mise en service</strong> : revues de fin de phase (spécifications, paramétrage, avant recette) ; revue d'aptitude à la mise en service par le comité de pilotage, qui vérifie les critères, la formation et le plan de retour arrière ; mise en service jamais d'août à novembre ni en période de pointe, suivie d'une assistance renforcée.</li>
+</ol>
+<p>Critère d'acceptation formulé comme un indicateur :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Part des cas de test de recette réussis</td>
+<td>cas de test réussis / cas de test exécutés, sans anomalie bloquante ouverte</td>
+<td>cahier de recette et registre des anomalies</td>
+<td>à chaque campagne de recette</td>
+<td>au moins 95 % et aucune anomalie bloquante ouverte</td>
+<td>processus</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Cycle en V retenu pour l'ensemble, s'il est découpé en lots déployés dans les fenêtres hors vendanges et si les spécifications des caves sont recueillies hors de leur période d'indisponibilité ; méthode agile retenue pour l'ensemble, si les mises en service respectent les fenêtres et si le socle est livré complet.</li>
+<li>Déploiement des caves avant les vendanges de 2028 (juin ou juillet), si le risque d'une première campagne sur un outil nouveau est identifié et traité (cave pilote, assistance renforcée, retour à l'ancien logiciel possible).</li>
+<li>Autres exigences réécrites, ou seuils différents, s'ils sont mesurables et assortis d'un critère de recette.</li>
+<li>Structure du cahier des charges présentée selon un autre plan, si les rubriques essentielles sont appliquées au projet.</li>
+<li>Plan qualité incluant la gestion des versions et des demandes de changement, ou la norme ISO 9001 citée en principe.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Méthodes récitées sans les contraintes du cas</em> (<code>JUR-P02</code> deux méthodes comparées dans le contexte ; <code>JUR-T01</code>) — juste : vendanges, disponibilité des caves, fin du support, socle complet.</li>
+<li><em>Agile assimilée à l'absence de cahier des charges</em> (<code>ET-32</code> MOA et MOE inversées ; agile « sans cahier des charges ») — juste : backlog priorisé, Product Owner, critères d'acceptation.</li>
+<li><em>Exigence reformulée sans mesure</em> — « le logiciel doit être ergonomique » ; juste : un seuil et un test.</li>
+<li><em>Planning détaillé ou chiffrage du projet</em> — non demandés ; juste : principes et fenêtres de mise en service.</li>
+<li><em>Recette confiée à l'intégrateur ou à l'équipe informatique seule</em> (<code>JUR-P03</code> diagnostiquer les erreurs de gestion de projet) — l'erreur de 2022.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cycle en V, méthodes agiles, démarche hybride</td>
+<td>critères de choix ; archétype du remplacement d'un progiciel en mode hybride</td>
+<td>F05 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>The Scrum Guide (novembre 2020)</td>
+<td>Product Owner, Scrum Master, Developers ; sprint ; backlog</td>
+<td><code>scrum_guide_2020</code> ; F05 § 2.2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Cahier des charges, MoSCoW, plan qualité, recette</td>
+<td>exigences vérifiables, cahier de recette, procès-verbal</td>
+<td>F05 § 3 et § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="15--contrat-dintégration-avec-valtrémis-intégration-15-point">1.5 – Contrat d'intégration avec VALTRÉMIS Intégration (1,5 point)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.4 – Gérer les relations contractuelles et opérationnelles avec les ESN : <code>1.4.a</code> « Concevoir, négocier et sécuriser des relations contractuelles avec des prestataires de services numériques (ESN), en tenant compte des enjeux opérationnels et juridiques ». Limite : « L'analyse juridique approfondie relève du droit des contrats informatiques et est exclue du programme de l'UE. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.4 E (proposition de VALTRÉMIS Intégration), 1.4 A à D (calendrier, méthodes, brouillon du cahier des charges, montée de version de 2022) et 1.2 (équipe informatique de six personnes absorbée par la maintenance).</p>
+<p><strong>Barème indicatif (1,5 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a</td>
+<td>Régie et forfait caractérisés ; forme recommandée, cohérente avec la méthode hybride, justifiée par les chiffres de l'annexe (1 200, 1 560 et 1 500 k€) et par la faiblesse du cahier des charges de mars 2027, qui reprend le brouillon de janvier</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b</td>
+<td>Trois clauses, chacune reliée à un risque du projet tiré des annexes (0,5 pour deux clauses pertinentes)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.5 a) – Forme du contrat</em></p>
+<p>En <strong>régie</strong>, l'ESN met des consultants à disposition, facturés au temps passé et dirigés par le client : son engagement porte sur les moyens, et le risque de délai et de dépassement reste à l'union. Au <strong>forfait</strong>, l'ESN s'engage à livrer un résultat défini, conforme au cahier des charges, pour un prix et un délai fixés : elle porte le risque de dépassement, mais seulement sur un périmètre précis.</p>
+<p>Chez ROCALDÈNE, la régie paraît moins chère (environ 1 200 k€ contre 1 500 k€), mais au rythme de dépassement constaté en 2021 (+30 %), elle coûterait environ 1 560 k€ : elle devient plus chère que le forfait dès que le dépassement dépasse 25 % (1 500 k€ / 600 € = 2 500 jours). Surtout, l'union n'a pas les moyens de diriger 2 000 jours de consultants : l'équipe de six personnes est absorbée par la maintenance. Le forfait est donc préférable, mais pas sur la version de mars 2027, qui reprend le brouillon de janvier et dont les exigences vagues déclencheraient des avenants au tarif de la régie. <strong>Recommandation</strong> : une phase de conception, forfaitaire et plafonnée, qui produit les spécifications validées ; puis un <strong>forfait par lot</strong> pour le socle et le module des caves, avec des jalons alignés sur les fenêtres hors vendanges ; et, pour la boutique en ligne et le portail menés par itérations, un forfait par itération ou une régie plafonnée pilotée par le Product Owner.</p>
+<p><em>1.5 b) – Trois clauses à négocier</em> (1 pt ; trois parmi les suivantes)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Clause</th>
+<th>Contenu</th>
+<th>Risque du projet couvert</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jalons datés et pénalités de retard</td>
+<td>jalons alignés sur les fenêtres de mise en service (printemps 2028 pour l'union, hiver 2028-2029 pour les caves) ; pénalités croissantes ; paiement échelonné par jalon validé au lieu de 40 % à la signature, avec une retenue jusqu'à la fin de la garantie</td>
+<td>manquer une fenêtre fait glisser la mise en service de plusieurs mois, jusqu'à la fin du support du progiciel ; aucun jalon ni pénalité dans la proposition</td>
+</tr>
+<tr class="even">
+<td>Recette contradictoire</td>
+<td>recette prononcée par un procès-verbal signé par l'union selon les critères d'acceptation du plan qualité ; suppression de la recette « réputée prononcée » au bout de dix jours ; délais de recette suspendus pendant les vendanges</td>
+<td>une recette bâclée, comme en 2022 (300 factures erronées) ; recette tacite pendant une période où les utilisateurs sont indisponibles</td>
+</tr>
+<tr class="odd">
+<td>Garantie étendue</td>
+<td>correction gratuite des anomalies jusqu'à la fin de la première campagne de vendanges et du premier pic de fin d'année vécus sur le nouveau logiciel</td>
+<td>trois mois de garantie s'achèvent avant que le module des caves ait servi en vendanges</td>
+</tr>
+<tr class="even">
+<td>Stabilité de l'équipe de l'intégrateur</td>
+<td>chef de projet et consultants clés nommés ; remplacement soumis à l'accord de l'union, avec une période de recouvrement aux frais de l'intégrateur</td>
+<td>perte de connaissance du projet en cours de route (« peut être remplacé selon les besoins de l'intégrateur »)</td>
+</tr>
+<tr class="odd">
+<td>Droits sur les développements spécifiques, documentation et transfert de compétences</td>
+<td>droits d'utilisation et de modification des interfaces avec les enseignes et la boutique en ligne, ou cession ; documentation des paramétrages ; formation de l'équipe informatique ; code déposé chez un tiers</td>
+<td>dépendance à l'intégrateur pour faire évoluer des interfaces critiques, avec une équipe interne qui ne pourrait pas les reprendre</td>
+</tr>
+<tr class="even">
+<td>Gestion des changements</td>
+<td>procédure de demande de changement, prix unitaires négociés, enveloppe et plafond de jours</td>
+<td>dérive du périmètre et avenants coûteux à partir d'un cahier des charges flou</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Régie recommandée pour la phase de conception seule, si elle est plafonnée et pilotée par le chef du programme.</li>
+<li>Clause de réversibilité ou de confidentialité, si elle est reliée à un risque du projet d'intégration.</li>
+<li>Pénalités formulées comme une réduction de prix par semaine de retard, plafonnée.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Régie et forfait inversés</em> (<code>ET-31</code> régie, forfait et infogérance confondus) — « en régie, l'ESN garantit le délai » ; juste : en régie, le risque reste au client.</li>
+<li><em>Choisir la régie sur le seul prix affiché</em> — 1 200 k€ sans tenir compte du dépassement de 2021 ni de la capacité de pilotage de l'union.</li>
+<li><em>Clauses sans lien avec les risques du projet</em> (<code>JUR-A05</code> contractualisation avec les prestataires) — liste générique ; juste : chaque clause répond à un fait de l'annexe 1.4.</li>
+<li><em>Analyse juridique approfondie</em> (validité des clauses, régime de la responsabilité) — exclue du programme ; juste : principes et effets de gestion.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des contrats (régie, forfait, intégration)</td>
+<td>engagement sur les moyens ou sur le livrable, répartition du risque</td>
+<td>F04 § 1 ; <code>erreurs_types.md</code> ET-31</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Clauses critiques et risques de la relation</td>
+<td>jalons, pénalités, recette, propriété des développements, dépendance</td>
+<td>F04 § 4 et § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-2--organiser-et-exploiter-les-données-des-parcelles-et-des-apports--authentifier-les-bouteilles-13-points">DOSSIER 2 – ORGANISER ET EXPLOITER LES DONNÉES DES PARCELLES ET DES APPORTS ; AUTHENTIFIER LES BOUTEILLES (13 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Modèle conceptuel des données des parcelles et des apports</td>
+<td><code>2.1.b</code> Modélisation des données (modèles conceptuels, logiques et physiques)</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>2.2 Cohérence, interopérabilité et qualité des données</td>
+<td><code>2.1.a</code> Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes ; <code>2.1.e</code> Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>2.3 Rôles et responsabilités sur les données</td>
+<td><code>2.3.c</code> Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2.4 Chaîne de valeur des données et analyse des apports de la vendange 2026</td>
+<td><code>2.2.a</code> Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation ; <code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés ; <code>2.2.c</code> Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model</td>
+<td>4,5</td>
+</tr>
+<tr class="odd">
+<td>2.5 Le projet d'authentification des cuvées exportées</td>
+<td><code>3.3.c</code> Typologie des applications : traçabilité, certification, finance décentralisée, NFT ; <code>3.3.a</code> Évaluer les opportunités, les risques et le cadre réglementaire associés à la mise en œuvre de solutions fondées sur la blockchain et les cryptoactifs dans les organisations ; <code>3.3.e</code> Analyse de la valeur ajoutée, des coûts et des limites d'un projet blockchain ; <code>3.3.d</code> Cadres réglementaires émergents : règlement MiCA (Markets in Crypto-Assets), NEP, normes ISO</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td><strong>Dossier 2 – Organiser et exploiter les données des parcelles et des apports ; authentifier les bouteilles</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (formalisme du MCD, interopérabilité, dictionnaire de données, DAMA-DMBOK, chaîne de valeur des données, méthodes d'analyse, blockchain, champ de MiCA) environ 3 points (la moitié des items 2.1 a-1 à a-4, et la moitié des items 2.2 a-1, 2.2 b-1, 2.3-1, 2.4 a-1, 2.4 c-1, 2.5 a et 2.5 c) ; analyse des annexes et recommandations environ 10 points, soit environ 77 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 59 minutes.</p>
+<hr />
+<h3 id="21--modèle-conceptuel-des-données-des-parcelles-et-des-apports-2-points">2.1 – Modèle conceptuel des données des parcelles et des apports (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.b</code> « Modélisation des données (modèles conceptuels, logiques et physiques) ». Seul le modèle conceptuel est demandé.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.1 (règles de gestion RG1 à RG8 ; constats 3 et 4 de la partie B pour la justification de l'adhésion et du rattachement de l'apport à la parcelle).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Six entités avec identifiant souligné et attributs élémentaires correctement placés (Adhérent, Cave, Parcelle, Cépage, Apport, Prélèvement), sans clé étrangère ni attribut répété</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Association n:m <em>adhérer</em> entre Adhérent et Cave, porteuse de la date d'adhésion (1,n / 1,n, RG3) ; association <em>exploiter</em> (Adhérent 1,n / Parcelle 1,1, RG4)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Association <em>planter</em> (Parcelle 1,1 / Cépage 0,n, RG5) et associations de l'apport <em>livrer</em>, <em>recevoir</em>, <em>provenir</em> (Apport 1,1 / 0,n, RG6)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Association <em>donner lieu</em> (Prélèvement 1,1 / Apport 1,n, RG7) et justification de chaque cardinalité par une règle de gestion ; la justification du lien direct <em>livrer</em> et la contrainte sur la cave d'adhésion sont valorisées, non exigées</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p>Le modèle conceptuel des données (MCD) représente les objets de gestion (entités), leurs propriétés (attributs) et leurs liens (associations), avec des cardinalités qui traduisent les règles de gestion, indépendamment de toute technique (F07 § 1).</p>
+<p>Entités (identifiant en premier, souligné sur la copie) (0,5 pt) :</p>
+<ul>
+<li>ADHÉRENT (<u>num_adherent</u>, nom, prenom, commune, telephone, courriel) – RG1 ;</li>
+<li>CAVE (<u>code_cave</u>, nom_cave, departement) – RG2 ;</li>
+<li>PARCELLE (<u>num_parcelle</u>, commune_parcelle, lieu_dit, surface_ha, annee_plantation) – RG4 ;</li>
+<li>CÉPAGE (<u>code_cepage</u>, libelle_cepage, couleur) – RG5 ;</li>
+<li>APPORT (<u>num_apport</u>, date_apport, heure_pesee, poids_kg, degre_potentiel, etat_sanitaire) – RG6 ;</li>
+<li>PRÉLÈVEMENT (<u>num_prelevement</u>, date_analyse, acidite_totale, ph) – RG7.</li>
+</ul>
+<p>Associations et cardinalités :</p>
+<pre><code>ADHÉRENT    (1,n) ──── adhérer [date_adhesion] ──── (1,n) CAVE
+ADHÉRENT    (1,n) ──── exploiter ────────────────── (1,1) PARCELLE
+PARCELLE    (1,1) ──── planter ──────────────────── (0,n) CÉPAGE
+APPORT      (1,1) ──── livrer ───────────────────── (0,n) ADHÉRENT
+APPORT      (1,1) ──── recevoir ─────────────────── (0,n) CAVE
+APPORT      (1,1) ──── provenir ─────────────────── (0,n) PARCELLE
+PRÉLÈVEMENT (1,1) ──── donner_lieu ──────────────── (1,n) APPORT</code></pre>
+<p>Sur la copie, chaque entité n'est dessinée qu'une fois : APPORT au centre, relié à ADHÉRENT, CAVE, PARCELLE et PRÉLÈVEMENT ; ADHÉRENT relié aussi à CAVE et à PARCELLE ; PARCELLE reliée à CÉPAGE.</p>
+<ul>
+<li><em>adhérer</em>, association n:m porteuse de la date d'adhésion : un adhérent adhère à une ou plusieurs caves (environ 40 viticulteurs livrent deux caves, constat 3) ; chaque cave compte au moins un adhérent (1,n de part et d'autre) ; la date d'adhésion ne dépend ni de l'adhérent seul ni de la cave seule, mais du couple – RG3 ;</li>
+<li><em>exploiter</em> : une parcelle est exploitée par un et un seul adhérent (1,1) ; un adhérent exploite au moins une parcelle (1,n) – RG4 (0,5 pt pour ces deux associations) ;</li>
+<li><em>planter</em> : une parcelle est plantée d'un seul cépage (1,1) ; un cépage peut n'être planté sur aucune parcelle, s'il est retenu pour les replantations (0,n) – RG5 ;</li>
+<li><em>livrer</em>, <em>recevoir</em>, <em>provenir</em> : un apport est livré par un seul adhérent, à une seule cave, et porte sur une seule parcelle (1,1) ; un adhérent, une cave ou une parcelle peut n'avoir aucun apport (0,n) – RG6 (0,5 pt pour ces quatre associations) ;</li>
+<li><em>donner_lieu</em> : un prélèvement concerne un seul apport (1,1) ; un apport donne lieu à au moins un prélèvement (1,n) – RG7.</li>
+</ul>
+<p>Justification du lien direct <em>livrer</em> (valorisée, non exigée : RG6 impose déjà ce lien) : on pourrait retrouver l'adhérent par la parcelle, mais RG4 n'enregistre que l'exploitant <strong>actuel</strong> ; si une parcelle change d'exploitant, les apports passés doivent rester attribués à celui qui les a livrés. Le lien direct permet en outre un contrôle de cohérence (l'adhérent qui livre est l'exploitant de la parcelle déclarée), utile au constat 4. De même, la cave qui reçoit l'apport ne se déduit pas de l'adhérent, qui peut adhérer à deux caves : <em>recevoir</em> est indispensable.</p>
+<p>RG8 ne crée ni entité ni association. Une contrainte non représentable par les cardinalités peut être signalée : l'apport ne peut être reçu que par une cave à laquelle l'adhérent qui livre adhère. Le modèle logique, non demandé, comporterait sept tables, dont une table Adhesion à clé composée (#num_adherent, #code_cave) portant la date d'adhésion.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Noms d'entités, d'associations ou d'attributs différents s'ils restent explicites (« Viticulteur », « Livraison », « Analyse ») ; notation « pattes de corbeau » ou UML lisible (format libre, <code>JUR-T10</code>).</li>
+<li>Omission de l'association <em>livrer</em> si le candidat la justifie explicitement (l'adhérent se déduit de la parcelle) et signale la limite liée au changement d'exploitant.</li>
+<li>Adhésion modélisée comme une entité ADHÉSION à identifiant propre reliée par deux associations 1,1 à Adhérent et à Cave, si le candidat signale l'unicité du couple adhérent × cave.</li>
+<li>Entité supplémentaire justifiée (COMMUNE, STATION) si elle ne contredit pas RG8 ; pas de pénalité pour une commune modélisée en entité, pas de bonification non plus.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>MCD et MLD confondus</em> (<code>ET-23</code>, <code>JUR-T06</code>) — clés étrangères (num_adherent dans PARCELLE, num_apport dans PRÉLÈVEMENT) dessinées dans le MCD ; juste : le MCD ne comporte ni clé étrangère ni table.</li>
+<li><em>Attribut d'association mal placé</em> — date d'adhésion portée par l'adhérent ou par la cave, ce qui interdit de décrire l'adhérent qui livre deux caves ; juste : elle dépend du couple.</li>
+<li><em>Adhérent rattaché à une seule cave</em> (1,1) — le modèle reproduit les doublons du constat 3 ; juste : association n:m.</li>
+<li><em>Cardinalités non justifiées</em> (<code>JUR-T01</code>) — liste d'entités sans renvoi aux règles ; juste : chaque cardinalité est rattachée à une règle de gestion.</li>
+<li><em>Hors sujet technique</em> — modèle logique détaillé, requêtes ou scripts de création de tables, que la question exclut.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Formalisme Merise (MCD, cardinalités, association porteuse)</td>
+<td>entités, associations, cardinalités</td>
+<td>F07 § 1 à 3</td>
+<td>manuels</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--cohérence-interopérabilité-et-qualité-des-données-3-points">2.2 – Cohérence, interopérabilité et qualité des données (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.a</code> « Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes » ; <code>2.1.e</code> « Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (neuf logiciels de cave de quatre éditeurs, aucun informaticien dans les caves, équipe informatique de 6 personnes), 2.1 (sources, constats 1 à 7, règles de gestion) et 2.2 (notes du tableau : conversions, échelles sanitaires).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Interopérabilité définie ; référentiel commun des données de référence (adhérents, caves, parcelles, cépages) tenu par l'union et alimentant les neuf logiciels de cave et le laboratoire</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Identifiants uniques attribués par l'union, non signifiants et stables, avec table de correspondance des anciens numéros ; reprise (fusion des doublons, mise à jour des surfaces)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Circulation des données sur les trois plans : technique (échanges automatisés, formats ouverts, lecture du numéro de bon), sémantique (nomenclature des cépages, unités, échelle sanitaire), organisationnel (qui crée, qui valide, calendrier, engagement des éditeurs)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Dictionnaire de données défini et quatre rubriques choisies et justifiées</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Entrées du degré potentiel et de l'état sanitaire cohérentes avec les constats (unité unique, échelle commune définie note par note, source, propriétaire)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c</td>
+<td>Trois règles de qualité, chacune rattachée à une dimension (unicité, complétude, cohérence, exactitude, actualité, validité) et à un constat de l'annexe 2.1 B</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.2 a) – Référentiel commun, identifiants uniques et circulation des données</em></p>
+<p>L'<strong>interopérabilité</strong> est la capacité de systèmes hétérogènes à échanger des données et à les utiliser sans intervention manuelle ; elle est à la fois <strong>technique</strong> (échanges, formats), <strong>sémantique</strong> (même sens des données) et <strong>organisationnelle</strong> (processus, responsabilités) (F07 § 7 ; le niveau syntaxique, celui des formats, est ici rattaché au plan technique). À ROCALDÈNE, neuf logiciels de quatre éditeurs, des tableurs et un laboratoire décrivent les mêmes objets sans langage commun : neuf extractions envoyées chaque lundi et des tableaux établis à la main.</p>
+<p><strong>Référentiel commun</strong> (0,5 pt avec la définition) : l'union tient un référentiel des <strong>données de référence</strong> (gestion des données de référence) : adhérents, caves, parcelles et cépages, selon le modèle de la question 2.1. Il est la <strong>seule source</strong> de ces données : les logiciels de cave, le laboratoire et les outils d'analyse s'y alimentent au lieu de tenir chacun leur fichier. Les caves restent maîtresses de la réception de la vendange dans leur logiciel ; elles cessent de créer chacune leurs parcelles et leurs adhérents.</p>
+<p><strong>Identifiants uniques</strong> (0,5 pt) : numéro d'adhérent et numéro de parcelle attribués par l'union (RG1, RG4), <strong>non signifiants</strong> (ni la cave, ni la commune, qui peuvent changer), <strong>stables</strong> et jamais réattribués ; code de cépage commun (RG5) ; numéro de bon unique pour l'union (préfixé par le code de la cave, par exemple « SBZ-2026-01877 » : ce préfixe est acceptable pour un bon, car la cave qui reçoit un apport ne change jamais, mais non pour une parcelle ou un adhérent). Une <strong>table de correspondance</strong> conserve les anciens numéros de chaque cave pendant la transition (« P-0123 » de sept caves devient sept numéros distincts). La <strong>reprise</strong> fusionne les 40 adhérents en double (une fiche, deux adhésions), rapproche les 11 000 parcelles et corrige l'écart de 150 hectares (6 650 contre 6 500) avec les caves avant la vendange 2027.</p>
+<p><strong>Circulation des données sur les trois plans</strong> (0,5 pt) :</p>
+<ul>
+<li><em>technique</em> : les logiciels de cave reçoivent du référentiel les listes d'adhérents, de parcelles et de cépages et renvoient chaque jour de vendange les apports à l'union par des échanges automatisés (interfaces de programmation ou fichiers dans un format ouvert décrit par le dictionnaire), au lieu des neuf extractions du lundi ; le laboratoire lit le numéro du bon (code imprimé sur l'échantillon) au lieu de le ressaisir ; les relevés des stations sont récupérés dans le même format ;</li>
+<li><em>sémantique</em> : nomenclature unique des 12 cépages (fin des 31 codes), degré potentiel toujours en % vol., échelle sanitaire commune définie note par note, définitions du dictionnaire (b) partagées par les neuf caves et le laboratoire ;</li>
+<li><em>organisationnel</em> : règles de création et de validation (la cave déclare une parcelle nouvelle, l'union la valide et lui attribue son numéro), calendrier (mise à jour des parcelles chaque hiver, hors vendanges), engagement des quatre éditeurs à lire et à transmettre les données au format commun, formation des agents de réception et des saisonniers, appui de l'équipe informatique aux caves, qui n'ont pas d'informaticien.</li>
+</ul>
+<p><em>2.2 b) – Dictionnaire de données</em></p>
+<p>Le <strong>dictionnaire de données</strong> est le référentiel qui décrit chaque donnée de façon unique et partagée : nom, définition, unité ou format, valeurs admises, règle de mesure ou de calcul, source, propriétaire, fréquence de mise à jour ; il fixe le sens commun des données, ce qui le distingue du MCD, qui décrit les relations entre les données (F07 § 1). Pour l'union, il met fin aux mesures hétérogènes du constat 6 : sans lui, deux caves qui écrivent « 3 » ne disent pas la même chose.</p>
+<p>Quatre rubriques suffisent (0,5 pt avec la définition) ; le tableau en propose six, parmi lesquelles le candidat en retient quatre : <strong>définition</strong> (sens partagé), <strong>unité et valeurs admises</strong> (contrôle à la saisie, comparabilité), <strong>règle de mesure</strong> (qui mesure, quand, comment), <strong>source de référence</strong>, <strong>propriétaire</strong>, <strong>fréquence de mise à jour</strong>.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Rubrique</th>
+<th>Degré potentiel de l'apport</th>
+<th>État sanitaire de l'apport</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Définition</td>
+<td>teneur en alcool que donnerait la vendange de l'apport si tous ses sucres étaient transformés, mesurée à la réception</td>
+<td>proportion de raisins atteints par des maladies ou des altérations dans l'apport, appréciée à la réception</td>
+</tr>
+<tr class="even">
+<td>Unité et valeurs admises</td>
+<td>% vol., une décimale ; valeurs plausibles de 8,0 à 16,0, toute valeur hors de cette plage étant bloquée et vérifiée ; jamais en grammes de sucres par litre (la conversion de LAURADEL et de CABRISSAC disparaît)</td>
+<td>échelle commune de 1 (sain) à 4 (très dégradé), chaque note étant définie par une part de raisins atteints et illustrée par des photographies de référence ; « dégradé » = notes 3 et 4 dans les neuf caves</td>
+</tr>
+<tr class="odd">
+<td>Règle de mesure</td>
+<td>mesure à la pesée sur l'échantillon de l'apport, avec un appareil étalonné selon une procédure commune</td>
+<td>note attribuée par un agent de réception formé, et non laissée aux seuls saisonniers ; note contrôlée sur un échantillon d'apports par le laboratoire</td>
+</tr>
+<tr class="even">
+<td>Source de référence</td>
+<td>logiciel de cave, transmis au référentiel le jour même</td>
+<td>logiciel de cave, transmis au référentiel le jour même</td>
+</tr>
+<tr class="odd">
+<td>Propriétaire</td>
+<td>directrice de la production et de la qualité de l'union</td>
+<td>directrice de la production et de la qualité de l'union</td>
+</tr>
+<tr class="even">
+<td>Fréquence de mise à jour</td>
+<td>à chaque apport ; définition revue chaque hiver</td>
+<td>à chaque apport ; échelle revue chaque hiver avec les directeurs de cave</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt pour les deux entrées.) Sont valorisées : l'unité imposée et la fin des conversions ; l'échelle commune définie note par note, qui répond directement aux critiques de Mme TARASCOUL ; la formation des agents.</p>
+<p><em>2.2 c) – Trois règles de qualité</em> (0,5 pt)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Règle</th>
+<th>Dimension</th>
+<th>Constat de l'annexe 2.1 B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Un viticulteur, un seul numéro d'adhérent : recherche obligatoire dans le référentiel avant toute création ; les 40 doublons sont fusionnés</td>
+<td>unicité</td>
+<td>3 (adhérents en double)</td>
+</tr>
+<tr class="even">
+<td>Aucun apport sans parcelle du référentiel : la pesée exige un numéro de parcelle existant, choisi dans la liste des parcelles de l'adhérent qui livre, et non une déclaration orale</td>
+<td>complétude et cohérence</td>
+<td>4 (plus d'un tiers des volumes sans parcelle)</td>
+</tr>
+<tr class="odd">
+<td>Cépage choisi dans la nomenclature commune ; degré en % vol. et état sanitaire sur l'échelle commune, valeurs hors plage bloquées</td>
+<td>validité (conformité)</td>
+<td>2 et 6 (31 codes pour 12 cépages, mesures non homogènes)</td>
+</tr>
+<tr class="even">
+<td>Surfaces revues chaque hiver avec les adhérents ; arrachages et cessions enregistrés dans le mois</td>
+<td>exactitude et actualité</td>
+<td>5 (6 650 ha dans les fichiers pour 6 500 ha en production)</td>
+</tr>
+<tr class="odd">
+<td>Tout prélèvement rattaché à un apport existant, par lecture du numéro du bon et non par ressaisie</td>
+<td>cohérence (intégrité des liens)</td>
+<td>7 (1 100 prélèvements orphelins, 5 %)</td>
+</tr>
+<tr class="even">
+<td>Identifiant de parcelle unique pour l'union</td>
+<td>unicité</td>
+<td>1 (même numéro dans sept caves)</td>
+</tr>
+</tbody>
+</table>
+<p>Trois règles sont attendues, chacune avec sa dimension et son constat.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Plateforme d'échange ou bus d'intégration cité, si le principe (référentiel unique, fin des fichiers du lundi) reste au premier plan ; référentiel placé dans le futur progiciel commun, si son rôle de source unique est préservé.</li>
+<li>Échelle sanitaire commune de 1 à 3 ou de 1 à 5, si elle est définie note par note et appliquée dans les neuf caves.</li>
+<li>Rubriques différentes du dictionnaire (type, exemple, sensibilité, durée de conservation) si elles sont justifiées.</li>
+<li>Dimensions de la qualité nommées autrement (intégrité, conformité, fraîcheur) ou citées d'après ISO/IEC 25012 ; un indicateur de suivi proposé en plus n'est pas exigé.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Interopérabilité seulement technique</em> (<code>ET-36</code>) — interfaces proposées sans nomenclature commune ni règles de création ; juste : technique, sémantique et organisationnelle ensemble.</li>
+<li><em>Sigle employé seul</em> (<code>ET-13</code>) — « mettre en place un MDM » sans dire qu'il s'agit de la gestion des données de référence ; juste : écrire en toutes lettres.</li>
+<li><em>Identifiant signifiant</em> — numéro de parcelle construit avec le code de la cave ou de la commune : il change quand la parcelle change d'exploitant ou de cave ; juste : identifiant non signifiant et stable.</li>
+<li><em>Dictionnaire confondu avec le MCD</em> — liste des entités au lieu de la description de chaque donnée ; juste : le dictionnaire décrit le sens, l'unité, la mesure et la source.</li>
+<li><em>Qualité laissée à l'informatique</em> (<code>JUR-T03</code>) — « l'équipe informatique corrigera les fichiers » ; juste : la règle est fixée par le métier et appliquée à la saisie dans les caves.</li>
+<li><em>Détail technique hors attente</em> (<code>JUR-T12</code>) — description de formats ou de serveurs ; la question l'exclut.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ISO/IEC 25012 (2008) — Modèle de qualité des données</td>
+<td>dimensions de la qualité, à titre d'exemple</td>
+<td><code>iso_iec_25012</code> / F07 § 8.3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Interopérabilité (niveaux technique, sémantique, organisationnel) ; données de référence ; dictionnaire</td>
+<td>définitions, principes</td>
+<td>F07 § 1, 6.2 et 7</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--rôles-et-responsabilités-sur-les-données-1-point">2.3 – Rôles et responsabilités sur les données (1 point)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.c</code> « Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (organigramme, directeurs de cave, aucun informaticien dans les caves), 2.1 (sources, agents de réception, laboratoire, techniciens) et 2.4 (DAMA-DMBOK, RGPD).</p>
+<p><strong>Barème indicatif (1 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>DAMA-DMBOK présenté comme un référentiel de bonnes pratiques (et non une norme ni un logiciel), qui place la gouvernance au centre et décrit les rôles de propriétaire et d'intendant</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Trois rôles avec missions et titulaires, répartis entre l'union et les caves (propriétaire à l'union, intendants dans les caves et au laboratoire, troisième rôle : instance commune, dépositaire technique ou délégué à la protection des données)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p>Le <strong>DAMA-DMBOK</strong> (2e édition, 2017, révision 2024) est un <strong>référentiel</strong> de bonnes pratiques de gestion des données, organisé en onze domaines de connaissance autour de la gouvernance des données ; il distingue notamment le <strong>propriétaire</strong> des données, responsable métier qui en fixe les définitions, les règles et la qualité attendue, et l'<strong>intendant</strong>, qui les applique au quotidien. Ce n'est ni une norme ni un logiciel, et ses rôles sont illustratifs, non normatifs (annexe 2.4 ; F07 § 8.1-8.2) (0,5 pt). Pour l'union, les domaines prioritaires sont les données de référence, la qualité et les métadonnées (dictionnaire).</p>
+<p>Répartition proposée entre l'union et les caves (0,5 pt pour trois rôles avec missions et titulaires) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Rôle</th>
+<th>Missions</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Propriétaire</strong> des données des parcelles et des apports</td>
+<td>fixe les définitions et les règles (dictionnaire, échelle sanitaire), arbitre les désaccords entre caves, valide les données qui serviront au conseil</td>
+<td>Mme Claire BOUSQUIÉRAN, directrice de la production et de la qualité de l'union</td>
+</tr>
+<tr class="even">
+<td><strong>Intendants</strong> des données</td>
+<td>appliquent les règles à la saisie, contrôlent les apports sans parcelle et les valeurs hors plage, mettent à jour les parcelles chaque hiver, signalent les anomalies</td>
+<td>dans chaque cave, un agent de réception ou l'adjoint du directeur, désigné par le directeur de cave ; au laboratoire, un technicien pour le rattachement des prélèvements</td>
+</tr>
+<tr class="odd">
+<td><strong>Comité des données</strong> des parcelles et des apports</td>
+<td>réunit la propriétaire, les neuf directeurs de cave et le responsable du système d'information ; adopte le dictionnaire et l'échelle sanitaire, suit la qualité chaque trimestre, prépare ce qui sera présenté au conseil</td>
+<td>instance présidée par la directrice de la production et de la qualité, avant chaque vendange et chaque trimestre</td>
+</tr>
+<tr class="even">
+<td><strong>Dépositaire technique</strong></td>
+<td>met en œuvre le référentiel, les échanges, les droits d'accès et la sécurité, sans décider du contenu</td>
+<td>M. Sébastien CAUSSINEL, responsable du système d'information</td>
+</tr>
+<tr class="odd">
+<td><strong>Délégué à la protection des données</strong></td>
+<td>conseille sur les données des adhérents exploitants en nom propre, qui sont des données personnelles (annexe 2.4) : finalités, minimisation, durée de conservation, mise à jour du registre des traitements</td>
+<td>délégué de l'union s'il en a été désigné un (désignation facultative ici, mais recommandée), mutualisable avec les caves</td>
+</tr>
+</tbody>
+</table>
+<p>Sont valorisés : la responsabilité métier à l'union, la saisie et le contrôle là où naît la donnée (les caves), et la place des directeurs de cave dans les décisions, qui conditionne l'acceptation des données par les présidents (annexe 2.2 D).</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Propriété des données d'apport confiée à chaque directeur de cave pour ses apports, l'union restant propriétaire des données de référence et des définitions communes, si la répartition est justifiée.</li>
+<li>Administrateur des données (CDO) proposé à titre illustratif, sans être présenté comme obligatoire.</li>
+<li>Le candidat peut s'attribuer la coordination du dispositif, comme responsable du projet de refonte.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Norme / référentiel / solution</em> (<code>ET-01</code>, <code>JUR-S06</code>) — « installer DAMA-DMBOK » ou « certifier l'union DAMA » ; juste : référentiel de bonnes pratiques.</li>
+<li><em>Qualité confiée à l'informatique</em> — le responsable du système d'information désigné propriétaire des données ; juste : il est dépositaire technique, la propriété est métier.</li>
+<li><em>Rôles sans titulaire ni application au cas</em> (<code>JUR-T01</code>) — liste de rôles récitée ; juste : qui, dans l'union ou dans les caves, fait quoi.</li>
+<li><em>Organisation normative</em> — présenter un organigramme de gouvernance comme imposé par le référentiel ; le programme la veut illustrative.</li>
+<li><em>Délégué confondu avec un responsable informatique</em> (<code>ET-29</code>) — le délégué ne tient pas les outils et ne décide pas des moyens.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DAMA-DMBOK, 2e édition (2017), révision 2024</td>
+<td>domaines de connaissance, rôles de propriétaire et d'intendant (repères de l'annexe 2.4)</td>
+<td><code>dama_dmbok2</code> / F07 § 8.1-8.2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD), applicable depuis le 25/05/2018</td>
+<td>données personnelles des adhérents exploitants en nom propre, registre, délégué (repères de l'annexe 2.4)</td>
+<td><code>rgpd</code> / F15</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--chaîne-de-valeur-des-données-et-analyse-des-apports-de-la-vendange-2026-45-points">2.4 – Chaîne de valeur des données et analyse des apports de la vendange 2026 (4,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.a</code> « Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation » ; <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés » ; <code>2.2.c</code> « Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (plan « ROCALDÈNE 2030 », neuf caves), 2.1 (sources, constats, établissement manuel des tableaux) et 2.2 (tableau par cave, pluies, projet du conseil, positions de M. SOULAGNET et de Mme TARASCOUL, prévision proposée par le prestataire).</p>
+<p><strong>Barème indicatif (4,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Chaîne de valeur des données définie et appliquée au cas, de la parcelle au conseil : collecte, préparation et rapprochement, stockage et structuration, analyse, restitution, décision</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Apport de la chaîne à la décision de mieux rémunérer la qualité : critères objectivés, comparables entre caves, traçables jusqu'à la parcelle et acceptés par les caves</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Premier constat argumenté, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Deuxième constat argumenté, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Troisième constat argumenté, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-4</td>
+<td>Appréciation des deux positions (biais de confirmation de M. SOULAGNET ; critiques fondées mais hypothèse météorologique invérifiable de Mme TARASCOUL) et conséquence pour le conseil</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Méthode recommandée et justifiée : analyse exploratoire, après une analyse descriptive fiabilisée</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Prévision par parcelle prématurée : deux arguments tirés des annexes</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>d</td>
+<td>Deux représentations visuelles, l'une pour le conseil, l'autre pour les directeurs de cave, chacune avec son message et le piège de lecture à éviter</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.4 a) – La chaîne de valeur des données, de la parcelle au conseil</em></p>
+<p>La <strong>chaîne de valeur des données</strong> décrit les étapes par lesquelles une donnée brute devient une information utile à la décision : collecte, préparation (nettoyage, rapprochement), stockage et structuration, analyse, restitution, puis décision et action ; la valeur se crée à chaque étape et se perd au maillon le plus faible (F08 § 1). Appliquée au cas (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Collecte</strong> : à la parcelle (fichier des parcelles, sondes, stations, observations des techniciens), à la réception (bon d'apport : poids, degré, état sanitaire, parcelle), au laboratoire (acidité, pH) et aux assemblages (part retenue pour les cuvées haut de gamme) ;</li>
+<li><strong>Préparation</strong> : rapprochement par les identifiants uniques du référentiel (question 2.2), conversion supprimée par l'unité commune, fusion des doublons, rattachement des prélèvements orphelins, traitement des apports sans parcelle ;</li>
+<li><strong>Stockage et structuration</strong> : base d'analyse de l'union organisée selon le modèle de la question 2.1, historisée vendange après vendange ;</li>
+<li><strong>Analyse</strong> : comparaisons par cave, par cépage, par secteur et par parcelle, croisements entre état sanitaire, pluie, rendement et destination des vins ;</li>
+<li><strong>Restitution</strong> : représentations commentées pour le conseil et pour chaque cave (d), avec leurs précautions ;</li>
+<li><strong>Décision</strong> : choix par le conseil des critères de qualité communs et de leur calendrier.</li>
+</ol>
+<p><strong>Apport à la décision</strong> (0,5 pt) : aujourd'hui, la chaîne est rompue dès la collecte (mesures non homogènes, un tiers des volumes sans parcelle) et la préparation est manuelle (neuf extractions, tableaux établis à la main) ; toute rémunération de la qualité serait contestée, comme le montre Mme TARASCOUL. Une chaîne maîtrisée permet au conseil de fonder les critères de qualité sur des données <strong>définies en commun, comparables entre les neuf caves, traçables jusqu'à la parcelle et acceptées</strong> par les caves qui les produisent ; elle permet d'apprécier à l'avance l'effet de chaque critère sur chaque cave et de suivre ensuite ses effets, au service de la deuxième priorité du plan « ROCALDÈNE 2030 ». Les modalités de calcul ne relèvent pas de la question.</p>
+<p><em>2.4 b) – Trois constats argumentés et leurs précautions</em> (0,5 pt par constat avec sa précaution ; trois constats parmi les quatre suivants)</p>
+<ol type="1">
+<li><strong>L'état sanitaire paraît nettement plus dégradé dans l'Aude</strong> : 15 % à 25 % des apports dans trois caves de l'Aude (PECHAUROUX 25 %, CABRISSAC 20 %, LAURADEL 15 %), 10 % à VALCROZIÈRES, contre 3 % à 6 % dans les cinq caves de l'Hérault ; les deux stations de l'Aude ont relevé 70 et 110 mm de pluie du 10 au 25 septembre, contre 20 et 30 mm dans l'Hérault. <em>Hypothèse</em> : les pluies de septembre ont favorisé les maladies. <em>Précaution</em> : les échelles diffèrent (« dégradé » couvre les notes 3 à 5 sur cinq dans l'Aude, la seule note 3 sur trois dans l'Hérault), les notes sont souvent posées par des saisonniers sans définition écrite, et les deux caves les plus touchées (PECHAUROUX, CABRISSAC) n'ont pas de station : l'écart est en partie un <strong>effet de mesure</strong>, et la pluie une hypothèse non vérifiée pour elles.</li>
+<li><strong>Les caves aux rendements les plus faibles fournissent le plus de vins haut de gamme</strong> : SAINT-BRÉZIAN (45 hl/ha, 14,0 % vol., 30 % en haut de gamme), TERRAGOUSSE et VALCROZIÈRES (50 hl/ha, 20 %), contre CAUSSELAC (70 hl/ha, 5 %). <em>Hypothèse</em> : des rendements plus faibles donnent des raisins plus concentrés, mieux valorisés. <em>Précaution</em> : c'est une <strong>corrélation</strong>, non une causalité ; un <strong>facteur commun</strong> (situation des vignes, âge des vignes, cépages) peut expliquer à la fois le faible rendement et la qualité ; surtout, la part haut de gamme est <strong>décidée par l'union</strong> selon la qualité des cuves et ses besoins commerciaux (environ 44 milliers d'hl, soit environ 12 % de la vendange) : elle mesure aussi les choix de l'union, comme le dit Mme TARASCOUL ; enfin, les fichiers des parcelles n'étant pas à jour (constat 5), aucun rendement ne peut encore être calculé par parcelle.</li>
+<li><strong>La traçabilité jusqu'à la parcelle est inégale et faible là où l'état sanitaire est le plus dégradé</strong> : environ 62 % des volumes sont rattachés à une parcelle, de 95 % à SAINT-BRÉZIAN à 30 % à PECHAUROUX et 40 % à CABRISSAC ; dans l'Aude, moins de la moitié des volumes l'est. <em>Conséquence</em> : une reconnaissance de la qualité <strong>par parcelle</strong> est impossible aujourd'hui pour plus d'un tiers de la vendange. <em>Précaution</em> : les données manquantes <strong>ne sont pas réparties au hasard</strong> (biais de sélection) : les moyennes calculées sur les seuls apports rattachés représentent mal les caves les moins renseignées.</li>
+<li><strong>Le degré, critère actuel de rémunération, est un indicateur ambigu de la qualité</strong> : il va de 12,5 à 14,0 % vol. et suit la part haut de gamme, mais le plan « ROCALDÈNE 2030 » veut adapter l'offre au changement climatique, ce qui ne pousse pas à récompenser toujours plus de degré. <em>Précaution</em> : les degrés de LAURADEL et de CABRISSAC sont convertis à partir des sucres, et une moyenne par cave masque la dispersion entre parcelles et entre cépages.</li>
+</ol>
+<p>Précautions communes, valorisées si elles sont citées : <strong>une seule vendange</strong> (aucune tendance), données <strong>agrégées par cave</strong> (rien sur les parcelles ni les viticulteurs), tableau <strong>établi à la main</strong> pour la première fois.</p>
+<p><strong>Appréciation des deux positions</strong> (0,5 pt) : M. SOULAGNET lit le tableau dans le sens qui favorise sa cave (<strong>biais de confirmation</strong>) et en tire une conclusion que les données ne portent pas : la part haut de gamme dépend des choix de l'union, et l'état sanitaire n'est pas mesuré de la même façon partout. Mme TARASCOUL relève à juste titre deux défauts de comparabilité (échelles, part haut de gamme décidée par l'union), mais son explication par la pluie n'est pas vérifiable pour sa cave, sans station, et ne vaut pas preuve. Conclusion pour le conseil : ce tableau peut ouvrir le débat, il ne peut pas fonder une rémunération ; il faut d'abord des mesures communes (dictionnaire, échelle, parcelle obligatoire) dès la vendange 2027, puis décider sur des données comparables, éventuellement après une année d'observation.</p>
+<p><em>2.4 c) – Méthode d'analyse et prévision par parcelle</em></p>
+<p><strong>Méthode</strong> (0,5 pt) : l'annexe 2.2 relève de l'analyse <strong>descriptive</strong> (moyennes et parts par cave, ce qui s'est passé), encore fragile. L'étape suivante est une analyse <strong>exploratoire</strong> : au niveau de l'apport et de la parcelle, rechercher les profils et les facteurs associés à la qualité (cépage, âge des vignes, secteur, pluie, rendement, date d'apport), repérer les valeurs aberrantes, et tester les hypothèses du b) (rôle de la pluie, effet de l'échelle, effet du rendement). Elle sert la question du conseil (quels critères de qualité retenir et sont-ils équitables entre caves) et reste explicable aux présidents. Elle suppose les données harmonisées de la question 2.2 ; sur la vendange 2026, elle se limite aux caves et aux apports rattachés.</p>
+<p><strong>Prévision par parcelle prématurée</strong> (0,5 pt pour deux arguments, parmi les suivants) :</p>
+<ol type="1">
+<li><strong>Pas d'historique fiable au niveau de la parcelle</strong> : une seule vendange rassemblée, à la main ; identifiants de parcelle non uniques ; plus d'un tiers des volumes sans parcelle ; un modèle de prévision apprend sur des exemples passés, qui n'existent pas.</li>
+<li><strong>Des données de qualité non comparables</strong> : la variable à prévoir (l'état sanitaire, le degré) est mesurée sur des échelles et dans des unités différentes ; le modèle apprendrait les différences de notation entre caves plutôt que la qualité.</li>
+<li><strong>Une couverture météorologique trop partielle</strong> : quatre stations pour neuf secteurs, des sondes dans 30 parcelles sur 11 000, des observations dispersées dans trois tableurs personnels.</li>
+<li><strong>Un usage à fort enjeu et peu explicable</strong> : fixer des primes avant les vendanges sur une prévision opaque, pour 1 400 adhérents, serait contesté par les caves dès la première erreur ; la décision doit rester humaine et fondée sur des critères compris. La prévision pourra être reconsidérée après plusieurs vendanges de données propres, comme aide aux techniciens plutôt que comme base de rémunération.</li>
+</ol>
+<p><em>2.4 d) – Deux représentations visuelles</em> (0,5 pt)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Destinataire</th>
+<th>Représentation</th>
+<th>Message</th>
+<th>Piège à éviter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conseil de l'union</td>
+<td>barres horizontales triées par cave de la part des apports à l'état sanitaire dégradé (à partir de la vendange 2027, sur l'échelle commune ; pour 2026, en séparant les deux échelles), avec la part des volumes rattachés à une parcelle affichée à côté (ou nuage de points rendement / part haut de gamme, une bulle par cave proportionnelle au volume)</td>
+<td>où sont les écarts de qualité et quelle confiance leur accorder</td>
+<td>comparer des notes d'échelles différentes ; axe tronqué qui grossit les écarts ; lire une corrélation comme une causalité ; volumes absolus au lieu de taux</td>
+</tr>
+<tr class="even">
+<td>Directeurs de cave</td>
+<td>carte des parcelles de la cave colorée selon l'état sanitaire moyen des apports (ou histogramme de la répartition des apports de la cave par note, comparé à celle de l'union)</td>
+<td>quelles parcelles et quels secteurs améliorer ou mieux renseigner</td>
+<td>carte en valeurs brutes, qui fait ressortir les grandes parcelles ; couleurs non signifiantes ; parcelles sans apport rattaché laissées vides sans le signaler</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Chaîne de valeur présentée selon les étapes de la chaîne décisionnelle (collecte, extraction, transformation et chargement, entrepôt, restitution), si la décision du conseil la termine.</li>
+<li>Autres constats tirés de l'annexe 2.2 (CAUSSELAC, première cave en volume, la moins valorisée ; écart de structure entre Hérault et Aude) s'ils sont assortis d'une précaution.</li>
+<li>Position recommandant une rémunération limitée à un critère déjà fiable (par exemple l'apport rattaché à une parcelle), si elle est argumentée.</li>
+<li>Analyse descriptive fiabilisée recommandée pour la vendange 2027, avant l'exploratoire, si le candidat le justifie par la qualité des données.</li>
+<li>Autres représentations adaptées (barres empilées à 100 % par note sanitaire, carte choroplèthe en taux), si le message et le piège sont précisés.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Corrélation = causalité</em> (<code>ET-26</code>) — « les faibles rendements font la qualité » ou « la pluie explique l'état sanitaire de l'Aude » ; juste : hypothèses à vérifier, facteurs communs et effets de mesure examinés.</li>
+<li><em>Extrapolation sans précaution</em> (<code>JUR-D06</code>) — conclusions tirées d'une seule vendange ; juste : une année ne fait pas une tendance.</li>
+<li><em>Interprétation isolée de la décision</em> (<code>JUR-T03</code>) — constats décrits sans conséquence pour le conseil ; juste : chaque constat dit ce que le conseil peut ou ne peut pas décider.</li>
+<li><em>Science des données = BI</em> (<code>ET-25</code>) — confondre l'analyse descriptive du tableau et la prévision du prestataire ; juste : finalités et exigences de données différentes.</li>
+<li><em>Calculs inutiles ou hors sujet</em> (<code>JUR-T07</code>) — moyennes pondérées recalculées, barème de primes construit ; juste : interpréter les écarts lus, sans calcul de rémunération.</li>
+<li><em>IA générative confondue avec l'apprentissage automatique</em> (<code>ET-09</code>) — le service de prévision présenté comme un assistant conversationnel ; juste : une prévision apprend des régularités sur des données passées.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chaîne décisionnelle et chaîne de valeur des données</td>
+<td>étapes, points de vigilance</td>
+<td>F08 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Analyses descriptive, exploratoire, prédictive</td>
+<td>finalités, prérequis, limites</td>
+<td>F08 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Choix des représentations, biais de lecture, corrélation et causalité</td>
+<td>graphiques adaptés, pièges</td>
+<td>F08 § 5</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="25--le-projet-dauthentification-des-cuvées-exportées-25-points">2.5 – Le projet d'authentification des cuvées exportées (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.3 – Appréhender les usages et les enjeux des technologies de la blockchain et des cryptoactifs : <code>3.3.c</code> « Typologie des applications : traçabilité, certification, finance décentralisée, NFT » ; <code>3.3.a</code> « Évaluer les opportunités, les risques et le cadre réglementaire associés à la mise en œuvre de solutions fondées sur la blockchain et les cryptoactifs dans les organisations » ; <code>3.3.e</code> « Analyse de la valeur ajoutée, des coûts et des limites d'un projet blockchain » ; <code>3.3.d</code> « Cadres réglementaires émergents : règlement MiCA (Markets in Crypto-Assets), NEP, normes ISO ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (export 25 % du chiffre d'affaires, budget du SI de 2 200 k€, plan « ROCALDÈNE 2030 » et empreinte environnementale), 2.3 (problème signalé, proposition de SCELLAVIN, coûts, alternative, avis) et 2.4 (MiCA, RGPD, ISO 22739).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a</td>
+<td>Blockchain définie (registre distribué, consensus, inaltérabilité pratique, confiance sans tiers) et distinguée d'une base centralisée ; projet situé dans la typologie : certification d'authenticité et traçabilité, au moyen de jetons non fongibles</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Deux opportunités et trois risques ou limites tirés de l'annexe 2.3 (dont l'oracle : la chaîne garantit l'enregistrement, pas la bouteille)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Comparaison avec l'alternative : coûts de tête sur trois ans (930 k€ contre 330 k€), apports et limites du code signé</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Recommandation argumentée et conditionnée</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c</td>
+<td>Condition d'exclusion du champ de MiCA (jetons réellement uniques et non fongibles) et respect du RGPD pour les prénoms et les villes des consommateurs ; la remarque sur la revente séparée est valorisée</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.5 a) – Blockchain et typologie</em> (0,5 pt)</p>
+<p>Une <strong>blockchain</strong> est un registre distribué, répliqué entre plusieurs nœuds, dont les blocs de transactions sont chaînés par des empreintes cryptographiques et validés par un mécanisme de consensus (ici la preuve d'enjeu) ; elle permet à des acteurs qui ne se font pas confiance de partager une information horodatée et pratiquement inaltérable, <strong>sans tiers de confiance</strong>. Une <strong>base de données centralisée</strong> est tenue par un administrateur unique (ici l'union), qui peut la modifier et en qui les utilisateurs doivent avoir confiance ; elle est plus simple, moins coûteuse et plus rapide (F11 § 1 ; ISO 22739:2024 pour le vocabulaire).</p>
+<p>Le projet de SCELLAVIN relève de deux usages de la typologie : la <strong>certification d'authenticité</strong> (preuve que la bouteille vient de l'union) et la <strong>traçabilité</strong> (historique des détenteurs successifs), au moyen d'un <strong>jeton non fongible (NFT)</strong> par bouteille, sorte de double numérique de l'objet physique. Il ne relève ni de la finance décentralisée ni de la tokenisation d'un actif financier ; la revente envisagée des jetons sur une place de marché le ferait glisser vers un usage spéculatif.</p>
+<p><em>2.5 b) – Opportunités, risques et comparaison avec l'alternative</em></p>
+<p><strong>Deux opportunités</strong> (parmi les suivantes) :</p>
+<ol type="1">
+<li>une <strong>preuve d'origine vérifiable par des tiers</strong> sans compte chez l'union ni confiance dans son site, ce que demande le distributeur canadien ;</li>
+<li>un <strong>historique horodaté des détenteurs</strong>, qui permettrait de repérer des bouteilles sorties du circuit prévu ;</li>
+<li>une <strong>étiquette connectée</strong> qui se détruit au décollage, plus difficile à copier qu'une étiquette imprimée ;</li>
+<li>une <strong>image de modernité</strong> auprès des importateurs asiatiques (M. SALVERNAC), à ne pas surestimer.</li>
+</ol>
+<p><strong>Trois risques ou limites</strong> (0,5 pt avec les opportunités, parmi les suivants) :</p>
+<ol type="1">
+<li><strong>Le problème de l'oracle</strong> : la blockchain garantit que l'enregistrement n'a pas été modifié, non qu'il est vrai, ni que la bouteille est celle qui a été enregistrée (« si nos données de départ sont fausses, la blockchain les gardera fausses pour toujours ») ; la protection contre la copie tient à l'étiquette, non à la blockchain.</li>
+<li><strong>Un seul acteur écrit l'origine</strong> : l'union est la seule source des informations de départ ; selon la grille d'opportunité (plusieurs acteurs qui écrivent et ne se font pas confiance), une base centralisée tenue par l'union, propriétaire de la marque, suffit (F11 § 2.2).</li>
+<li><strong>Des données personnelles inscrites sur une blockchain publique</strong> : prénoms et villes des consommateurs ne pourraient plus être effacés, ce qui heurte la minimisation et l'effacement prévus par le RGPD (annexe 2.4).</li>
+<li><strong>Coût et proportionnalité</strong> : environ 2 000 bouteilles contrefaites signalées, soit environ 0,3 % des 600 000 bouteilles exportées, pour un projet de 930 k€ sur trois ans.</li>
+<li><strong>Dépendance</strong> envers une jeune entreprise qui choisit seule la blockchain et tient la place de marché ; avenir des jetons et de la vérification si elle disparaît.</li>
+<li><strong>Empreinte environnementale</strong> : la preuve d'enjeu consomme peu d'énergie, mais une puce électronique jetable sur 600 000 bouteilles par an produit des déchets électroniques, à rebours de la priorité du plan « ROCALDÈNE 2030 » sur l'empreinte environnementale.</li>
+</ol>
+<p><strong>Comparaison avec l'alternative</strong> (0,5 pt) : estimation de tête, sans actualisation :</p>
+<ul>
+<li>SCELLAVIN : 120 + 90 + 3 × (180 + 60) = 210 + 720 = <strong>930 k€</strong> sur trois ans, soit environ 310 k€ par an (environ 14 % du budget annuel du SI de 2 200 k€) ;</li>
+<li>alternative : 150 + 3 × (30 + 30) = 150 + 180 = <strong>330 k€</strong> sur trois ans, soit environ 110 k€ par an (environ 5 % du budget du SI) ; écart : 600 k€.</li>
+</ul>
+<p>L'alternative répond au besoin principal (prouver l'origine, lire le code avec un téléphone, signaler un code déjà lu ailleurs), garde les données et la maîtrise à l'union, n'inscrit aucune donnée personnelle dans un registre inaltérable et ne met pas de puce sur chaque bouteille. Ses limites : un code imprimé peut être <strong>copié</strong> sur une fausse bouteille (d'où la détection des lectures multiples, et éventuellement une capsule ou une étiquette inviolable), et les tiers doivent faire confiance au site de l'union, ce qui est acceptable puisque l'union est le producteur et le propriétaire de la marque.</p>
+<p><strong>Recommandation</strong> (0,5 pt) : retenir l'alternative centralisée, en pilote d'une campagne sur le marché de Hong Kong, complétée si besoin par un dispositif inviolable sur la capsule ; mesurer les lectures multiples et les retours des importateurs ; ne pas inscrire de données de consommateurs. Reconsidérer une blockchain, plutôt <strong>permissionnée et partagée avec les importateurs et distributeurs</strong>, seulement si plusieurs acteurs doivent écrire dans le registre sans se fier à l'union et si le coût se justifie. Refuser en tout état de cause la revente séparée des jetons.</p>
+<p><em>2.5 c) – Cadre réglementaire</em> (0,5 pt)</p>
+<p>D'après les repères de l'annexe 2.4, le règlement (UE) 2023/1114 « MiCA », applicable depuis le 30/12/2024, exclut de son champ les crypto-actifs <strong>uniques et non fongibles</strong> (article 2 § 3) : les jetons de SCELLAVIN y échappent <strong>à condition d'être réellement uniques et non fongibles</strong> : un jeton par bouteille, non interchangeable et non fractionné. La revente des jetons séparément des bouteilles ne relève pas de cette condition, mais elle détacherait la preuve d'authenticité de la bouteille et donnerait au projet un caractère spéculatif ; un avis spécialisé serait utile avant de l'envisager (remarque valorisée, non exigée). Le projet doit en revanche respecter le <strong>RGPD</strong> (applicable depuis le 25/05/2018) pour les prénoms et villes des consommateurs, comme pour les données des adhérents : finalités, minimisation, durée de conservation, effacement, ce qu'une inscription sur une blockchain publique rend impossible. ISO 22739:2024 n'est qu'une norme de vocabulaire : elle ne crée aucune exigence ni certification.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Projet situé seulement dans la traçabilité ou seulement dans la certification, si le rôle du jeton non fongible est expliqué.</li>
+<li>Recommandation de l'étiquette connectée sans blockchain, adossée au registre centralisé de l'union, si le coût et l'empreinte des puces sont discutés.</li>
+<li>Pilote limité du projet de SCELLAVIN sur une cuvée, si le candidat exige l'absence de données personnelles sur la chaîne, la réversibilité et l'abandon de la revente séparée.</li>
+<li>Coûts estimés par an plutôt que sur trois ans, si la comparaison reste juste.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Blockchain = base de données distribuée</em> (<code>ET-08</code>) — « la blockchain est une base partagée plus sûre » ; juste : registre de confiance entre acteurs qui ne se font pas confiance, au prix de la performance.</li>
+<li><em>Opportunités sans risques</em> (<code>ET-19</code>) — reprendre l'enthousiasme de M. SALVERNAC sans l'oracle, le coût ni le RGPD.</li>
+<li><em>Inaltérabilité = vérité</em> — croire que l'inscription prouve l'authenticité de la bouteille ; juste : la chaîne garantit l'intégrité de l'enregistrement, pas l'exactitude des données saisies.</li>
+<li><em>MiCA appliqué à tout jeton</em> (<code>ET-35</code>) — affirmer que les jetons de SCELLAVIN exigent un agrément ; juste : exclusion des crypto-actifs uniques et non fongibles, sous condition.</li>
+<li><em>Analyse juridique, fiscale ou comptable</em> (<code>JUR-T07</code>) — développements sur le statut juridique des jetons ou leur traitement dans les comptes ; juste : s'en tenir aux repères fournis.</li>
+<li><em>Énergie oubliée ou exagérée</em> — preuve d'enjeu confondue avec la preuve de travail ; juste : consommation modérée, mais déchets des puces à prendre en compte.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2023/1114 « MiCA », applicable depuis le 30/12/2024</td>
+<td>définition du crypto-actif, exclusion des crypto-actifs uniques et non fongibles (article 2 § 3) (repères de l'annexe 2.4)</td>
+<td><code>mica</code> / F11 § 3 ; <code>commun/fiches/sapin2_lcbft_mica.md</code> § 3.1</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD), applicable depuis le 25/05/2018</td>
+<td>minimisation, effacement, données des consommateurs</td>
+<td><code>rgpd</code> / F15</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO 22739:2024</td>
+<td>vocabulaire des chaînes de blocs et des registres distribués</td>
+<td><code>iso_22739_2024</code> / F11 § 3.4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Typologie des usages, grille d'opportunité, limites (oracle, énergie, gouvernance)</td>
+<td>analyse du projet</td>
+<td>F11 § 1 et 2</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-3--assurer-la-continuité-du-système-dinformation-pendant-les-vendanges-fiabiliser-les-apports-et-choisir-un-hébergement-responsable-13-points">DOSSIER 3 – ASSURER LA CONTINUITÉ DU SYSTÈME D'INFORMATION PENDANT LES VENDANGES, FIABILISER LES APPORTS ET CHOISIR UN HÉBERGEMENT RESPONSABLE (13 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1 Analyse d'impact de la campagne de vendanges</td>
+<td><code>4.1.c</code> Méthodes d'analyse d'impact sur les processus, la continuité de service et les états financiers (ici, les processus et la continuité)</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>3.2 Le dispositif de continuité et de reprise de la campagne 2027</td>
+<td><code>4.2.a</code> Définir et piloter une politique de sécurité du SI, en intégrant les enjeux de cybersécurité, de résilience organisationnelle et de gouvernance des systèmes critiques ; <code>4.2.d</code> Dispositifs de surveillance et de résilience : IAM, PCA/PRA ; <code>4.2.e</code> Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>3.3 Le module de détection des apports anormaux</td>
+<td><code>4.1.f</code> Apports potentiels de l'intelligence artificielle dans la détection et la prévention des risques</td>
+<td>1,5</td>
+</tr>
+<tr class="even">
+<td>3.4 L'audit du module des apports</td>
+<td><code>3.2.b</code> Méthodologies d'audit SI : cartographie des processus, évaluation des risques, contrôles internes ; <code>3.2.c</code> Critères de performance et de conformité : fiabilité, efficacité, sécurité, conformité RGPD, etc.</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>3.5 Le tableau de bord du système d'information de la campagne</td>
+<td><code>3.1.a</code> Mettre en œuvre des dispositifs de pilotage de la performance SI, en intégrant une analyse fine des coûts, des indicateurs et des leviers d'optimisation via des tableaux de bord ; <code>3.1.d</code> Construction et suivi de tableaux de bord SI (KPI, équilibrage performance / risques / coûts)</td>
+<td>1,5</td>
+</tr>
+<tr class="even">
+<td>3.6 Le choix d'un hébergement responsable</td>
+<td><code>4.3.a</code> Déployer une stratégie SI responsable en intégrant les principes de durabilité, de sobriété numérique et les exigences réglementaires en matière de RSE et de performance environnementale ; <code>4.3.e</code> Outils et indicateurs de mesure de l'impact environnemental des SI ; <code>4.3.f</code> Stratégies de transition numérique responsable (cloud éthique, datacenters verts, réduction de l'empreinte carbone)</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 3 – Assurer la continuité du système d'information pendant les vendanges, fiabiliser les apports et choisir un hébergement responsable</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (analyse d'impact, durée et perte de données maximales admissibles, PCA et PRA, familles de l'IA, audit du système d'information, tableau de bord équilibré, sobriété numérique et stratégie responsable) 2,5 points environ (items 3.1-1, 3.2 a-1, 3.3-1 pour moitié, 3.4 a pour moitié, 3.5-1 pour moitié, 3.6 a-1) ; analyse des annexes et recommandations 10,5 points, soit environ 80 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 58 minutes (le temps restant de l'épreuve, après 1 h 03 et 59 min pour les dossiers 1 et 2).</p>
+<hr />
+<h3 id="31--analyse-dimpact-de-la-campagne-de-vendanges-2-points">3.1 – Analyse d'impact de la campagne de vendanges (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.c</code> « Méthodes d'analyse d'impact sur les processus, la continuité de service et les états financiers ». L'énoncé exclut le volet des états financiers : seuls les processus et la continuité sont attendus. Limite : l'analyse de sécurité technique n'est pas attendue dans le détail.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.1 (applications et volumes, incident, fiches des adhérents et des parcelles, acteurs) et annexe 1.1 (calendrier des vendanges, organisation en caves).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Analyse d'impact sur l'activité définie (processus critiques, conséquences d'une interruption selon sa durée, priorités de reprise) ; durée maximale d'interruption admissible (DMIA, ou RTO) et perte de données maximale admissible (PDMA, ou RPO) définies sans inversion</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Réception et pesée : processus touchés, criticité maximale, DMIA très courte pour la réception (bascule en mode dégradé), PDMA nulle pour les pesées, justifiées par l'annexe 3.1</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Laboratoire et progiciel de l'union : processus, criticité, DMIA et PDMA justifiées (résultats attendus le lendemain à 8 h, échantillons conservés 48 heures ; commandes et pénalités, sauvegarde de nuit)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Variation de la criticité selon la période (caves et laboratoire en vendanges, progiciel en fin d'année) et conséquence pour le dispositif (calendrier des tests, des maintenances et des priorités de reprise)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>Définitions (item 1)</em></p>
+<p>L'<strong>analyse d'impact sur l'activité</strong> (BIA) identifie les processus critiques d'une organisation et mesure, pour chacun, les conséquences d'une interruption selon sa durée (opérationnelles, financières, d'image, relationnelles) ; elle en déduit les ressources du système d'information dont ils dépendent, leur ordre de reprise et deux objectifs : la <strong>durée maximale d'interruption admissible</strong> (DMIA, en anglais RTO), délai au-delà duquel l'interruption devient inacceptable, et la <strong>perte de données maximale admissible</strong> (PDMA, en anglais RPO), quantité de données, exprimée en durée, que l'on accepte de perdre depuis la dernière copie exploitable (F12 § 4). Elle fonde le plan de continuité et le plan de reprise (question 3.2) et constitue la première étape d'un système de management de la continuité au sens d'ISO 22301:2019 (annexe 3.4). L'incident de GRAUSSELLE montre qu'elle n'a jamais été faite : la dernière copie exploitable avait 78 jours, et personne ne savait qui décidait.</p>
+<p><em>Trois applications pendant la campagne (items 2 et 3)</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Application</th>
+<th>Processus de l'union ou des caves touchés</th>
+<th>Criticité en campagne</th>
+<th>DMIA proposée</th>
+<th>PDMA proposée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Logiciel de réception et de pesée (chaque cave)</td>
+<td>réception des apports (pesée, degré, bon remis au viticulteur), affectation de la vendange aux cuves, suivi des cuves, relevés et rémunération des adhérents par leur cave, confiance des adhérents</td>
+<td><strong>maximale</strong> : jusqu'à 900 apports par jour pour les neuf caves, 120 pour la seule cave de CAUSSELAC ; une remorque ne peut attendre longtemps au soleil ; une vendange versée ne peut plus être pesée</td>
+<td>pour le <strong>processus</strong> de réception : aucune interruption au-delà d'une heure environ, d'où une bascule en mode dégradé décidée dans les 30 minutes (l'attente habituelle est de 20 minutes, elle a atteint 3 heures) ; pour l'<strong>application</strong> : remise en service dans la journée, 24 heures au plus, car chaque heure en mode dégradé alourdit la ressaisie (385 bons ressaisis en deux jours, 25 erreurs)</td>
+<td><strong>nulle</strong> pour les pesées : aucune pesée ne peut être refaite ; chaque apport doit laisser une trace hors du serveur au moment même de la pesée (double du bon, copie continue des données) ; les fiches des adhérents et des parcelles tolèrent au plus une journée, et non les 78 jours écoulés depuis le 15 juin</td>
+</tr>
+<tr class="even">
+<td>Logiciel du laboratoire (union)</td>
+<td>analyse des moûts, conduite des fermentations et des cuves par les œnologues</td>
+<td><strong>forte</strong> : environ 22 000 analyses, jusqu'à 1 000 par jour ; résultats attendus le lendemain à 8 h</td>
+<td>environ <strong>12 heures</strong> : les analyses de la journée peuvent être reportées sur la nuit, pas au-delà du lendemain matin</td>
+<td>environ <strong>24 heures</strong> : les échantillons, conservés 48 heures au froid, permettent de refaire les analyses perdues, à condition de conserver leur rattachement au bon d'apport</td>
+</tr>
+<tr class="odd">
+<td>Progiciel de gestion de l'union</td>
+<td>commandes, conditionnement, expéditions, facturation</td>
+<td><strong>moyenne</strong> en septembre et octobre (environ 40 commandes par jour), <strong>forte</strong> en novembre et décembre (environ 80 commandes par jour, pénalités de retard des enseignes)</td>
+<td><strong>une journée ouvrée</strong> pendant les vendanges : les commandes reçues peuvent être saisies le lendemain ; <strong>quelques heures</strong> en fin d'année</td>
+<td><strong>24 heures</strong> : la sauvegarde de nuit suffit, les commandes de la journée pouvant être reconstituées à partir des messages reçus ; mais la copie est conservée dans la même salle (annexe 3.3), ce qui fait de cette PDMA une promesse fragile</td>
+</tr>
+</tbody>
+</table>
+<p><em>Variation de la criticité au cours de l'année (item 4)</em></p>
+<p>La criticité n'est pas une propriété fixe de l'application : elle dépend du calendrier des processus. Le logiciel de réception est vital de fin août à mi-octobre et presque secondaire le reste de l'année (suivi des cuves, relevés) ; le laboratoire suit le même rythme ; le progiciel de l'union est au contraire le plus critique en novembre et décembre, au pic des commandes de fin d'année. Conséquences : (1) les objectifs de reprise et les moyens de secours se fixent <strong>par période</strong> ; (2) les tests de restauration, l'exercice et les changements de version se placent <strong>avant</strong> la campagne (au printemps et en juillet), jamais pendant les vendanges, et la maintenance lourde du progiciel avant novembre ; (3) en cas de crise simultanée pendant les vendanges, la réception des caves passe avant le progiciel de l'union, alors que l'organisation actuelle (équipe informatique tournée vers le progiciel, caves sans informaticien) fait l'inverse. L'analyse est à revoir chaque année avec les directeurs de cave et la directrice de la production.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>DMIA et PDMA différentes de celles du tableau, si elles sont justifiées par les données de l'annexe 3.1 (une DMIA de quelques heures pour l'application de réception, à condition que le mode dégradé couvre le processus).</li>
+<li>Échelle de criticité annoncée par le candidat (faible, moyenne, forte, vitale) ou cotation de 1 à 4.</li>
+<li>Messagerie ou suivi des cuves analysés en plus des trois applications demandées.</li>
+<li>Vocabulaire RTO et RPO employé à la place de DMIA et PDMA.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>RTO et RPO inversés ou confondus</em> (<code>ET-03</code>, <code>JUR-S02</code>) — « la PDMA est le délai de reprise » ; juste : la DMIA mesure une durée d'arrêt, la PDMA l'âge de la dernière copie exploitable.</li>
+<li><em>Criticité unique pour toute l'année</em> (<code>JUR-T01</code>) — juste : la criticité suit le calendrier des vendanges et des ventes.</li>
+<li><em>Analyse d'impact récitée sans les chiffres de l'annexe</em> (<code>JUR-T08</code>, <code>ET-39</code>) — juste : 900 apports par jour, 3 heures d'attente, 385 bons ressaisis, 48 heures de conservation des échantillons.</li>
+<li><em>Dérive vers les états financiers ou la rémunération des adhérents</em> (périmètre de la question) — juste : processus et continuité seulement.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Analyse d'impact sur l'activité, DMIA (RTO), PDMA (RPO)</td>
+<td>définitions et application</td>
+<td>F12 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>ISO 22301:2019</td>
+<td>système de management de la continuité d'activité, analyse d'impact</td>
+<td><code>iso_22301_2019</code> ; F12 § 4</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="32--le-dispositif-de-continuité-et-de-reprise-de-la-campagne-2027-3-points">3.2 – Le dispositif de continuité et de reprise de la campagne 2027 (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.a</code> « Définir et piloter une politique de sécurité du SI, en intégrant les enjeux de cybersécurité, de résilience organisationnelle et de gouvernance des systèmes critiques » (ici, le pilotage par la direction) ; <code>4.2.d</code> « Dispositifs de surveillance et de résilience : IAM (Identity &amp; Access Management), PCA/PRA (plans de continuité et de reprise d'activité) » ; <code>4.2.e</code> « Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques ». Limites : la mise en œuvre technique n'est pas exigée ; le lien avec les normes se fait sans entrer dans les certifications.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.1 (incident, acteurs, pilotage), annexe 3.4 (ISO 22301, guide d'hygiène de l'ANSSI, EBIOS Risk Manager) et annexe 1.1 (organigramme, conseil de l'union, directeurs de cave).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>PCA (maintenir l'activité, au besoin en mode dégradé) et PRA (rétablir le système d'information et revenir à la normale) distingués et articulés, appuyés sur l'analyse d'impact</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Mode dégradé de la réception (documents numérotés en double, décision de bascule, affectation aux cuves, ressaisie contrôlée), relié à l'incident</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Règles de sauvegarde (fréquence en campagne, copie hors ligne et hors site) et tests de restauration avant la campagne, reliés à l'incident</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Exercice avant les vendanges : scénario, participants, date, mesures et retour d'expérience</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Rôles et responsabilités de l'union, des caves, du prestataire local et de l'éditeur, sans doublon ni vide (chaîne d'alerte, décision en crise)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Pilotage par la direction : instance, décisions (validation du dispositif, décision avant la campagne, décisions de crise), compte rendu au conseil</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.2 a) – PCA, PRA et dispositif de la réception</em></p>
+<p>Le <strong>plan de continuité d'activité</strong> (PCA) organise le <strong>maintien</strong> des activités critiques pendant une crise, au besoin en <strong>mode dégradé</strong> : pendant que le serveur d'une cave est indisponible, la réception des apports continue. Le <strong>plan de reprise d'activité</strong> (PRA) organise le <strong>rétablissement</strong> du système d'information et le <strong>retour à la normale</strong> : restaurer le serveur à partir d'une sauvegarde saine, ressaisir et contrôler les données, revenir au fonctionnement courant. Les deux découlent de l'analyse d'impact (question 3.1) : le PCA tient la DMIA du processus de réception (une heure), le PRA la DMIA de l'application (24 heures) et la PDMA (nulle pour les pesées). Un plan non testé n'offre aucune garantie (F12 § 4).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Élément du dispositif</th>
+<th>Contenu proposé pour la campagne 2027</th>
+<th>Enseignement de septembre 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Mode dégradé de la réception</strong> (a-2)</td>
+<td>dans chaque cave, un kit de réception prêt avant la campagne : carnets de bons pré-numérotés en double exemplaire (un pour le viticulteur), fiche de pesée et de degré à remplir, consignes d'affectation aux cuves affichées, fiche réflexe ; bascule décidée par le directeur de cave dans les 30 minutes ; saisonniers formés au mode dégradé ; ressaisie à deux (saisie et contrôle) dès le retour du logiciel, avec rapprochement des doubles et relevé envoyé à l'adhérent pour vérification</td>
+<td>feuilles volantes sans numérotation, 3 heures d'attente, 385 bons ressaisis et 25 erreurs relevées par les adhérents</td>
+</tr>
+<tr class="even">
+<td><strong>Sauvegardes et tests des restaurations</strong> (a-3)</td>
+<td>pendant la campagne, sauvegarde au moins quotidienne des données de chaque cave, et copie des pesées en fin de journée ; le double de chaque bon, imprimé et conservé par la cave, garantit qu'aucune pesée ne se perd entre deux copies (PDMA nulle) ; une copie <strong>déconnectée</strong> (hors ligne) et une copie <strong>hors du site</strong> de la cave (à l'union ou chez un hébergeur), conformément au guide d'hygiène de l'ANSSI (annexe 3.4) ; test de restauration complet de chaque cave avant fin juillet, puis vérification quotidienne de la sauvegarde pendant la campagne ; mises à jour des serveurs et des postes faites avant la campagne</td>
+<td>disque de sauvegarde branché en permanence et chiffré avec le serveur ; dernière copie du 15 juin ; aucune restauration jamais essayée ; trois autres caves dans la même situation</td>
+</tr>
+<tr class="odd">
+<td><strong>Exercice avant les vendanges</strong> (a-4)</td>
+<td>en juillet 2027, avant l'ouverture des quais fin août : scénario « serveur de la cave chiffré à 6 h 30 un jour de pointe » ; participants : directeur et chef de quai, saisonniers déjà recrutés, équipe informatique de l'union, prestataire, éditeur ; déroulé : alerte, bascule en mode dégradé chronométrée, restauration réelle sur un serveur de secours, ressaisie d'un lot de bons ; au moins une cave par éditeur, toutes les caves sur deux ans ; mesures : délai de bascule, délai de restauration, erreurs de ressaisie ; retour d'expérience écrit et mise à jour du plan</td>
+<td>aucune procédure écrite ; décision de payer ou non la rançon prise le lendemain ; union prévenue à 10 h ; assistance de l'éditeur fermée avant 9 h</td>
+</tr>
+</tbody>
+</table>
+<p>L'ensemble suit la logique d'amélioration continue d'ISO 22301:2019 (analyse d'impact, stratégie, plans, exercices, revue), sans viser une certification ; EBIOS Risk Manager peut éclairer les scénarios de menace impliquant les prestataires et les éditeurs.</p>
+<p><em>3.2 b) – Rôles, responsabilités et pilotage</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Acteur</th>
+<th>Rôles et responsabilités dans le dispositif (b-1)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Union</strong> (direction générale et responsable du système d'information)</td>
+<td>porte la politique de continuité commune, conduit l'analyse d'impact, fournit le modèle de PCA et de kit dégradé, organise la copie hors site des sauvegardes des caves et leur vérification quotidienne, assure une permanence informatique de 7 h à 21 h pendant les vendanges, tient le registre des incidents et le tableau de bord (question 3.5), coordonne la cellule de crise</td>
+</tr>
+<tr class="even">
+<td><strong>Caves</strong> (directeur, avec le président informé)</td>
+<td>appliquent le PCA local, tiennent le kit dégradé prêt, forment les saisonniers, déclenchent le mode dégradé, alertent l'union dans les 15 minutes, participent à l'exercice ; le directeur de cave reste responsable de la réception de sa cave</td>
+</tr>
+<tr class="odd">
+<td><strong>Prestataire informatique local</strong> (TRAMONTEL Informatique et les autres prestataires)</td>
+<td>met en place les sauvegardes et leur copie déconnectée, contrôle leur bon déroulement, restaure en cas d'incident avec un délai d'intervention garanti pendant les vendanges, tient un serveur de secours prêt ; rend compte à l'union, et pas seulement à la cave</td>
+</tr>
+<tr class="even">
+<td><strong>Éditeur du logiciel de cave</strong> (MOUSTERAL Logiciels et les trois autres)</td>
+<td>assistance étendue pendant les vendanges (dès 7 h, week-end compris), procédure documentée de réinstallation et de restauration de son logiciel, participation aux tests et à l'exercice, information sur les mises à jour à faire avant la campagne</td>
+</tr>
+</tbody>
+</table>
+<p>Le <strong>pilotage</strong> (b-2) relève de la direction de l'union, parce que la réception est un système critique pour toutes les caves et pour la troisième priorité du plan « ROCALDÈNE 2030 » :</p>
+<ul>
+<li><strong>instance</strong> : un comité de campagne présidé par Mme MAZERANDE (directrice de la production et de la qualité, directeur administratif et financier, responsable du système d'information, deux ou trois directeurs de cave), mensuel de mai à août, puis point quotidien pendant les vendanges à partir du tableau de bord ;</li>
+<li><strong>décisions</strong> : adopter la politique de continuité et les règles communes (sauvegardes, kit dégradé, chaîne d'alerte) ; décider fin juillet, au vu des tests et de l'exercice, si chaque cave est prête et, sinon, des mesures d'appoint ; arbitrer les moyens (permanence, serveur de secours) ; en crise, la cellule de crise décide selon des règles fixées à l'avance, dont la position de principe sur le paiement d'une rançon, arrêtée par le conseil de l'union et reprise par le conseil de chaque cave, ce qui évite le flottement de septembre 2026 ;</li>
+<li><strong>compte rendu</strong> : Mme MAZERANDE présente au conseil, à chaque réunion, l'état de préparation (caves testées, exercice réalisé), puis le bilan de la campagne (incidents, indicateurs), comme le prévoit le plan ; le conseil approuve la politique de continuité.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Site de secours ou poste de réception de secours fourni par l'union, version hors ligne du logiciel demandée à l'éditeur, impression autonome des tickets du pont-bascule : acceptés comme éléments du mode dégradé.</li>
+<li>Règle 3-2-1 des sauvegardes citée.</li>
+<li>Désignation d'un responsable de la continuité ou d'un responsable de la sécurité des systèmes d'information rattaché à la direction générale.</li>
+<li>Instance confiée au comité de direction élargi aux directeurs de cave.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>PCA et PRA confondus</em> (<code>ET-02</code>, <code>JUR-S02</code>) — « le PRA est le mode dégradé » ; juste : le PCA maintient l'activité, le PRA rétablit le système et ramène à la normale.</li>
+<li><em>Dispositif purement technique</em> (<code>JUR-T12</code>, <code>JUR-S06</code>) — paramétrage des sauvegardes ou des serveurs ; juste : organisation, rôles, décisions, tests.</li>
+<li><em>Plan non testé</em> (<code>JUR-S08</code>) — juste : exercice et restaurations réelles avant la campagne.</li>
+<li><em>Rôles flous ou sans les prestataires</em> (<code>JUR-T08</code>) — juste : prestataire et éditeur ont des engagements pendant les vendanges et rendent compte à l'union.</li>
+<li><em>Politique de sécurité complète ou gestion des identités développées</em> (périmètre de la question) — juste : continuité et reprise de la réception.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PCA, PRA, exercices, rôles</td>
+<td>définitions, gouvernance des systèmes critiques</td>
+<td>F12 § 1 et 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>ISO 22301:2019</td>
+<td>management de la continuité, exercices et tests</td>
+<td><code>iso_22301_2019</code> ; F12 § 4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique de l'ANSSI (2017)</td>
+<td>sauvegardes, copie hors ligne, restaurations testées</td>
+<td><code>guide_hygiene_anssi_2017</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>EBIOS Risk Manager, version 1.5</td>
+<td>scénarios impliquant prestataires et éditeurs (toléré)</td>
+<td><code>ebios_rm_1_5</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="33--le-module-de-détection-des-apports-anormaux-15-point">3.3 – Le module de détection des apports anormaux (1,5 point)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 : <code>4.1.f</code> « Apports potentiels de l'intelligence artificielle dans la détection et la prévention des risques ». Limites : l'IA s'analyse dans ses effets métiers ; le développement d'algorithmes d'apprentissage automatique n'est pas attendu.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.2 (constats, proposition et test du module) et annexe 3.1 (volumes, incident de GRAUSSELLE).</p>
+<p><strong>Barème indicatif (1,5 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Module situé dans l'apprentissage automatique (détection d'anomalies), distingué de l'IA générative ; deux apports pour la détection et la prévention, appliqués au cas</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Trois limites, sur les données d'apprentissage, les faux positifs et le contrôle humain, chacune appuyée sur l'annexe 3.2</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Recommandation motivée sur l'adoption pour 2027 et deux conditions au moins</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>Famille d'IA et apports (item 1)</em></p>
+<p>Le module relève de l'<strong>apprentissage automatique</strong> : il apprend, à partir des apports passés, un profil d'apport « normal » et attribue à chaque nouvel apport un signal d'écart (<strong>détection d'anomalies</strong>) ; il produit une alerte, non un contenu, et ne relève donc pas de l'<strong>IA générative</strong>, qui génère du texte ou des images (F13 § 1). Deux apports :</p>
+<ol type="1">
+<li><strong>Un examen exhaustif et immédiat</strong> : aujourd'hui, aucun des environ 20 000 apports n'est contrôlé après la pesée ; le module examine chaque apport au moment de la pesée, quand une erreur peut encore être corrigée avant que la vendange soit versée (nouvelle mesure du degré, vérification de l'adhérent ou de la parcelle).</li>
+<li><strong>Un ciblage des contrôles humains et un effet dissuasif</strong> : le test a fait apparaître, à GRAUSSELLE, 20 erreurs ou anomalies réelles que personne n'avait vues ; savoir que les écarts sont repérés décourage les manipulations.</li>
+</ol>
+<p><em>Trois limites (item 2)</em></p>
+<ul>
+<li><strong>Données d'apprentissage</strong> : le module a appris sur trois caves seulement, sur trois vendanges (2023 à 2025), avec un seul logiciel ; les six autres caves ont d'autres logiciels et d'autres pratiques ; il ignore les situations nouvelles (pluies de la mi-septembre 2026, première récolte d'un cépage planté en 2023) ; surtout, il apprend sur des données dont la fiabilité est en cause (600 bons modifiés après la pesée sans trace, bons ressaisis après l'incident) : il risque d'apprendre comme « normal » ce qui est anormal. Le chiffre de « 9 apports anormaux sur 10 » n'est pas vérifié sur les données de l'union.</li>
+<li><strong>Faux positifs</strong> : sur 300 apports signalés, 20 seulement étaient de vraies anomalies, soit environ 7 % ; à l'échelle des neuf caves, un taux de 15 % représenterait environ 3 000 alertes par campagne, jusqu'à 135 par jour de pointe (15 % de 900 apports), qu'aucune équipe ne peut examiner pendant les vendanges : les alertes seraient ignorées, ou bien elles retarderaient la réception.</li>
+<li><strong>Contrôle humain</strong> : le blocage automatique de tout bon signalé arrêterait la réception, ce qui recrée le problème de continuité de la question 3.1, et retirerait la décision à un humain ; personne n'est désigné pour examiner les alertes ni pour en répondre auprès des adhérents, qui voudront comprendre pourquoi leur apport est bloqué ; enfin, le module ne voit que la valeur finale du degré : les six bons modifiés à la main n'ont pas été signalés. Il ne remplace donc pas les contrôles de base (accès nominatifs, séparation des tâches, journal des modifications : question 3.4).</li>
+</ul>
+<p><em>Recommandation (item 3)</em></p>
+<p>Ne pas déployer le module dans les neuf caves pour la campagne 2027, ni avec le blocage automatique. Priorité aux contrôles de base, dont l'audit de juin 2027 dira l'état. Un pilote est possible en 2027 dans les trois caves équipées par MOUSTERAL Logiciels, à quatre conditions : (1) <strong>alerte sans blocage</strong>, examinée par une personne désignée (œnologue ou directrice de la production), dont la décision est tracée ; (2) <strong>mesure</strong> du taux de vraies anomalies parmi les signalements, avec un seuil d'alerte réglé pour rester examinable ; (3) <strong>apprentissage</strong> sur des données fiabilisées et représentatives des neuf caves avant toute généralisation ; (4) <strong>explication</strong> aux adhérents de ce que fait le module. Le coût affiché (20 k€ puis 15 k€ par an) est modeste, mais le temps d'examen des alertes est un coût caché à prévoir.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Apprentissage supervisé ou non supervisé évoqué sans erreur, sans développement.</li>
+<li>Adoption immédiate recommandée, si elle est assortie de l'absence de blocage, d'un examen humain désigné et de la mise en place préalable des contrôles de base.</li>
+<li>Autres apports : repérage des tares de remorques anciennes, des parcelles ou des adhérents incohérents.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>IA générative confondue avec l'apprentissage automatique</em> (<code>ET-09</code>) — juste : le module classe et signale, il ne génère pas de contenu.</li>
+<li><em>Opportunités sans limites</em> (<code>ET-19</code>, <code>JUR-T03</code>) — reprendre la plaquette (« 9 sur 10 ») ; juste : le test montre environ 7 % de vraies anomalies parmi les signalements.</li>
+<li><em>Fonctionnement interne du modèle décrit</em> (hors programme) — juste : effets métiers, données, supervision.</li>
+<li><em>IA présentée comme un substitut aux contrôles</em> (<code>JUR-T11</code>) — juste : elle complète les accès nominatifs, la séparation des tâches et la journalisation.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie de l'IA, apprentissage automatique, IA générative</td>
+<td>familles, distinction</td>
+<td>F13 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Risques de l'IA (biais, données, dépendance), supervision humaine</td>
+<td>limites et conditions</td>
+<td>F13 § 3 et 4</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="34--laudit-du-module-des-apports-2-points">3.4 – L'audit du module des apports (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.2 – Auditer, contrôler et évaluer la performance et la conformité des systèmes d'information : <code>3.2.b</code> « Méthodologies d'audit SI : cartographie des processus, évaluation des risques, contrôles internes » ; <code>3.2.c</code> « Critères de performance et de conformité : fiabilité, efficacité, sécurité, conformité RGPD, etc. ». Limites : l'exécution de tests techniques détaillés n'est pas attendue ; la conformité financière et comptable n'est pas traitée.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.2 (constats, demande de la directrice générale), annexe 3.1 (éditeurs, acteurs), annexe 3.4 (ISO/IEC 27001:2022 et 27002:2022) et annexe 1.1 (neuf caves, organigramme).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a</td>
+<td>Audit du système d'information défini (examen indépendant et méthodique, au regard d'un référentiel, recommandations) ; quatre étapes appliquées au cas, de la cartographie du processus à la restitution</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b</td>
+<td>Trois risques tirés de l'annexe 3.2, chacun avec le contrôle attendu et la manière d'en vérifier le fonctionnement ; 0,5 dès deux risques complets</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>c</td>
+<td>Trois critères de performance et de conformité, chacun illustré par un point de contrôle du module des apports</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.4 a) – Définition et démarche</em></p>
+<p>L'<strong>audit du système d'information</strong> est un examen indépendant et méthodique qui apprécie, au regard d'un référentiel (normes, règles internes, engagements), la performance, la sécurité, la fiabilité et la conformité d'un système ou d'un processus, et formule des recommandations (F10 § 1.1). Ici, il porte sur un processus applicatif, de la pesée au relevé adressé à l'adhérent, dans les neuf caves.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Objet dans le cas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Cadrage et prise de connaissance</td>
+<td>objectifs fixés par Mme MAZERANDE (confiance des adhérents et du conseil dans les chiffres des apports) ; périmètre : le module des apports des quatre logiciels dans les neuf caves ; référentiel : mesures d'ISO/IEC 27001:2022 sur les droits d'accès, la journalisation et la séparation des tâches, détaillées par le guide ISO/IEC 27002:2022, et règles de réception de l'union ; calendrier : conclusions en juin 2027 ; interlocuteurs : directrice de la production, directeurs de cave, éditeurs</td>
+</tr>
+<tr class="even">
+<td>2. Cartographie du processus de réception</td>
+<td>étapes (identification de l'adhérent et de la parcelle, pesée, déduction du poids à vide de la remorque, mesure du degré, impression du bon, affectation à la cuve, modifications éventuelles, relevé adressé à l'adhérent), acteurs (agent de réception, chef de quai, directeur), logiciel et paramètres de chaque cave, points où une donnée peut être créée ou modifiée</td>
+</tr>
+<tr class="odd">
+<td>3. Évaluation des risques et des contrôles</td>
+<td>cotation des risques de chaque étape, puis vérification des contrôles attendus (sous-question b) dans un échantillon de caves couvrant les quatre logiciels, puis dans les neuf caves pour les points les plus graves</td>
+</tr>
+<tr class="even">
+<td>4. Restitution et suivi</td>
+<td>constats validés avec les directeurs de cave, recommandations priorisées à appliquer avant l'ouverture des quais fin août, plan d'action (responsable, échéance), éléments utiles à la décision sur le module de MOUSTERAL Logiciels</td>
+</tr>
+</tbody>
+</table>
+<p><em>3.4 b) – Risques, contrôles attendus et vérification</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Risque du processus de réception (annexe 3.2)</th>
+<th>Contrôle attendu</th>
+<th>Vérification par l'auditeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Actions non imputables</strong> : compte unique « PESÉE » partagé par les agents et les saisonniers dans six caves, mot de passe affiché</td>
+<td><strong>accès nominatifs</strong> : un compte par personne, saisonniers compris, ouvert à l'embauche et fermé en fin de campagne, mot de passe personnel ou badge</td>
+<td>rapprochement de la liste des comptes de chaque logiciel avec la liste du personnel et des saisonniers de 2026 ; observation du poste de pesée ; contrôle que chaque connexion de la campagne est rattachée à une personne</td>
+</tr>
+<tr class="even">
+<td><strong>Cumul de fonctions incompatibles</strong> : le chef de quai crée l'adhérent ou la parcelle, pèse et modifie le bon ; trois directeurs modifient eux-mêmes les paramètres, dont le poids à vide des remorques</td>
+<td><strong>séparation des tâches</strong> : la création des adhérents, des parcelles et des poids à vide, la pesée, et la correction d'un bon validé relèvent de personnes différentes ; toute correction est validée par une seconde personne</td>
+<td>extraction de la matrice des droits de chaque logiciel et repérage des conflits (cible : aucun) ; revue des changements de paramètres de 2026 et de leur autorisation</td>
+</tr>
+<tr class="odd">
+<td><strong>Modification non tracée du degré ou du poids après la pesée</strong> : environ 600 bons modifiés après leur impression, sans motif ni valeur d'origine conservée ; écarts de plus de 0,5 % vol. constatés sur des bons papier ; journal absent ou désactivé dans huit caves</td>
+<td><strong>journalisation des modifications</strong> : un bon validé ne se modifie qu'avec un motif ; le journal enregistre l'auteur, la date, l'ancienne et la nouvelle valeur ; il est revu chaque semaine pendant la campagne par la direction de la production</td>
+<td>vérification, cave par cave, que le journal existe et est activé (VALCROZIÈRES) ; rapprochement d'un échantillon de doubles de bons conservés par les viticulteurs avec les données du logiciel et les relevés ; examen des modifications de 2026 et de leurs motifs</td>
+</tr>
+</tbody>
+</table>
+<p><em>3.4 c) – Critères de performance et de conformité</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Point de contrôle propre au module des apports</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Fiabilité</strong> (exactitude, exhaustivité, intégrité des données)</td>
+<td>numérotation continue des bons sans rupture ; concordance entre le bon remis, la base et le relevé de l'adhérent ; poids à vide des remorques à jour</td>
+</tr>
+<tr class="even">
+<td><strong>Sécurité</strong> (accès, traçabilité)</td>
+<td>comptes nominatifs, droits revus avant chaque campagne, journal des modifications actif dans les neuf caves</td>
+</tr>
+<tr class="odd">
+<td><strong>Conformité</strong> (aux règles de réception de l'union et des caves, au référentiel retenu)</td>
+<td>procédure de correction d'un bon écrite et appliquée ; mesures d'ISO/IEC 27001:2022 retenues effectivement en place</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Démarche en cinq ou six étapes, si les quatre éléments demandés y figurent.</li>
+<li>Démarche cartographie – évaluation des risques – évaluation des contrôles – restitution, le cadrage (objectifs, périmètre, référentiel, calendrier) étant intégré à la première étape.</li>
+<li>Quatrième risque : absence de contrôle a posteriori (rapprochement des bons et des relevés) ; contrôle de cohérence à la saisie (degré hors des valeurs plausibles).</li>
+<li>Critère d'<strong>efficacité</strong> (durée moyenne d'une pesée, disponibilité du module) à la place de l'un des trois.</li>
+<li>Conformité au RGPD pour les données des adhérents, personnes physiques, citée sans développement.</li>
+<li>COSO cité comme cadre du contrôle interne, sans développement.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Méthodologie incomplète ou générique</em> (<code>JUR-A01</code>) — étapes sans objet propre au cas ; juste : périmètre, référentiel, cartographie, restitution datée.</li>
+<li><em>Audit du SI confondu avec l'audit légal des comptes</em> (<code>ET-34</code>) — juste : l'audit porte sur un processus applicatif et ses contrôles.</li>
+<li><em>Contrôle cité sans moyen de le vérifier</em> (<code>JUR-T03</code>) — juste : extraction des droits, rapprochement d'échantillons, examen du journal.</li>
+<li><em>Tests techniques de sécurité proposés comme diligence</em> (hors programme) — juste : revue des droits, des journaux et des paramètres.</li>
+<li><em>Norme et référentiel confondus</em> (<code>ET-01</code>, <code>JUR-S06</code>) — juste : ISO/IEC 27001:2022 est une norme d'exigences, ISO/IEC 27002:2022 un guide de mesures.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Audit du SI, démarche, critères</td>
+<td>définition, étapes, critères</td>
+<td>F10 § 1.1 et 1.2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Séparation des tâches, piste d'audit</td>
+<td>contrôles attendus</td>
+<td>F10 § 3.1 et 3.2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>ISO/IEC 27001:2022 ; ISO/IEC 27002:2022</td>
+<td>référentiel de l'audit : droits d'accès, journalisation, séparation des tâches</td>
+<td><code>iso_27001_2022</code>, <code>iso_27002_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>RGPD</td>
+<td>données des adhérents (toléré)</td>
+<td><code>rgpd</code> ; F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="35--le-tableau-de-bord-du-système-dinformation-de-la-campagne-15-point">3.5 – Le tableau de bord du système d'information de la campagne (1,5 point)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.1 – Concevoir, construire et exploiter des outils de pilotage de la performance : <code>3.1.a</code> « Mettre en œuvre des dispositifs de pilotage de la performance SI, en intégrant une analyse fine des coûts, des indicateurs et des leviers d'optimisation via des tableaux de bord » ; <code>3.1.d</code> « Construction et suivi de tableaux de bord SI (KPI, équilibrage performance / risques / coûts) ». Limites : les méthodes classiques de suivi des budgets ne sont pas approfondies ; recul critique sur les indicateurs.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.1 (incidents, coûts de la campagne 2026, demande de la directrice générale), annexe 1.1 (vendange de 380 milliers d'hectolitres, organigramme).</p>
+<p><strong>Barème indicatif (1,5 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Principe d'un tableau de bord équilibré du SI (peu d'indicateurs reliés aux objectifs, équilibre performance, risques et coûts, cibles et seuils d'alerte) ; destinataires et fréquence adaptés à la campagne</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Trois indicateurs (performance, risque, coût), chacun avec formule, source, fréquence, cible et axe, justifiés par l'annexe 3.1 ; 0,5 dès deux indicateurs complets</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>Principe, destinataires et fréquence (item 1)</em></p>
+<p>Un tableau de bord du système d'information réunit un petit nombre d'indicateurs reliés aux objectifs, chacun assorti d'une cible et d'un seuil d'alerte, pour décider et non pour décrire ; inspiré du tableau de bord prospectif adapté aux SI (Van Grembergen, F09 § 4.1), il <strong>équilibre</strong> la <strong>performance</strong> (le service rendu aux caves et aux adhérents), les <strong>risques</strong> (ce qui pourrait arrêter la réception) et les <strong>coûts</strong> (ce que coûte ce service), pour éviter qu'un indicateur ne s'améliore au détriment des autres (réduire le soutien informatique au prix d'une campagne plus exposée, par exemple). Pour la campagne : <strong>destinataires</strong> : Mme MAZERANDE et le comité de campagne (la « page quotidienne » demandée), chaque directeur de cave pour sa cave, le conseil pour le bilan ; <strong>fréquence</strong> : quotidienne pendant les vendanges, avec une synthèse hebdomadaire et un bilan en fin de campagne ; établi par le responsable du système d'information à partir du registre des incidents, qui n'existe pas aujourd'hui.</p>
+<p><em>Trois indicateurs (item 2)</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Performance</strong> : taux de disponibilité de la réception informatisée</td>
+<td>(heures d'ouverture des quais − heures d'interruption de la réception informatisée) / heures d'ouverture des quais, par cave et pour l'union</td>
+<td>registre des incidents de campagne tenu par l'équipe informatique de l'union, horaires d'ouverture des quais</td>
+<td>quotidienne pendant la campagne</td>
+<td>au moins 99,5 % par cave, soit environ 3 heures d'arrêt au plus sur les 630 heures d'ouverture, et aucune interruption de plus de 30 minutes sans bascule en mode dégradé (4 interruptions de plus d'une heure en 2026)</td>
+<td>processus</td>
+</tr>
+<tr class="even">
+<td><strong>Risque</strong> : part des caves dont la sauvegarde de la veille est vérifiée et copiée hors ligne</td>
+<td>nombre de caves dont la sauvegarde de la nuit a été vérifiée et dont une copie est conservée hors ligne et hors site / 9</td>
+<td>rapports quotidiens des prestataires des caves, vérifiés par l'équipe informatique de l'union</td>
+<td>quotidienne pendant la campagne</td>
+<td>100 % chaque jour (en 2026, l'état des sauvegardes des caves était inconnu de l'union)</td>
+<td>processus</td>
+</tr>
+<tr class="odd">
+<td><strong>Coût</strong> : coût du soutien informatique de la campagne par millier d'hectolitres reçus</td>
+<td>(factures des prestataires des caves et des éditeurs liées à la campagne + heures supplémentaires de l'équipe informatique) / volume reçu en milliers d'hectolitres</td>
+<td>comptabilité de l'union et des caves (factures, paie), logiciels de cave (volumes reçus)</td>
+<td>hebdomadaire pendant la campagne, bilan à la clôture de la campagne</td>
+<td>200 € au plus par millier d'hectolitres en 2027, contre environ 250 € en 2026 (95 k€ pour 380 milliers d'hectolitres)</td>
+<td>financier</td>
+</tr>
+</tbody>
+</table>
+<p>Lecture critique : la cible de coût ne doit pas conduire à réduire la permanence ou les tests, qui protègent la disponibilité ; à l'inverse, un taux de disponibilité élevé sans sauvegarde vérifiée masquerait le risque, d'où l'équilibre des trois indicateurs.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres indicateurs complets et justifiés : délai moyen d'attente des remorques (axe client, cible 20 minutes au plus), délai de bascule en mode dégradé, nombre d'incidents interrompant la réception plus d'une heure (cible 0 contre 4), part des bons corrigés après la pesée avec motif (lien avec la question 3.4), coût de l'incident évité.</li>
+<li>Axe « risques » proposé en plus des axes du tableau de bord prospectif, s'il est justifié.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Indicateurs génériques ou incomplets</em> (<code>ET-18</code>, <code>JUR-A02</code>) — juste : formule, source, fréquence, cible et axe, reliés à l'annexe 3.1.</li>
+<li><em>Tableau de bord limité à la technique</em> (<code>ET-18</code>) — juste : performance pour les caves, risques et coûts.</li>
+<li><em>Calcul ou décomposition d'écarts budgétaires</em> (hors programme) — juste : un indicateur de coût lu par rapport à une cible.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tableau de bord du SI, indicateurs à cinq champs</td>
+<td>structure, axes</td>
+<td>F09 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>IT Balanced Scorecard (Van Grembergen)</td>
+<td>tableau de bord prospectif adapté aux SI</td>
+<td><code>van_grembergen_it_bsc</code> ; F09 § 4.1</td>
+<td>publié</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="36--le-choix-dun-hébergement-responsable-3-points">3.6 – Le choix d'un hébergement responsable (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.3 – Intégrer les enjeux de durabilité et de sobriété numérique dans le management des SI : <code>4.3.a</code> « Déployer une stratégie SI responsable en intégrant les principes de durabilité, de sobriété numérique et les exigences réglementaires en matière de RSE et de performance environnementale » ; <code>4.3.e</code> « Outils et indicateurs de mesure de l'impact environnemental des SI » ; <code>4.3.f</code> « Stratégies de transition numérique responsable (cloud éthique, datacenters verts, réduction de l'empreinte carbone) ». Limites : normes environnementales techniques mobilisées à titre illustratif ; durabilité intégrée à la gouvernance globale du SI.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.3 (salle, options, positions), annexe 3.4 (loi REEN, RGESN, champ de la CSRD donné), annexe 3.1 (continuité) et annexe 1.1 (plan « ROCALDÈNE 2030 », budget du SI).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Sobriété numérique définie (questionner le besoin avant l'efficacité, distincte de l'économie d'énergie) ; stratégie responsable du SI précisée (durabilité intégrée aux choix et à la gouvernance, trajectoire mesurée) et appliquée au cas</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Quatre critères d'impact environnemental, chacun avec un indicateur et sa limite</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Comparaison des trois options sur les critères, le coût sur trois ans (480, 390 et 550 k€) et la continuité</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Lecture critique des données des prestataires (PUE estimé, mesuré ou mondial ; neutralité par compensation ; capacités facturées à l'usage et effet rebond)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Option recommandée et justifiée ; deux conditions de réussite</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c</td>
+<td>Deux indicateurs complets (formule, source, fréquence, cible, axe)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.6 a) – Sobriété, stratégie responsable et critères</em></p>
+<p>La <strong>sobriété numérique</strong> consiste à interroger le besoin avant de chercher l'efficacité : ne garder que les équipements, les capacités et les données utiles, au juste niveau ; elle ne se réduit pas à économiser l'énergie, qui relève de l'efficacité (Green IT) (F14 § 3). Une <strong>stratégie responsable du système d'information</strong> intègre la durabilité environnementale et sociale dans les choix du SI (achats, hébergement, durée de vie, usages) et dans sa gouvernance, avec une trajectoire, des indicateurs et des arbitrages entre valeur et empreinte, au lieu d'en faire un ajout marginal (F14 § 0). Dans le cas, elle sert la troisième priorité du plan « ROCALDÈNE 2030 », dont Mme MAZERANDE doit pouvoir montrer au conseil « des progrès mesurés, pas des promesses » ; elle commence par un geste de sobriété commun aux options A et B : retirer les 12 serveurs anciens et regrouper les applications sur les 8 serveurs récents, puisque la plupart des serveurs sont utilisés à moins de 20 % de leurs capacités. La loi REEN (annexe 3.4) vise d'ailleurs des centres de données moins énergivores et l'allongement de la durée de vie des équipements.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critère (a-2)</th>
+<th>Indicateur de mesure</th>
+<th>Limite de l'indicateur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Efficacité énergétique de l'hébergement</td>
+<td><strong>PUE</strong> = énergie totale / énergie des équipements informatiques (2,0 aujourd'hui)</td>
+<td>ne dit rien de l'utilité des serveurs, de l'origine de l'électricité ni de la fabrication ; sa valeur dépend du mode de mesure (estimée, mesurée sur un site, moyenne mondiale)</td>
+</tr>
+<tr class="even">
+<td>Consommation d'énergie</td>
+<td><strong>MWh par an</strong> consommés pour héberger les applications de l'union (130 MWh en 2026)</td>
+<td>dépend du périmètre ; non communiquée dans un cloud mutualisé ; ne dit rien des émissions</td>
+</tr>
+<tr class="odd">
+<td>Contenu carbone de l'électricité</td>
+<td>part d'électricité renouvelable attestée (garanties d'origine), émissions par kWh du lieu d'implantation</td>
+<td>les garanties d'origine attestent une production, pas une consommation heure par heure ; la « neutralité » par compensation ne réduit pas les émissions</td>
+</tr>
+<tr class="even">
+<td>Cycle de vie des équipements</td>
+<td>nombre de serveurs retirés, réemployés ou recyclés, durée de vie moyenne à leur retrait, serveurs achetés</td>
+<td>la fabrication des équipements du fournisseur (cloud) n'est pas visible ; une mesure complète supposerait une analyse du cycle de vie</td>
+</tr>
+</tbody>
+</table>
+<p>Autres critères acceptés : réutilisation de la chaleur (part de la chaleur récupérée), consommation d'eau du refroidissement.</p>
+<p><em>3.6 b) – Comparaison et recommandation</em></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Option A – rénover la salle</th>
+<th>Option B – centre de données régional</th>
+<th>Option C – cloud public</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Efficacité énergétique</td>
+<td>PUE 1,5, estimé</td>
+<td>PUE 1,3, <strong>mesuré et publié</strong></td>
+<td>PUE 1,2, <strong>moyenne mondiale</strong>, rien pour le site</td>
+</tr>
+<tr class="even">
+<td>Consommation</td>
+<td>environ 45 MWh</td>
+<td>environ 39 MWh, soit environ 70 % de moins qu'en 2026</td>
+<td>non communiquée</td>
+</tr>
+<tr class="odd">
+<td>Électricité</td>
+<td>réseau national</td>
+<td>renouvelable régionale, garanties d'origine</td>
+<td>« neutralité » par certificats et compensation ; mix du pays plus carboné que celui de la France</td>
+</tr>
+<tr class="even">
+<td>Chaleur</td>
+<td>perdue</td>
+<td>récupérée (piscine intercommunale)</td>
+<td>non communiquée</td>
+</tr>
+<tr class="odd">
+<td>Équipements</td>
+<td>8 serveurs conservés, 12 retirés ; climatiseurs et onduleurs neufs</td>
+<td>8 serveurs conservés, 12 retirés</td>
+<td>serveurs retirés à mesure du transfert, sauf ceux du progiciel, qui restent dans la salle actuelle ; capacités du fournisseur</td>
+</tr>
+<tr class="even">
+<td>Coût sur trois ans</td>
+<td>300 + 3 × 60 = <strong>480 k€</strong></td>
+<td>150 + 3 × 80 = <strong>390 k€</strong></td>
+<td>250 + 3 × 100 = <strong>550 k€</strong>, variable, et la salle de Pézenas reste nécessaire pour le progiciel jusqu'à son remplacement</td>
+</tr>
+<tr class="odd">
+<td>Continuité</td>
+<td>salle toujours exposée aux canicules ; pas de second site</td>
+<td>second site distinct de Pézenas, personnel jour et nuit, copies des sauvegardes de l'union et des caves possibles ; dépend des deux liaisons réseau</td>
+<td>infrastructure résiliente, mais dépendance au réseau et au fournisseur ; progiciel toujours à Pézenas</td>
+</tr>
+</tbody>
+</table>
+<p>Lecture critique (b-2) : les données ne se valent pas. Le PUE de A est une estimation, celui de B une mesure publiée, celui de C une moyenne mondiale qui ne dit rien du centre qui hébergerait les données ; la « neutralité carbone » de C repose sur la compensation et non sur une réduction, alors que l'électricité du pays d'implantation est plus carbonée ; la facturation à l'usage et l'ajout de capacités « en quelques minutes » exposent à un <strong>effet rebond</strong> contraire à la sobriété. L'argument de M. VERDAGNOL (« on ne paie que ce qu'on consomme ») ne tient pas ici : l'option C est la plus chère sur trois ans, son coût est variable, et elle laisse le progiciel à Pézenas.</p>
+<p>Recommandation (b-3) : l'<strong>option B</strong>. Elle combine la meilleure performance environnementale vérifiable (PUE mesuré de 1,3, électricité renouvelable attestée, chaleur réutilisée, consommation divisée par plus de trois), le coût le plus bas sur trois ans (390 k€, soit environ 130 k€ par an, à rapprocher d'un budget du SI de 2 200 k€) et un apport décisif à la continuité : un second site pour les sauvegardes de l'union et des caves (question 3.2), et la fin de l'exposition aux canicules. Conditions de réussite (deux attendues) :</p>
+<ol type="1">
+<li><strong>Sobriété d'abord</strong> : retirer les 12 serveurs anciens et regrouper les applications <strong>avant</strong> le transfert, faire réemployer ou recycler les serveurs retirés de manière tracée, et allonger la durée de vie des 8 serveurs récents.</li>
+<li><strong>Données environnementales vérifiables</strong> : obtenir de LIMBRÈZE Data un relevé régulier du PUE, de la consommation des équipements de l'union et des garanties d'origine, pour alimenter les indicateurs (sous-question c) et le compte rendu au conseil.</li>
+<li><strong>Continuité</strong> : deux liaisons effectivement indépendantes, mode dégradé maintenu à Pézenas et dans les caves, et restauration testée depuis le second site.</li>
+<li><strong>Réversibilité</strong> : ne pas s'enfermer, et réexaminer l'hébergement avec les mêmes critères lors du choix du futur progiciel de l'union.</li>
+</ol>
+<p>L'option A reste défendable si la dépendance au réseau est jugée inacceptable ; l'option C pourrait être reconsidérée après le remplacement du progiciel, si le fournisseur communique des données propres au site.</p>
+<p><em>3.6 c) – Deux indicateurs de suivi</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Indicateur d'efficacité énergétique (PUE) de l'hébergement des serveurs de l'union</td>
+<td>énergie totale consommée par l'hébergement / énergie consommée par les équipements informatiques de l'union</td>
+<td>relevés du centre de données LIMBRÈZE Data, transmis chaque trimestre</td>
+<td>trimestrielle</td>
+<td>1,3 au plus dès 2028, contre environ 2,0 en 2026</td>
+<td>environnement</td>
+</tr>
+<tr class="even">
+<td>Consommation d'électricité annuelle de l'hébergement des serveurs de l'union</td>
+<td>somme des relevés mensuels de consommation de l'hébergement (équipements et part du bâtiment), en MWh</td>
+<td>relevés mensuels du centre de données ; inventaire des serveurs de l'équipe informatique</td>
+<td>annuelle, à partir des relevés mensuels</td>
+<td>40 MWh au plus en 2028, contre 130 MWh en 2026</td>
+<td>environnement</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt pour les deux indicateurs complets.) Le PUE seul pourrait s'améliorer alors que la consommation augmente : les deux indicateurs se lisent ensemble.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Option A recommandée si le candidat la justifie par la maîtrise et l'absence de dépendance au réseau, en reconnaissant son PUE et son exposition aux canicules ; option C recommandée seulement avec des exigences de données propres au site et une réponse au cas du progiciel.</li>
+<li>Autres indicateurs complets : part d'électricité renouvelable attestée (cible 100 %), part des serveurs retirés réemployés ou recyclés de manière tracée (cible 100 %), durée de vie moyenne des serveurs à leur retrait, part de la chaleur réutilisée.</li>
+<li>Mention de l'étude ADEME-Arcep pour rappeler le poids de la fabrication des équipements, sans calcul.</li>
+<li>Mention de la CSRD pour dire seulement que l'union n'y est pas soumise (donnée de l'annexe 3.4).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Sobriété confondue avec l'économie d'énergie</em> (<code>ET-12</code>) — juste : d'abord réduire le nombre de serveurs et les capacités, puis chercher l'efficacité.</li>
+<li><em>Empreinte réduite à l'électricité ou au PUE</em> (<code>ET-38</code>) — juste : origine de l'électricité, fabrication et durée de vie, chaleur.</li>
+<li><em>Données des prestataires prises pour argent comptant</em> (<code>JUR-T03</code>) — juste : distinguer estimation, mesure et moyenne mondiale, compensation et réduction.</li>
+<li><em>Cloud présenté comme toujours plus vert ou moins cher</em> (<code>ET-30</code>, <code>JUR-G11</code>) — juste : il déplace l'empreinte, peut favoriser l'effet rebond, et coûte ici le plus cher.</li>
+<li><em>Calcul d'empreinte ou discussion du champ de la CSRD</em> (<code>ET-41</code>) — juste : ni calcul ni assujettissement, qui est une donnée.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sobriété numérique, Green IT, stratégie responsable, PUE, cloud et centres de données</td>
+<td>définitions, critères, indicateurs</td>
+<td>F14 § 0, 3, 4 et 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Loi REEN n° 2021-1485</td>
+<td>centres de données moins énergivores, durée de vie des équipements</td>
+<td><code>loi_reen</code> ; F14 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>RGESN, version 2024</td>
+<td>famille de critères sur l'hébergement</td>
+<td><code>rgesn_2024</code> ; F14 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Étude ADEME-Arcep sur l'empreinte du numérique</td>
+<td>poids de la fabrication (toléré)</td>
+<td><code>etude_ademe_arcep_numerique</code> ; F14 § 1</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Directive (UE) 2022/2464 (CSRD)</td>
+<td>union hors champ (donnée)</td>
+<td><code>csrd</code> ; fiche commune</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Directive (UE) 2022/2555 (NIS 2)</td>
+<td>union hors champ (donnée)</td>
+<td><code>nis2</code> ; F12 § 6</td>
+<td>en vigueur au niveau européen</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
