@@ -48,7 +48,7 @@ Bien que le corrigé mentionne des textes juridiques et normatifs, il n'est pas 
 | 1.8 c État du résultat net et des autres éléments du résultat global | `2.3.a` Documents de synthèse consolidés | 2,5 |
 | **Total** | | **45** |
 
-Comptes de consolidation utilisés dans les écritures : `RSV` / `RST` = réserves / résultat de l'entité avant partage ; `RSV_G` / `RST_G` = réserves / résultat consolidés, part du groupe ; `RSV_M` / `RST_M` = participations ne donnant pas le contrôle (PNC) ; `CAP_ELIM` = capital de la filiale éliminé ; `EA` = goodwill ; `DOT_EA` = poste du compte de résultat réservé aux écarts d'acquisition, ici le profit sur acquisition à des conditions avantageuses ; `TME` = participation mise en équivalence ; `QP_MEE` = quote-part du résultat net des entités mises en équivalence ; `AERG` = autres éléments du résultat global ; `IDA` / `IDP` = impôt différé actif / passif ; `CH_ID` = charge ou produit d'impôt différé ; `RES_CR` = contrepartie au compte de résultat de l'écriture de bilan. Un suffixe désigne la société concernée (`RST.TREVANCE`, `261.CROQUENVILLE` : titres détenus par CROQUENVILLE ; `CARTONNERIE` : CARTONNERIE DU BESSIN).
+Comptes de consolidation utilisés dans les écritures : `RSV` / `RST` = réserves / résultat de l'entité avant partage ; `RSV_G` / `RST_G` = réserves / résultat consolidés, part du groupe ; `RSV_M` / `RST_M` = participations ne donnant pas le contrôle (PNC) ; `CAP_ELIM` = capital de la filiale éliminé ; `EA` = goodwill ; `PROFIT_ACQ` = profit sur acquisition à des conditions avantageuses, comptabilisé en résultat à la date d'acquisition ; `TME` = participation mise en équivalence ; `QP_MEE` = quote-part du résultat net des entités mises en équivalence ; `AERG` = autres éléments du résultat global ; `IDA` / `IDP` = impôt différé actif / passif ; `CH_ID` = charge ou produit d'impôt différé ; `RES_CR` = contrepartie au compte de résultat de l'écriture de bilan. Un suffixe désigne la société concernée (`RST.TREVANCE`, `261.CROQUENVILLE` : titres détenus par CROQUENVILLE ; `CARTONNERIE` : CARTONNERIE DU BESSIN).
 
 ---
 
@@ -518,7 +518,7 @@ Les titres ayant été acquis (MINOTERIE) ou souscrits (FARINES ET MIX) pour la 
 | **Total** | **8 927 500** | **8 927 500** |
 | | *Libellé : élimination des titres TRÉVANCE, profit sur acquisition et partage* | | |
 
-**C10R (compte de résultat, 0,25 pt)** : débit RES_CR Résultat 900 000 ; crédit DOT_EA Profit sur acquisition à des conditions avantageuses 900 000.
+**C10R (compte de résultat, 0,25 pt)** : débit RES_CR Résultat 900 000 ; crédit PROFIT_ACQ Profit sur acquisition à des conditions avantageuses 900 000.
 
 **C11 (bilan, CARTONNERIE DU BESSIN, 0,5 pt)**
 

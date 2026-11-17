@@ -44,7 +44,7 @@ Bien que le corrigé mentionne des textes juridiques et normatifs, il n'est pas 
 | 1.10 d Ce qui changerait en IFRS | `2.3.a` Documents de synthèse consolidés ; `2.1.d` Conséquences du référentiel et des méthodes | 2 |
 | **Total** | | **45** |
 
-Comptes de consolidation utilisés dans les écritures : `RSV` / `RST` = réserves / résultat de l'entité avant partage ; `CAP_ELIM` = capital de l'entité, à éliminer ; `RSV_G` / `RST_G` = réserves / résultat consolidés, part du groupe ; `RSV_M` / `RST_M` = intérêts minoritaires ; `EA` = écart d'acquisition (positif) ; `EA_NEG` = écart d'acquisition négatif ; `AMO_EA` = amortissements de l'écart d'acquisition ; `DOT_EA` = ligne « dotations aux amortissements, dépréciations et reprises des écarts d'acquisition » du compte de résultat ; `TME` = titres mis en équivalence ; `QP_MEE` = résultat net lié aux entités mises en équivalence ; `IDA` / `IDP` = impôt différé actif / passif ; `CH_ID` = charge ou produit d'impôt différé ; `RES_CR` = contrepartie au compte de résultat. Le suffixe d'un compte désigne l'entité (`261.LORMEVAL` : titres détenus par LORMEVAL Santé).
+Comptes de consolidation utilisés dans les écritures : `RSV` / `RST` = réserves / résultat de l'entité avant partage ; `CAP_ELIM` = capital de l'entité, à éliminer ; `RSV_G` / `RST_G` = réserves / résultat consolidés, part du groupe ; `RSV_M` / `RST_M` = intérêts minoritaires ; `EA` = écart d'acquisition (positif) ; `EA_NEG` = écart d'acquisition négatif ; `AMO_EA` = amortissements de l'écart d'acquisition ; `REP_EA_NEG` = reprise de l'écart d'acquisition négatif, présentée au compte de résultat sur la ligne « dotations aux amortissements, dépréciations et reprises des écarts d'acquisition » ; `TME` = titres mis en équivalence ; `QP_MEE` = résultat net lié aux entités mises en équivalence ; `IDA` / `IDP` = impôt différé actif / passif ; `CH_ID` = charge ou produit d'impôt différé ; `RES_CR` = contrepartie au compte de résultat. Le suffixe d'un compte désigne l'entité (`261.LORMEVAL` : titres détenus par LORMEVAL Santé).
 
 ---
 
@@ -406,7 +406,7 @@ Les valeurs d'entrée des actifs et passifs de RADIOLANE étant égales à leur 
 | RST_G Résultat consolidé – part du groupe | | 310 000 |
 | *P4 – Reprise de 2026 de l'écart d'acquisition négatif* | **310 000** | **310 000** |
 | RES_CR Résultat | 310 000 | |
-| DOT_EA Dotations aux amortissements, dépréciations et reprises des écarts d'acquisition (reprise) | | 310 000 |
+| REP_EA_NEG Reprise de l'écart d'acquisition négatif | | 310 000 |
 | *P4R – Reprise de l'écart négatif au résultat d'exploitation* | **310 000** | **310 000** |
 
 **P5, P6 et P6R (1 pt)**
