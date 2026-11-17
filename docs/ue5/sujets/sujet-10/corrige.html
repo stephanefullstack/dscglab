@@ -1,0 +1,2337 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Sujet complet n° 10</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Sujet complet</p><p>3 heures</p><p>40 points</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Sujet d'entraînement n° 10</h1><p class="cas">dossier 1, SOLVÉRANCE Habitat, PME de rénovation énergétique des logements sans direction des systèmes d'information : technologies de relevé et de chiffrage, cartographie, organisation et gouvernance de la fonction SI, contrat de support, budget du SI et coûts cachés, cadrage d'une revue demandée par le fonds ; dossier 2, SOLVÉRANCE Habitat : dossier numérique du chantier, analyse des marges, fiabilité des données de gestion, gouvernance, valeur et souveraineté des données des logements ; dossier 3, SOLVÉRANCE Habitat : retours d'expérience des chantiers, accès des entreprises partenaires, numérique responsable et fiabilité des économies d'énergie affichées.</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base d'une réglementation au 31/12/2026.</p>
+<p>Textes intégrés : fiches de travail datées et base des référentiels datés.</p>
+<p>Bien que le corrigé mentionne des textes juridiques et normatifs, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte avant tout sur la pertinence et la cohérence des réponses.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dossier</th>
+<th style="text-align: right;">Points</th>
+<th>Questions</th>
+<th>Exercice d'origine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 – Structurer la gouvernance et le pilotage du système d'information</td>
+<td style="text-align: right;">14</td>
+<td>1.1 à 1.6</td>
+<td><a href="../../exercices/ex28/sujet.html">SOLVÉRANCE Habitat, PME de rénovation énergétique des logements sans direction des systèmes d'information : technologies de relevé et de chiffrage, cartographie, organisation et gouvernance de la fonction SI, contrat de support, budget du SI et coûts cachés, cadrage d'une revue demandée par le fonds</a></td>
+</tr>
+<tr class="even">
+<td>2 – Organiser et exploiter les données des chantiers et des logements</td>
+<td style="text-align: right;">13</td>
+<td>2.1 à 2.4</td>
+<td><a href="../../exercices/ex29/sujet.html">SOLVÉRANCE Habitat : dossier numérique du chantier, analyse des marges, fiabilité des données de gestion, gouvernance, valeur et souveraineté des données des logements</a></td>
+</tr>
+<tr class="odd">
+<td>3 – Capitaliser les retours d'expérience, sécuriser les accès des partenaires et rendre le numérique plus responsable</td>
+<td style="text-align: right;">13</td>
+<td>3.1 à 3.3</td>
+<td><a href="../../exercices/ex30/sujet.html">SOLVÉRANCE Habitat : retours d'expérience des chantiers, accès des entreprises partenaires, numérique responsable et fiabilité des économies d'énergie affichées</a></td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>40</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-1--structurer-la-gouvernance-et-le-pilotage-du-système-dinformation-14-points">DOSSIER 1 – STRUCTURER LA GOUVERNANCE ET LE PILOTAGE DU SYSTÈME D'INFORMATION (14 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1 Les technologies du devis et la stratégie du système d'information</td>
+<td><code>1.1.d</code> Outils et méthodes de veille technologique et analyse de l'impact des nouvelles technologies sur les modèles économiques ; <code>1.1.a</code> Définir une stratégie des systèmes d'information alignée sur les objectifs métiers, en intégrant les opportunités offertes par les technologies émergentes</td>
+<td>3,5</td>
+</tr>
+<tr class="even">
+<td>1.2 La cartographie du système d'information</td>
+<td><code>1.3.b</code> Cartographie applicative et fonctionnelle des SI</td>
+<td>1,5</td>
+</tr>
+<tr class="odd">
+<td>1.3 L'organisation de la fonction système d'information et sa gouvernance</td>
+<td><code>1.2.b</code> Modèles organisationnels de la DSI (centralisée, décentralisée, bimodale, etc.) ; <code>1.2.a</code> Mettre en œuvre une gouvernance des systèmes d'information intégrant les parties prenantes clés, des indicateurs de performance et des critères de durabilité</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>1.4 Le contrat de support du parc</td>
+<td><code>1.4.b</code> Typologie des contrats de prestation informatique (régie, forfait, infogérance, etc.) : méthodes d'intégration dans la stratégie SI et la gouvernance contractuelle</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>1.5 Les dépenses du système d'information et leur suivi</td>
+<td><code>3.1.b</code> Fondamentaux du contrôle de gestion appliqué aux SI ; <code>3.1.c</code> Analyse des coûts directs et indirects : TCO, coûts cachés, ROI des projets SI ; <code>3.1.e</code> Revue et amélioration continue des dispositifs de pilotage</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>1.6 La revue du système d'information demandée par le fonds</td>
+<td><code>3.2.a</code> Conduire des missions d'audit et de contrôle des systèmes d'information afin d'évaluer leur performance, leur conformité réglementaire et la qualité de leur gouvernance ; <code>3.2.c</code> Critères de performance et de conformité : fiabilité, efficacité, sécurité, conformité RGPD, etc.</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 1 – Structurer la gouvernance et le pilotage du système d'information</strong></td>
+<td></td>
+<td><strong>14</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (modèle économique, cartographies applicative et fonctionnelle, gouvernance du SI, types de contrats, coûts cachés et contrôle de gestion du SI, audit du SI) environ 2,25 points (items 1.1 a-1, 1.2-1, 1.3 b-1, et la moitié des items 1.4-1, 1.5 a-1 et 1.6-1) ; analyse des annexes et recommandations environ 11,75 points, soit environ 84 %. Durée conseillée : 14 points × 4,5 minutes = 63 minutes, soit 1 h 03.</p>
+<hr />
+<h3 id="11--les-technologies-du-devis-et-la-stratégie-du-système-dinformation-35-points">1.1 – Les technologies du devis et la stratégie du système d'information (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.1 – Élaborer et aligner la stratégie des SI : <code>1.1.d</code> « Outils et méthodes de veille technologique et analyse de l'impact des nouvelles technologies sur les modèles économiques » ; <code>1.1.a</code> « Définir une stratégie des systèmes d'information alignée sur les objectifs métiers, en intégrant les opportunités offertes par les technologies émergentes ». Limites : « Ne pas confondre alignement stratégique et simple adéquation technique. » ; « Ne pas se limiter à une veille passive : intégrer l'analyse prospective dans l'évaluation des opportunités SI. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.3 (parcours du devis en 2026, trois technologies, effets attendus et réserves), 1.2 (applications, ressaisies, décisions au fil de l'eau, témoignages) et 1.1 (activité, chantiers, plan « Cap 2029 »).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Modèle économique défini (proposition de valeur, manière de créer et de capter la valeur, ressources et relation avec le client) ; intérêt d'une veille technologique active rappelé (évaluer chaque technologie repérée, et non suivre la démonstration d'un éditeur)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Création de valeur pour le client et délai et taux de signature, appuyés sur les chiffres de l'annexe 1.3 (15 → 5 jours, 50 → 60 %, 200 chantiers et environ 5 M€ potentiels), avec leurs limites (capacité de production, estimations non vérifiées)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Marge des chantiers (écarts de métrés, 250 k€ de surcoûts, temps des conseillers) et relation avec le client (rapidité, transparence, confiance), avec leurs limites (30 % de propositions corrigées, clients attachés au papier, photos de l'intérieur des logements)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Conclusion sur les conditions auxquelles les technologies servent le plan : la valeur dépend de conditions (interopérabilité avec le calcul thermique, validation humaine, appropriation, dépendance à un éditeur, capacité des équipes) ; les technologies servent le plan si elles s'inscrivent dans un SI intégré</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b</td>
+<td>Trois orientations de la stratégie du SI, chacune reliée à une priorité du plan et à un constat ; l'une intègre une technologie émergente avec sa famille, son apport et sa condition de réussite (0,5 par orientation)</td>
+<td>1,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.1 a) – Impact des trois technologies sur le modèle économique</em></p>
+<p>Le <strong>modèle économique</strong> décrit la manière dont l'entreprise crée de la valeur pour ses clients (proposition de valeur), la produit (ressources, activités, partenaires) et en capte une partie (revenus, coûts, marge), à travers une relation avec le client. Une <strong>technologie émergente</strong> le transforme lorsqu'elle modifie l'une de ces composantes ; la <strong>veille active</strong> consiste à évaluer, pour chaque technologie repérée, ses effets sur ces composantes et ses conditions, au lieu de suivre la démonstration d'un éditeur (annexe 1.2 C : application de visite souscrite après un salon, outil de chiffrage « promis » à l'éditeur) (0,5 pt).</p>
+<ol type="1">
+<li><strong>Création de valeur pour le client</strong> : la maquette numérique du logement et un devis plus précis rendent l'offre plus lisible (métrés justifiés, logement visualisé), surtout pour les rénovations globales, plus complexes, que le plan veut développer. <em>Limite</em> : la valeur pour le client tient aussi au diagnostic du conseiller (« un logiciel ne voit pas l'humidité derrière un doublage ») ; la maquette n'est pas encore lisible par le logiciel de calcul thermique, qui fonde la promesse d'économies d'énergie.</li>
+<li><strong>Délai et taux de signature</strong> : le délai moyen entre la visite et le devis passerait de 15 à 5 jours ouvrés et le retour du devis signé de 6 jours à 1 jour ; or 65 % des devis remis en moins de 7 jours sont signés contre 35 % au-delà de 15 jours, ce qui rend plausible un taux de 60 % au lieu de 50 %. À 2 000 devis, ce sont 1 200 chantiers signés au lieu de 1 000, soit environ 200 × 25 k€ = 5 M€ de chiffre d'affaires potentiel (20 % du chiffre d'affaires 2026, un cinquième de l'objectif de doublement) (0,5 pt avec le point précédent). <em>Limites</em> : les effets sont des estimations de l'éditeur et de la responsable commerciale, non vérifiées ; les équipes et les partenaires sont « déjà pleinement occupés » : sans capacité de production supplémentaire (agences, partenaires), des devis signés plus vite allongeraient les délais de chantier.</li>
+<li><strong>Marge des chantiers</strong> : un écart de métrés ramené de 10 % à 3 % réduirait les 250 k€ de surcoûts non refacturés (1 % du chiffre d'affaires) ; si ces surcoûts sont proportionnels à l'écart, de l'ordre de 175 k€ par an. Le temps d'établissement d'un devis (3 heures de ressaisie et de recherche des ouvrages) diminue, ce qui libère les conseillers pour davantage de visites. En regard, le coût annoncé est de l'ordre de 65 k€ la première année (18 + 12 + 30 + 5) puis de 47 k€ par an. <em>Limite</em> : 30 % des propositions de l'outil de chiffrage ont dû être corrigées pour les maisons anciennes ; une proposition validée sans contrôle déplacerait l'erreur au lieu de la supprimer.</li>
+<li><strong>Relation avec le client</strong> : la rapidité, la signature à distance et un devis mieux justifié renforcent la confiance, priorité du plan ; la relation peut se poursuivre en ligne. <em>Limites</em> : une partie des clients âgés préfère le papier (garder un parcours sans signature électronique) ; les photos de l'intérieur des logements partent chez l'éditeur, ce qui suppose un contrat de sous-traitance conforme au RGPD (annexe 1.5) et une information des clients ; un devis « par la machine » peut inquiéter s'il n'est pas présenté et assumé par le conseiller (0,5 pt avec le point précédent).</li>
+</ol>
+<p><strong>Conclusion : conditions auxquelles les technologies servent le plan</strong> (0,5 pt) : les trois technologies portent sur l'avant-vente, étape où l'entreprise perd aujourd'hui le plus de clients et de marge ; elles peuvent changer le modèle économique (plus de devis signés, plus vite, mieux chiffrés). Leur valeur est toutefois conditionnelle : interopérabilité de la maquette avec le calcul thermique et le logiciel de devis, validation humaine du chiffrage, appropriation par des conseillers inquiets (« à quoi servons-nous ? »), maîtrise de la dépendance (l'outil de chiffrage ne fonctionne qu'avec le logiciel de devis de son éditeur) et capacité de production. Sans SI intégré (huit ressaisies sur dix échanges), le gain de délai à l'avant-vente se perdrait dans le planning, la facturation et les dossiers d'aides.</p>
+<p><em>1.1 b) – Trois orientations de la stratégie du système d'information</em></p>
+<ol type="1">
+<li><strong>Construire un SI intégré du parcours du client, de la visite à la comptabilité, avant d'ouvrir les agences</strong> (priorités 1 et 3 ; constats : huit ressaisies sur dix échanges, 600 jours de ressaisie par an, planning sur tableur ingérable avec deux agences) : relier la visite, le devis, le planning, la facturation, les dossiers d'aides et la comptabilité, en choisissant des services en ligne capables d'échanger leurs données (formats ouverts, interfaces documentées) ; un outil de planning partagé remplace le tableur. C'est le socle sans lequel les agences multiplieraient les ressaisies (0,5 pt).</li>
+<li><strong>Numériser l'avant-vente pour gagner en délai et en précision : relevé en trois dimensions, maquette numérique et signature électronique des devis</strong> (priorités 1 et 2 ; constats : 15 jours de délai, 50 % de signature, 10 % d'écart de métrés) : déploiement d'abord sur les rénovations globales, après un pilote mesuré, à la condition que la maquette soit lisible par le calcul thermique (exiger le format ouvert promis avant d'étendre) et en gardant un parcours papier pour les clients qui le souhaitent (0,5 pt).</li>
+<li><strong>Expérimenter le chiffrage assisté par l'intelligence artificielle, sous contrôle du conseiller</strong> (technologie émergente ; priorité 2, maîtrise de la marge, et priorité 1, agences où travailleront de nouveaux conseillers) : l'outil relève de l'<strong>apprentissage automatique</strong> — il a appris, à partir des devis de nombreuses entreprises, à reconnaître des ouvrages sur des photos et à proposer des quantités — et non de l'IA générative. <em>Apport</em> : devis plus rapides et plus homogènes d'un conseiller à l'autre, appui aux conseillers débutants des nouvelles agences. <em>Condition de réussite</em> : validation systématique par le conseiller, pilote limité aux travaux par lots avant les maisons anciennes (30 % de corrections), mesure du taux de propositions corrigées, bibliothèque de prix restant la propriété de l'entreprise et contrat qui encadre les photos des clients et la réversibilité (0,5 pt).</li>
+</ol>
+<p>Ces orientations ne valent que si une instance les arbitre et les finance (question 1.3) et si les dépenses du SI sont suivies (question 1.5).</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Analyse menée avec un canevas de modèle économique (proposition de valeur, segments, canaux, relation, ressources, partenaires, revenus, coûts), si les quatre composantes demandées sont traitées et chiffrées.</li>
+<li>Estimation du chiffre d'affaires potentiel arrondie (« environ 5 M€ ») ou raisonnée sur les 2 400 visites, si l'hypothèse est écrite ; appréciation plus réservée des gains, si elle s'appuie sur les estimations non vérifiées et la capacité de production.</li>
+<li>Orientation fondée sur la gouvernance et le pilotage du SI (instance d'arbitrage, budget, liste des applications), à la place de l'une des deux premières, si elle est reliée à la troisième priorité du plan.</li>
+<li>Technologie émergente fondée sur l'<strong>IA générative</strong> (rédaction des comptes rendus de visite, réponses aux questions des clients), si elle est distinguée de l'apprentissage automatique et assortie d'une validation humaine.</li>
+<li>Mention de la chaîne de valeur pour situer l'avant-vente parmi les activités principales.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Technologie présentée sans ses limites ni ses conditions</em> (<code>ET-19</code> opportunités sans risques ; <code>JUR-T03</code> analyser et argumenter, ne pas décrire) — « l'IA permettra des devis en 48 heures » ; juste : effets annoncés non vérifiés, 30 % de corrections, validation humaine.</li>
+<li><em>IA générative confondue avec l'apprentissage automatique</em> (<code>ET-09</code>) — « une IA générative chiffre les travaux » ; juste : la reconnaissance d'ouvrages et la proposition de quantités relèvent de l'apprentissage automatique.</li>
+<li><em>Stratégie du SI réduite au choix d'outils</em> (<code>JUR-G02</code> alignement réduit à un choix technique ou à une standardisation logicielle ; <code>ET-06</code>) — « acheter les trois outils » ; juste : orientations reliées aux priorités du plan, intégration du SI et capacité de production.</li>
+<li><em>Morceau de cours sur le modèle économique</em> (<code>JUR-T01</code> contextualiser chaque notion) — définition sans les chiffres de l'annexe 1.3 ; juste : chaque composante chiffrée et appliquée au cas.</li>
+<li><em>Fonctionnement interne des modèles décrit</em> (<code>JUR-T12</code> de moins en moins de technique, de plus en plus de management) — description technique de la manière dont l'outil a été construit ; juste : effets métiers, apport, limites et conditions.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Veille technologique et impact sur le modèle économique</td>
+<td>veille active, analyse prospective</td>
+<td>F01 § 0 ; glossaire</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Alignement stratégique</td>
+<td>stratégie du SI au service des priorités métier</td>
+<td>F01 § 1 et § 8 ; <code>erreurs_types.md</code> ET-06</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Apprentissage automatique et IA générative</td>
+<td>familles distinctes, usages, risques (dépendance, confidentialité)</td>
+<td>F13 § 1 à § 3 ; <code>erreurs_types.md</code> ET-09</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>RGPD</td>
+<td>sous-traitant (éditeur) encadré par contrat (annexe 1.5)</td>
+<td><code>rgpd</code> ; F15</td>
+<td>en vigueur depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12--la-cartographie-du-système-dinformation-15-point">1.2 – La cartographie du système d'information (1,5 point)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.3 – Diagnostiquer et piloter l'évolution des architectures et de l'urbanisation des SI : <code>1.3.b</code> « Cartographie applicative et fonctionnelle des SI ». Limite : « Ne pas réduire l'urbanisation à une vision strictement technique : elle s'inscrit dans une stratégie globale. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (applications A1 à A9, tableurs T1 et T2, flux F1 à F10) et 1.4 (doublons, 600 jours de ressaisie).</p>
+<p><strong>Barème indicatif (1,5 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Cartographie applicative (applications et flux : contenu, sens, mode) distinguée de la cartographie fonctionnelle (fonctions regroupées en domaines, indépendamment des outils), dans une démarche d'urbanisation</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Cartographie simplifiée lisible : domaines fonctionnels, applications rattachées, principaux flux et leur mode</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Trois faiblesses appuyées sur la cartographie : ressaisies, redondances, applications isolées</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p>La <strong>cartographie fonctionnelle</strong> représente ce que fait le SI : les fonctions de l'entreprise regroupées en domaines (relation client, études, devis, chantiers, aides, gestion), indépendamment des outils. La <strong>cartographie applicative</strong> représente avec quoi il le fait : les applications qui portent ces fonctions et les flux qui les relient (contenu, sens, mode). Ce sont deux couches de la représentation du SI, entre la couche métier et la couche technique ; les rapprocher fait apparaître les fonctions portées deux fois, les ruptures et les manques, ce qui en fait un outil de pilotage de l'évolution du SI et non un simple inventaire (0,5 pt).</p>
+<p><strong>Cartographie simplifiée</strong> (0,5 pt ; un schéma lisible et légendé vaut ce tableau) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Domaine fonctionnel</th>
+<th>Applications</th>
+<th>Flux sortants (mode)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Relation client et rendez-vous</td>
+<td>A7 prise de rendez-vous en ligne ; A1 gestion de la relation client (module de rendez-vous inactif)</td>
+<td>F1 A7 → A1 (ressaisie) ; F2 A1 → A2 (ressaisie)</td>
+</tr>
+<tr class="even">
+<td>Visite technique et études</td>
+<td>A2 visite technique ; A3 calcul thermique</td>
+<td>F3 A2 → A3 (ressaisie) ; F4 A2 → A4 (ressaisie) ; F5 A3 → A4 (PDF)</td>
+</tr>
+<tr class="odd">
+<td>Devis et facturation</td>
+<td>A4 devis et facturation</td>
+<td>F6 A4 → A1 (ressaisie) ; F7 A4 → T1 (ressaisie) ; F9 A4 → T2 (ressaisie) ; F10 A4 → A5 (fichier mensuel)</td>
+</tr>
+<tr class="even">
+<td>Planification des chantiers</td>
+<td>T1 tableur du planning</td>
+<td>F8 T1 → A4 (courriel et ressaisie)</td>
+</tr>
+<tr class="odd">
+<td>Dossiers d'aides des clients</td>
+<td>T2 tableur de suivi</td>
+<td>dépôt manuel sur les portails des organismes</td>
+</tr>
+<tr class="even">
+<td>Gestion (comptabilité, paie)</td>
+<td>A5 comptabilité et paie</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Collaboration (messagerie, documents, partage)</td>
+<td>A6 suite bureautique (stockage compris) ; A8 et A9 partage de fichiers</td>
+<td>échanges hors du SI avec les clients et les partenaires</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trois faiblesses</strong> (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Des ressaisies tout au long du parcours</strong> : huit échanges sur dix sont ressaisis, aucun n'est automatique ; le même client est saisi dans cinq outils (A1, A2, A3, A4, T2), soit environ 600 jours de travail par an (annexe 1.4) et autant d'occasions d'erreurs, que l'ouverture de deux agences multiplierait.</li>
+<li><strong>Des redondances</strong> : trois espaces de stockage pour une même fonction (A6, A8, A9), deux outils de rendez-vous (A7 et le module inactif de A1), des données du client et du logement dupliquées sans source de référence ; elles coûtent (20 k€ de doublons) et brouillent la question « quelle est la bonne information ? ».</li>
+<li><strong>Des applications isolées</strong> : le calcul thermique (A3) ne communique que par PDF ; le planning (T1) et le suivi des aides (T2) sont des tableurs reliés à rien, modifiés à plusieurs ; A7, A8 et A9 vivent hors de toute administration par l'informatique. Les domaines « planification » et « aides » n'ont pas d'application, alors qu'ils sont au cœur du plan (agences, rénovations globales).</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Cartographie dessinée en boîtes et flèches, ou organisée par étapes du parcours (visite, devis, planning, facturation, aides, comptabilité), si les domaines et les modes d'échange apparaissent.</li>
+<li>Domaines découpés autrement (par exemple « avant-vente », « réalisation », « gestion »), s'ils sont fonctionnels et non techniques.</li>
+<li>Faiblesse tirée de la dépendance à une personne (accès d'administration connus du seul responsable informatique) à la place de l'une des trois, si elle est reliée à la cartographie.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Cartographie réduite à un inventaire technique</em> (<code>ET-20</code> urbanisation réduite à une vision technique ; <code>JUR-G07</code> le pourquoi puis le comment) — liste des tablettes et ordinateurs ; juste : domaines fonctionnels, applications, flux.</li>
+<li><em>Cartographies fonctionnelle et applicative confondues</em> (<code>JUR-T06</code> distinguer les verbes de consigne et les notions) — « la cartographie fonctionnelle liste les logiciels » ; juste : fonctions d'un côté, applications et flux de l'autre.</li>
+<li><em>Schéma illisible ou sans légende</em> (<code>JUR-T10</code> schémas et tableaux en format libre mais lisibles) — flèches sans mode d'échange ; juste : flux numérotés, sens et mode indiqués.</li>
+<li><em>Architecture cible détaillée hors sujet</em> (<code>JUR-T07</code> répondre à la seule question posée) — juste : constat de l'existant et faiblesses.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cartographies fonctionnelle et applicative</td>
+<td>couches, flux, ruptures, doublons</td>
+<td>F03 § 1 et § 2 ; <code>erreurs_types.md</code> ET-20</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13--lorganisation-de-la-fonction-système-dinformation-et-sa-gouvernance-3-points">1.3 – L'organisation de la fonction système d'information et sa gouvernance (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.2 – Concevoir et piloter la gouvernance des SI : <code>1.2.b</code> « Modèles organisationnels de la DSI (centralisée, décentralisée, bimodale, etc.) » ; <code>1.2.a</code> « Mettre en œuvre une gouvernance des systèmes d'information intégrant les parties prenantes clés, des indicateurs de performance et des critères de durabilité ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (décisions au fil de l'eau, souscriptions sans avis, responsable informatique « pompier », témoignages du président, de la directrice des opérations, de la responsable commerciale et du fonds), 1.1 (organigramme, comité stratégique, effectif) et 1.4 (dépenses hors du compte informatique).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Trois organisations comparées, chacune avec un avantage et une limite tirés du cas (0,5 pour deux organisations complètes, 1 pour trois)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Recommandation justifiée pour les trois années du plan et située parmi les modèles d'organisation (centralisé avec externalisation partielle) : rôles du nouveau responsable, du responsable informatique et du prestataire ; rattachement ; évolution avec les agences</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Gouvernance du SI définie (évaluer, diriger, surveiller ; distinguée du management)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Une instance (composition, fréquence, décisions) ; rôles du président, des responsables des services et du fonds</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Trois règles, dont l'avis préalable à toute souscription, avec la réponse aux craintes du président et de la directrice des opérations</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.3 a) – Trois façons d'organiser la fonction SI</em></p>
+<p>La fonction SI de SOLVÉRANCE Habitat est aujourd'hui <strong>centralisée en apparence mais éclatée en pratique</strong> : un seul informaticien, absorbé par le dépannage, un président qui décide seul, des services qui souscrivent leurs outils. Le modèle cible reste <strong>centralisé</strong> (une fonction SI unique pour le siège et les deux agences, avec des référents dans les services et les agences) ; la question est de savoir qui l'exerce.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Organisation</th>
+<th>Avantage pour SOLVÉRANCE Habitat</th>
+<th>Limite pour SOLVÉRANCE Habitat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Recruter un responsable des systèmes d'information</strong> à temps plein</td>
+<td>compétence stratégique présente chaque jour, connaissance fine des métiers, interlocuteur unique des éditeurs et du fonds ; réduit la dépendance à M. TRÉVASSOU</td>
+<td>coût d'un cadre confirmé à temps plein pour une PME de 95 salariés ; recrutement long et difficile ; risque de reproduire un « pompier » si le support n'est pas réorganisé</td>
+</tr>
+<tr class="even">
+<td><strong>Recourir à un directeur des systèmes d'information à temps partagé</strong> (quelques jours par mois)</td>
+<td>expérience de plusieurs entreprises, apport immédiat pour structurer la gouvernance, les contrats, le budget et préparer la revue du fonds ; coût proportionné</td>
+<td>présence limitée, connaissance du terrain plus lente ; dépendance à une personne extérieure ; suppose un relais interne pour l'exécution</td>
+</tr>
+<tr class="odd">
+<td><strong>Confier davantage au prestataire</strong> (support, administration des services, conseil)</td>
+<td>libère le responsable informatique du dépannage (60 % de son temps), coûts plus prévisibles s'ils sont contractualisés, couverture des deux agences</td>
+<td>le prestataire ne connaît ni les priorités ni les applications métier ; il ne peut pas arbitrer ni gouverner ; dépendance accrue sans compétence interne pour le piloter</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt pour deux organisations complètes, 1 pt pour trois.)</p>
+<p><strong>Recommandation</strong> (0,5 pt) : combiner un <strong>directeur des systèmes d'information à temps partagé</strong> pour la durée de la structuration (2027-2028), rattaché au président et travaillant avec le directeur administratif et financier, qui garde le suivi des dépenses ; un <strong>responsable informatique recentré</strong> sur l'administration des applications, les projets et le pilotage du prestataire ; un <strong>prestataire engagé sur des niveaux de service</strong> pour le support du parc (question 1.4). C'est l'organisation la plus rapide à mettre en place avant la revue du fonds (juillet 2027) et proportionnée à la taille de l'entreprise. Le recrutement d'un responsable des systèmes d'information à temps plein est à réexaminer à l'ouverture de la seconde agence, quand l'activité aura doublé. <em>Modèle</em> : l'organisation retenue reste <strong>centralisée</strong> (une fonction SI unique pour le siège et les agences, avec des référents dans les services), assortie d'une <strong>externalisation partielle</strong> (direction à temps partagé, support du parc confié au prestataire).</p>
+<p><em>1.3 b) – La gouvernance du système d'information</em></p>
+<p>La <strong>gouvernance du SI</strong> est l'ensemble des instances, des règles et des responsabilités par lesquelles la direction <strong>évalue</strong> les besoins et les options, <strong>dirige</strong> (fixe les priorités, décide des investissements) et <strong>surveille</strong> la performance, les risques et la conformité du SI, au service de la stratégie ; elle se distingue du <strong>management</strong> du SI, qui exécute ces décisions (modèle « évaluer, diriger, surveiller » d'ISO/IEC 38500:2024, domaine « évaluer, diriger et surveiller » de COBIT 2019) (0,5 pt). Chez SOLVÉRANCE Habitat, elle n'existe pas : le président décide au fil des occasions, sans plan, sans budget ni instance.</p>
+<p><strong>Instance et rôles</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>Comité du système d'information</strong> : le président (qui le préside), le directeur administratif et financier (qui l'anime et en tient le budget), le directeur des systèmes d'information à temps partagé, la directrice des opérations, la responsable du bureau d'études, la responsable commerciale, le responsable informatique ; une réunion par mois en 2027, puis tous les deux mois. <em>Décisions</em> : priorités parmi les demandes au regard du plan « Cap 2029 », budget annuel du SI et son suivi, souscriptions et résiliations au-delà du seuil, choix des technologies (pilotes de l'annexe 1.3), suivi des risques et des contrats.</li>
+<li><strong>Le président</strong> cesse de décider seul : il arbitre au comité, sur des demandes instruites, et porte les décisions au comité stratégique.</li>
+<li><strong>Les responsables des services</strong> expriment et priorisent leurs besoins, sont <strong>propriétaires</strong> de leurs applications (usage, données, licences) et portent les projets de leur domaine.</li>
+<li><strong>Le fonds</strong> ne gère pas le SI : il <strong>surveille</strong>. Le comité stratégique trimestriel reçoit un point sur le SI (budget, avancement des orientations, risques, suites de la revue) et valide les investissements liés aux agences.</li>
+</ul>
+<p><strong>Trois règles</strong> (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Avis préalable à toute souscription</strong> : tout service en ligne, tout achat de matériel et tout renouvellement passent par une demande courte (besoin, utilisateurs, coût, données traitées), examinée par le responsable informatique et le directeur des systèmes d'information à temps partagé sous dix jours ouvrés ; au-delà d'un seuil annuel fixé par le comité, décision du comité ; aucun abonnement payé par carte bancaire ou sur note de frais.</li>
+<li><strong>Un registre des applications et des abonnements</strong> : pour chaque application, son propriétaire, son administrateur, son contrat, ses licences et son coût ; tenu par le responsable informatique, revu par le comité.</li>
+<li><strong>Des critères d'arbitrage publics</strong> : contribution au plan « Cap 2029 », intégration au SI existant (pas de nouvelle ressaisie), coût complet, risques et données des clients.</li>
+</ol>
+<p><strong>Réponse aux craintes</strong> : au président, qui ne veut pas « d'une administration de grand groupe », une seule instance, courte, et trois règles simples ; à la directrice des opérations, qui craint qu'un comité choisisse à sa place, le comité ne choisit pas l'outil métier : elle exprime le besoin et propose l'outil, le comité vérifie l'intégration, le coût, le contrat et les données, dans un délai court ; son outil de planning peut être la première priorité examinée.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Recommandation d'un recrutement à temps plein dès 2027, si elle est justifiée par le doublement de l'activité et accompagnée d'une réorganisation du support ; recommandation d'une infogérance plus large, si un pilotage interne et une gouvernance sont prévus.</li>
+<li>Organisation présentée comme une <strong>externalisation partielle</strong> de la fonction SI dans un modèle centralisé, ou comme un modèle <strong>fédéral</strong> léger (référents dans les agences), si le raisonnement est appliqué au cas.</li>
+<li>Instance unique intégrée au comité de direction (point SI mensuel), si les décisions et les participants sont précisés ; seuil, délai d'avis ou fréquence différents, s'ils restent adaptés à une PME.</li>
+<li>Règle sur la propriété des données et la réversibilité des services en ligne, à la place de l'une des deux dernières.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Organisations décrites sans le cas</em> (<code>JUR-G05</code> analyser les déséquilibres organisationnels et recommander de façon réaliste) — avantages génériques ; juste : 60 % de dépannage, 95 salariés, deux agences, revue du fonds.</li>
+<li><em>Gouvernance confondue avec le management ou avec la sécurité</em> (<code>JUR-G06</code> vocabulaire précis de la gouvernance) — juste : évaluer, diriger, surveiller ; instances et règles.</li>
+<li><em>Le fonds présenté comme gestionnaire du SI</em> (<code>JUR-T03</code> analyser et argumenter) — « le fonds valide chaque souscription » ; juste : surveillance au comité stratégique.</li>
+<li><em>Comitologie de grand groupe</em> (<code>JUR-T07</code> répondre à la bonne échelle) — quatre comités pour une PME de 95 salariés ; juste : une instance et des règles simples.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Modèles d'organisation de la DSI</td>
+<td>centralisé, fédéral, externalisé ; rattachement du DSI</td>
+<td>F01 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 38500:2024</td>
+<td>évaluer, diriger, surveiller ; principes de gouvernance</td>
+<td><code>iso_38500_2024</code> ; F02 § 4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>COBIT 2019</td>
+<td>domaine « évaluer, diriger et surveiller » ; distinction gouvernance / management</td>
+<td><code>cobit_2019</code> ; F02 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Comitologie SI</td>
+<td>composition, fréquence, rôle des instances</td>
+<td>F02 § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="14--le-contrat-de-support-du-parc-1-point">1.4 – Le contrat de support du parc (1 point)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.4 – Gérer les relations contractuelles et opérationnelles avec les ESN : <code>1.4.b</code> « Typologie des contrats de prestation informatique (régie, forfait, infogérance, etc.) : méthodes d'intégration dans la stratégie SI et la gouvernance contractuelle ». Limite : « L'analyse juridique approfondie relève du droit des contrats informatiques et est exclue du programme de l'UE. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 D (500 tickets, 4 jours ouvrés, 80 pannes de tablettes, 40 visites reportées, aucun engagement) et 1.4 (60 k€ de support, attentes non suivies), 1.5 (ITIL).</p>
+<p><strong>Barème indicatif (1 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Contrat actuel caractérisé (prestation à l'acte, sans engagement de résultat ni niveau de service) ; type de contrat recommandé (infogérance partielle du parc avec niveaux de service, à redevance par appareil) justifié par le cas</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Deux engagements, chacun relié à un constat de l'annexe 1.2</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><strong>Contrat actuel</strong> : une prestation <strong>au ticket</strong>, facturée à l'acte, proche d'une régie : le prestataire s'engage sur des moyens, non sur un résultat ; il n'a ni délai à tenir, ni intérêt à réduire le nombre de pannes, et la dépense (60 k€) varie sans contrôle. Ce contrat convenait à une entreprise de quelques ordinateurs ; il ne convient plus à 100 appareils, deux agences à venir et des conducteurs de travaux qui perdent quatre jours par panne.</p>
+<p><strong>Contrat recommandé</strong> : une <strong>infogérance partielle du parc</strong> (support des utilisateurs, maintien en état des postes, tablettes et smartphones), avec une convention de service (SLA) mesurée et suivie, et une redevance mensuelle par appareil. Un forfait au sens strict, qui porte sur un livrable défini à prix et délai fixés, ne convient pas à un service récurrent ; le contrat au ticket ne comporte aucun engagement. Le volume est récurrent et prévisible (environ 500 tickets), le coût devient prévisible, le prestataire est incité à prévenir les pannes et le contrat peut couvrir les agences de Grenoble et de Saint-Étienne ; le responsable informatique garde le pilotage du contrat (0,5 pt).</p>
+<p><strong>Deux engagements</strong> (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Des délais d'intervention et de rétablissement par niveau de priorité</strong>, avec un <strong>stock de tablettes de remplacement</strong> : une tablette de chantier en panne remplacée sous un jour ouvré (constat : 4 jours ouvrés d'attente, 80 pannes, 40 visites reportées).</li>
+<li><strong>Un compte rendu mensuel et un comité de suivi trimestriel</strong> : tickets par type et par priorité, respect des délais, causes récurrentes, plan d'amélioration et réfaction de prix si les délais ne sont pas tenus (constat : aucun compte rendu, prestataire qui ne connaît ni les priorités ni les applications métier).</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Forfait par utilisateur plutôt que par appareil, ou contrat de centre de services à unités d'œuvre, s'il comporte des niveaux de service.</li>
+<li>Engagement de documentation et de connaissance des applications métier, de couverture des agences ou de plages horaires adaptées aux chantiers, à la place de l'un des deux.</li>
+<li>Référence aux pratiques de gestion des niveaux de service et des incidents d'ITIL (annexe 1.5).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Régie, forfait et infogérance confondus</em> (<code>ET-31</code>) — « le contrat au ticket est un forfait » ; juste : contrat à l'acte, sans engagement de délai ; infogérance partielle engagée sur des niveaux de service, dont seul le prix est forfaitaire.</li>
+<li><em>Engagement sans mesure</em> (<code>JUR-A05</code> externalisation : tarification, contractualisation) — « un support réactif » ; juste : délai chiffré, mesure, compte rendu, conséquence.</li>
+<li><em>Analyse juridique du contrat</em> (<code>JUR-T07</code> répondre à la seule question posée) — juste : type de contrat et engagements de gestion.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des contrats (régie, forfait, infogérance, centre de services)</td>
+<td>obligation, risque, choix</td>
+<td>F04 § 1 ; <code>erreurs_types.md</code> ET-31</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Niveaux de service, comités de suivi</td>
+<td>SLA, délais, comptes rendus, réfactions</td>
+<td>F04 § 3 et § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>ITIL</td>
+<td>gestion des niveaux de service et des incidents</td>
+<td><code>itil</code> ; F02 § 5</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="15--les-dépenses-du-système-dinformation-et-leur-suivi-3-points">1.5 – Les dépenses du système d'information et leur suivi (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.1 – Concevoir, construire et exploiter des outils de pilotage de la performance : <code>3.1.b</code> « Fondamentaux du contrôle de gestion appliqué aux SI » ; <code>3.1.c</code> « Analyse des coûts directs et indirects : TCO, coûts cachés, ROI des projets SI » ; <code>3.1.e</code> « Revue et amélioration continue des dispositifs de pilotage ». Limite : « Le pilotage stratégique par les indicateurs suppose une capacité de recul critique. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.4 (suivi actuel, dépenses par nature, abonnements, coûts non suivis), 1.2 (souscriptions sans avis, temps du responsable informatique, pannes) et 1.1 (chiffre d'affaires, dépenses du SI).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Coûts cachés définis ; apport du contrôle de gestion du SI ; trois limites du suivi actuel appuyées sur l'annexe 1.4</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Trois coûts cachés, estimés de tête quand l'annexe le permet (ressaisies, attentes de dépannage, entraide informelle, temps du responsable informatique)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Économie réalisable dès 2027 chiffrée de tête (licences inutilisées 22 k€ et doublons 20 k€, environ 42 k€ par an) et conditions de mise en œuvre</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Structure du budget par nature et par service, avec ses responsables et l'enregistrement de toutes les dépenses</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Deux indicateurs complets (formule, source, fréquence, cible, axe), reliés aux constats</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Revue périodique et amélioration continue du dispositif (instance, fréquence, cycle d'amélioration)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.5 a) – Limites du suivi, coûts cachés et économie rapide</em></p>
+<p>Le <strong>contrôle de gestion appliqué au SI</strong> rend la dépense du SI lisible et pilotable : il en mesure le coût complet, le rattache aux services et aux usages qui le consomment, le compare à un budget et le rapproche de la valeur produite. Les <strong>coûts cachés</strong> sont les coûts que le SI provoque sans apparaître comme dépenses informatiques : temps perdu en ressaisies, attentes, dépannages entre collègues, abonnements payés hors du circuit, licences payées et non utilisées ; ils entrent dans le coût total de possession (TCO) (0,5 pt avec les limites).</p>
+<p><strong>Trois limites du suivi actuel</strong> :</p>
+<ol type="1">
+<li><strong>Un suivi incomplet</strong> : le compte « dépenses informatiques » enregistre 360 k€ quand les dépenses reconstituées atteignent 450 k€ ; 90 k€, soit 20 %, sont ailleurs (abonnements payés par carte, formation, salaire du responsable informatique). Le ratio de 1,8 % du chiffre d'affaires ne se lit donc qu'après reconstitution.</li>
+<li><strong>Un suivi a posteriori, sans budget ni responsable</strong> : un examen annuel à la clôture, sans budget, sans répartition par service ; personne ne répond des dépenses de son service, ce qui laisse les souscriptions se multiplier.</li>
+<li><strong>Un suivi sans inventaire ni indicateur</strong> : 31 licences ou comptes payés et inutilisés, trois doublons, rien ne relie la dépense à l'usage ni au service rendu ; il est impossible de dire si 450 k€ est trop ou pas assez au regard du plan.</li>
+</ol>
+<p><strong>Trois coûts cachés</strong> (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Les ressaisies</strong> : environ 600 jours de travail par an × 250 € = <strong>150 k€</strong>, soit le tiers des dépenses visibles du SI, et environ trois personnes à plein temps — que l'ouverture des agences augmenterait.</li>
+<li><strong>L'attente des dépannages</strong> : 80 pannes de tablettes × 4 jours ouvrés = 320 jours d'indisponibilité de tablettes de chantier (conseillers, conducteurs de travaux, chefs d'équipe), et 40 visites techniques reportées, autant de devis retardés alors que le délai fait la signature (annexe 1.3).</li>
+<li><strong>Le support caché</strong> : l'entraide informelle (100 jours × 250 € = <strong>25 k€</strong>) et le temps du responsable informatique absorbé par le dépannage (60 % de son temps, soit l'équivalent d'environ 36 k€ de son salaire chargé), au détriment des projets du plan.</li>
+</ol>
+<p><strong>Une économie réalisable dès 2027</strong> (0,5 pt) : réduire les licences inutilisées à leur date anniversaire — gestion de la relation client 5 × 1,2 = 6 k€, visite technique 5 × 0,8 = 4 k€, devis et facturation 6 × 1,5 = 9 k€, messagerie 15 × 0,2 = 3 k€, soit <strong>22 k€</strong> — et supprimer les doublons — activer le module de rendez-vous de A1 au lieu de A7 (6 k€), utiliser le stockage de la suite bureautique, qui permet d'envoyer des fichiers volumineux à l'extérieur, au lieu de A8 et A9 (6 + 8 = 14 k€), soit <strong>20 k€</strong> — : environ <strong>42 k€ par an</strong>, un quart des 164 k€ d'abonnements et près de 10 % des dépenses du SI. <em>Conditions</em> : vérifier les besoins avec les services (licences réservées aux recrutements des agences), respecter les dates anniversaires, organiser le transfert des fichiers et la configuration du module de rendez-vous.</p>
+<p><em>1.5 b) – Le dispositif de suivi des dépenses du SI</em></p>
+<p><strong>Structure du budget</strong> (0,5 pt) : un budget annuel du SI, préparé par le directeur administratif et financier avec le comité du SI et intégré au budget de l'entreprise, présenté :</p>
+<ul>
+<li><strong>par nature</strong> : abonnements aux services en ligne, matériel, télécommunications, support du prestataire, paramétrages, formation, temps interne, en distinguant le fonctionnement courant des projets (dont les technologies de l'annexe 1.3 et l'équipement des agences) ;</li>
+<li><strong>par service bénéficiaire</strong> : pôle commercial, opérations (et chaque agence), bureau d'études, administration, socle commun ; chaque responsable de service répond des abonnements et du matériel de son service.</li>
+</ul>
+<p>Toutes les dépenses du SI portent un <strong>code analytique « système d'information »</strong>, quel que soit le compte, pour que le suivi soit exhaustif ; le suivi est trimestriel, sans calcul d'écarts détaillé, en commentant les dérives significatives.</p>
+<p><strong>Deux indicateurs</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Taux d'utilisation des licences des services en ligne</td>
+<td>licences ou comptes utilisés / licences ou comptes payés</td>
+<td>registre des abonnements et consoles d'administration des services</td>
+<td>trimestrielle, avant les dates anniversaires</td>
+<td>au moins 95 % fin 2027 (31 licences ou comptes inutilisés en mars 2027)</td>
+<td>financier</td>
+</tr>
+<tr class="even">
+<td>Part des dépenses du SI engagées avec l'avis préalable</td>
+<td>montant des souscriptions, achats et renouvellements du SI ayant reçu l'avis préalable / montant total des souscriptions, achats et renouvellements du SI de la période (code analytique SI)</td>
+<td>comptabilité et registre des demandes</td>
+<td>trimestrielle</td>
+<td>100 % en 2028 (aucun avis préalable en 2026 ; A7, A8 et A9, 20 k€, souscrits sans avis et payés hors du compte informatique)</td>
+<td>gouvernance</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Revue et amélioration continue</strong> (0,5 pt) : chaque trimestre, le comité du SI examine le suivi du budget, les deux indicateurs et le registre des abonnements, et en rend compte au comité stratégique ; chaque année, avant la préparation du budget suivant, il revoit le dispositif lui-même selon une roue de Deming : planifier (budget, cibles), faire (engager selon les règles), vérifier (indicateurs, rapprochement du registre et des factures), agir (résilier, ajuster les cibles, retirer un indicateur inutile, en ajouter un avec les agences, par exemple le coût du SI par chantier achevé quand l'activité double). La revue du fonds (question 1.6) sert de première vérification externe.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres coûts cachés tirés du cas (abonnements payés hors du circuit, dépendance à un seul informaticien, visites reportées valorisées en devis perdus), s'ils sont expliqués ; estimation des ressaisies exprimée en jours ou en équivalents temps plein.</li>
+<li>Économie limitée aux licences inutilisées (22 k€) ou aux doublons (20 k€), si le calcul est juste et la condition de mise en œuvre précisée.</li>
+<li>Doublons limités au regroupement de A8 et A9 sur un seul des deux services (6 ou 8 k€), avec A7 remplacé par le module de A1, si l'économie est justifiée.</li>
+<li>Autres indicateurs complets et reliés aux constats, par exemple : <strong>dépenses du SI par chantier achevé</strong> (formule : dépenses du SI de l'année, code analytique SI / nombre de chantiers achevés ; source : comptabilité et logiciel de devis et de facturation ; fréquence : annuelle ; cible : au plus 450 € par chantier, niveau de 2026, malgré l'ouverture des agences ; axe : financier) ou <strong>temps de ressaisie</strong> (formule : somme des jours de ressaisie déclarés par les services sur le semestre ; source : relevé établi par chaque responsable de service ; fréquence : semestrielle ; cible : 150 jours par semestre en 2028, contre environ 300 en 2026 ; axe : processus).</li>
+<li>Présentation du budget en dépenses d'investissement et de fonctionnement, si la ventilation par service est présente.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Coûts cachés confondus avec les dépenses visibles</em> (<code>ET-33</code> TCO réduit au prix d'achat ; <code>JUR-A03</code> indicateurs de coûts dans une logique ouverte) — « le coût du SI est de 360 k€ » ; juste : 450 k€ reconstitués et 150 k€ de ressaisies en plus.</li>
+<li><em>Indicateurs sans formule, source ou cible</em> (<code>ET-18</code> ; <code>JUR-A02</code> justifier chaque indicateur) — « suivre les abonnements » ; juste : cinq champs et lien avec un constat.</li>
+<li><em>Calcul d'écarts sur le budget</em> (<code>JUR-T07</code> répondre à la seule question posée) — juste : structure du budget, suivi et revue du dispositif.</li>
+<li><em>Économie proposée sans condition</em> (<code>JUR-T03</code> analyser et argumenter) — résilier tout de suite tous les comptes ; juste : dates anniversaires, besoins des agences, transfert des fichiers.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contrôle de gestion du SI : budget, structure, ratio dépenses du SI / chiffre d'affaires</td>
+<td>fondamentaux</td>
+<td>F09 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Coûts cachés, TCO</td>
+<td>ressaisies, attentes, abonnements hors circuit</td>
+<td>F09 § 2 et § 3 ; <code>erreurs_types.md</code> ET-33</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Tableau de bord, axes et revue</td>
+<td>indicateurs à cinq champs, roue de Deming</td>
+<td>F09 § 4 ; IT Balanced Scorecard (Van Grembergen)</td>
+<td><code>van_grembergen_it_bsc</code> (modèle théorique)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="16--la-revue-du-système-dinformation-demandée-par-le-fonds-2-points">1.6 – La revue du système d'information demandée par le fonds (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.2 – Auditer, contrôler et évaluer la performance et la conformité des SI : <code>3.2.a</code> « Conduire des missions d'audit et de contrôle des systèmes d'information afin d'évaluer leur performance, leur conformité réglementaire et la qualité de leur gouvernance » ; <code>3.2.c</code> « Critères de performance et de conformité : fiabilité, efficacité, sécurité, conformité RGPD, etc. ». Limites : « La conformité financière et comptable n'est pas traitée dans le programme de l'UE 5. » ; « L'audit SI suppose une approche multidisciplinaire et une posture critique vis-à-vis de la gouvernance. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (questions du fonds, applications, décisions, dépendance au responsable informatique, souscriptions sans avis), 1.4 (dépenses reconstituées) et 1.5 (RGPD, COBIT 2019, ISO/IEC 27001:2022).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Audit du SI défini ; objectifs tirés des questions du fonds ; périmètre (inclus, exclus) et indépendance de l'auditeur</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Démarche en quatre étapes, chacune appliquée au cas, avec un calendrier compatible avec le comité de juillet 2027</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Quatre critères (fiabilité, sécurité, conformité au RGPD, gouvernance), chacun illustré par un point à examiner chez SOLVÉRANCE Habitat et rattaché à un référentiel</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Livrables de la revue</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p>L'<strong>audit du système d'information</strong> est un examen indépendant et méthodique qui apprécie, au regard de référentiels (COBIT 2019 pour la gouvernance, ISO/IEC 27001:2022 pour la sécurité, RGPD pour les données personnelles), la gouvernance, la performance, la sécurité et la conformité du SI, et formule des recommandations. La revue demandée par le fonds en est une forme : un audit contractuel, commandé par le comité stratégique.</p>
+<p><strong>Objectifs</strong> (tirés des questions de M. VORGNAC) : apprécier la capacité du SI à supporter le doublement de l'activité et l'ouverture de deux agences ; la fiabilité, la protection et la conformité des données des clients ; la qualité de la gouvernance (qui décide, sur quelle base) ; les dépendances (une seule personne, quelques éditeurs) ; le coût réel du SI. <strong>Périmètre</strong> : les neuf applications et les deux tableurs, le parc et le contrat de support, les contrats des éditeurs, l'organisation et les règles de décision, les dépenses ; le siège et la préparation des agences. <strong>Exclus</strong> : les comptes annuels et leur audit légal (hors UE 5), les essais techniques sur les services des éditeurs. <strong>Indépendance</strong> : un auditeur extérieur choisi conjointement par le président et le fonds, sous mandat du comité stratégique (0,5 pt).</p>
+<p><strong>Démarche en quatre étapes</strong> (0,5 pt), de mai à juin 2027 :</p>
+<ol type="1">
+<li><strong>Cadrage</strong> : lettre de mission validée par le comité stratégique (objectifs, périmètre, référentiels, interlocuteurs, calendrier, restitution au comité de juillet 2027).</li>
+<li><strong>Prise de connaissance et analyse des risques</strong> : entretiens avec le président, les responsables des services, le responsable informatique et le prestataire ; cartographie applicative (question 1.2), registre des abonnements et des contrats, dépenses reconstituées ; hiérarchisation des risques pour cibler les travaux.</li>
+<li><strong>Évaluation</strong> : points de contrôle par critère, revue des documents et des contrats, observations, rapprochements sur un échantillon de chantiers (du devis à la facture et à la comptabilité).</li>
+<li><strong>Restitution et suivi</strong> : constats validés avec les responsables, rapport, présentation au comité stratégique, plan d'action priorisé dont le comité du SI suit la mise en œuvre.</li>
+</ol>
+<p><strong>Quatre critères et points à examiner</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Point à examiner chez SOLVÉRANCE Habitat</th>
+<th>Référentiel d'appui</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fiabilité</td>
+<td>cohérence des données du client et du chantier saisies dans cinq outils ; exhaustivité du transfert mensuel des factures du logiciel de devis vers la comptabilité</td>
+<td>COBIT 2019 (domaine « délivrer, servir et soutenir »)</td>
+</tr>
+<tr class="even">
+<td>Sécurité</td>
+<td>accès d'administration des services en ligne connus du seul responsable informatique ; comptes ouverts et inutilisés ; sauvegarde et récupération des données détenues par les éditeurs</td>
+<td>ISO/IEC 27001:2022 (mesures de l'annexe, comme grille d'examen)</td>
+</tr>
+<tr class="odd">
+<td>Conformité au RGPD</td>
+<td>registre des activités de traitement ; contrats de sous-traitance avec les éditeurs, y compris A7, A8 et A9 souscrits en acceptant les conditions des fournisseurs ; photos de l'intérieur des logements</td>
+<td>RGPD (annexe 1.5)</td>
+</tr>
+<tr class="even">
+<td>Gouvernance</td>
+<td>existence d'instances, de règles et d'un budget ; décisions du président au fil de l'eau ; souscriptions sans avis</td>
+<td>COBIT 2019 (domaines « évaluer, diriger et surveiller » et « aligner, planifier et organiser ») ; ISO/IEC 38500:2024</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Livrables</strong> (0,5 pt) : lettre de mission ; cartographie des risques du SI ; programme de travail ; fiches de constats (constat, cause, risque, recommandation, priorité, responsable, échéance) ; rapport ; note de synthèse au comité stratégique de juillet 2027 répondant aux questions du fonds ; plan d'action priorisé et daté, et son suivi.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Démarche en cinq ou six étapes (cadrage, prise de connaissance, analyse des risques, programme, évaluation, restitution), si les quatre temps demandés y figurent.</li>
+<li>Critère d'efficacité ou d'efficience (capacité à absorber le doublement, coût réel) ajouté ou substitué à l'un des quatre, s'il est illustré par le cas.</li>
+<li>Revue menée par le directeur des systèmes d'information à temps partagé, si son indépendance limitée est discutée et compensée (validation par le comité stratégique).</li>
+<li>Référentiels non cités, si les critères et les points à examiner sont justes.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Audit du SI confondu avec l'audit légal des comptes</em> (<code>ET-34</code>) — « la revue est l'audit des comptes annuels » ; juste : audit contractuel du SI ; l'audit légal des comptes est hors périmètre.</li>
+<li><em>Démarche sans périmètre, objectifs ni livrables</em> (<code>JUR-A01</code> méthodologie d'audit structurée) — liste d'étapes génériques ; juste : objectifs tirés des questions du fonds, périmètre, calendrier, livrables.</li>
+<li><em>Référentiels confondus</em> (<code>ET-11</code> ; <code>JUR-G04</code> distinguer COBIT et ISO 27001) — « COBIT pour la sécurité » ; juste : COBIT pour la gouvernance, ISO/IEC 27001 pour la sécurité, RGPD pour les données personnelles.</li>
+<li><em>Diagnostic rédigé au lieu du cadrage</em> (<code>JUR-T07</code> répondre à la seule question posée) — juste : cadrage de la mission, avec des points à examiner.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Audit du SI : définition, types, démarche, livrables</td>
+<td>cadrage, prise de connaissance, évaluation, restitution</td>
+<td>F10 § 1 ; <code>erreurs_types.md</code> ET-34</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>COBIT 2019</td>
+<td>gouvernance, cinq domaines</td>
+<td><code>cobit_2019</code> ; F02 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO/IEC 27001:2022</td>
+<td>grille de mesures de sécurité</td>
+<td><code>iso_27001_2022</code> ; F12</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>RGPD</td>
+<td>registre, sous-traitants, sécurité, notification en 72 heures</td>
+<td><code>rgpd</code> ; F15</td>
+<td>en vigueur depuis le 25/05/2018 ; proposition « omnibus numérique » du 19/11/2025 non applicable</td>
+</tr>
+<tr class="odd">
+<td>ISO/IEC 38500:2024</td>
+<td>évaluer, diriger, surveiller</td>
+<td><code>iso_38500_2024</code> ; F02 § 4</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-2--organiser-et-exploiter-les-données-des-chantiers-et-des-logements-13-points">DOSSIER 2 – ORGANISER ET EXPLOITER LES DONNÉES DES CHANTIERS ET DES LOGEMENTS (13 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Le dossier numérique du chantier et les échanges avec les partenaires</td>
+<td><code>2.1.a</code> Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes ; <code>2.1.d</code> Normes et standards d'interopérabilité (XML, API, formats ouverts)</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>2.2 L'analyse des marges des chantiers</td>
+<td><code>2.2.b</code> Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution ; <code>2.2.d</code> Outils décisionnels : Excel avancé, Power BI, Tableau, etc. ; <code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés</td>
+<td>4,5</td>
+</tr>
+<tr class="odd">
+<td>2.3 La fiabilité des données de gestion des chantiers</td>
+<td><code>4.1.e</code> Fiabilisation des systèmes d'information comptables et décisionnels</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td>2.4 La gouvernance stratégique des données et la base des logements</td>
+<td><code>2.3.a</code> Mettre en place une gouvernance stratégique de la donnée intégrant les enjeux de qualité, de conformité, de sécurité, de valorisation et de cycle de vie des actifs numériques ; <code>2.3.c</code> Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK) ; <code>2.3.f</code> Notions de valeur, de patrimoine immatériel et de risque lié aux actifs numériques ; <code>2.3.d</code> Enjeux du Big Data, cloud computing, datacenters et souveraineté numérique</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 2 – Organiser et exploiter les données des chantiers et des logements</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (interopérabilité et ses plans, source unique et identifiant, chaîne de traitement des données, démarche décisionnelle, biais de lecture, typologie des contrôles, gouvernance des données, actif immatériel, souveraineté et réversibilité) environ 3 points (les items 2.1 b-1, 2.2 b-1 et 2.4 a-1, et la moitié des items 2.2 a-1, 2.3 b-1, 2.4 b-1 et 2.4 c-1) ; analyse des annexes et recommandations environ 10 points, soit environ 77 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 59 minutes.</p>
+<hr />
+<h3 id="21--le-dossier-numérique-du-chantier-et-les-échanges-avec-les-partenaires-3-points">2.1 – Le dossier numérique du chantier et les échanges avec les partenaires (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.a</code> « Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes » ; <code>2.1.d</code> « Normes et standards d'interopérabilité (XML, API, formats ouverts) ». L'approfondissement technique des échanges est exclu ; l'interopérabilité est traitée sur les plans technique et organisationnel.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (outils du système d'information, quarantaine d'entreprises partenaires, organigramme), 2.1 (tableau des étapes et des identifiants, contrôle de 100 dossiers, dossiers d'aides, échanges avec les partenaires et les négociants, projet et avis recueillis) et 2.4 (calendrier et formats de la facturation électronique).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Trois constats de l'annexe 2.1 et ce qu'ils coûtent : aides perdues et gestes commerciaux, temps de recherche, défauts des dossiers, achats non rattachés, confiance des clients</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Identifiant commun : numéro de projet attribué au premier contact (réponse à Mme FONTRIVAL) et numéro de chantier à la signature, uniques, non signifiants, stables, indépendants des versions du devis, portés par tous les outils et toutes les pièces</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Référentiel des clients et des logements, outil qui fait foi pour chaque catégorie de données, circulation sans ressaisie ; dossier numérique comme vue consolidée qui range les pièces par l'identifiant et en garde la version validée (réponse au conducteur de travaux et à la chargée des dossiers d'aides)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Interopérabilité définie, avec ses plans technique (et syntaxique), sémantique et organisationnel</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Entreprises partenaires : dépôt des pièces dans le dossier numérique pour leur lot, formats ouverts, nommage par le numéro de chantier, factures électroniques structurées à compter du 01/09/2027 ; interface de programmation réservée aux trois partenaires équipés ; deux conditions organisationnelles</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Fournisseurs de matériaux : commandes passées depuis le logiciel de devis avec le numéro de chantier, interface de programmation avec les deux négociants qui la proposent, factures structurées déjà reçues rattachées automatiquement ; deux conditions organisationnelles</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.1 a) – Ce que coûte l'organisation actuelle et l'organisation cible des données</em></p>
+<p><strong>Trois constats et leur coût</strong> (0,5 pt), parmi les suivants :</p>
+<ol type="1">
+<li><strong>Un même chantier sous des identifiants différents d'un outil à l'autre</strong> (numéro de contact, numéro de visite, nom du fichier thermique, numéro de devis qui change à chaque version, nom du client dans le planning et le stockage, numéro de dossier de l'organisme) : aucun outil ne peut retrouver les données d'un autre ; retrouver les pièces d'un chantier, dans cinq outils, demande souvent plus d'une heure.</li>
+<li><strong>Des dossiers incomplets ou incohérents</strong> : 55 dossiers sur 100 présentent au moins un défaut (adresse écrite différemment dans 35, photos avant travaux introuvables dans 20, avenant non reporté dans 15, procès-verbal absent dans 12, calcul thermique décalé dans 10).</li>
+<li><strong>Des aides perdues pour les clients</strong> : 140 dossiers d'aides incomplets sur 700 (20 %) et 35 rejetés (5 %), soit environ 175 k€ d'aides perdues pour les clients et 70 k€ de gestes commerciaux consentis pour préserver la relation : une perte de marge et une atteinte à la <strong>confiance des clients</strong> que le plan « Cap 2029 » veut préserver.</li>
+<li><strong>Des achats sans chantier</strong> : une commande de matériaux sur deux ne porte pas le numéro de devis, et les factures des négociants, pourtant structurées, ne peuvent pas être rattachées à un chantier ; la marge de chaque chantier devient incalculable (lien avec l'annexe 2.2).</li>
+</ol>
+<p><strong>L'identifiant commun</strong> (0,5 pt) : deux niveaux, pour répondre à Mme FONTRIVAL sans créer de chantiers fictifs :</p>
+<ul>
+<li>un <strong>numéro de projet</strong> (ou de logement) attribué <strong>au premier contact</strong> par l'outil de gestion de la relation client, repris par la visite technique, le calcul thermique et le devis : il couvre les logements visités qui ne deviendront pas des chantiers ;</li>
+<li>un <strong>numéro de chantier</strong> attribué <strong>à la signature</strong> par le logiciel de devis et de facturation, rattaché au numéro de projet ; les versions du devis et les avenants sont numérotées <strong>sous</strong> ce numéro au lieu d'en changer. Ces identifiants sont <strong>uniques</strong>, <strong>non signifiants</strong> (ni le nom du client ni la commune, qui s'écrivent de plusieurs façons et peuvent changer), <strong>stables</strong> et jamais réattribués. Ils sont <strong>diffusés</strong> partout : bons de commande, bons de livraison, planning, heures, photos, procès-verbal, factures des partenaires et des négociants, dossier d'aides (le numéro de l'organisme est conservé comme simple référence rattachée).</li>
+</ul>
+<p><strong>Le référentiel, l'outil qui fait foi et la circulation</strong> (0,5 pt) : chaque donnée a <strong>une source maîtresse</strong> où elle est saisie une seule fois, puis circule vers les outils qui l'utilisent, de préférence automatiquement, sans ressaisie :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Catégorie de données</th>
+<th>Outil qui fait foi</th>
+<th>Outils alimentés</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Client, adresse normalisée du logement, numéro de projet</td>
+<td>gestion de la relation client (référentiel des clients et des logements)</td>
+<td>visite, calcul thermique, devis, planning, dossier d'aides</td>
+</tr>
+<tr class="even">
+<td>Caractéristiques du logement, consommations déclarées, photos avant travaux</td>
+<td>application de visite technique</td>
+<td>calcul thermique, devis, dossier numérique</td>
+</tr>
+<tr class="odd">
+<td>Résultat du calcul thermique (version liée au devis signé)</td>
+<td>logiciel de calcul thermique</td>
+<td>dossier numérique, dossier d'aides</td>
+</tr>
+<tr class="even">
+<td>Devis signé, avenants, lots, numéro de chantier, situations, factures</td>
+<td>logiciel de devis et de facturation</td>
+<td>planning, commandes, comptabilité, analyse des marges, dossier d'aides</td>
+</tr>
+<tr class="odd">
+<td>Heures, photos de chantier, procès-verbal de réception</td>
+<td>saisie sur la tablette de chantier, sous le numéro de chantier</td>
+<td>paie, analyse des marges, dossier numérique</td>
+</tr>
+</tbody>
+</table>
+<p>Le <strong>dossier numérique du chantier</strong> n'est pas un dossier de fichiers de plus : c'est une <strong>vue consolidée</strong> des données et des pièces du chantier, retrouvées par l'identifiant. Il peut s'appuyer sur le module de suivi de chantier du logiciel de devis (environ 4 k€ par an), puisque ce logiciel attribue le numéro de chantier et dispose d'une interface de programmation. Il <strong>classe automatiquement</strong> les pièces prises sur la tablette sous le numéro de chantier (réponse au conducteur de travaux, qui ne classera rien à la main) et ne retient comme pièce de référence que la <strong>version validée</strong> (devis signé et avenants signés, calcul thermique correspondant, procès-verbal signé), les versions antérieures restant consultables (réponse à la chargée des dossiers d'aides). Une liste des pièces obligatoires par type de chantier signale à chaque étape celles qui manquent, avant la réception et avant le dépôt du dossier d'aides.</p>
+<p><em>2.1 b) – L'interopérabilité avec les entreprises partenaires et les fournisseurs</em></p>
+<p>L'<strong>interopérabilité</strong> est la capacité de systèmes hétérogènes, appartenant le cas échéant à des organisations différentes, à échanger des données et à les utiliser sans intervention manuelle (0,5 pt). Elle se joue sur plusieurs plans : <strong>technique</strong> (moyens d'échange : interface de programmation, plateforme), <strong>syntaxique</strong> (formats : PDF, fichier tableur, XML, formats structurés de facture), <strong>sémantique</strong> (même sens des données : numéro de chantier, adresse, désignation des articles) et <strong>organisationnel</strong> (qui transmet quoi, quand, sous quelle responsabilité) (F07 § 7). Le programme exige les plans technique et organisationnel : un format ouvert ne sert à rien si personne ne s'engage à l'utiliser. Les <strong>formats ouverts</strong> sont des formats dont la spécification est publique et que tout logiciel peut lire, ce qui évite la dépendance à un éditeur ; une <strong>interface de programmation (API)</strong> permet à un logiciel d'interroger ou d'alimenter un autre logiciel de manière automatisée.</p>
+<p><strong>Avec les entreprises partenaires</strong> (0,5 pt) : quarante PME et micro-entreprises, dont trois seulement ont un logiciel capable d'échanger des données ; une interface de programmation généralisée serait irréaliste.</p>
+<ul>
+<li><strong>Solution</strong> : un <strong>espace de dépôt</strong> dans le dossier numérique, limité au lot de chaque partenaire, où il dépose ses pièces (planning, photos, attestation d'autocontrôle) dans des <strong>formats ouverts</strong> (PDF, photos datées), sous un nommage fondé sur le numéro de chantier : il n'a rien à ressaisir, ce qui répond au gérant de l'entreprise de chauffage. Ses <strong>factures</strong> suivent le calendrier de l'annexe 2.4 : à compter du 01/09/2027, les PME et micro-entreprises doivent les émettre sous forme électronique, par une plateforme agréée, dans l'un des formats Factur-X, UBL ou CII ; SOLVÉRANCE Habitat demande que le numéro de chantier y figure comme référence de la commande, ce qui permettra de les rattacher automatiquement. L'interface de programmation est réservée aux trois partenaires équipés, si le volume le justifie.</li>
+<li><strong>Deux conditions organisationnelles</strong>, parmi : une <strong>charte d'échange</strong> (ou contrat d'interface) signée avec chaque partenaire, qui fixe les pièces attendues, leurs formats, leurs délais (par exemple photos et attestation dans les 48 heures, facture dans les quinze jours suivant la fin des travaux) et la mention obligatoire du numéro de chantier ; un <strong>interlocuteur</strong> désigné de part et d'autre (assistante d'exploitation, conducteur de travaux) et un accompagnement des partenaires qui n'ont qu'un tableur ; l'intégration de ces exigences dans la sélection et le suivi des partenaires (délai de paiement conditionné à la complétude du dossier) ; un calendrier aligné sur septembre 2027.</li>
+</ul>
+<p><strong>Avec les fournisseurs de matériaux</strong> (0,5 pt) : trois négociants, entreprises de taille intermédiaire, assurent 70 % des achats ; deux proposent une interface de programmation et tous émettent déjà des factures électroniques structurées (obligatoire pour eux depuis le 01/09/2026, annexe 2.4).</p>
+<ul>
+<li><strong>Solution</strong> : passer les commandes <strong>depuis le logiciel de devis</strong>, à partir des quantités du devis signé, avec le numéro de chantier ; avec les deux négociants équipés, relier ce logiciel à leur interface de programmation pour transmettre la commande et recevoir la confirmation, l'avis de livraison et la facture ; avec le troisième, utiliser son site ou un fichier de commande dans un format ouvert, toujours avec le numéro de chantier. La facture structurée, qui porte alors ce numéro, est <strong>rattachée automatiquement</strong> au chantier et rapprochée de la commande et de la livraison (question 2.3).</li>
+<li><strong>Deux conditions organisationnelles</strong>, parmi : <strong>aucune commande sans numéro de chantier</strong>, y compris au comptoir (les achats de dépannage sont imputés sur place au chantier, ou au stock du dépôt puis sortis par chantier) ; un <strong>référentiel des articles</strong> partagé avec les négociants (correspondance entre leurs références et les ouvrages de la bibliothèque de prix) ; une <strong>responsable</strong> des achats parmi les assistantes d'exploitation ; un accord avec chaque négociant sur les données échangées et le traitement des anomalies.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Un seul identifiant attribué dès le premier contact, s'il reste stable de la demande à la facture et si les logements sans chantier sont distingués par un statut.</li>
+<li>Dossier numérique tenu dans l'espace de stockage partagé, si l'identifiant commun, le classement automatique et la version de référence sont prévus ; ou dans un outil distinct, si son alimentation par les outils sources est décrite.</li>
+<li>Plateforme d'échange ou bus d'intégration cité, si le principe (source maîtresse, fin des ressaisies) reste au premier plan ; échanges de données informatisés (EDI) proposés avec les négociants à la place d'une interface de programmation.</li>
+<li>Plans de l'interopérabilité présentés en trois niveaux (le niveau syntaxique rattaché au plan technique).</li>
+<li>Mention de la facturation électronique de SOLVÉRANCE Habitat elle-même, si elle reste exacte (ventes aux particuliers hors du champ des factures entre entreprises).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Interopérabilité seulement technique</em> (<code>ET-36</code>) — interface de programmation proposée aux quarante partenaires sans charte, ni délais, ni numéro de chantier obligatoire ; juste : technique, sémantique et organisationnelle ensemble.</li>
+<li><em>Dossier numérique réduit à un répertoire de fichiers</em> (<code>JUR-T03</code>) — « créer un dossier partagé par chantier » sans identifiant commun ni source maîtresse : on ajoute un sixième endroit où chercher ; juste : une vue consolidée alimentée par les outils sources.</li>
+<li><em>Identifiant signifiant</em> — numéro construit avec le nom du client ou la commune, ou numéro de devis qui change à chaque version ; juste : identifiant non signifiant et stable, versions numérotées sous lui.</li>
+<li><em>Modèle des données ou détail technique hors attente</em> (<code>JUR-T06</code>, <code>JUR-T12</code>) — entités et cardinalités, description des formats balise par balise ou du fonctionnement des interfaces, que la question exclut.</li>
+<li><em>Morceau de cours</em> (<code>JUR-T01</code>) — définition de l'interopérabilité sans application aux partenaires et aux négociants.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Généralisation de la facturation électronique (article 91 de la loi de finances pour 2024) : réception obligatoire depuis le 01/09/2026, émission par les PME et micro-entreprises à compter du 01/09/2027 ; formats Factur-X, UBL, CII</td>
+<td>calendrier et formats, d'après les repères de l'annexe 2.4</td>
+<td><code>facturation_electronique_fr</code> / F10 § 3.4</td>
+<td>en vigueur ; émission des PME au 01/09/2027</td>
+</tr>
+<tr class="even">
+<td>Plateformes agréées de facturation électronique</td>
+<td>réception des factures structurées des négociants</td>
+<td><code>facturation_electronique_pa</code> / F10 § 3.4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Interopérabilité (plans technique, syntaxique, sémantique, organisationnel), formats ouverts, interfaces de programmation ; données de référence et identifiants</td>
+<td>définitions et principes</td>
+<td>F07 § 1 et 7 ; F03 § 3</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--lanalyse-des-marges-des-chantiers-45-points">2.2 – L'analyse des marges des chantiers (4,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.b</code> « Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution » ; <code>2.2.d</code> « Outils décisionnels : Excel avancé, Power BI, Tableau, etc. » ; <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés ». Aucune manipulation d'outil ni aucun calcul statistique ; lecture critique des corrélations et des biais, reliée à la stratégie.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (plan « Cap 2029 », comité stratégique, organigramme), 2.1 (identifiants, commandes sans numéro) et 2.2 (tableaux 1 à 4, données et défauts, outil actuel et deux possibilités, demande de M. VORGNAC).</p>
+<p><strong>Barème indicatif (4,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Collecte et nettoyage : sources (devis et facturation, comptabilité, heures, planning), traitement des données manquantes ou non rattachées, journal des rejets, chacun relié à un défaut de l'annexe 2.2 (B et C)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Structuration, analyse et restitution : rapprochement par le numéro de chantier, règles de calcul documentées, analyse par chantier et par axe, restitution par profil et mise en action, chacune reliée à un défaut</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Démarche décisionnelle et non simple outil ; choix argumenté par trois critères tirés de l'annexe 2.2 C et du plan « Cap 2029 »</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Coût de tête de l'outil en ligne (25 + 3 × 6 = 43 k€ sur trois ans) rapproché d'un point de marge (250 k€ par an) ; conditions préalables (numéro de chantier commun, fiabilité des données)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Premier constat argumenté, avec sa précaution de lecture et sa conséquence pour le plan</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Deuxième constat argumenté, avec sa précaution de lecture et sa conséquence pour le plan</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-3</td>
+<td>Troisième constat argumenté, avec sa précaution de lecture et sa conséquence pour le plan</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>d-1</td>
+<td>Représentation pour le comité stratégique : message, graphique, piège, indicateur complet</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>d-2</td>
+<td>Représentation pour les conducteurs de travaux : message, graphique, piège, indicateur complet</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.2 a) – La chaîne de traitement des données de l'analyse mensuelle des marges</em></p>
+<p>La chaîne de traitement des données (chaîne de valeur de l'informatique décisionnelle) conduit des données brutes des logiciels de gestion à une information qui éclaire la décision : collecte, nettoyage, structuration, analyse, restitution (F08 § 1). Appliquée aux marges des chantiers (0,5 pt par groupe d'étapes, chaque étape reliée à un défaut de l'annexe 2.2 (B et C)) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Ce qu'elle traite chez SOLVÉRANCE Habitat</th>
+<th>Défaut corrigé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Collecte</td>
+<td>extraction automatique, chaque nuit ou à date fixe, des devis signés et avenants, des factures et situations (logiciel de devis et de facturation), des achats et factures des partenaires et des négociants (comptabilité), des heures par chantier (paie ou saisie sur tablette), du planning et de l'avancement</td>
+<td>quatre extractions manuelles, trois jours par mois, rapprochées par le nom du client</td>
+</tr>
+<tr class="even">
+<td>Nettoyage</td>
+<td>contrôle des données manquantes, invalides ou en double : heures « dépôt et divers », achats sans chantier, factures de partenaires attendues mais non reçues (signalées et estimées à partir de la commande), avenants non enregistrés ; <strong>journal des rejets</strong> renvoyé aux responsables pour correction <strong>à la source</strong></td>
+<td>15 % des heures et 20 % des achats sans chantier ; 300 k€ de factures non reçues ; avenants absents</td>
+</tr>
+<tr class="odd">
+<td>Structuration</td>
+<td>rapprochement de toutes les données par le <strong>numéro de chantier</strong> (question 2.1), à partir du référentiel des chantiers (type de travaux, secteur, conducteur, réalisation par les équipes ou avec des partenaires) ; règles de calcul <strong>documentées</strong> dans un dictionnaire des indicateurs (marge prévue, marge constatée, coût horaire standard, règle explicite pour les achats non rattachés en attendant leur disparition) ; historisation des mois</td>
+<td>rapprochement par le nom du client ; répartition des achats au prorata du chiffre d'affaires ; trois versions de l'analyse de juin</td>
+</tr>
+<tr class="even">
+<td>Analyse</td>
+<td>analyse descriptive de la marge prévue et constatée par chantier, puis par type de travaux, secteur, réalisation, conducteur et période ; repérage des chantiers qui s'écartent de la prévision et recherche de leurs causes (analyse exploratoire) ; distinction des chantiers achevés et en cours</td>
+<td>analyse limitée au total par type de travaux ; aucune lecture par chantier</td>
+</tr>
+<tr class="odd">
+<td>Restitution et décision</td>
+<td>tableaux de bord par profil : comité stratégique (trimestriel), direction et conducteurs de travaux (hebdomadaire ou mensuel, pour leurs chantiers) ; commentaire, plan d'action et suivi</td>
+<td>analyse disponible le 20 du mois suivant ; conducteurs non destinataires ; demande de M. VORGNAC</td>
+</tr>
+</tbody>
+</table>
+<p><em>2.2 b) – Le choix de l'outil décisionnel</em></p>
+<p>L'informatique décisionnelle est une <strong>démarche</strong> et non un outil (0,5 pt avec le choix) : l'outil n'est que la couche de restitution d'une chaîne qui suppose des données fiables et rapprochables, des définitions partagées (qu'est-ce qu'une marge constatée ?), des responsables, des compétences et une culture de la donnée chez les utilisateurs (F08 § 1 ; rapport du jury 2025). L'intégrateur le dit lui-même : « l'outil ne corrigera pas vos données ». Sans numéro de chantier commun, ni l'une ni l'autre possibilité ne fonctionne.</p>
+<p><strong>Choix argumenté</strong> : l'<strong>outil décisionnel en ligne</strong> (possibilité 2), au regard de trois critères, parmi :</p>
+<ol type="1">
+<li><strong>Les destinataires</strong> : le comité stratégique, la direction et dix conducteurs de travaux, bientôt les équipes de deux agences ; le tableur reste sur le poste d'une personne et circule en PDF, alors que l'outil en ligne offre des droits par profil et une consultation sur tablette.</li>
+<li><strong>La fraîcheur et la fiabilité</strong> : préparation automatique chaque nuit, une seule version des chiffres, règles de calcul centralisées, contre une consolidation qui dépend encore d'une personne et d'imports manuels, avec le risque de versions concurrentes.</li>
+<li><strong>L'adaptation au plan « Cap 2029 »</strong> : un volume de chantiers qui doit doubler, des axes d'analyse plus nombreux (agences, secteurs) et la demande trimestrielle du fonds ; le tableur atteindrait vite ses limites (volumétrie, traçabilité, dépendance à la comptable).</li>
+<li><strong>Le coût et les compétences</strong> : le tableur est moins cher et plus rapide à mettre en place, mais ne libère qu'environ deux jours de travail par mois ; l'outil en ligne exige un intégrateur et une montée en compétence des utilisateurs.</li>
+</ol>
+<p><strong>Coût et enjeu</strong> (0,5 pt) : de tête, 25 + 3 × 6 = <strong>43 k€ sur trois ans</strong>, soit environ 14 k€ par an, à rapprocher d'<strong>un point de marge</strong>, qui représente 1 % de 25 000 k€, soit <strong>250 k€ par an</strong> (et le double si le chiffre d'affaires double) ; l'écart de 2026 entre marge prévue et constatée est de 1 100 k€. Le coût est donc faible au regard de l'enjeu, <strong>à condition</strong> que les prérequis soient tenus : numéro de chantier commun à tous les logiciels (question 2.1) et données fiabilisées à la source (question 2.3). Un passage par le tableur structuré pendant quelques mois, le temps de fiabiliser les données, est acceptable s'il prépare l'outil en ligne.</p>
+<p><em>2.2 c) – Trois constats argumentés sur les marges de 2026</em></p>
+<p>Trois constats parmi les suivants (0,5 pt chacun, constat, précaution et conséquence compris) :</p>
+<ol type="1">
+<li><strong>L'écart se concentre sur les rénovations globales</strong> : marge constatée de 22 % contre 32 % prévus (10 points d'écart), contre 26 % pour 28 % prévus sur les travaux par lots (2 points) ; les rénovations globales, 30 % du chiffre d'affaires, portent 750 k€ des 1 100 k€ d'écart, soit environ 70 % ; 40 % d'entre elles (50 sur 125) sont en dépassement de plus de 5 points. <em>Précaution</em> : la moyenne masque une forte dispersion (dix chantiers expliquent environ 300 k€, soit 40 % de l'écart des rénovations globales) ; les coûts de chaque chantier sont imparfaitement mesurés (heures non imputées, achats répartis au prorata du chiffre d'affaires) ; il faut analyser chantier par chantier avant de généraliser. <em>Conséquence</em> : le plan veut développer les rénovations globales ; si leur marge n'est pas maîtrisée, la croissance détruira de la valeur : revoir leur chiffrage avec le bureau d'études et analyser les dix chantiers les plus en écart.</li>
+<li><strong>La marge s'érode à mesure que l'activité croît</strong> : 27 % au premier trimestre, 23 % au quatrième, alors que le chiffre d'affaires trimestriel passe de 5 500 à 7 000 k€. <em>Précaution</em> : <strong>corrélation n'est pas causalité</strong> : la baisse coïncide avec le recrutement de quinze compagnons au second semestre, peut-être avec une part plus forte de rénovations globales ou une saisonnalité ; quatre trimestres ne font pas une tendance ; et le quatrième trimestre est sans doute <strong>surestimé</strong>, puisque 300 k€ de factures de partenaires n'étaient pas reçues au 31 janvier : la baisse réelle est peut-être plus forte. <em>Conséquence</em> : doubler le chiffre d'affaires et ouvrir deux agences avec de nouvelles équipes risque d'amplifier l'érosion : mesurer la marge par équipe et par ancienneté et prévoir l'encadrement des nouveaux compagnons avant les ouvertures.</li>
+<li><strong>Le nord de l'Isère a la marge la plus faible</strong> : 21 % contre 24 à 26 % ailleurs. <em>Précaution</em> : <strong>effet de structure</strong> : la moitié de son chiffre d'affaires vient des rénovations globales, contre 24 à 30 % ailleurs, et ce type de travaux a la marge la plus faible ; l'effectif est réduit (100 chantiers, dont 25 rénovations globales) ; l'éloignement du dépôt n'explique donc au mieux qu'une partie de l'écart, et reste une hypothèse à vérifier (temps de trajet, approvisionnement). <em>Conséquence</em> : les agences de Grenoble et de Saint-Étienne seront elles aussi éloignées de Vénissieux : il faut mesurer la marge par secteur et par type de travaux pour calibrer leurs devis et leur approvisionnement.</li>
+<li><strong>Les chantiers réalisés par les seules équipes perdent plus de marge que ceux confiés en partie à des partenaires</strong> : 23 % contre 28 % prévus (5 points), contre 26 % pour 30 % (4 points). <em>Précaution</em> : comparaison fragile : 300 k€ de factures de partenaires manquent, soit environ 2 points sur 14 000 k€ de chiffre d'affaires, et la marge des chantiers confiés en partie aux partenaires serait plutôt de 24 % ; les heures non imputées et la répartition des achats faussent aussi la comparaison ; les deux groupes n'ont pas la même composition (toutes les rénovations globales sont dans le second). <em>Conséquence</em> : aucune décision de confier davantage de travaux aux partenaires ne peut être fondée sur ce tableau.</li>
+</ol>
+<p><em>2.2 d) – Deux représentations visuelles</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Destinataire</th>
+<th>Message</th>
+<th>Graphique</th>
+<th>Piège de lecture à éviter</th>
+<th>Indicateur représenté</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Comité stratégique (0,5 pt)</td>
+<td>où et quand la marge se perd, et si elle se redresse</td>
+<td>barres groupées « marge prévue / marge constatée » par type de travaux et par secteur, triées, avec le chiffre d'affaires de chaque barre ; courbe trimestrielle de l'écart de marge, avec une ligne de cible</td>
+<td><strong>axe tronqué</strong> qui amplifie les écarts ; moyennes sans le volume ni la part des rénovations globales (<strong>effet de structure</strong>) ; conclusion tirée d'un seul trimestre</td>
+<td>écart de marge des chantiers achevés (fiche ci-dessous)</td>
+</tr>
+<tr class="even">
+<td>Conducteurs de travaux (0,5 pt)</td>
+<td>quel chantier dérive cette semaine, pour agir avant la fin des travaux</td>
+<td>liste de leurs chantiers en cours avec, pour chacun, une barre de progression (puce) qui compare la part des heures prévues déjà consommées à l'avancement contrôlé, en couleur selon le seuil d'alerte</td>
+<td>lecture fondée sur un <strong>avancement déclaré</strong> non contrôlé ; comparaison entre conducteurs sans tenir compte du type de chantier ; trop d'indicateurs sur un petit écran</td>
+<td>taux de consommation des heures prévues (fiche ci-dessous)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Écart de marge des chantiers achevés</td>
+<td>(marge constatée − marge prévue au devis) / chiffre d'affaires facturé des chantiers achevés, en points</td>
+<td>outil décisionnel alimenté par le logiciel de devis et de facturation, la comptabilité et les heures par chantier</td>
+<td>mensuelle ; présentée chaque trimestre au comité stratégique</td>
+<td>écart d'au plus 2 points en 2027 (4 points en 2026), puis d'au plus 1 point</td>
+<td>financier</td>
+</tr>
+<tr class="even">
+<td>Taux de consommation des heures prévues</td>
+<td>heures imputées au chantier / heures prévues au devis, comparé à l'avancement contrôlé</td>
+<td>heures saisies sur la tablette de chantier ; devis signé ; avancement validé</td>
+<td>hebdomadaire</td>
+<td>taux au plus égal à l'avancement contrôlé plus 5 points ; alerte au-delà de 10 points</td>
+<td>processus</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Candidat qui relève, de tête, que l'écart des seules rénovations globales (750 k€) dépasse celui de tout le groupe des chantiers confiés en partie à des partenaires (environ 550 k€, soit 4 220 − 3 670) : les lots confiés en partie aux partenaires semblent dépasser leur marge prévue, ce qui renvoie aux factures non reçues et à la répartition des achats.</li>
+<li>Constats différents s'ils sont tirés des tableaux, argumentés et assortis d'une précaution fondée (par exemple sur les avenants non enregistrés, qui faussent la marge prévue).</li>
+<li>Choix du tableur avancé structuré, s'il est justifié par l'urgence et le coût, présenté comme une étape et assorti des limites (diffusion, dépendance à une personne, versions).</li>
+<li>Chaîne présentée selon les termes extraction, transformation et chargement, ou avec un entrepôt de données, si les défauts de l'annexe 2.2 (B et C) sont traités ; une table de faits n'est pas attendue.</li>
+<li>Autres graphiques adaptés (jauge, carte des secteurs en taux, histogramme de la distribution des écarts par chantier), si le message et le piège sont précisés ; autres cibles si elles sont justifiées.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Démarche décisionnelle réduite à un outil</em> (<code>ET-05</code>, <code>JUR-D02</code>) — « l'outil en ligne résoudra le problème » ; juste : sans numéro de chantier commun et sans données fiables, l'outil affichera plus vite des chiffres faux.</li>
+<li><em>Chaîne de traitement incomplète</em> (<code>JUR-D01</code>) — collecte et restitution seules, sans nettoyage ni règles de rapprochement ; juste : les cinq étapes, chacune reliée à un défaut.</li>
+<li><em>Corrélation prise pour une causalité</em> (<code>ET-26</code>, <code>JUR-D06</code>) — « la croissance fait baisser la marge », « l'éloignement explique la marge du nord de l'Isère » ; juste : facteurs communs, effet de structure, petit effectif, données incomplètes du quatrième trimestre.</li>
+<li><em>Indicateurs génériques ou incomplets</em> (<code>ET-18</code>) — « taux de marge » sans source, cible ni axe, ou indicateur que les conducteurs ne peuvent pas actionner.</li>
+<li><em>Calculs inutiles</em> (<code>JUR-T07</code>) — recalcul de moyennes pondérées ou de tous les taux, que la question exclut.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chaîne de traitement des données, démarche décisionnelle, outils (en principe), choix du graphique, biais de lecture, effet de structure, corrélation et causalité, fiche d'indicateur à cinq champs</td>
+<td>définitions et méthode</td>
+<td>F08 § 1, 3, 5 et 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--la-fiabilité-des-données-de-gestion-des-chantiers-25-points">2.3 – La fiabilité des données de gestion des chantiers (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.e</code> « Fiabilisation des systèmes d'information comptables et décisionnels ». Aucune règle comptable de l'avancement ni des contrats à long terme ; aucun chiffrage de l'incidence sur les comptes.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (organigramme : directrice des opérations, conducteurs de travaux, assistantes d'exploitation, comptabilité, responsable informatique), 2.1 (feuilles d'heures papier, commandes sans numéro, avenants non reportés) et 2.2 B (heures, achats, factures des partenaires, avancement et situations, comptes de l'exercice 2026).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Heures et achats : des coûts mal mesurés et mal répartis faussent la marge de chaque chantier, les comparaisons et le chiffrage des devis futurs, sans changer le total</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Avancement, situations et factures des partenaires : risque de chiffre d'affaires et de marge de 2026 surestimés, charges incomplètes ; comptes présentés au comité et au fonds, piste d'audit</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Contrôle à la saisie et contrôle de rattachement, avec risque couvert, nature et responsable</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Rapprochement (avancement, heures et achats ; commande, livraison et facture ; factures attendues), avec risque couvert, nature et responsable</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Verrouillage (situations et factures, devis signés, périodes) et piste d'audit, avec risque couvert, nature et responsable ; séparation des tâches</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.3 a) – De la fiabilité des données à celle des marges et des comptes</em></p>
+<p>Un système d'information de gestion est <strong>fiable</strong> lorsque ses données sont exhaustives, exactes, rattachées à la bonne période et au bon objet, et traçables de la pièce d'origine jusqu'au résultat (F10 § 3). La marge d'un chantier et les comptes de l'entreprise reposent sur les mêmes données de base : leurs défauts n'ont pas tous le même effet.</p>
+<p><strong>Des défauts qui faussent la marge de chaque chantier</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>Heures</strong> : remplies de mémoire le vendredi, et 15 % sans chantier : le coût de main-d'œuvre de chaque chantier est approximatif et sous-estimé ; un chantier en dérive n'est pas repéré, et les comparaisons (équipes contre partenaires, secteurs, conducteurs) sont faussées.</li>
+<li><strong>Achats</strong> : 20 % sans chantier, répartis au prorata du chiffre d'affaires : un chantier d'isolation gourmand en matériaux paraît plus rentable qu'il n'est, un chantier de chauffage confié à un partenaire moins rentable ; la répartition transfère la marge d'un chantier à l'autre.</li>
+<li>Ces défauts ne changent pas le résultat de l'entreprise (les heures sont payées, les achats enregistrés en comptabilité), mais ils privent la direction de la marge <strong>par chantier</strong>, que le plan « Cap 2029 » veut maîtriser, et faussent le <strong>chiffrage des devis futurs</strong>, fondé sur des coûts réels mal connus ; les heures sans chantier, absentes de toute marge, font même paraître le total des marges meilleur qu'il n'est.</li>
+</ul>
+<p><strong>Des défauts qui faussent aussi les comptes</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>Avancement et situations</strong> : déclaré sans contrôle, l'avancement réel des dix rénovations globales examinées était inférieur de 15 points à l'avancement déclaré ; les situations facturées (1,2 M€ pour 40 chantiers en cours) sont donc en avance sur les travaux. Si le chiffre d'affaires des chantiers en cours est constaté d'après les situations ou l'avancement déclaré, une surestimation de l'avancement fait apparaître en 2026 un chiffre d'affaires et une marge que les travaux n'ont pas encore produits ; dans tous les cas, des clients paient des travaux non réalisés (litiges, confiance). Le traitement comptable précis relève d'une autre UE et n'est pas attendu.</li>
+<li><strong>Factures des partenaires</strong> reçues tardivement : 300 k€ de charges relatives à 2026 n'étaient pas connues au 31 janvier ; si elles ne sont pas identifiées à la clôture, le résultat de 2026 est surestimé.</li>
+<li><strong>Situations modifiables</strong> et avenants non enregistrés : sans <strong>piste d'audit</strong>, on ne peut pas reconstituer le chemin d'une donnée de la pièce au résultat ni prouver ce qui a été facturé.</li>
+<li>Or <strong>les comptes 2026 présentés au comité stratégique ont été arrêtés à partir des mêmes données</strong> : le fonds fonde sur eux ses décisions (financement des agences, valeur de sa participation) ; une donnée de gestion non fiable devient une information financière non fiable.</li>
+</ul>
+<p><em>2.3 b) – Quatre contrôles intégrés au système d'information</em></p>
+<p>Un <strong>contrôle applicatif</strong> est intégré au traitement des données (à la saisie, au traitement, aux interfaces, en sortie) ; il est <strong>préventif</strong> s'il empêche l'erreur, <strong>détectif</strong> s'il la révèle après coup ; il est d'autant plus efficace qu'il est automatisé et qu'il respecte la <strong>séparation des tâches</strong> (F10 § 2 et 3 ; COSO 2013 en appui).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Contrôle</th>
+<th>Contenu chez SOLVÉRANCE Habitat</th>
+<th>Risque couvert</th>
+<th>Nature</th>
+<th>Responsable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>À la saisie</strong> (0,5 pt avec le suivant)</td>
+<td>heures saisies chaque jour sur la tablette par le chef d'équipe, en choisissant le chantier dans la liste des chantiers ouverts au planning ; contrôles de vraisemblance (pas plus de 10 heures par jour et par compagnon, total égal aux heures de présence) ; « dépôt et divers » limité et motivé ; validation hebdomadaire par le conducteur de travaux</td>
+<td>heures inexactes ou non imputées (15 %)</td>
+<td>préventif</td>
+<td>directrice des opérations, avec les conducteurs de travaux</td>
+</tr>
+<tr class="even">
+<td><strong>De rattachement</strong></td>
+<td>numéro de chantier obligatoire pour toute commande (passée depuis le logiciel de devis), toute sortie du dépôt et toute facture de partenaire ou de négociant ; une facture sans numéro est mise en attente et n'est pas payée avant affectation</td>
+<td>20 % des achats et une facture de partenaire sur trois sans chantier</td>
+<td>préventif</td>
+<td>assistantes d'exploitation (achats) et comptabilité, sous l'autorité du directeur administratif et financier</td>
+</tr>
+<tr class="odd">
+<td><strong>Rapprochement</strong> (0,5 pt)</td>
+<td>chaque mois, avant d'émettre une situation : avancement déclaré rapproché des heures et des achats consommés par rapport au devis, et validé par une autre personne que le conducteur (directrice des opérations ou bureau d'études pour les rénovations globales) ; rapprochement commande, livraison et facture ; liste des factures de partenaires attendues pour les chantiers terminés, examinée à chaque clôture ; écarts au-delà d'un seuil analysés et tracés</td>
+<td>situations en avance sur les travaux (15 points) ; 300 k€ de factures non reçues ; achats facturés non livrés</td>
+<td>détectif (préventif pour la validation de l'avancement avant l'émission de la situation)</td>
+<td>directeur administratif et financier, avec la directrice des opérations</td>
+</tr>
+<tr class="even">
+<td><strong>Verrouillage</strong> (0,5 pt)</td>
+<td>situation ou facture émise non modifiable, corrigée seulement par un avoir, numérotation continue ; devis signé figé, tout avenant étant une nouvelle version signée par le client et liée au chantier ; clôture mensuelle des heures et des achats après validation ; journal des modifications (piste d'audit) ; droits de modification limités</td>
+<td>situations modifiées après envoi ; avenants non tracés ; données modifiées après l'analyse</td>
+<td>préventif</td>
+<td>directeur administratif et financier ; paramétrage par le responsable informatique avec l'éditeur</td>
+</tr>
+</tbody>
+</table>
+<p>La validation de l'avancement par une personne distincte de celle qui le déclare applique la <strong>séparation des tâches</strong> ; la piste d'audit permet de reconstituer, pour tout chantier, le chemin du devis aux comptes.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres contrôles pertinents (pointage des heures sur la tablette à l'arrivée et au départ du chantier ; inventaire du stock du dépôt), s'ils relèvent bien de la catégorie demandée.</li>
+<li>Rapprochement de la marge par chantier avec la comptabilité (total des marges et résultat) proposé à la place du rapprochement commande, livraison et facture.</li>
+<li>Effet sur les comptes présenté en termes de résultat et de trésorerie, sans règle comptable.</li>
+<li>Effet de l'avancement présenté comme dépendant de la manière dont le chiffre d'affaires des chantiers en cours est constaté, sans règle comptable.</li>
+<li>Rapprochement qualifié de préventif lorsqu'il conditionne l'émission de la situation.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Analyse comptable hors attente</em> (<code>ET-34</code>, <code>JUR-T07</code>) — exposé des règles de l'avancement, des contrats à long terme ou de l'audit légal ; juste : effets sur la fiabilité des données et des comptes, sans règle comptable.</li>
+<li><em>Contrôles génériques</em> (<code>JUR-T01</code>) — « mettre en place un contrôle interne » sans contenu, risque, nature ni responsable ; juste : quatre contrôles précis, tirés des défauts de l'annexe 2.2 B.</li>
+<li><em>Tout confié à l'informatique</em> (<code>JUR-T03</code>) — contrôle confié au seul responsable informatique ; juste : le contrôle appartient au métier (opérations, achats, comptabilité), l'informatique le paramètre.</li>
+<li><em>Séparation des tâches oubliée</em> — le conducteur de travaux déclare l'avancement et émet seul la situation ; juste : validation par une autre personne.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>COSO — Internal Control — Integrated Framework (2013)</td>
+<td>contrôle interne, cité en appui (contrôles généraux et applicatifs)</td>
+<td><code>coso_2013</code> / F10 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Contrôles applicatifs, séparation des tâches, piste d'audit, fiabilité des systèmes d'information décisionnels</td>
+<td>typologie et principes</td>
+<td>F10 § 2, 3.1, 3.2 et 3.5</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--la-gouvernance-stratégique-des-données-et-la-base-des-logements-3-points">2.4 – La gouvernance stratégique des données et la base des logements (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.a</code> « Mettre en place une gouvernance stratégique de la donnée intégrant les enjeux de qualité, de conformité, de sécurité, de valorisation et de cycle de vie des actifs numériques » ; <code>2.3.c</code> « Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK) » ; <code>2.3.f</code> « Notions de valeur, de patrimoine immatériel et de risque lié aux actifs numériques » ; <code>2.3.d</code> « Enjeux du Big Data, cloud computing, datacenters et souveraineté numérique ». Monétisation abordée de façon critique ; rôles illustratifs, non normatifs ; aucune analyse juridique.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (organigramme, absence de direction des systèmes d'information, un seul informaticien, fonds TALVÉRIS Croissance), 2.1 (identifiants, défauts des dossiers), 2.3 (base des logements, services en ligne et conditions de sortie, positions) et 2.4 (DAMA-DMBOK, RGPD, Data Act, SecNumCloud).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Gouvernance des données définie (DAMA-DMBOK) ; cinq principes (qualité, conformité, sécurité, valorisation, cycle de vie), chacun appliqué à un constat des annexes</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Qui en répond : président, propriétaires métier des données, coordination par le directeur administratif et financier, intendance technique par le responsable informatique, référent pour la protection des données ; rôles proportionnés à une PME</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Actif immatériel défini ; deux sources de valeur et trois risques tirés de l'annexe 2.3</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Réponse critique aux positions de M. VORGNAC (valeur conditionnelle, relance de tous les propriétaires depuis 2018) et de M. ROUSSERGUES (données personnelles, responsabilité plutôt que propriété)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Souveraineté (localisation, droit applicable aux fournisseurs, dépendance) et réversibilité (conditions inégales de sortie, photos, bibliothèque de prix) analysées d'après les annexes 2.3 et 2.4</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Trois mesures : inventaire et plan de réversibilité, exports réguliers en formats ouverts, conditions contractuelles de sortie et de localisation au renouvellement</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.4 a) – Les principes de la gouvernance des données</em></p>
+<p>La <strong>gouvernance des données</strong> est l'ensemble des décisions, des rôles, des règles et des processus qui garantissent que les données de l'organisation sont fiables, conformes, protégées et exploitées au service de sa stratégie, tout au long de leur cycle de vie ; le référentiel DAMA-DMBOK la place au centre de ses onze domaines de connaissance (annexe 2.4 ; F07 § 8). Ce n'est ni un outil ni une affaire d'informaticiens : à SOLVÉRANCE Habitat, les données des chantiers et des logements sont au cœur du métier et du plan « Cap 2029 ».</p>
+<p>Cinq principes, appliqués aux annexes (0,5 pt) :</p>
+<ul>
+<li><strong>Qualité</strong> : « une donnée, une source, un identifiant » ; saisie unique à la source, contrôles à la saisie (35 dossiers sur 100 avec une adresse écrite différemment, avenants non enregistrés, heures de mémoire).</li>
+<li><strong>Conformité</strong> : registre des activités de traitement, finalités déterminées, données limitées au nécessaire (aucun registre ; base des logements, prospects compris, conservée sans finalité définie).</li>
+<li><strong>Sécurité</strong> : accès selon le besoin d'en connaître, classification des données selon leur sensibilité (avis d'imposition ouverts à tous les salariés des services administratifs ; photos de l'intérieur des logements ; aucune liste des accès).</li>
+<li><strong>Valorisation</strong> : exploiter d'abord les données pour le plan (marge par chantier, chiffrage, connaissance des logements des clients) ; n'envisager une valorisation externe qu'une fois la qualité et la conformité établies (demande du fonds).</li>
+<li><strong>Cycle de vie</strong> : de la création à la suppression, une durée de conservation par catégorie de données (prospects sans devis signé, clients, justificatifs des ménages, fiches papier de 2018 à 2021), un archivage puis une suppression effective ; aujourd'hui « aucune donnée n'a jamais été supprimée ». Les durées sont fixées avec un conseil, au regard des obligations de conservation, sans analyse juridique ici.</li>
+</ul>
+<p><strong>Qui en répond</strong> (0,5 pt) : dans une PME sans direction des systèmes d'information, des rôles légers, inspirés du DAMA-DMBOK et proportionnés (le programme les tient pour illustratifs) :</p>
+<ul>
+<li>le <strong>président</strong> porte la politique des données et arbitre ; les données sont examinées en comité de direction ;</li>
+<li>des <strong>propriétaires</strong> métier, responsables des définitions, des règles de qualité et des droits d'accès de leur domaine : la directrice des opérations pour les données des chantiers, la responsable du bureau d'études pour les données techniques des logements, la responsable commerciale pour les clients et les prospects, le directeur administratif et financier pour les données financières et les dossiers d'aides ;</li>
+<li>le <strong>directeur administratif et financier</strong>, chargé du système d'information, <strong>coordonne</strong> la démarche (référent des données ; un responsable des données à plein temps n'est pas justifié à cette taille) ;</li>
+<li>le <strong>responsable informatique</strong>, <strong>intendant</strong> technique (droits d'accès, exports, sauvegardes, relation avec les éditeurs) ; des intendants métier (une assistante d'exploitation, une chargée des dossiers d'aides) corrigent les anomalies au quotidien ;</li>
+<li>un <strong>référent pour la protection des données</strong> personnelles (le cas échéant un délégué à la protection des données, mutualisé ou externe), qui tient le registre.</li>
+</ul>
+<p><em>2.4 b) – La base des logements, actif immatériel</em></p>
+<p>Un <strong>actif immatériel</strong> est une ressource sans substance physique, que l'entreprise maîtrise et dont elle attend des avantages futurs (il n'est pas question ici de son inscription dans les comptes) ; une base de données en est un lorsqu'elle est exploitable, fiable et utilisable légitimement. Sa valeur est une <strong>valeur d'usage</strong> (ce qu'elle apporte à l'activité) ou une <strong>valeur d'échange</strong> (ce qu'un tiers serait prêt à payer, ici à travers la valeur de l'entreprise) ; elle est contextuelle, périssable et grevée de risques (F07 § 8.6). Aucune valorisation chiffrée n'est attendue.</p>
+<p><strong>Deux sources de valeur</strong> (0,5 pt avec les risques), parmi :</p>
+<ul>
+<li><strong>chiffrer plus juste</strong> : comparer les logements visités (année, parois, surfaces) aide le bureau d'études et les conseillers à estimer les quantités et les coûts, donc la marge des chantiers (Mme FONTRIVAL) ;</li>
+<li><strong>mieux servir les clients</strong> : la connaissance des logements des clients permet de leur proposer les étapes suivantes d'une rénovation, dans le respect des finalités déclarées, et de préparer l'implantation des agences ;</li>
+<li><strong>valeur d'échange</strong> : environ 9 000 logements décrits pièce par pièce, qui complètent le savoir-faire de chiffrage (bibliothèque de prix) : un patrimoine immatériel qu'un acquéreur examinera lors de la cession envisagée par le fonds, au même titre que les savoir-faire.</li>
+</ul>
+<p><strong>Trois risques</strong>, parmi :</p>
+<ul>
+<li><strong>Non-conformité</strong> : données conservées sans durée, prospects visités depuis 2018 sans devis signé, aucun registre ; une mise en conformité imposerait de purger une grande partie de la base, et un acquéreur verrait un passif plutôt qu'un actif ;</li>
+<li><strong>Fuite ou perte</strong> : 320 000 photos de l'intérieur des logements, des avis d'imposition ouverts à tous les salariés administratifs ; une fuite atteindrait l'intimité des ménages et la confiance des clients, que le plan veut préserver ;</li>
+<li><strong>Dépendance et perte d'accès</strong> : l'application de visite ne permet de récupérer les photos qu'une à une et supprime les données 30 jours après la fin du contrat ; l'entreprise ne contrôle pas pleinement l'actif qu'elle croit détenir ;</li>
+<li><strong>Qualité et obsolescence</strong> : consommations déclarées et non mesurées, logements transformés depuis la visite, identifiants multiples et adresses incohérentes, fiches papier numérisées non exploitables : la valeur annoncée serait surestimée.</li>
+</ul>
+<p><strong>Réponse aux positions</strong> (0,5 pt) :</p>
+<ul>
+<li>À <strong>M. VORGNAC</strong> : la base peut avoir de la valeur, mais <strong>à condition</strong> d'être conforme, documentée, fiable et récupérable ; en l'état, l'examen d'un acquéreur révélerait surtout des risques. Relancer <strong>tous</strong> les propriétaires visités depuis 2018 utiliserait des données collectées pour établir un devis, parfois il y a huit ans, à une autre fin et sans durée de conservation définie : ce serait contraire aux principes de finalité et de durée limitée rappelés à l'annexe 2.4, et risqué pour la réputation. Il faut d'abord fixer les finalités et les durées, purger, puis ne relancer que les personnes concernées dans ce cadre. La valorisation doit être abordée de façon critique : la valeur vient de l'usage interne plus que d'une exploitation commerciale des données personnelles.</li>
+<li>À <strong>M. ROUSSERGUES</strong> : des données qui se rapportent à des personnes identifiables (adresses, photos de l'intérieur, consommations, revenus) ne sont pas une marchandise dont l'entreprise disposerait librement : elle en est <strong>responsable</strong> (finalités, durées, sécurité) plus que propriétaire ; et une partie est détenue par des éditeurs dont les conditions de sortie ne garantissent pas la récupération. Les données non personnelles (bibliothèque de prix, statistiques anonymes) relèvent davantage de son savoir-faire.</li>
+</ul>
+<p><em>2.4 c) – Souveraineté et réversibilité des services en ligne</em></p>
+<p>La <strong>souveraineté numérique</strong> est la capacité de l'entreprise à garder la maîtrise de ses données : leur localisation, le droit applicable à ceux qui les hébergent, sa dépendance aux fournisseurs et les compétences pour en changer ; la <strong>réversibilité</strong> est la capacité de récupérer ses données et de poursuivre son activité, en interne ou chez un autre fournisseur, en fin de contrat (F03 § 5.3 ; F07 § 8.5).</p>
+<p><strong>Analyse</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>Localisation et droit applicable</strong> : l'application de visite héberge hors de l'Union européenne les données les plus sensibles (photos de l'intérieur, consommations, adresses) : ce transfert n'est possible que vers un pays reconnu comme assurant une protection adéquate ou avec des garanties appropriées (annexe 2.4), ce que rien dans l'annexe 2.3 ne garantit (conditions générales acceptées en ligne en 2022, aucun registre, personne de désigné). Deux fournisseurs, dont la messagerie qui stocke les justificatifs des ménages, ont leur siège hors de l'Union : même hébergées en Europe, leurs données peuvent être exposées à des demandes d'autorités étrangères (annexe 2.3). La localisation en Europe ne suffit pas à faire un hébergement souverain.</li>
+<li><strong>Dépendance</strong> : six services en ligne souscrits au fil de la croissance (annexe 1.1), dont cinq portent les données des clients et des logements, chez plusieurs fournisseurs aux conditions de sortie différentes ; des conditions générales acceptées en ligne et modifiables ; un seul informaticien, qui « ne sait pas récupérer les photos ».</li>
+<li><strong>Réversibilité inégale</strong> : bonne pour la gestion de la relation client et la messagerie (export complet), faible pour l'application de visite (photos une à une, suppression à 30 jours), pour le logiciel de devis (bibliothèque de prix construite depuis 2018 dans le seul format de l'éditeur, export complet « au cas par cas ») et pour le calcul thermique (fichiers lisibles par ce seul logiciel). Les deux actifs de données les plus précieux sont les moins récupérables.</li>
+<li><strong>Leviers</strong> : le règlement sur les données (Data Act), applicable depuis le 12/09/2025, oblige les fournisseurs de services d'informatique en nuage à permettre le changement de fournisseur et la portabilité des données (annexe 2.4) : il donne un appui pour obtenir des conditions de sortie ; le RGPD impose que le contrat avec chaque éditeur, sous-traitant, prévoie le sort des données en fin de contrat, ce que des conditions générales acceptées en ligne ne garantissent pas. SecNumCloud est une référence pour juger la protection d'une offre contre les lois extra-européennes, sans être une obligation pour une PME.</li>
+</ul>
+<p><strong>Trois mesures</strong> (0,5 pt), parmi :</p>
+<ol type="1">
+<li><strong>Inventaire et plan de réversibilité</strong> : pour chaque service, les données portées, leur sensibilité, leur localisation, le droit applicable au fournisseur et les conditions de sortie ; priorité aux photos et à la bibliothèque de prix ; scénario de sortie écrit pour les deux services les plus critiques.</li>
+<li><strong>Exports réguliers et testés</strong> des données critiques (formulaires et photos de visite par lots, bibliothèque de prix, calculs thermiques en format lisible) dans des <strong>formats ouverts</strong>, vers un espace maîtrisé par l'entreprise, avec un essai de relecture ; cela réduit la dépendance sans attendre la fin d'un contrat.</li>
+<li><strong>Conditions contractuelles au renouvellement</strong> : clauses de réversibilité (formats, délais, assistance, absence de suppression avant confirmation), contrat de sous-traitance conforme au RGPD, localisation dans l'Union pour les données sensibles, en s'appuyant sur le Data Act ; critère de souveraineté (siège, droit applicable, qualification SecNumCloud pour les données les plus sensibles) dans tout futur choix, sans que le choix d'un hébergement soit à faire ici.</li>
+<li><strong>Minimisation</strong> : supprimer les données devenues inutiles (prospects anciens, justificatifs des dossiers clos) réduit à la fois l'exposition hors de l'Union et le volume à récupérer.</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Rôles différents s'ils sont justifiés et proportionnés (propriétaire unique des données des clients et des logements, par exemple la responsable commerciale) ; recours à un délégué à la protection des données externe présenté comme une option.</li>
+<li>Autres sources de valeur (connaissance du parc de logements par secteur pour les agences, appui aux dossiers d'aides) ; mention des caractéristiques du Big Data (volume et variété des photos) si elle reste reliée au cas.</li>
+<li>Mesures de sécurité (droits d'accès aux justificatifs, chiffrement) proposées en c), si elles sont reliées à la souveraineté ou à la réversibilité.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Hébergement « souverain » réduit à la localisation</em> (<code>ET-37</code>) — « les données sont en Europe, il n'y a pas de problème » ; juste : le droit applicable au fournisseur compte autant que la localisation.</li>
+<li><em>Monétisation sans regard critique</em> (<code>JUR-G10</code>, <code>JUR-N01</code>) — reprendre l'idée de relancer tous les propriétaires ou de « vendre la base » sans finalité, durée ni qualité ; juste : valeur conditionnelle, usages internes d'abord.</li>
+<li><em>Données personnelles traitées comme une propriété</em> — « l'entreprise fait ce qu'elle veut de ses données » ; juste : responsabilité de l'entreprise, principes rappelés en annexe 2.4.</li>
+<li><em>Analyse juridique ou statut affirmé sans date</em> (<code>ET-41</code>, <code>JUR-T07</code>) — développements sur les droits des personnes ou sur le régime des transferts ; juste : s'en tenir aux repères datés de l'annexe 2.4.</li>
+<li><em>Gouvernance réduite à un organigramme</em> (<code>JUR-T01</code>) — création d'un responsable des données à plein temps, sans principes ni lien avec les constats ; juste : rôles légers, attachés aux métiers.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DAMA-DMBOK, 2e édition (2017), révision 2024</td>
+<td>gouvernance des données, rôles de propriétaire et d'intendant</td>
+<td><code>dama_dmbok2</code> / F07 § 8.1-8.2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD), applicable depuis le 25/05/2018</td>
+<td>finalités, durée de conservation, sécurité, registre, sous-traitant, transferts hors de l'Union (repères de l'annexe 2.4)</td>
+<td><code>rgpd</code> / F15 § 2, 5 et 7</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Règlement (UE) 2023/2854 (Data Act), applicable depuis le 12/09/2025</td>
+<td>changement de fournisseur et portabilité des données (chapitre VI)</td>
+<td><code>data_act</code> / F07 § 8.5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>SecNumCloud 3.2 (ANSSI)</td>
+<td>qualification d'offres de services d'informatique en nuage, protection contre les lois extra-européennes</td>
+<td><code>secnumcloud_3_2</code> / F03 § 5.3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Actif immatériel, valeur d'usage et d'échange, souveraineté et réversibilité</td>
+<td>définitions</td>
+<td>F07 § 8.5-8.6 ; F03 § 5.3</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-3--capitaliser-les-retours-dexpérience-sécuriser-les-accès-des-partenaires-et-rendre-le-numérique-plus-responsable-13-points">DOSSIER 3 – CAPITALISER LES RETOURS D'EXPÉRIENCE, SÉCURISER LES ACCÈS DES PARTENAIRES ET RENDRE LE NUMÉRIQUE PLUS RESPONSABLE (13 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1 La capitalisation des retours d'expérience des chantiers</td>
+<td><code>1.6.a</code> Mettre en œuvre une stratégie de gestion des connaissances soutenue par les systèmes d'information, en assurant son pilotage, sa gouvernance et son appropriation organisationnelle ; <code>1.6.b</code> Architecture fonctionnelle des systèmes de knowledge management ; <code>1.6.c</code> Méthodes de gouvernance des dispositifs (rôles, responsabilités, indicateurs) ; <code>1.6.d</code> Intégration des outils de KM dans l'environnement SI : GED, intranet, wiki, forums ; <code>1.6.e</code> Leviers d'appropriation et de transformation des pratiques professionnelles</td>
+<td>3,5</td>
+</tr>
+<tr class="even">
+<td>3.2 Les accès des entreprises partenaires et les appareils de chantier</td>
+<td><code>4.1.b</code> Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers ; <code>4.2.d</code> Dispositifs de surveillance et de résilience : IAM (Identity &amp; Access Management), PCA/PRA (ici, l'IAM) ; <code>4.2.c</code> Notions d'architecture de confiance (authentification, chiffrement, segmentation) ; <code>4.2.e</code> Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>3.3 Un numérique plus responsable et des économies d'énergie fiables</td>
+<td><code>4.3.d</code> Bonnes pratiques Green IT : éco-conception, mutualisation, cycle de vie des équipements ; <code>4.3.c</code> Gouvernance SI orientée RSE : inclusion, éthique, sobriété ; <code>4.3.b</code> Cadres réglementaires : CSRD, ESRS ; <code>4.3.a</code> Déployer une stratégie SI responsable en intégrant les principes de durabilité, de sobriété numérique et les exigences réglementaires en matière de RSE et de performance environnementale</td>
+<td>4,5</td>
+</tr>
+<tr class="even">
+<td><strong>Dossier 3 – Capitaliser les retours d'expérience, sécuriser les accès des partenaires et rendre le numérique plus responsable</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (retour d'expérience, connaissances tacites et explicites, typologie des risques, gestion des identités et des accès, architecture de confiance, responsabilité partagée, sobriété et Green IT, gouvernance orientée RSE, CSRD et ESRS) 2,75 points environ (items 3.1 a-1, 3.2 a-1, la moitié des items 3.2 b-1, c-1 et d-1, 3.3 a-1, la moitié des items 3.3 b-1 et c-1) ; analyse des annexes et recommandations 10,25 points, soit environ 79 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 58 minutes.</p>
+<hr />
+<h3 id="31--la-capitalisation-des-retours-dexpérience-des-chantiers-35-points">3.1 – La capitalisation des retours d'expérience des chantiers (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.6 – Mettre en œuvre et piloter la gestion des connaissances au sein du système d'information : <code>1.6.a</code> « Mettre en œuvre une stratégie de gestion des connaissances soutenue par les systèmes d'information, en assurant son pilotage, sa gouvernance et son appropriation organisationnelle » ; <code>1.6.b</code> « Architecture fonctionnelle des systèmes de knowledge management » ; <code>1.6.c</code> « Méthodes de gouvernance des dispositifs (rôles, responsabilités, indicateurs) » ; <code>1.6.d</code> « Intégration des outils de KM dans l'environnement SI : GED, intranet, wiki, forums » ; <code>1.6.e</code> « Leviers d'appropriation et de transformation des pratiques professionnelles ». Limites : la gestion des connaissances dépasse la seule numérisation de l'information ; le pilotage suppose une approche systémique (outils, processus, culture) ; la gestion des compétences, complémentaire, n'est pas traitée.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.1 (réserves, savoir-faire, supports, témoignages) et annexe 1.1 (organigramme, effectif, outils, plan « Cap 2029 »).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Retour d'expérience défini (boucle d'apprentissage à partir des écarts constatés) ; connaissances tacites et explicites distinguées et appliquées au cas (tours de main des chefs d'équipe anciens, fiches de pose) ; modèle SECI mobilisé</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Fonctions « capter » et « valider » : contenu chez SOLVÉRANCE Habitat (réserve codée à la réception, explicitation par les chefs d'équipe anciens, analyse des causes, validation par un référent et, le cas échéant, par le bureau d'études)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Fonctions « stocker », « diffuser » et « mettre à jour » : base unique de fiches courtes et illustrées, diffusion au moment du besoin (fiche liée au type d'ouvrage du chantier), propriétaire et revue des fiches, retrait des fiches périmées</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Intégration dans les outils existants : appareils de chantier, espace de stockage partagé, messagerie, réunion mensuelle des conducteurs de travaux ; pas de nouvel outil isolé</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Pilotage et gouvernance : sponsor, animateur, référents par métier, contributeurs (équipes, partenaires, bureau d'études), règles de publication, de validation et de mise à jour, revue périodique</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Un indicateur complet (formule, source, fréquence, cible, axe), relié aux réserves récurrentes de l'annexe 3.1</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Trois leviers d'appropriation, chacun en réponse à une réserve de l'annexe 3.1 (temps, apprentissage par l'action, crainte d'être montré du doigt, refus d'écrire)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.1 a) – Définitions et architecture fonctionnelle du dispositif</em></p>
+<p>Le <strong>retour d'expérience</strong> est une démarche qui tire, de façon organisée, les enseignements des écarts constatés (réussites, défauts, incidents) pour les transformer en savoirs réutilisables et en changements de pratiques ; il boucle l'expérience vers l'action. Les <strong>connaissances tacites</strong> sont incorporées dans les personnes et difficiles à formaliser (les « tours de main » des quatre chefs d'équipe les plus anciens, qui n'ont que 10 réserves pour 100 chantiers) ; les <strong>connaissances explicites</strong> sont formalisées et transmissibles (les 60 fiches de pose, dont la moitié est périmée). Selon le modèle <strong>SECI</strong> de Nonaka et Takeuchi (1995), la connaissance se crée par conversions successives entre ces deux formes : chez SOLVÉRANCE Habitat, l'<strong>externalisation</strong> (tacite → explicite) fait défaut, la <strong>combinaison</strong> est éclatée entre classeurs, téléphones et messagerie, et la <strong>socialisation</strong> repose sur deux chefs d'équipe qui vont partir encadrer les nouvelles agences (F06 § 1). L'enjeu est chiffré : 240 réserves sur 400 tiennent à cinq défauts récurrents (60 %), qui coûtent 280 k€ sur 400 k€ de reprises (70 %), et les huit autres équipes, dont cinq créées depuis 2024, font quatre fois plus de réserves que les quatre équipes des chefs d'équipe les plus anciens (40 contre 10 pour 100 chantiers) ; l'ouverture de deux agences avec des équipes et des partenaires nouveaux multipliera ces écarts si rien n'est fait. Une gestion des connaissances réduite à la numérisation des classeurs échouerait (limite du programme).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Fonction</th>
+<th>Contenu chez SOLVÉRANCE Habitat</th>
+<th>Intégration dans les outils existants</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Capter</strong> (a-2)</td>
+<td>à la réception, chaque réserve est codée selon une courte liste de défauts (les cinq défauts récurrents et « autre »), avec l'équipe ou le partenaire en cause et une ou deux photos ; les chefs d'équipe anciens expliquent leurs tours de main en courtes vidéos ou photos commentées, filmées sur le chantier par un conducteur de travaux (externalisation sans écriture) ; le bureau d'études reçoit les réserves qui tiennent à ses préconisations</td>
+<td>formulaire de réception sur la tablette du conducteur de travaux ; appareils de chantier pour les photos et vidéos ; plus aucun envoi dans le groupe de messagerie</td>
+</tr>
+<tr class="even">
+<td><strong>Valider</strong> (a-2)</td>
+<td>un référent par métier (menuiseries et étanchéité à l'air, isolation, ventilation et chauffage) analyse les causes des réserves du mois et valide la bonne pratique ; le bureau d'études valide ce qui touche aux préconisations ; une fiche n'est publiée qu'après validation</td>
+<td>réunion mensuelle des conducteurs de travaux transformée en revue des retours d'expérience, avec compte rendu</td>
+</tr>
+<tr class="odd">
+<td><strong>Stocker</strong> (a-3)</td>
+<td>une base unique de fiches « bonne pratique » courtes (une page, photos et vidéo de deux minutes), classées par type d'ouvrage et par défaut, versionnées, chacune avec un propriétaire et une date de revue ; les classeurs et le groupe « Astuces chantier » sont fermés après reprise de ce qui est utile</td>
+<td>espace de stockage partagé de la suite bureautique (ou espace documentaire déjà compris dans l'abonnement), plan de classement simple</td>
+</tr>
+<tr class="even">
+<td><strong>Diffuser</strong> (a-3)</td>
+<td>la fiche arrive au moment du besoin : la fiche du type d'ouvrage est jointe au planning du chantier et consultée par code ou lien depuis l'appareil de chantier ; « minute retour d'expérience » au départ des équipes ; fiches remises aux entreprises partenaires pour leur lot ; parcours d'accueil des nouvelles équipes de Grenoble et de Saint-Étienne</td>
+<td>appareils de chantier, planning partagé, accès des partenaires limité à leurs fiches (question 3.2)</td>
+</tr>
+<tr class="odd">
+<td><strong>Mettre à jour</strong> (a-3)</td>
+<td>revue de chaque fiche au moins une fois par an ou dès qu'un produit change ou qu'une réserve réapparaît ; retrait des fiches périmées ; bilan annuel des défauts récurrents</td>
+<td>date de revue et propriétaire dans la base ; indicateur de la question 3.1 b</td>
+</tr>
+</tbody>
+</table>
+<p>L'intégration (a-4) suit un principe : <strong>pas de nouvel outil</strong> pour une PME sans direction des systèmes d'information, mais les outils déjà payés (appareils de chantier, espace de stockage, réunion existante), utilisés autrement ; la messagerie instantanée sert seulement à signaler une nouvelle fiche, pas à stocker.</p>
+<p><em>3.1 b) – Pilotage, gouvernance, indicateur et leviers</em></p>
+<ul>
+<li><strong>Rôles</strong> (b-1) : le <strong>président</strong> est sponsor (le retour d'expérience sert la priorité « qualité » du plan « Cap 2029 ») ; la <strong>directrice des opérations</strong> porte le dispositif et arbitre ; un <strong>animateur</strong>, par exemple un conducteur de travaux à temps partiel, tient la base et prépare la revue mensuelle ; trois <strong>référents métier</strong>, dont deux des chefs d'équipe anciens, valident les fiches et parrainent les nouvelles équipes ; tous les compagnons, conducteurs de travaux et partenaires sont <strong>contributeurs</strong> ; la <strong>responsable du bureau d'études</strong> valide ce qui touche aux préconisations ; le <strong>responsable informatique</strong> fournit les outils et les accès.</li>
+<li><strong>Règles</strong> (b-1) : toute réserve est codée à la réception ; un défaut répété trois fois donne lieu à une fiche dans le mois ; une fiche est publiée après validation, porte un propriétaire et une date de revue, et tient en une page ; la revue mensuelle a un compte rendu ; un bilan trimestriel est présenté à la réunion de direction (président, directrice des opérations, directeur administratif et financier), à instituer.</li>
+<li><strong>Indicateur</strong> (b-2) :</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Réserves récurrentes à la réception pour 100 chantiers réceptionnés</td>
+<td>nombre de réserves portant sur l'un des défauts récurrents suivis / nombre de chantiers réceptionnés × 100, par agence et par équipe ou entreprise partenaire ; la ventilation par partenaire sert à la revue de son lot avec lui et n'est pas diffusée</td>
+<td>fiches de retour d'expérience saisies sur la tablette à la réception (défaut codé, équipe ou partenaire), rapprochées des procès-verbaux de réception</td>
+<td>mensuelle (revue à la réunion des conducteurs de travaux), consolidée chaque trimestre</td>
+<td>18 pour 100 fin 2027 et 12 pour 100 en 2028, contre 24 pour 100 en 2026 (240 réserves récurrentes pour environ 1 000 chantiers)</td>
+<td>processus</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Leviers d'appropriation</strong> (b-3) :</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Réserve exprimée (annexe 3.1)</th>
+<th>Levier proposé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>« On n'a pas le temps de lire » ; « le camion repart à 17 h » (compagnon)</td>
+<td>contenus très courts, visuels, au moment du besoin (fiche du type d'ouvrage jointe au planning, consultée sur l'appareil en deux minutes) ; « minute retour d'expérience » prise sur le temps de travail, au départ de l'équipe</td>
+</tr>
+<tr class="even">
+<td>« On apprend en faisant, pas dans un classeur » (compagnon) ; « je ne suis pas un écrivain » (M. GOURDANNE)</td>
+<td>s'appuyer sur la socialisation : binômes et parrainage des nouvelles équipes par les chefs d'équipe anciens, démonstrations filmées plutôt que fiches rédigées ; reconnaissance du rôle de référent (temps dédié, mention du nom sur la fiche)</td>
+</tr>
+<tr class="odd">
+<td>« Je ne veux pas qu'on me montre du doigt à chaque réserve » (partenaire)</td>
+<td>règle de non-recherche de coupable : la revue analyse des causes, pas des personnes ; résultats présentés par défaut, partenaires associés à la revue de leur lot et destinataires des fiches qui les concernent</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autre découpage des fonctions (identifier, capter, structurer, partager, exploiter, mettre à jour), si les cinq fonctions demandées sont couvertes.</li>
+<li>Base de connaissances ou wiki proposé dans l'espace documentaire de la suite bureautique déjà souscrite ; communauté de pratique des chefs d'équipe ; codes imprimés sur les supports de chantier renvoyant aux fiches.</li>
+<li>Indicateurs d'usage ou de qualité de la base, s'ils sont complets : part des défauts récurrents couverts par une fiche validée (cible 100 % fin 2027), part des fiches revues depuis moins d'un an, coût des reprises en part du chiffre d'affaires (1,6 % en 2026), délai moyen de levée des réserves (45 jours en 2026).</li>
+<li>Leviers puisés dans un modèle de conduite du changement (ADKAR, huit étapes de Kotter), s'ils répondent aux réserves exprimées.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Gestion des connaissances réduite à la GED ou à un outil</em> (<code>ET-21</code>) — « scanner les classeurs et créer un dossier partagé » ; juste : un dispositif systémique (processus de retour d'expérience, rôles, culture, outils).</li>
+<li><em>Quadrants du SECI inversés ou récités sans application</em> (<code>JUR-T01</code>, <code>ET-39</code>) — juste : l'externalisation des tours de main manque, la socialisation repose sur deux chefs d'équipe qui partent.</li>
+<li><em>Leviers génériques sans lien avec les témoignages</em> (<code>JUR-T08</code>, <code>JUR-P04</code>) — juste : chaque levier répond à une réserve citée.</li>
+<li><em>Glissement vers la cartographie des savoirs ou la gestion des compétences</em> (périmètre de la question) — juste : capitalisation des retours d'expérience des chantiers.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Modèle SECI (Nonaka et Takeuchi, 1995)</td>
+<td>connaissances tacites et explicites, quatre modes de conversion</td>
+<td><code>nonaka_takeuchi_seci</code> ; F06 § 1</td>
+<td>modèle théorique</td>
+</tr>
+<tr class="even">
+<td>Dispositif de gestion des connaissances</td>
+<td>architecture fonctionnelle, gouvernance, appropriation</td>
+<td>F06 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>ADKAR (Prosci) ; huit étapes de Kotter (1996)</td>
+<td>conduite du changement (toléré)</td>
+<td><code>adkar</code>, <code>kotter_8_etapes</code> ; F05</td>
+<td>modèles théoriques</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="32--les-accès-des-entreprises-partenaires-et-les-appareils-de-chantier-5-points">3.2 – Les accès des entreprises partenaires et les appareils de chantier (5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.b</code> « Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers ».</li>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.c</code> « Notions d'architecture de confiance (authentification, chiffrement, segmentation) » ; <code>4.2.d</code> « Dispositifs de surveillance et de résilience : IAM (Identity &amp; Access Management), PCA/PRA (plans de continuité et de reprise d'activité) » (ici, la gestion des identités et des accès) ; <code>4.2.e</code> « Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques ». Limites : la mise en œuvre technique n'est pas exigée ; aucun paramétrage ; la sécurité est envisagée de façon systémique (organisationnelle, humaine, juridique).</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.2 (accès, appareils, incident, acteurs, témoignages), annexe 3.4 (RGPD, guide d'hygiène de l'ANSSI, ISO/IEC 27001 et 27002) et annexe 1.1 (organigramme, système d'information, responsable informatique seul).</p>
+<p><strong>Barème indicatif (5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Typologie présentée : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers, définies en une phrase chacune</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Trois risques tirés de l'annexe 3.2, un par catégorie, chacun avec ses conséquences pour l'entreprise et pour les clients</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Gestion des identités et des accès définie (identification, authentification, autorisation ; cycle de vie ; moindre privilège) ; règle sur les comptes et les droits : comptes nominatifs, droits limités aux chantiers du partenaire et aux données utiles</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Règle sur les arrivées et les départs : demande par le conducteur de travaux, création et suppression par le responsable informatique, fin des accès à la fin de la collaboration, avec un responsable et un délai</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Règle sur la revue périodique des droits, et réponse aux contraintes de la directrice des opérations (accès du soir simple) et des partenaires (rotation des salariés, pas de gestion à leur place)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Architecture de confiance présentée (ne jamais faire confiance par défaut, vérifier chaque accès ; Zero Trust comme cadre, non comme produit) ; première mesure : gestion de la flotte des appareils (inventaire, verrouillage, effacement à distance, mises à jour), reliée à la tablette perdue, avec une condition de réussite</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Seconde mesure : authentification renforcée et conditionnelle (verrouillage adapté aux gants, authentification à deux facteurs, sessions limitées, chiffrement des appareils), reliée à un constat, avec une condition de réussite</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>d-1</td>
+<td>Responsabilité partagée expliquée : le fournisseur sécurise son service ; le client reste responsable des identités, des accès, des appareils, des données et des usages ; appliquée à la position du fournisseur de la suite bureautique</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>d-2</td>
+<td>Répartition des rôles entre la direction, le responsable informatique, les conducteurs de travaux, les éditeurs, le prestataire et les partenaires, sans vide ni doublon</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>d-3</td>
+<td>Formalisation et suivi : document validé par la direction, engagement de confidentialité des partenaires, contrats avec les éditeurs, référent sécurité, suivi périodique</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.2 a) – Typologie et trois risques</em></p>
+<p>Les risques liés aux systèmes d'information se classent en trois catégories (F12 § 0 et 5) : les <strong>cybermenaces</strong>, actions malveillantes visant l'information ou les systèmes (intrusion, usurpation d'un compte, usage d'un accès par une personne qui n'en a plus le droit, rançongiciel) ; les <strong>défaillances opérationnelles</strong>, événements non intentionnels (erreur, perte, panne, oubli d'une procédure) ; les <strong>risques réglementaires et métiers</strong>, non-conformité à un texte et atteinte à l'activité, à la réputation ou à la confiance des clients.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Catégorie</th>
+<th>Risque révélé par l'annexe 3.2</th>
+<th>Conséquences pour l'entreprise</th>
+<th>Conséquences pour les clients</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cybermenace</td>
+<td><strong>usage malveillant d'un accès non révoqué</strong> : un ancien partenaire, VERCLAUZE Électricité, a utilisé une trentaine de fois en quatre mois le compte générique « partenaires-électricité », dont le mot de passe n'avait jamais changé et que connaissent environ 60 personnes</td>
+<td>détournement de clientèle, impossibilité de savoir qui a fait quoi (compte partagé), confidentialité perdue sur environ 400 chantiers</td>
+<td>sollicitations non désirées ; codes des boîtes à clés et dates d'absence connus d'un tiers : risque d'intrusion dans leur logement</td>
+</tr>
+<tr class="even">
+<td>Défaillance opérationnelle</td>
+<td><strong>perte d'un appareil de chantier non verrouillé</strong> : tablette oubliée sur un chantier, sessions ouvertes sur la messagerie, le planning et les dossiers partagés, ni inventaire ni effacement à distance</td>
+<td>accès ouvert à toutes les données d'un conducteur de travaux ; mots de passe à changer dans l'urgence ; appareil à remplacer</td>
+<td>données personnelles et codes d'accès exposés à quiconque trouve la tablette</td>
+</tr>
+<tr class="odd">
+<td>Risque réglementaire et métier</td>
+<td><strong>violation de données personnelles et perte de confiance</strong> : données des clients accessibles sans nécessité, notification à l'autorité de contrôle, information de 150 clients, 40 boîtes à clés remplacées (environ 6 k€), une quinzaine de jours de travail</td>
+<td>exposition au contrôle de l'autorité de contrôle et aux sanctions prévues par le RGPD ; atteinte à la réputation d'une entreprise à qui « les clients confient les clés de leur maison », contraire à la priorité « confiance » du plan « Cap 2029 »</td>
+<td>atteinte à la vie privée et à la sécurité du foyer ; perte de confiance dans l'entreprise</td>
+</tr>
+</tbody>
+</table>
+<p><em>3.2 b) – Gestion des identités et des accès des entreprises partenaires</em></p>
+<p>La <strong>gestion des identités et des accès</strong> (IAM) organise le cycle de vie des identités (arrivée, changement, départ) et des droits qui leur sont accordés : chaque personne est <strong>identifiée</strong> (qui est-ce ?), <strong>authentifiée</strong> (le prouve-t-elle ?) puis <strong>autorisée</strong> (à quoi a-t-elle droit ?), selon le principe du <strong>moindre privilège</strong> (F12 § 3). C'est l'inverse de la situation actuelle : trois comptes partagés, des droits sur tous les chantiers, aucune liste des accès. Le guide d'hygiène de l'ANSSI et l'annexe A d'ISO/IEC 27001:2022 (annexe 3.4) en font des mesures de base.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Règle</th>
+<th>Contenu proposé</th>
+<th>Réponse aux contraintes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Comptes et droits</strong> (b-1)</td>
+<td>un compte <strong>nominatif</strong> pour chaque personne d'une entreprise partenaire qui a besoin d'accéder (accès « invité » nominatif à la suite bureautique plutôt qu'une licence complète, selon les conditions de l'abonnement, à vérifier) ; suppression des trois comptes génériques ; droits limités aux <strong>seuls chantiers confiés au partenaire</strong>, pendant la durée de son lot ; dans le planning partagé avec les partenaires, ni codes d'accès ni dates d'absence : le code de la boîte à clés est transmis au chef d'équipe ou au partenaire, pour son seul chantier, la veille, puis changé par le client à la fin des travaux</td>
+<td>les partenaires continuent de voir le soir leurs chantiers du lendemain, sur un écran plus simple que le planning complet (demande de Mme CHAMBAROUX)</td>
+</tr>
+<tr class="even">
+<td><strong>Arrivées et départs</strong> (b-2)</td>
+<td>l'accès est <strong>demandé</strong> par le conducteur de travaux (qui, pour quel chantier, jusqu'à quand), <strong>créé</strong> par le responsable informatique dans la journée, avec une date de fin ; à la fin d'un lot ou de la collaboration, les accès sont <strong>retirés le jour même</strong> ; tout arrêt de collaboration (comme celui de VERCLAUZE Électricité en octobre 2026) déclenche la suppression immédiate de tous les accès de l'entreprise ; chaque partenaire désigne un interlocuteur qui signale les départs de ses salariés</td>
+<td>le partenaire n'administre rien : il signale seulement les arrivées et les départs (réponse au gérant de l'entreprise de couverture) ; les conducteurs de travaux ne transmettent plus de mots de passe par SMS</td>
+</tr>
+<tr class="odd">
+<td><strong>Revue périodique des droits</strong> (b-3)</td>
+<td>chaque trimestre, le responsable informatique édite la liste des comptes de partenaires et la fait valider par chaque conducteur de travaux (compte encore utile ? droits encore justifiés ?) ; comptes inutilisés depuis 90 jours désactivés ; journal des connexions examiné à cette occasion ; résultat présenté à la direction</td>
+<td>revue courte, adaptée à une PME (environ 25 partenaires actifs), sans « usine à gaz » (crainte du président)</td>
+</tr>
+</tbody>
+</table>
+<p><em>3.2 c) – Architecture de confiance pour les appareils de chantier</em></p>
+<p>Une <strong>architecture de confiance</strong> organise les accès au système d'information de sorte qu'<strong>aucune confiance ne soit accordée par défaut</strong> à un utilisateur ni à un appareil : chaque accès est vérifié selon l'identité, l'état de l'appareil et la sensibilité de la donnée ; elle combine authentification, chiffrement et cloisonnement. Le modèle <strong>Zero Trust</strong> en est le <strong>cadre d'architecture</strong>, pas un produit que l'on achète (F12 § 3 ; avis de l'ANSSI de 2021). Ici, un appareil non verrouillé, aux sessions toujours ouvertes, est un accès de confiance permanent accordé à quiconque le tient.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Mesure</th>
+<th>Constat de l'annexe 3.2</th>
+<th>Condition de réussite sur le chantier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Gestion de la flotte des appareils mobiles</strong> (c-1) : activer le service de gestion des appareils mobiles déjà compris dans l'abonnement ; inventaire des 60 appareils et de leur utilisateur, verrouillage imposé, chiffrement, applications autorisées, mises à jour automatiques, localisation et <strong>effacement à distance</strong> en cas de perte</td>
+<td>tablette oubliée sur un chantier, ni inventaire ni effacement possible ; mises à jour laissées à la bonne volonté de chacun</td>
+<td>déclaration de toute perte au responsable informatique dans l'heure, pour effacement immédiat ; appareils préparés par BRIVALDE Informatique déjà inscrits dans l'outil</td>
+</tr>
+<tr class="even">
+<td><strong>Authentification renforcée et conditionnelle</strong> (c-2) : déverrouillage rapide compatible avec le chantier (empreinte ou visage, ou code court) ; authentification à deux facteurs, déjà comprise dans l'abonnement, pour ouvrir la messagerie et les dossiers ; sessions limitées dans le temps ; accès aux données autorisé seulement depuis un appareil inscrit et à jour</td>
+<td>appareils non verrouillés, sessions ouvertes en permanence ; « avec des gants, un code à chaque fois, c'est impossible »</td>
+<td>un mode de déverrouillage choisi avec les équipes et testé avec des gants ; délai de verrouillage automatique adapté au chantier ; sensibilisation courte des équipes, à partir de l'incident de février</td>
+</tr>
+</tbody>
+</table>
+<p><em>3.2 d) – Responsabilité partagée et rôles</em></p>
+<p>Dans un service en ligne, la sécurité est une <strong>responsabilité partagée</strong> : le fournisseur sécurise ce qu'il maîtrise (centres de données, infrastructure, application) ; le client reste <strong>toujours</strong> responsable de ses <strong>identités et accès</strong>, de ses <strong>appareils</strong>, de ses <strong>données</strong> et de leurs <strong>usages</strong>, ainsi que des réglages qu'il choisit (F03 § 5.2). Les conditions générales du fournisseur de la suite bureautique le disent : « la gestion des comptes, des droits et des appareils relève du client ». Chez SOLVÉRANCE Habitat, chacun croit que la sécurité est l'affaire d'un autre ; au regard du RGPD, l'entreprise reste responsable de la sécurité des données de ses clients, les éditeurs agissant comme sous-traitants (annexe 3.4).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Acteur</th>
+<th>Rôles et responsabilités (d-2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Direction</strong> (président, directeur administratif et financier chargé du système d'information)</td>
+<td>approuve les règles d'accès et leur budget (accès invités, coques, outil de gestion des appareils, compris en partie dans l'abonnement) ; désigne le responsable informatique comme référent de la sécurité ; arbitre entre facilité et sécurité ; rend compte au comité stratégique des incidents ; décide des notifications en cas de violation</td>
+</tr>
+<tr class="even">
+<td><strong>Responsable informatique</strong></td>
+<td>administre les comptes et les droits, les deux facteurs d'authentification et la flotte d'appareils ; tient la liste des accès ; conduit la revue trimestrielle ; gère les incidents ; propose les règles</td>
+</tr>
+<tr class="odd">
+<td><strong>Conducteurs de travaux</strong></td>
+<td>demandent les accès de leurs partenaires et signalent la fin des lots ; valident la revue des droits ; ne transmettent ni mots de passe ni codes en dehors des règles</td>
+</tr>
+<tr class="even">
+<td><strong>Éditeurs des services en ligne</strong></td>
+<td>sécurisent leur service et leurs centres de données ; offrent les fonctions de sécurité (deux facteurs, gestion des appareils, journaux) ; agissent comme sous-traitants (contrat, sort des données, notification à l'entreprise d'un incident les concernant)</td>
+</tr>
+<tr class="odd">
+<td><strong>Prestataire informatique local</strong> (BRIVALDE Informatique)</td>
+<td>prépare les appareils selon les règles de l'entreprise (inscription dans l'outil de gestion, verrouillage, coque) ; répare ; signale les appareils perdus ou retirés ; n'administre pas les comptes</td>
+</tr>
+<tr class="even">
+<td><strong>Entreprises partenaires</strong></td>
+<td>désignent un interlocuteur ; signalent les arrivées et les départs de leurs salariés ; signent un engagement de confidentialité ; utilisent les comptes nominatifs et n'en partagent pas les accès</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Formalisation et suivi</strong> (d-3) : une courte <strong>règle des accès et des appareils</strong>, intégrée à une charte informatique à créer et approuvée par le président, fixe ces rôles ; un <strong>engagement de confidentialité et d'usage</strong> est signé par chaque entreprise partenaire et annexé à son accord de collaboration ; les <strong>contrats et conditions des éditeurs</strong> sont relus pour vérifier les engagements de sécurité et de sous-traitance ; une matrice de responsabilités (qui réalise, approuve, est consulté, est informé) peut résumer la répartition. Le suivi tient en un point de sécurité trimestriel à la réunion de direction : résultat de la revue des droits, appareils perdus et effacés, incidents. Aucune analyse juridique n'est attendue.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autre classement d'un risque s'il est justifié (la perte de la tablette peut aussi être présentée comme une menace de vol ; le risque métier peut être la perte de partenaires si l'accès devient trop lourd).</li>
+<li>Portail ou extrait du planning destiné aux partenaires, génération automatique de la liste du lendemain, à la place de l'accès invité, si les comptes restent nominatifs et les droits limités.</li>
+<li>Clé physique ou application d'authentification comme second facteur ; conteneurisation des données professionnelles sur l'appareil ; cloisonnement entre les espaces de chaque partenaire présenté comme une mesure de segmentation.</li>
+<li>Désignation d'un responsable de la sécurité des systèmes d'information à temps partagé, à condition de rester proportionné à une PME.</li>
+<li>Mesures de l'annexe A d'ISO/IEC 27001:2022 ou du guide d'hygiène de l'ANSSI citées à l'appui, sans démarche de certification.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Zero Trust présenté comme un produit à acheter</em> (<code>ET-04</code>, <code>JUR-S03</code>) — juste : un cadre d'architecture qui combine identités, appareils et droits.</li>
+<li><em>Identification, authentification et autorisation confondues ; deux facteurs réduits à un mot de passe complexe</em> (<code>ET-28</code>) — juste : deux facteurs de nature différente, droits limités au besoin.</li>
+<li><em>« En ligne, la sécurité est l'affaire du fournisseur »</em> (F03 § 5.2) — juste : l'entreprise reste responsable des identités, des appareils et des données.</li>
+<li><em>Norme, guide et solution confondus</em> (<code>ET-01</code>, <code>JUR-S06</code>) — « installer ISO 27001 », « appliquer le guide de l'ANSSI comme un logiciel » ; juste : ISO/IEC 27001:2022 est une norme d'exigences, ISO/IEC 27002:2022 un guide de mise en œuvre et le guide d'hygiène de l'ANSSI un recueil de bonnes pratiques.</li>
+<li><em>Mesures techniques détaillées ou paramétrage</em> (<code>JUR-T12</code>) — juste : règles, rôles, mesures et conditions de réussite.</li>
+<li><em>Glissement vers une politique de sécurité complète, la continuité ou les appareils personnels</em> (périmètre de la question) — juste : accès des partenaires et appareils de chantier de l'entreprise.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des risques, gestion des identités et des accès, architecture de confiance</td>
+<td>définitions et application</td>
+<td>F12 § 0, 3 et 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Responsabilité partagée</td>
+<td>répartition entre fournisseur et client d'un service en ligne</td>
+<td>F03 § 5.2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique de l'ANSSI (2017)</td>
+<td>identification nominative, arrivées et départs, terminaux mobiles</td>
+<td><code>guide_hygiene_anssi_2017</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27001:2022 et ISO/IEC 27002:2022</td>
+<td>mesures de l'annexe A (identités, droits d'accès, fournisseurs, terminaux) ; guide de mise en œuvre</td>
+<td><code>iso_27001_2022</code>, <code>iso_27002_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Modèle Zero Trust (ANSSI, 2021)</td>
+<td>cadre d'architecture</td>
+<td><code>zero_trust_anssi</code> ; F12 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>sécurité adaptée au risque, sous-traitant, notification en 72 heures</td>
+<td><code>rgpd</code> ; F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="33--un-numérique-plus-responsable-et-des-économies-dénergie-fiables-45-points">3.3 – Un numérique plus responsable et des économies d'énergie fiables (4,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.3 – Intégrer les enjeux de durabilité et de sobriété numérique dans le management des SI : <code>4.3.a</code> « Déployer une stratégie SI responsable en intégrant les principes de durabilité, de sobriété numérique et les exigences réglementaires en matière de RSE et de performance environnementale » ; <code>4.3.b</code> « Cadres réglementaires : CSRD (Corporate Sustainability Reporting Directive), ESRS (European Sustainability Reporting Standards) » ; <code>4.3.c</code> « Gouvernance SI orientée RSE : inclusion, éthique, sobriété » ; <code>4.3.d</code> « Bonnes pratiques Green IT : éco-conception, mutualisation, cycle de vie des équipements ». Limites : la durabilité est intégrée à la gouvernance globale du SI, et non ajoutée à la marge ; aucun calcul d'empreinte ; le champ de la CSRD est une donnée de l'énoncé.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.3 (parc, photos et vidéos, économies affichées, projets), annexe 3.4 (CSRD, Omnibus I, ESRS, loi REEN, RGESN, étude ADEME-Arcep, RGPD) et annexe 1.1 (activité, organigramme, plan « Cap 2029 »).</p>
+<p><strong>Barème indicatif (4,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Sobriété numérique (questionner le besoin) et Green IT (réduire l'empreinte du SI lui-même) définis et distingués ; la sobriété n'est pas une simple économie d'énergie</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Mesures 1 et 2 : durée de vie et reconditionnement ; protection contre la casse ; justifiées par l'annexe 3.3</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Mesures 3 et 4 : sobriété des photos et vidéos ; mutualisation des appareils ; ordre de priorité justifié par le poids des terminaux et de leur fabrication (annexe 3.4)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Gouvernance du SI orientée RSE définie (intégrée à la gouvernance du SI, instance, charte, porteurs) ; principe de sobriété avec son porteur</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Principe d'éthique de l'usage des données des clients en réponse à Mme MARQUENDE (finalité, accord des clients, minimisation, pas de réutilisation commerciale non annoncée, publication sans identification du logement)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Entreprise hors du champ de la CSRD (donnée) ; ESRS faites pour les entreprises du champ ; publication volontaire possible mais proportionnée et fiable ; réponse au président</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Rôle du SI dans la fiabilité des économies affichées : méthode unique validée, hypothèses écrites, calcul tracé et archivé, contrôle, vocabulaire « estimée » et non « garantie », suivi d'un échantillon après travaux, consolidation à partir des seules données tracées</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>d-1</td>
+<td>Indicateur de numérique responsable complet (formule, source, fréquence, cible, axe)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>d-2</td>
+<td>Indicateur de fiabilité des économies affichées complet</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.3 a) – Sobriété, Green IT et quatre mesures priorisées</em></p>
+<p>La <strong>sobriété numérique</strong> consiste à interroger d'abord le <strong>besoin</strong> : renoncer à ce qui n'est pas utile, dimensionner au juste nécessaire (combien d'appareils, quel renouvellement, quelles photos garder). Le <strong>Green IT</strong> vise à réduire l'empreinte <strong>du système d'information lui-même</strong> (appareils, stockage, logiciels, usages) à besoin donné, par la conception, l'achat, l'usage et la fin de vie. L'économie d'énergie n'est qu'un effet possible : chez SOLVÉRANCE Habitat, le premier enjeu n'est pas l'électricité mais le <strong>renouvellement des appareils</strong> (F14 § 3 ; <code>ET-12</code>).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Priorité</th>
+<th>Mesure</th>
+<th>Justification par l'annexe 3.3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Allonger la durée de vie et recourir au reconditionnement</strong> (a-2) : abandon du renouvellement systématique tous les deux ans ; renouvellement sur constat d'usure ou de fin des mises à jour de sécurité (au moins cinq ans assurés par le fabricant), soit une durée cible de quatre ans au moins ; achat d'appareils reconditionnés garantis pour les remplacements et les réserves ; revente ou don des 80 appareils stockés, recyclage tracé du reste (attestations du reconditionneur)</td>
+<td>50 appareils achetés neufs en 2026 (35 k€) pour un parc de 60 ; renouvellement à quatre ans : environ 15 appareils par an au lieu de 30, et des appareils reconditionnés à environ 60 % du prix du neuf</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Protéger les appareils contre la casse</strong> (a-2) : coques renforcées et verres de protection (environ 60 € par appareil, soit environ 3,6 k€ pour le parc), règles simples de rangement dans les véhicules, réparation avant remplacement</td>
+<td>15 appareils cassés en 2026 ; deux casses sur trois évitables selon BRIVALDE Informatique, soit une dizaine d'appareils, environ 7 k€ par an</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>Mutualiser les appareils</strong> (a-3) : un pool de tablettes partagées pour les 8 techniciens du bureau d'études, qui ne s'en servent qu'une à deux journées par semaine ; une réserve commune aux trois sites plutôt qu'une réserve par agence ; pour les conducteurs de travaux, un seul appareil adapté au lieu d'une tablette et d'un smartphone si leurs usages le permettent</td>
+<td>8 tablettes peu utilisées, 8 appareils de réserve, 10 conducteurs de travaux équipés de deux appareils ; deux agences à équiper d'ici 2028</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Sobriété des photos et des vidéos</strong> (a-3) : un seul lieu de stockage (le dossier du chantier), fin de la copie dans la messagerie et de la sauvegarde automatique en double ; liste des photos utiles par étape (avant, pendant, réception) ; vidéos réservées aux tours de main et aux fiches de retour d'expérience ; durée de conservation fixée et suppression ou archivage au-delà ; compression</td>
+<td>200 photos et 5 vidéos par chantier, trois exemplaires de chaque photo, 8 To stockés, + 3 To par an, rien n'est supprimé ; volume compris dans l'abonnement (10 To) dépassé dès 2027</td>
+</tr>
+</tbody>
+</table>
+<p>L'<strong>ordre de priorité</strong> suit les repères de l'annexe 3.4 : les terminaux représentent de 65 % à 92 % de l'empreinte du numérique, surtout par leur <strong>fabrication</strong> (étude ADEME-Arcep) ; la loi REEN met l'allongement de la durée de vie au premier plan. Réduire le nombre d'appareils fabriqués pour l'entreprise (durée de vie, casse, mutualisation) passe donc avant le stockage, dont l'effet est réel mais plus faible, et que le RGESN traite par l'écoconception des services et de l'hébergement. Les mesures 1 et 2 sont aussi les plus rentables (achats divisés par deux environ).</p>
+<p><em>3.3 b) – Gouvernance orientée RSE : éthique et sobriété</em></p>
+<p>Une <strong>gouvernance du système d'information orientée vers la responsabilité sociétale</strong> intègre les enjeux environnementaux, sociaux et éthiques <strong>dans les décisions ordinaires</strong> du système d'information (choix, achats, usages des données, priorités), avec une instance, des principes écrits, des porteurs et des indicateurs ; elle n'est pas un ajout marginal (limite du programme ; F14 § 0). Dans une PME, elle prend la forme d'une <strong>revue numérique responsable</strong> deux fois par an à la réunion de direction, et d'une courte charte du numérique responsable.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Principe</th>
+<th>Contenu pour SOLVÉRANCE Habitat</th>
+<th>Porteur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Éthique de l'usage des données des clients</strong> (b-2)</td>
+<td>une donnée n'est collectée que pour une <strong>finalité annoncée</strong> au client ; le relevé des factures d'énergie après travaux est proposé, avec l'<strong>accord explicite</strong> du client, à un échantillon de clients, pour vérifier les économies et améliorer les préconisations, et non à tous ; il n'est <strong>pas réutilisé</strong> pour proposer d'autres travaux sans que le client l'ait accepté ; les résultats publiés sont <strong>agrégés</strong> et ne permettent pas d'identifier un logement (pas de photo de la maison avec sa commune sans accord écrit) ; seules les données nécessaires sont demandées et conservées pour une durée limitée (RGPD, annexe 3.4). Réponse à Mme MARQUENDE : son projet mélange preuve et prospection et expose la vie privée des clients, alors que la confiance est la priorité du plan « Cap 2029 »</td>
+<td>le président, qui approuve la charte ; la responsable commerciale pour les usages commerciaux ; le directeur administratif et financier, chargé du système d'information, qui vérifie la conformité</td>
+</tr>
+<tr class="even">
+<td><strong>Sobriété</strong> (b-1)</td>
+<td>tout achat d'appareil ou de service et tout nouvel usage (vidéos, stockage) est d'abord interrogé sur son besoin : règle de durée de vie et de reconditionnement, liste des photos utiles, durée de conservation ; la sobriété devient un critère des décisions du système d'information, examiné avec le coût</td>
+<td>le directeur administratif et financier, chargé du système d'information, avec le responsable informatique ; la directrice des opérations pour les règles de chantier</td>
+</tr>
+</tbody>
+</table>
+<p><em>3.3 c) – CSRD, ESRS et fiabilité des économies affichées</em></p>
+<p><strong>Situation</strong> (c-1) : selon l'annexe 3.4, SOLVÉRANCE Habitat <strong>n'entre pas dans le champ de la CSRD</strong> ; c'est une donnée. Les ESRS révisées sont les normes d'information des entreprises soumises à la CSRD, applicables aux exercices ouverts à compter du 1er janvier 2027 ; la directive Omnibus I réserve l'obligation aux entreprises de très grande taille et n'est pas transposée en France. <strong>Réponse au président</strong> : l'entreprise peut publier <strong>volontairement</strong> des informations environnementales pour le comité stratégique et la banque, mais reprendre « les mêmes normes » que les grandes entreprises serait disproportionné ; les ESRS peuvent seulement servir de <strong>grille de lecture</strong> (climat, utilisation des ressources), sans prétendre à la conformité. Surtout, une information volontaire engage autant qu'une information obligatoire : elle doit être <strong>exacte, traçable et vérifiable</strong>, sans quoi elle devient une communication trompeuse. Afficher « l'énergie économisée depuis 2018 » est aujourd'hui impossible à justifier : les économies ne sont conservées que dans des PDF, calculées de trois façons et jamais constatées. Il faut aussi y faire figurer l'empreinte propre de l'entreprise, dont son numérique (question 3.3 a), et non seulement les gains de ses clients.</p>
+<p><strong>Le rôle du système d'information</strong> (c-2) — de la collecte à la publication :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Défaut actuel (annexe 3.3 C)</th>
+<th>Ce que le SI doit garantir</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Méthode</td>
+<td>trois méthodes (calcul thermique, tableau d'un fabricant, « expérience ») ; de 10 % à 30 % pour des menuiseries de maisons comparables</td>
+<td>une <strong>méthode unique</strong>, validée par le bureau d'études : calcul thermique pour les rénovations globales, barème interne validé et versionné pour les travaux par lots, intégré au logiciel de devis ; le conseiller ne saisit plus de pourcentage libre</td>
+</tr>
+<tr class="even">
+<td>Hypothèses</td>
+<td>aucune hypothèse écrite</td>
+<td>hypothèses (consommation de départ, température, occupation) enregistrées avec le calcul et imprimées sur le devis ; économie présentée comme <strong>estimée</strong>, avec une fourchette, jamais comme « garantie »</td>
+</tr>
+<tr class="odd">
+<td>Traçabilité</td>
+<td>chiffres seulement dans des PDF</td>
+<td>chaque économie affichée est <strong>rattachée à son calcul archivé</strong> (référence, version de la méthode, auteur, date), pour pouvoir la justifier à un client ou à un lecteur du rapport</td>
+</tr>
+<tr class="even">
+<td>Contrôle</td>
+<td>aucun</td>
+<td>contrôle mensuel d'un échantillon de devis par le bureau d'études ; correction de la brochure et du site par la même validation avant toute diffusion</td>
+</tr>
+<tr class="odd">
+<td>Constat</td>
+<td>aucune consommation relevée après travaux</td>
+<td>suivi, avec l'accord des clients, d'un échantillon de chantiers sur deux hivers : comparaison de l'économie estimée et de l'économie constatée, retour vers la méthode et vers les fiches de retour d'expérience</td>
+</tr>
+<tr class="even">
+<td>Publication</td>
+<td>projet d'un total « depuis 2018 »</td>
+<td>consolidation à partir des <strong>seules données tracées</strong>, avec la méthode et ses limites exposées ; aucune donnée reconstituée pour les années passées</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autre ordre de priorité s'il est justifié par l'annexe (la casse en premier, parce qu'elle est immédiate et peu coûteuse), à condition de garder les appareils avant le stockage.</li>
+<li>Mention de la norme volontaire de reporting pour les PME comme cadre plus proportionné d'une publication volontaire, sans développement.</li>
+<li>Comité numérique responsable distinct, s'il reste proportionné ; inclusion des clients âgés évoquée en plus des deux principes demandés.</li>
+<li>Indicateurs complets différents : part des appareils achetés reconditionnés (cible 50 % en 2028), nombre d'appareils achetés neufs par an (cible 15 au plus), volume stocké par chantier, écart moyen entre économie estimée et économie constatée sur l'échantillon suivi, nombre de réclamations portant sur les économies (6 en 2026).</li>
+</ul>
+<p><strong>Indicateurs</strong> (d-1 et d-2)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Durée d'usage moyenne des appareils de chantier retirés du parc (d-1)</td>
+<td>somme des durées d'usage (date de retrait - date de mise en service) des tablettes et smartphones retirés dans l'année / nombre d'appareils retirés</td>
+<td>inventaire du parc tenu dans l'outil de gestion des appareils mobiles ; attestations de réemploi ou de recyclage du reconditionneur</td>
+<td>annuelle, avec un point semestriel sur la casse</td>
+<td>au moins 4 ans en 2029, contre moins de 2 ans en 2026 (renouvellement tous les deux ans et 20 appareils cassés ou perdus)</td>
+<td>environnement</td>
+</tr>
+<tr class="even">
+<td>Part des devis affichant une économie d'énergie établie selon la méthode validée et tracée (d-2)</td>
+<td>nombre de devis remis affichant une économie d'énergie calculée selon la méthode validée par le bureau d'études et rattachée à son calcul archivé / nombre de devis remis affichant une économie d'énergie</td>
+<td>logiciel de devis et de facturation (champ de l'économie et référence du calcul) ; contrôle mensuel d'un échantillon par le bureau d'études</td>
+<td>mensuelle</td>
+<td>100 % à partir du 1er janvier 2028, contre au mieux 10 devis sur 30 (les rénovations globales) dans l'échantillon examiné de 2026</td>
+<td>gouvernance</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Sobriété confondue avec l'économie d'énergie</em> (<code>ET-12</code>) — juste : d'abord moins d'appareils fabriqués, gardés plus longtemps.</li>
+<li><em>Empreinte réduite à l'électricité</em> (<code>ET-38</code>) — juste : la fabrication des terminaux domine.</li>
+<li><em>Discussion du champ de la CSRD</em> (<code>ET-41</code>, <code>ET-17</code>) — juste : l'entreprise est hors champ (donnée) ; la question est la fiabilité d'une publication volontaire.</li>
+<li><em>Économies d'énergie traitées sous l'angle des règles du calcul thermique ou des aides</em> (périmètre de la question) — juste : méthode unique, traçabilité, contrôle, vocabulaire, suivi.</li>
+<li><em>Durabilité en ajout marginal</em> (<code>JUR-T11</code>) — juste : principes intégrés aux décisions du SI, porteurs nommés, indicateurs suivis.</li>
+<li><em>Indicateurs sans cible ni source</em> (<code>ET-18</code>, <code>JUR-A02</code>) — juste : cinq champs renseignés, cible chiffrée à partir de l'annexe.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sobriété numérique, Green IT, gouvernance orientée RSE</td>
+<td>définitions, mesures, gouvernance</td>
+<td>F14 § 0, 3 et 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Loi n° 2021-1485 (REEN)</td>
+<td>durée de vie des équipements, sensibilisation</td>
+<td><code>loi_reen</code> ; F14 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>RGESN, version 2024</td>
+<td>écoconception des services numériques</td>
+<td><code>rgesn_2024</code> ; F14 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Étude ADEME-Arcep sur l'empreinte du numérique</td>
+<td>poids des terminaux et de leur fabrication</td>
+<td><code>etude_ademe_arcep_numerique</code> ; F14 § 1</td>
+<td>volets de 2022 et de 2023 ; mise à jour du 17/01/2025</td>
+</tr>
+<tr class="odd">
+<td>Directive (UE) 2022/2464 (CSRD) ; directive (UE) 2026/470 (Omnibus I)</td>
+<td>entreprise hors champ (donnée) ; Omnibus I non transposée</td>
+<td><code>csrd</code>, <code>csrd_omnibus</code> ; F14 § 2</td>
+<td>en vigueur ; non transposée en France</td>
+</tr>
+<tr class="even">
+<td>ESRS révisées (règlement délégué (UE) 2026/1563)</td>
+<td>architecture des normes, grille de lecture d'une publication volontaire</td>
+<td><code>esrs_2026</code> ; F14 § 2</td>
+<td>applicables aux exercices ouverts à compter du 01/01/2027</td>
+</tr>
+<tr class="odd">
+<td>Norme volontaire pour les PME (VSME)</td>
+<td>cadre proportionné d'une publication volontaire (toléré)</td>
+<td><code>vsme</code> ; F14 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>finalité, minimisation, durée de conservation</td>
+<td><code>rgpd</code> ; F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
