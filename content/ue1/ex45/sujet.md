@@ -1,0 +1,132 @@
+# DSCG UE 1 — Gestion juridique, fiscale et sociale — Exercice d'entraînement n° 45
+
+**DOSSIER 1 – UN RÉSEAU D'ÉCOLES DE CONDUITE EN FRANCHISE : DOCUMENT D'INFORMATION PRÉCONTRACTUELLE À METTRE À JOUR, DONNÉES DES VÉHICULES ET DES ÉLÈVES, ÉDITEUR DE LOGICIEL EN POSITION DOMINANTE (8 points sur 40, soit 4 points sur 20)**
+
+Durée conseillée : 48 min (8 points sur 40, à raison de 6 minutes par point, sur une épreuve de 4 heures, coefficient 1,5).
+
+Réglementation applicable au 31/12/2026, sauf mention contraire. Année de référence des faits : 2026 (exercices 2024 à 2026, chaque exercice correspondant à l'année civile ; les questions vous sont posées le 12 novembre 2026 ; toutes les opérations envisagées ont lieu avant le 31/12/2026, sauf mention contraire).
+
+**Document autorisé** : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est INTERDIT et constituerait une fraude.
+
+### AVERTISSEMENT
+
+Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.
+
+Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.
+
+---
+
+## Présentation
+
+*Réglementation applicable au 31/12/2026, sauf mention contraire. Année de référence des faits : 2026 (exercices 2024 à 2026).*
+
+**SAS ROULÉVIA**
+
+La SAS ROULÉVIA (ci-après « ROULÉVIA »), créée en 2012, a son siège à Lyon (Rhône). Elle est le franchiseur du réseau d'écoles de conduite « Roulévia » (permis B et apprentissage anticipé de la conduite, dit « conduite accompagnée », ouvert dès 15 ans) : le réseau compte **64 écoles**, dont **12 succursales** que ROULÉVIA exploite elle-même et **52 écoles franchisées**, exploitées par des sociétés indépendantes sous l'enseigne et la marque « Roulévia », déposée par ROULÉVIA. ROULÉVIA édite aussi l'application « Roulévia Code », qui prépare à l'épreuve théorique du code de la route ; l'application, proposée par abonnement aux élèves du réseau et à tout particulier, est ouverte dès 14 ans.
+
+ROULÉVIA emploie **85 salariés**, dont 48 enseignants de la conduite affectés aux succursales ; un comité social et économique (CSE) est en place. Elle a réalisé en 2025 un chiffre d'affaires de 14 000 000 € HT (leçons des succursales, redevances et droits d'entrée des franchisés, abonnements à l'application) et elle est soumise à l'impôt sur les sociétés. Sa présidente et fondatrice, Mme Nadège VERCLAIRE, détient 72 % du capital ; les 28 % restants appartiennent à la SAS VALSORÈNE PARTICIPATIONS, fonds d'investissement régional qui n'exerce aucun contrôle. Les élèves du réseau ont, pour la plupart, de 15 à 25 ans.
+
+Le cabinet d'expertise comptable dans lequel vous êtes collaborateur (collaboratrice) accompagne ROULÉVIA. Les sociétés, les personnes et les lieux d'activité cités sont fictifs. Mme VERCLAIRE vous consulte le 12 novembre 2026.
+
+**Le développement du réseau.** ROULÉVIA veut ouvrir quinze nouvelles écoles franchisées en 2027. Elle utilise toujours le modèle de document d'information précontractuelle (DIP) et le contrat de franchise rédigés en mars 2019, dont des extraits figurent en annexe 1.1. Le contrat est conclu pour sept ans ; le franchisé s'engage à exploiter son école sous la seule enseigne « Roulévia », dans une zone qui lui est réservée, et ROULÉVIA lui transmet ses méthodes pédagogiques et commerciales, réunies dans un manuel confidentiel. En 2025, trois écoles franchisées ont quitté le réseau : un contrat est arrivé à son terme sans être renouvelé et deux contrats ont été résiliés.
+
+Le 2 novembre 2026, M. Lucas FERRANDIÈRE, candidat à l'ouverture d'une école à Villefranche-sur-Saône, a signé un « bon de réservation de zone » et versé un acompte de 9 000 € (annexe 1.1, C). ROULÉVIA prévoit de lui remettre le DIP et le projet de contrat le 20 novembre 2026 et de signer le contrat de franchise le 1er décembre 2026.
+
+### Travail à faire
+
+**1.1** En vous appuyant sur l'annexe 1.1, indiquez à Mme VERCLAIRE pourquoi le modèle de DIP, le contrat de franchise et la procédure suivie avec M. FERRANDIÈRE doivent être revus, quels risques ROULÉVIA court si elle ne fait rien, et quelles corrections vous proposez.
+
+**Les données des véhicules et des élèves.** Depuis 2025, les véhicules à double commande des douze succursales sont équipés d'un boîtier qui enregistre en continu la position, la vitesse et les freinages du véhicule, et d'une caméra embarquée qui filme la route et l'habitacle pendant les leçons. ROULÉVIA est responsable de ces traitements. Elle projette, à partir de janvier 2027, quatre nouveaux usages, décrits en annexe 1.2 :
+
+- utiliser des extraits des vidéos, visages floutés, pour former ses enseignants ;
+- publier chaque mois sur son site internet le taux de réussite à l'examen pratique de chaque école ; certaines écoles ne présentent que six ou huit candidats par mois ;
+- transmettre les données des boîtiers à la société ARGANAV, établie à Bangalore (Inde), qui développerait pour ROULÉVIA un « score de préparation à l'examen » calculé pour chaque élève et affiché dans l'application « Roulévia Code » ;
+- suivre en temps réel, depuis le siège, la position de tous les véhicules des succursales, y compris pendant les pauses des enseignants.
+
+À la date du 12 novembre 2026, l'Inde ne fait l'objet d'aucune décision de la Commission européenne constatant qu'elle assure un niveau de protection adéquat des données à caractère personnel.
+
+### Travail à faire
+
+**1.2** En vous appuyant sur l'annexe 1.2, qualifiez chacune des catégories de données en cause (données des boîtiers, extraits vidéo floutés, taux de réussite mensuels, score de préparation) au regard des notions de donnée à caractère personnel, de donnée pseudonymisée et de donnée anonyme. Quelles personnes sont concernées, et qu'en déduisez-vous quant à l'application du règlement général sur la protection des données (RGPD) ?
+
+**1.3** À quelles conditions ROULÉVIA peut-elle transmettre les données des boîtiers à ARGANAV, et suivre en temps réel la position des véhicules conduits par ses enseignants ? Quelles précautions doit-elle prendre à l'égard des élèves et des abonnés mineurs qui utiliseraient le score de préparation ? Formulez vos recommandations.
+
+**Le différend avec l'éditeur du logiciel de gestion.** Toutes les écoles du réseau gèrent leurs élèves (inscriptions, planning des leçons, inscriptions aux examens, facturation) avec le logiciel « PermiGest » de la SAS PERMILOG, établie à Nantes, qui équipe 78 % des écoles de conduite en France. Le courrier adressé par PERMILOG à ses clients le 1er octobre 2026 et des données de marché figurent en annexe 1.3. Depuis le 1er octobre 2026, neuf écoles franchisées ont cessé de proposer « Roulévia Code » à leurs élèves pour éviter la hausse du prix de leur licence, et les abonnements à l'application sont passés de 4 000 à 2 800 par mois.
+
+### Travail à faire
+
+**1.4** En vous appuyant sur l'annexe 1.3, qualifiez les pratiques de PERMILOG au regard du droit de la concurrence, interne et de l'Union européenne. Quelles actions ROULÉVIA peut-elle engager, et pour obtenir quoi ? Quelles sanctions PERMILOG encourt-elle ? Que conseillez-vous à Mme VERCLAIRE ?
+
+### ANNEXE 1.1 – Extraits du modèle de DIP et du contrat de franchise de mars 2019, et bon de réservation du 2 novembre 2026
+
+*Documents fictifs.*
+
+**A. Modèle de document d'information précontractuelle (version de mars 2019, extraits)**
+
+> **1. Le franchiseur.** SAS ROULÉVIA, siège : Lyon ; présidente : Mme Nadège VERCLAIRE ; marque « Roulévia » déposée à l'INPI (date et numéro d'enregistrement) ; banque principale : (…).
+>
+> **2. Historique.** ROULÉVIA a ouvert sa première école à Lyon en 2012 et a lancé son réseau de franchise en 2015.
+>
+> **3. Le marché.** Le marché français de la formation à la conduite est un marché porteur : chaque année, plus d'un million de candidats se présentent à l'examen du permis B.
+>
+> **4. Le réseau.** Au 1er janvier 2019, le réseau compte 38 écoles. La liste des écoles franchisées (nom et ville) figure en page 9.
+>
+> **5. Le contrat proposé.** Durée de sept ans ; renouvellement par accord exprès ; exclusivité territoriale dans la zone définie en annexe du contrat ; droit d'entrée de 25 000 € HT ; redevance mensuelle de 6 % du chiffre d'affaires HT.
+
+*Le modèle ne comporte ni les comptes annuels de ROULÉVIA, ni d'autre présentation du marché, ni d'autre information sur le réseau.*
+
+**B. Contrat de franchise (modèle de mars 2019), article 18 – Non-réaffiliation**
+
+> Pendant une durée de trois ans à compter de la fin du présent contrat, pour quelque cause que ce soit, le franchisé s'interdit, directement ou par personne interposée, d'adhérer à un réseau d'écoles de conduite concurrent, d'exploiter une école de conduite sous une autre enseigne ou de participer à une telle exploitation, dans toute la région Auvergne-Rhône-Alpes.
+
+**C. Bon de réservation de zone signé le 2 novembre 2026 par M. Lucas FERRANDIÈRE (extraits)**
+
+> Le candidat réserve, pour une durée de trois mois, la zone de Villefranche-sur-Saône en vue de l'ouverture d'une école « Roulévia ». Il verse ce jour un acompte de 9 000 €, qui s'imputera sur le droit d'entrée. L'acompte reste définitivement acquis à ROULÉVIA si le candidat ne signe pas le contrat de franchise, pour quelque cause que ce soit. Le document d'information précontractuelle lui sera remis ultérieurement.
+
+**D. Code de commerce, article L. 341-2 (version en vigueur depuis le 7 août 2015, loi n° 2015-990 du 6 août 2015), texte consolidé lu le 18/11/2026**
+
+> I.-Toute clause ayant pour effet, après l'échéance ou la résiliation d'un des contrats mentionnés à l'article L. 341-1, de restreindre la liberté d'exercice de l'activité commerciale de l'exploitant qui a précédemment souscrit ce contrat est réputée non écrite.
+>
+> II.-Ne sont pas soumises au I du présent article les clauses dont la personne qui s'en prévaut démontre qu'elles remplissent les conditions cumulatives suivantes :
+>
+> 1° Elles concernent des biens et services en concurrence avec ceux qui font l'objet du contrat mentionné au I ;
+>
+> 2° Elles sont limitées aux terrains et locaux à partir desquels l'exploitant exerce son activité pendant la durée du contrat mentionné au I ;
+>
+> 3° Elles sont indispensables à la protection du savoir-faire substantiel, spécifique et secret transmis dans le cadre du contrat mentionné au I ;
+>
+> 4° Leur durée n'excède pas un an après l'échéance ou la résiliation d'un des contrats mentionnés à l'article L. 341-1.
+
+*Note : l'article L. 341-1 vise l'ensemble des contrats conclus entre une personne qui met à disposition un nom commercial, une marque ou une enseigne et « toute personne exploitant, pour son compte ou pour le compte d'un tiers, un magasin de commerce de détail », ayant pour but commun l'exploitation de ce magasin et comportant des clauses susceptibles de limiter la liberté d'exercice par cet exploitant de son activité commerciale.*
+
+### ANNEXE 1.2 – Description des traitements envisagés à partir de janvier 2027 (document interne de ROULÉVIA)
+
+*Document fictif.*
+
+| Traitement | Données | Destinataires | Durée de conservation prévue | Finalité |
+|---|---|---|---|---|
+| Boîtiers des véhicules | numéro du véhicule, date et heure, position toutes les 30 secondes, vitesse, freinages ; le planning des leçons, tenu par chaque succursale, indique pour chaque créneau le véhicule, l'enseignant et l'élève | siège de ROULÉVIA ; ARGANAV | cinq ans | bilan pédagogique de chaque leçon ; données transmises à ARGANAV pour le score de préparation |
+| Extraits vidéo | séquences de deux à cinq minutes filmées dans l'habitacle et vers la route ; visages de l'élève et de l'enseignant floutés ; son conservé (consignes de l'enseignant, réponses de l'élève) ; plaque d'immatriculation du véhicule de l'école lisible dans les reflets de certaines vitrines ; date de la leçon et nom de la succursale indiqués sur chaque séquence | enseignants du réseau (formation interne), franchisés | dix ans | formation des enseignants |
+| Taux de réussite | pour chaque école et chaque mois : nombre de candidats présentés à l'examen pratique, nombre de reçus, taux de réussite. Exemples d'octobre 2026 : Tarare, 6 candidats, 6 reçus, 100 % ; Givors, 8 candidats, 2 reçus, 25 % ; Lyon-Gerland, 40 candidats, 26 reçus, 65 % | public (site internet) | sans limite | information des futurs élèves |
+| Score de préparation | identifiant de l'élève dans l'application, score sur 100 calculé chaque semaine par ARGANAV à partir des données des boîtiers et des résultats aux tests de code ou, pour les abonnés qui n'ont pas encore commencé la conduite, des seuls résultats aux tests de code, mention « prêt » ou « pas encore prêt » pour l'examen | élève (dans l'application) ; enseignant et école de l'élève | trois ans | aider l'élève et son école à choisir la date de présentation à l'examen |
+| Suivi des véhicules en temps réel | position de chaque véhicule des succursales affichée en continu sur un écran du siège, de 7 h à 21 h, y compris pendant les pauses des enseignants, qui gardent le véhicule | direction des succursales | deux mois | optimiser les plannings ; vérifier que les enseignants n'utilisent pas le véhicule à des fins personnelles |
+
+*Selon le projet de contrat, ARGANAV calculerait le score sur les seules instructions de ROULÉVIA et n'utiliserait pas les données pour son propre compte ; les élèves seraient désignés auprès d'elle par leur identifiant dans l'application, sans nom. ROULÉVIA envisage de proposer le score dans l'application aux élèves qui y consentent.*
+
+### ANNEXE 1.3 – Courrier de PERMILOG et données de marché
+
+*Documents fictifs.*
+
+**A. Courrier adressé le 1er octobre 2026 par la SAS PERMILOG à toutes les écoles de conduite clientes (extraits)**
+
+> Madame, Monsieur,
+>
+> À compter de ce jour, toute licence annuelle « PermiGest », souscrite ou renouvelée, comprend obligatoirement notre module d'entraînement au code « PermiCode », facturé 300 € HT par an. Le prix de la licence reste fixé à 1 200 € HT par an ; il est porté à 1 680 € HT par an pour les écoles qui proposent à leurs élèves une application d'entraînement au code éditée par un tiers.
+>
+> Par ailleurs, pour des raisons de sécurité, nous ne permettons plus l'export des fichiers des élèves (identité, heures de conduite effectuées, dates d'examen) vers des applications tierces. Ces fichiers restent consultables dans « PermiGest ».
+
+**B. Données de marché (étude réalisée pour ROULÉVIA en octobre 2026)**
+
+- Logiciels de gestion des écoles de conduite en France : PermiGest (PERMILOG) équipe 78 % des écoles ; deux logiciels concurrents se partagent le reste. Aucun d'eux ne sait importer les fichiers de « PermiGest » ; le changement de logiciel demande, selon les éditeurs, de six à neuf mois pour un réseau.
+- Applications d'entraînement au code utilisées par les écoles de conduite en France : une dizaine, dont « Roulévia Code » et une application éditée par une société établie en Belgique, qui la diffuse en France, en Belgique et au Luxembourg.
+- Chiffre d'affaires mondial hors taxes de PERMILOG (exercice clos le 31 décembre) : 30 000 000 € en 2024 ; 36 000 000 € en 2025.
