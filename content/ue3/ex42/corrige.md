@@ -1,0 +1,339 @@
+# ÉLÉMENTS INDICATIFS DE CORRIGÉ ET DE BARÈME
+
+## UE 3 – Contrôle de gestion et stratégie — Exercice d'entraînement n° 42 — Dossier 2 (7 points)
+
+Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.
+
+Textes intégrés (fiches datées) : F01 diagnostic et choix stratégiques (§ 6, stratégies concurrentielles et horloge stratégique), F02 valeur et business model (§ 2, coût-volume-profit), F06 pilotage des processus support et approvisionnements, F13 registre des auteurs (toutes à jour au 25/10/2026). Données structurées : `corrige.yaml`, vérifié par `outils/dscgcheck` (quantité économique du puzzle sans rupture et avec ruptures recalculées ; planning du hêtre séché de la politique proposée recalculé ; stocks de la politique actuelle et de l'ajustement recalculés ; marges de la gamme importée, comparaison des politiques du puzzle, capacité et coûts de possession du hêtre recalculés par script ; barème partiel sur 7 ; liste noire ; hors-programme).
+
+Bien que le corrigé mentionne des auteurs, des textes et des données, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur le choix et la justification des outils, la justesse des calculs, la pertinence de l'analyse au regard du cas et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet) ; pour chaque question, la présentation des concepts et outils avant leur mobilisation puis la conclusion sont notées. Une erreur n'est sanctionnée qu'une fois : les calculs qui en découlent sont notés en cohérence avec les résultats antérieurs du candidat.
+
+| Question | Compétence visée | Points |
+|---|---|---:|
+| 2.1 Stratégie concurrentielle actuelle et position que donnerait la gamme importée ; marge supplémentaire nette de la cannibalisation, seuil de cannibalisation ; appréciation au regard du diagnostic et de la mission de la fondation | `1.2.a` Catégoriser et analyser les choix stratégiques réalisés par l'organisation ; `1.2.b` Apprécier les choix opérés à partir des diagnostics stratégiques | 2 |
+| 2.2 Processus d'approvisionnement en hêtre séché et en articles achetés finis : place, enjeux, causes des ruptures, ce qu'il faut piloter | `2.3.a` Analyser la situation de gestion | 1 |
+| 2.3 Puzzle acheté fini : quantité économique sans rupture puis avec ruptures et report des livraisons, comparaison, effet sur les clients et l'image | `2.3.b` Sélectionner des outils de gestion adaptés à l'organisation ; `2.3.c` Élaborer et mettre en œuvre des outils de gestion adaptés au contexte ; `2.3.e` Évaluer les résultats obtenus | 1,5 |
+| 2.4 Planning du hêtre séché pour 2028 par recomplètement, rupture et capacité, ajustement, comparaison avec les lots fixes actuels | `2.3.d` Mettre en œuvre ces outils ; `2.3.e` Évaluer les résultats obtenus | 1,5 |
+| 2.5 Note au président (20 lignes au maximum) | `1.2.c` Formuler des préconisations adaptées à l'organisation ; `1.2.d` Produire une synthèse rédigée et structurée concernant les choix stratégiques réalisés par l'organisation ; `2.3.f` Élaborer des préconisations afin de mieux piloter la performance des activités hors production ; `2.3.g` Produire une synthèse rédigée et structurée concernant les décisions liées aux processus support | 1 |
+| **Dossier 2 – Confirmer le choix du bois français et sécuriser les approvisionnements** | | **7** |
+
+---
+
+## DOSSIER 2 – CONFIRMER LE CHOIX DU BOIS FRANÇAIS ET SÉCURISER LES APPROVISIONNEMENTS (7 points)
+
+### 2.1 Caractériser la stratégie concurrentielle et la position que donnerait la gamme importée, chiffrer la marge supplémentaire nette et le seuil de cannibalisation, apprécier la proposition (2 pts)
+
+**Compétences visées :**
+- `1.2.a` — Catégoriser et analyser les choix stratégiques réalisés par l'organisation (stratégie concurrentielle actuelle ; position qu'ajouterait la gamme importée)
+- `1.2.b` — Apprécier les choix opérés à partir des diagnostics stratégiques (arguments financiers : marge nette de la cannibalisation, seuil ; cohérence avec l'avantage concurrentiel, les clients, la mission de la fondation)
+
+**Barème (2 pts)**
+
+| Item | Attendu | Points |
+|---|---|---:|
+| 2.1-01 | Stratégies concurrentielles définies et attribuées : stratégies génériques de Porter (1980). Horloge stratégique de Faulkner et Bowman (1995) ; stratégie actuelle catégorisée et justifiée par les faits : **différenciation** ou **focalisation par différenciation**, acceptée au même titre si elle est justifiée fondée sur le hêtre français, la fabrication à Varzolles, la durabilité et la réparabilité, avec des prix deux à trois fois supérieurs aux jouets importés ; sur l'horloge, **sophistication avec surprix** ; la gamme importée ajouterait sous la même marque une offre à **prix bas et valeur perçue réduite** (prix bas ou épuration) : ce n'est pas une position **hybride** (prix bas et valeur élevée, qui suppose un avantage de coût que la société n'a pas), mais un risque d'**enlisement dans la voie médiane** | 0,5 |
+| 2.1-02 | Marges unitaires (actuelle 6,00 / 12,00 / 20,00 € ; importée 2,70 / 5,60 / 8,40 €) ; marge sur coût variable de la gamme importée **1 329 k€** ; après coûts fixes propres (435 k€) **894 k€** ; jouets cannibalisés 30 000 / 18 000 / 10 000 ; marge perdue **596 k€** ; marge supplémentaire nette **298 k€** par an | 0,5 |
+| 2.1-03 | Seuil de cannibalisation **30,00 %** (894 / 2 980) ; lecture : au taux annoncé par l'acheteur de la grande enseigne (35 %), la gamme **détruit 149 k€** de marge ; gain fragile, qui dépend d'une hypothèse contredite par le client ; effets non chiffrés relevés (magasins spécialisés, image de la marque, empreinte carbone demandée par les enseignes). La comparaison du chiffre d'affaires ajouté (3 585 k€ bruts, 2 095 k€ nets) et des taux de marge est valorisée, non exigée | 0,5 |
+| 2.1-04 | Appréciation au regard du diagnostic : avantage concurrentiel fondé sur le bois et la fabrication locale, qui répond aux attentes des parents ; pouvoir de négociation des grandes enseignes (23,51 % du chiffre d'affaires) qui captent la gamme et retirent les jouets actuels ; risque sur les magasins spécialisés (36,7 M€) et l'exportation ; cohérence avec la mission de la fondation (durer, rester attachée au Morvan, horizon long) ; conclusion argumentée : **ne pas lancer** la gamme importée (une alternative faisable est valorisée ici, attendue dans la note de 2.5) | 0,5 |
+
+**Choix de l'outil et alternatives acceptées**
+
+- Outil retenu : la **typologie des stratégies concurrentielles de Porter**. Elle est affinée par l'**horloge stratégique de Faulkner et Bowman**, qui situe chaque offre selon le prix et la valeur perçue par le client : elle montre ce que changerait une seconde offre, moins chère et moins valorisée, sous la même marque. Le chiffrage repose sur une **approche marginale par les marges sur coût variable** (coût-volume-profit) : seuls comptent les produits et les charges que la décision fait apparaître ou disparaître, cannibalisation comprise.
+- Alternatives acceptées : la carte des groupes stratégiques (fabricants de jouets en bois européens, importateurs de jouets d'entrée de prix, jouets en plastique), si elle conduit au même constat de positionnement ; un diagnostic interne par les ressources (savoir-faire des tourneurs, marque, approvisionnement local) pour qualifier l'avantage ; une présentation du chiffrage en chiffre d'affaires et marges par canal. Non accepté : apprécier la gamme sur le seul chiffre d'affaires ; imputer à la gamme importée une quote-part des charges fixes de l'usine (coût complet) ; une analyse du droit de l'importation, de la sécurité des jouets ou de la couverture d'un risque de change (UE 1 et UE 2).
+
+**Conventions rappelées** (annexe 2.5)
+
+- Marge sur coût variable unitaire = prix net − coût variable (Varzolles) ou − coût d'achat rendu (gamme importée) ; jouets cannibalisés = volume importé × 20 % ; marge supplémentaire nette = marge de la gamme importée − coûts fixes propres − marge perdue.
+- Montants en k€ ; marges unitaires en euros à deux décimales ; pourcentages à deux décimales.
+
+**Réponse attendue**
+
+*Concepts.* Les **stratégies concurrentielles** (ou génériques) ont été définies par Michael Porter (1980) : **domination par les coûts** et **différenciation** pour une cible large, **focalisation** sur une cible étroite, par les coûts ou par la différenciation. Porter met en garde contre l'**enlisement dans la voie médiane** : l'entreprise qui ne choisit pas perd sur les deux tableaux. L'**horloge stratégique de Faulkner et Bowman (1995)** positionne les offres selon le prix et la valeur perçue : épuration (prix bas, valeur réduite), prix bas, **hybride** (prix bas et valeur élevée, rendue possible par une structure de coûts très efficiente), différenciation par sophistication sans surprix ou **avec surprix**, et positions vouées à l'échec.
+
+*Catégorisation (0,5 pt).* Jouets VARDELIN suit une **stratégie de différenciation** : jouets en hêtre du Morvan et de Bourgogne, tournés, peints et contrôlés à Varzolles, durables et réparables, vendus deux à trois fois plus cher que les jouets importés. Elle répond aux parents qui veulent des jouets « fabriqués près de chez eux ». La cible est assez large (quatre canaux, cinq marchés européens, toutes les familles de jouets de un à huit ans) pour parler de différenciation ; une **focalisation par différenciation** sur le segment des jouets en bois durables est aussi défendable, puisque la société renonce à l'essentiel du marché du jouet (plastique, entrée de prix). Sur l'horloge, elle se situe en **sophistication avec surprix**, position qui correspond à une différenciation focalisée : la qualification de **focalisation par différenciation** est donc acceptée au même titre que la différenciation, dès lors qu'elle est justifiée par le segment visé.
+
+La gamme importée ajouterait, sous la même marque, une offre à **prix bas** (prix nets deux fois plus bas) et à **valeur perçue réduite** : hévéa au lieu du hêtre, fabrication en Asie, modèles simplifiés. Ce n'est **pas une position hybride** : celle-ci associe un prix bas à une valeur élevée et suppose une structure de coûts que la société n'a pas, puisqu'elle achète ces jouets comme n'importe quel importateur. C'est la juxtaposition, sous un même nom, d'une offre différenciée et d'une offre de prix bas : le client ne sait plus ce que promet la marque. C'est le risque d'**enlisement dans la voie médiane** décrit par Porter.
+
+*Chiffrage (0,5 pt).*
+
+| Jouet | Marge unitaire actuelle (€) | Marge unitaire importée (€) | Volume importé | Marge de la gamme importée (k€) | Jouets cannibalisés (20 %) | Marge perdue (k€) |
+|---|---:|---:|---:|---:|---:|---:|
+| Chien à tirer | 15,00 − 9,00 = 6,00 | 7,50 − 4,80 = 2,70 | 150 000 | 405 | 30 000 | 180 |
+| Train de démarrage | 30,00 − 18,00 = 12,00 | 14,00 − 8,40 = 5,60 | 90 000 | 504 | 18 000 | 216 |
+| Établi de bricolage | 50,00 − 30,00 = 20,00 | 24,00 − 15,60 = 8,40 | 50 000 | 420 | 10 000 | 200 |
+| **Total** | | | 290 000 | **1 329** | 58 000 | **596** |
+
+Marge après coûts fixes propres : 1 329 − (105 + 150 + 180) = 1 329 − 435 = **894 k€**. Marge supplémentaire nette : 894 − 596 = **298 k€ par an**, soit 6,34 % du résultat d'exploitation de 2026.
+
+*Seuil et lecture (0,5 pt).* Pour un taux de cannibalisation de 100 %, la marge perdue serait de 150 000 × 6,00 + 90 000 × 12,00 + 50 000 × 20,00 = 2 980 k€. La gamme ne rapporte plus rien quand 2 980 × t = 894, soit **t = 30,00 %**. Or l'acheteur de la grande enseigne annonce qu'il retirera **35 jouets actuels pour 100 jouets importés** : la gamme ferait alors **perdre 149 k€** (894 − 2 980 × 35 %). Le gain dépend donc entièrement d'une hypothèse que le principal client contredit. Le chiffre d'affaires ajouté est trompeur : 3 585 k€ bruts, mais 2 095 k€ nets des 1 490 k€ de ventes actuelles perdues, avec des taux de marge plus faibles (35 % à 40 %, contre 40 %). Le calcul ignore encore des effets défavorables : réaction des magasins spécialisés, banalisation de la marque, empreinte carbone d'un transport par conteneur demandée par ces mêmes enseignes.
+
+*Appréciation (0,5 pt).* (1) **Avantage concurrentiel** : il repose sur le bois français et la fabrication à Varzolles, que la marque affiche (« fabriqué à Varzolles ») ; une gamme importée sous le même nom contredit ce message et rend l'avantage moins crédible. (2) **Clients** : les parents recherchent des jouets durables et fabriqués près de chez eux ; la gérante d'un magasin spécialisé dit qu'elle ne pourrait plus défendre la marque. Les magasins spécialisés, l'exportation et la vente en ligne pèsent 71,9 M€, contre 22,1 M€ pour les grandes enseignes. (3) **Pouvoir de négociation des grandes enseignes** (cinq forces + 1 de Porter, 1979) : elles imposent l'entrée de prix, captent la gamme et retirent les jouets actuels ; elles sont déjà puissantes et le deviendraient davantage. (4) **Mission de la fondation** : elle ne demande pas une croissance rapide, mais que l'entreprise dure, reste indépendante et attachée au Morvan ; son horizon long autorise à renoncer à un gain incertain de court terme. **Conclusion** : ne pas lancer la gamme importée. Mieux vaut défendre la différenciation auprès des grandes enseignes : un ou deux jouets plus simples fabriqués à Varzolles (une épuration, mais sans quitter le hêtre ni l'usine), l'empreinte carbone par jouet comme argument de référencement, et un développement de l'exportation et de la vente en ligne.
+
+**Réponses tolérées**
+- Stratégie actuelle qualifiée de focalisation par différenciation, avec une justification par le segment visé.
+- Gamme importée présentée comme une tentative de position hybride, si la réponse montre qu'elle n'en a pas les conditions (pas d'avantage de coût, valeur perçue plus faible).
+- Seuil exprimé en jouets cannibalisés (87 000 jouets, soit 30 % de 290 000) ou chiffrage présenté par canal.
+- Recommandation de tester la gamme sous une autre marque, si elle discute le coût, la cannibalisation et la cohérence avec la mission ; la conclusion attendue reste le refus de la proposition en l'état.
+
+**Erreurs fréquentes**
+- `JUR-S03` — Confondre différenciation et focalisation sans justification, ou se tromper sur les auteurs de l'horloge stratégique (Faulkner et Bowman).
+- `JUR-T05` — Trancher sur le seul positionnement sans chiffrer, ou sur le seul chiffre d'affaires de la directrice commerciale sans tenir compte des coûts fixes propres et de la cannibalisation.
+- `JUR-T02` — Ignorer les propos de l'acheteur de la grande enseigne (35 %) et de la gérante du magasin spécialisé, ou la mission de la fondation.
+
+**Références**
+
+| Référence | Contenu mobilisé | Statut | Fiche |
+|---|---|---|---|
+| Programme UE 3, partie 1.2 (l. 721-740) ; guide pédagogique juillet 2026 p. 115-116 (typologie de Porter, horloge de Faulkner et Bowman : sophistication, épuration, hybride ; arguments financiers des choix) | catégorisation et appréciation | [V] | F01 § 6.1, § 6.2 |
+| Porter (1980), stratégies génériques ; enlisement dans la voie médiane | stratégie actuelle et risque de la gamme | [V] corrigé du sujet zéro p. 148-149 ; [S] 1980 et voie médiane | F13 § 2 ; F01 § 6.1 |
+| Faulkner et Bowman (1995), horloge stratégique | sophistication avec surprix, position hybride | [V] guide p. 116 ; [S] 1995 | F13 § 2 ; F01 § 6.2 |
+| Porter (1979), cinq forces + 1 | pouvoir de négociation des grandes enseignes | [V] hbr.org | F13 § 1 |
+| Coût-volume-profit, approche marginale | marge nette de la cannibalisation, seuil | [V] guide p. 116-117 | F02 § 2 |
+
+---
+
+### 2.2 Analyser le processus d'approvisionnement en hêtre séché et en articles achetés finis (1 pt)
+
+**Compétences visées :**
+- `2.3.a` — Analyser la situation de gestion (processus support, enjeux, causes des ruptures, objets à piloter)
+
+**Barème (1 pt)**
+
+| Item | Attendu | Points |
+|---|---|---:|
+| 2.2-01 | Processus défini et situé : processus support (activité de soutien de la chaîne de valeur de Porter, 1985) au service de la fabrication, mais **stratégique** ici, puisque la différenciation repose sur le hêtre français ; enjeux tirés du cas : **coût** (environ 3 600 k€ de hêtre par an, + 18 % en deux ans, prix négocié à chaque commande, achats d'urgence 20 % plus chers), **délai** (deux mois, séchage compris), **qualité** (bois sous bâche, 6 % écarté au tournage, bois mal séché acheté en urgence), **continuité** (tournage arrêté sept jours, 9 % des commandes de Noël livrées après le 10 décembre) ; dépendance (40 % des volumes à une scierie, deuxième fournisseur fragilisé, un seul fabricant pour les puzzles) | 0,5 |
+| 2.2-02 | Causes des ruptures de l'automne 2026 enchaînées : commandes au fil de l'eau sans planning alors que le délai est de deux mois ; consommation qui double de juillet à novembre ; parc de 1 000 m³ qui empêche de constituer le stock avant la saison et conduit à réduire les commandes de l'été ; aucun contrat qui réserve les volumes alors que l'offre régionale se contracte ; aucun indicateur. Ce qu'il faut piloter : couverture du stock en jours ou en mois de consommation, ruptures (jours d'arrêt, m³ manquants), ponctualité et qualité des livraisons des scieries (humidité, rebuts), prix payé, capacité de stockage, dépendance aux fournisseurs, ruptures des articles achetés finis ; conclusion | 0,5 |
+
+**Choix de l'outil et alternatives acceptées**
+
+- Outil retenu : une **analyse du processus** (finalité, client interne, enchaînement commande → séchage → livraison → stockage → consommation, interfaces, dysfonctionnements chiffrés) qui conduit aux enjeux et aux grandeurs à piloter.
+- Alternatives acceptées : la chaîne de valeur de Porter (1985) pour situer les approvisionnements parmi les activités de soutien ; un diagramme d'Ishikawa appliqué aux ruptures de l'automne 2026 (méthode : commandes au fil de l'eau ; milieu : parc trop petit, bois exposé à l'humidité ; matière : offre des scieries en baisse ; mesure : aucun indicateur) ; une lecture en risques fournisseurs. Non accepté : le choix d'un logiciel de gestion des stocks (UE 5) ; une analyse de la réglementation forestière ou d'une certification du bois.
+
+**Réponse attendue**
+
+*Concepts.* Un **processus** est un enchaînement d'activités qui transforme des entrées en un résultat attendu par un client, interne ou externe. Les **processus support** ne produisent pas l'offre vendue, mais fournissent au processus de production les ressources dont il a besoin ; dans la **chaîne de valeur de Porter (1985)**, les approvisionnements sont une activité de soutien. La frontière dépend de l'organisation (guide p. 121).
+
+*Place et enjeux (0,5 pt).* Chez Jouets VARDELIN, l'approvisionnement fournit à l'usine le hêtre séché et les articles achetés finis. C'est un processus support, mais il porte l'avantage concurrentiel : un jouet ne peut être « fabriqué à Varzolles, en hêtre du Morvan et de Bourgogne » que si le hêtre arrive à temps, sec et au bon prix. Quatre enjeux ressortent. (1) **Coût** : le hêtre représente environ 3 600 k€ par an (4 800 m³ à 750 €) ; son prix a augmenté de 18 % en deux ans et se négocie à chaque commande ; les 210 m³ achetés en urgence ont coûté 20 % plus cher. (2) **Délai** : deux mois entre la commande et la livraison, séchage compris, ce qui interdit de réagir dans la saison. (3) **Qualité** : le bois resté dehors a repris de l'humidité et 6 % a été écarté au tournage ; le bois d'urgence était en partie mal séché. (4) **Continuité** : le tournage a été arrêté sept jours en octobre 2026, ce qui a contribué aux 9 % de commandes de Noël livrées après le 10 décembre. S'y ajoute une **dépendance** : une scierie fournit 40 % des volumes, la deuxième a réduit son activité, et le puzzle n'a qu'un fabricant, qui a manqué trois fois en 2026.
+
+*Causes et objets du pilotage (0,5 pt).* Les ruptures de l'automne 2026 ne sont pas un accident : elles résultent de l'enchaînement de quatre causes. Les commandes sont passées **au fil de l'eau**, quand le parc se vide, alors que le délai est de deux mois. La consommation **double** de juillet à novembre. Le **parc de 1 000 m³** empêche de constituer le stock avant la saison : au printemps, le bois en trop reste dehors, et l'été les commandes sont réduites, au pire moment. Enfin, **aucun contrat** ne réserve des volumes, alors que l'offre régionale se contracte. Le processus n'est pas mesuré : « personne ne suit » la couverture du stock, ni les ruptures, ni les retards. Il faut donc piloter : la **couverture** du stock (mois de consommation à venir), les **ruptures** (jours d'arrêt, m³ manquants), la **ponctualité et la qualité** des livraisons de chaque scierie (humidité, rebuts), le **prix** payé, l'occupation de la **capacité de stockage**, la **part du premier fournisseur**, et les ruptures des articles achetés finis. **Conclusion** : il faut passer d'un achat réactif à une programmation des approvisionnements, adossée à des engagements avec les scieries et au nouveau bâtiment de stockage (questions 2.4 et 2.5).
+
+**Réponses tolérées**
+- Processus présenté comme un processus de réalisation, si la réponse montre qu'il se pilote comme un processus support (coûts, délais, indicateurs).
+- Analyse organisée en forces et faiblesses du processus, si elle débouche sur les causes et les objets du pilotage.
+
+**Erreurs fréquentes**
+- `JUR-T03` — Recopier le compte rendu de M. CHAUVORNE sans enchaîner les causes (délai, saisonnalité, capacité, absence de contrat).
+- `JUR-T05` — Traiter l'approvisionnement comme une question technique sans lien avec la différenciation par le bois français.
+- `JUR-T07` — Nommer un outil de diagnostic sans l'exploiter, ou proposer d'emblée un logiciel.
+
+**Références**
+
+| Référence | Contenu mobilisé | Statut | Fiche |
+|---|---|---|---|
+| Programme UE 3, partie 2.3 (l. 807-818) ; guide pédagogique juillet 2026 p. 121-122 (processus support selon l'organisation ; approvisionnements et plannings) | analyse de la situation de gestion | [V] | F06 § 0, § 7 |
+| Porter (1985), chaîne de valeur : activités principales et de soutien | place des approvisionnements | [V] guide p. 115 ; [S] 1985 | F13 § 1 ; F01 § 3.1 |
+| Diagramme d'Ishikawa | alternative | [V] guide p. 120 ; [S] | F13 § 8 |
+
+---
+
+### 2.3 Puzzle acheté fini : quantité économique sans rupture et avec ruptures, comparaison et conséquences pour les clients (1,5 pt)
+
+**Compétences visées :**
+- `2.3.b` — Sélectionner des outils de gestion adaptés à l'organisation (modèle de la quantité économique, puis modèle avec pénurie et report des livraisons)
+- `2.3.c` — Élaborer et mettre en œuvre des outils de gestion adaptés au contexte (quantité, pénurie maximale, coût total)
+- `2.3.e` — Évaluer les résultats obtenus (gain, part de la demande livrée en retard, image de la marque)
+
+**Barème (1,5 pt)**
+
+| Item | Attendu | Points |
+|---|---|---:|
+| 2.3-01 | Modèle choisi et justifié : demande régulière et connue, prix indépendant de la quantité, coûts de lancement et de possession donnés → quantité économique ; clients qui acceptent le report et coût de l'attente donné → modèle **avec pénurie et report des livraisons** ; pas de tarif dégressif. Sans rupture : p = 1,80 € ; **Q\* = 3 000 puzzles** ; 12 commandes, une tous les 30 jours ; coût total **5 400 €** (2 700 de lancement, 2 700 de possession) | 0,5 |
+| 2.3-02 | Avec ruptures : **Q\* = 3 354,10 puzzles** ; pénurie maximale **S\* = 670,82 puzzles** ; stock maximal 2 683,28 (valorisé, non exigé) ; 10,73 commandes, une tous les 33,54 jours ; coût total **4 829,91 €** | 0,5 |
+| 2.3-03 | Comparaison : gain de **570,09 €** par an (10,56 %) ; contrepartie : **20 % de la demande** livrée en retard, soit **7 200 puzzles** par an, avec une attente pouvant atteindre 6,71 jours contre une expédition promise sous 48 heures ; le gain vaut 0,08 € par puzzle retardé ; lecture valorisée : coût d'attente moyen de 0,07 € par puzzle retardé (attente moyenne de 3,35 jours), sans doute sous-estimé ; le coût de l'attente retenu ignore la perte de confiance ; conclusion : **ne pas admettre de ruptures** pour une marque qui vend la fiabilité, et sécuriser la source (deuxième fabricant, stock de sécurité) | 0,5 |
+
+**Choix de l'outil et alternatives acceptées**
+
+- Outil retenu : le **modèle de Wilson**, puis sa variante **avec pénurie et report des livraisons**. Le premier convient parce que la demande du puzzle est régulière toute l'année, que son prix ne dépend pas de la quantité commandée et que les coûts de lancement et de possession sont connus. Le second s'applique parce que les clients acceptent d'attendre le lot suivant et que le coût de l'attente est estimé par puzzle et par an : on peut arbitrer entre possession et attente. Le tarif dégressif est sans objet.
+- Alternatives acceptées : calcul du coût avec pénurie par la formule développée D / Q × L + p × (Q − S)² / (2Q) + r × S² / (2Q), qui redonne 4 829,91 € (2 414,95 + 1 931,96 + 482,99, aux arrondis près) ; présentation du coût complet, achats compris (437 400 € et 436 829,91 €), si les achats sont les mêmes dans les deux politiques. Non accepté : un modèle avec pénurie dont la quantité serait inférieure à la quantité économique sans pénurie ; un coût de pénurie traité comme un coût par unité, sans dimension de durée, sans hypothèse écrite.
+
+**Conventions rappelées** (annexe 2.5)
+
+- Année de 360 jours ; D = 36 000 puzzles ; L = 225 € ; p = 15 % × 12,00 = 1,80 € par puzzle et par an ; r = 7,20 € par puzzle en attente et par an.
+- Q* = √(2DL / p) ; avec ruptures, Q* × √((p + r) / r), S* = Q* × p / (p + r), coût minimal = √(2DLp) × √(r / (p + r)) ; part livrée en retard = S* / Q* ; attente maximale = S* / D × 360.
+- Quantités, nombres de commandes, durées et coûts à deux décimales.
+
+**Réponse attendue**
+
+*Concepts.* Le **modèle de Wilson** détermine la quantité qui équilibre le coût de lancement des commandes (D / Q × L) et le coût de possession du stock (Q / 2 × p) ; il suppose une demande régulière et certaine et n'admet pas de rupture. Le **modèle avec pénurie et report des livraisons** accepte qu'une partie de la demande attende le lot suivant, moyennant un coût r par unité en attente et par an : les commandes deviennent plus grosses et moins fréquentes, une partie du cycle se passe en rupture, et le coût total baisse.
+
+*Sans rupture (0,5 pt).* p = 0,15 × 12,00 = 1,80 € ; Q* = √(2 × 36 000 × 225 / 1,80) = √9 000 000 = **3 000 puzzles** ; N = 36 000 / 3 000 = **12 commandes**, une tous les **30 jours** ; coût total = 12 × 225 + 3 000 / 2 × 1,80 = 2 700 + 2 700 = **5 400 €** (= √(2 × 36 000 × 225 × 1,80)).
+
+*Avec ruptures (0,5 pt).* (p + r) / r = 9,00 / 7,20 = 1,25 ; Q* = 3 000 × √1,25 = **3 354,10 puzzles** ; S* = 3 354,10 × 1,80 / 9,00 = **670,82 puzzles** en attente au plus ; stock maximal = 3 354,10 − 670,82 = 2 683,28 ; N = 10,73 commandes, une tous les 33,54 jours ; coût total = 5 400 × √(7,20 / 9,00) = 5 400 × √0,80 = **4 829,91 €**.
+
+*Comparaison et conséquences (0,5 pt).* Accepter des ruptures fait gagner **570,09 € par an** (10,56 % du coût de gestion), sur un article dont les achats atteignent 432 000 €. La contrepartie est lourde : à chaque cycle, la rupture dure S* / D × 360 = **6,71 jours** sur 33,54 ; **20 % de la demande** (S* / Q*) est livrée en retard, soit **7 200 puzzles par an**, dont l'essentiel aux clients en ligne et à l'exportation, à qui la société promet une expédition sous 48 heures. Le gain représente 0,08 € par puzzle livré en retard ; symétriquement, le coût d'attente retenu ne vaut en moyenne que 0,07 € par puzzle retardé (attente moyenne de 6,71 / 2 = 3,35 jours), ce qui le rend sans doute sous-estimé. Le coût de l'attente retenu (remise, relances) ne mesure ni la perte de confiance d'un parent qui attend un cadeau, ni le risque de déréférencement par un magasin à l'exportation ; s'il était plus élevé, la politique avec ruptures se rapprocherait de la politique sans rupture. Pour une marque qui vend des jouets durables et une relation de confiance, la fiabilité de la livraison fait partie de la différenciation. **Conclusion** : conserver la politique **sans rupture** (environ 3 000 puzzles par commande, une par mois), ajouter un stock de sécurité contre les défaillances du fabricant, qui a manqué trois fois en 2026, et chercher une deuxième source.
+
+**Réponses tolérées**
+- Q* avec ruptures écrite 3 354 ou 3 354,1 ; pénurie maximale 671 ; coût 4 829,90 € par arrondi intermédiaire.
+- Conclusion qui admet des ruptures pour les seuls magasins à l'exportation, s'ils les acceptent par écrit et si la réponse mesure l'effet sur la fiabilité promise aux particuliers.
+
+**Erreurs fréquentes**
+- `JUR-T10` — Écrire la quantité avec pénurie inférieure à la quantité sans pénurie, ou un coût avec pénurie supérieur au coût sans pénurie.
+- `JUR-P02` — Appliquer le taux de possession au coût de lancement, ou utiliser 0,60 € (coût mensuel) au lieu de 7,20 € (coût annuel).
+- `JUR-T05` — Retenir la politique la moins chère sans en mesurer l'effet sur les clients et sur la différenciation.
+
+**Références**
+
+| Référence | Contenu mobilisé | Statut | Fiche |
+|---|---|---|---|
+| Guide pédagogique juillet 2026 p. 122 (Wilson enrichi de la pénurie avec report des ventes) ; `ue3/00_LISEZMOI.md` (convention « approvisionnements ») | formules sans et avec pénurie | [V] | F06 § 1 à § 3 |
+| Modèle de Wilson (sans date en copie) | quantité économique de commande | [V] guide p. 122 | F13 § 8 ; F06 § 2 |
+| Programme UE 3, partie 2.3 (l. 814 : évaluer les résultats) | gain, service client, image | [V] | F06 § 0, § 8 |
+
+---
+
+### 2.4 Établir le planning du hêtre séché pour 2028, repérer ruptures et dépassements de capacité, comparer avec la politique actuelle (1,5 pt)
+
+**Compétences visées :**
+- `2.3.d` — Mettre en œuvre ces outils (planning d'approvisionnement par recomplètement, avec stock de sécurité, délai de deux mois et capacité de stockage)
+- `2.3.e` — Évaluer les résultats obtenus (capacité, stock moyen, ruptures évitées, coût de possession)
+
+**Barème (1,5 pt)**
+
+| Item | Attendu | Points |
+|---|---|---:|
+| 2.4-01 | Planning de la politique proposée, mois par mois : livraisons (400 en janvier et février, déjà commandées ; **1 080 en mars, 980 en juin, 1 120 en septembre, 720 en octobre, 760 en novembre**) ; commandes deux mois avant (**janvier 1 080, avril 980, juillet 1 120, août 720, septembre 760**) ; stocks de début et de fin de mois (fin : 420, 520, 1 280, 960, 620, 1 240, 720, 480, 880, 840, 920, 720) ; aucune rupture, aucun stock de fin sous 300 m³ | 0,5 |
+| 2.4-02 | Capacité : stock après livraison de **1 600 m³ en mars** pour 1 000 m³ disponibles (bâtiment ouvert le 1er avril) : **600 m³ de trop** ; ensuite au plus 1 600 m³ pour 2 200 ; livraisons toutes inférieures aux 1 200 m³ que peuvent livrer les scieries ; ajustement argumenté : fractionner la livraison de mars (**480 m³ début mars, 600 m³ début avril**, commandés en janvier et en février), qui laisse les stocks inchangés à partir d'avril ; ou obtenir le bâtiment au 1er mars ; jamais de bois dehors | 0,5 |
+| 2.4-03 | Politique actuelle (400 m³ par mois) : 4 800 m³ livrés pour 5 040 consommés (**240 m³ de déficit**) ; stock sous la sécurité en octobre (140) et décembre (60), **rupture de 140 m³ en novembre** (fabrication de 78 400 jouets de Noël reportée) ; stock moyen **493,33 m³** contre **800,00 m³** (750,00 après ajustement) ; coût de possession **44 400 €** contre **72 000 €** (67 500 €), soit **27 600 €** de plus (23 100 €) ; conclusion : retenir la politique proposée, ajustée, dont le surcoût est faible au regard de la saison de Noël protégée ; une comparaison qui ne présente, pour la politique actuelle, que les stocks de fin de septembre à décembre est acceptée si le stock moyen est juste | 0,5 |
+
+**Choix de l'outil et alternatives acceptées**
+
+- Outil retenu : un **planning d'approvisionnement** mensuel (stock de début, livraison, stock après livraison, consommation, stock de fin, commande), qui seul permet de traiter une consommation saisonnière, un délai de deux mois, un stock de sécurité et une capacité qui change en cours d'année ; la règle de recomplètement est celle de l'annexe 2.4. La quantité économique est sans objet : la consommation n'est pas régulière et la contrainte décisive est la capacité, pas l'arbitrage entre lancement et possession.
+- Alternatives acceptées : présentation en calendrier des commandes et des livraisons avec une ligne de capacité ; tout ajustement qui supprime le dépassement de mars sans créer de rupture ni de stock sous la sécurité (bâtiment disponible au 1er mars, livraison de mars limitée à 480 m³ puis recomplètement en mai, stock confié temporairement à une scierie sous contrat), s'il est vérifié par le planning ; stock moyen calculé sur les stocks après livraison ou sur la moyenne des stocks de début et de fin, si la convention est écrite et appliquée aux deux politiques. Non accepté : stocker le bois en trop sous bâche ; un planning qui fait livrer le mois même de la commande.
+
+**Conventions rappelées** (annexes 2.4 et 2.5)
+
+- Livraison au début du mois ; stock de fin = stock de début + livraisons − consommations ; délai de deux mois ; stock de sécurité 300 m³ ; recomplètement : livraison = 1 600 − stock de fin du mois précédent − livraisons déjà prévues, au début de chaque mois dont le stock de fin passerait strictement sous 300 m³.
+- Capacité : stock après livraison ≤ 1 000 m³ de janvier à mars, ≤ 2 200 m³ à partir d'avril ; stock négatif reporté ; stock moyen = moyenne des douze stocks de fin (négatif compté pour zéro) ; coût de possession = stock moyen × 750 × 12 % = stock moyen × 90 €.
+
+**Réponse attendue**
+
+*Concepts.* Un **planning d'approvisionnement** programme, période par période, les commandes et les livraisons à partir des consommations prévues, du stock initial, du délai de livraison et du stock de sécurité. La gestion par **recomplètement** livre, quand le stock menace de passer sous le stock de sécurité, la quantité qui le ramène à un niveau fixé ; la gestion par **lots fixes** livre la même quantité à chaque période, quels que soient les besoins.
+
+*Planning de la politique proposée (0,5 pt).* (m³)
+
+| Mois | Stock de début | Livraison | Stock après livraison | Capacité | Consommation | Stock de fin | Commande passée ce mois |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Janvier | 300 | 400 (en cours) | 700 | 1 000 | 280 | 420 | 1 080 |
+| Février | 420 | 400 (en cours) | 820 | 1 000 | 300 | 520 | — |
+| Mars | 520 | **1 080** | **1 600** | **1 000** | 320 | 1 280 | — |
+| Avril | 1 280 | — | 1 280 | 2 200 | 320 | 960 | 980 |
+| Mai | 960 | — | 960 | 2 200 | 340 | 620 | — |
+| Juin | 620 | **980** | 1 600 | 2 200 | 360 | 1 240 | — |
+| Juillet | 1 240 | — | 1 240 | 2 200 | 520 | 720 | 1 120 |
+| Août | 720 | — | 720 | 2 200 | 240 | 480 | 720 |
+| Septembre | 480 | **1 120** | 1 600 | 2 200 | 720 | 880 | 760 |
+| Octobre | 880 | **720** | 1 600 | 2 200 | 760 | 840 | — |
+| Novembre | 840 | **760** | 1 600 | 2 200 | 680 | 920 | — |
+| Décembre | 920 | — | 920 | 2 200 | 200 | 720 | — |
+
+Exemples : en mars, sans livraison, le stock de fin serait de 520 − 320 = 200 m³, sous les 300 m³ de sécurité : on livre 1 600 − 520 = 1 080 m³, commandés début janvier. En septembre, sans livraison, il serait de 480 − 720 = − 240 : on livre 1 600 − 480 = 1 120 m³, commandés en juillet. En décembre, 920 − 200 = 720 ≥ 300 : pas de livraison. Cinq commandes, 4 660 m³ commandés en 2028 ; 5 460 m³ livrés au total. Aucun stock de fin n'est négatif ni inférieur à 300 m³.
+
+*Capacité et ajustement (0,5 pt).* En **mars**, le stock après livraison atteindrait **1 600 m³** alors que le bâtiment de stockage n'ouvre que le 1er avril : **600 m³ de trop** pour le parc de 1 000 m³, soit la situation du printemps 2026 (bois sous bâche, humidité, 6 % écarté). Ensuite, le stock après livraison ne dépasse jamais 1 600 m³ pour 2 200 disponibles, et aucune livraison ne dépasse les 1 200 m³ que les scieries peuvent livrer dans un mois. **Ajustement** : fractionner la livraison de mars, 480 m³ début mars (le parc est alors plein, à 1 000 m³) et 600 m³ début avril, à l'ouverture du bâtiment (commandes de 480 m³ en janvier et de 600 m³ en février). Le stock de fin de mars est de 680 m³, au-dessus de la sécurité, et à partir d'avril les stocks sont ceux du planning proposé (960 m³ fin avril). Le stock moyen baisse à 9 000 / 12 = **750,00 m³**. Autre voie, à confirmer avec la cheffe du projet « Atelier 2028 » : obtenir la mise à disposition du bâtiment au 1er mars. Le planning montre ainsi que la politique d'approvisionnement dépend de la date de livraison du projet.
+
+*Comparaison avec la politique actuelle (0,5 pt).*
+
+| Mois | J | F | M | A | M | J | J | A | S | O | N | D |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Stock de fin, lots fixes de 400 m³ | 420 | 520 | 600 | 680 | 740 | 780 | 660 | 820 | 500 | **140** | **− 140** | **60** |
+
+| Critère | Politique actuelle | Politique proposée | Proposée, ajustée |
+|---|---:|---:|---:|
+| Hêtre livré en 2028 (m³) | 4 800 | 5 460 | 5 460 |
+| Ruptures | novembre : 140 m³ manquants | aucune | aucune |
+| Mois sous le stock de sécurité | octobre, décembre | aucun | aucun |
+| Stock moyen (m³) | 493,33 | 800,00 | 750,00 |
+| Coût de possession (€) | 44 400 | 72 000 | 67 500 |
+| Stock moyen valorisé (€) | 370 000 | 600 000 | 562 500 |
+
+Les lots fixes sont calés sur la consommation de 2027 : ils livrent 4 800 m³ pour 5 040 m³ consommés en 2028, soit **240 m³ de déficit** ; et ils livrent autant en février qu'en octobre. Le stock monte jusqu'en août (820 m³) puis s'effondre : il passe sous la sécurité en octobre et manque de **140 m³ en novembre**, au cœur de la saison ; la fabrication de **78 400 jouets** (140 × 560) est reportée en décembre, ce qui reproduit les livraisons tardives de 2026. L'année finit à 60 m³, sous le stock de sécurité : 2029 commencerait avec un stock insuffisant. La politique proposée, ajustée, supprime ces ruptures pour **23 100 €** de coût de possession supplémentaire (27 600 € sans ajustement), soit environ 0,29 € par jouet dont la fabrication est préservée, et pour 192 500 € de stock moyen immobilisé en plus. Elle a deux limites : des livraisons irrégulières (de 480 à 1 120 m³), que les scieries n'accepteront que si elles sont annoncées à l'avance, et un stock de fin d'année plus élevé (720 m³), qui prépare toutefois janvier 2029. **Conclusion** : retenir le recomplètement, avec la livraison de mars fractionnée, et le faire reposer sur des engagements annuels avec les scieries.
+
+**Réponses tolérées**
+- Stock moyen de la politique actuelle calculé avec le stock négatif (481,67 m³), si la convention de l'annexe est discutée ; coût de possession en cohérence.
+- Ajustement différent, vérifié par un planning (livraison de mars limitée à 480 m³ puis recomplètement : livraisons de 1 240 m³ en mai, 1 220 m³ en août, 960 m³ en octobre et 760 m³ en novembre ; stock moyen 750,00 m³), à condition de relever que les livraisons de mai et d'août dépassent les 1 200 m³ que les scieries peuvent livrer dans un mois, et de les corriger.
+- Coût de la rupture évoqué en marge perdue ou en retards de livraison, sans chiffrage autre que celui des données.
+
+**Erreurs fréquentes**
+- `JUR-P02` — Ne pas appliquer la règle de l'annexe : livrer le mois même de la commande, oublier les 400 m³ déjà commandés, ou recompléter à 1 600 m³ chaque mois.
+- `JUR-T02` — Établir le planning sans le confronter à la capacité de mars ni à la date d'ouverture du bâtiment.
+- `JUR-T05` — Préférer la politique actuelle parce que son coût de possession est plus faible, sans voir la rupture de novembre et le déficit de 240 m³.
+
+**Références**
+
+| Référence | Contenu mobilisé | Statut | Fiche |
+|---|---|---|---|
+| Guide pédagogique juillet 2026 p. 122 (« l'UE 3 du DSCG intègre la programmation des approvisionnements à travers l'élaboration de plannings ») ; programme UE 3, partie 2.3 (l. 808-810) | planning, recomplètement, lots fixes | [V] | F06 § 6 |
+| `ue3/00_LISEZMOI.md` (convention « planning d'approvisionnement ») | règle de déclenchement, stock de fin, délai | [V] | F06 § 1, § 6 |
+| Pièges des plannings (commande décalée du délai, stock de fin ≥ sécurité) ; conclusion au-delà du seul coût | contrôle du planning, comparaison | [V] guide p. 120 | F06 § 8 |
+
+---
+
+### 2.5 Note au président (1 pt)
+
+**Compétences visées :**
+- `1.2.c` — Formuler des préconisations adaptées à l'organisation (refus de la gamme importée, alternatives qui servent la différenciation)
+- `1.2.d` — Produire une synthèse rédigée et structurée concernant les choix stratégiques réalisés par l'organisation
+- `2.3.f` — Élaborer des préconisations afin de mieux piloter la performance des activités hors production (contrats, indicateurs, deuxième source)
+- `2.3.g` — Produire une synthèse rédigée et structurée concernant les décisions liées aux processus support (politique d'approvisionnement reliée à la stratégie)
+
+**Barème (1 pt)** — grille de notation d'une réponse rédigée (six critères : concept défini et attribué ; mobilisation pertinente ; faits du cas ; analyse et non description ; préconisation faisable ; forme et longueur).
+
+| Note | Descripteur |
+|---:|---|
+| 0 | Absence de réponse, hors sujet ou cours récité sans aucun fait du cas |
+| 0,5 | Note qui résume les calculs sans préconisation, ou qui omet l'un des trois volets (gamme importée, politique d'approvisionnement, pilotage), ou dont les préconisations ne sont pas reliées à la stratégie, ou qui dépasse nettement les 20 lignes |
+| 1 | Six critères satisfaits : recommandation sur la gamme importée avec au moins deux chiffres du dossier (298 k€, seuil de 30 %, 35 % annoncés par l'enseigne) ; politique d'approvisionnement retenue (recomplètement ajusté, puzzles sans rupture) reliée à la qualité, aux délais et aux coûts ; au moins trois préconisations faisables de pilotage (contrats annuels, indicateurs avec formule et cible, deuxième source) ; structure visible ; 20 lignes au maximum |
+
+**Choix de l'outil et alternatives acceptées**
+
+- Outil retenu : une note structurée (objet, trois parties, conclusion) qui reprend les résultats sans les recalculer et relie la politique d'approvisionnement à la stratégie de différenciation.
+- Préconisations acceptées (au moins trois) : **contrats annuels** avec les quatre scieries (volumes réservés et calendrier de livraison, prix révisé selon une règle convenue, exigence de séchage) ; réduction de la part du premier fournisseur et recherche d'une cinquième scierie de la région ; **indicateurs** mensuels avec formule et cible : couverture du stock = stock de fin / consommation prévue du mois suivant (au moins un mois avant la saison), ruptures = m³ manquants ou jours d'arrêt du tournage (cible zéro), ponctualité des scieries = livraisons à la date / livraisons (cible 95 % par exemple), rebuts pour humidité = m³ écartés / m³ livrés, taux d'occupation du stockage ; **deuxième source** ou stock de sécurité pour les puzzles, taux de commandes servies sous 48 heures ; date de mise à disposition du bâtiment suivie avec la cheffe du projet ; revue trimestrielle des achats en comité de direction. Non accepté : un logiciel à choisir (UE 5) ; une certification du bois nommée.
+
+**Réponse attendue** (modèle de note, 20 lignes au maximum)
+
+**Objet : choix du bois français et sécurisation des approvisionnements.**
+
+**1. La gamme importée.** Je recommande de ne pas la lancer. Elle rapporterait 298 k€ par an si les enseignes retiraient 20 jouets actuels pour 100 jouets importés ; au-delà de 30 %, elle détruit de la marge, et l'acheteur annonce 35 % (− 149 k€). Surtout, elle brouillerait la promesse « fabriqué à Varzolles », sur laquelle reposent notre différenciation et nos 71,9 M€ de ventes hors grandes enseignes. Proposons plutôt aux enseignes un ou deux jouets simplifiés fabriqués à Varzolles et l'empreinte carbone de chaque jouet.
+
+**2. Les approvisionnements.** Pour le hêtre, un recomplètement à 1 600 m³, la livraison de mars étant fractionnée (480 m³ en mars, 600 m³ en avril) tant que le bâtiment n'est pas ouvert : il évite la rupture de 140 m³ de novembre (78 400 jouets) pour 23 100 € de coût de possession en plus. Pour les puzzles, aucune rupture : le gain de 570 € ne vaut pas 7 200 puzzles livrés en retard. Le bois sec, livré à temps, fait la qualité et les délais de Noël que les clients paient.
+
+**3. Le pilotage.** Signer avant février 2028 des contrats annuels avec les quatre scieries (volumes et calendrier réservés, règle de prix, qualité de séchage) et réduire la part de la première. Suivre chaque mois la couverture du stock, les ruptures (cible zéro), la ponctualité et les rebuts de chaque scierie, et la date d'ouverture du bâtiment. Qualifier un deuxième fabricant de puzzles.
+
+**Conclusion.** Confirmer le bois français, c'est d'abord en garantir l'approvisionnement.
+
+**Réponses tolérées**
+- Note qui retient d'autres préconisations de la liste ci-dessus, faisables et reliées aux causes des ruptures.
+- Indicateurs présentés en tableau (formule, cible, périodicité), si la note reste dans la limite de longueur.
+- Recommandation d'un test limité de la gamme sous une autre marque, si la note en mesure le risque et le relie à la mission de la fondation.
+
+**Erreurs fréquentes**
+- `JUR-T06` — Dépasser les 20 lignes ; absence de structure ou de conclusion.
+- `JUR-T03` — Résumer les questions précédentes sans préconisation de pilotage.
+- `JUR-T05` — Traiter séparément la stratégie et les approvisionnements, sans montrer que la différenciation dépend de la sécurité de l'approvisionnement en hêtre.
+
+**Références**
+
+| Référence | Contenu mobilisé | Statut | Fiche |
+|---|---|---|---|
+| Programme UE 3, parties 1.2 (préconisations et synthèse sur les choix stratégiques) et 2.3 (l. 815-818 : pilotage des activités hors production, synthèse) | périmètre de la note | [V] | F01 § 9 ; F06 § 0, § 7 |
+| Guide pédagogique juillet 2026 p. 113 (synthèse reliant la politique d'approvisionnement à la stratégie) et p. 154 (préconisations adaptées aux moyens) | lien entre stratégie et approvisionnement | [V] | F06 § 8 ; F01 § 9 |
+| Grille à six critères des réponses rédigées | notation | [V] | gabarits/corrige_ue3_template.md ; bareme_grille.yaml |
+
+---
+
+## Contrôles avant publication
+
+- [x] `python3 -I outils/dscgcheck ue3/exercices/ex42_differenciation_approvisionnements_bois/corrige.yaml` : 0 erreur, 0 avertissement ; quantité économique du puzzle sans rupture et avec ruptures, planning du hêtre séché de la politique proposée, stocks de la politique actuelle et de l'ajustement recalculés ; marges de la gamme importée, comparaison des politiques du puzzle, capacité et coûts de possession du hêtre recalculés par script (`/paperclip/shared/dscglab-travail/DSC-965/calculs.py`) ; barème partiel sur 7 ; liste noire ; hors-programme.
+- [x] Données partagées du sujet n° 15 respectées : 3,1 millions de jouets, 94,0 M€ et sa ventilation par canal, résultat d'exploitation de 4,7 M€, quatre scieries, hausse de 18 % du prix du hêtre séché en deux ans, deux scieries de la région en baisse d'activité, 9 % des commandes de Noël livrées après le 10 décembre 2026, articles achetés finis, M. ARVELOT et Mme BARTHOMEU ; présentation commune reprise mot pour mot ; dossier indépendant des dossiers 1 et 3 (le bâtiment de stockage du projet n'intervient que par sa capacité et sa date d'ouverture, données dans l'annexe 2.4).
+- [x] Compétences visées présentes dans `programme/perimetre_ue3.yaml` ; aucun outil prescrit dans l'énoncé ; chaque question présente le concept, l'applique au cas, conclut ; synthèse bornée (2.5, 20 lignes au maximum).
+- [x] Conventions écrites dans les annexes : marges, cannibalisation et marge nette ; année de 360 jours, coût de possession en taux, coût de l'attente par puzzle et par an, formules sans et avec ruptures, part livrée en retard, attente maximale ; règle du planning, recomplètement, délai de deux mois, livraisons déjà prévues, capacité avant et après le 1er avril, rupture reportée, stock moyen et coût de possession ; arrondis couvrant les intermédiaires notés.
+- [x] Entités et personnes fictives (Mme Laure DESTRAMBE, M. Rémi CHAUVORNE ; scieries, fabricants sous contrat, enseigne et magasin non nommés) ; attributions limitées à F13 (Porter, 1979, 1980 et 1985 ; Faulkner et Bowman, 1995 ; modèle de Wilson sans date) ; aucun chiffre sectoriel ou réglementaire réel (prix, coûts, volumes et délais présentés comme données du cas) ; aucune norme de sécurité des jouets, aucun marquage réglementaire, aucune certification du bois, aucune règle de l'importation ; prix d'achat en euros, sans risque de change ; aucun logiciel ; pas de tarif dégressif (déjà traité dans `ex05` et `ex21`).
