@@ -194,7 +194,7 @@ Les eaux-de-vie nouvelles entrent en chais après la distillation de l'hiver ; e
 | Indicateur | 2024 | 2025 | 2026 |
 |---|---:|---:|---:|
 | Viticulteurs livreurs | 402 | 391 | 380 |
-| Part des volumes d'eaux-de-vie entrés en chais venant des livreurs (le reste vient du vignoble du groupe) | 77 % | 78 % | 78 % |
+| Part des volumes d'eaux-de-vie entrés en chais venant des livreurs (le reste vient du vignoble du groupe) | 86 % | 87 % | 87 % |
 | Part des achats aux livreurs couverte par des contrats pluriannuels (trois à cinq ans) | 48 % | 52 % | 55 % |
 | Âge moyen des chefs d'exploitation livreurs | 54 ans | 55 ans | 56 ans |
 | Part des livreurs de 60 ans et plus sans successeur identifié | — | 26 % | 31 % |
