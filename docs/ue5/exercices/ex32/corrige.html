@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Organiser et exploiter les données des parcours : Fondation VERLANDRE : référentiel des personnes accompagnées et échanges avec les partenaires, listes d'attente et occupation, tableau de bord des parcours, cycle de vie et archivage des anciens logiciels</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Organiser et exploiter les données des parcours</h1><p class="cas">Fondation VERLANDRE : référentiel des personnes accompagnées et échanges avec les partenaires, listes d'attente et occupation, tableau de bord des parcours, cycle de vie et archivage des anciens logiciels</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F07 données, modélisation et gouvernance, F08 décisionnel et visualisation, F09 performance du SI, F15 RGPD opérationnel, glossaire, et la base des référentiels datés (vérifiés les 25 et 26/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Le référentiel des personnes accompagnées et les échanges avec les partenaires</td>
+<td><code>2.1.a</code> Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes ; <code>2.1.e</code> Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données ; <code>2.1.d</code> Normes et standards d'interopérabilité (XML, API, formats ouverts)</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>2.2 Les listes d'attente et l'occupation</td>
+<td><code>2.2.a</code> Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation ; <code>2.2.c</code> Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model ; <code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés</td>
+<td>3,5</td>
+</tr>
+<tr class="odd">
+<td>2.3 Le tableau de bord des parcours</td>
+<td><code>3.1.d</code> Construction et suivi de tableaux de bord SI (KPI, équilibrage performance / risques / coûts) ; <code>3.1.a</code> Mettre en œuvre des dispositifs de pilotage de la performance SI, en intégrant une analyse fine des coûts, des indicateurs et des leviers d'optimisation via des tableaux de bord ; <code>3.1.e</code> Revue et amélioration continue des dispositifs de pilotage</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td>2.4 Le cycle de vie des données des anciens logiciels</td>
+<td><code>2.3.b</code> Étapes du cycle de vie des données : création, stockage, usage, archivage, suppression ; <code>2.3.e</code> Aspects réglementaires (RGPD, archivage légal) et monétisation des données</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 2 – Organiser et exploiter les données des parcours</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (données de référence et identifiant, dictionnaire de données, interopérabilité et ses plans, analyses descriptive et exploratoire, tableau de bord et indicateur à cinq champs, cycle de vie des données) environ 3 points (items 2.1 b-1, 2.1 c-1, 2.2 a-1, 2.4 a-1, et la moitié des items 2.1 a-1, 2.3 b-1 et 2.3 c) ; analyse des annexes et recommandations environ 10 points, soit environ 77 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 59 minutes.</p>
+<hr />
+<h3 id="21--le-référentiel-des-personnes-accompagnées-et-les-échanges-avec-les-partenaires-5-points">2.1 – Le référentiel des personnes accompagnées et les échanges avec les partenaires (5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.a</code> « Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes » ; <code>2.1.e</code> « Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données » ; <code>2.1.d</code> « Normes et standards d'interopérabilité (XML, API, formats ouverts) ». L'approfondissement technique des échanges est exclu ; l'interopérabilité est traitée sur les plans technique et organisationnel. Aucun modèle des données n'est demandé.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (établissements et services, logiciels des trois anciennes associations, organigramme), 2.1 (numéros des trois logiciels, dossiers en trop, notions définies différemment, demandes d'admission et états d'activité, témoignages), 2.2 (rapprochement des listes, valeurs contradictoires) et 2.5 (RGI, DAMA-DMBOK, principes du RGPD).</p>
+<p><strong>Barème indicatif (5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Référentiel des personnes accompagnées tenu dans le dossier unique, seule source qui fait foi pour l'identité et la situation de la personne ; justifié par deux constats chiffrés de l'annexe 2.1 (2 300 dossiers actifs pour 2 000 personnes, trois numéros, listes d'attente éparses, états ressaisis)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Identifiant de la personne : attribué une seule fois par le dossier unique, unique, non signifiant, stable d'un établissement à l'autre, jamais réattribué ; anciens numéros et numéro de la maison départementale conservés comme références rattachées</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Trois règles de dédoublonnage : critères de rapprochement, traitement des cas certains et des cas douteux (validation humaine, fiche maîtresse, traçabilité de la fusion), contrôle à la saisie pour prévenir les nouveaux doublons ; dédoublonnage fait avant la reprise (0,5 pour les critères et le traitement, 0,5 pour la prévention et le calendrier)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Dictionnaire de données défini (description partagée de chaque donnée : nom, définition, format, règle de calcul, source, propriétaire, règle de qualité), distingué d'un modèle des données</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>« Place occupée » et « personne en attente » : définition commune, règle de calcul ou d'enregistrement, propriétaire, règle de qualité</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>« Sortie » : définition qui distingue sortie de la Fondation et changement d'établissement, règle, propriétaire, règle de qualité ; cohérence d'ensemble des trois fiches</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Interopérabilité définie, avec ses plans technique, sémantique et organisationnel ; formats ouverts et interface de programmation définis</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Maisons départementales : interface de programmation avec celle d'Indre-et-Loire, fichiers en format ouvert déposés sur l'espace sécurisé avec celle du Loir-et-Cher ; deux conditions organisationnelles</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-3</td>
+<td>Départements et agence régionale de santé : états d'activité produits à partir du dossier unique selon les définitions communes, fichiers structurés en format ouvert ; deux conditions organisationnelles</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.1 a) – Le référentiel des personnes accompagnées, l'identifiant et le dédoublonnage</em></p>
+<p><strong>Le constat</strong> : la Fondation ne sait pas, aujourd'hui, qui elle accompagne. Les trois logiciels comptent 2 300 dossiers « actifs » pour environ 2 000 personnes dans les 32 établissements et services équipés : environ 200 personnes ont deux dossiers et environ 100 dossiers de personnes parties n'ont jamais été clôturés (annexe 2.1 A). Chaque logiciel a son numéro, dont l'un change quand la personne change d'établissement. Les listes d'attente sont tenues par chaque établissement, et les états d'activité sont recopiés à la main. Le même jeune est « sorti » d'un logiciel et « admis » dans un autre (M. ROSPARIN). Mme QUÉRANDEAU le résume : reprendre ces doublons dans le dossier unique, ce serait « les avoir pour vingt ans ».</p>
+<p><strong>Le référentiel des personnes accompagnées</strong> (0,5 pt) : les <strong>données de référence</strong> sont les données partagées et stables dont tous les processus ont besoin (ici : l'identité de la personne, ses représentants légaux, sa décision d'orientation, ses inscriptions en liste d'attente, ses admissions et ses sorties). Elles sont gérées dans un <strong>référentiel unique</strong>, qui fait foi (F07 § 1). Pour la Fondation :</p>
+<ul>
+<li>le référentiel des personnes est tenu <strong>dans le dossier unique</strong>, qui devient la <strong>seule source qui fait foi</strong> pour l'identité, la situation administrative et le parcours de la personne. Une donnée est saisie une fois, à l'endroit où elle naît (l'admission pour l'identité, l'établissement pour les présences), puis elle circule vers les autres usages : planning des équipes, ateliers, états d'activité, tableau de bord ;</li>
+<li>la <strong>liste d'attente commune</strong> fait partie de ce référentiel : une inscription est un événement rattaché à la personne et à un établissement demandé, et non une ligne dans le tableur d'un établissement ;</li>
+<li>les huit établissements à dossiers papier sont intégrés au référentiel dès la reprise : environ 400 personnes doivent y être créées, faute de quoi elles resteront hors du pilotage.</li>
+</ul>
+<p><strong>L'identifiant de la personne</strong> (0,5 pt) :</p>
+<ul>
+<li>un identifiant <strong>attribué une seule fois</strong>, par le dossier unique, lors de la première inscription ou de la première admission ;</li>
+<li><strong>unique</strong> : une personne, un identifiant ;</li>
+<li><strong>non signifiant</strong> : ni lettres du nom ni date de naissance, contrairement au numéro de l'ancienne association MIRANDELLE, car un nom s'écrit de plusieurs façons et peut changer ; ni code d'établissement, contrairement au numéro de l'ancienne association LUMERANDE ;</li>
+<li><strong>stable</strong> tout au long du parcours, d'un établissement et d'un pôle à l'autre, <strong>jamais réattribué</strong>, même après la sortie ;</li>
+<li>les <strong>anciens numéros</strong> des trois logiciels sont conservés comme références rattachées (table de correspondance utile pour la reprise et l'archivage, question 2.4). Le <strong>numéro de la maison départementale</strong> est enregistré comme référence externe, utile aux échanges ; il ne sert pas d'identifiant, car toutes les personnes n'en ont pas et il change quand la personne change de département.</li>
+</ul>
+<p><strong>Trois règles de dédoublonnage</strong> (1 pt), parmi :</p>
+<ol type="1">
+<li><strong>Critères de rapprochement</strong> : nom de naissance, prénom, date de naissance et commune de naissance, ainsi que le numéro de la maison départementale quand il existe ; le nom d'usage est enregistré à part, avec des comparaisons tolérantes (accents, inversions, fautes de frappe) pour repérer les cas probables.</li>
+<li><strong>Traitement des cas certains et des cas douteux</strong> : la fusion est automatique si tous les critères concordent ; si seuls certains concordent, une <strong>validation humaine</strong> est confiée à l'équipe de l'admission et des parcours (intendante des données des personnes), qui vérifie avec l'établissement. Une seule <strong>fiche maîtresse</strong> est retenue ; les autres dossiers lui sont rattachés et non supprimés à l'aveugle, et chaque fusion est <strong>tracée</strong> (qui, quand, quels dossiers) pour pouvoir être annulée.</li>
+<li><strong>Prévention</strong> : avant toute création, le dossier unique recherche les personnes proches, et la création d'un doublon probable est bloquée ou signalée. La <strong>clôture</strong> du dossier est obligatoire à la sortie de la Fondation, et un contrôle mensuel des doublons probables et des dossiers sans activité est confié à l'intendante.</li>
+<li><strong>Calendrier</strong> : dédoublonner <strong>avant la reprise</strong>, à partir des extractions en tableur fournies par les éditeurs (annexe 2.4), en commençant par les 300 dossiers en trop ; ne reprendre que des fiches validées.</li>
+</ol>
+<p><em>2.1 b) – Un extrait de dictionnaire de données</em></p>
+<p>Un <strong>dictionnaire de données</strong> est le référentiel qui décrit chaque donnée de manière partagée : son nom, sa définition, son format et son domaine de valeurs, sa règle de calcul ou d'enregistrement, sa source, son propriétaire, sa sensibilité et ses règles de qualité (0,5 pt). Il fixe le <strong>sens</strong> des données, et non leur structure : ce n'est pas un modèle conceptuel. Il sert ici à mettre fin aux trois définitions héritées (annexe 2.1 B), qui rendent incomparables les chiffres des établissements (95 % ou 91 % d'occupation, 280 ou 220 sorties, annexe 2.2 C) (F07 § 1 et 8.3).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Notion</th>
+<th>Définition commune</th>
+<th>Règle de calcul ou d'enregistrement</th>
+<th>Propriétaire</th>
+<th>Règle de qualité</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Place occupée</strong> (0,5 pt avec la suivante)</td>
+<td>une place est occupée un jour donné si une personne admise y est présente, ou absente pour un motif enregistré (hospitalisation, retour en famille, vacances) depuis moins d'une durée fixée par la Fondation (par exemple quinze jours)</td>
+<td>taux d'occupation = journées d'occupation / (places × jours d'ouverture) ; journées de présence et d'absence comptées séparément, pour pouvoir produire aussi les journées de présence demandées par les financeurs</td>
+<td>directrice générale, sur proposition des directeurs de pôle (définition commune à toute la Fondation)</td>
+<td>présence ou absence saisie chaque jour pour chaque personne ; motif d'absence obligatoire ; aucune journée d'occupation sans admission en cours</td>
+</tr>
+<tr class="even">
+<td><strong>Personne en attente</strong></td>
+<td>personne non accueillie dans l'établissement demandé, qui a une décision d'orientation correspondante, une demande d'admission enregistrée et confirmée depuis moins de douze mois ; une personne déjà accompagnée par la Fondation qui attend une autre solution est comptée à part</td>
+<td>nombre de personnes <strong>distinctes</strong> (par identifiant) ayant au moins une inscription en cours ; le nombre d'inscriptions est suivi à part</td>
+<td>responsable de l'admission et des parcours</td>
+<td>une personne n'a qu'une inscription par établissement demandé ; date de dernière confirmation renseignée ; relance à onze mois et retrait sans confirmation à douze mois ; retrait automatique de toutes les inscriptions à l'admission</td>
+</tr>
+<tr class="odd">
+<td><strong>Sortie</strong> (0,5 pt)</td>
+<td><strong>sortie de la Fondation</strong> : fin de tout accompagnement par la Fondation ; un passage d'un établissement à un autre de la Fondation est un <strong>changement d'établissement</strong>, enregistré comme tel, et non une sortie</td>
+<td>date et motif de sortie (orientation ailleurs, retour à domicile, déménagement, décès…) obligatoires ; un changement d'établissement clôt le séjour et en ouvre un autre dans le même dossier</td>
+<td>responsable de l'admission et des parcours, pour le compte de la directrice générale</td>
+<td>aucun dossier sans activité depuis plus de trois mois sans sortie ni absence motivée ; nombre de sorties rapproché chaque mois du nombre de dossiers clôturés</td>
+</tr>
+</tbody>
+</table>
+<p>Les propriétaires sont des <strong>responsables métiers</strong>, et non la DSI : ils arbitrent les définitions et la qualité attendue. Des <strong>intendants</strong> (équipe de l'admission, secrétariats des établissements) corrigent les anomalies au quotidien (F07 § 8.1). Le DAMA-DMBOK (annexe 2.5) range ces sujets dans ses domaines « données de référence », « métadonnées » et « qualité des données ».</p>
+<p><em>2.1 c) – Les échanges avec les maisons départementales et les financeurs</em></p>
+<p>L'<strong>interopérabilité</strong> est la capacité de systèmes hétérogènes, appartenant le cas échéant à des organisations différentes, à échanger des données et à les utiliser sans ressaisie (0,5 pt). Elle a un plan <strong>technique</strong> (moyen d'échange : interface de programmation, dépôt de fichiers), un plan <strong>syntaxique</strong> (format), un plan <strong>sémantique</strong> (même sens des données : le dictionnaire de la question b) et un plan <strong>organisationnel</strong> (qui transmet quoi, quand, sous quelle responsabilité). Une <strong>interface de programmation (API)</strong> permet à un logiciel d'interroger ou d'alimenter un autre logiciel automatiquement. Un <strong>format ouvert</strong> est un format dont la spécification est publique et que tout logiciel peut lire. Le RGI (annexe 2.5) recommande ces formats aux administrations, dont les départements : la Fondation a intérêt à s'y aligner (F07 § 7).</p>
+<p><strong>Avec les deux maisons départementales des personnes handicapées</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>Solution</strong> : avec celle d'Indre-et-Loire, une <strong>interface de programmation</strong> entre le dossier unique et son service de suivi des orientations. Le dossier unique reçoit les décisions d'orientation et les demandes, qui alimentent la liste d'attente commune sans ressaisie, et il renvoie chaque mois les admissions, comme le souhaite la maison départementale (annexe 2.1 C). Avec celle du Loir-et-Cher, un <strong>fichier structuré en format ouvert</strong> (par exemple un fichier à séparateurs ou XML) déposé sur l'espace d'échange sécurisé, produit automatiquement par le dossier unique.</li>
+<li><strong>Deux conditions organisationnelles</strong>, parmi : une <strong>convention d'échange</strong> avec chaque maison départementale (données échangées, fréquence, délais, interlocuteurs, traitement des anomalies) ; un <strong>interlocuteur unique</strong> à la Fondation (l'équipe de l'admission et des parcours) au lieu de quarante établissements ; une correspondance entre le numéro de la maison départementale et l'identifiant de la Fondation ; des échanges limités aux données nécessaires (minimisation, annexe 2.5), et non des tableurs contenant des diagnostics envoyés par courriel (Mme PELLEGRAIN).</li>
+</ul>
+<p><strong>Avec les deux départements et l'agence régionale de santé</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>Solution</strong> : les états d'activité sont <strong>produits par le dossier unique</strong> à partir des données saisies une seule fois et des définitions communes du dictionnaire (journées de présence, personnes accompagnées, admissions, sorties). Ils sont transmis sous forme de <strong>fichiers structurés en format ouvert</strong>, selon le modèle de chaque financeur, ou par un service en ligne de dépôt si le financeur en propose un. On supprime ainsi les deux jours de recopie mensuels par secrétariat (Mme TRÉMOLIÈRE) et les corrections du siège.</li>
+<li><strong>Deux conditions organisationnelles</strong>, parmi : une <strong>table de correspondance</strong> entre les définitions de la Fondation et celles de chaque financeur (par exemple : journées de présence, sans les absences), validée avec lui ; un <strong>circuit de validation</strong> (directeur d'établissement, puis siège) avant l'envoi ; à terme, un modèle commun négocié avec les deux départements ; un calendrier d'envoi fixe et une personne responsable au siège.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Référentiel des personnes présenté comme une démarche de gestion des données de référence, si le terme est écrit en toutes lettres et si le référentiel reste dans le dossier unique (aucune nouvelle base n'est justifiée).</li>
+<li>Autres critères de rapprochement (adresse, nom des parents) ou autres règles de prévention (liste des pièces obligatoires à la création), s'ils sont justifiés.</li>
+<li>Autres définitions des trois notions, si elles sont uniques pour toute la Fondation, mesurables et accompagnées d'une règle et d'un propriétaire ; propriétaire unique (la directrice générale) pour les trois notions.</li>
+<li>Échange de données informatisé ou plateforme d'échange cités, si les plans sémantique et organisationnel sont traités ; interface de programmation proposée aussi avec le Loir-et-Cher à terme.</li>
+<li>Plans de l'interopérabilité présentés en deux ou trois niveaux (le plan syntaxique rattaché au plan technique).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Modèle des données hors attente</em> (<code>JUR-T06</code>, <code>ET-23</code>) — entités, associations et cardinalités dessinées au lieu de règles d'organisation, alors que la question les exclut.</li>
+<li><em>Identifiant signifiant ou externe</em> — identifiant construit avec le nom et la date de naissance, ou numéro de la maison départementale pris comme identifiant ; juste : identifiant interne, non signifiant et stable, avec des références externes rattachées.</li>
+<li><em>Dédoublonnage aveugle</em> — suppression automatique des dossiers proches, sans validation ni traçabilité : on perd des informations ou on fusionne deux personnes différentes.</li>
+<li><em>Sigle ambigu</em> (<code>ET-13</code>) — « mettre en place un MDM » sans préciser qu'il s'agit de la gestion des données de référence.</li>
+<li><em>Interopérabilité seulement technique</em> (<code>ET-36</code>) — interface de programmation proposée partout, sans convention, sans définitions communes ni interlocuteur.</li>
+<li><em>Morceau de cours</em> (<code>JUR-T01</code>) — définitions du dictionnaire ou de l'interopérabilité sans les trois notions et sans les partenaires du cas.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Référentiel général d'interopérabilité (RGI), version 2.0, arrêté du 20/04/2016</td>
+<td>normes et standards recommandés aux administrations, formats ouverts</td>
+<td><code>rgi_v2</code> / F07 § 7</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>DAMA-DMBOK, 2e édition (2017), révision 2024</td>
+<td>domaines données de référence, métadonnées, qualité, intégration et interopérabilité</td>
+<td><code>dama_dmbok2</code> / F07 § 8.2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Données de référence, identifiant, dictionnaire de données, dimensions de la qualité, propriétaire et intendant, plans de l'interopérabilité</td>
+<td>définitions et principes</td>
+<td>F07 § 1, 7, 8.1 et 8.3</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--les-listes-dattente-et-loccupation-35-points">2.2 – Les listes d'attente et l'occupation (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.a</code> « Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation » ; <code>2.2.c</code> « Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model » ; <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés ». Aucun calcul statistique ni aucune manipulation d'outil ; lecture critique des biais, reliée à la stratégie.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (900 personnes annoncées en liste d'attente, projet « Horizon 2030 »), 2.1 (définitions héritées, listes tenues par établissement) et 2.2 (tableau par pôle, rapprochement des listes, valeurs contradictoires, demande du président).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Analyse descriptive et analyse exploratoire définies et distinguées ; analyse prédictive écartée ou située</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Méthode retenue et justifiée par l'annexe 2.2 : description fiable d'abord, après nettoyage (dédoublonnage, définitions), puis exploration des causes (places vacantes, parcours bloqués) ; place dans la chaîne de traitement</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Premier constat argumenté et chiffré, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Deuxième constat argumenté et chiffré, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Troisième constat argumenté et chiffré, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Réponse au président, de tête : 900 inscriptions, 600 personnes distinctes, 450 non accompagnées par la Fondation, environ 350 dont la demande est confirmée, plus 150 personnes déjà accompagnées qui attendent une autre solution ; durée d'attente réelle non mesurée, avec la raison</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Deux représentations adaptées au conseil d'administration, chacune justifiée par son message et assortie d'un piège évité</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.2 a) – Le choix de la méthode d'analyse</em></p>
+<p>L'<strong>analyse descriptive</strong> résume ce qui s'est passé : effectifs, agrégats, répartitions, évolutions et écarts à une cible. L'<strong>analyse exploratoire</strong> recherche, sans hypothèse arrêtée à l'avance, des profils, des valeurs atypiques, des croisements et des relations qui orientent vers des explications. L'<strong>analyse prédictive</strong> estime ce qui va se passer (prévision, score) (F08 § 2) (0,5 pt).</p>
+<p><strong>La méthode retenue</strong> (0,5 pt) : une <strong>analyse descriptive d'abord</strong>, parce que la question du conseil d'administration est descriptive (combien de personnes, depuis combien de temps) et que les chiffres actuels ne sont même pas fiables. Elle n'a de sens qu'après le <strong>nettoyage</strong> des données : dédoublonnage des 900 inscriptions, retrait des demandes non confirmées, définitions communes. C'est l'étape de la chaîne de traitement que la Fondation a sautée jusqu'ici (collecte, nettoyage, structuration, analyse, restitution, F08 § 1). Vient ensuite une <strong>analyse exploratoire</strong>, pour comprendre pourquoi des places restent vides alors que des personnes attendent, et où se bloquent les parcours : croisement des délais de vacance, des délais d'attente, des inscriptions multiples et des jeunes adultes maintenus en institut médico-éducatif. Une analyse prédictive (prévoir les besoins de places) serait prématurée : les données de base sont incertaines et l'historique n'existe pas encore.</p>
+<p><em>2.2 b) – Trois constats argumentés et leurs précautions de lecture</em></p>
+<p>Trois constats parmi les suivants (0,5 pt chacun : le fait chiffré, son interprétation au regard des parcours, la précaution de lecture) :</p>
+<ol type="1">
+<li><strong>Un tiers des inscriptions sont des doublons.</strong> Les 900 « personnes en attente » du rapport annuel (annexe 1.1) sont 900 <strong>inscriptions</strong>, qui correspondent à 600 personnes distinctes : 150 personnes sont inscrites sur deux listes et 50 sur quatre. S'y ajoutent 100 demandes non confirmées depuis plus d'un an, dont une majorité sont probablement caduques (six familles sur dix jointes). <em>Précaution</em> : le rapprochement a été fait à la main, sur le nom, le prénom et la date de naissance ; certaines personnes n'ont pas pu être rapprochées avec certitude. Le chiffre de 600 est donc un ordre de grandeur, et l'échantillon de dix familles est trop petit pour être généralisé. Les sources divergent d'ailleurs : 350 ou 280 personnes en attente pour le pôle Enfance (annexe 2.2 C), selon que l'on compte les demandes des familles ou les orientations notifiées.</li>
+<li><strong>Des places restent vides alors que des personnes attendent.</strong> Entre une sortie et l'admission suivante s'écoulent en moyenne 45 jours dans le pôle Enfance et 60 jours dans le pôle Hébergement, où l'attente dure trois ans et où 300 inscriptions sont en cours. Le manque n'est donc pas seulement un manque de places : c'est un défaut de <strong>coordination</strong>. Les listes sont dispersées, et le dossier de la personne suivante n'est pas prêt quand la place se libère. C'est précisément ce que vise le passage « des places aux parcours » d'« Horizon 2030 ». <em>Précaution</em> : un délai moyen masque la dispersion (quelques places restées vides plusieurs mois suffisent à l'allonger), et une « sortie » n'a pas le même sens d'une ancienne association à l'autre (280 ou 220 sorties, annexe 2.2 C).</li>
+<li><strong>Les parcours se bloquent au passage à l'âge adulte.</strong> 100 jeunes adultes de plus de 20 ans restent dans un institut médico-éducatif faute de place en foyer ou en établissement d'aide par le travail. Ils occupent des places du pôle Enfance (96 % d'occupation, deux ans d'attente), alors que les pôles pour adultes ont les attentes les plus longues (trois ans pour l'Hébergement, 18 mois pour le Travail). L'engorgement des pôles pour adultes se reporte donc sur le pôle Enfance. <em>Précaution</em> : c'est une relation plausible, non démontrée. Les durées d'attente du pôle Enfance ont aussi d'autres causes possibles, et une corrélation n'est pas une causalité. Il faudrait suivre les parcours personne par personne, ce que permettra l'identifiant unique.</li>
+<li><strong>Les taux d'occupation ne sont pas comparables.</strong> Le pôle Hébergement affiche 95 % dans le tableau de bord du siège et 91 % dans l'état transmis au département. L'écart s'explique pour l'essentiel par les absences (environ 4 % des journées) : elles sont comptées comme occupation selon la définition de l'ancienne association GERVELLE, et en partie selon celle de LUMERANDE, mais pas dans les journées de présence. Le taux de 90 % du pôle Domicile n'est donc pas forcément le plus faible. <em>Précaution</em> : aucun classement des établissements ni des pôles avant l'application de la définition commune (question 2.1 b).</li>
+<li><strong>Le délai d'attente est sous-estimé.</strong> Il n'est calculé que sur les personnes admises en 2026 : celles qui attendent toujours, souvent depuis plus longtemps, en sont exclues (biais de sélection). Au rythme de 2026, les 300 inscriptions du pôle Hébergement représentent plus de sept années d'admissions (300 pour 40 par an), contre trois ans affichés. <em>Précaution</em> : ces 300 inscriptions contiennent des doublons ; l'ordre de grandeur reste cependant très supérieur à trois ans.</li>
+</ol>
+<p><em>2.2 c) – La réponse au président et deux représentations</em></p>
+<p><strong>La réponse à M. LABASTROU</strong> (0,5 pt), de tête :</p>
+<ul>
+<li>900 inscriptions sur les listes des établissements ;</li>
+<li>soit <strong>600 personnes distinctes</strong> (400 + 150 + 50) ;</li>
+<li>dont <strong>150</strong> déjà accompagnées par la Fondation, qui attendent une autre solution (dont 100 jeunes adultes en institut médico-éducatif) ;</li>
+<li>soit <strong>450 personnes</strong> que la Fondation n'accompagne pas encore ;</li>
+<li>dont environ <strong>350</strong> dont la demande est confirmée depuis moins d'un an, les 100 autres devant être relancées avant d'être comptées.</li>
+</ul>
+<p>Réponse : « Environ 350 personnes attendent vraiment une première place, et 150 personnes déjà accompagnées attendent une autre solution ; le chiffre de 900 compte des inscriptions et non des personnes. » <strong>Depuis combien de temps</strong> : la Fondation ne le sait pas. Le délai publié (deux à trois ans selon les pôles) ne porte que sur les personnes admises, et chaque établissement tient sa liste dans un tableur ou dans un cahier (annexe 2.1 C), sans date d'inscription commune. Il faut l'écrire, et le mesurer dès la mise en service de la liste d'attente commune (date d'inscription et de dernière confirmation obligatoires).</p>
+<p><strong>Deux représentations</strong> (0,5 pt), parmi :</p>
+<ul>
+<li><strong>Barres horizontales décroissantes, de type entonnoir</strong> : 900 inscriptions, 600 personnes distinctes, 450 personnes non accompagnées, 350 demandes confirmées, avec, sur chaque barre, la raison de l'écart (doublons, personnes déjà accompagnées, demandes non confirmées). <em>Message</em> : comment on passe de 900 à 350. <em>Piège évité</em> : la mention de la source et de la date du rapprochement manuel évite de présenter 350 comme un chiffre exact.</li>
+<li><strong>Barres groupées par pôle</strong>, avec pour chaque pôle les inscriptions en attente et les admissions de l'année. <em>Message</em> : dans le pôle Hébergement, 300 inscriptions pour 40 admissions par an. <em>Piège évité</em> : on compare des volumes de même nature, avec une échelle qui part de zéro, et l'on signale que les inscriptions contiennent des doublons.</li>
+<li><strong>Barres par pôle du délai moyen entre une sortie et l'admission suivante</strong>, avec une ligne cible (par exemple 15 jours). <em>Message</em> : des places restent vides de 20 à 60 jours. <em>Piège évité</em> : une moyenne sans dispersion ; l'on indique le nombre de places concernées.</li>
+<li><strong>Courbe mensuelle</strong>, à partir de la mise en service de la liste commune, du nombre de personnes distinctes en attente. <em>Message</em> : l'évolution. <em>Piège évité</em> : on ne la montre qu'à partir de données fiables, sans la raccorder à l'ancien chiffre de 900.</li>
+</ul>
+<p>Un graphique en secteurs à quatre pôles ou un tableau de chiffres sans référence sont de mauvais choix pour un conseil d'administration qui doit comprendre un écart.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Analyse exploratoire placée en premier, si le candidat montre qu'elle sert d'abord à repérer les doublons et les incohérences avant toute description.</li>
+<li>Autres constats tirés de l'annexe 2.2 (rythme d'admission très différent entre le pôle Domicile et le pôle Hébergement, divergence des sorties), s'ils portent une précaution.</li>
+<li>Réponse au président donnée sous forme de fourchette (350 à 450 personnes extérieures), si les 150 personnes déjà accompagnées sont distinguées.</li>
+<li>Autres représentations (graphique en cascade, jauge par pôle avec cible), si le message et le piège sont précisés.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Additionner les inscriptions comme des personnes</em> — répondre « 900 personnes » ou ajouter les listes des pôles ; juste : 600 personnes distinctes, puis le tri.</li>
+<li><em>Corrélation présentée comme une causalité</em> (<code>ET-26</code>) — « les jeunes adultes sont la cause des délais du pôle Enfance » sans réserve.</li>
+<li><em>Prudence d'interprétation absente</em> (<code>JUR-D06</code>) — prendre le délai moyen des personnes admises pour le délai d'attente réel, ou comparer des taux d'occupation de définitions différentes.</li>
+<li><em>Calcul ou outil hors attente</em> (<code>JUR-T07</code>) — moyennes pondérées, écarts-types, prévisions, ou description de la manipulation d'un outil décisionnel.</li>
+<li><em>Constat sans conséquence</em> (<code>JUR-T03</code>) — chiffres recopiés sans lien avec la coordination des parcours voulue par « Horizon 2030 ».</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Analyses descriptive, exploratoire et prédictive ; chaîne de traitement des données</td>
+<td>définitions et choix de la méthode</td>
+<td>F08 § 1 et 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Choix d'une représentation, biais de sélection, corrélation et causalité</td>
+<td>représentations et précautions</td>
+<td>F08 § 5</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--le-tableau-de-bord-des-parcours-25-points">2.3 – Le tableau de bord des parcours (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.1 – Concevoir, construire et exploiter des outils de pilotage de la performance : <code>3.1.d</code> « Construction et suivi de tableaux de bord SI (KPI, équilibrage performance / risques / coûts) » ; <code>3.1.a</code> « Mettre en œuvre des dispositifs de pilotage de la performance SI, en intégrant une analyse fine des coûts, des indicateurs et des leviers d'optimisation via des tableaux de bord » ; <code>3.1.e</code> « Revue et amélioration continue des dispositifs de pilotage ». Limite : des indicateurs choisis avec recul critique, reliés aux objectifs.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (pôles, comité de direction, projet « Horizon 2030 »), 2.2 (délais, jeunes adultes maintenus) et 2.3 (tableau actuel, extrait de mars 2027, attentes).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a</td>
+<td>Quatre critiques appuyées sur l'annexe 2.3 A : trop d'indicateurs et sans hiérarchie, aucune cible ni commentaire, pas d'indicateur des parcours, envoi tardif et identique à tous, volumes non comparables, définitions hétérogènes</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Tableau de bord défini (ensemble restreint d'indicateurs reliés à des objectifs, avec cibles, pour décider) ; destinataires (quatre directeurs de pôle, avec comparaison de leurs établissements), fréquence et alimentation par le dossier unique</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Quatre indicateurs (activité, qualité de l'accompagnement, ressources, risque), chacun avec sa formule, sa source, sa fréquence, sa cible justifiée et son axe (0,5 pour deux indicateurs complets, 0,5 pour les deux autres)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>c</td>
+<td>Revue périodique : lecture mensuelle en comité de pôle avec actions, révision annuelle des indicateurs et des cibles au regard d'« Horizon 2030 », suppression de ce qui n'est pas utilisé, mesure de l'usage (logique d'amélioration continue)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.3 a) – Critique du tableau de bord actuel</em></p>
+<p>Quatre arguments parmi (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Un rapport et non un tableau de bord</strong> : 30 indicateurs sur six pages, sans hiérarchie, qui mêlent activité, ressources humaines et finances et descendent jusqu'aux repas servis et aux litres de carburant. Un directeur n'y trouve pas ce qui demande une décision ; 10 directeurs sur 44 le lisent.</li>
+<li><strong>Aucune cible, aucun seuil, aucun commentaire</strong> : 95 % d'occupation ou 9 % d'absentéisme ne disent ni si c'est bien, ni qui doit agir.</li>
+<li><strong>Rien sur les parcours</strong> : aucun indicateur sur les délais d'attente, les places vacantes, les jeunes adultes maintenus ou la révision des projets personnalisés, alors qu'« Horizon 2030 » veut passer « des places aux parcours » (Mme BRÉCHEVAL, Mme LÉVRAUD). Les postes vacants, qui fragilisent l'accompagnement, n'y figurent pas (Mme OSMONDE).</li>
+<li><strong>Des chiffres peu fiables et mal présentés</strong> : définitions de chaque ancienne association ; 910 « personnes en attente » qui sont des inscriptions ; des volumes bruts qui trompent (les journées « augmentent » de 49 000 à 54 000 parce que mars a 31 jours et février 28) ; des charges cumulées qu'on ne peut comparer d'un mois à l'autre.</li>
+<li><strong>Un document tardif, coûteux et uniforme</strong> : cinq jours de travail par mois de recopie d'extractions, un envoi vers le 25 du mois suivant, la même version pour la directrice générale et pour chaque directeur d'établissement, et rien pour le conseil d'administration.</li>
+</ol>
+<p><em>2.3 b) – Le tableau de bord des parcours des directeurs de pôle</em></p>
+<p>Un <strong>tableau de bord</strong> est un ensemble <strong>restreint</strong> d'indicateurs choisis pour piloter des objectifs : il est présenté avec ses cibles, ses seuils d'alerte et ses tendances, et sert à décider et à agir (F08 § 3 ; F09 § 4.1).</p>
+<p><strong>Destinataires, fréquence, alimentation</strong> (0,5 pt) :</p>
+<ul>
+<li>les <strong>quatre directeurs de pôle</strong> : chacun voit son pôle, ses établissements comparés entre eux et la moyenne de la Fondation (M. MARCILHAC). La directrice générale reçoit la synthèse des quatre pôles, et chaque directeur d'établissement la page de son établissement ; un extrait trimestriel de quelques indicateurs est présenté au conseil d'administration (M. LABASTROU) ;</li>
+<li><strong>mensuel</strong>, disponible dans les premiers jours du mois, avec une <strong>alerte</strong> dès qu'un indicateur franchit son seuil (une place libérée depuis plus de quinze jours, par exemple) ;</li>
+<li><strong>alimenté par le dossier unique</strong>, le progiciel de paie et de gestion des ressources humaines, selon les définitions du dictionnaire (question 2.1 b), sans recopie : le temps de la contrôleuse de gestion passe de la production à l'analyse.</li>
+</ul>
+<p><strong>Quatre indicateurs</strong> (1 pt), équilibrant activité, qualité, ressources et risque :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Activité</strong> – taux d'occupation, selon la définition commune</td>
+<td>journées d'occupation selon la définition commune / (places × jours d'ouverture)</td>
+<td>dossier unique (présences et absences motivées)</td>
+<td>mensuelle</td>
+<td>au moins 95 %, à confirmer après six mois de mesure selon la définition commune ; alerte en dessous de 92 %</td>
+<td>processus</td>
+</tr>
+<tr class="even">
+<td><strong>Qualité de l'accompagnement</strong> – part des projets personnalisés à jour</td>
+<td>nombre de personnes dont le projet personnalisé a été révisé depuis moins de douze mois / nombre de personnes accompagnées depuis plus de douze mois</td>
+<td>dossier unique (module du projet personnalisé)</td>
+<td>mensuelle</td>
+<td>90 % fin 2027 et 100 % fin 2028 (environ 70 % en mars 2027)</td>
+<td>client</td>
+</tr>
+<tr class="odd">
+<td><strong>Ressources</strong> – taux de postes d'accompagnement vacants</td>
+<td>nombre de postes d'accompagnement non pourvus en fin de mois / nombre de postes d'accompagnement prévus</td>
+<td>progiciel de paie et de gestion des ressources humaines</td>
+<td>mensuelle</td>
+<td>au plus 4 % fin 2027 (7 % fin mars 2027)</td>
+<td>apprentissage</td>
+</tr>
+<tr class="even">
+<td><strong>Risque</strong> – jeunes adultes maintenus faute de place adaptée</td>
+<td>nombre de personnes de plus de 20 ans accompagnées par un institut médico-éducatif et inscrites en attente d'un établissement pour adultes</td>
+<td>dossier unique (date de naissance, inscriptions de la liste d'attente commune)</td>
+<td>mensuelle</td>
+<td>au plus 70 fin 2027 et 40 fin 2028 (100 en mars 2027)</td>
+<td>client</td>
+</tr>
+</tbody>
+</table>
+<p>Chaque indicateur répond à un constat des annexes : définitions hétérogènes de l'occupation, enquête sur les projets personnalisés, postes vacants signalés par la DRH, parcours bloqués du pôle Enfance. Ensemble, ils mesurent l'activité, la qualité, les ressources et le risque de rupture de parcours, et non plus les seuls volumes.</p>
+<p><em>2.3 c) – La revue du tableau de bord</em></p>
+<p>La revue applique la logique d'<strong>amélioration continue</strong> (roue de Deming, ou PDCA : planifier, faire, vérifier, agir ; périmètre 3.1.e) (0,5 pt), parmi :</p>
+<ul>
+<li><strong>chaque mois</strong>, en réunion de pôle : lecture des écarts à la cible, commentaire et action décidée pour chaque alerte, suivi des actions du mois précédent ;</li>
+<li><strong>chaque trimestre</strong>, au comité de direction : synthèse des quatre pôles, arbitrages entre pôles (places pour adultes, par exemple), extrait pour le conseil d'administration ;</li>
+<li><strong>chaque année</strong> : revue complète. Les indicateurs servent-ils encore « Horizon 2030 » ? Sont-ils lus et fiables ? Les cibles sont révisées, ce qui n'est pas utilisé est supprimé et, si besoin, un indicateur est ajouté (délai de réattribution d'une place, par exemple). L'avis des directeurs est recueilli, et l'usage réel est mesuré (consultations) ;</li>
+<li>un <strong>dictionnaire des indicateurs</strong> tenu par le responsable du contrôle interne et de la performance ou par la contrôleuse de gestion (formule, source, propriétaire, date de modification), pour que toute modification soit tracée.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres indicateurs complets et justifiés par les annexes, par exemple : délai moyen de réattribution d'une place libérée (cible au plus 15 jours, 20 à 60 jours en 2026, axe client) ; part des inscriptions confirmées depuis moins de douze mois (axe processus) ; heures d'intérim rapportées aux heures travaillées (axe financier ou apprentissage) ; part des événements indésirables analysés dans le mois (axe processus).</li>
+<li>Axes ESG au lieu des axes du tableau de bord prospectif (axe social pour les postes vacants), s'ils sont cohérents.</li>
+<li>Fréquence hebdomadaire pour l'alerte sur les places libérées, mensuelle pour le reste.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Indicateurs génériques ou incomplets</em> (<code>ET-18</code>, <code>JUR-A02</code>) — liste sans formule, source, cible ou axe, ou sans lien avec un constat des annexes.</li>
+<li><em>Tableau de bord du système d'information</em> — disponibilité du dossier unique ou délai de résolution des incidents, alors que la question porte sur les parcours.</li>
+<li><em>Plus d'indicateurs qu'avant</em> — reprendre les 30 indicateurs et en ajouter, au lieu d'un tableau resserré.</li>
+<li><em>Cible sans référence</em> — « 100 % » partout, sans le point de départ de mars 2027 ni d'échéance.</li>
+<li><em>Morceau de cours</em> (<code>JUR-T01</code>) — définition du tableau de bord ou du tableau de bord prospectif sans application aux directeurs de pôle.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tableau de bord, indicateur à cinq champs, axes du tableau de bord prospectif et ESG</td>
+<td>conception du tableau de bord</td>
+<td>F08 § 3 ; F09 § 4.1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Revue et amélioration continue, roue de Deming (PDCA)</td>
+<td>revue du tableau de bord</td>
+<td>F09 § 4.3 ; périmètre 3.1.e (notions incluses)</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--le-cycle-de-vie-des-données-des-anciens-logiciels-2-points">2.4 – Le cycle de vie des données des anciens logiciels (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.b</code> « Étapes du cycle de vie des données : création, stockage, usage, archivage, suppression » ; <code>2.3.e</code> « Aspects réglementaires (RGPD, archivage légal) et monétisation des données ». Les durées de conservation sont données par l'énoncé ; aucune analyse juridique ; ni hébergement ni souveraineté.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 2.1 (dossiers en trop, tableurs qui circulent), 2.4 (contenu des anciens logiciels, coûts, contrats, trois options, avis) et 2.5 (principes du RGPD, durées de conservation retenues).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Cycle de vie défini et ses cinq étapes (création, stockage, usage, archivage, suppression), avec la durée de conservation comme fil conducteur</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Étapes appliquées aux données des personnes de la Fondation et aux deux durées données : archivage à la sortie de la Fondation et non à un changement d'établissement, destruction à 20 ans et à 2 ans, volumes à détruire dès maintenant (1 500 et 1 000 dossiers, 2 000 demandes)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Trois options comparées au regard de la minimisation, de la limitation de la conservation, de la confidentialité, du coût de tête sur les cinq ans demandés (150 k€ ; 120 k€ ; 84 k€ par an, soit 420 k€) et des risques</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Recommandation argumentée (option 2) et ses conditions : destruction préalable de ce qui a dépassé les durées, correspondance des numéros, accès tracé, dossiers papier, résiliation des contrats</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.4 a) – Le cycle de vie des données des personnes accompagnées</em></p>
+<p>Le <strong>cycle de vie</strong> des données décrit les étapes qu'une donnée traverse de sa création à sa suppression : <strong>création</strong> (ou collecte), <strong>stockage</strong>, <strong>usage</strong> (traitement et partage), <strong>archivage</strong>, <strong>suppression</strong>. Pour chaque étape, on fixe un responsable et des règles, et la <strong>durée de conservation</strong> (utilité courante, puis conservation intermédiaire, puis sort final) en est le fil conducteur (F07 § 8.4) (0,5 pt).</p>
+<p><strong>Appliqué à la Fondation</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Données des personnes accompagnées</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Création</td>
+<td>la demande d'admission crée la personne dans le référentiel et son inscription dans la liste d'attente commune ; le dossier s'enrichit à l'admission. On ne collecte que ce qui est nécessaire à l'accompagnement (minimisation), avec une date de dernière confirmation de la demande</td>
+</tr>
+<tr class="even">
+<td>Stockage</td>
+<td>dans le dossier unique, hébergé dans l'Union européenne par un éditeur dont l'offre satisfait aux exigences applicables aux données de santé (annexe 2.4, sans analyse), et non dans des tableurs envoyés par courriel</td>
+</tr>
+<tr class="odd">
+<td>Usage</td>
+<td>accompagnement au quotidien, selon les droits de chaque professionnel ; échanges limités aux données nécessaires avec les maisons départementales et les financeurs (question 2.1 c) ; pilotage sur des données agrégées (question 2.3)</td>
+</tr>
+<tr class="even">
+<td>Archivage</td>
+<td>à la <strong>sortie de la Fondation</strong>, et non à un changement d'établissement (le dossier suit la personne) : dossier clôturé, retiré de l'usage courant, accessible seulement sur demande motivée, avec un accès tracé, pendant <strong>20 ans</strong> après la dernière sortie</td>
+</tr>
+<tr class="odd">
+<td>Suppression</td>
+<td>destruction à l'issue des 20 ans pour le dossier, et <strong>2 ans</strong> après le dernier contact pour une demande qui n'a pas abouti ; destruction tracée et validée par la déléguée à la protection des données. <strong>Dès maintenant</strong>, les règles données conduisent à détruire environ 1 500 dossiers des anciens logiciels et 1 000 dossiers papier sortis depuis plus de 20 ans, ainsi qu'environ 2 000 demandes non abouties sans contact depuis plus de deux ans (annexe 2.4 A)</td>
+</tr>
+</tbody>
+</table>
+<p><em>2.4 b) – Les trois options et la recommandation</em></p>
+<p><strong>Comparaison</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Option 1 : tout reprendre</th>
+<th>Option 2 : actifs repris, autres archivés</th>
+<th>Option 3 : anciens logiciels en consultation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Minimisation et limitation de la conservation (annexe 2.5)</td>
+<td>8 000 dossiers de personnes sorties et 150 000 pièces dans l'outil de travail quotidien, dont 1 500 dossiers à détruire : contraire au principe</td>
+<td>seules les données nécessaires à l'accompagnement restent dans le dossier unique ; l'export est l'occasion de détruire ce qui a dépassé les durées</td>
+<td>aucune purge prévue ; les données restent sans limite de durée</td>
+</tr>
+<tr class="even">
+<td>Confidentialité</td>
+<td>dossiers anciens visibles par tous les utilisateurs selon leurs droits habituels</td>
+<td>consultation sur demande motivée, chaque accès enregistré</td>
+<td>comptes actuels des anciens logiciels, peu maîtrisés ; logiciels vieillissants</td>
+</tr>
+<tr class="odd">
+<td>Qualité du référentiel</td>
+<td>doublons et dossiers non clôturés repris : le référentiel naît pollué (« on les aura pour vingt ans »)</td>
+<td>dédoublonnage limité aux 2 300 dossiers actifs</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>Coût (de tête)</td>
+<td>150 k€ une fois</td>
+<td>60 + 5 × 12 = 120 k€ sur cinq ans</td>
+<td>(4 + 3) × 12 = 84 k€ par an, soit 420 k€ sur cinq ans, sans fin</td>
+</tr>
+<tr class="odd">
+<td>Risques et dépendance</td>
+<td>contrôle de reprise alourdi, retard possible du projet</td>
+<td>formats ouverts lisibles sans les éditeurs ; travail d'export et de classement</td>
+<td>dépendance aux anciens éditeurs ; les 1 000 dossiers du logiciel de l'ancienne association LUMERANDE doivent de toute façon être exportés</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommandation : l'option 2</strong> (0,5 pt). C'est la seule qui applique la minimisation et la limitation de la conservation : le dossier unique ne contient que les personnes accompagnées, et les dossiers des personnes sorties restent consultables pendant la durée retenue, dans des formats ouverts, avec un accès restreint et tracé, ce qui permet aussi de répondre à une personne qui demande communication de son dossier. Sur les cinq ans demandés par la directrice générale, son coût (120 k€) est inférieur à celui de l'option 1 (150 k€). Il la dépasserait au-delà de sept ans et demi, mais l'écart reste modeste et sans commune mesure avec l'option 3, qui se prolongerait sans fin : le choix repose d'abord sur la minimisation et la limitation de la conservation. Conditions :</p>
+<ul>
+<li><strong>détruire avant l'export</strong> ce qui a dépassé les durées (environ 1 500 dossiers, 2 000 demandes, et 1 000 dossiers papier), après validation par la déléguée à la protection des données et la directrice générale, en gardant une trace de la destruction ;</li>
+<li>conserver la <strong>table de correspondance</strong> entre les anciens numéros et l'identifiant unique, pour retrouver un dossier archivé ;</li>
+<li>fixer la <strong>procédure de consultation</strong> des archives et sa durée de 20 ans, avec une destruction programmée à l'échéance ;</li>
+<li><strong>dossiers papier</strong> : les inventorier ; numériser ceux des personnes accompagnées avant la reprise et conserver les dossiers de personnes sorties en armoire jusqu'à leur échéance ;</li>
+<li><strong>résilier les trois contrats</strong> avec un préavis de trois mois avant leur échéance annuelle, une fois la reprise et l'archivage contrôlés, pour ne pas payer une année de plus.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Cycle de vie en sept étapes (collecte, stockage, traitement, partage, archivage, destruction…), s'il couvre les cinq étapes du programme.</li>
+<li>Option 1 limitée aux dossiers encore dans leur durée de conservation et placés dans un espace d'archives à accès restreint du dossier unique, si le candidat justifie la minimisation et les droits d'accès.</li>
+<li>Mention d'un archivage électronique à valeur probante (norme NF Z42-013) en complément, sans développement.</li>
+<li>Calcul sur une autre durée (par exemple dix ans : 180 k€ pour l'option 2, 840 k€ pour l'option 3), si le raisonnement est juste et si le candidat relève que l'option 1 devient alors moins chère que l'option 2.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Cycle de vie récité</em> (<code>JUR-T01</code>) — cinq étapes définies sans les durées de l'annexe 2.5 ni les volumes de l'annexe 2.4.</li>
+<li><em>Archivage confondu avec la sauvegarde</em> — proposer des copies de sécurité au lieu d'un archivage à accès restreint et à durée fixée.</li>
+<li><em>Analyse juridique hors attente</em> (<code>JUR-T07</code>, <code>ET-41</code>) — discussion des durées légales ou des obligations de la Fondation, alors que l'énoncé donne les durées comme hypothèses.</li>
+<li><em>Tout garder « au cas où »</em> — option 1 ou 3 retenue sans examiner la limitation de la conservation ni la destruction des dossiers anciens.</li>
+<li><em>Hors du sujet</em> — choix d'un hébergeur ou souveraineté des données, que la question exclut.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2016/679 (RGPD), applicable depuis le 25/05/2018</td>
+<td>principes de finalité, de minimisation, d'exactitude, de limitation de la conservation, d'intégrité et de confidentialité (repères de l'annexe 2.5)</td>
+<td><code>rgpd</code> / F15 § 0</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Proposition « omnibus numérique » du 19/11/2025</td>
+<td>non applicable</td>
+<td><code>omnibus_numerique_donnees</code></td>
+<td>projet</td>
+</tr>
+<tr class="odd">
+<td>Loi n° 78-17 du 6 janvier 1978, modifiée en 2018</td>
+<td>complément du RGPD en droit français, cité par l'annexe 2.5</td>
+<td><code>loi_informatique_libertes</code></td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Cycle de vie des données, archivage, suppression</td>
+<td>définitions et étapes</td>
+<td>F07 § 8.4</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1402 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sujet complet n° 11</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Sujet complet</p><p>3 heures</p><p>40 points</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Sujet d'entraînement n° 11</h1><p class="cas">dossier 1, Fondation VERLANDRE, fondation du secteur médico-social née de la réunion de trois associations : feuille de route numérique et priorisation des projets, organisation de la fonction SI entre le siège et les établissements, architecture cible, contrat de service en ligne et déploiement du dossier unique de la personne accompagnée, communauté de pratiques ; dossier 2, Fondation VERLANDRE : référentiel des personnes accompagnées et échanges avec les partenaires, listes d'attente et occupation, tableau de bord des parcours, cycle de vie et archivage des anciens logiciels ; dossier 3, Fondation VERLANDRE : audit des habilitations, analyse de risques, politique de cybersécurité et gestion de crise, accessibilité, éthique et transition responsable.</p><p>Durée de l'épreuve : 3 heures – Coefficient : 1</p>
+<p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026.</p>
+<p><strong>Document et matériel autorisés</strong> : Aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Le sujet se présente sous la forme de 3 dossiers indépendants :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dossier</th>
+<th>Intitulé</th>
+<th style="text-align: right;">Points</th>
+<th>Durée conseillée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DOSSIER 1</td>
+<td>ÉCLAIRER LA STRATÉGIE DU SYSTÈME D'INFORMATION ET PRÉPARER LE PROJET DE DOSSIER UNIQUE</td>
+<td style="text-align: right;">14 points</td>
+<td>1 h 03</td>
+</tr>
+<tr class="even">
+<td>DOSSIER 2</td>
+<td>ORGANISER ET EXPLOITER LES DONNÉES DES PARCOURS</td>
+<td style="text-align: right;">13 points</td>
+<td>59 min</td>
+</tr>
+<tr class="odd">
+<td>DOSSIER 3</td>
+<td>SÉCURISER L'ACCÈS AUX DONNÉES, PRÉPARER UNE CRISE CYBER, RENDRE LE NUMÉRIQUE PLUS RESPONSABLE</td>
+<td style="text-align: right;">13 points</td>
+<td>58 min</td>
+</tr>
+</tbody>
+</table>
+<p>Le sujet comporte 14 annexes, dont 1 communes aux dossiers.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dossier</th>
+<th>Annexe</th>
+<th>Intitulé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tous les dossiers</td>
+<td>Annexe 1.1</td>
+<td>Présentation de la Fondation VERLANDRE et chiffres clés</td>
+</tr>
+<tr class="even">
+<td>DOSSIER 1</td>
+<td>Annexe 1.2</td>
+<td>Le système d'information de la Fondation trois ans après la réunion des associations (note de M. Laurent TRÉVENEC, directeur des systèmes d'information, et témoignages recueillis en avril 2027)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Annexe 1.3</td>
+<td>Le projet de dossier unique de la personne accompagnée (note de cadrage de Mme Laure DESVIGNAC, cheffe de projet, avril 2027)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Annexe 1.4</td>
+<td>Les contraintes du déploiement (note de Mme Laure DESVIGNAC, cheffe de projet, et de Mme Valérie OSMONDE, directrice des ressources humaines, avril 2027)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Annexe 1.5</td>
+<td>Repères (au 31/12/2026)</td>
+</tr>
+<tr class="even">
+<td>DOSSIER 2</td>
+<td>Annexe 2.1</td>
+<td>Les données des personnes accompagnées aujourd'hui (note de Mme Hélène QUÉRANDEAU, responsable de l'admission et des parcours au siège, et témoignages recueillis en avril 2027)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Annexe 2.2</td>
+<td>Les listes d'attente et l'occupation en 2026 (relevé établi par Mme Hélène QUÉRANDEAU, mars 2027)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Annexe 2.3</td>
+<td>Le tableau de bord actuel (extrait et attentes recueillies en avril 2027)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Annexe 2.4</td>
+<td>Les anciens logiciels et leurs données (note de M. Laurent TRÉVENEC, directeur des systèmes d'information, avril 2027)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Annexe 2.5</td>
+<td>Repères (au 31/12/2026)</td>
+</tr>
+<tr class="odd">
+<td>DOSSIER 3</td>
+<td>Annexe 3.1</td>
+<td>Les habilitations aux dossiers des personnes accompagnées (note de Mme Agnès PELLEGRAIN, déléguée à la protection des données, et constats d'avril 2027)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Annexe 3.2</td>
+<td>Une attaque dans une association voisine et la situation de la Fondation (note de M. Laurent TRÉVENEC, directeur des systèmes d'information, avril 2027)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Annexe 3.3</td>
+<td>Le numérique de la Fondation et les personnes accompagnées (notes de M. Laurent TRÉVENEC et de M. Rémi CAZENOVE, directeur du pôle Travail, et témoignages, avril 2027)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Annexe 3.4</td>
+<td>Repères (au 31/12/2026)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en mai 2027. La Fondation VERLANDRE est une fondation reconnue d'utilité publique, dont le siège est à Tours. Elle est née en 2019 de la réunion de trois associations de parents créées dans les années 1960 et 1970 en Indre-et-Loire et dans le Loir-et-Cher. Elle accompagne environ 2 400 enfants et adultes en situation de handicap dans 40 établissements et services répartis sur 28 sites : instituts médico-éducatifs et services d'éducation spéciale pour les enfants, foyers d'hébergement et maisons d'accueil spécialisées ouverts jour et nuit, services d'accompagnement à domicile et cinq établissements et services d'aide par le travail (blanchisserie, espaces verts, restauration, conditionnement). La Fondation emploie 1 800 salariés (éducateurs, accompagnants, soignants, moniteurs d'atelier, services généraux et siège). Ses produits ont atteint 125 millions d'euros en 2026, financés pour l'essentiel par l'agence régionale de santé et par les deux départements ; les établissements d'aide par le travail réalisent en outre 12 millions d'euros de chiffre d'affaires. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>Le projet stratégique « Horizon 2030 », adopté par le conseil d'administration en janvier 2027, fixe quatre orientations : passer d'une logique de places à une logique de parcours, en coordonnant autour de chaque personne les professionnels, la famille et les partenaires ; garantir la qualité et la sécurité de l'accompagnement ; rendre les métiers plus attractifs en redonnant du temps auprès des personnes ; développer un numérique responsable, accessible et éthique. Le projet de « dossier unique de la personne accompagnée », qui doit remplacer les trois logiciels hérités des associations et les dossiers papier, en est le chantier numérique principal.</p>
+<p>Vous êtes responsable du contrôle interne et de la performance de la Fondation VERLANDRE depuis 2025, rattaché à la directrice générale, Mme Nathalie BRÉCHEVAL. Elle vous demande trois travaux : éclairer la stratégie du système d'information et préparer le projet de dossier unique (dossier 1) ; organiser et exploiter les données des parcours (dossier 2) ; sécuriser l'accès aux données, préparer la Fondation à une crise cyber et rendre son numérique plus responsable (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-de-la-fondation-verlandre-et-chiffres-clés">ANNEXE 1.1 – Présentation de la Fondation VERLANDRE et chiffres clés</h3>
+<p>La Fondation VERLANDRE est une fondation reconnue d'utilité publique dont le siège est à Tours. Elle est née en 2019 de la réunion de trois associations de parents : l'association GERVELLE, créée en 1962 à Tours, l'association MIRANDELLE, créée en 1968 dans le Loir-et-Cher, et l'association LUMERANDE, créée en 1974 dans le sud de l'Indre-et-Loire. Son conseil d'administration, présidé par M. Henri LABASTROU, réunit un collège des familles et des personnalités qualifiées. L'exercice coïncide avec l'année civile : l'exercice 2026 est le dernier exercice clos.</p>
+<p><strong>Les établissements et services en 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Pôle</th>
+<th>Établissements et services</th>
+<th>Nombre</th>
+<th>Personnes accompagnées</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Enfance</td>
+<td>instituts médico-éducatifs, services d'éducation spéciale</td>
+<td>12</td>
+<td>700 enfants et adolescents</td>
+</tr>
+<tr class="even">
+<td>Hébergement</td>
+<td>foyers d'hébergement, maisons d'accueil spécialisées, ouverts jour et nuit</td>
+<td>14</td>
+<td>600 adultes hébergés</td>
+</tr>
+<tr class="odd">
+<td>Domicile</td>
+<td>services d'accompagnement à domicile</td>
+<td>9</td>
+<td>550 adultes accompagnés à domicile</td>
+</tr>
+<tr class="even">
+<td>Travail</td>
+<td>établissements et services d'aide par le travail (blanchisserie, espaces verts, restauration, conditionnement)</td>
+<td>5</td>
+<td>550 travailleurs handicapés</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td>28 sites, en Indre-et-Loire et dans le Loir-et-Cher</td>
+<td><strong>40</strong></td>
+<td><strong>2 400</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Environ 900 personnes sont inscrites sur les listes d'attente des établissements et services.</p>
+<p><strong>Chiffres clés de 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Produits</td>
+<td>125 M€ : environ 110 M€ de financements publics (agence régionale de santé et deux départements), 12 M€ de chiffre d'affaires des établissements d'aide par le travail, 3 M€ de dons, legs et autres produits</td>
+</tr>
+<tr class="even">
+<td>Effectif</td>
+<td>1 800 salariés : environ 1 100 professionnels de l'accompagnement éducatif et social (dont l'encadrement et les secrétariats des établissements), beaucoup en horaires alternés, de jour, de nuit et le week-end ; 250 soignants et paramédicaux ; 150 moniteurs et encadrants d'atelier ; 200 salariés des services généraux (cuisine, entretien, transport) ; 100 salariés au siège, dont une direction des systèmes d'information de 14 personnes</td>
+</tr>
+<tr class="odd">
+<td>Dépenses du système d'information</td>
+<td>environ 3 M€ (2,4 % des produits)</td>
+</tr>
+<tr class="even">
+<td>Projet stratégique « Horizon 2030 » (janvier 2027)</td>
+<td>logique de parcours coordonnés autour de chaque personne ; qualité et sécurité de l'accompagnement ; attractivité des métiers et temps redonné auprès des personnes ; numérique responsable, accessible et éthique ; chantier numérique principal : le dossier unique de la personne accompagnée</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le système d'information en quelques lignes</strong></p>
+<p>Chaque association a apporté son logiciel de dossier de la personne accompagnée, d'éditeurs et de versions différents : celui de l'association GERVELLE est utilisé par 18 de ses 20 établissements et services, celui de l'association MIRANDELLE par 9 de ses 13 établissements et services, celui de l'association LUMERANDE par 5 de ses 7 établissements et services ; les huit autres établissements et services tiennent des dossiers papier. La Fondation utilise en outre un progiciel de gestion de la production et de la facturation des établissements d'aide par le travail, un progiciel de paie et de gestion des ressources humaines, un logiciel de planning des équipes, un progiciel comptable, ainsi qu'une messagerie et une suite bureautique en ligne. Les serveurs sont installés dans une salle du siège ; un réseau relie les sites. Le parc compte environ 1 400 ordinateurs, dont beaucoup sont partagés dans les unités, et 600 tablettes et smartphones.</p>
+<p><strong>Organigramme simplifié (mai 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Fonction</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conseil d'administration</td>
+<td>président</td>
+<td>M. Henri LABASTROU</td>
+</tr>
+<tr class="even">
+<td>Direction générale</td>
+<td>directrice générale</td>
+<td>Mme Nathalie BRÉCHEVAL</td>
+</tr>
+<tr class="odd">
+<td>Siège, rattaché à la directrice générale</td>
+<td>directeur administratif et financier</td>
+<td>M. Pascal DURANTEL</td>
+</tr>
+<tr class="even">
+<td>Siège, rattaché au directeur administratif et financier</td>
+<td>directeur des systèmes d'information (direction de 14 personnes)</td>
+<td>M. Laurent TRÉVENEC</td>
+</tr>
+<tr class="odd">
+<td>Siège, rattachée à la directrice générale</td>
+<td>directrice des ressources humaines</td>
+<td>Mme Valérie OSMONDE</td>
+</tr>
+<tr class="even">
+<td>Siège, rattaché à la directrice générale</td>
+<td>responsable du contrôle interne et de la performance</td>
+<td>vous</td>
+</tr>
+<tr class="odd">
+<td>Siège, rattachée à la directrice générale</td>
+<td>déléguée à la protection des données</td>
+<td>Mme Agnès PELLEGRAIN</td>
+</tr>
+<tr class="even">
+<td>Pôles, rattachés à la directrice générale</td>
+<td>directrice du pôle Enfance</td>
+<td>Mme Corinne LÉVRAUD</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>directeur du pôle Hébergement</td>
+<td>M. Stéphane MARCILHAC</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>directrice du pôle Domicile</td>
+<td>Mme Élodie FARGEAS</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>directeur du pôle Travail</td>
+<td>M. Rémi CAZENOVE</td>
+</tr>
+<tr class="even">
+<td>Établissements, rattachés au directeur de leur pôle</td>
+<td>directeurs d'établissement</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>Le comité de direction réunit chaque mois la directrice générale, le directeur administratif et financier, la directrice des ressources humaines et les quatre directeurs de pôle.</p>
+<hr />
+<h2 id="dossier-1--éclairer-la-stratégie-du-système-dinformation-et-préparer-le-projet-de-dossier-unique-14-points">DOSSIER 1 – ÉCLAIRER LA STRATÉGIE DU SYSTÈME D'INFORMATION ET PRÉPARER LE PROJET DE DOSSIER UNIQUE (14 points)</h2>
+<h3 id="annexe-12--le-système-dinformation-de-la-fondation-trois-ans-après-la-réunion-des-associations-note-de-m-laurent-trévenec-directeur-des-systèmes-dinformation-et-témoignages-recueillis-en-avril-2027">ANNEXE 1.2 – Le système d'information de la Fondation trois ans après la réunion des associations (note de M. Laurent TRÉVENEC, directeur des systèmes d'information, et témoignages recueillis en avril 2027)</h3>
+<p><strong>A. Des informations saisies plusieurs fois</strong></p>
+<p>La personne accompagnée n'a pas de dossier commun : quand elle passe d'un institut médico-éducatif à un foyer, ou d'un établissement de l'ancienne association GERVELLE à un établissement de l'ancienne association MIRANDELLE, son dossier est imprimé, transmis, puis ressaisi. Une enquête menée auprès des établissements en mars 2027 estime les ressaisies à environ 4 000 jours de travail par an :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Ressaisie</th>
+<th>Estimation (jours par an)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Établissement des états d'activité demandés par les financeurs, à partir des trois logiciels de dossier et des dossiers papier</td>
+<td>1 500</td>
+</tr>
+<tr class="even">
+<td>Report, entre le dossier et le logiciel de planning des équipes, des présences et des activités des personnes accompagnées</td>
+<td>1 000</td>
+</tr>
+<tr class="odd">
+<td>Report des présences des travailleurs dans les ateliers vers le progiciel de production et de facturation des établissements d'aide par le travail</td>
+<td>500</td>
+</tr>
+<tr class="even">
+<td>Saisie, dans les établissements qui tiennent des dossiers papier, des informations demandées par le siège</td>
+<td>1 000</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>4 000</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Les échanges avec les partenaires</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Partenaire (type d'organisme)</th>
+<th>Informations échangées</th>
+<th>Mode d'échange aujourd'hui</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Maison départementale des personnes handicapées</td>
+<td>décisions d'orientation, demandes d'admission</td>
+<td>courrier et courriel, ressaisie dans chaque logiciel</td>
+</tr>
+<tr class="even">
+<td>Les deux départements et l'agence régionale de santé</td>
+<td>états d'activité, informations sur les personnes accueillies</td>
+<td>tableurs envoyés par courriel</td>
+</tr>
+<tr class="odd">
+<td>Hôpitaux</td>
+<td>informations utiles lors d'une hospitalisation et à la sortie</td>
+<td>papier remis à l'ambulance, téléphone</td>
+</tr>
+<tr class="even">
+<td>Écoles</td>
+<td>emplois du temps, comptes rendus des réunions de suivi des enfants scolarisés</td>
+<td>courriel</td>
+</tr>
+<tr class="odd">
+<td>Familles et représentants légaux</td>
+<td>projet personnalisé, informations sur la vie quotidienne, rendez-vous</td>
+<td>courrier, téléphone, cahier de liaison</td>
+</tr>
+</tbody>
+</table>
+<p>Chaque établissement a organisé ses propres échanges. Aucun ne dispose d'un moyen d'échange structuré avec un partenaire.</p>
+<p><strong>C. Huit projets demandés, aucun ordre de priorité</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Repère</th>
+<th>Projet</th>
+<th>Demandé par</th>
+<th>Objectif annoncé</th>
+<th>Charge estimée pour la DSI (jours)</th>
+<th>Échéance souhaitée</th>
+<th>Remarque de la DSI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P1</td>
+<td>Dossier unique de la personne accompagnée</td>
+<td>directrice générale</td>
+<td>un dossier par personne tout au long de son parcours (annexe 1.3)</td>
+<td>1 400</td>
+<td>2028</td>
+<td>remplace les trois logiciels de dossier et le papier ; suppose des postes et un réseau adaptés</td>
+</tr>
+<tr class="even">
+<td>P2</td>
+<td>Portail des familles</td>
+<td>pôle Enfance, représentants des familles au conseil d'administration</td>
+<td>consulter le projet personnalisé et les informations de la vie quotidienne, prendre rendez-vous</td>
+<td>300</td>
+<td>2027</td>
+<td>n'a de sens que s'il puise ses informations dans le dossier unique</td>
+</tr>
+<tr class="odd">
+<td>P3</td>
+<td>Planning en ligne des équipes</td>
+<td>directrice des ressources humaines</td>
+<td>permettre aux salariés de consulter leur planning et d'accepter un remplacement depuis leur smartphone</td>
+<td>400</td>
+<td>2027</td>
+<td>le logiciel actuel n'est consultable que sur les postes des unités ; doit échanger avec la paie et avec le dossier</td>
+</tr>
+<tr class="even">
+<td>P4</td>
+<td>Gestion de la production des ateliers</td>
+<td>pôle Travail</td>
+<td>planifier la production des ateliers, suivre les commandes des clients</td>
+<td>350</td>
+<td>2028</td>
+<td>le progiciel actuel facture mais ne planifie pas ; il reste maintenu par son éditeur jusqu'en 2030</td>
+</tr>
+<tr class="odd">
+<td>P5</td>
+<td>Signature électronique</td>
+<td>directeur administratif et financier, directrice des ressources humaines</td>
+<td>signer à distance les contrats, les devis des ateliers et les documents remis aux familles</td>
+<td>100</td>
+<td>2027</td>
+<td>service en ligne simple à mettre en place</td>
+</tr>
+<tr class="even">
+<td>P6</td>
+<td>Téléaccompagnement à domicile</td>
+<td>pôle Domicile</td>
+<td>entretiens par visioconférence et messages entre les accompagnants et les personnes accompagnées à domicile</td>
+<td>250</td>
+<td>2027</td>
+<td>proposé par un éditeur ; suppose que les personnes soient équipées et accompagnées</td>
+</tr>
+<tr class="odd">
+<td>P7</td>
+<td>Renouvellement des postes</td>
+<td>DSI</td>
+<td>remplacer environ 400 ordinateurs des unités trop anciens pour les services en ligne récents</td>
+<td>300</td>
+<td>2027-2028</td>
+<td>préalable au dossier unique dans une partie des établissements</td>
+</tr>
+<tr class="even">
+<td>P8</td>
+<td>Outil de pilotage</td>
+<td>directeur administratif et financier, conseil d'administration</td>
+<td>tableaux de bord de l'activité et des parcours</td>
+<td>500</td>
+<td>2027</td>
+<td>les données sont aujourd'hui dispersées dans trois logiciels et sur papier</td>
+</tr>
+</tbody>
+</table>
+<p>Si tous ces projets étaient lancés ensemble, ils représenteraient environ 3 600 jours de travail pour la DSI. Une fois l'exploitation et le support assurés, la DSI peut consacrer aux projets environ 1 200 jours par an.</p>
+<p><strong>D. L'organisation de la fonction système d'information</strong></p>
+<ul>
+<li>La direction des systèmes d'information est installée au siège et rattachée au directeur administratif et financier. Elle compte 14 personnes : le directeur, 6 techniciens de support et de proximité qui se déplacent sur les 28 sites, 3 administrateurs des infrastructures et du réseau, 3 chargés d'applications (dossiers des personnes, ressources humaines et paie, gestion et ateliers) et 1 assistante chargée des achats. Elle décide seule des choix techniques et des achats de matériel. Le directeur des systèmes d'information n'assiste pas au comité de direction.</li>
+<li>En 2026, la DSI a reçu environ 600 demandes d'évolution ou de nouvel outil, par courriel ou par téléphone, sans formulaire ni circuit de validation ; 40 % n'ont reçu aucune réponse. Le délai moyen d'intervention d'un technicien sur un site est de 3 jours ouvrés ; aucun support n'est assuré la nuit ni le week-end.</li>
+<li>Les établissements ont souscrit eux-mêmes, sur leur budget, une trentaine de services en ligne (messageries instantanées pour les transmissions entre équipes, partage de photos avec les familles, outils de planning d'unité), sans avis de la DSI. Dans plusieurs établissements, un salarié à l'aise avec l'informatique dépanne ses collègues, sans mission définie ni temps reconnu.</li>
+</ul>
+<p><strong>E. Témoignages</strong></p>
+<ul>
+<li><strong>Mme Nathalie BRÉCHEVAL, directrice générale</strong> : « Chaque semaine, un directeur vient me demander son outil, et la DSI me dit qu'elle ne peut pas tout faire. Je veux une feuille de route numérique 2027-2030 que le conseil d'administration puisse comprendre et qui serve "Horizon 2030". Le dossier unique passe avant tout le reste. »</li>
+<li><strong>M. Laurent TRÉVENEC, directeur des systèmes d'information</strong> : « Je découvre les projets des pôles quand ils sont décidés et les services souscrits par les établissements quand ils tombent en panne. Je reçois des demandes contradictoires que personne n'arbitre. Avec 14 personnes, je ne peux être ni sur les 28 sites ni sur huit projets à la fois. »</li>
+<li><strong>M. Yann BOSSERAND, directeur d'un foyer d'hébergement</strong> : « Il faut trois jours pour qu'un technicien vienne, et la nuit il n'y a personne. Mes équipes ont créé un groupe de messagerie pour les transmissions : ce n'est pas bien, mais c'est ce qui marche. On ne m'a jamais demandé mon avis sur un projet informatique. »</li>
+<li><strong>Mme Corinne LÉVRAUD, directrice du pôle Enfance</strong> : « Le portail des familles est promis depuis 2024. Je veux qu'on décide avec les établissements, pas pour eux. »</li>
+<li><strong>Mme Martine ROUSSELIÈRE, représentante des familles au conseil d'administration</strong> : « Quand mon fils est passé de l'institut médico-éducatif au foyer, j'ai raconté son histoire trois fois. Je voudrais lire son projet personnalisé et le signer sans me déplacer. »</li>
+<li><strong>M. Pascal DURANTEL, directeur administratif et financier</strong> : « Les dépenses du système d'information représentent 2,4 % de nos produits ; les abonnements pris par les établissements n'y figurent même pas. Nous ne pourrons pas tout financer en même temps. »</li>
+</ul>
+<h3 id="annexe-13--le-projet-de-dossier-unique-de-la-personne-accompagnée-note-de-cadrage-de-mme-laure-desvignac-cheffe-de-projet-avril-2027">ANNEXE 1.3 – Le projet de dossier unique de la personne accompagnée (note de cadrage de Mme Laure DESVIGNAC, cheffe de projet, avril 2027)</h3>
+<p><strong>A. Objectifs</strong></p>
+<ol type="1">
+<li>Un seul dossier par personne, de l'admission à la sortie et d'un établissement à l'autre, quelle que soit l'ancienne association.</li>
+<li>Des transmissions écrites entre les équipes de jour et de nuit, saisies au plus près des personnes, sur tablette ou sur smartphone.</li>
+<li>Le projet personnalisé de chaque personne, construit avec elle et sa famille, suivi et révisé dans le dossier.</li>
+<li>La consultation d'une partie du dossier par la famille ou le représentant légal, selon des droits définis pour chaque personne.</li>
+<li>La fin des dossiers papier et des ressaisies, et des informations fiables pour le pilotage.</li>
+</ol>
+<p><strong>B. L'offre retenue</strong></p>
+<p>Après la consultation de quatre éditeurs à la fin de 2026, le comité de direction a retenu l'offre en ligne de la société ORLINÈVE. Elle couvre le dossier de la personne, le projet personnalisé, les transmissions et l'agenda des activités des personnes, ainsi qu'un module de portail des familles, en option. Elle ne couvre ni le planning des équipes, ni la production et la facturation des ateliers, ni la paie. Elle propose des interfaces de programmation (API) documentées pour échanger des données avec d'autres applications, et une application pour tablette et smartphone qui fonctionne brièvement sans connexion. L'éditeur met à jour son offre quatre fois par an, pour tous ses clients à la fois.</p>
+<p>L'offre satisfait aux exigences légales applicables à l'hébergement des données de santé ; ce point n'est pas à analyser.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Élément</th>
+<th>Proposition de l'éditeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Abonnement</td>
+<td>25 € par compte utilisateur et par mois, pour environ 1 600 comptes (utilisateurs formés et remplaçants), soit environ 480 k€ par an</td>
+</tr>
+<tr class="even">
+<td>Durée</td>
+<td>engagement de cinq ans, renouvelable par tacite reconduction</td>
+</tr>
+<tr class="odd">
+<td>Mise en service</td>
+<td>paramétrage et reprise des données des trois logiciels : forfait de 300 k€ ; la formation est chiffrée à part (annexe 1.4)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. Les points encore ouverts du projet de contrat</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Point</th>
+<th>Rédaction proposée par l'éditeur</th>
+<th>Observation de la cheffe de projet</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Niveaux de service et plages de disponibilité</td>
+<td>disponibilité visée de 99 %, mesurée du lundi au vendredi de 8 heures à 18 heures ; support joignable aux mêmes heures</td>
+<td>14 établissements fonctionnent jour et nuit, toute l'année</td>
+</tr>
+<tr class="even">
+<td>Pénalités</td>
+<td>aucune pénalité ; geste commercial possible en cas d'incident majeur</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Confidentialité</td>
+<td>engagement général de confidentialité ; l'éditeur peut utiliser des données « rendues anonymes » pour améliorer ses services</td>
+<td>dossiers de personnes vulnérables</td>
+</tr>
+<tr class="even">
+<td>Sous-traitance ultérieure</td>
+<td>l'éditeur peut recourir aux sous-traitants de son choix, dont l'hébergeur, sans en informer la Fondation</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Localisation des données</td>
+<td>données hébergées dans l'Union européenne ; copies de sauvegarde « dans les centres de l'hébergeur »</td>
+<td>lieu des copies non précisé</td>
+</tr>
+<tr class="even">
+<td>Réversibilité</td>
+<td>en fin de contrat, export des données sur demande, au format de l'éditeur, facturé sur devis ; suppression des données 30 jours après la fin du contrat</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Limitation de responsabilité</td>
+<td>responsabilité de l'éditeur plafonnée à trois mois d'abonnement ; exclusion des dommages indirects, dont la perte de données</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-14--les-contraintes-du-déploiement-note-de-mme-laure-desvignac-cheffe-de-projet-et-de-mme-valérie-osmonde-directrice-des-ressources-humaines-avril-2027">ANNEXE 1.4 – Les contraintes du déploiement (note de Mme Laure DESVIGNAC, cheffe de projet, et de Mme Valérie OSMONDE, directrice des ressources humaines, avril 2027)</h3>
+<p><strong>A. Les utilisateurs à former</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Profil</th>
+<th>Personnes</th>
+<th>Formation par personne</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Professionnels de l'accompagnement de terrain</td>
+<td>1 000</td>
+<td>6 heures</td>
+</tr>
+<tr class="even">
+<td>Encadrement et secrétariats des établissements</td>
+<td>100</td>
+<td>10 heures</td>
+</tr>
+<tr class="odd">
+<td>Soignants et paramédicaux</td>
+<td>250</td>
+<td>4 heures</td>
+</tr>
+<tr class="even">
+<td>Moniteurs et encadrants d'atelier</td>
+<td>150</td>
+<td>2 heures</td>
+</tr>
+<tr class="odd">
+<td>Salariés du siège (admissions, qualité, directions)</td>
+<td>50</td>
+<td>2 heures</td>
+</tr>
+<tr class="even">
+<td>Référents numériques (formation complémentaire, voir E)</td>
+<td>40</td>
+<td>15 heures</td>
+</tr>
+</tbody>
+</table>
+<p>Convention : une heure de formation coûte en moyenne 40 €, charges comprises, remplacement des professionnels compris. La formation des formateurs internes et des référents par l'éditeur coûte en outre 40 k€ (40 jours à 1 000 €). Les heures des référents s'ajoutent à celles de leur profil.</p>
+<p><strong>B. Les contraintes d'organisation</strong></p>
+<ul>
+<li>Dans les foyers et les maisons d'accueil spécialisées, ouverts jour et nuit toute l'année, les professionnels travaillent en trois équipes (matin, après-midi, nuit) et un week-end sur deux ; les équipes se relaient lors d'une relève d'une demi-heure. Aucune unité ne peut fonctionner avec moins de professionnels que prévu.</li>
+<li>La directrice des ressources humaines fixe deux règles : pas plus d'un professionnel sur dix d'une même unité en formation au même moment ; des séances de trois heures au plus.</li>
+<li>Dans les huit établissements et services qui tiennent des dossiers papier, la plupart des professionnels n'utilisent pas d'ordinateur dans leur travail.</li>
+<li>Six sites éloignés ont un accès à internet lent, coupé plusieurs fois par mois.</li>
+<li>La DSI peut accompagner sur place au plus 15 établissements et services à la fois pendant leur mise en service ; l'éditeur met à disposition six formateurs.</li>
+</ul>
+<p><strong>C. Deux options de déploiement</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Option 1 : tous les établissements en une fois</th>
+<th>Option 2 : par vagues de pôles</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Calendrier</td>
+<td>mise en service des 40 établissements et services en janvier 2028 ; formation de tous les utilisateurs entre octobre et décembre 2027</td>
+<td>pilote sur un site de trois établissements et services (un service à domicile, un institut médico-éducatif, un foyer) en octobre 2027 ; vague 1 : pôles Travail et Domicile (13 établissements et services) en février 2028 ; vague 2 : pôle Enfance (11) en juin 2028 ; vague 3 : pôle Hébergement (13) en octobre 2028</td>
+</tr>
+<tr class="even">
+<td>Fin du déploiement</td>
+<td>mars 2028</td>
+<td>décembre 2028</td>
+</tr>
+<tr class="odd">
+<td>Anciens logiciels</td>
+<td>arrêtés en mars 2028</td>
+<td>maintenus jusqu'à la dernière vague, soit environ neuf mois de plus ; les trois anciens logiciels coûtent ensemble environ 20 k€ par mois</td>
+</tr>
+<tr class="even">
+<td>Parcours</td>
+<td>—</td>
+<td>pendant le déploiement, une personne qui passe d'un pôle déjà équipé à un pôle qui ne l'est pas encore change d'outil</td>
+</tr>
+</tbody>
+</table>
+<p><strong>D. Les risques signalés par l'équipe projet</strong></p>
+<ul>
+<li><strong>Reprise des données</strong> : trois logiciels aux contenus différents, des doublons, des dossiers papier ; les extractions des anciens logiciels sont fournies par leurs éditeurs sous forme de fichiers de tableur.</li>
+<li><strong>Réseau</strong> : six sites dont l'accès à internet est insuffisant pour un service en ligne utilisé en continu.</li>
+<li><strong>Appropriation</strong> : des professionnels peu à l'aise avec l'écrit et avec l'informatique ; des équipes de nuit isolées ; la crainte que l'écran prenne le temps passé auprès des personnes.</li>
+<li><strong>Dépendance à l'éditeur</strong> : engagement de cinq ans, mises à jour imposées quatre fois par an, aucune solution de remplacement si l'éditeur disparaît.</li>
+<li>Les essais de paramétrage réalisés en mars 2027 ont utilisé des copies de vrais dossiers de personnes accompagnées.</li>
+</ul>
+<p><strong>E. Les référents numériques envisagés</strong></p>
+<ul>
+<li>Un référent numérique par établissement ou service (40 au total), volontaire, choisi parmi les professionnels de l'accompagnement ; 10 % de son temps (une demi-journée par semaine) pendant le déploiement, puis 5 %.</li>
+<li>Missions envisagées : aide de premier niveau aux collègues, relais des besoins et des difficultés vers l'équipe projet, formation des nouveaux arrivants.</li>
+<li>Réserves exprimées : des directeurs d'établissement craignent que ce temps soit pris sur l'accompagnement ; des référents de nuit ou de sites éloignés se sentiront seuls. En 2021, l'ancienne association MIRANDELLE avait désigné des « super-utilisateurs » lors d'un changement de logiciel : faute d'animation, de temps reconnu et de lieu d'échange, le réseau s'était éteint en moins d'un an.</li>
+<li>La suite bureautique en ligne de la Fondation comprend des espaces d'équipe, une messagerie instantanée et la visioconférence, peu utilisés hors du siège.</li>
+</ul>
+<h3 id="annexe-15--repères-au-31122026">ANNEXE 1.5 – Repères (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu</th>
+<th>Situation au 31/12/2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2016/679 relatif à la protection des données personnelles (RGPD)</td>
+<td>Le responsable du traitement ne fait appel qu'à un sous-traitant présentant des garanties suffisantes ; un contrat encadre le traitement (objet, durée, instructions du responsable, confidentialité des personnes autorisées, sécurité, aide au responsable, sort des données à la fin de la prestation, mise à disposition des informations et audits). Le sous-traitant ne recrute un autre sous-traitant qu'avec l'autorisation écrite, préalable, spécifique ou générale, du responsable, qui peut s'opposer aux changements. Un transfert de données hors de l'Union européenne n'est possible que dans les conditions prévues par le règlement.</td>
+<td>Applicable depuis le 25/05/2018. Une proposition européenne de simplification (« omnibus numérique », 19/11/2025) modifiant ce règlement est en discussion et n'est pas applicable.</td>
+</tr>
+<tr class="even">
+<td>ITIL (PeopleCert)</td>
+<td>Référentiel de bonnes pratiques de gestion des services informatiques : gestion des niveaux de service, des incidents et des changements.</td>
+<td>En vigueur</td>
+</tr>
+</tbody>
+</table>
+<p>Il n'est demandé aucune analyse juridique du contrat ni des obligations de la Fondation.</p>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>Trois ans après la réunion des trois associations, le système d'information de la Fondation VERLANDRE reste celui de trois organisations, et les demandes des établissements s'accumulent sans être arbitrées. Mme BRÉCHEVAL vous demande d'éclairer la stratégie du système d'information au service du projet « Horizon 2030 », d'organiser la fonction système d'information entre le siège et les établissements, de dessiner l'architecture cible autour du dossier unique, puis de préparer le contrat avec l'éditeur, le déploiement et l'accompagnement des professionnels. Vous mobiliserez pour cela les annexes 1.1 à 1.5 ainsi que vos connaissances professionnelles.</p>
+<p><strong>1.1 – La stratégie du système d'information et la feuille de route numérique 2027-2030 (3 points)</strong></p>
+<p>a) Après avoir précisé ce qu'est une stratégie du système d'information alignée sur la stratégie de l'organisation, montrez, à partir de l'annexe 1.2, en quoi le système d'information actuel freine trois des quatre orientations du projet « Horizon 2030 ».</p>
+<p>b) Proposez la démarche de construction de la feuille de route numérique 2027-2030 : ses étapes, ses acteurs et quatre critères de priorisation des projets. Appliquez ensuite ces critères aux huit projets de l'annexe 1.2 C en les classant en trois horizons (second semestre 2027 et 2028 ; 2029 ; 2030), et justifiez votre classement. Aucun calcul de rentabilité n'est attendu.</p>
+<p><strong>1.2 – L'organisation de la fonction système d'information (2,5 points)</strong></p>
+<p>a) Caractérisez le modèle d'organisation actuel de la fonction système d'information de la Fondation, puis analysez trois tensions entre la direction des systèmes d'information, la direction générale et les directeurs d'établissement, révélées par l'annexe 1.2.</p>
+<p>b) Recommandez, en la justifiant, l'organisation cible de la fonction système d'information entre le siège et les établissements : le modèle retenu et le rattachement du directeur des systèmes d'information, le rôle des référents numériques des établissements, et trois règles de demande et d'arbitrage des projets.</p>
+<p><strong>1.3 – L'architecture cible autour du dossier unique (2,5 points)</strong></p>
+<p>Après avoir défini l'urbanisation du système d'information, représentez, sous la forme d'un schéma ou d'un tableau, l'architecture cible du système d'information de la Fondation autour du dossier unique, en faisant apparaître le référentiel des personnes accompagnées, le dossier unique, le planning des équipes, la production et la facturation des ateliers, le portail des familles et les échanges avec les partenaires. Montrez ensuite, en trois arguments, comment l'urbanisation assure la cohérence entre le système d'information de la Fondation et ceux de ses partenaires extérieurs. Ni le contenu du référentiel ni le détail des échanges ne sont attendus.</p>
+<p><strong>1.4 – Le contrat de service en ligne avec ORLINÈVE (2 points)</strong></p>
+<p>À partir des annexes 1.3 et 1.5, proposez quatre clauses à négocier dans le contrat de service en ligne : les niveaux de service et les pénalités ; la confidentialité et la sous-traitance au sens du RGPD ; la responsabilité ; la réversibilité. Pour chacune, précisez le contenu que vous demanderez et reliez-la à un risque pour la Fondation, tiré des annexes. Aucune analyse juridique n'est attendue.</p>
+<p><strong>1.5 – Le déploiement du dossier unique (2 points)</strong></p>
+<p>a) Comparez les deux options de déploiement de l'annexe 1.4 C, puis recommandez l'une d'elles en la justifiant.</p>
+<p>b) Établissez de tête, en milliers d'euros, l'enveloppe de la formation des utilisateurs, puis indiquez comment planifier les formations et les ressources du déploiement sans interrompre l'accompagnement des personnes.</p>
+<p>c) Identifiez trois risques du projet, portant respectivement sur la maintenance, l'évolutivité et la sécurité, en les appuyant sur les annexes 1.3 et 1.4, et proposez pour chacun une mesure de traitement.</p>
+<p><strong>1.6 – La communauté de pratiques des référents numériques (2 points)</strong></p>
+<p>Après avoir défini une communauté de pratiques et précisé ce qu'elle apporte à la gestion des connaissances, proposez celle des référents numériques qui accompagnera le déploiement du dossier unique : ses objectifs, son animation, ses outils, les rôles et responsabilités de ses acteurs, et un indicateur de pilotage précisé par sa formule, sa source, sa fréquence, sa cible et son axe. Vous tiendrez compte des réserves exprimées dans l'annexe 1.4 E. La gestion des compétences n'est pas à traiter.</p>
+<hr />
+<h2 id="dossier-2--organiser-et-exploiter-les-données-des-parcours-13-points">DOSSIER 2 – ORGANISER ET EXPLOITER LES DONNÉES DES PARCOURS (13 points)</h2>
+<h3 id="annexe-21--les-données-des-personnes-accompagnées-aujourdhui-note-de-mme-hélène-quérandeau-responsable-de-ladmission-et-des-parcours-au-siège-et-témoignages-recueillis-en-avril-2027">ANNEXE 2.1 – Les données des personnes accompagnées aujourd'hui (note de Mme Hélène QUÉRANDEAU, responsable de l'admission et des parcours au siège, et témoignages recueillis en avril 2027)</h3>
+<p><strong>A. Une même personne, plusieurs dossiers</strong></p>
+<p>Chacun des trois logiciels hérités des associations attribue son propre numéro à la personne accompagnée :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Logiciel de l'ancienne association</th>
+<th>Établissements et services équipés</th>
+<th>Numéro attribué à la personne</th>
+<th>Dossiers « actifs » en 2026 (personne accompagnée dans l'année ou dossier jamais clôturé)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GERVELLE</td>
+<td>18</td>
+<td>numéro chronologique attribué à la création du dossier</td>
+<td>1 300</td>
+</tr>
+<tr class="even">
+<td>MIRANDELLE</td>
+<td>9</td>
+<td>trois premières lettres du nom suivies de la date de naissance</td>
+<td>600</td>
+</tr>
+<tr class="odd">
+<td>LUMERANDE</td>
+<td>5</td>
+<td>code de l'établissement suivi d'un numéro d'ordre : il change quand la personne change d'établissement</td>
+<td>400</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td><strong>32</strong></td>
+<td></td>
+<td><strong>2 300</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Les 32 établissements et services équipés ont accompagné environ 2 000 personnes en 2026 ; les 8 autres, qui tiennent des dossiers papier, en ont accompagné environ 400. Les 2 300 dossiers « actifs » comprennent donc environ 300 dossiers en trop : environ 200 personnes ont deux dossiers actifs, ouverts sous deux numéros lors d'un changement d'établissement, sous un nom d'usage et un nom de naissance, ou avec une faute de frappe ; environ 100 dossiers de personnes parties avant 2026 n'ont jamais été clôturés. La plupart des personnes ont un numéro de dossier attribué par la maison départementale des personnes handicapées qui a décidé leur orientation ; il n'est saisi que dans le logiciel de l'ancienne association GERVELLE, et il change quand la personne déménage dans l'autre département.</p>
+<p><strong>B. Des mots qui n'ont pas le même sens</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Notion</th>
+<th>Ancienne association GERVELLE</th>
+<th>Ancienne association MIRANDELLE</th>
+<th>Ancienne association LUMERANDE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>« Place occupée »</td>
+<td>une place est occupée dès qu'une personne y est admise, même absente (hospitalisation, retour en famille, vacances)</td>
+<td>une place est occupée les seuls jours où la personne est présente</td>
+<td>une place est occupée si la personne est présente ou absente depuis moins de quinze jours</td>
+</tr>
+<tr class="even">
+<td>« Personne en attente »</td>
+<td>toute personne dont la famille a déposé une demande, même sans décision d'orientation</td>
+<td>toute personne reçue en entretien de préadmission</td>
+<td>toute personne qui a une décision d'orientation vers l'établissement</td>
+</tr>
+<tr class="odd">
+<td>« Sortie »</td>
+<td>départ de la personne de la Fondation</td>
+<td>tout départ d'un établissement, y compris vers un autre établissement de la Fondation</td>
+<td>tout départ d'un établissement, y compris vers un autre établissement de la Fondation</td>
+</tr>
+</tbody>
+</table>
+<p>Aucune personne n'est retirée d'une liste d'attente quand elle est admise ailleurs, sauf si sa famille le signale.</p>
+<p><strong>C. Les demandes d'admission et les états d'activité</strong></p>
+<ul>
+<li>Les décisions d'orientation et les demandes d'admission arrivent des deux maisons départementales des personnes handicapées et des familles par courrier, par courriel et sous forme de tableurs, dans des présentations différentes. Chaque établissement tient sa propre liste d'attente dans un tableur ou dans un cahier ; personne ne voit l'ensemble des listes.</li>
+<li>La maison départementale d'Indre-et-Loire propose depuis 2026 un service en ligne de suivi des orientations, doté d'une interface de programmation (API) documentée ; celle du Loir-et-Cher accepte le dépôt de fichiers dans un format ouvert sur un espace d'échange sécurisé. Toutes deux appliquent le référentiel général d'interopérabilité (annexe 2.5) et souhaitent savoir, chaque mois, quelles personnes orientées ont été admises.</li>
+<li>Les deux départements et l'agence régionale de santé demandent des états d'activité (journées, personnes accompagnées, admissions, sorties), chacun selon son propre modèle de tableur. Les secrétariats des établissements les remplissent à la main à partir des logiciels et des dossiers papier ; le siège les relit et les corrige avant l'envoi.</li>
+</ul>
+<p><strong>D. Témoignages</strong></p>
+<ul>
+<li><strong>Mme Hélène QUÉRANDEAU, responsable de l'admission et des parcours</strong> : « Pour répondre à une famille qui demande où en est sa demande, j'appelle cinq établissements. En mars, j'ai rapproché à la main toutes les listes d'attente : trois semaines de travail (annexe 2.2). Le dossier unique doit devenir la référence, mais si l'on y reprend les doublons, on les aura pour vingt ans. »</li>
+<li><strong>M. Fabrice ROSPARIN, directeur d'un institut médico-éducatif</strong> : « Un jeune qui part dans un foyer de l'ancienne association MIRANDELLE compte comme une sortie chez nous et comme une admission chez eux ; au siège, il disparaît des statistiques de la Fondation. Et personne ne sait me dire ce qu'est une place occupée. »</li>
+<li><strong>Mme Gaëlle TRÉMOLIÈRE, secrétaire d'un foyer d'hébergement</strong> : « Chaque mois, je remplis deux tableurs différents pour les deux départements, avec les mêmes chiffres présentés autrement. Je passe deux jours à recopier ce qui est déjà dans le logiciel. »</li>
+<li><strong>Mme Agnès PELLEGRAIN, déléguée à la protection des données</strong> : « Les listes d'attente circulent par courriel dans des tableurs qui contiennent les diagnostics des enfants. Et personne ne supprime jamais rien. »</li>
+</ul>
+<h3 id="annexe-22--les-listes-dattente-et-loccupation-en-2026-relevé-établi-par-mme-hélène-quérandeau-mars-2027">ANNEXE 2.2 – Les listes d'attente et l'occupation en 2026 (relevé établi par Mme Hélène QUÉRANDEAU, mars 2027)</h3>
+<p><strong>A. Occupation et listes d'attente par pôle (sources : logiciels et listes des établissements)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Pôle</th>
+<th>Places</th>
+<th>Personnes accompagnées dans l'année</th>
+<th>Taux d'occupation</th>
+<th>Inscriptions en liste d'attente au 31/12/2026</th>
+<th>Délai moyen d'attente des personnes admises en 2026</th>
+<th>Admissions en 2026</th>
+<th>Délai moyen entre une sortie et l'admission suivante</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Enfance</td>
+<td>650</td>
+<td>700</td>
+<td>96 %</td>
+<td>350</td>
+<td>2 ans</td>
+<td>90</td>
+<td>45 jours</td>
+</tr>
+<tr class="even">
+<td>Hébergement</td>
+<td>580</td>
+<td>600</td>
+<td>95 %</td>
+<td>300</td>
+<td>3 ans</td>
+<td>40</td>
+<td>60 jours</td>
+</tr>
+<tr class="odd">
+<td>Domicile</td>
+<td>500</td>
+<td>550</td>
+<td>90 %</td>
+<td>150</td>
+<td>8 mois</td>
+<td>120</td>
+<td>30 jours</td>
+</tr>
+<tr class="even">
+<td>Travail</td>
+<td>520</td>
+<td>550</td>
+<td>97 %</td>
+<td>100</td>
+<td>18 mois</td>
+<td>60</td>
+<td>20 jours</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>2 250</strong></td>
+<td><strong>2 400</strong></td>
+<td>—</td>
+<td><strong>900</strong></td>
+<td>—</td>
+<td><strong>310</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>Le nombre de personnes accompagnées dans l'année dépasse le nombre de places, parce qu'une place libérée en cours d'année est attribuée à une autre personne. Les taux d'occupation sont calculés par chaque établissement selon la définition de son ancienne association (annexe 2.1 B), puis consolidés par le siège. Les admissions comprennent les changements d'établissement à l'intérieur de la Fondation. Les délais d'attente ne portent que sur les personnes admises en 2026.</p>
+<p><strong>B. Le rapprochement des listes d'attente (mars 2027)</strong></p>
+<p>Mme QUÉRANDEAU a rapproché à la main les 900 inscriptions, à partir du nom, du prénom et de la date de naissance :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Constat</th>
+<th>Nombre</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Personnes inscrites sur une seule liste</td>
+<td>400</td>
+</tr>
+<tr class="even">
+<td>Personnes inscrites sur deux listes</td>
+<td>150</td>
+</tr>
+<tr class="odd">
+<td>Personnes inscrites sur quatre listes</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td><strong>Personnes distinctes</strong></td>
+<td><strong>600</strong></td>
+</tr>
+<tr class="odd">
+<td>dont personnes déjà accompagnées par la Fondation, qui attendent une autre solution</td>
+<td>150</td>
+</tr>
+<tr class="even">
+<td>dont, parmi elles, jeunes adultes de plus de 20 ans maintenus dans un institut médico-éducatif faute de place en foyer ou en établissement d'aide par le travail</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>dont personnes non accompagnées par la Fondation qui n'ont pas confirmé leur demande depuis plus de douze mois</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<p>Sur dix familles de ce dernier groupe jointes par téléphone, six ont indiqué que leur enfant ou leur proche avait été admis ailleurs ou avait déménagé. Certaines personnes n'ont pas pu être rapprochées avec certitude (orthographe du nom, date de naissance manquante).</p>
+<p><strong>C. Des valeurs qui diffèrent selon la source</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée de 2026</th>
+<th>Source</th>
+<th>Valeur</th>
+<th>Autre source</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Taux d'occupation du pôle Hébergement</td>
+<td>tableau de bord mensuel du siège</td>
+<td>95 %</td>
+<td>état d'activité transmis au département, en journées de présence</td>
+<td>91 %</td>
+</tr>
+<tr class="even">
+<td>Personnes en attente d'une place dans le pôle Enfance</td>
+<td>listes des établissements</td>
+<td>350</td>
+<td>relevés des deux maisons départementales (orientations vers la Fondation non suivies d'admission)</td>
+<td>280</td>
+</tr>
+<tr class="odd">
+<td>Sorties</td>
+<td>total des trois logiciels et des dossiers papier</td>
+<td>280</td>
+<td>direction générale (personnes qui ont quitté la Fondation)</td>
+<td>220</td>
+</tr>
+</tbody>
+</table>
+<p>Dans le pôle Hébergement, les absences des personnes (hospitalisations, retours en famille, vacances) représentent environ 4 % des journées.</p>
+<p><strong>D. La demande du conseil d'administration</strong></p>
+<p>M. Henri LABASTROU, président : « Le rapport annuel annonce 900 personnes en attente. Les familles du conseil n'y croient pas, et l'agence régionale de santé nous demande des chiffres sûrs. Je veux savoir combien de personnes attendent vraiment une place, et depuis combien de temps. »</p>
+<h3 id="annexe-23--le-tableau-de-bord-actuel-extrait-et-attentes-recueillies-en-avril-2027">ANNEXE 2.3 – Le tableau de bord actuel (extrait et attentes recueillies en avril 2027)</h3>
+<p><strong>A. Le tableau de bord mensuel</strong></p>
+<p>Depuis 2020, Mme Sophie VALDRIAC, contrôleuse de gestion rattachée au directeur administratif et financier, établit chaque mois un tableau de bord de 30 indicateurs : 12 d'activité, 10 de ressources humaines et 8 de finances. Elle y consacre cinq jours par mois, à partir d'extractions des trois logiciels, des tableurs envoyés par les huit établissements à dossiers papier, du progiciel de paie et du progiciel comptable. Le tableau, un fichier de six pages, est envoyé vers le 25 du mois suivant, sous la même forme, à la directrice générale, aux quatre directeurs de pôle et aux 40 directeurs d'établissement. Une enquête d'avril 2027 indique que 10 des 44 directeurs le lisent régulièrement. Le conseil d'administration n'en reçoit aucun extrait.</p>
+<p>Extrait du tableau de mars 2027 (ensemble de la Fondation) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Mars 2027</th>
+<th>Février 2027</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Journées réalisées</td>
+<td>54 000</td>
+<td>49 000</td>
+</tr>
+<tr class="even">
+<td>Taux d'occupation</td>
+<td>95 %</td>
+<td>94 %</td>
+</tr>
+<tr class="odd">
+<td>Personnes en liste d'attente</td>
+<td>910</td>
+<td>900</td>
+</tr>
+<tr class="even">
+<td>Repas servis</td>
+<td>98 000</td>
+<td>90 000</td>
+</tr>
+<tr class="odd">
+<td>Taux d'absentéisme des salariés</td>
+<td>9 %</td>
+<td>10 %</td>
+</tr>
+<tr class="even">
+<td>Heures d'intérim</td>
+<td>6 000</td>
+<td>5 500</td>
+</tr>
+<tr class="odd">
+<td>Litres de carburant des véhicules</td>
+<td>15 000</td>
+<td>14 000</td>
+</tr>
+<tr class="even">
+<td>Charges de personnel cumulées depuis janvier (k€)</td>
+<td>21 000</td>
+<td>14 000</td>
+</tr>
+</tbody>
+</table>
+<p>Aucun indicateur n'a de cible ; aucun commentaire n'accompagne les chiffres. Les définitions sont celles de chaque ancienne association.</p>
+<p><strong>B. Les attentes</strong></p>
+<ul>
+<li><strong>Mme Nathalie BRÉCHEVAL, directrice générale</strong> : « "Horizon 2030" nous demande de passer des places aux parcours. Ce tableau compte des repas et du carburant ; il ne me dit pas si les parcours s'améliorent. »</li>
+<li><strong>M. Stéphane MARCILHAC, directeur du pôle Hébergement</strong> : « Je veux comparer mes quatorze établissements, voir tout de suite où une place se libère et quelles situations s'enlisent. Quatre ou cinq chiffres, avec une alerte, me suffisent. »</li>
+<li><strong>Mme Corinne LÉVRAUD, directrice du pôle Enfance</strong> : « Cent jeunes adultes restent chez nous faute de place ailleurs, et aucun tableau ne le montre. Seule une enquête de mars 2027 m'a appris qu'environ 70 % des projets personnalisés avaient été révisés depuis moins d'un an. »</li>
+<li><strong>Mme Valérie OSMONDE, directrice des ressources humaines</strong> : « Le tableau montre l'absentéisme et l'intérim, mais pas les postes vacants, qui atteignaient 7 % des postes d'accompagnement fin mars. C'est pourtant ce qui fragilise l'accompagnement. »</li>
+<li><strong>M. Henri LABASTROU, président du conseil d'administration</strong> : « Le conseil voudrait, chaque trimestre, quelques chiffres sûrs et compris de tous. »</li>
+</ul>
+<h3 id="annexe-24--les-anciens-logiciels-et-leurs-données-note-de-m-laurent-trévenec-directeur-des-systèmes-dinformation-avril-2027">ANNEXE 2.4 – Les anciens logiciels et leurs données (note de M. Laurent TRÉVENEC, directeur des systèmes d'information, avril 2027)</h3>
+<p><strong>A. Ce que contiennent les anciens logiciels</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Logiciel de l'ancienne association</th>
+<th>Dossiers actifs</th>
+<th>Dossiers de personnes sorties</th>
+<th>dont dernière sortie de la Fondation il y a plus de 20 ans</th>
+<th>Coût actuel (k€ par mois)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GERVELLE</td>
+<td>1 300</td>
+<td>5 000</td>
+<td>1 000</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>MIRANDELLE</td>
+<td>600</td>
+<td>2 000</td>
+<td>500</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>LUMERANDE</td>
+<td>400</td>
+<td>1 000</td>
+<td>—</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td><strong>2 300</strong></td>
+<td><strong>8 000</strong></td>
+<td><strong>1 500</strong></td>
+<td><strong>20</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Les logiciels contiennent en outre environ 150 000 pièces numérisées (comptes rendus, bilans, décisions d'orientation, courriers), dans des formats propres à chaque éditeur, et environ 2 500 demandes d'admission qui n'ont pas abouti, dont 2 000 sans aucun contact avec la famille depuis plus de deux ans.</li>
+<li>Les extractions sont fournies par les éditeurs sous forme de fichiers de tableur ; les pièces numérisées sont livrées en vrac, classées sous le numéro attribué par chaque logiciel.</li>
+<li>Les huit établissements à dossiers papier conservent environ 400 dossiers actifs et 3 000 dossiers de personnes sorties, dont 1 000 dont la dernière sortie remonte à plus de 20 ans, dans des armoires.</li>
+<li>Les trois contrats sont conclus par année civile ; chacun se renouvelle tacitement, sauf résiliation trois mois avant son échéance.</li>
+</ul>
+<p>Les données du dossier unique seront hébergées dans l'Union européenne. L'offre de l'éditeur retenu pour le dossier unique, ORLINÈVE, satisfait aux exigences légales applicables à l'hébergement des données de santé ; ce point n'est pas à analyser.</p>
+<p><strong>B. Trois options pour les données des anciens logiciels</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Option 1 : tout reprendre</th>
+<th>Option 2 : reprendre les dossiers actifs, archiver les autres</th>
+<th>Option 3 : garder les anciens logiciels en consultation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contenu</td>
+<td>reprise dans le dossier unique de tous les dossiers, actifs et sortis, et de toutes les pièces numérisées</td>
+<td>reprise des seuls dossiers actifs, après dédoublonnage ; export des dossiers des personnes sorties et de leurs pièces dans des formats ouverts, versés dans un service d'archivage électronique distinct du dossier unique</td>
+<td>reprise des seuls dossiers actifs ; logiciels des anciennes associations GERVELLE et MIRANDELLE conservés en lecture seule ; l'éditeur du logiciel de l'ancienne association LUMERANDE refuse ce mode et cessera de maintenir sa version fin 2028</td>
+</tr>
+<tr class="even">
+<td>Coût</td>
+<td>150 k€ de reprise supplémentaire, une seule fois</td>
+<td>60 k€ de mise en place, puis 12 k€ par an</td>
+<td>4 k€ par mois pour le logiciel de l'ancienne association GERVELLE et 3 k€ par mois pour celui de l'ancienne association MIRANDELLE, sans limite de durée</td>
+</tr>
+<tr class="odd">
+<td>Accès</td>
+<td>tous les utilisateurs du dossier unique, selon leurs droits habituels</td>
+<td>consultation sur demande motivée par l'équipe de l'admission et des parcours, chaque accès étant enregistré</td>
+<td>comptes actuels des anciens logiciels</td>
+</tr>
+<tr class="even">
+<td>Avis recueilli</td>
+<td>équipe projet : « Les doublons et les dossiers anciens alourdiront le contrôle de la reprise. »</td>
+<td>déléguée à la protection des données : « C'est l'occasion de supprimer ce qui doit l'être. »</td>
+<td>directeurs d'établissement : « C'est la solution la plus simple ; on garde nos habitudes. »</td>
+</tr>
+</tbody>
+</table>
+<p>La directrice générale demande de comparer les coûts sur cinq ans.</p>
+<h3 id="annexe-25--repères-au-31122026">ANNEXE 2.5 – Repères (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu</th>
+<th>Situation au 31/12/2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2016/679 relatif à la protection des données personnelles (RGPD)</td>
+<td>Les données sont collectées pour des finalités déterminées et ne sont pas traitées ultérieurement de manière incompatible avec elles ; elles sont adéquates, pertinentes et limitées à ce qui est nécessaire (minimisation) ; elles sont exactes et tenues à jour ; elles sont conservées sous une forme permettant l'identification des personnes pendant une durée n'excédant pas celle nécessaire aux finalités (limitation de la conservation) ; elles sont protégées contre l'accès non autorisé, la perte et la destruction (intégrité et confidentialité). Le responsable du traitement doit pouvoir démontrer le respect de ces principes. Une personne peut demander communication des données qui la concernent. Les données relatives à la santé font l'objet d'une protection renforcée.</td>
+<td>Applicable depuis le 25/05/2018. Une proposition européenne de simplification (« omnibus numérique », 19/11/2025) modifiant ce règlement est en discussion et n'est pas applicable.</td>
+</tr>
+<tr class="even">
+<td>Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés</td>
+<td>Complète le RGPD en droit français.</td>
+<td>En vigueur, modifiée en 2018</td>
+</tr>
+<tr class="odd">
+<td>Référentiel général d'interopérabilité (RGI), version 2.0 (DINUM)</td>
+<td>Cadre de recommandations qui référence les normes et standards, dont des formats ouverts, à appliquer par les administrations, dont les départements, pour rendre leurs systèmes d'information interopérables.</td>
+<td>En vigueur depuis l'arrêté du 20/04/2016</td>
+</tr>
+<tr class="even">
+<td>DAMA-DMBOK (DAMA International), 2e édition</td>
+<td>Référentiel de bonnes pratiques de gestion des données, organisé en onze domaines autour de la gouvernance des données, dont les données de référence, la qualité des données, les métadonnées, l'intégration et l'interopérabilité.</td>
+<td>2e édition (2017), révisée en 2024</td>
+</tr>
+</tbody>
+</table>
+<p>Durées de conservation retenues par la Fondation, sur proposition de la déléguée à la protection des données (hypothèses de l'énoncé, à appliquer sans analyse juridique) :</p>
+<ul>
+<li>dossier de la personne accompagnée : pendant tout l'accompagnement, puis 20 ans après la dernière sortie de la Fondation ; il est ensuite détruit ;</li>
+<li>demande d'admission qui n'a pas abouti : 2 ans après le dernier contact avec la famille ; elle est ensuite détruite.</li>
+</ul>
+<p>Il n'est demandé aucune analyse juridique.</p>
+<h3 id="travail-à-faire-1">Travail à faire</h3>
+<p>Le dossier unique de la personne accompagnée doit remplacer les trois logiciels hérités des associations et les dossiers papier. Mme BRÉCHEVAL vous demande d'en faire la source de référence des données des personnes, d'organiser leurs échanges avec les maisons départementales et les financeurs, d'exploiter les données des listes d'attente pour répondre au conseil d'administration, de refondre le tableau de bord pour piloter les parcours et de décider du sort des données des anciens logiciels. Vous mobiliserez pour cela les annexes 1.1 à 2.5 ainsi que vos connaissances professionnelles.</p>
+<p><strong>2.1 – Le référentiel des personnes accompagnées et les échanges avec les partenaires (5 points)</strong></p>
+<p>a) Proposez, en vous appuyant sur l'annexe 2.1, l'organisation des données qui fera du dossier unique la source de référence des données des personnes accompagnées : le référentiel des personnes, l'identifiant de la personne et trois règles de dédoublonnage. Aucun modèle des données (entités, associations, cardinalités) n'est attendu.</p>
+<p>b) Après avoir défini un dictionnaire de données, rédigez-en un extrait pour les trois notions de l'annexe 2.1 B (« place occupée », « personne en attente », « sortie ») : pour chacune, sa définition commune, sa règle de calcul ou d'enregistrement, son propriétaire et une règle de qualité.</p>
+<p>c) Après avoir défini l'interopérabilité, proposez les solutions d'échange de la Fondation avec les deux maisons départementales des personnes handicapées, d'une part, et avec les départements et l'agence régionale de santé, d'autre part, en précisant pour chacun l'outil d'échange retenu (interface de programmation, formats ouverts, fichiers structurés) et deux conditions organisationnelles. Le détail technique des échanges n'est pas attendu.</p>
+<p><strong>2.2 – Les listes d'attente et l'occupation (3,5 points)</strong></p>
+<p>a) Distinguez l'analyse descriptive et l'analyse exploratoire des données, puis justifiez la méthode, ou la combinaison de méthodes, que vous retiendrez pour exploiter les données de l'annexe 2.2.</p>
+<p>b) Formulez trois constats argumentés tirés de l'annexe 2.2, en précisant pour chacun une précaution de lecture (doublons, définitions, sources ou population mesurée).</p>
+<p>c) Répondez à la question du président du conseil d'administration, de tête et en chiffres ronds, puis proposez deux représentations visuelles adaptées pour présenter ces résultats au conseil d'administration, en justifiant chacune. Aucun calcul statistique n'est attendu.</p>
+<p><strong>2.3 – Le tableau de bord des parcours (2,5 points)</strong></p>
+<p>a) Critiquez le tableau de bord actuel décrit dans l'annexe 2.3 A, en quatre arguments.</p>
+<p>b) Proposez le tableau de bord des parcours destiné aux directeurs de pôle : ses destinataires, sa fréquence et quatre indicateurs, respectivement d'activité, de qualité de l'accompagnement, de ressources et de risque, chacun précisé par sa formule, sa source, sa fréquence, sa cible et son axe.</p>
+<p>c) Indiquez comment ce tableau de bord sera revu et amélioré dans le temps.</p>
+<p><strong>2.4 – Le cycle de vie des données des anciens logiciels (2 points)</strong></p>
+<p>a) Présentez les étapes du cycle de vie des données des personnes accompagnées, en les appliquant au cas de la Fondation et aux durées de conservation de l'annexe 2.5.</p>
+<p>b) Comparez les trois options de l'annexe 2.4 B au regard des principes du RGPD rappelés dans l'annexe 2.5, du coût et des risques, puis recommandez l'une d'elles en la justifiant. Le choix de l'hébergement n'est pas à traiter.</p>
+<hr />
+<h2 id="dossier-3--sécuriser-laccès-aux-données-préparer-une-crise-cyber-rendre-le-numérique-plus-responsable-13-points">DOSSIER 3 – SÉCURISER L'ACCÈS AUX DONNÉES, PRÉPARER UNE CRISE CYBER, RENDRE LE NUMÉRIQUE PLUS RESPONSABLE (13 points)</h2>
+<h3 id="annexe-31--les-habilitations-aux-dossiers-des-personnes-accompagnées-note-de-mme-agnès-pellegrain-déléguée-à-la-protection-des-données-et-constats-davril-2027">ANNEXE 3.1 – Les habilitations aux dossiers des personnes accompagnées (note de Mme Agnès PELLEGRAIN, déléguée à la protection des données, et constats d'avril 2027)</h3>
+<p><strong>A. Les comptes des trois logiciels de dossier</strong></p>
+<p>J'ai rapproché, le 31 mars 2027, la liste des comptes des trois logiciels de la liste des salariés présents dans le progiciel de paie.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Logiciel de l'ancienne association</th>
+<th>Établissements et services équipés</th>
+<th>Comptes actifs</th>
+<th>dont comptes nominatifs de salariés présents</th>
+<th>dont comptes partagés par une unité</th>
+<th>dont comptes de salariés qui ont quitté la Fondation</th>
+<th>dont comptes d'éditeur ou d'administration</th>
+<th>Dernière revue des droits</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GERVELLE</td>
+<td>18</td>
+<td>900</td>
+<td>760</td>
+<td>40</td>
+<td>90</td>
+<td>10</td>
+<td>2018</td>
+</tr>
+<tr class="even">
+<td>MIRANDELLE</td>
+<td>9</td>
+<td>450</td>
+<td>375</td>
+<td>20</td>
+<td>50</td>
+<td>5</td>
+<td>jamais</td>
+</tr>
+<tr class="odd">
+<td>LUMERANDE</td>
+<td>5</td>
+<td>250</td>
+<td>215</td>
+<td>10</td>
+<td>20</td>
+<td>5</td>
+<td>2017</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td><strong>32</strong></td>
+<td><strong>1 600</strong></td>
+<td><strong>1 350</strong></td>
+<td><strong>70</strong></td>
+<td><strong>160</strong></td>
+<td><strong>20</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Comptes partagés</strong> : les 70 comptes d'unité (par exemple « nuit-foyer-3 ») servent sur les postes des salles de transmissions, surtout la nuit et le week-end. Dans 10 des 20 unités que j'ai visitées, le mot de passe était affiché près du poste.</li>
+<li><strong>Remplaçants et intérimaires</strong> : environ 150 remplaçants et intérimaires différents travaillent chaque mois dans les établissements. L'ouverture d'un compte demande en moyenne 10 jours (courriel du directeur d'établissement à la DSI, sans formulaire). Pour quelques jours de remplacement, le cadre de l'unité remet au remplaçant l'identifiant et le mot de passe d'un titulaire absent, ou le fait travailler sur le compte de l'unité.</li>
+<li><strong>Salariés partis</strong> : sur les 160 comptes de salariés qui ont quitté la Fondation, 30 ont été utilisés après la date de départ, le plus souvent dans l'unité où le salarié travaillait. La direction des ressources humaines enregistre environ 250 départs et 300 arrivées par an dans le progiciel de paie ; elle n'en informe pas la DSI. La fermeture d'un compte dépend de la demande du directeur d'établissement.</li>
+<li><strong>Mobilités</strong> : environ 100 salariés changent d'établissement chaque année. Un nouveau compte leur est ouvert, l'ancien n'est pas fermé : 60 salariés ont ainsi accès aux dossiers de deux établissements ou plus.</li>
+<li><strong>Droits par établissement</strong> : dans les trois logiciels, un compte ouvert dans un établissement voit tous les dossiers de cet établissement, y compris les comptes rendus des médecins et des psychologues. Dans plusieurs foyers, les agents de cuisine et d'entretien ont un compte pour consulter les régimes alimentaires : ils voient l'ensemble du dossier. Seul le logiciel de l'ancienne association GERVELLE distingue un profil « soignant ».</li>
+<li><strong>Comptes d'éditeur et d'administration</strong> : chaque éditeur dispose d'un accès permanent à distance pour la maintenance ; les mots de passe de ces comptes n'ont pas changé depuis l'installation des logiciels.</li>
+<li><strong>Traces</strong> : seul le logiciel de l'ancienne association GERVELLE enregistre les consultations des dossiers (journal conservé trois mois, que personne ne consulte) ; les deux autres n'enregistrent que les modifications.</li>
+<li><strong>Registre</strong> : le registre des activités de traitement de la Fondation, établi en 2020, ne précise pas quelles catégories de professionnels accèdent à quelles données.</li>
+<li>En janvier 2027, une famille s'est plainte qu'un ancien éducateur, parti en 2025 dans une autre organisation, connaissait des éléments récents du dossier de sa fille. Rien n'a pu être établi, faute de traces.</li>
+</ul>
+<p><strong>B. Les droits prévus dans le dossier unique</strong></p>
+<ul>
+<li>Le dossier unique doit être utilisé par environ 1 600 professionnels. Il permet de définir des profils de droits par métier et par établissement, d'activer l'authentification à deux facteurs et d'enregistrer toutes les consultations ; aucun profil n'est encore défini. Pour gagner du temps, l'équipe projet propose de « reprendre les droits actuels des trois logiciels ».</li>
+<li>Environ 1 500 familles et représentants légaux pourront consulter une partie du dossier de leur proche, selon des droits définis pour chaque personne. Personne n'a encore décidé qui fixe ces droits, ni comment ils sont modifiés quand la situation de la personne ou de sa famille change, ou quand un adulte accompagné ne souhaite pas que sa famille lise certains écrits.</li>
+</ul>
+<p><strong>C. La demande du conseil d'administration et les témoignages</strong></p>
+<ul>
+<li><strong>M. Henri LABASTROU, président du conseil d'administration</strong> : « Avant d'ouvrir le dossier unique à 1 600 professionnels et à 1 500 familles, le conseil veut savoir qui voit quoi, et pourquoi. Je demande un audit des habilitations, avec des conclusions présentées au conseil de septembre 2027, avant la mise en service du dossier unique prévue à partir de la fin de l'année. »</li>
+<li><strong>Mme Nathalie BRÉCHEVAL, directrice générale</strong>, vous confie cet audit, à mener en juin et juillet 2027. Vous disposerez de l'appui de la déléguée à la protection des données ; un administrateur de la DSI fournira les extractions des comptes et des traces.</li>
+<li><strong>Mme Sandrine QUILLEVÈRE, directrice d'une maison d'accueil spécialisée</strong> : « La nuit, un professionnel remplaçant ne peut pas attendre dix jours un compte. Si on lui ferme l'accès, il travaillera sans les consignes d'accompagnement des résidents. »</li>
+<li><strong>M. Laurent TRÉVENEC, directeur des systèmes d'information</strong> : « Je ferme les comptes quand on me prévient ; personne ne me prévient. »</li>
+<li><strong>Mme Valérie OSMONDE, directrice des ressources humaines</strong> : « La paie sait qui part. Mais ce n'est pas à mon service de gérer les comptes informatiques. »</li>
+</ul>
+<h3 id="annexe-32--une-attaque-dans-une-association-voisine-et-la-situation-de-la-fondation-note-de-m-laurent-trévenec-directeur-des-systèmes-dinformation-avril-2027">ANNEXE 3.2 – Une attaque dans une association voisine et la situation de la Fondation (note de M. Laurent TRÉVENEC, directeur des systèmes d'information, avril 2027)</h3>
+<p><strong>A. Ce qui est arrivé à l'association TERNAVIELLE</strong></p>
+<p>L'association TERNAVIELLE gère 15 établissements et services pour des personnes en situation de handicap dans un département voisin. Son directeur général nous a présenté son retour d'expérience en mars 2027.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Moment</th>
+<th>Faits</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mi-janvier 2027</td>
+<td>Un salarié répond à un faux courriel aux couleurs de la messagerie et y saisit son identifiant et son mot de passe.</td>
+</tr>
+<tr class="even">
+<td>Samedi 6 février 2027, 2 h</td>
+<td>Un rançongiciel chiffre les serveurs de l'association, dont celui du logiciel de dossier des personnes accompagnées, ainsi que les disques de sauvegarde, reliés en permanence au réseau. Un message de rançon s'affiche.</td>
+</tr>
+<tr class="odd">
+<td>Nuit du samedi au dimanche</td>
+<td>Dans quatre foyers, les professionnels de nuit ne peuvent plus consulter les consignes d'accompagnement (régimes, allergies, traitements à donner). Le directeur d'astreinte ne sait pas qui appeler : le prestataire informatique est fermé le week-end, aucune liste de contacts n'existe.</td>
+</tr>
+<tr class="even">
+<td>Lundi 8 février</td>
+<td>Le directeur général est informé à 9 h. Une cellule de crise est improvisée ; personne ne sait qui doit décider de couper les liaisons avec les établissements ni de répondre à la demande de rançon.</td>
+</tr>
+<tr class="odd">
+<td>Vendredi 12 février</td>
+<td>La plainte est déposée, six jours après la découverte de l'attaque. La violation de données est notifiée à l'autorité de contrôle le cinquième jour.</td>
+</tr>
+<tr class="even">
+<td>Mi-février</td>
+<td>Les attaquants publient sur un site environ 2 000 dossiers (identité, diagnostics, comptes rendus). Plusieurs familles l'apprennent par la presse locale, avant tout courrier de l'association.</td>
+</tr>
+<tr class="odd">
+<td>Février et mars</td>
+<td>Les dossiers restent indisponibles trois semaines. Les équipes reviennent au papier : consignes reconstituées de mémoire et à partir d'anciennes impressions, transmissions écrites à la main puis ressaisies.</td>
+</tr>
+</tbody>
+</table>
+<p>L'association avait souscrit une assurance contre les risques cyber ; l'assureur a refusé d'indemniser les pertes et les frais engagés, la plainte ayant été déposée hors délai ; seule l'assistance prévue au contrat a été fournie. Le coût de l'attaque est estimé à 600 k€ (prestataire spécialisé dans la réponse aux incidents, matériels, heures supplémentaires), sans compter la perte de confiance des familles.</p>
+<p><strong>B. La situation de la Fondation VERLANDRE</strong></p>
+<ul>
+<li><strong>Sauvegardes</strong> : les serveurs de la salle du siège sont sauvegardés chaque nuit sur des disques installés dans la même salle et reliés en permanence au réseau ; une copie mensuelle est emportée au domicile d'un administrateur. Aucune restauration complète n'a jamais été essayée.</li>
+<li><strong>Crise</strong> : il n'existe aucune procédure de crise écrite ni aucune liste à jour des contacts (éditeurs, prestataires, assureur). Un samedi soir de novembre 2026, une panne de la salle de serveurs a privé pendant 6 heures les unités de nuit de l'accès aux dossiers ; personne n'a su qui prévenir.</li>
+<li><strong>Astreinte</strong> : chaque nuit et chaque week-end, un directeur d'établissement par pôle est d'astreinte pour les événements graves (accident, fugue, incendie). La procédure d'astreinte ne prévoit rien pour une panne ou une attaque informatique. La DSI n'assure aucune permanence la nuit ni le week-end.</li>
+<li><strong>Rôles</strong> : la sécurité est assurée, en plus de leurs autres tâches, par les trois administrateurs des infrastructures et du réseau. Il n'existe ni politique de sécurité écrite ni charte informatique commune ; la charte de l'ancienne association GERVELLE date de 2015. Personne n'est désigné pour décider en cas d'attaque.</li>
+<li><strong>Hameçonnage</strong> : en février 2027, un faux courriel aux couleurs de la messagerie a recueilli les identifiants de 25 salariés ; la DSI l'a appris par hasard. L'authentification à deux facteurs n'est activée que pour les comptes de la DSI.</li>
+<li><strong>Assurance</strong> : la Fondation négocie un contrat d'assurance cyber (plafond de 2 000 k€, franchise de 50 k€). Avant de signer, l'assureur demande l'authentification à deux facteurs des accès à distance, des sauvegardes déconnectées du réseau dont la restauration a été essayée, et une procédure écrite de gestion de crise.</li>
+<li><strong>Familles</strong> : les familles sont informées par courrier et par téléphone ; aucun message n'est prévu en cas d'incident touchant les données.</li>
+</ul>
+<p><strong>C. Témoignages</strong></p>
+<ul>
+<li><strong>Mme Nathalie BRÉCHEVAL, directrice générale</strong> : « Je ne veux pas découvrir un samedi soir que personne ne sait qui décide. »</li>
+<li><strong>M. Thierry BOURDAILLE, surveillant de nuit dans un foyer d'hébergement</strong> : « La nuit, je suis seul avec douze résidents. Si l'ordinateur ne marche plus, je dois savoir où trouver les consignes et qui appeler. »</li>
+<li><strong>Mme Odile LANGEVELLE, représentante des familles au conseil d'administration</strong> : « Si un jour les dossiers de nos enfants sont publiés, je veux l'apprendre par la Fondation, pas par le journal. »</li>
+</ul>
+<h3 id="annexe-33--le-numérique-de-la-fondation-et-les-personnes-accompagnées-notes-de-m-laurent-trévenec-et-de-m-rémi-cazenove-directeur-du-pôle-travail-et-témoignages-avril-2027">ANNEXE 3.3 – Le numérique de la Fondation et les personnes accompagnées (notes de M. Laurent TRÉVENEC et de M. Rémi CAZENOVE, directeur du pôle Travail, et témoignages, avril 2027)</h3>
+<p><strong>A. Le portail des familles et l'application des personnes accompagnées</strong></p>
+<ul>
+<li>Le dossier unique ouvrira un portail des familles et une application pour smartphone et tablette : consultation du planning, des rendez-vous et du projet personnalisé, messages avec l'équipe. Le cahier des charges ne contient aucune exigence d'accessibilité ; les écrans ont été conçus par l'éditeur, sans les personnes concernées.</li>
+<li>Beaucoup de personnes accompagnées lisent peu ou pas ; certaines ont des troubles de la vue, de la motricité fine ou de la compréhension. Les établissements rédigent déjà certains documents (règlement de fonctionnement, menus, projet personnalisé) en phrases courtes, illustrées de pictogrammes.</li>
+<li>Selon une enquête menée auprès des familles en mars 2027, environ 30 % d'entre elles n'utilisent pas internet ou ont besoin d'aide pour le faire.</li>
+<li>En avril 2027, une première version du portail et de l'application a été présentée à 20 personnes accompagnées et à 20 familles. Seules 6 personnes et 12 familles ont réussi, sans aide, à trouver le prochain rendez-vous.</li>
+<li><strong>Mme Odile LANGEVELLE, représentante des familles</strong> : « Je voudrais que mon fils puisse lire lui-même son planning, et que les parents qui n'ont pas d'ordinateur ne soient pas oubliés. »</li>
+</ul>
+<p><strong>B. Le projet d'outil de rédaction automatique des transmissions</strong></p>
+<ul>
+<li>La société SCRIBALEN propose un outil d'intelligence artificielle générative : en fin de service, le professionnel dicte ses observations sur son smartphone ; l'outil les transcrit et rédige une transmission structurée, enregistrée dans le dossier de la personne. L'éditeur annonce un gain de 20 minutes par professionnel et par jour. L'outil utilise un modèle d'un fournisseur tiers, hébergé dans l'Union européenne ; l'éditeur indique que son offre satisfait aux exigences légales applicables à l'hébergement des données de santé, ce point n'est pas à analyser.</li>
+<li>Les enregistrements vocaux et les textes sont conservés 12 mois par l'éditeur « pour améliorer le service ». L'outil peut aussi produire une synthèse mensuelle du comportement de chaque personne accompagnée et signaler à l'encadrement les professionnels dont les écrits sont jugés incomplets.</li>
+<li>Lors d'un essai de deux semaines dans un foyer, sur 200 transmissions rédigées par l'outil, 20 contenaient une information inexacte (un fait qui n'avait pas été dicté, une confusion de prénoms). Les professionnels dictaient parfois dans la chambre ou devant la personne.</li>
+<li><strong>M. Thierry BOURDAILLE, surveillant de nuit</strong> : « Je ne suis pas à l'aise avec l'écrit : dicter m'aiderait beaucoup. »</li>
+<li><strong>Une éducatrice spécialisée</strong> : « Une transmission, c'est un regard professionnel sur une personne, pas un résumé fait par une machine. »</li>
+<li><strong>Mme Odile LANGEVELLE</strong> : « Je veux savoir si c'est une machine qui écrit sur mon fils. »</li>
+</ul>
+<p><strong>C. La salle de serveurs du siège</strong></p>
+<ul>
+<li>La salle compte 25 serveurs physiques, dont 10 sont utilisés à moins de 10 % de leur capacité ; la climatisation date de 2012. Elle héberge les trois logiciels de dossier, la paie, le planning, la comptabilité et 8 To de fichiers partagés, dont la moitié n'a pas été ouverte depuis trois ans.</li>
+<li>Le DSI souhaite fermer la salle d'ici 2029 et passer à des services en ligne pour les applications qui y restent. Le fournisseur pressenti pour héberger ces applications ne communique ni la localisation de ses centres de données ni leurs consommations d'énergie.</li>
+</ul>
+<p><strong>D. Les équipements et l'établissement d'aide par le travail</strong></p>
+<ul>
+<li>Le parc compte environ 1 400 ordinateurs et 600 tablettes et smartphones. Il n'existe pas de politique des équipements : chaque établissement commande sur son budget ; les ordinateurs sont remplacés en moyenne tous les quatre ans. Environ 300 ordinateurs et 150 smartphones retirés sont stockés dans des armoires du siège ; d'autres sont jetés avec les déchets ordinaires. Aucun équipement n'a été réemployé en 2026.</li>
+<li>La DSI prévoit de renouveler environ 400 ordinateurs des unités. Selon elle, environ 150 d'entre eux pourraient servir deux ans de plus avec de la mémoire et un disque neuf (environ 100 € par poste) ; les 250 autres sont trop anciens.</li>
+<li><strong>M. Rémi CAZENOVE, directeur du pôle Travail</strong> : « L'atelier de conditionnement trie, nettoie et étiquette depuis 2025 des téléphones reconditionnés pour une entreprise de la région ; 12 travailleurs y sont formés. Nous pourrions reconditionner les équipements de la Fondation : c'est un travail valorisant pour les travailleurs. »</li>
+<li><strong>M. Laurent TRÉVENEC</strong> : « Je veux bien, à condition qu'aucune donnée des personnes accompagnées ne reste sur un disque qui sort de nos murs. »</li>
+</ul>
+<h3 id="annexe-34--repères-au-31122026">ANNEXE 3.4 – Repères (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu</th>
+<th>Situation au 31/12/2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2016/679 relatif à la protection des données personnelles (RGPD)</td>
+<td>Le responsable du traitement met en œuvre des mesures de sécurité adaptées au risque, pour garantir la confidentialité, l'intégrité, la disponibilité et la résilience des systèmes, ainsi que la capacité à rétablir l'accès aux données en cas d'incident, et en vérifie régulièrement l'efficacité. Les données relatives à la santé font l'objet d'une protection renforcée. Un traitement susceptible d'engendrer un risque élevé pour les personnes est précédé d'une analyse d'impact relative à la protection des données. Une violation de données est notifiée à l'autorité de contrôle dans les 72 heures et, en cas de risque élevé, les personnes concernées en sont informées. Le délégué à la protection des données informe, conseille et contrôle le respect du règlement.</td>
+<td>Applicable depuis le 25/05/2018. Une proposition européenne de simplification (« omnibus numérique », 19/11/2025) modifiant ce règlement est en discussion et n'est pas applicable.</td>
+</tr>
+<tr class="even">
+<td>Guide de la sécurité des données personnelles (autorité de contrôle), édition 2024</td>
+<td>Fiches de recommandations, dont la gestion des habilitations (profils définis selon les besoins des métiers, retrait des droits au départ ou au changement de poste, revue régulière des droits), la traçabilité des accès, la sauvegarde et la gestion des incidents.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO/IEC 27001:2022</td>
+<td>Norme internationale qui spécifie les exigences d'un système de management de la sécurité de l'information, fondé sur l'appréciation et le traitement des risques ; son annexe A énumère 93 mesures de sécurité, dont le contrôle d'accès, la gestion des incidents et la sauvegarde.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27005:2022</td>
+<td>Lignes directrices pour la gestion des risques liés à la sécurité de l'information : identifier, analyser, évaluer et traiter les risques (réduire, conserver, éviter ou partager le risque, par exemple par une assurance).</td>
+<td>En vigueur</td>
+</tr>
+<tr class="odd">
+<td>EBIOS Risk Manager, version 1.5 (ANSSI)</td>
+<td>Méthode d'appréciation et de traitement des risques numériques, en cinq ateliers, qui intègre les parties prenantes de l'écosystème (éditeurs, prestataires) ; compatible avec l'ISO/IEC 27005:2022.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="even">
+<td>Guide d'hygiène informatique de l'ANSSI (2017)</td>
+<td>42 mesures de bonnes pratiques, dont la sensibilisation des utilisateurs, l'identification nominative de chaque personne qui accède au système d'information, l'encadrement des arrivées et des départs des utilisateurs et la sauvegarde des données.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="odd">
+<td>Directive (UE) 2022/2555 (« NIS 2 »)</td>
+<td>Cybersécurité d'entités dites essentielles ou importantes, selon leur secteur et leur taille. Les organes de direction approuvent les mesures de gestion des risques, en supervisent la mise en œuvre, peuvent être tenus pour responsables et suivent une formation. Les mesures couvrent notamment l'analyse des risques, la gestion des incidents, la continuité des activités et la gestion des crises, le contrôle d'accès, la formation et l'authentification multifacteur.</td>
+<td>Délai de transposition expiré le 17/10/2024. En France, le projet de loi relatif à la résilience des infrastructures critiques et au renforcement de la cybersécurité, adopté par le Sénat le 12/03/2025, n'est ni adopté par l'Assemblée nationale ni promulgué.</td>
+</tr>
+<tr class="even">
+<td>Loi n° 2023-22 du 24 janvier 2023 (LOPMI), article L. 12-10-1 du code des assurances</td>
+<td>L'indemnisation par un assureur des pertes et dommages causés par une atteinte à un système d'information, y compris le remboursement d'une rançon, est subordonnée au dépôt d'une plainte au plus tard 72 heures après la connaissance de l'atteinte.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="odd">
+<td>Règlement (UE) 2024/1689 sur l'intelligence artificielle, modifié par le règlement (UE) 2026/1744</td>
+<td>Obligations de transparence : les personnes sont informées qu'elles interagissent avec un système d'intelligence artificielle ; les contenus produits par une intelligence artificielle générative sont marqués comme tels.</td>
+<td>Obligations de transparence applicables depuis le 02/08/2026</td>
+</tr>
+<tr class="even">
+<td>Loi n° 2021-1485 du 15 novembre 2021 visant à réduire l'empreinte environnementale du numérique en France (REEN)</td>
+<td>Sensibilisation au numérique responsable, allongement de la durée de vie des équipements et réemploi, écoconception des services numériques, centres de données et réseaux moins énergivores.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="odd">
+<td>Référentiel général d'écoconception de services numériques (RGESN), version 2024</td>
+<td>Critères d'écoconception des services numériques (stratégie, expérience utilisateur, contenus, hébergement, etc.), dont l'usage du service sur des équipements anciens.</td>
+<td>En vigueur</td>
+</tr>
+<tr class="even">
+<td>Étude de l'ADEME et de l'Arcep sur l'empreinte environnementale du numérique en France</td>
+<td>Les terminaux représentent de 65 % à 92 % de l'empreinte environnementale du numérique selon l'indicateur considéré, principalement du fait de leur fabrication.</td>
+<td>Volets de 2022 et de 2023 ; mise à jour du 17/01/2025</td>
+</tr>
+</tbody>
+</table>
+<p>Le conseil d'administration considère, sans que ce point soit à discuter, que la Fondation n'est pas à ce jour identifiée comme entité essentielle ou importante au sens de la directive NIS 2 ; il a décidé de s'inspirer de ses mesures. Il n'est demandé aucune analyse juridique.</p>
+<h3 id="travail-à-faire-2">Travail à faire</h3>
+<p>La Fondation VERLANDRE s'apprête à ouvrir le dossier unique à 1 600 professionnels et à 1 500 familles, alors que personne ne sait qui voit quoi dans les logiciels actuels, qu'une association voisine vient de subir une attaque qui a paralysé ses établissements et que le projet « Horizon 2030 » demande un numérique responsable, accessible et éthique. Mme BRÉCHEVAL vous demande d'auditer les habilitations, d'analyser les risques qui pèsent sur les données des personnes accompagnées, de préparer la Fondation à une crise cyber et de proposer une stratégie de numérique responsable. Vous mobiliserez pour cela les annexes 1.1 et 3.1 à 3.4 ainsi que vos connaissances professionnelles.</p>
+<p><strong>3.1 – L'audit des habilitations aux dossiers des personnes accompagnées (3 points)</strong></p>
+<p>a) Après avoir défini l'audit du système d'information et précisé ce qui le distingue du contrôle interne, présentez la démarche de l'audit demandé par le conseil d'administration : objectifs, périmètre, étapes et livrables, en tenant compte du calendrier fixé dans l'annexe 3.1.</p>
+<p>b) Représentez, sous la forme d'un tableau, le processus « arrivée, mobilité, départ » des utilisateurs des logiciels de dossier tel qu'il fonctionne aujourd'hui : pour chacune des trois étapes, l'acteur, le risque et le contrôle interne attendu. Indiquez ensuite trois tests de contrôle que vous mènerez pendant l'audit, chacun relié à un constat de l'annexe 3.1. Les diligences attendues sont des rapprochements, des sondages, des entretiens et des observations.</p>
+<p>c) Proposez quatre critères de performance et de conformité au regard desquels l'audit appréciera les habilitations (par exemple la fiabilité, l'efficacité, la sécurité, la conformité au RGPD) ; pour chacun, précisez ce qui est attendu et appréciez la situation actuelle à partir de l'annexe 3.1.</p>
+<p><strong>3.2 – Les risques pesant sur les données des personnes accompagnées (3 points)</strong></p>
+<p>a) Après avoir présenté la typologie des risques liés aux systèmes d'information (cybermenaces, défaillances opérationnelles, risques réglementaires et métiers), identifiez quatre risques pesant sur les données des personnes accompagnées, révélés par les annexes 3.1 et 3.2, en couvrant les trois catégories. Pour chacun, précisez sa catégorie et ses conséquences pour les personnes accompagnées et pour la Fondation.</p>
+<p>b) Choisissez l'un des référentiels de l'annexe 3.4 qui permettent d'apprécier les risques, en précisant sa nature (norme, lignes directrices, méthode ou guide), puis indiquez, en principe, comment la démarche qu'il propose permettrait d'évaluer ces quatre risques et de décider de leur traitement. Appliquez les options de traitement à deux des quatre risques, dont l'un au moins fera intervenir le contrat d'assurance cyber en cours de négociation. Ni le détail des ateliers ni une cotation chiffrée ne sont attendus.</p>
+<p><strong>3.3 – La politique de cybersécurité et la gestion d'une crise cyber (3,5 points)</strong></p>
+<p>a) Après avoir défini la politique de sécurité du système d'information et rappelé ses objectifs, proposez les quatre principes sur lesquels vous fonderiez celle de la Fondation, chacun relié à un risque de la question 3.2 et décliné en une mesure prioritaire. Aucun paramétrage n'est attendu.</p>
+<p>b) Proposez l'organisation de la gestion d'une crise cyber à la Fondation : le déclenchement et la composition de la cellule de crise ; les rôles du conseil d'administration, de la directrice générale, de la direction des systèmes d'information, des directeurs d'établissement d'astreinte, de la déléguée à la protection des données, de l'assureur et des prestataires ; la communication auprès des professionnels, des familles et des personnes accompagnées. Vous tiendrez compte des établissements ouverts jour et nuit et des enseignements de l'annexe 3.2. Le contenu détaillé des plans de continuité et de reprise n'est pas attendu.</p>
+<p><strong>3.4 – Une stratégie de numérique responsable, accessible et éthique (3,5 points)</strong></p>
+<p>a) Après avoir précisé ce qu'est une gouvernance du système d'information orientée vers la responsabilité sociétale (inclusion, éthique, sobriété), proposez trois mesures pour rendre le portail des familles et l'application accessibles aux personnes accompagnées et aux familles, puis quatre règles éthiques d'usage de l'outil de rédaction automatique des transmissions, en vous appuyant sur les annexes 3.3 et 3.4.</p>
+<p>b) Indiquez trois conditions d'une transition responsable de la salle de serveurs du siège vers des services en ligne, puis proposez la place de l'établissement d'aide par le travail dans le réemploi des équipements, avec deux conditions de réussite. Aucun calcul d'empreinte n'est attendu.</p>
+<p>c) Proposez deux indicateurs de suivi de cette stratégie, l'un pour l'accessibilité, l'autre pour le réemploi des équipements, chacun précisé par sa formule, sa source, sa fréquence, sa cible et son axe.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
