@@ -53,15 +53,17 @@ Les écritures comptables devront comporter les numéros et les noms des comptes
 
 ---
 
-## DOSSIER 1 – COMPTES DE GROUPE (45 points)
-
-### Présentation
+## Présentation
 
 Le groupe ARVELLE exploite des campings haut de gamme et des villages de vacances dans les Alpes du Nord et sur le littoral méditerranéen. Sa société de tête, la SA ARVELLE, installée à Annecy (Haute-Savoie), est détenue par ses fondateurs et par un fonds d'investissement ; ses actions ne sont pas cotées, mais l'emprunt obligataire qu'elle a émis en 2026 est admis aux négociations sur un marché réglementé. Le groupe emploie 780 salariés en moyenne sur l'année, bien davantage en haute saison ; son chiffre d'affaires consolidé s'est élevé à 168 M€ en 2026.
 
 Le tourisme de plein air se concentre : les exploitants familiaux cèdent leurs terrains ou réorganisent leurs activités, comme la SA BELLECOMBE, qui exploite au bord d'un lac un camping et une base de loisirs nautiques. Les loueurs de matériel de sports de montagne doivent, eux, s'adapter à des hivers plus courts, comme la SARL ALTIGLISSE, qui exploite des magasins de location de skis et de vélos dans les stations de Haute-Savoie. Ni BELLECOMBE ni ALTIGLISSE n'ont de lien en capital avec ARVELLE.
 
 Vous êtes collaborateur ou collaboratrice du cabinet CORVANE Audit et Conseil, société d'expertise comptable et de commissariat aux comptes installée à Annecy. Le cabinet assiste ARVELLE dans l'établissement de ses comptes consolidés, conseille BELLECOMBE dans son projet de scission et certifie les comptes d'ALTIGLISSE. Les entreprises et les personnes citées sont fictives.
+
+---
+
+## DOSSIER 1 – COMPTES DE GROUPE (45 points)
 
 ARVELLE exploite en direct la plupart de ses sites et commercialise les séjours de tous les sites du groupe par sa centrale de réservation en ligne. Le 01/01/2026, elle a acquis 70 % du capital de la SAS LACUSTRA, qui exploite trois campings au bord des lacs savoyards. Elle partage depuis 2024 avec un hôtelier le contrôle de la SAS ALPAGE RÉSIDENCES, qui exploite des résidences de tourisme en station, et détient une participation minoritaire dans la SA THERMALYS, exploitant d'établissements thermaux. La directrice financière d'ARVELLE, Mme Clémence VAUDAGNE, demande au cabinet de l'aider à préparer les comptes consolidés au 31/12/2026.
 
@@ -256,14 +258,6 @@ Le groupe ne comprend aucune autre société que celles de l'annexe 1.1.
 
 ## DOSSIER 2 – OPÉRATIONS DE RESTRUCTURATION (25 points)
 
-### Présentation
-
-Le groupe ARVELLE exploite des campings haut de gamme et des villages de vacances dans les Alpes du Nord et sur le littoral méditerranéen. Sa société de tête, la SA ARVELLE, installée à Annecy (Haute-Savoie), est détenue par ses fondateurs et par un fonds d'investissement ; ses actions ne sont pas cotées, mais l'emprunt obligataire qu'elle a émis en 2026 est admis aux négociations sur un marché réglementé. Le groupe emploie 780 salariés en moyenne sur l'année, bien davantage en haute saison ; son chiffre d'affaires consolidé s'est élevé à 168 M€ en 2026.
-
-Le tourisme de plein air se concentre : les exploitants familiaux cèdent leurs terrains ou réorganisent leurs activités, comme la SA BELLECOMBE, qui exploite au bord d'un lac un camping et une base de loisirs nautiques. Les loueurs de matériel de sports de montagne doivent, eux, s'adapter à des hivers plus courts, comme la SARL ALTIGLISSE, qui exploite des magasins de location de skis et de vélos dans les stations de Haute-Savoie. Ni BELLECOMBE ni ALTIGLISSE n'ont de lien en capital avec ARVELLE.
-
-Vous êtes collaborateur ou collaboratrice du cabinet CORVANE Audit et Conseil, société d'expertise comptable et de commissariat aux comptes installée à Annecy. Le cabinet assiste ARVELLE dans l'établissement de ses comptes consolidés, conseille BELLECOMBE dans son projet de scission et certifie les comptes d'ALTIGLISSE. Les entreprises et les personnes citées sont fictives.
-
 La SA BELLECOMBE exploite depuis 1981, sur la rive d'un lac de Haute-Savoie, deux activités organisées en deux divisions distinctes : un camping de 220 emplacements, dont 60 équipés de mobil-homes, et une base de loisirs nautiques (location de bateaux électriques, de voiliers et de planches, école de voile). Chaque division a ses installations, son personnel permanent et saisonnier, sa clientèle et son propre site de réservation. Le capital de BELLECOMBE est détenu à 75 % par la SAS GAVARD PARTICIPATIONS, holding de la famille du fondateur, et à 25 % par des actionnaires individuels, anciens salariés et habitants de la commune.
 
 La famille GAVARD veut se consacrer aux loisirs nautiques et confier le camping à un exploitant spécialisé. Les organes de direction des sociétés concernées ont arrêté un projet de scission de BELLECOMBE : la branche camping serait apportée à la SAS PRAZALPE, qui exploite des campings en Savoie et en Haute-Savoie, et la branche nautique à la SAS VOGALAC, petite société de location d'embarcations installée sur le même lac, dont la fondatrice souhaite s'associer à la famille GAVARD. BELLECOMBE disparaîtrait.
@@ -412,14 +406,6 @@ Les autres éléments de la branche (stocks, disponibilités, dettes) ont une va
 ---
 
 ## DOSSIER 3 – AUDIT (30 points — dont 12 points sur la durabilité)
-
-### Présentation
-
-Le groupe ARVELLE exploite des campings haut de gamme et des villages de vacances dans les Alpes du Nord et sur le littoral méditerranéen. Sa société de tête, la SA ARVELLE, installée à Annecy (Haute-Savoie), est détenue par ses fondateurs et par un fonds d'investissement ; ses actions ne sont pas cotées, mais l'emprunt obligataire qu'elle a émis en 2026 est admis aux négociations sur un marché réglementé. Le groupe emploie 780 salariés en moyenne sur l'année, bien davantage en haute saison ; son chiffre d'affaires consolidé s'est élevé à 168 M€ en 2026.
-
-Le tourisme de plein air se concentre : les exploitants familiaux cèdent leurs terrains ou réorganisent leurs activités, comme la SA BELLECOMBE, qui exploite au bord d'un lac un camping et une base de loisirs nautiques. Les loueurs de matériel de sports de montagne doivent, eux, s'adapter à des hivers plus courts, comme la SARL ALTIGLISSE, qui exploite des magasins de location de skis et de vélos dans les stations de Haute-Savoie. Ni BELLECOMBE ni ALTIGLISSE n'ont de lien en capital avec ARVELLE.
-
-Vous êtes collaborateur ou collaboratrice du cabinet CORVANE Audit et Conseil, société d'expertise comptable et de commissariat aux comptes installée à Annecy. Le cabinet assiste ARVELLE dans l'établissement de ses comptes consolidés, conseille BELLECOMBE dans son projet de scission et certifie les comptes d'ALTIGLISSE. Les entreprises et les personnes citées sont fictives.
 
 La SARL ALTIGLISSE loue des skis, des snowboards et des vélos, dont des vélos à assistance électrique (VAE), dans cinq magasins situés dans quatre stations de Haute-Savoie. Ses clients réservent en magasin, sur son site internet ou par l'intermédiaire d'une plateforme de réservation en ligne. L'hiver, elle loue son matériel à la journée et, depuis l'automne 2026, propose un forfait de location « saison », payé d'avance ; l'été, elle loue des vélos. Elle revend aussi son matériel d'occasion et des accessoires. Son capital est détenu par son gérant, M. Paul VERNAZ (60 %), et par deux autres associés.
 

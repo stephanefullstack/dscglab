@@ -54,15 +54,17 @@ Les écritures comptables devront comporter les numéros et les noms des comptes
 
 ---
 
-## DOSSIER 1 – COMPTES DE GROUPE (45 points)
-
-### Présentation
+## Présentation
 
 Le groupe DRAVENNE est un acteur régional de la rénovation énergétique des bâtiments, installé à Clermont-Ferrand (Puy-de-Dôme). Sa société de tête, la SAS DRAVENNE, holding animatrice dont le capital est entièrement détenu par la famille DRAVENNE, contrôle des entreprises d'installation de pompes à chaleur, de génie climatique et de rénovation thermique qui travaillent pour des bailleurs sociaux, des collectivités et des copropriétés. Le groupe emploie 420 salariés ; son chiffre d'affaires consolidé s'est élevé à 86 M€ en 2026.
 
 Le marché, soutenu par les obligations de rénovation des bâtiments et par les aides publiques, se concentre. Les entreprises d'isolation se rapprochent pour atteindre la taille exigée par les grands appels d'offres, comme la SA ISOLVÈRE et la SAS FAÇALINE, sous-traitants habituels du groupe. Les collectivités développent de leur côté des réseaux de chaleur alimentés par des énergies renouvelables, comme celui qu'exploite la SA d'économie mixte locale CALORÈNE, cliente du groupe. Aucune de ces trois sociétés n'a de lien en capital avec DRAVENNE.
 
 Vous êtes collaborateur ou collaboratrice du cabinet VERCLAIR Audit et Conseil, société d'expertise comptable et de commissariat aux comptes installée à Clermont-Ferrand. Le cabinet assiste DRAVENNE dans l'établissement de ses comptes consolidés, conseille ISOLVÈRE dans son projet de fusion et certifie les comptes de CALORÈNE. Les entreprises et les personnes citées sont fictives.
+
+---
+
+## DOSSIER 1 – COMPTES DE GROUPE (45 points)
 
 Le 01/01/2026, DRAVENNE a acquis 80 % du capital de la SA CLIMESTE, spécialiste du génie climatique, et, à travers elle, la SAS HYDRÉLIA, qui installe des pompes à chaleur collectives. DRAVENNE n'a jamais publié de comptes consolidés ; le groupe en prépare pour la première fois au 31/12/2026. Le capital de DRAVENNE est détenu directement par des membres de la famille DRAVENNE, personnes physiques. Aucune action ni aucun autre titre de DRAVENNE n'est admis aux négociations sur un marché réglementé. Le directeur financier de DRAVENNE, M. Bastien ORCIVAL, vous confie la préparation des comptes consolidés.
 
@@ -210,14 +212,6 @@ En mars 2025, HYDRÉLIA a signé avec un bailleur social un contrat d'installati
 
 ## DOSSIER 2 – OPÉRATIONS DE RESTRUCTURATION (25 points)
 
-### Présentation
-
-Le groupe DRAVENNE est un acteur régional de la rénovation énergétique des bâtiments, installé à Clermont-Ferrand (Puy-de-Dôme). Sa société de tête, la SAS DRAVENNE, holding animatrice dont le capital est entièrement détenu par la famille DRAVENNE, contrôle des entreprises d'installation de pompes à chaleur, de génie climatique et de rénovation thermique qui travaillent pour des bailleurs sociaux, des collectivités et des copropriétés. Le groupe emploie 420 salariés ; son chiffre d'affaires consolidé s'est élevé à 86 M€ en 2026.
-
-Le marché, soutenu par les obligations de rénovation des bâtiments et par les aides publiques, se concentre. Les entreprises d'isolation se rapprochent pour atteindre la taille exigée par les grands appels d'offres, comme la SA ISOLVÈRE et la SAS FAÇALINE, sous-traitants habituels du groupe. Les collectivités développent de leur côté des réseaux de chaleur alimentés par des énergies renouvelables, comme celui qu'exploite la SA d'économie mixte locale CALORÈNE, cliente du groupe. Aucune de ces trois sociétés n'a de lien en capital avec DRAVENNE.
-
-Vous êtes collaborateur ou collaboratrice du cabinet VERCLAIR Audit et Conseil, société d'expertise comptable et de commissariat aux comptes installée à Clermont-Ferrand. Le cabinet assiste DRAVENNE dans l'établissement de ses comptes consolidés, conseille ISOLVÈRE dans son projet de fusion et certifie les comptes de CALORÈNE. Les entreprises et les personnes citées sont fictives.
-
 La SA ISOLVÈRE, installée à Riom, réalise l'isolation thermique par l'extérieur de logements collectifs et de bâtiments publics. Son capital est détenu à 70 % par la SAS MAZERAT PARTICIPATIONS, holding de la famille de son fondateur ; 25 % sont répartis entre des salariés et des investisseurs individuels, dont aucun ne détient plus de 2 % des droits de vote. Les 5 % restants appartiennent à la SAS FAÇALINE, qui les a acquis en 2019 à l'occasion d'un partenariat commercial.
 
 La SAS FAÇALINE, installée à Issoire, conçoit et pose des bardages et des façades isolantes. Son capital est détenu à 80 % par la SAS BRANDÉLIA CAPITAL, société de capital-investissement, et à 20 % par cinq de ses dirigeants. ISOLVÈRE ne détient aucune action FAÇALINE.
@@ -322,14 +316,6 @@ Les actions ISOLVÈRE détenues par FAÇALINE sont évaluées à la valeur d'éc
 ---
 
 ## DOSSIER 3 – AUDIT (30 points — dont 12 points sur la durabilité)
-
-### Présentation
-
-Le groupe DRAVENNE est un acteur régional de la rénovation énergétique des bâtiments, installé à Clermont-Ferrand (Puy-de-Dôme). Sa société de tête, la SAS DRAVENNE, holding animatrice dont le capital est entièrement détenu par la famille DRAVENNE, contrôle des entreprises d'installation de pompes à chaleur, de génie climatique et de rénovation thermique qui travaillent pour des bailleurs sociaux, des collectivités et des copropriétés. Le groupe emploie 420 salariés ; son chiffre d'affaires consolidé s'est élevé à 86 M€ en 2026.
-
-Le marché, soutenu par les obligations de rénovation des bâtiments et par les aides publiques, se concentre. Les entreprises d'isolation se rapprochent pour atteindre la taille exigée par les grands appels d'offres, comme la SA ISOLVÈRE et la SAS FAÇALINE, sous-traitants habituels du groupe. Les collectivités développent de leur côté des réseaux de chaleur alimentés par des énergies renouvelables, comme celui qu'exploite la SA d'économie mixte locale CALORÈNE, cliente du groupe. Aucune de ces trois sociétés n'a de lien en capital avec DRAVENNE.
-
-Vous êtes collaborateur ou collaboratrice du cabinet VERCLAIR Audit et Conseil, société d'expertise comptable et de commissariat aux comptes installée à Clermont-Ferrand. Le cabinet assiste DRAVENNE dans l'établissement de ses comptes consolidés, conseille ISOLVÈRE dans son projet de fusion et certifie les comptes de CALORÈNE. Les entreprises et les personnes citées sont fictives.
 
 La SA d'économie mixte locale CALORÈNE, société anonyme à conseil d'administration, exploite le réseau de chaleur de la métropole VALDÔME. Son capital est détenu à 70 % par la métropole VALDÔME, à 15 % par la banque CRÉDIT ARVERNE et à 15 % par l'énergéticien OMNÉVA. Elle livre de la chaleur à environ 9 000 logements, dont 60 % de logements sociaux, ainsi qu'à des équipements publics et à des bureaux. La chaleur est produite par une chaufferie biomasse, alimentée en plaquettes forestières et mise en service en 2026, et par une chaufferie d'appoint au gaz. Les titres de CALORÈNE ne sont pas admis aux négociations sur un marché réglementé : **CALORÈNE n'est pas une entité d'intérêt public**. Elle détient 30 % du capital de la SAS SYLVANOR, plateforme de préparation de plaquettes forestières, sans la contrôler. Elle ne contrôle aucune entité ; il est admis qu'elle n'est pas tenue d'établir des comptes consolidés, et elle n'en établit pas.
 

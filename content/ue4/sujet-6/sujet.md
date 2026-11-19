@@ -58,15 +58,17 @@ Les écritures comptables devront comporter les numéros et les noms des comptes
 
 ---
 
-## DOSSIER 1 – COMPTES DE GROUPE (45 points)
-
-### Présentation
+## Présentation
 
 Le groupe FLUVÉOR transporte par voie d'eau des conteneurs, des céréales et des matériaux de construction sur le Rhin et ses affluents ; il exploite aussi des entrepôts portuaires en Alsace. Sa société de tête, la SCA FLUVÉOR, installée à Strasbourg (Bas-Rhin), est une société en commandite par actions dont l'associé commandité et gérant est une société de la famille fondatrice ; aucun de ses titres n'est admis aux négociations sur un marché. Le groupe emploie 640 salariés et son chiffre d'affaires consolidé s'est élevé à 212 M€ en 2026.
 
 Le transport fluvial rhénan se réorganise : les armateurs indépendants simplifient leurs structures, comme la SAS ARGANEAU, établie à Mulhouse (Haut-Rhin), qui pousse des convois de vrac entre Bâle et Rotterdam et envisage de dissoudre sans liquidation sa filiale TOUALYS, dont elle détient toutes les actions. Le tourisme fluvial doit, lui, composer avec des étiages plus fréquents et avec les exigences des villes en matière d'émissions des bateaux, comme la SA à directoire RIVÉLINE CROISIÈRES, qui exploite des bateaux-hôtels sur le Rhin et la Moselle. Ni ARGANEAU ni RIVÉLINE CROISIÈRES n'ont de lien en capital avec FLUVÉOR.
 
 Vous êtes collaborateur ou collaboratrice du cabinet HALDÈNE Audit et Conseil, société d'expertise comptable et de commissariat aux comptes installée à Strasbourg. Le cabinet assiste FLUVÉOR dans l'établissement de ses comptes consolidés, conseille ARGANEAU dans la simplification de son groupe et certifie les comptes de RIVÉLINE CROISIÈRES ainsi que ses informations en matière de durabilité. Les entreprises et les personnes citées sont fictives.
+
+---
+
+## DOSSIER 1 – COMPTES DE GROUPE (45 points)
 
 Le groupe FLUVÉOR s'est agrandi le 01/01/2026. Ce jour-là, FLUVÉOR a acquis 80 % de la SAS RHÉNOLOG, qui exploite des terminaux de manutention et des entrepôts dans les ports de Strasbourg et de Lauterbourg, et 25 % de la SAS ÉCLUSANE, chantier de maintenance de bateaux dont RHÉNOLOG détient 15 % depuis 2018. Le même jour, FLUVÉOR a créé à Bâle (Suisse) la société BARGELIS AG, qui affrète des bateaux auprès d'armateurs suisses et néerlandais et les met à la disposition du groupe. Mme Sophie KLEINHANS, directrice financière de FLUVÉOR, vous confie les travaux de consolidation qui concernent ces trois sociétés pour l'exercice 2026, ainsi que deux retraitements des comptes de FLUVÉOR.
 
@@ -295,14 +297,6 @@ Le groupe convertit au cours moyen de 2026 les produits et les charges enregistr
 
 ## DOSSIER 2 – OPÉRATIONS DE RESTRUCTURATION (25 points)
 
-### Présentation
-
-Le groupe FLUVÉOR transporte par voie d'eau des conteneurs, des céréales et des matériaux de construction sur le Rhin et ses affluents ; il exploite aussi des entrepôts portuaires en Alsace. Sa société de tête, la SCA FLUVÉOR, installée à Strasbourg (Bas-Rhin), est une société en commandite par actions dont l'associé commandité et gérant est une société de la famille fondatrice ; aucun de ses titres n'est admis aux négociations sur un marché. Le groupe emploie 640 salariés et son chiffre d'affaires consolidé s'est élevé à 212 M€ en 2026.
-
-Le transport fluvial rhénan se réorganise : les armateurs indépendants simplifient leurs structures, comme la SAS ARGANEAU, établie à Mulhouse (Haut-Rhin), qui pousse des convois de vrac entre Bâle et Rotterdam et envisage de dissoudre sans liquidation sa filiale TOUALYS, dont elle détient toutes les actions. Le tourisme fluvial doit, lui, composer avec des étiages plus fréquents et avec les exigences des villes en matière d'émissions des bateaux, comme la SA à directoire RIVÉLINE CROISIÈRES, qui exploite des bateaux-hôtels sur le Rhin et la Moselle. Ni ARGANEAU ni RIVÉLINE CROISIÈRES n'ont de lien en capital avec FLUVÉOR.
-
-Vous êtes collaborateur ou collaboratrice du cabinet HALDÈNE Audit et Conseil, société d'expertise comptable et de commissariat aux comptes installée à Strasbourg. Le cabinet assiste FLUVÉOR dans l'établissement de ses comptes consolidés, conseille ARGANEAU dans la simplification de son groupe et certifie les comptes de RIVÉLINE CROISIÈRES ainsi que ses informations en matière de durabilité. Les entreprises et les personnes citées sont fictives.
-
 La SAS ARGANEAU exploite une flotte de pousseurs et de barges qui achemine des granulats, des engrais et des céréales entre les ports alsaciens et les ports maritimes de la mer du Nord. Le 1er juillet 2022, elle a acquis la totalité des actions de la SAS TOUALYS, armateur installé au port de Colmar, pour 2 700 000 €. TOUALYS possède ses propres pousseurs et barges : elle les met à la disposition d'ARGANEAU et transporte aussi, pour son compte, les marchandises de quelques clients industriels de la plaine d'Alsace.
 
 Deux sociétés, deux équipages d'encadrement et deux comptabilités pour une même flotte : Mme Odile WEISSKOPF, présidente d'ARGANEAU, a décidé de dissoudre TOUALYS sans liquidation pour réunir les deux flottes dans une seule société. Elle vous demande d'analyser l'opération, d'en préparer l'enregistrement dans les comptes d'ARGANEAU et de lui en présenter les conséquences.
@@ -431,14 +425,6 @@ Le fonds commercial est présumé avoir une durée d'utilisation non limitée (P
 ---
 
 ## DOSSIER 3 – AUDIT (30 points — dont 12 points sur la durabilité)
-
-### Présentation
-
-Le groupe FLUVÉOR transporte par voie d'eau des conteneurs, des céréales et des matériaux de construction sur le Rhin et ses affluents ; il exploite aussi des entrepôts portuaires en Alsace. Sa société de tête, la SCA FLUVÉOR, installée à Strasbourg (Bas-Rhin), est une société en commandite par actions dont l'associé commandité et gérant est une société de la famille fondatrice ; aucun de ses titres n'est admis aux négociations sur un marché. Le groupe emploie 640 salariés et son chiffre d'affaires consolidé s'est élevé à 212 M€ en 2026.
-
-Le transport fluvial rhénan se réorganise : les armateurs indépendants simplifient leurs structures, comme la SAS ARGANEAU, établie à Mulhouse (Haut-Rhin), qui pousse des convois de vrac entre Bâle et Rotterdam et envisage de dissoudre sans liquidation sa filiale TOUALYS, dont elle détient toutes les actions. Le tourisme fluvial doit, lui, composer avec des étiages plus fréquents et avec les exigences des villes en matière d'émissions des bateaux, comme la SA à directoire RIVÉLINE CROISIÈRES, qui exploite des bateaux-hôtels sur le Rhin et la Moselle. Ni ARGANEAU ni RIVÉLINE CROISIÈRES n'ont de lien en capital avec FLUVÉOR.
-
-Vous êtes collaborateur ou collaboratrice du cabinet HALDÈNE Audit et Conseil, société d'expertise comptable et de commissariat aux comptes installée à Strasbourg. Le cabinet assiste FLUVÉOR dans l'établissement de ses comptes consolidés, conseille ARGANEAU dans la simplification de son groupe et certifie les comptes de RIVÉLINE CROISIÈRES ainsi que ses informations en matière de durabilité. Les entreprises et les personnes citées sont fictives.
 
 La SA RIVÉLINE CROISIÈRES, dont le siège est à Strasbourg, vend des croisières de quatre à huit jours sur le Rhin et la Moselle, à bord de bateaux-hôtels de 90 à 180 passagers. Elle exploite neuf bateaux qui lui appartiennent et en affrète trois autres chaque saison. Sa clientèle est internationale. Les croisières ont lieu d'avril à octobre ; l'hiver, les bateaux sont à quai pour leur entretien. RIVÉLINE CROISIÈRES emploie 250 salariés permanents (siège, équipages et personnel hôtelier) et recrute chaque saison des équipages et du personnel hôtelier saisonniers : jusqu'à 410 personnes travaillent pour elle en haute saison.
 
