@@ -1,0 +1,2507 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Sujet complet n° 13</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Sujet complet</p><p>3 heures</p><p>40 points</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Sujet d'entraînement n° 13</h1><p class="cas">dossier 1, CASTELRIVE Agglomération, direction du numérique mutualisée avec la ville-centre : démarche du schéma directeur et alignement d'un SI mutualisé, maturité numérique, gouvernance d'une direction partagée, demandes des usagers et guichet unique, transmission des savoirs avant les départs en retraite ; dossier 2, CASTELRIVE Agglomération : modèle des données de la redevance incitative, architecture orientée données et référentiel des adresses, analyse de l'effet de la redevance, ouverture et monétisation des données, coût du dispositif et indicateurs ; dossier 3, CASTELRIVE Agglomération : note de synthèse de l'audit des caisses des piscines, fiabilisation de la chaîne « levée → facture », risques et architecture de confiance des équipements connectés, stratégie numérique responsable.</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base d'une réglementation au 31/12/2026.</p>
+<p>Textes intégrés : fiches de travail datées et base des référentiels datés.</p>
+<p>Bien que le corrigé mentionne des textes juridiques et normatifs, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte avant tout sur la pertinence et la cohérence des réponses.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dossier</th>
+<th style="text-align: right;">Points</th>
+<th>Questions</th>
+<th>Exercice d'origine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 – Préparer le schéma directeur numérique et la transmission des savoirs</td>
+<td style="text-align: right;">14</td>
+<td>1.1 à 1.4</td>
+<td><a href="../../exercices/ex37/sujet.html">CASTELRIVE Agglomération, direction du numérique mutualisée avec la ville-centre : démarche du schéma directeur et alignement d'un SI mutualisé, maturité numérique, gouvernance d'une direction partagée, demandes des usagers et guichet unique, transmission des savoirs avant les départs en retraite</a></td>
+</tr>
+<tr class="even">
+<td>2 – Organiser et exploiter les données de la redevance incitative</td>
+<td style="text-align: right;">13</td>
+<td>2.1 à 2.5</td>
+<td><a href="../../exercices/ex38/sujet.html">CASTELRIVE Agglomération : modèle des données de la redevance incitative, architecture orientée données et référentiel des adresses, analyse de l'effet de la redevance, ouverture et monétisation des données, coût du dispositif et indicateurs</a></td>
+</tr>
+<tr class="odd">
+<td>3 – Fiabiliser, sécuriser et rendre plus sobre le système d'information</td>
+<td style="text-align: right;">13</td>
+<td>3.1 à 3.4</td>
+<td><a href="../../exercices/ex39/sujet.html">CASTELRIVE Agglomération : note de synthèse de l'audit des caisses des piscines, fiabilisation de la chaîne « levée → facture », risques et architecture de confiance des équipements connectés, stratégie numérique responsable</a></td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>40</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-1--préparer-le-schéma-directeur-numérique-et-la-transmission-des-savoirs-14-points">DOSSIER 1 – PRÉPARER LE SCHÉMA DIRECTEUR NUMÉRIQUE ET LA TRANSMISSION DES SAVOIRS (14 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1 Le schéma directeur numérique 2028-2032 et l'alignement du système d'information mutualisé</td>
+<td><code>1.1.c</code> Méthodologies de planification stratégique du SI ; <code>1.1.b</code> Principes d'alignement stratégique SI/métier (modèle SAM, chaîne de valeur, etc.)</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>1.2 La maturité numérique et la gouvernance de la direction du numérique mutualisée</td>
+<td><code>1.2.d</code> Méthodologies d'évaluation de la maturité numérique (CMMI, COBIT, etc.) ; <code>1.2.a</code> Mettre en œuvre une gouvernance des systèmes d'information intégrant les parties prenantes clés, des indicateurs de performance et des critères de durabilité</td>
+<td>3,5</td>
+</tr>
+<tr class="odd">
+<td>1.3 Les demandes des usagers et le guichet unique</td>
+<td><code>1.3.f</code> Analyse des processus métiers et rôle des architectures SI dans leur rationalisation ; <code>1.3.a</code> Concevoir, cartographier et évaluer l'architecture des systèmes d'information dans une logique d'urbanisation cohérente, en intégrant les technologies émergentes (blockchain, IA, registres distribués,…)</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>1.4 La transmission des savoirs des agents qui partent</td>
+<td><code>1.6.a</code> Mettre en œuvre une stratégie de gestion des connaissances soutenue par les systèmes d'information, en assurant son pilotage, sa gouvernance et son appropriation organisationnelle ; <code>1.6.d</code> Intégration des outils de KM dans l'environnement SI : GED, intranet, wiki, forums ; <code>1.6.e</code> Leviers d'appropriation et de transformation des pratiques professionnelles</td>
+<td>3,5</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 1 – Préparer le schéma directeur numérique et la transmission des savoirs</strong></td>
+<td></td>
+<td><strong>14</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (schéma directeur, alignement stratégique, maturité et modèles de maturité, gouvernance du SI, urbanisation, savoirs tacites et explicites) environ 3 points (items 1.1 a-1, 1.1 b-1, 1.2 a-1, la moitié de 1.2 b-1, la moitié de 1.3 b-1, la moitié de 1.4 a-1) ; analyse des annexes et recommandations environ 11 points, soit environ 79 %. Durée conseillée : 14 points × 4,5 minutes = 63 minutes, soit 1 h 03.</p>
+<hr />
+<h3 id="11--le-schéma-directeur-numérique-2028-2032-et-lalignement-du-système-dinformation-mutualisé-4-points">1.1 – Le schéma directeur numérique 2028-2032 et l'alignement du système d'information mutualisé (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.1 – Élaborer et aligner la stratégie des SI : <code>1.1.c</code> « Méthodologies de planification stratégique du SI » ; <code>1.1.b</code> « Principes d'alignement stratégique SI/métier (modèle SAM, chaîne de valeur, etc.) ». Limite : « Ne pas confondre alignement stratégique et simple adéquation technique. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (bilan du schéma 2022-2026, arbitrages, comité de pilotage, délais par collectivité, consultation des communes, témoignages des élus, du maire et d'une responsable de service) et 1.1 (deux collectivités, 30 communes, 18 communes du service commun, 600 agents de terrain).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Schéma directeur défini (planification du SI sur trois à cinq ans à partir de la stratégie : diagnostic, orientations, cible, portefeuille priorisé, moyens, pilotage), distingué d'un plan de projet ; horizon 2028-2032 calé sur « Castelrive 2032 » et commun aux deux collectivités</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Étapes ordonnées et datées de façon réaliste (cadrage et gouvernance de la démarche, diagnostic partagé, orientations tirées du projet de territoire, cible et scénarios, portefeuille et moyens, validation et révision annuelle)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Acteurs et rôle de chacun : élus des deux collectivités, directions générales, DGA ressources, direction du numérique, directions métiers, 30 communes (dont les 18 du service commun), agents dont ceux du terrain, usagers</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Livrables par étape (note de cadrage, diagnostic, orientations, cible, schéma directeur et portefeuille, dispositif de suivi)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Alignement stratégique défini (mise en cohérence permanente de la stratégie du SI et de celle de l'organisation, qui n'est pas une simple adéquation technique ; dimension organisationnelle et de gouvernance) ; ici, alignement sur les objectifs d'un projet de territoire commun à deux collectivités</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Premier décalage, rattaché à un objectif de « Castelrive 2032 » et appuyé sur les faits de l'annexe 1.2</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Deuxième décalage, rattaché à un objectif et appuyé sur les faits</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-4</td>
+<td>Troisième décalage, rattaché à un objectif et appuyé sur les faits ; conclusion d'ensemble (alignement faible, d'abord pour des raisons de gouvernance)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.1 a) – La démarche d'élaboration du schéma directeur 2028-2032</em></p>
+<p>Le <strong>schéma directeur numérique</strong> (schéma directeur du système d'information) est le document de planification qui fixe, pour trois à cinq ans et à partir de la stratégie de l'organisation, les orientations du système d'information, sa cible (applications, données, organisation, compétences), le portefeuille de projets priorisé, les moyens en ordre de grandeur et le dispositif de pilotage. Il se distingue du plan de projet, qui organise un projet particulier (tâches, ressources, délais). Ici, son horizon 2028-2032 coïncide avec celui de « Castelrive 2032 », et il doit être <strong>commun à la ville et à l'agglomération</strong>, puisqu'une seule direction du numérique sert les deux collectivités (0,5 pt).</p>
+<p>L'annexe 1.2 montre ce qu'il faut éviter : un schéma 2022-2026 <strong>rédigé par la seule direction du numérique</strong>, sans élus, sans communes et sans pilotage (comité réuni une seule fois depuis 2022). La démarche proposée part du projet de territoire et associe toutes les parties prenantes.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape (calendrier indicatif)</th>
+<th>Contenu</th>
+<th>Acteurs principaux</th>
+<th>Livrable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Cadrage et gouvernance de la démarche (mai-juin 2027)</td>
+<td>mandat commun des deux exécutifs ; périmètre (deux collectivités, services aux 18 communes) ; comité de pilotage commun présidé par les élus, équipe projet ; calendrier et méthode de concertation</td>
+<td>président, vice-présidente chargée du numérique et élu de la ville ; directrices et directeurs généraux des deux collectivités ; DGA ressources (pilotage côté agglomération) ; directeur du numérique</td>
+<td>note de cadrage validée par le comité de pilotage</td>
+</tr>
+<tr class="even">
+<td>2. Diagnostic partagé (juin-septembre 2027)</td>
+<td>bilan du schéma 2022-2026 (18 projets, 11 projets hors schéma) ; cartographie des applications et des processus ; maturité réévaluée avec les services (question 1.2) ; coûts en ordre de grandeur ; écoute des usagers, des agents et des communes</td>
+<td>direction du numérique, directions métiers, service de la relation aux usagers, ressources humaines ; enquête auprès des 30 communes ; ateliers d'agents, y compris de terrain, aux heures de prise de poste</td>
+<td>rapport de diagnostic et synthèse des attentes</td>
+</tr>
+<tr class="odd">
+<td>3. Orientations (septembre-octobre 2027)</td>
+<td>traduction des cinq objectifs de « Castelrive 2032 », et des priorités de la ville, en axes numériques ; ateliers par politique publique (déchets, piscines, relation aux usagers, services techniques)</td>
+<td>élus et directions métiers, avec la direction du numérique</td>
+<td>axes stratégiques validés par les élus</td>
+</tr>
+<tr class="even">
+<td>4. Cible et scénarios (octobre-novembre 2027)</td>
+<td>architecture cible (guichet unique, référentiels communs), organisation et compétences, gouvernance ; deux ou trois scénarios d'effort</td>
+<td>direction du numérique, directions métiers ; RSSI et DPO consultés</td>
+<td>cible et scénarios comparés</td>
+</tr>
+<tr class="odd">
+<td>5. Portefeuille et moyens (novembre-décembre 2027)</td>
+<td>projets priorisés selon des critères partagés (question 1.2 b), moyens en ordre de grandeur, répartition de la capacité entre les collectivités, risques</td>
+<td>comité de pilotage commun</td>
+<td>document du schéma directeur 2028-2032</td>
+</tr>
+<tr class="even">
+<td>6. Validation et pilotage (fin 2027, puis chaque année)</td>
+<td>présentation aux élus des deux collectivités et aux communes ; indicateurs de suivi ; revue annuelle et révision à mi-parcours</td>
+<td>comité stratégique (question 1.2 b)</td>
+<td>tableau de suivi et bilan annuel</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Acteurs et rôles</strong> (0,5 pt) : les <strong>élus</strong> (président, vice-présidente chargée du numérique, élu de la ville) commanditent et arbitrent, ce que demande le président (« celui de nos deux collectivités ») ; les <strong>directions générales</strong> des deux collectivités coordonnent ; le (la) <strong>DGA ressources</strong> pilote la démarche pour l'agglomération et veille à l'équilibre entre les deux collectivités ; la <strong>direction du numérique</strong> apporte le diagnostic technique, la cible et les estimations, sans être le seul rédacteur ; les <strong>directions métiers</strong> expriment les besoins et portent les projets ; les <strong>30 communes</strong>, et non les seules 18 du service commun, sont consultées par une enquête et des ateliers par taille de commune, avec des représentants au comité de pilotage, parce que le guichet unique passe par leurs mairies ; les <strong>agents</strong>, dont les 600 agents de terrain, sont écoutés sur leurs outils et sur la transmission des savoirs ; les <strong>usagers</strong> sont associés par une enquête, un panel et l'exploitation des demandes reçues par le service de la relation aux usagers.</p>
+<p><strong>Livrables</strong> (0,5 pt) : note de cadrage, rapport de diagnostic, axes validés, cible et scénarios, schéma directeur et portefeuille priorisé, tableau de suivi et bilans annuels.</p>
+<p><em>1.1 b) – L'alignement du système d'information mutualisé sur « Castelrive 2032 »</em></p>
+<p>L'<strong>alignement stratégique</strong> est la mise en cohérence permanente de la stratégie du système d'information avec la stratégie de l'organisation : il est dynamique (il se refait quand la stratégie change), réciproque et autant organisationnel que technique ; il ne se réduit ni au choix d'un logiciel ni à une adéquation technique. Ici, la stratégie de référence est un projet de territoire, et le SI est partagé par deux collectivités : l'alignement suppose que les priorités du numérique soient décidées à partir de « Castelrive 2032 » et arbitrées entre les deux collectivités (0,5 pt).</p>
+<p><strong>Trois décalages</strong> (0,5 pt chacun ; trois parmi les suivants) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Objectif de « Castelrive 2032 »</th>
+<th>Faits de l'annexe 1.2</th>
+<th>Décalage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Simplifier les démarches par un guichet unique, en ligne et dans les mairies</td>
+<td>portail unique des démarches prévu pour 2024, abandonné en 2026 « faute de service pour le porter » ; une quarantaine de formulaires en ligne ; la vice-présidente « ne sait pas qui doit porter le guichet unique » ; les secrétaires de mairie transfèrent des courriels « sans savoir ce qu'elles deviennent »</td>
+<td>l'objectif premier du projet de territoire n'a ni projet ni porteur métier ; le SI a numérisé des formulaires sans transformer le service rendu</td>
+</tr>
+<tr class="even">
+<td>Tous les objectifs (le schéma comme traduction du projet de territoire)</td>
+<td>11 projets hors schéma, lancés à la demande d'un service, ont absorbé environ 30 % du temps des équipes de projet ; billetterie des piscines choisie par leur responsable, découverte par l'élue dans la presse ; arbitrages faits chaque lundi par le directeur du numérique « selon l'urgence et l'insistance » ; 9 projets réalisés sur 18</td>
+<td>le portefeuille est tiré par la demande des services et par l'insistance, non par les priorités politiques : la direction du numérique décide seule de ce qui sert la stratégie</td>
+</tr>
+<tr class="odd">
+<td>Un projet pour toutes les communes et les deux collectivités (président : « toutes les communes, et pas seulement la ville-centre »)</td>
+<td>demandes traitées en 3 mois pour la ville et en 7 mois pour l'agglomération ; comité de pilotage commun réuni une seule fois depuis 2022 au lieu de deux fois par an ; communes consultées une seule fois, 6 réponses sur 18 ; clé de répartition contestée</td>
+<td>le SI mutualisé est aligné de fait sur la ville, qui est proche et relance ; l'agglomération et les communes ne disposent d'aucune instance pour faire valoir leurs priorités</td>
+</tr>
+<tr class="even">
+<td>Garantir la continuité et la sécurité des services publics</td>
+<td>plan de continuité du SI reporté deux fois</td>
+<td>un objectif du projet de territoire reste sans traduction, alors que le SI porte des services quotidiens (collecte, déchèteries, piscines)</td>
+</tr>
+<tr class="odd">
+<td>Piloter par les données ; réduire l'empreinte du numérique</td>
+<td>« aucun projet du schéma ne portait sur les données ni sur l'empreinte environnementale du numérique » ; numérique responsable noté 1</td>
+<td>deux objectifs nouveaux du projet de territoire n'ont aucun point d'appui dans le SI actuel</td>
+</tr>
+<tr class="even">
+<td>Un tiers des agents techniques en retraite d'ici 2032 (savoirs, continuité)</td>
+<td>accès des agents de terrain à l'intranet depuis un téléphone abandonné en 2025 ; 600 agents sans poste</td>
+<td>le SI est conçu pour les agents de bureau ; il ne soutient pas les métiers de terrain qui portent les services</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusion</strong> (0,5 pt avec le troisième décalage) : l'alignement est faible. La cause principale n'est pas technique : c'est l'absence de gouvernance commune (élus absents, comité qui ne se réunit pas, arbitrages par le directeur du numérique), qui laisse le portefeuille se former au fil des demandes et favorise la ville. Le schéma 2028-2032 doit donc partir des objectifs de « Castelrive 2032 », être porté par les élus des deux collectivités et s'accompagner d'instances d'arbitrage (question 1.2 b) ; le guichet unique en est le projet structurant.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Démarche présentée en quatre ou cinq étapes, ou selon un autre découpage cohérent (diagnostic, vision, trajectoire, pilotage), si les acteurs et les livrables sont précisés ; appui sur une assistance à maîtrise d'ouvrage extérieure, si le pilotage reste aux collectivités.</li>
+<li>Calendrier différent, s'il permet d'adopter le schéma avant 2028.</li>
+<li>Alignement analysé à l'aide du modèle de Henderson et Venkatraman (1993) : décalage d'<strong>intégration fonctionnelle</strong> entre la stratégie de l'organisation (projet de territoire) et la stratégie du SI (schéma rédigé par la direction du numérique), et d'<strong>ajustement</strong> entre stratégie et organisation (pas d'instance, pas de porteur) ; le modèle est valorisé mais non exigé.</li>
+<li>Autres décalages tirés de l'annexe 1.2, s'ils sont rattachés à un objectif et appuyés sur des faits.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Alignement réduit à un choix technique ou logiciel</em> (<code>ET-06</code> ; <code>JUR-G02</code> alignement réduit à un choix technique ou à une standardisation logicielle) — « il suffit d'acheter un portail de démarches » ; juste : l'alignement est d'abord une question de priorités et de gouvernance partagées.</li>
+<li><em>Schéma directeur confondu avec un plan de projet</em> (<code>ET-07</code>) — liste de tâches ou planning détaillé d'un projet ; juste : démarche de planification stratégique, acteurs et livrables.</li>
+<li><em>Démarche conduite par la seule direction du numérique</em> (<code>JUR-T01</code> contextualiser chaque notion) — démarche générique qui oublie les élus, les communes, les agents de terrain ou les usagers, alors que l'annexe 1.2 en fait la cause de l'échec du schéma précédent.</li>
+<li><em>Décalages sans faits</em> (<code>JUR-T08</code> exploiter toutes les annexes) — objectifs repris sans les chiffres de l'annexe 1.2 (11 projets hors schéma, 3 et 7 mois, une seule réunion depuis 2022).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Schéma directeur du SI</td>
+<td>planification sur trois à cinq ans ; démarche ; distinction avec le plan de projet</td>
+<td>F01 § 3.1 ; <code>erreurs_types.md</code> ET-07</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Alignement stratégique</td>
+<td>mise en cohérence permanente, non réduite à l'adéquation technique</td>
+<td>F01 § 1 ; <code>erreurs_types.md</code> ET-06</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Henderson et Venkatraman, <em>IBM Systems Journal</em>, 1993 (modèle SAM)</td>
+<td>ajustement stratégique et intégration fonctionnelle (réponse tolérée)</td>
+<td><code>henderson_venkatraman_1993</code> ; F01 § 1</td>
+<td>publié</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12--la-maturité-numérique-et-la-gouvernance-de-la-direction-du-numérique-mutualisée-35-points">1.2 – La maturité numérique et la gouvernance de la direction du numérique mutualisée (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.2 – Concevoir et piloter la gouvernance des SI : <code>1.2.d</code> « Méthodologies d'évaluation de la maturité numérique (CMMI, COBIT, etc.) » ; <code>1.2.a</code> « Mettre en œuvre une gouvernance des systèmes d'information intégrant les parties prenantes clés, des indicateurs de performance et des critères de durabilité ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (auto-évaluation, échelle, justifications et conclusion ; bilan, arbitrages, comité, délais, communes, témoignages) et 1.3 (ressaisies, absence de suivi, relances, délais).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Principe d'une évaluation de la maturité (domaines, niveaux décrits, positionnement fondé sur des preuves, cible et plan de progression) en référence à un modèle (CMMI, niveaux de capacité de COBIT 2019, MAGNum 2026)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux limites de la méthode suivie (évaluation par le seul prestataire interne, juge et partie ; note unique pour deux collectivités ; justification par l'existence d'un document ; absence de cible, conclusion orientée)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Deux écarts entre notes et faits, chacun avec le niveau défendable (gouvernance, services aux usagers, compétences, stratégie)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Deux domaines prioritaires justifiés par « Castelrive 2032 » et par les annexes</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Gouvernance du SI définie (évaluer, orienter, surveiller ; distincte du management) ; deux instances communes avec composition, fréquence et décisions</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Place des 18 petites communes membres (représentation, consultation, relais dans les mairies), et non leur simple information</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Quatre critères d'arbitrage explicites et applicables aux deux collectivités, dont un critère de durabilité ou de coût global, et une règle d'équité ou de circuit unique des demandes</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.2 a) – L'interprétation de l'auto-évaluation de maturité</em></p>
+<p>Évaluer la <strong>maturité numérique</strong>, c'est situer l'organisation, domaine par domaine, sur une échelle de niveaux décrits de façon observable, à partir de <strong>preuves</strong> (pratiques constatées, mesures), pour fixer une cible et un plan de progression. Le modèle <strong>CMMI</strong> propose cinq niveaux de maturité (initial, géré, défini, géré quantitativement, en optimisation) ; <strong>COBIT 2019</strong> évalue la capacité des processus de 0 à 5 ; le modèle MAGNum 2026 du Cigref, de l'IFACI et de l'ISACA France applique cette logique à la gouvernance du numérique. L'échelle de l'annexe 1.2 B s'inspire du CMMI : le niveau 3 suppose des règles communes <strong>appliquées</strong> par les deux collectivités, le niveau 4 des indicateurs et des cibles <strong>connus de tous</strong> (0,5 pt).</p>
+<p><strong>Deux limites de la méthode</strong> (0,5 pt ; deux parmi les suivantes) :</p>
+<ul>
+<li><strong>Une auto-évaluation par le seul prestataire interne</strong> : la direction du numérique s'est notée elle-même, sans entretien avec les services, les élus ou les communes ; elle est juge et partie, et sa conclusion (« ce qui nous manque, ce sont des moyens ») sert sa demande de moyens.</li>
+<li><strong>Une note unique pour deux collectivités</strong> dont la situation diffère (3 mois contre 7 mois pour une demande d'évolution) : la moyenne masque l'inégalité de service, et les communes membres ne sont pas évaluées.</li>
+<li><strong>Des justifications fondées sur l'existence d'un document ou d'une intention</strong>, non sur les pratiques : un schéma « adopté », un comité « prévu », une politique « rédigée » ne prouvent pas que les règles sont appliquées (niveau 3).</li>
+<li><strong>Aucune cible ni aucun lien avec « Castelrive 2032 »</strong> : l'évaluation ne dit pas quel niveau viser, ni dans quels domaines.</li>
+</ul>
+<p><strong>Deux écarts entre notes et faits</strong> (0,5 pt ; deux parmi les suivants) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Domaine</th>
+<th>Note</th>
+<th>Faits relatés</th>
+<th>Niveau défendable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gouvernance</td>
+<td>3</td>
+<td>comité de pilotage réuni une seule fois depuis 2022 au lieu de deux fois par an ; priorités arbitrées chaque lundi par le directeur du numérique « selon l'urgence et l'insistance » ; élus non associés</td>
+<td>1 (dépend d'une personne) ou 2 au mieux</td>
+</tr>
+<tr class="even">
+<td>Services aux usagers</td>
+<td>4</td>
+<td>formulaires ressaisis à la main, emménagement saisi trois fois, trois logiciels non reliés, aucun numéro de suivi, 35 % des demandes relancées, 15 jours pour un bac au lieu des 5 jours affichés (annexe 1.3) : aucun indicateur ni aucune cible ne sont suivis</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Compétences</td>
+<td>4</td>
+<td>la justification ne porte que sur les 45 agents de la direction du numérique ; 600 agents de terrain sans poste, accès à l'intranet depuis un téléphone abandonné en 2025 (annexe 1.2) ; GED utilisée par 2 services (annexe 1.4, accepté)</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Stratégie numérique</td>
+<td>3</td>
+<td>9 projets réalisés sur 18, 11 projets hors schéma pour environ 30 % du temps, schéma rédigé par la direction du numérique sans les élus</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Sécurité</td>
+<td>3</td>
+<td>politique « rédigée en 2023 », mais plan de continuité du SI reporté deux fois (annexe 1.2 A)</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Deux domaines prioritaires</strong> (0,5 pt) : la <strong>gouvernance</strong>, parce qu'elle conditionne tous les autres (sans instance ni critères, le prochain schéma subira le même sort que le précédent) et parce que l'agglomération et les communes n'ont aucun moyen de faire valoir leurs priorités ; les <strong>services aux usagers</strong>, parce que le guichet unique est le premier objectif de « Castelrive 2032 » et que l'écart entre la note (4) et les faits y est le plus fort. La première action est de <strong>refaire l'évaluation de façon contradictoire</strong> : entretiens avec les services des deux collectivités, les élus et un échantillon de communes, preuves pour chaque note, une note par collectivité, cible à 2032.</p>
+<p><em>1.2 b) – La gouvernance de la direction du numérique mutualisée</em></p>
+<p>La <strong>gouvernance du système d'information</strong> est le dispositif (instances, rôles, règles) par lequel les dirigeants <strong>évaluent</strong> les besoins et les options, <strong>orientent</strong> les choix et les priorités et <strong>surveillent</strong> la mise en œuvre et la performance du SI ; elle se distingue du <strong>management</strong>, confié ici au directeur du numérique, qui planifie et exécute. Dans une direction mutualisée, elle doit permettre à chaque collectivité de peser sur des choix qu'elle finance, alors qu'aujourd'hui le directeur du numérique arbitre seul (0,5 pt avec les instances).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Instance</th>
+<th>Composition</th>
+<th>Fréquence</th>
+<th>Décisions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Comité stratégique du numérique mutualisé</strong></td>
+<td>coprésidé par la vice-présidente de l'agglomération chargée du numérique et l'élu de la ville chargé du numérique ; directrices et directeurs généraux des deux collectivités ; DGA ressources ; directeur du numérique ; deux représentants des communes membres ; RSSI et DPO invités</td>
+<td>deux fois par an au moins (comme le prévoit la convention), trimestrielle pendant l'élaboration du schéma</td>
+<td>adopte le schéma directeur et le portefeuille annuel ; répartit la capacité de la direction du numérique entre les collectivités ; tranche les conflits remontés par le comité d'arbitrage ; suit l'avancement, la qualité de service et les risques ; demande une étude de la clé de répartition (sans la recalculer ici)</td>
+</tr>
+<tr class="even">
+<td><strong>Comité d'arbitrage des demandes et des projets</strong></td>
+<td>DGA ressources de l'agglomération et son homologue de la ville ; directeur du numérique ; un représentant par direction métier concernée ; un correspondant des communes</td>
+<td>mensuelle</td>
+<td>instruit toute demande au-delà d'un seuil d'effort fixé ; la classe selon les critères ci-dessous ; publie la file des demandes et leur rang ; lance ou arrête les projets dans l'enveloppe fixée par le comité stratégique ; remonte les désaccords</td>
+</tr>
+</tbody>
+</table>
+<p><strong>La place des 18 petites communes membres</strong> (0,5 pt) : deux élus désignés par les maires des communes membres siègent au comité stratégique (par exemple un pour les communes moyennes, un pour les communes rurales) ; un correspondant au comité d'arbitrage ; une consultation annuelle sur le catalogue des services proposés et sur leur qualité, et non un questionnaire unique tous les cinq ans (6 réponses en 2021) ; un réseau des secrétaires de mairie, relais du guichet unique, réuni deux fois par an. Les communes deviennent ainsi parties prenantes des choix, et non simples destinataires d'une offre (« on ne nous demande jamais notre avis »).</p>
+<p><strong>Quatre critères d'arbitrage</strong> (0,5 pt avec la règle) :</p>
+<ol type="1">
+<li><strong>Contribution aux objectifs de « Castelrive 2032 »</strong> et du schéma directeur (le guichet unique avant une application demandée par un seul service).</li>
+<li><strong>Valeur pour les usagers et les agents</strong> : nombre de personnes concernées, gain de délai ou de qualité (par exemple 20 % des demandes des usagers portent sur un emménagement ou un départ).</li>
+<li><strong>Obligation et risque</strong> : continuité et sécurité d'un service public, obligation réglementaire, fin de support d'un logiciel.</li>
+<li><strong>Coût global et effort</strong>, y compris l'empreinte environnementale de la solution, au regard de la capacité disponible.</li>
+</ol>
+<p><strong>Règles associées</strong> : toute demande passe par un <strong>circuit unique</strong> (fiche de demande portée par un responsable métier, enregistrée dans la file commune), y compris pour la ville, malgré la proximité des bureaux ; <strong>une part de la capacité est réservée à chaque collectivité</strong>, dans une proportion fixée par le comité stratégique (sans recalculer ici la clé de répartition), avec une part pour les projets communs aux deux collectivités et une part pour les demandes des 18 communes membres, pour que la proximité ou l'insistance ne décident plus de l'ordre de traitement ; les petites demandes sous le seuil restent traitées par la direction du numérique, qui en rend compte. Le délai de traitement des demandes par collectivité, aujourd'hui de 3 et 7 mois, est suivi par le comité stratégique.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Grille de lecture fondée sur les niveaux de capacité de COBIT 2019 (0 à 5) ou sur MAGNum 2026, si elle est appliquée aux notes de l'annexe.</li>
+<li>Autres domaines prioritaires (compétences, au regard des départs de l'annexe 1.4 ; données, au regard de l'objectif de pilotage par les données) s'ils sont justifiés par le projet de territoire et par les faits.</li>
+<li>Autres instances (conférence des maires sur le numérique, comité de suivi de la convention), si la composition, la fréquence et les décisions sont précisées et si les élus des deux collectivités y siègent.</li>
+<li>Critère d'équité entre collectivités présenté comme un cinquième critère plutôt que comme une règle.</li>
+<li>Référence à ISO/IEC 38500:2024 (évaluer, diriger, surveiller ; principe de responsabilité) pour définir la gouvernance.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Note recopiée sans la confronter aux faits</em> (<code>JUR-T03</code> analyser et argumenter, ne pas décrire) — « la maturité est de 3 sur 5 » ; juste : les notes de gouvernance et de services aux usagers sont démenties par les annexes.</li>
+<li><em>CMMI présenté comme une certification obligatoire, ou COBIT confondu avec une norme</em> (<code>ET-01</code> ; <code>JUR-S06</code> confondre référentiels, normes et solutions) — juste : modèles et référentiels d'évaluation, adaptables.</li>
+<li><em>Gouvernance confondue avec l'organisation interne de la direction du numérique</em> (<code>JUR-G06</code> vocabulaire précis de la gouvernance) — organigramme de la direction au lieu d'instances communes aux deux collectivités.</li>
+<li><em>Analyse juridique de la convention ou calcul de la clé de répartition</em> (<code>JUR-T07</code> répondre à la seule question posée) — hors du sujet et hors du programme.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CMMI (CMMI Institute, ISACA)</td>
+<td>cinq niveaux de maturité</td>
+<td><code>cmmi_v3</code> ; F01 § 5 ; F09 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>COBIT 2019 (ISACA)</td>
+<td>niveaux de capacité de 0 à 5 ; distinction gouvernance / management</td>
+<td><code>cobit_2019</code> ; F02 § 2 et § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>MAGNum 2026 (Cigref, IFACI, ISACA France)</td>
+<td>maturité de la gouvernance du numérique (réponse tolérée)</td>
+<td><code>magnum_2026</code> ; F01 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 38500:2024</td>
+<td>évaluer, diriger, surveiller (réponse tolérée)</td>
+<td><code>iso_38500_2024</code> ; F02 § 4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Comitologie du SI</td>
+<td>comité stratégique, comité d'arbitrage du portefeuille</td>
+<td>F02 § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13--les-demandes-des-usagers-et-le-guichet-unique-3-points">1.3 – Les demandes des usagers et le guichet unique (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.3 – Diagnostiquer et piloter l'évolution des architectures et de l'urbanisation des SI : <code>1.3.f</code> « Analyse des processus métiers et rôle des architectures SI dans leur rationalisation » ; <code>1.3.a</code> « Concevoir, cartographier et évaluer l'architecture des systèmes d'information dans une logique d'urbanisation cohérente, en intégrant les technologies émergentes (blockchain, IA, registres distribués,…) ». Limite : « Ne pas réduire l'urbanisation à une vision strictement technique : elle s'inscrit dans une stratégie globale. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.3 (canaux, demandes, logiciels, constats, délais, guichet unique) et 1.1 (logiciels de facturation, de contrôle d'accès et de billetterie ; communes ; direction du numérique mutualisée).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Premier dysfonctionnement, appuyé sur les faits chiffrés, avec ses effets pour les usagers et pour les services</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deuxième dysfonctionnement, avec ses effets</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Troisième dysfonctionnement, avec ses effets</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Urbanisation définie (découpage en zones, quartiers, îlots faiblement couplés, couches métier à technique, règles : donnée de référence à propriétaire unique, échanges par une zone d'échange) et rattachée à la stratégie (guichet unique de « Castelrive 2032 »)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Processus cible de la demande à la réponse : point d'entrée unique quel que soit le canal, identification une seule fois, numéro de suivi, routage, traitement sans ressaisie, information de l'usager et de la mairie, clôture et mesure</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Architecture cible en principe : portail, gestion de la relation usager, référentiel commun des usagers, échanges avec les logiciels métiers et les mairies ; apports et une condition</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.3 a) – Les dysfonctionnements du processus actuel</em></p>
+<p>Les quelque 120 000 demandes reçues en 2026 suivent toutes le même circuit : le traitement d'une demande enchaîne la réception par l'un des cinq canaux, une ressaisie dans le logiciel concerné, le traitement par le service et une réponse, sans suivi d'ensemble. Trois dysfonctionnements (0,5 pt chacun ; trois parmi les suivants) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dysfonctionnement</th>
+<th>Faits de l'annexe 1.3</th>
+<th>Effets pour les usagers</th>
+<th>Effets pour les services</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Ressaisies entre logiciels cloisonnés</strong></td>
+<td>formulaires du site ressaisis à la main ; pour un emménagement, la même information saisie trois fois ; trois logiciels non reliés</td>
+<td>délais (3 semaines pour un emménagement ou un départ), erreurs ; factures contestées : une contestation sur trois vient d'un emménagement enregistré trop tard</td>
+<td>charge sans valeur ajoutée, risque d'incohérence entre facturation et badges, contestations à traiter (6 semaines)</td>
+</tr>
+<tr class="even">
+<td><strong>Aucun suivi des demandes</strong></td>
+<td>aucun numéro de suivi ; 35 % des demandes relancées, le plus souvent par téléphone</td>
+<td>l'usager ne sait pas où en est sa demande et doit rappeler</td>
+<td>le téléphone (40 % des demandes) est encombré par les relances ; aucune mesure des délais par demande, objectif de 5 jours pour un bac non tenu (15 jours) sans que la cause soit connue</td>
+</tr>
+<tr class="odd">
+<td><strong>Rupture avec les mairies</strong></td>
+<td>demandes transmises par courriel sans modèle ; 30 % incomplètes ; la secrétaire de mairie « ne sait pas ce qu'elles deviennent » (annexe 1.2)</td>
+<td>les habitants des communes rurales, qui passent par la mairie, sont moins bien servis</td>
+<td>rappels, doubles saisies, mairies réduites au rôle de boîte aux lettres</td>
+</tr>
+<tr class="even">
+<td><strong>Démarches séparées entre la ville et l'agglomération</strong></td>
+<td>formulaires des deux sites gérés séparément</td>
+<td>un habitant de Castelrive qui déménage fait plusieurs démarches</td>
+<td>doublons entre deux collectivités qui partagent pourtant la même direction du numérique</td>
+</tr>
+</tbody>
+</table>
+<p>Conclusion : le processus est organisé par logiciel et par canal, non autour de l'usager ; c'est l'architecture actuelle (logiciels métiers isolés, aucun outil commun de suivi) qui produit les ressaisies et l'opacité.</p>
+<p><em>1.3 b) – Le processus cible du guichet unique et l'architecture urbanisée</em></p>
+<p>L'<strong>urbanisation du système d'information</strong> consiste à organiser le SI, par analogie avec l'urbanisme d'une ville, en <strong>zones</strong>, <strong>quartiers</strong> et <strong>îlots</strong> faiblement couplés et reliés par des échanges maîtrisés, en mettant en correspondance les couches métier, fonctionnelle, applicative et technique, afin que le SI évolue avec la stratégie sans tout reconstruire. Ses règles : une donnée de référence a un seul propriétaire ; une fonction n'est implantée qu'une fois ; les échanges passent par une <strong>zone d'échange</strong> plutôt que par des liens ou des ressaisies au cas par cas. Ce n'est pas un inventaire technique : ici, elle sert l'objectif du guichet unique (0,5 pt).</p>
+<p><strong>Processus cible</strong> (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Dépôt</strong> de la demande par n'importe quel canal, dans un point d'entrée unique : l'usager en ligne ; l'agent d'accueil du siège ou la personne qui répond au téléphone ; la <strong>secrétaire de mairie</strong>, qui saisit elle-même la demande dans le même outil au lieu d'écrire un courriel. Les formulaires guidés imposent les informations utiles (bac identifié, adresse), ce qui supprime les demandes incomplètes.</li>
+<li><strong>Identification</strong> de l'usager (foyer ou professionnel) dans le référentiel commun : ses données sont préremplies, il ne les donne qu'une fois.</li>
+<li><strong>Enregistrement</strong> avec un <strong>numéro de suivi</strong> et un accusé de réception indiquant le délai prévu.</li>
+<li><strong>Routage</strong> automatique vers le service compétent selon le type de demande.</li>
+<li><strong>Traitement</strong> dans le logiciel métier, alimenté sans ressaisie ; un emménagement déclaré une fois met à jour la facturation et les droits d'accès aux déchèteries.</li>
+<li><strong>Information</strong> de l'usager, et de la mairie si elle a déposé la demande, à chaque changement d'état ; réponse et <strong>clôture</strong> ; mesure du délai et de la satisfaction.</li>
+</ol>
+<p><strong>Architecture urbanisée, en principe</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Zone</th>
+<th>Composant</th>
+<th>Rôle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Zone des canaux et de la relation aux usagers</td>
+<td><strong>portail des démarches</strong> (site et téléphone mobile), commun à la ville et à l'agglomération ; postes d'accueil du siège et des mairies</td>
+<td>point d'entrée unique ; formulaires guidés ; espace de suivi de l'usager ; accès des mairies par un profil dédié</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>outil de gestion de la relation avec les usagers</strong></td>
+<td>dossier de chaque demande (numéro, état, historique des contacts), routage vers les services, alertes de délai, mesures</td>
+</tr>
+<tr class="odd">
+<td>Zone des référentiels</td>
+<td><strong>référentiel commun des usagers</strong> (foyers et professionnels, coordonnées), avec un propriétaire désigné (le service de la relation aux usagers)</td>
+<td>donnée de référence saisie une fois, partagée par tous les logiciels</td>
+</tr>
+<tr class="even">
+<td>Zone des métiers (un îlot par fonction)</td>
+<td>logiciel de facturation de la redevance, logiciel de contrôle d'accès des déchèteries, logiciel de billetterie des piscines ; démarches de la ville raccordées ensuite</td>
+<td>traitement de la demande par le service compétent, sans ressaisie</td>
+</tr>
+<tr class="odd">
+<td>Zone d'échange</td>
+<td>interfaces de programmation (API) ou bus d'échange entre l'outil de relation, le référentiel et les logiciels métiers</td>
+<td>transmet la demande au logiciel métier et renvoie son état ; remplace les courriels et les ressaisies</td>
+</tr>
+</tbody>
+</table>
+<p>Apports : une seule saisie, un suivi de bout en bout, des mairies intégrées au service, des délais mesurables ; la mutualisation devient un atout, puisque le portail et le référentiel peuvent servir les deux collectivités. Condition : un <strong>porteur métier</strong> du guichet unique désigné par les élus (l'absence de porteur a fait échouer le portail de 2024), un propriétaire pour chaque donnée de référence, le DPO associé pour limiter les données collectées aux besoins de chaque démarche, et un accueil maintenu pour les usagers qui ne passent pas par internet.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Processus cible représenté sous forme de diagramme en couloirs (usager, mairie, relation aux usagers, service métier), en format libre lisible ou inspiré de BPMN 2.0.2.</li>
+<li>Architecture présentée en couches (accès, applications, données, échanges) plutôt qu'en zones, si les quatre composants demandés et les échanges sont présents.</li>
+<li>Mention d'un connecteur avec l'outil de démarches de la ville ou d'une identification de l'usager par un compte unique, si elle reste de principe.</li>
+<li>Dysfonctionnement « délais non tenus » (15 jours au lieu de 5 pour un bac, 6 semaines pour une contestation), s'il est relié à sa cause.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Urbanisation réduite à une vision technique</em> (<code>ET-20</code> ; <code>JUR-G07</code> urbanisation : le pourquoi puis le comment) — liste de serveurs ou de logiciels ; juste : découpage fonctionnel au service du processus et de la stratégie.</li>
+<li><em>Interopérabilité seulement technique</em> (<code>ET-36</code>) — « il suffit de relier les logiciels » ; juste : référentiel commun, propriétaires des données, circuit des mairies.</li>
+<li><em>Processus cible qui reproduit l'existant en ligne</em> (<code>JUR-T03</code> analyser et argumenter) — un formulaire de plus sans suivi ni routage.</li>
+<li><em>Choix d'un logiciel ou schéma technique détaillé</em> (<code>JUR-T07</code> répondre à la seule question posée) — non demandé.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Urbanisation du SI</td>
+<td>zones, quartiers, îlots ; couches ; règles d'urbanisme ; zone d'échange</td>
+<td>F03 § 1 et § 3 ; <code>erreurs_types.md</code> ET-20 et ET-36</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>BPMN 2.0.2 (OMG)</td>
+<td>diagramme en couloirs (réponse tolérée)</td>
+<td><code>bpmn_2_0_2</code> ; F03 § 2</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="14--la-transmission-des-savoirs-des-agents-qui-partent-35-points">1.4 – La transmission des savoirs des agents qui partent (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.6 – Mettre en œuvre et piloter la gestion des connaissances au sein du SI : <code>1.6.a</code> « Mettre en œuvre une stratégie de gestion des connaissances soutenue par les systèmes d'information, en assurant son pilotage, sa gouvernance et son appropriation organisationnelle » ; <code>1.6.d</code> « Intégration des outils de KM dans l'environnement SI : GED, intranet, wiki, forums » ; <code>1.6.e</code> « Leviers d'appropriation et de transformation des pratiques professionnelles ». Limites : « La gestion des connaissances dépasse la seule numérisation de l'information. » « Le pilotage nécessite une approche systémique : outils, processus, culture. » « Le lien avec la gestion des compétences (RH) est complémentaire mais distinct. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.4 (départs, règle de remplacement, six savoirs critiques, outils de terrain, GED et intranet, conditions de travail, témoignages) et 1.1 (600 agents de terrain sans poste, ordinateurs embarqués des camions, télégestion, contrôle d'accès des déchèteries).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Savoirs tacites et explicites distingués et illustrés par le cas ; deux critères de classement explicites (gravité de l'effet de la perte ; urgence, qui combine l'échéance du départ, l'absence de successeur et le faible degré de formalisation) ; classement des six savoirs cohérent avec ces critères</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Trois savoirs prioritaires, chacun avec une forme de transmission adaptée, la personne qui la conduit et une échéance antérieure au départ</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Intégration de chacun des trois savoirs à l'outil de terrain concerné (ordinateur embarqué, téléphone d'astreinte, écran du contrôle d'accès ou code sur l'installation) ; GED comme référentiel des versions validées, en arrière-plan ; intranet comme point d'entrée des encadrants</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Gouvernance : sponsor, pilote, référents, détenteurs et successeurs, responsables de service, direction du numérique ; règles de validation, de mise à jour et de retrait ; un indicateur complet (formule, source, fréquence, cible, axe)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Premier levier, en réponse à une réticence ou à une difficulté citée</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Deuxième levier, en réponse à une autre réticence ou difficulté</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-3</td>
+<td>Troisième levier, en réponse à une troisième réticence ou difficulté</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.4 a) – Le classement des savoirs critiques et leur transmission</em></p>
+<p>Un <strong>savoir tacite</strong> est incorporé dans la personne, acquis par l'expérience et difficile à formaliser : M. SERVOLLE l'a « appris sur le tas » ; la réponse des techniciens d'astreinte aux alarmes n'est écrite nulle part. Un <strong>savoir explicite</strong> est formalisé et transmissible sans son détenteur : les consignes de sécurité de 2018 (S5) ou la note de service de 2019 (S4). Les deux appellent des actions différentes : un savoir tacite se transmet en situation ou s'explicite avec l'aide d'un tiers ; un savoir explicite doit surtout être tenu à jour et mis à la disposition de ceux qui en ont besoin. Comme un poste n'est remplacé qu'après le départ de son titulaire, un savoir tacite non transmis est perdu (0,5 pt avec les critères et le classement).</p>
+<p><strong>Deux critères</strong> : (1) la <strong>gravité de l'effet de la perte</strong> : sécurité des personnes et continuité du service public d'abord, relations avec les usagers, les communes et les entreprises ensuite ; (2) l'<strong>urgence</strong>, qui combine la date du départ, l'absence de successeur désigné et le faible degré de formalisation.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Repère</th>
+<th>Gravité</th>
+<th>Urgence</th>
+<th>Rang</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S3 Alarmes de la télégestion</td>
+<td>forte (continuité : bassins fermés)</td>
+<td>forte : premier départ en 2028, rien d'écrit, aucun successeur</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>S1 Points de vigilance des tournées</td>
+<td>forte (sécurité des équipes et des riverains)</td>
+<td>forte : juin 2028, rien d'écrit, aucun successeur</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>S2 Traitement de l'eau</td>
+<td>très forte (sécurité sanitaire)</td>
+<td>moyenne : mars 2029, successeur désigné, carnet personnel</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>S6 Contacts du secteur rural</td>
+<td>moyenne (relations)</td>
+<td>forte : décembre 2027, mais successeur désigné</td>
+<td>4 : passation simple et rapide</td>
+</tr>
+<tr class="odd">
+<td>S4 Apports des professionnels</td>
+<td>moyenne (litiges)</td>
+<td>moyenne : départs étalés, note de 2019</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>S5 Consignes de sécurité</td>
+<td>forte</td>
+<td>faible pour la transmission : déjà écrites ; il faut les mettre à jour et les rendre accessibles</td>
+<td>6, mise à jour immédiate</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Formes de transmission des trois savoirs prioritaires</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Savoir</th>
+<th>Forme de transmission</th>
+<th>Qui la conduit</th>
+<th>Échéance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S3</td>
+<td>entretiens d'explicitation des deux techniciens d'astreinte, conduits par un référent, pour établir une conduite à tenir par type d'alarme ; astreintes en doublon avec le successeur une fois celui-ci désigné</td>
+<td>responsable des équipements, avec la DRH qui désigne les successeurs</td>
+<td>conduites à tenir validées fin 2027 ; doublon pendant les six mois qui précèdent le premier départ</td>
+</tr>
+<tr class="even">
+<td>S1</td>
+<td>désignation du successeur, puis tuilage de trois à six mois : tournées faites ensemble, points de vigilance relevés sur place, photographiés et localisés au fil des tournées</td>
+<td>responsable de la collecte du secteur nord ; M. SERVOLLE comme tuteur</td>
+<td>successeur désigné fin 2027 ; tuilage achevé avant juin 2028</td>
+</tr>
+<tr class="odd">
+<td>S2</td>
+<td>plannings alignés pour que M. TARNÈDE et le technicien arrivé en 2026 soient de service ensemble chaque semaine ; interventions faites à deux ; carnet transcrit en fiches de réglage par bassin, validées par le responsable des piscines</td>
+<td>responsable des piscines</td>
+<td>fiches validées et successeur autonome fin 2028, avant mars 2029</td>
+</tr>
+</tbody>
+</table>
+<p><em>1.4 b) – L'intégration aux outils de terrain et la gouvernance du dispositif</em></p>
+<p><strong>Intégration aux outils déjà utilisés</strong> (0,5 pt) : le savoir doit apparaître dans l'outil que l'agent a sous les yeux au moment où il en a besoin, et non dans une base à consulter à part.</p>
+<ul>
+<li><strong>S1</strong> : les points de vigilance s'affichent dans l'<strong>ordinateur embarqué</strong>, sur l'itinéraire de la tournée, à l'approche du lieu concerné ; l'équipage peut signaler un nouveau point, que le chef d'équipe valide.</li>
+<li><strong>S3</strong> : chaque alarme reçue sur le <strong>téléphone d'astreinte</strong> renvoie à sa conduite à tenir.</li>
+<li><strong>S2</strong> : la fiche de réglage du bassin s'ouvre depuis le local technique, par un code à scanner sur l'installation, ou depuis le téléphone de service.</li>
+<li>Pour les autres savoirs : à la lecture d'un badge de professionnel, l'<strong>écran du contrôle d'accès</strong> affiche ses droits et la consigne utile (S4) ; les consignes de sécurité mises à jour (S5) sont affichées dans les locaux par un code à scanner.</li>
+<li><strong>GED</strong> : elle devient le <strong>référentiel en arrière-plan</strong> des versions validées (propriétaire, date de revue, versions antérieures archivées) ; les outils de terrain affichent toujours la version en vigueur. L'<strong>intranet</strong> reste le point d'entrée des encadrants et des référents, qui y consultent l'ensemble des contenus et leur état de mise à jour. La direction du numérique organise, en principe, les liens entre la GED et les outils de terrain, sans nouvel outil pour les agents.</li>
+</ul>
+<p><strong>Gouvernance du dispositif</strong> (0,5 pt avec l'indicateur) :</p>
+<ul>
+<li><strong>Rôles</strong> : sponsor, la directrice générale des services, avec le (la) DGA ressources qui porte le dispositif ; pilote, la directrice des ressources humaines, qui tient la cartographie des savoirs et décide des désignations anticipées ; la direction du numérique pour les liens avec les outils de terrain ; un <strong>référent</strong> par métier, qui conduit les entretiens et valide les contenus ; les <strong>détenteurs</strong>, reconnus comme tuteurs, et leurs <strong>successeurs</strong> ; les responsables de service, qui libèrent le temps et vérifient l'application ; la prévention valide les consignes de sécurité.</li>
+<li><strong>Règles</strong> : chaque contenu a un propriétaire et une date de revue ; il est revu après tout changement de tournée, d'installation ou de paramétrage d'alarme, et au moins une fois par an ; il est validé par le référent avant d'être publié ; les versions périmées sont retirées des outils de terrain et les classeurs papier repris puis retirés ; les vidéos et les enregistrements ne servent qu'à la formation. Le dispositif est complémentaire de la gestion des compétences par les ressources humaines, sans se confondre avec elle.</li>
+<li><strong>Indicateur</strong> :</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Part des postes clés en tuilage avant le départ</td>
+<td>nombre de postes clés dont le titulaire part dans les douze mois et dont le successeur travaille avec lui depuis au moins trois mois / nombre de postes clés dont le titulaire part dans les douze mois</td>
+<td>tableau des départs de la DRH et plannings des services</td>
+<td>trimestrielle, présentée au comité de direction</td>
+<td>100 % pour les postes qui détiennent les savoirs classés prioritaires ; au moins 80 % pour l'ensemble des postes clés</td>
+<td>apprentissage</td>
+</tr>
+</tbody>
+</table>
+<p><em>1.4 c) – Trois leviers d'appropriation</em></p>
+<p>(0,5 pt par levier relié à une réticence ou à une difficulté ; trois parmi les suivants)</p>
+<ol type="1">
+<li><strong>La crainte que les contenus servent à juger le travail</strong> (M. SERVOLLE) : une <strong>règle d'usage écrite et annoncée</strong> limite les vidéos, les photos et les relevés à la formation, sans aucune évaluation individuelle ; l'agent relit et valide ce qui est publié et en est cité comme auteur ; son rôle de tuteur est reconnu. Le savoir « appris sur le tas » est valorisé au lieu d'être contrôlé.</li>
+<li><strong>« Encore un outil ? »</strong> (Mme PELLOUAN) : <strong>aucun outil nouveau</strong> ; l'information est poussée dans les écrans déjà utilisés (écran des badges, téléphone de service, ordinateur embarqué), au moment où elle sert, en contenus courts. C'est la réponse à « si l'information n'est pas sous mes yeux, je ne la chercherai pas ».</li>
+<li><strong>L'impossibilité de libérer du temps</strong> (responsable de la collecte du secteur nord) : la transmission est faite <strong>pendant le travail réel</strong> (tournées en binôme plutôt que séances au siège), réservée aux savoirs prioritaires ; pour ces postes, un successeur est affecté en doublure quelques mois avant le départ, ce qui relève d'une décision de la direction générale et des ressources humaines, et non du seul chef d'équipe.</li>
+<li><strong>Un successeur qui arrive après le départ et n'est jamais de service avec le détenteur</strong> (technicien arrivé en 2026) : la <strong>règle de remplacement change</strong> pour les postes clés : désignation anticipée et plannings alignés, suivis par l'indicateur de tuilage.</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres critères de classement (rareté du savoir, degré de formalisation pris comme critère distinct, nombre d'agents ou d'usagers concernés), et autre ordre des savoirs prioritaires (par exemple S2 en premier pour la gravité, ou S6 parmi les trois premiers pour l'échéance de décembre 2027), si le classement découle des critères énoncés.</li>
+<li>Formes de transmission présentées selon le modèle SECI de Nonaka et Takeuchi (1995) : socialisation (tuilage, astreintes en doublon), externalisation (entretiens, conduites à tenir, fiches de réglage), combinaison (GED), internalisation (pratique accompagnée), si elles sont appliquées aux savoirs du cas.</li>
+<li>Leviers présentés à l'aide du modèle ADKAR de Prosci (Hiatt), ou bien des huit étapes de la conduite du changement de Kotter (1995-1996), s'ils répondent aux réticences et aux difficultés citées.</li>
+<li>Autre indicateur complet, par exemple la part des savoirs critiques consultables depuis l'outil de terrain concerné, s'il porte ses cinq champs.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Gestion des connaissances réduite à la GED ou à la numérisation</em> (<code>ET-21</code>) — « mettre les classeurs dans la GED » ; juste : transmission en situation, savoirs intégrés aux outils de terrain, gouvernance et culture.</li>
+<li><em>Classement sans critères explicites</em> (<code>JUR-T03</code> analyser et argumenter, ne pas décrire) — savoirs repris dans l'ordre de l'annexe ; juste : deux critères énoncés, puis appliqués à chaque savoir.</li>
+<li><em>Base de connaissances à consulter à part, conçue pour des agents de bureau</em> (<code>JUR-T01</code> contextualiser chaque notion) — intranet consultable au siège, formation en salle ; juste : agents sans poste, horaires décalés, outils de terrain existants.</li>
+<li><em>Leviers génériques, sans lien avec les réticences</em> (<code>JUR-P04</code> conduite du changement adaptée) — « communiquer et former » ; juste : un levier par réticence ou difficulté citée.</li>
+<li><em>Confusion avec la gestion des compétences</em> (limite du programme 1.6) — plan de recrutement ou de formation traité comme objet du dossier ; juste : lien complémentaire mais distinct.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Savoirs tacites et explicites ; dispositif de gestion des connaissances ; GED et intranet</td>
+<td>cartographie des savoirs critiques, rôles, règles, appropriation</td>
+<td>F06 § 1 à § 3 ; <code>erreurs_types.md</code> ET-21</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Nonaka et Takeuchi, <em>The Knowledge-Creating Company</em>, 1995 (modèle SECI)</td>
+<td>quatre modes de conversion (réponse tolérée)</td>
+<td><code>nonaka_takeuchi_seci</code> ; F06 § 1</td>
+<td>publié</td>
+</tr>
+<tr class="odd">
+<td>ADKAR (Prosci)</td>
+<td>leviers d'appropriation (réponse tolérée)</td>
+<td><code>adkar</code> ; F05</td>
+<td>publié</td>
+</tr>
+<tr class="even">
+<td>Huit étapes de Kotter (1995-1996)</td>
+<td>conduite du changement (réponse tolérée)</td>
+<td><code>kotter_8_etapes</code> ; F05</td>
+<td>publié</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-2--organiser-et-exploiter-les-données-de-la-redevance-incitative-13-points">DOSSIER 2 – ORGANISER ET EXPLOITER LES DONNÉES DE LA REDEVANCE INCITATIVE (13 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Le modèle des données de la redevance</td>
+<td><code>2.1.b</code> Modélisation des données (modèles conceptuels, logiques et physiques)</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td>2.2 L'architecture des données et le référentiel des adresses et des logements</td>
+<td><code>2.1.c</code> Architectures orientées données (datawarehouse, datalake, etc.) ; <code>2.3.c</code> Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK)</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>2.3 L'effet de la redevance incitative</td>
+<td><code>2.2.a</code> Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation ; <code>2.2.b</code> Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution ; <code>2.2.c</code> Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model ; <code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>2.4 L'ouverture et la valorisation des données</td>
+<td><code>2.3.b</code> Étapes du cycle de vie des données : création, stockage, usage, archivage, suppression ; <code>2.3.e</code> Aspects réglementaires (RGPD, archivage légal) et monétisation des données</td>
+<td>2,5</td>
+</tr>
+<tr class="odd">
+<td>2.5 Le coût du dispositif numérique de la redevance et son pilotage</td>
+<td><code>3.1.c</code> Analyse des coûts directs et indirects : TCO, coûts cachés, ROI des projets SI ; <code>3.1.d</code> Construction et suivi de tableaux de bord SI (KPI, équilibrage performance / risques / coûts)</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td><strong>Dossier 2 – Organiser et exploiter les données de la redevance incitative</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (modèles conceptuel et logique et règles de passage, entrepôt et lac de données, données de référence, chaîne de traitement, analyses descriptive et exploratoire, anonymisation et pseudonymisation, rôle du délégué à la protection des données, cycle de vie, coût complet) environ 3,5 points (la moitié des items 2.1 b-1, 2.1 b-3, 2.2 a-1, 2.2 b-1, 2.3 a-1, 2.3 b-1, 2.4 a-1, 2.4 c-1, 2.4 c-2 et 2.5 a-1, qui mêlent définition et application) ; analyse des annexes et recommandations environ 9,5 points, soit environ 73 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 59 minutes.</p>
+<hr />
+<h3 id="21--le-modèle-des-données-de-la-redevance-25-points">2.1 – Le modèle des données de la redevance (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.b</code> « Modélisation des données (modèles conceptuels, logiques et physiques) ». Modèle conceptuel et modèle logique faits à la main à partir de règles de gestion écrites ; modèle physique seulement nommé ; aucune requête.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.1 (règles de gestion, extrait du modèle logique actuel, précisions de la responsable de la facturation, anomalies de 2026).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Deux défauts du modèle actuel, chacun rapporté à une règle de gestion et relié à une anomalie chiffrée de l'annexe 2.1 C</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Troisième défaut, rapporté à une règle et à une anomalie ; conclusion : les anomalies viennent de la structure des données, pas seulement des saisies</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Modèle conceptuel et modèle logique distingués ; six entités avec identifiant et attributs élémentaires (logement, foyer, bac, tournée, levée, facture)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Cinq associations et leurs cardinalités, justifiées par les règles : occupation n:m porteuse des dates d'arrivée et de départ, bac affecté au logement, levée rattachée à un bac et à une tournée, facture adressée à un foyer</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Modèle logique de sept tables déduit par les règles de passage énoncées (clé étrangère côté 1,1 ; table d'association à clé composée pour l'occupation)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.1 a) – Trois défauts du modèle logique actuel</em></p>
+<p>Trois défauts parmi les suivants (0,5 pt pour deux défauts, 0,5 pt pour le troisième et la conclusion), chacun rapporté à une règle de gestion et à une anomalie :</p>
+<ol type="1">
+<li><strong>Le bac est rattaché au redevable, et non au logement.</strong> Le numéro de puce et le volume du bac sont des colonnes de la table REDEVABLE, alors que la règle RG4 affecte le bac à un logement, où il reste quand le foyer déménage. À chaque emménagement, l'agent écrase l'ancien occupant ou recopie la puce dans une nouvelle fiche : deux fiches portent alors la même puce, et les levées du nouvel occupant peuvent être imputées à l'ancien. Ce défaut explique une partie des <strong>2 000 doublons</strong> et des <strong>1 700 factures</strong> adressées à un foyer parti. Il manque en outre au bac un identifiant propre : la puce sert d'identifiant de fait, si bien qu'une puce remplacée rend ses levées orphelines (RG4 : la puce peut changer sans que le bac change).</li>
+<li><strong>L'historique des occupants est perdu.</strong> Le modèle ne connaît ni le logement (RG1) ni l'occupation datée (RG3) : une seule date d'arrivée, aucune date de départ, et une fiche écrasée à chaque changement d'occupant. On ne peut donc pas savoir quel foyer occupait un logement à une date passée (annexe 2.1 C), ni attribuer à coup sûr une levée au foyer présent ce jour-là : d'où les factures adressées à d'anciens occupants et les contestations impossibles à trancher.</li>
+<li><strong>L'adresse est saisie en texte libre.</strong> RG1 situe le logement à une adresse désignée par son code dans le référentiel des adresses, alors que le logiciel stocke une chaîne libre (« 12 r. des Lilas », « Les Lilas, 12 »). Le même logement apparaît sous plusieurs formes : c'est la cause la plus fréquente des <strong>2 000 doublons</strong>, et elle rend impossible tout rapprochement avec les fichiers des communes. Le défaut pèse surtout dans la ville-centre, où les compléments d'adresse (bâtiment, porte) sont nombreux, et qui concentre les trois quarts des levées non rattachées.</li>
+<li><strong>Les levées n'ont ni heure, ni tournée, ni lien contrôlé avec un bac.</strong> La table LEVEE ne garde que la puce et la date, alors que RG5 et RG6 rattachent chaque levée à une tournée, effectuée par un camion, à une date et à une heure. De plus, le numéro de puce n'y est pas une clé étrangère : rien ne garantit qu'il désigne un bac connu. D'où les <strong>40 000 levées non rattachées</strong> (une sur cinquante), rapprochées à la main par deux agents, et l'impossibilité de « prouver une levée » lors d'une contestation.</li>
+</ol>
+<p><strong>Conclusion</strong> : les anomalies de 2026 ne sont pas d'abord des erreurs de saisie ; elles viennent de la <strong>structure des données</strong>, qui ne traduit pas les règles de gestion. Les corriger à la main chaque semaine ne les fera pas disparaître : il faut corriger le modèle.</p>
+<p><em>2.1 b) – Le modèle conceptuel et le modèle logique des données de la redevance</em></p>
+<p><strong>Les deux modèles</strong> : le <strong>modèle conceptuel des données</strong> représente les objets de gestion (entités), leurs propriétés et leurs liens (associations), avec des cardinalités qui traduisent les règles de gestion, indépendamment de toute technique ; il ne comporte aucune clé étrangère. Le <strong>modèle logique</strong> le traduit en tables, avec leurs clés primaires et leurs clés étrangères, selon des règles de passage, indépendamment du logiciel de gestion de base de données ; le modèle physique, propre à ce logiciel (types, index), n'est pas demandé (F07 § 1 et 2).</p>
+<p><strong>Les entités</strong> (0,5 pt avec la distinction ; identifiant souligné dans la copie, ici en premier) :</p>
+<ul>
+<li><strong>Logement</strong> (num_logement, code_adresse, complement_adresse, type_logement) ;</li>
+<li><strong>Foyer</strong> (num_foyer, nom_titulaire, telephone, courriel) ;</li>
+<li><strong>Bac</strong> (num_bac, num_puce, volume_litres, date_mise_service) : l'identifiant est le numéro gravé sur la cuve, et non la puce, qui peut être remplacée (RG4) ;</li>
+<li><strong>Tournee</strong> (num_tournee, date_tournee, secteur, immatriculation_camion) : le camion est un attribut de la tournée, aucune règle ne lui donnant d'autres propriétés (RG5) ;</li>
+<li><strong>Levee</strong> (num_levee, date_levee, heure_levee) ;</li>
+<li><strong>Facture</strong> (num_facture, semestre, date_emission, montant).</li>
+</ul>
+<p>Le code de l'adresse est un attribut du logement, qui renvoie au référentiel des adresses (question 2.2 b) ; le montant est enregistré tel qu'il a été facturé, son calcul n'étant pas modélisé (RG8).</p>
+<p><strong>Les associations et leurs cardinalités</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Association</th>
+<th>Entités et cardinalités</th>
+<th>Règle de gestion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>occuper</em> (date_arrivee, date_depart)</td>
+<td>Foyer (1,n) — Logement (0,n)</td>
+<td>RG3 : un logement est occupé successivement par zéro, un ou plusieurs foyers (il peut être vacant) ; un foyer occupe ou a occupé au moins un logement, parfois plusieurs ; les dates dépendent du couple foyer-logement : ce sont des attributs de l'association</td>
+</tr>
+<tr class="even">
+<td><em>etre_affecte</em></td>
+<td>Bac (1,1) — Logement (0,n)</td>
+<td>RG4 : un bac est affecté à un seul logement ; un logement dispose d'aucun, d'un ou de plusieurs bacs</td>
+</tr>
+<tr class="odd">
+<td><em>concerner</em></td>
+<td>Levee (1,1) — Bac (0,n)</td>
+<td>RG6 : une levée concerne un seul bac ; un bac peut n'avoir fait l'objet d'aucune levée</td>
+</tr>
+<tr class="even">
+<td><em>etre_lue_lors_de</em></td>
+<td>Levee (1,1) — Tournee (1,n)</td>
+<td>RG6 : une levée est lue lors d'une seule tournée ; une tournée comporte au moins une levée</td>
+</tr>
+<tr class="odd">
+<td><em>etre_adressee</em></td>
+<td>Facture (1,1) — Foyer (0,n)</td>
+<td>RG7 : une facture est adressée à un seul foyer ; un foyer qui vient d'arriver peut n'en avoir reçu aucune</td>
+</tr>
+</tbody>
+</table>
+<p>Le foyer n'est pas relié directement au bac ni à la levée : on retrouve le foyer facturé pour une levée en passant par le bac, le logement et l'occupation en cours à la date de la levée. C'est ce qui permet de facturer le bon occupant après un déménagement.</p>
+<p><strong>Le modèle logique</strong> (0,5 pt), obtenu par les règles de passage :</p>
+<ol type="1">
+<li>chaque entité devient une table, dont l'identifiant devient la clé primaire ;</li>
+<li>pour une association dont l'une des pattes a pour cardinalité maximale 1 (<em>etre_affecte</em>, <em>concerner</em>, <em>etre_lue_lors_de</em>, <em>etre_adressee</em>), la clé primaire de l'entité du côté « n » migre comme clé étrangère dans la table de l'entité du côté 1,1 (obligatoire, puisque la cardinalité minimale est 1) ;</li>
+<li>l'association <em>occuper</em>, dont les deux cardinalités maximales sont n, devient une table dont la clé primaire est composée des clés des deux entités, chacune clé étrangère, et qui porte les attributs de l'association.</li>
+</ol>
+<ul>
+<li>Logement (<u>num_logement</u>, code_adresse, complement_adresse, type_logement)</li>
+<li>Foyer (<u>num_foyer</u>, nom_titulaire, telephone, courriel)</li>
+<li>Occupation (<u>#num_foyer, #num_logement</u>, date_arrivee, date_depart)</li>
+<li>Bac (<u>num_bac</u>, num_puce, volume_litres, date_mise_service, #num_logement)</li>
+<li>Tournee (<u>num_tournee</u>, date_tournee, secteur, immatriculation_camion)</li>
+<li>Levee (<u>num_levee</u>, date_levee, heure_levee, #num_bac, #num_tournee)</li>
+<li>Facture (<u>num_facture</u>, semestre, date_emission, montant, #num_foyer)</li>
+</ul>
+<p>Le numéro de bac devient une clé étrangère de la table des levées : une levée ne peut plus être enregistrée sans un bac connu. Une levée lue avec une puce inconnue est alors rejetée dans un journal et traitée à la source (puce remplacée à enregistrer), au lieu d'être « mise de côté ». Le numéro de puce, attribut du bac, doit être unique : c'est une contrainte du modèle physique.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Formalisme différent (notation « pattes de corbeau », schéma relationnel dessiné), s'il est lisible et cohérent (<code>JUR-T10</code>).</li>
+<li>Entité Camion distincte de la tournée, ou entité Adresse distincte du logement, si le modèle reste dans la limite de six entités ou si le candidat justifie la septième ; entité Occupation (1,1 vers le foyer et vers le logement) au lieu de l'association porteuse, si le modèle logique obtenu est équivalent.</li>
+<li>Date d'arrivée incluse dans la clé de l'occupation, pour admettre qu'un foyer revienne dans un logement qu'il a déjà occupé, si le candidat l'explique.</li>
+<li>Facture rattachée aussi au logement, ou lignes de facture par levée, si une règle est posée en hypothèse.</li>
+<li>Date et heure de la levée réunies en un seul horodatage.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Modèle conceptuel et modèle logique confondus</em> (<code>ET-23</code>) — clés étrangères dessinées dans le modèle conceptuel, ou modèle logique qui ne découle pas du modèle conceptuel.</li>
+<li><em>Bac rattaché au foyer</em> — le défaut de l'annexe 2.1 B reproduit dans le modèle corrigé : c'est précisément ce qui crée les doublons et les factures adressées aux anciens occupants.</li>
+<li><em>Puce retenue comme identifiant du bac</em> — contraire à RG4 : un remplacement de puce rendrait de nouveau les levées orphelines.</li>
+<li><em>Table d'occupation oubliée</em> — association n:m traduite par une clé étrangère simple, qui fait perdre l'historique des occupants ; dates d'arrivée et de départ placées dans la table du foyer.</li>
+<li><em>Morceau de cours ou requête hors attente</em> (<code>JUR-T01</code>, <code>JUR-T07</code>) — règles de passage récitées sans les appliquer, ou requêtes écrites alors que la question n'en demande pas.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Modèle conceptuel, modèle logique, modèle physique ; règles de passage ; lecture des cardinalités</td>
+<td>définitions et méthode</td>
+<td>F07 § 1 à 4</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--larchitecture-des-données-et-le-référentiel-des-adresses-et-des-logements-2-points">2.2 – L'architecture des données et le référentiel des adresses et des logements (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.c</code> « Architectures orientées données (datawarehouse, datalake, etc.) ». Entrepôt, lac, architecture « lakehouse » et référentiel de données maîtres : comparaison et choix justifié ; aucune expertise des infrastructures (serveurs, réseaux), aucun choix de produit.</li>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.c</code> « Gouvernance de l'information : rôles, responsabilités, référentiels (ex. : DAMA-DMBOK) », mobilisée pour la gouvernance du lac et les responsabilités du référentiel (propriétaire, intendant).</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (territoire, 30 communes, système d'information, direction du numérique mutualisée), 2.1 (anomalies d'adresses), 2.2 (données à réunir, deux options, positions), 2.4 D (durées de conservation) et 2.6 (Data Act, DAMA-DMBOK).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Entrepôt et lac de données définis et distingués ; premier critère (volume et variété) appliqué aux deux options</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deuxième et troisième critères (qualité et historique, usages) appliqués aux deux options</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Recommandation argumentée (option B, lac associé à un entrepôt, en deux étapes) et deux conditions, dont la gouvernance qui évite le « marécage » et le respect des durées de conservation</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Données de référence définies ; référentiel des adresses et des logements justifié par les anomalies et par le rôle des communes ; deux règles de fonctionnement</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.2 a) – Les deux options</em></p>
+<p><strong>Définitions</strong> : un <strong>entrepôt de données</strong> est une base orientée sujet, intégrée, historisée et non volatile, structurée pour l'analyse (faits et dimensions) ; ses données sont nettoyées et mises en forme avant leur chargement (schéma défini à l'écriture). Un <strong>lac de données</strong> stocke des données brutes et hétérogènes (structurées, textes, images, mesures de capteurs), dont la structure n'est définie qu'à la lecture, pour l'exploration ; sans gouvernance, il devient un « marécage » de données inutilisables. Les deux se complètent plus qu'ils ne s'opposent ; une architecture <strong>« lakehouse »</strong> les réunit sur une même plateforme (F07 § 1 et 6).</p>
+<p><strong>Comparaison</strong> (0,5 pt pour le premier critère avec les définitions, 0,5 pt pour les deux autres) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Option A : entrepôt de données classique</th>
+<th>Option B : lac associé à un entrepôt (ou « lakehouse ») et référentiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Volume et variété des données</td>
+<td>adapté aux données structurées (2 millions de levées, 300 000 passages, tonnages, factures), dont le volume reste modeste ; mais il écarte la variété : les mesures horaires des 300 capteurs sont réduites à une moyenne journalière, les textes des réclamations et les photographies des dépôts sauvages ne sont pas repris</td>
+<td>accueille toutes les formes de données : mesures en continu (environ 2,6 millions par an), textes, photographies géolocalisées, tableurs des communes et du syndicat ; c'est la <strong>variété</strong> plus que le volume qui justifie le lac</td>
+</tr>
+<tr class="even">
+<td>Qualité et historique</td>
+<td>données nettoyées avant chargement, donc indicateurs fiables ; mais la cause des anomalies demeure, les adresses étant toujours rapprochées à la main à partir des fichiers des communes ; seuls les extraits mensuels sont historisés : si une règle change (méthode des refus de tri, tonnages de 2024 reconstitués), on ne peut pas recalculer</td>
+<td>conserve les données brutes et leur historique, ce qui permet de recalculer une série après un changement de méthode ; le <strong>référentiel des adresses et des logements</strong> traite la cause des doublons et des levées non rattachées ; en revanche, la qualité n'est pas garantie par l'outil : sans règles, le lac accumule des données non documentées</td>
+</tr>
+<tr class="odd">
+<td>Usages attendus</td>
+<td>le rapport trimestriel et les tableaux de bord récurrents (tonnages, levées par commune)</td>
+<td>les mêmes tableaux de bord, plus l'<strong>analyse exploratoire</strong> des effets de report (dépôts sauvages, colonnes de verre pleines, réclamations : question 2.3), la publication des données du territoire (question 2.4) et le partage avec les communes</td>
+</tr>
+</tbody>
+</table>
+<p>On retient aussi que l'option A est plus rapide (neuf mois contre quinze) et que la direction du numérique sait la mettre en œuvre, ce qui réduit le risque de projet.</p>
+<p><strong>Recommandation : l'option B, dans sa forme « lac associé à un entrepôt »</strong> (0,5 pt), parce qu'elle seule réunit les données nécessaires aux objectifs de « Castelrive 2032 » (pilotage par les données, ouverture des données du territoire, baisse des ordures ménagères résiduelles mesurée avec ses effets de report) et qu'elle traite, par le référentiel, la cause des anomalies de l'annexe 2.1. Deux conditions, parmi :</p>
+<ul>
+<li><strong>procéder en deux étapes</strong>, en commençant par le référentiel et l'entrepôt des données de la redevance, qui répondent aux besoins urgents (facturation fiable, rapport aux élus), puis le lac pour les capteurs, les réclamations et les photographies : on limite ainsi le risque lié aux compétences de l'équipe, qui penche pour l'option A ;</li>
+<li><strong>gouverner le lac dès le départ</strong> : un propriétaire et une description (catalogue, dictionnaire de données) pour chaque source, des droits d'accès, une qualité contrôlée à l'entrée, faute de quoi il devient un marécage (DAMA-DMBOK : architecture des données, métadonnées, qualité, annexe 2.6) ;</li>
+<li><strong>respecter les durées de conservation</strong> : « conserver toutes les données brutes avec leur historique » ne vaut pas pour les données personnelles ; les levées détaillées doivent être détruites deux ans au plus après l'émission de la facture, seuls des agrégats par commune et par mois étant conservés au-delà (annexe 2.4 D) ;</li>
+<li><strong>récupérer les données des capteurs</strong> : le fabricant les garde sur sa plateforme et facture l'export de l'historique ; le Data Act donne à l'utilisateur d'un produit connecté un droit d'accès aux données que génère son utilisation (annexe 2.6) : les conditions d'accès, y compris les frais d'export de 15 k€ par an, sont à discuter avec le fabricant au regard de ce droit, sans analyse juridique ici.</li>
+</ul>
+<p><em>2.2 b) – Le référentiel des adresses et des logements</em></p>
+<p><strong>Définition</strong> (0,5 pt avec la justification et les règles) : les <strong>données de référence</strong> (ou données maîtres) sont des données partagées et stables, utilisées par plusieurs processus et plusieurs applications ; elles sont gérées dans un <strong>référentiel unique</strong>, qui fait foi, et que les autres applications consultent au lieu d'en tenir leur propre copie (F07 § 1).</p>
+<p><strong>Justification</strong> : l'adresse et le logement sont utilisés par la facturation, par les déchèteries (accès des foyers et des professionnels), par les tournées de collecte et par les analyses par commune ; ils sont créés par les <strong>communes</strong>, qui connaissent les premières les nouvelles adresses et les nouveaux logements. Or chacune les tient à sa façon, et 6 communes n'ont pas de liste à jour. Un référentiel partagé supprime la cause des 2 000 doublons et d'une grande partie des 40 000 levées non rattachées. Il permet aussi d'attribuer chaque levée au bon logement, donc au bon occupant, et de produire des données par commune comparables d'un service à l'autre.</p>
+<p><strong>Deux règles de fonctionnement</strong>, parmi :</p>
+<ul>
+<li><strong>une seule source</strong> : une adresse ou un logement n'est créé, modifié ou fermé que dans le référentiel, et jamais dans le logiciel de facturation ou dans celui des déchèteries, qui le consultent ;</li>
+<li><strong>des responsabilités partagées</strong> : chaque commune est responsable de ses adresses et de ses logements (propriétaire local), l'agglomération les valide et contrôle les doublons (intendant), dans un délai fixé, par exemple dès l'attribution d'une nouvelle adresse ; les communes sans liste à jour sont accompagnées ;</li>
+<li><strong>un identifiant unique, non signifiant et stable</strong> pour chaque logement, jamais réattribué, avec un format commun de l'adresse (numéro, voie choisie dans une liste, complément : bâtiment, étage, porte) ;</li>
+<li><strong>un historique</strong> : chaque adresse et chaque logement portent une date de création et, le cas échéant, de fermeture ; les changements sont tracés, et des indicateurs de qualité (doublons, adresses incomplètes) sont suivis.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Option A recommandée, si le candidat la justifie par la simplicité, le délai et les compétences disponibles, l'accompagne du référentiel des adresses et des logements et prévoit d'y ajouter plus tard les données non structurées.</li>
+<li>Option B retenue sous sa forme « lakehouse », si la gouvernance commune et le respect des durées de conservation sont traités.</li>
+<li>Autres critères ou conditions tirés des annexes (délai, compétences, dépendance envers le fabricant des capteurs).</li>
+<li>Référentiel présenté comme une démarche de gestion des données de référence (données maîtres), si le sigle anglais est écrit en toutes lettres (<code>ET-13</code>).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Entrepôt et lac confondus</em> (<code>ET-24</code>) — lac présenté comme un « entrepôt moderne », ou entrepôt comme une simple grosse base.</li>
+<li><em>Choix technique hors attente</em> (<code>JUR-T07</code>) — serveurs, capacités de stockage, logiciels ou produits du marché détaillés, alors que l'expertise des infrastructures est exclue.</li>
+<li><em>Lac sans gouvernance</em> — « tout garder » sans propriétaires ni description, et sans regard pour les durées de conservation des données personnelles.</li>
+<li><em>Référentiel sans les communes</em> — référentiel tenu par la seule agglomération, alors que les communes créent les adresses : la cause des anomalies demeure.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DAMA-DMBOK, 2e édition (2017), révision 2024</td>
+<td>domaines architecture des données, données de référence et données maîtres, métadonnées, qualité</td>
+<td><code>dama_dmbok2</code> / F07 § 8.2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2023/2854 (Data Act), applicable depuis le 12/09/2025</td>
+<td>accès de l'utilisateur aux données des capteurs (annexe 2.6)</td>
+<td><code>data_act</code> / F07 § 8.5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Entrepôt, lac de données, architecture « lakehouse », données de référence</td>
+<td>définitions et comparaison</td>
+<td>F07 § 1 et 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--leffet-de-la-redevance-incitative-4-points">2.3 – L'effet de la redevance incitative (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.a</code> « Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation » ; <code>2.2.b</code> « Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution » ; <code>2.2.c</code> « Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model » ; <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés ». Aucun calcul statistique ni aucune manipulation d'outil ; lecture critique des corrélations et des biais, reliée à la stratégie.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (territoire, redevance, effectif, « Castelrive 2032 » dans la présentation), 2.2 (sources), 2.3 (indicateurs 2024 et 2026, affirmation du vice-président, limites) et, pour la conclusion, 2.1 (levées non rattachées concentrées dans la ville-centre).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Collecte et nettoyage appliqués aux sources et aux limites des annexes (doublons, ruptures de méthode, données de 2024 reconstituées, signalements hétérogènes)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Structuration (faits, dimensions, définitions communes), analyse et restitution appliquées ; rôles</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Analyses descriptive et exploratoire définies et distinguées, prédictive écartée ; combinaison justifiée par l'annexe 2.3</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Premier constat argumenté et chiffré, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Deuxième constat argumenté et chiffré, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-4</td>
+<td>Troisième constat argumenté et chiffré, avec sa précaution de lecture</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Affirmation appréciée : ordures ménagères résiduelles et déchets confondus, causalité non établie (biais), effets de report, base de l'objectif non fixée ; formulation juste proposée</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Deux représentations adaptées aux élus, chacune justifiée par son message et assortie d'un piège évité</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.3 a) – La chaîne de traitement</em></p>
+<p>La <strong>chaîne de traitement</strong> transforme des données brutes en informations utiles à la décision ; c'est une démarche, et non un outil (F08 § 1). Pour mesurer l'effet de la redevance :</p>
+<ul>
+<li><strong>collecte</strong> (0,5 pt avec le nettoyage) : extraction automatique des levées avec leur heure, leur tournée et leur camion (et non plus la seule date gardée par le logiciel de facturation), des passages et des pesées des déchèteries, des mesures des capteurs (à obtenir du fabricant), des tonnages et des refus de tri du syndicat, chaque mois malgré deux mois de retard, des réclamations, des signalements de dépôts sauvages (application de la ville et tableur des mairies) ; on y ajoute les données de contexte qui manquent aujourd'hui : population de chaque commune, résidences secondaires, liste des professionnels passés à un collecteur privé ;</li>
+<li><strong>nettoyage</strong> : dédoublonnage des foyers et rattachement des levées aux bacs et aux logements à l'aide du référentiel (question 2.2 b) ; repérage des valeurs manquantes et aberrantes ; <strong>signalement des ruptures de série</strong> (méthode des refus de tri changée en 2025, signalements comptés autrement dans la ville-centre depuis l'application) ; marquage des tonnages de 2024 comme <strong>reconstitués</strong> ; journal des rejets et correction à la source ;</li>
+<li><strong>structuration</strong> (0,5 pt avec l'analyse et la restitution) : chargement dans l'entrepôt de faits (levées, tonnages, passages, signalements, réclamations), à un grain défini (le mois, la commune, le flux), selon des dimensions communes (date, commune et type de commune, flux de déchets, type de logement, foyer ou professionnel) et des <strong>définitions écrites</strong> dans le dictionnaire de données : ce qu'est une ordure ménagère résiduelle collectée, un habitant (avec ou sans les résidences secondaires), un refus de tri ;</li>
+<li><strong>analyse</strong> : descriptive, puis exploratoire (question b) ;</li>
+<li><strong>restitution</strong> : tableau de bord trimestriel des élus (question 2.5 b), tableau de bord détaillé de la direction de la collecte, données publiées sur le portail (question 2.4), chaque fois avec les sources, les dates et les limites ; puis <strong>décision</strong> et actions de prévention.</li>
+</ul>
+<p>Le chargé d'études conçoit et documente la chaîne ; les directions qui produisent les données en sont propriétaires et valident les définitions ; la direction du numérique en assure l'exploitation ; la déléguée à la protection des données est consultée sur les données personnelles.</p>
+<p><em>2.3 b) – La méthode et trois constats</em></p>
+<p><strong>La méthode</strong> (0,5 pt) : l'<strong>analyse descriptive</strong> résume ce qui s'est passé (niveaux, évolutions, répartitions, écarts à un objectif) ; l'<strong>analyse exploratoire</strong> recherche, sans hypothèse arrêtée, des croisements, des profils et des valeurs atypiques qui orientent vers des explications ; l'<strong>analyse prédictive</strong> estime ce qui va se passer (F08 § 2). On retient :</p>
+<ul>
+<li>l'<strong>analyse descriptive d'abord</strong>, parce que les élus demandent ce qui a changé entre 2024 et 2026, et parce qu'il faut établir des chiffres fiables avant de les expliquer ;</li>
+<li>puis l'<strong>analyse exploratoire</strong>, pour chercher où sont allés les déchets et pourquoi les résultats diffèrent selon les communes : croiser la baisse des ordures ménagères résiduelles avec le tri, les déchèteries, les refus de tri et les dépôts sauvages ; rapprocher les contestations de factures de la qualité des données ;</li>
+<li>une analyse <strong>prédictive</strong> (l'atteinte de l'objectif de 2030) serait prématurée : deux années seulement, une base de 2024 reconstituée, des séries rompues en 2025.</li>
+</ul>
+<p><strong>Trois constats</strong> parmi les suivants (0,5 pt chacun : le fait chiffré, son interprétation au regard de « Castelrive 2032 », la précaution de lecture) :</p>
+<ol type="1">
+<li><strong>Les ordures ménagères résiduelles collectées ont nettement baissé, d'autant plus que la commune est petite.</strong> Elles passent d'environ 42 000 à 34 000 tonnes, soit près d'un cinquième de moins ; par habitant, − 10 % dans la ville-centre (250 à 225 kg), − 20 % dans les communes moyennes (240 à 192 kg), − 30 % dans les communes rurales et périurbaines (220 à 154 kg). Les levées suivent la même pente : 24 par foyer et par an dans la ville-centre, 13 dans les communes rurales, à peine plus que le forfait de 12. <em>Précaution</em> : la base de 2024 est reconstituée à partir des pesées de camions dont les tournées traversent plusieurs communes, et la répartition par type de commune est donc fragile ; une partie de la baisse de la ville-centre vient du départ d'environ 500 professionnels vers un collecteur privé, dont les déchets ne sont plus comptés.</li>
+<li><strong>La quantité totale de déchets par habitant n'a presque pas changé.</strong> En additionnant ordures ménagères résiduelles, emballages et papiers et apports en déchèterie, on passe de 450 à 445 kg par habitant dans la ville-centre, de 505 à 502 kg dans les communes moyennes, de 520 à 524 kg dans les communes rurales. La redevance a donc surtout <strong>déplacé</strong> les déchets vers le tri (+ 10 à + 20 kg) et les déchèteries (+ 10 à + 50 kg) ; elle n'a pas, à ce stade, réduit les déchets produits. <em>Précaution</em> : les apports en déchèterie mêlent ceux des professionnels et les végétaux, sensibles à la météo ; les quantités par habitant ignorent les résidences secondaires, nombreuses dans dix communes rurales, qui gonflent les ratios de ces communes.</li>
+<li><strong>Des effets de report apparaissent là où la baisse est la plus forte.</strong> Dans les communes rurales, les refus de tri passent de 15 % à 28 % et les signalements de dépôts sauvages sont multipliés par quatre (100 à 400) : des ordures sont mises dans les bacs de tri ou déposées dans la nature pour éviter des levées. <em>Précaution</em> : le nouveau prestataire du centre de tri mesure les refus autrement depuis 2025 (rupture de série) ; les signalements ruraux dépendent des appels des mairies, et le triplement dans la ville-centre (300 à 900) tient en partie à l'application lancée en 2025, qui facilite le signalement : une hausse des signalements n'est pas forcément une hausse des dépôts. Une concomitance n'est pas une causalité.</li>
+<li><strong>Les contestations de factures sont les plus nombreuses dans la ville-centre</strong>, avec 260 pour 1 000 redevables contre 170 dans les communes rurales. Deux explications sont possibles. D'une part, les foyers y dépassent le plus le forfait (24 levées contre 13, pour un forfait de 12) et paient donc la part variable la plus élevée. D'autre part, la ville-centre concentre les trois quarts des levées non rattachées (annexe 2.1) : les contestations traduisent aussi la <strong>qualité des données</strong>. <em>Précaution</em> : on ne peut pas départager ces explications ; il n'existe aucune donnée de 2024, et les réclamations, en texte libre dans un tableur, ne sont pas classées par motif.</li>
+</ol>
+<p><em>2.3 c) – L'affirmation du vice-président et deux représentations</em></p>
+<p><strong>L'affirmation de M. BASTÉROLE</strong> (0,5 pt) : « la redevance a fait baisser nos déchets de 20 % » est à corriger sur quatre points :</p>
+<ul>
+<li><strong>ce qui a baissé</strong>, ce sont les ordures ménagères résiduelles collectées, d'environ un cinquième (42 000 à 34 000 tonnes), et non « nos déchets » : leur total par habitant est stable (constat 2) ;</li>
+<li><strong>la cause n'est pas établie</strong> : la redevance est la cause la plus plausible, mais la comparaison ne porte que sur deux années, sans groupe de comparaison, sur une base reconstituée, avec le départ de professionnels et des changements de mesure ; un élu qui porte la réforme est exposé au <strong>biais de confirmation</strong>, qui consiste à retenir le chiffre qui conforte sa conviction ;</li>
+<li><strong>les effets de report</strong> (tri moins bon, dépôts sauvages, apports en déchèterie) ont un coût : le ramassage des dépôts sauvages occupe l'équivalent de trois agents (annexe 2.5) ;</li>
+<li><strong>l'objectif de « Castelrive 2032 »</strong> (− 15 % d'ici 2030), adopté en janvier 2027, n'indique pas son année de référence : s'il part de 2026, il reste entièrement à atteindre ; s'il part de 2024, la baisse affichée doit encore être confirmée.</li>
+</ul>
+<p>Formulation proposée au conseil : « Depuis la redevance, les ordures ménagères résiduelles collectées ont baissé d'environ un cinquième, surtout dans les communes rurales. Une partie s'est reportée vers le tri, les déchèteries et des dépôts sauvages, et la quantité totale de déchets n'a pas diminué. L'objectif de 2030 doit être mesuré à partir d'une base que nous fixons aujourd'hui. »</p>
+<p><strong>Deux représentations</strong> (0,5 pt), parmi :</p>
+<ul>
+<li><strong>Barres empilées par type de commune, en 2024 et en 2026</strong>, des kilogrammes par habitant d'ordures ménagères résiduelles, d'emballages et papiers et d'apports en déchèterie. <em>Message</em> : la hauteur totale ne change presque pas, seule sa composition change. <em>Piège évité</em> : axe partant de zéro, quantités par habitant plutôt qu'en tonnes, pour comparer des communes de tailles différentes.</li>
+<li><strong>Courbe des ordures ménagères résiduelles collectées</strong> par habitant, avec la <strong>trajectoire de l'objectif</strong> de − 15 % tracée depuis l'année de référence retenue. <em>Message</em> : où en est-on de l'objectif, et ce qui reste à faire. <em>Piège évité</em> : le point de 2024 est signalé comme reconstitué, et l'année de référence est écrite.</li>
+<li><strong>Barres groupées des refus de tri et des signalements de dépôts sauvages</strong> par type de commune, en 2024 et en 2026. <em>Message</em> : les effets de report sont les plus forts dans les communes rurales. <em>Piège évité</em> : une mention de la rupture de méthode de 2025 et du lancement de l'application dans la ville-centre.</li>
+<li><strong>Carte des communes</strong> colorée selon la baisse des ordures ménagères résiduelles par habitant, ou selon les levées par foyer. <em>Message</em> : la géographie de l'effet de la redevance. <em>Piège évité</em> : une carte en taux et non en tonnes, qui ferait ressortir la seule ville-centre.</li>
+</ul>
+<p>Un chiffre isolé de « − 20 % » en grand caractère, ou un histogramme dont l'axe est tronqué pour accentuer la baisse, sont de mauvais choix.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Chaîne de traitement présentée avec l'extraction, la transformation et le chargement comme étape intermédiaire, si les cinq étapes de la question sont couvertes.</li>
+<li>Analyse diagnostique présentée comme une variante de l'analyse exploratoire.</li>
+<li>Autres constats tirés de l'annexe 2.3 (levées par foyer selon le type de commune, hausse des apports en déchèterie), s'ils sont chiffrés et assortis d'une précaution ; baisse globale lue comme « environ 20 % » ou « 19 % ».</li>
+<li>Constat sur les contestations de factures expliqué par la seule part variable plus élevée dans la ville-centre, ou par la seule qualité des données, si l'explication est argumentée.</li>
+<li>Autres représentations adaptées aux élus (jauge de l'objectif, petits multiples par type de commune), si le message et le piège évité sont précisés.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Corrélation présentée comme une causalité</em> (<code>ET-26</code>) — baisse des ordures ménagères résiduelles imputée à la seule redevance, ou hausse des signalements prise pour une hausse des dépôts.</li>
+<li><em>Prudence d'interprétation oubliée</em> (<code>JUR-D06</code>) — base de 2024 reconstituée et ruptures de méthode ignorées, objectif de 2030 jugé atteint sans année de référence.</li>
+<li><em>Informatique décisionnelle réduite à un outil</em> (<code>ET-05</code>, <code>JUR-D02</code>) — logiciel de tableaux de bord proposé sans la chaîne de traitement ni les définitions communes.</li>
+<li><em>Calcul hors attente</em> (<code>JUR-T07</code>) — moyennes pondérées ou tests statistiques, alors que la question demande des constats argumentés en chiffres ronds.</li>
+<li><em>Morceau de cours</em> (<code>JUR-T01</code>) — définitions des méthodes d'analyse sans les appliquer aux communes et aux années de l'annexe.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chaîne de traitement, analyses descriptive, exploratoire et prédictive, choix des graphiques, biais de lecture, corrélation et causalité</td>
+<td>définitions et méthode</td>
+<td>F08 § 1, 2 et 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Faits, dimensions, grain, dictionnaire de données</td>
+<td>structuration</td>
+<td>F07 § 1 et 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--louverture-et-la-valorisation-des-données-25-points">2.4 – L'ouverture et la valorisation des données (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.b</code> « Étapes du cycle de vie des données : création, stockage, usage, archivage, suppression » ; <code>2.3.e</code> « Aspects réglementaires (RGPD, archivage légal) et monétisation des données ». Délégué à la protection des données et registre des traitements, archivage, monétisation analysée de façon critique ; le principe d'ouverture des données publiques est donné par l'énoncé ; ni prérogatives des usagers sur leurs données, ni fondement juridique des traitements, ni pouvoirs de l'autorité de contrôle (UE 1), ni analyse juridique.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (collectivités, direction du numérique mutualisée), 2.2 (capteurs, signalements), 2.4 (règle d'ouverture, six jeux de données, proposition de KOMPAVEL, délégué à la protection des données, durées de conservation) et 2.6 (RGPD, anonymisation, monétisation, Data Governance Act).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Anonymisation et pseudonymisation définies et distinguées ; jeux J1, J2 et J6 publiables, avec leurs conditions</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Jeux J3, J4 et J5 appréciés selon les trois critères : J3 non publiable tel quel, J4 publiable avec un seuil, J5 publiable après retrait des éléments identifiants</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Proposition de KOMPAVEL appréciée de façon critique (données personnelles non anonymisables pour cet usage, finalité, monétisation, exclusivité, confiance, prix dérisoire) ; recommandation</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Rôle du DPO mutualisé (missions, désignation commune possible) et deux points à corriger (conflit d'intérêts, rattachement, moyens, consultation, registre)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Cycle de vie et règles de conservation et d'archivage appliquées aux données de la redevance, écarts aux pratiques actuelles corrigés</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.4 a) – Les six jeux de données</em></p>
+<p><strong>Définitions</strong> (0,5 pt avec J1, J2 et J6) : l'<strong>anonymisation</strong> rend impossible, en pratique et de façon irréversible, l'identification des personnes ; les données anonymisées ne sont plus des données personnelles. La <strong>pseudonymisation</strong> remplace les éléments directement identifiants (nom, numéro de foyer) par un pseudonyme : la personne reste identifiable par recoupement, et les données restent personnelles (annexe 2.6 ; F07 § 8.6). Une donnée qui permet d'identifier une personne indirectement, comme l'adresse d'un logement individuel, est une donnée personnelle.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Jeu</th>
+<th>Publication</th>
+<th>Conditions et justification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>J1 – tonnages mensuels par commune et par flux</td>
+<td><strong>oui</strong></td>
+<td>données agrégées par commune et par flux, qui ne se rapportent à aucun foyer ; publiées dans un format ouvert, avec une description : tonnages de 2024 reconstitués, rupture de méthode des refus de tri en 2025</td>
+</tr>
+<tr class="even">
+<td>J2 – colonnes de verre et taux de remplissage</td>
+<td><strong>oui</strong></td>
+<td>mesures de capteurs sur des équipements publics, sans donnée personnelle ; l'agglomération doit d'abord obtenir les données auprès du fabricant (annexe 2.2)</td>
+</tr>
+<tr class="odd">
+<td>J6 – horaires et fréquentation des déchèteries par tranche horaire</td>
+<td><strong>oui</strong></td>
+<td>décomptes de passages agrégés, sans numéro de badge ni plaque d'immatriculation</td>
+</tr>
+<tr class="even">
+<td>J3 – levées par bac avec l'adresse, la date et l'heure</td>
+<td><strong>non, tel quel</strong></td>
+<td>l'adresse d'un logement désigne un foyer (individualisation, même sans le nom : un simple pseudonyme du bac n'y change rien) ; on peut la relier à d'autres sources (corrélation) ; les dates et heures révèlent les habitudes et les absences (inférence), ce qui fait aussi courir un risque aux occupants ; seul un agrégat par commune ou par quartier et par mois peut être publié</td>
+</tr>
+<tr class="odd">
+<td>J4 – levées moyennes par foyer, par commune et par semestre</td>
+<td><strong>oui, avec un seuil</strong></td>
+<td>moyenne sur au moins 80 foyers dans la plus petite commune : aucun foyer n'est isolé ; la publication à la rue est exclue (40 rues de moins de cinq logements, où l'on pourrait déduire le comportement d'un foyer) ; un seuil minimal de foyers par case est fixé, et les petites communes sont regroupées si nécessaire</td>
+</tr>
+<tr class="even">
+<td>J5 – signalements de dépôts sauvages</td>
+<td><strong>oui, après retrait des éléments identifiants</strong></td>
+<td>les photographies montrant des personnes, des plaques ou des courriers nominatifs identifient des personnes ; les commentaires peuvent désigner un auteur supposé, ce qui revient à publier un soupçon (inférence) ; on publie la date, la commune ou le quartier, une position arrondie hors des domiciles et la nature des déchets, sans photographie ni commentaire</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt pour J3, J4 et J5.) Avant publication, la déléguée à la protection des données vérifie les trois critères, et chaque jeu publié est décrit (définition, source, fréquence de mise à jour, limites).</p>
+<p><em>2.4 b) – La proposition de KOMPAVEL</em></p>
+<p><strong>Appréciation critique</strong> (0,5 pt avec la recommandation), en quatre arguments parmi :</p>
+<ul>
+<li><strong>un fichier de données personnelles qu'on ne peut pas anonymiser pour cet usage</strong> : nom, adresse et nombre de levées par mois décrivent le comportement de chaque foyer ; le ciblage commercial exige précisément d'identifier les foyers (individualisation), si bien que l'anonymisation viderait l'offre de son intérêt ;</li>
+<li><strong>une autre finalité</strong> : les levées sont collectées pour facturer la redevance ; les céder pour une prospection commerciale par une entreprise est une finalité différente, a priori incompatible avec la finalité initiale (annexe 2.6), et les usagers y verraient une surveillance de leurs poubelles : la <strong>confiance</strong> dans la redevance, déjà contestée, en souffrirait, avec un risque pour l'image de l'agglomération ;</li>
+<li><strong>la monétisation des données personnelles a des limites</strong> : une personne ne peut ni céder la propriété de ses données ni renoncer à ses garanties (annexe 2.6) ; l'agglomération n'est pas « propriétaire » des données des foyers et ne peut pas les vendre comme une marchandise ;</li>
+<li><strong>l'exclusivité</strong> demandée pendant trois ans va à l'encontre du principe, posé par le Data Governance Act, selon lequel les accords qui accordent un droit exclusif de réutilisation de données protégées détenues par le secteur public sont en principe interdits ; elle favoriserait aussi une entreprise au détriment des autres, à l'inverse de l'ouverture décidée par le conseil ;</li>
+<li><strong>un gain dérisoire et une logique fragile</strong> : 30 k€ par an, soit moins de 40 centimes par foyer, au regard du risque pris ; et un foyer qui présente souvent son bac n'est pas forcément celui qui produit le plus de déchets ou qui peut composter (volume du bac, taille du foyer, appartement sans jardin).</li>
+</ul>
+<p><strong>Recommandation</strong> : refuser la vente du fichier, et répondre à l'intérêt réel de la proposition, la prévention, autrement : publier les données agrégées (J1, J4), utilisables par KOMPAVEL comme par toute autre entreprise ; conduire, au besoin, une campagne de compostage portée par l'agglomération elle-même, auprès de tous les foyers ou des communes où les levées sont les plus nombreuses, sans transmettre de fichier nominatif ; consulter la déléguée à la protection des données avant toute nouvelle utilisation des données de la redevance.</p>
+<p><em>2.4 c) – Le délégué à la protection des données mutualisé, la conservation et l'archivage</em></p>
+<p><strong>Le rôle du délégué</strong> (0,5 pt avec deux points à corriger) : la désignation d'un délégué à la protection des données est obligatoire pour l'agglomération comme pour la ville, organismes publics ; un <strong>même délégué</strong> peut être désigné pour les deux, compte tenu de leur structure et de leur taille, ce qui est cohérent avec la direction du numérique mutualisée (annexe 2.6). Le délégué <strong>informe et conseille</strong> les deux collectivités et leurs agents, <strong>contrôle</strong> le respect du règlement (registre, durées de conservation, sous-traitants), conseille les projets dès leur conception et coopère avec l'autorité de contrôle. Il n'est pas responsable du traitement : c'est l'agglomération qui l'est, pour la redevance, et qui tient son registre avec son aide (F15 § 1 et 2).</p>
+<p><strong>Deux points à corriger</strong>, parmi :</p>
+<ul>
+<li><strong>le conflit d'intérêts</strong> : Mme VILLEROUSSE a été cheffe du projet du logiciel de facturation, dont elle a contribué à fixer les moyens ; elle ne peut pas contrôler en toute indépendance un traitement qu'elle a conduit. Ses missions doivent être séparées de la conduite de projets ;</li>
+<li><strong>le rattachement</strong> : rattachée au directeur du numérique mutualisé, qui décide des moyens des traitements, elle ne peut pas lui rendre compte de leur conformité ; elle doit rendre compte au plus haut niveau de chacune des deux collectivités (les directions générales) ;</li>
+<li><strong>les moyens</strong> : un mi-temps pour deux collectivités, dont l'une emploie 1 100 agents et tient 35 fiches de registre, avec des projets de données d'envergure, ne suffit pas ; on peut prévoir des référents dans les directions ;</li>
+<li><strong>sa consultation</strong> : elle n'a été consultée ni sur les options d'architecture ni sur la proposition de KOMPAVEL, alors que la protection des données doit être prise en compte dès la conception ;</li>
+<li><strong>le registre</strong> : la fiche de la redevance, de 2023, est à mettre à jour (levées horodatées, hébergement chez l'éditeur, qui agit comme sous-traitant, échanges avec les communes, entrepôt et lac, publication de données, durées de conservation).</li>
+</ul>
+<p><strong>La conservation et l'archivage</strong> (0,5 pt) : le cycle de vie des données comprend leur <strong>création</strong>, leur <strong>stockage</strong>, leur <strong>usage</strong>, leur <strong>archivage</strong> et leur <strong>suppression</strong> ; à chaque catégorie de données sont associées une durée d'utilité courante, une durée de conservation et un sort final (F07 § 8.4). Appliqué à la redevance :</p>
+<ul>
+<li><strong>les levées détaillées</strong> sont détruites deux ans au plus après l'émission de la facture qu'elles justifient ; au-delà, seules des données agrégées par commune et par mois sont conservées pour l'analyse. Les levées qui justifient les premières factures, émises en 2025, atteignent ce délai dès 2027 : la purge doit être programmée maintenant. Le logiciel de l'éditeur, qui garde tout depuis 2025, doit être purgé, et la règle s'impose aussi au futur lac de données ;</li>
+<li><strong>les factures</strong> restent deux ans dans le logiciel de facturation, puis passent en <strong>archivage intermédiaire</strong> (accès restreint, intégrité garantie) jusqu'à dix ans après leur émission, avant une destruction tracée ;</li>
+<li><strong>les fiches des foyers partis</strong> sont détruites deux ans après le départ et le paiement de la dernière facture, une fois les doublons fusionnés ;</li>
+<li><strong>les tonnages annuels et les rapports aux élus</strong> sont conservés définitivement dans les archives de l'agglomération ;</li>
+<li><strong>les copies non maîtrisées</strong> sont supprimées : le tableur des réclamations est purgé selon les mêmes durées, et les extractions de levées conservées dans les messageries sont effacées, puis remplacées par un partage sécurisé, limité aux données nécessaires aux communes ;</li>
+<li><strong>le contrat avec l'éditeur</strong> doit prévoir les purges sur instruction de l'agglomération et la restitution des données à son terme, en 2029.</li>
+</ul>
+<p>Le service de la facturation, propriétaire des données, décide de ces règles avec l'archiviste ; la direction du numérique les met en œuvre ; la déléguée à la protection des données en contrôle l'application.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>J4 jugé publiable sans seuil, si le candidat montre que la plus petite commune compte encore 80 foyers ; J2 jugé publiable avec un délai ou une moyenne horaire.</li>
+<li>J5 jugé non publiable, si le candidat propose une version agrégée (nombre de signalements par commune et par mois).</li>
+<li>Recommandation d'une convention de prévention avec plusieurs entreprises, sans transmission de données nominatives, après avis du délégué.</li>
+<li>Autres points à corriger tirés de l'annexe 2.4 C, s'ils sont justifiés.</li>
+<li>Cycle de vie présenté en sept étapes (collecte, stockage, traitement, partage, archivage, destruction…), si les durées de l'annexe sont appliquées.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Anonymisation et pseudonymisation confondues</em> — fichier des levées jugé publiable une fois le nom ou le numéro du bac retirés, alors que l'adresse et les heures suffisent à identifier le foyer.</li>
+<li><em>Monétisation présentée sans regard critique</em> (programme 2.3, limite : « la monétisation doit être abordée de façon critique ») — « 30 k€ de recettes » acceptés sans examiner la finalité, la confiance des usagers et l'exclusivité.</li>
+<li><em>Délégué confondu avec le responsable du traitement ou avec le RSSI</em> (<code>ET-29</code>, <code>JUR-D05</code>) — délégué présenté comme celui qui « décide » des traitements, ou mutualisation jugée impossible.</li>
+<li><em>Analyse juridique hors programme</em> (<code>JUR-T07</code>) — développement sur les prérogatives des usagers sur leurs données, les fondements juridiques des traitements ou les pouvoirs de l'autorité de contrôle, au lieu de l'application des repères fournis.</li>
+<li><em>Durées inventées ou discutées</em> — remise en cause des durées de l'annexe 2.4 D, qui sont données.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2016/679 (RGPD), applicable depuis le 25/05/2018</td>
+<td>donnée personnelle, finalité, minimisation, conservation, registre, délégué (désignation commune, missions, conflit d'intérêts)</td>
+<td><code>rgpd</code> / F15 § 1 et 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Proposition « omnibus numérique » du 19/11/2025</td>
+<td>projet, non applicable</td>
+<td><code>omnibus_numerique_donnees</code> / F15 § 8</td>
+<td>projet</td>
+</tr>
+<tr class="odd">
+<td>Publication de l'autorité de contrôle sur l'anonymisation, 19/05/2020</td>
+<td>trois critères : individualisation, corrélation, inférence ; pseudonymisation</td>
+<td><code>cnil_anonymisation_2020</code> / F07 § 8.6</td>
+<td>publiée</td>
+</tr>
+<tr class="even">
+<td>Publication de l'autorité de contrôle sur la monétisation, 17/11/2025</td>
+<td>limites de la monétisation des données personnelles</td>
+<td><code>cnil_monetisation_2025</code> / F07 § 8.6</td>
+<td>publiée</td>
+</tr>
+<tr class="odd">
+<td>Règlement (UE) 2022/868 (Data Governance Act), applicable depuis le 24/09/2023</td>
+<td>réutilisation des données protégées du secteur public, exclusivité en principe interdite</td>
+<td><code>dga</code> / F07</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Cycle de vie des données, archivage intermédiaire et définitif</td>
+<td>règles de conservation appliquées</td>
+<td>F07 § 8.4</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="25--le-coût-du-dispositif-numérique-de-la-redevance-et-son-pilotage-2-points">2.5 – Le coût du dispositif numérique de la redevance et son pilotage (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.1 – Concevoir, construire et exploiter des outils de pilotage de la performance (budgets, indicateurs, tableaux de bord) : <code>3.1.c</code> « Analyse des coûts directs et indirects : TCO, coûts cachés, ROI des projets SI » ; <code>3.1.d</code> « Construction et suivi de tableaux de bord SI (KPI, équilibrage performance / risques / coûts) ». Total de tête en sommes rondes ; aucun calcul actualisé, aucune règle de finances locales.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (78 000 foyers et 6 000 professionnels redevables, collecte), 2.1 (rapprochement manuel des levées, factures erronées), 2.2 (export des données des capteurs), 2.3 (dépôts sauvages) et 2.5 (coûts de 2026, contrat avec l'éditeur, rapport trimestriel).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Coût complet défini ; 840 k€ / 84 000 redevables = 10 € par redevable et par an ; poids du temps du service</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux coûts cachés tirés des annexes, chacun expliqué</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Indicateur de coût complet, avec ses cinq champs</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Indicateur de risque complet, avec ses cinq champs ; complémentarité avec les tonnages du rapport actuel</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.5 a) – Le coût par redevable et deux coûts cachés</em></p>
+<p><strong>Le coût complet</strong> (0,5 pt avec le calcul) : le <strong>coût complet</strong>, ou coût total de possession (TCO), d'un système d'information réunit tous les coûts supportés sur sa durée de vie : acquisition ou abonnement, exploitation et maintenance, matériel, personnel interne, support, formation, et jusqu'à la sortie (restitution des données, migration) ; il comprend des coûts directs, des coûts indirects et des coûts cachés, et ne se réduit pas au prix du logiciel (F09 § 3.1).</p>
+<p><strong>Le calcul, de tête</strong> : 240 + 80 + 40 + 20 + 100 + 360 = <strong>840 k€</strong> par an ; pour 78 000 foyers et 6 000 professionnels, soit <strong>84 000 redevables</strong> : 840 000 € / 84 000 = <strong>10 € par redevable et par an</strong>. Le premier poste est le <strong>temps du service</strong> de la facturation et des réclamations (360 k€, plus de 40 % du total), devant l'abonnement au logiciel (240 k€) : une grande partie du coût est humaine, et elle dépend directement de la qualité des données, puisque les doublons, les levées non rattachées et les factures adressées à d'anciens occupants alimentent les réclamations.</p>
+<p><strong>Deux coûts cachés</strong> (0,5 pt), parmi ceux que la comptabilité analytique ne rattache pas au dispositif :</p>
+<ul>
+<li><strong>le rapprochement manuel des levées non rattachées</strong> : deux agents de la direction de la collecte y consacrent chacun une journée par semaine, soit une centaine de journées par an, comptées dans la collecte et non dans le dispositif (annexe 2.1) ;</li>
+<li><strong>la sortie du contrat avec l'éditeur</strong> : le contrat, qui prend fin en 2029, ne prévoit pas la restitution des données ; leur récupération et leur reprise dans un nouveau logiciel auront un coût, qui n'est pas provisionné (réversibilité) ;</li>
+<li><strong>le traitement des factures erronées</strong> : 1 700 factures adressées à des foyers partis entraînent des annulations, de nouvelles factures et des relances, ainsi qu'une perte de confiance des usagers ;</li>
+<li><strong>les effets de report de la redevance</strong> : le ramassage des dépôts sauvages mobilise l'équivalent de trois agents des services techniques (annexe 2.5) ; c'est un coût indirect de la politique plutôt que du dispositif numérique, à signaler aux élus ;</li>
+<li><strong>l'accès aux données des capteurs</strong>, facturé 15 k€ par an par le fabricant pour l'export de l'historique, dès lors que ces données doivent être réunies avec celles de la redevance (annexe 2.2) ; montant à discuter avec le fabricant au regard du droit d'accès du Data Act (annexe 2.6).</li>
+</ul>
+<p><em>2.5 b) – Deux indicateurs pour compléter le rapport trimestriel</em></p>
+<p>Le rapport actuel ne mesure que la <strong>performance</strong> (tonnages). Les deux indicateurs proposés y ajoutent le <strong>coût</strong> et le <strong>risque</strong>, pour équilibrer le pilotage, comme le demande Mme VARSANGE (0,5 pt par indicateur complet) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Coût complet du dispositif numérique par redevable</strong></td>
+<td>(coûts annuels du dispositif, y compris les coûts cachés identifiés : rapprochement manuel, traitement des factures erronées) / nombre de redevables actifs</td>
+<td>comptabilité analytique (contrôle de gestion) et logiciel de facturation (redevables actifs)</td>
+<td>trimestrielle, sur douze mois glissants</td>
+<td>au plus 10 € par redevable en 2028, coûts cachés compris (10 € en 2026 sans eux)</td>
+<td>financier</td>
+</tr>
+<tr class="even">
+<td><strong>Taux de levées non rattachées</strong></td>
+<td>levées non rattachées à un bac affecté à un logement / levées lues × 100</td>
+<td>logiciel de facturation (journal des levées rejetées), puis entrepôt de données</td>
+<td>mensuelle, présentée chaque trimestre</td>
+<td>au plus 0,5 % fin 2027 (2 % en 2026)</td>
+<td>processus</td>
+</tr>
+</tbody>
+</table>
+<p>Le premier suit l'<strong>efficience</strong> du dispositif : il doit baisser à mesure que la qualité des données réduit le temps de correction et de réclamation. Le second mesure le <strong>risque</strong> de facturer à tort, ou de ne pas facturer, et de perdre la confiance des usagers : il vérifie que le modèle corrigé et le référentiel des adresses produisent leur effet. Présentés à côté des tonnages, avec leur tendance et leur cible, ils remplacent une page de chiffres par un tableau de bord qui relie le coût, le risque et le résultat.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Coût par foyer seul (840 k€ / 78 000, un peu moins de 11 €), si l'hypothèse est écrite ; coût calculé hors temps du service (480 k€, soit un peu moins de 6 € par redevable), si le candidat le signale comme partiel.</li>
+<li>Autres coûts cachés tirés des annexes (formation des agents, temps de la déléguée à la protection des données, mise à jour du registre), s'ils sont expliqués.</li>
+<li>À la place de l'indicateur de risque : part des factures adressées à un foyer parti (factures adressées à un foyer parti / factures émises ; logiciel de facturation et référentiel des logements ; semestrielle ; au plus 0,2 % en 2028, environ 1 % en 2026 ; axe client) ; signalements de dépôts sauvages pour 10 000 habitants (signalements / population × 10 000 ; application de la ville et tableur des mairies ; trimestrielle ; en baisse chaque année à partir de 2027 ; axe environnement), qui mesure le risque d'effets de report. Comme indicateur complémentaire de performance seulement : délai de réponse aux réclamations sur les levées (somme des jours entre réception et réponse / réclamations ; tableur puis outil de suivi ; mensuelle ; au plus quinze jours ; axe client).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Coût complet réduit au prix du logiciel</em> (<code>ET-33</code>) — seul l'abonnement de 240 k€ retenu, en oubliant le temps du service, qui pèse davantage.</li>
+<li><em>Calcul hors attente</em> (<code>JUR-T07</code>) — actualisation ou retour sur investissement calculés, alors que la question demande un coût par redevable de tête.</li>
+<li><em>Indicateur incomplet ou générique</em> (<code>ET-18</code>, <code>JUR-A02</code>) — « suivre les coûts » sans formule, source, fréquence, cible ni axe, ou deux indicateurs de tonnages qui doublent le rapport actuel.</li>
+<li><em>Finances locales hors attente</em> — discussion du tarif de la redevance ou de son équilibre budgétaire, que la question n'appelle pas.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coût complet (TCO), coûts directs, indirects et cachés, réversibilité</td>
+<td>définition et calcul de tête</td>
+<td>F09 § 3.1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Indicateur à cinq champs, équilibre performance, risque et coût, axes du tableau de bord prospectif</td>
+<td>deux indicateurs du rapport trimestriel</td>
+<td>F08 § 3 ; F09 § 4</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-3--fiabiliser-sécuriser-et-rendre-plus-sobre-le-système-dinformation-13-points">DOSSIER 3 – FIABILISER, SÉCURISER ET RENDRE PLUS SOBRE LE SYSTÈME D'INFORMATION (13 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1 La note de synthèse de l'audit des piscines et ses suites</td>
+<td><code>3.2.d</code> Techniques de rédaction d'un diagnostic d'audit et d'une note de synthèse ; <code>3.2.e</code> Facteurs de succès et points de vigilance spécifiques à l'audit SI</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td>3.2 La fiabilité de la chaîne « levée → facture »</td>
+<td><code>4.1.e</code> Fiabilisation des systèmes d'information comptables et décisionnels (ici, le système de facturation de la redevance)</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>3.3 Les risques et la sécurité des équipements connectés et des systèmes techniques</td>
+<td><code>4.1.b</code> Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers ; <code>4.1.a</code> Détecter, évaluer et traiter les risques associés aux systèmes d'information, en intégrant les dimensions réglementaires, éthiques et technologiques, y compris les apports de l'IA ; <code>4.2.c</code> Notions d'architecture de confiance (authentification, chiffrement, segmentation) ; <code>4.2.e</code> Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques</td>
+<td>3,5</td>
+</tr>
+<tr class="even">
+<td>3.4 La stratégie numérique responsable de l'agglomération</td>
+<td><code>4.3.a</code> Déployer une stratégie SI responsable en intégrant les principes de durabilité, de sobriété numérique et les exigences réglementaires en matière de RSE et de performance environnementale ; <code>4.3.f</code> Stratégies de transition numérique responsable (cloud éthique, datacenters verts, réduction de l'empreinte carbone) (ici, la tension entre l'IA et la sobriété, la trajectoire et la grille de maturité numérique durable) ; <code>4.3.e</code> Outils et indicateurs de mesure de l'impact environnemental des SI</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 3 – Fiabiliser, sécuriser et rendre plus sobre le système d'information</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (note de synthèse et rapport d'audit, fiabilisation et familles de contrôles, typologie des risques, architecture de confiance, sobriété numérique, Green IT et IT for green) environ 2,5 points (items 3.1 a-1, 3.2-1, 3.3 a-1, la définition de l'item 3.3 b-1 et l'item 3.4 a-1) ; analyse des annexes et recommandations environ 10,5 points, soit environ 80 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 58 minutes.</p>
+<hr />
+<h3 id="31--la-note-de-synthèse-de-laudit-des-piscines-et-ses-suites-25-points">3.1 – La note de synthèse de l'audit des piscines et ses suites (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.2 – Auditer, contrôler et évaluer la performance et la conformité des systèmes d'information : <code>3.2.d</code> « Techniques de rédaction d'un diagnostic d'audit et d'une note de synthèse » ; <code>3.2.e</code> « Facteurs de succès et points de vigilance spécifiques à l'audit SI ». Limites : l'exécution de tests techniques détaillés n'est pas attendue ; la conformité financière et comptable n'est pas traitée par l'UE 5.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.1 (cadre de la mission, constats, réactions, demande de la directrice générale des services), annexe 3.5 (guide d'hygiène de l'ANSSI, COSO 2013, RGPD) et annexe 1.1 (piscines, système d'information, organigramme, direction du numérique mutualisée portée par la ville).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Note de synthèse distinguée du rapport (destinataire décideur, brève, hiérarchisée, tournée vers la décision ; le rapport est détaillé, exhaustif et documenté) ; appréciation globale nette ; 20 lignes au maximum</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux constats de priorité 1, chacun complet : constat chiffré, risque, recommandation, responsable nommé, échéance datée</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Deux autres constats complets ; hiérarchie justifiée (gravité, récurrence, exposition) ; suivi du plan d'action annoncé</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Deux facteurs de succès reliés aux réactions de l'annexe 3.1 ou à la mutualisation</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Deux points de vigilance reliés au cas, dont l'indépendance de l'auditrice rattachée à la ville</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.1 a) – La note de synthèse</em></p>
+<p>Le <strong>rapport d'audit</strong> expose de façon complète le périmètre, la méthode, chaque constat avec ses éléments probants, ses causes et ses recommandations ; il s'adresse aux audités et documente la mission. La <strong>note de synthèse</strong> en extrait, pour un décideur qui n'a pas le temps de lire le rapport, l'appréciation globale et les constats qui appellent une décision, <strong>hiérarchisés</strong>, chacun assorti du risque, de la recommandation, du responsable, de la priorité et de l'échéance ; elle tient en une page et prépare une décision (F10 § 1.2 et § 5).</p>
+<p>Hiérarchie attendue : les <strong>comptes partagés et les annulations sans validation</strong> (risque de fraude non détectable, relevé déjà en 2021 et en 2023) et le <strong>réseau sans fil du public relié aux caisses</strong>, aggravé par des logiciels sans mises à jour (porte d'entrée ouverte à n'importe quel visiteur, alors qu'une collectivité voisine vient de subir un rançongiciel) viennent en priorité 1 ; l'<strong>écart de 18 k€</strong>, d'un montant limité mais non expliqué, et la <strong>conservation sans limite</strong> des fiches d'anciens abonnés viennent en priorité 2. Le non-suivi des audits précédents ne forme pas un cinquième constat : il justifie le dispositif de suivi qui conclut la note.</p>
+<p>Note modèle (environ 17 lignes) :</p>
+<!-- note -->
+
+<p><strong>À Mme VARSANGE – Audit des caisses et de la billetterie des piscines (2026) – Note de synthèse pour le comité de direction du 18/05/2027</strong> <strong>Appréciation globale</strong> : les encaissements et la sécurité des caisses sont mal maîtrisés ; les faiblesses de 2021 et 2023 persistent. <strong>1. Comptes partagés et annulations libres (priorité 1).</strong> 45 agents sur 60 sur des comptes communs ; 6 000 tickets annulés (30 k€) sans motif ni validation. Risque : fraude impossible à détecter et à imputer. Recommandation : un identifiant par agent, annulation validée par un responsable, revue hebdomadaire. M. SALVÉRAC, 30/06/2027. <strong>2. Caisses exposées (priorité 1).</strong> Wi-Fi du public sur le réseau des caisses ; logiciel et système sans mises à jour. Risque : intrusion, vol de données de paiement, caisses arrêtées. Recommandation : séparer les réseaux, corriger, remplacer les postes hors support. M. LANDOUSSE, 30/06/2027 ; postes fin 2027. <strong>3. Écarts non expliqués (priorité 2).</strong> 18 k€ d'encaissements manquants. Risque : pertes, recettes non fiables. Recommandation : rapprochement quotidien, écart justifié au-delà d'un seuil, revue mensuelle des finances. M. SALVÉRAC et finances, 30/09/2027. <strong>4. Données conservées sans limite (priorité 2).</strong> 32 000 fiches d'anciens abonnés, dont 25 000 de plus de trois ans. Risque : non-conformité au RGPD, fuite aggravée. Recommandation : durée fixée avec le DPO, purge. M. SALVÉRAC, 31/12/2027. <strong>Suivi</strong> : plan d'action validé en comité de direction, point trimestriel, audit de suivi en janvier 2028.</p>
+<!-- /note -->
+
+<p><em>3.1 b) – Facteurs de succès et points de vigilance</em></p>
+<p><strong>Deux facteurs de succès</strong> (b-1) :</p>
+<ol type="1">
+<li><strong>Un portage par la direction générale et un suivi formalisé des recommandations.</strong> Les plans de 2021 et de 2023 ont été acceptés puis oubliés, faute de suivi. Il faut que Mme VARSANGE fasse valider le plan d'action par le comité de direction, désigne un responsable et une échéance par recommandation, tienne un tableau de suivi présenté chaque trimestre et prévoie un audit de suivi en janvier 2028. C'est la composante « pilotage » du COSO 2013 (annexe 3.5).</li>
+<li><strong>L'adhésion des audités, obtenue par des constats établis contradictoirement et des recommandations réalistes.</strong> M. SALVÉRAC conteste : les constats chiffrés doivent lui être présentés comme des faiblesses du dispositif, et non comme un soupçon sur ses agents. Les comptes nominatifs <strong>protègent les agents honnêtes</strong>, puisqu'une annulation n'est plus imputable à toute l'équipe. La recommandation doit tenir compte de sa contrainte d'accueil : changement d'utilisateur rapide (code court ou badge plutôt qu'une nouvelle connexion), validation seulement au-delà d'un seuil.</li>
+</ol>
+<p><strong>Deux points de vigilance</strong> (b-2) :</p>
+<ol type="1">
+<li><strong>L'indépendance et la légitimité de l'auditrice.</strong> Mme TRÉVAZIN est une agente de la ville, dont le directeur général arrête son programme et dirige aussi la direction du numérique mise en cause par deux constats (réseau, mises à jour). Elle risque d'être gênée pour critiquer sa propre collectivité, et d'être perçue par l'agglomération comme « l'audit de la ville ». Il faut une lettre de mission signée par la directrice générale de l'agglomération, une restitution directe à celle-ci, une charte d'audit commune aux deux collectivités, et la possibilité de faire revoir par un tiers les constats qui touchent la direction mutualisée.</li>
+<li><strong>La dilution des responsabilités entre les directions et l'attentisme.</strong> La direction du numérique renvoie au schéma directeur de 2028 ; la billetterie a été choisie sans elle ; chaque constat peut rebondir entre la direction des piscines, la direction mutualisée et l'éditeur. Il faut désigner <strong>un seul responsable</strong> par recommandation et décider tout de suite des mesures transitoires qui ne dépendent pas du schéma directeur : la séparation du réseau sans fil du public et l'installation des correctifs, demandées à la direction mutualisée par un arbitrage de la directrice générale.</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autre ordre de priorité justifié (par exemple l'écart de 18 k€ en priorité 1 avec les annulations, au titre du risque de détournement de fonds publics), si les quatre constats sont complets.</li>
+<li>Regroupement de la conservation des données et de l'accès tardif à l'extraction de l'éditeur dans un constat de « maîtrise de l'éditeur de billetterie ».</li>
+<li>Note présentée en tableau (constat, risque, recommandation, responsable, priorité, échéance) si elle reste dans les 20 lignes et comporte une appréciation globale.</li>
+<li>Autres facteurs de succès : accès aux données garanti par une clause des contrats des éditeurs (six semaines pour obtenir l'extraction) ; compétences en systèmes d'information de l'auditrice ou appui de la direction mutualisée ; information des élus. Autres points de vigilance : proportionnalité du coût des contrôles aux enjeux (18 k€), conduite du changement des 60 agents d'accueil, confidentialité des constats de sécurité.</li>
+<li>Responsables désignés par leur fonction (directeur des piscines, directeur du numérique mutualisé, responsable de la sécurité des systèmes d'information) plutôt que par leur nom.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Démarche ou tests d'audit développés au lieu de la note</em> (<code>JUR-T07</code>) — juste : la note et ses suites ; la démarche n'est pas demandée.</li>
+<li><em>Constats non hiérarchisés ou sans responsable ni échéance</em> (<code>JUR-T03</code>) — juste : une priorité, une personne et une date pour chaque recommandation.</li>
+<li><em>Note qui dépasse 20 lignes ou qui recopie les notes brutes</em> (<code>JUR-T07</code>) — juste : une appréciation globale et quatre constats regroupés.</li>
+<li><em>Audit du SI confondu avec l'audit légal des comptes</em> (<code>ET-34</code>) — juste : audit interne des caisses et de leur sécurité, sans opinion sur les comptes.</li>
+<li><em>Facteurs de succès génériques</em> (<code>JUR-T01</code>) — juste : reliés aux deux audits sans suite, à la contestation de M. SALVÉRAC, à l'attentisme de la direction du numérique et au rattachement de l'auditrice à la ville.</li>
+<li><em>Réactions des responsables ignorées</em> (<code>JUR-T08</code>) — juste : elles fondent les facteurs de succès et les points de vigilance.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Note de synthèse, diagnostic d'audit, facteurs de succès</td>
+<td>constat, risque, recommandation, priorité, échéance ; indépendance, suivi</td>
+<td>F10 § 1.2 et § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>COSO 2013</td>
+<td>pilotage du contrôle interne, suivi des faiblesses relevées</td>
+<td><code>coso_2013</code> ; F10 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique de l'ANSSI (2017)</td>
+<td>identification nominative, mises à jour, cloisonnement du réseau</td>
+<td><code>guide_hygiene_anssi_2017</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>durée de conservation limitée, sécurité</td>
+<td><code>rgpd</code> ; F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="32--la-fiabilité-de-la-chaîne--levée--facture--3-points">3.2 – La fiabilité de la chaîne « levée → facture » (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.e</code> « Fiabilisation des systèmes d'information comptables et décisionnels » (contrôles applicatifs, séparation des tâches, piste d'audit, intégrité des interfaces, sauvegardes et restauration éprouvées). Limite : la conformité financière et comptable n'est pas traitée ; aucune règle de comptabilité publique ni de finances locales n'est mobilisée.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.2 (déroulement, constats de 2026, échéance de juillet 2027), annexe 3.5 (ISO/IEC 27001:2022 et 27002:2022, COSO 2013) et annexe 1.1 (redevance incitative, logiciel de facturation hébergé par l'éditeur, camions).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Fiabilisation définie (données exactes, exhaustives, autorisées, traçables et disponibles) ; contrôles généraux informatiques et contrôles applicatifs distingués</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Contrôle de l'interface camions → logiciel : constat, risque, nature, responsable</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Contrôle des tarifs et du calcul, avec séparation des tâches : constat, risque, nature, responsable</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Traçabilité des corrections (comptes nominatifs, journal) : constat, risque, nature, responsable</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Sauvegarde et restauration éprouvée : constat, risque, nature, responsable</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Contrôle à mettre en place en premier, justifié par l'échéance de juillet 2027</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><strong>Définitions</strong> (item 1). <strong>Fiabiliser</strong> un système d'information de gestion, c'est organiser les traitements et les contrôles pour que les données qu'il produit, ici les levées et les factures, soient <strong>exactes, exhaustives, autorisées, traçables</strong> et <strong>disponibles</strong>, et qu'on puisse reconstituer le chemin de chaque facture jusqu'aux levées qui la justifient (piste d'audit). Les <strong>contrôles généraux informatiques</strong> portent sur l'environnement du système : gestion des accès, gestion des changements, exploitation (sauvegardes, supervision). Les <strong>contrôles applicatifs</strong> sont propres à un traitement : contrôles à la saisie, au traitement, aux interfaces et en sortie (F10 § 2 et § 3). La chaîne « levée → facture » en a besoin des deux.</p>
+<p><strong>Quatre contrôles</strong> (items 2 à 5) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Contrôle</th>
+<th>Constat de l'annexe 3.2</th>
+<th>Risque traité</th>
+<th>Nature</th>
+<th>Qui le met en œuvre</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Intégrité de l'interface</strong> : chaque fichier porte l'identifiant de la tournée et le nombre de levées ; l'ordinateur embarqué le conserve jusqu'à l'accusé de réception du serveur d'échange ; le logiciel refuse un fichier déjà importé ; chaque matin, un <strong>rapprochement</strong> automatique compare la liste des tournées réalisées, les fichiers reçus et les levées importées, et chaque écart ou rejet est traité et tracé</td>
+<td>120 tournées et environ 20 000 levées perdues ; 300 fichiers réimportés à la main, 5 000 levées facturées deux fois ; aucun rapprochement</td>
+<td>facturation <strong>incomplète</strong> (levées perdues, usagers traités inégalement) ou <strong>en double</strong> (réclamations, perte de confiance)</td>
+<td>préventive (accusé de réception, refus des doublons) et détective (rapprochement quotidien)</td>
+<td>direction du numérique mutualisée (serveur d'échange), fabricant des équipements embarqués et éditeur (évolutions à demander) ; le rapprochement est revu chaque matin par le service de la facturation</td>
+</tr>
+<tr class="even">
+<td><strong>Tarifs et calcul des factures</strong> : séparation des tâches entre l'agent qui saisit les tarifs et la responsable du service, qui les valide en les comparant aux tarifs votés avant tout lancement ; contrôles de vraisemblance bloquants (tarif hors d'une plage admise, facture qui dépasse un multiple de celle du semestre précédent) ; revue d'un échantillon de factures et des montants les plus élevés avant l'envoi</td>
+<td>un même agent saisit les tarifs et lance la facturation ; tarif saisi à 25 € au lieu de 2,50 € ; 3 000 factures erronées, 900 réclamations</td>
+<td><strong>facturation erronée de masse</strong>, coût de traitement des réclamations, atteinte à l'acceptation de la redevance</td>
+<td>préventive (double validation, contrôles bloquants) et détective (revue avant envoi)</td>
+<td>Mme DARNÉZAN valide ; l'éditeur sépare les profils de saisie des tarifs et de lancement</td>
+</tr>
+<tr class="odd">
+<td><strong>Traçabilité des corrections</strong> : un compte nominatif par agent ; un journal des modifications (auteur, date, motif, valeur avant et après) que l'on ne peut pas modifier ; motif obligatoire, validation des corrections au-delà d'un montant ; revue mensuelle d'un échantillon</td>
+<td>six agents sur le même compte « facturation » ; 4 000 factures modifiées sans trace</td>
+<td><strong>fraude interne</strong> (dette effacée), <strong>erreurs non détectées</strong>, impossibilité de justifier une facture devant l'usager</td>
+<td>préventive (comptes nominatifs, validation) et détective (journal, revue)</td>
+<td>l'éditeur (fonction de journalisation, à exiger), la direction du numérique (comptes), le service de la facturation (revue)</td>
+</tr>
+<tr class="even">
+<td><strong>Sauvegarde et restauration éprouvée</strong> : sauvegarde du serveur d'échange hors de la salle du siège (par exemple dans la salle de l'hôtel de ville) et copie hors ligne ; alerte en cas d'échec d'une sauvegarde ; <strong>test de restauration</strong> au moins annuel, pour le serveur et pour la base de l'éditeur ; délai de restauration et perte de données admissible fixés avec l'éditeur</td>
+<td>aucune restauration essayée ; sauvegarde dans la même salle ; sauvegarde arrêtée depuis l'été sans que personne le voie ; contrat muet</td>
+<td><strong>perte définitive</strong> des levées ou des factures d'un semestre, impossibilité de facturer ou de répondre aux réclamations</td>
+<td>préventive (sauvegarde déportée), détective (alerte, test)</td>
+<td>direction du numérique mutualisée (serveur d'échange), éditeur (base, preuve du test), service de la facturation (exigences de délai et de perte admissible)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le contrôle à mettre en place en premier</strong> (item 6) : le <strong>contrôle des tarifs et du calcul</strong>. Il se met en place <strong>avant juillet 2027</strong> sans évolution du logiciel : une organisation (double validation, comparaison aux tarifs votés) et une revue avant l'envoi suffisent ; l'erreur qu'il prévient touche des milliers de factures d'un coup (3 000 en juillet 2026). En attendant les évolutions de l'interface, qui dépendent du fabricant et de l'éditeur, un <strong>rapprochement manuel</strong> des tournées réalisées et des fichiers reçus peut compenser.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Le contrôle de l'interface placé en premier, si le candidat justifie par la perte continue de levées (1 % des tournées) et par les doublons, et prévoit un contrôle compensatoire des tarifs pour juillet 2027.</li>
+<li>Séparation des tâches présentée comme un cinquième contrôle, à condition que les quatre contrôles demandés soient traités.</li>
+<li>Référence au COSO 2013 (activités de contrôle) ou aux mesures de journalisation et de sauvegarde de l'ISO/IEC 27002:2022.</li>
+<li>Exigences envers l'éditeur exprimées comme des engagements de service (délai de restauration, perte admissible, preuve des tests), sans analyse juridique du contrat.</li>
+<li>Délai de restauration et perte de données admissible désignés par les sigles RTO et RPO, correctement définis.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Contrôles génériques, sans lien avec les constats</em> (<code>JUR-T01</code>, <code>JUR-T08</code>) — juste : chaque contrôle répond à un chiffre de l'annexe 3.2.</li>
+<li><em>Sauvegarde sans test de restauration</em> (<code>JUR-S02</code>) — juste : une sauvegarde qu'on n'a jamais restaurée ne prouve rien ; l'été 2026 le montre.</li>
+<li><em>Dérive vers la comptabilité publique ou le recouvrement</em> (limite du programme) — juste : la transmission au comptable public n'est pas à étudier.</li>
+<li><em>Confusion entre un contrôle et un outil</em> (« acheter un logiciel ») (<code>ET-01</code>) — juste : un contrôle est une règle, avec un responsable et une trace.</li>
+<li><em>Nature préventive ou détective omise</em> — juste : elle est demandée pour chaque contrôle.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fiabilisation, contrôles généraux et applicatifs, séparation des tâches, piste d'audit</td>
+<td>définitions et contrôles</td>
+<td>F10 § 2 et § 3</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>COSO 2013</td>
+<td>activités de contrôle (toléré)</td>
+<td><code>coso_2013</code> ; F10 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO/IEC 27002:2022</td>
+<td>mesures de journalisation, de sauvegarde et de contrôle d'accès</td>
+<td><code>iso_27002_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="33--les-risques-et-la-sécurité-des-équipements-connectés-et-des-systèmes-techniques-35-points">3.3 – Les risques et la sécurité des équipements connectés et des systèmes techniques (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.b</code> « Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers » ; <code>4.1.a</code> « Détecter, évaluer et traiter les risques associés aux systèmes d'information… ». Limite : l'analyse de sécurité technique détaillée n'est pas attendue.</li>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.c</code> « Notions d'architecture de confiance (authentification, chiffrement, segmentation) » ; <code>4.2.e</code> « Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques ». Limites : la mise en œuvre technique et les démarches de certification ne sont pas attendues ; le Zero Trust est un cadre, pas un produit.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.3 (inventaire, incidents, témoignages), annexe 3.5 (ISO/IEC 27001:2022, guide d'hygiène, Zero Trust, Cyber Resilience Act, RGPD) et annexe 1.1 (camions, déchèteries, piscines, direction du numérique mutualisée portée par la ville).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Typologie présentée : trois catégories définies ; risque = événement redouté apprécié par sa probabilité et son impact</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Cinq risques tirés de l'annexe 3.3, formulés comme des événements, couvrant les trois catégories</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Deux risques prioritaires justifiés par leur probabilité et leur impact</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Architecture de confiance définie ; principes de séparation des réseaux et d'accès à distance des mainteneurs, reliés aux constats</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Principes de chiffrement et de mises à jour (inventaire, mots de passe d'usine), reliés aux constats</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Rôles des quatre acteurs (agglomération, direction du numérique et RSSI, éditeurs et fabricants, mainteneurs)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Formalisation (politique étendue, matrice des rôles, clauses de sécurité, instance) et positionnement du RSSI</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.3 a) – Typologie, cinq risques et deux priorités</em></p>
+<p>Un <strong>risque</strong> lié au système d'information est un événement redouté qui atteint la disponibilité, l'intégrité, la confidentialité ou la traçabilité de l'information et des traitements ; il s'apprécie par sa <strong>probabilité</strong> et son <strong>impact</strong>. On distingue : les <strong>cybermenaces</strong>, actes malveillants (rançongiciel, intrusion, usurpation d'un compte) ; les <strong>défaillances opérationnelles</strong>, pannes, erreurs ou défauts d'exploitation et de maintenance, y compris la dépendance à un prestataire ; les <strong>risques réglementaires et métiers</strong>, non-respect d'une obligation et atteinte à la mission elle-même, ici le service public (F12 § 0 et § 5).</p>
+<table>
+<thead>
+<tr class="header">
+<th>N°</th>
+<th>Risque (événement redouté)</th>
+<th>Catégorie</th>
+<th>Faits de l'annexe 3.3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R1</td>
+<td>Rançongiciel entré par l'accès à distance du mainteneur, qui chiffre la télégestion des piscines puis se propage aux réseaux de bureau de l'agglomération et de la ville</td>
+<td>cybermenace</td>
+<td>accès permanent, compte unique de 12 techniciens, mot de passe de 2019, messagerie sur le poste de supervision, réseaux non séparés ; scénario survenu chez la voisine en novembre 2026</td>
+</tr>
+<tr class="even">
+<td>R2</td>
+<td>Prise de contrôle des ordinateurs embarqués des camions, qui fausse ou supprime les levées et sert de porte d'entrée</td>
+<td>cybermenace</td>
+<td>même mot de passe d'usine sur 40 ordinateurs, faille publiée en 2026 non corrigée, accès au réseau mobile</td>
+</tr>
+<tr class="odd">
+<td>R3</td>
+<td>Arrêt des six déchèteries par la panne du serveur unique du contrôle d'accès</td>
+<td>défaillance opérationnelle</td>
+<td>un samedi bloqué en septembre 2026, 2 000 usagers refoulés ou admis sans contrôle ; aucun inventaire de la direction du numérique</td>
+</tr>
+<tr class="even">
+<td>R4</td>
+<td>Panne ou dysfonctionnement durable d'un équipement non maintenu (camions, contrôle d'accès, télégestion), faute d'un responsable de ses mises à jour, les contrats ne traitant pas de la sécurité</td>
+<td>défaillance opérationnelle (dépendance aux prestataires)</td>
+<td>« c'est au client de les installer » ; « notre contrat ne porte pas sur l'informatique »</td>
+</tr>
+<tr class="odd">
+<td>R5</td>
+<td>Mise en cause de l'agglomération pour la conservation sans limite des images de plaques d'immatriculation des véhicules des professionnels, qui permettent d'identifier des personnes (RGPD : conservation limitée, sécurité adaptée, annexe 3.5)</td>
+<td>risque réglementaire</td>
+<td>images des plaques conservées sans limite de durée ; caméras sur le réseau de bureau</td>
+</tr>
+<tr class="even">
+<td>R6</td>
+<td>Fermeture des piscines ou mauvais traitement de l'eau, mettant en jeu la santé des baigneurs et la continuité du service public</td>
+<td>risque métier</td>
+<td>télégestion non pilotable chez la voisine ; objectif « continuité et sécurité des services publics, numériques et techniques » de « Castelrive 2032 »</td>
+</tr>
+</tbody>
+</table>
+<p>Cinq risques suffisent, dont au moins un par catégorie.</p>
+<p><strong>Deux risques prioritaires</strong> (a-3) :</p>
+<ul>
+<li><strong>R1</strong> : <strong>probabilité élevée</strong>. L'accès est ouvert en permanence, avec un compte partagé et un mot de passe inchangé depuis 2019, et le scénario vient de se réaliser chez une voisine. <strong>Impact très fort</strong> : fermeture des quatre piscines pendant des semaines, risque sanitaire, propagation à toute l'agglomération et à la ville par des réseaux non séparés.</li>
+<li><strong>R2</strong> : <strong>probabilité élevée</strong>, avec un mot de passe d'usine identique sur 40 ordinateurs et une faille connue non corrigée. <strong>Impact fort</strong> : la collecte et la facturation de 84 000 redevables reposent sur ces levées. On peut aussi retenir R6, conséquence métier de R1, si le choix est justifié.</li>
+</ul>
+<p><em>3.3 b) – Quatre principes d'architecture de confiance</em></p>
+<p>Une <strong>architecture de confiance</strong> organise les systèmes pour que la confiance accordée à un utilisateur, à un équipement ou à une connexion soit <strong>vérifiée à chaque accès et limitée au nécessaire</strong> : authentification, autorisation au moindre privilège, chiffrement, cloisonnement, traçabilité. Le modèle <strong>Zero Trust</strong> en est le cadre de référence : aucune confiance implicite liée à la place dans le réseau. C'est un modèle d'architecture que l'on adopte progressivement, en complément de la défense en profondeur, et non un produit (annexe 3.5 ; F12 § 3).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Principe</th>
+<th>Application aux équipements de l'agglomération</th>
+<th>Constat de l'annexe 3.3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(b-1) <strong>Séparation des réseaux techniques et du réseau de bureau</strong></td>
+<td>placer la télégestion, le contrôle d'accès et le serveur d'échange des camions dans des zones distinctes du réseau de bureau et du réseau de la ville, avec des échanges limités au strict nécessaire et contrôlés ; un poste de supervision dédié, sans messagerie ni navigation</td>
+<td>équipements sur le même réseau que les bureaux, lui-même relié à la ville ; caméras sur le réseau de bureau ; messagerie sur le poste de supervision</td>
+</tr>
+<tr class="even">
+<td>(b-1) <strong>Authentification et traçabilité des accès à distance</strong></td>
+<td>un compte nominatif par technicien du mainteneur, une authentification à plusieurs facteurs, un accès ouvert à la demande pour une intervention et refermé ensuite, par un point d'entrée unique contrôlé par l'agglomération plutôt qu'un logiciel de prise de main installé sur le poste ; sessions journalisées et revues</td>
+<td>compte unique de 12 techniciens, mot de passe de 2019, accès à tout moment</td>
+</tr>
+<tr class="odd">
+<td>(b-2) <strong>Chiffrement</strong></td>
+<td>chiffrer les échanges entre les capteurs et la plateforme, entre les camions et le serveur d'échange, et les données sensibles stockées (images des plaques) ; en faire une exigence envers les fabricants</td>
+<td>mesures des capteurs transmises sans chiffrement ; levées transmises par le réseau mobile</td>
+</tr>
+<tr class="even">
+<td>(b-2) <strong>Mises à jour et durcissement</strong></td>
+<td>inventaire de tous les équipements connectés et techniques ; mots de passe d'usine changés et distincts pour chaque équipement ; politique de mise à jour avec calendrier et responsable ; à l'achat, exiger une durée de support et des mises à jour de sécurité, que le Cyber Resilience Act imposera aux fabricants à partir du 11/12/2027</td>
+<td>ordinateurs jamais mis à jour, faille non corrigée, mot de passe d'usine identique sur 40 ordinateurs, aucun équipement dans l'inventaire</td>
+</tr>
+</tbody>
+</table>
+<p><em>3.3 c) – Rôles, responsabilités et formalisation</em></p>
+<p>Ces équipements sont des <strong>systèmes critiques</strong> du service public : la collecte, la facturation, les déchèteries et la sécurité des baigneurs en dépendent. Leur sécurité ne peut être laissée « au technique ».</p>
+<table>
+<thead>
+<tr class="header">
+<th>Acteur</th>
+<th>Rôles et responsabilités</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Directrice générale des services de l'agglomération</strong></td>
+<td>approuve l'extension de la politique de sécurité aux systèmes techniques, fixe le niveau de risque accepté, arbitre les moyens avec la ville au sein de l'instance commune, rend compte aux élus</td>
+</tr>
+<tr class="even">
+<td><strong>Directions utilisatrices</strong> (collecte, piscines)</td>
+<td>propriétaires de leurs systèmes et des risques métier : déclarent leurs équipements à l'inventaire, autorisent les accès de leurs mainteneurs, prévoient le mode dégradé (conduite manuelle des chaufferies, ouverture manuelle des barrières), font inscrire les exigences de sécurité dans leurs contrats</td>
+</tr>
+<tr class="odd">
+<td><strong>Direction du numérique mutualisée</strong></td>
+<td>exploite la séparation des réseaux, le point d'entrée des accès à distance, les sauvegardes et la supervision ; installe les mises à jour ou en contrôle l'installation</td>
+</tr>
+<tr class="even">
+<td><strong>RSSI mutualisé</strong></td>
+<td>définit les règles, conduit l'analyse des risques, conseille les directions, revoit les accès, pilote le traitement des incidents, rend compte de l'état de sécurité</td>
+</tr>
+<tr class="odd">
+<td><strong>Éditeurs et fabricants</strong></td>
+<td>fournissent des produits sûrs, publient et signalent les correctifs de sécurité, informent l'agglomération des vulnérabilités et des incidents (obligations du Cyber Resilience Act, échelonnées de 2026 à 2027), respectent les exigences de chiffrement et de comptes</td>
+</tr>
+<tr class="even">
+<td><strong>Mainteneurs</strong></td>
+<td>n'accèdent qu'avec des comptes nominatifs et sur demande, tracent leurs interventions, sécurisent leurs propres postes et signalent sans délai tout incident</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Formalisation et suivi</strong> (c-2) : (1) la <strong>politique de sécurité de 2023 étendue</strong> aux équipements connectés et aux systèmes techniques ; (2) une <strong>matrice des responsabilités</strong> (réalise, approuve, consulté, informé) pour l'inventaire, les accès à distance, les mises à jour et les incidents ; (3) des <strong>clauses de sécurité</strong> ajoutées aux contrats de maintenance et aux contrats des éditeurs (mises à jour, accès, signalement des incidents, droit d'audit) ; (4) un <strong>comité de sécurité commun</strong> à la ville et à l'agglomération, qui se réunit chaque trimestre et suit les risques et le plan d'action.</p>
+<p><strong>Positionnement du RSSI</strong> : rattaché au directeur du numérique, il contrôle ce que sa propre hiérarchie exploite, et il n'a aucune autorité sur l'agglomération. Il devrait relever <strong>fonctionnellement des deux directions générales</strong>, ou de leur comité de sécurité commun, avec une mission écrite qui couvre les systèmes techniques des deux collectivités, un droit d'alerte direct auprès de Mme VARSANGE et des <strong>correspondants sécurité</strong> dans les directions de la collecte et des piscines.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Transmission sans chiffrement des mesures des capteurs présentée comme un risque d'intégrité (mesures faussées, tournées mal calculées), en cybermenace ou en défaillance ; elle ne relève pas du RGPD, ces mesures ne se rapportant à aucune personne.</li>
+<li>Autres risques pertinents : usurpation du compte partagé de la plateforme des capteurs ; dépendance à un mainteneur unique pour la nuit ; fraude à l'accès aux déchèteries ; risque d'image auprès des usagers et des élus.</li>
+<li>Cotation qualitative (faible, moyen, fort) ou matrice probabilité × impact, sans calcul.</li>
+<li>Référence aux mesures du guide d'hygiène de l'ANSSI (identification nominative, changement des éléments d'authentification par défaut, cloisonnement, mises à jour, maîtrise des risques liés aux prestataires) ou à l'annexe A de l'ISO/IEC 27001:2022.</li>
+<li>Matrice des responsabilités présentée en tableau croisé (activités × acteurs).</li>
+<li>Mention de NIS 2 comme cadre de gouvernance possible, si elle est datée correctement (directive non transposée en France au 31/12/2026) et si le candidat ne cherche pas à qualifier l'agglomération au regard de ce texte.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Zero Trust présenté comme un produit à acheter</em> (<code>ET-04</code>, <code>JUR-S03</code>) — juste : un cadre d'architecture, progressif.</li>
+<li><em>Mesures techniques détaillées ou paramétrages</em> (limite du programme 4.2) — juste : des principes, reliés aux constats.</li>
+<li><em>Risques non classés ou catégorie manquante</em> (<code>JUR-T03</code>) — juste : cinq risques, trois catégories.</li>
+<li><em>Sécurité des systèmes techniques laissée aux mainteneurs ou à la seule direction du numérique</em> (<code>JUR-T11</code>) — juste : responsabilités partagées, propriétaires métier dans les directions.</li>
+<li><em>RSSI présenté comme un technicien ou maintenu sous le seul directeur du numérique</em> (<code>ET-15</code>) — juste : une autorité fonctionnelle sur les deux collectivités.</li>
+<li><em>Référentiels, normes et solutions confondus</em> (<code>ET-01</code>, <code>JUR-S06</code>) — juste : ISO/IEC 27001 (norme), guide d'hygiène (guide), Zero Trust (modèle), Cyber Resilience Act (règlement).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des risques, architecture de confiance, rôles</td>
+<td>définitions, principes</td>
+<td>F12 § 0, § 1, § 3 et § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27001:2022 et ISO/IEC 27002:2022</td>
+<td>mesures de l'annexe A (accès, vulnérabilités, séparation des réseaux, fournisseurs)</td>
+<td><code>iso_27001_2022</code>, <code>iso_27002_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique de l'ANSSI (2017)</td>
+<td>identification nominative, authentification par défaut, cloisonnement, mises à jour, prestataires</td>
+<td><code>guide_hygiene_anssi_2017</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Modèle Zero Trust (avis de l'ANSSI, 2021)</td>
+<td>cadre d'architecture</td>
+<td><code>zero_trust_anssi</code> ; F12 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Règlement (UE) 2024/2847 (Cyber Resilience Act)</td>
+<td>obligations des fabricants : sécurité dès la conception, mises à jour, signalement</td>
+<td><code>cra</code> ; F12 § 7</td>
+<td>signalement depuis le 11/09/2026 ; application générale le 11/12/2027</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>conservation limitée, sécurité</td>
+<td><code>rgpd</code> ; F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="34--la-stratégie-numérique-responsable-de-lagglomération-4-points">3.4 – La stratégie numérique responsable de l'agglomération (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.3 – Intégrer les enjeux de durabilité et de sobriété numérique dans le management des SI : <code>4.3.a</code> « Déployer une stratégie SI responsable… » ; <code>4.3.f</code> « Stratégies de transition numérique responsable (cloud éthique, datacenters verts, réduction de l'empreinte carbone) » ; <code>4.3.e</code> « Outils et indicateurs de mesure de l'impact environnemental des SI ». Limites : la durabilité doit être intégrée à la gouvernance globale du SI et non traitée comme un ajout marginal ; les résultats d'empreinte sont donnés, jamais calculés.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.4 (obligation non remplie, état des lieux, premières mesures, projet de tournées optimisées), annexe 3.5 (loi REEN, RGESN, étude ADEME-Arcep) et annexe 1.1 (projet « Castelrive 2032 », direction du numérique mutualisée, dépenses du numérique).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Sobriété numérique définie (interroger le besoin d'abord) ; Green IT et IT for green distingués ; pour au moins trois dimensions, niveau actuel décrit de façon observable et justifié par l'annexe 3.4, et niveau visé en 2030, sur l'échelle à quatre niveaux donnée par la question</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux premiers axes, reliés chacun à un constat chiffré</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Deux autres axes, et ordre de priorité justifié (part de la fabrication, gains rapides)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Gouvernance (adoption, portage, instance commune avec la ville, intégration au futur schéma directeur) et trajectoire datée jusqu'en 2030</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Deux arguments en faveur du projet et deux limites tirées de l'annexe 3.4 D</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Conditions de la recommandation (expérimentation, mesure du bilan net, sobriété du dispositif)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Premier indicateur complet (formule, source, fréquence, cible, axe)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Second indicateur complet</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.4 a) – Définitions, grille de maturité et stratégie</em></p>
+<p>La <strong>sobriété numérique</strong> consiste à interroger d'abord le <strong>besoin</strong> (cet équipement, ce service, ce calcul, cette impression sont-ils utiles ?) avant de chercher l'efficacité ; elle ne se réduit pas à une économie d'énergie. Le <strong>Green IT</strong> réduit l'empreinte du système d'information lui-même (équipements, salles informatiques, logiciels, usages). L'<strong>IT for green</strong> mobilise le numérique pour réduire l'empreinte d'une autre activité de l'organisation : le projet de tournées optimisées en relève (F14 § 3).</p>
+<p><strong>Grille de maturité du numérique responsable</strong> (F09 § 5 ; F14). Les quatre niveaux sont donnés par la question ; la grille complète figure ici à titre de référence, et le candidat n'a qu'à décrire, pour chaque dimension, le niveau actuel et le niveau visé :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>1 – Initial</th>
+<th>2 – Engagé</th>
+<th>3 – Structuré</th>
+<th>4 – Piloté</th>
+<th>Agglomération en 2027 → cible 2030</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Équipements et achats</td>
+<td>renouvellement à date fixe, achat au prix</td>
+<td>actions ponctuelles (réemploi occasionnel)</td>
+<td>durée de vie allongée, critères environnementaux dans les achats</td>
+<td>durée de vie et achats suivis par des indicateurs, revus chaque année</td>
+<td><strong>1</strong> (postes tous les quatre ans par lots, téléphones tous les deux ans, prix seul, 30 % des tablettes inutilisées) → <strong>3</strong></td>
+</tr>
+<tr class="even">
+<td>Infrastructures</td>
+<td>aucune mesure</td>
+<td>consommation connue</td>
+<td>serveurs inutiles retirés, consolidation, PUE suivi</td>
+<td>PUE et consommation pilotés selon une cible</td>
+<td><strong>1 à 2</strong> (PUE 2,2 et 2,0, 40 serveurs inutiles, utilisation de 15 %, 900 MWh connus) → <strong>3</strong></td>
+</tr>
+<tr class="odd">
+<td>Usages et services</td>
+<td>aucune règle</td>
+<td>« écogestes » affichés</td>
+<td>règles d'impression et de stockage, sensibilisation, écoconception des nouveaux services</td>
+<td>évaluation environnementale de chaque projet avant décision</td>
+<td><strong>2</strong> (écogestes de 2023, 4 millions de pages) → <strong>3</strong></td>
+</tr>
+<tr class="even">
+<td>Gouvernance et mesure</td>
+<td>ni responsable ni mesure</td>
+<td>première mesure isolée</td>
+<td>stratégie adoptée, responsable désigné, bilan annuel</td>
+<td>objectifs intégrés au schéma directeur et au projet de territoire, rendus aux élus</td>
+<td><strong>2</strong> (bilan de fin 2026, mais aucune stratégie, aucun responsable, rien présenté aux élus) → <strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Quatre axes priorisés</strong> :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Rang</th>
+<th>Axe</th>
+<th>Constat de l'annexe 3.4</th>
+<th>Contenu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 (a-2)</td>
+<td><strong>Allonger la durée de vie des équipements et acheter de façon responsable</strong></td>
+<td>la fabrication pèse environ 70 % de l'empreinte ; postes tous les quatre ans, téléphones tous les deux ans, achat au prix ; 400 postes et 900 téléphones stockés</td>
+<td>passer à six ans pour les postes (un tiers d'achats en moins) et à quatre ans pour les téléphones (moitié moins), renouveler au cas par cas ; critères de garantie, de réparabilité, de reconditionnement et de reprise ; réaffecter les tablettes inutilisées ; réemploi des équipements stockés avant leur enlèvement</td>
+</tr>
+<tr class="even">
+<td>2 (a-2)</td>
+<td><strong>Rationaliser les salles informatiques, avec la ville</strong></td>
+<td>120 serveurs utilisés à 15 %, 40 sans application ; PUE de 2,2 et 2,0 ; environ 20 % de l'empreinte</td>
+<td>retirer les serveurs inutiles, virtualiser et consolider, moderniser la climatisation, puis regrouper l'hébergement dans la salle la plus efficace, avec un PUE cible</td>
+</tr>
+<tr class="odd">
+<td>3 (a-3)</td>
+<td><strong>Évaluer et écoconcevoir les projets et les services numériques</strong></td>
+<td>projet de tournées sans estimation d'empreinte ; services des éditeurs sans aucune donnée</td>
+<td>évaluer chaque projet (besoin, empreinte de ses équipements et de ses calculs) avant décision, appliquer les critères du RGESN et exiger des éditeurs leurs données de consommation, pour compléter le bilan : selon l'étude ADEME-Arcep, les centres de données, y compris ceux situés à l'étranger, pèsent près de la moitié de l'empreinte du numérique en France, alors que le bilan de l'agglomération exclut les services hébergés</td>
+</tr>
+<tr class="even">
+<td>4 (a-3)</td>
+<td><strong>Rendre les usages plus sobres et former</strong></td>
+<td>4 millions de pages, 150 imprimantes individuelles ; écogestes sans suite</td>
+<td>retirer les imprimantes individuelles au profit des copieurs, impression recto verso par défaut, dématérialisation pertinente ; former les agents et les élus au numérique responsable, comme le prévoit la loi REEN</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ordre de priorité</strong> (a-3) : la fabrication domine l'empreinte, ici environ 70 % ; les terminaux restent, selon l'étude ADEME-Arcep, la première source de l'empreinte du numérique, surtout par leur fabrication. L'allongement de la durée de vie passe donc en premier : il est aussi le moins coûteux. Les salles viennent ensuite, car le retrait des serveurs inutiles est un gain rapide ; l'évaluation des projets doit précéder la décision sur les tournées ; la sobriété des usages accompagne le tout.</p>
+<p><strong>Gouvernance et trajectoire</strong> (a-4) : la stratégie est <strong>adoptée par le conseil communautaire</strong> et portée par un(e) vice-président(e). Elle est construite <strong>avec la ville</strong>, elle aussi tenue d'en avoir une et qui partage la direction du numérique et les salles informatiques. Elle est pilotée par un <strong>comité du numérique responsable commun</strong> aux deux collectivités, qui réunit chaque semestre la direction générale, la direction du numérique, Mme PRÉVILLAN, les achats, les directions utilisatrices et des représentants des agents, autour d'un référent désigné à la direction du numérique. Elle est <strong>intégrée au futur schéma directeur</strong> et à l'objectif « réduire l'empreinte environnementale du numérique » de « Castelrive 2032 », et non ajoutée à côté. Trajectoire :</p>
+<ul>
+<li><strong>2027</strong> : adoption avant la fin de l'année ; retrait des serveurs inutiles ; téléphones conservés quatre ans ; réemploi du stock ; bilan complété des services hébergés ;</li>
+<li><strong>2028</strong> : critères d'achat et évaluation environnementale des projets inscrits au schéma directeur ;</li>
+<li><strong>2029</strong> : consolidation des salles informatiques ;</li>
+<li><strong>2030</strong> : postes conservés six ans et empreinte réduite d'environ 30 % (environ 210 tCO2e contre 300), mesurée chaque année avec la même méthode.</li>
+</ul>
+<p><em>3.4 b) – Le projet de tournées optimisées et la sobriété</em></p>
+<p><strong>Deux arguments en sa faveur</strong> (b-1) : (1) c'est de l'<strong>IT for green</strong> à fort enjeu : 150 tCO2e de gazole évitées chaque année, ordre de grandeur plausible pour 120 000 km de camions, soit la moitié de l'empreinte du numérique ; s'y ajoutent moins de bruit et d'usure des camions ; (2) il <strong>cible un besoin réel</strong> : le remplissage des bacs collectifs des immeubles et des professionnels varie, et les tournées fixes passent devant des bacs à moitié vides.</p>
+<p><strong>Deux limites</strong> (b-1) : (1) l'<strong>empreinte du dispositif n'est pas mesurée</strong>. Il faudrait 2 000 capteurs à pile, près de sept fois le parc actuel de 300 ; leur renouvellement tous les cinq ans produirait environ 400 capteurs et leurs piles à traiter chaque année. S'y ajoutent de nouvelles tablettes, alors que 30 % des tablettes existantes dorment, et un calcul chaque nuit dans le cloud, sans aucune donnée : le bilan net est inconnu, et le gain annoncé vient du vendeur lui-même ; (2) le <strong>besoin n'est pas uniforme</strong> : dans les communes rurales, les tournées changent peu, donc l'optimisation y apporterait peu. À cela s'ajoutent un risque d'effet rebond, 2 000 objets connectés de plus à sécuriser (question 3.3) et la dépendance à une jeune entreprise et à son cloud.</p>
+<p><strong>Recommandation et conditions</strong> (b-2) : recommander le projet <strong>à titre d'expérimentation</strong>, pas les 2 000 capteurs dès 2027 :</p>
+<ul>
+<li>un essai d'un an sur les secteurs à bacs collectifs de la ville-centre, avec une mesure des kilomètres avant et après ;</li>
+<li>un <strong>bilan net</strong> établi avec la même méthode que celui du bureau d'études (fabrication des capteurs et des tablettes, calcul, gazole évité), exigé de la jeune entreprise ;</li>
+<li>la sobriété du dispositif : capteurs seulement là où le remplissage varie ; tournées transmises aux ordinateurs embarqués ou aux tablettes existantes ; calcul hebdomadaire plutôt que quotidien si les gains sont proches ; modèle adapté à la tâche, comme le recommande le thème « algorithmie et intelligence artificielle » du RGESN ;</li>
+<li>des exigences de sécurité et de durée de vie dans le contrat ;</li>
+<li>une généralisation décidée par le comité du numérique responsable au vu du bilan net.</li>
+</ul>
+<p><em>3.4 c) – Deux indicateurs de suivi</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(c-1) <strong>Durée de vie moyenne des postes de travail au retrait</strong></td>
+<td>somme des âges des postes retirés dans l'année / nombre de postes retirés</td>
+<td>inventaire du parc de la direction du numérique mutualisée (dates d'achat et de retrait)</td>
+<td>annuelle</td>
+<td>6 ans en 2030, contre 4 ans en 2026</td>
+<td>environnement</td>
+</tr>
+<tr class="even">
+<td>(c-2) <strong>Empreinte carbone annuelle du numérique de l'agglomération</strong></td>
+<td>somme des émissions estimées de la fabrication, de l'électricité, des impressions et des autres usages, puis des services hébergés quand les éditeurs fournissent leurs données (tCO2e)</td>
+<td>bilan annuel tenu par la chargée de mission avec le bureau d'études (inventaire, relevés d'électricité, données des éditeurs)</td>
+<td>annuelle, avec une méthode constante</td>
+<td>210 tCO2e au plus en 2030, contre environ 300 en 2026 (− 30 %), à périmètre comparable</td>
+<td>environnement</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Grille de quatre ou cinq niveaux inspirée de CMMI, ou d'autres dimensions (données, compétences, inclusion), si chaque niveau est décrit de façon observable et si l'agglomération y est située à partir des annexes.</li>
+<li>Autres axes pertinents : sobriété des données (stockage, purge), réemploi et dons d'équipements, critères environnementaux dans le choix des éditeurs et des hébergeurs ; ordre différent s'il est justifié.</li>
+<li>Gouvernance portée par le comité de direction ou par l'élu(e) chargé(e) du numérique ; trajectoire découpée autrement.</li>
+<li>Projet rejeté si la justification tient au bilan net inconnu et au besoin non démontré, ou accepté sans expérimentation si la mesure du bilan net est exigée avant la généralisation.</li>
+<li>Autres indicateurs complets : PUE des salles informatiques (énergie totale consommée par la salle / énergie consommée par les équipements informatiques ; cible 1,6 au plus en 2029) ; nombre de pages imprimées par agent ; part des achats de matériels assortis de critères environnementaux ; part des serveurs utilisés ; part des agents formés au numérique responsable (axe social) ; bilan net de l'expérimentation des tournées (gazole évité − empreinte du dispositif).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Sobriété réduite à une économie d'énergie</em> (<code>ET-12</code>) — juste : interroger le besoin (renouvellements, serveurs inutiles, capteurs, impressions).</li>
+<li><em>Empreinte réduite à l'électricité ou au PUE</em> (<code>ET-38</code>) — juste : la fabrication représente environ 70 % ; le PUE ne mesure ni la fabrication ni l'origine de l'électricité.</li>
+<li><em>Tension entre l'IA et la sobriété ignorée</em>, ou projet accepté sur la seule foi du gain annoncé (F14 § 8) — juste : bilan net et expérimentation.</li>
+<li><em>Calcul d'empreinte tenté</em> — non attendu : les résultats sont donnés.</li>
+<li><em>Grille de maturité « plate »</em> (F09 § 5) — juste : des niveaux distincts et observables.</li>
+<li><em>Durabilité traitée en ajout marginal</em> (limite du programme) — juste : intégrée au schéma directeur, au projet de territoire et à une gouvernance commune.</li>
+<li><em>Indicateurs génériques, sans cible ni source</em> (<code>ET-18</code>, <code>JUR-A02</code>) — juste : deux indicateurs complets, avec leur valeur de départ.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sobriété, Green IT et IT for green, indicateurs, grille de maturité</td>
+<td>définitions, PUE, durée de vie, part de la fabrication</td>
+<td>F14 § 1 à 4 ; F09 § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Loi n° 2021-1485 du 15 novembre 2021 (REEN)</td>
+<td>stratégie numérique responsable des collectivités de plus de 50 000 habitants au 01/01/2025, durée de vie, sensibilisation</td>
+<td><code>loi_reen</code> ; F14 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>RGESN, version 2024</td>
+<td>écoconception, interrogation du besoin, thème de l'algorithmie et de l'IA</td>
+<td><code>rgesn_2024</code> ; F14 § 2</td>
+<td>version 2 publiée le 17/05/2024</td>
+</tr>
+<tr class="even">
+<td>Étude ADEME-Arcep</td>
+<td>poids du numérique (4,4 %), part des terminaux (environ la moitié, surtout par leur fabrication) et des centres de données (environ 46 %) dans l'empreinte</td>
+<td><code>etude_ademe_arcep_numerique</code> ; F14 § 1</td>
+<td>mise à jour du 17/01/2025</td>
+</tr>
+<tr class="odd">
+<td>CMMI (toléré pour les niveaux de la grille)</td>
+<td>niveaux de maturité</td>
+<td><code>cmmi_v3</code> ; F09 § 5</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

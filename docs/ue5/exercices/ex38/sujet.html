@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Organiser et exploiter les données de la redevance incitative : CASTELRIVE Agglomération : modèle des données de la redevance incitative, architecture orientée données et référentiel des adresses, analyse de l'effet de la redevance, ouverture et monétisation des données, coût du dispositif et indicateurs</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Organiser et exploiter les données de la redevance incitative</h1><p class="cas">CASTELRIVE Agglomération : modèle des données de la redevance incitative, architecture orientée données et référentiel des adresses, analyse de l'effet de la redevance, ouverture et monétisation des données, coût du dispositif et indicateurs</p><p><strong>DOSSIER 2 – ORGANISER ET EXPLOITER LES DONNÉES DE LA REDEVANCE INCITATIVE (13 points)</strong></p>
+<p>Durée conseillée : 59 min (13 points sur 40, pour une épreuve de 3 heures, coefficient 1 ; environ 4,5 minutes par point).</p>
+<p>Réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document et matériel autorisés</strong> : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Ce dossier est l'un des trois dossiers indépendants du sujet d'entraînement complet n° 13, construits sur un même cas : la présentation et l'annexe 1.1 sont communes aux trois dossiers ; chaque dossier comporte en outre ses propres annexes.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en avril 2027. CASTELRIVE Agglomération est une communauté d'agglomération créée en 2017 qui regroupe 30 communes et 180 000 habitants, dont 62 000 dans la ville-centre de Castelrive. Elle exerce notamment les compétences de collecte des déchets ménagers, qu'elle assure en régie, de mobilités, de développement économique, d'habitat et de gestion de quatre piscines ; le traitement des déchets est confié à un syndicat auquel elle adhère, et le réseau de bus à un exploitant. Elle emploie 1 100 agents, dont 380 à la collecte et aux six déchèteries. Depuis 2025, les 78 000 foyers et 6 000 professionnels du territoire paient une redevance incitative d'enlèvement des ordures ménagères, qui comprend une part fixe et une part calculée selon le nombre de levées de leur bac, lu par les camions de collecte. Sa direction du numérique, forte de 45 agents, est mutualisée avec la ville de Castelrive : elle sert les deux collectivités et propose ses services à 18 petites communes membres. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>Le projet de territoire « Castelrive 2032 », adopté en janvier 2027 par le conseil communautaire, fixe cinq objectifs : simplifier les démarches des usagers en offrant un guichet unique, en ligne et dans les mairies ; réduire de 15 % d'ici 2030 les ordures ménagères résiduelles collectées ; piloter les politiques publiques par les données et ouvrir les données du territoire ; garantir la continuité et la sécurité des services publics, numériques et techniques ; réduire l'empreinte environnementale du numérique. Le schéma directeur numérique 2022-2026 de la ville et de l'agglomération est arrivé à son terme, et un tiers des agents techniques partira en retraite d'ici 2032.</p>
+<p>Vous êtes directeur(rice) général(e) adjoint(e) chargé(e) des ressources de CASTELRIVE Agglomération depuis 2025, rattaché(e) à la directrice générale des services, Mme Hélène VARSANGE ; vous supervisez les finances, les ressources humaines, les affaires juridiques et la relation avec la direction du numérique mutualisée. Mme VARSANGE vous demande trois travaux : préparer le futur schéma directeur numérique et la transmission des savoirs (dossier 1) ; organiser et exploiter les données de la redevance incitative (dossier 2) ; fiabiliser, sécuriser et rendre plus sobre le système d'information (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-de-castelrive-agglomération-et-chiffres-clés">ANNEXE 1.1 – Présentation de CASTELRIVE Agglomération et chiffres clés</h3>
+<p>CASTELRIVE Agglomération est une communauté d'agglomération créée en 2017. Son siège est à Castelrive, la ville-centre. L'exercice coïncide avec l'année civile : l'exercice 2026 est le dernier exercice clos.</p>
+<p><strong>Le territoire et les compétences</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Communes membres</td>
+<td>30 : la ville-centre de Castelrive (62 000 habitants), quatre communes de 8 000 à 15 000 habitants et 25 communes rurales ou périurbaines</td>
+</tr>
+<tr class="even">
+<td>Population</td>
+<td>180 000 habitants</td>
+</tr>
+<tr class="odd">
+<td>Compétences exercées (principales)</td>
+<td>collecte des déchets ménagers, en régie : 40 camions de collecte, six déchèteries ; mobilités ; développement économique ; habitat ; gestion de quatre piscines</td>
+</tr>
+<tr class="even">
+<td>Compétences confiées à des tiers</td>
+<td>traitement des déchets : syndicat auquel l'agglomération adhère ; réseau de bus : exploitant</td>
+</tr>
+<tr class="odd">
+<td>Usagers de la collecte</td>
+<td>78 000 foyers et 6 000 professionnels ; environ 85 000 bacs équipés d'une puce</td>
+</tr>
+</tbody>
+</table>
+<p><strong>La redevance incitative en quelques lignes</strong></p>
+<p>Depuis 2025, chaque foyer et chaque professionnel paie une redevance incitative d'enlèvement des ordures ménagères. Elle comprend une part fixe annuelle, qui dépend du volume du bac, et une part variable, due pour chaque levée au-delà d'un forfait de 12 levées par an. Chaque levée est lue par le camion de collecte, qui identifie la puce du bac ; les levées sont transmises au logiciel de facturation. La facture est semestrielle.</p>
+<p><strong>L'effectif au 31/12/2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Direction ou service</th>
+<th>Agents</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Collecte et déchèteries</td>
+<td>380</td>
+</tr>
+<tr class="even">
+<td>Piscines et équipements</td>
+<td>210</td>
+</tr>
+<tr class="odd">
+<td>Services techniques (voirie des zones d'activités, bâtiments, ateliers)</td>
+<td>220</td>
+</tr>
+<tr class="even">
+<td>Mobilités, développement économique et habitat</td>
+<td>70</td>
+</tr>
+<tr class="odd">
+<td>Fonctions ressources (finances, ressources humaines, affaires juridiques, relation aux usagers)</td>
+<td>170</td>
+</tr>
+<tr class="even">
+<td>Administration générale et cabinet</td>
+<td>50</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>1 100</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Environ 600 agents travaillent sur le terrain, sans poste informatique attitré. Les 45 agents de la direction du numérique mutualisée sont des agents de la ville de Castelrive : ils ne sont pas compris dans l'effectif ci-dessus.</p>
+<p><strong>La direction du numérique mutualisée et le système d'information en quelques lignes</strong></p>
+<p>La direction du numérique est portée par la ville de Castelrive et mutualisée avec l'agglomération : elle sert les deux collectivités et propose ses services à 18 petites communes membres. Elle exploite deux salles informatiques, l'une à l'hôtel de ville, l'autre au siège de l'agglomération. Le système d'information comprend notamment : des progiciels de gestion financière et de gestion des ressources humaines partagés par la ville et l'agglomération ; le logiciel de facturation de la redevance, acquis auprès d'un éditeur et hébergé chez lui ; les ordinateurs embarqués et les lecteurs de puces des 40 camions ; le logiciel de contrôle d'accès des six déchèteries, où l'on entre avec un badge ; les logiciels de caisse et de billetterie des piscines ; la télégestion des chaufferies et du traitement de l'eau des piscines ; le site internet et ses formulaires en ligne ; la messagerie et la bureautique. En 2026, les dépenses du numérique de l'agglomération (contribution à la direction mutualisée et projets propres) ont atteint environ 4 M€.</p>
+<p><strong>Organigramme simplifié (avril 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Rattachement</th>
+<th>Fonction</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>—</td>
+<td>président de CASTELRIVE Agglomération</td>
+<td>M. Arnaud TELMONDIER</td>
+</tr>
+<tr class="even">
+<td>Rattachée au président</td>
+<td>directrice générale des services</td>
+<td>Mme Hélène VARSANGE</td>
+</tr>
+<tr class="odd">
+<td>Rattaché(e) à la directrice générale des services</td>
+<td>directeur(rice) général(e) adjoint(e) chargé(e) des ressources : finances, ressources humaines, affaires juridiques, relation avec la direction du numérique mutualisée</td>
+<td>vous</td>
+</tr>
+<tr class="even">
+<td>Rattachées à la directrice générale des services</td>
+<td>direction de la collecte et des déchèteries ; direction des piscines et des équipements ; direction des services techniques ; direction des mobilités et du développement</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Service de la ville de Castelrive, au service des deux collectivités</td>
+<td>direction du numérique mutualisée</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-21--les-données-de-la-redevance-aujourdhui-note-de-mme-sylvie-darnézan-responsable-du-service-de-la-facturation-de-la-redevance-mars-2027">ANNEXE 2.1 – Les données de la redevance aujourd'hui (note de Mme Sylvie DARNÉZAN, responsable du service de la facturation de la redevance, mars 2027)</h3>
+<p><strong>A. Les règles de gestion de la redevance</strong></p>
+<p>Le service de la facturation a écrit, avec la direction de la collecte, les règles de gestion suivantes :</p>
+<ul>
+<li><strong>RG1</strong> – Un logement est identifié par un numéro unique attribué par l'agglomération. Il est situé à une adresse, désignée par son code dans le référentiel des adresses ; on connaît aussi son complément d'adresse (bâtiment, étage, porte) et son type (maison ou appartement).</li>
+<li><strong>RG2</strong> – Un foyer est identifié par un numéro unique ; on connaît le nom du titulaire du compte, son téléphone et son adresse électronique.</li>
+<li><strong>RG3</strong> – Un logement peut être occupé successivement par plusieurs foyers ; un foyer peut occuper successivement plusieurs logements du territoire. Pour chaque occupation, on enregistre la date d'arrivée et la date de départ du foyer. Un logement peut être vacant ; un foyer connu du service occupe ou a occupé au moins un logement.</li>
+<li><strong>RG4</strong> – Un bac est identifié par le numéro gravé sur sa cuve. Il porte une puce, dont on enregistre le numéro : la puce peut être remplacée sans que le bac change. On connaît aussi son volume, en litres, et sa date de mise en service. Un bac est affecté à un seul logement, et non à une personne : il reste dans le logement quand le foyer déménage. Un logement dispose d'aucun, d'un ou de plusieurs bacs.</li>
+<li><strong>RG5</strong> – Une tournée est identifiée par un numéro ; on connaît sa date, son secteur et l'immatriculation du camion qui l'a effectuée.</li>
+<li><strong>RG6</strong> – Une levée est identifiée par un numéro. Elle concerne un seul bac et elle est lue par le camion lors d'une seule tournée, à une date et à une heure qui sont enregistrées. Un bac peut n'avoir encore fait l'objet d'aucune levée ; une tournée comporte au moins une levée.</li>
+<li><strong>RG7</strong> – Un foyer reçoit des factures semestrielles. Une facture est identifiée par un numéro ; elle est adressée à un seul foyer ; on connaît son semestre, sa date d'émission et son montant. Un foyer qui vient d'arriver peut n'avoir encore reçu aucune facture.</li>
+<li><strong>RG8</strong> – Les professionnels suivent les mêmes règles : leur local est enregistré comme un logement. Les tarifs, le calcul du montant des factures, les paiements et les réclamations ne sont pas concernés par ces règles.</li>
+</ul>
+<p><strong>B. Extrait du modèle logique actuel du logiciel de facturation</strong></p>
+<p>Clé primaire en gras ; # : clé étrangère.</p>
+<ul>
+<li>REDEVABLE (<strong>num_redevable</strong>, nom, adresse, commune, telephone, courriel, num_puce, volume_bac, date_arrivee)</li>
+<li>LEVEE (<strong>num_levee</strong>, num_puce, date_levee)</li>
+<li>FACTURE (<strong>num_facture</strong>, semestre, date_emission, nb_levees, montant, #num_redevable)</li>
+</ul>
+<p>Précisions de Mme DARNÉZAN :</p>
+<ul>
+<li>« L'adresse est saisie en texte libre par l'agent qui crée la fiche : nous avons, pour un même logement, "12 r. des Lilas", "12 rue des lilas bât. B" ou "Les Lilas, 12". »</li>
+<li>« Le numéro de puce figure dans la fiche du redevable. Dans la table des levées, ce n'est qu'un numéro lu par le camion : quand aucune fiche ne porte ce numéro, par exemple parce que la puce vient d'être remplacée, la levée est mise de côté. »</li>
+<li>« Quand un foyer emménage, deux pratiques coexistent : certains agents remplacent, dans la fiche existante, le nom, le téléphone, le courriel et la date d'arrivée, et l'ancien occupant disparaît ; d'autres créent une nouvelle fiche en y recopiant le numéro de puce du bac resté dans le logement. »</li>
+</ul>
+<p><strong>C. Les anomalies relevées en 2026</strong></p>
+<ul>
+<li>Environ 2 millions de levées ont été lues par les camions. 40 000 d'entre elles, soit une sur cinquante, n'ont été rattachées à aucun redevable, dont les trois quarts dans la ville-centre. Deux agents de la direction de la collecte consacrent chacun une journée par semaine à les rapprocher à la main.</li>
+<li>Le logiciel compte 80 000 fiches de foyers pour 78 000 foyers : environ 2 000 doublons, le plus souvent un même logement dont l'adresse est écrite de deux façons, ou un nouvel occupant créé sans que la fiche de l'ancien soit close.</li>
+<li>Environ 1 700 factures sur 168 000 ont été adressées à un foyer qui avait quitté son logement.</li>
+<li>Lorsqu'un foyer conteste une levée, le service ne peut dire ni à quelle heure, ni lors de quelle tournée, ni par quel camion le bac a été levé : « nous ne savons pas prouver une levée ».</li>
+<li>Le logiciel ne permet pas de savoir quel foyer occupait un logement à une date passée.</li>
+</ul>
+<h3 id="annexe-22--les-données-à-réunir-et-les-deux-options-proposées-note-de-m-yann-pelvoisin-chargé-détudes-des-données-de-la-direction-de-la-collecte-mars-2027">ANNEXE 2.2 – Les données à réunir et les deux options proposées (note de M. Yann PELVOISIN, chargé d'études des données de la direction de la collecte, mars 2027)</h3>
+<p><strong>A. Les données à réunir pour piloter la redevance et la prévention des déchets</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Données</th>
+<th>Producteur et lieu de stockage</th>
+<th>Forme</th>
+<th>Volume et fréquence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Levées des bacs</td>
+<td>camions de collecte ; logiciel de facturation de l'éditeur</td>
+<td>enregistrements structurés (puce, date et heure, camion) ; le logiciel de facturation n'en garde que la puce et la date</td>
+<td>environ 2 millions par an ; à chaque tournée</td>
+</tr>
+<tr class="even">
+<td>Passages et apports en déchèterie</td>
+<td>logiciel de contrôle d'accès des six déchèteries ; pesée des bennes à leur enlèvement</td>
+<td>enregistrements structurés (badge, date, type d'apport) ; poids par benne</td>
+<td>environ 300 000 passages par an ; en continu</td>
+</tr>
+<tr class="odd">
+<td>Remplissage des 300 colonnes de verre</td>
+<td>capteurs posés en 2026 ; plateforme en ligne du fabricant</td>
+<td>mesures horodatées (taux de remplissage, température)</td>
+<td>une mesure par heure et par capteur, soit environ 2,6 millions par an ; en continu</td>
+</tr>
+<tr class="even">
+<td>Réclamations sur les levées et les factures</td>
+<td>courriels, formulaires du site, tableur de suivi du service de la facturation</td>
+<td>textes libres, parfois des photographies</td>
+<td>près de 20 000 par an</td>
+</tr>
+<tr class="odd">
+<td>Signalements de dépôts sauvages</td>
+<td>application de signalement de la ville, depuis 2025 ; appels des mairies notés dans un tableur</td>
+<td>photographies géolocalisées, commentaires</td>
+<td>environ 1 500 en 2026</td>
+</tr>
+<tr class="even">
+<td>Tonnages collectés et traités, refus de tri</td>
+<td>syndicat de traitement</td>
+<td>tableurs mensuels</td>
+<td>quelques centaines de lignes par mois, transmises avec deux mois de retard</td>
+</tr>
+<tr class="odd">
+<td>Adresses et logements</td>
+<td>chacune des 30 communes</td>
+<td>tableurs ou logiciels différents, sans format commun ; 6 communes n'ont pas de liste à jour</td>
+<td>mises à jour irrégulières</td>
+</tr>
+</tbody>
+</table>
+<p>Le fabricant des capteurs conserve les mesures sur sa plateforme, qui n'affiche qu'un tableau de bord par colonne ; il facture 15 k€ par an l'export de l'historique.</p>
+<p><strong>B. Les deux options proposées par la direction du numérique mutualisée</strong></p>
+<ul>
+<li><strong>Option A – Un entrepôt de données classique.</strong> Chaque mois, les données structurées (levées, factures, passages en déchèterie, tonnages) sont extraites, nettoyées et chargées dans un entrepôt organisé par date, commune, flux de déchets et type de logement. Pour les capteurs, seule une moyenne journalière par colonne est chargée ; les réclamations et les photographies ne sont pas reprises. Les adresses continuent d'être rapprochées à partir des fichiers des communes. Mise en place en neuf mois.</li>
+<li><strong>Option B – Un lac de données associé à un entrepôt, ou réunis dans une architecture « lakehouse ».</strong> Toutes les données, y compris les mesures des capteurs en continu, les textes des réclamations et les photographies, sont conservées brutes, avec leur historique, dans le lac ; les données nécessaires aux indicateurs de pilotage sont structurées dans l'entrepôt. Une architecture « lakehouse » réunit sur une même plateforme le stockage des données brutes et des tables structurées, avec des règles de gouvernance communes. L'option comprend un <strong>référentiel des adresses et des logements</strong>, tenu avec les 30 communes : chaque commune y crée et met à jour ses adresses et ses logements, l'agglomération les valide, et le logiciel de facturation, le logiciel des déchèteries et les analyses l'utilisent. Mise en place en quinze mois, en deux étapes.</li>
+</ul>
+<p>Aucune des deux options n'est chiffrée à ce stade. La direction du numérique mutualisée penche pour l'option A : « C'est plus simple, et nos équipes savent le faire. » M. PELVOISIN : « Avec l'option A, nous perdrons le détail des capteurs et des réclamations, et nous continuerons de rapprocher les adresses à la main. »</p>
+<h3 id="annexe-23--deux-ans-de-redevance-incitative-tableau-préparé-par-m-pelvoisin-mars-2027">ANNEXE 2.3 – Deux ans de redevance incitative (tableau préparé par M. PELVOISIN, mars 2027)</h3>
+<p><strong>A. Les indicateurs de 2024 et de 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Ville-centre 2024</th>
+<th>Ville-centre 2026</th>
+<th>Quatre communes moyennes 2024</th>
+<th>Quatre communes moyennes 2026</th>
+<th>25 communes rurales et périurbaines 2024</th>
+<th>25 communes rurales et périurbaines 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Population</td>
+<td>63 000</td>
+<td>62 000</td>
+<td>44 000</td>
+<td>44 000</td>
+<td>71 000</td>
+<td>74 000</td>
+</tr>
+<tr class="even">
+<td>Ordures ménagères résiduelles collectées (kg par habitant)</td>
+<td>250</td>
+<td>225</td>
+<td>240</td>
+<td>192</td>
+<td>220</td>
+<td>154</td>
+</tr>
+<tr class="odd">
+<td>Emballages et papiers collectés pour le tri (kg par habitant)</td>
+<td>50</td>
+<td>60</td>
+<td>55</td>
+<td>70</td>
+<td>60</td>
+<td>80</td>
+</tr>
+<tr class="even">
+<td>Apports en déchèterie (kg par habitant)</td>
+<td>150</td>
+<td>160</td>
+<td>210</td>
+<td>240</td>
+<td>240</td>
+<td>290</td>
+</tr>
+<tr class="odd">
+<td>Refus de tri (part des emballages et papiers collectés qui ne peuvent pas être triés)</td>
+<td>15 %</td>
+<td>18 %</td>
+<td>15 %</td>
+<td>22 %</td>
+<td>15 %</td>
+<td>28 %</td>
+</tr>
+<tr class="even">
+<td>Signalements de dépôts sauvages</td>
+<td>300</td>
+<td>900</td>
+<td>100</td>
+<td>200</td>
+<td>100</td>
+<td>400</td>
+</tr>
+<tr class="odd">
+<td>Levées moyennes par foyer et par an</td>
+<td>—</td>
+<td>24</td>
+<td>—</td>
+<td>18</td>
+<td>—</td>
+<td>13</td>
+</tr>
+<tr class="even">
+<td>Contestations de factures, pour 1 000 redevables</td>
+<td>—</td>
+<td>260</td>
+<td>—</td>
+<td>200</td>
+<td>—</td>
+<td>170</td>
+</tr>
+</tbody>
+</table>
+<p>Ordures ménagères résiduelles collectées sur tout le territoire : environ 42 000 tonnes en 2024, environ 34 000 tonnes en 2026.</p>
+<p><strong>B. L'affirmation du vice-président</strong></p>
+<p>M. Rémi BASTÉROLE, vice-président chargé des déchets et de la prévention : « Les chiffres sont clairs : la redevance a fait baisser nos déchets de 20 % en deux ans. L'objectif de "Castelrive 2032" est déjà dépassé. Je veux l'annoncer au prochain conseil communautaire, avec un graphique. »</p>
+<p><strong>C. Les limites signalées par M. PELVOISIN</strong></p>
+<ul>
+<li>Les quantités par habitant sont rapportées à la population municipale de chaque année. Dix communes rurales comptent de nombreuses résidences secondaires, dont les occupants ne sont pas comptés dans cette population.</li>
+<li>Les déchets des professionnels sont collectés avec ceux des foyers. Depuis 2025, environ 500 professionnels, surtout de la ville-centre, ont confié leurs déchets à un collecteur privé : ces déchets ne sont plus comptés.</li>
+<li>En 2025, le syndicat de traitement a changé de prestataire pour son centre de tri ; le nouveau prestataire mesure les refus de tri selon une autre méthode.</li>
+<li>Les tonnages de 2024 par type de commune ont été reconstitués à partir des pesées des camions, dont les tournées traversent souvent plusieurs communes. Les levées de 2024 n'ont pas été enregistrées : les lecteurs de puces ont été installés progressivement au cours de l'année.</li>
+<li>L'application de signalement des dépôts sauvages n'existe que dans la ville-centre, depuis 2025 ; ailleurs, les signalements sont ceux que les mairies transmettent par téléphone.</li>
+<li>2025, année de mise en place de la redevance, n'est pas présentée : la comparaison ne porte que sur deux années.</li>
+</ul>
+<h3 id="annexe-24--les-demandes-sur-les-données-mars-2027">ANNEXE 2.4 – Les demandes sur les données (mars 2027)</h3>
+<p><strong>A. La publication des données du territoire</strong></p>
+<p>En février 2027, le conseil communautaire a décidé de publier les données du territoire sur un portail de données ouvertes. La règle applicable à l'agglomération au 31/12/2026, donnée par l'énoncé et qui n'est pas à discuter, est la suivante : l'agglomération met en ligne, dans un format ouvert et librement réutilisable, les données qu'elle produit ou reçoit dans le cadre de ses missions et dont la publication présente un intérêt, sous réserve de la protection de la vie privée ; des données comportant des données à caractère personnel ne sont publiées qu'après un traitement qui empêche d'identifier les personnes.</p>
+<p>La direction de la collecte propose de publier six jeux de données :</p>
+<table>
+<thead>
+<tr class="header">
+<th>N°</th>
+<th>Jeu de données</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>J1</td>
+<td>tonnages mensuels collectés, par commune et par flux de déchets, de 2024 à 2026</td>
+</tr>
+<tr class="even">
+<td>J2</td>
+<td>emplacement des 300 colonnes de verre et leur taux de remplissage, heure par heure</td>
+</tr>
+<tr class="odd">
+<td>J3</td>
+<td>fichier des levées : pour chaque bac, adresse du logement, date et heure de chaque levée</td>
+</tr>
+<tr class="even">
+<td>J4</td>
+<td>nombre moyen de levées par foyer, par commune et par semestre</td>
+</tr>
+<tr class="odd">
+<td>J5</td>
+<td>signalements de dépôts sauvages : photographies, position exacte, commentaires des agents</td>
+</tr>
+<tr class="even">
+<td>J6</td>
+<td>horaires et fréquentation des six déchèteries, par jour et par tranche horaire</td>
+</tr>
+</tbody>
+</table>
+<p>La plus petite commune du territoire compte 180 habitants et 80 foyers ; environ 40 rues du territoire comptent moins de cinq logements. Les agents relèvent que les dépôts sauvages contiennent souvent des courriers ou des cartons d'expédition portant un nom et une adresse, et que certaines photographies montrent des personnes ou des plaques d'immatriculation.</p>
+<p><strong>B. La proposition de KOMPAVEL</strong></p>
+<p>KOMPAVEL, jeune entreprise de Castelrive qui vend des composteurs et des services de conseil en prévention des déchets, propose d'acheter 30 k€ par an un fichier mensuel des levées par foyer (nom du titulaire, adresse, nombre de levées du mois), pour proposer un composteur et un accompagnement aux foyers qui présentent le plus souvent leur bac. Elle demande l'exclusivité de ce fichier pendant trois ans. Son dirigeant : « Tout le monde y gagne : moins de déchets pour vous, des clients pour nous. » M. BASTÉROLE est favorable : « 30 k€ de recettes et moins de déchets, c'est une bonne affaire. »</p>
+<p><strong>C. Le délégué à la protection des données</strong></p>
+<p>Depuis 2019, la ville et l'agglomération ont désigné le même délégué à la protection des données (DPO), Mme Agnès VILLEROUSSE, agente de la ville rattachée au directeur du numérique mutualisé, qui y consacre un mi-temps. En 2024 et en 2025, elle a aussi été la cheffe du projet de mise en place du logiciel de facturation de la redevance. Le registre des activités de traitement de l'agglomération compte 35 fiches ; celle de la redevance date de 2023 : elle ne mentionne ni les levées horodatées, ni l'hébergement du logiciel chez l'éditeur, ni les échanges avec les communes. Mme VILLEROUSSE n'a été consultée ni sur les options de l'annexe 2.2, ni sur la proposition de KOMPAVEL.</p>
+<p><strong>D. Les durées de conservation</strong></p>
+<p>Durées fixées par le tableau de gestion des archives de l'agglomération (données par l'énoncé, qui ne sont pas à discuter) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Données</th>
+<th>Durée de conservation</th>
+<th>Sort à l'issue</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Factures de la redevance</td>
+<td>dix ans à compter de leur émission, dont deux ans dans le logiciel de facturation, puis en archivage intermédiaire</td>
+<td>destruction</td>
+</tr>
+<tr class="even">
+<td>Levées détaillées (bac, date, heure, tournée)</td>
+<td>jusqu'à la fin du délai de contestation de la facture qu'elles justifient, soit au plus deux ans après son émission</td>
+<td>destruction ; seules des données agrégées par commune et par mois sont conservées au-delà, pour l'analyse</td>
+</tr>
+<tr class="odd">
+<td>Fiche d'un foyer parti</td>
+<td>deux ans après son départ et le paiement de sa dernière facture</td>
+<td>destruction</td>
+</tr>
+<tr class="even">
+<td>Tonnages annuels et rapports aux élus</td>
+<td>sans limite</td>
+<td>conservation définitive dans les archives de l'agglomération</td>
+</tr>
+</tbody>
+</table>
+<p>Pratiques constatées en mars 2027 : le logiciel de l'éditeur conserve toutes les levées et toutes les fiches depuis sa mise en service, en 2025, sans purge ; le tableur de suivi des réclamations n'a jamais été purgé ; les extractions de levées envoyées aux communes qui en font la demande sont conservées dans les messageries.</p>
+<h3 id="annexe-25--le-coût-du-dispositif-numérique-de-la-redevance-note-du-contrôle-de-gestion-mars-2027">ANNEXE 2.5 – Le coût du dispositif numérique de la redevance (note du contrôle de gestion, mars 2027)</h3>
+<p><strong>A. Les coûts de 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Poste</th>
+<th>Coût annuel (k€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Abonnement au logiciel de facturation en ligne de l'éditeur</td>
+<td>240</td>
+</tr>
+<tr class="even">
+<td>Maintenance des lecteurs de puces et des ordinateurs embarqués des 40 camions</td>
+<td>80</td>
+</tr>
+<tr class="odd">
+<td>Remplacement des puces (environ 4 000 puces par an)</td>
+<td>40</td>
+</tr>
+<tr class="even">
+<td>Transmissions entre les camions et le logiciel</td>
+<td>20</td>
+</tr>
+<tr class="odd">
+<td>Part de la direction du numérique mutualisée (deux équivalents temps plein)</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>Temps du service de la facturation et des réclamations (huit agents)</td>
+<td>360</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>840</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Ne sont comptées que les dépenses que la comptabilité analytique de l'agglomération rattache au dispositif. Le contrat avec l'éditeur prend fin en 2029 ; il ne précise pas les conditions dans lesquelles les données seront restituées à l'agglomération à son terme. Le ramassage des dépôts sauvages mobilise l'équivalent de trois agents des services techniques.</p>
+<p><strong>B. Le rapport trimestriel actuel aux élus</strong></p>
+<p>Chaque trimestre, les élus reçoivent une page : les tonnages collectés par flux (ordures ménagères résiduelles, emballages et papiers, verre, déchèteries), comparés au même trimestre de l'année précédente. Le rapport ne dit rien du coût du dispositif, de la qualité des données, des réclamations ni des dépôts sauvages. Mme VARSANGE : « Je veux savoir ce que nous coûte ce dispositif et quels risques il nous fait courir, pas seulement combien de tonnes nous collectons. »</p>
+<h3 id="annexe-26--repères-au-31122026">ANNEXE 2.6 – Repères (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu</th>
+<th>Situation au 31/12/2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2016/679 relatif à la protection des données personnelles (RGPD)</td>
+<td>Une donnée à caractère personnel est toute information se rapportant à une personne physique identifiée ou identifiable, directement ou indirectement. Les données sont collectées pour des finalités déterminées et ne sont pas traitées ultérieurement de manière incompatible avec elles ; elles sont limitées à ce qui est nécessaire (minimisation) et conservées pendant une durée n'excédant pas celle nécessaire aux finalités. Chaque responsable du traitement tient un registre des activités de traitement. La désignation d'un délégué à la protection des données est obligatoire pour les autorités et organismes publics ; un même délégué peut être désigné pour plusieurs d'entre eux, compte tenu de leur structure et de leur taille. Le délégué informe et conseille le responsable du traitement et les agents, contrôle le respect du règlement et coopère avec l'autorité de contrôle ; il dispose des moyens nécessaires et ses autres missions ne doivent pas entraîner de conflit d'intérêts.</td>
+<td>Applicable depuis le 25/05/2018. Une proposition européenne de simplification (« omnibus numérique », 19/11/2025) modifiant ce règlement est en discussion et n'est pas applicable.</td>
+</tr>
+<tr class="even">
+<td>L'anonymisation de données personnelles (publication de l'autorité de contrôle française, 19/05/2020)</td>
+<td>L'anonymisation rend impossible, en pratique et de façon irréversible, l'identification des personnes ; des données anonymisées ne sont plus des données personnelles. Trois critères permettent de l'apprécier : l'individualisation (il ne doit pas être possible d'isoler un individu), la corrélation (il ne doit pas être possible de relier des ensembles de données distincts concernant un même individu) et l'inférence (il ne doit pas être possible de déduire de façon quasi certaine de nouvelles informations sur un individu). La pseudonymisation, qui remplace les données directement identifiantes par un pseudonyme, laisse les données personnelles.</td>
+<td>Publiée le 19/05/2020</td>
+</tr>
+<tr class="odd">
+<td>La monétisation des données personnelles (publication de l'autorité de contrôle française, 17/11/2025)</td>
+<td>Une personne ne peut pas céder la propriété de ses données personnelles ni renoncer aux garanties dont elle bénéficie sur ces données.</td>
+<td>Publiée le 17/11/2025</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2022/868 sur la gouvernance européenne des données (Data Governance Act)</td>
+<td>Fixe notamment les conditions de la réutilisation de certaines catégories de données protégées détenues par les organismes du secteur public, dont les données personnelles ; les accords qui accordent un droit exclusif de réutilisation de ces données sont en principe interdits. Encadre aussi les services d'intermédiation de données et l'altruisme en matière de données.</td>
+<td>Applicable depuis le 24/09/2023</td>
+</tr>
+<tr class="odd">
+<td>Règlement (UE) 2023/2854 sur les données (Data Act)</td>
+<td>Donne à l'utilisateur d'un produit connecté un droit d'accès aux données générées par l'utilisation de ce produit ; facilite le changement de fournisseur de services de traitement de données en nuage.</td>
+<td>Applicable depuis le 12/09/2025</td>
+</tr>
+<tr class="even">
+<td>DAMA-DMBOK (DAMA International), 2e édition</td>
+<td>Référentiel de bonnes pratiques de gestion des données, organisé en onze domaines autour de la gouvernance des données, dont l'architecture des données, la modélisation, les données de référence et les données maîtres, la qualité des données, l'entreposage et l'informatique décisionnelle.</td>
+<td>2e édition (2017), révisée en 2024</td>
+</tr>
+</tbody>
+</table>
+<p>Il n'est demandé aucune analyse juridique.</p>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>Deux ans après la mise en place de la redevance incitative, ses données sont dispersées, peu fiables et peu exploitées, alors que « Castelrive 2032 » veut piloter les politiques publiques par les données et ouvrir les données du territoire. Mme VARSANGE vous demande d'organiser les données de la redevance, de choisir l'architecture qui les réunira, d'analyser l'effet de la redevance, de répondre aux demandes dont ces données font l'objet et d'éclairer le coût du dispositif et son pilotage. Vous mobiliserez pour cela les annexes 1.1 et 2.1 à 2.6 ainsi que vos connaissances professionnelles.</p>
+<p><strong>2.1 – Le modèle des données de la redevance (2,5 points)</strong></p>
+<p>a) Relevez trois défauts du modèle logique actuel (annexe 2.1 B) au regard des règles de gestion de l'annexe 2.1 A, en reliant chacun à une anomalie de l'annexe 2.1 C.</p>
+<p>b) Après avoir distingué le modèle conceptuel et le modèle logique des données, construisez le modèle conceptuel des données de la redevance (entités, identifiants, attributs, associations et cardinalités) à partir des règles de gestion de l'annexe 2.1 A, puis déduisez-en le modèle logique en énonçant les règles de passage utilisées. Aucune requête n'est attendue.</p>
+<p><strong>2.2 – L'architecture des données et le référentiel des adresses et des logements (2 points)</strong></p>
+<p>a) Après avoir défini l'entrepôt de données et le lac de données, comparez les deux options de l'annexe 2.2 B selon trois critères (le volume et la variété des données, leur qualité et leur historique, les usages attendus), puis recommandez l'une d'elles en la justifiant.</p>
+<p>b) Après avoir défini les données de référence, justifiez le référentiel des adresses et des logements partagé avec les communes, puis précisez deux règles de son fonctionnement. Aucune expertise des infrastructures n'est attendue.</p>
+<p><strong>2.3 – L'effet de la redevance incitative (4 points)</strong></p>
+<p>a) Décrivez la chaîne de traitement qui permettra d'analyser de façon fiable l'effet de la redevance, en illustrant chacune de ses cinq étapes (collecte, nettoyage, structuration, analyse, restitution) par les sources et les limites des annexes 2.2 et 2.3.</p>
+<p>b) Justifiez la méthode d'analyse que vous retenez pour exploiter l'annexe 2.3 (analyse descriptive, puis exploratoire), puis formulez trois constats argumentés tirés de cette annexe, chacun assorti d'une précaution de lecture. Aucun calcul statistique n'est attendu.</p>
+<p>c) Appréciez l'affirmation du vice-président (annexe 2.3 B), puis proposez deux représentations visuelles adaptées aux élus du conseil communautaire, en justifiant chacune.</p>
+<p><strong>2.4 – L'ouverture et la valorisation des données (2,5 points)</strong></p>
+<p>a) Après avoir distingué anonymisation et pseudonymisation, indiquez, pour chacun des six jeux de données de l'annexe 2.4 A, s'il peut être publié et à quelles conditions, en vous appuyant sur les trois critères de l'anonymisation rappelés dans l'annexe 2.6.</p>
+<p>b) Appréciez de façon critique la proposition de KOMPAVEL (annexe 2.4 B), puis formulez une recommandation.</p>
+<p>c) Précisez le rôle du délégué à la protection des données mutualisé entre la ville et l'agglomération, en relevant deux points à corriger dans la situation décrite par l'annexe 2.4 C, puis présentez les règles de conservation et d'archivage à appliquer aux données de la redevance au regard de l'annexe 2.4 D.</p>
+<p><strong>2.5 – Le coût du dispositif numérique de la redevance et son pilotage (2 points)</strong></p>
+<p>a) Après avoir défini le coût complet d'un système d'information (coût total de possession), calculez de tête le coût annuel du dispositif numérique de la redevance par redevable à partir de l'annexe 2.5, puis relevez dans les annexes deux coûts cachés que ce calcul omet.</p>
+<p>b) Proposez deux indicateurs qui complètent le rapport trimestriel actuel aux élus (annexe 2.5 B), l'un de coût, l'autre de risque, chacun précisé par sa formule, sa source, sa fréquence, sa cible et son axe.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

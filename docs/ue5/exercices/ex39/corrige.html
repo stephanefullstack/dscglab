@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Fiabiliser, sécuriser et rendre plus sobre le système d'information : CASTELRIVE Agglomération : note de synthèse de l'audit des caisses des piscines, fiabilisation de la chaîne « levée → facture », risques et architecture de confiance des équipements connectés, stratégie numérique responsable</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 3</p><p>13 points</p><p>58 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Fiabiliser, sécuriser et rendre plus sobre le système d'information</h1><p class="cas">CASTELRIVE Agglomération : note de synthèse de l'audit des caisses des piscines, fiabilisation de la chaîne « levée → facture », risques et architecture de confiance des équipements connectés, stratégie numérique responsable</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F09 performance du SI (grille de maturité), F10 audit et fiabilisation, F12 sécurité et résilience, F14 numérique responsable, F15 RGPD opérationnel, et la base des référentiels datés (vérifiés le 25/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1 La note de synthèse de l'audit des piscines et ses suites</td>
+<td><code>3.2.d</code> Techniques de rédaction d'un diagnostic d'audit et d'une note de synthèse ; <code>3.2.e</code> Facteurs de succès et points de vigilance spécifiques à l'audit SI</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td>3.2 La fiabilité de la chaîne « levée → facture »</td>
+<td><code>4.1.e</code> Fiabilisation des systèmes d'information comptables et décisionnels (ici, le système de facturation de la redevance)</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>3.3 Les risques et la sécurité des équipements connectés et des systèmes techniques</td>
+<td><code>4.1.b</code> Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers ; <code>4.1.a</code> Détecter, évaluer et traiter les risques associés aux systèmes d'information, en intégrant les dimensions réglementaires, éthiques et technologiques, y compris les apports de l'IA ; <code>4.2.c</code> Notions d'architecture de confiance (authentification, chiffrement, segmentation) ; <code>4.2.e</code> Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques</td>
+<td>3,5</td>
+</tr>
+<tr class="even">
+<td>3.4 La stratégie numérique responsable de l'agglomération</td>
+<td><code>4.3.a</code> Déployer une stratégie SI responsable en intégrant les principes de durabilité, de sobriété numérique et les exigences réglementaires en matière de RSE et de performance environnementale ; <code>4.3.f</code> Stratégies de transition numérique responsable (cloud éthique, datacenters verts, réduction de l'empreinte carbone) (ici, la tension entre l'IA et la sobriété, la trajectoire et la grille de maturité numérique durable) ; <code>4.3.e</code> Outils et indicateurs de mesure de l'impact environnemental des SI</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 3 – Fiabiliser, sécuriser et rendre plus sobre le système d'information</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (note de synthèse et rapport d'audit, fiabilisation et familles de contrôles, typologie des risques, architecture de confiance, sobriété numérique, Green IT et IT for green) environ 2,5 points (items 3.1 a-1, 3.2-1, 3.3 a-1, la définition de l'item 3.3 b-1 et l'item 3.4 a-1) ; analyse des annexes et recommandations environ 10,5 points, soit environ 80 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 58 minutes.</p>
+<hr />
+<h3 id="31--la-note-de-synthèse-de-laudit-des-piscines-et-ses-suites-25-points">3.1 – La note de synthèse de l'audit des piscines et ses suites (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.2 – Auditer, contrôler et évaluer la performance et la conformité des systèmes d'information : <code>3.2.d</code> « Techniques de rédaction d'un diagnostic d'audit et d'une note de synthèse » ; <code>3.2.e</code> « Facteurs de succès et points de vigilance spécifiques à l'audit SI ». Limites : l'exécution de tests techniques détaillés n'est pas attendue ; la conformité financière et comptable n'est pas traitée par l'UE 5.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.1 (cadre de la mission, constats, réactions, demande de la directrice générale des services), annexe 3.5 (guide d'hygiène de l'ANSSI, COSO 2013, RGPD) et annexe 1.1 (piscines, système d'information, organigramme, direction du numérique mutualisée portée par la ville).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Note de synthèse distinguée du rapport (destinataire décideur, brève, hiérarchisée, tournée vers la décision ; le rapport est détaillé, exhaustif et documenté) ; appréciation globale nette ; 20 lignes au maximum</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux constats de priorité 1, chacun complet : constat chiffré, risque, recommandation, responsable nommé, échéance datée</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Deux autres constats complets ; hiérarchie justifiée (gravité, récurrence, exposition) ; suivi du plan d'action annoncé</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Deux facteurs de succès reliés aux réactions de l'annexe 3.1 ou à la mutualisation</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Deux points de vigilance reliés au cas, dont l'indépendance de l'auditrice rattachée à la ville</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.1 a) – La note de synthèse</em></p>
+<p>Le <strong>rapport d'audit</strong> expose de façon complète le périmètre, la méthode, chaque constat avec ses éléments probants, ses causes et ses recommandations ; il s'adresse aux audités et documente la mission. La <strong>note de synthèse</strong> en extrait, pour un décideur qui n'a pas le temps de lire le rapport, l'appréciation globale et les constats qui appellent une décision, <strong>hiérarchisés</strong>, chacun assorti du risque, de la recommandation, du responsable, de la priorité et de l'échéance ; elle tient en une page et prépare une décision (F10 § 1.2 et § 5).</p>
+<p>Hiérarchie attendue : les <strong>comptes partagés et les annulations sans validation</strong> (risque de fraude non détectable, relevé déjà en 2021 et en 2023) et le <strong>réseau sans fil du public relié aux caisses</strong>, aggravé par des logiciels sans mises à jour (porte d'entrée ouverte à n'importe quel visiteur, alors qu'une collectivité voisine vient de subir un rançongiciel) viennent en priorité 1 ; l'<strong>écart de 18 k€</strong>, d'un montant limité mais non expliqué, et la <strong>conservation sans limite</strong> des fiches d'anciens abonnés viennent en priorité 2. Le non-suivi des audits précédents ne forme pas un cinquième constat : il justifie le dispositif de suivi qui conclut la note.</p>
+<p>Note modèle (environ 17 lignes) :</p>
+<!-- note -->
+
+<p><strong>À Mme VARSANGE – Audit des caisses et de la billetterie des piscines (2026) – Note de synthèse pour le comité de direction du 18/05/2027</strong> <strong>Appréciation globale</strong> : les encaissements et la sécurité des caisses sont mal maîtrisés ; les faiblesses de 2021 et 2023 persistent. <strong>1. Comptes partagés et annulations libres (priorité 1).</strong> 45 agents sur 60 sur des comptes communs ; 6 000 tickets annulés (30 k€) sans motif ni validation. Risque : fraude impossible à détecter et à imputer. Recommandation : un identifiant par agent, annulation validée par un responsable, revue hebdomadaire. M. SALVÉRAC, 30/06/2027. <strong>2. Caisses exposées (priorité 1).</strong> Wi-Fi du public sur le réseau des caisses ; logiciel et système sans mises à jour. Risque : intrusion, vol de données de paiement, caisses arrêtées. Recommandation : séparer les réseaux, corriger, remplacer les postes hors support. M. LANDOUSSE, 30/06/2027 ; postes fin 2027. <strong>3. Écarts non expliqués (priorité 2).</strong> 18 k€ d'encaissements manquants. Risque : pertes, recettes non fiables. Recommandation : rapprochement quotidien, écart justifié au-delà d'un seuil, revue mensuelle des finances. M. SALVÉRAC et finances, 30/09/2027. <strong>4. Données conservées sans limite (priorité 2).</strong> 32 000 fiches d'anciens abonnés, dont 25 000 de plus de trois ans. Risque : non-conformité au RGPD, fuite aggravée. Recommandation : durée fixée avec le DPO, purge. M. SALVÉRAC, 31/12/2027. <strong>Suivi</strong> : plan d'action validé en comité de direction, point trimestriel, audit de suivi en janvier 2028.</p>
+<!-- /note -->
+
+<p><em>3.1 b) – Facteurs de succès et points de vigilance</em></p>
+<p><strong>Deux facteurs de succès</strong> (b-1) :</p>
+<ol type="1">
+<li><strong>Un portage par la direction générale et un suivi formalisé des recommandations.</strong> Les plans de 2021 et de 2023 ont été acceptés puis oubliés, faute de suivi. Il faut que Mme VARSANGE fasse valider le plan d'action par le comité de direction, désigne un responsable et une échéance par recommandation, tienne un tableau de suivi présenté chaque trimestre et prévoie un audit de suivi en janvier 2028. C'est la composante « pilotage » du COSO 2013 (annexe 3.5).</li>
+<li><strong>L'adhésion des audités, obtenue par des constats établis contradictoirement et des recommandations réalistes.</strong> M. SALVÉRAC conteste : les constats chiffrés doivent lui être présentés comme des faiblesses du dispositif, et non comme un soupçon sur ses agents. Les comptes nominatifs <strong>protègent les agents honnêtes</strong>, puisqu'une annulation n'est plus imputable à toute l'équipe. La recommandation doit tenir compte de sa contrainte d'accueil : changement d'utilisateur rapide (code court ou badge plutôt qu'une nouvelle connexion), validation seulement au-delà d'un seuil.</li>
+</ol>
+<p><strong>Deux points de vigilance</strong> (b-2) :</p>
+<ol type="1">
+<li><strong>L'indépendance et la légitimité de l'auditrice.</strong> Mme TRÉVAZIN est une agente de la ville, dont le directeur général arrête son programme et dirige aussi la direction du numérique mise en cause par deux constats (réseau, mises à jour). Elle risque d'être gênée pour critiquer sa propre collectivité, et d'être perçue par l'agglomération comme « l'audit de la ville ». Il faut une lettre de mission signée par la directrice générale de l'agglomération, une restitution directe à celle-ci, une charte d'audit commune aux deux collectivités, et la possibilité de faire revoir par un tiers les constats qui touchent la direction mutualisée.</li>
+<li><strong>La dilution des responsabilités entre les directions et l'attentisme.</strong> La direction du numérique renvoie au schéma directeur de 2028 ; la billetterie a été choisie sans elle ; chaque constat peut rebondir entre la direction des piscines, la direction mutualisée et l'éditeur. Il faut désigner <strong>un seul responsable</strong> par recommandation et décider tout de suite des mesures transitoires qui ne dépendent pas du schéma directeur : la séparation du réseau sans fil du public et l'installation des correctifs, demandées à la direction mutualisée par un arbitrage de la directrice générale.</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autre ordre de priorité justifié (par exemple l'écart de 18 k€ en priorité 1 avec les annulations, au titre du risque de détournement de fonds publics), si les quatre constats sont complets.</li>
+<li>Regroupement de la conservation des données et de l'accès tardif à l'extraction de l'éditeur dans un constat de « maîtrise de l'éditeur de billetterie ».</li>
+<li>Note présentée en tableau (constat, risque, recommandation, responsable, priorité, échéance) si elle reste dans les 20 lignes et comporte une appréciation globale.</li>
+<li>Autres facteurs de succès : accès aux données garanti par une clause des contrats des éditeurs (six semaines pour obtenir l'extraction) ; compétences en systèmes d'information de l'auditrice ou appui de la direction mutualisée ; information des élus. Autres points de vigilance : proportionnalité du coût des contrôles aux enjeux (18 k€), conduite du changement des 60 agents d'accueil, confidentialité des constats de sécurité.</li>
+<li>Responsables désignés par leur fonction (directeur des piscines, directeur du numérique mutualisé, responsable de la sécurité des systèmes d'information) plutôt que par leur nom.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Démarche ou tests d'audit développés au lieu de la note</em> (<code>JUR-T07</code>) — juste : la note et ses suites ; la démarche n'est pas demandée.</li>
+<li><em>Constats non hiérarchisés ou sans responsable ni échéance</em> (<code>JUR-T03</code>) — juste : une priorité, une personne et une date pour chaque recommandation.</li>
+<li><em>Note qui dépasse 20 lignes ou qui recopie les notes brutes</em> (<code>JUR-T07</code>) — juste : une appréciation globale et quatre constats regroupés.</li>
+<li><em>Audit du SI confondu avec l'audit légal des comptes</em> (<code>ET-34</code>) — juste : audit interne des caisses et de leur sécurité, sans opinion sur les comptes.</li>
+<li><em>Facteurs de succès génériques</em> (<code>JUR-T01</code>) — juste : reliés aux deux audits sans suite, à la contestation de M. SALVÉRAC, à l'attentisme de la direction du numérique et au rattachement de l'auditrice à la ville.</li>
+<li><em>Réactions des responsables ignorées</em> (<code>JUR-T08</code>) — juste : elles fondent les facteurs de succès et les points de vigilance.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Note de synthèse, diagnostic d'audit, facteurs de succès</td>
+<td>constat, risque, recommandation, priorité, échéance ; indépendance, suivi</td>
+<td>F10 § 1.2 et § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>COSO 2013</td>
+<td>pilotage du contrôle interne, suivi des faiblesses relevées</td>
+<td><code>coso_2013</code> ; F10 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique de l'ANSSI (2017)</td>
+<td>identification nominative, mises à jour, cloisonnement du réseau</td>
+<td><code>guide_hygiene_anssi_2017</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>durée de conservation limitée, sécurité</td>
+<td><code>rgpd</code> ; F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="32--la-fiabilité-de-la-chaîne--levée--facture--3-points">3.2 – La fiabilité de la chaîne « levée → facture » (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.e</code> « Fiabilisation des systèmes d'information comptables et décisionnels » (contrôles applicatifs, séparation des tâches, piste d'audit, intégrité des interfaces, sauvegardes et restauration éprouvées). Limite : la conformité financière et comptable n'est pas traitée ; aucune règle de comptabilité publique ni de finances locales n'est mobilisée.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.2 (déroulement, constats de 2026, échéance de juillet 2027), annexe 3.5 (ISO/IEC 27001:2022 et 27002:2022, COSO 2013) et annexe 1.1 (redevance incitative, logiciel de facturation hébergé par l'éditeur, camions).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Fiabilisation définie (données exactes, exhaustives, autorisées, traçables et disponibles) ; contrôles généraux informatiques et contrôles applicatifs distingués</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Contrôle de l'interface camions → logiciel : constat, risque, nature, responsable</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Contrôle des tarifs et du calcul, avec séparation des tâches : constat, risque, nature, responsable</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Traçabilité des corrections (comptes nominatifs, journal) : constat, risque, nature, responsable</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Sauvegarde et restauration éprouvée : constat, risque, nature, responsable</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Contrôle à mettre en place en premier, justifié par l'échéance de juillet 2027</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><strong>Définitions</strong> (item 1). <strong>Fiabiliser</strong> un système d'information de gestion, c'est organiser les traitements et les contrôles pour que les données qu'il produit, ici les levées et les factures, soient <strong>exactes, exhaustives, autorisées, traçables</strong> et <strong>disponibles</strong>, et qu'on puisse reconstituer le chemin de chaque facture jusqu'aux levées qui la justifient (piste d'audit). Les <strong>contrôles généraux informatiques</strong> portent sur l'environnement du système : gestion des accès, gestion des changements, exploitation (sauvegardes, supervision). Les <strong>contrôles applicatifs</strong> sont propres à un traitement : contrôles à la saisie, au traitement, aux interfaces et en sortie (F10 § 2 et § 3). La chaîne « levée → facture » en a besoin des deux.</p>
+<p><strong>Quatre contrôles</strong> (items 2 à 5) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Contrôle</th>
+<th>Constat de l'annexe 3.2</th>
+<th>Risque traité</th>
+<th>Nature</th>
+<th>Qui le met en œuvre</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Intégrité de l'interface</strong> : chaque fichier porte l'identifiant de la tournée et le nombre de levées ; l'ordinateur embarqué le conserve jusqu'à l'accusé de réception du serveur d'échange ; le logiciel refuse un fichier déjà importé ; chaque matin, un <strong>rapprochement</strong> automatique compare la liste des tournées réalisées, les fichiers reçus et les levées importées, et chaque écart ou rejet est traité et tracé</td>
+<td>120 tournées et environ 20 000 levées perdues ; 300 fichiers réimportés à la main, 5 000 levées facturées deux fois ; aucun rapprochement</td>
+<td>facturation <strong>incomplète</strong> (levées perdues, usagers traités inégalement) ou <strong>en double</strong> (réclamations, perte de confiance)</td>
+<td>préventive (accusé de réception, refus des doublons) et détective (rapprochement quotidien)</td>
+<td>direction du numérique mutualisée (serveur d'échange), fabricant des équipements embarqués et éditeur (évolutions à demander) ; le rapprochement est revu chaque matin par le service de la facturation</td>
+</tr>
+<tr class="even">
+<td><strong>Tarifs et calcul des factures</strong> : séparation des tâches entre l'agent qui saisit les tarifs et la responsable du service, qui les valide en les comparant aux tarifs votés avant tout lancement ; contrôles de vraisemblance bloquants (tarif hors d'une plage admise, facture qui dépasse un multiple de celle du semestre précédent) ; revue d'un échantillon de factures et des montants les plus élevés avant l'envoi</td>
+<td>un même agent saisit les tarifs et lance la facturation ; tarif saisi à 25 € au lieu de 2,50 € ; 3 000 factures erronées, 900 réclamations</td>
+<td><strong>facturation erronée de masse</strong>, coût de traitement des réclamations, atteinte à l'acceptation de la redevance</td>
+<td>préventive (double validation, contrôles bloquants) et détective (revue avant envoi)</td>
+<td>Mme DARNÉZAN valide ; l'éditeur sépare les profils de saisie des tarifs et de lancement</td>
+</tr>
+<tr class="odd">
+<td><strong>Traçabilité des corrections</strong> : un compte nominatif par agent ; un journal des modifications (auteur, date, motif, valeur avant et après) que l'on ne peut pas modifier ; motif obligatoire, validation des corrections au-delà d'un montant ; revue mensuelle d'un échantillon</td>
+<td>six agents sur le même compte « facturation » ; 4 000 factures modifiées sans trace</td>
+<td><strong>fraude interne</strong> (dette effacée), <strong>erreurs non détectées</strong>, impossibilité de justifier une facture devant l'usager</td>
+<td>préventive (comptes nominatifs, validation) et détective (journal, revue)</td>
+<td>l'éditeur (fonction de journalisation, à exiger), la direction du numérique (comptes), le service de la facturation (revue)</td>
+</tr>
+<tr class="even">
+<td><strong>Sauvegarde et restauration éprouvée</strong> : sauvegarde du serveur d'échange hors de la salle du siège (par exemple dans la salle de l'hôtel de ville) et copie hors ligne ; alerte en cas d'échec d'une sauvegarde ; <strong>test de restauration</strong> au moins annuel, pour le serveur et pour la base de l'éditeur ; délai de restauration et perte de données admissible fixés avec l'éditeur</td>
+<td>aucune restauration essayée ; sauvegarde dans la même salle ; sauvegarde arrêtée depuis l'été sans que personne le voie ; contrat muet</td>
+<td><strong>perte définitive</strong> des levées ou des factures d'un semestre, impossibilité de facturer ou de répondre aux réclamations</td>
+<td>préventive (sauvegarde déportée), détective (alerte, test)</td>
+<td>direction du numérique mutualisée (serveur d'échange), éditeur (base, preuve du test), service de la facturation (exigences de délai et de perte admissible)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le contrôle à mettre en place en premier</strong> (item 6) : le <strong>contrôle des tarifs et du calcul</strong>. Il se met en place <strong>avant juillet 2027</strong> sans évolution du logiciel : une organisation (double validation, comparaison aux tarifs votés) et une revue avant l'envoi suffisent ; l'erreur qu'il prévient touche des milliers de factures d'un coup (3 000 en juillet 2026). En attendant les évolutions de l'interface, qui dépendent du fabricant et de l'éditeur, un <strong>rapprochement manuel</strong> des tournées réalisées et des fichiers reçus peut compenser.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Le contrôle de l'interface placé en premier, si le candidat justifie par la perte continue de levées (1 % des tournées) et par les doublons, et prévoit un contrôle compensatoire des tarifs pour juillet 2027.</li>
+<li>Séparation des tâches présentée comme un cinquième contrôle, à condition que les quatre contrôles demandés soient traités.</li>
+<li>Référence au COSO 2013 (activités de contrôle) ou aux mesures de journalisation et de sauvegarde de l'ISO/IEC 27002:2022.</li>
+<li>Exigences envers l'éditeur exprimées comme des engagements de service (délai de restauration, perte admissible, preuve des tests), sans analyse juridique du contrat.</li>
+<li>Délai de restauration et perte de données admissible désignés par les sigles RTO et RPO, correctement définis.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Contrôles génériques, sans lien avec les constats</em> (<code>JUR-T01</code>, <code>JUR-T08</code>) — juste : chaque contrôle répond à un chiffre de l'annexe 3.2.</li>
+<li><em>Sauvegarde sans test de restauration</em> (<code>JUR-S02</code>) — juste : une sauvegarde qu'on n'a jamais restaurée ne prouve rien ; l'été 2026 le montre.</li>
+<li><em>Dérive vers la comptabilité publique ou le recouvrement</em> (limite du programme) — juste : la transmission au comptable public n'est pas à étudier.</li>
+<li><em>Confusion entre un contrôle et un outil</em> (« acheter un logiciel ») (<code>ET-01</code>) — juste : un contrôle est une règle, avec un responsable et une trace.</li>
+<li><em>Nature préventive ou détective omise</em> — juste : elle est demandée pour chaque contrôle.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fiabilisation, contrôles généraux et applicatifs, séparation des tâches, piste d'audit</td>
+<td>définitions et contrôles</td>
+<td>F10 § 2 et § 3</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>COSO 2013</td>
+<td>activités de contrôle (toléré)</td>
+<td><code>coso_2013</code> ; F10 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO/IEC 27002:2022</td>
+<td>mesures de journalisation, de sauvegarde et de contrôle d'accès</td>
+<td><code>iso_27002_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="33--les-risques-et-la-sécurité-des-équipements-connectés-et-des-systèmes-techniques-35-points">3.3 – Les risques et la sécurité des équipements connectés et des systèmes techniques (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.b</code> « Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers » ; <code>4.1.a</code> « Détecter, évaluer et traiter les risques associés aux systèmes d'information… ». Limite : l'analyse de sécurité technique détaillée n'est pas attendue.</li>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.c</code> « Notions d'architecture de confiance (authentification, chiffrement, segmentation) » ; <code>4.2.e</code> « Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques ». Limites : la mise en œuvre technique et les démarches de certification ne sont pas attendues ; le Zero Trust est un cadre, pas un produit.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.3 (inventaire, incidents, témoignages), annexe 3.5 (ISO/IEC 27001:2022, guide d'hygiène, Zero Trust, Cyber Resilience Act, RGPD) et annexe 1.1 (camions, déchèteries, piscines, direction du numérique mutualisée portée par la ville).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Typologie présentée : trois catégories définies ; risque = événement redouté apprécié par sa probabilité et son impact</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Cinq risques tirés de l'annexe 3.3, formulés comme des événements, couvrant les trois catégories</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Deux risques prioritaires justifiés par leur probabilité et leur impact</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Architecture de confiance définie ; principes de séparation des réseaux et d'accès à distance des mainteneurs, reliés aux constats</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Principes de chiffrement et de mises à jour (inventaire, mots de passe d'usine), reliés aux constats</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Rôles des quatre acteurs (agglomération, direction du numérique et RSSI, éditeurs et fabricants, mainteneurs)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Formalisation (politique étendue, matrice des rôles, clauses de sécurité, instance) et positionnement du RSSI</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.3 a) – Typologie, cinq risques et deux priorités</em></p>
+<p>Un <strong>risque</strong> lié au système d'information est un événement redouté qui atteint la disponibilité, l'intégrité, la confidentialité ou la traçabilité de l'information et des traitements ; il s'apprécie par sa <strong>probabilité</strong> et son <strong>impact</strong>. On distingue : les <strong>cybermenaces</strong>, actes malveillants (rançongiciel, intrusion, usurpation d'un compte) ; les <strong>défaillances opérationnelles</strong>, pannes, erreurs ou défauts d'exploitation et de maintenance, y compris la dépendance à un prestataire ; les <strong>risques réglementaires et métiers</strong>, non-respect d'une obligation et atteinte à la mission elle-même, ici le service public (F12 § 0 et § 5).</p>
+<table>
+<thead>
+<tr class="header">
+<th>N°</th>
+<th>Risque (événement redouté)</th>
+<th>Catégorie</th>
+<th>Faits de l'annexe 3.3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R1</td>
+<td>Rançongiciel entré par l'accès à distance du mainteneur, qui chiffre la télégestion des piscines puis se propage aux réseaux de bureau de l'agglomération et de la ville</td>
+<td>cybermenace</td>
+<td>accès permanent, compte unique de 12 techniciens, mot de passe de 2019, messagerie sur le poste de supervision, réseaux non séparés ; scénario survenu chez la voisine en novembre 2026</td>
+</tr>
+<tr class="even">
+<td>R2</td>
+<td>Prise de contrôle des ordinateurs embarqués des camions, qui fausse ou supprime les levées et sert de porte d'entrée</td>
+<td>cybermenace</td>
+<td>même mot de passe d'usine sur 40 ordinateurs, faille publiée en 2026 non corrigée, accès au réseau mobile</td>
+</tr>
+<tr class="odd">
+<td>R3</td>
+<td>Arrêt des six déchèteries par la panne du serveur unique du contrôle d'accès</td>
+<td>défaillance opérationnelle</td>
+<td>un samedi bloqué en septembre 2026, 2 000 usagers refoulés ou admis sans contrôle ; aucun inventaire de la direction du numérique</td>
+</tr>
+<tr class="even">
+<td>R4</td>
+<td>Panne ou dysfonctionnement durable d'un équipement non maintenu (camions, contrôle d'accès, télégestion), faute d'un responsable de ses mises à jour, les contrats ne traitant pas de la sécurité</td>
+<td>défaillance opérationnelle (dépendance aux prestataires)</td>
+<td>« c'est au client de les installer » ; « notre contrat ne porte pas sur l'informatique »</td>
+</tr>
+<tr class="odd">
+<td>R5</td>
+<td>Mise en cause de l'agglomération pour la conservation sans limite des images de plaques d'immatriculation des véhicules des professionnels, qui permettent d'identifier des personnes (RGPD : conservation limitée, sécurité adaptée, annexe 3.5)</td>
+<td>risque réglementaire</td>
+<td>images des plaques conservées sans limite de durée ; caméras sur le réseau de bureau</td>
+</tr>
+<tr class="even">
+<td>R6</td>
+<td>Fermeture des piscines ou mauvais traitement de l'eau, mettant en jeu la santé des baigneurs et la continuité du service public</td>
+<td>risque métier</td>
+<td>télégestion non pilotable chez la voisine ; objectif « continuité et sécurité des services publics, numériques et techniques » de « Castelrive 2032 »</td>
+</tr>
+</tbody>
+</table>
+<p>Cinq risques suffisent, dont au moins un par catégorie.</p>
+<p><strong>Deux risques prioritaires</strong> (a-3) :</p>
+<ul>
+<li><strong>R1</strong> : <strong>probabilité élevée</strong>. L'accès est ouvert en permanence, avec un compte partagé et un mot de passe inchangé depuis 2019, et le scénario vient de se réaliser chez une voisine. <strong>Impact très fort</strong> : fermeture des quatre piscines pendant des semaines, risque sanitaire, propagation à toute l'agglomération et à la ville par des réseaux non séparés.</li>
+<li><strong>R2</strong> : <strong>probabilité élevée</strong>, avec un mot de passe d'usine identique sur 40 ordinateurs et une faille connue non corrigée. <strong>Impact fort</strong> : la collecte et la facturation de 84 000 redevables reposent sur ces levées. On peut aussi retenir R6, conséquence métier de R1, si le choix est justifié.</li>
+</ul>
+<p><em>3.3 b) – Quatre principes d'architecture de confiance</em></p>
+<p>Une <strong>architecture de confiance</strong> organise les systèmes pour que la confiance accordée à un utilisateur, à un équipement ou à une connexion soit <strong>vérifiée à chaque accès et limitée au nécessaire</strong> : authentification, autorisation au moindre privilège, chiffrement, cloisonnement, traçabilité. Le modèle <strong>Zero Trust</strong> en est le cadre de référence : aucune confiance implicite liée à la place dans le réseau. C'est un modèle d'architecture que l'on adopte progressivement, en complément de la défense en profondeur, et non un produit (annexe 3.5 ; F12 § 3).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Principe</th>
+<th>Application aux équipements de l'agglomération</th>
+<th>Constat de l'annexe 3.3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(b-1) <strong>Séparation des réseaux techniques et du réseau de bureau</strong></td>
+<td>placer la télégestion, le contrôle d'accès et le serveur d'échange des camions dans des zones distinctes du réseau de bureau et du réseau de la ville, avec des échanges limités au strict nécessaire et contrôlés ; un poste de supervision dédié, sans messagerie ni navigation</td>
+<td>équipements sur le même réseau que les bureaux, lui-même relié à la ville ; caméras sur le réseau de bureau ; messagerie sur le poste de supervision</td>
+</tr>
+<tr class="even">
+<td>(b-1) <strong>Authentification et traçabilité des accès à distance</strong></td>
+<td>un compte nominatif par technicien du mainteneur, une authentification à plusieurs facteurs, un accès ouvert à la demande pour une intervention et refermé ensuite, par un point d'entrée unique contrôlé par l'agglomération plutôt qu'un logiciel de prise de main installé sur le poste ; sessions journalisées et revues</td>
+<td>compte unique de 12 techniciens, mot de passe de 2019, accès à tout moment</td>
+</tr>
+<tr class="odd">
+<td>(b-2) <strong>Chiffrement</strong></td>
+<td>chiffrer les échanges entre les capteurs et la plateforme, entre les camions et le serveur d'échange, et les données sensibles stockées (images des plaques) ; en faire une exigence envers les fabricants</td>
+<td>mesures des capteurs transmises sans chiffrement ; levées transmises par le réseau mobile</td>
+</tr>
+<tr class="even">
+<td>(b-2) <strong>Mises à jour et durcissement</strong></td>
+<td>inventaire de tous les équipements connectés et techniques ; mots de passe d'usine changés et distincts pour chaque équipement ; politique de mise à jour avec calendrier et responsable ; à l'achat, exiger une durée de support et des mises à jour de sécurité, que le Cyber Resilience Act imposera aux fabricants à partir du 11/12/2027</td>
+<td>ordinateurs jamais mis à jour, faille non corrigée, mot de passe d'usine identique sur 40 ordinateurs, aucun équipement dans l'inventaire</td>
+</tr>
+</tbody>
+</table>
+<p><em>3.3 c) – Rôles, responsabilités et formalisation</em></p>
+<p>Ces équipements sont des <strong>systèmes critiques</strong> du service public : la collecte, la facturation, les déchèteries et la sécurité des baigneurs en dépendent. Leur sécurité ne peut être laissée « au technique ».</p>
+<table>
+<thead>
+<tr class="header">
+<th>Acteur</th>
+<th>Rôles et responsabilités</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Directrice générale des services de l'agglomération</strong></td>
+<td>approuve l'extension de la politique de sécurité aux systèmes techniques, fixe le niveau de risque accepté, arbitre les moyens avec la ville au sein de l'instance commune, rend compte aux élus</td>
+</tr>
+<tr class="even">
+<td><strong>Directions utilisatrices</strong> (collecte, piscines)</td>
+<td>propriétaires de leurs systèmes et des risques métier : déclarent leurs équipements à l'inventaire, autorisent les accès de leurs mainteneurs, prévoient le mode dégradé (conduite manuelle des chaufferies, ouverture manuelle des barrières), font inscrire les exigences de sécurité dans leurs contrats</td>
+</tr>
+<tr class="odd">
+<td><strong>Direction du numérique mutualisée</strong></td>
+<td>exploite la séparation des réseaux, le point d'entrée des accès à distance, les sauvegardes et la supervision ; installe les mises à jour ou en contrôle l'installation</td>
+</tr>
+<tr class="even">
+<td><strong>RSSI mutualisé</strong></td>
+<td>définit les règles, conduit l'analyse des risques, conseille les directions, revoit les accès, pilote le traitement des incidents, rend compte de l'état de sécurité</td>
+</tr>
+<tr class="odd">
+<td><strong>Éditeurs et fabricants</strong></td>
+<td>fournissent des produits sûrs, publient et signalent les correctifs de sécurité, informent l'agglomération des vulnérabilités et des incidents (obligations du Cyber Resilience Act, échelonnées de 2026 à 2027), respectent les exigences de chiffrement et de comptes</td>
+</tr>
+<tr class="even">
+<td><strong>Mainteneurs</strong></td>
+<td>n'accèdent qu'avec des comptes nominatifs et sur demande, tracent leurs interventions, sécurisent leurs propres postes et signalent sans délai tout incident</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Formalisation et suivi</strong> (c-2) : (1) la <strong>politique de sécurité de 2023 étendue</strong> aux équipements connectés et aux systèmes techniques ; (2) une <strong>matrice des responsabilités</strong> (réalise, approuve, consulté, informé) pour l'inventaire, les accès à distance, les mises à jour et les incidents ; (3) des <strong>clauses de sécurité</strong> ajoutées aux contrats de maintenance et aux contrats des éditeurs (mises à jour, accès, signalement des incidents, droit d'audit) ; (4) un <strong>comité de sécurité commun</strong> à la ville et à l'agglomération, qui se réunit chaque trimestre et suit les risques et le plan d'action.</p>
+<p><strong>Positionnement du RSSI</strong> : rattaché au directeur du numérique, il contrôle ce que sa propre hiérarchie exploite, et il n'a aucune autorité sur l'agglomération. Il devrait relever <strong>fonctionnellement des deux directions générales</strong>, ou de leur comité de sécurité commun, avec une mission écrite qui couvre les systèmes techniques des deux collectivités, un droit d'alerte direct auprès de Mme VARSANGE et des <strong>correspondants sécurité</strong> dans les directions de la collecte et des piscines.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Transmission sans chiffrement des mesures des capteurs présentée comme un risque d'intégrité (mesures faussées, tournées mal calculées), en cybermenace ou en défaillance ; elle ne relève pas du RGPD, ces mesures ne se rapportant à aucune personne.</li>
+<li>Autres risques pertinents : usurpation du compte partagé de la plateforme des capteurs ; dépendance à un mainteneur unique pour la nuit ; fraude à l'accès aux déchèteries ; risque d'image auprès des usagers et des élus.</li>
+<li>Cotation qualitative (faible, moyen, fort) ou matrice probabilité × impact, sans calcul.</li>
+<li>Référence aux mesures du guide d'hygiène de l'ANSSI (identification nominative, changement des éléments d'authentification par défaut, cloisonnement, mises à jour, maîtrise des risques liés aux prestataires) ou à l'annexe A de l'ISO/IEC 27001:2022.</li>
+<li>Matrice des responsabilités présentée en tableau croisé (activités × acteurs).</li>
+<li>Mention de NIS 2 comme cadre de gouvernance possible, si elle est datée correctement (directive non transposée en France au 31/12/2026) et si le candidat ne cherche pas à qualifier l'agglomération au regard de ce texte.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Zero Trust présenté comme un produit à acheter</em> (<code>ET-04</code>, <code>JUR-S03</code>) — juste : un cadre d'architecture, progressif.</li>
+<li><em>Mesures techniques détaillées ou paramétrages</em> (limite du programme 4.2) — juste : des principes, reliés aux constats.</li>
+<li><em>Risques non classés ou catégorie manquante</em> (<code>JUR-T03</code>) — juste : cinq risques, trois catégories.</li>
+<li><em>Sécurité des systèmes techniques laissée aux mainteneurs ou à la seule direction du numérique</em> (<code>JUR-T11</code>) — juste : responsabilités partagées, propriétaires métier dans les directions.</li>
+<li><em>RSSI présenté comme un technicien ou maintenu sous le seul directeur du numérique</em> (<code>ET-15</code>) — juste : une autorité fonctionnelle sur les deux collectivités.</li>
+<li><em>Référentiels, normes et solutions confondus</em> (<code>ET-01</code>, <code>JUR-S06</code>) — juste : ISO/IEC 27001 (norme), guide d'hygiène (guide), Zero Trust (modèle), Cyber Resilience Act (règlement).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des risques, architecture de confiance, rôles</td>
+<td>définitions, principes</td>
+<td>F12 § 0, § 1, § 3 et § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27001:2022 et ISO/IEC 27002:2022</td>
+<td>mesures de l'annexe A (accès, vulnérabilités, séparation des réseaux, fournisseurs)</td>
+<td><code>iso_27001_2022</code>, <code>iso_27002_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique de l'ANSSI (2017)</td>
+<td>identification nominative, authentification par défaut, cloisonnement, mises à jour, prestataires</td>
+<td><code>guide_hygiene_anssi_2017</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Modèle Zero Trust (avis de l'ANSSI, 2021)</td>
+<td>cadre d'architecture</td>
+<td><code>zero_trust_anssi</code> ; F12 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Règlement (UE) 2024/2847 (Cyber Resilience Act)</td>
+<td>obligations des fabricants : sécurité dès la conception, mises à jour, signalement</td>
+<td><code>cra</code> ; F12 § 7</td>
+<td>signalement depuis le 11/09/2026 ; application générale le 11/12/2027</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>conservation limitée, sécurité</td>
+<td><code>rgpd</code> ; F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="34--la-stratégie-numérique-responsable-de-lagglomération-4-points">3.4 – La stratégie numérique responsable de l'agglomération (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.3 – Intégrer les enjeux de durabilité et de sobriété numérique dans le management des SI : <code>4.3.a</code> « Déployer une stratégie SI responsable… » ; <code>4.3.f</code> « Stratégies de transition numérique responsable (cloud éthique, datacenters verts, réduction de l'empreinte carbone) » ; <code>4.3.e</code> « Outils et indicateurs de mesure de l'impact environnemental des SI ». Limites : la durabilité doit être intégrée à la gouvernance globale du SI et non traitée comme un ajout marginal ; les résultats d'empreinte sont donnés, jamais calculés.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.4 (obligation non remplie, état des lieux, premières mesures, projet de tournées optimisées), annexe 3.5 (loi REEN, RGESN, étude ADEME-Arcep) et annexe 1.1 (projet « Castelrive 2032 », direction du numérique mutualisée, dépenses du numérique).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Sobriété numérique définie (interroger le besoin d'abord) ; Green IT et IT for green distingués ; pour au moins trois dimensions, niveau actuel décrit de façon observable et justifié par l'annexe 3.4, et niveau visé en 2030, sur l'échelle à quatre niveaux donnée par la question</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux premiers axes, reliés chacun à un constat chiffré</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Deux autres axes, et ordre de priorité justifié (part de la fabrication, gains rapides)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Gouvernance (adoption, portage, instance commune avec la ville, intégration au futur schéma directeur) et trajectoire datée jusqu'en 2030</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Deux arguments en faveur du projet et deux limites tirées de l'annexe 3.4 D</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Conditions de la recommandation (expérimentation, mesure du bilan net, sobriété du dispositif)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Premier indicateur complet (formule, source, fréquence, cible, axe)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Second indicateur complet</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.4 a) – Définitions, grille de maturité et stratégie</em></p>
+<p>La <strong>sobriété numérique</strong> consiste à interroger d'abord le <strong>besoin</strong> (cet équipement, ce service, ce calcul, cette impression sont-ils utiles ?) avant de chercher l'efficacité ; elle ne se réduit pas à une économie d'énergie. Le <strong>Green IT</strong> réduit l'empreinte du système d'information lui-même (équipements, salles informatiques, logiciels, usages). L'<strong>IT for green</strong> mobilise le numérique pour réduire l'empreinte d'une autre activité de l'organisation : le projet de tournées optimisées en relève (F14 § 3).</p>
+<p><strong>Grille de maturité du numérique responsable</strong> (F09 § 5 ; F14). Les quatre niveaux sont donnés par la question ; la grille complète figure ici à titre de référence, et le candidat n'a qu'à décrire, pour chaque dimension, le niveau actuel et le niveau visé :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>1 – Initial</th>
+<th>2 – Engagé</th>
+<th>3 – Structuré</th>
+<th>4 – Piloté</th>
+<th>Agglomération en 2027 → cible 2030</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Équipements et achats</td>
+<td>renouvellement à date fixe, achat au prix</td>
+<td>actions ponctuelles (réemploi occasionnel)</td>
+<td>durée de vie allongée, critères environnementaux dans les achats</td>
+<td>durée de vie et achats suivis par des indicateurs, revus chaque année</td>
+<td><strong>1</strong> (postes tous les quatre ans par lots, téléphones tous les deux ans, prix seul, 30 % des tablettes inutilisées) → <strong>3</strong></td>
+</tr>
+<tr class="even">
+<td>Infrastructures</td>
+<td>aucune mesure</td>
+<td>consommation connue</td>
+<td>serveurs inutiles retirés, consolidation, PUE suivi</td>
+<td>PUE et consommation pilotés selon une cible</td>
+<td><strong>1 à 2</strong> (PUE 2,2 et 2,0, 40 serveurs inutiles, utilisation de 15 %, 900 MWh connus) → <strong>3</strong></td>
+</tr>
+<tr class="odd">
+<td>Usages et services</td>
+<td>aucune règle</td>
+<td>« écogestes » affichés</td>
+<td>règles d'impression et de stockage, sensibilisation, écoconception des nouveaux services</td>
+<td>évaluation environnementale de chaque projet avant décision</td>
+<td><strong>2</strong> (écogestes de 2023, 4 millions de pages) → <strong>3</strong></td>
+</tr>
+<tr class="even">
+<td>Gouvernance et mesure</td>
+<td>ni responsable ni mesure</td>
+<td>première mesure isolée</td>
+<td>stratégie adoptée, responsable désigné, bilan annuel</td>
+<td>objectifs intégrés au schéma directeur et au projet de territoire, rendus aux élus</td>
+<td><strong>2</strong> (bilan de fin 2026, mais aucune stratégie, aucun responsable, rien présenté aux élus) → <strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Quatre axes priorisés</strong> :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Rang</th>
+<th>Axe</th>
+<th>Constat de l'annexe 3.4</th>
+<th>Contenu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 (a-2)</td>
+<td><strong>Allonger la durée de vie des équipements et acheter de façon responsable</strong></td>
+<td>la fabrication pèse environ 70 % de l'empreinte ; postes tous les quatre ans, téléphones tous les deux ans, achat au prix ; 400 postes et 900 téléphones stockés</td>
+<td>passer à six ans pour les postes (un tiers d'achats en moins) et à quatre ans pour les téléphones (moitié moins), renouveler au cas par cas ; critères de garantie, de réparabilité, de reconditionnement et de reprise ; réaffecter les tablettes inutilisées ; réemploi des équipements stockés avant leur enlèvement</td>
+</tr>
+<tr class="even">
+<td>2 (a-2)</td>
+<td><strong>Rationaliser les salles informatiques, avec la ville</strong></td>
+<td>120 serveurs utilisés à 15 %, 40 sans application ; PUE de 2,2 et 2,0 ; environ 20 % de l'empreinte</td>
+<td>retirer les serveurs inutiles, virtualiser et consolider, moderniser la climatisation, puis regrouper l'hébergement dans la salle la plus efficace, avec un PUE cible</td>
+</tr>
+<tr class="odd">
+<td>3 (a-3)</td>
+<td><strong>Évaluer et écoconcevoir les projets et les services numériques</strong></td>
+<td>projet de tournées sans estimation d'empreinte ; services des éditeurs sans aucune donnée</td>
+<td>évaluer chaque projet (besoin, empreinte de ses équipements et de ses calculs) avant décision, appliquer les critères du RGESN et exiger des éditeurs leurs données de consommation, pour compléter le bilan : selon l'étude ADEME-Arcep, les centres de données, y compris ceux situés à l'étranger, pèsent près de la moitié de l'empreinte du numérique en France, alors que le bilan de l'agglomération exclut les services hébergés</td>
+</tr>
+<tr class="even">
+<td>4 (a-3)</td>
+<td><strong>Rendre les usages plus sobres et former</strong></td>
+<td>4 millions de pages, 150 imprimantes individuelles ; écogestes sans suite</td>
+<td>retirer les imprimantes individuelles au profit des copieurs, impression recto verso par défaut, dématérialisation pertinente ; former les agents et les élus au numérique responsable, comme le prévoit la loi REEN</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ordre de priorité</strong> (a-3) : la fabrication domine l'empreinte, ici environ 70 % ; les terminaux restent, selon l'étude ADEME-Arcep, la première source de l'empreinte du numérique, surtout par leur fabrication. L'allongement de la durée de vie passe donc en premier : il est aussi le moins coûteux. Les salles viennent ensuite, car le retrait des serveurs inutiles est un gain rapide ; l'évaluation des projets doit précéder la décision sur les tournées ; la sobriété des usages accompagne le tout.</p>
+<p><strong>Gouvernance et trajectoire</strong> (a-4) : la stratégie est <strong>adoptée par le conseil communautaire</strong> et portée par un(e) vice-président(e). Elle est construite <strong>avec la ville</strong>, elle aussi tenue d'en avoir une et qui partage la direction du numérique et les salles informatiques. Elle est pilotée par un <strong>comité du numérique responsable commun</strong> aux deux collectivités, qui réunit chaque semestre la direction générale, la direction du numérique, Mme PRÉVILLAN, les achats, les directions utilisatrices et des représentants des agents, autour d'un référent désigné à la direction du numérique. Elle est <strong>intégrée au futur schéma directeur</strong> et à l'objectif « réduire l'empreinte environnementale du numérique » de « Castelrive 2032 », et non ajoutée à côté. Trajectoire :</p>
+<ul>
+<li><strong>2027</strong> : adoption avant la fin de l'année ; retrait des serveurs inutiles ; téléphones conservés quatre ans ; réemploi du stock ; bilan complété des services hébergés ;</li>
+<li><strong>2028</strong> : critères d'achat et évaluation environnementale des projets inscrits au schéma directeur ;</li>
+<li><strong>2029</strong> : consolidation des salles informatiques ;</li>
+<li><strong>2030</strong> : postes conservés six ans et empreinte réduite d'environ 30 % (environ 210 tCO2e contre 300), mesurée chaque année avec la même méthode.</li>
+</ul>
+<p><em>3.4 b) – Le projet de tournées optimisées et la sobriété</em></p>
+<p><strong>Deux arguments en sa faveur</strong> (b-1) : (1) c'est de l'<strong>IT for green</strong> à fort enjeu : 150 tCO2e de gazole évitées chaque année, ordre de grandeur plausible pour 120 000 km de camions, soit la moitié de l'empreinte du numérique ; s'y ajoutent moins de bruit et d'usure des camions ; (2) il <strong>cible un besoin réel</strong> : le remplissage des bacs collectifs des immeubles et des professionnels varie, et les tournées fixes passent devant des bacs à moitié vides.</p>
+<p><strong>Deux limites</strong> (b-1) : (1) l'<strong>empreinte du dispositif n'est pas mesurée</strong>. Il faudrait 2 000 capteurs à pile, près de sept fois le parc actuel de 300 ; leur renouvellement tous les cinq ans produirait environ 400 capteurs et leurs piles à traiter chaque année. S'y ajoutent de nouvelles tablettes, alors que 30 % des tablettes existantes dorment, et un calcul chaque nuit dans le cloud, sans aucune donnée : le bilan net est inconnu, et le gain annoncé vient du vendeur lui-même ; (2) le <strong>besoin n'est pas uniforme</strong> : dans les communes rurales, les tournées changent peu, donc l'optimisation y apporterait peu. À cela s'ajoutent un risque d'effet rebond, 2 000 objets connectés de plus à sécuriser (question 3.3) et la dépendance à une jeune entreprise et à son cloud.</p>
+<p><strong>Recommandation et conditions</strong> (b-2) : recommander le projet <strong>à titre d'expérimentation</strong>, pas les 2 000 capteurs dès 2027 :</p>
+<ul>
+<li>un essai d'un an sur les secteurs à bacs collectifs de la ville-centre, avec une mesure des kilomètres avant et après ;</li>
+<li>un <strong>bilan net</strong> établi avec la même méthode que celui du bureau d'études (fabrication des capteurs et des tablettes, calcul, gazole évité), exigé de la jeune entreprise ;</li>
+<li>la sobriété du dispositif : capteurs seulement là où le remplissage varie ; tournées transmises aux ordinateurs embarqués ou aux tablettes existantes ; calcul hebdomadaire plutôt que quotidien si les gains sont proches ; modèle adapté à la tâche, comme le recommande le thème « algorithmie et intelligence artificielle » du RGESN ;</li>
+<li>des exigences de sécurité et de durée de vie dans le contrat ;</li>
+<li>une généralisation décidée par le comité du numérique responsable au vu du bilan net.</li>
+</ul>
+<p><em>3.4 c) – Deux indicateurs de suivi</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(c-1) <strong>Durée de vie moyenne des postes de travail au retrait</strong></td>
+<td>somme des âges des postes retirés dans l'année / nombre de postes retirés</td>
+<td>inventaire du parc de la direction du numérique mutualisée (dates d'achat et de retrait)</td>
+<td>annuelle</td>
+<td>6 ans en 2030, contre 4 ans en 2026</td>
+<td>environnement</td>
+</tr>
+<tr class="even">
+<td>(c-2) <strong>Empreinte carbone annuelle du numérique de l'agglomération</strong></td>
+<td>somme des émissions estimées de la fabrication, de l'électricité, des impressions et des autres usages, puis des services hébergés quand les éditeurs fournissent leurs données (tCO2e)</td>
+<td>bilan annuel tenu par la chargée de mission avec le bureau d'études (inventaire, relevés d'électricité, données des éditeurs)</td>
+<td>annuelle, avec une méthode constante</td>
+<td>210 tCO2e au plus en 2030, contre environ 300 en 2026 (− 30 %), à périmètre comparable</td>
+<td>environnement</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Grille de quatre ou cinq niveaux inspirée de CMMI, ou d'autres dimensions (données, compétences, inclusion), si chaque niveau est décrit de façon observable et si l'agglomération y est située à partir des annexes.</li>
+<li>Autres axes pertinents : sobriété des données (stockage, purge), réemploi et dons d'équipements, critères environnementaux dans le choix des éditeurs et des hébergeurs ; ordre différent s'il est justifié.</li>
+<li>Gouvernance portée par le comité de direction ou par l'élu(e) chargé(e) du numérique ; trajectoire découpée autrement.</li>
+<li>Projet rejeté si la justification tient au bilan net inconnu et au besoin non démontré, ou accepté sans expérimentation si la mesure du bilan net est exigée avant la généralisation.</li>
+<li>Autres indicateurs complets : PUE des salles informatiques (énergie totale consommée par la salle / énergie consommée par les équipements informatiques ; cible 1,6 au plus en 2029) ; nombre de pages imprimées par agent ; part des achats de matériels assortis de critères environnementaux ; part des serveurs utilisés ; part des agents formés au numérique responsable (axe social) ; bilan net de l'expérimentation des tournées (gazole évité − empreinte du dispositif).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Sobriété réduite à une économie d'énergie</em> (<code>ET-12</code>) — juste : interroger le besoin (renouvellements, serveurs inutiles, capteurs, impressions).</li>
+<li><em>Empreinte réduite à l'électricité ou au PUE</em> (<code>ET-38</code>) — juste : la fabrication représente environ 70 % ; le PUE ne mesure ni la fabrication ni l'origine de l'électricité.</li>
+<li><em>Tension entre l'IA et la sobriété ignorée</em>, ou projet accepté sur la seule foi du gain annoncé (F14 § 8) — juste : bilan net et expérimentation.</li>
+<li><em>Calcul d'empreinte tenté</em> — non attendu : les résultats sont donnés.</li>
+<li><em>Grille de maturité « plate »</em> (F09 § 5) — juste : des niveaux distincts et observables.</li>
+<li><em>Durabilité traitée en ajout marginal</em> (limite du programme) — juste : intégrée au schéma directeur, au projet de territoire et à une gouvernance commune.</li>
+<li><em>Indicateurs génériques, sans cible ni source</em> (<code>ET-18</code>, <code>JUR-A02</code>) — juste : deux indicateurs complets, avec leur valeur de départ.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sobriété, Green IT et IT for green, indicateurs, grille de maturité</td>
+<td>définitions, PUE, durée de vie, part de la fabrication</td>
+<td>F14 § 1 à 4 ; F09 § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Loi n° 2021-1485 du 15 novembre 2021 (REEN)</td>
+<td>stratégie numérique responsable des collectivités de plus de 50 000 habitants au 01/01/2025, durée de vie, sensibilisation</td>
+<td><code>loi_reen</code> ; F14 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>RGESN, version 2024</td>
+<td>écoconception, interrogation du besoin, thème de l'algorithmie et de l'IA</td>
+<td><code>rgesn_2024</code> ; F14 § 2</td>
+<td>version 2 publiée le 17/05/2024</td>
+</tr>
+<tr class="even">
+<td>Étude ADEME-Arcep</td>
+<td>poids du numérique (4,4 %), part des terminaux (environ la moitié, surtout par leur fabrication) et des centres de données (environ 46 %) dans l'empreinte</td>
+<td><code>etude_ademe_arcep_numerique</code> ; F14 § 1</td>
+<td>mise à jour du 17/01/2025</td>
+</tr>
+<tr class="odd">
+<td>CMMI (toléré pour les niveaux de la grille)</td>
+<td>niveaux de maturité</td>
+<td><code>cmmi_v3</code> ; F09 § 5</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
