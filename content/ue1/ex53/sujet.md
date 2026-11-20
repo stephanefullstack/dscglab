@@ -1,0 +1,127 @@
+# DSCG UE 1 — Gestion juridique, fiscale et sociale — Exercice d'entraînement n° 53
+
+**DOSSIER 1 – UNE APPLICATION DE COVOITURAGE DOMICILE-TRAVAIL : DONNÉES DES TRAJETS, CONTRATS DES EMPLOYEURS, RÉMUNÉRATION DES CONDUCTEURS, DÉNIGREMENT D'UN CONCURRENT (8 points sur 40, soit 4 points sur 20)**
+
+Durée conseillée : 48 min (8 points sur 40, à raison de 6 minutes par point, sur une épreuve de 4 heures, coefficient 1,5).
+
+Réglementation applicable au 31/12/2026, sauf mention contraire. Année de référence des faits : 2026 (exercices 2024 à 2026, chaque exercice correspondant à l'année civile ; les questions vous sont posées le 24 novembre 2026 ; toutes les opérations envisagées ont lieu avant le 31/12/2026, sauf la nouvelle offre « Covirane Plus », envisagée pour 2027 et appréciée selon le droit en vigueur au 31/12/2026).
+
+**Document autorisé** : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est INTERDIT et constituerait une fraude.
+
+### AVERTISSEMENT
+
+Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.
+
+Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.
+
+---
+
+## Présentation
+
+*Réglementation applicable au 31/12/2026, sauf mention contraire. Année de référence des faits : 2026 (exercices 2024 à 2026).*
+
+**SAS COVIRANE**
+
+La SAS COVIRANE (ci-après « COVIRANE »), créée en 2019, a son siège à Grenoble (Isère). Elle édite l'application « Covirane », qui met en relation les salariés d'une même zone d'emploi pour leurs trajets entre leur domicile et leur lieu de travail : un salarié qui se rend à son travail en voiture propose son trajet, d'autres salariés le rejoignent comme passagers. Les clients de COVIRANE sont des **employeurs** : chacun souscrit, pour chacun de ses sites, un **abonnement annuel** qui ouvre l'application à ses salariés et lui donne accès à un tableau de bord en ligne. Le contrat d'abonnement est conclu en ligne, sur un modèle unique, toujours le même depuis 2021 (extraits en annexe 1.1, A).
+
+Au 31 octobre 2026, COVIRANE compte **160 employeurs clients**, dont 152 ont signé leur contrat entre 2021 et 2024 et 8 en 2025 ou en 2026, et **52 000 salariés utilisateurs**. Elle emploie **34 salariés** et a réalisé en 2025 un chiffre d'affaires de **3 400 000 € HT** ; elle est soumise à l'impôt sur les sociétés. Son président, M. Florian ARVEYRE, fondateur, détient 62 % du capital ; le fonds d'amorçage VERCORIS Amorçage en détient 38 %.
+
+Le cabinet d'expertise comptable dans lequel vous êtes collaborateur (collaboratrice) accompagne COVIRANE. Les sociétés, les personnes et les lieux d'activité cités sont fictifs ; le dispositif d'incitation de l'autorité organisatrice de la mobilité décrit en annexe 1.2 est une hypothèse du dossier. M. ARVEYRE vous consulte le 24 novembre 2026.
+
+**Les données de l'application.** Lors de son inscription, chaque salarié renseigne ses nom et prénom, son adresse électronique, son employeur et son site de travail, et l'adresse de son domicile. Pour chaque trajet, l'application enregistre la trace GPS du parcours, les heures de départ et d'arrivée et l'identité du conducteur et des passagers. Après chaque trajet, les covoitureurs peuvent se donner une note de 1 à 5 et laisser un commentaire libre (« conduite brusque », « toujours en retard au point de rendez-vous »…), visible des autres utilisateurs. Dans la base de COVIRANE, chaque utilisateur porte un numéro d'utilisateur ; la base des comptes associe ce numéro au nom, à l'employeur et au domicile de l'utilisateur, y compris pour les anciens utilisateurs. COVIRANE tient par ailleurs un fichier de ses clients employeurs : raison sociale, numéro SIREN, adresse de chaque site, nom, prénom et adresse électronique nominative du responsable des ressources humaines.
+
+Chaque mois, COVIRANE adresse à chaque employeur un tableau indiquant, pour chacun de ses salariés utilisateurs, le nombre de trajets réalisés comme conducteur et comme passager. Les employeurs s'en servent pour verser à leurs salariés le forfait mobilités durables qu'ils ont choisi de prendre en charge (C. trav. L. 3261-3-1) ; chaque employeur décide seul des salariés concernés, de la période et du montant.
+
+Mme Sonia RIBEYRE, salariée de la SA LANSERAC Équipements, cliente de COVIRANE, a supprimé son compte le 30 septembre 2026. Le 2 novembre 2026, elle a demandé par courrier électronique la suppression de « tous [ses] trajets ». COVIRANE lui a répondu le 9 novembre 2026 que « les traces sont conservées sans nom, rattachées à un simple numéro d'utilisateur, et ne sont donc plus des données personnelles » et qu'elle ne les effacerait pas.
+
+L'autorité organisatrice de la mobilité de l'agglomération (ci-après « l'AOM ») demande à COVIRANE, pour préparer son plan de mobilité, la liste de tous les trajets réalisés en 2026, avec pour chacun la commune d'origine, le site d'arrivée, l'heure de départ et l'utilisateur. COVIRANE propose de remplacer le nom de chaque utilisateur par un identifiant aléatoire et de conserver la table de correspondance entre ces identifiants et les noms « au cas où l'AOM poserait des questions ». Les trajets de 2026 relient **1 400 couples** « commune d'origine – site d'arrivée » ; **380** de ces couples ne comptent qu'un ou deux utilisateurs.
+
+### Travail à faire
+
+**1.1** Qualifiez, au regard du règlement général sur la protection des données, chacune des catégories d'informations traitées par COVIRANE (données de l'application, tableau mensuel, fichier des employeurs). La réponse faite à Mme RIBEYRE est-elle fondée ? Les données que COVIRANE propose de transmettre à l'AOM seraient-elles anonymes ? Indiquez ce que COVIRANE doit faire dans les deux cas.
+
+**Les contrats des employeurs.** Le contrat d'abonnement ne dit rien du traitement des données des salariés pour le compte de l'employeur. La SAS BRESVANE Composites, cliente depuis le 6 octobre 2025, a notifié à COVIRANE le 16 novembre 2026 sa décision de passer, pour son unique site, à l'application concurrente « Roulavenir » et a demandé la remise des données de son site. COVIRANE lui a répondu le 18 novembre 2026 que, conformément au contrat, l'abonnement prendrait fin le 16 novembre 2027, à l'issue d'un préavis de douze mois, que des frais de sortie de 8 000 € HT lui seraient facturés et qu'aucune donnée ne serait remise. Des extraits du contrat et du règlement (UE) 2023/2854 figurent en annexe 1.1.
+
+### Travail à faire
+
+**1.2** En vous appuyant sur l'annexe 1.1, indiquez les clauses que le contrat d'abonnement doit comporter au titre du tableau mensuel transmis aux employeurs. Appréciez ensuite les articles 3, 4 et 8 du contrat et la réponse faite à BRESVANE Composites au regard du règlement (UE) 2023/2854, et proposez les principaux éléments d'une nouvelle rédaction de la clause relative au changement de prestataire.
+
+**La rémunération des conducteurs.** COVIRANE ne perçoit aujourd'hui aucune somme sur les trajets : les passagers et le conducteur partagent les frais du trajet comme ils l'entendent, et l'AOM verse une allocation aux conducteurs pour certains trajets courts. Pour attirer de nouveaux conducteurs, COVIRANE envisage de lancer en 2027 une offre « Covirane Plus », présentée sous le slogan « Covoiturez, gagnez de l'argent » : chaque passager paierait par l'application **0,30 € par kilomètre**, intégralement reversés au conducteur, en plus de l'allocation de l'AOM. Lors d'un essai mené en octobre 2026, certains conducteurs ont enchaîné jusqu'à six trajets par jour, dont des allers-retours entre la gare et les sites d'employeurs qu'ils n'effectuaient que pour transporter des passagers. Pour « Covirane Plus », l'application enregistrerait les coordonnées bancaires des passagers et des conducteurs et le montant reçu par chaque conducteur ; M. ARVEYRE envisage d'ajouter aux conditions d'utilisation une phrase indiquant que « les données de paiement sont traitées conformément à la réglementation » et de conserver « sans limite de durée » l'historique des paiements, « qui pourra toujours servir ». Les données de l'offre, un exemple de trajet et des extraits des textes figurent en annexe 1.2.
+
+### Travail à faire
+
+**1.3** En vous appuyant sur l'annexe 1.2, dites si les trajets réalisés dans le cadre de « Covirane Plus » resteraient du covoiturage et quelles en seraient les conséquences pour les conducteurs et pour COVIRANE, notamment au regard de l'allocation de l'AOM et sur le plan fiscal. Indiquez ensuite à quelles règles de protection des données COVIRANE devrait soumettre les données de paiement de cette offre, et si le projet de M. ARVEYRE les respecte. Que conseillez-vous à COVIRANE ?
+
+**Une lettre d'information et un label.** La SAS ROULAVENIR, établie à Lyon, édite l'application concurrente « Roulavenir », qu'elle propose aux mêmes employeurs de la région. Le 8 octobre 2026, COVIRANE a adressé sa lettre d'information trimestrielle à 640 directeurs des ressources humaines, clients et prospects. Sous le titre « Covoiturage : savez-vous où vont les données de vos salariés ? », elle affirme que « l'application Roulavenir revend les trajets de vos salariés à des courtiers en données ». Aucun document, aucune décision ni aucun témoignage n'établit ce fait ; M. ARVEYRE dit l'avoir « entendu sur un salon ». Par lettre recommandée du 17 novembre 2026, ROULAVENIR a mis COVIRANE en demeure de cesser ces affirmations, d'adresser un rectificatif à tous les destinataires dans les quinze jours et de lui verser 150 000 € de dommages-intérêts, faute de quoi elle l'assignera.
+
+Par ailleurs, COVIRANE a créé en 2022 le label « Employeur covoit'engagé », qu'elle décerne gratuitement à ses clients qui respectent douze critères (places de stationnement réservées aux covoitureurs, forfait mobilités durables, garantie de retour en cas d'imprévu…) ; la définition des critères et du visuel lui a coûté environ **40 000 €** d'études et de graphisme, et **95** de ses clients affichent aujourd'hui le label dans leurs offres d'emploi. COVIRANE n'a déposé ni le nom ni le visuel comme marque. Depuis septembre 2026, ROULAVENIR propose à ses propres clients un label « Employeur covoit'engagé » reprenant mot pour mot les douze critères et le visuel de COVIRANE, dont seul le logo a été remplacé par celui de ROULAVENIR.
+
+### Travail à faire
+
+**1.4** La lettre d'information du 8 octobre 2026 engage-t-elle la responsabilité de COVIRANE ? Que risque-t-elle, et comment doit-elle répondre à la mise en demeure ? COVIRANE peut-elle agir contre ROULAVENIR à raison du label ? Formulez vos recommandations.
+
+### ANNEXE 1.1 – Contrat d'abonnement des employeurs et règlement (UE) 2023/2854 sur les données
+
+**A. Conditions générales d'abonnement à l'application « Covirane » (modèle en vigueur depuis le 1er janvier 2021, extraits)**
+
+*Document fictif.*
+
+> **Article 2 – Objet.** COVIRANE met à la disposition du Client, pour chaque site désigné aux conditions particulières, l'application « Covirane », accessible à distance à ses salariés, ainsi qu'un tableau de bord en ligne. Le service est hébergé sur des serveurs exploités par COVIRANE, mutualisés entre tous ses clients ; le Client peut, depuis son tableau de bord, ouvrir ou fermer à tout moment des accès pour ses salariés, sans intervention de COVIRANE.
+>
+> **Article 3 – Durée.** L'abonnement est conclu pour une durée indéterminée. Le Client peut y mettre fin à tout moment par lettre recommandée avec demande d'avis de réception, moyennant un **préavis de douze mois**.
+>
+> **Article 4 – Changement de prestataire.** Lorsque le Client met fin à l'abonnement pour recourir à une autre application de covoiturage, il verse à COVIRANE des **frais de sortie forfaitaires de 8 000 € HT** par site, quels que soient le nombre de ses salariés utilisateurs et la date de sa demande.
+>
+> **Article 6 – Tableau mensuel.** COVIRANE adresse chaque mois au Client un tableau du nombre de trajets réalisés par chacun de ses salariés utilisateurs, établi selon le format et pour la période choisis par le Client.
+>
+> **Article 8 – Données.** COVIRANE est seule titulaire de l'ensemble des données collectées par l'application et le tableau de bord. À la fin de l'abonnement, les accès du Client et de ses salariés sont désactivés ; **aucune donnée n'est restituée** au Client.
+
+**B. Règlement (UE) 2023/2854 du Parlement européen et du Conseil du 13 décembre 2023 concernant des règles harmonisées portant sur l'équité de l'accès aux données et de l'utilisation des données (règlement sur les données) (extraits)**
+
+> **Article 2 – Définitions.** […] 8) « service de traitement de données » : un service numérique qui est fourni à un client et qui permet un accès par réseau en tout lieu et à la demande à un ensemble partagé de ressources informatiques configurables, modulables et variables de nature centralisée, distribuée ou fortement distribuée, qui peuvent être rapidement mobilisées et libérées avec un minimum d'efforts de gestion ou d'interaction avec le fournisseur de services ; […] 36) « frais de changement de fournisseur » : les frais, autres que les frais de service standard ou les pénalités de résiliation anticipée, imposés par un fournisseur de services de traitement de données à un client pour les actions requises par le présent règlement pour changer de fournisseur en passant au système d'un fournisseur différent ou à une infrastructure TIC sur site, y compris les frais de transfert des données ; […]
+>
+> **Article 25 – Clauses contractuelles concernant le changement de fournisseur.** 1. Les droits du client et les obligations du fournisseur de services de traitement de données dans le cadre d'un changement de fournisseur entre des fournisseurs de ces services […] sont clairement énoncés dans un contrat écrit. […]
+> 2. […] le contrat visé au paragraphe 1 du présent article comporte au moins les éléments suivants :
+> a) des clauses permettant au client, sur demande, de passer à un service de traitement de données proposé par un fournisseur de services de traitement de données différent ou de porter toutes les données exportables et tous les actifs numériques vers une infrastructure TIC sur site, sans retard injustifié et, en tout état de cause, pas après la période transitoire maximale obligatoire de trente jours calendaires prenant effet au terme du délai de préavis maximal visé au point d), période pendant laquelle le contrat de fourniture de service reste applicable et durant laquelle le fournisseur de services de traitement de données : i) fournit une assistance raisonnable au client et aux tiers autorisés par le client dans le cadre du processus de changement de fournisseur ; ii) agit avec la diligence requise pour maintenir la continuité des activités et poursuivre la fourniture des fonctions ou services au titre du contrat ; […]
+> b) une obligation pour le fournisseur de services de traitement de données de concourir à la stratégie de sortie du client concernant les services couverts par le contrat, y compris en communiquant toutes les informations pertinentes ;
+> c) une clause précisant que le contrat est considéré comme étant résilié et que la résiliation est notifiée au client dans l'un des cas suivants : i) le cas échéant, lorsque le processus de changement de fournisseur est achevé avec succès ; […]
+> d) un délai de préavis maximal pour le lancement du processus de changement de fournisseur, qui ne dépasse pas deux mois ;
+> e) une spécification exhaustive de toutes les catégories de données et d'actifs numériques qui peuvent être portées pendant le processus de changement de fournisseur, y compris, au minimum, toutes les données exportables ; […]
+> g) une période minimale d'au moins trente jours calendaires pour la récupération des données, débutant après la fin de la période transitoire convenue entre le client et le fournisseur de services de traitement de données […] ;
+> h) une clause garantissant l'effacement intégral de toutes les données exportables et de tous les actifs numériques générés directement par le client, ou se rapportant directement au client, après l'expiration de la période de récupération visée au point g) […], à condition que le processus de changement de fournisseur soit achevé avec succès ;
+> i) les frais de changement de fournisseur pouvant être facturés par les fournisseurs de services de traitement de données conformément à l'article 29. […]
+>
+> **Article 29 – Suppression progressive des frais de changement de fournisseur.** 1. À compter du 12 janvier 2027, les fournisseurs de services de traitement de données ne peuvent imposer aucun frais de changement de fournisseur au client pour le processus de changement de fournisseur.
+> 2. À compter du 11 janvier 2024 et jusqu'au 12 janvier 2027, les fournisseurs de services de traitement de données peuvent imposer des frais de changement de fournisseur réduits au client, pour le processus de changement de fournisseur.
+> 3. Les frais de changement de fournisseur réduits visés au paragraphe 2 ne dépassent pas les coûts supportés par le fournisseur de services de traitement de données qui sont directement liés au processus de changement de fournisseur concerné. […]
+>
+> **Article 50 – Entrée en vigueur et application.** […] Il est applicable à partir du 12 septembre 2025. […] Le chapitre IV s'applique aux contrats conclus après le 12 septembre 2025. Le chapitre IV s'applique à partir du 12 septembre 2027 aux contrats conclus le 12 septembre 2025 ou avant cette date, à condition : a) qu'ils soient à durée indéterminée ; ou b) qu'ils viennent à échéance au moins dix ans à compter du 11 janvier 2024. […]
+
+*Les articles 23 à 31 forment le chapitre VI du règlement (« Changement de services de traitement de données ») ; le chapitre IV traite des clauses contractuelles abusives relatives à l'accès aux données et à leur utilisation entre entreprises.*
+
+### ANNEXE 1.2 – Offre « Covirane Plus », exemple de trajet et extraits des textes
+
+**A. Données de l'offre et exemple de trajet (note interne de COVIRANE du 26 octobre 2026)**
+
+*Document fictif.*
+
+- Coût d'un trajet retenu par COVIRANE pour évaluer les frais d'un conducteur : **0,60 € par kilomètre** (barème kilométrique forfaitaire de l'administration fiscale pour le véhicule type des utilisateurs, arrondi ; il couvre la dépréciation du véhicule, l'entretien, les pneumatiques, le carburant et l'assurance) ; les péages et le stationnement s'y ajoutent le cas échéant.
+- « Covirane Plus » (projet pour 2027) : chaque passager paie par l'application **0,30 € par kilomètre** parcouru avec lui, intégralement reversés au conducteur ; aucune limite au nombre de trajets par jour.
+- Allocation de l'AOM (applicable depuis le 1er janvier 2026) : **2 €** versés au conducteur pour chaque trajet de moins de 15 km réalisé avec au moins un passager, dans la limite de deux trajets par jour et par conducteur ; aucune allocation pour les trajets de 15 km ou plus.
+- Exemple de trajet (essai d'octobre 2026) : un conducteur se rend de son domicile à son site de travail (**20 km**, sans péage ni stationnement payant) avec **3 passagers**, salariés du même site.
+
+**B. Code des transports (version en vigueur au 31/12/2026, extraits)**
+
+> **Article L. 3132-1** (al. 1). Le covoiturage se définit comme l'utilisation en commun d'un véhicule terrestre à moteur par un conducteur et un ou plusieurs passagers, effectuée à titre non onéreux, excepté le partage des frais, dans le cadre d'un déplacement que le conducteur effectue pour son propre compte. Leur mise en relation, à cette fin, peut être effectuée à titre onéreux. <!-- dscgcheck:ignorer -->
+>
+> **Article L. 1231-15** (extraits). […] Les autorités mentionnées aux mêmes articles L. 1231-1 et L. 1231-3 peuvent verser directement ou indirectement une allocation aux conducteurs qui effectuent un déplacement ou ont proposé un trajet en covoiturage au sens de l'article L. 3132-1 ou aux passagers qui effectuent un tel déplacement. Pour le passager, l'allocation perçue ne peut excéder les frais qu'il verse au conducteur dans le cadre du partage des frais mentionné au même article L. 3132-1. Pour le conducteur, pour un déplacement réalisé en covoiturage, l'allocation perçue vient en déduction des frais pris en considération dans le cadre du partage des frais mentionné audit article L. 3132-1. […] Par dérogation au cinquième alinéa du présent article, le montant de l'allocation versée au conducteur dans le cadre d'un déplacement réalisé en covoiturage peut excéder, pour les déplacements dont la distance est inférieure à un seuil défini par décret et dans la limite de deux déplacements par jour et par conducteur, les frais pris en considération dans le cadre du partage des frais mentionné à l'article L. 3132-1. […]
+>
+> **Article R. 3132-1** (extrait). Les frais pris en considération pour l'application de l'article L. 3132-1 sont les frais de déplacement effectivement engagés par un conducteur pour l'utilisation d'un véhicule à l'occasion d'un déplacement. […] Ces frais peuvent être évalués à partir du barème forfaitaire mentionné au 3° de l'article 83 du code général des impôts. […]
+>
+> **Article D. 3132-5.** Le seuil de distance mentionné à l'avant-dernier alinéa de l'article L. 1231-15 et au dernier alinéa du I de l'article L. 1241-1 est de quinze kilomètres.
+
+**C. Doctrine administrative (BOI-IR-BASE-10-10-10-10, version du 28 novembre 2016, § 80, extrait)**
+
+> […] les frais partagés ne doivent pas inclure la part de la personne qui propose le service. En effet, les notions de partage de frais et de "co-consommation" supposent que cette personne supporte personnellement sa propre quote-part de frais et ne bénéficie d'aucune forme de rémunération, directe ou indirecte, au titre de la prestation qu'il rend et dont il bénéficie en même temps. En d'autres termes, le contribuable qui propose une prestation dont il partage les frais compte pour une personne dans le calcul des frais à partager.
+>
+> Lorsque le revenu réalisé excède le montant du partage de frais, il est imposable au premier euro.
