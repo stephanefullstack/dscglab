@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Automatiser la chaîne pré-analytique et conseiller les salariés : investissement certain et incertain, financement, allocation entre les fonds du plan d'épargne salariale, variance minimale, diversification, biais des épargnants : CLAVÉRINE Biologie : automatisation du plateau technique, financement, épargne salariale, variance minimale, diversification, biais des épargnants</title>
+<meta name="description" content="Entraînement à l'UE 2 du DSCG, finance, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 2</span></a>
+<p>Dossier 3</p><p>16 points</p><p>58 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Automatiser la chaîne pré-analytique et conseiller les salariés : investissement certain et incertain, financement, allocation entre les fonds du plan d'épargne salariale, variance minimale, diversification, biais des épargnants</h1><p class="cas">CLAVÉRINE Biologie : automatisation du plateau technique, financement, épargne salariale, variance minimale, diversification, biais des épargnants</p><p class="avant">Corrigé indicatif et barème. Les mentions [V] signalent un point vérifié sur la source officielle ; les renvois F01 à F11 et JUR désignent des fiches de travail et les constats des rapports du jury.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F01 mathématiques financières et conventions, F02 coût du capital, F06 marchés et finance comportementale, F10 auteurs et théories, F11 données de marché d'octobre 2026, F99 liste noire (à jour au 23/10/2026).</p>
+<p>Bien que le corrigé mentionne des textes et des auteurs, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la pertinence et la cohérence du raisonnement, la justesse des calculs et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée. Une erreur n'est sanctionnée qu'une fois : les calculs qui en découlent sont notés en cohérence avec les résultats antérieurs du candidat (par exemple une espérance de VAN calculée avec une VAN centrale erronée à la question 3.1).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1 Flux du projet d'automatisation, VAN, TRI et indice de profitabilité du scénario central</td>
+<td><code>7.1.a</code> Évaluer et classer des projets en milieu certain</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>3.2 VAN des scénarios faible et fort, espérance, écart-type, coefficient de variation, probabilité d'une VAN négative, conclusion</td>
+<td><code>7.1.b</code> Évaluer et classer des projets en milieu incertain</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td>3.3 Montant à financer, effet des deux solutions sur la dette financière nette et la clause financière, financement hiérarchique et théorie du compromis, recommandation</td>
+<td><code>7.2.d</code> Étudier les arbitrages dans les choix de financement à l'aide des théories explicatives ; <code>7.2.b</code> Estimer l'impact du choix d'une source de financement sur la structure financière et identifier ses déterminants</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td>3.4 Rentabilité et risque des fonds obligataire et actions, deux allocations, portefeuille de variance minimale, rôle de la corrélation, allocation du salarié type</td>
+<td><code>5.3.c</code> Mesurer la rentabilité et le risque du portefeuille de titres ; <code>5.3.b</code> Maîtriser les principes de diversification du portefeuille au sens de Markowitz (1952)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td>3.5 Diversification d'un portefeuille équipondéré de N actions, risque spécifique et risque systématique</td>
+<td><code>5.3.a</code> Maîtriser la différence et le lien entre le risque spécifique et le risque systématique</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>3.6 Bêta du fonds actions, MEDAF, rentabilité espérée d'une part sur un an, limites du MEDAF</td>
+<td><code>5.2.c</code> Maîtriser les principaux modèles d'évaluation du risque financier utilisés en finance ; <code>5.2.b</code> Calculer la rentabilité espérée ou la valeur théorique sur une période d'un titre financier</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td>3.7 Biais des salariés épargnants, apports et limites de l'affectation par défaut à la gestion pilotée</td>
+<td><code>5.1.d</code> Maîtriser les grands enseignements de la finance comportementale</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>16</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Part du calcul : environ 8,75 points (3.1-01 à 3.1-03, 3.2-01 et 3.2-02, 3.3-01 et 3.3-02, 3.4-01 à 3.4-03, 3.5-01 et 3.5-02, 3.6-01 et 3.6-02). Part de l'analyse : environ 7,25 points. Les questions 3.5 à 3.7 valent 6 points et se traitent vite : elles ne doivent pas être sacrifiées faute de temps en fin d'épreuve (<code>JUR-T15</code>).</p>
+<hr />
+<h3 id="31-flux-du-projet-dautomatisation-van-tri-et-indice-de-profitabilité-du-scénario-central-2-pts">3.1 Flux du projet d'automatisation, VAN, TRI et indice de profitabilité du scénario central (2 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1-01</td>
+<td>Investissement <strong>3 150 k€</strong> (2 800 + 350), dotation <strong>450</strong> ; économies nettes 9 × 50 − 120 − 30 = <strong>300</strong> ; marge 45 % × 1 200 = 540 ; EBE <strong>840</strong> ; IS 25 % × (840 − 450) = 97,5 ; flux annuel <strong>742,5 k€</strong> ; date 0 : − 3 150 − BFR 180 = <strong>− 3 330</strong> ; 2035 : 742,5 + 180 + 140 × 75 % = <strong>1 027,5</strong></td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="even">
+<td>3.1-02</td>
+<td>VAN à 7,50 % = 742,5 × 5,296601 + 285 × 0,602755 − 3 330 = <strong>775 k€</strong></td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.1-03</td>
+<td>TRI = <strong>13,70 %</strong> (interpolation entre 13 % et 14 %) ; indice de profitabilité = 4 104,51 / 3 330 = <strong>1,23</strong></td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.1-04</td>
+<td>Conclusion : VAN positive, TRI supérieur au CMPC, 0,23 € de valeur créée par euro engagé : projet rentable dans le scénario central, sous réserve des contrats (question 3.2)</td>
+<td style="text-align: right;">0,25</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Construction des flux (0,75 pt).</strong> Les économies de charges et la marge sur le chiffre d'affaires supplémentaire forment l'EBE du projet ; l'impôt est calculé sur le résultat d'exploitation, après la dotation aux amortissements ; le BFR est un décaissement de la date 0, récupéré à la fin.</p>
+<table>
+<thead>
+<tr class="header">
+<th>k€</th>
+<th>Calcul</th>
+<th style="text-align: right;">Scénario central</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Économies de personnel</td>
+<td>9 postes × 50</td>
+<td style="text-align: right;">450</td>
+</tr>
+<tr class="even">
+<td>Maintenance et consommables de la chaîne</td>
+<td>120 + 30</td>
+<td style="text-align: right;">− 150</td>
+</tr>
+<tr class="odd">
+<td>Économies nettes de charges</td>
+<td></td>
+<td style="text-align: right;">300</td>
+</tr>
+<tr class="even">
+<td>Marge sur coûts variables du chiffre d'affaires supplémentaire</td>
+<td>45 % × 1 200</td>
+<td style="text-align: right;">540</td>
+</tr>
+<tr class="odd">
+<td><strong>EBE du projet</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>840</strong></td>
+</tr>
+<tr class="even">
+<td>Dotation aux amortissements</td>
+<td>3 150 / 7</td>
+<td style="text-align: right;">− 450</td>
+</tr>
+<tr class="odd">
+<td>Résultat d'exploitation</td>
+<td></td>
+<td style="text-align: right;">390</td>
+</tr>
+<tr class="even">
+<td>IS à 25 %</td>
+<td></td>
+<td style="text-align: right;">− 97,5</td>
+</tr>
+<tr class="odd">
+<td><strong>Flux annuel</strong> (EBE − IS), 2029 à 2035</td>
+<td></td>
+<td style="text-align: right;"><strong>742,5</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>k€</th>
+<th style="text-align: right;">Date 0 (31/12/2028)</th>
+<th style="text-align: right;">2029 à 2034</th>
+<th style="text-align: right;">2035</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Investissement (2 800 + 350)</td>
+<td style="text-align: right;">− 3 150</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>BFR (15 % × 1 200) constitué, puis récupéré</td>
+<td style="text-align: right;">− 180</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">+ 180</td>
+</tr>
+<tr class="odd">
+<td>Flux annuel</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">742,5</td>
+<td style="text-align: right;">742,5</td>
+</tr>
+<tr class="even">
+<td>Prix de revente net d'impôt (140 × 75 %)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">+ 105</td>
+</tr>
+<tr class="odd">
+<td><strong>Flux du projet</strong></td>
+<td style="text-align: right;"><strong>− 3 330</strong></td>
+<td style="text-align: right;"><strong>742,5</strong></td>
+<td style="text-align: right;"><strong>1 027,5</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>VAN (0,5 pt).</strong> Coefficient d'actualisation de sept flux constants à 7,50 % : [1 − 1,075^−7] / 0,075 = 5,296601 ; 1,075^−7 = 0,602755. VAN = 742,5 × 5,296601 + (180 + 105) × 0,602755 − 3 330 = 3 932,73 + 171,79 − 3 330 = <strong>775 k€</strong> (774,51).</p>
+<p><strong>TRI et indice de profitabilité (0,5 pt).</strong> À 13 % : VAN = 742,5 × 4,422610 + 285 × 0,425061 − 3 330 = 75 k€ ; à 14 % : 742,5 × 4,288305 + 285 × 0,399637 − 3 330 = − 32 k€ (non exigés). Par interpolation : 13 % + 74,93 / (74,93 + 32,04) × 1 % = <strong>13,70 %</strong>. Indice de profitabilité = valeur actuelle des flux des années 1 à 7 / décaissement initial = (774,51 + 3 330) / 3 330 = <strong>1,23</strong>.</p>
+<p><strong>Conclusion (0,25 pt).</strong> Dans le scénario central, le projet crée de la valeur : VAN de 775 k€, TRI de 13,70 % supérieur au CMPC de 7,50 %, chaque euro investi rapporte 1,23 € en valeur actuelle. Mais près des deux tiers de l'EBE (540 sur 840) viennent de contrats qui ne sont pas encore signés : la question 3.2 en mesure le risque. Le projet apporte aussi des avantages non chiffrés : délai d'analyse divisé par plus de deux, moins d'erreurs d'identification et de tubes perdus, moindre dépendance à des postes de techniciens difficiles à pourvoir.</p>
+<p><strong>Réponses tolérées</strong> : VAN de 774 à 776 k€ selon les arrondis ; TRI de 13,7 % ; flux annuel présenté sous la forme 75 % × EBE + 25 % × dotation = 630 + 112,5 ; revente comptée après impôt dans le flux de 2035 sous une autre présentation.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Oublier le BFR (VAN de 846 k€) ou ne pas le récupérer en 2035.</li>
+<li>Ne pas imposer le prix de revente alors que la valeur nette comptable est nulle (VAN de 796 k€).</li>
+<li>Déduire les intérêts du prêt des flux du projet : le financement est jugé à part (question 3.3).</li>
+<li>Appliquer l'IS à l'EBE sans déduire la dotation.</li>
+<li><code>JUR-T04</code> — VAN, TRI et indice de profitabilité sont des acquis du DCG.</li>
+</ul>
+<p><strong>Références</strong> : F01 § 4 (VAN, TRI par interpolation, indice de profitabilité) [V programme 7.1.a ; guide p. 81].</p>
+<hr />
+<h3 id="32-van-des-scénarios-espérance-écart-type-et-probabilité-dune-van-négative-2-pts">3.2 VAN des scénarios, espérance, écart-type et probabilité d'une VAN négative (2 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.2-01</td>
+<td>Faible : EBE 300, résultat d'exploitation − 150, économie d'impôt 37,5, flux <strong>337,5</strong>, pas de BFR, VAN = <strong>− 1 299 k€</strong> ; fort : EBE 1 200, flux <strong>1 012,5</strong>, BFR 300, VAN = <strong>2 157 k€</strong></td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="even">
+<td>3.2-02</td>
+<td>Espérance de la VAN <strong>602 k€</strong> ; écart-type <strong>1 234 k€</strong> ; coefficient de variation <strong>2,05</strong> ; probabilité d'une VAN négative <strong>25 %</strong></td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="odd">
+<td>3.2-03</td>
+<td>Conclusion : projet rentable en espérance mais très risqué ; le risque tient aux contrats (les économies seules ne paient pas la chaîne) ; sécuriser les contrats avant la commande ; la possibilité d'étendre l'automatisation plus tard ajoute une flexibilité non chiffrée</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>VAN des scénarios (0,75 pt).</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>k€</th>
+<th style="text-align: right;">Faible</th>
+<th style="text-align: right;">Central</th>
+<th style="text-align: right;">Fort</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chiffre d'affaires supplémentaire</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1 200</td>
+<td style="text-align: right;">2 000</td>
+</tr>
+<tr class="even">
+<td>EBE = 300 + 45 % × CA</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">840</td>
+<td style="text-align: right;">1 200</td>
+</tr>
+<tr class="odd">
+<td>Résultat d'exploitation (EBE − 450)</td>
+<td style="text-align: right;">− 150</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">750</td>
+</tr>
+<tr class="even">
+<td>IS à 25 % (économie d'impôt si négatif)</td>
+<td style="text-align: right;">+ 37,5</td>
+<td style="text-align: right;">− 97,5</td>
+<td style="text-align: right;">− 187,5</td>
+</tr>
+<tr class="odd">
+<td><strong>Flux annuel</strong></td>
+<td style="text-align: right;"><strong>337,5</strong></td>
+<td style="text-align: right;"><strong>742,5</strong></td>
+<td style="text-align: right;"><strong>1 012,5</strong></td>
+</tr>
+<tr class="even">
+<td>BFR (15 % du CA)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">180</td>
+<td style="text-align: right;">300</td>
+</tr>
+<tr class="odd">
+<td>Flux de la date 0</td>
+<td style="text-align: right;">− 3 150</td>
+<td style="text-align: right;">− 3 330</td>
+<td style="text-align: right;">− 3 450</td>
+</tr>
+<tr class="even">
+<td>Flux de 2035 (flux annuel + BFR + 105)</td>
+<td style="text-align: right;">442,5</td>
+<td style="text-align: right;">1 027,5</td>
+<td style="text-align: right;">1 417,5</td>
+</tr>
+<tr class="odd">
+<td><strong>VAN à 7,50 %</strong></td>
+<td style="text-align: right;"><strong>− 1 299</strong></td>
+<td style="text-align: right;"><strong>775</strong></td>
+<td style="text-align: right;"><strong>2 157</strong></td>
+</tr>
+<tr class="even">
+<td>Probabilité</td>
+<td style="text-align: right;">25 %</td>
+<td style="text-align: right;">50 %</td>
+<td style="text-align: right;">25 %</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Faible : 337,5 × 5,296601 + 105 × 0,602755 − 3 150 = 1 787,60 + 63,29 − 3 150 = <strong>− 1 299 k€</strong>. Le résultat d'exploitation du projet est négatif : l'économie d'impôt de 37,5 k€ est imputée sur les autres bénéfices du groupe (annexe 3.7).</li>
+<li>Fort : 1 012,5 × 5,296601 + 405 × 0,602755 − 3 450 = 5 362,81 + 244,12 − 3 450 = <strong>2 157 k€</strong>.</li>
+</ul>
+<p><strong>Espérance et risque (0,75 pt).</strong></p>
+<ul>
+<li>E(VAN) = 0,25 × (− 1 299,11) + 0,50 × 774,51 + 0,25 × 2 156,92 = − 324,78 + 387,26 + 539,23 = <strong>602 k€</strong>.</li>
+<li>Variance = 0,25 × (− 1 900,82)² + 0,50 × (172,80)² + 0,25 × (1 555,21)² = 903 277 + 14 930 + 604 673 = 1 522 880 ; écart-type = <strong>1 234 k€</strong>.</li>
+<li>Coefficient de variation = 1 234,05 / 601,71 = <strong>2,05</strong>. La VAN n'est négative que dans le scénario faible : <strong>probabilité de 25 %</strong>, lue sur les scénarios.</li>
+</ul>
+<p><strong>Conclusion (0,5 pt).</strong></p>
+<ul>
+<li>Le projet est rentable <strong>en espérance</strong> (602 k€), mais son risque est élevé : l'écart-type vaut plus de deux fois l'espérance et une fois sur quatre le groupe perdrait 1 299 k€ de valeur.</li>
+<li>Le risque ne vient pas de la technique, mais des <strong>contrats</strong> : les économies de personnel (300 k€ nets par an) ne paient pas à elles seules une chaîne de 3 150 k€. Chaque tranche de 100 k€ de chiffre d'affaires supplémentaire ajoute 172,80 k€ de VAN ; la VAN s'annule vers 752 k€ de chiffre d'affaires supplémentaire par an, soit environ 63 % du scénario central (calcul non exigé).</li>
+<li>Recommandation : investir, mais <strong>après avoir obtenu des engagements</strong> des cliniques et des établissements (lettres d'engagement, contrats signés avant la commande), ce qui déplace l'essentiel du risque avant la décision. La <strong>possibilité d'étendre l'automatisation plus tard</strong> (module d'archivage de 400 k€ décidé en 2031 au vu des contrats) ajoute une flexibilité : le groupe n'engage la deuxième étape que si l'activité la justifie. Cette flexibilité a une valeur que la VAN des trois scénarios ne mesure pas ; elle n'est pas chiffrée ici.</li>
+<li>Limites : trois scénarios et des probabilités subjectives ; une baisse des tarifs nationaux réduirait aussi la marge des nouveaux contrats ; les économies supposent que les départs de techniciens permettent de ne pas remplacer neuf postes, et le groupe doit organiser le redéploiement des autres.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : écart-type de 1 233 à 1 235 k€ selon les arrondis des VAN ; variance calculée sur les VAN arrondies (1 522 921) ; recommandation de différer le projet si elle s'appuie sur le risque des contrats et sur la probabilité de 25 %.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Calculer l'espérance avec des probabilités égales (544 k€).</li>
+<li>Garder le BFR du scénario central dans les trois scénarios.</li>
+<li>Calculer l'écart-type sur n − 1 ou sans pondérer par les probabilités : la variance de l'énoncé est pondérée.</li>
+<li>Recourir à une distribution de probabilité théorique pour la probabilité d'une VAN négative : elle se lit sur les scénarios.</li>
+<li>Ne pas accorder l'économie d'impôt du scénario faible, contrairement à l'annexe 3.7.</li>
+</ul>
+<p><strong>Références</strong> : F01 § 5 (milieu probabilisable : espérance et écart-type de la VAN) [V programme 7.1.b ; guide p. 81].</p>
+<hr />
+<h3 id="33-montant-à-financer-effet-sur-la-dette-financière-nette-et-la-clause-théories-du-financement-3-pts">3.3 Montant à financer, effet sur la dette financière nette et la clause, théories du financement (3 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.3-01</td>
+<td>Montant à financer <strong>3 330 k€</strong> (investissement 3 150 + BFR 180) ; solution A : autofinancement 1 330 + prêt 2 000 ; solution B : autofinancement 1 330 + capital 2 000</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.3-02</td>
+<td>Effet au 31/12/2028 : A, dette financière nette <strong>+ 3 330 k€</strong>, au-delà de la marge de 3 000 (dépassement de <strong>330 k€</strong>, rapport supérieur à 2,00, remboursement anticipé possible des 5 000 k€) ; B, <strong>+ 1 330 k€</strong>, marge restante <strong>1 670 k€</strong>, capitaux propres + 2 000</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="odd">
+<td>3.3-03</td>
+<td>Financement hiérarchique (Myers et Majluf, 1984) : autofinancement, puis dette, puis capital en dernier, à cause de l'asymétrie d'information ; appliqué au fonds (rentabilité visée de 14 % contre 3,15 % après IS pour le prêt, droits de contrôle) et aux associés</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.3-04</td>
+<td>Théorie du compromis (Myers, 1977) : économie d'impôt sur les intérêts (21 k€ en 2029) contre coûts de détresse financière (clause, remboursement anticipé, baisse des tarifs) ; le groupe est à son plafond d'endettement en 2028</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.3-05</td>
+<td>Recommandation argumentée et déterminants de la structure financière : solution A aménagée (réduire la distribution de 2028 ou décaler une partie de la dépense, obtenir de la banque un aménagement de la clause), solution B en dernier recours ; dépassement temporaire (EBE de la chaîne à partir de 2029, remboursement de 400 par an, service de la dette de 484 en 2029 : arguments possibles, non exigés) ; actif nantissable, flux stables, groupe non coté, contrôle des associés</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Montant à financer et plan de financement (0,5 pt).</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>k€ au 31/12/2028</th>
+<th style="text-align: right;">Solution A</th>
+<th style="text-align: right;">Solution B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Investissement (2 800 + 350)</td>
+<td style="text-align: right;">3 150</td>
+<td style="text-align: right;">3 150</td>
+</tr>
+<tr class="even">
+<td>BFR du projet (scénario central)</td>
+<td style="text-align: right;">180</td>
+<td style="text-align: right;">180</td>
+</tr>
+<tr class="odd">
+<td><strong>Montant à financer</strong></td>
+<td style="text-align: right;"><strong>3 330</strong></td>
+<td style="text-align: right;"><strong>3 330</strong></td>
+</tr>
+<tr class="even">
+<td>Autofinancement disponible en 2028</td>
+<td style="text-align: right;">1 330</td>
+<td style="text-align: right;">1 330</td>
+</tr>
+<tr class="odd">
+<td>Prêt d'équipement de la Banque VELMONDE</td>
+<td style="text-align: right;">2 000</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="even">
+<td>Actions nouvelles souscrites par TILVANE Santé Partenaires</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">2 000</td>
+</tr>
+<tr class="odd">
+<td><strong>Total des ressources</strong></td>
+<td style="text-align: right;"><strong>3 330</strong></td>
+<td style="text-align: right;"><strong>3 330</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Effet sur la dette financière nette et la clause (0,75 pt).</strong> Dans la prévision de M. SAUZELLE, l'autofinancement de 1 330 k€ réduit la dette financière nette ; s'il est consacré au projet, la dette financière nette est plus élevée d'autant.</p>
+<table>
+<thead>
+<tr class="header">
+<th>k€ au 31/12/2028</th>
+<th style="text-align: right;">Solution A</th>
+<th style="text-align: right;">Solution B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Autofinancement consacré au projet</td>
+<td style="text-align: right;">+ 1 330</td>
+<td style="text-align: right;">+ 1 330</td>
+</tr>
+<tr class="even">
+<td>Nouvelle dette</td>
+<td style="text-align: right;">+ 2 000</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr class="odd">
+<td><strong>Hausse de la dette financière nette</strong></td>
+<td style="text-align: right;"><strong>+ 3 330</strong></td>
+<td style="text-align: right;"><strong>+ 1 330</strong></td>
+</tr>
+<tr class="even">
+<td>Marge de la clause sans le projet</td>
+<td style="text-align: right;">3 000</td>
+<td style="text-align: right;">3 000</td>
+</tr>
+<tr class="odd">
+<td><strong>Marge restante</strong></td>
+<td style="text-align: right;"><strong>− 330</strong> (dépassement)</td>
+<td style="text-align: right;"><strong>+ 1 670</strong></td>
+</tr>
+<tr class="even">
+<td>Part de la marge consommée</td>
+<td style="text-align: right;">111 %</td>
+<td style="text-align: right;">44,33 %</td>
+</tr>
+<tr class="odd">
+<td>Capitaux propres</td>
+<td style="text-align: right;">inchangés</td>
+<td style="text-align: right;">+ 2 000</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Solution A</strong> : au 31 décembre 2028, la dette financière nette dépasse de 330 k€ le plafond de 2,00 fois l'EBE, alors que la chaîne n'apporte encore aucun EBE. La Banque VELMONDE pourrait exiger le remboursement anticipé de l'emprunt d'acquisition (5 000 k€ restant dus) : le prêt d'équipement accordé par la même banque mettrait le groupe en défaut au regard de son autre contrat. Le dépassement est <strong>temporaire</strong> (élément non exigé à cet item) : dans le scénario central, et sous l'hypothèse d'un EBE et d'une dette du groupe inchangés par ailleurs, l'EBE du projet (840 k€ par an à partir de 2029) accroît de 2 × 840 = 1 680 k€ la dette financière nette admise, et le prêt se rembourse de 400 k€ par an. Le service de la dette de 2029 (84 d'intérêts + 400 de capital = 484 k€) est couvert 1,53 fois par le flux annuel du scénario central (742,5 k€), mais pas dans le scénario faible (337,5 k€).</li>
+<li><strong>Solution B</strong> : la dette financière nette n'augmente que de 1 330 k€ et le groupe garde 1 670 k€ de marge ; les capitaux propres augmentent de 2 000 k€, ce qui renforce l'autonomie financière. Le coût est ailleurs : dilution des 28 associés à un prix non encore négocié, droits de contrôle et distribution minimale de 40 % du résultat.</li>
+</ul>
+<p><strong>Financement hiérarchique (0,5 pt).</strong> Selon Myers et Majluf (1984), l'asymétrie d'information entre les dirigeants, qui connaissent la valeur des projets, et les apporteurs extérieurs conduit l'entreprise à se financer d'abord par <strong>autofinancement</strong>, puis par <strong>dette</strong>, et en dernier lieu par <strong>émission d'actions</strong>. Ici :</p>
+<ul>
+<li>l'autofinancement (1 330 k€) est mobilisé en premier dans les deux solutions ;</li>
+<li>le fonds ne connaît ni la qualité du plateau ni les chances d'obtenir les contrats des cliniques : il se protège par une rentabilité visée d'environ 14 % par an, un accord préalable sur les investissements et les dettes et une distribution minimale. Le prêt, garanti par le nantissement de la chaîne, coûte 4,20 %, soit 3,15 % après IS ;</li>
+<li>si les associés jugent le projet rentable, ouvrir le capital revient à partager avec un tiers la valeur qu'ils attendent ; à l'inverse, accepter l'entrée d'un fonds au moment où le groupe est proche de sa capacité d'endettement peut être lu comme un signal de difficulté. Pour un groupe non coté, sans accès au marché financier, la hiérarchie se lit dans le coût et les conditions demandées par le fonds plutôt que dans une baisse de cours.</li>
+<li>La théorie conduit donc à préférer la solution A, conforme aussi à l'opposition de onze associés à l'entrée d'un investisseur extérieur.</li>
+</ul>
+<p><strong>Théorie du compromis (0,5 pt).</strong> Selon la théorie du compromis (Myers, 1977), l'entreprise vise un endettement cible qui équilibre l'<strong>avantage fiscal de la dette</strong> et les <strong>coûts de détresse financière</strong> et d'agence. Ici :</p>
+<ul>
+<li>l'avantage fiscal est réel mais modeste : 84 × 25 % = 21 k€ d'économie d'impôt en 2029, puis de moins en moins à mesure du remboursement ;</li>
+<li>les coûts de détresse sont élevés et proches : le groupe atteint son plafond d'endettement en 2028 (marge consommée à 111 %) ; un dépassement de la clause peut entraîner l'exigibilité de 5 000 k€ ; la baisse annoncée des tarifs nationaux peut réduire l'EBE et donc la marge ; le projet lui-même est risqué (VAN négative une fois sur quatre) ;</li>
+<li>la clause fixe en pratique la cible d'endettement du groupe. La théorie du compromis invite donc à <strong>ne pas ajouter toute la dette en 2028</strong>, ce que la théorie du financement hiérarchique ne dit pas.</li>
+</ul>
+<p><strong>Recommandation et déterminants de la structure financière (0,75 pt).</strong></p>
+<ul>
+<li>Les <strong>déterminants</strong> jouent pour la dette : la chaîne est un actif corporel que la banque accepte en nantissement ; les flux du groupe sont réglés à 62 % par l'assurance maladie obligatoire, payeur sûr ; le groupe est non coté et détenu par des associés qui exercent dans le groupe et tiennent à garder la maîtrise des décisions. Ils jouent contre une dette supplémentaire immédiate : endettement déjà élevé depuis le rachat de MÉRANDOL, tarifs orientés à la baisse, projet dont la rentabilité dépend de contrats non signés.</li>
+<li><strong>Recommandation</strong> : retenir la <strong>solution A aménagée</strong>, qui respecte l'ordre du financement hiérarchique et la clause :
+<ul>
+<li>réduire la hausse de la dette financière nette de 2028 d'au moins 330 k€, et en pratique davantage pour garder une marge de sécurité : distribution aux associés réduite d'environ 0,4 à 0,5 M€ en 2028, ou paiement d'une partie de la chaîne et constitution du BFR décalés au début de 2029, ou réalisation par tranches ;</li>
+<li>demander à la Banque VELMONDE, prêteur des deux emprunts, d'apprécier la clause de 2028 en tenant compte de l'EBE attendu de la chaîne, ou de l'aménager pour un an, contrat de prêt d'équipement à l'appui ;</li>
+<li>ne signer le prêt et la commande qu'avec des engagements de cliniques (question 3.2), pour que le service de la dette soit couvert ;</li>
+<li>garder l'entrée de TILVANE Santé Partenaires en dernier recours, si la banque refusait tout aménagement : elle coûte cher, limite l'autonomie des associés, divise le groupe et prépare une cession de la participation dans six ans.</li>
+</ul></li>
+</ul>
+<p><strong>Réponses tolérées</strong> : recommandation de la solution B si elle est fondée sur le respect de la clause et accompagnée des coûts du capital apporté ; recommandation d'un financement mixte (prêt réduit et apport partiel) ; analyse de la clause par le rapport plutôt que par la marge, si le raisonnement est juste.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Ne compter que le prêt dans la hausse de la dette financière nette (2 000 k€, marge restante de 1 000 k€) : l'autofinancement consacré au projet ne réduit plus la dette.</li>
+<li>Oublier le BFR dans le montant à financer (3 150 k€).</li>
+<li>Attribuer le financement hiérarchique à Modigliani et Miller, ou inverser l'ordre (actions avant dette) : <code>JUR-T14</code>.</li>
+<li>Confondre théorie du compromis (ratio cible) et financement hiérarchique (pas de cible).</li>
+<li>Développer les règles de détention du capital d'une société d'exercice libéral : hors sujet (UE 1).</li>
+<li><code>JUR-T13</code> — théories récitées sans les montants du cas.</li>
+</ul>
+<p><strong>Références</strong> : F10 (Myers et Majluf, 1984 ; Myers, 1977, attribution retenue par le programme) [V programme 7.2.d] ; F06 § 1 (choix des sources selon la taille et l'accès au marché) [S].</p>
+<hr />
+<h3 id="34-fonds-obligataire-et-actions-allocations-variance-minimale-3-pts">3.4 Fonds obligataire et actions, allocations, variance minimale (3 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.4-01</td>
+<td>Rentabilités moyennes : obligataire <strong>3,00 %</strong>, actions <strong>9,00 %</strong> ; écarts-types (n − 1) : <strong>6,00 %</strong> et <strong>18,00 %</strong> ; covariance = 0,00 × 6 × 18 = <strong>0</strong></td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="even">
+<td>3.4-02</td>
+<td>Allocation prudente (30 % actions) : <strong>4,80 %</strong>, variance 46,80 %², écart-type <strong>6,84 %</strong> ; gestion pilotée à plus de 15 ans (80 % actions) : <strong>7,80 %</strong>, variance 208,80 %², écart-type <strong>14,45 %</strong></td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="odd">
+<td>3.4-03</td>
+<td>Variance minimale : obligataire 324 / 360 = <strong>90 %</strong>, actions <strong>10 %</strong> ; rentabilité <strong>3,60 %</strong> ; écart-type <strong>5,69 %</strong></td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.4-04</td>
+<td>Markowitz (1952) : le risque d'un portefeuille dépend de la corrélation ; ici, avec une corrélation nulle, 10 % d'actions réduisent le risque et augmentent la rentabilité : le fonds obligataire seul est dominé ; l'écart-type de l'allocation prudente (6,84 %) est très inférieur à la moyenne pondérée des écarts-types (9,60 %) ; corrélation estimée sur cinq ans, instable</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.4-05</td>
+<td>M. LAVERGNAS (31 ans, horizon d'une vingtaine d'années) : allocation de la gestion pilotée à 80 % d'actions ; ni le monétaire, ni le portefeuille de variance minimale, ni une allocation unique pour tous ne tiennent compte de son horizon</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rentabilités et risques des deux fonds (0,75 pt).</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>%</th>
+<th style="text-align: right;">2022</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2026</th>
+<th style="text-align: right;">Moyenne</th>
+<th style="text-align: right;">Somme des carrés des écarts</th>
+<th style="text-align: right;">Variance (n − 1)</th>
+<th style="text-align: right;">Écart-type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Obligations Euro (O)</td>
+<td style="text-align: right;">− 4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">− 3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"><strong>3,00</strong></td>
+<td style="text-align: right;">144</td>
+<td style="text-align: right;">36,00 %²</td>
+<td style="text-align: right;"><strong>6,00</strong></td>
+</tr>
+<tr class="even">
+<td>Actions Europe (A)</td>
+<td style="text-align: right;">− 10</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">− 10</td>
+<td style="text-align: right;"><strong>9,00</strong></td>
+<td style="text-align: right;">1 296</td>
+<td style="text-align: right;">324,00 %²</td>
+<td style="text-align: right;"><strong>18,00</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Covariance des deux fonds = coefficient de corrélation fourni × σ(O) × σ(A) = 0,00 × 6 × 18 = <strong>0</strong>. Les rentabilités des deux fonds varient indépendamment l'une de l'autre sur la période : les actions ont perdu 10 % en 2022 et en 2026, quand les obligations ont perdu 4 % en 2022 et gagné 8 % en 2026.</p>
+<p><strong>Deux allocations (0,75 pt).</strong></p>
+<ul>
+<li>Allocation prudente suggérée par la commission (30 % A, 70 % O) : rentabilité = 0,7 × 3 + 0,3 × 9 = <strong>4,80 %</strong> ; variance = 0,7² × 36 + 0,3² × 324 + 0 = 17,64 + 29,16 = 46,80 %² ; écart-type = <strong>6,84 %</strong>.</li>
+<li>Gestion pilotée pour un horizon de plus de 15 ans (80 % A, 20 % O) : rentabilité = 0,2 × 3 + 0,8 × 9 = <strong>7,80 %</strong> ; variance = 0,2² × 36 + 0,8² × 324 = 1,44 + 207,36 = 208,80 %² ; écart-type = <strong>14,45 %</strong>.</li>
+</ul>
+<p><strong>Portefeuille de variance minimale (0,5 pt).</strong> Poids du fonds obligataire = (σ_A² − cov) / (σ_O² + σ_A² − 2 cov) = (324 − 0) / (36 + 324 − 0) = <strong>90 %</strong> ; actions <strong>10 %</strong>. Rentabilité = 0,9 × 3 + 0,1 × 9 = <strong>3,60 %</strong> ; variance = 0,81 × 36 + 0,01 × 324 = 29,16 + 3,24 = 32,40 %² ; écart-type = <strong>5,69 %</strong>.</p>
+<p><strong>Rôle de la corrélation (0,5 pt).</strong> Selon Markowitz (1952), le risque d'un portefeuille ne dépend pas seulement du risque de chaque titre, mais de la <strong>covariance</strong> entre leurs rentabilités. Tant que la corrélation est inférieure à 1, l'écart-type d'un portefeuille est inférieur à la moyenne pondérée des écarts-types : pour l'allocation prudente, 6,84 % au lieu de 0,7 × 6 + 0,3 × 18 = 9,60 % si la corrélation était de 1. Avec une corrélation nulle, ajouter 10 % d'actions, pourtant trois fois plus risquées, <strong>réduit</strong> le risque du fonds obligataire seul (5,69 % au lieu de 6,00 %) tout en augmentant la rentabilité (3,60 % au lieu de 3,00 %) : placer toute son épargne en obligations est un choix dominé. La corrélation de 0,00 est toutefois estimée sur cinq rentabilités annuelles : elle peut changer, et les deux classes d'actifs ont déjà baissé ensemble (2022).</p>
+<p><strong>Allocation qui convient à M. LAVERGNAS (0,5 pt).</strong></p>
+<ul>
+<li>Il a 31 ans et n'envisage pas d'utiliser son épargne avant une vingtaine d'années : il peut supporter des baisses annuelles et attendre que les cours se redressent. L'allocation de la gestion pilotée pour un horizon de plus de 15 ans (80 % actions) lui offre la rentabilité espérée la plus élevée (7,80 %) ; ses plus mauvaises années de la période auraient été − 8,80 % en 2022 et − 6,40 % en 2026 (calcul non exigé).</li>
+<li>Son épargne est aujourd'hui entièrement dans le fonds monétaire (rentabilité moyenne de 2,20 % sur 2022-2026, non exigée), par défaut et non par choix. Sur vingt ans, 9 600 € deviendraient environ 14 835 € au rythme du monétaire, 24 519 € au rythme de l'allocation prudente et 43 117 € à celui de l'allocation pilotée, si les rentabilités passées se répétaient chaque année, ce qui n'est pas garanti (illustration non exigée).</li>
+<li>Le portefeuille de variance minimale convient à un épargnant qui cherche d'abord à limiter les fluctuations, par exemple à quelques années de l'utilisation de son épargne ; l'allocation prudente unique ignore l'horizon de chacun. Le choix final dépend aussi de la tolérance de M. LAVERGNAS aux baisses : s'il risquait de tout vendre après une mauvaise année (question 3.7), une part d'actions plus faible (60 %) serait préférable.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : allocation par défaut de dix ans (40 % d'actions, 60 % d'obligations : rentabilité 5,40 %, variance 64,80 %², écart-type 8,05 %) si le candidat l'a justifiée par l'absence de choix de M. LAVERGNAS ; l'item 3.4-05 reste noté sur l'horizon d'une vingtaine d'années ; variances exprimées en fraction (0,0036 ; 0,0324) ; écart-type de 14,4 % ou 14,5 % ; recommandation d'une allocation à 60 % d'actions si elle est justifiée par la tolérance au risque du salarié.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Calculer les écarts-types sur n (5,37 % et 16,10 %) alors que l'énoncé impose n − 1.</li>
+<li>Calculer l'écart-type du portefeuille comme moyenne pondérée des écarts-types (9,60 % pour l'allocation prudente).</li>
+<li>Inverser les poids dans la formule de variance minimale (10 % d'obligations).</li>
+<li>Recommander le portefeuille de variance minimale à tous les salariés, sans tenir compte de l'horizon.</li>
+<li>Calculer des ratios de Sharpe ou de Treynor, non demandés.</li>
+</ul>
+<p><strong>Références</strong> : F10 (Markowitz, 1952) [V programme 5.3.b] ; F01 § 1 (variance sur n − 1) [V corrigé 2023] ; coefficient de corrélation fourni par l'énoncé [V programme 5.3.c, <code>fourni_dans_sujet</code>].</p>
+<hr />
+<h3 id="35-diversification-dun-portefeuille-dactions-risque-spécifique-et-risque-systématique-2-pts">3.5 Diversification d'un portefeuille d'actions, risque spécifique et risque systématique (2 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.5-01</td>
+<td>Variances et écarts-types pour 1, 5, 10, 20 et 50 actions : 0,102400 (<strong>32,00 %</strong>) ; 0,040960 (<strong>20,24 %</strong>) ; 0,033280 (<strong>18,24 %</strong>) ; 0,029440 (<strong>17,16 %</strong>) ; 0,027136 (<strong>16,47 %</strong>)</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+<tr class="even">
+<td>3.5-02</td>
+<td>Part du risque spécifique : <strong>75,00 %</strong>, <strong>37,50 %</strong>, <strong>23,08 %</strong>, <strong>13,04 %</strong>, <strong>5,66 %</strong> ; plancher = covariance moyenne 0,0256, écart-type <strong>16,00 %</strong></td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.5-03</td>
+<td>Interprétation : risque spécifique diversifiable et non rémunéré, risque systématique non diversifiable et seul rémunéré ; pour un salarié : préférer un fonds diversifié à quelques lignes, ne pas concentrer son épargne sur ce dont dépend déjà son emploi</td>
+<td style="text-align: right;">0,75</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Calcul (1,25 pt).</strong> Variance (N) = 0,1024 / N + (1 − 1 / N) × 0,0256 ; risque spécifique = (0,1024 − 0,0256) / N = 0,0768 / N.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Nombre d'actions N</th>
+<th style="text-align: right;">Variance</th>
+<th style="text-align: right;">Écart-type</th>
+<th style="text-align: right;">Risque spécifique</th>
+<th style="text-align: right;">Part du risque spécifique dans la variance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0,102400</td>
+<td style="text-align: right;"><strong>32,00 %</strong></td>
+<td style="text-align: right;">0,076800</td>
+<td style="text-align: right;"><strong>75,00 %</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0,040960</td>
+<td style="text-align: right;"><strong>20,24 %</strong></td>
+<td style="text-align: right;">0,015360</td>
+<td style="text-align: right;"><strong>37,50 %</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0,033280</td>
+<td style="text-align: right;"><strong>18,24 %</strong></td>
+<td style="text-align: right;">0,007680</td>
+<td style="text-align: right;"><strong>23,08 %</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0,029440</td>
+<td style="text-align: right;"><strong>17,16 %</strong></td>
+<td style="text-align: right;">0,003840</td>
+<td style="text-align: right;"><strong>13,04 %</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0,027136</td>
+<td style="text-align: right;"><strong>16,47 %</strong></td>
+<td style="text-align: right;">0,001536</td>
+<td style="text-align: right;"><strong>5,66 %</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">N très grand</td>
+<td style="text-align: right;">0,025600</td>
+<td style="text-align: right;"><strong>16,00 %</strong></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0 %</td>
+</tr>
+</tbody>
+</table>
+<p>Quand N augmente, le premier terme tend vers zéro : la variance tend vers la <strong>covariance moyenne</strong> (0,0256), soit un écart-type plancher de <strong>16,00 %</strong>, égal à celui de l'indice des actions européennes. De 1 à 50 lignes, l'écart-type baisse de 48,52 % ; l'essentiel du gain est acquis avec 10 à 20 lignes (non exigé).</p>
+<p><strong>Interprétation (0,75 pt).</strong></p>
+<ul>
+<li>Le <strong>risque spécifique</strong> tient à chaque société (résultats, dirigeants, litiges, perte d'un client) : les chocs propres à des sociétés différentes se compensent en partie, et ce risque disparaît presque dans un portefeuille diversifié. Le <strong>risque systématique</strong> tient à ce qui touche toutes les sociétés en même temps (conjoncture, taux d'intérêt, inflation, crise) : il est mesuré par la covariance moyenne et ne peut pas être éliminé par la diversification.</li>
+<li>Le lien entre les deux : le risque total d'une action seule est fait aux trois quarts de risque spécifique ; la diversification ne laisse que le risque systématique. Comme un investisseur peut éliminer le risque spécifique sans coût, le marché ne le rémunère pas : seul le risque systématique donne droit à une prime (MEDAF, question 3.6).</li>
+<li>Pour un salarié : acheter deux ou trois actions qu'il « connaît » lui fait supporter un risque (écart-type d'environ 23 % à 25 % : 25,30 % pour deux actions, 22,63 % pour trois) que rien ne rémunère. Le fonds QUIRANDE Actions Europe, avec une soixantaine de lignes, est proche du plancher : son risque est presque entièrement systématique (bêta de 1,10, question 3.6). Le salarié doit aussi tenir compte de son emploi : son salaire dépend déjà de CLAVÉRINE et de la biologie médicale. Le plan, qui n'investit pas en titres du groupe, évite de concentrer sur la même entreprise son revenu et son épargne.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : écarts-types arrondis à 0,1 point ; plancher exprimé par la corrélation moyenne de 0,25 ; part du risque spécifique exprimée en écart-type, si elle est clairement définie.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Faire tendre le risque vers zéro avec N : la diversification ne supprime pas le risque de marché.</li>
+<li>Diviser la variance moyenne par N sans ajouter le terme de covariance.</li>
+<li>Confondre risque spécifique (propre à la société) et risque systématique (commun au marché), ou dire que le risque spécifique est rémunéré.</li>
+</ul>
+<p><strong>Références</strong> : F10 (Markowitz, 1952 : le risque spécifique se diversifie, le risque systématique non) [V programme 5.3.a et 5.3.b] ; formule de l'équipondération fournie par l'annexe 3.5.</p>
+<hr />
+<h3 id="36-bêta-medaf-et-rentabilité-espérée-dune-part-2-pts">3.6 Bêta, MEDAF et rentabilité espérée d'une part (2 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.6-01</td>
+<td>Covariance avec l'indice = 1 129 / 4 = <strong>282,25 %²</strong> ; variance de l'indice = 1 024 / 4 = <strong>256,00 %²</strong> ; bêta = 1,1025, arrondi à <strong>1,10</strong></td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.6-02</td>
+<td>MEDAF : 4,0 % + 1,10 × 5,0 % = <strong>9,50 %</strong> ; rentabilité espérée d'une part : (135,50 − 125,00) / 125,00 = <strong>8,40 %</strong></td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.6-03</td>
+<td>Interprétation : rentabilité espérée inférieure de 1,10 point à la rentabilité exigée ; l'écart correspond à peu près aux frais de gestion (9,60 % avant frais) ; le fonds offre une exposition au risque de marché à son juste prix, diminuée de ses frais ; valeur de la part au taux exigé 123,74 € (non exigée)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>3.6-04</td>
+<td>Limites du MEDAF : bêta estimé sur cinq années, instable ; facteur unique (Fama et French) ; taux sans risque et prime posés par hypothèse ; prévision de la société de gestion incertaine ; marchés efficients et investisseurs diversifiés supposés</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bêta (0,5 pt).</strong> Écarts à la moyenne : fonds A (− 19 ; 5 ; 15 ; 18 ; − 19), indice M (− 17 ; 6 ; 17 ; 11 ; − 17). Covariance = (323 + 30 + 255 + 198 + 323) / 4 = 1 129 / 4 = <strong>282,25 %²</strong> ; variance de l'indice = (289 + 36 + 289 + 121 + 289) / 4 = 1 024 / 4 = <strong>256,00 %²</strong> (écart-type 16,00 %). Bêta = 282,25 / 256 = 1,1025, arrondi à <strong>1,10</strong> : le fonds amplifie d'environ 10 % les variations du marché (corrélation de 0,98 avec l'indice, non exigée).</p>
+<p><strong>MEDAF et rentabilité espérée (0,5 pt).</strong></p>
+<ul>
+<li>Rentabilité exigée = 4,0 % + 1,10 × 5,0 % = <strong>9,50 %</strong>.</li>
+<li>Rentabilité espérée d'une part sur un an, le fonds ne distribuant rien : (135,50 − 125,00) / 125,00 = <strong>8,40 %</strong>.</li>
+</ul>
+<p><strong>Interprétation (0,5 pt).</strong></p>
+<ul>
+<li>D'après la prévision de QUIRANDE Gestion, la part rapporterait 1,10 point de moins que ce que son risque systématique justifie selon le MEDAF. Au taux exigé, la part vaudrait aujourd'hui 135,50 / 1,095 = 123,74 €, un peu moins que sa valeur de 125,00 € (non exigé).</li>
+<li>L'écart s'explique presque entièrement par les <strong>frais de gestion</strong> : avant les frais de 1,20 %, la rentabilité espérée serait de 9,60 %, proche des 9,50 % exigés. Le fonds n'est donc ni une bonne affaire ni un mauvais placement : il procure au salarié l'exposition au risque du marché européen, diversifiée, au prix de ses frais. Sur la période 2022-2026, sa rentabilité moyenne (9,00 %) est elle aussi inférieure à la rentabilité exigée.</li>
+<li>Pour le salarié, la prime de risque rémunère le seul risque systématique (question 3.5) ; sur un horizon de vingt ans, les frais pèsent lourd : 1,20 % par an, contre 0,70 % pour le fonds obligataire.</li>
+</ul>
+<p><strong>Limites du MEDAF (0,5 pt).</strong></p>
+<ul>
+<li>Le bêta est estimé sur cinq rentabilités annuelles : il est fragile et peut changer d'une période à l'autre.</li>
+<li>Le MEDAF retient un seul facteur de risque, le marché ; le modèle à trois facteurs de Fama et French (1993) ajoute la taille et la valeur, et donnerait une autre rentabilité exigée à un fonds de grandes sociétés.</li>
+<li>Le taux sans risque et la prime de risque sont des hypothèses : une prime de 4 % ou de 6 % changerait la conclusion.</li>
+<li>La prévision de la société de gestion est une estimation, peut-être optimiste, et non une rentabilité certaine.</li>
+<li>Le modèle suppose des marchés efficients et des investisseurs rationnels et diversifiés : les propos des salariés (question 3.7) montrent que ces hypothèses ne décrivent pas toujours les épargnants.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : bêta non arrondi (1,1025) et rentabilité exigée de 9,51 % ; covariance exprimée en fraction (0,028225) ; interprétation en termes de sur-évaluation de la part si elle est nuancée par les frais et les limites.</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Calculer le bêta comme rapport des écarts-types (18 / 16 = 1,125) : le bêta est la covariance rapportée à la variance de l'indice.</li>
+<li>Ajouter la prime au taux sans risque sans la multiplier par le bêta (9,00 %).</li>
+<li>Comparer la rentabilité espérée à la rentabilité historique de l'indice (8,00 %) au lieu de la rentabilité exigée.</li>
+<li>Conclure que le fonds est « mauvais » sans voir le rôle des frais.</li>
+</ul>
+<p><strong>Références</strong> : F02 § 2 (MEDAF et ses limites ; Fama et French, § 7) [V programme 5.2.c] ; F10 (Sharpe, 1964) ; F11 § 1 et § 2 (taux sans risque de 4 % et prime de 5 %, valeurs repères) [V] ; programme 5.2.b (rentabilité espérée sur une période) [V].</p>
+<hr />
+<h3 id="37-biais-des-salariés-épargnants-et-affectation-par-défaut-à-la-gestion-pilotée-2-pts">3.7 Biais des salariés épargnants et affectation par défaut à la gestion pilotée (2 pts)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.7-01</td>
+<td>Biais rattachés aux propos : aversion aux pertes et point de référence (propos 1, ventes après la baisse, retour « quand elles auront retrouvé leur niveau ») ; statu quo, inertie et report du choix (propos 2, 58 % de salariés sans choix) ; excès de confiance et attribution de la réussite à son talent (propos 3) ; extrapolation des bonnes années et oubli de l'horizon (propos 4, besoin dans deux ans) ; nuance de la rationalité supposée (Kahneman et Tversky, 1973 ; simplexité, Berthoz, 2009)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>3.7-02</td>
+<td>Ce que l'affectation par défaut corrige : l'inertie travaille pour le salarié (allocation liée à un horizon au lieu du monétaire), rééquilibrage annuel automatique sans recherche du « bon moment », baisse progressive des actions à l'approche de l'horizon, aucun frais supplémentaire</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>3.7-03</td>
+<td>Limites : horizon de dix ans retenu par défaut inadapté à beaucoup de salariés (M. LAVERGNAS, secrétaire de 61 ans), sortie possible après une baisse, grille identique pour tous, frais plus élevés des fonds actions, information et conseil toujours nécessaires, responsabilité du groupe dans le choix proposé</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Biais des salariés (1 pt).</strong> La finance comportementale part des écarts entre la décision rationnelle supposée par la théorie standard et les heuristiques qu'utilisent réellement les épargnants (Kahneman et Tversky, 1973) ; confrontés à un choix complexe, ils recourent à des règles simples (simplexité, Berthoz, 2009).</p>
+<ul>
+<li><strong>Propos 1 (technicienne)</strong> : <strong>aversion aux pertes</strong>, la baisse de 10 % de 2026 pèse plus qu'un gain équivalent ; <strong>disponibilité</strong> de la dernière année ; <strong>point de référence</strong> fixé au niveau de fin 2025. Elle vend après la baisse et ne rachètera qu'après la hausse : elle rend la perte définitive et risque de manquer le redressement. Juger une épargne de long terme sur une seule année la rend plus sensible aux baisses qu'elle ne devrait l'être.</li>
+<li><strong>Propos 2 (coursier)</strong> : <strong>biais de statu quo</strong> et <strong>inertie</strong> : le choix est jugé complexe et reporté (« je remets toujours à plus tard ») ; c'est alors l'affectation par défaut qui décide. Le comportement est général : 58 % des salariés n'ont jamais choisi et 64 % des sommes du plan sont dans le fonds monétaire, dont la rentabilité moyenne (2,20 %) est faible pour des horizons longs.</li>
+<li><strong>Propos 3 (technicien)</strong> : <strong>excès de confiance</strong> et <strong>attribution de la réussite à son propre talent</strong> : un épisode réussi est pris pour une compétence, alors qu'il peut tenir au hasard ; il croit pouvoir anticiper le marché, ce que l'hypothèse d'efficience rend peu probable de façon durable. Sortir et revenir fait courir le risque de manquer les meilleures séances.</li>
+<li><strong>Propos 4 (secrétaire médicale)</strong> : <strong>représentativité</strong> et <strong>extrapolation</strong> des bonnes années (24 % et 27 % en 2024 et 2025), en oubliant 2022 et 2026 (− 10 %) ; <strong>excès de confiance</strong> (« finissent toujours par remonter »), vrai en moyenne sur de longues périodes, mais pas sur deux ans : une baisse juste avant le retrait ne pourrait pas être rattrapée. Son allocation, entièrement en actions, ne correspond pas à son horizon.</li>
+</ul>
+<p><strong>Ce que l'affectation par défaut à la gestion pilotée peut corriger (0,5 pt).</strong></p>
+<ul>
+<li>Elle <strong>utilise l'inertie</strong> au lieu de la subir : le salarié qui ne choisit pas reçoit une allocation liée à un horizon (40 % d'actions, 60 % d'obligations pour dix ans) au lieu du fonds monétaire. Il garde sa liberté : il est informé et peut tout modifier.</li>
+<li>Le <strong>rééquilibrage annuel automatique</strong> supprime la recherche du « bon moment » et les arbitrages émotionnels après une baisse (propos 1 et 3) : il conduit même à racheter des actions quand elles ont baissé.</li>
+<li>La <strong>baisse progressive de la part des actions</strong> à l'approche de l'horizon répond au propos 4 : à deux ans ou moins, 80 % de monétaire et 20 % d'obligations, sans actions.</li>
+<li>La gestion pilotée n'entraîne pas de frais supplémentaires ; elle applique une grille de répartition fixée à l'avance, et non une gestion par algorithme.</li>
+</ul>
+<p><strong>Limites (0,5 pt).</strong></p>
+<ul>
+<li>L'<strong>horizon de dix ans retenu par défaut</strong> ne convient pas à tous : M. LAVERGNAS, à vingt ans de l'utilisation de son épargne, aurait 40 % d'actions au lieu des 80 % de la grille ; un salarié qui a besoin de ses fonds dans deux ans en aurait trop. L'affectation par défaut n'est utile que si les salariés indiquent ensuite leur horizon réel.</li>
+<li>Elle ne supprime pas les biais : un salarié peut sortir de la gestion pilotée après une baisse ; la grille est la même pour tous, quelle que soit la tolérance de chacun aux pertes ou son autre patrimoine.</li>
+<li>Les fonds actions ont les frais les plus élevés (1,20 % contre 0,30 % pour le monétaire) : le teneur de compte a intérêt à une plus grande part d'actions, ce qui appelle une information claire sur les frais.</li>
+<li>En proposant un choix par défaut, le groupe et la commission du comité social et économique engagent leur responsabilité vis-à-vis des salariés : une information compréhensible et des réunions de conseil restent nécessaires. L'allocation « prudente » unique suggérée par la commission (30 % d'actions) a le défaut inverse : elle ignore l'horizon de chacun.</li>
+</ul>
+<p><strong>Réponses tolérées</strong> : biais de « procrastination » ou « surcharge de choix » pour le propos 2 ; « illusion de contrôle » pour le propos 3 ; « comptabilité mentale » pour le propos 1, si l'explication est liée au cas ; vocabulaire « allocation par défaut » ou « choix par défaut ».</p>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>Réciter une liste de biais sans les rattacher aux propos : <code>JUR-T13</code>.</li>
+<li>Chiffrer l'aversion aux pertes (coefficient) : approfondissement hors programme.</li>
+<li>Attribuer les biais à Fama, ou se tromper sur les distinctions reçues par les auteurs (F99, F10).</li>
+<li>Présenter la gestion pilotée comme une gestion par algorithme ou par intelligence artificielle.</li>
+<li>Développer les règles juridiques de l'épargne salariale ou son imposition : hors programme (UE 1).</li>
+</ul>
+<p><strong>Références</strong> : F06 § 4 (finance comportementale, biais à rattacher au cas, simplexité) [V programme 5.1.d ; guide p. 74] ; F10 (Kahneman et Tversky, 1973 ; Berthoz, 2009) [V programme 5.1].</p>
+<hr />
+<p><strong>Points d'attention pour le correcteur</strong></p>
+<ul>
+<li>Aux questions 3.1 et 3.2, la valeur de revente et le BFR peuvent être présentés sur une ligne distincte ; seule la cohérence avec l'annexe 3.7 est exigée.</li>
+<li>À la question 3.3, la conclusion dépend de la lecture de la marge de la clause : un candidat qui ne compte que le prêt (+ 2 000) se trompe sur l'effet de la solution A ; la suite de son raisonnement est notée en cohérence, mais l'item 3.3-02 n'est pas acquis.</li>
+<li>Aux questions 3.4 et 3.6, les variances peuvent être exprimées en %² ou en fraction ; le coefficient de corrélation est fourni et n'a pas à être recalculé.</li>
+</ul>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
