@@ -1,0 +1,266 @@
+# DSCG UE 4 — Comptabilité et audit — Exercice d'entraînement n° 57
+
+**DOSSIER 3 – AUDIT (30 points, dont 12 points sur la durabilité)**
+
+Durée conseillée : 1 h 15 (sur une épreuve de 4 heures, coefficient 1,5).
+
+Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026.
+
+**Document autorisé** : liste des comptes du plan comptable général, à l'exclusion de toute autre information.
+
+**Matériel autorisé** : calculatrice avec mode examen actif, ou calculatrice sans mémoire « type collège ».
+
+### AVERTISSEMENT
+
+Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.
+
+Il n'est pas attendu que vous citiez les numéros des normes ou des articles. Toute information calculée devra être justifiée. Les écritures comptables devront comporter les numéros et les noms des comptes et un libellé.
+
+---
+
+## Présentation
+
+Le groupe ÉTRIVAL conçoit, fabrique et distribue du matériel d'équitation : selles de dressage, d'obstacle et de randonnée, filets et brides, tapis et couvertures pour chevaux, ainsi que des équipements du cavalier (casques, gilets de protection, bottes), vendus aux selleries, aux centres équestres et aux cavaliers, en France et en Europe, en magasin et en ligne. Sa société de tête, ÉTRIVAL et Cie, société en commandite par actions installée à Chantilly (Oise), est gérée par son associé commandité, la SAS ÉTRIVAL Gérance, que contrôle la famille fondatrice ; ses actions, détenues par les membres de cette famille (78 %) et par des cadres du groupe (22 %), ne sont admises aux négociations sur aucun marché. Elle établit ses comptes consolidés selon le règlement ANC n° 2020-01. Le groupe emploie 640 salariés, dont 230 dans son atelier tunisien, et son chiffre d'affaires consolidé s'est élevé à 112 M€ en 2026.
+
+Ailleurs dans l'Oise, d'autres entreprises préparent des décisions importantes. À Tracy-le-Mont, la SAS PINCELOR, fabricant de pinceaux et de brosses pour les beaux-arts et la peinture en bâtiment, prépare l'absorption de la SAS BROSSELANE, fabricant de brosses industrielles installé à Crépy-en-Valois, dont elle détient 30 % du capital depuis 2020. Près de Noyon, la SA SYLVÉANE Loisirs exploite d'avril à novembre un parc de loisirs en forêt : attractions, parcours dans les arbres, spectacles et hébergements insolites. Ses actions ne sont pas cotées, mais les obligations qu'elle a émises en 2024 sont admises aux négociations sur Euronext Paris, marché réglementé ; elle emploie 260 salariés permanents et jusqu'à 640 saisonniers. Aucune de ces entreprises n'a de lien en capital avec ÉTRIVAL.
+
+Vous êtes collaborateur ou collaboratrice du cabinet AUTHONNE Audit et Conseil, société d'expertise comptable et de commissariat aux comptes installée à Senlis, avec un bureau à Compiègne. Le cabinet, qui n'est pas commissaire aux comptes d'ÉTRIVAL, assiste la direction financière du groupe dans l'établissement de ses comptes consolidés. Il conseille les dirigeants de PINCELOR et de BROSSELANE dans leur projet. Il est enfin le commissaire aux comptes de la SA SYLVÉANE Loisirs et vérifie aussi les informations en matière de durabilité qu'elle publie volontairement. Les organisations et les personnes citées sont fictives.
+
+La SA SYLVÉANE Loisirs (ci-après « SYLVÉANE »), société anonyme à conseil d'administration, exploite sur 92 hectares de forêt, près de Noyon, un parc de loisirs ouvert du 1er avril au 30 novembre : dix-huit attractions, quatre parcours dans les arbres, des spectacles et 64 hébergements insolites (cabanes perchées, roulottes, bulles transparentes). Elle n'a ni filiale ni participation et n'établit pas de comptes consolidés. Son conseil d'administration a créé un comité d'audit en avril 2024, après l'admission de ses obligations aux négociations.
+
+Le cabinet AUTHONNE compte huit associés. Mme Hélène MARCHÉVILLE, associée, commissaire aux comptes inscrite aussi sur la liste des commissaires aux comptes habilités à certifier les informations en matière de durabilité, signe les rapports sur SYLVÉANE. Vous participez aux travaux sur l'exercice 2026, réalisés de janvier à mars 2027.
+
+**Hypothèses** : SYLVÉANE établit ses comptes annuels selon le plan comptable général. La continuité d'exploitation n'est pas en cause et n'est pas à traiter. Les vérifications spécifiques que la loi confie au commissaire aux comptes ne sont pas à examiner. Les règles techniques de sécurité des attractions ne sont pas à connaître. Les anomalies sont appréciées avant impôt ; l'incidence des corrections sur l'impôt sur les bénéfices n'est pas à calculer.
+
+**Hypothèses relatives à la durabilité** : SYLVÉANE n'entre pas dans le champ des entités tenues de publier des informations en matière de durabilité ; la question n'est pas à traiter. Elle publie **volontairement**, depuis l'exercice 2025, dans une section distincte de son rapport de gestion, un **état de durabilité qu'elle déclare conforme aux ESRS** ; la version des ESRS qu'elle applique n'est pas à discuter. L'assemblée générale a confié au cabinet la vérification de ces informations, sur la base d'une **assurance limitée**, dans le cadre d'une mission conduite dans les conditions de la certification légale des informations en matière de durabilité (annexe 3.11). Le contenu des normes thématiques n'est pas à développer et aucune donnée publiée n'est à calculer, sauf indication contraire d'une question.
+
+**Conventions** : montants en euros, arrondis à l'euro ; pourcentages arrondis au dixième ; rapports aux seuils arrondis au centième. Les autres conventions figurent dans les annexes.
+
+### Travail à faire
+
+**Partie A – Audit des comptes (18 points)** — Annexes 3.1 à 3.9
+
+**3.1.** À partir de l'annexe 3.1 : expliquer au président pourquoi SYLVÉANE est une entité d'intérêt public, puis présenter ce que cette qualité change pour le cabinet du point de vue de l'organisation et du contrôle de la profession, et les autres obligations propres aux entités d'intérêt public qui s'imposent à lui. *(2 points)*
+
+**3.2.** À partir de l'annexe 3.2 : apprécier le projet de résolution préparé par le président au regard des règles de désignation du commissaire aux comptes d'une entité d'intérêt public, puis présenter la durée maximale pendant laquelle le cabinet AUTHONNE peut certifier seul les comptes de SYLVÉANE, son point de départ et ses conséquences pour le renouvellement du mandat qui expire en 2030, et indiquer à quelles conditions la mission pourrait se poursuivre au-delà. La procédure de sélection du commissaire aux comptes n'est pas à décrire. *(1,5 point)*
+
+**3.3.** À partir des annexes 3.1 et 3.3 : analyser chacune des trois demandes au regard des règles qui s'imposent au commissaire aux comptes d'une entité d'intérêt public, en distinguant les services qui lui sont interdits et ceux qu'il peut fournir, et préciser les conditions auxquelles il peut fournir ces derniers. *(2 points)*
+
+**3.4.** À partir de l'annexe 3.4 : répondre au représentant de la masse des obligataires en présentant l'objectif de la certification des comptes, la nature de l'assurance qu'elle procure et ses limites, notamment en matière de fraude. *(1,5 point)*
+
+**3.5.** À partir des annexes 3.5 et 3.6 : *(5,5 points)*
+
+a. identifier les principaux risques d'anomalies significatives que présente le cycle des immobilisations corporelles de SYLVÉANE au 31/12/2026, en précisant pour chacun les assertions concernées ;
+
+b. proposer les procédures d'audit que le cabinet met en œuvre en réponse à ces risques, en indiquant pour chacune l'objectif poursuivi ;
+
+c. en vous appuyant sur l'extrait de norme de l'annexe 3.6, indiquer si le cabinet peut confier l'appréciation des durées d'utilisation au bureau d'études proposé par la direction ou à Mme ORVAL, comment il apprécie ensuite les travaux de l'experte retenue, et quelle est sa responsabilité à leur égard.
+
+**3.6.** À partir de l'annexe 3.7 : analyser la réponse du directeur technique au regard des moyens d'action du commissaire aux comptes, puis indiquer la suite que le cabinet doit donner à un refus persistant. *(1,5 point)*
+
+**3.7.** À partir des annexes 3.5 et 3.8 : calculer les deux anomalies relevées sur le cycle, présenter les écritures de correction au 31/12/2026 et apprécier leur caractère significatif, puis déterminer l'opinion que le cabinet doit exprimer selon que la direction corrige les deux anomalies, seulement celle qui concerne « Le Vol de l'Autour », ou aucune ; indiquer enfin, dans ce dernier cas, dans quelles parties du rapport l'opinion et ses motifs sont exposés. *(2 points)*
+
+**3.8.** À partir de l'annexe 3.9 : répondre à l'administrateur sur ses deux demandes, puis apprécier si la responsabilité civile du cabinet pourrait être engagée dans la situation qu'envisage le fonds, en présentant les conditions de cette responsabilité. Les aspects de procédure ne sont pas à traiter. *(2 points)*
+
+**Partie B – Durabilité (12 points)** — Annexes 3.10 et 3.11, et hypothèses relatives à la durabilité (présentation)
+
+**3.9.** À partir de l'annexe 3.11 : présenter les règles des ESRS relatives aux informations comparatives, à la correction des erreurs concernant des périodes antérieures et aux horizons temporels, puis indiquer ce que SYLVÉANE doit modifier dans la présentation de ses consommations d'eau et d'énergie et de son objectif de réduction. *(3 points)*
+
+**3.10.** À partir de l'annexe 3.10 : identifier, à partir du contexte décrit, des impacts, des risques et des opportunités liés aux activités de SYLVÉANE, en distinguant ce qui relève de la matérialité d'impact et ce qui relève de la matérialité financière. L'analyse de double matérialité n'est pas à conduire. *(3 points)*
+
+**3.11.** À partir de l'annexe 3.11 : *(4 points)*
+
+a. indiquer quels professionnels auraient pu vérifier les informations en matière de durabilité de SYLVÉANE et ce que change le caractère volontaire de la publication, puis présenter les objectifs, les axes et la nature de l'assurance de la mission confiée au cabinet ;
+
+b. présenter les étapes de la démarche du cabinet, puis les procédures qu'il met en œuvre sur les deux données de l'annexe 3.11 (consommation d'eau par visiteur, part des saisonniers formés à la sécurité des visiteurs), en indiquant pour chacune l'objectif poursuivi.
+
+**3.12.** À partir de l'annexe 3.11 : déterminer l'avis que le cabinet doit formuler sur les informations publiées selon que la direction corrige ou non les comparatifs de 2025, puis présenter les différences entre cet avis et l'opinion du cabinet sur les comptes annuels. *(2 points)*
+
+---
+
+### ANNEXE 3.1 – SYLVÉANE : ACTIONNARIAT, EMPRUNT OBLIGATAIRE, CHIFFRES CLÉS ET MESSAGE DU PRÉSIDENT
+
+**Actionnariat au 31/12/2026** : famille DORMANVILLE, fondatrice du parc en 1987, 64 % du capital ; HAUTS-VALOIS Participations, fonds d'investissement régional, 36 %. Les actions ne sont admises aux négociations sur aucun marché. M. Hugues DORMANVILLE est président du conseil d'administration et directeur général ; Mme Agnès TOURVEL, directrice financière ; M. Fabrice ROQUELAINE, directeur technique.
+
+**Emprunt obligataire** : le 15/03/2024, SYLVÉANE a émis 30 000 obligations de 1 000 € (30 000 000 €), au taux de 4,2 %, remboursables in fine le 15/03/2031, admises aux négociations sur Euronext Paris, marché réglementé, pour financer « Le Vol de l'Autour » et la rénovation des hébergements. Le contrat d'émission impose que le rapport entre l'endettement financier net et l'excédent brut d'exploitation reste inférieur à 3,5 ; Me Odile CARTERET représente la masse des obligataires.
+
+**Chiffres clés** (comptes annuels approuvés de 2025 ; projet de comptes annuels de 2026 établi par la direction le 24/02/2027, qui ne comprend pas les corrections de l'annexe 3.8)
+
+| Élément | 2025 | 2026 (projet) |
+|---|---:|---:|
+| Chiffre d'affaires hors taxes | 35 900 000 | 38 400 000 |
+| Résultat de l'exercice | 2 410 000 | 2 860 000 |
+| Capitaux propres au 31/12 | 22 300 000 | 24 600 000 |
+| Immobilisations corporelles nettes au 31/12 | 48 700 000 | 53 900 000 |
+| Total du bilan | 66 800 000 | 71 500 000 |
+| Visiteurs accueillis | 416 000 | 436 000 |
+
+**Message de M. DORMANVILLE à Mme MARCHÉVILLE (08/01/2027)**
+
+« Notre banque m'a écrit que SYLVÉANE est une "entité d'intérêt public". Je ne comprends pas : nos actions ne sont pas cotées, nous ne sommes ni une banque ni un assureur, et nous ne faisons appel qu'à des investisseurs pour un emprunt. Qu'est-ce que cela change pour vous ? On m'a même dit que votre cabinet serait contrôlé à cause de nous. »
+
+### ANNEXE 3.2 – HISTORIQUE DU MANDAT ET PROJET DE RÉSOLUTION
+
+- **Jusqu'en 2024** : les comptes de 2018 à 2023 ont été certifiés par la société MORVILLIERS Audit, dont le mandat a expiré après l'assemblée générale du 20/06/2024.
+- **Désignation du cabinet** : le comité d'audit, créé par le conseil d'administration le 04/04/2024, a recommandé au conseil, le 28/05/2024, la désignation du cabinet AUTHONNE. Par décision du 20/06/2024, l'assemblée générale ordinaire a désigné le cabinet commissaire aux comptes titulaire pour six exercices (2024 à 2029). Le cabinet n'avait jamais travaillé pour SYLVÉANE. Il a certifié sans réserve les comptes de 2024 et de 2025. Il n'est pas co-commissaire aux comptes : SYLVÉANE n'a désigné qu'un commissaire aux comptes.
+
+**Projet de résolution préparé par M. DORMANVILLE pour l'assemblée générale du 24/06/2027**
+
+« L'assemblée générale ordinaire, sur proposition du conseil d'administration, décide de porter la durée du mandat du cabinet AUTHONNE Audit et Conseil, commissaire aux comptes titulaire, jusqu'à l'issue de l'assemblée qui statuera sur les comptes de l'exercice 2034, afin d'assurer la stabilité du contrôle des comptes pendant toute la durée de l'emprunt obligataire et de la construction d'une seconde attraction. »
+
+Note de M. DORMANVILLE à la directrice financière : « Inutile de saisir le comité d'audit : il n'a qu'un rôle technique, et c'est l'assemblée qui décide. »
+
+### ANNEXE 3.3 – DEMANDES DE SERVICES
+
+**Courriel de Mme TOURVEL à Mme MARCHÉVILLE (13/01/2027)**
+
+« Deux demandes, en plus de vos travaux habituels :
+1. Notre registre des immobilisations est tenu sur un tableur que personne ne vérifie. Pouvez-vous concevoir et mettre en place, d'ici l'ouverture d'avril, nos procédures de suivi des investissements : enregistrement des factures, mise à jour du registre, rapprochement avec la comptabilité et calcul des dotations ?
+2. Notre banque nous demande une évaluation du "Vol de l'Autour" pour accorder le prêt de la seconde attraction. Votre experte en connaît chaque boulon : pouvez-vous établir ce rapport d'évaluation à son nom et au vôtre ? »
+
+**Proposition du cabinet** : Me CARTERET demande chaque année une attestation sur le calcul du rapport entre l'endettement financier net et l'excédent brut d'exploitation, établi à partir des comptes annuels certifiés. Le cabinet propose à SYLVÉANE de la lui délivrer pour l'exercice 2026, pour des honoraires de 6 000 €.
+
+**Honoraires du cabinet facturés à SYLVÉANE** (à utiliser tels quels) : certification des comptes : 92 000 € pour 2024, 96 000 € pour 2025, 100 000 € pour 2026 ; aucun autre service n'a été fourni.
+
+### ANNEXE 3.4 – COURRIER DU REPRÉSENTANT DE LA MASSE DES OBLIGATAIRES
+
+**Courrier de Me CARTERET à Mme MARCHÉVILLE (20/01/2027)**
+
+« Les porteurs d'obligations comptent sur votre certification. Un rapport sans réserve leur garantit que SYLVÉANE pourra rembourser les 30 000 000 € en 2031 et qu'aucune fraude n'a été commise chez elle. Je vous remercie de me le confirmer par écrit, et de m'indiquer comment vous avez vérifié chaque facture de la construction de la nouvelle attraction. »
+
+### ANNEXE 3.5 – LE CYCLE DES IMMOBILISATIONS CORPORELLES AU 31/12/2026
+
+**Méthodes de SYLVÉANE** (annexe des comptes de 2025, inchangées) : les attractions sont inscrites au compte 2151 « Installations complexes spécialisées », décomposées en composants amortis en linéaire, sans valeur résiduelle, à compter de leur mise en service, au prorata des mois ; les frais de formation du personnel sont comptabilisés en charges ; les dépenses engagées pendant la construction sont inscrites au compte 231 « Immobilisations corporelles en cours » et virées au compte 2151 à la mise en service.
+
+**1. Nouvelle attraction « Le Vol de l'Autour »** (montagnes russes en bois et en acier, construites en 2025 et en 2026 par la société VERANTI Costruzioni)
+- Procès-verbal de réception sans réserve signé le 24/04/2026, après dix jours d'essais à vide puis en charge ; formation des 22 opérateurs du 27/04 au 08/05/2026 ; ouverture au public le 09/05/2026, après une fête d'inauguration. La direction retient une mise en service au 01/05/2026 (date à retenir telle quelle : huit mois d'amortissement en 2026).
+- Le 01/05/2026, le compte 231 (6 192 000 €) a été soldé par virement au compte 2151, selon la décomposition suivante :
+
+| Composant | Coût inscrit | Durée retenue | Dotation 2026 comptabilisée |
+|---|---:|---:|---:|
+| Structure et fondations | 2 880 000 | 30 ans | 64 000 |
+| Voie | 1 620 000 | 20 ans | 54 000 |
+| Trains de véhicules | 1 260 000 | 10 ans | 84 000 |
+| Système de commande | 432 000 | 8 ans | 36 000 |
+| **Total** | **6 192 000** | | **238 000** |
+
+- Composition du coût de la structure et des fondations : facture de VERANTI Costruzioni, 2 628 000 € ; essais de réception (énergie, lests, techniciens de VERANTI), 72 000 € ; salaires des opérateurs et de leurs formateurs pendant la formation du 27/04 au 08/05/2026, 132 000 €, inscrits en production immobilisée ; fête d'inauguration du 09/05/2026 (prestataire de spectacle et réception des invités), 48 000 €, facture inscrite directement au compte 231.
+
+**2. Ancienne attraction « Le Torrent »** (bûches sur une rivière artificielle)
+- Mise en service le 01/04/2004, pour un coût de 3 360 000 € amorti sur 30 ans en un seul plan (annuité de 112 000 €) ; amortissements cumulés au 31/12/2025 : 2 436 000 €.
+- Le 22/09/2026, le conseil d'administration a décidé de l'exploiter pour la dernière fois pendant la saison 2027 et de la démonter en décembre 2027 pour libérer le terrain de la seconde attraction. La dotation de 2026 a été comptabilisée selon le plan initial (112 000 €).
+- **Hypothèses à retenir** : le plan révisé s'applique à compter du 01/01/2026 ; la durée restant à courir est de 24 mois à cette date ; aucune valeur résiduelle ; les coûts de démontage ne sont pas à traiter ; la valeur actuelle du Torrent au 31/12/2026, estimée par la direction à partir des flux nets attendus de la saison 2027 et revue par le cabinet, est de **540 000 €** (à utiliser telle quelle).
+
+**3. Registre des immobilisations et inventaire physique**
+- Le registre est tenu sur un tableur par l'assistante de la directrice financière ; il n'a pas été rapproché du grand livre depuis 2024. Aucun inventaire physique des attractions et des équipements n'a été réalisé.
+- La grande roue « Le Belvédère », démontée et vendue pour pièces en octobre 2025, figurait encore au registre au 31/12/2026, pour un coût de 1 150 000 €, entièrement amorti.
+- Les factures de VERANTI Costruzioni sont validées par le seul directeur technique, qui a aussi signé le procès-verbal de réception.
+
+### ANNEXE 3.6 – EXTRAIT DE LA NORME D'EXERCICE PROFESSIONNEL RELATIVE À L'INTERVENTION D'UN EXPERT
+
+**Situation** : pour apprécier les durées d'utilisation retenues pour les composants du « Vol de l'Autour » et la durée restant à courir du « Torrent », le cabinet souhaite s'appuyer sur un ingénieur. La direction propose le bureau d'études CORMELLE Ingénierie, maître d'œuvre de SYLVÉANE pour la construction du « Vol de l'Autour », rémunéré par elle et pressenti pour la seconde attraction. Le cabinet envisage plutôt Mme Nadia ORVAL, ingénieure en structures et en mécanique, inscrite sur la liste des experts d'une cour d'appel, qui a expertisé une quarantaine d'attractions et n'a jamais travaillé pour SYLVÉANE, VERANTI Costruzioni ou CORMELLE Ingénierie.
+
+Paragraphes 01, 04, 06 à 08 et 12 à 16 de la norme ; les autres paragraphes ne sont pas reproduits.
+
+> 01. En application des dispositions prévues à l'article L. 821-60 du code de commerce et à l'article 7 du code de déontologie de la profession, le commissaire aux comptes peut faire appel à un expert de son choix lorsque certains contrôles indispensables à l'exercice de sa mission nécessitent une expertise dans des domaines autres que ceux de l'audit et de la comptabilité.
+>
+> 04. Expert : personne physique ou morale possédant une qualification et une expérience dans un domaine particulier autre que la comptabilité et l'audit.
+>
+> 06. Lorsque le commissaire aux comptes envisage d'utiliser les travaux d'un expert dans le cadre de sa mission d'audit, il tient compte notamment :
+> - du risque d'anomalies significatives dû à la nature, à la complexité et au caractère significatif de l'élément concerné ;
+> - de la quantité et de la qualité des autres éléments pouvant être collectés.
+>
+> 07. Le commissaire aux comptes choisit un expert indépendant de l'entité.
+>
+> 08. Il apprécie, par ailleurs, la compétence professionnelle de celui-ci dans le domaine particulier concerné. Le commissaire aux comptes tient compte notamment :
+> - des qualifications professionnelles, des diplômes ou de l'inscription de l'expert sur la liste d'experts agréés auprès d'un organisme professionnel ou d'une juridiction ;
+> - de l'expérience et de la réputation de l'expert dans le domaine particulier concerné.
+>
+> 12. Le commissaire aux comptes collecte les éléments suffisants et appropriés qui établissent que :
+> - la nature et l'étendue des travaux de l'expert sont conformes aux instructions qui lui ont été données ;
+> - les travaux réalisés par l'expert lui permettent de conclure sur le respect des assertions qu'il souhaite vérifier. Pour ce faire, le commissaire aux comptes apprécie :
+>   - le caractère approprié des sources d'informations utilisées par l'expert ;
+>   - le caractère raisonnable des hypothèses et des méthodes utilisées par l'expert et leur cohérence avec celles retenues, le cas échéant, au cours des périodes précédentes ;
+>   - la cohérence des résultats des travaux de l'expert avec sa connaissance générale de l'entité et les résultats de ses autres procédures d'audit.
+>
+> Le commissaire aux comptes vérifie par ailleurs que les conclusions de l'expert sont correctement reflétées dans les comptes ou qu'elles corroborent les assertions qui sous-tendent l'établissement des comptes.
+>
+> 13. Si les résultats des travaux de l'expert ne fournissent pas au commissaire aux comptes les éléments suffisants et appropriés ou s'ils ne sont pas cohérents avec les autres éléments collectés :
+> - il s'en entretient avec la direction au niveau de responsabilité approprié et avec l'expert ;
+> - il détermine, le cas échéant, les procédures d'audit supplémentaires à mettre en œuvre. Il peut, à ce titre, décider de recourir à un autre expert.
+>
+> 14. Les travaux de l'expert sont utilisés uniquement en tant qu'éléments collectés à l'appui des conclusions du commissaire aux comptes sur sa propre mission.
+>
+> 15. Le commissaire aux comptes peut estimer nécessaire de faire référence aux travaux et aux conclusions de l'expert :
+> - lorsqu'il justifie de ses appréciations ;
+> - lorsqu'il émet une réserve, formule une impossibilité ou un refus de certifier, pour en préciser les motifs.
+>
+> 16. Le commissaire aux comptes documente dans son dossier les travaux réalisés par l'expert qu'il utilise dans le cadre de sa mission.
+
+### ANNEXE 3.7 – RÉPONSE DU DIRECTEUR TECHNIQUE
+
+Le 01/02/2027, le cabinet a demandé à visiter, le 10/02/2027, « Le Vol de l'Autour », « Le Torrent » et les ateliers, avec Mme ORVAL, et à consulter au siège les plans d'exécution de l'attraction, le procès-verbal de réception et les rapports de vérification établis en 2026 par l'organisme de contrôle technique que SYLVÉANE a mandaté.
+
+**Courriel de M. ROQUELAINE à Mme MARCHÉVILLE (03/02/2027)**
+
+« Le parc est fermé jusqu'au 1er avril : les attractions sont en maintenance, et je ne laisserai personne monter sur une voie en travaux, pour des raisons de sécurité. Revenez en avril. Les plans sont la propriété intellectuelle de VERANTI Costruzioni, et notre contrat nous interdit de les communiquer à des tiers ; quant aux rapports de contrôle technique, ils ne concernent que la sécurité, pas la comptabilité. Votre ingénieure, elle, n'a de toute façon aucun droit chez nous. Je vous enverrai une photo de l'attraction et une copie du procès-verbal. »
+
+### ANNEXE 3.8 – SEUILS ET EXTRAIT DE LA NOTE DE SYNTHÈSE
+
+**Seuils du plan de mission 2026** (à utiliser tels quels) : seuil de signification de **300 000 €** ; seuil de planification de 210 000 € ; seuil des anomalies manifestement insignifiantes de 15 000 €.
+
+**Extrait du projet de note de synthèse (12/03/2027)**
+- **Accès** : après l'intervention du président, la visite a eu lieu le 17/02/2027 avec Mme ORVAL, dans le respect des consignes de sécurité du directeur technique, et les documents ont été consultés au siège ; aucune limitation ne subsiste (à retenir tel quel).
+- **Travaux de Mme ORVAL** (rapport du 05/03/2027, jugé suffisant et approprié par le cabinet, à retenir tel quel) : les durées des quatre composants du « Vol de l'Autour » sont appropriées ; la durée restant à courir du « Torrent » au 01/01/2026 est de 24 mois.
+- **Registre** : la sortie du « Belvédère » a été constatée dans le projet de comptes du 24/02/2027 ; le registre a été rapproché du grand livre sans autre écart.
+- **Anomalie 1** : salaires de formation et fête d'inauguration incorporés au coût du « Vol de l'Autour » (annexe 3.5) ; à chiffrer, nette de l'amortissement correspondant.
+- **Anomalie 2** : dotation de 2026 du « Torrent » calculée selon le plan initial (annexe 3.5) ; à chiffrer.
+- **Autres cycles** : anomalies non corrigées récapitulées pour un total de **28 000 €**, qui surévaluent le résultat.
+- **Position du président (10/03/2027)** : « Je veux bien sortir la formation et la fête du coût de l'attraction. En revanche, "Le Torrent" fonctionnera normalement en 2027 : je ne vois pas pourquoi on l'amortirait plus vite en 2026. »
+- **Calendrier** : arrêté des comptes par le conseil d'administration le 22/03/2027 ; rapport du cabinet prévu le 16/04/2027 ; assemblée générale le 24/06/2027.
+
+### ANNEXE 3.9 – DEMANDE D'UN ADMINISTRATEUR ET COURRIER DU FONDS
+
+**Extrait du procès-verbal du conseil d'administration du 26/01/2027**, auquel le cabinet avait été convoqué
+
+« M. Jean-Marc HAUTECLAIR, administrateur représentant HAUTS-VALOIS Participations, rappelle que la seconde attraction coûterait environ 9 000 000 € et que deux constructeurs ont été consultés. Il demande que le commissaire aux comptes, qui connaît mieux que quiconque les finances de la société, indique au conseil si cet investissement est opportun, et garantisse par écrit que le constructeur choisi par la direction, HELVÉRIX Rides, est le bon. »
+
+**Courrier de HAUTS-VALOIS Participations au cabinet (02/02/2027)**
+
+« Si le choix de HELVÉRIX Rides se révèle mauvais (retards, malfaçons, défaillance du constructeur), nous rechercherons la responsabilité de votre cabinet, qui assistait au conseil et n'aura pas empêché la direction de se tromper. »
+
+### ANNEXE 3.10 – CONTEXTE ENVIRONNEMENTAL ET SOCIAL (DONNÉES DE 2026 FOURNIES PAR LA DIRECTION)
+
+- **Site forestier** : le parc occupe 92 hectares de forêt de feuillus, en lisière d'une zone naturelle protégée. Une association naturaliste a recensé en 2026 trois colonies de chauves-souris dans de vieux arbres proches du « Torrent » et du chantier de la seconde attraction ; les spectacles nocturnes de juillet et d'août (lumières, son) ont lieu à 200 mètres de l'une d'elles. Le piétinement autour des parcours dans les arbres a fait disparaître la végétation au sol sur près de trois hectares.
+- **Eau** : l'eau provient d'un forage dans la nappe et du réseau communal ; les 64 hébergements, dont 22 avec bain nordique, en consomment plus du quart. En août 2025, un arrêté préfectoral de restriction des usages de l'eau avait imposé l'arrêt du « Torrent » pendant dix-neuf jours.
+- **Visiteurs** : 87 % viennent en voiture, sur un trajet moyen de 110 kilomètres aller et retour ; aucune ligne de transport en commun ne dessert le parc depuis la gare de Noyon, située à 9 kilomètres. Le conseil départemental propose de cofinancer une navette.
+- **Saisonniers** : jusqu'à 640 saisonniers, dont 180 logés sur place, dans des bungalows de quatre personnes ; plusieurs se sont plaints, en 2026, de l'absence de chauffage en avril et d'horaires modifiés la veille pour le lendemain. Le recrutement des saisonniers devient plus difficile chaque année.
+- **Sécurité des visiteurs** : en 2026, 31 visiteurs ont été blessés, sans gravité, dont 24 sur les parcours dans les arbres ; une famille a engagé une action contre SYLVÉANE après la chute d'un enfant. Les avis publiés en ligne citent la sécurité comme premier critère de choix d'un parc.
+- **Chaleur estivale** : le parc a connu neuf jours au-dessus de 35 °C en 2026 ; la fréquentation de ces jours-là a été inférieure de 30 % à la moyenne, et les parcours dans les arbres ferment au-delà de 34 °C. L'ombre de la forêt est mise en avant par le service commercial ; plusieurs comités d'entreprise demandent des séjours « nature » hors saison.
+
+### ANNEXE 3.11 – PROJET D'ÉTAT DE DURABILITÉ DE 2026, MISSION DU CABINET ET ÉTAT DES TRAVAUX
+
+**Sommaire du projet d'état de durabilité de 2026 (version du 01/03/2027)**
+1. Informations générales : base de préparation, gouvernance, stratégie, analyse de double matérialité.
+2. Informations environnementales : eau, énergie, biodiversité du site.
+3. Informations sociales : nos salariés et nos saisonniers ; sécurité de nos visiteurs.
+4. Informations sur la gouvernance : conduite des affaires.
+
+**Consommations publiées en 2025 et projet de 2026**
+
+| Donnée | 2025 (état publié en 2026) | 2026 (projet) | Évolution affichée |
+|---|---:|---:|---:|
+| Consommation d'eau (m³) | 41 600 | 50 140 | + 20,5 % |
+| Consommation d'eau par visiteur (litres) | 100 | 115 | + 15,0 % |
+| Consommation d'énergie (MWh) | 3 120 | 3 480 | + 11,5 % |
+
+- **Note méthodologique du projet** : consommations relevées sur l'ensemble des compteurs du site ; eau par visiteur = consommation d'eau totale divisée par le nombre de visiteurs accueillis.
+- **Commentaire du projet** : « La hausse de nos consommations s'explique par la chaleur de l'été 2026. Notre objectif est de réduire de 20 % la consommation d'eau par visiteur. »
+- **Origine de l'écart** (constat du service technique en janvier 2027) : en 2025, les compteurs d'eau et d'électricité des 64 hébergements, relevés chaque mois par le service des hébergements, n'avaient pas été transmis à la personne chargée de l'état de durabilité ; ils ont été intégrés en 2026. Les relevés de 2025, disponibles à l'époque, s'élèvent à 9 800 m³ d'eau et 410 MWh d'énergie. Les consommations de 2025, compteurs des hébergements compris, sont donc de **51 400 m³** d'eau, soit **124 litres** par visiteur, et de **3 530 MWh** d'énergie (à utiliser tels quels).
+- **Part des saisonniers formés à la sécurité des visiteurs** : « 96,1 % en 2026 (première publication) ». Note méthodologique : saisonniers présents le 15/07/2026 ayant suivi la formation d'une journée à l'accueil et à la sécurité des visiteurs, rapportés aux saisonniers présents à cette date (396 sur 412). Le calcul est fait par le service des ressources humaines à partir de son registre des formations, tenu sur un tableur.
+
+**Mission du cabinet** : sur recommandation du comité d'audit, l'assemblée générale ordinaire du 19/06/2025 a confié au cabinet AUTHONNE, pour trois exercices (2025 à 2027), la vérification des informations en matière de durabilité de SYLVÉANE, sur la base d'une assurance limitée, dans les conditions de la certification légale (voir les hypothèses relatives à la durabilité). Selon la lettre de mission, la vérification porte sur le processus mis en œuvre pour déterminer les informations publiées et sur les informations publiées ; SYLVÉANE, qui n'y est pas tenue, ne publie aucune information au titre de la taxonomie européenne ; aucune règle de balisage n'est applicable ; la lettre de mission ne vise pas la consultation du comité social et économique, qui n'est pas à traiter. Le rapport, signé par Mme MARCHÉVILLE, est destiné à l'assemblée générale.
+
+**État des travaux au 12/03/2027** : la vérification du processus d'analyse de double matérialité est achevée et n'a conduit à relever ni erreur, ni omission, ni incohérence importante (conclusion à retenir telle quelle). Les travaux sur la consommation d'eau ont confirmé les relevés de 2026 et ceux des hébergements de 2025. Les travaux sur la part des saisonniers formés sont en cours ; pour la question 3.12, on retient qu'ils s'achèvent sans relever d'anomalie. Aucune autre anomalie n'a été relevée à ce jour.
+
+**Position de la direction (11/03/2027)** : « Le chiffre de 2025 a été publié et approuvé : nous ne le modifierons pas. Nous ajouterons seulement une phrase indiquant que les hébergements sont désormais compris. »
