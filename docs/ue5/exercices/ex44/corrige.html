@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Organiser, exploiter et valoriser les données de recharge : AMPÉRANE : modèle des données des sessions de recharge, interopérabilité de l'itinérance, analyse de l'utilisation et prévision des sites, valeur et monétisation des données, hébergement et souveraineté</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Organiser, exploiter et valoriser les données de recharge</h1><p class="cas">AMPÉRANE : modèle des données des sessions de recharge, interopérabilité de l'itinérance, analyse de l'utilisation et prévision des sites, valeur et monétisation des données, hébergement et souveraineté</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F03 architecture, urbanisation et cloud, F07 données, modélisation et gouvernance, F08 décisionnel et visualisation, F13 intelligence artificielle, F15 RGPD opérationnel, glossaire, et la base des référentiels datés (vérifiés les 25 et 26/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Le modèle des données du réseau, des sessions et des tarifs</td>
+<td><code>2.1.b</code> Modélisation des données (modèles conceptuels, logiques et physiques) ; <code>2.1.a</code> Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>2.2 Les échanges de données avec les plateformes d'itinérance, le logiciel des interventions et les sites hôtes</td>
+<td><code>2.1.d</code> Normes et standards d'interopérabilité (XML, API, formats ouverts) ; <code>1.3.c</code> Urbanisation des SI, interopérabilité et cohérence inter-organisationnelle</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>2.3 L'utilisation et la disponibilité des points</td>
+<td><code>2.2.b</code> Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution ; <code>2.2.c</code> Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model ; <code>2.2.d</code> Outils décisionnels : Excel avancé, Power BI, Tableau, etc. ; <code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>2.4 La valeur des données et leur hébergement</td>
+<td><code>2.3.f</code> Notions de valeur, de patrimoine immatériel et de risque lié aux actifs numériques ; <code>2.3.e</code> Aspects réglementaires (RGPD, archivage légal) et monétisation des données ; <code>2.3.d</code> Enjeux du Big Data, cloud computing, datacenters et souveraineté numérique</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 2 – Organiser, exploiter et valoriser les données de recharge</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (modèles conceptuel et logique, cardinalités et règles de passage, interopérabilité, chaîne de traitement, analyses descriptive et prédictive, informatique décisionnelle comme démarche, patrimoine informationnel, principes du RGPD, piliers du cloud de confiance, indicateur à cinq champs) environ 2,5 points (la moitié des items 2.1 b-1, 2.1 b-4, 2.2 a-1, 2.2 b-2, 2.3 a-1, 2.3 c-1, 2.3 d-1, 2.4 a-1, 2.4 b-1 et 2.4 c-1, qui mêlent définition et application) ; analyse des annexes et recommandations environ 10,5 points, soit environ 81 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 59 minutes.</p>
+<hr />
+<h3 id="21--le-modèle-des-données-du-réseau-des-sessions-et-des-tarifs-3-points">2.1 – Le modèle des données du réseau, des sessions et des tarifs (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.b</code> « Modélisation des données (modèles conceptuels, logiques et physiques) » ; <code>2.1.a</code> « Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes ». Modèle conceptuel et modèle logique faits à la main à partir de règles de gestion écrites ; modèle physique seulement nommé ; aucune requête.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.1 (règles de gestion, extrait du modèle logique actuel, précisions du responsable des données, constats de 2026) ; annexe 1.1 (bornes d'un à quatre points, quatre constructeurs, paiement des sessions).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Deux défauts du modèle actuel, chacun rapporté à une règle de gestion et au constat de l'annexe 2.1 C qu'il explique</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Troisième défaut, rapporté à une règle et à un constat ; conclusion : les anomalies viennent de la structure des données</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Modèle conceptuel et modèle logique distingués ; sept entités avec identifiant et attributs élémentaires (site, borne, point, connecteur, session, tarif, opérateur de mobilité)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Associations hiérarchiques et cardinalités justifiées par les règles : site, borne, point, connecteur, session</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Historique des tarifs : un tarif par point, tranche et période de validité, jamais écrasé, et session facturée selon un tarif (1,1) ; opérateur de mobilité rattaché à la session (0,1)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-4</td>
+<td>Modèle logique de sept tables déduit par les règles de passage énoncées (clé étrangère côté 1,1 ou 0,1, obligatoire ou facultative ; table à clé composée pour une association n:m, absente ici)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.1 a) – Trois défauts du modèle logique actuel</em></p>
+<p>Trois défauts parmi les suivants (0,5 pt pour deux défauts, 0,5 pt pour le troisième et la conclusion), chacun rapporté à une règle de gestion et au constat qu'il explique :</p>
+<ol type="1">
+<li><strong>Une borne n'a qu'un point.</strong> La table BORNE confond la borne physique et le point de recharge : une borne à quatre points est enregistrée quatre fois (1234-A à 1234-D), avec le même numéro de série. Or RG2 identifie la borne par son numéro de série et RG3 lui donne d'un à quatre points, chacun identifié par un identifiant unique. D'où <strong>8 000 « bornes » pour environ 3 600 bornes physiques</strong> : le logiciel de gestion des interventions, qui suit les bornes physiques, ne se rapproche de CIRCÉA que par une table tenue à la main (annexe 2.2), et une demande d'intervention sur vingt-cinq vise un mauvais point.</li>
+<li><strong>Le tarif est un texte dans la session.</strong> Le champ « tarif » de SESSION est un libellé recopié ou saisi, et non une clé étrangère vers un tarif, alors que RG9 facture chaque session selon un tarif déterminé, décrit par RG8. D'où <strong>environ 60 libellés différents</strong> et <strong>3 % de sessions sans tarif</strong> : on ne sait ni analyser les sessions selon leur tarif, ni relier une session au prix en vigueur.</li>
+<li><strong>L'historique des tarifs n'est pas conservé.</strong> TARIF n'a qu'une ligne par « borne », écrasée à chaque changement, avec deux prix fixes (jour et nuit), alors que RG8 prévoit un tarif par point et par tranche horaire, et un nouveau tarif à chaque changement de prix, les tarifs passés étant conservés. Sur les <strong>600 points du pilote</strong>, dont les prix changent jusqu'à six fois par jour, personne ne peut dire quel tarif s'appliquait un jour donné. La généralisation de la tarification variable en 2027 étendra le problème à tout le réseau.</li>
+<li><strong>L'opérateur de mobilité n'est pas relié à la session.</strong> Le moyen de paiement n'est qu'un mot (« itinérance »), sans lien avec l'opérateur, alors que RG6 et RG7 rattachent la session payée par badge à l'opérateur qui l'a émis. Pour les <strong>1,6 million de sessions d'itinérance</strong> (40 % des 4 millions), l'équipe données rapproche chaque mois à la main les relevés des deux plateformes pour quelque 200 opérateurs ; la direction du développement du réseau ne sait pas ce que lui apporte chaque opérateur.</li>
+<li><strong>Les connecteurs sont des colonnes répétées et la session ne désigne pas son connecteur.</strong> BORNE porte deux colonnes « type_connecteur », alors que RG4 fait du connecteur un objet identifié et RG5 déroule la session sur un connecteur : les pannes d'un connecteur ne peuvent pas être reliées aux sessions échouées.</li>
+</ol>
+<p><strong>Conclusion</strong> : ces anomalies ne sont pas d'abord des erreurs de saisie ; elles viennent de la <strong>structure des données</strong>, qui ne traduit pas les règles de gestion. Le modèle corrigé est la condition de la cohérence des échanges (question 2.2) et des analyses (question 2.3).</p>
+<p><em>2.1 b) – Le modèle conceptuel et le modèle logique des données</em></p>
+<p><strong>Modèle conceptuel et modèle logique</strong> (0,5 pt avec les entités) : le <strong>modèle conceptuel des données</strong> représente les objets de gestion (entités, avec leur identifiant et leurs attributs), leurs liens (associations) et les <strong>cardinalités</strong> minimale et maximale de chaque patte, qui traduisent les règles de gestion, indépendamment de toute technique ; il ne comporte aucune clé étrangère. Le <strong>modèle logique</strong> le traduit en tables, avec clés primaires et clés étrangères, selon les règles de passage ; le modèle physique l'implante ensuite dans un système de gestion de base de données (F07 § 1 à 4).</p>
+<p><strong>Les entités</strong> (identifiant souligné dans la copie, ici en premier) :</p>
+<ul>
+<li><strong>Site</strong> (num_site, nom_site, adresse, commune, type_site, code_proprietaire) : le code du propriétaire est un simple attribut, la liste des propriétaires n'étant pas à modéliser (RG1) ;</li>
+<li><strong>Borne</strong> (num_serie, ref_modele, constructeur, date_mise_service) : le modèle et le constructeur sont des attributs (RG2) ;</li>
+<li><strong>Point</strong> (id_point, categorie, puissance_kw) : l'identifiant unique du point, qui servira aux échanges (question 2.2) ;</li>
+<li><strong>Connecteur</strong> (num_connecteur, type_connecteur) ;</li>
+<li><strong>Session</strong> (num_session, date_heure_debut, duree_min, energie_kwh, type_moyen, ref_moyen) : le moyen de paiement est décrit par son type et sa référence ; pour la carte bancaire, la référence est le jeton remis par la banque, jamais le numéro de la carte (RG6), ce qui limite les données conservées au nécessaire ;</li>
+<li><strong>Tarif</strong> (id_tarif, heure_debut, heure_fin, prix_kwh, prix_minute, date_debut_validite, date_fin_validite) ;</li>
+<li><strong>OperateurMobilite</strong> (code_operateur, raison_sociale, plateforme_itinerance).</li>
+</ul>
+<p><strong>Les associations et leurs cardinalités</strong> (0,5 pt pour les associations hiérarchiques, 0,5 pt pour le tarif et l'opérateur) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Association</th>
+<th>Entités et cardinalités</th>
+<th>Règle de gestion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>etre_installee</em></td>
+<td>Borne (1,1) — Site (1,n)</td>
+<td>RG1 et RG2 : une borne est installée sur un seul site ; un site porte une ou plusieurs bornes</td>
+</tr>
+<tr class="even">
+<td><em>porter</em></td>
+<td>Point (1,1) — Borne (1,n)</td>
+<td>RG3 : un point appartient à une seule borne ; une borne porte au moins un point (au plus quatre : contrôle du logiciel, une cardinalité ne dit que 1 ou n)</td>
+</tr>
+<tr class="odd">
+<td><em>equiper</em></td>
+<td>Connecteur (1,1) — Point (1,n)</td>
+<td>RG4 : un connecteur appartient à un seul point ; un point a un ou deux connecteurs</td>
+</tr>
+<tr class="even">
+<td><em>se_derouler</em></td>
+<td>Session (1,1) — Connecteur (0,n)</td>
+<td>RG5 : une session se déroule sur un seul connecteur ; un connecteur peut n'avoir servi à aucune session</td>
+</tr>
+<tr class="odd">
+<td><em>s_appliquer</em></td>
+<td>Tarif (1,1) — Point (0,n)</td>
+<td>RG8 : un tarif s'applique à un seul point ; un point porte plusieurs tarifs (un par tranche et par période), aucun s'il n'est pas ouvert à la vente</td>
+</tr>
+<tr class="even">
+<td><em>etre_facturee_selon</em></td>
+<td>Session (1,1) — Tarif (0,n)</td>
+<td>RG9 : une session est facturée selon un seul tarif ; un tarif peut n'avoir servi à aucune session</td>
+</tr>
+<tr class="odd">
+<td><em>etre_apportee_par</em></td>
+<td>Session (0,1) — OperateurMobilite (0,n)</td>
+<td>RG6 et RG7 : une session payée par badge est rattachée à un seul opérateur, les autres à aucun ; un opérateur nouvellement relié peut n'avoir apporté aucune session</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L'historique des tarifs</strong> : un tarif n'est plus une ligne par point que l'on écrase, mais une occurrence de l'entité Tarif pour un point, une tranche horaire et une <strong>période de validité</strong> (dates de début et de fin). Chaque changement de prix ferme le tarif en cours (date de fin renseignée) et crée un nouveau tarif ; le tarif en vigueur est celui dont la date de fin est vide. Comme chaque session est reliée au tarif appliqué (<em>etre_facturee_selon</em>), on peut dire quel prix s'appliquait à un point un jour donné et analyser les sessions par tarif, y compris sous la tarification variable. L'association <em>etre_apportee_par</em> (0,1) donne enfin, sans rapprochement manuel, les sessions apportées par chaque opérateur et par chaque plateforme.</p>
+<p>Deux contrôles relèvent du logiciel, et non du modèle : le tarif d'une session doit s'appliquer au point dont relève son connecteur, et à l'heure de son début ; une session n'est rattachée à un opérateur que si son moyen de paiement est un badge.</p>
+<p><strong>Le modèle logique</strong> (0,5 pt), obtenu par les règles de passage :</p>
+<ol type="1">
+<li>chaque entité devient une table, dont l'identifiant devient la clé primaire ;</li>
+<li>pour une association dont l'une des pattes a pour cardinalité maximale 1 (ici, les sept associations), la clé primaire de l'entité du côté « n » migre comme clé étrangère dans la table de l'entité du côté 1 ; elle est obligatoire si la cardinalité minimale est 1, facultative si elle est 0 (l'opérateur de la session) ;</li>
+<li>une association dont les deux cardinalités maximales sont n deviendrait une table dont la clé primaire est composée des clés des deux entités ; le modèle n'en comporte pas.</li>
+</ol>
+<ul>
+<li>Site (<u>num_site</u>, nom_site, adresse, commune, type_site, code_proprietaire)</li>
+<li>Borne (<u>num_serie</u>, ref_modele, constructeur, date_mise_service, #num_site)</li>
+<li>Point (<u>id_point</u>, categorie, puissance_kw, #num_serie)</li>
+<li>Connecteur (<u>num_connecteur</u>, type_connecteur, #id_point)</li>
+<li>Tarif (<u>id_tarif</u>, heure_debut, heure_fin, prix_kwh, prix_minute, date_debut_validite, date_fin_validite, #id_point)</li>
+<li>Session (<u>num_session</u>, date_heure_debut, duree_min, energie_kwh, type_moyen, ref_moyen, #num_connecteur, #id_tarif, #code_operateur)</li>
+<li>OperateurMobilite (<u>code_operateur</u>, raison_sociale, plateforme_itinerance)</li>
+</ul>
+<p>Le code de l'opérateur est vide pour une session payée par l'application ou par carte bancaire. La table Point remplace les « bornes » 1234-A à 1234-D : la borne physique 1234 n'existe plus qu'une fois.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Formalisme différent (notation « pattes de corbeau », schéma relationnel dessiné), s'il est lisible et cohérent (<code>JUR-T10</code>).</li>
+<li>Moyen de paiement modélisé comme une entité (compte, badge, carte), reliée à la session (1,1) et, pour le badge, à l'opérateur (0,1), si les données conservées restent limitées (jeton pour la carte).</li>
+<li>Grille de tarifs commune à plusieurs points, reliée aux points par une association n:m porteuse des dates de validité, si le candidat montre comment la session reste reliée au tarif appliqué.</li>
+<li>Entités Propriétaire, Modèle de borne, Constructeur ou Plateforme ajoutées, si elles sont justifiées, malgré RG1 et RG2.</li>
+<li>Tranche horaire modélisée à part, si l'historique reste porté par les dates de validité.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Modèle conceptuel et modèle logique confondus</em> (<code>ET-23</code>) — clés étrangères dessinées dans le modèle conceptuel, ou modèle logique qui ne découle pas du modèle conceptuel.</li>
+<li><em>Défaut reproduit</em> — une seule entité Borne qui reçoit la puissance et les connecteurs, ou un attribut « tarif » dans la session : c'est le modèle de l'annexe 2.1 B.</li>
+<li><em>Historique perdu</em> — tarif sans dates de validité, ou tarif mis à jour au lieu d'être fermé et remplacé ; session sans lien avec le tarif appliqué.</li>
+<li><em>Opérateur obligatoire</em> — cardinalité 1,1 entre la session et l'opérateur, alors que 60 % des sessions sont payées par l'application ou par carte.</li>
+<li><em>Morceau de cours ou requête hors attente</em> (<code>JUR-T01</code>, <code>JUR-T07</code>) — règles de passage récitées sans les appliquer, ou requêtes écrites alors que la question n'en demande pas.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Modèle conceptuel, modèle logique, modèle physique ; cardinalités ; règles de passage</td>
+<td>définitions et méthode</td>
+<td>F07 § 1 à 4</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--les-échanges-de-données-avec-les-plateformes-ditinérance-le-logiciel-des-interventions-et-les-sites-hôtes-2-points">2.2 – Les échanges de données avec les plateformes d'itinérance, le logiciel des interventions et les sites hôtes (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.d</code> « Normes et standards d'interopérabilité (XML, API, formats ouverts) », sans détail des échanges techniques.</li>
+<li>§1.3 – Urbanisation et architecture : <code>1.3.c</code> « Urbanisation des SI, interopérabilité et cohérence inter-organisationnelle ». L'interopérabilité est traitée sur le plan technique et sur le plan organisationnel, comme le demande le programme.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (deux plateformes d'itinérance, 40 % des sessions, logiciel de gestion des interventions, services aux sites hôtes), 2.1 (borne confondue avec le point) et 2.2 (échanges, mots sans définition commune, courriel de l'opérateur de mobilité).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Interopérabilité définie, sur les plans technique et organisationnel, entre organisations ; premier problème, chiffré, avec ses conséquences pour les acteurs</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux autres problèmes, chiffrés, avec leurs conséquences pour les conducteurs, les opérateurs de mobilité ou les sites hôtes</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Identifiant unique du point attribué par CIRCÉA et repris partout ; statuts et tarifs normalisés par un dictionnaire des données appliqué aux mots de l'annexe 2.2 B</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Interfaces de programmation et formats ouverts par échange ; règles de cohérence (source de référence, concordance, contrat d'interface) ; un indicateur à cinq champs</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.2 a) – Trois problèmes d'échange et leurs conséquences</em></p>
+<p><strong>Définition</strong> (0,5 pt avec le premier problème) : l'<strong>interopérabilité</strong> est la capacité de systèmes et d'organisations hétérogènes à échanger des données et à les utiliser sans intervention manuelle. Elle a un versant <strong>technique</strong> (canaux, interfaces de programmation, formats) et un versant <strong>organisationnel</strong> (définitions communes, processus, responsabilités, engagements entre partenaires) (F07 § 7). Pour AMPÉRANE, elle est <strong>inter-organisationnelle</strong> : CIRCÉA n'est qu'un maillon d'une chaîne qui relie deux plateformes d'itinérance, quelque 200 opérateurs de mobilité et leurs applications, les sept entreprises de maintenance qui partagent le logiciel des interventions, et 1 200 sites hôtes. La cohérence de cet ensemble ne dépend pas d'un seul système (F03 § 3).</p>
+<p>Trois problèmes parmi les suivants (0,5 pt pour le premier avec la définition, 0,5 pt pour les deux autres) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Problème (annexe 2.2)</th>
+<th>Cause</th>
+<th>Conséquences</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Des statuts publiés en retard et traduits différemment</strong> : environ <strong>un statut affiché sur dix</strong> périmé ou faux en janvier 2027</td>
+<td>envoi groupé toutes les quinze minutes ; neuf états dans CIRCÉA, quatre et trois chez les plateformes ; « en maintenance » transmis comme « disponible » à la plateforme B ; « disponible » sans définition commune</td>
+<td><strong>conducteurs</strong> : déplacement vers un point en panne ou occupé, parfois avec une batterie presque vide ; <strong>opérateurs de mobilité</strong> : clients mécontents, qui s'en prennent à eux ; l'opérateur qui apporte 8 % des sessions d'itinérance menace de ne plus mettre le réseau en avant ; <strong>AMPÉRANE</strong> : sessions perdues et disponibilité perçue bien inférieure à l'objectif de 98 %</td>
+</tr>
+<tr class="even">
+<td><strong>Des tarifs affichés différents des tarifs facturés</strong> : environ <strong>une session d'itinérance sur quatre</strong> sur les points du pilote, une sur cinquante ailleurs ; un tiers des réclamations sur l'itinérance portent sur le prix</td>
+<td>un fichier par semaine, un seul prix par point : ni les tranches horaires ni les changements en cours de semaine ne sont transmis</td>
+<td><strong>conducteurs</strong> : prix non annoncé, perte de confiance ; <strong>opérateurs</strong> : écart entre ce qu'ils ont affiché et ce qu'AMPÉRANE leur facture, contestations ; <strong>AMPÉRANE</strong> : la généralisation de la tarification variable en 2027 étendra ces écarts du pilote à tout le réseau si l'échange ne change pas</td>
+</tr>
+<tr class="odd">
+<td><strong>Des identifiants de points différents dans chaque système</strong> : environ <strong>5 %</strong> des points mal rapprochés, <strong>une demande d'intervention sur vingt-cinq</strong> sur un mauvais point</td>
+<td>CIRCÉA désigne une « borne » virtuelle, le logiciel des interventions une position sur une borne physique, chaque plateforme son propre identifiant ; table de correspondance tenue à la main (défaut du modèle, question 2.1)</td>
+<td><strong>conducteurs</strong> : statut publié sur le mauvais point ; <strong>entreprises de maintenance et techniciens</strong> : déplacement pour rien, panne prolongée ; <strong>AMPÉRANE</strong> : deux personnes occupées à tenir la table, disponibilité réelle dégradée</td>
+</tr>
+<tr class="even">
+<td><strong>Une intervention close qui ne remet pas le point en service</strong> : en moyenne <strong>une demi-journée</strong> de plus « hors service »</td>
+<td>clôture non transmise du logiciel des interventions à CIRCÉA ; remise en service à la main</td>
+<td><strong>conducteurs</strong> : un point réparé affiché indisponible ; <strong>AMPÉRANE</strong> : disponibilité perdue sans panne réelle, à chaque intervention</td>
+</tr>
+<tr class="odd">
+<td><strong>Des rapports mensuels aux sites hôtes en tableur, aux colonnes variables</strong></td>
+<td>tableur envoyé vers le 10 du mois suivant, préparé à la main</td>
+<td><strong>sites hôtes</strong> : données tardives, impossibles à intégrer ; l'enseigne propriétaire de 300 sites demande des données quotidiennes en format ouvert ; <strong>AMPÉRANE</strong> : risque sur les services aux sites hôtes (10 M€ de chiffre d'affaires)</td>
+</tr>
+</tbody>
+</table>
+<p><em>2.2 b) – L'organisation cible des échanges en quatre mesures</em></p>
+<ol type="1">
+<li><strong>Un identifiant unique du point</strong> (0,5 pt avec la deuxième mesure). Chaque point reçoit, à sa déclaration dans CIRCÉA, un identifiant unique (entité Point de la question 2.1), qui ne change plus. Le logiciel des interventions le reprend (borne physique par son numéro de série, point par son identifiant) et les plateformes l'affichent au lieu de composer le leur : la table de correspondance disparaît. Le <strong>référentiel des points</strong> devient une donnée de référence partagée, dont CIRCÉA est la seule source, avec un propriétaire (direction de l'exploitation et de la maintenance) et un intendant à l'équipe données : dans une logique d'urbanisation, ce référentiel est un bloc commun aux applications, et non une copie par application (F03 § 1 ; DAMA-DMBOK, données de référence).</li>
+<li><strong>Des statuts et des tarifs normalisés.</strong> Un <strong>dictionnaire des données</strong>, commun à CIRCÉA, au logiciel des interventions, au service clients et aux plateformes, définit chaque donnée échangée (nom, définition, format, valeurs admises, source, propriétaire). Il tranche les mots de l'annexe 2.2 B :
+<ul>
+<li><em>session</em> : un branchement qui a délivré de l'énergie ; une tentative de moins de deux minutes sans énergie est une tentative échouée, et non une session ;</li>
+<li><em>disponible</em> : un conducteur peut y démarrer une recharge maintenant ;</li>
+<li><em>point</em> : l'emplacement de recharge identifié par son identifiant unique. Il fixe aussi une <strong>liste commune de statuts</strong> (par exemple disponible, occupé, hors service, en maintenance), à laquelle chacun des neuf états de CIRCÉA est rattaché, « en maintenance » ne valant jamais « disponible », et la <strong>structure du tarif</strong> publié : tranche horaire, prix par kilowattheure et par minute, dates de validité, comme dans le modèle de la question 2.1.</li>
+</ul></li>
+<li><strong>Des interfaces de programmation et des formats ouverts</strong> (0,5 pt avec la quatrième mesure). Une <strong>interface de programmation</strong> est un point d'accès documenté par lequel un système met des données à disposition d'un autre ou en reçoit, selon un contrat d'interface ; un <strong>format ouvert</strong> a une spécification publique, indépendante d'un éditeur (F07 § 7). Appliqués aux échanges :
+<ul>
+<li>statuts : publiés par interface de programmation à chaque changement d'état, et non par lot toutes les quinze minutes ;</li>
+<li>tarifs : publiés à chaque changement, avant leur entrée en vigueur, avec leurs tranches et leurs dates ;</li>
+<li>interventions : demande créée à partir de l'alerte de CIRCÉA et clôture renvoyée à CIRCÉA, qui remet le point en service sans ressaisie ;</li>
+<li>sites hôtes : données quotidiennes mises à disposition dans un format ouvert, ou par interface de programmation pour l'enseigne qui les intègre à son outil, à la place du tableur mensuel.</li>
+</ul></li>
+<li><strong>Des règles de cohérence entre CIRCÉA, le logiciel des interventions et les plateformes</strong> :
+<ul>
+<li>CIRCÉA est la <strong>source de référence</strong> du statut et du tarif de chaque point ; les autres systèmes ne les modifient pas ;</li>
+<li>un point qui fait l'objet d'une intervention ouverte ne peut être publié « disponible » ;</li>
+<li>le tarif affiché par l'opérateur et le tarif facturé portent le même identifiant de tarif et la même période de validité ;</li>
+<li>une comparaison automatique quotidienne des trois systèmes signale tout écart à l'intendant ;</li>
+<li>un <strong>contrat d'interface</strong> avec chaque plateforme fixe les données, les définitions, le délai de publication, le traitement des écarts et les responsables. C'est le versant organisationnel, sans lequel les interfaces ne suffisent pas.</li>
+</ul></li>
+</ol>
+<p><strong>Indicateur de suivi</strong> :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Part des statuts affichés conformes à l'état du point</td>
+<td>contrôles où le statut affiché par la plateforme correspond à l'état du point dans CIRCÉA et dans le logiciel des interventions / contrôles réalisés × 100</td>
+<td>comparaison automatique de CIRCÉA, du logiciel des interventions et des statuts publiés par les deux plateformes</td>
+<td>quotidienne, présentée chaque mois par plateforme</td>
+<td>au moins 99 % fin 2027 (environ 90 % en janvier 2027)</td>
+<td>client</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Analyse des problèmes rattachée aux niveaux d'interopérabilité (technique, syntaxique, sémantique, organisationnel), si les conséquences pour les acteurs sont précisées.</li>
+<li>Autres problèmes tirés de l'annexe 2.2 (absence de dictionnaire, intervention close non transmise, rapports aux sites hôtes), s'ils sont chiffrés ou datés.</li>
+<li>Plateforme d'échange ou bus d'intégration présentés comme point de passage unique des échanges, sans détail technique.</li>
+<li>Référentiel des points confié à la direction technique, si un propriétaire métier est nommé.</li>
+<li>Autre indicateur à cinq champs : part des sessions d'itinérance dont le prix affiché correspond au tarif facturé ; délai de publication d'un changement de statut ; part des points rapprochés par leur identifiant unique.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Interopérabilité réduite à la technique</em> (<code>ET-36</code>) — « mettre des interfaces de programmation » sans identifiant commun, sans dictionnaire, sans règles ni responsabilités.</li>
+<li><em>Détail technique hors attente</em> (<code>JUR-T07</code>) — description des messages, des schémas ou des mécanismes d'authentification, que la question exclut.</li>
+<li><em>Conséquences non contextualisées</em> (<code>JUR-T01</code>) — problèmes énoncés sans les chiffres de l'annexe (un sur dix, un sur quatre, 5 %, un sur vingt-cinq) ni leurs effets pour les conducteurs, les opérateurs et les sites hôtes.</li>
+<li><em>Correction en aval seulement</em> — table de correspondance mieux tenue, au lieu de l'identifiant unique attribué à la source.</li>
+<li><em>Indicateur incomplet</em> (<code>ET-18</code>) — indicateur sans formule, source, fréquence, cible ou axe.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DAMA-DMBOK, 2e édition (2017), révision 2024</td>
+<td>intégration et interopérabilité, données de référence, métadonnées</td>
+<td><code>dama_dmbok2</code> / F07 § 8.2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Interopérabilité, interface de programmation, format ouvert, dictionnaire des données, données de référence, urbanisation, cohérence inter-organisationnelle</td>
+<td>définitions et méthode</td>
+<td>F03 § 1 et 3 ; F07 § 1, 7 et 8.1</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--lutilisation-et-la-disponibilité-des-points-4-points">2.3 – L'utilisation et la disponibilité des points (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.b</code> « Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution » ; <code>2.2.c</code> « Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model » ; <code>2.2.d</code> « Outils décisionnels : Excel avancé, Power BI, Tableau, etc. » ; <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés ». Limites : aucun calcul statistique, aucune manipulation d'outil, aucun développement d'algorithme ; lecture critique des corrélations et des biais, reliée à la stratégie.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.3 (indicateurs par type de site et par puissance, affirmation de la directrice du développement du réseau, limites, modèle de prévision, modes de restitution) ; annexes 2.1 et 2.2 (définitions de la session et de la disponibilité) ; « AMPÉRANE 2030 » (présentation).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Étapes de la chaîne présentées ; collecte et nettoyage de l'indicateur de disponibilité, chacun avec son biais tiré de l'annexe</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Structuration, analyse et restitution, chacune avec son biais ; conclusion : disponibilité déclarée, non constatée</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Deux constats argumentés et chiffrés, avec leur portée pour « AMPÉRANE 2030 »</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Troisième constat argumenté et chiffré</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Affirmation appréciée (effet de structure, sessions courtes et échouées, disponibilité déclarée et constatée, critère retenu) ; conclusion nuancée sur la proposition</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Analyses descriptive et prédictive distinguées ; usage du modèle justifié par le cas</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Deux limites, dont celle des données d'apprentissage ; façon d'en tenir compte dans la décision</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>d-1</td>
+<td>Choix du mode de restitution par deux critères explicités, informatique décisionnelle traitée comme une démarche ; représentation pour les sites hôtes justifiée par son message</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.3 a) – La chaîne de traitement de l'indicateur de disponibilité et ses biais</em></p>
+<p><strong>La chaîne de traitement</strong> (0,5 pt avec les deux premières étapes) transforme des données brutes en information utile à la décision : <strong>collecte</strong> des données à leur source, <strong>nettoyage</strong> (doublons, valeurs manquantes, aberrantes ou invalides), <strong>structuration</strong> (règles de gestion et de calcul, rapprochements, stockage historisé, par exemple dans un entrepôt de données), <strong>analyse</strong>, puis <strong>restitution</strong> aux décideurs (F08 § 1). Chaque étape peut introduire un biais que la suivante ne corrige pas. Pour l'indicateur de disponibilité présenté chaque mois au comité de direction :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Ce qui se passe aujourd'hui</th>
+<th>Biais tiré de l'annexe 2.3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Collecte</strong></td>
+<td>CIRCÉA enregistre l'état que chaque borne lui déclare</td>
+<td><strong>mesure déclarative</strong> : une borne qui répond mais ne charge pas reste « disponible » ; les signalements des conducteurs, collectés par le service clients, ne sont rattachés qu'au site</td>
+</tr>
+<tr class="even">
+<td><strong>Nettoyage</strong></td>
+<td>aucun contrôle des états manquants ni de cohérence</td>
+<td>quand la liaison est perdue, CIRCÉA garde le dernier état connu : une valeur manquante est remplacée sans le dire, le plus souvent par « disponible » ; aucun contrôle de cohérence avec les signalements (rapprochés à la main, une fois par an) ni avec les sessions échouées ou de moins de deux minutes, comptées comme réussies (7 % du réseau, 15 % des aires de services) ; les « bornes » virtuelles compliquent le rapprochement avec le point (annexe 2.1)</td>
+</tr>
+<tr class="odd">
+<td><strong>Structuration</strong></td>
+<td>règle de calcul : temps en état de fonctionner / temps de référence</td>
+<td>les heures de maintenance programmée sont retirées du temps de référence, deux fois plus pour les bornes rapides : la disponibilité des points rapides, donc des aires de services, est flattée ; la règle n'est écrite dans aucun dictionnaire (annexe 2.2 B)</td>
+</tr>
+<tr class="even">
+<td><strong>Analyse</strong></td>
+<td>moyenne de tous les points</td>
+<td>la moyenne masque la dispersion, alors que l'objectif d'« AMPÉRANE 2030 » vise 98 % <strong>par point</strong> ; elle mêle les points ouverts dans l'année et les plus anciens</td>
+</tr>
+<tr class="odd">
+<td><strong>Restitution</strong></td>
+<td>un seul chiffre par mois au comité de direction</td>
+<td>sans distribution, sans écart à la cible par point, sans comparaison avec les signalements : le comité lit 97 % et ne voit pas que 35 % des signalements de panne portent sur des points déclarés disponibles</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusion</strong> (0,5 pt avec les trois dernières étapes) : l'indicateur publié mesure une <strong>disponibilité déclarée par les bornes</strong>, flatteuse, et non la <strong>disponibilité constatée par les conducteurs</strong>. Piloter l'objectif de 98 % par point suppose de rapprocher, point par point, les états de CIRCÉA, les sessions échouées ou très courtes, les signalements et les interventions, avec une définition écrite.</p>
+<p><em>2.3 b) – Trois constats et l'affirmation de Mme ESCARDINE</em></p>
+<p><strong>Trois constats</strong> parmi les suivants (0,5 pt pour deux constats, 0,5 pt pour le troisième : le fait chiffré, son interprétation et sa portée pour « AMPÉRANE 2030 ») :</p>
+<ol type="1">
+<li><strong>Les sessions par point dépendent d'abord de la puissance.</strong> Un point rapide fait environ 3,0 sessions par jour, un point normal 0,8. Or 83 % des points des aires de services sont rapides (1 000 sur 1 200), contre 29 % dans les supermarchés (1 200 sur 4 200) et 10 % au plus ailleurs. À puissance égale, les aires de services font à peine mieux que les supermarchés pour les points rapides (3,2 contre 3,0) et moins bien pour les points normaux (0,6 contre 0,8) : l'écart de 2,8 contre 1,4 est un <strong>effet de structure</strong>.</li>
+<li><strong>La baisse des supermarchés vient des ouvertures.</strong> Les supermarchés passent de 1,5 à 1,4 session par point et par jour, mais ils ont reçu 700 des 900 points ouverts en 2026, qui mettent environ un an à atteindre leur utilisation normale : à parc constant, rien n'indique une dégradation. La croissance vers 20 000 points reproduira cet effet chaque année.</li>
+<li><strong>La disponibilité progresse sur le papier, pas pour les conducteurs.</strong> La disponibilité mesurée passe de 96 % à 97 %, mais la part des signalements de panne reçus alors que CIRCÉA indiquait le point disponible monte de 30 % à 35 %, et de 40 % à 50 % aux aires de services, qui affichent pourtant la meilleure disponibilité (98 %). Les aires ont aussi le plus de sessions échouées (7 % puis 9 %) et de sessions de moins de deux minutes (15 %, contre 5 % dans les supermarchés).</li>
+<li><strong>Le « meilleur » site dépend du critère.</strong> Les hôtels et restaurants (24 %) et les parkings de collectivités et d'entreprises (20 %) ont les taux d'occupation les plus élevés, les aires de services et les supermarchés les plus faibles (6 % et 5 %) : des recharges longues, la nuit ou pendant la journée de travail, contre des recharges courtes sur la route. Le nombre de sessions ne dit ni l'énergie vendue, ni les recettes, ni le service rendu aux conducteurs qui ne peuvent pas recharger chez eux.</li>
+</ol>
+<p><strong>L'affirmation de Mme ESCARDINE</strong> (0,5 pt) : « les aires de services sont nos meilleurs sites » n'est pas démontré :</p>
+<ul>
+<li>l'avantage en sessions par point est un <strong>effet de structure</strong> : il tient à la part des points rapides, non à la qualité des sites ; à puissance égale, l'écart disparaît presque ;</li>
+<li>ce chiffre est <strong>gonflé par les sessions courtes</strong> : 15 % des sessions des aires durent moins de deux minutes, souvent des démarrages relancés, comptés comme des sessions réussies ; hors sessions courtes, les points rapides des aires feraient à peu près autant, voire un peu moins, que ceux des supermarchés, dont une partie vient d'ouvrir ;</li>
+<li>la « meilleure disponibilité » est la plus <strong>déclarative</strong> : maintenance programmée retirée du calcul, deux fois plus pour les bornes rapides, et la moitié des signalements de panne des aires portent sur des points que CIRCÉA disait disponibles ;</li>
+<li>le <strong>critère</strong> est contestable : ni l'énergie, ni les recettes, ni l'occupation ne sont considérées. Retenir le seul chiffre qui conforte une conviction relève du <strong>biais de confirmation</strong> (F08 § 5).</li>
+</ul>
+<p>Conclusion : les aires de services sont de bons emplacements pour la recharge rapide, mais l'annexe ne permet pas de les dire « meilleures ». Leur réserver l'essentiel des ouvertures de 2027 serait prématuré : il faut comparer les sites à puissance égale, hors sessions courtes, sur la disponibilité constatée et sur l'énergie ou les recettes, puis décider site par site (question c). Les ouvertures doivent aussi servir l'objectif de recharge « accessible à tous ».</p>
+<p><em>2.3 c) – Le modèle de prévision des sites candidats</em></p>
+<p><strong>Les deux analyses</strong> (0,5 pt avec la justification) : l'<strong>analyse descriptive</strong> résume ce qui s'est passé (niveaux, évolutions, répartitions, écarts à une cible : c'est celle des tableaux A et B) ; l'<strong>analyse prédictive</strong> estime ce qui se passera, à partir des régularités observées dans des données passées, par exemple au moyen d'un modèle d'apprentissage automatique, qui apprend des données pour prévoir ou classer, à distinguer de l'IA générative (F08 § 2 ; F13). À l'examen, on en interprète les résultats et on en discute la fiabilité ; on ne la construit pas.</p>
+<p><strong>Pourquoi l'utiliser ici</strong> : pour passer de 8 000 à 20 000 points en 2030, AMPÉRANE doit trier de nombreux sites candidats (300 aujourd'hui) avant d'engager des études de terrain et des travaux coûteux. Le modèle combine de façon homogène plusieurs variables qu'aucun analyste ne pondère de tête (trafic, véhicules électriques de la commune, durée de stationnement, commerces, type de site, puissance), donne à chaque site une prévision comparable et objective le premier tri ; vérifié sur 200 sites mis de côté, il prévoit à moins de 20 % près pour sept sites sur dix.</p>
+<p><strong>Deux limites</strong> parmi (0,5 pt avec la façon d'en tenir compte) :</p>
+<ul>
+<li><strong>les données d'apprentissage se limitent aux sites existants</strong> : le modèle a appris sur des sites qu'AMPÉRANE a elle-même choisis et qui ont été ouverts (biais de sélection). Il est sans repère pour les 80 parkings de gares et de centres de loisirs, types qu'AMPÉRANE n'exploite pas : leur prévision est une extrapolation hors du domaine appris ;</li>
+<li><strong>la variable prévue reproduit les biais de la mesure</strong> : les sessions par point comptent les sessions de moins de deux minutes et mêlent points rapides et normaux. Le modèle apprend donc l'effet de structure et le gonflement des aires de services, ce que montre son résultat : 45 des 60 sites de priorité 1 sont des aires de services, soit 45 des 50 aires candidates ;</li>
+<li><strong>le passé ne dit pas l'avenir</strong> : tarification variable généralisée en 2027, croissance du parc de véhicules électriques, ouverture de bornes concurrentes à proximité, variable absente du modèle ;</li>
+<li><strong>la fiabilité et l'explication sont limitées</strong> : la prévision s'écarte de plus de 20 % pour trois sites sur dix, et le modèle « ne dit pas pourquoi un site est classé premier ».</li>
+</ul>
+<p><strong>En tenir compte dans la décision</strong> : le modèle sert à <strong>classer pour étudier</strong>, non à décider ; la direction du développement du réseau garde la décision, après une étude de terrain des sites de tête. L'équipe données corrige la variable prévue (sessions de plus de deux minutes, ou énergie délivrée, ou recettes, par puissance), traite à part les types de sites absents des données d'apprentissage (étude de terrain, voire site pilote), indique les principales variables qui expliquent chaque classement et compare, un an après l'ouverture, la prévision à la réalité pour corriger le modèle.</p>
+<p><em>2.3 d) – Le mode de restitution et une représentation pour les sites hôtes</em></p>
+<p><strong>Le choix</strong> (0,5 pt avec la représentation), par deux critères parmi :</p>
+<ul>
+<li><strong>la fiabilité et la cohérence des chiffres</strong> : aujourd'hui chaque direction retravaille les tableaux dans ses tableurs, avec ses définitions ; un libre-service sans définitions communes produirait « dix disponibilités différentes » ;</li>
+<li><strong>la réactivité et l'autonomie des utilisateurs</strong> : 60 demandes en attente, rapports des sites hôtes reçus vers le 10 du mois suivant, alors que les sites hôtes veulent leurs chiffres quand ils le veulent et que l'enseigne de 300 sites veut des données quotidiennes ;</li>
+<li><strong>la confidentialité</strong> : chaque site hôte ne doit voir que ses propres sites ; les droits par profil sont une condition d'ouverture de l'outil aux sites hôtes ;</li>
+<li><strong>le coût et les compétences</strong> : 60 k€ par an et trois mois de mise en place, contre le temps de huit personnes absorbé par la production de tableaux.</li>
+</ul>
+<p><strong>Recommandation</strong> : l'<strong>outil décisionnel en libre-service</strong>, mais <strong>gouverné</strong>. L'informatique décisionnelle est une démarche, pas un outil (F08 § 6) : l'équipe données publie des indicateurs certifiés, définis dans le dictionnaire (disponibilité constatée, sessions de plus de deux minutes) et calculés sur le modèle corrigé (question 2.1) ; les droits sont fixés par profil, le portail des sites hôtes ne montrant que leurs sites ; les utilisateurs sont formés. L'équipe données passe de la production de tableaux à la gouvernance des indicateurs et aux analyses, dont le modèle de prévision. Le portail répond aussi à l'attente des sites hôtes relevée à la question 2.2.</p>
+<p><strong>Une représentation pour les sites hôtes</strong>, parmi :</p>
+<ul>
+<li><strong>barres mensuelles des sessions et de l'énergie délivrée sur le site</strong>, comparées au même mois de l'année précédente, avec, pour chaque point, sa disponibilité constatée face à la ligne de la cible de 98 %. <em>Message</em> : l'activité du site progresse-t-elle, et AMPÉRANE tient-elle son engagement de disponibilité sur ses points ?</li>
+<li><strong>carte de chaleur des sessions par jour de la semaine et par heure</strong>. <em>Message</em> : les heures d'affluence des conducteurs sur le parking, à rapprocher des heures d'ouverture ; elle recoupe le rapport de fréquentation payant envisagé (question 2.4), qui en serait la version détaillée.</li>
+</ul>
+<p>Pièges à éviter : comparer des sites de tailles différentes en valeurs absolues plutôt qu'en sessions par point, tronquer l'axe, juxtaposer des disponibilités calculées selon des règles différentes.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Chaîne présentée selon les étapes de l'informatique décisionnelle (collecte, extraction-transformation-chargement, entrepôt, restitution), si un biais est rattaché à chaque étape.</li>
+<li>Analyse exploratoire mobilisée pour les constats (croisements par type de site et par puissance), à côté de l'analyse descriptive.</li>
+<li>Autres constats tirés des annexes 2.3 A et B (hausse des sessions échouées aux aires, stabilité de l'ensemble à 1,5), s'ils sont chiffrés et interprétés.</li>
+<li>Effet des sessions courtes établi par la lecture des pourcentages, sans le calcul d'environ 2,7 sessions par point rapide aux aires, qui n'est pas attendu.</li>
+<li>Analyse prescriptive évoquée en ouverture (choisir le nombre de points par site), sans développement.</li>
+<li>Tableaux préparés par l'équipe données retenus à titre transitoire, le temps d'écrire le dictionnaire, si le candidat prévoit ensuite le libre-service gouverné.</li>
+<li>Autres représentations (carte des sites, jauge ou puce de la disponibilité par point), si le message est précisé.</li>
+<li>Biais de la chaîne rattachés à d'autres étapes, si chacun est tiré de l'annexe et justifié.</li>
+<li>En 2.3 d, choix justifié par un seul critère bien appliqué : item complet si la représentation est justifiée par son message.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Corrélation présentée comme une causalité</em> (<code>ET-26</code>) — sessions par point attribuées à la qualité des aires de services, sans examiner la puissance, les sessions courtes et la mesure de la disponibilité.</li>
+<li><em>Prudence d'interprétation oubliée</em> (<code>JUR-D06</code>) — hausse de la disponibilité de 96 % à 97 % lue comme un progrès, malgré la hausse des signalements ; baisse des supermarchés lue comme une dégradation, malgré les ouvertures.</li>
+<li><em>Prévision prise pour une décision</em> — classement du modèle appliqué tel quel, ou modèle décrit dans sa construction (algorithme, variables à régler) alors que la question demande son usage et ses limites ; confusion entre IA générative et apprentissage automatique (<code>ET-09</code>).</li>
+<li><em>Informatique décisionnelle réduite à un outil</em> (<code>ET-05</code>, <code>JUR-D02</code>) — libre-service recommandé sans définitions communes, sans droits ni formation.</li>
+<li><em>Calcul hors attente</em> (<code>JUR-T07</code>) — moyennes pondérées recalculées en détail ou tests statistiques, alors que la question demande des constats argumentés en chiffres ronds.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chaîne de traitement, analyses descriptive et prédictive, outils décisionnels en libre-service, choix des graphiques, biais de sélection et de confirmation</td>
+<td>définitions et méthode</td>
+<td>F08 § 1, 2, 5 et 6</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Effet de structure</td>
+<td>méthode de lecture</td>
+<td>—</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Apprentissage automatique et IA générative distingués</td>
+<td>définitions</td>
+<td>F13 ; F08 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Dictionnaire des données, indicateurs certifiés</td>
+<td>structuration</td>
+<td>F07 § 1 et 8</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--la-valeur-des-données-et-leur-hébergement-4-points">2.4 – La valeur des données et leur hébergement (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.f</code> « Notions de valeur, de patrimoine immatériel et de risque lié aux actifs numériques » ; <code>2.3.e</code> « Aspects réglementaires (RGPD, archivage légal) et monétisation des données » ; <code>2.3.d</code> « Enjeux du Big Data, cloud computing, datacenters et souveraineté numérique ». Limites : la monétisation est abordée de façon critique ; aucune valorisation chiffrée des données ; aucune analyse juridique ; aucune démarche de qualification d'un hébergeur ; le droit des données personnelles au-delà des principes donnés en annexe relève de l'UE 1.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (650 000 conducteurs, 120 000 utilisateurs actifs de l'application, services aux sites hôtes, hébergement hors de l'Union européenne), 2.1 à 2.3 (qualité des données), 2.4 (données, propositions, demande des fonds, appel à partenaires, options d'hébergement) et 2.5 (repères).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Patrimoine informationnel défini (actif immatériel, valeur d'usage et d'échange) ; deux sources de valeur appliquées au cas</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux risques qui menacent cette valeur, tirés des annexes</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Principes du RGPD appliqués : propositions (a) et (b) appréciées, avec la demande de liste de l'enseigne</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Proposition (c) appréciée ; recommandation : propositions retenues et conditions</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Réponse critique à M. TREVÉLOC : la valeur tient à la qualité, à la conformité et à la confiance, non au volume</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Les trois piliers du cloud de confiance définis et appliqués à l'option 1</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Les trois piliers appliqués à l'option 2, avec les coûts et les délais</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-3</td>
+<td>Recommandation motivée au regard de l'appel de LOIRAVEL Agglomération et des conditions de mise en œuvre</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.4 a) – Le patrimoine informationnel, ses sources de valeur et ses risques</em></p>
+<p><strong>Définition</strong> (0,5 pt avec les sources de valeur) : le <strong>patrimoine informationnel</strong> est l'ensemble des données et des informations qu'une organisation produit, détient et exploite, considéré comme un <strong>actif immatériel</strong> : il a une <strong>valeur d'usage</strong> (mieux décider, mieux opérer) et une <strong>valeur d'échange</strong> (services ou données proposés à des tiers). Comme tout actif, il s'inventorie, se classe, a un propriétaire, se protège, et sa valeur dépend de sa qualité et du droit de l'utiliser (F07 § 8.6).</p>
+<p><strong>Deux sources de valeur</strong> parmi :</p>
+<ul>
+<li><strong>la valeur d'usage pour piloter le réseau</strong> : choisir les sites candidats (prévision de l'annexe 2.3 E, pour 20 000 points en 2030), piloter la disponibilité de 98 % par point, négocier avec les opérateurs de mobilité sur la base des sessions que chacun apporte, et mieux diagnostiquer les pannes à partir des codes d'erreur. Les journaux détaillés de deux constructeurs, aujourd'hui réservés à leurs services, enrichiraient ce patrimoine : le règlement sur les données ouvre en principe à l'utilisateur d'un produit connecté l'accès aux données que génère son utilisation (annexe 2.5) ;</li>
+<li><strong>la valeur d'échange, par de nouveaux services</strong> : rapports de fréquentation pour les sites hôtes, données agrégées pour les collectivités, en ligne avec l'objectif de « nouvelles recettes tirées des données et des services aux sites hôtes » (10 M€ en 2026) ;</li>
+<li><strong>la valeur dans les relations avec les partenaires</strong> : des données de sessions fiables et bien hébergées sont une condition pour répondre à l'appel de LOIRAVEL Agglomération et à ceux de trois autres agglomérations.</li>
+</ul>
+<p><strong>Deux risques</strong> parmi (0,5 pt) :</p>
+<ul>
+<li><strong>la qualité</strong> : 60 libellés de tarifs, 3 % de sessions sans tarif, un statut publié sur dix faux, 5 % de points mal rapprochés, une disponibilité déclarée flatteuse. Des données fausses valent peu et conduisent à de mauvaises décisions (questions 2.1 à 2.3) ;</li>
+<li><strong>la conformité et la confiance</strong> : les sessions reliées à un compte, à une immatriculation ou à un badge sont des données personnelles, avec des lieux et des heures qui révèlent des habitudes de vie. Un usage non annoncé exposerait AMPÉRANE et ruinerait la confiance de quelque 650 000 conducteurs et des opérateurs de mobilité ;</li>
+<li><strong>la dépendance et la souveraineté</strong> : des données hébergées chez un fournisseur soumis à un droit extra-européen, avec des services gérés qui rendent le départ difficile ; des journaux de bornes détenus par les constructeurs ; un appel à partenaires qui peut être perdu ;</li>
+<li><strong>la perte, la fuite ou l'obsolescence</strong> : une fuite des comptes de l'application, ou des données anciennes sur des bornes retirées qui ne disent plus rien de l'avenir.</li>
+</ul>
+<p><em>2.4 b) – Les trois propositions au regard du RGPD et la demande des fonds</em></p>
+<p>Les principes à appliquer sont ceux de l'annexe 2.5 : <strong>finalités déterminées</strong>, sans usage ultérieur incompatible ; <strong>minimisation</strong> ; <strong>information</strong> des personnes sur les finalités et les destinataires. Les conducteurs ont été informés d'un usage pour la facturation, le service clients et l'amélioration du réseau, « rien d'autre » (annexe 2.4 A). Une donnée agrégée qui ne permet plus d'isoler un conducteur n'est plus une donnée personnelle ; une donnée rattachée à un compte, à une immatriculation ou à un badge l'est.</p>
+<p><strong>Proposition (a) – rapports de fréquentation pour les supermarchés</strong> (0,5 pt avec la proposition b) :</p>
+<ul>
+<li>le rapport lui-même porte sur des données <strong>agrégées</strong> par site, par jour et par heure : il ne livre aucune donnée personnelle s'il est assez agrégé pour qu'aucun conducteur ne puisse être isolé, ce qui suppose de regrouper les heures creuses des petits sites. C'est une valorisation acceptable, proche du service rendu aux sites hôtes ;</li>
+<li>la <strong>liste des conducteurs</strong> qui rechargent plus d'une heure, avec leur adresse électronique, est à refuser : elle transmettrait des données personnelles à un tiers pour sa prospection commerciale, une finalité étrangère à celles annoncées et dont les conducteurs n'ont pas été informés, au-delà du nécessaire ;</li>
+<li>les contrats avec les sites hôtes ne disent rien de l'usage des données produites sur leurs parkings : la règle doit être écrite avec eux avant toute vente.</li>
+</ul>
+<p><strong>Proposition (b) – données agrégées pour les collectivités</strong> : utile à la planification publique ; une fois agrégées, les données ne permettent plus d'isoler un conducteur, et leur production reste proche de la finalité d'amélioration du réseau annoncée aux conducteurs. La proposition est acceptable à condition :</p>
+<ul>
+<li>d'une agrégation suffisante (commune et heure, en regroupant les petites communes) ;</li>
+<li>que la part des conducteurs venus d'un autre département soit retirée de l'offre : AMPÉRANE n'enregistre pas le domicile des conducteurs (annexe 2.4 A), et la produire supposerait de collecter une donnée nouvelle, au-delà du nécessaire et pour une finalité dont les conducteurs n'ont pas été informés ;</li>
+<li>d'un contrat qui interdit de recouper les données ou de les revendre ;</li>
+<li>d'une mise en garde sur leur qualité (disponibilité déclarée).</li>
+</ul>
+<p><strong>Proposition (c) – historiques de recharge par véhicule pour SELVAREN Automobiles</strong> (0,5 pt avec la recommandation) : à refuser dans cette forme. L'immatriculation rattache chaque historique à son propriétaire : ce sont des données personnelles, avec des <strong>données de localisation</strong> (lieux et heures de recharge) qui révèlent les déplacements et les habitudes. La finalité est nouvelle (étude des batteries et surtout offres commerciales du constructeur) et incompatible avec celles annoncées ; les conducteurs n'en ont pas été informés ; l'historique « complet » excède ce qu'exige l'étude de l'usure des batteries. Seule une version <strong>agrégée par modèle de véhicule</strong>, sans immatriculation (énergie délivrée, puissance acceptée, durées), serait envisageable, et elle ne permettrait pas le démarchage visé.</p>
+<p><strong>Recommandation</strong> : retenir (a) sans la liste de conducteurs et (b), à leurs conditions d'agrégation et de contrat ; refuser (c). Avant toute mise en œuvre :</p>
+<ul>
+<li>la déléguée à la protection des données est consultée ;</li>
+<li>le registre des traitements est mis à jour ;</li>
+<li>l'information des conducteurs est complétée si un nouvel usage est retenu ;</li>
+<li>les données agrégées sont produites à partir du modèle corrigé (question 2.1), faute de quoi la qualité vendue ne serait pas au rendez-vous.</li>
+</ul>
+<p><strong>La réponse à M. TREVÉLOC</strong> (0,5 pt) : douze millions de sessions ne valent pas par leur volume. Leur valeur tient à leur <strong>qualité</strong>, aujourd'hui insuffisante (60 libellés de tarifs, disponibilité flatteuse), à leur <strong>droit d'usage</strong>, borné par les finalités annoncées aux conducteurs et par les contrats avec les sites hôtes, et à la <strong>confiance</strong> des conducteurs, des opérateurs et des collectivités. « Vendre tout ce qui peut l'être » serait illicite pour les données personnelles et risqué pour la réputation, au moment même où les fonds demandent un système d'information sûr. Ce que des investisseurs examineront en 2028, c'est un patrimoine <strong>documenté et gouverné</strong> : inventaire des données, propriétaires, dictionnaire, indicateurs de qualité, conformité, hébergement maîtrisé, et des services récurrents fondés sur des données agrégées. La monétisation est donc sélective et prudente, et la première valeur des données reste leur usage pour atteindre 20 000 points à 98 % de disponibilité.</p>
+<p><em>2.4 c) – Les deux options d'hébergement selon le cloud de confiance</em></p>
+<p><strong>Les trois piliers</strong> (0,5 pt avec l'option 1) : le référentiel du cloud de confiance du Cigref évalue une offre d'informatique en nuage selon trois piliers (annexe 2.5) :</p>
+<ul>
+<li>la <strong>sécurité</strong> des données et des services ;</li>
+<li>l'<strong>immunité aux lois extra-européennes</strong>, c'est-à-dire l'absence d'accès possible aux données par une autorité d'un État tiers en vertu de son droit ;</li>
+<li>la <strong>maîtrise de la dépendance</strong> : réversibilité, portabilité, absence d'enfermement chez un fournisseur.</li>
+</ul>
+<p>Toute exigence opérationnelle doit aussi être exigible par contrat ; ce n'est ni un label, ni une certification. La souveraineté ne se réduit pas à la localisation des centres de données : elle tient au <strong>droit applicable au prestataire</strong> (F03 § 5.3 ; F07 § 8.5).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Pilier</th>
+<th>Option 1 – Rester, avec protections renforcées</th>
+<th>Option 2 – Hébergeur européen qualifié SecNumCloud</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sécurité</td>
+<td>niveau élevé d'un grand fournisseur, chiffrement de toutes les données ; mais les clés sont gérées dans un service du fournisseur, qui exploite l'environnement où elles servent</td>
+<td>exigences de sécurité de SecNumCloud vérifiées lors de la qualification de l'offre par l'ANSSI ; risque propre à la migration (douze mois de transition, reprise des données, remplacement de deux outils d'analyse), à maîtriser par un plan de bascule et des essais</td>
+</tr>
+<tr class="even">
+<td>Immunité aux lois extra-européennes</td>
+<td><strong>non assurée</strong> : le fournisseur « reste soumis au droit du pays de son siège » ; la localisation en France ne change pas le droit qui s'applique à lui, et un engagement contractuel d'informer et de contester ne peut pas l'emporter sur une loi ; l'option ne répond pas à l'exigence de LOIRAVEL Agglomération</td>
+<td><strong>assurée en principe</strong> : siège dans l'Union, capital européen, critères de protection contre les lois extra-européennes de SecNumCloud ; l'option répond à l'exigence de LOIRAVEL Agglomération</td>
+</tr>
+<tr class="odd">
+<td>Maîtrise de la dépendance</td>
+<td><strong>faible</strong> : services gérés propres au fournisseur (base de données, file de messages, outils d'analyse), qui rendent tout départ « long et coûteux » ; la dépendance croîtra avec le réseau. Le règlement sur les données facilite en principe le changement de fournisseur, sans supprimer ces adhérences</td>
+<td><strong>meilleure sur le droit et les formats</strong> : export en formats ouverts, CIRCÉA adaptée à des services plus standards, donc plus portable ; mais nouvelle dépendance envers un hébergeur dix fois plus petit, au catalogue restreint, dont la capacité à suivre un réseau multiplié par deux et demi doit être vérifiée et inscrite au contrat</td>
+</tr>
+<tr class="even">
+<td>Coût et délai</td>
+<td>150 k€ par an ; trois mois</td>
+<td>1 200 k€ de migration au total, répartis sur 2027 et 2028, puis environ 360 k€ de plus par an (15 % des 2 400 k€ de 2026, qui couvrent CIRCÉA, l'application des conducteurs et les outils d'analyse) ; douze mois</td>
+</tr>
+</tbody>
+</table>
+<p>(0,5 pt pour l'option 2 avec les coûts et les délais.)</p>
+<p><strong>Recommandation</strong> (0,5 pt) : retenir l'<strong>option 2</strong>, décidée dès le printemps 2027 :</p>
+<ul>
+<li><strong>l'enjeu</strong> : seule l'option 2 permet de répondre à LOIRAVEL Agglomération (600 points, soit 7,5 % du réseau de 2026 et 3 % de l'objectif de 2030) et aux trois agglomérations qui préparent des appels semblables, sur un segment qui pèse 15 % des sites ; elle réduit aussi la dépendance envers un fournisseur soumis à un droit extra-européen, que les fonds relèveront avant la levée de 2028 ;</li>
+<li><strong>le coût</strong> : un surcoût de l'ordre de 0,5 M€ par an en moyenne sur quatre ans, à rapprocher de cet enjeu et des 118 M€ de chiffre d'affaires ;</li>
+<li><strong>le calendrier</strong> : réponse à l'appel avant le 30 juin 2027, avec un engagement daté ; migration en priorité des données des sessions et des comptes des conducteurs, puis du reste de CIRCÉA, pour une mise en service du partenariat début 2028. Pendant la transition, le chiffrement de l'option 1 protège les données encore chez le fournisseur actuel ;</li>
+<li><strong>le contrat</strong> : contrat de sous-traitance offrant des garanties suffisantes (RGPD, annexe 2.5), engagements de service, capacité de croissance, réversibilité et export en formats ouverts, chaque exigence opérationnelle étant exigible par contrat (Cigref) ;</li>
+<li><strong>l'organisation</strong> : remplacement des deux outils d'analyse de l'équipe données, et suivi de la migration par la direction technique.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Option 1 recommandée pour son coût et son délai, si le candidat reconnaît qu'elle ne répond pas à l'exigence de LOIRAVEL Agglomération et en tire la conséquence (renoncer à l'appel, ou héberger à part les seules données de ses parkings).</li>
+<li>Solution mixte : données des collectivités et données personnelles des conducteurs chez l'hébergeur qualifié, le reste chez le fournisseur actuel, si la complexité d'exploitation de deux hébergeurs est discutée.</li>
+<li>Comparaison de tête du coût sur 2027-2030 (environ 600 k€ contre 2 640 k€ au volume de 2026), qui n'est pas attendue.</li>
+<li>Patrimoine informationnel défini comme l'ensemble des actifs informationnels, ou valeur des données présentée selon d'autres catégories (stratégique, opérationnelle, commerciale), si elles sont appliquées au cas.</li>
+<li>Proposition (b) refusée faute de garanties suffisantes sur la qualité ou sur l'agrégation, si le refus est argumenté.</li>
+<li>Part des conducteurs d'un autre département acceptée si le candidat précise d'où vient la donnée et la limite à un calcul agrégé interne.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Hébergement « souverain » réduit à la localisation en France</em> (<code>ET-37</code>) — l'option 1 jugée suffisante parce que les centres de données sont en France, sans examiner le droit applicable au fournisseur.</li>
+<li><em>Monétisation sans regard critique</em> (<code>JUR-N01</code>, <code>JUR-D04</code>) — ventes acceptées telles quelles, données collectées au-delà du nécessaire, ou données personnelles présentées comme une marchandise dont l'entreprise serait propriétaire.</li>
+<li><em>Dérive juridique</em> (<code>JUR-T07</code>) — analyse des contrats, recherche d'un fondement juridique du traitement ou des prérogatives des conducteurs sur leurs données (UE 1), alors que la question demande d'appliquer les principes donnés en annexe.</li>
+<li><em>SecNumCloud mal présenté</em> (<code>ET-01</code>) — qualification de l'ANSSI présentée comme une norme ISO ou comme une certification de l'entreprise.</li>
+<li><em>Morceau de cours</em> (<code>JUR-T01</code>) — piliers du cloud de confiance ou principes du RGPD récités sans application aux propositions et aux options de l'annexe 2.4.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2016/679 (RGPD), applicable depuis le 25/05/2018</td>
+<td>donnée personnelle, données de localisation, finalité, minimisation, information, sous-traitant (annexe 2.5)</td>
+<td><code>rgpd</code> / F15 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2023/2854 sur les données (Data Act), applicable depuis le 12/09/2025</td>
+<td>accès de l'utilisateur aux données d'un produit connecté, changement de fournisseur de cloud (annexe 2.5)</td>
+<td><code>data_act</code> / F07 § 8.5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>SecNumCloud, version 3.2 (ANSSI, 08/03/2022)</td>
+<td>qualification d'offres d'informatique en nuage, sécurité et protection contre les lois extra-européennes</td>
+<td><code>secnumcloud_3_2</code> / F03 § 5.3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Référentiel du cloud de confiance du Cigref, V1 du 27/05/2021, V2 disponible</td>
+<td>trois piliers, exigences exigibles par contrat</td>
+<td><code>cigref_cloud_confiance</code> / F03 § 5.3, F07 § 8.5</td>
+<td>publié</td>
+</tr>
+<tr class="odd">
+<td>Patrimoine informationnel, valeur d'usage et d'échange, monétisation critique, souveraineté, réversibilité</td>
+<td>définitions et méthode</td>
+<td>F07 § 8.5 et 8.6 ; F03 § 5.3</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
