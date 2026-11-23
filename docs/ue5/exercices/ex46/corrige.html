@@ -1,0 +1,1104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Préparer la stratégie du SI et le projet de remplacement du logiciel de gestion locative : ORVANELLE Résidences, gestionnaire privé de résidences pour étudiants : alignement du SI selon le modèle SAM, maturité de la gestion des projets selon CMMI, processus de la candidature à la remise des accès, contrats des lots et risques d'un progiciel en ligne, cahier des charges et risques du projet de remplacement du logiciel de gestion locative</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 1</p><p>14 points</p><p>1 h 03</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Préparer la stratégie du SI et le projet de remplacement du logiciel de gestion locative</h1><p class="cas">ORVANELLE Résidences, gestionnaire privé de résidences pour étudiants : alignement du SI selon le modèle SAM, maturité de la gestion des projets selon CMMI, processus de la candidature à la remise des accès, contrats des lots et risques d'un progiciel en ligne, cahier des charges et risques du projet de remplacement du logiciel de gestion locative</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F01 alignement stratégique (§ 1, SAM ; § 5, maturité et CMMI ; § 7, gabarit de réponse), F02 gouvernance et référentiels (§ 1, norme, référentiel et solution ; § 5, CMMI), F03 architecture, interopérabilité et service en ligne (§ 3 et § 5), F04 relations avec les ESN et contrats (§ 1, typologie ; § 4, clauses critiques ; § 6, risques de la relation), F05 projets et changement (§ 3, cahier des charges ; § 5, risques ; § 7, conduite du changement), F15 RGPD opérationnel (§ 5, sous-traitance), glossaire, et la base des référentiels datés (vérifiés les 25 et 26/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1 L'alignement du système d'information sur « ORVANELLE 2030 »</td>
+<td><code>1.1.b</code> Principes d'alignement stratégique SI/métier (modèle SAM, chaîne de valeur, etc.) ; <code>1.1.a</code> Définir une stratégie des systèmes d'information alignée sur les objectifs métiers, en intégrant les opportunités offertes par les technologies émergentes</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>1.2 La maturité de la gestion des projets du système d'information</td>
+<td><code>1.2.d</code> Méthodologies d'évaluation de la maturité numérique (CMMI, COBIT, etc.)</td>
+<td>2,5</td>
+</tr>
+<tr class="odd">
+<td>1.3 Le parcours, de la candidature à la remise des accès</td>
+<td><code>1.3.f</code> Analyse des processus métiers et rôle des architectures SI dans leur rationalisation ; <code>1.3.e</code> Impacts organisationnels, juridiques et comptables des nouvelles architectures sur la transformation des métiers</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td>1.4 Les contrats du projet et les risques d'un progiciel en ligne</td>
+<td><code>1.4.b</code> Typologie des contrats de prestation informatique (régie, forfait, infogérance, etc.) : méthodes d'intégration dans la stratégie SI et la gouvernance contractuelle ; <code>1.4.d</code> Méthodologie de négociation contractuelle et analyse des risques</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>1.5 Le cahier des charges et les risques du projet</td>
+<td><code>1.5.c</code> Élaboration d'un cahier des charges fonctionnel et technique ; <code>1.5.e</code> Identification et gestion des risques (maintenance, évolutivité, sécurité) ; <code>1.5.a</code> Piloter un projet de système d'information, depuis la rédaction du cahier des charges jusqu'à l'analyse des risques et du plan qualité, dans une logique de performance durable</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td><strong>Dossier 1 – Préparer la stratégie du système d'information et le projet de remplacement du logiciel de gestion locative</strong></td>
+<td></td>
+<td><strong>14</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (modèle SAM, niveaux de CMMI, processus, types de contrats, structure du cahier des charges, démarche de gestion des risques) environ 3 points (items 1.1 a-1, 1.2 a-1, 1.3 a-1 pour moitié, 1.4 a-1, 1.5 a-1, 1.5 b-1 pour moitié) ; analyse des annexes et recommandations environ 11 points, soit environ 79 %. Durée conseillée : 14 points × 4,5 minutes = 63 minutes, soit 1 h 03.</p>
+<hr />
+<h3 id="11--lalignement-du-système-dinformation-sur--orvanelle-2030--3-points">1.1 – L'alignement du système d'information sur « ORVANELLE 2030 » (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.1 – Élaborer et aligner la stratégie des SI : <code>1.1.b</code> « Principes d'alignement stratégique SI/métier (modèle SAM, chaîne de valeur, etc.) » ; <code>1.1.a</code> « Définir une stratégie des systèmes d'information alignée sur les objectifs métiers, en intégrant les opportunités offertes par les technologies émergentes ». Limite : « Ne pas confondre alignement stratégique et simple adéquation technique. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (témoignages du directeur commercial, d'une responsable de résidence, de la directrice des systèmes d'information et de la présidente), 1.1 (rattachement de la direction des systèmes d'information, système d'information, plan) et 1.6 (référence du modèle SAM).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Alignement défini (mise en cohérence permanente de la stratégie de l'entreprise et de la stratégie du SI) ; modèle SAM présenté : deux axes (ajustement stratégique entre choix externes et organisation interne ; intégration fonctionnelle entre domaine métier et domaine des technologies de l'information), quatre domaines, perspectives d'alignement</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Place de la direction des systèmes d'information : rattachée à la direction financière jusqu'en 2025, absente de la préparation du plan, cantonnée à l'exécution (70 % du temps sur l'existant) ; le domaine « stratégie des technologies de l'information » n'existe pas, l'intégration fonctionnelle est rompue au niveau stratégique</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Rôle du SI dans l'offre (il freine le parcours : la moitié des 18 000 abandons au formulaire papier, sept candidats sur dix venus de l'étranger perdus, ressaisies, attente à l'arrivée, alors que les concurrents signent en quelques minutes) et choix technologiques faits sans la direction des systèmes d'information (clé virtuelle) ; conclusion : au mieux une perspective d'exécution de la stratégie, subie et incomplète, donc un désalignement</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Perspective à adopter, justifiée : transformation technologique (le plan fixe la stratégie de l'entreprise ; il faut en déduire une stratégie des technologies de l'information, puis l'infrastructure, dont le progiciel), avec la direction des systèmes d'information associée ; ouverture vers le potentiel concurrentiel voulu par la présidente</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Deux orientations de la stratégie du SI, chacune justifiée par un objectif d'« ORVANELLE 2030 » et un constat de l'annexe 1.2</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Troisième orientation, même exigence ; les trois orientations découlent du diagnostic du a) et ne se réduisent pas à des choix techniques</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.1 a) – Le modèle SAM et le diagnostic de l'alignement</em></p>
+<p>L'<strong>alignement stratégique</strong> est la mise en cohérence permanente de la stratégie de l'entreprise et de la stratégie du système d'information ; il est dynamique (il se refait à chaque changement de stratégie) et organisationnel autant que technique. Le <strong>modèle d'alignement stratégique</strong> (SAM) de Henderson et Venkatraman (1993) le décrit selon <strong>deux axes</strong> : l'<strong>ajustement stratégique</strong>, entre les choix externes (positionnement sur le marché) et l'organisation interne (structures, processus, compétences), et l'<strong>intégration fonctionnelle</strong>, entre le domaine métier et le domaine des technologies de l'information. Ils délimitent <strong>quatre domaines</strong> : stratégie de l'entreprise, stratégie des technologies de l'information, infrastructure et processus organisationnels, infrastructure et processus du SI. Une <strong>perspective d'alignement</strong> est un chemin qui part d'un domaine moteur et en entraîne deux autres : exécution de la stratégie (stratégie de l'entreprise → organisation → infrastructure du SI : le SI suit), transformation technologique (stratégie de l'entreprise → stratégie des technologies de l'information → infrastructure du SI), potentiel concurrentiel (stratégie des technologies de l'information → stratégie de l'entreprise → organisation : la technologie ouvre une offre nouvelle), niveau de service (stratégie des technologies de l'information → infrastructure du SI → organisation) (0,5 pt).</p>
+<p><strong>Diagnostic de l'alignement actuel</strong> (0,5 pt + 0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dimension demandée</th>
+<th>Constats de l'annexe 1.2</th>
+<th>Lecture selon le SAM</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Place de la direction des systèmes d'information</td>
+<td>rattachée à la direction financière jusqu'en 2025 ; « nous exécutons les demandes » ; 70 % du temps de seize personnes sur l'existant ; non associée à « ORVANELLE 2030 », découvert lors de sa présentation au personnel</td>
+<td>le domaine <strong>stratégie des technologies de l'information</strong> n'existe pas : la direction des systèmes d'information n'intervient qu'au niveau de l'infrastructure ; l'<strong>intégration fonctionnelle</strong> est rompue au niveau stratégique (le plan a été construit sans elle)</td>
+</tr>
+<tr class="even">
+<td>Rôle du SI dans l'offre faite aux étudiants</td>
+<td>30 000 candidatures commencées, 12 000 abouties ; la moitié des 18 000 abandons à l'étape du formulaire papier du garant ; sept candidats sur dix venus de l'étranger abandonnent ; ressaisies par les chargés d'accueil ; état des lieux sur papier ; une heure d'attente à l'arrivée ; concurrents qui signent « en quelques minutes »</td>
+<td>le SI ne sert pas le positionnement externe : il <strong>freine</strong> l'offre au lieu de la porter ; l'<strong>ajustement stratégique</strong> fait défaut entre l'ambition (parcours en ligne, international) et les processus et outils internes</td>
+</tr>
+<tr class="odd">
+<td>Choix technologiques faits sans elle</td>
+<td>clé virtuelle choisie en 2023 par les services techniques ; contrat signé avant que la direction des systèmes d'information soit informée ; raccordement à l'application des résidents dans l'urgence</td>
+<td>des éléments d'<strong>infrastructure</strong> sont choisis hors de toute stratégie des technologies de l'information ; ils deviennent des contraintes (interfaces, sécurité) au lieu d'être des choix cohérents</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusion</strong> : l'alignement actuel relève, au mieux, d'une <strong>perspective d'exécution de la stratégie</strong> subie et incomplète : le SI suit avec retard des décisions prises ailleurs, sans stratégie des technologies de l'information ni participation de la direction des systèmes d'information. Le SI n'est pas aligné sur « ORVANELLE 2030 » : il contredit l'objectif d'un parcours entièrement en ligne et pèse sur l'occupation.</p>
+<p><strong>Perspective à adopter : la transformation technologique</strong> (0,5 pt). Le plan fixe la stratégie de l'entreprise (parcours en ligne, 12 000 logements, 95 % d'occupation, sécurité) ; il faut en déduire explicitement une <strong>stratégie des technologies de l'information</strong> (quel parcours, quel socle, quelles interfaces, quelles compétences), puis l'<strong>infrastructure</strong> : le progiciel de gestion locative en ligne n'en est qu'une traduction. Cette perspective suppose que la direction des systèmes d'information participe aux décisions numériques, comme le veut la présidente (« je ne veux plus qu'un projet numérique soit décidé sans la direction des systèmes d'information »). Elle prépare la <strong>perspective de potentiel concurrentiel</strong> que vise Mme TRÉVARDIN : une fois le socle en place, la technologie (signature en quelques minutes, accès sur téléphone) peut devenir un argument commercial et ouvrir des offres nouvelles (réservation depuis l'étranger, séjours courts).</p>
+<p><em>1.1 b) – Trois orientations de la stratégie du système d'information</em></p>
+<p>La <strong>stratégie du SI</strong> fixe, pour plusieurs années, les orientations du système d'information déduites de la stratégie de l'entreprise ; elle guide les choix d'applications, de données, d'organisation, de compétences et de partenaires. Trois orientations, chacune justifiée par un objectif du plan (0,5 pt pour deux orientations, 0,5 pt pour la troisième ; trois parmi les suivantes) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Orientation</th>
+<th>Constat de l'annexe 1.2</th>
+<th>Objectif d'« ORVANELLE 2030 » servi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Faire du parcours en ligne, de la candidature à la remise des accès, le cœur de l'offre</strong> : dépôt des pièces et engagement du garant en ligne, signature et paiement dans le même parcours, accès remis sans ressaisie ni papier, parcours pensé pour les étudiants qui réservent depuis l'étranger</td>
+<td>la moitié des abandons au formulaire papier ; sept candidats sur dix venus de l'étranger perdus ; concurrents en quelques minutes</td>
+<td>parcours entièrement en ligne ; occupation d'au moins 95 % (moins de candidatures perdues)</td>
+</tr>
+<tr class="even">
+<td><strong>Construire un socle de gestion locative standard, partagé et reproductible</strong>, qui permette d'ouvrir une résidence par paramétrage et non par un projet informatique, et de tenir le pic de la rentrée</td>
+<td>logiciel de 2009 à client lourd, non maintenu après 2028 ; parc porté de 9 000 à 12 000 logements</td>
+<td>12 000 logements dans vingt villes en 2030</td>
+</tr>
+<tr class="odd">
+<td><strong>Faire de la direction des systèmes d'information un partenaire des directions</strong> : associée à toute décision numérique (clé, portail, progiciel), libérée d'une partie de l'existant, dotée de compétences de pilotage de projets et de prestataires</td>
+<td>« nous exécutons les demandes » ; non associée au plan ; clé virtuelle choisie sans elle</td>
+<td>tous les objectifs, qui passent par le SI ; en particulier la sécurité des résidents et de leurs données</td>
+</tr>
+<tr class="even">
+<td><strong>Intégrer la sécurité des résidents et de leurs données dès la conception</strong> des choix numériques : accès aux logements, données des candidats confiées à un service en ligne, interfaces</td>
+<td>clé virtuelle raccordée dans l'urgence ; pièces justificatives envoyées par courriel (annexe 1.4)</td>
+<td>sécurité des résidents et de leurs données</td>
+</tr>
+<tr class="odd">
+<td><strong>Disposer en temps réel de l'occupation de chaque résidence</strong> pour décider vite (relances, offres d'été)</td>
+<td>demande de la présidente (annexe 1.5 D)</td>
+<td>occupation d'au moins 95 %</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Perspective de <strong>potentiel concurrentiel</strong> retenue comme perspective principale, si elle est justifiée par la volonté de la présidente de faire du SI un atout commercial et si le candidat montre que la stratégie des technologies de l'information doit alors exister et être portée par une direction associée au directoire.</li>
+<li>Diagnostic présenté par les quatre domaines du SAM (un constat par domaine), ou schéma du modèle annoté, s'il est appliqué aux annexes.</li>
+<li>Référence complémentaire à la chaîne de valeur ou au tableau de bord équilibré de l'informatique : valorisée sans être exigée ; elle ne remplace pas le SAM demandé.</li>
+<li>Orientation sur le pilotage de l'énergie des résidences par le SI, si elle est justifiée par l'objectif de réduction de 20 % ; elle n'est pas attendue ici.</li>
+<li>Autres orientations, si elles sont justifiées par un objectif du plan et un constat de l'annexe.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Alignement réduit au remplacement du logiciel</em> (ET-06, <code>JUR-G02</code> alignement réduit à un choix technique ou à une standardisation logicielle) — « acheter un progiciel en ligne » n'aligne pas le SI tant que la stratégie des technologies de l'information n'existe pas et que la direction des systèmes d'information reste exécutante.</li>
+<li><em>SAM récité sans être appliqué</em> (<code>JUR-T01</code> contextualiser chaque notion, pas de morceau de cours ; <code>JUR-G03</code> avis motivé fondé sur la théorie) — les axes et les domaines n'apportent des points que s'ils servent à lire les témoignages.</li>
+<li><em>Perspective nommée sans justification</em> (<code>JUR-T03</code> analyser et argumenter) — la perspective se déduit de ce qui est moteur : ici le plan, déjà adopté.</li>
+<li><em>SAM mal attribué ou daté de 1999</em> (F99 § 2.2) — l'article fondateur est de 1993 ; 1999 est une réimpression.</li>
+<li><em>Perspective d'exécution de la stratégie reconduite comme perspective à adopter</em> (<code>JUR-T03</code> analyser et argumenter) — c'est la situation actuelle, où le SI suit sans stratégie des technologies de l'information ; elle n'est admise que si le candidat y ajoute explicitement une stratégie des technologies de l'information portée par une direction des systèmes d'information associée aux décisions.</li>
+<li><em>Schéma directeur ou feuille de route construits</em> (<code>JUR-T07</code> répondre à la seule question posée) — non demandés.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Henderson et Venkatraman, 1993 (modèle SAM)</td>
+<td>deux axes, quatre domaines, perspectives d'alignement</td>
+<td><code>henderson_venkatraman_1993</code> ; F01 § 1</td>
+<td>publié</td>
+</tr>
+<tr class="even">
+<td>Stratégie du SI et alignement</td>
+<td>orientations déduites de la stratégie ; pas une adéquation technique</td>
+<td>F01 § 1 et § 7 ; <code>erreurs_types.md</code> ET-06</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12--la-maturité-de-la-gestion-des-projets-du-système-dinformation-25-points">1.2 – La maturité de la gestion des projets du système d'information (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.2 – Concevoir et piloter la gouvernance des SI : <code>1.2.d</code> « Méthodologies d'évaluation de la maturité numérique (CMMI, COBIT, etc.) ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.3 (trois projets et pratiques), 1.6 (référence de CMMI et nom des niveaux), 1.5 E (calendrier du projet) et 1.1 (effectif de la direction des systèmes d'information).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Maturité définie (capacité d'une organisation à conduire ses processus de façon maîtrisée et prévisible) ; CMMI présenté comme un référentiel, non comme une norme ; cinq niveaux décrits chacun en une phrase</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Niveau 1 « initial » retenu et justifié : les résultats dépendent des personnes et non d'un processus ; ils sont imprévisibles</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Trois constats de l'annexe 1.3 reliés au niveau (portail sans cahier des charges ni recette par ORVANELLE ; clé virtuelle réussie grâce à une personne puis en retard après son départ ; raccordement du progiciel de gestion intégré arrêté sans décision ; ni méthode, ni revue, ni indicateur)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Niveau 2 « géré » fixé pour le projet avant son lancement, justifié (planification, suivi, exigences et fournisseurs maîtrisés au niveau du projet ; le niveau 3 suppose un processus commun à toute l'organisation, hors de portée en quelques mois, et devient l'horizon des projets de la croissance)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Trois actions pour atteindre le niveau 2, chacune reliée à un constat (chef de projet et instances, méthode minimale écrite, indicateurs mensuels, revue de fin de projet, recette par ORVANELLE)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.2 a) – Les niveaux de CMMI et la situation d'ORVANELLE</em></p>
+<p>La <strong>maturité</strong> d'une organisation, pour un ensemble de processus, est sa capacité à les conduire de façon maîtrisée, reproductible et prévisible. <strong>CMMI</strong> (<em>Capability Maturity Model Integration</em>, CMMI Institute, version 3.0 de 2023) est un <strong>référentiel</strong> de bonnes pratiques, et non une norme : il décrit <strong>cinq niveaux de maturité</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Ce qui le caractérise</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 – Initial</td>
+<td>les processus sont improvisés ; les résultats dépendent de l'engagement de quelques personnes ; délais et coûts sont imprévisibles</td>
+</tr>
+<tr class="even">
+<td>2 – Géré</td>
+<td>chaque projet est planifié, suivi et maîtrisé : exigences écrites, plan, suivi de l'avancement, gestion des fournisseurs, revue des écarts</td>
+</tr>
+<tr class="odd">
+<td>3 – Défini</td>
+<td>un processus commun, écrit et adapté à chaque projet, s'applique à toute l'organisation ; les enseignements sont capitalisés</td>
+</tr>
+<tr class="even">
+<td>4 – Quantitativement géré</td>
+<td>les processus sont pilotés par des mesures et des objectifs chiffrés de performance</td>
+</tr>
+<tr class="odd">
+<td>5 – En optimisation</td>
+<td>les processus s'améliorent en continu à partir de ces mesures et de l'innovation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Situation d'ORVANELLE : niveau 1, initial</strong> (0,5 pt), justifié par trois constats (0,5 pt ; trois parmi les suivants) :</p>
+<ul>
+<li><strong>Les résultats dépendent d'une personne, non d'un processus</strong> : la clé virtuelle a été déployée dans les délais (deux mois par résidence) tant qu'un chef de projet expérimenté l'a conduite ; après son départ, en juin 2025, chaque résidence a demandé quatre mois et 8 des 30 résidences prévues sont reportées à 2027. Sa méthode (planning, point hebdomadaire, liste de contrôle) n'a été ni écrite ni reprise : c'est la marque du niveau 1, où la réussite ne se reproduit pas.</li>
+<li><strong>Les exigences et les fournisseurs ne sont pas maîtrisés</strong> : le portail de 2018 a été commandé sans cahier des charges écrit, recetté par l'agence web elle-même ; il a été livré avec huit mois de retard, pour un coût supérieur de moitié au prix convenu, avec 200 anomalies les trois premiers mois.</li>
+<li><strong>Les projets ne sont ni décidés ni arrêtés formellement</strong> : le raccordement du progiciel de gestion intégré a été arrêté en 2023 après un an de travaux, sans décision ni responsable désigné.</li>
+<li><strong>Ni méthode commune, ni revue de fin de projet, ni indicateur</strong> : chaque direction pilote « avec ses propres tableaux » ; les dépassements ne sont connus qu'à la clôture des comptes ; aucun chef de projet à temps plein.</li>
+</ul>
+<p>ORVANELLE n'atteint donc même pas le niveau 2, puisqu'aucun projet n'est planifié et suivi de façon reproductible.</p>
+<p><em>1.2 b) – Le niveau à atteindre et les actions</em></p>
+<p><strong>Niveau visé avant le lancement : niveau 2, géré, pour le projet de remplacement</strong> (0,5 pt). C'est le niveau qui garantit que <strong>ce</strong> projet sera planifié, suivi et maîtrisé, et le calendrier ne laisse pas davantage : signature des contrats en juin 2027, mise en service en mai 2028, ancien logiciel non maintenu après décembre 2028. Viser le niveau 3 tout de suite serait irréaliste : il suppose une méthode commune, éprouvée sur plusieurs projets, et une organisation qui la fait vivre. Le niveau 3 devient l'<strong>horizon d'ici 2029-2030</strong>, quand ORVANELLE ouvrira des résidences dans cinq villes de plus et conduira plusieurs projets à la fois ; les niveaux 4 et 5 ne sont pas un objectif pour une direction des systèmes d'information de seize personnes.</p>
+<p><strong>Trois actions</strong> (0,5 pt ; trois parmi les suivantes, chacune reliée à un constat) :</p>
+<ol type="1">
+<li><strong>Désigner un chef de projet expérimenté à temps plein, un sponsor et un comité de pilotage</strong> : le sponsor est le (la) membre du directoire chargé(e) des opérations ; le comité de pilotage mensuel réunit les directions concernées et la direction des systèmes d'information et prend les décisions formelles (périmètre, arbitrages, arrêt éventuel) ; le chef de projet est recruté ou détaché avant la signature des contrats (réponse au départ du chef de projet de la clé virtuelle et à l'arrêt du raccordement de 2022 sans décision).</li>
+<li><strong>Écrire une méthode minimale, appliquée dès le cadrage</strong> : note de cadrage, cahier des charges écrit et validé par les directions (question 1.5), planning à jalons, registre des risques, recette faite par ORVANELLE avec des utilisateurs clés et non par le prestataire (réponse au portail de 2018).</li>
+<li><strong>Suivre le projet chaque mois par des indicateurs</strong> présentés au comité de pilotage, pour connaître les écarts quand on peut encore agir et non à la clôture des comptes :</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Taux de jalons tenus</td>
+<td>jalons franchis à la date prévue / jalons prévus à cette date × 100</td>
+<td>planning du projet tenu par le chef de projet</td>
+<td>mensuelle, au comité de pilotage</td>
+<td>au moins 90 %</td>
+<td>processus</td>
+</tr>
+<tr class="even">
+<td>Écart de coût du projet à date</td>
+<td>(coûts engagés à date − coûts prévus à date) / coûts prévus à date × 100</td>
+<td>suivi des engagements du projet (commandes à l'éditeur et à l'intégrateur, temps des équipes internes)</td>
+<td>mensuelle, au comité de pilotage</td>
+<td>au plus 5 %</td>
+<td>financier</td>
+</tr>
+</tbody>
+</table>
+<ol start="4" type="1">
+<li><strong>Conduire dès maintenant la revue de fin de projet de la clé virtuelle</strong> et écrire ses enseignements (planning par résidence, point hebdomadaire, liste de contrôle), puis prévoir une revue à chaque jalon du nouveau projet : c'est le premier pas vers le niveau 3.</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Échelle de capacité des processus de COBIT 2019 (0 à 5) ou grille à quatre niveaux, si les niveaux sont différenciés et si la situation est justifiée par les constats.</li>
+<li>Situation « entre le niveau 1 et le niveau 2 », si le candidat montre que la clé virtuelle a approché le niveau 2 pendant un temps, sans que cette pratique devienne celle de l'organisation.</li>
+<li>Niveau 3 fixé comme cible à l'horizon du plan, à condition que le niveau 2 soit exigé avant le lancement du projet.</li>
+<li>Création d'un bureau des projets (PMO) à la direction des systèmes d'information, recours à une assistance à maîtrise d'ouvrage : valorisés.</li>
+<li>Autres indicateurs de suivi complets (formule, source, fréquence, cible, axe).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>CMMI présenté comme une norme ou une certification obligatoire</em> (ET-01, <code>JUR-S06</code> confondre référentiels, normes et solutions) — c'est un référentiel ; l'évaluation par le CMMI Institute est facultative.</li>
+<li><em>Niveau 2 retenu au vu du succès de la clé virtuelle</em> (<code>JUR-T03</code> analyser et argumenter) — ce succès tenait à une personne et ne s'est pas reproduit : c'est le contraire d'un processus géré.</li>
+<li><em>Niveau cible 4 ou 5, ou niveau 3 exigé avant le lancement</em> (<code>JUR-T03</code>) — irréaliste au regard du calendrier et de la taille de la direction des systèmes d'information.</li>
+<li><em>Grille de maturité numérique de l'entreprise construite</em> (<code>JUR-T07</code> répondre à la seule question posée) — la question porte sur la seule gestion des projets du SI.</li>
+<li><em>Actions sans lien avec les constats</em> (<code>JUR-P03</code> diagnostiquer les erreurs de gestion de projet par étapes) — chaque action répond à une défaillance de l'annexe 1.3.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CMMI V3.0 (CMMI Institute, ISACA, 2023)</td>
+<td>cinq niveaux de maturité</td>
+<td><code>cmmi_v3</code> ; F01 § 5 ; F02 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>COBIT 2019 (ISACA)</td>
+<td>niveaux de capacité de 0 à 5 (réponse tolérée)</td>
+<td><code>cobit_2019</code> ; F02 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Norme, référentiel et solution</td>
+<td>CMMI est un référentiel</td>
+<td>F02 § 1 ; <code>erreurs_types.md</code> ET-01</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13--le-parcours-de-la-candidature-à-la-remise-des-accès-25-points">1.3 – Le parcours, de la candidature à la remise des accès (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.3 – Diagnostiquer et piloter l'évolution des architectures et de l'urbanisation des SI : <code>1.3.f</code> « Analyse des processus métiers et rôle des architectures SI dans leur rationalisation » ; <code>1.3.e</code> « Impacts organisationnels, juridiques et comptables des nouvelles architectures sur la transformation des métiers ». Limite : « Ne pas réduire l'urbanisation à une vision strictement technique : elle s'inscrit dans une stratégie globale. » Seuls les impacts organisationnels sont demandés ici.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.4 (parcours actuel, délais, erreurs), 1.5 A et D (fonctions standard du progiciel, interfaces, besoins), 1.2 (témoignage de la responsable de résidence) et 1.1 (effectif des résidences et du centre de relation résidents, système d'information).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Processus défini (enchaînement d'activités conduites par plusieurs acteurs, qui transforme une demande en résultat pour un client) ; quatre ruptures du processus actuel relevées, chacune avec son effet tiré de l'annexe 1.4 (pièces par courriel, échange de nuit et ressaisie, bail recopié, paiements rapprochés à la main, état des lieux sur papier et accès activé à la main)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Processus cible représenté par acteur, de façon lisible (tableau ou schéma), avec les applications et les interfaces</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Processus cible cohérent avec le progiciel et ses cinq interfaces : saisie unique à la source, contrôle automatique et traitement des seules exceptions, attribution en temps réel, bail produit et signé dans le parcours, paiement rapproché automatiquement, état des lieux sur tablette, accès activé sans passage à l'accueil</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Effets sur le rôle et les compétences des chargés d'accueil (de la saisie à l'accueil et au traitement des exceptions ; usage du progiciel et de la tablette, accompagnement des résidents, qualité de la donnée) et conditions (formation, accompagnement du changement)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Effets sur l'organisation de la rentrée (arrivées étalées, accueil recentré, centre de relation résidents tourné vers l'assistance, appui renforcé à la première rentrée sur le nouveau progiciel)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.3 a) – Les ruptures du processus actuel et le processus cible</em></p>
+<p>Un <strong>processus</strong> est un enchaînement d'activités, conduites par plusieurs acteurs et soutenues par des applications, qui transforme une demande (ici, une candidature) en un résultat pour un client (un résident logé, avec son bail et ses accès). L'architecture du SI le <strong>rationalise</strong> quand chaque donnée est saisie une seule fois, à la source, et circule ensuite d'une application à l'autre en temps réel (0,5 pt avec les quatre ruptures).</p>
+<p><strong>Aide au correcteur : le processus actuel, par acteur</strong> (non demandé au candidat, qui le trouve décrit dans l'annexe 1.4) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Candidat et garant</th>
+<th>Portail</th>
+<th>Centre de relation résidents</th>
+<th>Chargé d'accueil et responsable de résidence</th>
+<th>Logiciel de gestion locative</th>
+<th>Prestataires de signature et de paiement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Candidature</td>
+<td>remplit la candidature ; imprime le formulaire du garant, le fait signer, envoie pièces et formulaire par courriel</td>
+<td>enregistre la candidature</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>2. Contrôle</td>
+<td>complète après relance</td>
+<td>dossier marqué « complet »</td>
+<td>reçoit jusqu'à 2 000 courriels par jour en juillet, contrôle à la main, relance (un dossier sur deux incomplet) ; six jours</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>3. Attribution</td>
+<td>—</td>
+<td>envoie l'identité des candidats la nuit ; affiche encore le logement comme libre</td>
+<td>—</td>
+<td>le lendemain, ressaisit la candidature et attribue ; le responsable valide</td>
+<td>reçoit le fichier de la nuit</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>4. Bail</td>
+<td>signe en ligne</td>
+<td>—</td>
+<td>—</td>
+<td>prépare le bail dans un traitement de texte en recopiant les données, le dépose chez le prestataire ; trois jours, puis deux jours de signature</td>
+<td>source des données recopiées</td>
+<td>signature électronique</td>
+</tr>
+<tr class="odd">
+<td>5. Dépôt de garantie</td>
+<td>paie en ligne</td>
+<td>—</td>
+<td>envoie le lien de paiement</td>
+<td>rapproche à la main, une fois par semaine</td>
+<td>enregistre le rapprochement</td>
+<td>liste quotidienne des paiements</td>
+</tr>
+<tr class="even">
+<td>6. Arrivée</td>
+<td>attend dans le hall</td>
+<td>—</td>
+<td>—</td>
+<td>état des lieux sur papier (trente minutes), active la clé ou remet un badge ; saisit l'état des lieux jusqu'à trois semaines après</td>
+<td>reçoit l'état des lieux après coup</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>Délai entre la candidature commencée et le bail signé : douze jours.</p>
+<p><strong>Quatre ruptures</strong> (quatre parmi les suivantes ; notées avec la définition, item a-1) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Rupture</th>
+<th>Nature</th>
+<th>Effet (annexes 1.4 et 1.2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pièces et formulaire du garant envoyés par courriel, contrôlés à la main</td>
+<td>rupture de support (papier, courriel) et délai</td>
+<td>six jours pour un dossier complet ; un dossier sur deux incomplet ; jusqu'à 2 000 courriels par jour ; la moitié des 18 000 abandons à cette étape</td>
+</tr>
+<tr class="even">
+<td>Échange de fichiers chaque nuit, puis ressaisie de la candidature</td>
+<td>ressaisie et délai d'un jour ; deux applications non synchronisées</td>
+<td>150 logements promis à deux candidats à l'été 2026 ; la moitié du temps des chargés d'accueil en septembre</td>
+</tr>
+<tr class="odd">
+<td>Bail préparé dans un traitement de texte en recopiant les données</td>
+<td>ressaisie et risque d'erreur</td>
+<td>un bail sur vingt corrigé et signé de nouveau ; trois jours entre l'attribution et l'envoi</td>
+</tr>
+<tr class="even">
+<td>Paiements rapprochés à la main, une fois par semaine</td>
+<td>rupture entre deux systèmes et risque d'erreur</td>
+<td>300 paiements non rapprochés fin septembre 2026 ; risque de remettre les accès sans dépôt payé, ou de relancer à tort</td>
+</tr>
+<tr class="odd">
+<td>État des lieux sur papier, saisi après coup ; clé activée ou badge remis à l'accueil</td>
+<td>ressaisie, délai, goulot à l'arrivée</td>
+<td>jusqu'à trois semaines de retard dans le logiciel ; une heure d'attente (jusqu'à 40 arrivées le premier samedi de septembre dans une résidence de 250 logements)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le processus cible permis par le progiciel et ses interfaces, par acteur</strong> (0,5 pt pour la représentation, 0,5 pt pour la cohérence avec le progiciel et ses interfaces) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Ce qui change</th>
+<th>Acteurs et applications</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Candidature et pièces</td>
+<td>le candidat dépose ses pièces en ligne ; le garant s'engage en ligne, sans impression</td>
+<td>candidat et garant ; portail relié au progiciel ; prestataire de signature</td>
+</tr>
+<tr class="even">
+<td>2. Contrôle</td>
+<td>le progiciel contrôle la complétude à la réception et relance automatiquement ; le centre de relation résidents ne traite que les exceptions (pièce illisible, doute, cas particulier)</td>
+<td>progiciel ; centre de relation résidents</td>
+</tr>
+<tr class="odd">
+<td>3. Attribution</td>
+<td>attribution en temps réel selon des règles paramétrées ; le logement est retiré du portail dès qu'il est attribué ; le responsable de résidence ne valide que les cas hors règles</td>
+<td>progiciel, interface avec le portail</td>
+</tr>
+<tr class="even">
+<td>4. Bail</td>
+<td>bail produit automatiquement à partir du modèle et des données de la candidature, envoyé par l'interface au prestataire de signature, signé en quelques minutes</td>
+<td>progiciel, interface de signature</td>
+</tr>
+<tr class="odd">
+<td>5. Dépôt de garantie</td>
+<td>paiement dans le même parcours ; le paiement revient par l'interface et se rapproche automatiquement du bail</td>
+<td>progiciel, interface de paiement</td>
+</tr>
+<tr class="even">
+<td>6. Arrivée et accès</td>
+<td>le résident choisit son créneau d'arrivée ; l'état des lieux est fait sur tablette, avec photos, et enregistré aussitôt ; la clé virtuelle est activée par l'interface quand le bail est signé, le dépôt payé et l'état des lieux fait (22 résidences) ; le badge est préparé à l'avance ailleurs</td>
+<td>chargé d'accueil ; progiciel ; interface avec la clé virtuelle ; application des résidents</td>
+</tr>
+<tr class="odd">
+<td>7. Suite</td>
+<td>quittancement et transmission au progiciel de gestion intégré par l'interface, sans fichier mensuel</td>
+<td>progiciel, interface avec le progiciel de gestion intégré</td>
+</tr>
+</tbody>
+</table>
+<p>Le bail peut être signé le jour même de la candidature, au lieu de douze jours ; chaque donnée n'est saisie qu'une fois.</p>
+<p><em>1.3 b) – Les effets sur les métiers des résidences</em></p>
+<p><strong>Le rôle et les compétences des chargés d'accueil</strong> (0,5 pt) :</p>
+<ul>
+<li><em>Rôle</em> : ils passent de la saisie (candidatures ressaisies, baux recopiés, paiements rapprochés, états des lieux saisis après coup) à l'<strong>accueil</strong>, à l'<strong>accompagnement</strong> des résidents, notamment de ceux qui arrivent de l'étranger, au <strong>traitement des exceptions</strong> signalées par le progiciel et à la <strong>qualité de l'état des lieux</strong>, désormais fait une seule fois. Les responsables de résidence ne valident plus chaque attribution ; ils pilotent leur résidence à partir du tableau de bord d'occupation et arbitrent les cas particuliers.</li>
+<li><em>Compétences</em> : usage du progiciel et de la tablette (photos, état des lieux numérique, activation des accès en cas d'anomalie) ; traitement des alertes et des exceptions ; aide aux résidents dans le parcours en ligne ; attention à la qualité de la donnée, saisie une seule fois et utilisée par tous.</li>
+<li><em>Conditions</em> : la suppression des tâches de saisie peut être vécue comme une perte de repères ou une menace sur l'emploi ; il faut expliquer le sens du changement, associer des utilisateurs clés dans chaque résidence dès le cahier des charges, former au bon moment (lot 4, y compris les saisonniers) et accompagner les premières semaines.</li>
+</ul>
+<p><strong>L'organisation de la rentrée</strong> (0,5 pt) :</p>
+<ul>
+<li>Les arrivées sont <strong>étalées</strong> par créneaux choisis en ligne : les files d'une heure dans le hall disparaissent ; l'accueil peut se concentrer sur les états des lieux et les résidents qui ont besoin d'aide.</li>
+<li>Le <strong>centre de relation résidents</strong> ne trie plus des milliers de courriels de pièces : il se tourne vers l'assistance aux candidats pendant le parcours (questions, exceptions), sept jours sur sept de juin à octobre.</li>
+<li>La charge de saisie de septembre disparaît : les renforts saisonniers peuvent être consacrés à l'accueil et à la vie de la résidence plutôt qu'au traitement administratif.</li>
+<li>La <strong>première rentrée sur le progiciel</strong>, en 2028, doit être préparée : utilisateurs clés désignés dans chaque résidence, appui renforcé de la direction des systèmes d'information et de l'intégrateur pendant la campagne, consignes écrites pour les cas d'anomalie.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Processus cible représenté en schéma à couloirs (BPMN ou format libre lisible) plutôt qu'en tableau.</li>
+<li>Représentation du processus actuel ajoutée par le candidat : acceptée, sans rapporter de points en elle-même.</li>
+<li>Autres ruptures pertinentes tirées de l'annexe 1.4 (validation de chaque attribution par le responsable de résidence, quittances transmises par fichier mensuel au progiciel de gestion intégré).</li>
+<li>Processus cible qui conserve un contrôle par une personne de chaque dossier, à condition que ce contrôle ne bloque pas la signature (contrôle a posteriori, ou limité aux dossiers signalés).</li>
+<li>Effets sur le métier des agents du centre de relation résidents ou des responsables de résidence développés davantage que ceux des chargés d'accueil, si les trois axes demandés sont traités.</li>
+<li>Évolution des effectifs évoquée avec prudence (redéploiement plutôt que suppression, accueil des nouvelles résidences) : acceptée.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Processus cible décrit en texte continu, sans acteurs ni applications</em> (<code>JUR-T10</code> schémas et tableaux lisibles ; <code>JUR-G07</code> cartographie de processus) — la représentation du processus cible par acteur est demandée.</li>
+<li><em>Processus actuel recopié de l'annexe 1.4 au lieu d'être analysé</em> (<code>JUR-T03</code> analyser et argumenter) — seules les ruptures et leurs effets sont demandés.</li>
+<li><em>Ruptures sans effet ni chiffre</em> (<code>JUR-T08</code> exploiter toutes les annexes) — l'annexe 1.4 donne pour chaque rupture un effet mesurable.</li>
+<li><em>Processus cible qui numérise le papier sans changer l'enchaînement</em> (ET-20 urbanisation réduite à une vision technique) — scanner le formulaire ne supprime ni la ressaisie, ni l'échange de nuit, ni les doubles attributions.</li>
+<li><em>Effets sur les métiers réduits à des suppressions de postes, ou omis</em> (<code>JUR-D03</code> transformation des métiers et compétences) — trois axes sont demandés.</li>
+<li><em>Analyse du contenu du bail ou des pièces exigibles</em> (<code>JUR-T07</code> répondre à la seule question posée) — aucune analyse juridique n'est attendue.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Analyse et rationalisation des processus</td>
+<td>représentation par acteur, ruptures, saisie unique, échanges en temps réel</td>
+<td>F03 § 3 ; F05 § 7 (conduite du changement)</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Service en ligne et interfaces</td>
+<td>progiciel fourni en service, interfaces publiées par l'éditeur</td>
+<td>F03 § 5</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="14--les-contrats-du-projet-et-les-risques-dun-progiciel-en-ligne-3-points">1.4 – Les contrats du projet et les risques d'un progiciel en ligne (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.4 – Gérer les relations contractuelles et opérationnelles avec les ESN : <code>1.4.b</code> « Typologie des contrats de prestation informatique (régie, forfait, infogérance, etc.) : méthodes d'intégration dans la stratégie SI et la gouvernance contractuelle » ; <code>1.4.d</code> « Méthodologie de négociation contractuelle et analyse des risques ». Limite : « L'analyse juridique approfondie relève du droit des contrats informatiques et est exclue du programme de l'UE. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.5 (lots, conditions de l'offre, besoins, calendrier), 1.3 (projets passés), 1.2 (témoignage de la présidente) et 1.1 (parc, saisonnalité des baux).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Quatre types de contrats présentés : abonnement à un service en ligne (usage d'un logiciel standard exploité par l'éditeur, prix récurrent, niveaux de service standard) ; forfait (livrable, prix et délai fixés, risque de dépassement pour le prestataire) ; régie (compétences au temps passé, dirigées par le client, qui porte le risque) ; unités d'œuvre (prix unitaires fixés à l'avance, facturés selon la consommation)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Lot 1 : abonnement, justifié (logiciel standard, prix par logement qui suit le parc) ; lot 2 : forfait sur un cahier des charges validé, justifié (250 jours estimés « sur la base des besoins à ce jour », pas de chef de projet capable de diriger une régie), éventuellement précédé d'une courte phase de spécification</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Lot 3 : audit de la qualité des données puis forfait sur le périmètre arbitré ; lot 4 : unités d'œuvre (sessions ou personnes formées, saisonniers et nouvelles résidences) ; lot 5 : unités d'œuvre (corrections avec délais par gravité, évolutions à prix unitaire), justifiés par des prestations récurrentes dont le volume varie (saisonniers, ouvertures de résidences, trois versions par an)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Dépendance à l'éditeur et réversibilité : causes tirées de l'annexe 1.5 (conditions générales standard, tacite reconduction, intégrateur exclusif, maintenances à toute heure ; format propriétaire, trente jours sans assistance) et traitement dans la négociation (conditions particulières, niveaux de service renforcés pendant la campagne, préavis ; restitution complète dans un format ouvert et documenté, assistance, maintien du service, essai de restitution)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Évolution du service et du prix : causes (trois versions par an, retrait de fonctions avec six mois de préavis, module de séjours courts en 2029, prix révisable sans plafond) et traitement (plafond et paliers de prix, maintien des fonctions utilisées, information et environnement d'essai avant chaque version, engagement sur la date du module)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Dérive du périmètre de l'intégration : causes (estimation sur les besoins actuels, devis pour tout besoin nouveau, besoins contradictoires, calcul spécifique, régie proposée) et traitement (forfait sur périmètre écrit, procédure de gestion des changements arbitrée par le comité de pilotage, enveloppe d'évolutions en unités d'œuvre, paiement aux jalons après recette par ORVANELLE, pénalités liées à la date de mai 2028)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.4 a) – Les types de contrats et le contrat de chaque lot</em></p>
+<p>Les principaux types de contrats de prestation informatique (0,5 pt) :</p>
+<ul>
+<li>l'<strong>abonnement à un service en ligne</strong> : ORVANELLE paie l'usage d'un logiciel standard, hébergé, exploité et mis à jour par l'éditeur pour tous ses clients ; le prix est récurrent, par unité d'usage ; les niveaux de service et les évolutions sont ceux de l'offre ; ORVANELLE ne possède ni le logiciel ni l'infrastructure ;</li>
+<li>le <strong>forfait</strong> : le prestataire réalise un livrable défini, pour un prix et un délai fixés ; il s'engage sur le livrable et porte le risque de dépassement ; il suppose un besoin précisément écrit, sinon il produit des avenants ;</li>
+<li>la <strong>régie</strong> : le prestataire met à disposition des compétences facturées au temps passé ; il s'engage sur les moyens ; le client dirige les travaux et porte le risque de délai et de dépassement ; elle convient à un besoin évolutif, si le client sait piloter ;</li>
+<li>les <strong>unités d'œuvre</strong> : des prestations répétitives et récurrentes (une correction, une session de formation, un jour d'évolution) ont un prix unitaire fixé à l'avance et sont facturées selon la consommation réelle ; elles conviennent quand l'unité est bien définie et que la prestation revient régulièrement, même si son volume varie d'une année à l'autre.</li>
+</ul>
+<p><strong>Le contrat de chaque lot</strong> (0,5 pt pour les lots 1 et 2, 0,5 pt pour les lots 3 à 5) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Lot</th>
+<th>Type de contrat recommandé</th>
+<th>Justification tirée des annexes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Abonnement au progiciel</td>
+<td><strong>abonnement à un service en ligne</strong>, négocié</td>
+<td>progiciel standard, partagé par une trentaine de gestionnaires ; prix de 4 € par logement et par mois, qui suit le parc de 9 000 à 12 000 logements ; mais les conditions standard (annexe 1.5 C) doivent être complétées par des conditions particulières (b)</td>
+</tr>
+<tr class="even">
+<td>2. Paramétrage et intégration</td>
+<td><strong>forfait</strong>, sur un cahier des charges validé ; éventuellement précédé d'une courte phase de spécification des interfaces, elle-même au forfait ou en régie plafonnée</td>
+<td>250 jours estimés « sur la base des besoins exprimés à ce jour » ; une régie dès maintenant laisserait tout le risque de dépassement à ORVANELLE, qui n'a ni chef de projet à temps plein ni pratique du pilotage (niveau 1 de CMMI, question 1.2), comme pour le portail de 2018 ; le forfait fait porter le risque à l'intégrateur et oblige à écrire le besoin</td>
+</tr>
+<tr class="odd">
+<td>3. Reprise des données</td>
+<td><strong>en deux temps</strong> : audit de la qualité des données (forfait court), puis <strong>forfait</strong> de reprise sur le périmètre arbitré (question 1.5), avec reprises à blanc</td>
+<td>qualité jamais mesurée, données antérieures à 2016 sans identifiant ; un forfait sur 100 000 baux de qualité inconnue serait surévalué ou source d'avenants ; une régie serait sans limite</td>
+</tr>
+<tr class="even">
+<td>4. Formation</td>
+<td><strong>unités d'œuvre</strong> (prix par session ou par personne formée), pour la vague initiale et les années suivantes</td>
+<td>environ 260 utilisateurs en 2028, puis une quarantaine de saisonniers chaque été et les équipes des résidences ouvertes d'ici 2030 : la prestation est récurrente et bien définie, son volume varie</td>
+</tr>
+<tr class="odd">
+<td>5. Maintenance des interfaces</td>
+<td><strong>unités d'œuvre</strong> : corrections facturées par demande avec un délai de correction selon la gravité ; évolutions au prix unitaire du jour ou de l'unité d'évolution, dans une enveloppe annuelle</td>
+<td>des corrections et des évolutions qui reviennent à chaque version (trois par an), mais dont le nombre varie ; une régie ne donnerait aucun engagement de délai, un forfait global serait surévalué</td>
+</tr>
+</tbody>
+</table>
+<p><em>1.4 b) – Quatre risques contractuels d'un progiciel en ligne et leur traitement dans la négociation</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Risque</th>
+<th>Ce que révèle l'annexe 1.5</th>
+<th>Traitement dans la négociation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Dépendance à l'éditeur</strong> (0,5 pt avec la réversibilité)</td>
+<td>tout le parcours et toutes les données de l'entreprise reposent sur un seul service ; conditions générales standard, « identiques pour tous » ; contrat de trois ans reconduit tacitement ; intégrateur partenaire exclusif de l'éditeur, qui réalise 60 % de son activité avec lui ; disponibilité de 99,5 % hors maintenances programmées « à toute heure », alors que 70 % des baux se signent entre juin et septembre</td>
+<td>ORVANELLE gère 9 000 logements, puis 12 000 : elle a le poids d'obtenir des <strong>conditions particulières</strong> qui priment sur les conditions générales ; <strong>niveaux de service renforcés pendant la campagne de rentrée</strong>, mesurés et assortis de pénalités ; <strong>maintenances programmées hors des heures et des mois de pointe</strong> ; préavis de non-reconduction suffisant pour changer de solution ; possibilité de recourir à un autre intégrateur et transfert de compétences vers la direction des systèmes d'information</td>
+</tr>
+<tr class="even">
+<td><strong>Réversibilité et format de restitution</strong></td>
+<td>restitution en fin de contrat dans un délai de trente jours, « dans un format propriétaire », sans assistance : ORVANELLE ne pourrait ni changer d'éditeur ni réutiliser son historique</td>
+<td>données reconnues comme celles d'ORVANELLE ; <strong>restitution complète</strong> (historique, documents, paramétrage) <strong>dans un format ouvert et documenté</strong>, à la fin du contrat et sur demande en cours de contrat ; <strong>plan de réversibilité</strong> écrit : assistance de l'éditeur à prix convenu d'avance, maintien du service pendant la transition, <strong>essai de restitution</strong> chaque année</td>
+</tr>
+<tr class="odd">
+<td><strong>Évolution du service et du prix décidée par l'éditeur</strong> (0,5 pt)</td>
+<td>trois versions par an décidées pour tous les clients ; une fonction peu utilisée peut être retirée avec six mois de préavis ; module de séjours courts annoncé pour 2029, sans engagement ; prix révisable chaque année selon la grille de l'éditeur, sans plafond</td>
+<td><strong>plafond de révision</strong> annuelle et <strong>prix par palier</strong> quand le parc passe de 9 000 à 12 000 logements ; <strong>maintien des fonctions utilisées</strong> par ORVANELLE (états des lieux, interfaces publiées) ou préavis plus long ; <strong>information préalable et environnement d'essai</strong> avant chaque version, pour vérifier les interfaces ; feuille de route communiquée et <strong>engagement daté</strong> sur le module de séjours courts, ou condition de prix s'il est reporté</td>
+</tr>
+<tr class="even">
+<td><strong>Dérive du périmètre de l'intégration</strong> (0,5 pt)</td>
+<td>250 jours estimés sur les besoins « à ce jour » ; « tout besoin nouveau fera l'objet d'un devis » ; huit besoins dont certains se contredisent ; calcul spécifique des charges que l'intégrateur propose de développer à côté ; facturation au temps passé proposée « dès maintenant »</td>
+<td><strong>forfait sur un périmètre écrit</strong> (inclus et exclus) issu du cahier des charges arbitré (question 1.5) ; <strong>procédure de gestion des changements</strong> : toute demande est chiffrée par l'intégrateur et arbitrée par le comité de pilotage d'ORVANELLE, jamais acceptée directement par une direction ; <strong>enveloppe d'évolutions</strong> en unités d'œuvre à prix fixé d'avance ; <strong>paiement aux jalons</strong> après recette par ORVANELLE ; pénalités de retard liées à la mise en service de mai 2028</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Lot 2 en régie pour la seule phase d'ateliers et de spécification, puis au forfait : accepté s'il est justifié par l'instabilité actuelle des besoins.</li>
+<li>Lot 4 au forfait pour la vague initiale de 2028, puis en unités d'œuvre : accepté.</li>
+<li>Lot 5 sous la forme d'un contrat de tierce maintenance applicative avec niveaux de service : accepté, s'il est relié au caractère récurrent des corrections et aux versions de l'éditeur.</li>
+<li>Autres risques pertinents tirés de l'annexe 1.5 (hébergement hors de France : vérifier qu'il reste dans l'Union européenne et que l'éditeur agit en sous-traitant, avec un accord écrit ; défaillance ou rachat de l'éditeur), en plus des quatre demandés.</li>
+<li>Mention de l'accord de sous-traitance prévu par le RGPD (annexe 1.6), en principe : valorisée.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Régie et forfait inversés, ou abonnement confondu avec une licence achetée</em> (ET-31 régie, forfait et infogérance confondus ; ET-30 SaaS et on premise confondus) — en régie, c'est le client qui dirige et porte le risque.</li>
+<li><em>Un seul type de contrat pour tout le projet</em> (<code>JUR-T03</code> analyser et argumenter) — chaque lot appelle un choix justifié par sa nature et par ce que l'on sait de son volume.</li>
+<li><em>Conditions générales acceptées parce qu'elles seraient non négociables</em> (<code>JUR-G11</code> forces et faiblesses du SaaS ; <code>JUR-A05</code> contractualisation des services externalisés) — la taille d'ORVANELLE permet d'obtenir des conditions particulières.</li>
+<li><em>Risques énumérés sans traitement</em> (<code>JUR-T03</code>) — chaque risque appelle une proposition de négociation.</li>
+<li><em>Analyse juridique des clauses</em> (<code>JUR-T07</code> répondre à la seule question posée ; limite du programme 1.4) — non attendue.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des contrats de prestation informatique</td>
+<td>abonnement à un service en ligne, forfait, régie, unités d'œuvre</td>
+<td>F04 § 1 ; <code>erreurs_types.md</code> ET-30, ET-31</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Clauses critiques et risques de la relation</td>
+<td>niveaux de service, réversibilité, évolution des prix, dépendance</td>
+<td>F04 § 4 et § 6</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>RGPD (règlement (UE) 2016/679)</td>
+<td>éditeur sous-traitant, accord écrit (réponse tolérée, en principe)</td>
+<td><code>rgpd</code> ; F15 § 5</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="15--le-cahier-des-charges-et-les-risques-du-projet-3-points">1.5 – Le cahier des charges et les risques du projet (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.5 – Planifier, organiser et conduire des projets de SI : <code>1.5.c</code> « Élaboration d'un cahier des charges fonctionnel et technique » ; <code>1.5.e</code> « Identification et gestion des risques (maintenance, évolutivité, sécurité) » ; <code>1.5.a</code> « Piloter un projet de système d'information, depuis la rédaction du cahier des charges jusqu'à l'analyse des risques et du plan qualité, dans une logique de performance durable ». Limite : « L'aspect budgétaire détaillé ne relève pas du programme de l'UE. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.5 (option, lots, conditions, besoins, calendrier), 1.4 (parcours actuel), 1.3 (projets passés), 1.6 (RGPD) et 1.1 (parc, saisonnalité, effectif de la direction des systèmes d'information).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Structure du cahier des charges fonctionnel (contexte et objectifs reliés au plan, périmètre, acteurs, processus cibles, exigences priorisées, règles de gestion, volumétrie et pic) et technique (interfaces, sécurité et données personnelles, disponibilité, réversibilité, reprise, exploitation), contraintes, organisation et modalités de réponse, appliquée au projet</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Méthode nommée (MoSCoW) et classement des huit besoins, chacun justifié par un objectif du plan ou une contrainte de l'annexe 1.5</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Arbitrages motivés entre les besoins qui se contredisent : signature en dix minutes et contrôle à la main ; paiement en trois fois et accès après paiement complet ; dix-huit ans d'historique et calendrier ; calcul spécifique et progiciel standard</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Démarche de gestion des risques présentée (identifier, coter la probabilité et l'impact, traiter : éviter, réduire, transférer, accepter ; suivre dans un registre revu en comité) ; risque de maintenance complet (cause, cotation, réponse, responsable)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Risque d'évolutivité et risque de sécurité complets</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Quatrième risque complet ; cotations cohérentes avec les annexes ; responsables désignés ; risques distincts des risques contractuels de la question 1.4</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.5 a) – La structure du cahier des charges et la priorisation des besoins</em></p>
+<p>Le <strong>cahier des charges</strong> est le document, rédigé par ORVANELLE en tant que maître d'ouvrage avec les utilisateurs et validé par le sponsor, qui exprime le besoin à satisfaire et les contraintes à respecter ; il sert de base à la consultation, au contrat au forfait (question 1.4) et à la recette. Sa structure, appliquée au projet (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Partie</th>
+<th>Contenu pour le projet de remplacement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Contexte et objectifs</strong></td>
+<td>fin de maintenance de l'ancien logiciel en décembre 2028 ; objectifs reliés à « ORVANELLE 2030 » et mesurables (bail signé le jour de la candidature, aucune ressaisie, parc de 12 000 logements)</td>
+</tr>
+<tr class="even">
+<td><strong>Périmètre</strong></td>
+<td>processus couverts, de la candidature à la remise des accès et au quittancement ; ce qui est exclu (séjours courts jusqu'en 2029, calcul spécifique des charges) ; cinq lots</td>
+</tr>
+<tr class="odd">
+<td><strong>Acteurs et processus cibles</strong></td>
+<td>candidats, garants, centre de relation résidents, résidences, directions ; processus cible de la question 1.3</td>
+</tr>
+<tr class="even">
+<td><strong>Exigences fonctionnelles priorisées et règles de gestion</strong></td>
+<td>huit besoins classés (ci-dessous) ; règles d'attribution des logements et de remise des accès</td>
+</tr>
+<tr class="odd">
+<td><strong>Volumétrie et pointe</strong></td>
+<td>9 000 puis 12 000 logements ; environ 7 000 baux par an, dont 70 % entre juin et septembre ; 30 000 candidatures commencées en 2026</td>
+</tr>
+<tr class="even">
+<td><strong>Exigences techniques</strong></td>
+<td>cinq interfaces (portail, signature, paiement, clé virtuelle, progiciel de gestion intégré) sur les interfaces publiées par l'éditeur ; sécurité et données personnelles (hébergement dans l'Union européenne, éditeur sous-traitant, accès de l'intégrateur) ; disponibilité pendant la campagne et maintenances hors pointe ; réversibilité dans un format ouvert ; reprise des données ; exploitation et maintenance</td>
+</tr>
+<tr class="odd">
+<td><strong>Contraintes et organisation</strong></td>
+<td>calendrier (contrats en juin 2027, mise en service en mai 2028) ; disponibilité des utilisateurs clés hors campagne ; instances du projet ; formation</td>
+</tr>
+<tr class="even">
+<td><strong>Modalités de réponse</strong></td>
+<td>cadre de réponse et critères d'évaluation des offres, pour les éléments encore à consulter (intégration, reprise, formation, maintenance)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Classement des huit besoins par la méthode MoSCoW</strong> (<em>Must have</em>, <em>Should have</em>, <em>Could have</em>, <em>Won't have this time</em>) (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>N°</th>
+<th>Besoin</th>
+<th>Classe</th>
+<th>Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Signature du bail en moins de dix minutes</td>
+<td><strong>Must</strong></td>
+<td>cœur du parcours entièrement en ligne ; la moitié des abandons a lieu à l'étape du formulaire papier du garant, que le parcours de signature en ligne supprime ; concurrents « en quelques minutes »</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Interface avec la clé virtuelle</td>
+<td><strong>Must</strong></td>
+<td>« remise des accès » de l'objectif ; supprime l'activation à l'accueil dans les 22 résidences équipées</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Reprise des données</td>
+<td><strong>Must</strong> pour les données vivantes (logements, résidents en place, baux en cours, dépôts de garantie à restituer, historique récent) ; <strong>Won't</strong> pour la reprise complète de dix-huit ans</td>
+<td>sans les données vivantes, pas de mise en service ; la reprise complète ajoute quatre mois et porte sur des données antérieures à 2016 incomplètes</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>États des lieux sur tablette, avec photos</td>
+<td><strong>Should</strong></td>
+<td>fonction standard, supprime une ressaisie et sert le parcours en ligne ; peut être déployé résidence par résidence si les tablettes ne sont pas prêtes en mai 2028</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Tableau de bord d'occupation en temps réel</td>
+<td><strong>Should</strong></td>
+<td>fonction standard, sert l'objectif de 95 % ; peu de risque</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Paiement du dépôt de garantie en trois fois</td>
+<td><strong>Could</strong></td>
+<td>attractivité pour les étudiants venus de l'étranger, option du prestataire de paiement ; contredit la règle de la direction financière</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Module de séjours courts d'été</td>
+<td><strong>Won't</strong> (pour la mise en service de 2028)</td>
+<td>annoncé par l'éditeur pour 2029 ; les séjours de l'été 2028 restent suivis comme aujourd'hui</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Calcul spécifique des charges par propriétaire</td>
+<td><strong>Won't</strong></td>
+<td>le progiciel n'accepte aucun développement spécifique ; un calcul « à côté », à adapter trois fois par an, créerait une maintenance et un risque permanents</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Arbitrages entre besoins contradictoires</strong> (0,5 pt) :</p>
+<ul>
+<li><em>Signature en dix minutes (1) contre contrôle à la main de chaque dossier par le centre de relation résidents</em> : le contrôle de complétude devient automatique ; le centre de relation résidents ne contrôle plus que les dossiers signalés par le progiciel. Le contrôle humain systématique est incompatible avec l'objectif et explique aujourd'hui six jours de délai.</li>
+<li><em>Paiement en trois fois (4) contre accès remis après paiement complet (direction financière)</em> : la règle de remise des accès relève d'une décision du directoire, pas du projet ; le besoin est classé Could et peut être ajouté après la mise en service, par exemple avec des accès remis dès la première échéance si le directoire l'accepte.</li>
+<li><em>Dix-huit ans d'historique (5) contre calendrier</em> : quatre mois de plus repousseraient la mise en service après mai 2028, en pleine campagne, alors que l'ancien logiciel s'arrête en décembre 2028. Arbitrage : reprise des données vivantes et de l'historique récent ; données anciennes conservées dans une extraction consultable, hors du progiciel.</li>
+<li><em>Calcul spécifique (8) contre progiciel standard</em> : il contredit le choix même d'un progiciel en ligne et l'évolutivité du socle. Arbitrage : paramétrer les règles standard du progiciel, harmoniser les règles de charges avec les propriétaires, à commencer par les nouvelles résidences, et garder provisoirement les cas particuliers hors du progiciel ; décision au directoire, avec M. LORMIÈRE.</li>
+</ul>
+<p><em>1.5 b) – La démarche de gestion des risques et le registre des risques du projet</em></p>
+<p>La <strong>gestion des risques d'un projet</strong> consiste à <strong>identifier</strong> les événements incertains qui menaceraient ses objectifs (délai, qualité, coût, sécurité), à les <strong>coter</strong> (probabilité × impact, ici de 1 à 4), à décider d'une <strong>réponse</strong> (éviter, réduire, transférer, accepter) confiée à un <strong>responsable</strong>, puis à les <strong>suivre</strong> dans un registre revu à chaque comité de pilotage (0,5 pt avec le premier risque). Les risques ci-dessous sont ceux de la conduite et du résultat du projet ; les risques contractuels de la question 1.4 n'y sont pas repris.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Risque</th>
+<th>Cause tirée des annexes</th>
+<th>P</th>
+<th>I</th>
+<th>Réponse</th>
+<th>Responsable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Maintenance</strong> : après le départ de l'intégrateur, ORVANELLE ne sait pas faire vivre le paramétrage et les cinq interfaces (0,5 pt avec la démarche)</td>
+<td>seize personnes, dont 70 % du temps sur l'existant ; aucun chef de projet ; savoir concentré chez l'intégrateur ; trois versions du progiciel par an</td>
+<td>3</td>
+<td>3</td>
+<td><strong>réduire</strong> : transfert de compétences prévu dans le lot 2 (documentation du paramétrage et des interfaces, travail en binôme), deux administrateurs du progiciel désignés à la direction des systèmes d'information, maintenance des interfaces en unités d'œuvre (lot 5) ; temps libéré par l'arrêt de l'ancien logiciel</td>
+<td>Mme VARQUIGNY, directrice des systèmes d'information</td>
+</tr>
+<tr class="even">
+<td><strong>Évolutivité</strong> : le socle paramétré pour 60 résidences ne suit pas le passage à 12 000 logements dans vingt villes, ni le pic de la rentrée (0,5 pt avec le risque de sécurité)</td>
+<td>parc porté de 9 000 à 12 000 logements ; 70 % des baux entre juin et septembre ; règles propres à chaque propriétaire ; tentation des développements spécifiques, à reprendre à chaque version</td>
+<td>3</td>
+<td>4</td>
+<td><strong>éviter</strong> les spécifiques (besoin 8 en Won't) ; <strong>réduire</strong> : paramétrage par modèle de résidence réutilisable pour chaque ouverture ; exigences de volumétrie et de pointe écrites dans le cahier des charges ; références de clients de taille comparable demandées à l'éditeur ; interfaces bâties sur les interfaces publiées par l'éditeur</td>
+<td>chef de projet, avec la direction des systèmes d'information</td>
+</tr>
+<tr class="odd">
+<td><strong>Sécurité</strong> : fuite ou altération des données des résidents pendant le projet</td>
+<td>reprise d'environ 100 000 baux et des données des résidents, extraites et transférées entre ORVANELLE, l'intégrateur et l'éditeur ; essais faits sur des données réelles ; accès larges de l'intégrateur ; habitude des envois par courriel (annexe 1.4)</td>
+<td>2</td>
+<td>4</td>
+<td><strong>réduire</strong> : transferts par un espace sécurisé et chiffré, jamais par courriel ; données fictives ou anonymisées pour les essais ; accès nominatifs et temporaires de l'intégrateur, retirés à la mise en service ; reprise limitée au périmètre arbitré ; extractions supprimées après contrôle ; accord écrit de sous-traitance avec l'éditeur et l'intégrateur</td>
+<td>Mme VARQUIGNY, directrice des systèmes d'information</td>
+</tr>
+<tr class="even">
+<td><strong>Calendrier et reprise des données</strong> : mise en service repoussée après mai 2028, en pleine campagne de rentrée (0,5 pt avec la cohérence d'ensemble)</td>
+<td>qualité des données jamais mesurée, données antérieures à 2016 sans identifiant ; utilisateurs clés peu disponibles pendant la campagne de 2027 (centre de relation résidents ouvert sept jours sur sept de juin à octobre) ; dérapages des projets passés (huit mois de retard pour le portail)</td>
+<td>3</td>
+<td>4</td>
+<td><strong>réduire</strong> : audit de la qualité des données dès l'été 2027, deux reprises à blanc, ateliers avec les utilisateurs clés placés hors de la campagne ; date de décision de mise en service fixée en mars 2028 ; <strong>plan de repli</strong> : campagne de 2028 sur l'ancien logiciel, maintenu jusqu'en décembre 2028, et bascule à l'automne</td>
+<td>chef de projet ; décision par le comité de pilotage, présidé par le (la) membre du directoire chargé(e) des opérations</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autre méthode de priorisation nommée et appliquée (classement par la valeur et l'effort, priorités 1 à 3), si les huit besoins sont classés et les arbitrages justifiés.</li>
+<li>États des lieux sur tablette (2) classés Must, au titre du parcours entièrement en ligne ; tableau de bord (3) classé Could ; reprise de l'historique sur une autre profondeur que celle proposée, si l'arbitrage avec le calendrier est explicite.</li>
+<li>Quatrième risque différent, s'il est tiré des annexes et complet : résistance au changement des chargés d'accueil, indisponibilité des utilisateurs clés, départ du chef de projet, interfaces avec le portail de 2018 plus difficiles que prévu.</li>
+<li>Autres échelles de cotation, ou criticité calculée (P × I), si elles sont cohérentes ; réponses par transfert (assurance, engagement d'un prestataire) acceptées si elles sont justifiées.</li>
+<li>Structure du cahier des charges présentée en deux documents (fonctionnel, technique).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Tous les besoins classés Must, ou classement sans justification</em> (<code>JUR-T03</code> analyser et argumenter) — la méthode sert à arbitrer ; les contradictions de l'annexe 1.5 D doivent être tranchées.</li>
+<li><em>Cahier des charges réduit à une liste de fonctions</em> (F05 § 3) — il comprend contexte, objectifs, périmètre, volumétrie, exigences techniques et contraintes.</li>
+<li><em>Risques contractuels de la question 1.4 repris dans le registre</em> (<code>JUR-T07</code> répondre à la seule question posée) — dépendance, réversibilité, évolution des prix et dérive du périmètre relèvent du contrat.</li>
+<li><em>Risques sans cotation, sans réponse ou sans responsable</em> (<code>JUR-P02</code> facteurs clés de succès et risques dans le contexte) — chaque risque porte les éléments demandés.</li>
+<li><em>Planning ou chiffrage du projet construits</em> (<code>JUR-T07</code> ; limite du programme 1.5) — non demandés.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cahier des charges fonctionnel et technique</td>
+<td>structure, exigences priorisées, contraintes</td>
+<td>F05 § 3</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Méthode MoSCoW</td>
+<td><em>Must, Should, Could, Won't</em></td>
+<td>F05 § 2.2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Gestion des risques d'un projet</td>
+<td>identification, cotation, réponses, registre ; maintenance, évolutivité, sécurité</td>
+<td>F05 § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>RGPD (règlement (UE) 2016/679)</td>
+<td>accord de sous-traitance avec l'éditeur et l'intégrateur (en principe)</td>
+<td><code>rgpd</code> ; F15 § 5</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Organiser et exploiter les données des séjours, éclairer deux projets : ORVANELLE Résidences : entrepôt des séjours et schéma en étoile, analyse de l'occupation et des demandes d'intervention, retour sur investissement du projet de données, certification des attestations de logement par chaîne de blocs</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Organiser et exploiter les données des séjours, éclairer deux projets</h1><p class="cas">ORVANELLE Résidences : entrepôt des séjours et schéma en étoile, analyse de l'occupation et des demandes d'intervention, retour sur investissement du projet de données, certification des attestations de logement par chaîne de blocs</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F06 connaissances et dématérialisation (cachet électronique), F07 données, modélisation et gouvernance, F08 décisionnel et visualisation, F09 performance du SI, F11 chaîne de blocs et crypto-actifs, F13 intelligence artificielle, F15 RGPD opérationnel, glossaire, et la base des référentiels datés (vérifiés les 25 et 26/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 L'entrepôt des séjours</td>
+<td><code>2.1.c</code> Architectures orientées données (datawarehouse, datalake, etc.) ; <code>2.1.b</code> Modélisation des données (modèles conceptuels, logiques et physiques) ; <code>2.1.a</code> Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes</td>
+<td>3,5</td>
+</tr>
+<tr class="even">
+<td>2.2 L'analyse de l'occupation et des demandes d'intervention</td>
+<td><code>2.2.b</code> Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution ; <code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés ; <code>2.2.c</code> Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model ; <code>2.2.a</code> Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>2.3 Le retour sur investissement du projet d'entrepôt</td>
+<td><code>3.1.c</code> Analyse des coûts directs et indirects : TCO, coûts cachés, ROI des projets SI ; <code>3.1.a</code> Mettre en œuvre des dispositifs de pilotage de la performance SI, en intégrant une analyse fine des coûts, des indicateurs et des leviers d'optimisation via des tableaux de bord</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>2.4 Les attestations de logement et la chaîne de blocs</td>
+<td><code>3.3.b</code> Fonctionnement des technologies de registres distribués (DLT) ; <code>3.3.c</code> Typologie des applications : traçabilité, certification, finance décentralisée, NFT ; <code>3.3.a</code> Évaluer les opportunités, les risques et le cadre réglementaire associés à la mise en œuvre de solutions fondées sur la blockchain et les cryptoactifs dans les organisations ; <code>3.3.d</code> Cadres réglementaires émergents : règlement MiCA (Markets in Crypto-Assets), NEP, normes ISO</td>
+<td>2,5</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 2 – Organiser et exploiter les données des séjours, éclairer deux projets</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (entrepôt de données, table des faits, dimensions et granularité, règles de passage, chaîne de traitement, analyses descriptive et exploratoire, retour sur investissement, indicateur à cinq champs, chaîne de blocs publique et empreinte, typologie des applications, objet de MiCA) environ 2,5 points (la moitié des items 2.1 a-1, 2.1 b-1, 2.1 b-4, 2.2 a-1, 2.2 c-2, 2.3 a-1, 2.3 c-1, 2.4 a-1, 2.4 a-2 et 2.4 c-1, qui mêlent définition et application) ; analyse des annexes et recommandations environ 10,5 points, soit environ 81 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 59 minutes.</p>
+<hr />
+<h3 id="21--lentrepôt-des-séjours-35-points">2.1 – L'entrepôt des séjours (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.c</code> « Architectures orientées données (datawarehouse, datalake, etc.) » ; <code>2.1.b</code> « Modélisation des données (modèles conceptuels, logiques et physiques) », dont le schéma en étoile d'un entrepôt (faits, dimensions) fait à la main à partir de règles de gestion écrites ; <code>2.1.a</code> « Structurer et organiser les données […] afin d'en garantir la cohérence, la qualité […] ». Aucune requête ; modèle physique seulement nommé.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.1 (situation actuelle, questions du directoire, règles de gestion de l'entrepôt) ; annexe 1.1 (logiciel de gestion locative, portail, logiciel de suivi des demandes d'intervention, parc).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Entrepôt de données défini (orienté sujet, intégré, historisé, non volatile, structuré pour l'analyse) ; première raison appliquée à l'annexe 2.1</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deuxième raison, tirée de l'annexe 2.1</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Troisième raison ; conclusion : une seule version des chiffres, à condition d'écrire les règles de calcul, sans données nominatives (RG8)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Table des faits et granularité justifiée par RG6 (un logement, un mois, un profil de séjour, un canal de réservation) ; faits et dimensions distingués</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Quatre dimensions et leurs attributs, dont la dimension temps ; résidence et ville dénormalisées dans la dimension Logement (étoile)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Quatre mesures additives (RG7), dont les jours-places ; taux d'occupation calculé à la restitution, non stocké ; profil « aucun séjour » pour la vacance</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-4</td>
+<td>Modèle logique de cinq tables, avec la clé composée des quatre clés étrangères de la table des faits, déduit par les règles de passage énoncées</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.1 a) – L'entrepôt de données et les extractions mensuelles</em></p>
+<p><strong>Définition</strong> (0,5 pt avec la première raison) : un <strong>entrepôt de données</strong> est une base <strong>orientée sujet</strong> (ici, les séjours et l'occupation), <strong>intégrée</strong> (les données de plusieurs applications y sont rapprochées selon des identifiants et des définitions communes), <strong>historisée</strong> et <strong>non volatile</strong> (les données chargées ne sont ni écrasées ni modifiées, l'historique s'accumule), structurée pour l'analyse, en général selon un schéma en étoile (faits et dimensions). Il est alimenté par des chargements réguliers depuis les applications de gestion, qu'il ne remplace pas (F07 § 1 et 6).</p>
+<p>Trois raisons parmi les suivantes (0,5 pt par raison, la troisième avec la conclusion) :</p>
+<ol type="1">
+<li><strong>L'intégration des trois sources.</strong> Aujourd'hui, deux personnes rapprochent à la main, chaque mois, le logiciel de gestion locative, le portail et le logiciel des demandes d'intervention, par l'adresse, faute de numéro de logement commun : huit jours-personne par mois, avec des risques d'erreur. L'entrepôt est chargé chaque nuit et rapproche les données par un <strong>numéro unique de logement</strong>, commun à toutes les applications (RG1).</li>
+<li><strong>L'historisation.</strong> Chaque extraction remplace la précédente, et l'historique n'existe que dans des tableurs aux colonnes changeantes : comparer 2025 et 2026, ou un été à l'autre, suppose de retraiter les fichiers. L'entrepôt conserve chaque mois, avec la dimension temps, ce qui permet de suivre l'occupation par mois, par saison et par année universitaire.</li>
+<li><strong>Des définitions communes, donc un seul chiffre.</strong> Le taux d'occupation de 2026 vaut 93 %, 91 % ou 95 % selon la direction, parce que chacune applique ses propres règles, écrites nulle part. L'entrepôt calcule les indicateurs selon des règles écrites et partagées (RG6 et RG7, documentées dans le dictionnaire des données) : une seule version des chiffres pour le directoire.</li>
+<li><strong>Des axes d'analyse croisés.</strong> Les questions du directoire croisent la résidence, la ville, le type de logement, le mois, le profil de séjour, l'origine du résident et le canal : le schéma en étoile en fait des dimensions, sur lesquelles on agrège et on fore (de la ville à la résidence, puis au logement) sans retraitement.</li>
+<li><strong>Une diffusion possible sans risque pour les résidents.</strong> L'entrepôt ne contient ni donnée nominative ni donnée sensible (RG8) : il peut être ouvert aux directions et aux responsables de résidence, ce que ne permettent pas des extractions brutes du logiciel de gestion locative.</li>
+</ol>
+<p><strong>Conclusion</strong> : l'entrepôt ne vaut que par ses règles. Le gain tient moins à l'outil qu'à la décision de fixer un identifiant commun, des définitions écrites et un propriétaire de chaque indicateur ; c'est aussi la condition pour suivre l'objectif de 95 % d'« ORVANELLE 2030 » avec un chiffre incontesté.</p>
+<p><em>2.1 b) – Le schéma en étoile de l'entrepôt des séjours</em></p>
+<p><strong>La table des faits et sa granularité</strong> (0,5 pt) : la <strong>table des faits</strong> enregistre les mesures d'un événement ou d'une situation, au <strong>grain</strong> choisi ; les <strong>dimensions</strong> sont les axes d'analyse, avec leurs attributs descriptifs (F07 § 6.1). Ici, la table des faits <strong>Occupation_mensuelle</strong> a pour grain : <strong>un logement, un mois, un profil de séjour et un canal de réservation</strong> (RG6). Un grain « logement × mois » ne suffirait pas : une colocation dont les chambres sont louées à des résidents de profils différents, ou un logement qui passe en juillet de l'année universitaire à un séjour court d'été, demandent une ligne par profil et par canal. Un grain plus fin (le jour, le séjour) n'est pas nécessaire aux questions du directoire.</p>
+<p><strong>Les quatre dimensions</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>Logement</strong> (num_logement, type_logement, nb_places, code_residence, nom_residence, date_ouverture_residence, ville) : la hiérarchie logement → résidence → ville (RG1 et RG2) est <strong>dénormalisée</strong> dans la dimension, ce qui fait un schéma en <strong>étoile</strong> et permet de forer de la ville au logement ;</li>
+<li><strong>Mois</strong> (code_mois, annee, numero_mois, saison, annee_universitaire) : la dimension temps, avec la saison (été ou année universitaire) et l'année universitaire, qui ne coïncide pas avec l'année civile (RG3) ;</li>
+<li><strong>Profil_sejour</strong> (code_profil, type_sejour, origine_resident) : le type de séjour (année universitaire, séjour court d'été, aucun séjour) et l'origine du résident (RG4) ; c'est la seule trace du résident, conformément à RG8 ;</li>
+<li><strong>Canal_reservation</strong> (code_canal, libelle_canal) (RG5).</li>
+</ul>
+<p><strong>Les mesures</strong> (0,5 pt), toutes <strong>additives</strong> selon chaque dimension : jours_places_ouverts, jours_places_occupes, redevance_facturee, nb_demandes_intervention (RG7). Les jours où un logement pouvait être loué mais est resté libre forment une ligne du profil « aucun séjour », avec des jours-places ouverts et aucun jour-place occupé ; un logement en travaux ou dans une résidence pas encore ouverte n'a pas de jours-places ouverts. Les indicateurs sont calculés à la restitution, par somme puis rapport, à n'importe quel niveau :</p>
+<ul>
+<li>taux d'occupation = somme des jours-places occupés / somme des jours-places ouverts ; taux de vacance = 1 − taux d'occupation ;</li>
+<li>part des séjours courts dans l'été = jours-places occupés par le profil « séjour court d'été » en saison « été » / jours-places occupés en été ;</li>
+<li>part du portail = jours-places occupés par des séjours réservés sur le portail / jours-places occupés ;</li>
+<li>demandes d'intervention par logement, par résidence ou par type.</li>
+</ul>
+<p>Un taux ne se stocke pas dans la table des faits : il ne s'additionne pas.</p>
+<p><strong>Le modèle logique</strong> (0,5 pt), obtenu par les règles de passage :</p>
+<ol type="1">
+<li>chaque dimension devient une table, dont l'identifiant devient la clé primaire ;</li>
+<li>la table des faits traduit une association entre les quatre dimensions dont toutes les cardinalités maximales valent n : elle devient une table dont la clé primaire est composée des identifiants des quatre dimensions, chacun étant aussi clé étrangère, et qui porte les mesures.</li>
+</ol>
+<ul>
+<li>Logement (<u>num_logement</u>, type_logement, nb_places, code_residence, nom_residence, date_ouverture_residence, ville)</li>
+<li>Mois (<u>code_mois</u>, annee, numero_mois, saison, annee_universitaire)</li>
+<li>Profil_sejour (<u>code_profil</u>, type_sejour, origine_resident)</li>
+<li>Canal_reservation (<u>code_canal</u>, libelle_canal)</li>
+<li>Occupation_mensuelle (<u>#num_logement, #code_mois, #code_profil, #code_canal</u>, jours_places_ouverts, jours_places_occupes, redevance_facturee, nb_demandes_intervention)</li>
+</ul>
+<p>Exemple de lecture : une colocation de trois chambres de Rennes, en octobre 2026, dont deux chambres sont louées pour l'année universitaire à des résidents venus de l'étranger, réservées sur le portail, et la troisième reste libre, donne deux lignes : (profil « année universitaire, étranger », canal « portail », 62 jours-places ouverts, 62 occupés) et (profil « aucun séjour », canal « sans objet », 31 ouverts, 0 occupé). Son taux d'occupation d'octobre est de deux tiers, et non de zéro comme dans le tableau actuel.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Schéma en flocon (tables Résidence et Ville, ou Type de logement, reliées à la dimension Logement), s'il est justifié (moins de redondance, plus de jointures) et si les faits restent reliés au logement.</li>
+<li>Cinquième dimension (Résidence ou Type de logement) reliée directement à la table des faits, si la redondance avec la dimension Logement est signalée.</li>
+<li>Grain « logement × mois », avec le profil et le canal du séjour principal du mois, si le candidat signale la perte d'information pour les colocations.</li>
+<li>Identifiant technique de ligne dans la table des faits, en plus des quatre clés étrangères.</li>
+<li>Représentation de type Merise (association porteuse des mesures entre quatre entités) ou dessin de l'étoile, si elle est lisible (<code>JUR-T10</code>).</li>
+<li>Autres raisons tirées de l'annexe 2.1 en a), si elles sont appliquées au cas (fraîcheur quotidienne, libre-service des directions).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Entrepôt confondu avec un lac de données ou avec une base de production</em> (<code>ET-24</code>) — entrepôt présenté comme une copie des applications ou comme un stockage de données brutes.</li>
+<li><em>Modèle de gestion au lieu d'un schéma en étoile</em> — entités Résident, Bail, Candidature avec leurs associations : c'est le modèle d'un logiciel de gestion, non celui d'un entrepôt ; un résident nominatif contredit en outre RG8.</li>
+<li><em>Granularité absente ou incohérente</em> — table des faits sans grain énoncé, ou mesures qui ne s'additionnent pas (taux d'occupation stocké).</li>
+<li><em>Modèle conceptuel et modèle logique confondus</em> (<code>ET-23</code>) — clés étrangères oubliées ou clé de la table des faits non composée.</li>
+<li><em>Morceau de cours ou requête hors attente</em> (<code>JUR-T01</code>, <code>JUR-T07</code>) — définition de l'entrepôt sans application au cas, ou requêtes écrites alors que la question n'en demande pas.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Entrepôt de données ; schéma en étoile et en flocon ; faits, dimensions, grain, mesures additives</td>
+<td>définitions et méthode</td>
+<td>F07 § 1 et 6 ; F08 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Règles de passage au modèle logique</td>
+<td>méthode</td>
+<td>F07 § 4</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--lanalyse-de-loccupation-et-des-demandes-dintervention-4-points">2.2 – L'analyse de l'occupation et des demandes d'intervention (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.b</code> « Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution » ; <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés » ; <code>2.2.c</code> « Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model » ; <code>2.2.a</code> « Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique ». Limites : aucun calcul statistique, aucune manipulation d'outil, aucun développement d'algorithme ; lecture critique des corrélations et des biais, reliée à la stratégie.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.2 (occupation par ville et par type, affirmation du directeur commercial, limites) ; annexe 2.3 (demandes d'intervention, extraits, projet de l'équipe données) ; annexes 2.1 (règles de l'entrepôt) et 2.6 (principes du RGPD) ; « ORVANELLE 2030 » (présentation).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Étapes de la chaîne présentées ; résidences de Rennes et logements en travaux de Toulouse : étape où chaque limite est corrigée, et comment</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Colocations comptées par logement et écart entre les taux des directions : étape et correction ; conclusion</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Deux constats argumentés et chiffrés, avec leur portée pour « ORVANELLE 2030 »</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Troisième constat argumenté et chiffré</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Affirmation appréciée (résidences ouvertes en cours d'année et effet de structure, unité de mesure des colocations, été et groupes, canal) ; conclusion nuancée</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Deux apports de l'exploitation du texte des demandes, appliqués au cas (catégories, langues, problèmes récurrents, interventions)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Méthode d'analyse : descriptive et surtout exploratoire, justifiée ; ni prédiction ni développement</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-3</td>
+<td>Deux précautions justifiées par l'annexe 2.3 et les principes de l'annexe 2.6</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.2 a) – La chaîne de traitement des indicateurs d'occupation</em></p>
+<p><strong>La chaîne de traitement</strong> (0,5 pt avec les limites de Rennes et de Toulouse) transforme des données brutes en information utile à la décision : <strong>collecte</strong> des données à leur source, <strong>nettoyage</strong> (doublons, valeurs manquantes, aberrantes ou incohérentes), <strong>structuration</strong> (règles de gestion et de calcul, rapprochements, chargement dans un entrepôt historisé), <strong>analyse</strong>, puis <strong>restitution</strong> aux décideurs (F08 § 1). Chaque étape peut introduire un biais que les suivantes ne corrigent pas. Pour les indicateurs d'occupation :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Ce que fera la chaîne</th>
+<th>Limite corrigée (annexe 2.2 D, écart des taux de l'annexe 2.1 A)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Collecte</strong></td>
+<td>chargement chaque nuit des trois applications, par le numéro unique de logement ; collecte, en plus des baux, des dates d'ouverture des résidences, des périodes de travaux et des baux par chambre de colocation</td>
+<td>le tableau ignore l'ouverture des résidences de Rennes au 1er septembre et la fermeture de 120 logements à Toulouse : l'information n'est pas collectée</td>
+</tr>
+<tr class="even">
+<td><strong>Nettoyage</strong></td>
+<td>contrôles de cohérence : aucun jour vacant compté pour un logement fermé ou une résidence pas encore ouverte ; rejets tracés dans un journal</td>
+<td>les 120 logements de Toulouse en travaux sont comptés comme vacants pendant six mois, ce qui fait passer Toulouse de 94 % à 88 %</td>
+</tr>
+<tr class="odd">
+<td><strong>Structuration</strong></td>
+<td>application des règles RG6 et RG7 au chargement : jours-places, une place par chambre de colocation, jours ouverts seulement après l'ouverture et hors travaux</td>
+<td>le dénominateur « logements en fin d'année × 365 » compte Rennes sur douze mois, été compris ; une colocation n'est occupée que si toutes ses chambres le sont</td>
+</tr>
+<tr class="even">
+<td><strong>Analyse</strong></td>
+<td>taux calculés comme rapports de sommes, à n'importe quel niveau ; comparaison à périmètre constant (résidences ouvertes les deux années) à côté du total</td>
+<td>l'ensemble mêle les résidences nouvelles et anciennes : la baisse de 94 % à 91 % est lue comme une dégradation</td>
+</tr>
+<tr class="odd">
+<td><strong>Restitution</strong></td>
+<td>tableau de bord dans l'outil décisionnel, avec la définition de chaque indicateur, le périmètre et la cible de 95 % ; occupation par chambre pour les colocations</td>
+<td>écart entre les taux des directions (93 %, 91 % et 95 %, annexe 2.1 A) : un seul taux, défini une fois, pour tous</td>
+</tr>
+</tbody>
+</table>
+<p>En résumé : Rennes est corrigé à la collecte (date d'ouverture) et à la structuration (jours ouverts) ; Toulouse à la collecte (périodes de travaux) et au nettoyage ; les colocations à la collecte (baux par chambre) et à la structuration (jours-places) ; l'écart entre les directions à la structuration (règles écrites RG6 et RG7) et à la restitution.</p>
+<p><strong>Conclusion</strong> (0,5 pt avec les colocations et l'écart des directions) : les limites du tableau ne sont pas des erreurs de calcul, mais des règles implicites. La chaîne les corrige en amont, par la collecte des bonnes informations et des règles écrites, et non par des retraitements à la main en fin de mois.</p>
+<p><em>2.2 b) – Trois constats et l'affirmation de M. CALVÉRAC</em></p>
+<p><strong>Trois constats</strong> parmi les suivants (0,5 pt pour deux constats, 0,5 pt pour le troisième : le fait chiffré, son interprétation et sa portée) :</p>
+<ol type="1">
+<li><strong>La baisse de l'occupation de 94 % à 91 % est surtout un effet de mesure.</strong> Lyon (96 %) et Montpellier (95 %) sont stables, les onze autres villes progressent (de 93 % à 94 %). La baisse vient de Rennes (30 %), dont les 400 logements, ouverts en septembre, sont comptés sur l'année entière, et de Toulouse (de 94 % à 88 %), où 120 logements étaient fermés pour travaux. Rennes pèse à lui seul près de trois points sur l'ensemble ; mesurée sur les seuls jours ouverts, l'occupation de 2026 serait plutôt de l'ordre de 94 à 95 %, proche de l'objectif de 95 %. Le directoire ne doit pas réagir à une baisse qui n'existe pas.</li>
+<li><strong>L'été est le vrai creux.</strong> L'occupation tombe à 69 % en juillet et août, contre 91 % sur l'année ; les séjours courts y font de 30 % (studios) à 70 % (colocations) de l'occupation. Atteindre 95 % en moyenne annuelle passera par l'été : offre de séjours courts, accueil de groupes, ce que l'entrepôt permettra de suivre par profil et par canal.</li>
+<li><strong>Le portail progresse, sauf pour les colocations.</strong> La part des réservations faites sur le portail passe de 62 % à 65 %, et de 65 % à 70 % pour les studios, mais reste à 30 % pour les colocations : le portail ne permet pas de réserver une chambre seule. C'est un frein commercial, en contradiction avec le parcours entièrement en ligne voulu par « ORVANELLE 2030 ».</li>
+<li><strong>Le délai de relocation des colocations est mesuré à la dernière chambre.</strong> 35 jours contre 10 pour les studios, mais une colocation n'est relouée, dans le tableau, que lorsque sa dernière chambre libre l'est : l'indicateur compare des unités différentes.</li>
+</ol>
+<p><strong>L'affirmation de M. CALVÉRAC</strong> (0,5 pt) : « les colocations se louent mal, de plus en plus mal » n'est pas démontré :</p>
+<ul>
+<li><strong>les résidences ouvertes en cours d'année créent un effet de structure</strong> : 200 des 900 colocations, soit plus d'une sur cinq, sont à Rennes, ouvertes en septembre et comptées sur l'année et sur l'été. La baisse de 84 % à 74 % sur l'année et de 78 % à 61 % en été vient de ce changement de composition : les 200 colocations de Rennes n'existaient pas l'été 2026. Hors Rennes, les colocations anciennes ont plutôt progressé ;</li>
+<li><strong>l'unité de mesure les pénalise</strong> : une colocation de trois chambres dont deux sont louées est comptée vacante, et n'est relouée qu'avec sa dernière chambre. Comparer ce taux à celui d'un studio, qui n'a qu'une place, compare des unités différentes ; mesurée par chambre, l'occupation des colocations serait plus élevée et leur délai de relocation plus court ;</li>
+<li><strong>elles sont le meilleur produit de l'été</strong> : 78 % d'occupation en juillet et août 2025, le taux le plus élevé des trois types, avec 70 % de séjours courts, surtout des groupes. Les transformer en studios ferait perdre une partie de ces séjours, qui relèvent des 8 M€ de services et de séjours courts ;</li>
+<li><strong>le canal explique une partie de la difficulté</strong> : 30 % seulement des colocations sont réservées sur le portail, qui ne vend pas les chambres une à une.</li>
+</ul>
+<p>Conclusion : retenir le chiffre qui conforte une conviction, sans examiner la composition ni l'unité de mesure, relève du <strong>biais de confirmation</strong> (F08 § 5). Avant toute transformation, il faut mesurer l'occupation des colocations par chambre, à périmètre constant et par saison, dans l'entrepôt, et d'abord ouvrir la réservation des chambres sur le portail.</p>
+<p><em>2.2 c) – Le texte des demandes d'intervention</em></p>
+<p><strong>Deux apports</strong> parmi les suivants (0,5 pt) :</p>
+<ul>
+<li><strong>des catégories fiables, quelle que soit la langue</strong> : 40 % des 30 000 demandes de l'application sont classées « autre » et une sur quatre est mal classée, un tiers ne sont pas rédigées en français. Aujourd'hui, aucune statistique par catégorie n'a de sens ;</li>
+<li><strong>les problèmes récurrents, par résidence</strong> : regrouper les demandes semblables fait apparaître la panne qui revient (le chauffe-eau qui donne vingt demandes, l'eau froide le matin chez plusieurs voisins, la coupure du réseau chaque soir, la moisissure qui revient chaque hiver) ;</li>
+<li><strong>des interventions mieux ciblées</strong> : traiter la cause une fois (remplacer les chauffe-eau d'une résidence) au lieu d'envoyer vingt fois un plombier, prioriser les résidences, réduire une partie des 2 M€ d'interventions extérieures, et améliorer la satisfaction des résidents ;</li>
+<li><strong>un enrichissement de l'entrepôt</strong> : le nombre de demandes par logement, déjà prévu, pourrait être analysé par catégorie.</li>
+</ul>
+<p><strong>La méthode d'analyse</strong> (0,5 pt) : l'<strong>analyse descriptive</strong> résume ce qui s'est passé (nombre de demandes par catégorie, par résidence, par mois) ; elle ne devient possible qu'une fois les demandes bien classées. L'<strong>analyse exploratoire</strong> cherche des motifs que l'on ne connaissait pas d'avance, dans des données non structurées : regroupements de demandes semblables, problèmes récurrents, croisements par résidence, par saison ou par type de logement (fouille de textes) (F08 § 2). C'est elle qui est surtout mobilisée ici, puisque personne ne sait quelles pannes reviennent. Le service de l'équipe données repose sur l'<strong>apprentissage automatique</strong> (il apprend, à partir de 3 000 demandes classées à la main, à classer les suivantes), à distinguer de l'IA générative (F13) ; il ne fait aucune prévision, et il n'est demandé ni de le construire ni de le régler.</p>
+<p><strong>Deux précautions</strong> parmi (0,5 pt) :</p>
+<ul>
+<li><strong>la minimisation des données transmises</strong> : certaines demandes contiennent un nom, un numéro de téléphone ou un problème de santé (« je suis asthmatique »), donnée soumise à des règles plus strictes (annexe 2.6). Avant l'envoi à l'éditeur, masquer ces mentions et ne transmettre que ce qui sert au classement (texte nettoyé, résidence), pour la seule finalité d'amélioration de la maintenance ;</li>
+<li><strong>l'encadrement de l'éditeur, sous-traitant</strong> : contrat qui limite l'usage des textes à cette finalité, interdit leur réutilisation, fixe la localisation et une durée de conservation plus courte que douze mois ; avis du délégué à la protection des données et mention du traitement au registre des traitements ;</li>
+<li><strong>le contrôle de la qualité du classement</strong> : les 3 000 demandes d'apprentissage doivent être bien reclassées (une sur quatre l'est mal aujourd'hui) ; vérifier le classement par langue, les langues rares étant moins bien représentées ; garder la validation du responsable de résidence pour les décisions d'intervention, et revoir la liste des huit catégories avec les équipes techniques ;</li>
+<li><strong>la finalité et la gouvernance</strong> : n'utiliser les demandes ni pour juger les résidents ni pour évaluer les agents ; désigner la direction des résidences comme propriétaire des données.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Chaîne présentée selon les étapes de l'informatique décisionnelle (collecte, extraction-transformation-chargement, entrepôt, restitution), si une limite corrigée est rattachée à chaque étape.</li>
+<li>Chacune des trois limites et l'écart des directions rattachés à une autre étape que celles du corrigé, si le rattachement est justifié.</li>
+<li>Estimation de tête de l'occupation des colocations hors Rennes (environ 87 à 88 % en 2026, en supposant les studios de Rennes presque pleins depuis l'ouverture) ou de l'effet de Rennes sur l'ensemble : non exigée ; la lecture qualitative suffit.</li>
+<li>Autres constats tirés de l'annexe 2.2 (stabilité de Lyon et de Montpellier, délai de relocation des deux pièces), s'ils sont chiffrés et interprétés.</li>
+<li>Analyse diagnostique présentée comme une variante de l'analyse exploratoire.</li>
+<li>Autres précautions justifiées (pilote sur quelques résidences avant la généralisation, mesure du gain sur les interventions).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Corrélation ou composition ignorée</em> (<code>ET-26</code>) — baisse des colocations attribuée au produit sans examiner Rennes, l'unité de mesure et la saison.</li>
+<li><em>Prudence d'interprétation oubliée</em> (<code>JUR-D06</code>) — baisse de 94 % à 91 % lue comme une dégradation de l'activité.</li>
+<li><em>Analyse prédictive invoquée à tort</em> — l'outil présenté comme une prévision des pannes ; ou description de son fonctionnement interne (algorithme, paramètres), hors attente (<code>JUR-T07</code>) ; confusion entre IA générative et apprentissage automatique (<code>ET-09</code>).</li>
+<li><em>Informatique décisionnelle réduite à un outil</em> (<code>ET-05</code>, <code>JUR-D02</code>) — « l'outil décisionnel corrigera les chiffres », sans règles écrites ni collecte des bonnes informations.</li>
+<li><em>Précautions génériques</em> (<code>JUR-T01</code>) — « respecter le RGPD » sans dire quelles données masquer, pourquoi, ni comment encadrer l'éditeur.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chaîne de traitement, analyses descriptive et exploratoire, biais de confirmation, effet de composition</td>
+<td>définitions et méthode</td>
+<td>F08 § 1, 2 et 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Apprentissage automatique et IA générative distingués</td>
+<td>définitions</td>
+<td>F13 ; F08 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Règlement (UE) 2016/679 (RGPD) : finalité, minimisation, conservation limitée, sous-traitant</td>
+<td>principes donnés en annexe 2.6</td>
+<td><code>rgpd</code> / F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--le-retour-sur-investissement-du-projet-dentrepôt-3-points">2.3 – Le retour sur investissement du projet d'entrepôt (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.1 – Concevoir, construire et exploiter des outils de pilotage de la performance : <code>3.1.c</code> « Analyse des coûts directs et indirects : TCO, coûts cachés, ROI des projets SI » ; <code>3.1.a</code> « Mettre en œuvre des dispositifs de pilotage de la performance SI […] des indicateurs et des leviers d'optimisation via des tableaux de bord ». Limites : total de tête en sommes rondes ; aucun calcul actualisé ; recul critique sur les indicateurs.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.4 (coûts, gains annoncés, avis du membre du directoire chargé des finances) ; annexes 2.1 et 2.2 (temps de production du tableau, effets de mesure) ; présentation (remplacement du logiciel de gestion locative avant la rentrée 2028, objectif de 95 %).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Retour sur investissement défini (formule, horizon, délai de récupération ; gains financiers et non financiers ; sans actualisation)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Calcul de tête : 720 k€ par an, 2 160 k€ sur trois ans ; coût de 600 k€ ; retour annoncé de 260 %</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Attribution discutée et réponse à M. LORMIÈRE : l'entrepôt éclaire des décisions ; autres facteurs ; effet de mesure ; entrepôt en service en 2028 ; redevances et résultat</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Deux coûts cachés tirés du cas</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Premier indicateur de suivi des bénéfices, à cinq champs</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Second indicateur à cinq champs</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.3 a) – Le retour sur investissement annoncé</em></p>
+<p><strong>Définition</strong> (0,5 pt) : le <strong>retour sur investissement</strong> d'un projet de système d'information rapporte le gain net qu'il procure à son coût, sur un horizon donné : (gains cumulés − coût total) / coût total. Il se complète du <strong>délai de récupération</strong> (coût / gain annuel). C'est un indicateur simple, sans actualisation ; il suppose des gains mesurables, réellement attribuables au projet, et il ne dit rien des bénéfices non financiers (qualité des décisions, fin des chiffres contradictoires), qui doivent être exposés à côté (F09 § 3.3).</p>
+<p><strong>Le calcul de tête</strong> (0,5 pt) :</p>
+<ul>
+<li>gain annoncé : un point d'occupation sur 9 000 logements = 90 logements ; 90 × 8 k€ = <strong>720 k€ par an</strong>, soit <strong>2 160 k€ sur trois ans</strong> ;</li>
+<li>coût sur trois ans : 300 + 3 × (40 + 60) = 300 + 300 = <strong>600 k€</strong> ;</li>
+<li>retour annoncé : (2 160 − 600) / 600 = 1 560 / 600 = <strong>260 %</strong> ; le gain d'une année (720 k€) dépasse le coût des trois ans, ce que dit la note.</li>
+</ul>
+<p><em>2.3 b) – Un calcul à apprécier</em></p>
+<p><strong>L'attribution du point d'occupation</strong> (0,5 pt). M. LORMIÈRE a raison sur le principe : un entrepôt ne loue aucun logement. Il éclaire des décisions (offre de l'été, vente des chambres de colocation sur le portail, travaux hors de la rentrée), et ce sont ces décisions, avec les prix, les équipes commerciales, les ouvertures de résidences et le marché, qui font l'occupation. Le calcul appelle quatre réserves :</p>
+<ul>
+<li><strong>le gain est attribué sans référence ni mesure</strong> : il faudrait une situation de départ mesurée selon les mêmes règles, des décisions identifiées qui s'appuient sur l'entrepôt, et le suivi de leur effet ;</li>
+<li><strong>une partie du point peut n'être qu'un effet de mesure</strong> : avec les règles de l'entrepôt (jours ouverts, chambres), l'occupation mesurée de 2026 remonterait de 91 % vers 94 à 95 % sans un logement loué de plus (question 2.2). Le risque est de compter comme gain la correction d'un chiffre ;</li>
+<li><strong>le calendrier</strong> : l'entrepôt est construit en 2027 et mis en service en janvier 2028 ; compter un gain dès 2027 est impossible. Sur 2028 et 2029 seulement, le gain annoncé serait de 2 × 720 = 1 440 k€, soit un retour de (1 440 − 600) / 600 = 140 % ;</li>
+<li><strong>des redevances ne sont pas un résultat</strong> : 720 k€ de redevances supplémentaires portent des charges (énergie, ménage, entretien, accueil) ; le gain se mesure en marge.</li>
+</ul>
+<p>Réponse à M. LORMIÈRE : l'entrepôt n'est pas rentable par lui-même ; il se justifie par la fiabilité des chiffres, le temps libéré et les décisions qu'il rend possibles. Le directoire doit l'approuver sur un dossier qui sépare gains mesurables et bénéfices qualitatifs, avec des indicateurs de suivi et un responsable des bénéfices.</p>
+<p><strong>Deux coûts cachés</strong> parmi (0,5 pt) :</p>
+<ul>
+<li><strong>la reconstruction des chargements</strong> : l'entrepôt est alimenté par le logiciel de gestion locative actuel, qui doit être remplacé avant la rentrée 2028, quelques mois après la mise en service de l'entrepôt : les chargements et les règles de rapprochement seront à refaire ;</li>
+<li><strong>le temps des directions</strong> : ateliers de définition des indicateurs, recette, formation des utilisateurs, non comptés (annexe 2.4 B) ;</li>
+<li><strong>la reprise et le nettoyage de l'historique</strong> : tableurs aux colonnes changeantes, numéros de logement différents selon les applications (annexe 2.1 A) ; créer le numéro unique commun (RG1) est un chantier à part entière ;</li>
+<li><strong>la gouvernance des données</strong> : propriétaires des indicateurs, dictionnaire, contrôles de qualité, dans la durée ;</li>
+<li><strong>la croissance de l'abonnement</strong> avec le nombre d'utilisateurs et un parc porté à 12 000 logements.</li>
+</ul>
+<p>Le temps libéré des deux personnes (huit jours-personne par mois) n'est un gain financier que s'il est redéployé ; sinon, c'est un bénéfice qualitatif.</p>
+<p><em>2.3 c) – Deux indicateurs de suivi des bénéfices</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Temps de production des indicateurs d'occupation</td>
+<td>nombre de jours-personne consacrés chaque mois à produire et rapprocher les indicateurs d'occupation</td>
+<td>relevé des temps de la direction commerciale et de l'équipe données</td>
+<td>mensuelle</td>
+<td>au plus un jour-personne par mois au second semestre 2028 (huit aujourd'hui)</td>
+<td>processus</td>
+</tr>
+<tr class="even">
+<td>Taux d'occupation à périmètre constant</td>
+<td>jours-places occupés / jours-places ouverts × 100, pour les résidences ouvertes depuis plus d'un an</td>
+<td>entrepôt des séjours (table des faits Occupation_mensuelle)</td>
+<td>mensuelle, bilan annuel présenté au directoire</td>
+<td>au moins 95 % en 2030 (objectif d'« ORVANELLE 2030 »), avec une référence 2026-2027 recalculée selon les règles de l'entrepôt</td>
+<td>financier</td>
+</tr>
+</tbody>
+</table>
+<p>Le second indicateur n'attribue pas à lui seul le gain à l'entrepôt : il se lit avec le registre des décisions prises à partir de l'entrepôt et de leur effet (par exemple, l'occupation de l'été des colocations après l'ouverture de la réservation par chambre).</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Délai de récupération calculé (600 / 720, moins d'un an) à la place ou en plus du retour en pourcentage.</li>
+<li>Gain calculé avec 8 160 € par logement (680 € × 12), soit environ 734 k€ par an, si l'arrondi de l'énoncé est signalé.</li>
+<li>Autres coûts cachés justifiés par le cas (conduite du changement, dépendance à l'éditeur de l'outil décisionnel, réversibilité).</li>
+<li>Autres indicateurs à cinq champs : taux d'utilisation de l'outil décisionnel par les directions (axe apprentissage), part des indicateurs du directoire documentés dans le dictionnaire, occupation des chambres de colocation en été.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Calcul hors attente</em> (<code>JUR-T07</code>) — calcul financier élaboré, alors que la question demande un total de tête en sommes rondes.</li>
+<li><em>Retour sur investissement et coût total confondus</em> (<code>ET-33</code>) — ou coûts récurrents oubliés dans le coût.</li>
+<li><em>Gain repris sans examen</em> (<code>JUR-T03</code>) — chiffre de la direction des systèmes d'information accepté tel quel, sans attribution, calendrier ni distinction entre redevance et marge.</li>
+<li><em>Indicateur incomplet ou générique</em> (<code>ET-18</code>) — indicateur sans formule, source, fréquence, cible ou axe, ou sans lien avec les bénéfices annoncés.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Retour sur investissement, délai de récupération, coûts cachés</td>
+<td>définitions et méthode</td>
+<td>F09 § 2 et 3.3</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Indicateur à cinq champs, axes du tableau de bord</td>
+<td>méthode</td>
+<td>F08 § 3 ; F09 § 4</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--les-attestations-de-logement-et-la-chaîne-de-blocs-25-points">2.4 – Les attestations de logement et la chaîne de blocs (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.3 – Appréhender les usages et les enjeux des technologies de la blockchain et des cryptoactifs : <code>3.3.b</code> « Fonctionnement des technologies de registres distribués (DLT) » ; <code>3.3.c</code> « Typologie des applications : traçabilité, certification, finance décentralisée, NFT » ; <code>3.3.a</code> « Évaluer les opportunités, les risques et le cadre réglementaire […] » ; <code>3.3.d</code> « Cadres réglementaires émergents : règlement MiCA (Markets in Crypto-Assets), NEP, normes ISO ». Limites : aucun développement de chaîne de blocs ni de contrat intelligent ; effets énergétiques intégrés ; aucune analyse juridique.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.5 (constats, proposition d'ANCRALYS, alternative de la direction des systèmes d'information) ; annexe 2.6 (MiCA, ISO 22739, eIDAS, RGPD) ; annexe 1.1 (un quart de résidents venus de l'étranger).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Fonctionnement d'une chaîne de blocs publique : registre répliqué entre nœuds, blocs chaînés par empreintes, consensus (preuve d'enjeu), ouverte à tous, inaltérabilité pratique ; distincte d'une base distribuée</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Empreinte d'un document : preuve d'existence à une date et d'intégrité, ni de l'auteur ni de la véracité ; proposition classée dans la certification de documents</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Deux apports et deux limites de la proposition face au cachet électronique, appliqués aux constats</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Recommandation justifiée (critères de pertinence d'une chaîne de blocs), refus de l'option nominative</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>MiCA ne s'applique pas à ORVANELLE : ni émission, ni offre, ni détention, ni service sur crypto-actifs ; frais payés par le prestataire</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.4 a) – Chaîne de blocs publique, empreinte et typologie</em></p>
+<p><strong>Le fonctionnement</strong> (0,5 pt) : une <strong>chaîne de blocs</strong> est un registre de transactions <strong>répliqué</strong> entre de nombreux <strong>nœuds</strong>, sans administrateur central. Les transactions sont regroupées en <strong>blocs</strong>, chacun contenant l'<strong>empreinte</strong> du bloc précédent : modifier un bloc passé changerait toutes les empreintes suivantes et serait rejeté par les autres nœuds (<strong>inaltérabilité pratique</strong>, et non absolue). Les nouveaux blocs sont validés selon une règle de <strong>consensus</strong> : ici, la <strong>preuve d'enjeu</strong>, où les validateurs sont choisis selon les crypto-actifs qu'ils immobilisent, bien moins consommatrice d'énergie que la preuve de travail. Une chaîne <strong>publique</strong> est ouverte à tous en lecture et en écriture ; chaque transaction est signée par la clé privée de son émetteur et donne lieu à des frais, payés en crypto-actifs. Elle organise la confiance entre des acteurs qui ne se connaissent pas ; ce n'est pas une base de données distribuée, administrée par un seul acteur qui peut en modifier le contenu (F11 § 1 ; vocabulaire de l'ISO 22739:2024).</p>
+<p><strong>L'empreinte et la typologie</strong> (0,5 pt) : l'<strong>empreinte</strong> (hachage) est une suite de taille fixe calculée à partir d'un document par une fonction à sens unique : la moindre modification du document change l'empreinte, et l'on ne peut pas reconstituer le document à partir d'elle. Inscrire l'empreinte dans une transaction prouve que le document existait à la date du bloc (<strong>horodatage</strong>) et qu'il n'a pas été modifié depuis (<strong>intégrité</strong>) ; le document lui-même n'est pas inscrit. Elle ne prouve ni l'auteur du document, ni la vérité de son contenu : une attestation erronée, une fois inscrite, est « certifiée » erronée (limite de l'« oracle »). La proposition d'ANCRALYS relève de la <strong>certification de documents</strong> (horodatage et preuve d'intégrité), et non de la traçabilité d'une filière, des jetons non fongibles ou de la finance décentralisée (F11 § 2.1).</p>
+<p><em>2.4 b) – La proposition d'ANCRALYS face au cachet électronique</em></p>
+<p><strong>Deux apports et deux limites</strong> (0,5 pt), à choisir dans le tableau suivant. Apports possibles : détection d'un document modifié ou jamais émis ; preuve qui survit au prestataire ; aucune donnée personnelle si seule l'empreinte est inscrite. Limites possibles : émetteur non identifié ; retrait impossible ; vérification peu commode pour les destinataires ; option nominative contraire à la minimisation ; frais en crypto-actifs et énergie.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Proposition d'ANCRALYS</th>
+<th>Cachet électronique qualifié et page de vérification d'ORVANELLE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Falsifications</td>
+<td>détecte un document modifié ou jamais émis (aucune empreinte inscrite)</td>
+<td>détecte un document modifié ou jamais émis ; le cachet identifie l'émetteur</td>
+</tr>
+<tr class="even">
+<td>Identité de l'émetteur</td>
+<td>la transaction est signée par ANCRALYS : la preuve dit qu'ANCRALYS a inscrit une empreinte, et l'organisme doit faire confiance à la page d'ANCRALYS, qu'un faussaire peut imiter par un faux code</td>
+<td>le certificat qualifié atteste que le document émane d'ORVANELLE, personne morale ; la page de vérification est sur le site d'ORVANELLE</td>
+</tr>
+<tr class="odd">
+<td>Attestation devenue fausse (départ anticipé)</td>
+<td>impossible à retirer : l'inscription est définitive</td>
+<td>la page indique que l'attestation n'est plus valable</td>
+</tr>
+<tr class="even">
+<td>Usage par les destinataires</td>
+<td>déposer le PDF sur une page inconnue des banques et des consulats</td>
+<td>tout lecteur de PDF courant affiche le cachet ; cadre de confiance européen (eIDAS)</td>
+</tr>
+<tr class="odd">
+<td>Durée de la preuve</td>
+<td>l'empreinte reste dans la chaîne même si ANCRALYS disparaît, mais la page de vérification disparaît avec elle</td>
+<td>dépend du certificat et du service d'ORVANELLE, à maintenir</td>
+</tr>
+<tr class="even">
+<td>Données personnelles</td>
+<td>sans risque si seule l'empreinte est inscrite ; l'option « nom et adresse en clair » est contraire à la minimisation et impossible à effacer</td>
+<td>aucune donnée inscrite hors d'ORVANELLE</td>
+</tr>
+<tr class="odd">
+<td>Coût et énergie</td>
+<td>environ 90 k€ sur trois ans ; frais en crypto-actifs et énergie de la chaîne, faible en preuve d'enjeu mais non nulle</td>
+<td>environ 70 k€ sur trois ans</td>
+</tr>
+</tbody>
+</table>
+<p>La cause première des falsifications n'est pas l'absence de chaîne de blocs : ce sont des documents produits à partir d'un modèle de traitement de texte, avec une signature scannée, faciles à imiter. Les deux solutions supposent de produire les documents automatiquement à partir du logiciel de gestion locative.</p>
+<p><strong>Recommandation</strong> (0,5 pt) : retenir le <strong>cachet électronique qualifié</strong>, avec la page de vérification d'ORVANELLE, et refuser la proposition d'ANCRALYS, et en tout cas son option nominative. Les critères de pertinence d'une chaîne de blocs ne sont pas réunis (F11 § 2.2) : un seul acteur, ORVANELLE, écrit les attestations, sans besoin d'un registre partagé entre des acteurs qui ne se font pas confiance ; un tiers de confiance reconnu existe (prestataire de services de confiance qualifié) ; il faut identifier l'émetteur et pouvoir retirer une attestation, ce que la chaîne ne fait pas. Le cachet répond aux 40 falsifications signalées et réduit les 1 500 demandes de confirmation et leurs deux jours de délai, puisque l'organisme vérifie seul. ORVANELLE informe les banques, les consulats et les établissements de la façon de vérifier, et ajoute au besoin un horodatage électronique qualifié.</p>
+<p><em>2.4 c) – MiCA et le projet</em></p>
+<p><strong>Non</strong> (0,5 pt) : d'après l'annexe 2.6, MiCA encadre l'offre au public et l'admission à la négociation de crypto-actifs, l'émission de jetons qui visent une valeur stable et l'agrément des prestataires de services sur crypto-actifs (PSCA). Dans ce projet, ORVANELLE n'émet ni n'offre de crypto-actifs, n'en détient aucun et ne rend aucun service sur crypto-actifs : elle achète en euros un service d'horodatage. Les frais de transaction en crypto-actifs sont payés par ANCRALYS, pour son propre compte. Le règlement ne régit pas non plus la certification de documents, et l'ISO 22739 n'est qu'un vocabulaire. Si ORVANELLE achetait un jour elle-même des crypto-actifs pour payer ces frais, le prestataire qui les lui fournirait ou les conserverait devrait être un PSCA agréé : depuis le 02/07/2026, un ancien PSAN ne peut plus exercer sans agrément (annexe 2.6).</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Proposition d'ANCRALYS retenue en complément du cachet (horodatage indépendant d'ORVANELLE), si l'identification de l'émetteur et le retrait des attestations sont assurés par le cachet et la page de vérification, et si l'option nominative est refusée.</li>
+<li>Proposition rattachée à l'« horodatage » ou à la « preuve d'antériorité », formes de la certification.</li>
+<li>Réponse à c) qui s'interroge sur la situation d'ANCRALYS au regard de MiCA, si la réponse pour ORVANELLE est donnée ; aucune analyse juridique n'est attendue.</li>
+<li>Signature électronique de la personne habilitée au lieu du cachet, si le candidat signale qu'elle engage une personne physique et non ORVANELLE.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Chaîne de blocs confondue avec une base de données distribuée</em> (<code>ET-08</code>) — ou présentée comme inaltérable sans nuance.</li>
+<li><em>Empreinte confondue avec le chiffrement ou avec le document</em> — croire que le document est stocké dans la chaîne, ou que l'empreinte prouve l'auteur et la vérité du contenu.</li>
+<li><em>Opportunités sans risques</em> (<code>ET-19</code>) — chaîne de blocs recommandée parce qu'elle est « infalsifiable », sans examiner l'émetteur, le retrait, les destinataires et les données personnelles.</li>
+<li><em>MiCA mal situé</em> (<code>ET-35</code>) — MiCA présenté comme applicable à toute utilisation d'une chaîne de blocs, ou comme un cadre de la certification de documents ; ISO 22739 présentée comme une norme d'exigences.</li>
+<li><em>Analyse juridique hors attente</em> (<code>JUR-T07</code>) — valeur probante des documents développée comme un juriste.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Règlement (UE) 2023/1114 (MiCA)</td>
+<td>objet : offre au public, jetons visant une valeur stable, PSCA ; fin des anciens PSAN au 02/07/2026</td>
+<td><code>mica</code> / F11 § 3.1</td>
+<td>applicable depuis le 30/12/2024</td>
+</tr>
+<tr class="even">
+<td>ISO 22739:2024</td>
+<td>vocabulaire des chaînes de blocs et des registres distribués</td>
+<td><code>iso_22739_2024</code> / F11 § 3.4</td>
+<td>en vigueur (2e édition)</td>
+</tr>
+<tr class="odd">
+<td>Règlement (UE) n° 910/2014 (eIDAS), révisé par le règlement (UE) 2024/1183</td>
+<td>services de confiance : cachet électronique, horodatage, registres électroniques</td>
+<td><code>eidas_910_2014</code>, <code>eidas2</code> / F06 § 5 ; F11 § 3.4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>minimisation ; données inscrites dans une chaîne de blocs impossibles à effacer</td>
+<td><code>rgpd</code> / F11 § 2.3 ; F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+<tr class="odd">
+<td>Chaîne de blocs publique, consensus, empreinte, critères de pertinence, typologie des applications</td>
+<td>définitions et méthode</td>
+<td>F11 § 1 et 2 ; glossaire (hachage, cachet électronique)</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

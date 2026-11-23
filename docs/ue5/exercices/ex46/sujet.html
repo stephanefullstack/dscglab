@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Préparer la stratégie du SI et le projet de remplacement du logiciel de gestion locative : ORVANELLE Résidences, gestionnaire privé de résidences pour étudiants : alignement du SI selon le modèle SAM, maturité de la gestion des projets selon CMMI, processus de la candidature à la remise des accès, contrats des lots et risques d'un progiciel en ligne, cahier des charges et risques du projet de remplacement du logiciel de gestion locative</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 1</p><p>14 points</p><p>1 h 03</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Préparer la stratégie du SI et le projet de remplacement du logiciel de gestion locative</h1><p class="cas">ORVANELLE Résidences, gestionnaire privé de résidences pour étudiants : alignement du SI selon le modèle SAM, maturité de la gestion des projets selon CMMI, processus de la candidature à la remise des accès, contrats des lots et risques d'un progiciel en ligne, cahier des charges et risques du projet de remplacement du logiciel de gestion locative</p><p><strong>DOSSIER 1 – PRÉPARER LA STRATÉGIE DU SYSTÈME D'INFORMATION ET LE PROJET DE REMPLACEMENT DU LOGICIEL DE GESTION LOCATIVE (14 points)</strong></p>
+<p>Durée conseillée : 1 h 03 (14 points sur 40, pour une épreuve de 3 heures, coefficient 1 ; environ 4,5 minutes par point).</p>
+<p>Réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document et matériel autorisés</strong> : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Ce dossier est l'un des trois dossiers indépendants du sujet d'entraînement complet n° 16, construits sur un même cas : la présentation et l'annexe 1.1 sont communes aux trois dossiers ; chaque dossier comporte en outre ses propres annexes.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en mars 2027. ORVANELLE Résidences est une société anonyme à directoire et conseil de surveillance, créée en 2004, dont le siège est à Montpellier. Elle exploite 60 résidences pour étudiants, soit 9 000 logements meublés, dans quinze villes universitaires, sans en être propriétaire : elle loue les logements aux étudiants et leur propose des services (laveries, salles communes, parkings, ménage), et accueille l'été des séjours courts de stagiaires et de groupes. La famille fondatrice QUILLOREAU détient 60 % de son capital, la foncière KERDALAN Patrimoine 40 %. En 2026, ORVANELLE a signé 7 000 baux, dont 70 % entre juin et septembre, pour un taux d'occupation moyen de 93 % ; un quart des résidents viennent de l'étranger. Elle a réalisé un chiffre d'affaires de 76 M€ et emploie 380 salariés. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>Le plan « ORVANELLE 2030 », adopté en janvier 2027 par le directoire après avis du conseil de surveillance, fixe cinq objectifs : porter le parc à 12 000 logements dans vingt villes en 2030 ; offrir un parcours entièrement en ligne, de la candidature à la remise des accès au logement ; maintenir un taux d'occupation d'au moins 95 % ; réduire de 20 % la consommation d'énergie des résidences entre 2025 et 2030 ; garantir la sécurité des résidents et de leurs données. Le logiciel de gestion locative, installé en 2009, ne suit plus : son remplacement doit être achevé avant la rentrée universitaire de 2028.</p>
+<p>Vous êtes membre du directoire, chargé(e) des opérations (résidences, relation avec les résidents, direction des systèmes d'information), depuis 2025. La présidente du directoire, Mme Ombeline TRÉVARDIN, vous demande trois travaux : préparer la stratégie du système d'information et le projet de remplacement du logiciel de gestion locative (dossier 1) ; organiser et exploiter les données des séjours, et éclairer deux projets qui les concernent (dossier 2) ; sécuriser la campagne de rentrée, auditer le traitement des candidatures et piloter l'énergie des résidences (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-dorvanelle-résidences-et-chiffres-clés">ANNEXE 1.1 – Présentation d'ORVANELLE Résidences et chiffres clés</h3>
+<p>ORVANELLE Résidences est une société anonyme à directoire et conseil de surveillance créée en 2004, dont le siège est à Montpellier. Gestionnaire privé de résidences pour étudiants, elle exploite des résidences qui appartiennent à d'autres : elle loue les logements meublés aux étudiants, leur vend des services et accueille l'été des séjours courts. L'exercice coïncide avec l'année civile : l'exercice 2026 est le dernier exercice clos.</p>
+<p><strong>Le modèle et les actionnaires</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Résidences</td>
+<td>60 résidences exploitées sans en être propriétaire : 25 appartiennent à la foncière KERDALAN Patrimoine, 35 à d'autres propriétaires</td>
+</tr>
+<tr class="even">
+<td>Résidents</td>
+<td>étudiants, qui signent un bail pour un logement meublé ; un quart des résidents viennent de l'étranger ; durée moyenne d'un séjour : onze mois</td>
+</tr>
+<tr class="odd">
+<td>Services</td>
+<td>laveries, salles communes, parkings, ménage ; l'été, séjours courts de stagiaires et de groupes</td>
+</tr>
+<tr class="even">
+<td>Actionnaires</td>
+<td>famille fondatrice QUILLOREAU : 60 % ; foncière KERDALAN Patrimoine : 40 %</td>
+</tr>
+<tr class="odd">
+<td>Conseil de surveillance</td>
+<td>présidé par M. Gaspard QUILLOREAU ; KERDALAN Patrimoine y a deux sièges ; il donne son avis sur la stratégie et sur les investissements importants</td>
+</tr>
+<tr class="even">
+<td>Directoire</td>
+<td>trois membres : la présidente, Mme Ombeline TRÉVARDIN ; le (la) membre chargé(e) des opérations (vous) ; le membre chargé des finances et du développement, M. Bastien LORMIÈRE</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le parc et l'activité en 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Parc</td>
+<td>60 résidences, 9 000 logements meublés (studios 80 % ; logements de deux pièces et colocations 20 %), dans quinze villes universitaires</td>
+</tr>
+<tr class="even">
+<td>Baux signés</td>
+<td>7 000, dont 70 % entre juin et septembre</td>
+</tr>
+<tr class="odd">
+<td>Taux d'occupation moyen</td>
+<td>93 %</td>
+</tr>
+<tr class="even">
+<td>Redevance mensuelle moyenne, charges comprises</td>
+<td>680 €</td>
+</tr>
+<tr class="odd">
+<td>Chiffre d'affaires</td>
+<td>76 M€ : redevances et charges 68 M€ ; services et séjours courts d'été 8 M€</td>
+</tr>
+<tr class="even">
+<td>Dépenses du système d'information</td>
+<td>environ 4,5 M€, dont 1,5 M€ de services en ligne et de prestations</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L'effectif au 31/12/2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Direction ou service</th>
+<th>Salariés</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Direction des résidences : responsables de résidence, chargés d'accueil, agents techniques et de ménage</td>
+<td>230</td>
+</tr>
+<tr class="even">
+<td>Direction commerciale et de la relation résidents, dont le centre de relation résidents, ouvert sept jours sur sept de juin à octobre</td>
+<td>60</td>
+</tr>
+<tr class="odd">
+<td>Développement : recherche de nouvelles résidences, relations avec les propriétaires</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>Direction des systèmes d'information</td>
+<td>16</td>
+</tr>
+<tr class="odd">
+<td>Fonctions support : finances, ressources humaines, achats, juridique, services techniques et énergie</td>
+<td>54</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td><strong>380</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le système d'information en quelques lignes</strong></p>
+<ul>
+<li><strong>Logiciel de gestion locative</strong> installé en 2009 dans le centre de données d'un hébergeur régional, à client lourd : candidatures, logements, baux, quittancement, dépôts de garantie, états des lieux saisis après coup.</li>
+<li><strong>Portail de réservation</strong> en ligne développé en 2018 par une agence web, relié au logiciel de gestion locative par des échanges de fichiers chaque nuit.</li>
+<li>Signature électronique des baux par un prestataire en ligne ; paiement en ligne des redevances et des dépôts de garantie par un prestataire de paiement.</li>
+<li><strong>Application des résidents</strong> : clé virtuelle sur téléphone dans les 22 résidences équipées de serrures connectées, demandes d'intervention, réservation des laveries ; badges dans les 38 autres résidences.</li>
+<li>Logiciel en ligne de suivi des demandes d'intervention ; progiciel de gestion intégré (finances, achats) ; bureautique en ligne.</li>
+</ul>
+<p><strong>Organigramme simplifié (mars 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Rattachement</th>
+<th>Fonction</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>—</td>
+<td>conseil de surveillance</td>
+<td>président : M. Gaspard QUILLOREAU</td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>directoire</td>
+<td>présidente : Mme Ombeline TRÉVARDIN</td>
+</tr>
+<tr class="odd">
+<td>Membre du directoire chargé(e) des opérations (vous)</td>
+<td>direction des résidences</td>
+<td>Mme Clémence ROUSTAGNE</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>direction commerciale et de la relation résidents</td>
+<td>M. Adrien CALVÉRAC</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>direction des systèmes d'information</td>
+<td>Mme Solène VARQUIGNY</td>
+</tr>
+<tr class="even">
+<td>Membre du directoire chargé des finances et du développement (M. Bastien LORMIÈRE)</td>
+<td>développement</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>fonctions support (finances, ressources humaines, achats, juridique, services techniques et énergie)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-12--le-système-dinformation-face-à--orvanelle-2030--témoignages-recueillis-en-février-2027">ANNEXE 1.2 – Le système d'information face à « ORVANELLE 2030 » (témoignages recueillis en février 2027)</h3>
+<p><strong>M. Adrien CALVÉRAC, directeur commercial et de la relation résidents</strong> : « En 2026, 30 000 candidatures ont été commencées sur le portail et 12 000 seulement sont arrivées au bout. La moitié des abandons a lieu à l'étape où le portail demande d'imprimer le formulaire du garant, de le faire signer et de nous le renvoyer par courriel avec les pièces justificatives. Les étudiants qui réservent depuis l'étranger comparent plusieurs offres en ligne : sept sur dix abandonnent avant la fin. Nos concurrents leur proposent la réservation et la signature du bail en quelques minutes, depuis leur téléphone. »</p>
+<p><strong>Mme Maëlys ORDIGNAC, responsable d'une résidence de 250 logements à Lyon</strong> : « En septembre, mes trois chargés d'accueil passent la moitié de leur temps à ressaisir dans le logiciel de gestion locative les candidatures arrivées par le portail, puis les états des lieux. Nous faisons l'état des lieux sur papier avec le résident ; il est saisi jusqu'à trois semaines après son arrivée. Le premier samedi de septembre, nous accueillons jusqu'à 40 arrivées : des résidents attendent une heure dans le hall leur badge ou l'activation de leur clé. »</p>
+<p><strong>Mme Solène VARQUIGNY, directrice des systèmes d'information</strong> : « Jusqu'en 2025, la direction des systèmes d'information dépendait de la direction financière. Nous exécutons les demandes : 70 % du temps de mes seize personnes va à faire tourner l'existant. Nous n'avons pas été associés à la préparation d'"ORVANELLE 2030" : je l'ai découvert lors de sa présentation au personnel, en janvier. La clé virtuelle a été choisie en 2023 par les services techniques ; nous avons appris ce choix une fois le contrat signé, et nous avons dû relier la clé à l'application des résidents dans l'urgence. Enfin, l'éditeur de notre logiciel de gestion locative a annoncé qu'il ne le maintiendrait plus au-delà de décembre 2028. »</p>
+<p><strong>Mme Ombeline TRÉVARDIN, présidente du directoire</strong> : « Je veux que le système d'information devienne un atout commercial. Face à des concurrents qui proposent la réservation et la signature en quelques minutes, notre parcours doit être le meilleur du marché, et il devra suivre un parc qui passera de 9 000 à 12 000 logements. Je ne veux plus qu'un projet numérique soit décidé sans la direction des systèmes d'information, ni que celle-ci se contente d'exécuter. »</p>
+<h3 id="annexe-13--les-projets-du-système-dinformation-depuis-2018-note-de-mme-solène-varquigny-février-2027">ANNEXE 1.3 – Les projets du système d'information depuis 2018 (note de Mme Solène VARQUIGNY, février 2027)</h3>
+<p><strong>A. Trois projets</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Projet</th>
+<th>Conduite du projet</th>
+<th>Résultat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Portail de réservation (2018)</td>
+<td>confié à une agence web par la direction commerciale ; aucun cahier des charges écrit : les besoins ont été exposés en réunion ; la recette a été faite par l'agence web elle-même</td>
+<td>prévu en six mois, livré avec huit mois de retard ; coût final supérieur de moitié au prix convenu ; 200 anomalies signalées par les candidats les trois premiers mois ; l'échange de fichiers chaque nuit avec le logiciel de gestion locative, présenté comme provisoire, est toujours en place</td>
+</tr>
+<tr class="even">
+<td>Raccordement du progiciel de gestion intégré au logiciel de gestion locative (2022)</td>
+<td>demandé par la direction financière ; aucun responsable désigné à la direction des systèmes d'information</td>
+<td>arrêté en 2023 après un an de travaux, sans décision formelle ; les quittances sont toujours transmises au progiciel par un fichier mensuel</td>
+</tr>
+<tr class="odd">
+<td>Clé virtuelle (2024-2026)</td>
+<td>conduit par les services techniques ; les dix premières résidences, en 2024, ont été menées par un chef de projet expérimenté, recruté pour deux ans : planning par résidence, point hebdomadaire avec les responsables de résidence, liste de contrôle avant chaque ouverture</td>
+<td>les dix premières résidences ont été équipées dans les délais, en deux mois chacune ; le chef de projet a quitté l'entreprise en juin 2025 ; les douze résidences suivantes ont demandé quatre mois chacune ; sur les 30 résidences prévues pour fin 2026, 22 sont équipées et 8 sont reportées à 2027</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Les pratiques</strong></p>
+<ul>
+<li>Il n'existe pas de méthode commune de conduite des projets : chaque projet est piloté par la direction qui l'a demandé, avec ses propres tableaux.</li>
+<li>Aucun projet n'a fait l'objet d'une revue de fin de projet ; les enseignements de la clé virtuelle n'ont pas été écrits.</li>
+<li>Aucun indicateur ne suit l'avancement, les délais ou les coûts des projets : les dépassements ne sont connus qu'à la clôture des comptes.</li>
+<li>La direction des systèmes d'information ne compte aucun chef de projet à temps plein.</li>
+</ul>
+<h3 id="annexe-14--le-parcours-actuel-de-la-candidature-à-la-remise-des-accès-description-établie-avec-le-centre-de-relation-résidents-et-deux-responsables-de-résidence-février-2027">ANNEXE 1.4 – Le parcours actuel, de la candidature à la remise des accès (description établie avec le centre de relation résidents et deux responsables de résidence, février 2027)</h3>
+<ol type="1">
+<li><strong>Le candidat</strong> choisit une résidence et un type de logement sur le <strong>portail</strong>, crée un compte et remplit sa candidature en ligne. Le portail lui demande ensuite d'envoyer par courriel au <strong>centre de relation résidents</strong> ses pièces justificatives et le formulaire d'engagement du <strong>garant</strong>, que celui-ci imprime, signe et renvoie scanné au candidat.</li>
+<li><strong>Le centre de relation résidents</strong> reçoit les courriels (jusqu'à 2 000 par jour en juillet), contrôle les pièces à la main et relance les candidats : un dossier sur deux est incomplet à la première réception. Il marque ensuite le dossier « complet » sur le portail. Délai moyen entre la candidature commencée et le dossier complet : six jours.</li>
+<li>Chaque nuit, <strong>le portail</strong> transmet au <strong>logiciel de gestion locative</strong>, par un échange de fichiers, l'identité des candidats dont le dossier est complet. Le lendemain, <strong>le chargé d'accueil</strong> de la résidence ressaisit le reste de la candidature, puis attribue un logement, que <strong>le responsable de résidence</strong> valide. Jusqu'à l'échange de la nuit suivante, le portail continue d'afficher le logement comme libre : à l'été 2026, 150 logements ont été promis à deux candidats.</li>
+<li><strong>Le chargé d'accueil</strong> prépare le bail dans un traitement de texte, à partir d'un modèle, en recopiant les données du logiciel de gestion locative, puis le dépose sur le service du <strong>prestataire de signature</strong> ; le candidat signe en ligne. Un bail sur vingt doit être corrigé (numéro de logement, montant, dates) et signé de nouveau. Délai moyen : trois jours entre l'attribution et l'envoi du bail, puis deux jours jusqu'à la signature.</li>
+<li><strong>Le centre de relation résidents</strong> envoie au résident un lien de paiement du dépôt de garantie ; le <strong>prestataire de paiement</strong> lui adresse chaque jour la liste des paiements reçus. Une fois par semaine, un chargé d'accueil rapproche à la main ces paiements des baux dans le logiciel de gestion locative : fin septembre 2026, 300 paiements n'étaient pas rapprochés.</li>
+<li>À l'arrivée, <strong>le chargé d'accueil</strong> fait l'état des lieux sur papier avec le résident (trente minutes en moyenne), puis active sa clé virtuelle dans l'application des résidents (22 résidences) ou lui remet un badge (38 résidences). Il saisit l'état des lieux dans le logiciel de gestion locative plus tard, parfois trois semaines après.</li>
+</ol>
+<p>Délai moyen entre la candidature commencée et le bail signé : douze jours.</p>
+<h3 id="annexe-15--le-projet-de-remplacement-du-logiciel-de-gestion-locative-note-de-mme-solène-varquigny-et-besoins-exprimés-par-les-directions-février-2027">ANNEXE 1.5 – Le projet de remplacement du logiciel de gestion locative (note de Mme Solène VARQUIGNY et besoins exprimés par les directions, février 2027)</h3>
+<p><strong>A. L'option retenue</strong></p>
+<p>En février 2027, après une présélection de trois éditeurs, le directoire a retenu un <strong>progiciel de gestion locative en ligne</strong>, utilisé par une trentaine de gestionnaires de résidences en Europe. Il est fourni par son éditeur sous la forme d'un service en ligne et mis en œuvre par un <strong>intégrateur</strong>, partenaire exclusif de l'éditeur en France, qui réalise 60 % de son activité avec ce progiciel. Le progiciel couvre en standard les candidatures en ligne avec dépôt des pièces, l'attribution des logements en temps réel, la production des baux à partir de modèles, le quittancement, le suivi des dépôts de garantie, les états des lieux sur tablette et des tableaux de bord ; il communique avec d'autres applications par des interfaces publiées par l'éditeur.</p>
+<p><strong>B. Les lots du projet</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Lot</th>
+<th>Contenu</th>
+<th>Ce que l'on sait en février 2027</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Abonnement au progiciel</td>
+<td>accès au service en ligne, hébergement, exploitation et nouvelles versions par l'éditeur</td>
+<td>4 € par logement géré et par mois</td>
+</tr>
+<tr class="even">
+<td>2. Paramétrage et intégration</td>
+<td>paramétrage du progiciel pour les 60 résidences ; cinq interfaces avec le portail de réservation, le prestataire de signature, le prestataire de paiement, la clé virtuelle et le progiciel de gestion intégré</td>
+<td>l'intégrateur estime le travail à 250 jours « sur la base des besoins exprimés à ce jour » ; il propose soit un prix ferme une fois le cahier des charges validé, soit une facturation au temps passé dès maintenant ; tout besoin nouveau fera l'objet d'un devis</td>
+</tr>
+<tr class="odd">
+<td>3. Reprise des données</td>
+<td>logements, résidents, baux, quittances et dépôts de garantie de 2009 à 2027, soit environ 100 000 baux</td>
+<td>les données antérieures à 2016 n'ont pas d'identifiant unique du résident ; leur qualité n'a jamais été mesurée</td>
+</tr>
+<tr class="even">
+<td>4. Formation</td>
+<td>environ 200 utilisateurs dans les résidences et 60 à la direction commerciale et de la relation résidents</td>
+<td>une quarantaine de saisonniers est recrutée chaque été ; chaque nouvelle résidence ouverte d'ici 2030 aura ses propres équipes</td>
+</tr>
+<tr class="odd">
+<td>5. Maintenance des interfaces après la mise en service</td>
+<td>corrections et évolutions des cinq interfaces</td>
+<td>l'éditeur publie trois versions du progiciel par an ; le nombre de corrections et d'évolutions n'est pas connu</td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. Les conditions de l'offre de l'éditeur</strong></p>
+<ol type="1">
+<li>Le contrat d'abonnement dure trois ans et se renouvelle par tacite reconduction. Il est régi par les conditions générales standard de l'éditeur, identiques pour tous ses clients.</li>
+<li>Les évolutions du progiciel sont décidées par l'éditeur pour l'ensemble de ses clients ; une fonction peu utilisée peut être retirée avec un préavis de six mois. Le module de séjours courts est annoncé pour 2029. Aucun développement spécifique n'est accepté dans le progiciel : seules les interfaces peuvent être développées, par l'intégrateur.</li>
+<li>Les données sont hébergées hors de France, dans un autre pays de l'Union européenne. La disponibilité du service est de 99,5 % par mois, hors maintenances programmées, qui peuvent avoir lieu à toute heure.</li>
+<li>En fin de contrat, les données sont restituées dans un délai de trente jours, « dans un format propriétaire », sans assistance de l'éditeur.</li>
+<li>Le prix de l'abonnement est révisable chaque année selon la grille tarifaire de l'éditeur, sans plafond.</li>
+</ol>
+<p><strong>D. Les huit besoins exprimés par les directions</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>N°</th>
+<th>Besoin</th>
+<th>Demandé par</th>
+<th>Remarque de la direction des systèmes d'information</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Signature du bail en moins de dix minutes après l'acceptation de la candidature</td>
+<td>direction commerciale et de la relation résidents</td>
+<td>le centre de relation résidents demande à continuer de contrôler chaque dossier à la main avant la signature</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>États des lieux sur tablette, avec photos</td>
+<td>direction des résidences</td>
+<td>fonction standard du progiciel ; tablettes à prévoir dans les 60 résidences</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Tableau de bord d'occupation en temps réel</td>
+<td>présidente du directoire</td>
+<td>fonction standard du progiciel</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Paiement du dépôt de garantie en trois fois</td>
+<td>direction commerciale et de la relation résidents</td>
+<td>proposé en option par le prestataire de paiement ; la direction financière demande que les accès ne soient remis qu'une fois le dépôt payé en totalité</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Reprise de dix-huit ans d'historique (2009-2027)</td>
+<td>direction financière</td>
+<td>l'intégrateur estime que la reprise complète ajoute quatre mois au projet ; données antérieures à 2016 incomplètes</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Interface avec la clé virtuelle</td>
+<td>direction des résidences et services techniques</td>
+<td>nécessaire pour remettre les accès sans passage à l'accueil dans les 22 résidences équipées</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Module de séjours courts d'été</td>
+<td>direction commerciale et de la relation résidents</td>
+<td>annoncé par l'éditeur pour 2029 ; les séjours courts sont aujourd'hui suivis dans des tableaux</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Développement spécifique d'un calcul des charges propre à chaque propriétaire</td>
+<td>M. Bastien LORMIÈRE, membre du directoire chargé des finances et du développement</td>
+<td>les 35 résidences des autres propriétaires suivent chacune leurs propres règles ; le progiciel n'accepte pas de développement spécifique : l'intégrateur propose de développer ce calcul à côté du progiciel, à adapter à chaque nouvelle version</td>
+</tr>
+</tbody>
+</table>
+<p><strong>E. Le calendrier</strong></p>
+<p>Signature des contrats en juin 2027 ; paramétrage et interfaces de septembre 2027 à février 2028 ; reprise des données et formation en mars et avril 2028 ; mise en service en mai 2028, avant le début de la campagne de la rentrée 2028. L'ancien logiciel reste maintenu par son éditeur jusqu'en décembre 2028.</p>
+<h3 id="annexe-16--repères-au-31122026">ANNEXE 1.6 – Repères (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Repère</th>
+<th>Nom exact et version</th>
+<th>Nature</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Modèle d'alignement stratégique</td>
+<td><em>Strategic Alignment Model</em> (SAM), J. C. Henderson et N. Venkatraman, « Strategic alignment: leveraging information technology for transforming organizations », <em>IBM Systems Journal</em>, vol. 32, n° 1, 1993</td>
+<td>modèle théorique ; ni norme, ni référentiel</td>
+</tr>
+<tr class="even">
+<td>Modèle de maturité</td>
+<td>CMMI (<em>Capability Maturity Model Integration</em>), CMMI Institute (ISACA), version 3.0 (2023) ; cinq niveaux de maturité : 1 initial, 2 géré, 3 défini, 4 quantitativement géré, 5 en optimisation</td>
+<td>référentiel de bonnes pratiques ; une évaluation par le CMMI Institute est possible, mais facultative</td>
+</tr>
+<tr class="odd">
+<td>Données personnelles</td>
+<td>règlement (UE) 2016/679 (RGPD), applicable depuis le 25/05/2018 : un prestataire qui traite des données personnelles pour le compte d'ORVANELLE, comme l'éditeur d'un service en ligne, agit en sous-traitant ; ORVANELLE reste responsable du traitement</td>
+<td>règlement européen ; aucune analyse juridique n'est attendue</td>
+</tr>
+</tbody>
+</table>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>Le logiciel de gestion locative ne sera plus maintenu après 2028 et « ORVANELLE 2030 » veut un parcours entièrement en ligne, de la candidature à la remise des accès, pour un parc porté à 12 000 logements. Mme TRÉVARDIN veut que le système d'information devienne un atout commercial, alors que la direction des systèmes d'information n'a pas été associée au plan et que les projets passés ont souvent dérapé. Elle vous demande de diagnostiquer l'alignement du système d'information et d'en déduire les orientations de sa stratégie, d'apprécier la maturité de la gestion des projets avant de lancer le remplacement, d'analyser le parcours des candidats et des résidents, puis de préparer les contrats, le cahier des charges et la gestion des risques du projet. Vous mobiliserez pour cela les annexes 1.1 à 1.6 ainsi que vos connaissances professionnelles.</p>
+<p><strong>1.1 – L'alignement du système d'information sur « ORVANELLE 2030 » (3 points)</strong></p>
+<p>a) Après avoir présenté le modèle d'alignement stratégique (SAM) de Henderson et Venkatraman, diagnostiquez, à partir de l'annexe 1.2, l'alignement actuel du système d'information d'ORVANELLE : la place de la direction des systèmes d'information, le rôle du système d'information dans l'offre faite aux étudiants, les choix technologiques faits sans elle. Indiquez ensuite, en la justifiant, la perspective d'alignement qu'il faudrait adopter au regard d'« ORVANELLE 2030 ».</p>
+<p>b) Déduisez-en trois orientations de la stratégie du système d'information, chacune justifiée par un objectif du plan. Il n'est demandé ni schéma directeur, ni feuille de route.</p>
+<p><strong>1.2 – La maturité de la gestion des projets du système d'information (2,5 points)</strong></p>
+<p>a) Après avoir présenté les niveaux de maturité du modèle CMMI, situez la gestion des projets du système d'information d'ORVANELLE sur cette échelle, en justifiant le niveau retenu par trois constats de l'annexe 1.3.</p>
+<p>b) Fixez, en le justifiant, le niveau à atteindre avant le lancement du projet de remplacement, puis proposez trois actions pour y parvenir.</p>
+<p><strong>1.3 – Le parcours, de la candidature à la remise des accès (2,5 points)</strong></p>
+<p>a) À partir de l'annexe 1.4, relevez quatre ruptures du processus actuel (ressaisies, délais, risques d'erreur), en précisant l'effet de chacune. Représentez ensuite, sous la forme d'un tableau ou d'un schéma par acteur, le processus cible que permettent le progiciel et ses interfaces (annexe 1.5).</p>
+<p>b) Analysez les effets de ce processus cible sur les métiers des résidences selon trois axes : le rôle des chargés d'accueil, leurs compétences, l'organisation de la rentrée. Aucune analyse juridique n'est attendue.</p>
+<p><strong>1.4 – Les contrats du projet et les risques d'un progiciel en ligne (3 points)</strong></p>
+<p>a) Après avoir présenté les principaux types de contrats de prestation informatique (abonnement à un service en ligne, forfait, régie, unités d'œuvre), proposez pour chacun des cinq lots de l'annexe 1.5 B le type de contrat adapté, en justifiant chaque choix.</p>
+<p>b) Analysez quatre risques contractuels propres à un progiciel en ligne, révélés par l'annexe 1.5 : la dépendance à l'éditeur ; la réversibilité et le format de restitution des données ; l'évolution du service et du prix décidée par l'éditeur ; la dérive du périmètre de l'intégration. Proposez pour chacun la façon de le traiter dans la négociation. Aucune analyse juridique des clauses n'est attendue.</p>
+<p><strong>1.5 – Le cahier des charges et les risques du projet (3 points)</strong></p>
+<p>a) Présentez la structure du cahier des charges fonctionnel et technique du projet, puis classez les huit besoins de l'annexe 1.5 D par une méthode de priorisation que vous nommerez, en justifiant les arbitrages entre les besoins qui se contredisent.</p>
+<p>b) Après avoir présenté la démarche de gestion des risques d'un projet, construisez le registre de quatre risques du projet de remplacement, dont un risque de maintenance, un risque d'évolutivité et un risque de sécurité : pour chacun, sa cause tirée des annexes, sa probabilité et son impact cotés de 1 (faible) à 4 (très fort), la réponse proposée et son responsable. Ces risques sont distincts des risques contractuels de la question 1.4. Aucun planning ni aucun chiffrage du projet n'est attendu.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
