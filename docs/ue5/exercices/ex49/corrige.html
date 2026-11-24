@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Préparer la stratégie et l'organisation du système d'information : BRÉVALIM, société d'économie mixte exploitant un marché de gros alimentaire : orientations de la stratégie du SI et arbitrage d'un portefeuille de projets, organisation de la fonction SI et relations avec la direction générale, les métiers et les actionnaires, cartographie applicative et IA d'extraction des documents d'arrivage, connaissances partagées avec les entreprises installées, niveaux de service du contrat d'infogérance</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 1</p><p>14 points</p><p>1 h 03</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Préparer la stratégie et l'organisation du système d'information</h1><p class="cas">BRÉVALIM, société d'économie mixte exploitant un marché de gros alimentaire : orientations de la stratégie du SI et arbitrage d'un portefeuille de projets, organisation de la fonction SI et relations avec la direction générale, les métiers et les actionnaires, cartographie applicative et IA d'extraction des documents d'arrivage, connaissances partagées avec les entreprises installées, niveaux de service du contrat d'infogérance</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F01 alignement stratégique (§ 3, planification et portefeuille ; § 4, organisation de la DSI, rôle et relations du DSI), F02 gouvernance et référentiels (§ 1, norme, référentiel et solution ; § 5, ITIL ; § 6, comitologie), F03 architecture et urbanisation (§ 1 et § 2, cartographies ; § 3, intégration), F04 relations avec les ESN et contrats (§ 3, niveaux de service ; § 4, clauses critiques), F06 gestion des connaissances (§ 1, connaissances tacites et explicites ; § 2, dispositif, gouvernance et appropriation), F13 intelligence artificielle (§ 1, typologie ; § 3, risques ; § 4, gouvernance), F15 RGPD opérationnel (§ 5, sous-traitance), glossaire, et la base des référentiels datés (vérifiés les 25 et 26/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1 Les orientations de la stratégie du système d'information et le portefeuille de projets</td>
+<td><code>1.1.a</code> Définir une stratégie des systèmes d'information alignée sur les objectifs métiers, en intégrant les opportunités offertes par les technologies émergentes ; <code>1.1.c</code> Méthodologies de planification stratégique du SI</td>
+<td>3,5</td>
+</tr>
+<tr class="even">
+<td>1.2 L'organisation de la fonction système d'information</td>
+<td><code>1.2.b</code> Modèles organisationnels de la DSI (centralisée, décentralisée, bimodale, etc.) ; <code>1.2.c</code> Enjeux relationnels entre DSI, direction générale et directions métiers</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>1.3 La cartographie applicative et l'extraction automatique des documents d'arrivage</td>
+<td><code>1.3.b</code> Cartographie applicative et fonctionnelle des SI ; <code>1.3.d</code> Fonctionnement et usages des technologies émergentes : blockchain, registres distribués, IA, …</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td>1.4 Le partage des bonnes pratiques avec les entreprises installées</td>
+<td><code>1.6.a</code> Mettre en œuvre une stratégie de gestion des connaissances soutenue par les systèmes d'information, en assurant son pilotage, sa gouvernance et son appropriation organisationnelle ; <code>1.6.d</code> Intégration des outils de KM dans l'environnement SI : GED, intranet, wiki, forums ; <code>1.6.c</code> Méthodes de gouvernance des dispositifs (rôles, responsabilités, indicateurs) ; <code>1.6.e</code> Leviers d'appropriation et de transformation des pratiques professionnelles</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>1.5 Les niveaux de service du contrat d'infogérance</td>
+<td><code>1.4.a</code> Concevoir, négocier et sécuriser des relations contractuelles avec des prestataires de services numériques (ESN), en tenant compte des enjeux opérationnels et juridiques ; <code>1.4.c</code> Cadre juridique applicable : responsabilité, confidentialité, SLA, RGPD</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td><strong>Dossier 1 – Préparer la stratégie et l'organisation du système d'information</strong></td>
+<td></td>
+<td><strong>14</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (planification stratégique et portefeuille, modèles d'organisation, cartographies, apprentissage automatique, gestion des connaissances, niveaux de service) environ 2,5 points (items 1.1 a-1, 1.2 a-1, 1.3 a-1, 1.3 b-1 pour moitié, 1.4 a-1, 1.5 a-1 pour moitié) ; analyse des annexes et recommandations environ 11,5 points, soit environ 82 %. Durée conseillée : 14 points × 4,5 minutes = 63 minutes, soit 1 h 03.</p>
+<hr />
+<h3 id="11--les-orientations-de-la-stratégie-du-système-dinformation-et-le-portefeuille-de-projets-35-points">1.1 – Les orientations de la stratégie du système d'information et le portefeuille de projets (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.1 – Élaborer et aligner la stratégie des SI : <code>1.1.a</code> « Définir une stratégie des systèmes d'information alignée sur les objectifs métiers, en intégrant les opportunités offertes par les technologies émergentes » ; <code>1.1.c</code> « Méthodologies de planification stratégique du SI ». Limite : « Ne pas confondre alignement stratégique et simple adéquation technique. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.3 (six projets, enveloppe, conventions), 1.2 (témoignages), 1.4 (applications et échanges), 1.1 (plan, activité, dépenses du SI) et 1.5 à 1.7 pour les constats qui fondent les orientations.</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Planification stratégique du SI définie (traduction de la stratégie en orientations pluriannuelles du SI, cible, projets priorisés, moyens, révision) et gestion d'un portefeuille de projets définie (ensemble des projets arbitré comme un tout par la valeur, le risque, le coût et les ressources, sous une enveloppe, avec des décisions de lancer, différer ou abandonner)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux orientations de la stratégie du SI, chacune justifiée par un objectif du plan et par un constat des annexes</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Troisième orientation, même exigence ; les orientations ne se réduisent ni à une liste de projets ni à un choix technique</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Grille de trois ou quatre critères définis, dont la contribution au plan et le risque du projet, avec une échelle de notation</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Grille appliquée aux six projets, avec des notes justifiées par l'annexe 1.3 (et non par le seul objectif invoqué par le demandeur)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Sélection dans l'enveloppe de 900 k€ (total de tête) et ordre de lancement justifié par l'urgence, les dépendances et la capacité du service (deux projets à la fois) ; projets différés et motif</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-4</td>
+<td>Rôle du conseil d'administration : valide les orientations et l'enveloppe, approuve le portefeuille et les projets importants avant tout engagement, suit leur avancement chaque trimestre ; il n'arbitre pas le détail, que prépare la direction générale</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.1 a) – La planification stratégique du SI, le portefeuille et trois orientations</em></p>
+<p>La <strong>planification stratégique du système d'information</strong> est la démarche par laquelle la direction, avec les directions métiers et le service des systèmes d'information, traduit la stratégie de l'organisation en <strong>orientations du SI</strong> pour plusieurs années, en déduit une cible (applications, données, organisation, compétences, partenaires) et un ensemble de <strong>projets priorisés</strong>, avec leurs moyens, puis la révise périodiquement ; le schéma directeur en est la forme la plus complète (non demandée ici). La <strong>gestion d'un portefeuille de projets</strong> consiste à considérer l'ensemble des projets et des demandes <strong>comme un tout</strong> : on les compare selon des critères communs (contribution à la stratégie, risque, coût, ressources), sous une <strong>enveloppe</strong> et une capacité données, pour décider de les lancer, de les différer ou de les abandonner, puis on revoit ces décisions en comité. Chez BRÉVALIM, cette démarche n'existe pas : chaque direction décide seule de ses outils, et le conseil découvre les projets une fois engagés (annexe 1.2) (0,5 pt).</p>
+<p><strong>Trois orientations</strong> (0,5 pt pour deux orientations, 0,5 pt pour la troisième ; trois parmi les suivantes) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Orientation</th>
+<th>Constats des annexes</th>
+<th>Objectif du plan servi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Construire un socle de gestion unique des entreprises installées et des acheteurs</strong>, qui partage leurs données de référence et échange automatiquement avec la facturation, la comptabilité et les outils d'exploitation, au lieu des ressaisies</td>
+<td>logiciel de gestion de 2011, plus maintenu après 2029 (annexe 1.3) ; cartes d'acheteur et consommations de froid ressaisies pour être facturées (annexe 1.4) ; 0,8 M€ sur 1,3 M€ engagés par les directions hors du service des systèmes d'information (annexe 1.2)</td>
+<td>fiabiliser la facturation et le pilotage</td>
+</tr>
+<tr class="even">
+<td><strong>Faire du portail des entreprises installées le point d'entrée unique de la relation</strong> : factures, demandes techniques suivies, consignes du marché, accessible sur téléphone et dans les pavillons</td>
+<td>90 entreprises sur 240 ont un compte ; factures papier ; demandes imprimées, ressaisies et réponse par courrier (annexes 1.2 et 1.4)</td>
+<td>dématérialiser d'ici 2029 toute la relation avec les entreprises installées et les acheteurs</td>
+</tr>
+<tr class="odd">
+<td><strong>Mesurer à la source les flux du marché</strong> utiles au plan : origine et tonnage des produits, déchets par entreprise, au lieu de saisies et de recopies tardives</td>
+<td>documents d'arrivage saisis à la main, données complètes six semaines après le mois (annexe 1.5) ; pont-bascule relié à rien, totaux recopiés dans un tableur (annexe 1.4)</td>
+<td>porter de 30 % à 40 % la part des produits régionaux ; valoriser 80 % des déchets en 2031</td>
+</tr>
+<tr class="even">
+<td><strong>Gouverner le SI comme un ensemble et sécuriser son exploitation, de jour comme de nuit</strong> : décisions partagées entre directions, service des systèmes d'information associé à tout choix, niveaux de service adaptés à l'activité de nuit, données protégées chez les prestataires</td>
+<td>personne au service après 18 heures ; 14 incidents de nuit en 2026 ; sauvegardes chez un prestataire inconnu ; aucune clause sur les données (annexes 1.2 et 1.7)</td>
+<td>garantir la sûreté du site et la sécurité des données</td>
+</tr>
+</tbody>
+</table>
+<p><em>1.1 b) – La grille d'arbitrage et le portefeuille 2027-2029</em></p>
+<p><strong>Grille d'arbitrage</strong> (0,5 pt), chaque critère noté de 1 (faible) à 3 (fort) :</p>
+<ul>
+<li><strong>contribution au plan</strong> : nombre et poids des objectifs servis, au-delà de celui que le demandeur invoque ;</li>
+<li><strong>urgence</strong> : risque de ne pas faire (fin de maintenance, saturation, échéance du plan) ;</li>
+<li><strong>risque du projet</strong> (noté à l'envers : 3 = risque faible) : complexité, dépendances, adhésion des tiers, qualité de l'outil ;</li>
+<li><strong>coût au regard de l'enveloppe</strong> (noté à l'envers : 3 = coût faible) et charge pour le service des systèmes d'information.</li>
+</ul>
+<p><strong>Application aux six projets</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Projet</th>
+<th>Contribution au plan</th>
+<th>Urgence</th>
+<th>Risque (3 = faible)</th>
+<th>Coût (3 = faible)</th>
+<th>Décision</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P1. Logiciel de gestion du marché (450 k€, 18 mois)</td>
+<td>3 : facturation et pilotage, socle du portail, préalable à P2</td>
+<td>3 : fin de maintenance à la fin de 2029, 18 mois de projet</td>
+<td>1 : projet long, cœur de l'activité, reprise des contrats</td>
+<td>1</td>
+<td><strong>retenu, lancé en premier</strong></td>
+</tr>
+<tr class="even">
+<td>P2. Application des acheteurs (250 k€, 12 mois)</td>
+<td>2 : relation avec les acheteurs</td>
+<td>1</td>
+<td>1 : dépend de P1 ; 25 grossistes sur 150 prêts</td>
+<td>2</td>
+<td><strong>différé</strong></td>
+</tr>
+<tr class="odd">
+<td>P3. Extraction des documents d'arrivage (120 k€, 6 mois)</td>
+<td>3 : origine des produits, pilotage, deux personnes libérées de la saisie</td>
+<td>2 : données à six semaines</td>
+<td>2 : outil déjà utilisé, mais documents manuscrits mal lus</td>
+<td>3</td>
+<td><strong>retenu, lancé en premier</strong></td>
+</tr>
+<tr class="even">
+<td>P4. Renouvellement du péage (600 k€, 12 mois)</td>
+<td>1 : sûreté invoquée, mais le système fonctionne</td>
+<td>1 : maintenu jusqu'en 2031</td>
+<td>2</td>
+<td>1 : deux tiers de l'enveloppe</td>
+<td><strong>différé</strong></td>
+</tr>
+<tr class="odd">
+<td>P5. Wifi du site (150 k€, 6 mois)</td>
+<td>2 : accès au portail dans les pavillons, fiabilité des tablettes des placiers</td>
+<td>2 : réseau mobile saturé certaines nuits</td>
+<td>3 : aucune dépendance</td>
+<td>3</td>
+<td><strong>retenu</strong></td>
+</tr>
+<tr class="even">
+<td>P6. Suivi des déchets par entreprise (180 k€, 9 mois)</td>
+<td>2 : déchets valorisés, données par entreprise</td>
+<td>2 : échéance de 2031, il faut mesurer avant d'agir</td>
+<td>2 : raccordement du pont-bascule</td>
+<td>2</td>
+<td><strong>retenu</strong></td>
+</tr>
+</tbody>
+</table>
+<p>P1 est un projet de maintien en condition (fin de maintenance à la fin de 2029) : il est retenu d'office, quelle que soit sa note ; la grille départage les autres projets.</p>
+<p><strong>Sélection et ordre</strong> (0,5 pt). Les projets demandés coûtent 1 750 k€ pour 900 k€ disponibles. Le portefeuille retenu tient dans l'enveloppe : 450 + 120 + 150 + 180 = 900 k€ (P1, P3, P5, P6) ; 850 k€ sont différés (P2, P4). Ordre de lancement, avec au plus deux projets à la fois :</p>
+<ol type="1">
+<li><strong>septembre 2027 : P1 et P3</strong>. P1 d'abord, parce qu'il est le plus urgent et le plus structurant : lancé en septembre 2027, il s'achève en février 2029, avant la fin de la maintenance ; P3 en parallèle, parce qu'il est court, peu coûteux, sans dépendance, et donne vite des résultats sur l'objectif des produits régionaux ;</li>
+<li><strong>mars 2028 : P5</strong>, une fois P3 achevé : il prépare l'usage du portail dans les pavillons et fiabilise les tablettes des placiers ;</li>
+<li><strong>septembre 2028 : P6</strong>, après P5, pour un achèvement au printemps 2029.</li>
+</ol>
+<p><strong>Projets différés</strong> : P2 dépend de P1 ; lancé au mieux en mars 2029, il ne s'achèverait qu'en février 2030, et la plupart des grossistes ne sont pas prêts : il est préparé avec l'Union des grossistes pendant P1. P4 est demandé au nom de la sûreté, mais le système fonctionne et reste maintenu jusqu'en 2031 ; il absorberait les deux tiers de l'enveloppe : il est réexaminé en 2029 pour 2030-2031.</p>
+<p><strong>Rôle du conseil d'administration</strong> (0,5 pt). Le conseil, qui a adopté le plan, n'arbitre pas projet par projet : la direction générale instruit les demandes et prépare l'arbitrage avec un comité du SI (question 1.2). Le conseil <strong>valide les orientations du SI et l'enveloppe</strong> de 900 k€ sur trois ans, <strong>approuve le portefeuille</strong>, et en particulier les projets les plus importants, comme P1, <strong>avant tout engagement</strong> ; il <strong>suit l'avancement</strong> des projets dans le compte rendu trimestriel aux actionnaires et décide des reports ou des réexamens (P4 en 2029). C'est la réponse au constat de son président : « le conseil ne voit jamais les projets du système d'information avant qu'ils soient engagés ».</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres critères pertinents (dépendances, capacité du service, adhésion des entreprises), autre échelle, ou grille qualitative (fort, moyen, faible), si la contribution au plan et le risque y figurent et si l'application est justifiée par l'annexe 1.3.</li>
+<li>Portefeuille comprenant P1 et P2 (P1 + P3 + P2, 820 k€ ; P1 + P2 + P5, 850 k€ ; P1 + P2 + P6, 880 k€), si le candidat montre qu'il tient dans l'enveloppe et assume l'achèvement de P2 en 2030 ; tout portefeuille qui écarte P1 n'est pas accepté, faute de solution à la fin de la maintenance.</li>
+<li>P5 ou P6 différé au profit d'une réserve pour imprévus, si le choix est justifié.</li>
+<li>Lancement de P5 avant P3, si l'ordre respecte la règle des deux projets à la fois et est justifié.</li>
+<li>Orientation sur l'ouverture des données des flux à la métropole : acceptée comme orientation si elle est justifiée par le plan et la demande de Brévaline Métropole, sans en détailler la gouvernance.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Orientations réduites à une liste de projets ou à des choix techniques</em> (<code>JUR-G02</code> alignement réduit à un choix technique ou à une standardisation logicielle ; ET-06) — « acheter un nouveau logiciel de gestion » n'est pas une orientation : l'orientation dit ce que le SI doit permettre au plan.</li>
+<li><em>Projets retenus selon l'objectif invoqué par le demandeur</em> (<code>JUR-T03</code> analyser et argumenter) — chaque demandeur rattache son projet au plan ; la grille sert précisément à comparer.</li>
+<li><em>Enveloppe dépassée ou ignorée, ou dépendance de P2 à P1 oubliée</em> (<code>JUR-T08</code> exploiter toutes les annexes) — la limite, la date de démarrage et la capacité du service sont données.</li>
+<li><em>Conseil d'administration chargé de choisir les outils, ou absent de l'arbitrage</em> (<code>JUR-T07</code> répondre à la seule question posée) — il fixe le cadre, approuve et suit ; il ne gère pas.</li>
+<li><em>Schéma directeur, feuille de route complète ou calcul de rentabilité construits</em> (<code>JUR-T07</code>) — non demandés.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Planification stratégique du SI et portefeuille de projets</td>
+<td>orientations déduites de la stratégie ; arbitrage par la valeur, le risque et le coût</td>
+<td>F01 § 3.1 et § 3.2 ; <code>erreurs_types.md</code> ET-06 et ET-07</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Comitologie du SI</td>
+<td>comité d'arbitrage du portefeuille</td>
+<td>F02 § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12--lorganisation-de-la-fonction-système-dinformation-3-points">1.2 – L'organisation de la fonction système d'information (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.2 – Concevoir et piloter la gouvernance des SI : <code>1.2.b</code> « Modèles organisationnels de la DSI (centralisée, décentralisée, bimodale, etc.) » ; <code>1.2.c</code> « Enjeux relationnels entre DSI, direction générale et directions métiers ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.1 (organigramme, effectif, dépenses du SI), 1.2 (témoignages), 1.3 (demandeurs des projets) et 1.7 (infogérance).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Quatre modèles présentés (centralisée, décentralisée, fédérée, externalisée), chacun avec son principe, une force et une limite</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Organisation actuelle qualifiée : service unique en apparence, rattaché à la direction administrative et financière et cantonné au support, mais décisions et dépenses décentralisées dans les directions ; infogérance non pilotée ; rattachement ambigu (le (la) directeur(rice) général(e) délégué(e) est chargé(e) du SI)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Effets tirés des annexes : applications qui ne se parlent pas, dépenses non maîtrisées (0,8 M€ hors du service), activité de nuit sans appui, conseil non informé, demandes sans priorité</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Modèle fédéré recommandé et justifié (service central pour la gouvernance, l'architecture, les contrats et la sécurité ; référents dans les directions), et rattachement au (à la) directeur(rice) général(e) délégué(e) chargé(e) du SI, membre de la direction générale, plutôt qu'à la direction administrative et financière</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Deux mesures parmi les trois axes demandés, chacune reliée à un constat</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Troisième mesure, sur l'axe restant ; les trois axes (instances, rôle du responsable, information des actionnaires) sont couverts</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.2 a) – Les modèles d'organisation et la situation de BRÉVALIM</em></p>
+<p><strong>Les modèles d'organisation de la fonction SI</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Modèle</th>
+<th>Principe</th>
+<th>Force</th>
+<th>Limite</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Centralisée</strong></td>
+<td>une direction des systèmes d'information unique décide et opère pour toute l'organisation</td>
+<td>cohérence, économies, sécurité homogène</td>
+<td>éloignement des métiers, lenteur</td>
+</tr>
+<tr class="even">
+<td><strong>Décentralisée</strong></td>
+<td>chaque direction ou entité choisit et gère ses outils</td>
+<td>proximité, réactivité</td>
+<td>redondances, applications qui ne communiquent pas, sécurité inégale</td>
+</tr>
+<tr class="odd">
+<td><strong>Fédérée</strong></td>
+<td>un service central fixe les règles communes (gouvernance, architecture, référentiels, contrats, sécurité) ; des correspondants dans les directions portent les besoins et administrent leurs outils dans ce cadre</td>
+<td>équilibre entre cohérence et proximité</td>
+<td>coordination à organiser, rôles à clarifier</td>
+</tr>
+<tr class="even">
+<td><strong>Externalisée</strong></td>
+<td>tout ou partie du SI confié à des prestataires (infogérance)</td>
+<td>compétences, coûts variables</td>
+<td>dépendance, perte de maîtrise si le client ne pilote pas</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L'organisation actuelle</strong> (0,5 pt). En apparence, BRÉVALIM a une organisation <strong>centralisée</strong> : un service unique de sept personnes. En réalité, elle est <strong>décentralisée</strong> : la direction de l'exploitation a choisi le péage (2019), la direction technique la supervision du froid (2025), et 0,8 M€ des 1,3 M€ de dépenses du SI sont engagés directement par les directions ; Mme DUCHÉRAN déclare : « je ne vais pas attendre l'informatique ». Le service des systèmes d'information, rattaché à la direction administrative et financière, est cantonné au <strong>support</strong> (« Nous passons nos journées à dépanner et à installer »), apprend les projets par les factures et reçoit des demandes par courriel, sans priorité. L'exploitation des serveurs est <strong>externalisée</strong> depuis 2024, sans pilotage réel (annexe 1.7). Le rattachement est en outre ambigu : depuis 2025, le (la) directeur(rice) général(e) délégué(e) est chargé(e) du système d'information, mais le service dépend toujours de la direction administrative et financière (annexe 1.1).</p>
+<p><strong>Ses effets</strong> (0,5 pt) :</p>
+<ul>
+<li>des applications choisies séparément <strong>qui ne se parlent pas</strong> : ressaisies des cartes et des consommations de froid, pont-bascule et badges isolés (annexe 1.4) ;</li>
+<li>des <strong>dépenses et des risques non maîtrisés</strong> : 0,8 M€ hors du service, serveurs du péage et des badges hors de l'infogérance, découverts « quand ils tombent en panne » ;</li>
+<li>une <strong>activité de nuit sans appui</strong> : personne au service après 18 heures, alors que le marché vit de minuit à 11 heures ;</li>
+<li>un <strong>conseil d'administration non informé</strong> : la supervision du froid (90 k€) ne lui a jamais été présentée ;</li>
+<li>aucun moyen d'arbitrer les demandes au regard du plan.</li>
+</ul>
+<p><strong>Recommandation : un modèle fédéré, rattaché au (à la) directeur(rice) général(e) délégué(e)</strong> (0,5 pt). Un <strong>service central</strong> (qui devient direction des systèmes d'information) fixe et garde les règles communes : orientations et portefeuille, architecture et référentiel unique des entreprises et des acheteurs, contrats et niveaux de service des prestataires (infogérance, fournisseurs du péage et du froid, agence web), sécurité et données. Dans chaque direction (exploitation, technique, commercial), un <strong>référent</strong> porte les besoins, administre les outils métiers dans ce cadre et assure le premier niveau d'aide la nuit. Ce modèle est préférable à une centralisation complète, hors de portée de sept personnes et trop éloignée d'une exploitation de nuit, et à la décentralisation actuelle, qui contredit les objectifs de dématérialisation, de fiabilité et de sécurité. Le service est <strong>rattaché au (à la) directeur(rice) général(e) délégué(e) chargé(e) de l'exploitation et du SI</strong>, membre de la direction générale, et non plus à la direction administrative et financière : le SI sert les cinq objectifs du plan et d'abord l'exploitation, principale utilisatrice ; un rattachement financier le réduit à un centre de coûts et de support.</p>
+<p><em>1.2 b) – Trois mesures pour les relations entre le service, la direction générale, les directions et le conseil</em></p>
+<p>(0,5 pt pour deux mesures, 0,5 pt pour la troisième ; une mesure par axe)</p>
+<ol type="1">
+<li><strong>Les instances : un comité du système d'information</strong>, présidé par la directrice générale, réunissant chaque trimestre le (la) directeur(rice) général(e) délégué(e), les directeurs, la responsable commerciale, le responsable des systèmes d'information et, selon l'ordre du jour, la déléguée à la protection des données. Il arbitre le portefeuille (question 1.1), suit les projets et fixe une règle : <strong>aucun outil ni aucun service numérique n'est acheté sans avis du service des systèmes d'information</strong> (réponse au péage, à la supervision du froid et aux 0,8 M€ engagés par les directions).</li>
+<li><strong>Le rôle du responsable des systèmes d'information : de « dépanneur » à partenaire des directions</strong>. M. LAVEYRAC participe au comité de direction, est consulté avant tout choix d'outil, porte l'architecture, les contrats et la sécurité, et anime le réseau des référents des directions. Il publie un catalogue des services du SI avec leurs niveaux de service internes, y compris la nuit, et traite les demandes selon des priorités connues de tous, au lieu des courriels sans priorité.</li>
+<li><strong>L'information des actionnaires</strong> : présentation chaque année au conseil d'administration des orientations du SI et du portefeuille ; présentation au conseil, <strong>avant engagement</strong>, de tout projet au-delà d'un montant fixé par lui ; point d'avancement des projets du SI dans le compte rendu trimestriel aux actionnaires. Le président du conseil ne découvrira plus les dépenses une fois engagées.</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Modèle centralisé renforcé recommandé, s'il est justifié par la taille de BRÉVALIM et assorti de correspondants dans les directions et d'une présence la nuit : accepté.</li>
+<li>Rattachement direct à la directrice générale : accepté, s'il est justifié par le poids du SI dans le plan et l'éloignement de la direction administrative et financière.</li>
+<li>Mention du modèle bimodal, à titre de comparaison, s'il n'est pas confondu avec un modèle « mi-interne, mi-externe ».</li>
+<li>Comité du SI ouvert à l'Union des grossistes, ou comité des usagers des entreprises installées, en plus des trois mesures demandées.</li>
+<li>Mesures qui confient à un administrateur le suivi du numérique, si l'information de l'ensemble du conseil est prévue.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Organisation qualifiée de centralisée parce qu'il n'existe qu'un service</em> (<code>JUR-G05</code> analyser les déséquilibres organisationnels) — les choix et les dépenses sont faits par les directions.</li>
+<li><em>Modèle fédéré confondu avec la décentralisation</em> (F01 § 8) — le modèle fédéré suppose des règles communes fixées par un service central.</li>
+<li><em>Recommandation irréaliste</em> (<code>JUR-G05</code> recommander de façon réaliste) — une direction des systèmes d'information qui ferait tout, la nuit comme le jour, avec sept personnes.</li>
+<li><em>Mesures sans lien avec les témoignages</em> (<code>JUR-T01</code> contextualiser chaque notion) — chaque mesure répond à un constat de l'annexe 1.2.</li>
+<li><em>Tableau de bord du conseil construit</em> (<code>JUR-T07</code> répondre à la seule question posée) — l'information des actionnaires porte ici sur les projets du SI, pas sur le pilotage de l'activité.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Modèles d'organisation de la DSI</td>
+<td>centralisée, décentralisée, fédérée, externalisée ; rattachement du DSI</td>
+<td>F01 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Comitologie du SI</td>
+<td>comité stratégique ou de gouvernance du SI</td>
+<td>F02 § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13--la-cartographie-applicative-et-lextraction-automatique-des-documents-darrivage-25-points">1.3 – La cartographie applicative et l'extraction automatique des documents d'arrivage (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.3 – Diagnostiquer et piloter l'évolution des architectures et de l'urbanisation des systèmes d'information : <code>1.3.b</code> « Cartographie applicative et fonctionnelle des SI » ; <code>1.3.d</code> « Fonctionnement et usages des technologies émergentes : blockchain, registres distribués, IA, … ». Limites : « Ne pas réduire l'urbanisation à une vision strictement technique : elle s'inscrit dans une stratégie globale. » ; « L'usage de l'IA doit notamment être analysé dans ses effets métiers et non uniquement comme outil technique. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.4 (applications et échanges), 1.5 (documents d'arrivage et outil proposé), 1.8 (repère sur le règlement sur l'intelligence artificielle) et 1.1 (système d'information).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Cartographie fonctionnelle (fonctions groupées en domaines, indépendamment des logiciels) et cartographie applicative (applications, leurs utilisateurs et les flux entre elles) définies et distinguées</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Cartographie applicative représentée de façon lisible : neuf applications regroupées par domaine, échanges avec leur nature (fichier, ressaisie, impression, aucun) et leur fréquence, légende</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Trois faiblesses relevées, chacune avec son effet (ressaisies, applications isolées, absence de référentiel unique, échanges par fichiers et tableurs, hébergements dispersés hors de l'infogérance)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Fonctionnement expliqué : apprentissage automatique supervisé sur des exemples saisis, prédiction des quatre données, indice de confiance, erreurs liées à la qualité et à la représentativité des exemples ; outil distingué de l'IA générative</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Deux conditions d'usage justifiées par l'annexe 1.5 : contrôle humain sous un seuil de confiance et par sondage, traitement des documents manuscrits, et à titre complémentaire mesure des erreurs, minimisation des données, essai sur les documents de BRÉVALIM</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.3 a) – Les cartographies et la cartographie applicative de BRÉVALIM</em></p>
+<p>La <strong>cartographie fonctionnelle</strong> représente les <strong>fonctions</strong> du système d'information (gérer les contrats, facturer, contrôler les accès, superviser le froid…), regroupées en <strong>domaines</strong> (zones et quartiers de l'urbanisation), indépendamment des logiciels qui les portent. La <strong>cartographie applicative</strong> représente les <strong>applications</strong> effectivement en place, leur périmètre, leurs utilisateurs et les <strong>flux</strong> entre elles (nature, sens, fréquence, mode : automatique ou manuel). Leur rapprochement montre quelles fonctions sont couvertes deux fois, mal couvertes ou reliées par des ressaisies (0,5 pt).</p>
+<p><strong>Cartographie applicative de BRÉVALIM</strong> (0,5 pt) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Domaine fonctionnel</th>
+<th>Applications (hébergement)</th>
+<th>Utilisateurs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gestion du marché et facturation</td>
+<td>logiciel de gestion du marché (serveurs du siège, infogérant)</td>
+<td>service commercial, comptabilité, placiers sur tablette</td>
+</tr>
+<tr class="even">
+<td>Relation avec les entreprises installées</td>
+<td>portail des entreprises (serveurs du siège)</td>
+<td>90 entreprises, surtout leurs dirigeants</td>
+</tr>
+<tr class="odd">
+<td>Relation avec les acheteurs</td>
+<td>application des acheteurs (hébergeur de l'agence web)</td>
+<td>acheteurs, sur téléphone</td>
+</tr>
+<tr class="even">
+<td>Accès et sûreté</td>
+<td>péage et contrôle d'accès (serveur propre, fournisseur) ; badges (serveur propre, poste de sûreté)</td>
+<td>agents de péage ; agents de sûreté</td>
+</tr>
+<tr class="odd">
+<td>Exploitation technique du site</td>
+<td>supervision du froid (service en ligne) ; pont-bascule et suivi des déchets (poste dédié, tableur)</td>
+<td>techniciens ; agents de la direction technique</td>
+</tr>
+<tr class="even">
+<td>Gestion interne et support</td>
+<td>progiciel comptable et de paie (service en ligne) ; bureautique en ligne</td>
+<td>finances, ressources humaines ; tous</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>N°</th>
+<th>Émetteur → destinataire</th>
+<th>Donnée</th>
+<th>Nature (F fichier automatique ; R ressaisie ; I impression)</th>
+<th>Fréquence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>gestion du marché → progiciel comptable</td>
+<td>factures</td>
+<td>F</td>
+<td>mensuelle</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>gestion du marché → portail des entreprises</td>
+<td>factures en PDF</td>
+<td>F</td>
+<td>mensuelle</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>péage → application des acheteurs</td>
+<td>cartes actives</td>
+<td>F</td>
+<td>chaque nuit</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>péage → gestion du marché</td>
+<td>cartes créées, pour facturer les abonnements</td>
+<td>R (service commercial)</td>
+<td>au fil de l'eau</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>supervision du froid → gestion du marché</td>
+<td>consommations de froid par cellule</td>
+<td>R</td>
+<td>mensuelle</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>portail → tableur des interventions (direction technique)</td>
+<td>demandes techniques</td>
+<td>I puis R ; réponse par courrier</td>
+<td>au fil de l'eau</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>pont-bascule → tableur de suivi des déchets</td>
+<td>totaux des pesées</td>
+<td>R</td>
+<td>mensuelle</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>tableurs de plannings → progiciel de paie</td>
+<td>éléments variables des agents de nuit</td>
+<td>R</td>
+<td>mensuelle</td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>badges</td>
+<td>—</td>
+<td>aucun échange</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>Schéma possible (légende : ═ fichier automatique ; ┄ ressaisie ou impression ; ✕ aucun échange) :</p>
+<pre><code>[Péage] ══ cartes (nuit) ══&gt; [Application des acheteurs]
+   ┄┄ cartes ressaisies ┄┄&gt; [Logiciel de gestion du marché] ══ factures (mois) ══&gt; [Progiciel comptable]
+[Supervision du froid] ┄┄ consommations ┄┄&gt;        ║ ══ factures PDF (mois) ══&gt; [Portail des entreprises]
+                                                                                 ┄┄ demandes imprimées ┄┄&gt; [Tableur des interventions]
+[Pont-bascule] ┄┄ totaux ┄┄&gt; [Tableur des déchets]        [Badges] ✕        [Plannings] ┄┄&gt; [Paie]</code></pre>
+<p><strong>Trois faiblesses</strong> (0,5 pt ; trois parmi les suivantes) :</p>
+<ul>
+<li><strong>Des ressaisies multiples</strong> (flux 4 à 8) : cartes d'acheteur, consommations de froid, demandes, pesées, paie ; elles exposent à des erreurs la facturation des abonnements et la refacturation du froid (comprise dans les 5 M€ de refacturations de l'énergie, de l'eau et du froid), des délais et une charge de travail.</li>
+<li><strong>Des applications isolées</strong> : badges, pont-bascule, supervision du froid n'échangent avec rien ; les données nécessaires au plan (déchets par entreprise, consommations) n'existent que dans des tableurs.</li>
+<li><strong>Aucun référentiel unique des entreprises et des acheteurs</strong> : une même entreprise existe dans le logiciel de gestion, le portail, les badges ; une même carte dans le péage, l'application et le logiciel de gestion ; chacune est tenue séparément, avec des écarts inévitables.</li>
+<li><strong>Des échanges par fichiers périodiques et point à point, et des tableurs envoyés par courriel en guise de lien</strong> : décalages (mensuels), fragilité, aucune supervision des échanges.</li>
+<li><strong>Des hébergements dispersés, hors de l'infogérance</strong> : serveurs du péage et des badges, poste du pont-bascule, deux services en ligne, hébergeur de l'agence web ; personne n'a de vue d'ensemble de la sécurité ni de la continuité, en particulier la nuit.</li>
+</ul>
+<p><em>1.3 b) – Le fonctionnement de l'outil d'extraction et ses conditions d'usage</em></p>
+<p><strong>Fonctionnement</strong> (0,5 pt). L'outil relève de l'<strong>apprentissage automatique supervisé</strong> : il <strong>apprend</strong> à partir d'exemples dont on connaît la bonne réponse, les 20 000 documents de 2025 et 2026 déjà saisis par le service commercial, à reconnaître où et sous quelle forme apparaissent le produit, l'origine, le poids et la date dans 25 formats différents. Sur un nouveau document, il <strong>prédit</strong> ces quatre valeurs ; il ne crée pas de contenu, à la différence d'une IA générative. Pour chaque valeur, l'<strong>indice de confiance</strong> exprime la probabilité, estimée par le modèle, que sa lecture soit juste : il est bas quand le document ressemble peu aux exemples appris (photo floue, format nouveau, écriture manuscrite). Les <strong>erreurs</strong> dépendent donc de la qualité et de la représentativité des exemples : 2 % des données extraites sont erronées sur les documents dactylographiés, mais 25 % sur les documents manuscrits, qui représentent environ un document sur cinq ; si les saisies passées contiennent des erreurs, l'outil les reproduit. Les corrections faites par les équipes peuvent servir à l'entraîner de nouveau. Effet métier : les deux personnes passent de la saisie à la vérification et au contrôle de cohérence, et les données sont disponibles bien avant les six semaines actuelles.</p>
+<p><strong>Deux conditions d'usage</strong> (0,5 pt ; deux parmi les suivantes) :</p>
+<ol type="1">
+<li><strong>Un contrôle humain sous un seuil de confiance</strong> : toute donnée dont l'indice est inférieur au seuil (fixé après un essai, par exemple 90) est vérifiée par les deux personnes du service commercial ; les données au-dessus du seuil sont contrôlées par sondage chaque mois ; l'outil propose, l'agent valide ; les corrections sont réutilisées pour l'entraîner.</li>
+<li><strong>Un traitement à part des documents manuscrits</strong> : tant que leur taux d'erreur reste de cet ordre, ils sont saisis ou vérifiés en totalité à la main ; BRÉVALIM demande aux grossistes et à leurs transporteurs des documents dactylographiés ou électroniques.</li>
+<li><strong>Un essai préalable sur les documents de BRÉVALIM</strong> : les taux annoncés portent sur les documents d'autres clients ; un essai sur un mois de documents de 2026, comparé aux saisies, fixe le seuil et le taux d'erreur réel avant la généralisation ; ce taux est ensuite suivi chaque mois.</li>
+<li><strong>La maîtrise des données</strong> : ne pas extraire ni conserver les noms et numéros des chauffeurs, ni les prix d'achat des grossistes (données personnelles et commerciales sans utilité pour le besoin) ; contrat avec l'éditeur, qui héberge les documents et agit en sous-traitant au sens du RGPD ; formation des deux personnes à l'usage de l'outil (maîtrise de l'intelligence artificielle, annexe 1.8).</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Cartographie présentée en schéma de blocs par domaine plutôt qu'en tableaux, si les neuf applications, les échanges et leur nature apparaissent avec une légende.</li>
+<li>Ajout à la cartographie du circuit actuel des documents d'arrivage (courriel puis tableur de saisie) : accepté.</li>
+<li>Autres domaines fonctionnels cohérents (par exemple « carreau des producteurs » distingué de la facturation).</li>
+<li>Indice de confiance présenté comme un score plutôt qu'une probabilité, si son usage (seuil, vérification) est compris.</li>
+<li>Mention de la reconnaissance optique de caractères comme première étape de la lecture : acceptée, si l'apprentissage à partir des saisies est expliqué.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Cartographie applicative confondue avec un inventaire de serveurs, ou avec un modèle des données</em> (ET-20 urbanisation réduite à une vision technique ; <code>JUR-G07</code> cartographie et démarche d'urbanisation) — ce sont les applications, leurs domaines et leurs échanges qui sont demandés.</li>
+<li><em>Schéma sans légende ni nature des échanges</em> (<code>JUR-T10</code> schémas et tableaux lisibles) — la distinction entre fichier automatique et ressaisie est le cœur de l'analyse.</li>
+<li><em>Outil présenté comme une IA générative ou un grand modèle de langage</em> (ET-09 IA générative confondue avec l'apprentissage automatique) — il prédit des valeurs à partir d'exemples étiquetés.</li>
+<li><em>Gains sans limites, ou rejet de l'outil sans proposer de conditions</em> (ET-19 opportunités sans risques) — l'annexe donne à la fois le gain et les taux d'erreur.</li>
+<li><em>Classification de l'outil au titre du règlement sur l'intelligence artificielle, ou fonctionnement mathématique détaillé</em> (<code>JUR-T07</code> répondre à la seule question posée) — non attendus.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cartographies fonctionnelle et applicative</td>
+<td>domaines, applications, flux, ruptures</td>
+<td>F03 § 1 et § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Apprentissage automatique et IA générative</td>
+<td>apprentissage supervisé, prédiction, erreurs, contrôle humain</td>
+<td>F13 § 1, § 3 et § 4 ; <code>erreurs_types.md</code> ET-09</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Règlement (UE) 2024/1689 sur l'intelligence artificielle, modifié par le règlement (UE) 2026/1744</td>
+<td>maîtrise de l'intelligence artificielle du personnel (annexe 1.8), en principe</td>
+<td><code>ai_act</code> ; <code>omnibus_numerique_ia</code> ; F13 § 5</td>
+<td>en vigueur ; application échelonnée</td>
+</tr>
+<tr class="even">
+<td>RGPD (règlement (UE) 2016/679)</td>
+<td>éditeur sous-traitant, minimisation (condition complémentaire)</td>
+<td><code>rgpd</code> ; F15 § 5</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="14--le-partage-des-bonnes-pratiques-avec-les-entreprises-installées-3-points">1.4 – Le partage des bonnes pratiques avec les entreprises installées (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.6 – Mettre en œuvre et piloter la gestion des connaissances au sein du système d'information : <code>1.6.a</code> « Mettre en œuvre une stratégie de gestion des connaissances soutenue par les systèmes d'information, en assurant son pilotage, sa gouvernance et son appropriation organisationnelle » ; <code>1.6.d</code> « Intégration des outils de KM dans l'environnement SI : GED, intranet, wiki, forums » ; <code>1.6.c</code> « Méthodes de gouvernance des dispositifs (rôles, responsabilités, indicateurs) » ; <code>1.6.e</code> « Leviers d'appropriation et de transformation des pratiques professionnelles ». Limites : « La gestion des connaissances dépasse la seule numérisation de l'information. » ; « Le pilotage nécessite une approche systémique : outils, processus, culture. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.6 (bonnes pratiques, incidents, personnes, outils), 1.2 (témoignage de la présidente de l'Union des grossistes), 1.3 (wifi du site), 1.4 (portail, application des acheteurs, tablettes) et 1.1 (entreprises installées, organigramme).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Gestion des connaissances définie comme une démarche systémique (outils, processus, culture) ; connaissances tacites et explicites distinguées et illustrées par l'annexe 1.6 (savoir des agents de nuit ; règles écrites sur les affiches)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Objectifs reliés aux incidents et au plan ; contenus partagés avec toutes les entreprises et contenus réservés à chacune (savoir-faire des grossistes, données de sa cellule), avec des droits d'accès séparés</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b</td>
+<td>Intégration aux outils existants : portail (point d'entrée, espace commun et espaces privés, version pour téléphone), application des acheteurs, tablettes des placiers, wifi du site ; accès sans ordinateur</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Gouvernance : sponsor, animateur, référents par domaine, relais dans les entreprises, Union des grossistes, service des systèmes d'information ; règles de validation et de mise à jour ; animation (retours d'expérience, campagnes)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Deux indicateurs complets (formule, source, fréquence, cible, axe), reliés aux objectifs</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>d</td>
+<td>Trois leviers d'appropriation adaptés à des salariés de nuit, sans ordinateur, qui parlent plusieurs langues</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.4 a) – La gestion des connaissances, les objectifs et les contenus du dispositif</em></p>
+<p>La <strong>gestion des connaissances</strong> est une démarche systémique, qui combine outils, processus et culture, pour identifier, formaliser, partager et faire réutiliser les connaissances utiles à l'action ; elle dépasse la mise en ligne de documents. Une <strong>connaissance explicite</strong> est formalisée et transmissible (les règles de tri ou de fermeture des cellules écrites sur les affiches) ; une <strong>connaissance tacite</strong> est incorporée dans les personnes et difficile à formaliser (les agents de nuit qui savent quelles portes ferment mal, comment relancer une borne du péage, quel transporteur arrive avant l'heure). Le dispositif doit faire passer le savoir tacite des agents en fiches partagées, et faire entrer les règles écrites dans les gestes des salariés. Il est ici <strong>inter-organisationnel</strong> : il relie BRÉVALIM à 240 entreprises indépendantes, dont certaines sont concurrentes (0,5 pt).</p>
+<p><strong>Objectifs</strong> (0,5 pt avec les contenus) :</p>
+<ul>
+<li>réduire les incidents liés aux pratiques : les 40 ruptures de froid dues aux portes ouvertes et les 300 bennes refusées (2,5 % des bennes collectées), au service de l'objectif de 80 % de déchets valorisés en 2031 ;</li>
+<li>appliquer partout les mêmes consignes, la nuit comme le jour, en particulier lors des pannes du péage (8 pannes traitées de façons différentes) et pour la sûreté ;</li>
+<li>rendre ces règles accessibles à chaque salarié, y compris aux nouveaux (un sur trois remplacé dans l'année), dans sa langue ;</li>
+<li>écrire et diffuser le savoir tacite des agents de nuit.</li>
+</ul>
+<p><strong>Contenus</strong> :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Contenus partagés avec toutes les entreprises</th>
+<th>Contenus réservés à chaque entreprise</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>règles d'usage du site : chaîne du froid dans les cellules, tri des cinq bennes, sûreté de nuit, consignes en cas de panne du péage ; fiches tirées du savoir des agents de nuit ; retours d'expérience des incidents, rendus anonymes ; contacts et numéros d'urgence</td>
+<td>savoir-faire propres que les grossistes ne veulent pas partager (mûrissage, conservation des produits de la mer, préparation des commandes) ; consignes de sa cellule et de ses cases ; ses incidents de froid et ses bennes refusées ; ses demandes techniques</td>
+</tr>
+</tbody>
+</table>
+<p>Chaque entreprise dispose d'un <strong>espace privé</strong> : elle seule y accède et le gère, avec ses référents ; BRÉVALIM n'y intervient que pour l'administration de l'outil ; aucun contenu d'un grossiste n'est visible par un concurrent.</p>
+<p><em>1.4 b) – L'intégration aux outils existants</em></p>
+<p>(0,5 pt)</p>
+<ul>
+<li><strong>Le portail des entreprises installées</strong>, point d'entrée unique : une base de fiches pratiques, de type wiki, avec un espace commun et des espaces privés ; une version consultable sur téléphone ; des comptes ouverts aux chefs d'équipe et non plus aux seuls dirigeants, au-delà des 90 entreprises qui ont un compte.</li>
+<li><strong>Des codes à flasher</strong> sur la porte de chaque cellule, sur chaque benne et à chaque borne du péage, qui ouvrent sur téléphone la fiche du lieu, sans compte pour les fiches communes ; le wifi du site (P5) permet de les consulter dans les pavillons.</li>
+<li><strong>L'application des acheteurs</strong>, pour les consignes qui les concernent : tri des cartons qu'ils laissent, conduite à tenir en cas de panne du péage, horaires.</li>
+<li><strong>Les tablettes des placiers</strong>, pour les consignes internes de la nuit (panne du péage, carreau) et pour <strong>signaler</strong> une mauvaise pratique ou proposer une fiche : c'est le canal par lequel le savoir des agents de nuit est recueilli.</li>
+<li>Le lien avec les outils d'exploitation peut suivre : une alarme de température de la supervision du froid renvoie à la fiche « portes et rideaux », adressée au référent de l'entreprise.</li>
+</ul>
+<p><em>1.4 c) – La gouvernance et les indicateurs</em></p>
+<p><strong>Rôles et animation</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>sponsor</strong> : le (la) directeur(rice) général(e) délégué(e), qui porte le dispositif devant les entreprises et le relie au plan ;</li>
+<li><strong>animatrice</strong> : Mme QUÉRINEL, responsable commerciale et des relations avec les entreprises, interlocutrice naturelle des entreprises ;</li>
+<li><strong>référents par domaine</strong>, propriétaires des contenus : froid et déchets (direction technique, M. PERRAGUÈS), sûreté et péage (direction de l'exploitation, Mme DUCHÉRAN) ; ils valident chaque fiche et la revoient chaque année et après chaque incident ;</li>
+<li><strong>relais dans les entreprises</strong> : un chef d'équipe par entreprise, qui diffuse les fiches et fait remonter les pratiques ;</li>
+<li><strong>Union des grossistes</strong> : associée au comité éditorial trimestriel, ce qui donne au dispositif sa légitimité auprès des entreprises ;</li>
+<li><strong>service des systèmes d'information</strong> : outils, droits d'accès des espaces privés, sécurité ; avis de la déléguée à la protection des données pour les vidéos et les contacts ;</li>
+<li><strong>animation</strong> : retour d'expérience diffusé après chaque incident, campagne thématique chaque mois (froid avant l'été, tri avant les fêtes), réunion des relais en fin de marché, accueil des nouveaux salariés des entreprises.</li>
+</ul>
+<p><strong>Deux indicateurs</strong> (0,5 pt ; deux parmi les suivants) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Part des entreprises installées qui consultent les fiches</td>
+<td>entreprises installées dont au moins un compte du portail a consulté une fiche dans le trimestre / 240 entreprises installées × 100</td>
+<td>statistiques de connexion du portail des entreprises installées (les consultations anonymes par code à flasher sont suivies à part, par lieu)</td>
+<td>trimestrielle</td>
+<td>au moins 75 % à la fin de 2028</td>
+<td>apprentissage</td>
+</tr>
+<tr class="even">
+<td>Taux de bennes refusées pour mauvais tri</td>
+<td>bennes refusées par le prestataire de collecte / bennes collectées × 100</td>
+<td>pont-bascule et bordereaux du prestataire de collecte</td>
+<td>mensuelle</td>
+<td>au plus 1 % à la fin de 2028 (2,5 % en 2026)</td>
+<td>environnement</td>
+</tr>
+<tr class="odd">
+<td>Nombre de ruptures de froid dues à une porte laissée ouverte</td>
+<td>nombre de ruptures de froid dont la cause enregistrée est une porte laissée ouverte, sur le trimestre</td>
+<td>alarmes de la supervision du froid et fiches d'intervention de la direction technique</td>
+<td>trimestrielle</td>
+<td>au plus 3 par trimestre en 2028 (40 en 2026)</td>
+<td>processus</td>
+</tr>
+</tbody>
+</table>
+<p><em>1.4 d) – Trois leviers d'appropriation</em></p>
+<p>(0,5 pt ; trois parmi les suivants)</p>
+<ol type="1">
+<li><strong>Des formats sans ordinateur et sans barrière de langue</strong> : pictogrammes, vidéos d'une minute sans parole ou sous-titrées, fiches courtes traduites dans les principales langues du marché, consultées sur téléphone à l'endroit du geste (porte de cellule, benne, borne).</li>
+<li><strong>L'intégration au travail de nuit</strong> : une « minute consigne » en début de nuit par les chefs d'équipe ; un parcours d'accueil de quelques minutes pour tout nouveau salarié à son arrivée sur le site ; un tutorat par les agents de nuit, qui transmettent leur savoir sur le terrain (socialisation) avant de l'écrire.</li>
+<li><strong>Des relais et de la reconnaissance</strong> : des chefs d'équipe formés et reconnus comme relais ; l'Union des grossistes qui porte le dispositif ; la publication des résultats (ruptures de froid, bennes refusées) par pavillon ; la valorisation des entreprises et des salariés qui proposent des fiches.</li>
+<li><strong>La simplicité d'accès</strong> : fiches communes sans identifiant, wifi dans les pavillons, une seule adresse pour tout trouver.</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Modèle SECI de Nonaka et Takeuchi mobilisé pour structurer le dispositif (socialisation par le tutorat, externalisation des savoirs des agents, combinaison dans la base de fiches, internalisation par la pratique), s'il est appliqué au cas.</li>
+<li>Autres indicateurs complets (fraîcheur des fiches, nombre de fiches proposées par les entreprises, part des nouveaux salariés accueillis), s'ils sont reliés aux objectifs.</li>
+<li>Responsable du dispositif choisi à la direction technique, si la relation avec les entreprises est assurée par le service commercial.</li>
+<li>Modèle ADKAR (Prosci), ou huit étapes de la conduite du changement de Kotter, mobilisés pour les leviers, s'ils sont appliqués aux salariés de nuit.</li>
+<li>Affiches papier conservées et complétées par les codes à flasher : accepté.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Gestion des connaissances réduite à une base documentaire ou au portail</em> (ET-21 gestion des connaissances confondue avec la GED ; limite du programme 1.6) — sans relais, animation et formats adaptés, le portail actuel touche les seuls dirigeants.</li>
+<li><em>Savoir-faire des grossistes mis en commun</em> (<code>JUR-T08</code> exploiter toutes les annexes) — l'annexe 1.6 l'interdit : la séparation des contenus est une exigence du dispositif.</li>
+<li><em>Modèle SECI récité sans application</em> (<code>JUR-T01</code> contextualiser chaque notion, pas de morceau de cours) — seuls ses usages dans le cas rapportent des points.</li>
+<li><em>Indicateurs incomplets ou génériques</em> (ET-18 indicateurs génériques) — formule, source, fréquence, cible et axe sont exigés.</li>
+<li><em>Leviers pensés pour des salariés de bureau</em> (formation en ligne, lettre par courriel) (<code>JUR-P04</code> conduite du changement adaptée) — les salariés visés travaillent la nuit, sans ordinateur, et parlent plusieurs langues.</li>
+<li><em>Dispositif traité comme une gestion des compétences des salariés</em> (limite du programme 1.6) — le lien est complémentaire mais distinct.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gestion des connaissances</td>
+<td>tacite et explicite ; dispositif, gouvernance, indicateurs, appropriation</td>
+<td>F06 § 1 et § 2 ; <code>erreurs_types.md</code> ET-21</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Modèle SECI (Nonaka et Takeuchi, 1995)</td>
+<td>quatre modes de conversion (réponse tolérée)</td>
+<td><code>nonaka_takeuchi_seci</code> ; F06 § 1</td>
+<td>publié</td>
+</tr>
+<tr class="odd">
+<td>ADKAR (Prosci) ; huit étapes de Kotter (1995-1996)</td>
+<td>conduite du changement (réponse tolérée)</td>
+<td><code>adkar</code> ; <code>kotter_8_etapes</code> ; F05</td>
+<td>publié</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="15--les-niveaux-de-service-du-contrat-dinfogérance-2-points">1.5 – Les niveaux de service du contrat d'infogérance (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.4 – Gérer les relations contractuelles et opérationnelles avec les ESN : <code>1.4.a</code> « Concevoir, négocier et sécuriser des relations contractuelles avec des prestataires de services numériques (ESN), en tenant compte des enjeux opérationnels et juridiques » ; <code>1.4.c</code> « Cadre juridique applicable : responsabilité, confidentialité, SLA, RGPD ». Limite : « L'analyse juridique approfondie relève du droit des contrats informatiques et est exclue du programme de l'UE. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.7 (extraits du contrat et note du responsable des systèmes d'information), 1.8 (ITIL, RGPD) et 1.1 (horaires de l'activité, système d'information).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Accord de niveau de service défini (engagement contractuel mesurable, méthode de mesure, suivi, conséquences) ; inadéquation démontrée par les annexes : plage et astreinte de jour, prise en charge en heures ouvrées sans délai de rétablissement, disponibilité mesurée hors des heures du marché, aucune pénalité, rapport annuel « sans manquement » malgré six nuits sur papier</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Trois niveaux de service chiffrés et adaptés à l'activité de nuit, parmi la plage de service, le délai de rétablissement, l'astreinte et la mesure de la disponibilité</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Clause de sous-traitance des données personnelles : infogérant sous-traitant, BRÉVALIM responsable du traitement ; instructions, sécurité, sort des données ; recours au prestataire des sauvegardes soumis à l'autorisation écrite préalable de BRÉVALIM, avec les mêmes obligations</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Clause de confidentialité des données commerciales des grossistes : usage limité à la prestation, accès restreints et tracés, extension au prestataire des sauvegardes, durée au-delà du contrat, restitution ou destruction</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.5 a) – L'adéquation des niveaux de service et trois niveaux à inscrire</em></p>
+<p>Un <strong>accord de niveau de service</strong> (SLA) est l'engagement contractuel du prestataire envers son client sur des <strong>niveaux mesurables</strong> (plage de service, délais de prise en charge et de rétablissement, disponibilité), avec une <strong>méthode de mesure</strong>, un <strong>suivi</strong> périodique et des <strong>conséquences</strong> en cas de manquement, comme des pénalités. ITIL, référentiel de bonnes pratiques et non norme, en fait un outil de gestion des niveaux de service (0,5 pt avec l'analyse).</p>
+<p><strong>Un contrat conçu pour des heures de bureau, face à un marché de nuit</strong> :</p>
+<ul>
+<li><strong>plage de service et astreinte</strong> : du lundi au vendredi de 8 heures à 18 heures, astreinte jusqu'à 20 heures ; or le marché vit six nuits sur sept, de minuit (placiers) à 11 heures, samedi compris : les heures critiques, de minuit à 8 heures, et tout le samedi sont hors contrat ;</li>
+<li><strong>délai</strong> : la prise en charge en quatre heures ouvrées, sans délai de rétablissement, signifie qu'une panne à 3 heures peut n'être traitée qu'à midi, après la fin du marché ; en 2026, six nuits, les tablettes des placiers ont perdu l'accès au logiciel, le carreau a été attribué sur papier et le service n'a été rétabli que vers 11 heures, huit heures après ; les pannes du samedi n'ont été traitées que le lundi ;</li>
+<li><strong>mesure de la disponibilité</strong> : 99 % mesurés sur la plage de service, par l'infogérant lui-même ; les incidents de nuit n'entrent pas dans la mesure : le rapport affiche 99,9 % et conclut qu'« aucun engagement n'a été manqué », alors que le service a manqué quand il était nécessaire ;</li>
+<li><strong>suivi</strong> : un rapport annuel et aucune pénalité ne donnent à BRÉVALIM aucun moyen de pilotage.</li>
+</ul>
+<p>Le contrat est respecté, mais il ne couvre pas le besoin.</p>
+<p><strong>Trois niveaux de service à inscrire au renouvellement</strong> (0,5 pt ; trois parmi les suivants) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Niveau de service</th>
+<th>Engagement proposé</th>
+<th>Constat auquel il répond</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Plage de service</strong></td>
+<td>du lundi au samedi, de minuit à 18 heures, soit les heures du marché et les heures de bureau</td>
+<td>incidents de minuit à 8 heures et du samedi hors contrat</td>
+</tr>
+<tr class="even">
+<td><strong>Délai de rétablissement</strong> selon la priorité</td>
+<td>priorité 1 (logiciel de gestion inaccessible aux tablettes des placiers ou à la facturation pendant le marché) : prise en charge en 15 minutes, rétablissement en une heure au plus ; priorité 2 : quatre heures ; priorité 3 : jour ouvré suivant</td>
+<td>six nuits de carreau sur papier, rétablissement huit heures après la panne</td>
+</tr>
+<tr class="odd">
+<td><strong>Astreinte</strong></td>
+<td>astreinte joignable et capable d'intervenir à distance de minuit à 8 heures les nuits d'activité et le samedi, avec intervention sur site possible dans l'heure</td>
+<td>aucune astreinte la nuit ni le samedi ; personne au service après 18 heures</td>
+</tr>
+<tr class="even">
+<td><strong>Mesure de la disponibilité</strong></td>
+<td>au moins 99,5 % chaque mois, mesurés sur les heures d'activité du marché (minuit à 11 heures, six jours sur sept), par une supervision dont BRÉVALIM voit les résultats ; rapport mensuel ; pénalités en cas de manquement</td>
+<td>99,9 % affichés sur une plage où le marché est fermé ; aucune pénalité, rapport annuel</td>
+</tr>
+</tbody>
+</table>
+<p><em>1.5 b) – Deux clauses sur les données, en principe</em></p>
+<p><strong>La sous-traitance des données personnelles</strong> (0,5 pt). L'infogérant administre des serveurs qui portent les nom, adresse et coordonnées des titulaires des cartes d'acheteur et les contacts des entreprises installées : il traite des données personnelles pour le compte de BRÉVALIM, qui reste <strong>responsable du traitement</strong> ; il agit en <strong>sous-traitant</strong> au sens du RGPD (annexe 1.8). Une clause, ou une annexe au contrat, fixe ses obligations : traitement sur les seules instructions écrites de BRÉVALIM, confidentialité de son personnel, mesures de sécurité, signalement sans délai de toute violation de données, assistance à BRÉVALIM, sort des données à la fin du contrat (restitution puis suppression), possibilité d'audit. <strong>Le recours au prestataire des sauvegardes</strong>, aujourd'hui inconnu, n'est possible qu'avec l'<strong>autorisation écrite préalable</strong> de BRÉVALIM ; son nom et le lieu de conservation sont communiqués, et les mêmes obligations lui sont imposées. La déléguée à la protection des données, Mme TALMONDIER, est associée à la rédaction.</p>
+<p><strong>La confidentialité des données commerciales des grossistes</strong> (0,5 pt). Les serveurs portent les contrats, les redevances et les factures de chaque entreprise installée, données sensibles entre concurrents. La clause engage l'infogérant à n'utiliser ces données que pour la prestation, à ne les communiquer à aucun tiers, à en limiter l'accès aux seules personnes qui en ont besoin, avec des accès tracés, à imposer la même obligation au prestataire des sauvegardes, à la maintenir après la fin du contrat et à restituer ou détruire les données à son terme.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Plage de service couvrant sept jours sur sept, si elle est justifiée par la préparation du marché ou l'exploitation du dimanche.</li>
+<li>Engagement de mise en place d'un mode de secours pour les placiers (attribution possible hors connexion, puis synchronisation), en plus des trois niveaux demandés.</li>
+<li>Valeurs différentes des engagements (délai de rétablissement de deux heures, disponibilité de 99 %), si elles sont justifiées par l'activité de nuit et mesurées sur les heures du marché.</li>
+<li>Mention de l'extension du périmètre au serveur du péage, ou de pénalités et d'un rapport mensuel comme quatrième niveau : valorisée.</li>
+<li>Mention de la localisation des sauvegardes dans l'Union européenne : acceptée.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Contrat jugé satisfaisant au vu du rapport de l'infogérant</em> (<code>JUR-T03</code> analyser et argumenter) — la disponibilité est mesurée là où le marché est fermé.</li>
+<li><em>Délai de prise en charge confondu avec le délai de rétablissement</em> (F04 § 3) — un incident pris en charge peut rester non résolu pendant tout le marché.</li>
+<li><em>Niveaux de service non chiffrés ou sans mesure</em> (F04 § 7) — un niveau de service se mesure.</li>
+<li><em>Infogérant présenté comme responsable du traitement, ou externalisation présentée comme un transfert de responsabilité</em> (<code>JUR-A05</code> externalisation, infogérance et contractualisation ; F04 § 7) — BRÉVALIM reste responsable.</li>
+<li><em>Analyse juridique des clauses, ou procédure de choix d'un autre prestataire</em> (<code>JUR-T07</code> répondre à la seule question posée ; limite du programme 1.4) — non attendues : l'énoncé exclut toute procédure de choix.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ITIL 4 (PeopleCert, 2019)</td>
+<td>gestion des niveaux de service et des incidents</td>
+<td><code>itil_4</code> ; F02 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>ITIL (version 5)</td>
+<td>coexiste avec ITIL 4 (annexe 1.8)</td>
+<td><code>itil_5</code> ; F02 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Niveaux de service et clauses critiques</td>
+<td>SLA, délais, astreinte, disponibilité, pénalités ; confidentialité, données personnelles, sous-traitance</td>
+<td>F04 § 3 et § 4 ; <code>erreurs_types.md</code> ET-22</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>RGPD (règlement (UE) 2016/679)</td>
+<td>sous-traitant, contrat écrit, autorisation écrite préalable d'un autre sous-traitant (en principe)</td>
+<td><code>rgpd</code> ; F15 § 5</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

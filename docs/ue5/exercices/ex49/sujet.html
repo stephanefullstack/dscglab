@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Préparer la stratégie et l'organisation du système d'information : BRÉVALIM, société d'économie mixte exploitant un marché de gros alimentaire : orientations de la stratégie du SI et arbitrage d'un portefeuille de projets, organisation de la fonction SI et relations avec la direction générale, les métiers et les actionnaires, cartographie applicative et IA d'extraction des documents d'arrivage, connaissances partagées avec les entreprises installées, niveaux de service du contrat d'infogérance</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 1</p><p>14 points</p><p>1 h 03</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Préparer la stratégie et l'organisation du système d'information</h1><p class="cas">BRÉVALIM, société d'économie mixte exploitant un marché de gros alimentaire : orientations de la stratégie du SI et arbitrage d'un portefeuille de projets, organisation de la fonction SI et relations avec la direction générale, les métiers et les actionnaires, cartographie applicative et IA d'extraction des documents d'arrivage, connaissances partagées avec les entreprises installées, niveaux de service du contrat d'infogérance</p><p><strong>DOSSIER 1 – PRÉPARER LA STRATÉGIE ET L'ORGANISATION DU SYSTÈME D'INFORMATION (14 points)</strong></p>
+<p>Durée conseillée : 1 h 03 (14 points sur 40, pour une épreuve de 3 heures, coefficient 1 ; environ 4,5 minutes par point).</p>
+<p>Réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document et matériel autorisés</strong> : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Ce dossier est l'un des trois dossiers indépendants du sujet d'entraînement complet n° 17, construits sur un même cas : la présentation et l'annexe 1.1 sont communes aux trois dossiers ; chaque dossier comporte en outre ses propres annexes.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en avril 2027. BRÉVALIM est une société d'économie mixte locale, société anonyme à conseil d'administration créée en 1994, qui exploite le marché de gros alimentaire de Brévaline, une métropole de l'ouest de la France. Sur un site de 60 hectares, 240 entreprises (grossistes en fruits et légumes, en produits de la mer, en viandes, en produits laitiers et en fleurs, transformateurs, logisticiens, services) louent à BRÉVALIM des cases dans des pavillons, des bureaux et des cellules d'un entrepôt frigorifique ; chaque nuit, des producteurs de la région vendent leurs récoltes sur le carreau des producteurs, et 2 000 véhicules d'acheteurs professionnels (restaurateurs, commerçants, marchés forains, restauration collective) passent le péage entre 3 heures et 11 heures. Brévaline Métropole détient 60 % du capital, le Département 6 %, la Banque VERDELIN 14 %, la chambre de commerce et d'industrie 8 % et l'Union des grossistes du marché de Brévaline 12 %. En 2026, BRÉVALIM a réalisé un chiffre d'affaires de 28 M€ ; elle emploie 210 salariés. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>Le plan « Marché de Brévaline 2031 », adopté en janvier 2027 par le conseil d'administration, fixe cinq objectifs : porter de 30 % à 40 % la part des produits régionaux dans les volumes entrés sur le marché ; dématérialiser d'ici 2029 toute la relation avec les entreprises installées et les acheteurs ; valoriser 80 % des déchets du site en 2031, contre 60 % en 2026 ; fiabiliser la facturation et le pilotage, en rendant compte chaque trimestre aux actionnaires ; garantir la sûreté du site et la sécurité des données. Le système d'information s'est construit par morceaux : chaque direction a choisi ses outils, qui ne se parlent pas, et Brévaline Métropole demande désormais des données sur les flux alimentaires du marché.</p>
+<p>Vous êtes directeur(rice) général(e) délégué(e) de BRÉVALIM depuis 2025, chargé(e) de l'exploitation du marché et du système d'information. La directrice générale, Mme Héloïse VAUCLERC, vous demande trois travaux : préparer la stratégie et l'organisation du système d'information (dossier 1) ; organiser et exploiter les données des acheteurs et des flux, et revoir le pilotage présenté au conseil d'administration (dossier 2) ; fiabiliser la facturation, maîtriser les accès au site et aux applications, auditer l'attribution du carreau et répondre aux demandes de données de durabilité (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-de-brévalim-et-chiffres-clés">ANNEXE 1.1 – Présentation de BRÉVALIM et chiffres clés</h3>
+<p>BRÉVALIM est une société d'économie mixte locale, société anonyme à conseil d'administration créée en 1994, dont le siège est sur le site du marché de gros de Brévaline, métropole de l'ouest de la France. Elle exploite le marché : elle loue des emplacements aux entreprises installées, organise chaque nuit la vente des producteurs sur le carreau, accueille les acheteurs professionnels au péage et fournit l'énergie, l'eau et le froid du site. L'exercice coïncide avec l'année civile : l'exercice 2026 est le dernier exercice clos.</p>
+<p><strong>Le modèle, les actionnaires et la gouvernance</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Entreprises installées</td>
+<td>240 entreprises, titulaires d'un contrat annuel d'emplacement : cases dans les pavillons, bureaux, cellules de l'entrepôt frigorifique</td>
+</tr>
+<tr class="even">
+<td>Carreau des producteurs</td>
+<td>300 emplacements, attribués chaque nuit par les placiers de BRÉVALIM aux producteurs de la région qui viennent vendre leurs récoltes</td>
+</tr>
+<tr class="odd">
+<td>Acheteurs</td>
+<td>acheteurs professionnels (restaurateurs, commerçants, marchés forains, restauration collective), titulaires d'une carte d'acheteur, qui entrent sur le site par le péage</td>
+</tr>
+<tr class="even">
+<td>Entrepôt frigorifique</td>
+<td>12 000 m² en 40 cellules louées aux entreprises installées ; BRÉVALIM produit le froid et le refacture</td>
+</tr>
+<tr class="odd">
+<td>Actionnaires</td>
+<td>Brévaline Métropole 60 % ; Département 6 % ; Banque VERDELIN 14 % ; chambre de commerce et d'industrie 8 % ; Union des grossistes du marché de Brévaline 12 %, présidée par Mme Évelyne GARBUSSAC, grossiste en fruits et légumes</td>
+</tr>
+<tr class="even">
+<td>Conseil d'administration</td>
+<td>douze membres, dont huit représentants des collectivités ; président : M. Bastien FERRANDOU, vice-président de Brévaline Métropole</td>
+</tr>
+<tr class="odd">
+<td>Direction</td>
+<td>directrice générale : Mme Héloïse VAUCLERC ; directeur(rice) général(e) délégué(e) chargé(e) de l'exploitation et du système d'information : vous</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L'activité en 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Site</td>
+<td>60 hectares</td>
+</tr>
+<tr class="even">
+<td>Entreprises installées</td>
+<td>240 : 150 grossistes, 50 transformateurs et logisticiens, 40 entreprises de services</td>
+</tr>
+<tr class="odd">
+<td>Carreau des producteurs</td>
+<td>300 emplacements, occupés chaque nuit par 180 producteurs en moyenne l'été et 70 l'hiver</td>
+</tr>
+<tr class="even">
+<td>Acheteurs</td>
+<td>9 000 cartes d'acheteur actives ; 2 000 véhicules d'acheteurs par nuit, six nuits sur sept</td>
+</tr>
+<tr class="odd">
+<td>Horaires</td>
+<td>activité de 3 heures à 11 heures</td>
+</tr>
+<tr class="even">
+<td>Produits</td>
+<td>900 000 tonnes entrées sur le marché dans l'année, dont 30 % de produits régionaux</td>
+</tr>
+<tr class="odd">
+<td>Déchets</td>
+<td>60 % des déchets du site valorisés</td>
+</tr>
+<tr class="even">
+<td>Chiffre d'affaires</td>
+<td>28 M€ : redevances d'emplacement et loyers 17 M€ ; droits d'entrée et cartes d'acheteur 4 M€ ; refacturation de l'énergie, de l'eau et du froid 5 M€ ; services 2 M€</td>
+</tr>
+<tr class="odd">
+<td>Dépenses du système d'information</td>
+<td>environ 1,3 M€, dont 0,3 M€ d'infogérance</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L'effectif au 31/12/2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Direction ou service</th>
+<th>Salariés</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Direction de l'exploitation : placiers, agents de péage, agents de sûreté, agents de nuit</td>
+<td>95</td>
+</tr>
+<tr class="even">
+<td>Direction technique : froid, maintenance, propreté, déchets</td>
+<td>60</td>
+</tr>
+<tr class="odd">
+<td>Service commercial et des relations avec les entreprises</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>Service des systèmes d'information</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>Fonctions support : finances, ressources humaines, juridique, achats</td>
+<td>25</td>
+</tr>
+<tr class="even">
+<td>Direction générale et communication</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>210</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le système d'information en quelques lignes</strong></p>
+<ul>
+<li><strong>Logiciel de gestion du marché</strong>, installé en 2011, édité par un petit éditeur régional : contrats d'emplacement, facturation des redevances et des refacturations, attribution des emplacements du carreau, saisie par les placiers sur tablette. Il est installé sur des serveurs de la salle informatique du siège, dont l'exploitation (supervision, sauvegardes, astreinte) est confiée depuis 2024 à un infogérant.</li>
+<li><strong>Système de péage et de contrôle d'accès</strong> (barrières, lecteurs de cartes, bornes de paiement), choisi en 2019 par la direction de l'exploitation chez un fournisseur spécialisé, avec son propre serveur.</li>
+<li><strong>Application des acheteurs</strong> (carte d'acheteur sur téléphone, horaires, plan), développée en 2023 par une agence web.</li>
+<li><strong>Portail des entreprises installées</strong> (factures, demandes techniques).</li>
+<li><strong>Supervision du froid</strong> de l'entrepôt, choisie par la direction technique.</li>
+<li><strong>Badges</strong> d'accès aux pavillons, à l'entrepôt et aux locaux techniques.</li>
+<li>Pont-bascule et suivi des déchets ; progiciel comptable et de paie ; bureautique en ligne.</li>
+</ul>
+<p><strong>Organigramme simplifié (avril 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Rattachement</th>
+<th>Fonction</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>—</td>
+<td>conseil d'administration</td>
+<td>président : M. Bastien FERRANDOU</td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>direction générale</td>
+<td>directrice générale : Mme Héloïse VAUCLERC</td>
+</tr>
+<tr class="odd">
+<td>Directeur(rice) général(e) délégué(e) chargé(e) de l'exploitation et du système d'information (vous)</td>
+<td>direction de l'exploitation</td>
+<td>Mme Armelle DUCHÉRAN</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>direction technique</td>
+<td>M. Loïc PERRAGUÈS</td>
+</tr>
+<tr class="odd">
+<td>Directrice générale</td>
+<td>service commercial et des relations avec les entreprises</td>
+<td>Mme Nadège QUÉRINEL</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>direction administrative et financière : fonctions support (finances, ressources humaines, juridique, achats)</td>
+<td>M. Fabrice MORVÉLAN</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>communication</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>Direction administrative et financière</td>
+<td>service des systèmes d'information</td>
+<td>M. Corentin LAVEYRAC, responsable des systèmes d'information</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>déléguée à la protection des données, juriste</td>
+<td>Mme Inès TALMONDIER</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-12--le-système-dinformation-vu-par-les-directions-et-par-les-actionnaires-témoignages-recueillis-en-mars-2027">ANNEXE 1.2 – Le système d'information vu par les directions et par les actionnaires (témoignages recueillis en mars 2027)</h3>
+<p><strong>M. Corentin LAVEYRAC, responsable des systèmes d'information</strong> : « Nous sommes sept, rattachés à la direction administrative et financière. Nous passons nos journées à dépanner et à installer : postes, tablettes, imprimantes, comptes. Le péage a été choisi en 2019 par l'exploitation, la supervision du froid en 2025 par la direction technique : nous n'avons été associés à aucun des deux choix, et nous découvrons leurs serveurs quand ils tombent en panne. J'apprends les projets quand les factures arrivent à la comptabilité. Sur 1,3 M€ de dépenses du système d'information en 2026, 0,5 M€ passent par le budget de mon service, dont l'infogérance ; les 0,8 M€ restants sont engagés directement par les directions. Aucune réunion ne rassemble les directions sur le système d'information : les demandes nous arrivent par courriel, sans priorité. Après 18 heures, il n'y a plus personne au service. »</p>
+<p><strong>Mme Armelle DUCHÉRAN, directrice de l'exploitation</strong> : « Le péage et les tablettes des placiers marchent. Quand j'ai besoin d'un outil, je le choisis avec mes équipes : je ne vais pas attendre l'informatique. Mes agents travaillent la nuit, les placiers dès minuit, quand le service des systèmes d'information n'est pas là. Si une borne du péage tombe en panne à 4 heures, j'appelle le fournisseur ; si les tablettes ne répondent plus, nous passons au papier et nous attendons 8 heures. »</p>
+<p><strong>Mme Évelyne GARBUSSAC, présidente de l'Union des grossistes du marché de Brévaline</strong> : « Sur 240 entreprises installées, 90 seulement ont un compte sur le portail ; les autres reçoivent leurs factures sur papier. Chaque demande technique, une porte de cellule qui ferme mal, une fuite d'eau, se règle par courrier ou par téléphone, et on ne sait jamais où elle en est. Les entreprises veulent tout trouver sur le portail : factures, demandes, consignes du marché. »</p>
+<p><strong>M. Bastien FERRANDOU, président du conseil d'administration</strong> : « Brévaline Métropole veut des données sur les flux alimentaires du marché et un compte rendu chaque trimestre. Or le conseil ne voit jamais les projets du système d'information avant qu'ils soient engagés : la supervision du froid, 90 k€, ne lui a jamais été présentée. Le plan "Marché de Brévaline 2031" ne réussira pas si ses projets numériques se décident direction par direction. »</p>
+<h3 id="annexe-13--les-projets-demandés-pour-2027-2029-tableau-établi-par-la-direction-générale-mars-2027">ANNEXE 1.3 – Les projets demandés pour 2027-2029 (tableau établi par la direction générale, mars 2027)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Projet</th>
+<th>Demandeur</th>
+<th>Coût estimé sur 2027-2029 (k€)</th>
+<th>Objectif du plan invoqué par le demandeur</th>
+<th>Durée</th>
+<th>Dépendances et éléments connus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P1. Remplacement du logiciel de gestion du marché</td>
+<td>direction administrative et financière et service commercial</td>
+<td>450</td>
+<td>fiabiliser la facturation et le pilotage</td>
+<td>18 mois</td>
+<td>l'éditeur, une entreprise de huit personnes, cessera de maintenir la version installée à la fin de 2029 ; la facturation, le portail des entreprises et l'attribution du carreau reposent sur ce logiciel</td>
+</tr>
+<tr class="even">
+<td>P2. Nouvelle version de l'application des acheteurs : commandes passées aux grossistes avant l'arrivée sur le marché</td>
+<td>Union des grossistes</td>
+<td>250</td>
+<td>dématérialiser la relation avec les acheteurs</td>
+<td>12 mois</td>
+<td>ne peut commencer qu'une fois le nouveau logiciel de gestion du marché en service (P1) ; 25 grossistes sur 150 se disent prêts à publier leurs offres et leurs prix dans l'application</td>
+</tr>
+<tr class="odd">
+<td>P3. Extraction automatique des données des documents d'arrivage</td>
+<td>service commercial</td>
+<td>120</td>
+<td>porter à 40 % la part des produits régionaux</td>
+<td>6 mois</td>
+<td>aucune ; outil proposé par un éditeur (annexe 1.5)</td>
+</tr>
+<tr class="even">
+<td>P4. Renouvellement du péage : barrières, lecteurs et bornes</td>
+<td>direction de l'exploitation</td>
+<td>600</td>
+<td>garantir la sûreté du site</td>
+<td>12 mois</td>
+<td>aucune ; le système de 2019 fonctionne, et son fournisseur s'engage à le maintenir jusqu'en 2031</td>
+</tr>
+<tr class="odd">
+<td>P5. Wifi du site pour les entreprises</td>
+<td>Union des grossistes</td>
+<td>150</td>
+<td>dématérialiser la relation avec les entreprises installées</td>
+<td>6 mois</td>
+<td>aucune ; les tablettes des placiers passent aujourd'hui par le réseau mobile, saturé les nuits de forte affluence ; dans les pavillons, les salariés des entreprises n'ont aucun accès au portail</td>
+</tr>
+<tr class="even">
+<td>P6. Outil de suivi des déchets par entreprise</td>
+<td>direction technique</td>
+<td>180</td>
+<td>valoriser 80 % des déchets du site</td>
+<td>9 mois</td>
+<td>comprend le raccordement du pont-bascule : chaque pesée serait attribuée à une entreprise et publiée sur le portail des entreprises</td>
+</tr>
+<tr class="odd">
+<td><strong>Total demandé</strong></td>
+<td></td>
+<td><strong>1 750</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Conventions :</p>
+<ul>
+<li>les coûts sont des coûts totaux sur 2027-2029, en sommes rondes ; on admet qu'ils se répartissent sur la durée de chaque projet ; l'étalement des dépenses d'une année à l'autre n'est pas à étudier ;</li>
+<li>les dépenses du système d'information ne pourront pas augmenter de plus de 0,3 M€ par an par rapport à 2026 : les nouveaux projets disposent ensemble de 900 k€ au plus sur les trois ans ;</li>
+<li>aucun projet ne peut démarrer avant septembre 2027 ; les sept personnes du service des systèmes d'information ne peuvent pas conduire plus de deux projets à la fois.</li>
+</ul>
+<h3 id="annexe-14--les-applications-et-leurs-échanges-description-établie-par-m-corentin-laveyrac-mars-2027">ANNEXE 1.4 – Les applications et leurs échanges (description établie par M. Corentin LAVEYRAC, mars 2027)</h3>
+<ol type="1">
+<li><strong>Logiciel de gestion du marché</strong> (2011, petit éditeur régional). Utilisateurs : service commercial (contrats d'emplacement), comptabilité (facturation des redevances et des refacturations), placiers (attribution des emplacements du carreau sur tablette, la nuit). Hébergement : serveurs de la salle informatique du siège, exploités par l'infogérant. Échanges : chaque mois, un fichier des factures est transmis au progiciel comptable ; chaque mois, les factures sont déposées en PDF sur le portail des entreprises.</li>
+<li><strong>Péage et contrôle d'accès</strong> (2019, fournisseur spécialisé). Utilisateurs : agents de péage, qui créent les cartes d'acheteur à l'accueil du péage. Hébergement : serveur propre installé dans le local du péage, maintenu à distance par son fournisseur, hors du contrat d'infogérance. Échanges : chaque nuit, un fichier des cartes actives est envoyé à l'application des acheteurs ; les cartes créées au péage sont ressaisies par le service commercial dans le logiciel de gestion du marché pour facturer les abonnements.</li>
+<li><strong>Application des acheteurs</strong> (2023, agence web). Utilisateurs : acheteurs, sur leur téléphone (carte d'acheteur, horaires, plan). Hébergement : chez un hébergeur choisi par l'agence web. Échanges : reçoit le fichier des cartes actives envoyé chaque nuit par le péage ; aucun autre échange.</li>
+<li><strong>Portail des entreprises installées</strong> (module fourni par l'éditeur du logiciel de gestion du marché). Utilisateurs : 90 entreprises installées qui y ont un compte, surtout leurs dirigeants et leurs services administratifs ; contenu en français seulement. Hébergement : mêmes serveurs que le logiciel de gestion du marché. Échanges : reçoit chaque mois les factures en PDF ; les demandes techniques déposées sur le portail sont imprimées par la direction technique, puis ressaisies dans son tableur de suivi des interventions ; la réponse est envoyée par courrier.</li>
+<li><strong>Supervision du froid</strong> (2025, choisie par la direction technique). Utilisateurs : techniciens du froid ; les alarmes de température des 40 cellules sont envoyées par SMS au technicien d'astreinte. Hébergement : service en ligne de son éditeur. Échanges : aucun ; chaque mois, les consommations de froid de chaque cellule sont relevées à l'écran et ressaisies dans le logiciel de gestion du marché pour la refacturation du froid.</li>
+<li><strong>Badges d'accès</strong> aux pavillons, à l'entrepôt et aux locaux techniques. Utilisateurs : responsable de la sûreté et agents de sûreté. Hébergement : serveur propre installé au poste de sûreté. Échanges : aucun ; les badges sont créés à partir de formulaires papier remplis par les entreprises installées.</li>
+<li><strong>Pont-bascule et suivi des déchets</strong>. Utilisateurs : agents de la direction technique. Hébergement : poste dédié à l'entrée de la déchetterie du site. Échanges : aucun ; le pont-bascule imprime un ticket par pesée de benne ; chaque mois, les totaux sont recopiés dans un tableur de la direction technique.</li>
+<li><strong>Progiciel comptable et de paie</strong> (service en ligne). Utilisateurs : finances et ressources humaines. Échanges : reçoit chaque mois le fichier des factures du logiciel de gestion du marché ; les éléments variables de la paie des agents de nuit sont saisis à partir des plannings tenus dans des tableurs par la direction de l'exploitation.</li>
+<li><strong>Bureautique en ligne</strong> (messagerie, traitement de texte, tableurs partagés). Utilisateurs : tous les salariés qui disposent d'un poste. Échanges : sert de lien entre les applications par des tableurs envoyés par courriel.</li>
+</ol>
+<h3 id="annexe-15--lextraction-automatique-des-documents-darrivage-note-de-mme-nadège-quérinel-responsable-commerciale-et-des-relations-avec-les-entreprises-mars-2027">ANNEXE 1.5 – L'extraction automatique des documents d'arrivage (note de Mme Nadège QUÉRINEL, responsable commerciale et des relations avec les entreprises, mars 2027)</h3>
+<p><strong>La situation actuelle.</strong> Pour justifier les tonnages qu'ils déclarent et l'origine de leurs produits, les grossistes nous envoient chaque mois leurs documents d'arrivage : bons de livraison et lettres de voiture des transporteurs. Ils arrivent par courriel, en PDF ou en photo prise au téléphone, sous 25 formats différents ; nous en recevons environ 6 000 par mois. Deux personnes du service commercial en saisissent le produit, l'origine, le poids et la date dans un tableur. Les données d'un mois ne sont complètes que six semaines après sa fin. Les documents portent aussi le nom et le numéro de téléphone des chauffeurs et, pour certains grossistes, le prix d'achat des produits.</p>
+<p><strong>L'outil proposé.</strong> Un éditeur nous propose un outil qui lit automatiquement ces documents et en extrait les quatre données : produit, origine, poids, date. Il repose sur l'apprentissage automatique : avant la mise en service, il serait entraîné sur 20 000 documents de 2025 et 2026 que nous avons déjà saisis, en comparant ce qu'il lit à ce que nous avons saisi. Pour chaque donnée extraite, il donne un indice de confiance de 0 à 100 ; sous le seuil que nous fixerons, la donnée est signalée pour vérification. Les corrections faites par nos équipes peuvent servir à l'entraîner de nouveau.</p>
+<p><strong>Les résultats annoncés par l'éditeur</strong>, sur des documents d'autres clients :</p>
+<ul>
+<li>documents dactylographiés : 2 % des données extraites sont erronées ;</li>
+<li>documents manuscrits, environ un document sur cinq chez nos grossistes : 25 % des données extraites sont erronées ;</li>
+<li>une photo floue ou un format jamais vu donne des indices de confiance bas.</li>
+</ul>
+<p>L'éditeur héberge l'outil et les documents dans son propre service en ligne.</p>
+<h3 id="annexe-16--les-savoirs-partagés-avec-les-entreprises-installées-constats-de-m-loïc-perraguès-directeur-technique-et-de-mme-nadège-quérinel-mars-2027">ANNEXE 1.6 – Les savoirs partagés avec les entreprises installées (constats de M. Loïc PERRAGUÈS, directeur technique, et de Mme Nadège QUÉRINEL, mars 2027)</h3>
+<p><strong>Des bonnes pratiques dispersées.</strong> Les règles de bon usage du site existent, mais chacune est ailleurs :</p>
+<ul>
+<li>chaîne du froid dans les cellules : fermer les portes et les rideaux à lanières, ne pas bloquer les portes avec une palette, charger sans arrêter le froid ;</li>
+<li>tri des déchets : cinq bennes par pavillon (cartons, bois et palettes, déchets alimentaires, polystyrène, déchets non recyclables), avec des règles qui changent selon les filières ;</li>
+<li>sûreté de nuit : fermeture des cases, signalement d'une personne ou d'un véhicule suspect ;</li>
+<li>consignes en cas de panne du péage : qui lève les barrières, comment noter les passages.</li>
+</ul>
+<p>Ces règles figurent sur des affiches en français dans les pavillons, dans des courriels envoyés aux dirigeants des entreprises, rarement transmis à leurs équipes, et dans la réunion annuelle avec les entreprises installées (40 présentes sur 240 en 2026). Une partie n'est écrite nulle part : quelques agents de nuit savent quelles portes de cellules ferment mal, comment relancer une borne du péage ou quel transporteur arrive avant l'heure.</p>
+<p><strong>Des incidents qui se répètent en 2026.</strong></p>
+<ul>
+<li>40 ruptures de froid dues à des portes de cellules laissées ouvertes, dont 6 ont conduit des grossistes à détruire des marchandises.</li>
+<li>300 bennes refusées par le prestataire de collecte pour mauvais tri, sur 12 000 bennes collectées, soit 2,5 % : leur contenu n'est pas valorisé.</li>
+<li>8 pannes du péage la nuit, pendant lesquelles les agents ont appliqué des consignes différentes : barrières levées sans contrôle certaines nuits, acheteurs refoulés d'autres nuits.</li>
+</ul>
+<p><strong>Les personnes à toucher.</strong> Selon l'Union des grossistes, un salarié sur trois des entreprises installées est remplacé dans l'année. Beaucoup travaillent la nuit, sur les quais et dans les cellules, sans ordinateur, mais avec un téléphone ; une douzaine de langues sont parlées sur le marché. Certains grossistes ont leurs propres savoir-faire, sur le mûrissage des fruits, la conservation des produits de la mer ou la préparation des commandes de la restauration collective, et ne veulent pas les partager avec leurs concurrents.</p>
+<p><strong>Les outils existants.</strong> Le portail des entreprises installées (90 entreprises ont un compte) ; l'application des acheteurs, installée par la plupart des acheteurs ; les tablettes des placiers, utilisées chaque nuit sur le carreau.</p>
+<h3 id="annexe-17--le-contrat-dinfogérance-extraits-du-contrat-et-note-de-m-corentin-laveyrac-mars-2027">ANNEXE 1.7 – Le contrat d'infogérance (extraits du contrat et note de M. Corentin LAVEYRAC, mars 2027)</h3>
+<p><strong>A. Extraits du contrat signé en mars 2024 pour quatre ans (échéance en mars 2028)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Article</th>
+<th>Contenu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Objet</td>
+<td>exploitation des serveurs de la salle informatique du siège, qui portent le logiciel de gestion du marché et le portail des entreprises installées : supervision, sauvegardes, mises à jour, astreinte ; le serveur du péage, celui des badges et les services en ligne en sont exclus</td>
+</tr>
+<tr class="even">
+<td>Prix</td>
+<td>0,3 M€ par an</td>
+</tr>
+<tr class="odd">
+<td>Plage de service</td>
+<td>jours ouvrés, du lundi au vendredi hors jours fériés, de 8 heures à 18 heures</td>
+</tr>
+<tr class="even">
+<td>Astreinte</td>
+<td>joignable par téléphone les jours ouvrés de 18 heures à 20 heures ; aucune astreinte la nuit, le samedi, le dimanche ni les jours fériés</td>
+</tr>
+<tr class="odd">
+<td>Incidents</td>
+<td>prise en charge dans un délai de quatre heures ouvrées après le signalement ; aucun délai de rétablissement n'est fixé</td>
+</tr>
+<tr class="even">
+<td>Disponibilité</td>
+<td>99 % du temps de la plage de service, mesurée par l'infogérant</td>
+</tr>
+<tr class="odd">
+<td>Suivi</td>
+<td>rapport d'activité annuel ; aucune pénalité</td>
+</tr>
+<tr class="even">
+<td>Accès</td>
+<td>l'infogérant administre les serveurs avec des comptes à tous les droits</td>
+</tr>
+<tr class="odd">
+<td>Sauvegardes</td>
+<td>l'infogérant peut confier les sauvegardes à un prestataire de son choix</td>
+</tr>
+</tbody>
+</table>
+<p>Le contrat ne contient aucune clause sur les données personnelles ni sur la confidentialité des données.</p>
+<p><strong>B. Note de M. Corentin LAVEYRAC</strong></p>
+<ul>
+<li>Les serveurs portent les contrats d'emplacement, les factures et les redevances de chaque entreprise installée, les attributions du carreau, ainsi que les nom, adresse et coordonnées des titulaires des cartes d'acheteur facturées par abonnement.</li>
+<li>L'infogérant a confié les sauvegardes à un autre prestataire, qui les conserve dans son propre centre de données ; nous ne connaissons ni son nom ni le lieu de conservation.</li>
+<li>En 2026, nous avons relevé 14 incidents entre minuit et 8 heures. Six fois, vers 3 heures, le logiciel de gestion du marché est devenu inaccessible aux tablettes des placiers : le carreau a été attribué sur papier, puis ressaisi le lendemain ; le service a été rétabli en moyenne vers 11 heures, huit heures après la panne, à la fin du marché. Quatre incidents survenus un samedi n'ont été traités que le lundi.</li>
+<li>Le rapport annuel 2026 de l'infogérant indique une disponibilité de 99,9 % et conclut qu'« aucun engagement n'a été manqué ».</li>
+<li>Les conditions du renouvellement seront discutées avec l'infogérant actuel à partir de septembre 2027 ; aucune procédure de choix du prestataire n'est à organiser.</li>
+</ul>
+<h3 id="annexe-18--repères-au-31122026">ANNEXE 1.8 – Repères (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Repère</th>
+<th>Nom exact et version</th>
+<th>Ce qu'il faut en retenir</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gestion des services informatiques</td>
+<td>ITIL 4, PeopleCert (ex-AXELOS), 2019 ; coexiste depuis 2026 avec ITIL (version 5)</td>
+<td>référentiel de bonnes pratiques, ni norme ni logiciel : accord de niveau de service, gestion des incidents, amélioration continue</td>
+</tr>
+<tr class="even">
+<td>Données personnelles</td>
+<td>règlement (UE) 2016/679 (RGPD), applicable depuis le 25/05/2018</td>
+<td>un prestataire qui traite des données personnelles pour le compte de BRÉVALIM agit en sous-traitant ; un contrat écrit fixe ses obligations ; il ne peut recourir à un autre sous-traitant qu'avec l'autorisation écrite préalable de BRÉVALIM, qui reste responsable du traitement ; aucune analyse juridique n'est attendue</td>
+</tr>
+<tr class="odd">
+<td>Intelligence artificielle</td>
+<td>règlement (UE) 2024/1689 sur l'intelligence artificielle, modifié par le règlement (UE) 2026/1744</td>
+<td>approche par les risques ; depuis le 02/02/2025, les organisations qui utilisent des systèmes d'intelligence artificielle doivent assurer à leur personnel un niveau suffisant de maîtrise de ces systèmes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>Le plan « Marché de Brévaline 2031 » repose sur le système d'information, alors que celui-ci s'est construit direction par direction, que le service des systèmes d'information n'est associé à aucun choix et que le conseil d'administration découvre les projets une fois engagés. Mme VAUCLERC vous demande de proposer les orientations de la stratégie du système d'information et d'arbitrer les projets demandés, de revoir l'organisation de la fonction système d'information, de cartographier les applications et d'éclairer le projet d'extraction automatique des documents d'arrivage, de proposer un dispositif de partage des bonnes pratiques avec les entreprises installées, enfin de préparer les niveaux de service et les clauses du contrat d'infogérance renouvelé. Vous mobiliserez pour cela les annexes 1.1 à 1.8 ainsi que vos connaissances professionnelles.</p>
+<p><strong>1.1 – Les orientations de la stratégie du système d'information et le portefeuille de projets (3,5 points)</strong></p>
+<p>a) Après avoir défini la planification stratégique du système d'information et la gestion d'un portefeuille de projets, proposez trois orientations de la stratégie du système d'information de BRÉVALIM, chacune justifiée par un objectif du plan « Marché de Brévaline 2031 » et par un constat des annexes. Il n'est demandé ni schéma directeur, ni feuille de route.</p>
+<p>b) Construisez une grille d'arbitrage de trois ou quatre critères, dont la contribution au plan et le risque du projet, et appliquez-la aux six projets de l'annexe 1.3. Retenez les projets à conduire de 2027 à 2029 dans la limite de dépenses fixée, en justifiant leur ordre de lancement, puis indiquez le rôle du conseil d'administration dans cet arbitrage. Aucun calcul financier n'est attendu.</p>
+<p><strong>1.2 – L'organisation de la fonction système d'information (3 points)</strong></p>
+<p>a) Après avoir présenté les principaux modèles d'organisation de la fonction système d'information (centralisée, décentralisée, fédérée, externalisée), analysez, à partir des annexes 1.1 et 1.2, l'organisation actuelle de BRÉVALIM et ses effets. Recommandez ensuite, en les justifiant, un modèle d'organisation et un rattachement du service des systèmes d'information.</p>
+<p>b) Proposez trois mesures qui améliorent les relations entre le service des systèmes d'information, la direction générale, les directions métiers et le conseil d'administration, portant respectivement sur les instances, sur le rôle du responsable des systèmes d'information et sur l'information des actionnaires.</p>
+<p><strong>1.3 – La cartographie applicative et l'extraction automatique des documents d'arrivage (2,5 points)</strong></p>
+<p>a) Après avoir défini la cartographie applicative et la cartographie fonctionnelle, représentez, à partir de l'annexe 1.4, la cartographie applicative de BRÉVALIM : applications regroupées par domaine fonctionnel, échanges entre elles et nature de ces échanges. Relevez ensuite trois faiblesses qu'elle révèle.</p>
+<p>b) Expliquez le fonctionnement de l'outil d'extraction présenté à l'annexe 1.5 (apprentissage à partir des documents déjà saisis, indice de confiance, erreurs), puis proposez deux conditions de son usage par BRÉVALIM. Aucune classification de l'outil au titre du règlement sur l'intelligence artificielle n'est attendue.</p>
+<p><strong>1.4 – Le partage des bonnes pratiques avec les entreprises installées (3 points)</strong></p>
+<p>a) Après avoir défini la gestion des connaissances et distingué connaissances tacites et connaissances explicites, fixez, à partir de l'annexe 1.6, les objectifs d'un dispositif de partage des bonnes pratiques entre BRÉVALIM et les entreprises installées, en distinguant les contenus partagés avec toutes les entreprises et les contenus réservés à chacune.</p>
+<p>b) Montrez comment ce dispositif s'intègre aux outils existants de BRÉVALIM.</p>
+<p>c) Proposez la gouvernance du dispositif (rôles, animation) et deux indicateurs de suivi, chacun avec sa formule, sa source, sa fréquence, sa cible et son axe.</p>
+<p>d) Proposez trois leviers d'appropriation adaptés à des salariés qui travaillent la nuit, sans ordinateur, et parlent plusieurs langues.</p>
+<p><strong>1.5 – Les niveaux de service du contrat d'infogérance (2 points)</strong></p>
+<p>a) Analysez, à partir de l'annexe 1.7, l'adéquation des niveaux de service du contrat d'infogérance à l'activité de nuit du marché, puis proposez trois niveaux de service à inscrire dans le contrat renouvelé, en choisissant parmi la plage de service, le délai de rétablissement, l'astreinte et la mesure de la disponibilité.</p>
+<p>b) Indiquez, en principe, les deux clauses à prévoir sur les données : la sous-traitance des données personnelles, y compris le recours à un autre sous-traitant, et la confidentialité des données commerciales des grossistes. Aucune analyse juridique des clauses ni aucune procédure de choix du prestataire n'est attendue.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
