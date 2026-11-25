@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Organiser et exploiter les données des interventions, en maîtriser la conservation : SDIS du Val-d'Aurande : modèle conceptuel et logique des interventions, des engins et des équipages, analyse de la sollicitation opérationnelle, cycle de vie et archivage des enregistrements des appels et des comptes rendus de secours, chaîne de blocs pour la traçabilité des équipements de protection</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Organiser et exploiter les données des interventions, en maîtriser la conservation</h1><p class="cas">SDIS du Val-d'Aurande : modèle conceptuel et logique des interventions, des engins et des équipages, analyse de la sollicitation opérationnelle, cycle de vie et archivage des enregistrements des appels et des comptes rendus de secours, chaîne de blocs pour la traçabilité des équipements de protection</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F07 données, modélisation et gouvernance (§ 1 à 4, modèle conceptuel, cardinalités et règles de passage ; § 1 et 8.3, dictionnaire et qualité des données ; § 8.4, cycle de vie et archivage), F08 décisionnel et visualisation (§ 1, chaîne décisionnelle ; § 2, méthodes d'analyse ; § 5, représentations et biais), F06 gestion des connaissances et documentaire (§ 4 et 5, cycle de vie documentaire, archivage électronique), F11 chaîne de blocs (§ 1 et 2, principes, usages, grille d'opportunité et limites), F15 RGPD opérationnel (§ 2, registre des activités de traitement), glossaire, et la base des référentiels datés (vérifiés les 25 et 26/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Les données des interventions, des engins et des équipages</td>
+<td><code>2.1.b</code> Modélisation des données (modèles conceptuels, logiques et physiques) ; <code>2.1.e</code> Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données ; <code>2.1.a</code> Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes</td>
+<td>3,5</td>
+</tr>
+<tr class="even">
+<td>2.2 L'analyse de la sollicitation opérationnelle</td>
+<td><code>2.2.a</code> Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation ; <code>2.2.b</code> Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution ; <code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés ; <code>2.2.c</code> Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model</td>
+<td>4,5</td>
+</tr>
+<tr class="odd">
+<td>2.3 La conservation des enregistrements et des comptes rendus de secours</td>
+<td><code>2.3.b</code> Étapes du cycle de vie des données : création, stockage, usage, archivage, suppression ; <code>2.3.e</code> Aspects réglementaires (RGPD, archivage légal) et monétisation des données</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>2.4 La proposition de PROTÉVANCE</td>
+<td><code>3.3.b</code> Fonctionnement des technologies de registres distribués (DLT) ; <code>3.3.c</code> Typologie des applications : traçabilité, certification, finance décentralisée, NFT ; <code>3.3.e</code> Analyse de la valeur ajoutée, des coûts et des limites d'un projet blockchain</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 2 – Organiser et exploiter les données des interventions, en maîtriser la conservation</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (modèle conceptuel, règles de passage, dictionnaire et dimensions de la qualité, chaîne de valeur et chaîne de traitement, analyse prédictive, cycle de vie, stockage et archivage électronique, principes du RGPD, chaîne de blocs de consortium) environ 2,25 points (la moitié des items 2.1 a-4, 2.1 b-1, 2.2 a-1, 2.2 c-1, 2.3 a-1, 2.3 b-1, 2.3 b-2, 2.4 a-1 et 2.4 a-2, qui mêlent définition et application) ; analyse des annexes et recommandations environ 10,75 points, soit environ 83 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 59 minutes.</p>
+<hr />
+<h3 id="21--les-données-des-interventions-des-engins-et-des-équipages-35-points">2.1 – Les données des interventions, des engins et des équipages (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.b</code> « Modélisation des données (modèles conceptuels, logiques et physiques) », modèle conceptuel et modèle logique faits à la main à partir de règles de gestion écrites, avec une association ternaire ; <code>2.1.e</code> « Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données » ; <code>2.1.a</code> « Structurer et organiser les données […] afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité […] ». Aucune requête ; modèle physique seulement nommé.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.1 (fonctionnement actuel, problèmes de qualité de 2026, règles de gestion RG1 à RG8) ; annexe 1.1 (logiciel de traitement de l'alerte, application de comptes rendus sur tablettes, 60 centres, 420 engins, 50 000 interventions).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Six entités, avec leur identifiant et des attributs élémentaires tirés de RG1 à RG8 ; nature et commune traitées en entités (listes de référence), et non en texte libre</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Associations binaires et leurs cardinalités, justifiées par les règles de gestion et lues dans les deux sens (classer, situer, desservir, appartenir, mobiliser avec ses deux heures, rattacher)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Association ternaire « armer » entre l'agent, l'engin et l'intervention, porteuse du rôle, avec ses cardinalités (une intervention au moins un armement)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Règles de passage énoncées ; modèle logique de neuf tables, clés primaires, clés étrangères (#) et trois tables d'association à clé composée</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Dictionnaire des données défini et appliqué ; trois entrées complètes (définition, format, règle de validité, source, propriétaire)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Deux règles de qualité, chacune rattachée à un problème de l'annexe 2.1 B et à une dimension de la qualité</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Troisième règle de qualité, rattachée à un problème de l'annexe 2.1 B, et sa dimension (la correction à la source, le responsable désigné et le référentiel des communes partagé avec les partenaires sont valorisés, sans être exigés)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.1 a) – Le modèle conceptuel et le modèle logique</em></p>
+<p><strong>Le modèle conceptuel</strong> (0,5 pt pour les entités, 0,5 pt pour les associations binaires, 0,5 pt pour l'association ternaire) représente les objets de gestion (entités), leurs propriétés et leurs liens (associations), avec des cardinalités qui traduisent les règles de gestion, indépendamment de toute technique (F07 § 1 et 2). Les identifiants sont soulignés.</p>
+<p>Entités et attributs :</p>
+<ul>
+<li><strong>Intervention</strong> (<u>num_intervention</u>, date_appel, heure_appel, adresse) (RG1) ;</li>
+<li><strong>Nature</strong> (<u>code_nature</u>, libelle_nature) (RG2) ;</li>
+<li><strong>Commune</strong> (<u>code_commune</u>, nom_commune, population) (RG3) ;</li>
+<li><strong>Centre</strong> (<u>code_centre</u>, nom_centre, type_centre, groupement_territorial) (RG4) ;</li>
+<li><strong>Engin</strong> (<u>num_engin</u>, type_engin, date_mise_service) (RG5) ;</li>
+<li><strong>Agent</strong> (<u>matricule</u>, nom_agent, prenom_agent, statut_agent) (RG7).</li>
+</ul>
+<p>La nature et la commune sont des <strong>entités</strong>, et non de simples attributs de l'intervention : ce sont des listes de référence, avec un code et un libellé, qui imposent une valeur parmi des valeurs connues ; c'est la réponse aux 2 500 natures « autre » et aux 1 100 libellés de communes de l'annexe 2.1 B. La commune porte en outre ses propres propriétés (population) et un lien vers son centre de premier appel.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Association</th>
+<th>Entités et cardinalités</th>
+<th>Lecture (règle de gestion)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>classer</td>
+<td>Intervention <strong>1,1</strong> — Nature <strong>0,n</strong></td>
+<td>une intervention relève d'une seule nature ; une nature peut ne compter aucune intervention (RG2)</td>
+</tr>
+<tr class="even">
+<td>situer</td>
+<td>Intervention <strong>1,1</strong> — Commune <strong>0,n</strong></td>
+<td>une intervention a lieu dans une seule commune ; une commune peut n'avoir connu aucune intervention (RG3)</td>
+</tr>
+<tr class="odd">
+<td>desservir</td>
+<td>Commune <strong>1,1</strong> — Centre <strong>1,n</strong></td>
+<td>une commune relève d'un seul centre de premier appel ; un centre est le centre de premier appel d'au moins une commune (RG4)</td>
+</tr>
+<tr class="even">
+<td>appartenir</td>
+<td>Engin <strong>1,1</strong> — Centre <strong>1,n</strong></td>
+<td>un engin appartient à un seul centre ; un centre possède au moins un engin (RG5)</td>
+</tr>
+<tr class="odd">
+<td>mobiliser (heure_depart, heure_arrivee)</td>
+<td>Intervention <strong>1,n</strong> — Engin <strong>0,n</strong></td>
+<td>une intervention mobilise au moins un engin ; un engin peut n'avoir été engagé sur aucune intervention ; les deux heures dépendent du couple intervention-engin (RG6)</td>
+</tr>
+<tr class="even">
+<td>rattacher</td>
+<td>Agent <strong>1,n</strong> — Centre <strong>1,n</strong></td>
+<td>un agent est rattaché à au moins un centre ; un centre compte au moins un agent (RG7)</td>
+</tr>
+<tr class="odd">
+<td>armer (role)</td>
+<td>Agent <strong>0,n</strong> — Engin <strong>0,n</strong> — Intervention <strong>1,n</strong></td>
+<td>sur une intervention, un agent arme un engin dans un seul rôle ; une intervention compte au moins un armement ; un agent ou un engin peut n'en avoir aucun (RG8)</td>
+</tr>
+</tbody>
+</table>
+<p>L'association <strong>armer</strong> est <strong>ternaire</strong> : le rôle ne dépend pas du seul couple agent-intervention, car sur une même intervention un agent peut armer successivement deux engins, dans des rôles différents (RG8) ; il ne dépend pas non plus du seul couple agent-engin, car un agent qui arme le même engin sur deux interventions peut y être conducteur puis chef d'agrès ; il dépend du triplet agent-engin-intervention. Un même agent n'a qu'un rôle sur un engin donné d'une intervention donnée. Les heures de départ et d'arrivée sont, elles, des attributs de l'association binaire <strong>mobiliser</strong> : elles dépendent de l'engin et de l'intervention, pas de l'agent. Le modèle n'exprime pas, par ses seules clés, qu'un agent n'arme qu'un engin effectivement engagé sur l'intervention : c'est une contrainte d'inclusion (armer ⊂ mobiliser) à contrôler par une règle applicative (valorisé, non exigé).</p>
+<p><strong>Le modèle logique</strong> (0,5 pt) s'obtient par les règles de passage (F07 § 4) :</p>
+<ol type="1">
+<li>chaque entité devient une table, dont l'identifiant devient la clé primaire et dont les attributs deviennent des colonnes ;</li>
+<li>pour une association binaire dont une patte a une cardinalité maximale 1 (classer, situer, desservir, appartenir), l'identifiant de l'entité du côté n migre comme clé étrangère dans la table de l'entité du côté 1, toujours renseignée si la cardinalité est 1,1 ;</li>
+<li>une association dont toutes les pattes ont une cardinalité maximale n (mobiliser, rattacher), et toute association ternaire (armer), devient une table dont la clé primaire est composée des identifiants des entités reliées, chacun clé étrangère ; les attributs de l'association en deviennent des colonnes.</li>
+</ol>
+<ul>
+<li>Nature (<u>code_nature</u>, libelle_nature)</li>
+<li>Centre (<u>code_centre</u>, nom_centre, type_centre, groupement_territorial)</li>
+<li>Commune (<u>code_commune</u>, nom_commune, population, #code_centre)</li>
+<li>Engin (<u>num_engin</u>, type_engin, date_mise_service, #code_centre)</li>
+<li>Agent (<u>matricule</u>, nom_agent, prenom_agent, statut_agent)</li>
+<li>Intervention (<u>num_intervention</u>, date_appel, heure_appel, adresse, #code_nature, #code_commune)</li>
+<li>Engagement (<u>#num_intervention, #num_engin</u>, heure_depart, heure_arrivee)</li>
+<li>Rattachement (<u>#matricule, #code_centre</u>)</li>
+<li>Armement (<u>#matricule, #num_engin, #num_intervention</u>, role)</li>
+</ul>
+<p>Dans Commune, <code>#code_centre</code> désigne le centre de premier appel ; dans Engin, le centre d'appartenance : ce sont deux associations différentes vers la même table. Le modèle physique (types, index sur les clés étrangères, liste fermée des rôles) se déduirait du modèle logique ; il n'est pas demandé. Les noms et prénoms des agents sont des données personnelles : le modèle s'en tient à ce qui sert à l'activité opérationnelle (minimisation).</p>
+<p><em>2.1 b) – Le dictionnaire des données et les règles de qualité</em></p>
+<p><strong>Le dictionnaire des données</strong> (0,5 pt avec les trois entrées) est le référentiel qui décrit chaque donnée : nom, définition, type et format, domaine de valeurs ou règle de validité, source, propriétaire, sensibilité (F07 § 1). Il donne à tous, au centre de traitement de l'alerte, dans les centres et à l'observatoire, le même sens d'une donnée : c'est lui qui dira ce qu'est l'« heure d'arrivée » ou une « nature ». Trois entrées parmi les suivantes :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Définition</th>
+<th>Type et format</th>
+<th>Règle de validité</th>
+<th>Source</th>
+<th>Propriétaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>heure_arrivee</td>
+<td>heure à laquelle l'engin arrive sur les lieux de l'intervention</td>
+<td>date et heure, jj/mm/aaaa hh:mm</td>
+<td>obligatoire pour clôturer l'engagement ; postérieure à l'heure de départ ; toute saisie après coup est tracée (auteur, date)</td>
+<td>tablette de l'engin (bouton du chef d'agrès)</td>
+<td>groupement des opérations</td>
+</tr>
+<tr class="even">
+<td>code_nature</td>
+<td>nature de l'intervention</td>
+<td>code de la table Nature (quatre valeurs)</td>
+<td>valeur de la liste ; une nature provisoire choisie à l'appel est confirmée ou corrigée à la clôture ; tout changement de liste est daté</td>
+<td>logiciel de traitement de l'alerte (opérateur), confirmée par le chef d'agrès</td>
+<td>groupement des opérations</td>
+</tr>
+<tr class="odd">
+<td>code_commune</td>
+<td>commune du lieu de l'intervention</td>
+<td>code de la table Commune (480 communes)</td>
+<td>valeur du référentiel des communes ; aucune saisie libre</td>
+<td>localisation du logiciel, ou choix dans la liste</td>
+<td>observatoire de l'activité</td>
+</tr>
+<tr class="even">
+<td>role</td>
+<td>rôle de l'agent sur l'engin pour l'intervention</td>
+<td>liste : chef d'agrès, conducteur, équipier</td>
+<td>un seul chef d'agrès et un seul conducteur par engin et par intervention</td>
+<td>équipage enregistré au départ, corrigé dans le logiciel</td>
+<td>groupement des opérations</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trois règles de qualité</strong> (0,5 pt pour deux règles, 0,5 pt pour la troisième), chacune rattachée à un problème de l'annexe 2.1 B et à une dimension de la qualité des données (F07 § 8.3) :</p>
+<ol type="1">
+<li><strong>Contre les heures d'arrivée manquantes – complétude.</strong> La tablette ne permet pas de clôturer l'engagement sans heure d'arrivée ; si le chef d'agrès a oublié le bouton, il la saisit à la clôture, et la saisie est marquée « déclarée après coup ». Un départ sur dix (7 000) n'a aujourd'hui pas d'heure d'arrivée : ce sont autant de données manquantes pour mesurer le délai d'arrivée, premier objectif du projet d'établissement.</li>
+<li><strong>Contre les natures « autre » – exactitude.</strong> La nature « autre » disparaît de la liste : l'opérateur choisit une nature provisoire, que le chef d'agrès confirme ou corrige à la clôture, d'après le compte rendu ; la correction est tracée. Les 15 jours de reclassement à la main de janvier deviennent inutiles, et une intervention sur vingt n'est plus classée au jugé.</li>
+<li><strong>Contre les équipages incomplets – exactitude et cohérence.</strong> Un remplacement au dernier moment est corrigé dans le logiciel de traitement de l'alerte, avant ou juste après le départ, par le chef d'agrès ou le centre, et non dans un tableur ; il n'existe qu'une source de l'équipage. Les 3 500 départs, un sur vingt, ressaisis aujourd'hui dans des tableurs de centre, sont autant de versions divergentes de la même donnée.</li>
+<li><strong>Contre les communes mal orthographiées – unicité et cohérence.</strong> La commune est choisie dans le référentiel des 480 communes (table Commune, identifiée par un code), jamais saisie en texte libre ; les 1 100 libellés actuels sont rapprochés une fois de ce référentiel, avec une table de correspondance conservée. Le même code de commune, partagé avec le département et les communes, rend les données échangeables avec eux (interopérabilité sémantique), comme le veut le projet d'établissement.</li>
+</ol>
+<p><strong>Conclusion</strong> : ces règles corrigent les données <strong>à la source</strong>, au moment où elles naissent (alerte, tablette, départ), plutôt qu'à chaque extraction mensuelle de l'observatoire ; elles supposent un propriétaire désigné pour chaque donnée (groupement des opérations, observatoire) et des listes de référence uniques.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Rôle traité en entité (Role, avec un code et un libellé) : l'association armer relie alors quatre entités, ou le rôle devient une clé étrangère de la table Armement, si le candidat le justifie par la liste fermée des rôles.</li>
+<li>Armement modélisé comme une association entre l'agent et l'engagement (association mobiliser traitée en entité, ou agrégation), si la clé reste agent-engin-intervention et le rôle porté par elle ; cette solution exprime d'ailleurs mieux la contrainte d'inclusion.</li>
+<li>Groupement territorial traité en entité reliée au centre ; attributs supplémentaires plausibles (dates de rattachement, coordonnées du lieu, immatriculation de l'engin).</li>
+<li>Cardinalité 0,n du centre dans desservir ou appartenir, si le candidat suppose un centre sans commune de premier appel ou sans engin propre, et le dit.</li>
+<li>Représentation graphique en notation Merise ou en « pattes de corbeau », si elle est lisible (<code>JUR-T10</code>).</li>
+<li>Autres entrées du dictionnaire (num_intervention, heure_depart, population), si elles portent les mêmes rubriques ; trois règles parmi les quatre, ou une autre dimension justifiée (actualité pour les équipages).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Modèle conceptuel et modèle logique confondus</em> (<code>ET-23</code>) — clés étrangères dans le modèle conceptuel, ou clé étrangère placée du mauvais côté (#num_engin dans Centre).</li>
+<li><em>Association ternaire décomposée en deux binaires</em> — agent-engin et agent-intervention séparées : on ne sait plus quel agent a armé quel engin sur quelle intervention, ni dans quel rôle.</li>
+<li><em>Heures de départ et d'arrivée placées dans Intervention ou dans Engin</em> — elles dépendent du couple intervention-engin (RG6).</li>
+<li><em>Morceau de cours</em> (<code>JUR-T01</code>) — définition du dictionnaire ou des dimensions de la qualité sans les problèmes chiffrés de l'annexe 2.1 B ; règles « vérifier la qualité » sans contrôle précis.</li>
+<li><em>Requêtes écrites</em> (<code>JUR-T07</code>) — la question n'en demande aucune.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Modèle conceptuel, cardinalités, association ternaire, règles de passage, modèle logique</td>
+<td>définitions et méthode</td>
+<td>F07 § 1 à 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Dictionnaire des données ; dimensions de la qualité (complétude, exactitude, unicité, cohérence, actualité)</td>
+<td>définitions</td>
+<td>F07 § 1 et 8.3 ; F08 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Interopérabilité sémantique (référentiel commun)</td>
+<td>principe</td>
+<td>F07 § 7</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--lanalyse-de-la-sollicitation-opérationnelle-45-points">2.2 – L'analyse de la sollicitation opérationnelle (4,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.a</code> « Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique […] » ; <code>2.2.b</code> « Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution » ; <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés » ; <code>2.2.c</code> « Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model ». Limites : aucun calcul statistique, aucun développement d'algorithme ; lecture critique des corrélations et des biais, reliée à la stratégie.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.2 (interventions par nature et par an, séries complémentaires, reclassement de 2024, interface défaillante de 2025, touristes, épisodes de chaleur, affirmation de M. PRUNEVAUX) ; annexe 2.1 (extraction mensuelle dans un tableur, problèmes de qualité) ; annexe 1.1 (640 000 habitants, projet d'établissement).</p>
+<p><strong>Barème indicatif (4,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Chaîne de valeur des données définie ; collecte et nettoyage, chacune avec une limite de l'annexe 2.2 ou un problème de qualité de l'annexe 2.1 B (interface défaillante de 2025 ; natures « autre », communes)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Structuration et analyse, chacune avec une limite (reclassement de 2024 ; touristes, séries qui se recoupent)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Restitution et décision, avec une limite (ruptures non signalées) ; conclusion</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Deux constats argumentés et chiffrés, avec leur portée</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Troisième constat argumenté et chiffré</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Affirmation appréciée : part réelle du vieillissement (environ un tiers de la hausse) ; carences, reclassement, nuit, saisonnalité ; corrélation et causalité ; conclusion sur le recrutement</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Analyse prédictive définie et distinguée de la descriptive ; apport au SDIS (pics de l'été et des épisodes de chaleur, gardes)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Deux conditions de réussite et deux limites, appliquées au cas</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-3</td>
+<td>Carte des communes en taux pour 1 000 habitants, justifiée (comparaison de communes de tailles différentes) ; précautions (touristes, petites communes)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.2 a) – La chaîne de valeur des données et la chaîne de traitement de la sollicitation</em></p>
+<p><strong>La chaîne de valeur des données</strong> (0,5 pt avec la collecte et le nettoyage) est l'ensemble des étapes par lesquelles une donnée brute devient une information utile, puis une décision et une action : collecte, nettoyage, structuration et stockage, analyse, restitution, décision (F08 § 1). La valeur ne se crée qu'au bout de la chaîne, mais elle se perd à chaque étape mal tenue : une erreur de collecte n'est pas rattrapée par l'analyse. La chaîne de traitement en est le cœur technique et organisationnel. Pour la sollicitation opérationnelle :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Ce que fera la chaîne</th>
+<th>Limite traitée (annexe 2.2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Collecte</strong></td>
+<td>extraction des interventions du logiciel de traitement de l'alerte, avec la nature, la commune, les heures ; âge de la victime tiré des comptes rendus ; population résidente et fréquentation touristique, données externes ; contrôle d'exhaustivité (chaque numéro d'intervention du logiciel est retrouvé dans la base)</td>
+<td>l'interface défaillante de mars et avril 2025 a fait perdre environ 1 000 interventions sans que personne ne s'en aperçoive ; elles existent dans le logiciel et doivent être rechargées</td>
+</tr>
+<tr class="even">
+<td><strong>Nettoyage</strong></td>
+<td>application des règles de la question 2.1 : natures « autre » corrigées, communes rapprochées du référentiel, heures manquantes marquées ; journal des rejets</td>
+<td>une intervention sur vingt classée « autre » et 1 100 libellés de communes faussent la répartition par nature et par commune</td>
+</tr>
+<tr class="odd">
+<td><strong>Structuration</strong></td>
+<td>chargement dans une base historisée, alimentée automatiquement et non plus par un tableur ; table de correspondance des natures qui recalcule 2022 et 2023 selon la liste de 2024 ; définitions écrites (carence, nuit de 18 heures à 8 heures, âge)</td>
+<td>le reclassement de 2024 (environ 2 000 relevages par an) rend 2022 et 2023 incomparables avec les années suivantes</td>
+</tr>
+<tr class="even">
+<td><strong>Analyse</strong></td>
+<td>comparaisons à nomenclature constante, par saison, par tranche horaire, par commune ; taux rapportés à la population présente l'été ; séries croisées sans les additionner</td>
+<td>jusqu'à 100 000 touristes en juillet et août ne sont pas dans les 640 000 habitants ; carences et personnes âgées se recoupent</td>
+</tr>
+<tr class="odd">
+<td><strong>Restitution et décision</strong></td>
+<td>tableaux et graphiques pour la direction et le conseil d'administration, annotés des ruptures (2024, 2025) et accompagnés d'une note de méthode ; décisions sur les gardes et les partenariats</td>
+<td>des chiffres publiés sans ces annotations font croire à une hausse du secours d'urgence aux personnes de 8 000 interventions, au lieu de 6 000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusion</strong> (0,5 pt avec la restitution) : les limites de l'annexe 2.2 ne sont pas des erreurs de calcul, mais des ruptures non documentées (reclassement, interface, population de référence). La chaîne les traite en amont, par des contrôles et des règles écrites, plutôt que par des corrections à la main dans le tableur de l'observatoire ; c'est la condition pour que le conseil d'administration décide sur des chiffres fiables.</p>
+<p><em>2.2 b) – Trois constats et l'affirmation de M. PRUNEVAUX</em></p>
+<p><strong>Trois constats</strong> parmi les suivants (0,5 pt pour deux constats, 0,5 pt pour le troisième : le fait chiffré, son interprétation et sa portée) :</p>
+<ol type="1">
+<li><strong>Une hausse réelle, portée par les secours d'urgence aux personnes.</strong> Les interventions passent de 43 000 à 50 000 en quatre ans (+ 7 000, environ + 16 %). À nomenclature constante, le secours d'urgence aux personnes passe de 33 000 à 39 000 (+ 6 000, environ + 18 %), et non de 31 000 à 39 000 : 2 000 de la hausse apparente viennent du reclassement de 2024. Les autres natures sont presque stables (de 10 000 à 11 000 à nomenclature constante).</li>
+<li><strong>Les carences ont doublé.</strong> De 3 000 à 6 000, elles expliquent à elles seules la moitié de la hausse réelle du secours d'urgence aux personnes et en représentent environ 15 % en 2026. Ce sont des interventions sans caractère d'urgence, faites faute d'autre moyen : une partie de la hausse ne relève pas de l'urgence.</li>
+<li><strong>Les personnes âgées pèsent davantage.</strong> Les interventions pour des personnes de 80 ans et plus à domicile passent de 10 000 à 12 500 (+ 2 500, environ + 25 %), plus vite que l'ensemble ; une partie de ces interventions sont aussi des carences.</li>
+<li><strong>La sollicitation se déplace vers la nuit et vers l'été.</strong> La part de nuit du secours d'urgence aux personnes passe de 40 % à 45 % ; l'écart entre les mois d'été et d'hiver passe de 900 à 1 200 interventions par mois, et les épisodes de chaleur de juillet 2026 ont porté l'activité à 1 500 interventions par semaine, contre 1 100 environ. Les pics, plus que la moyenne, dimensionnent les besoins.</li>
+<li><strong>2025 est sous-estimée.</strong> Environ 1 000 interventions manquent : 2025 compte en réalité environ 47 000 interventions, et la hausse de 2025 à 2026 est d'environ 3 000, et non de 4 000.</li>
+</ol>
+<p><strong>L'affirmation de M. PRUNEVAUX</strong> (0,5 pt) est en partie fondée, mais incomplète et sa conclusion ne suit pas :</p>
+<ul>
+<li>le vieillissement joue : + 2 500 interventions pour des personnes de 80 ans et plus, soit environ un tiers de la hausse de 7 000 ; il n'explique pas les deux autres tiers ;</li>
+<li>deux évolutions qui vont de pair ne prouvent pas que l'une cause l'autre : le vieillissement, les carences et la hausse des interventions évoluent ensemble, et les séries se recoupent (<code>ET-26</code>) ;</li>
+<li>les carences (+ 3 000) traduisent un manque d'autres moyens (ambulances privées, médecins de garde) : la réponse passe par la coordination avec le centre de régulation médicale du SAMU et le partage des données avec lui, objectif du projet d'établissement, plus que par de nouveaux volontaires ;</li>
+<li>une partie de la hausse <strong>du secours d'urgence aux personnes</strong> est artificielle : 2 000 relevages reclassés en 2024, sans effet sur le total ; et le saut de 2025 à 2026 (+ 4 000) est gonflé par une année 2025 sous-estimée d'environ 1 000 ; la hausse totale de 7 000 entre 2022 et 2026, elle, est réelle ;</li>
+<li>la pression se concentre la nuit et l'été (touristes, chaleur) : recruter des volontaires augmente les moyens, mais ne réduit pas la demande, et ne règle rien si ces moyens ne sont pas présents aux bonnes heures, aux bonnes saisons et dans les bonnes communes.</li>
+</ul>
+<p>Conclusion : le recrutement peut faire partie de la réponse, mais le conseil d'administration doit d'abord disposer de chiffres à nomenclature constante, distinguer l'urgence des carences, et traiter celles-ci avec les partenaires.</p>
+<p><em>2.2 c) – L'analyse prédictive et la représentation par commune</em></p>
+<p><strong>L'analyse prédictive</strong> (0,5 pt avec l'apport) estime ce qui va probablement se produire (combien d'interventions, où, quand), à partir de l'historique et de facteurs explicatifs (calendrier, météo, fréquentation touristique), avec une marge d'incertitude. Elle se distingue de l'analyse descriptive, qui dit ce qui s'est passé, et de l'analyse exploratoire, qui explore les données pour y repérer des profils, des motifs ou des anomalies (F08 § 2). Pour le SDIS, elle permettrait d'anticiper, semaine par semaine et par groupement territorial, les pics de l'été et des épisodes de chaleur (1 500 interventions par semaine en juillet 2026), d'adapter les gardes et le nombre d'agents d'astreinte aux heures de nuit et aux semaines chargées, de prépositionner des engins dans le Haut-Aurande l'été et de prévenir les partenaires.</p>
+<p><strong>Deux conditions</strong> parmi (0,5 pt avec les deux limites) : un historique fiable et homogène sur plusieurs années (règles de la question 2.1, nomenclature recalculée, 2025 complétée) ; des données externes obtenues des partenaires (prévisions météorologiques, fréquentation touristique) ; des compétences d'analyse à l'observatoire et une validation humaine des prévisions par le groupement des opérations, qui garde la décision ; des données agrégées, sans donnée personnelle des victimes. <strong>Deux limites</strong> parmi : l'avenir ne reproduit pas forcément le passé (épisode exceptionnel, changement des pratiques des partenaires, <code>JUR-D06</code>) ; les petites communes comptent trop peu d'interventions pour une prévision fiable ; les biais des données passées (sous-enregistrement de 2025, natures « autre ») se retrouvent dans les prévisions ; une prévision donne un ordre de grandeur, pas une certitude, et ne dit pas pourquoi. Aucun développement d'algorithme n'est attendu.</p>
+<p><strong>La représentation</strong> (0,5 pt) : une <strong>carte des 480 communes colorée selon le taux d'interventions pour 1 000 habitants</strong> (carte choroplèthe), en quatre ou cinq classes, avec la légende, la source et l'année ; de préférence deux cartes à la même échelle, l'été et l'hiver. La carte montre la géographie de la sollicitation, que lit immédiatement un conseil composé d'élus des communes ; le taux permet de comparer des communes de tailles très différentes, alors qu'une carte en nombre d'interventions ne montrerait que Montcerneau et les grandes communes. Précautions : l'été, le taux calculé sur les seuls résidents surestime la sollicitation des communes touristiques du Haut-Aurande ; les petites communes, aux chiffres faibles, peuvent être regroupées. À éviter : un graphique en secteurs à 480 parts, un tableau de chiffres bruts.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres étapes de la chaîne (stockage distinct de la structuration, décision et action en étape propre), si chacune porte une limite de l'annexe 2.2.</li>
+<li>Autres constats tirés de l'annexe (incendies en hausse en 2026, accidents stables), s'ils sont chiffrés et interprétés.</li>
+<li>Appréciation de l'affirmation plus ou moins sévère, si elle s'appuie sur les chiffres de l'annexe et distingue la part du vieillissement du reste.</li>
+<li>Carte en symboles proportionnels complétée d'un taux, ou carte par groupement territorial assortie d'un tableau des communes les plus sollicitées, si le choix est justifié.</li>
+<li>Analyse prescriptive évoquée en complément (proposer le nombre d'agents de garde), si elle reste une aide à la décision humaine.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Corrélation présentée comme causalité</em> (<code>ET-26</code>) — « la population vieillit, donc les interventions augmentent », sans mesurer la part du vieillissement.</li>
+<li><em>Reclassement présenté comme une cause de la hausse totale</em> — il déplace 2 000 interventions des opérations diverses vers le secours d'urgence aux personnes, sans changer le total de 43 000 à 50 000.</li>
+<li><em>Chiffres lus sans les ruptures</em> (<code>JUR-D06</code>) — hausse du secours d'urgence aux personnes de 8 000 prise telle quelle ; baisse des opérations diverses en 2024 interprétée comme une amélioration.</li>
+<li><em>Chaîne réduite à un outil</em> (<code>ET-05</code>, <code>JUR-D01</code>) — « il suffit d'un logiciel de tableaux de bord », sans collecte, nettoyage ni structuration.</li>
+<li><em>Calcul statistique ou algorithme</em> (<code>JUR-T07</code>) — coefficients, régressions ou modèle à programmer : hors attente.</li>
+<li><em>Carte en valeurs absolues</em> — elle reflète la taille des communes, non leur sollicitation.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chaîne de valeur des données, chaîne décisionnelle (collecte, nettoyage, structuration, analyse, restitution)</td>
+<td>définitions et méthode</td>
+<td>F08 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Analyses descriptive, exploratoire, prédictive</td>
+<td>définitions</td>
+<td>F08 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Choix d'une représentation, carte en taux, biais, corrélation et causalité</td>
+<td>méthode</td>
+<td>F08 § 5</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--la-conservation-des-enregistrements-et-des-comptes-rendus-de-secours-3-points">2.3 – La conservation des enregistrements et des comptes rendus de secours (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.b</code> « Étapes du cycle de vie des données : création, stockage, usage, archivage, suppression », durées de conservation données par l'énoncé ; <code>2.3.e</code> « Aspects réglementaires (RGPD, archivage légal) […] », en principe, sans analyse juridique. Limites : ni prérogatives des personnes sur leurs données, ni fondement juridique des traitements (UE 1) ; aucune durée tirée d'un texte.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.3 (enregistrements, comptes rendus, demandes de copies, enregistrement non retrouvé, durées fixées par le SDIS) ; annexe 2.5 (principes du RGPD, NF Z42-013 et ISO 14641, ISO 15489-1) ; annexe 1.1 (enregistreur des appels, application de comptes rendus, déléguée à la protection des données, médecin-chef).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Cycle de vie des enregistrements, de la création à la destruction, une règle par étape (horodatage et lien avec l'intervention, accès, gel, destruction à deux ans)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Cycle de vie des comptes rendus, une règle par étape (création structurée, usage courant deux ans, archivage jusqu'à vingt ans, destruction)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Règles transversales appliquées au cas : demandes de copies centralisées et tracées, fin des copies en PDF et sur clés, rattrapage du stock existant</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Stockage et archivage électronique distingués et appliqués (serveur et enregistreur actuels : du stockage)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Ce que le RGPD impose (limitation de la conservation, sécurité renforcée des données de santé, registre) et ce que les normes apportent (intégrité, pérennité, traçabilité, preuve), en principe</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Trois mesures précises, rattachées aux constats de l'annexe 2.3</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.3 a) – Le cycle de vie des enregistrements et des comptes rendus</em></p>
+<p>Le cycle de vie d'une donnée va de sa <strong>création</strong> à sa <strong>suppression</strong>, en passant par le <strong>stockage</strong>, l'<strong>usage</strong> et l'<strong>archivage</strong> (F07 § 8.4) ; chaque étape a une règle, une durée et un responsable. Les durées sont celles que le SDIS a fixées le 15/03/2027 (annexe 2.3 D).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Enregistrements des appels</th>
+<th>Comptes rendus de secours</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Création</strong></td>
+<td>enregistrement automatique de l'appel ; règle : horloge de l'enregistreur synchronisée sur une heure de référence, et numéro de l'intervention associé à l'enregistrement dès sa création (métadonnée)</td>
+<td>rédaction sur la tablette, dans des champs structurés, rattachée au numéro de l'intervention ; règle : une fois validé, le compte rendu n'est plus modifié, toute correction crée une nouvelle version datée</td>
+</tr>
+<tr class="even">
+<td><strong>Stockage et usage courant</strong></td>
+<td>conservation dans l'enregistreur pendant deux ans ; règle : écoute réservée aux personnes habilitées du centre de traitement de l'alerte, chaque écoute et chaque copie journalisées</td>
+<td>consultation courante pendant deux ans, sur le serveur ; règle : accès réservé au service de santé et aux personnes habilitées, selon leur profil, journalisé ; aucune copie en PDF dans les messageries</td>
+</tr>
+<tr class="odd">
+<td><strong>Gel en cas de demande</strong></td>
+<td>si une demande portant sur l'intervention est en cours (justice, litige), l'enregistrement est copié, avec son empreinte, dans l'archive, et exclu de la destruction jusqu'à la fin de la procédure</td>
+<td>même règle : le compte rendu demandé est gelé, et la copie remise est tracée</td>
+</tr>
+<tr class="even">
+<td><strong>Archivage</strong></td>
+<td>sans objet, sauf enregistrement gelé</td>
+<td>au-delà de deux ans, versement dans un système d'archivage électronique jusqu'à vingt ans après l'intervention ; règle : format pérenne, empreinte, journal des accès, consultation sur demande motivée seulement, validée par le médecin-chef</td>
+</tr>
+<tr class="odd">
+<td><strong>Destruction</strong></td>
+<td>à deux ans, destruction automatique, consignée dans un journal (quoi, quand, par qui), sauf gel</td>
+<td>à vingt ans, destruction proposée automatiquement, validée par le médecin-chef, sous le contrôle de la déléguée à la protection des données, et consignée</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Règles transversales</strong> (0,5 pt) : les 400 demandes de copies de 2026 passent par un point d'entrée unique (une cellule rattachée à la direction, avec le centre de traitement de l'alerte et le médecin-chef), la déléguée à la protection des données étant consultée sur les règles et en contrôlant l'application ; elles sont inscrites dans un registre, avec un délai cible ; les copies sur clés USB et par messagerie cessent ; les 3 000 PDF trouvés dans dix messageries, et ceux des autres, sont supprimés. Le stock existant est remis en ordre une fois : les enregistrements de plus de deux ans, ceux de 2017 à 2024 environ, de l'ordre de 1,2 million, sont détruits, sauf ceux qui font l'objet d'une demande en cours ; les comptes rendus de plus de deux ans sont versés à l'archive. Avec ces règles, l'appel de novembre 2024 demandé en septembre 2026, encore dans le délai de deux ans, aurait été retrouvé par le numéro de l'intervention.</p>
+<p><em>2.3 b) – Stockage et archivage électronique, ce qu'imposent et apportent le RGPD et les normes, trois mesures</em></p>
+<p><strong>Stockage et archivage électronique</strong> (0,5 pt) ne se confondent pas. Le <strong>stockage</strong> conserve des données sur un support pour leur usage courant : elles restent modifiables, se copient et se perdent, sans garantie dans la durée. L'<strong>archivage électronique</strong> conserve, pour une durée fixée, des documents qui ne sont plus d'usage courant, dans un système qui en garantit l'intégrité (aucune modification non tracée), la pérennité (lisibilité dans le temps, formats pérennes) et la traçabilité (journaux de toutes les opérations), et qui en organise le sort final (F06 § 4 et 5). Une sauvegarde, qui sert à restaurer un système, n'est pas un archivage. Au SDIS, l'enregistreur et le serveur des comptes rendus ne font que du <strong>stockage</strong> : 1,5 million d'enregistrements sans tri, un serveur occupé à 85 %, des copies partout et un enregistrement introuvable le jour où la justice le demande.</p>
+<p><strong>Ce que le RGPD impose</strong> (0,5 pt avec les normes ; en principe, annexe 2.5, sans analyse juridique) : les enregistrements, qui contiennent la voix et souvent l'identité des appelants, et les comptes rendus, qui contiennent des données de santé, sont des données personnelles ; ils ne peuvent être conservés que pendant une durée limitée, fixée selon la finalité : la conservation sans limite actuelle ne respecte pas ce principe, alors que le SDIS a désormais des durées. Le registre des activités de traitement doit les indiquer (F15 § 2). La minimisation proscrit les copies inutiles en PDF ; les données de santé appellent une protection renforcée (accès restreints, journalisés) ; la déléguée à la protection des données conseille et contrôle. <strong>Ce que les normes apportent</strong> : NF Z42-013 et son équivalent international ISO 14641 sont des normes d'application volontaire, et non des obligations ; elles décrivent comment concevoir et exploiter un système d'archivage électronique qui garantit l'intégrité, la pérennité et la traçabilité, ce qui permet de produire, quinze ans après, un compte rendu qui puisse servir de preuve dans un litige. ISO 15489-1 donne le principe d'ensemble : des règles écrites pour chaque catégorie de documents, de la création au sort final.</p>
+<p><strong>Trois mesures</strong> parmi (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Une politique de conservation écrite et appliquée</strong> : les durées du 15/03/2027 sont inscrites au registre des activités de traitement, paramétrées dans l'enregistreur et sur le serveur (purge automatique et journalisée), avec la procédure de gel ; la déléguée à la protection des données en contrôle l'application chaque année.</li>
+<li><strong>Un système d'archivage électronique conforme aux principes de NF Z42-013</strong> pour les comptes rendus de plus de deux ans et les enregistrements gelés : formats pérennes, empreintes, journal des accès, accès réservé au service de santé.</li>
+<li><strong>Un point d'entrée unique des demandes de copies</strong> : registre des 400 demandes annuelles, copie tracée et remise par un canal sécurisé, fin des clés USB et des copies en messagerie, suppression des PDF existants.</li>
+<li><strong>Des métadonnées qui rendent les données retrouvables</strong> : numéro d'intervention associé à chaque enregistrement et à chaque compte rendu, horloges synchronisées sur une heure de référence, contrôle de l'horloge après chaque panne.</li>
+<li><strong>Des habilitations par profil</strong> : écoute des enregistrements réservée au centre de traitement de l'alerte, lecture des comptes rendus au service de santé, revue annuelle des droits.</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Cycle en trois âges (courant, intermédiaire, définitif ou destruction) au lieu des cinq étapes du programme, s'il est appliqué aux deux catégories avec une règle par étape.</li>
+<li>Archivage intermédiaire des enregistrements entre six mois et deux ans, si la durée totale de deux ans est respectée.</li>
+<li>Responsable différent du point d'entrée des demandes (centre de traitement de l'alerte pour les enregistrements, médecin-chef pour les comptes rendus), si la demande est enregistrée et tracée. Valorisé : la déléguée à la protection des données conseille et contrôle sans traiter elle-même les demandes ni décider des destructions (indépendance, F15 § 1).</li>
+<li>Prestataire d'archivage externe évoqué, si le candidat garde les exigences d'intégrité, d'accès restreint et de réversibilité, sans développer l'hébergement.</li>
+<li>Trois mesures parmi les cinq, ou d'autres mesures précises et rattachées à l'annexe 2.3.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Stockage et archivage confondus</em> — « le serveur archive les comptes rendus », ou sauvegarde présentée comme un archivage.</li>
+<li><em>Durée tirée d'un texte de loi</em> (<code>JUR-T07</code>) — les durées sont celles fixées par le SDIS et données par l'annexe ; aucune n'est à citer ni à discuter.</li>
+<li><em>Dérive juridique</em> (<code>JUR-T07</code>) — développements sur les prérogatives des familles ou des avocats, ou sur le fondement juridique des traitements (UE 1) : la question porte sur l'organisation de la conservation.</li>
+<li><em>Norme présentée comme une obligation ou comme une solution</em> (<code>ET-01</code>) — norme d'archivage présentée comme imposée au SDIS, ou comme un produit à installer : elle est d'application volontaire et décrit des exigences, que l'outil choisi doit respecter.</li>
+<li><em>Destruction sans gel</em> — détruire à deux ans un enregistrement qui fait l'objet d'une demande en cours.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cycle de vie des données (création, stockage, usage, archivage, suppression)</td>
+<td>définition et méthode</td>
+<td>F07 § 8.4 ; F06 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD) : minimisation, limitation de la conservation, données de santé, registre des activités de traitement</td>
+<td>principes donnés en annexe 2.5</td>
+<td><code>rgpd</code> / F15 § 2</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+<tr class="odd">
+<td>NF Z42-013, archivage électronique</td>
+<td>intégrité, pérennité, traçabilité, en principe</td>
+<td><code>nf_z42_013</code> / F06 § 5</td>
+<td>en vigueur, norme volontaire</td>
+</tr>
+<tr class="even">
+<td>ISO 14641, archivage électronique</td>
+<td>équivalent international de NF Z42-013</td>
+<td><code>iso_14641</code> / F06 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO 15489-1, gestion des documents d'activité (2016)</td>
+<td>concepts et principes</td>
+<td><code>iso_15489_1</code> / F06 § 4</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--la-proposition-de-protévance-2-points">2.4 – La proposition de PROTÉVANCE (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.3 – Appréhender les usages et les enjeux des technologies de la blockchain et des cryptoactifs : <code>3.3.b</code> « Fonctionnement des technologies de registres distribués (DLT) » ; <code>3.3.c</code> « Typologie des applications : traçabilité, certification, finance décentralisée, NFT » ; <code>3.3.e</code> « Analyse de la valeur ajoutée, des coûts et des limites d'un projet blockchain ». Limites : aucun développement ; effets énergétiques intégrés à l'analyse ; aucun cryptoactif.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.4 (suivi actuel des tenues, constats de l'inventaire, proposition de PROTÉVANCE, coûts, base de données partagée) ; annexe 2.5 (ISO 22739:2024, principes du RGPD) ; annexe 1.1 (logiciel de gestion du parc, effectif).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Chaîne de blocs définie ; fonctionnement de la chaîne de consortium appliqué à la proposition (nœuds des cinq acteurs, événements signés, validation par les participants identifiés, blocs chaînés, inaltérabilité pratique) ; distinction avec une base de données distribuée</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Type d'application : traçabilité d'un bien physique dans une chaîne d'acteurs (preuve horodatée des événements), sans cryptoactif</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Valeur ajoutée (historique commun, lavages contestés, accident) et coûts comparés (150 k€ contre 90 k€ sur trois ans) ; limites (donnée d'entrée, gouvernance à cinq, nœuds hébergés par le fournisseur, matricule inscrit, énergie)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Conclusion argumentée et conditions</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.4 a) – Le fonctionnement et le type d'application</em></p>
+<p><strong>La chaîne de blocs</strong> (0,5 pt avec le fonctionnement) est un registre distribué : il est partagé et synchronisé entre plusieurs nœuds, les transactions y sont regroupées en blocs chaînés par des empreintes (chaque bloc contient l'empreinte du précédent), et un mécanisme de consensus valide chaque ajout ; une fois inscrite, une transaction est horodatée et pratiquement inaltérable (F11 § 1). Elle permet à des acteurs qui ne se font pas pleinement confiance de partager un même historique sans qu'aucun d'eux ne puisse le modifier seul. C'est ce qui la distingue d'une <strong>base de données distribuée</strong>, qui répartit les données d'un même gestionnaire, lequel peut les modifier (<code>ET-08</code>).</p>
+<p>Dans la proposition de PROTÉVANCE, la chaîne est <strong>de consortium</strong> (permissionnée) : seuls cinq acteurs identifiés (les trois SDIS, PROTÉVANCE, LAVORDÈNE) disposent d'un nœud et d'une copie du registre. Quand le blanchisseur lit la puce d'une tenue lavée, il émet une transaction « lavage », signée par sa clé ; les participants autorisés la valident, sans minage, puis elle est ajoutée à un bloc et recopiée sur tous les nœuds. Chaque événement (livraison, attribution, lavage, contrôle, réparation, réforme) s'ajoute ainsi à l'historique de la tenue, que chaque acteur lit sans pouvoir le réécrire.</p>
+<p><strong>Le type d'application</strong> (0,5 pt) : il s'agit d'une application de <strong>traçabilité</strong> : suivre un bien physique, la tenue, tout au long de sa vie et entre plusieurs organisations, avec une preuve horodatée de chaque événement, proche de la certification d'événements (nombre de lavages, date du dernier contrôle). Ce n'est ni de la finance décentralisée, ni un jeton non fongible, ni un cryptoactif : aucune monnaie ni aucun jeton n'est émis.</p>
+<p><em>2.4 b) – Valeur ajoutée, coûts, limites et conclusion</em></p>
+<p><strong>Valeur ajoutée, coûts et limites</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>valeur ajoutée</strong> : un historique commun et infalsifiable, que ni le fournisseur ni le blanchisseur ne peuvent retoucher ; il réglerait les contestations sur les lavages (30 000 facturés, 24 000 enregistrés), dirait sans délai qui portait quelle tenue et quand elle a été contrôlée (une semaine de recherche après l'accident de 2026), et suivrait le terme de dix ans ou de 50 lavages ; il serait commun aux trois SDIS. Mais l'essentiel du gain vient de la <strong>puce</strong>, qui supprime la saisie à la main, et non de la chaîne : la base partagée l'apporte aussi ;</li>
+<li><strong>coûts</strong> : sur trois ans, la chaîne coûterait au SDIS 20 + 40 + 3 × 30 = 150 k€, la base partagée 20 + 40 + 3 × 10 = 90 k€, soit 60 k€ de plus pour la chaîne ;</li>
+<li><strong>limites</strong> : la chaîne garantit que l'événement inscrit n'a pas été modifié, pas qu'il est vrai : une puce lue ne prouve pas que la tenue a été bien lavée (donnée d'entrée) ; la gouvernance à cinq reste à construire (admission des nœuds, évolution des règles, partage des coûts, sortie d'un acteur), alors que les deux SDIS voisins n'ont pas pris position ; si PROTÉVANCE héberge les nœuds des SDIS, la confiance redevient centrée sur le fournisseur, qui est aussi partie aux contestations, et le SDIS en dépend ; le matricule inscrit dans un registre inaltérable est une donnée personnelle qu'on ne pourra plus supprimer au terme de sa durée de conservation : il faut n'y inscrire qu'un identifiant de tenue et garder le lien avec l'agent dans le logiciel de gestion du parc ; la validation sans minage consomme peu, mais cinq copies du registre consomment davantage qu'une base unique ; il faut enfin relier la chaîne au logiciel de gestion du parc pour éviter une double saisie.</li>
+</ul>
+<p><strong>Conclusion</strong> (0,5 pt) : les acteurs sont peu nombreux, identifiés et liés par des contrats, et un tiers de confiance peut être désigné : le prestataire que retiendraient les trois SDIS, à condition que PROTÉVANCE et LAVORDÈNE l'acceptent aussi. Selon la grille d'opportunité (F11 § 2.2), une base de données partagée, avec un journal des modifications tenu par ce tiers, des droits d'écriture propres à chaque acteur et des exports réguliers, répond au besoin pour 60 k€ de moins sur trois ans. Il est recommandé d'équiper les tenues de puces et de retenir la base partagée, en prévoyant la récupération des données en fin de contrat ; la chaîne de blocs ne serait à réexaminer que si le consortium s'élargissait sans qu'un tiers soit accepté de tous, avec des nœuds tenus par chaque acteur et sans matricule inscrit.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Conclusion en faveur d'un essai limité de la chaîne de blocs, si le candidat pose des conditions précises (adhésion des deux SDIS voisins, nœud propre au SDIS, aucun matricule inscrit, comparaison au bout d'un an avec la base partagée).</li>
+<li>Consensus nommé « preuve d'autorité » ou « tolérance aux pannes byzantines », en principe, sans développement technique.</li>
+<li>Coût comparé par an (20 k€ de plus par an) plutôt que sur trois ans.</li>
+<li>Certification citée comme type d'application, si la traçabilité est reconnue comme l'usage principal.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Chaîne de blocs confondue avec une base de données distribuée</em> (<code>ET-08</code>) — « une base partagée sur plusieurs serveurs ».</li>
+<li><em>Opportunités sans limites</em> (<code>ET-19</code>) — chaîne présentée comme la solution aux oublis de saisie, alors qu'elle ne garantit pas la donnée d'entrée.</li>
+<li><em>Oubli de l'énergie ou de la gouvernance</em> — le programme impose d'intégrer les effets énergétiques ; la gouvernance à cinq est la difficulté principale.</li>
+<li><em>Cryptoactif ou jeton évoqué</em> (<code>JUR-T07</code>) — la proposition n'en comporte aucun.</li>
+<li><em>Morceau de cours</em> (<code>JUR-T01</code>) — définition sans les chiffres de l'annexe 2.4 ni la comparaison avec la base partagée.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Registre distribué, chaîne de blocs de consortium, consensus, distinction avec une base distribuée</td>
+<td>définitions</td>
+<td>F11 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Usages (traçabilité, certification), grille d'opportunité, limites (donnée d'entrée, gouvernance, énergie, données personnelles)</td>
+<td>méthode</td>
+<td>F11 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>ISO 22739:2024, vocabulaire des chaînes de blocs et des registres distribués</td>
+<td>terminologie, donnée en annexe 2.5</td>
+<td><code>iso_22739_2024</code> / F11 § 3.4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD) : minimisation, limitation de la conservation</td>
+<td>principe donné en annexe 2.5</td>
+<td><code>rgpd</code> / F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

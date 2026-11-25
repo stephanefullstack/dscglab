@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conclure un audit, maîtriser les risques et la sécurité du SI opérationnel, en réduire l'empreinte : SDIS du Val-d'Aurande : note de synthèse de l'audit de la base des points d'eau, risques de la dépendance au logiciel de traitement de l'alerte, sécurité des tablettes embarquées et rôles dans la gouvernance d'un système critique, mutualisation des salles informatiques</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 3</p><p>13 points</p><p>58 min</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Conclure un audit, maîtriser les risques et la sécurité du SI opérationnel, en réduire l'empreinte</h1><p class="cas">SDIS du Val-d'Aurande : note de synthèse de l'audit de la base des points d'eau, risques de la dépendance au logiciel de traitement de l'alerte, sécurité des tablettes embarquées et rôles dans la gouvernance d'un système critique, mutualisation des salles informatiques</p><p><strong>DOSSIER 3 – TIRER LES CONCLUSIONS D'UN AUDIT, MAÎTRISER LES RISQUES ET LA SÉCURITÉ DU SYSTÈME D'INFORMATION OPÉRATIONNEL ET EN RÉDUIRE L'EMPREINTE (13 points)</strong></p>
+<p>Durée conseillée : 58 min (13 points sur 40, pour une épreuve de 3 heures, coefficient 1 ; environ 4,5 minutes par point).</p>
+<p>Réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document et matériel autorisés</strong> : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Ce dossier est l'un des trois dossiers indépendants du sujet d'entraînement complet n° 18, construits sur un même cas : la présentation et l'annexe 1.1 sont communes aux trois dossiers ; chaque dossier comporte en outre ses propres annexes.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en mai 2027. Le service départemental d'incendie et de secours (SDIS) du Val-d'Aurande est un établissement public administratif départemental chargé de la prévention, de la protection et de la lutte contre les incendies et des secours aux personnes dans un département de 640 000 habitants, rural pour l'essentiel, qui s'étend du massif du Haut-Aurande aux plaines de la vallée de l'Aurande. Son conseil d'administration réunit des élus du département, des communes et des intercommunalités, qui le financent à hauteur de 55 % et 45 %. En 2026, le centre de traitement de l'alerte, installé au siège de Montcerneau, a reçu 150 000 appels, et les 60 centres d'incendie et de secours du département ont réalisé 50 000 interventions avec 420 engins. Le SDIS compte 700 sapeurs-pompiers professionnels, 250 personnels administratifs et techniques et 3 900 sapeurs-pompiers volontaires ; son budget de fonctionnement s'est élevé à 105 M€. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>Le projet d'établissement « Val-d'Aurande Secours 2031 », adopté en mars 2027 par le conseil d'administration, fixe cinq objectifs : maintenir le délai moyen d'arrivée des premiers secours sous 20 minutes dans toutes les communes ; fidéliser les volontaires en simplifiant leur engagement, au premier rang leur déclaration de disponibilité ; garantir la continuité du traitement de l'alerte, jour et nuit ; partager les données utiles avec les partenaires (centre de régulation médicale du SAMU, communes, département) ; réduire de 20 % l'empreinte environnementale de l'établissement d'ici 2031. Le système d'information s'est construit autour du logiciel de traitement de l'alerte, installé en 2012 ; les autres outils ont été ajoutés au fil des besoins, et plusieurs arrivent en fin de vie.</p>
+<p>Vous êtes chef(fe) du groupement « Pilotage et systèmes d'information » du SDIS depuis 2026 ; vous dirigez le contrôle de gestion, le service des systèmes d'information et de communication et l'observatoire de l'activité. Le directeur départemental, le colonel hors classe Étienne GRANVOISE, vous demande trois travaux : préparer la gouvernance du SI et la conduite du projet VIGIE (dossier 1) ; organiser et exploiter les données des interventions, et en maîtriser la conservation (dossier 2) ; tirer les conclusions d'un audit, maîtriser les risques et la sécurité du SI opérationnel et en réduire l'empreinte (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-du-sdis-du-val-daurande-et-chiffres-clés">ANNEXE 1.1 – Présentation du SDIS du Val-d'Aurande et chiffres clés</h3>
+<p>Le SDIS du Val-d'Aurande est un établissement public administratif départemental. Il assure la prévention, la protection et la lutte contre les incendies et les secours aux personnes dans le département fictif du Val-d'Aurande, dans le centre-est de la France : 640 000 habitants, un territoire rural pour l'essentiel, du massif du Haut-Aurande aux plaines de la vallée de l'Aurande. Son siège et son centre de traitement de l'alerte sont à Montcerneau, chef-lieu du département. L'exercice coïncide avec l'année civile : l'exercice 2026 est le dernier exercice clos.</p>
+<p><strong>La gouvernance et le financement</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conseil d'administration</td>
+<td>22 membres, élus du département, des communes et des intercommunalités ; président : M. Lucien FERMONTEIL, vice-président du conseil départemental</td>
+</tr>
+<tr class="even">
+<td>Direction</td>
+<td>directeur départemental : le colonel hors classe Étienne GRANVOISE</td>
+</tr>
+<tr class="odd">
+<td>Financement</td>
+<td>département 55 % ; communes et intercommunalités 45 %</td>
+</tr>
+<tr class="even">
+<td>Budget 2026</td>
+<td>fonctionnement 105 M€, dont dépenses de personnel 80 % (indemnités des sapeurs-pompiers volontaires : 14 M€) ; investissement 15 M€ ; dépenses du système d'information, hors réseau radio : 3,6 M€</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L'activité en 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Centres d'incendie et de secours</td>
+<td>60, répartis en quatre groupements territoriaux : 12 centres mixtes, avec des professionnels et des volontaires, et 48 centres armés par des volontaires seulement</td>
+</tr>
+<tr class="even">
+<td>Appels reçus au centre de traitement de l'alerte</td>
+<td>150 000</td>
+</tr>
+<tr class="odd">
+<td>Interventions</td>
+<td>50 000 : secours d'urgence aux personnes 78 % ; accidents de la circulation 7 % ; incendies 7 % ; opérations diverses 8 %</td>
+</tr>
+<tr class="even">
+<td>Engins</td>
+<td>420</td>
+</tr>
+<tr class="odd">
+<td>Délai moyen d'arrivée des premiers secours</td>
+<td>14 minutes dans le département ; plus de 20 minutes dans une trentaine de communes du Haut-Aurande</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L'effectif</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Catégorie</th>
+<th>Effectif</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sapeurs-pompiers professionnels</td>
+<td>700</td>
+</tr>
+<tr class="even">
+<td>Personnels administratifs et techniques</td>
+<td>250, dont 24 au service des systèmes d'information et de communication (12 en informatique, 8 aux transmissions, 4 au soutien du centre de traitement de l'alerte)</td>
+</tr>
+<tr class="odd">
+<td>Sapeurs-pompiers volontaires</td>
+<td>3 900, dont 600 professionnels également volontaires dans leur centre</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le système d'information en quelques lignes</strong></p>
+<ul>
+<li><strong>Logiciel de traitement de l'alerte et de gestion opérationnelle</strong>, installé en 2012 et édité par un petit éditeur spécialisé : réception des appels, localisation, proposition des engins à engager, suivi des interventions. Il est hébergé sur des serveurs de la salle informatique du siège, doublée par une salle de secours au centre de Montcerneau-Sud.</li>
+<li><strong>Enregistreur des appels</strong> du centre de traitement de l'alerte.</li>
+<li><strong>Logiciel de gestion des disponibilités des volontaires</strong> (site web et messages SMS), installé en 2010 ; le support de son éditeur est assuré jusqu'à la fin de 2028.</li>
+<li><strong>Logiciel de gestion des indemnités des volontaires</strong>, relié au logiciel de paie par un fichier mensuel.</li>
+<li><strong>Application de comptes rendus de secours</strong> sur 300 tablettes embarquées dans les engins (2021).</li>
+<li><strong>Logiciel de gestion du parc</strong> des engins et des équipements de protection individuelle.</li>
+<li><strong>Base des points d'eau d'incendie</strong>, avec un système d'information géographique.</li>
+<li>Logiciel de ressources humaines et de paie ; progiciel financier ; plateforme de formation ; bureautique.</li>
+</ul>
+<p><strong>Organigramme simplifié (mai 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Rattachement</th>
+<th>Fonction</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>—</td>
+<td>conseil d'administration</td>
+<td>président : M. Lucien FERMONTEIL</td>
+</tr>
+<tr class="even">
+<td>Conseil d'administration</td>
+<td>direction départementale</td>
+<td>directeur départemental : le colonel hors classe Étienne GRANVOISE</td>
+</tr>
+<tr class="odd">
+<td>Direction départementale</td>
+<td>déléguée à la protection des données</td>
+<td>Mme Coralie FAVERJON</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>groupement « Pilotage et systèmes d'information » : contrôle de gestion, service des systèmes d'information et de communication, observatoire de l'activité</td>
+<td>vous ; cheffe du service des systèmes d'information et de communication : Mme Solène VARANGEOT ; chef de l'observatoire de l'activité : M. Rémi TRÉVIGNAN</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>groupement des opérations, dont le centre de traitement de l'alerte</td>
+<td>lieutenant-colonel Bertrand OSSELIN ; cheffe du centre de traitement de l'alerte : commandante Maëlle TOURNEVAL</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>groupement du volontariat</td>
+<td>lieutenant-colonel Hervé DOMBRESSAC</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>service de santé et de secours médical</td>
+<td>médecin-chef : Dr Agathe MÉRIGNOLLE</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>groupement technique et logistique</td>
+<td>M. Pascal LAUZERAC</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>groupement des finances</td>
+<td>Mme Laure CHAMBREUIL</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>quatre groupements territoriaux</td>
+<td>un chef de groupement territorial pour chacun</td>
+</tr>
+<tr class="odd">
+<td>Groupements territoriaux</td>
+<td>60 centres d'incendie et de secours</td>
+<td>un chef de centre pour chacun</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-31--les-constats-de-laudit-de-la-base-des-points-deau-dincendie-rapport-de-m-gaël-vormessac-auditeur-des-systèmes-dinformation-externe-avril-2027">ANNEXE 3.1 – Les constats de l'audit de la base des points d'eau d'incendie (rapport de M. Gaël VORMESSAC, auditeur des systèmes d'information externe, avril 2027)</h3>
+<p><strong>A. La mission et la base</strong></p>
+<p>À la demande du directeur départemental, M. VORMESSAC a audité, de janvier à mars 2027, la base des points d'eau d'incendie et sa transmission au logiciel de traitement de l'alerte. La mission est terminée : la réunion de clôture s'est tenue le 15/04/2027.</p>
+<p>La base recense 14 000 points d'eau : 10 000 poteaux et bouches d'incendie raccordés aux réseaux d'eau, 3 000 citernes et réserves, 1 000 points d'aspiration aménagés sur des étangs ou des rivières. Elle est tenue, avec le système d'information géographique, par la cellule cartographie du groupement des opérations, qui compte trois agents. Chaque mois, un fichier extrait de la base est chargé dans le logiciel de traitement de l'alerte, dont la carte indique aux opérateurs et aux équipages les points d'eau proches du sinistre et leur état (disponible ou indisponible).</p>
+<p>L'organisation fixée par le SDIS, qui n'est pas à discuter, est la suivante : chaque point d'eau est contrôlé au moins une fois tous les deux ans ; les communes et les gestionnaires des réseaux d'eau font les contrôles et en transmettent les résultats au SDIS ; toute indisponibilité (poteau hors service, citerne vide, travaux) est signalée au SDIS dès qu'elle est connue. Aucune règle de droit n'est à connaître.</p>
+<p><strong>B. Les constats (notes brutes, dans l'ordre où ils ont été relevés)</strong></p>
+<ul>
+<li>3 500 points d'eau, un sur quatre, n'ont aucun contrôle enregistré depuis plus de deux ans ; la plupart sont des citernes et des points d'aspiration du Haut-Aurande.</li>
+<li>En 2026, le SDIS a reçu 6 000 résultats de contrôles, envoyés par courriel par les 480 communes du département et par les 6 gestionnaires des réseaux d'eau, dans des tableurs de formats différents (colonnes, codes des points, libellés des états). Les trois agents de la cellule cartographie les ressaisissent un par un. Au 31/03/2027, 1 500 de ces résultats, un sur quatre, n'avaient pas encore été saisis.</li>
+<li>En 2026, 800 indisponibilités ont été signalées, par téléphone, par courriel ou au cours d'une réunion, à des interlocuteurs différents : le centre de traitement de l'alerte, un centre d'incendie et de secours ou la cellule cartographie. Il s'est écoulé en moyenne 12 jours entre le signalement et la saisie dans la base ; s'y ajoute l'attente du chargement mensuel suivant dans le logiciel de traitement de l'alerte.</li>
+<li>Le 01/03/2027, l'auditeur a comparé la base et la carte du logiciel de traitement de l'alerte : 600 points d'eau diffèrent (état, position ou caractéristiques), dont 150 points indisponibles dans la base qui figurent comme disponibles sur la carte. Le fichier mensuel est chargé à la main par un agent du soutien du centre de traitement de l'alerte, sans contrôle du nombre de points chargés. Le chargement de septembre 2026 a échoué, et personne ne s'en est aperçu avant celui d'octobre.</li>
+<li>Un relevé sur le terrain de 200 points d'eau du Haut-Aurande a trouvé 20 points, un sur dix, placés sur la carte à plus de 100 mètres de leur position réelle.</li>
+<li>Les 1 200 comptes de la bureautique ont le droit de modifier la base : tout agent peut changer l'état, la position ou le débit d'un point d'eau.</li>
+<li>La base ne conserve que la dernière valeur de chaque donnée : on ne peut savoir ni qui a modifié un point d'eau, ni quand, ni quelle était la valeur précédente.</li>
+<li>La base est sauvegardée chaque nuit sur un disque de la salle informatique du siège, où se trouve aussi son serveur. Aucune restauration n'a jamais été essayée.</li>
+<li>Le 12/08/2026, lors de l'incendie d'un hangar agricole dans le Haut-Aurande, le premier engin s'est rendu au poteau d'incendie que la carte indiquait comme le plus proche. Ce poteau était hors service depuis trois semaines ; la commune l'avait signalé par courriel à un centre d'incendie et de secours. L'engin a dû rejoindre une réserve située à 2 km : l'alimentation en eau a été retardée d'environ 15 minutes, et le hangar a été détruit. Il n'y a pas eu de victime.</li>
+</ul>
+<p><strong>C. Les réactions recueillies à la réunion de clôture</strong></p>
+<p><strong>Lieutenant-colonel Bertrand OSSELIN, chef du groupement des opérations</strong> : « Mes chefs d'agrès connaissent leur secteur : la carte n'est qu'une aide. Et la cellule cartographie n'a que trois agents. »</p>
+<p><strong>Mme Solène VARANGEOT, cheffe du service des systèmes d'information et de communication</strong> : « Une liaison automatique entre la base et le logiciel de l'alerte passe par l'éditeur de ce logiciel, et son calendrier est déjà chargé. »</p>
+<p><strong>D. La demande du directeur départemental</strong></p>
+<p>« Je veux une note de synthèse d'une page, que je présenterai au comité de direction du 7 juin 2027. Elle doit me dire ce qui est grave, ce que l'on fait, qui le fait et pour quand. »</p>
+<h3 id="annexe-32--le-logiciel-de-traitement-de-lalerte-et-son-éditeur-note-de-mme-solène-varangeot-cheffe-du-service-des-systèmes-dinformation-et-de-communication-avril-2027">ANNEXE 3.2 – Le logiciel de traitement de l'alerte et son éditeur (note de Mme Solène VARANGEOT, cheffe du service des systèmes d'information et de communication, avril 2027)</h3>
+<p><strong>A. Le logiciel et son éditeur</strong></p>
+<ul>
+<li>Le logiciel de traitement de l'alerte, installé en 2012 et mis à niveau en 2019, reçoit les appels, localise l'appelant, propose les engins à engager et suit les interventions. Il échange des données avec l'enregistreur des appels, le logiciel des disponibilités des volontaires, la base des points d'eau et les tablettes des engins.</li>
+<li>Son éditeur est une société de 40 salariés, qui équipe une quinzaine de SDIS ; le nôtre est l'un de ses trois principaux clients. Il a annoncé que la version que nous utilisons ne serait plus maintenue après le 31/12/2029. Sa nouvelle version, proposée en ligne, était annoncée pour 2028 ; elle l'est désormais « à partir de 2029 », et aucun SDIS ne l'utilise encore.</li>
+<li>Chez l'éditeur, deux développeurs seulement connaissent nos interfaces, et l'un d'eux part à la retraite en 2028. Aucune documentation de ces interfaces ne nous a été remise.</li>
+<li>Le contrat de maintenance, renouvelé chaque année, ne prévoit ni la remise du code source si l'éditeur cessait son activité, ni d'aide à la sortie. L'éditeur intervient à distance sur nos serveurs par un accès ouvert en permanence, avec un compte commun à tous ses techniciens.</li>
+</ul>
+<p><strong>B. Les serveurs et les pannes de 2026</strong></p>
+<ul>
+<li>Le logiciel fonctionne sur quatre serveurs dans la salle informatique du siège et sur deux serveurs dans la salle de secours de Montcerneau-Sud. Ces six serveurs ont été installés en 2017. Leur système d'exploitation ne reçoit plus de correctifs de sécurité depuis 2025 ; selon l'éditeur, notre version du logiciel ne fonctionne pas avec un système plus récent.</li>
+<li>Ces serveurs sont reliés au même réseau informatique que les postes de bureautique du siège et que les tablettes des engins (annexe 3.3).</li>
+<li>En juillet 2026, pendant un épisode de forte chaleur, la climatisation de la salle du siège est tombée en panne et les serveurs se sont arrêtés. La bascule sur la salle de secours a pris 45 minutes, pendant lesquelles une trentaine d'appels ont été traités sur papier ; la salle du siège n'est revenue en service qu'après 2 h 30.</li>
+<li>En novembre 2026, un correctif de l'éditeur, installé le même soir dans les deux salles, a bloqué pendant 2 heures la proposition des engins à engager. Les opérateurs ont choisi eux-mêmes les engins, à partir de tableaux imprimés. Un seul des deux développeurs a pu être joint.</li>
+</ul>
+<p><strong>C. L'analyse demandée et les échelles du comité de direction</strong></p>
+<p>Aucune analyse des risques du logiciel n'a été formalisée. Le directeur départemental veut présenter les principaux risques et leur traitement au conseil d'administration du 1er juillet 2027. Les échelles retenues par le comité de direction sont les suivantes :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Probabilité</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 – faible</td>
+<td>jamais constaté et peu plausible</td>
+<td>gêne interne, sans effet sur le traitement des appels ni sur l'engagement des secours</td>
+</tr>
+<tr class="even">
+<td>2 – moyen</td>
+<td>constaté dans un autre SDIS, ou plausible sans être facile à provoquer</td>
+<td>traitement de l'alerte dégradé (bascule sur la salle de secours, procédure sur papier, engins choisis à la main), sans arrêt de la réception des appels</td>
+</tr>
+<tr class="odd">
+<td>3 – fort</td>
+<td>constaté au SDIS en 2026, certain à une date connue, ou facile à provoquer en l'état</td>
+<td>réception des appels ou engagement des secours arrêtés dans les deux salles, ou impossibles à rétablir rapidement</td>
+</tr>
+</tbody>
+</table>
+<p>Quand plusieurs niveaux conviennent, on retient le plus élevé. Le comité de direction traite en priorité les risques dont la probabilité et l'impact sont tous deux de niveau 3. Aucune procédure de choix d'un nouvel éditeur n'est à organiser, et aucun chiffrage n'est demandé.</p>
+<h3 id="annexe-33--les-tablettes-embarquées-et-la-transmission-des-comptes-rendus-de-secours-constats-de-mme-solène-varangeot-et-de-mme-coralie-faverjon-déléguée-à-la-protection-des-données-avril-2027">ANNEXE 3.3 – Les tablettes embarquées et la transmission des comptes rendus de secours (constats de Mme Solène VARANGEOT et de Mme Coralie FAVERJON, déléguée à la protection des données, avril 2027)</h3>
+<p><strong>A. Les tablettes et les comptes rendus</strong></p>
+<ul>
+<li>Les 300 tablettes, installées en 2021, équipent les ambulances et les premiers engins de départ des 60 centres. Chacune est partagée par tous les équipages de son engin. Elle s'ouvre avec un code à quatre chiffres, le même pour toutes les tablettes d'un centre, inchangé depuis 2021 et connu des agents partis comme des nouveaux. L'application de comptes rendus de secours ne demande aucun identifiant : le chef d'agrès tape son nom au bas du compte rendu.</li>
+<li>Le chef d'agrès rédige sur la tablette un compte rendu par victime : identité, état de la victime, gestes réalisés ; environ 40 000 sont rédigés chaque année. La tablette l'envoie, en pièce jointe d'un courriel non chiffré, au centre de régulation médicale du SAMU et au service des urgences de l'hôpital qui accueille la victime, parmi les six hôpitaux du département. Une copie reste dans la tablette, qui n'est jamais vidée.</li>
+<li>120 des 300 tablettes ont un système qui ne reçoit plus de mises à jour de sécurité. Le service des systèmes d'information et de communication ne peut ni localiser une tablette, ni la bloquer, ni l'effacer à distance.</li>
+<li>Les tablettes se connectent par le réseau mobile au réseau informatique du siège, le même que celui des postes de bureautique et des serveurs du logiciel de traitement de l'alerte.</li>
+<li>Les 300 tablettes seront remplacées de septembre à décembre 2027. Les besoins des nouvelles tablettes sont en cours de rédaction ; aucune procédure de choix du fournisseur n'est à organiser.</li>
+</ul>
+<p><strong>B. Les pertes, les vols et deux incidents</strong></p>
+<ul>
+<li>6 tablettes ont été perdues ou volées en 2025, 10 en 2026 : 8 oubliées sur les lieux d'une intervention ou perdues, 2 volées dans un engin.</li>
+<li>En octobre 2026, une tablette a été volée dans une ambulance pendant une intervention. Elle contenait plus de 1 000 comptes rendus de secours. Le centre a porté plainte ; Mme FAVERJON ne l'a appris que trois semaines plus tard, par hasard. Le code des tablettes du centre n'a pas été changé.</li>
+<li>En février 2027, le SDIS d'un département voisin a subi une attaque par rançongiciel. Selon l'écho qu'en a donné la presse, l'attaque, partie d'un courriel piégé ouvert sur un poste de bureautique, a gagné les serveurs de son traitement de l'alerte, arrêté pendant une journée ; ses appels ont été pris par les centres de traitement de l'alerte des départements voisins, dont le nôtre.</li>
+</ul>
+<p><strong>C. Qui fait quoi aujourd'hui</strong></p>
+<ul>
+<li>Aucune politique de sécurité n'a été approuvée par la direction ; seule existe une charte d'usage, signée par chaque agent à son arrivée.</li>
+<li>Aucun responsable de la sécurité des systèmes d'information n'est désigné : Mme VARANGEOT et l'informaticien d'astreinte traitent les incidents « quand ils remontent ».</li>
+<li>Les chefs de centre communiquent le code des tablettes aux nouveaux arrivants et signalent les pertes « quand ils y pensent ».</li>
+<li>La cheffe du centre de traitement de l'alerte, la commandante Maëlle TOURNEVAL, décide de la bascule sur la salle de secours ; elle n'est pas consultée avant l'installation des correctifs du logiciel.</li>
+<li>L'éditeur du logiciel de traitement de l'alerte installe ses correctifs à distance, à la date qu'il choisit.</li>
+<li>La déléguée à la protection des données n'est informée ni des pertes de tablettes, ni des incidents.</li>
+</ul>
+<h3 id="annexe-34--les-salles-informatiques-et-la-proposition-du-département-note-de-m-pascal-lauzerac-chef-du-groupement-technique-et-logistique-avril-2027">ANNEXE 3.4 – Les salles informatiques et la proposition du département (note de M. Pascal LAUZERAC, chef du groupement technique et logistique, avril 2027)</h3>
+<p><strong>A. Les deux salles du SDIS</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Salle du siège (Montcerneau)</th>
+<th>Salle de secours (Montcerneau-Sud)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Serveurs</td>
+<td>40 : 10 pour le traitement de l'alerte, l'enregistreur des appels et la base des points d'eau ; 30 pour les applications de gestion</td>
+<td>4, pour le traitement de l'alerte et l'enregistreur des appels</td>
+</tr>
+<tr class="even">
+<td>Climatisation</td>
+<td>installée en 2008, tombée en panne en juillet 2026</td>
+<td>installée en 2017</td>
+</tr>
+<tr class="odd">
+<td>Électricité consommée en 2026</td>
+<td>400 MWh, dont 200 MWh pour les équipements informatiques</td>
+<td>30 MWh</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Les 30 serveurs des applications de gestion portent la messagerie et la bureautique, les ressources humaines et la paie, le progiciel financier, la plateforme de formation, la gestion du parc, les indemnités des volontaires et les comptes rendus de secours. Seuls 8 d'entre eux sont virtualisés. Les processeurs des 30 serveurs sont utilisés en moyenne à 10 % de leur capacité.</li>
+<li>Les 900 postes de travail et les serveurs sont renouvelés tous les quatre ans. Les équipements remplacés sont remis à une entreprise de recyclage, qui les détruit. Les 300 tablettes de 2021 seront remplacées à la fin de 2027 (annexe 3.3).</li>
+<li>L'empreinte environnementale du système d'information n'a jamais été mesurée. Le projet d'établissement vise une baisse de 20 % de l'empreinte environnementale de l'établissement d'ici 2031.</li>
+</ul>
+<p><strong>B. La proposition du département (courrier de la direction du numérique du département, mars 2027)</strong></p>
+<ul>
+<li>Le département a mis en service en 2024, à Montcerneau, une salle informatique où il héberge ses propres applications et celles de plusieurs collectivités. Il propose d'y héberger, à partir de 2028, les 30 serveurs des applications de gestion du SDIS, sous la forme de serveurs virtuels installés sur ses équipements.</li>
+<li>Cette salle est refroidie en grande partie par l'air extérieur. Sa consommation est mesurée en continu, et son indicateur d'efficacité énergétique (énergie totale consommée par la salle / énergie consommée par les équipements informatiques) est de 1,3. La chaleur qu'elle dégage chauffe un collège voisin.</li>
+<li>La salle est exploitée par les agents du département, présents les jours ouvrés de 8 heures à 18 heures ; en dehors de ces heures, aucune astreinte n'est prévue.</li>
+<li>Le traitement de l'alerte, l'enregistreur des appels et la base des points d'eau resteraient dans les salles du SDIS.</li>
+<li>Une convention entre le SDIS et le département fixerait les conditions de l'hébergement ; elle n'est pas rédigée. Aucun chiffrage n'est demandé.</li>
+</ul>
+<p><strong>C. Deux avis</strong></p>
+<p><strong>Mme Solène VARANGEOT</strong> : « Nous gagnerions de la place et du temps. Mais la messagerie sert aussi à envoyer les comptes rendus de secours, jour et nuit. »</p>
+<p><strong>M. Pascal LAUZERAC</strong> : « Sans les 30 serveurs de gestion, la salle du siège consommerait beaucoup moins. Mais sa climatisation de 2008 resterait à remplacer pour les serveurs de l'alerte. »</p>
+<p>Aucune mesure ni aucun calcul de l'empreinte n'est demandé.</p>
+<h3 id="annexe-35--repères-au-31122026">ANNEXE 3.5 – Repères (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Repère</th>
+<th>Nom exact et version</th>
+<th>Ce qu'il faut en retenir</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sécurité de l'information</td>
+<td>ISO/IEC 27001:2022</td>
+<td>norme d'exigences d'un système de management de la sécurité de l'information fondé sur l'appréciation et le traitement des risques, dans une logique d'amélioration continue ; son annexe A compte 93 mesures en quatre thèmes (organisationnelles, liées aux personnes, physiques, technologiques)</td>
+</tr>
+<tr class="even">
+<td>Gestion des risques</td>
+<td>ISO/IEC 27005:2022</td>
+<td>lignes directrices de gestion des risques liés à la sécurité de l'information : établir le contexte, identifier, analyser, évaluer puis traiter les risques, et les surveiller ; quatre options de traitement : réduire le risque, l'accepter, l'éviter ou le transférer (par exemple par une assurance) ; elle ne prescrit pas de méthode particulière</td>
+</tr>
+<tr class="odd">
+<td>Appréciation des risques</td>
+<td>EBIOS Risk Manager, version 1.5 (ANSSI, 2024)</td>
+<td>méthode française d'appréciation et de traitement des risques numériques, compatible avec l'ISO/IEC 27005, en cinq ateliers : cadrage et socle de sécurité ; sources de risque et objectifs qu'elles visent ; scénarios stratégiques, qui passent par l'écosystème (éditeurs, prestataires, partenaires) ; scénarios opérationnels ; traitement du risque</td>
+</tr>
+<tr class="even">
+<td>Bonnes pratiques</td>
+<td>Guide d'hygiène informatique de l'ANSSI, version de 2017</td>
+<td>guide de 42 mesures de sécurité, en niveau standard et renforcé, qui portent notamment sur l'authentification, les mises à jour, le cloisonnement des réseaux, les appareils nomades et les sauvegardes</td>
+</tr>
+<tr class="odd">
+<td>Architecture de confiance</td>
+<td>Le modèle Zero Trust, avis de l'ANSSI (2021)</td>
+<td>modèle d'architecture, et non un produit : aucune confiance accordée d'office selon la place sur le réseau ; chaque accès est authentifié, autorisé et vérifié selon le contexte ; démarche progressive, qui ne remplace pas la défense en profondeur</td>
+</tr>
+<tr class="even">
+<td>Données personnelles</td>
+<td>règlement (UE) 2016/679 (RGPD), applicable depuis le 25/05/2018</td>
+<td>les données personnelles sont protégées par des mesures de sécurité appropriées ; les données de santé sont des données sensibles, protégées de façon renforcée ; toute violation de données personnelles est inscrite dans un registre et, si elle présente un risque pour les personnes, notifiée à l'autorité de contrôle dans les meilleurs délais et, si possible, dans les 72 heures ; les personnes concernées sont informées en cas de risque élevé, sauf si les données étaient rendues incompréhensibles, par exemple par un chiffrement ; un organisme qui traite des données pour le compte du SDIS est un sous-traitant, lié par un contrat qui fixe notamment les mesures de sécurité ; le SDIS a désigné une déléguée à la protection des données, Mme Coralie FAVERJON ; aucune analyse juridique n'est attendue</td>
+</tr>
+</tbody>
+</table>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>La base des points d'eau d'incendie n'est plus fiable, et un engin s'est rendu en 2026 à un poteau hors service. Le logiciel de traitement de l'alerte dépend d'un petit éditeur et d'une version qui ne sera plus maintenue après 2029. Les tablettes des engins transportent des données de santé sans protection, sur le réseau du siège. Les salles informatiques consomment beaucoup d'énergie pour des serveurs peu utilisés, alors que le projet d'établissement vise une baisse de 20 % de l'empreinte. Le colonel hors classe GRANVOISE vous demande de tirer les conclusions de l'audit de la base des points d'eau, d'analyser les risques du logiciel de traitement de l'alerte, de sécuriser les tablettes et la transmission des comptes rendus en clarifiant les rôles de chacun, et d'apprécier la proposition du département. Vous mobiliserez pour cela les annexes 1.1 et 3.1 à 3.5 ainsi que vos connaissances professionnelles.</p>
+<p><strong>3.1 – Les conclusions de l'audit de la base des points d'eau d'incendie (3 points)</strong></p>
+<p>a) Rédigez, à l'attention du colonel hors classe GRANVOISE, la note de synthèse de l'audit de la base des points d'eau (20 lignes au maximum) : une appréciation d'ensemble, puis quatre constats, regroupés à partir des notes brutes de l'annexe 3.1 B et hiérarchisés, chacun assorti du risque, de la recommandation, de son responsable et de son échéance. La note répond à l'objection du lieutenant-colonel OSSELIN. La démarche de l'audit n'est pas demandée.</p>
+<p>b) Après avoir défini un critère d'appréciation en audit des systèmes d'information, présentez les trois critères que l'auditeur a mobilisés, la fiabilité des données, la sécurité et l'efficacité du processus : pour chacun, indiquez ce qui est attendu de la base et de sa mise à jour, et rattachez-y deux constats de l'annexe 3.1.</p>
+<p><strong>3.2 – Les risques du logiciel de traitement de l'alerte (3 points)</strong></p>
+<p>a) Identifiez, à partir de l'annexe 3.2, quatre risques liés au logiciel de traitement de l'alerte et à la dépendance envers son éditeur, formulés comme des événements redoutés. Classez-les selon la typologie des risques liés aux systèmes d'information, que vous présenterez brièvement, puis cotez leur probabilité et leur impact selon les échelles de l'annexe 3.2 C.</p>
+<p>b) Après avoir comparé en quelques lignes l'approche de l'ISO/IEC 27005 et la méthode EBIOS Risk Manager (annexe 3.5), indiquez celle que le SDIS devrait employer pour l'analyse demandée par le directeur départemental, et justifiez votre choix.</p>
+<p>c) Proposez un traitement pour chacun des deux risques les plus graves, en choisissant parmi les options de traitement (réduire, transférer, accepter, éviter) et en justifiant ce choix par leur probabilité et leur impact.</p>
+<p><strong>3.3 – La sécurité des tablettes et la gouvernance du traitement de l'alerte (4 points)</strong></p>
+<p>a) Après avoir défini l'architecture de confiance, proposez, à partir de l'annexe 3.3, quatre mesures de sécurité pour les tablettes et la transmission des comptes rendus de secours, portant respectivement sur l'authentification des équipages, le chiffrement, la séparation des réseaux et l'effacement à distance. Rattachez chaque mesure au risque qu'elle traite, dans le cadre d'une politique de sécurité fondée sur l'analyse des risques, et associez-lui un indicateur d'efficacité précisé par sa formule, sa source, sa fréquence, sa cible et son axe. Aucun réglage d'équipement ni aucun essai technique n'est attendu.</p>
+<p>b) Présentez, dans un tableau, les rôles et les responsabilités, dans la gouvernance du traitement de l'alerte, système critique, du directeur départemental, du (de la) chef(fe) du groupement « Pilotage et systèmes d'information », de la cheffe du service des systèmes d'information et de communication, de la cheffe du centre de traitement de l'alerte, des chefs de centre, de l'éditeur du logiciel de traitement de l'alerte et de la déléguée à la protection des données. Proposez la désignation d'un responsable de la sécurité des systèmes d'information et justifiez son positionnement.</p>
+<p><strong>3.4 – Les salles informatiques et la transition numérique responsable (3 points)</strong></p>
+<p>a) Après avoir défini la transition numérique responsable, appréciez la proposition du département de l'annexe 3.4 B : ce qu'elle apporte (mutualisation, efficacité de la salle, chaleur récupérée) et ses limites (dépendance, sécurité et confidentialité, système critique conservé dans les salles du SDIS). Indiquez à quelles conditions vous la recommanderiez.</p>
+<p>b) Proposez deux autres bonnes pratiques de Green IT, l'une sur l'allongement de la durée de vie des équipements, l'autre sur leur réemploi, puis deux indicateurs de mesure de l'impact environnemental du système d'information, chacun précisé par sa formule, sa source, sa fréquence, sa cible et son axe. Aucun calcul d'empreinte n'est attendu.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

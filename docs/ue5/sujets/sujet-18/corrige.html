@@ -1,0 +1,2423 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Sujet complet n° 18</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Sujet complet</p><p>3 heures</p><p>40 points</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Sujet d'entraînement n° 18</h1><p class="cas">dossier 1, SDIS du Val-d'Aurande, service départemental d'incendie et de secours : veille technologique, maturité de la gouvernance du SI sur les niveaux de capacité de COBIT 2019, processus des volontaires, méthode, organisation, planification et plan qualité du projet VIGIE ; dossier 2, SDIS du Val-d'Aurande : modèle conceptuel et logique des interventions, des engins et des équipages, analyse de la sollicitation opérationnelle, cycle de vie et archivage des enregistrements des appels et des comptes rendus de secours, chaîne de blocs pour la traçabilité des équipements de protection ; dossier 3, SDIS du Val-d'Aurande : note de synthèse de l'audit de la base des points d'eau, risques de la dépendance au logiciel de traitement de l'alerte, sécurité des tablettes embarquées et rôles dans la gouvernance d'un système critique, mutualisation des salles informatiques.</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base d'une réglementation au 31/12/2026.</p>
+<p>Textes intégrés : fiches de travail datées et base des référentiels datés.</p>
+<p>Bien que le corrigé mentionne des textes juridiques et normatifs, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte avant tout sur la pertinence et la cohérence des réponses.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dossier</th>
+<th style="text-align: right;">Points</th>
+<th>Questions</th>
+<th>Exercice d'origine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 – Préparer la gouvernance du système d'information et la conduite du projet VIGIE</td>
+<td style="text-align: right;">14</td>
+<td>1.1 à 1.5</td>
+<td><a href="../../exercices/ex52/sujet.html">SDIS du Val-d'Aurande, service départemental d'incendie et de secours : veille technologique, maturité de la gouvernance du SI sur les niveaux de capacité de COBIT 2019, processus des volontaires, méthode, organisation, planification et plan qualité du projet VIGIE</a></td>
+</tr>
+<tr class="even">
+<td>2 – Organiser et exploiter les données des interventions, en maîtriser la conservation</td>
+<td style="text-align: right;">13</td>
+<td>2.1 à 2.4</td>
+<td><a href="../../exercices/ex53/sujet.html">SDIS du Val-d'Aurande : modèle conceptuel et logique des interventions, des engins et des équipages, analyse de la sollicitation opérationnelle, cycle de vie et archivage des enregistrements des appels et des comptes rendus de secours, chaîne de blocs pour la traçabilité des équipements de protection</a></td>
+</tr>
+<tr class="odd">
+<td>3 – Tirer les conclusions d'un audit, maîtriser les risques et la sécurité du système d'information opérationnel et en réduire l'empreinte</td>
+<td style="text-align: right;">13</td>
+<td>3.1 à 3.4</td>
+<td><a href="../../exercices/ex54/sujet.html">SDIS du Val-d'Aurande : note de synthèse de l'audit de la base des points d'eau, risques de la dépendance au logiciel de traitement de l'alerte, sécurité des tablettes embarquées et rôles dans la gouvernance d'un système critique, mutualisation des salles informatiques</a></td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>40</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-1--préparer-la-gouvernance-du-système-dinformation-et-la-conduite-du-projet-vigie-14-points">DOSSIER 1 – PRÉPARER LA GOUVERNANCE DU SYSTÈME D'INFORMATION ET LA CONDUITE DU PROJET VIGIE (14 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1 La veille technologique et deux technologies de l'alerte</td>
+<td><code>1.1.d</code> Outils et méthodes de veille technologique et analyse de l'impact des nouvelles technologies sur les modèles économiques ; <code>1.1.a</code> Définir une stratégie des systèmes d'information alignée sur les objectifs métiers, en intégrant les opportunités offertes par les technologies émergentes</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>1.2 La capacité des processus et les parties prenantes de la gouvernance du système d'information</td>
+<td><code>1.2.d</code> Méthodologies d'évaluation de la maturité numérique (CMMI, COBIT, etc.) ; <code>1.2.a</code> Mettre en œuvre une gouvernance des systèmes d'information intégrant les parties prenantes clés, des indicateurs de performance et des critères de durabilité</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>1.3 Le processus des volontaires et sa rationalisation</td>
+<td><code>1.3.f</code> Analyse des processus métiers et rôle des architectures SI dans leur rationalisation ; <code>1.3.a</code> Concevoir, cartographier et évaluer l'architecture des systèmes d'information dans une logique d'urbanisation cohérente, en intégrant les technologies émergentes (blockchain, IA, registres distribués,…)</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td>1.4 La méthode et l'organisation du projet VIGIE</td>
+<td><code>1.5.b</code> Méthodologies de gestion de projet (cycle en V, agile, hybride) ; <code>1.5.a</code> Piloter un projet de système d'information, depuis la rédaction du cahier des charges jusqu'à l'analyse des risques et du plan qualité, dans une logique de performance durable</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>1.5 La planification et le plan qualité du projet VIGIE</td>
+<td><code>1.5.d</code> Planification des ressources, délais, coûts et qualité ; <code>1.5.f</code> Mise en œuvre et contrôle du plan qualité</td>
+<td>2,5</td>
+</tr>
+<tr class="even">
+<td><strong>Dossier 1 – Préparer la gouvernance du système d'information et la conduite du projet VIGIE</strong></td>
+<td></td>
+<td><strong>14</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (veille technologique, modèles de maturité et de capacité, processus métier, méthodes de projet, plan qualité) environ 2,5 points (items 1.1 a-1, 1.2 a-1, 1.3 a-1 pour moitié, 1.4 a-1, 1.5 b-1 pour moitié, et les définitions incluses dans les autres items) ; analyse des annexes et recommandations environ 11,5 points, soit environ 82 %. Durée conseillée : 14 points × 4,5 minutes = 63 minutes, soit 1 h 03.</p>
+<hr />
+<h3 id="11--la-veille-technologique-et-deux-technologies-de-lalerte-3-points">1.1 – La veille technologique et deux technologies de l'alerte (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.1 – Élaborer et aligner la stratégie des SI : <code>1.1.d</code> « Outils et méthodes de veille technologique et analyse de l'impact des nouvelles technologies sur les modèles économiques » ; <code>1.1.a</code> « Définir une stratégie des systèmes d'information alignée sur les objectifs métiers, en intégrant les opportunités offertes par les technologies émergentes ». Limite : « Ne pas se limiter à une veille passive : intégrer l'analyse prospective dans l'évaluation des opportunités SI. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.2 (deux technologies, absence de veille), 1.1 (activité, délais d'arrivée, organigramme) et 1.3 (absence d'instance consacrée au SI).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Veille technologique définie : surveillance <strong>active</strong>, organisée et continue des technologies et des usages, pour en anticiper les effets sur l'organisation et éclairer des décisions ; distinguée de la simple réception d'informations (veille passive, situation actuelle du SDIS, annexe 1.2 C)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Objets surveillés et sources adaptés au SDIS (technologies de l'alerte, de la mobilité et de l'engagement des volontaires ; autres SDIS, partenaires, publications, données internes des appels), avec un regard critique sur les éditeurs</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Acteurs (pilote, contributeurs des groupements, du centre de traitement de l'alerte et du service de santé), diffusion (fiche courte, rythme) et décision (instance qui écarte, surveille, expérimente ou adopte, selon des critères tirés du projet d'établissement)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Vidéo transmise par l'appelant : effets sur la prise de l'appel, la décision d'engagement et la charge des opérateurs, tirés des chiffres de l'annexe 1.2 A, et contribution aux objectifs (délai et gestes en attendant les secours, partage avec le centre de régulation médicale), limites (réseau du Haut-Aurande, images de personnes)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Alertes automatiques : même analyse (3 000 alertes, doublées depuis 2024, six sur dix fausses, cinq minutes de levée de doute, formats hétérogènes, 40 personnes seules secourues grâce à elles) et contribution aux objectifs</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Une suite recommandée et justifiée pour chacune : expérimentation encadrée de la vidéo, avec des critères et des règles sur les images ; organisation du filtrage et d'un format commun des alertes automatiques avec leurs émetteurs, puis étude de leur intégration</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.1 a) – La veille technologique et son organisation</em></p>
+<p>La <strong>veille technologique</strong> est une démarche <strong>active</strong>, organisée et continue de recherche, de sélection, d'analyse et de diffusion d'informations sur les technologies et sur leurs usages, afin d'anticiper leurs effets sur l'organisation, son modèle et ses métiers, et d'éclairer des décisions : écarter, surveiller, expérimenter ou adopter. Elle se distingue d'une <strong>veille passive</strong>, qui se contente de recevoir ce qui arrive. C'est la situation du SDIS : « Personne n'en est chargé » ; l'information vient des éditeurs qui démarchent, de collègues ou d'un écho dans la presse, et aucune instance ne décide (annexe 1.2 C) (0,5 pt).</p>
+<p><strong>Organisation proposée pour le SDIS</strong> :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Composante</th>
+<th>Proposition pour le SDIS du Val-d'Aurande</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Ce qu'elle surveille</strong> (0,5 pt avec les sources)</td>
+<td>technologies de la réception et du traitement de l'alerte (vidéo, alertes automatiques, localisation de l'appelant, messages écrits) ; technologies de terrain et de mobilité des équipages ; outils d'engagement et de gestion des volontaires ; usages des appelants et des partenaires ; offres des éditeurs du marché ; résultats des essais des autres SDIS</td>
+</tr>
+<tr class="even">
+<td><strong>Sources</strong></td>
+<td>retours d'expérience des SDIS voisins et réseaux professionnels ; partenaires (centre de régulation médicale du SAMU, plateformes de téléassistance, opérateurs de réseaux mobiles) ; publications professionnelles et salons, avec un regard critique sur les présentations des éditeurs, qui vendent ; <strong>données internes</strong> : statistiques des appels et des alertes automatiques, cahier des incidents, réclamations des volontaires</td>
+</tr>
+<tr class="odd">
+<td><strong>Acteurs</strong> (0,5 pt avec la diffusion et la décision)</td>
+<td>pilote : le groupement « Pilotage et systèmes d'information » (observatoire de l'activité et service des systèmes d'information et de communication), avec un correspondant nommé ; contributeurs : centre de traitement de l'alerte (Mme TOURNEVAL), groupement des opérations, groupement du volontariat, service de santé et de secours médical pour les usages médicaux de la vidéo, déléguée à la protection des données pour les images et les données personnelles ; un référent par groupement territorial</td>
+</tr>
+<tr class="even">
+<td><strong>Diffusion</strong></td>
+<td>une fiche courte par technologie (description, maturité, essais connus, effets attendus sur l'alerte et sur les objectifs du projet d'établissement, risques, avis) ; une synthèse trimestrielle ; un espace partagé où sont rangées les fiches</td>
+</tr>
+<tr class="odd">
+<td><strong>Décision</strong></td>
+<td>les fiches sont présentées à l'instance de gouvernance du SI (question 1.2 c), qui décide d'<strong>écarter</strong>, de <strong>surveiller</strong>, d'<strong>expérimenter</strong> (avec des critères de réussite et une durée) ou d'<strong>adopter</strong> (le projet entre alors dans les projets du SI) ; chaque décision est notée et revue</td>
+</tr>
+</tbody>
+</table>
+<p>La veille devient ainsi <strong>prospective</strong> : elle évalue chaque technologie au regard des objectifs de « Val-d'Aurande Secours 2031 », au lieu de subir l'offre des éditeurs.</p>
+<p><em>1.1 b) – Les effets des deux technologies et leur suite</em></p>
+<p><strong>La vidéo transmise par l'appelant</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>prise de l'appel</strong> : l'opérateur voit la scène au lieu de l'imaginer ; il évalue mieux la gravité et peut guider les gestes de l'appelant en attendant les secours (massage cardiaque, position de la victime) ;</li>
+<li><strong>décision d'engagement</strong> : la décision change une fois sur huit quand la vidéo fonctionne, dans les deux sens : un moyen plus lourd pour une détresse sous-estimée, ou un simple conseil sans engin, ce qui préserve des engins et des volontaires disponibles ;</li>
+<li><strong>charge des opérateurs</strong> : deux minutes de plus par appel avec vidéo ; à généraliser, il faudrait cibler les appels (détresse vitale, incendie, accident) pour ne pas allonger l'attente des autres appelants ;</li>
+<li><strong>contribution aux objectifs</strong> : elle sert d'abord la qualité de la réponse et le délai « utile » (gestes réalisés avant l'arrivée des secours), plus que le délai d'arrivée lui-même ; elle peut nourrir le partage avec le centre de régulation médicale du SAMU ;</li>
+<li><strong>limites</strong> : elle fonctionne quatre fois sur dix seulement en montagne, c'est-à-dire dans le Haut-Aurande, là où les secours arrivent en plus de 20 minutes et où elle serait la plus utile ; les images de personnes blessées ou en détresse appellent des règles d'affichage, d'accès et de conservation, à fixer avec la déléguée à la protection des données.</li>
+</ul>
+<p><strong>Les alertes automatiques des objets connectés</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>prise de l'appel</strong> : un nouveau canal sans voix humaine, en forte croissance (3 000 alertes en 2026 contre 1 500 en 2024, soit 2 % des 150 000 appels), qui arrive par des voies et des formats différents, hors du logiciel de traitement de l'alerte : l'opérateur ressaisit, avec un risque d'erreur sur la position ;</li>
+<li><strong>décision d'engagement</strong> : six alertes sur dix sont fausses ; chacune exige une <strong>levée de doute</strong> avant d'engager ; mais la position transmise peut accélérer la localisation, et 40 fois en 2026, dont une vingtaine dans le Haut-Aurande, l'alerte automatique a été le seul signal d'une personne seule ;</li>
+<li><strong>charge des opérateurs</strong> : 1 800 fausses alertes × cinq minutes, soit environ 150 heures d'opérateur par an (environ 250 heures pour l'ensemble des 3 000 levées de doute) : une charge encore modeste, mais qui a doublé en deux ans ; la fiabilité dépend de l'émetteur : neuf sur dix fausses pour les montres, une sur quatre pour la téléassistance, qui filtre déjà ;</li>
+<li><strong>contribution aux objectifs</strong> : délai d'arrivée des secours pour des personnes âgées ou isolées, en particulier dans le Haut-Aurande ; continuité du traitement de l'alerte, à condition que ces alertes ne saturent pas les opérateurs.</li>
+</ul>
+<p><strong>Suites recommandées</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>vidéo : expérimenter, de façon encadrée</strong>, pendant six mois au centre de traitement de l'alerte, sur des appels ciblés, avec des critères fixés d'avance (part des vidéos réussies par secteur, décisions modifiées, durée des appels, avis des opérateurs et du médecin-chef) et des règles sur les images (affichage limité au poste de l'opérateur, accès restreint, pas de conservation par défaut), puis décider de l'adopter ou non devant l'instance de gouvernance du SI ; ne pas en attendre une réponse au délai du Haut-Aurande, faute de réseau ;</li>
+<li><strong>alertes automatiques : organiser plutôt que subir</strong> : demander aux émetteurs, d'abord aux plateformes de téléassistance, puis aux services associés aux montres et aux voitures, une première levée de doute et un <strong>format commun</strong> (identité, position, type d'événement) ; écrire au centre une procédure unique de levée de doute ; suivre leur volume et leur part de fausses alertes ; étudier ensuite, dans la veille, leur réception directe dans le logiciel de traitement de l'alerte.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Veille organisée autour d'un cycle (cibler, collecter, analyser, diffuser, décider), si chaque étape est appliquée au SDIS.</li>
+<li>Pilotage de la veille confié au centre de traitement de l'alerte ou au groupement des opérations, si la décision reste à une instance de direction et si le SI y est associé.</li>
+<li>Vidéo recommandée en adoption progressive plutôt qu'en expérimentation, si la charge des opérateurs et les règles sur les images sont traitées.</li>
+<li>Alertes automatiques analysées sous l'angle d'un partenariat avec les plateformes de téléassistance : accepté.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Veille réduite à une liste de sources ou à un abonnement</em> (ET-39 morceau de cours ; limite du programme 1.1 : « ne pas se limiter à une veille passive ») — sans acteurs, diffusion et décision, la veille reste ce qu'elle est aujourd'hui.</li>
+<li><em>Technologies présentées par leurs seuls avantages</em> (ET-19 opportunités sans risques) — la vidéo échoue six fois sur dix en montagne, et six alertes automatiques sur dix sont fausses.</li>
+<li><em>Effets décrits sans les chiffres de l'annexe 1.2 ni lien avec les objectifs</em> (<code>JUR-T08</code> exploiter toutes les annexes ; <code>JUR-T03</code> analyser et argumenter) — l'analyse doit dire ce que chaque technologie change à la prise de l'appel, à l'engagement et à la charge.</li>
+<li><em>Choix technique du produit vidéo, ou analyse juridique des images</em> (<code>JUR-T07</code> répondre à la seule question posée) — non demandés ; les images appellent des règles, à fixer avec la déléguée à la protection des données.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Veille technologique</td>
+<td>veille active et prospective, effets sur le modèle de l'organisation</td>
+<td>F01 § 0 ; glossaire</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Technologies émergentes et stratégie du SI</td>
+<td>opportunités et risques, décision d'expérimenter</td>
+<td>F01 § 0 ; <code>erreurs_types.md</code> ET-19</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12--la-capacité-des-processus-et-les-parties-prenantes-de-la-gouvernance-du-système-dinformation-3-points">1.2 – La capacité des processus et les parties prenantes de la gouvernance du système d'information (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.2 – Concevoir et piloter la gouvernance des SI : <code>1.2.d</code> « Méthodologies d'évaluation de la maturité numérique (CMMI, COBIT, etc.) » ; <code>1.2.a</code> « Mettre en œuvre une gouvernance des systèmes d'information intégrant les parties prenantes clés, des indicateurs de performance et des critères de durabilité ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.3 (témoignages), 1.4 (grille de capacité), 1.7 (COBIT 2019), 1.1 (gouvernance, organigramme, dépenses du SI) et 1.5 (volontaires).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Modèle de maturité (niveaux successifs de maîtrise d'un ensemble de pratiques ou d'une organisation) et modèle de capacité (aptitude d'un processus pris isolément à atteindre son objectif, COBIT 2019 de 0 à 5) définis et distingués ; usages : diagnostic partagé, cible, priorités, suivi des progrès, communication à la direction</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Deux processus positionnés, chacun justifié par un constat de l'annexe 1.3 confronté à la grille de l'annexe 1.4</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Les deux autres processus, même exigence ; positionnement différencié et cohérent avec la règle de l'annexe 1.4</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Niveaux cibles à deux ans réalistes (un ou deux niveaux de progrès), plus ambitieux pour les processus qui touchent la continuité de l'alerte et le projet VIGIE ; niveaux 4 et 5 écartés et justifiés le cas échéant</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Une action prioritaire par processus, concrète et reliée au constat</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Deux instances ou mesures qui associent le conseil d'administration, les groupements territoriaux et les volontaires (composition, fréquence, rôle), en réponse aux témoignages</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.2 a) – Maturité, capacité et positionnement des quatre processus</em></p>
+<p>Un <strong>modèle de maturité</strong> décrit, par une échelle de niveaux successifs, le degré d'organisation et de maîtrise atteint par une organisation ou par un ensemble de pratiques (un domaine), du plus informel au plus maîtrisé ; MAGNum 2026, du Cigref, de l'IFACI et de l'ISACA France, en est un exemple pour la gouvernance du numérique. Un <strong>modèle de capacité</strong> évalue un <strong>processus pris isolément</strong> : son aptitude à atteindre son objectif, de façon plus ou moins organisée, mesurée et améliorée ; COBIT 2019, référentiel de gouvernance de l'ISACA et non norme, note la capacité des processus de 0 (incomplet) à 5 (optimisé) (annexes 1.4 et 1.7). Les deux notions se complètent : la maturité d'un domaine se déduit de la capacité des processus qui le composent. <strong>Usages</strong> : établir un diagnostic partagé et objectivé, fixer une cible, choisir les priorités d'action, suivre les progrès d'une année à l'autre et en rendre compte à la direction et au conseil d'administration. Limite : une auto-évaluation peut être complaisante ; elle doit s'appuyer sur des faits (0,5 pt).</p>
+<p><strong>Positionnement</strong> (0,5 pt pour deux processus, 0,5 pt pour les deux autres) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Processus</th>
+<th>Constats (annexe 1.3)</th>
+<th>Niveau</th>
+<th>Justification par la grille (annexe 1.4)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Gestion des projets</strong></td>
+<td>aucune méthode écrite ; chaque groupement lance ses projets puis demande au service de les installer ; deux projets abandonnés depuis 2022 (planning des gardes non relié au logiciel des disponibilités, portail des formations doublé par la plateforme de formation) ; des projets aboutissent pourtant (tablettes)</td>
+<td><strong>1 – Initial</strong></td>
+<td>l'objectif est atteint en partie, au cas par cas, selon les personnes ; ni planification ni suivi communs, donc pas le niveau 2</td>
+</tr>
+<tr class="even">
+<td><strong>Gestion des incidents et des changements</strong></td>
+<td>astreinte jour et nuit des quatre agents du soutien, incidents toujours pris en charge et notés dans un cahier ; mais cahier jamais relu, pannes qui reviennent ; mises à jour des éditeurs installées le soir, sans test ni retour arrière, avec deux interruptions d'une heure de la transmission des disponibilités en 2026</td>
+<td><strong>1 – Initial</strong></td>
+<td>la prise en charge des incidents approche le niveau 2 (activité planifiée, responsables identifiés), mais la gestion des changements n'atteint pas son objectif ; le processus, pris comme un tout, reste au niveau 1</td>
+</tr>
+<tr class="odd">
+<td><strong>Gestion de la sécurité</strong></td>
+<td>une charte d'usage signée par chaque agent à son arrivée ; aucune analyse des risques ; personne n'est désigné</td>
+<td><strong>1 – Initial</strong></td>
+<td>la charte, signée par chaque agent à son arrivée, atteint en partie l'objectif (faire connaître aux agents leurs obligations), mais au cas par cas, sans responsable ni analyse des risques : pas le niveau 2</td>
+</tr>
+<tr class="even">
+<td><strong>Gestion des données</strong></td>
+<td>chaque groupement tient ses tableurs ; aucun propriétaire désigné ; trois chiffres pour les volontaires : 3 900 au groupement du volontariat, 4 300 comptes actifs dans le logiciel des disponibilités, 3 800 dans les tableurs des groupements territoriaux</td>
+<td><strong>0 – Incomplet</strong></td>
+<td>les tableurs sont des activités locales, utiles à chaque groupement seulement ; l'objectif du processus, une donnée de référence fiable et partagée, n'est pas atteint, même en partie : trois chiffres différents, et aucune donnée ne fait foi</td>
+</tr>
+</tbody>
+</table>
+<p>Conclusion : la gouvernance du SI est faiblement maîtrisée ; aucun processus n'atteint le niveau 2, alors que le SI porte un service critique, ouvert jour et nuit.</p>
+<p><em>1.2 b) – Niveaux cibles à deux ans et actions prioritaires</em></p>
+<p><strong>Principe</strong> (0,5 pt) : progresser d'un ou deux niveaux en deux ans, jusqu'en mai 2029, un niveau ne s'atteignant qu'après les précédents ; viser plus haut là où la continuité de l'alerte et le projet VIGIE l'exigent ; écarter les niveaux 4 et 5, qui supposent une mesure et une amélioration continues hors de portée de 12 informaticiens et inutiles à ce stade.</p>
+<p><strong>Cibles et actions</strong> (0,5 pt pour les actions) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Processus</th>
+<th>Niveau actuel → cible à deux ans</th>
+<th>Justification de l'ambition</th>
+<th>Action prioritaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gestion des projets</td>
+<td>1 → <strong>3</strong></td>
+<td>VIGIE doit aboutir avant la fin de 2028 ; les échecs viennent de projets lancés sans cadre commun</td>
+<td>adopter une <strong>méthode de projet écrite et commune</strong> (note de cadrage, commanditaire, comité de pilotage, jalons, bilan), appliquée d'abord à VIGIE, et soumettre tout projet du SI à l'instance de gouvernance avant son lancement</td>
+</tr>
+<tr class="even">
+<td>Gestion des incidents et des changements</td>
+<td>1 → <strong>3</strong></td>
+<td>objectif de continuité du traitement de l'alerte, jour et nuit ; les bases existent (astreinte, cahier)</td>
+<td>remplacer le cahier par un <strong>registre partagé des incidents</strong>, classés par gravité et analysés chaque mois pour traiter les pannes qui reviennent ; <strong>tester toute mise à jour</strong> avant son installation, avec un retour arrière prévu et l'accord du centre de traitement de l'alerte</td>
+</tr>
+<tr class="odd">
+<td>Gestion de la sécurité</td>
+<td>1 → <strong>2</strong></td>
+<td>partir d'une activité isolée : il faut d'abord un responsable et des activités planifiées</td>
+<td><strong>désigner un responsable de la sécurité du SI</strong> et lui confier un plan d'actions suivi par la direction, fondé sur une première analyse des risques</td>
+</tr>
+<tr class="even">
+<td>Gestion des données</td>
+<td>0 → <strong>2</strong></td>
+<td>VIGIE va créer une source fiable des disponibilités et des heures ; un niveau 3 en deux ans serait irréaliste</td>
+<td><strong>désigner un propriétaire pour chaque domaine de données</strong> (volontaires : groupement du volontariat ; interventions : groupement des opérations…) et fixer la source qui fait foi pour l'effectif des volontaires, en retirant les comptes des partants</td>
+</tr>
+</tbody>
+</table>
+<p><em>1.2 c) – Associer le conseil d'administration, les groupements territoriaux et les volontaires</em></p>
+<p>(0,5 pt ; deux parmi les suivantes)</p>
+<ol type="1">
+<li><strong>Un comité du système d'information</strong>, instance du comité de direction présidée par le directeur départemental, réuni chaque trimestre : chefs des groupements fonctionnels <strong>et des quatre groupements territoriaux</strong>, cheffe du service des systèmes d'information et de communication, déléguée à la protection des données, et un <strong>administrateur référent du numérique</strong> désigné par le conseil d'administration. Il arbitre les projets du SI, examine les fiches de veille, suit la capacité des processus et les risques. Le conseil d'administration reçoit chaque année, avant le vote du budget, un <strong>rapport sur le système d'information</strong> : projets et résultats (les tablettes, par exemple), capacité des processus, indicateurs de performance et d'empreinte environnementale. C'est la réponse au président : le conseil ne verra plus les 3,6 M€ comme « une ligne parmi d'autres ».</li>
+<li><strong>Un comité des utilisateurs du SI</strong>, prolongement du panel de VIGIE : chefs de centre et volontaires des quatre groupements territoriaux, réunis deux fois par an le soir, consultés avant tout projet qui les touche (outils des volontaires, des centres, des engins) et associés aux essais ; deux de ses membres siègent au comité du SI. C'est la réponse au chef de centre du Haut-Aurande, qui a découvert les tablettes le jour de leur livraison.</li>
+<li>Variante : une <strong>consultation annuelle des volontaires</strong> sur leurs outils (questionnaire sur l'application, réunions dans les centres), dont les résultats sont présentés au comité du SI et au conseil d'administration.</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Gestion des incidents et des changements placée au niveau 2, si le candidat distingue la prise en charge des incidents (planifiée, avec une astreinte) et les changements non testés, et en fait le premier point à corriger.</li>
+<li>Gestion de la sécurité placée au niveau 0, si le candidat juge que la charte ne suffit pas à constituer un processus ; gestion des données placée au niveau 1, si les tableurs sont vus comme des activités au cas par cas.</li>
+<li>Cibles différentes (sécurité à 3, données à 3), si elles sont justifiées et si la progression reste réaliste ; cible de 2 pour tous, si elle est présentée comme une première étape.</li>
+<li>Modèle de maturité illustré par CMMI ou par MAGNum 2026, sans en faire la grille de positionnement, qui est celle de l'annexe 1.4.</li>
+<li>Mention d'ITIL pour la gestion des incidents et des changements, s'il est présenté comme un référentiel de bonnes pratiques de gestion des services, et non comme une norme.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Maturité et capacité confondues sans explication</em> (F01 § 5 et F02 § 3 : COBIT 2019 évalue la capacité de chaque processus, de 0 à 5 ; <code>JUR-T01</code> contextualiser chaque notion) — la grille de l'annexe 1.4 évalue des processus, un par un.</li>
+<li><em>Niveaux attribués sans constat, ou tous identiques</em> (<code>JUR-T08</code> exploiter toutes les annexes ; <code>JUR-T03</code> analyser et argumenter) — chaque niveau se justifie par un fait de l'annexe 1.3 confronté à la description du niveau.</li>
+<li><em>Cibles irréalistes</em> (niveau 4 ou 5 en deux ans, saut de trois niveaux) (<code>JUR-G05</code> recommander de façon réaliste) — un niveau ne s'atteint qu'après les précédents.</li>
+<li><em>COBIT 2019 présenté comme une norme ou comme un logiciel</em> (ET-01 norme, référentiel et solution ; <code>JUR-S06</code>) — c'est un référentiel de gouvernance, publié par l'ISACA.</li>
+<li><em>Instances sans les volontaires ni le conseil d'administration</em> (<code>JUR-T07</code> répondre à la question posée) — la question vise précisément ces parties prenantes.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>COBIT 2019 (ISACA)</td>
+<td>référentiel de gouvernance ; capacité des processus de 0 à 5</td>
+<td><code>cobit_2019</code> ; F02 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>MAGNum 2026 (Cigref, IFACI, ISACA France)</td>
+<td>exemple de modèle de maturité de la gouvernance du numérique</td>
+<td><code>magnum_2026</code> ; F01 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>CMMI (réponse tolérée)</td>
+<td>modèle de maturité en cinq niveaux</td>
+<td><code>cmmi_v3</code> ; F01 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>ITIL (réponse tolérée)</td>
+<td>gestion des incidents et des changements</td>
+<td><code>itil_4</code>, <code>itil_5</code> ; F02 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Comitologie du SI</td>
+<td>comité du SI, parties prenantes</td>
+<td>F02 § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13--le-processus-des-volontaires-et-sa-rationalisation-25-points">1.3 – Le processus des volontaires et sa rationalisation (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.3 – Diagnostiquer et piloter l'évolution des architectures et de l'urbanisation des systèmes d'information : <code>1.3.f</code> « Analyse des processus métiers et rôle des architectures SI dans leur rationalisation » ; <code>1.3.a</code> « Concevoir, cartographier et évaluer l'architecture des systèmes d'information dans une logique d'urbanisation cohérente, en intégrant les technologies émergentes (blockchain, IA, registres distribués,…) ». Limite : « Ne pas réduire l'urbanisation à une vision strictement technique : elle s'inscrit dans une stratégie globale. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.5 (processus actuel), 1.6 (objectif de VIGIE et lots), 1.3 (trois chiffres des volontaires, interruptions après mise à jour) et 1.1 (système d'information, centres, indemnités).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Processus métier défini (suite ordonnée d'activités, réalisées par des acteurs avec des outils, qui produit un résultat pour un bénéficiaire) ; processus actuel représenté de façon lisible : acteurs, étapes, outils, ressaisies signalées</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Trois dysfonctionnements tirés de l'annexe 1.5, chacun avec ses effets sur l'engagement, sur les volontaires ou sur l'établissement</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Processus cible avec VIGIE : déclaration par l'application, disponibilité vue aussitôt au centre, équipage enregistré une fois au départ, heures transmises et validées, rôle des chefs de centre et des finances recentré sur le contrôle</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Rationalisation par l'architecture : échanges automatiques entre VIGIE, le logiciel de traitement de l'alerte et le logiciel des indemnités (nature et rythme), donnée saisie une seule fois à la source</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Deux conditions de réussite parmi : source unique de la liste des volontaires, fonctionnement en zone mal couverte, mode dégradé si une interface tombe (sans lequel la ressaisie reviendrait)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.3 a) – Le processus actuel et ses dysfonctionnements</em></p>
+<p>Un <strong>processus métier</strong> est une suite ordonnée d'activités, réalisées par des acteurs avec des outils et des informations, qui transforme une demande en un résultat pour un bénéficiaire : ici, un volontaire disponible, engagé à bon escient, puis indemnisé de ses heures. On le représente par ses étapes, ses acteurs et ses outils, pour en repérer les ruptures (0,5 pt avec la représentation).</p>
+<p><strong>Représentation du processus actuel</strong> (format libre lisible : tableau, schéma en couloirs ou logigramme) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Acteur</th>
+<th>Outil</th>
+<th>Ressaisie ou rupture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Déclarer sa disponibilité</td>
+<td>volontaire</td>
+<td>SMS codé (45 %), site web (35 %), téléphone au chef de centre (20 %)</td>
+<td><strong>ressaisie</strong> par le chef de centre des déclarations téléphoniques ; SMS mal formés rejetés sans toujours prévenir</td>
+</tr>
+<tr class="even">
+<td>2. Transmettre les disponibilités au centre de traitement de l'alerte</td>
+<td>logiciel des disponibilités</td>
+<td>fichier toutes les trente minutes vers le logiciel de traitement de l'alerte</td>
+<td><strong>décalage</strong> : disponibilités parfois périmées</td>
+</tr>
+<tr class="odd">
+<td>3. Proposer et engager les moyens, alerter les volontaires</td>
+<td>opérateur du centre de traitement de l'alerte</td>
+<td>logiciel de traitement de l'alerte</td>
+<td>un appel sur dix vers un volontaire qui n'est plus disponible : alerter un autre centre</td>
+</tr>
+<tr class="even">
+<td>4. Partir : noter l'équipage</td>
+<td>chef d'agrès</td>
+<td>feuille de départ papier</td>
+<td><strong>rupture numérique</strong></td>
+</tr>
+<tr class="odd">
+<td>5. Enregistrer l'équipage</td>
+<td>chef de centre</td>
+<td>logiciel de traitement de l'alerte</td>
+<td><strong>ressaisie</strong> de la feuille</td>
+</tr>
+<tr class="even">
+<td>6. Chaque mois, établir les états d'heures</td>
+<td>chefs de centre (dix heures par mois chacun pour les 48 centres de volontaires, soit environ 480 heures par mois)</td>
+<td>relevé dans le logiciel de traitement de l'alerte et plannings de garde sur tableur → logiciel des indemnités</td>
+<td><strong>ressaisie</strong> (recopie des heures d'intervention et de garde)</td>
+</tr>
+<tr class="odd">
+<td>7. Contrôler et corriger</td>
+<td>groupement des finances</td>
+<td>logiciel des indemnités</td>
+<td>un état sur cinq corrigé, échanges avec les centres</td>
+</tr>
+<tr class="even">
+<td>8. Payer</td>
+<td>groupement des finances, paie</td>
+<td>fichier mensuel vers le logiciel de paie</td>
+<td>versement deux mois après le mois de l'intervention</td>
+</tr>
+<tr class="odd">
+<td>9. Réclamer</td>
+<td>volontaire → groupement du volontariat</td>
+<td>courrier, courriel</td>
+<td>1 200 réclamations en 2026</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trois dysfonctionnements et leurs effets</strong> (0,5 pt ; trois parmi les suivants) :</p>
+<ol type="1">
+<li><strong>Des disponibilités périmées au centre de traitement de l'alerte</strong> : transfert par fichier toutes les trente minutes, déclarations oubliées ou rejetées ; environ un appel sur dix adressé à un volontaire qui n'est plus disponible oblige à alerter un autre centre : du temps perdu, contraire à l'objectif d'arrivée des secours sous 20 minutes, surtout dans le Haut-Aurande.</li>
+<li><strong>Des ressaisies en cascade</strong> : déclarations téléphoniques, feuille de départ, équipage, puis heures recopiées chaque mois ; chaque ressaisie crée des erreurs (un état sur cinq corrigé) et consomme environ 480 heures par mois de chefs de centre volontaires, prises sur leur temps et sur la formation.</li>
+<li><strong>Un paiement lent et contesté</strong> : versement deux mois après le mois de l'intervention, 1 200 réclamations ; c'est le premier motif d'insatisfaction des volontaires, à l'opposé de l'objectif de fidélisation par la simplification de leur engagement.</li>
+<li><strong>Des canaux de déclaration multiples et peu fiables</strong> : trois canaux, un code SMS à respecter, aucun retour au volontaire en cas de rejet ; la déclaration, que le projet d'établissement veut simplifier « au premier rang », est la plus compliquée.</li>
+<li><strong>Aucune source unique des volontaires</strong> : 3 900, 4 300 ou 3 800 selon l'outil (annexe 1.3) ; les comptes des partants restent actifs dans le logiciel des disponibilités.</li>
+</ol>
+<p><em>1.3 b) – Le processus cible et l'architecture qui le rationalise</em></p>
+<p><strong>Processus cible avec VIGIE</strong> (0,5 pt) :</p>
+<ol type="1">
+<li>le volontaire déclare ou modifie sa disponibilité dans l'application VIGIE, en quelques gestes, et reçoit une confirmation ; la déclaration téléphonique au chef de centre devient l'exception ;</li>
+<li>la disponibilité est transmise aussitôt au logiciel de traitement de l'alerte : l'opérateur voit l'état réel, en moins d'une minute ;</li>
+<li>l'opérateur engage les moyens et alerte les volontaires par les moyens d'alerte actuels ;</li>
+<li>au départ, le chef d'agrès confirme l'équipage dans VIGIE, <strong>une seule fois</strong> ; le logiciel de traitement de l'alerte le reçoit et horodate l'intervention ;</li>
+<li>les heures d'intervention, reçues du logiciel de traitement de l'alerte, et les heures de garde, issues du planning de VIGIE, sont rapprochées automatiquement ; le chef de centre <strong>valide</strong> au lieu de recopier, le volontaire consulte ses heures ;</li>
+<li>les heures validées sont transmises au logiciel des indemnités ; le groupement des finances contrôle les seuls écarts signalés ; le fichier mensuel vers la paie reste inchangé.</li>
+</ol>
+<p><strong>Rôle de l'architecture du SI dans la rationalisation</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>des échanges automatiques</strong> remplacent les fichiers et les recopies : VIGIE → logiciel de traitement de l'alerte (disponibilités, au fil de l'eau ; équipage confirmé au départ) ; logiciel de traitement de l'alerte → VIGIE (heures d'intervention, à la clôture de chaque intervention) ; VIGIE → logiciel des indemnités (heures validées, chaque mois ou au fil de l'eau) ; le lien existant entre le logiciel des indemnités et la paie est conservé ;</li>
+<li><strong>chaque donnée est saisie une seule fois, à sa source</strong>, par la personne qui la connaît : la disponibilité par le volontaire, l'équipage par le chef d'agrès au départ, les heures d'intervention par le logiciel de traitement de l'alerte ; les autres applications la reçoivent au lieu de la ressaisir ;</li>
+<li>chaque application garde son rôle : VIGIE pour les volontaires, le logiciel de traitement de l'alerte pour l'engagement, le logiciel des indemnités pour le calcul ; c'est une démarche d'urbanisation au service d'un objectif du projet d'établissement, et non un simple changement d'outil.</li>
+</ul>
+<p><strong>Deux conditions de réussite</strong> (0,5 pt ; deux parmi les suivantes) :</p>
+<ul>
+<li><strong>une source unique de la liste des volontaires</strong> : une source unique, désignée (par exemple le logiciel de ressources humaines), alimente VIGIE ; un départ ferme le compte partout, ce qui règle les écarts entre 3 900, 4 300 et 3 800 ;</li>
+<li><strong>un fonctionnement en zone mal couverte</strong> : la déclaration est enregistrée sur le téléphone et transmise dès le retour du réseau, avec un message de secours ;</li>
+<li><strong>un mode dégradé</strong> si une interface tombe : file d'attente des échanges, alerte au soutien du centre de traitement de l'alerte, reprise sans ressaisie ; sinon, la feuille de départ et la recopie reviendraient (les deux interruptions de 2026 après une mise à jour en montrent le risque).</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Représentation en couloirs (BPMN ou format libre), logigramme ou tableau, si les acteurs, les outils et les ressaisies apparaissent.</li>
+<li>Équipage enregistré au centre de traitement de l'alerte plutôt que par le chef d'agrès, si la saisie reste unique.</li>
+<li>Heures transmises au logiciel des indemnités au fil de l'eau plutôt que chaque mois : accepté.</li>
+<li>Mention d'une plateforme d'échanges entre applications, si elle est présentée comme une option et non comme une obligation.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Processus décrit sans les ressaisies ni les outils</em> (<code>JUR-G07</code> cartographie de processus ; <code>JUR-T10</code> schémas lisibles) — la rationalisation se voit précisément aux ressaisies supprimées.</li>
+<li><em>Dysfonctionnements sans effets</em> (<code>JUR-T03</code> analyser et argumenter) — chacun se rattache à l'engagement, aux volontaires ou à l'établissement.</li>
+<li><em>Rationalisation réduite au remplacement d'un logiciel</em> (ET-20 urbanisation réduite à une vision technique ; limite du programme 1.3) — c'est l'organisation des échanges et de la saisie unique qui rationalise le processus.</li>
+<li><em>Règles de calcul des indemnités discutées</em> (<code>JUR-T07</code> répondre à la seule question posée) — elles ne changent pas (annexe 1.6) et ne sont pas l'objet du dossier.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Analyse des processus et urbanisation</td>
+<td>processus métier, échanges entre applications, donnée saisie à la source</td>
+<td>F03 § 1 et § 3 ; <code>erreurs_types.md</code> ET-20</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="14--la-méthode-et-lorganisation-du-projet-vigie-3-points">1.4 – La méthode et l'organisation du projet VIGIE (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.5 – Planifier, organiser et conduire des projets de systèmes d'information : <code>1.5.b</code> « Méthodologies de gestion de projet (cycle en V, agile, hybride) » ; <code>1.5.a</code> « Piloter un projet de système d'information, depuis la rédaction du cahier des charges jusqu'à l'analyse des risques et du plan qualité, dans une logique de performance durable ».</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.6 (lots, acteurs, contraintes), 1.7 (The Scrum Guide), 1.5 (volontaires et chefs de centre) et 1.1 (organigramme).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Cycle en V (phases descendantes de spécification et de conception, phases montantes de tests en miroir, adapté à un besoin stable), méthodes agiles (cycles courts, incréments, priorisation par la valeur, utilisateurs impliqués ; Scrum en exemple) et approche hybride (combinaison des deux selon les composants) présentés, avec leurs conditions</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Lot 1 en agile, justifié par les besoins mal connus et les essais avec les volontaires ; adaptation aux disponibilités du panel</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Lots 2 et 3 en cycle en V, justifiés par la fiabilité, les tests imposés et la stabilité du format et des règles ; projet hybride dans son ensemble, avec des jalons communs</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Maîtrise d'ouvrage (groupement du volontariat, avec le centre de traitement de l'alerte et les finances), maîtrise d'œuvre (éditeur de VIGIE et service des systèmes d'information et de communication), commanditaire et comité de pilotage (composition, fréquence, décisions)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Place du panel : utilisateurs clés du lot 1, essais à chaque itération, représentation au comité de pilotage, relais auprès des autres volontaires</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Tableau de répartition des responsabilités (RACI ou équivalent) : cinq acteurs, quatre activités, un seul approbateur par activité, cohérent avec l'organisation proposée</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.4 a) – Les méthodes et le choix par lot</em></p>
+<p><strong>Les trois approches</strong> (0,5 pt) :</p>
+<ul>
+<li>le <strong>cycle en V</strong>, méthode prédictive, enchaîne l'expression du besoin, les spécifications, la conception et la réalisation, puis remonte par des tests en miroir de chaque niveau (tests unitaires, d'intégration, recette, mise en service) ; il convient à un besoin <strong>stable</strong> et à une forte exigence de fiabilité et de traçabilité, mais découvre tard les écarts (effet tunnel) ;</li>
+<li>les <strong>méthodes agiles</strong> livrent le produit par <strong>incréments</strong> au cours de cycles courts, priorisent par la valeur et impliquent les utilisateurs en continu, pour s'adapter au besoin qui se précise ; dans Scrum, selon The Scrum Guide (novembre 2020), un Product Owner tient le carnet du produit, un Scrum Master garantit le cadre, des Developers réalisent un incrément à chaque Sprint d'un mois au plus ; elles exigent des utilisateurs disponibles ;</li>
+<li>l'<strong>approche hybride</strong> combine les deux : cycle en V pour les composants stables ou critiques, agile pour ceux dont le besoin doit être découvert, avec des jalons communs.</li>
+</ul>
+<p><strong>Choix par lot</strong> (0,5 pt pour le lot 1, 0,5 pt pour les lots 2 et 3 et l'ensemble) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Lot</th>
+<th>Méthode</th>
+<th>Justification tirée de l'annexe 1.6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lot 1 – Application mobile des volontaires</td>
+<td><strong>agile</strong> (Scrum)</td>
+<td>besoins mal connus (« plus simple », sans savoir quelles fonctions seront utilisées), écrans à essayer avec les volontaires au fur et à mesure ; Sprints de trois à quatre semaines, revues le soir ou le samedi avec le panel ; priorité à la déclaration de disponibilité, objectif du projet d'établissement</td>
+</tr>
+<tr class="even">
+<td>Lot 2 – Interface avec le logiciel de traitement de l'alerte</td>
+<td><strong>cycle en V</strong></td>
+<td>exigences de fiabilité très fortes : le traitement de l'alerte ne peut pas être perturbé ; huit semaines de tests sur la plateforme de l'éditeur puis deux semaines d'essais au centre, imposées ; spécifications à figer et tests à tracer</td>
+</tr>
+<tr class="odd">
+<td>Lot 3 – Interface avec le logiciel des indemnités</td>
+<td><strong>cycle en V</strong></td>
+<td>règles de calcul inchangées, format d'échange connu et stable : besoin entièrement spécifiable ; l'enjeu est le contrôle de l'exactitude (zéro écart), qui se prête à des tests en miroir des spécifications</td>
+</tr>
+</tbody>
+</table>
+<p>Le projet est donc <strong>hybride</strong> : les incréments du lot 1 avancent en Sprints, les interfaces en cycle en V, et des <strong>jalons communs</strong> (spécification des données échangées, début des tests d'intégration, mise en service) synchronisent les trois lots.</p>
+<p><em>1.4 b) – L'organisation du projet</em></p>
+<p><strong>Organisation</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>commanditaire</strong> : le directeur départemental, qui a validé la note de cadrage, arbitre et préside le comité de pilotage ;</li>
+<li><strong>maîtrise d'ouvrage</strong> : le <strong>groupement du volontariat</strong>, principal bénéficiaire, qui exprime le besoin, tient le carnet du lot 1 par un <strong>Product Owner</strong> de son équipe et prononce la recette ; le <strong>centre de traitement de l'alerte</strong> (lot 2) et le <strong>groupement des finances</strong> (lot 3) sont maîtrises d'ouvrage associées pour leurs exigences ; le groupement « Pilotage et systèmes d'information » assure la direction du projet et la cohérence avec la gouvernance du SI ;</li>
+<li><strong>maîtrise d'œuvre</strong> : l'<strong>éditeur de VIGIE</strong> (réalisation de l'application et de ses interfaces) et le <strong>service des systèmes d'information et de communication</strong> (intégration aux deux logiciels existants, comptes, exploitation, coordination avec l'éditeur du logiciel de traitement de l'alerte pour ses tests) ;</li>
+<li><strong>comité de pilotage</strong>, mensuel, présidé par le directeur départemental : chefs du groupement du volontariat, du centre de traitement de l'alerte, des finances et du service des systèmes d'information et de communication, vous-même, l'éditeur de VIGIE et deux représentants du panel ; il suit l'avancement, les risques et la qualité, arbitre le périmètre et décide des mises en service ; un <strong>comité de projet</strong> hebdomadaire réunit les équipes.</li>
+</ul>
+<p><strong>Place du panel des 40 volontaires</strong> (0,5 pt) : ce sont les <strong>utilisateurs clés</strong> du lot 1 ; ils participent aux revues de fin de Sprint et essaient chaque version sur leur téléphone, y compris en zone mal couverte du Haut-Aurande ; ils couvrent les quatre groupements territoriaux et comptent des chefs de centre, qui valideront l'enregistrement de l'équipage et des heures ; deux d'entre eux siègent au comité de pilotage ; ils deviennent ensuite les relais du déploiement auprès des 3 900 volontaires. Leur participation est organisée le soir et le week-end.</p>
+<p><strong>Répartition des responsabilités</strong> (0,5 pt ; R = réalise, A = approuve, un seul par activité, C = consulté, I = informé) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Activité</th>
+<th>Groupement du volontariat</th>
+<th>Centre de traitement de l'alerte</th>
+<th>Service des SI et de communication</th>
+<th>Groupement des finances</th>
+<th>Éditeur de VIGIE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Priorisation du carnet du lot 1</td>
+<td><strong>A</strong>, R (Product Owner)</td>
+<td>C</td>
+<td>C</td>
+<td>I</td>
+<td>C</td>
+</tr>
+<tr class="even">
+<td>Spécification et tests de l'interface avec le logiciel de traitement de l'alerte (lot 2)</td>
+<td>C</td>
+<td><strong>A</strong></td>
+<td>R</td>
+<td>I</td>
+<td>R</td>
+</tr>
+<tr class="odd">
+<td>Spécification et contrôle des heures transmises aux indemnités (lot 3)</td>
+<td>C</td>
+<td>I</td>
+<td>R</td>
+<td><strong>A</strong></td>
+<td>R</td>
+</tr>
+<tr class="even">
+<td>Recette fonctionnelle et préparation de la mise en service</td>
+<td><strong>A</strong>, R</td>
+<td>R (lot 2)</td>
+<td>R</td>
+<td>R (lot 3)</td>
+<td>C</td>
+</tr>
+</tbody>
+</table>
+<p>La décision de mise en service relève du comité de pilotage, présidé par le directeur départemental ; le panel est consulté pour le lot 1 et la recette.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Kanban pour le lot 1, ou méthode itérative non nommée, si les essais avec les volontaires sont au cœur de la démarche.</li>
+<li>Lot 3 conduit en agile court, si le candidat justifie la simplicité du lot et maintient des tests de contrôle stricts ; tout choix agile non encadré pour le lot 2 n'est pas accepté, faute de fiabilité et en raison des tests imposés.</li>
+<li>Maîtrise d'ouvrage confiée au groupement « Pilotage et systèmes d'information », si le groupement du volontariat est désigné comme principal représentant du métier et approbateur de la recette.</li>
+<li>Autres activités dans le tableau (formation, déploiement, conduite du changement) et autre choix de cinq acteurs (directeur départemental, panel), si la règle d'un seul approbateur est respectée.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Une seule méthode pour tout le projet</em> (<code>JUR-P02</code> deux méthodes comparées dans le contexte) — les trois lots n'ont ni le même besoin ni les mêmes contraintes.</li>
+<li><em>Agile présenté comme une absence de méthode ou de spécification</em> (ET-32 agile « sans cahier des charges » ; F05 § 9) — l'agilité suppose un Product Owner disponible et des incréments testés.</li>
+<li><em>Maîtrise d'ouvrage et maîtrise d'œuvre inversées</em> (ET-32 MOA / MOE inversées) — le métier exprime et recette, l'éditeur et le service réalisent et intègrent.</li>
+<li><em>Tableau avec plusieurs approbateurs par activité, ou sans lien avec les acteurs du cas</em> (<code>JUR-T01</code> contextualiser chaque notion) — un seul « A » par activité, et les acteurs de l'annexe 1.6.</li>
+<li><em>Choix de l'éditeur ou contrat discutés</em> (<code>JUR-T07</code> répondre à la seule question posée) — l'éditeur est retenu ; aucune procédure n'est à organiser.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The Scrum Guide (Ken Schwaber et Jeff Sutherland, novembre 2020)</td>
+<td>Product Owner, Scrum Master, Developers ; Sprint d'un mois au plus</td>
+<td><code>scrum_guide_2020</code> ; F05 § 2.2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Cycle en V, approche hybride ; acteurs, RACI</td>
+<td>choix de la méthode par composant ; MOA, MOE, comités</td>
+<td>F05 § 1 et § 2 ; F02 § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="15--la-planification-et-le-plan-qualité-du-projet-vigie-25-points">1.5 – La planification et le plan qualité du projet VIGIE (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§1.5 – Planifier, organiser et conduire des projets de systèmes d'information : <code>1.5.d</code> « Planification des ressources, délais, coûts et qualité » ; <code>1.5.f</code> « Mise en œuvre et contrôle du plan qualité ». Limite : « L'aspect budgétaire détaillé ne relève pas du programme de l'UE. »</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexes 1.6 (contraintes, calendrier de l'éditeur, exigences de qualité), 1.7 (ISO 9001), 1.1 (service des systèmes d'information et de communication, tablettes) et 1.5 (situation actuelle, pour les cibles).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Deux tensions tirées de l'annexe 1.6, chacune avec un arbitrage explicite entre ressources, délais, coûts et qualité</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Troisième tension, même exigence ; arbitrages compatibles avec les contraintes de l'annexe 1.6 (tests imposés du lot 2 maintenus, aucune mise en service touchant l'alerte entre le 15 juin et le 15 septembre)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Plan qualité défini (document qui fixe, pour un projet, les exigences de qualité, l'organisation, les règles, les contrôles et les critères d'acceptation) ; contenu pour VIGIE : exigences rendues mesurables, rôles, revues, plan de tests, anomalies et changements, critères de mise en service</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Deux indicateurs de qualité tirés des exigences de l'annexe 1.6, chacun avec formule, source, fréquence, cible et axe</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Contrôle avant la mise en service (tests en miroir des exigences, essais en zone mal couverte, rapprochement des heures en double circuit, procès-verbal de recette) et après (suivi des indicateurs en comité, traitement des écarts)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>1.5 a) – Trois tensions de planification et leurs arbitrages</em></p>
+<p>(0,5 pt pour deux tensions, 0,5 pt pour la troisième ; trois parmi les suivantes)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Tension</th>
+<th>Constat de l'annexe 1.6</th>
+<th>Arbitrage proposé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Ressources du service des systèmes d'information et de communication</strong></td>
+<td>12 informaticiens, dont la moitié du temps va à la maintenance courante ; renouvellement des 300 tablettes de septembre à décembre 2027 ; deux informaticiens au plus pour VIGIE jusqu'à la fin de 2027, quatre ensuite</td>
+<td><strong>délai plutôt que coût</strong> : faire porter l'essentiel de 2027 par le lot 1, réalisé par l'éditeur de VIGIE avec le panel, qui demande peu au service ; lancer les interfaces (lots 2 et 3), qui le mobilisent, en janvier 2028 ; ne recourir à un renfort de l'éditeur (coût supplémentaire) que si un jalon glisse ; ne pas réduire les tests (qualité)</td>
+</tr>
+<tr class="even">
+<td><strong>Disponibilité du panel</strong></td>
+<td>volontaires disponibles le soir et le week-end seulement</td>
+<td><strong>délai plutôt que qualité</strong> : Sprints de trois à quatre semaines au lieu de deux, revues le soir ou le samedi matin dans les centres, essais à distance sur les téléphones entre deux revues ; accepter un léger surcoût des séances de l'éditeur hors des heures de bureau plutôt que valider des écrans sans les volontaires</td>
+</tr>
+<tr class="odd">
+<td><strong>Saison des feux</strong></td>
+<td>du 15 juin au 15 septembre, aucune mise en service touchant le traitement de l'alerte, et le centre est en effectif renforcé</td>
+<td><strong>délai</strong> : placer les huit semaines de tests sur la plateforme de l'éditeur du logiciel de traitement de l'alerte pendant l'été 2028, puis les deux semaines d'essais au centre après le 15 septembre ; ou, si le projet est en avance, achever les dix semaines de tests avant le 15 juin ; le lot 1 et le lot 3 peuvent être essayés pendant l'été sans toucher au centre</td>
+</tr>
+<tr class="even">
+<td><strong>Échéance du support</strong></td>
+<td>support de l'outil actuel jusqu'au 31/12/2028 ; l'éditeur propose douze mois à partir de juillet 2027, soit une fin en juillet 2028, au cœur de la saison des feux</td>
+<td><strong>périmètre et délai plutôt que qualité</strong> : viser une mise en service au début d'octobre 2028, après les essais au centre, en gardant l'ancien logiciel jusque-là ; conserver une marge de près de trois mois avant la fin du support ; prioriser le carnet du lot 1 (fonctions indispensables d'abord, les autres après la mise en service) plutôt que de raccourcir les tests du lot 2 ; prévoir, en repli, une prolongation courte du support de l'outil actuel (coût), décidée par le comité de pilotage au plus tard au printemps 2028</td>
+</tr>
+</tbody>
+</table>
+<p><em>1.5 b) – Le plan qualité, deux indicateurs et le contrôle</em></p>
+<p>Le <strong>plan qualité</strong> (ou plan d'assurance qualité) est le document qui fixe, pour un projet donné, les <strong>exigences de qualité</strong> à atteindre, l'<strong>organisation</strong> et les <strong>responsabilités</strong> qui y concourent, les <strong>règles</strong> de travail (documents, versions, changements), les <strong>contrôles</strong> (revues, tests, recette) et les <strong>critères d'acceptation</strong> de chaque livrable. ISO 9001 (édition 2026), norme d'application volontaire de management de la qualité, en fournit le cadre de principe (0,5 pt avec le contenu).</p>
+<p><strong>Contenu pour VIGIE</strong> :</p>
+<ul>
+<li><strong>exigences rendues mesurables</strong> : disponibilité affichée au centre de traitement de l'alerte en moins d'une minute ; déclaration enregistrée même sans réseau et transmise dès son retour ; zéro écart entre heures enregistrées et heures indemnisées ;</li>
+<li><strong>organisation</strong> : un responsable de la qualité côté maîtrise d'ouvrage, au contrôle de gestion, indépendant du service des systèmes d'information et de communication, un correspondant chez l'éditeur, le rôle du panel dans les essais ;</li>
+<li><strong>règles</strong> : critères d'acceptation de chaque élément du carnet du lot 1 et « définition de terminé » ; spécifications validées des lots 2 et 3 ; gestion des versions et des demandes de changement, arbitrées en comité de pilotage ;</li>
+<li><strong>plan de tests</strong> : tests de l'éditeur, tests d'intégration et essais au centre imposés pour le lot 2, tests du rapprochement des heures pour le lot 3, essais de bout en bout dans des centres du Haut-Aurande, recette par la maîtrise d'ouvrage ;</li>
+<li><strong>anomalies</strong> : classement (bloquante, majeure, mineure), délais de correction, suivi ;</li>
+<li><strong>critères de mise en service</strong> : aucune anomalie bloquante, les trois exigences atteintes en recette, formation des chefs de centre faite, retour à l'ancien logiciel possible pendant un mois ;</li>
+<li><strong>suivi après la mise en service</strong> : indicateurs, revue mensuelle en comité de pilotage, puis au comité du SI.</li>
+</ul>
+<p><strong>Deux indicateurs</strong> (0,5 pt ; deux parmi les suivants) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Part des disponibilités affichées au centre de traitement de l'alerte en moins d'une minute</td>
+<td>déclarations affichées dans le logiciel de traitement de l'alerte moins d'une minute après leur enregistrement dans VIGIE / déclarations enregistrées × 100</td>
+<td>journaux horodatés de VIGIE et du logiciel de traitement de l'alerte</td>
+<td>quotidienne pendant les essais et le premier mois, puis mensuelle</td>
+<td>au moins 99 %</td>
+<td>processus</td>
+</tr>
+<tr class="even">
+<td>Taux d'écart entre heures enregistrées et heures indemnisées</td>
+<td>heures d'intervention et de garde indemnisées différentes des heures enregistrées dans VIGIE et le logiciel de traitement de l'alerte / heures enregistrées × 100</td>
+<td>rapprochement automatique entre VIGIE, le logiciel de traitement de l'alerte et le logiciel des indemnités ; réclamations des volontaires</td>
+<td>mensuelle</td>
+<td>0 % (zéro écart)</td>
+<td>processus</td>
+</tr>
+<tr class="odd">
+<td>Part des déclarations faites sans réseau transmises sans perte</td>
+<td>déclarations enregistrées hors connexion puis transmises au retour du réseau / déclarations enregistrées hors connexion × 100</td>
+<td>journaux de l'application VIGIE, par groupement territorial</td>
+<td>mensuelle</td>
+<td>100 %</td>
+<td>client</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Contrôle du respect des exigences</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>avant la mise en service</strong> : chaque exigence a ses cas de test ; mesure du délai d'affichage pendant les huit semaines de tests et les deux semaines d'essais au centre ; essais réels par le panel dans des zones mal couvertes du Haut-Aurande, téléphone sans réseau puis reconnecté ; <strong>double circuit</strong> pendant un mois pour le lot 3 : les heures transmises par VIGIE sont comparées aux états établis par les chefs de centre, et tout écart est expliqué avant la bascule ; <strong>procès-verbal de recette</strong> signé par la maîtrise d'ouvrage, avec ou sans réserves ; décision de mise en service par le comité de pilotage au vu des critères ;</li>
+<li><strong>après la mise en service</strong> : les indicateurs sont suivis chaque mois en comité de pilotage, puis au comité du SI ; tout écart d'heures ouvre une anomalie et une correction avant le paiement ; une revue de projet à trois mois mesure aussi les effets attendus (délai de paiement, réclamations, heures de ressaisie des chefs de centre).</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres tensions (formation de 3 900 volontaires, dépendance aux tests de l'éditeur du logiciel de traitement de l'alerte), si l'arbitrage est explicite ; une tension qui réunit saison des feux et échéance du support compte pour une si elle est traitée en un seul arbitrage.</li>
+<li>Mise en service progressive (lots 1 et 3 au printemps 2028 avec l'ancien lien vers le logiciel de traitement de l'alerte, lot 2 en octobre 2028), si la cohérence des disponibilités est assurée pendant la transition.</li>
+<li>Report du renouvellement des tablettes pour libérer des informaticiens, si le candidat en mesure les conséquences pour les équipages.</li>
+<li>Autres indicateurs complets tirés des exigences (part des déclarations confirmées au volontaire, délai moyen de paiement des indemnités), s'ils portent les cinq champs ; axe « financier » pour le taux d'écart des heures, s'il est justifié.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Diagramme de Gantt, chemin critique ou chiffrage construits</em> (<code>JUR-T07</code> répondre à la seule question posée ; limite du programme 1.5 sur l'aspect budgétaire) — non demandés.</li>
+<li><em>Arbitrage qui sacrifie les tests du lot 2 pour tenir la date</em> (<code>JUR-G05</code> recommander de façon réaliste) — l'alerte est un service critique, et les tests sont imposés.</li>
+<li><em>Mise en service prévue en juillet 2028, comme le propose l'éditeur</em> (<code>JUR-T08</code> exploiter toutes les annexes) — elle tombe dans la saison des feux.</li>
+<li><em>Plan qualité réduit à la recette, ou indicateurs génériques et incomplets</em> (ET-18 indicateurs génériques ; <code>JUR-A02</code> distinguer performance et qualité, justifier) — chaque indicateur traduit une exigence de l'annexe 1.6.</li>
+<li><em>Tests de sécurité ou démarche de certification proposés</em> (<code>JUR-T07</code>) — hors du sujet et hors programme.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ISO 9001 — Systèmes de management de la qualité — Exigences, 2026 (6e édition)</td>
+<td>cadre de principe du plan qualité</td>
+<td><code>iso_9001_2026</code> ; F05 § 6</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Planification, plan qualité, recette et mise en production</td>
+<td>arbitrage ressources, délais, coûts et qualité ; plan de tests ; critères de mise en service</td>
+<td>F05 § 4 et § 6</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-2--organiser-et-exploiter-les-données-des-interventions-en-maîtriser-la-conservation-13-points">DOSSIER 2 – ORGANISER ET EXPLOITER LES DONNÉES DES INTERVENTIONS, EN MAÎTRISER LA CONSERVATION (13 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Les données des interventions, des engins et des équipages</td>
+<td><code>2.1.b</code> Modélisation des données (modèles conceptuels, logiques et physiques) ; <code>2.1.e</code> Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données ; <code>2.1.a</code> Structurer et organiser les données dans le système d'information afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité avec d'autres systèmes</td>
+<td>3,5</td>
+</tr>
+<tr class="even">
+<td>2.2 L'analyse de la sollicitation opérationnelle</td>
+<td><code>2.2.a</code> Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique à l'aide d'outils de data visualisation ; <code>2.2.b</code> Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution ; <code>2.2.e</code> Représentation visuelle des résultats et formulation de diagnostics argumentés ; <code>2.2.c</code> Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model</td>
+<td>4,5</td>
+</tr>
+<tr class="odd">
+<td>2.3 La conservation des enregistrements et des comptes rendus de secours</td>
+<td><code>2.3.b</code> Étapes du cycle de vie des données : création, stockage, usage, archivage, suppression ; <code>2.3.e</code> Aspects réglementaires (RGPD, archivage légal) et monétisation des données</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>2.4 La proposition de PROTÉVANCE</td>
+<td><code>3.3.b</code> Fonctionnement des technologies de registres distribués (DLT) ; <code>3.3.c</code> Typologie des applications : traçabilité, certification, finance décentralisée, NFT ; <code>3.3.e</code> Analyse de la valeur ajoutée, des coûts et des limites d'un projet blockchain</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 2 – Organiser et exploiter les données des interventions, en maîtriser la conservation</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (modèle conceptuel, règles de passage, dictionnaire et dimensions de la qualité, chaîne de valeur et chaîne de traitement, analyse prédictive, cycle de vie, stockage et archivage électronique, principes du RGPD, chaîne de blocs de consortium) environ 2,25 points (la moitié des items 2.1 a-4, 2.1 b-1, 2.2 a-1, 2.2 c-1, 2.3 a-1, 2.3 b-1, 2.3 b-2, 2.4 a-1 et 2.4 a-2, qui mêlent définition et application) ; analyse des annexes et recommandations environ 10,75 points, soit environ 83 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 59 minutes.</p>
+<hr />
+<h3 id="21--les-données-des-interventions-des-engins-et-des-équipages-35-points">2.1 – Les données des interventions, des engins et des équipages (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.1 – Concevoir l'organisation des données et assurer leur interopérabilité : <code>2.1.b</code> « Modélisation des données (modèles conceptuels, logiques et physiques) », modèle conceptuel et modèle logique faits à la main à partir de règles de gestion écrites, avec une association ternaire ; <code>2.1.e</code> « Gouvernance de la donnée : qualité, cycle de vie, dictionnaire de données » ; <code>2.1.a</code> « Structurer et organiser les données […] afin d'en garantir la cohérence, la qualité, la circulation fluide et l'interopérabilité […] ». Aucune requête ; modèle physique seulement nommé.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.1 (fonctionnement actuel, problèmes de qualité de 2026, règles de gestion RG1 à RG8) ; annexe 1.1 (logiciel de traitement de l'alerte, application de comptes rendus sur tablettes, 60 centres, 420 engins, 50 000 interventions).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Six entités, avec leur identifiant et des attributs élémentaires tirés de RG1 à RG8 ; nature et commune traitées en entités (listes de référence), et non en texte libre</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Associations binaires et leurs cardinalités, justifiées par les règles de gestion et lues dans les deux sens (classer, situer, desservir, appartenir, mobiliser avec ses deux heures, rattacher)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Association ternaire « armer » entre l'agent, l'engin et l'intervention, porteuse du rôle, avec ses cardinalités (une intervention au moins un armement)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Règles de passage énoncées ; modèle logique de neuf tables, clés primaires, clés étrangères (#) et trois tables d'association à clé composée</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Dictionnaire des données défini et appliqué ; trois entrées complètes (définition, format, règle de validité, source, propriétaire)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Deux règles de qualité, chacune rattachée à un problème de l'annexe 2.1 B et à une dimension de la qualité</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Troisième règle de qualité, rattachée à un problème de l'annexe 2.1 B, et sa dimension (la correction à la source, le responsable désigné et le référentiel des communes partagé avec les partenaires sont valorisés, sans être exigés)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.1 a) – Le modèle conceptuel et le modèle logique</em></p>
+<p><strong>Le modèle conceptuel</strong> (0,5 pt pour les entités, 0,5 pt pour les associations binaires, 0,5 pt pour l'association ternaire) représente les objets de gestion (entités), leurs propriétés et leurs liens (associations), avec des cardinalités qui traduisent les règles de gestion, indépendamment de toute technique (F07 § 1 et 2). Les identifiants sont soulignés.</p>
+<p>Entités et attributs :</p>
+<ul>
+<li><strong>Intervention</strong> (<u>num_intervention</u>, date_appel, heure_appel, adresse) (RG1) ;</li>
+<li><strong>Nature</strong> (<u>code_nature</u>, libelle_nature) (RG2) ;</li>
+<li><strong>Commune</strong> (<u>code_commune</u>, nom_commune, population) (RG3) ;</li>
+<li><strong>Centre</strong> (<u>code_centre</u>, nom_centre, type_centre, groupement_territorial) (RG4) ;</li>
+<li><strong>Engin</strong> (<u>num_engin</u>, type_engin, date_mise_service) (RG5) ;</li>
+<li><strong>Agent</strong> (<u>matricule</u>, nom_agent, prenom_agent, statut_agent) (RG7).</li>
+</ul>
+<p>La nature et la commune sont des <strong>entités</strong>, et non de simples attributs de l'intervention : ce sont des listes de référence, avec un code et un libellé, qui imposent une valeur parmi des valeurs connues ; c'est la réponse aux 2 500 natures « autre » et aux 1 100 libellés de communes de l'annexe 2.1 B. La commune porte en outre ses propres propriétés (population) et un lien vers son centre de premier appel.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Association</th>
+<th>Entités et cardinalités</th>
+<th>Lecture (règle de gestion)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>classer</td>
+<td>Intervention <strong>1,1</strong> — Nature <strong>0,n</strong></td>
+<td>une intervention relève d'une seule nature ; une nature peut ne compter aucune intervention (RG2)</td>
+</tr>
+<tr class="even">
+<td>situer</td>
+<td>Intervention <strong>1,1</strong> — Commune <strong>0,n</strong></td>
+<td>une intervention a lieu dans une seule commune ; une commune peut n'avoir connu aucune intervention (RG3)</td>
+</tr>
+<tr class="odd">
+<td>desservir</td>
+<td>Commune <strong>1,1</strong> — Centre <strong>1,n</strong></td>
+<td>une commune relève d'un seul centre de premier appel ; un centre est le centre de premier appel d'au moins une commune (RG4)</td>
+</tr>
+<tr class="even">
+<td>appartenir</td>
+<td>Engin <strong>1,1</strong> — Centre <strong>1,n</strong></td>
+<td>un engin appartient à un seul centre ; un centre possède au moins un engin (RG5)</td>
+</tr>
+<tr class="odd">
+<td>mobiliser (heure_depart, heure_arrivee)</td>
+<td>Intervention <strong>1,n</strong> — Engin <strong>0,n</strong></td>
+<td>une intervention mobilise au moins un engin ; un engin peut n'avoir été engagé sur aucune intervention ; les deux heures dépendent du couple intervention-engin (RG6)</td>
+</tr>
+<tr class="even">
+<td>rattacher</td>
+<td>Agent <strong>1,n</strong> — Centre <strong>1,n</strong></td>
+<td>un agent est rattaché à au moins un centre ; un centre compte au moins un agent (RG7)</td>
+</tr>
+<tr class="odd">
+<td>armer (role)</td>
+<td>Agent <strong>0,n</strong> — Engin <strong>0,n</strong> — Intervention <strong>1,n</strong></td>
+<td>sur une intervention, un agent arme un engin dans un seul rôle ; une intervention compte au moins un armement ; un agent ou un engin peut n'en avoir aucun (RG8)</td>
+</tr>
+</tbody>
+</table>
+<p>L'association <strong>armer</strong> est <strong>ternaire</strong> : le rôle ne dépend pas du seul couple agent-intervention, car sur une même intervention un agent peut armer successivement deux engins, dans des rôles différents (RG8) ; il ne dépend pas non plus du seul couple agent-engin, car un agent qui arme le même engin sur deux interventions peut y être conducteur puis chef d'agrès ; il dépend du triplet agent-engin-intervention. Un même agent n'a qu'un rôle sur un engin donné d'une intervention donnée. Les heures de départ et d'arrivée sont, elles, des attributs de l'association binaire <strong>mobiliser</strong> : elles dépendent de l'engin et de l'intervention, pas de l'agent. Le modèle n'exprime pas, par ses seules clés, qu'un agent n'arme qu'un engin effectivement engagé sur l'intervention : c'est une contrainte d'inclusion (armer ⊂ mobiliser) à contrôler par une règle applicative (valorisé, non exigé).</p>
+<p><strong>Le modèle logique</strong> (0,5 pt) s'obtient par les règles de passage (F07 § 4) :</p>
+<ol type="1">
+<li>chaque entité devient une table, dont l'identifiant devient la clé primaire et dont les attributs deviennent des colonnes ;</li>
+<li>pour une association binaire dont une patte a une cardinalité maximale 1 (classer, situer, desservir, appartenir), l'identifiant de l'entité du côté n migre comme clé étrangère dans la table de l'entité du côté 1, toujours renseignée si la cardinalité est 1,1 ;</li>
+<li>une association dont toutes les pattes ont une cardinalité maximale n (mobiliser, rattacher), et toute association ternaire (armer), devient une table dont la clé primaire est composée des identifiants des entités reliées, chacun clé étrangère ; les attributs de l'association en deviennent des colonnes.</li>
+</ol>
+<ul>
+<li>Nature (<u>code_nature</u>, libelle_nature)</li>
+<li>Centre (<u>code_centre</u>, nom_centre, type_centre, groupement_territorial)</li>
+<li>Commune (<u>code_commune</u>, nom_commune, population, #code_centre)</li>
+<li>Engin (<u>num_engin</u>, type_engin, date_mise_service, #code_centre)</li>
+<li>Agent (<u>matricule</u>, nom_agent, prenom_agent, statut_agent)</li>
+<li>Intervention (<u>num_intervention</u>, date_appel, heure_appel, adresse, #code_nature, #code_commune)</li>
+<li>Engagement (<u>#num_intervention, #num_engin</u>, heure_depart, heure_arrivee)</li>
+<li>Rattachement (<u>#matricule, #code_centre</u>)</li>
+<li>Armement (<u>#matricule, #num_engin, #num_intervention</u>, role)</li>
+</ul>
+<p>Dans Commune, <code>#code_centre</code> désigne le centre de premier appel ; dans Engin, le centre d'appartenance : ce sont deux associations différentes vers la même table. Le modèle physique (types, index sur les clés étrangères, liste fermée des rôles) se déduirait du modèle logique ; il n'est pas demandé. Les noms et prénoms des agents sont des données personnelles : le modèle s'en tient à ce qui sert à l'activité opérationnelle (minimisation).</p>
+<p><em>2.1 b) – Le dictionnaire des données et les règles de qualité</em></p>
+<p><strong>Le dictionnaire des données</strong> (0,5 pt avec les trois entrées) est le référentiel qui décrit chaque donnée : nom, définition, type et format, domaine de valeurs ou règle de validité, source, propriétaire, sensibilité (F07 § 1). Il donne à tous, au centre de traitement de l'alerte, dans les centres et à l'observatoire, le même sens d'une donnée : c'est lui qui dira ce qu'est l'« heure d'arrivée » ou une « nature ». Trois entrées parmi les suivantes :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Définition</th>
+<th>Type et format</th>
+<th>Règle de validité</th>
+<th>Source</th>
+<th>Propriétaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>heure_arrivee</td>
+<td>heure à laquelle l'engin arrive sur les lieux de l'intervention</td>
+<td>date et heure, jj/mm/aaaa hh:mm</td>
+<td>obligatoire pour clôturer l'engagement ; postérieure à l'heure de départ ; toute saisie après coup est tracée (auteur, date)</td>
+<td>tablette de l'engin (bouton du chef d'agrès)</td>
+<td>groupement des opérations</td>
+</tr>
+<tr class="even">
+<td>code_nature</td>
+<td>nature de l'intervention</td>
+<td>code de la table Nature (quatre valeurs)</td>
+<td>valeur de la liste ; une nature provisoire choisie à l'appel est confirmée ou corrigée à la clôture ; tout changement de liste est daté</td>
+<td>logiciel de traitement de l'alerte (opérateur), confirmée par le chef d'agrès</td>
+<td>groupement des opérations</td>
+</tr>
+<tr class="odd">
+<td>code_commune</td>
+<td>commune du lieu de l'intervention</td>
+<td>code de la table Commune (480 communes)</td>
+<td>valeur du référentiel des communes ; aucune saisie libre</td>
+<td>localisation du logiciel, ou choix dans la liste</td>
+<td>observatoire de l'activité</td>
+</tr>
+<tr class="even">
+<td>role</td>
+<td>rôle de l'agent sur l'engin pour l'intervention</td>
+<td>liste : chef d'agrès, conducteur, équipier</td>
+<td>un seul chef d'agrès et un seul conducteur par engin et par intervention</td>
+<td>équipage enregistré au départ, corrigé dans le logiciel</td>
+<td>groupement des opérations</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trois règles de qualité</strong> (0,5 pt pour deux règles, 0,5 pt pour la troisième), chacune rattachée à un problème de l'annexe 2.1 B et à une dimension de la qualité des données (F07 § 8.3) :</p>
+<ol type="1">
+<li><strong>Contre les heures d'arrivée manquantes – complétude.</strong> La tablette ne permet pas de clôturer l'engagement sans heure d'arrivée ; si le chef d'agrès a oublié le bouton, il la saisit à la clôture, et la saisie est marquée « déclarée après coup ». Un départ sur dix (7 000) n'a aujourd'hui pas d'heure d'arrivée : ce sont autant de données manquantes pour mesurer le délai d'arrivée, premier objectif du projet d'établissement.</li>
+<li><strong>Contre les natures « autre » – exactitude.</strong> La nature « autre » disparaît de la liste : l'opérateur choisit une nature provisoire, que le chef d'agrès confirme ou corrige à la clôture, d'après le compte rendu ; la correction est tracée. Les 15 jours de reclassement à la main de janvier deviennent inutiles, et une intervention sur vingt n'est plus classée au jugé.</li>
+<li><strong>Contre les équipages incomplets – exactitude et cohérence.</strong> Un remplacement au dernier moment est corrigé dans le logiciel de traitement de l'alerte, avant ou juste après le départ, par le chef d'agrès ou le centre, et non dans un tableur ; il n'existe qu'une source de l'équipage. Les 3 500 départs, un sur vingt, ressaisis aujourd'hui dans des tableurs de centre, sont autant de versions divergentes de la même donnée.</li>
+<li><strong>Contre les communes mal orthographiées – unicité et cohérence.</strong> La commune est choisie dans le référentiel des 480 communes (table Commune, identifiée par un code), jamais saisie en texte libre ; les 1 100 libellés actuels sont rapprochés une fois de ce référentiel, avec une table de correspondance conservée. Le même code de commune, partagé avec le département et les communes, rend les données échangeables avec eux (interopérabilité sémantique), comme le veut le projet d'établissement.</li>
+</ol>
+<p><strong>Conclusion</strong> : ces règles corrigent les données <strong>à la source</strong>, au moment où elles naissent (alerte, tablette, départ), plutôt qu'à chaque extraction mensuelle de l'observatoire ; elles supposent un propriétaire désigné pour chaque donnée (groupement des opérations, observatoire) et des listes de référence uniques.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Rôle traité en entité (Role, avec un code et un libellé) : l'association armer relie alors quatre entités, ou le rôle devient une clé étrangère de la table Armement, si le candidat le justifie par la liste fermée des rôles.</li>
+<li>Armement modélisé comme une association entre l'agent et l'engagement (association mobiliser traitée en entité, ou agrégation), si la clé reste agent-engin-intervention et le rôle porté par elle ; cette solution exprime d'ailleurs mieux la contrainte d'inclusion.</li>
+<li>Groupement territorial traité en entité reliée au centre ; attributs supplémentaires plausibles (dates de rattachement, coordonnées du lieu, immatriculation de l'engin).</li>
+<li>Cardinalité 0,n du centre dans desservir ou appartenir, si le candidat suppose un centre sans commune de premier appel ou sans engin propre, et le dit.</li>
+<li>Représentation graphique en notation Merise ou en « pattes de corbeau », si elle est lisible (<code>JUR-T10</code>).</li>
+<li>Autres entrées du dictionnaire (num_intervention, heure_depart, population), si elles portent les mêmes rubriques ; trois règles parmi les quatre, ou une autre dimension justifiée (actualité pour les équipages).</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Modèle conceptuel et modèle logique confondus</em> (<code>ET-23</code>) — clés étrangères dans le modèle conceptuel, ou clé étrangère placée du mauvais côté (#num_engin dans Centre).</li>
+<li><em>Association ternaire décomposée en deux binaires</em> — agent-engin et agent-intervention séparées : on ne sait plus quel agent a armé quel engin sur quelle intervention, ni dans quel rôle.</li>
+<li><em>Heures de départ et d'arrivée placées dans Intervention ou dans Engin</em> — elles dépendent du couple intervention-engin (RG6).</li>
+<li><em>Morceau de cours</em> (<code>JUR-T01</code>) — définition du dictionnaire ou des dimensions de la qualité sans les problèmes chiffrés de l'annexe 2.1 B ; règles « vérifier la qualité » sans contrôle précis.</li>
+<li><em>Requêtes écrites</em> (<code>JUR-T07</code>) — la question n'en demande aucune.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Modèle conceptuel, cardinalités, association ternaire, règles de passage, modèle logique</td>
+<td>définitions et méthode</td>
+<td>F07 § 1 à 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Dictionnaire des données ; dimensions de la qualité (complétude, exactitude, unicité, cohérence, actualité)</td>
+<td>définitions</td>
+<td>F07 § 1 et 8.3 ; F08 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Interopérabilité sémantique (référentiel commun)</td>
+<td>principe</td>
+<td>F07 § 7</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22--lanalyse-de-la-sollicitation-opérationnelle-45-points">2.2 – L'analyse de la sollicitation opérationnelle (4,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.2 – Collecter, traiter, analyser et interpréter des données à des fins décisionnelles : <code>2.2.a</code> « Maîtriser l'ensemble de la chaîne de valeur des données pour produire des analyses pertinentes et éclairer la décision stratégique […] » ; <code>2.2.b</code> « Chaîne de traitement des données : collecte, nettoyage, structuration, analyse, restitution » ; <code>2.2.e</code> « Représentation visuelle des résultats et formulation de diagnostics argumentés » ; <code>2.2.c</code> « Méthodologies d'analyse de données (descriptive, exploratoire, prédictive) adaptées au business model ». Limites : aucun calcul statistique, aucun développement d'algorithme ; lecture critique des corrélations et des biais, reliée à la stratégie.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.2 (interventions par nature et par an, séries complémentaires, reclassement de 2024, interface défaillante de 2025, touristes, épisodes de chaleur, affirmation de M. PRUNEVAUX) ; annexe 2.1 (extraction mensuelle dans un tableur, problèmes de qualité) ; annexe 1.1 (640 000 habitants, projet d'établissement).</p>
+<p><strong>Barème indicatif (4,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Chaîne de valeur des données définie ; collecte et nettoyage, chacune avec une limite de l'annexe 2.2 ou un problème de qualité de l'annexe 2.1 B (interface défaillante de 2025 ; natures « autre », communes)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Structuration et analyse, chacune avec une limite (reclassement de 2024 ; touristes, séries qui se recoupent)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Restitution et décision, avec une limite (ruptures non signalées) ; conclusion</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Deux constats argumentés et chiffrés, avec leur portée</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Troisième constat argumenté et chiffré</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Affirmation appréciée : part réelle du vieillissement (environ un tiers de la hausse) ; carences, reclassement, nuit, saisonnalité ; corrélation et causalité ; conclusion sur le recrutement</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Analyse prédictive définie et distinguée de la descriptive ; apport au SDIS (pics de l'été et des épisodes de chaleur, gardes)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Deux conditions de réussite et deux limites, appliquées au cas</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-3</td>
+<td>Carte des communes en taux pour 1 000 habitants, justifiée (comparaison de communes de tailles différentes) ; précautions (touristes, petites communes)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.2 a) – La chaîne de valeur des données et la chaîne de traitement de la sollicitation</em></p>
+<p><strong>La chaîne de valeur des données</strong> (0,5 pt avec la collecte et le nettoyage) est l'ensemble des étapes par lesquelles une donnée brute devient une information utile, puis une décision et une action : collecte, nettoyage, structuration et stockage, analyse, restitution, décision (F08 § 1). La valeur ne se crée qu'au bout de la chaîne, mais elle se perd à chaque étape mal tenue : une erreur de collecte n'est pas rattrapée par l'analyse. La chaîne de traitement en est le cœur technique et organisationnel. Pour la sollicitation opérationnelle :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Ce que fera la chaîne</th>
+<th>Limite traitée (annexe 2.2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Collecte</strong></td>
+<td>extraction des interventions du logiciel de traitement de l'alerte, avec la nature, la commune, les heures ; âge de la victime tiré des comptes rendus ; population résidente et fréquentation touristique, données externes ; contrôle d'exhaustivité (chaque numéro d'intervention du logiciel est retrouvé dans la base)</td>
+<td>l'interface défaillante de mars et avril 2025 a fait perdre environ 1 000 interventions sans que personne ne s'en aperçoive ; elles existent dans le logiciel et doivent être rechargées</td>
+</tr>
+<tr class="even">
+<td><strong>Nettoyage</strong></td>
+<td>application des règles de la question 2.1 : natures « autre » corrigées, communes rapprochées du référentiel, heures manquantes marquées ; journal des rejets</td>
+<td>une intervention sur vingt classée « autre » et 1 100 libellés de communes faussent la répartition par nature et par commune</td>
+</tr>
+<tr class="odd">
+<td><strong>Structuration</strong></td>
+<td>chargement dans une base historisée, alimentée automatiquement et non plus par un tableur ; table de correspondance des natures qui recalcule 2022 et 2023 selon la liste de 2024 ; définitions écrites (carence, nuit de 18 heures à 8 heures, âge)</td>
+<td>le reclassement de 2024 (environ 2 000 relevages par an) rend 2022 et 2023 incomparables avec les années suivantes</td>
+</tr>
+<tr class="even">
+<td><strong>Analyse</strong></td>
+<td>comparaisons à nomenclature constante, par saison, par tranche horaire, par commune ; taux rapportés à la population présente l'été ; séries croisées sans les additionner</td>
+<td>jusqu'à 100 000 touristes en juillet et août ne sont pas dans les 640 000 habitants ; carences et personnes âgées se recoupent</td>
+</tr>
+<tr class="odd">
+<td><strong>Restitution et décision</strong></td>
+<td>tableaux et graphiques pour la direction et le conseil d'administration, annotés des ruptures (2024, 2025) et accompagnés d'une note de méthode ; décisions sur les gardes et les partenariats</td>
+<td>des chiffres publiés sans ces annotations font croire à une hausse du secours d'urgence aux personnes de 8 000 interventions, au lieu de 6 000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusion</strong> (0,5 pt avec la restitution) : les limites de l'annexe 2.2 ne sont pas des erreurs de calcul, mais des ruptures non documentées (reclassement, interface, population de référence). La chaîne les traite en amont, par des contrôles et des règles écrites, plutôt que par des corrections à la main dans le tableur de l'observatoire ; c'est la condition pour que le conseil d'administration décide sur des chiffres fiables.</p>
+<p><em>2.2 b) – Trois constats et l'affirmation de M. PRUNEVAUX</em></p>
+<p><strong>Trois constats</strong> parmi les suivants (0,5 pt pour deux constats, 0,5 pt pour le troisième : le fait chiffré, son interprétation et sa portée) :</p>
+<ol type="1">
+<li><strong>Une hausse réelle, portée par les secours d'urgence aux personnes.</strong> Les interventions passent de 43 000 à 50 000 en quatre ans (+ 7 000, environ + 16 %). À nomenclature constante, le secours d'urgence aux personnes passe de 33 000 à 39 000 (+ 6 000, environ + 18 %), et non de 31 000 à 39 000 : 2 000 de la hausse apparente viennent du reclassement de 2024. Les autres natures sont presque stables (de 10 000 à 11 000 à nomenclature constante).</li>
+<li><strong>Les carences ont doublé.</strong> De 3 000 à 6 000, elles expliquent à elles seules la moitié de la hausse réelle du secours d'urgence aux personnes et en représentent environ 15 % en 2026. Ce sont des interventions sans caractère d'urgence, faites faute d'autre moyen : une partie de la hausse ne relève pas de l'urgence.</li>
+<li><strong>Les personnes âgées pèsent davantage.</strong> Les interventions pour des personnes de 80 ans et plus à domicile passent de 10 000 à 12 500 (+ 2 500, environ + 25 %), plus vite que l'ensemble ; une partie de ces interventions sont aussi des carences.</li>
+<li><strong>La sollicitation se déplace vers la nuit et vers l'été.</strong> La part de nuit du secours d'urgence aux personnes passe de 40 % à 45 % ; l'écart entre les mois d'été et d'hiver passe de 900 à 1 200 interventions par mois, et les épisodes de chaleur de juillet 2026 ont porté l'activité à 1 500 interventions par semaine, contre 1 100 environ. Les pics, plus que la moyenne, dimensionnent les besoins.</li>
+<li><strong>2025 est sous-estimée.</strong> Environ 1 000 interventions manquent : 2025 compte en réalité environ 47 000 interventions, et la hausse de 2025 à 2026 est d'environ 3 000, et non de 4 000.</li>
+</ol>
+<p><strong>L'affirmation de M. PRUNEVAUX</strong> (0,5 pt) est en partie fondée, mais incomplète et sa conclusion ne suit pas :</p>
+<ul>
+<li>le vieillissement joue : + 2 500 interventions pour des personnes de 80 ans et plus, soit environ un tiers de la hausse de 7 000 ; il n'explique pas les deux autres tiers ;</li>
+<li>deux évolutions qui vont de pair ne prouvent pas que l'une cause l'autre : le vieillissement, les carences et la hausse des interventions évoluent ensemble, et les séries se recoupent (<code>ET-26</code>) ;</li>
+<li>les carences (+ 3 000) traduisent un manque d'autres moyens (ambulances privées, médecins de garde) : la réponse passe par la coordination avec le centre de régulation médicale du SAMU et le partage des données avec lui, objectif du projet d'établissement, plus que par de nouveaux volontaires ;</li>
+<li>une partie de la hausse <strong>du secours d'urgence aux personnes</strong> est artificielle : 2 000 relevages reclassés en 2024, sans effet sur le total ; et le saut de 2025 à 2026 (+ 4 000) est gonflé par une année 2025 sous-estimée d'environ 1 000 ; la hausse totale de 7 000 entre 2022 et 2026, elle, est réelle ;</li>
+<li>la pression se concentre la nuit et l'été (touristes, chaleur) : recruter des volontaires augmente les moyens, mais ne réduit pas la demande, et ne règle rien si ces moyens ne sont pas présents aux bonnes heures, aux bonnes saisons et dans les bonnes communes.</li>
+</ul>
+<p>Conclusion : le recrutement peut faire partie de la réponse, mais le conseil d'administration doit d'abord disposer de chiffres à nomenclature constante, distinguer l'urgence des carences, et traiter celles-ci avec les partenaires.</p>
+<p><em>2.2 c) – L'analyse prédictive et la représentation par commune</em></p>
+<p><strong>L'analyse prédictive</strong> (0,5 pt avec l'apport) estime ce qui va probablement se produire (combien d'interventions, où, quand), à partir de l'historique et de facteurs explicatifs (calendrier, météo, fréquentation touristique), avec une marge d'incertitude. Elle se distingue de l'analyse descriptive, qui dit ce qui s'est passé, et de l'analyse exploratoire, qui explore les données pour y repérer des profils, des motifs ou des anomalies (F08 § 2). Pour le SDIS, elle permettrait d'anticiper, semaine par semaine et par groupement territorial, les pics de l'été et des épisodes de chaleur (1 500 interventions par semaine en juillet 2026), d'adapter les gardes et le nombre d'agents d'astreinte aux heures de nuit et aux semaines chargées, de prépositionner des engins dans le Haut-Aurande l'été et de prévenir les partenaires.</p>
+<p><strong>Deux conditions</strong> parmi (0,5 pt avec les deux limites) : un historique fiable et homogène sur plusieurs années (règles de la question 2.1, nomenclature recalculée, 2025 complétée) ; des données externes obtenues des partenaires (prévisions météorologiques, fréquentation touristique) ; des compétences d'analyse à l'observatoire et une validation humaine des prévisions par le groupement des opérations, qui garde la décision ; des données agrégées, sans donnée personnelle des victimes. <strong>Deux limites</strong> parmi : l'avenir ne reproduit pas forcément le passé (épisode exceptionnel, changement des pratiques des partenaires, <code>JUR-D06</code>) ; les petites communes comptent trop peu d'interventions pour une prévision fiable ; les biais des données passées (sous-enregistrement de 2025, natures « autre ») se retrouvent dans les prévisions ; une prévision donne un ordre de grandeur, pas une certitude, et ne dit pas pourquoi. Aucun développement d'algorithme n'est attendu.</p>
+<p><strong>La représentation</strong> (0,5 pt) : une <strong>carte des 480 communes colorée selon le taux d'interventions pour 1 000 habitants</strong> (carte choroplèthe), en quatre ou cinq classes, avec la légende, la source et l'année ; de préférence deux cartes à la même échelle, l'été et l'hiver. La carte montre la géographie de la sollicitation, que lit immédiatement un conseil composé d'élus des communes ; le taux permet de comparer des communes de tailles très différentes, alors qu'une carte en nombre d'interventions ne montrerait que Montcerneau et les grandes communes. Précautions : l'été, le taux calculé sur les seuls résidents surestime la sollicitation des communes touristiques du Haut-Aurande ; les petites communes, aux chiffres faibles, peuvent être regroupées. À éviter : un graphique en secteurs à 480 parts, un tableau de chiffres bruts.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres étapes de la chaîne (stockage distinct de la structuration, décision et action en étape propre), si chacune porte une limite de l'annexe 2.2.</li>
+<li>Autres constats tirés de l'annexe (incendies en hausse en 2026, accidents stables), s'ils sont chiffrés et interprétés.</li>
+<li>Appréciation de l'affirmation plus ou moins sévère, si elle s'appuie sur les chiffres de l'annexe et distingue la part du vieillissement du reste.</li>
+<li>Carte en symboles proportionnels complétée d'un taux, ou carte par groupement territorial assortie d'un tableau des communes les plus sollicitées, si le choix est justifié.</li>
+<li>Analyse prescriptive évoquée en complément (proposer le nombre d'agents de garde), si elle reste une aide à la décision humaine.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Corrélation présentée comme causalité</em> (<code>ET-26</code>) — « la population vieillit, donc les interventions augmentent », sans mesurer la part du vieillissement.</li>
+<li><em>Reclassement présenté comme une cause de la hausse totale</em> — il déplace 2 000 interventions des opérations diverses vers le secours d'urgence aux personnes, sans changer le total de 43 000 à 50 000.</li>
+<li><em>Chiffres lus sans les ruptures</em> (<code>JUR-D06</code>) — hausse du secours d'urgence aux personnes de 8 000 prise telle quelle ; baisse des opérations diverses en 2024 interprétée comme une amélioration.</li>
+<li><em>Chaîne réduite à un outil</em> (<code>ET-05</code>, <code>JUR-D01</code>) — « il suffit d'un logiciel de tableaux de bord », sans collecte, nettoyage ni structuration.</li>
+<li><em>Calcul statistique ou algorithme</em> (<code>JUR-T07</code>) — coefficients, régressions ou modèle à programmer : hors attente.</li>
+<li><em>Carte en valeurs absolues</em> — elle reflète la taille des communes, non leur sollicitation.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chaîne de valeur des données, chaîne décisionnelle (collecte, nettoyage, structuration, analyse, restitution)</td>
+<td>définitions et méthode</td>
+<td>F08 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Analyses descriptive, exploratoire, prédictive</td>
+<td>définitions</td>
+<td>F08 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Choix d'une représentation, carte en taux, biais, corrélation et causalité</td>
+<td>méthode</td>
+<td>F08 § 5</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23--la-conservation-des-enregistrements-et-des-comptes-rendus-de-secours-3-points">2.3 – La conservation des enregistrements et des comptes rendus de secours (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§2.3 – Élaborer et piloter la gouvernance stratégique des données : <code>2.3.b</code> « Étapes du cycle de vie des données : création, stockage, usage, archivage, suppression », durées de conservation données par l'énoncé ; <code>2.3.e</code> « Aspects réglementaires (RGPD, archivage légal) […] », en principe, sans analyse juridique. Limites : ni prérogatives des personnes sur leurs données, ni fondement juridique des traitements (UE 1) ; aucune durée tirée d'un texte.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.3 (enregistrements, comptes rendus, demandes de copies, enregistrement non retrouvé, durées fixées par le SDIS) ; annexe 2.5 (principes du RGPD, NF Z42-013 et ISO 14641, ISO 15489-1) ; annexe 1.1 (enregistreur des appels, application de comptes rendus, déléguée à la protection des données, médecin-chef).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Cycle de vie des enregistrements, de la création à la destruction, une règle par étape (horodatage et lien avec l'intervention, accès, gel, destruction à deux ans)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Cycle de vie des comptes rendus, une règle par étape (création structurée, usage courant deux ans, archivage jusqu'à vingt ans, destruction)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Règles transversales appliquées au cas : demandes de copies centralisées et tracées, fin des copies en PDF et sur clés, rattrapage du stock existant</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Stockage et archivage électronique distingués et appliqués (serveur et enregistreur actuels : du stockage)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Ce que le RGPD impose (limitation de la conservation, sécurité renforcée des données de santé, registre) et ce que les normes apportent (intégrité, pérennité, traçabilité, preuve), en principe</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Trois mesures précises, rattachées aux constats de l'annexe 2.3</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.3 a) – Le cycle de vie des enregistrements et des comptes rendus</em></p>
+<p>Le cycle de vie d'une donnée va de sa <strong>création</strong> à sa <strong>suppression</strong>, en passant par le <strong>stockage</strong>, l'<strong>usage</strong> et l'<strong>archivage</strong> (F07 § 8.4) ; chaque étape a une règle, une durée et un responsable. Les durées sont celles que le SDIS a fixées le 15/03/2027 (annexe 2.3 D).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Enregistrements des appels</th>
+<th>Comptes rendus de secours</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Création</strong></td>
+<td>enregistrement automatique de l'appel ; règle : horloge de l'enregistreur synchronisée sur une heure de référence, et numéro de l'intervention associé à l'enregistrement dès sa création (métadonnée)</td>
+<td>rédaction sur la tablette, dans des champs structurés, rattachée au numéro de l'intervention ; règle : une fois validé, le compte rendu n'est plus modifié, toute correction crée une nouvelle version datée</td>
+</tr>
+<tr class="even">
+<td><strong>Stockage et usage courant</strong></td>
+<td>conservation dans l'enregistreur pendant deux ans ; règle : écoute réservée aux personnes habilitées du centre de traitement de l'alerte, chaque écoute et chaque copie journalisées</td>
+<td>consultation courante pendant deux ans, sur le serveur ; règle : accès réservé au service de santé et aux personnes habilitées, selon leur profil, journalisé ; aucune copie en PDF dans les messageries</td>
+</tr>
+<tr class="odd">
+<td><strong>Gel en cas de demande</strong></td>
+<td>si une demande portant sur l'intervention est en cours (justice, litige), l'enregistrement est copié, avec son empreinte, dans l'archive, et exclu de la destruction jusqu'à la fin de la procédure</td>
+<td>même règle : le compte rendu demandé est gelé, et la copie remise est tracée</td>
+</tr>
+<tr class="even">
+<td><strong>Archivage</strong></td>
+<td>sans objet, sauf enregistrement gelé</td>
+<td>au-delà de deux ans, versement dans un système d'archivage électronique jusqu'à vingt ans après l'intervention ; règle : format pérenne, empreinte, journal des accès, consultation sur demande motivée seulement, validée par le médecin-chef</td>
+</tr>
+<tr class="odd">
+<td><strong>Destruction</strong></td>
+<td>à deux ans, destruction automatique, consignée dans un journal (quoi, quand, par qui), sauf gel</td>
+<td>à vingt ans, destruction proposée automatiquement, validée par le médecin-chef, sous le contrôle de la déléguée à la protection des données, et consignée</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Règles transversales</strong> (0,5 pt) : les 400 demandes de copies de 2026 passent par un point d'entrée unique (une cellule rattachée à la direction, avec le centre de traitement de l'alerte et le médecin-chef), la déléguée à la protection des données étant consultée sur les règles et en contrôlant l'application ; elles sont inscrites dans un registre, avec un délai cible ; les copies sur clés USB et par messagerie cessent ; les 3 000 PDF trouvés dans dix messageries, et ceux des autres, sont supprimés. Le stock existant est remis en ordre une fois : les enregistrements de plus de deux ans, ceux de 2017 à 2024 environ, de l'ordre de 1,2 million, sont détruits, sauf ceux qui font l'objet d'une demande en cours ; les comptes rendus de plus de deux ans sont versés à l'archive. Avec ces règles, l'appel de novembre 2024 demandé en septembre 2026, encore dans le délai de deux ans, aurait été retrouvé par le numéro de l'intervention.</p>
+<p><em>2.3 b) – Stockage et archivage électronique, ce qu'imposent et apportent le RGPD et les normes, trois mesures</em></p>
+<p><strong>Stockage et archivage électronique</strong> (0,5 pt) ne se confondent pas. Le <strong>stockage</strong> conserve des données sur un support pour leur usage courant : elles restent modifiables, se copient et se perdent, sans garantie dans la durée. L'<strong>archivage électronique</strong> conserve, pour une durée fixée, des documents qui ne sont plus d'usage courant, dans un système qui en garantit l'intégrité (aucune modification non tracée), la pérennité (lisibilité dans le temps, formats pérennes) et la traçabilité (journaux de toutes les opérations), et qui en organise le sort final (F06 § 4 et 5). Une sauvegarde, qui sert à restaurer un système, n'est pas un archivage. Au SDIS, l'enregistreur et le serveur des comptes rendus ne font que du <strong>stockage</strong> : 1,5 million d'enregistrements sans tri, un serveur occupé à 85 %, des copies partout et un enregistrement introuvable le jour où la justice le demande.</p>
+<p><strong>Ce que le RGPD impose</strong> (0,5 pt avec les normes ; en principe, annexe 2.5, sans analyse juridique) : les enregistrements, qui contiennent la voix et souvent l'identité des appelants, et les comptes rendus, qui contiennent des données de santé, sont des données personnelles ; ils ne peuvent être conservés que pendant une durée limitée, fixée selon la finalité : la conservation sans limite actuelle ne respecte pas ce principe, alors que le SDIS a désormais des durées. Le registre des activités de traitement doit les indiquer (F15 § 2). La minimisation proscrit les copies inutiles en PDF ; les données de santé appellent une protection renforcée (accès restreints, journalisés) ; la déléguée à la protection des données conseille et contrôle. <strong>Ce que les normes apportent</strong> : NF Z42-013 et son équivalent international ISO 14641 sont des normes d'application volontaire, et non des obligations ; elles décrivent comment concevoir et exploiter un système d'archivage électronique qui garantit l'intégrité, la pérennité et la traçabilité, ce qui permet de produire, quinze ans après, un compte rendu qui puisse servir de preuve dans un litige. ISO 15489-1 donne le principe d'ensemble : des règles écrites pour chaque catégorie de documents, de la création au sort final.</p>
+<p><strong>Trois mesures</strong> parmi (0,5 pt) :</p>
+<ol type="1">
+<li><strong>Une politique de conservation écrite et appliquée</strong> : les durées du 15/03/2027 sont inscrites au registre des activités de traitement, paramétrées dans l'enregistreur et sur le serveur (purge automatique et journalisée), avec la procédure de gel ; la déléguée à la protection des données en contrôle l'application chaque année.</li>
+<li><strong>Un système d'archivage électronique conforme aux principes de NF Z42-013</strong> pour les comptes rendus de plus de deux ans et les enregistrements gelés : formats pérennes, empreintes, journal des accès, accès réservé au service de santé.</li>
+<li><strong>Un point d'entrée unique des demandes de copies</strong> : registre des 400 demandes annuelles, copie tracée et remise par un canal sécurisé, fin des clés USB et des copies en messagerie, suppression des PDF existants.</li>
+<li><strong>Des métadonnées qui rendent les données retrouvables</strong> : numéro d'intervention associé à chaque enregistrement et à chaque compte rendu, horloges synchronisées sur une heure de référence, contrôle de l'horloge après chaque panne.</li>
+<li><strong>Des habilitations par profil</strong> : écoute des enregistrements réservée au centre de traitement de l'alerte, lecture des comptes rendus au service de santé, revue annuelle des droits.</li>
+</ol>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Cycle en trois âges (courant, intermédiaire, définitif ou destruction) au lieu des cinq étapes du programme, s'il est appliqué aux deux catégories avec une règle par étape.</li>
+<li>Archivage intermédiaire des enregistrements entre six mois et deux ans, si la durée totale de deux ans est respectée.</li>
+<li>Responsable différent du point d'entrée des demandes (centre de traitement de l'alerte pour les enregistrements, médecin-chef pour les comptes rendus), si la demande est enregistrée et tracée. Valorisé : la déléguée à la protection des données conseille et contrôle sans traiter elle-même les demandes ni décider des destructions (indépendance, F15 § 1).</li>
+<li>Prestataire d'archivage externe évoqué, si le candidat garde les exigences d'intégrité, d'accès restreint et de réversibilité, sans développer l'hébergement.</li>
+<li>Trois mesures parmi les cinq, ou d'autres mesures précises et rattachées à l'annexe 2.3.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Stockage et archivage confondus</em> — « le serveur archive les comptes rendus », ou sauvegarde présentée comme un archivage.</li>
+<li><em>Durée tirée d'un texte de loi</em> (<code>JUR-T07</code>) — les durées sont celles fixées par le SDIS et données par l'annexe ; aucune n'est à citer ni à discuter.</li>
+<li><em>Dérive juridique</em> (<code>JUR-T07</code>) — développements sur les prérogatives des familles ou des avocats, ou sur le fondement juridique des traitements (UE 1) : la question porte sur l'organisation de la conservation.</li>
+<li><em>Norme présentée comme une obligation ou comme une solution</em> (<code>ET-01</code>) — norme d'archivage présentée comme imposée au SDIS, ou comme un produit à installer : elle est d'application volontaire et décrit des exigences, que l'outil choisi doit respecter.</li>
+<li><em>Destruction sans gel</em> — détruire à deux ans un enregistrement qui fait l'objet d'une demande en cours.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cycle de vie des données (création, stockage, usage, archivage, suppression)</td>
+<td>définition et méthode</td>
+<td>F07 § 8.4 ; F06 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD) : minimisation, limitation de la conservation, données de santé, registre des activités de traitement</td>
+<td>principes donnés en annexe 2.5</td>
+<td><code>rgpd</code> / F15 § 2</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+<tr class="odd">
+<td>NF Z42-013, archivage électronique</td>
+<td>intégrité, pérennité, traçabilité, en principe</td>
+<td><code>nf_z42_013</code> / F06 § 5</td>
+<td>en vigueur, norme volontaire</td>
+</tr>
+<tr class="even">
+<td>ISO 14641, archivage électronique</td>
+<td>équivalent international de NF Z42-013</td>
+<td><code>iso_14641</code> / F06 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>ISO 15489-1, gestion des documents d'activité (2016)</td>
+<td>concepts et principes</td>
+<td><code>iso_15489_1</code> / F06 § 4</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24--la-proposition-de-protévance-2-points">2.4 – La proposition de PROTÉVANCE (2 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.3 – Appréhender les usages et les enjeux des technologies de la blockchain et des cryptoactifs : <code>3.3.b</code> « Fonctionnement des technologies de registres distribués (DLT) » ; <code>3.3.c</code> « Typologie des applications : traçabilité, certification, finance décentralisée, NFT » ; <code>3.3.e</code> « Analyse de la valeur ajoutée, des coûts et des limites d'un projet blockchain ». Limites : aucun développement ; effets énergétiques intégrés à l'analyse ; aucun cryptoactif.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 2.4 (suivi actuel des tenues, constats de l'inventaire, proposition de PROTÉVANCE, coûts, base de données partagée) ; annexe 2.5 (ISO 22739:2024, principes du RGPD) ; annexe 1.1 (logiciel de gestion du parc, effectif).</p>
+<p><strong>Barème indicatif (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Chaîne de blocs définie ; fonctionnement de la chaîne de consortium appliqué à la proposition (nœuds des cinq acteurs, événements signés, validation par les participants identifiés, blocs chaînés, inaltérabilité pratique) ; distinction avec une base de données distribuée</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Type d'application : traçabilité d'un bien physique dans une chaîne d'acteurs (preuve horodatée des événements), sans cryptoactif</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Valeur ajoutée (historique commun, lavages contestés, accident) et coûts comparés (150 k€ contre 90 k€ sur trois ans) ; limites (donnée d'entrée, gouvernance à cinq, nœuds hébergés par le fournisseur, matricule inscrit, énergie)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Conclusion argumentée et conditions</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>2.4 a) – Le fonctionnement et le type d'application</em></p>
+<p><strong>La chaîne de blocs</strong> (0,5 pt avec le fonctionnement) est un registre distribué : il est partagé et synchronisé entre plusieurs nœuds, les transactions y sont regroupées en blocs chaînés par des empreintes (chaque bloc contient l'empreinte du précédent), et un mécanisme de consensus valide chaque ajout ; une fois inscrite, une transaction est horodatée et pratiquement inaltérable (F11 § 1). Elle permet à des acteurs qui ne se font pas pleinement confiance de partager un même historique sans qu'aucun d'eux ne puisse le modifier seul. C'est ce qui la distingue d'une <strong>base de données distribuée</strong>, qui répartit les données d'un même gestionnaire, lequel peut les modifier (<code>ET-08</code>).</p>
+<p>Dans la proposition de PROTÉVANCE, la chaîne est <strong>de consortium</strong> (permissionnée) : seuls cinq acteurs identifiés (les trois SDIS, PROTÉVANCE, LAVORDÈNE) disposent d'un nœud et d'une copie du registre. Quand le blanchisseur lit la puce d'une tenue lavée, il émet une transaction « lavage », signée par sa clé ; les participants autorisés la valident, sans minage, puis elle est ajoutée à un bloc et recopiée sur tous les nœuds. Chaque événement (livraison, attribution, lavage, contrôle, réparation, réforme) s'ajoute ainsi à l'historique de la tenue, que chaque acteur lit sans pouvoir le réécrire.</p>
+<p><strong>Le type d'application</strong> (0,5 pt) : il s'agit d'une application de <strong>traçabilité</strong> : suivre un bien physique, la tenue, tout au long de sa vie et entre plusieurs organisations, avec une preuve horodatée de chaque événement, proche de la certification d'événements (nombre de lavages, date du dernier contrôle). Ce n'est ni de la finance décentralisée, ni un jeton non fongible, ni un cryptoactif : aucune monnaie ni aucun jeton n'est émis.</p>
+<p><em>2.4 b) – Valeur ajoutée, coûts, limites et conclusion</em></p>
+<p><strong>Valeur ajoutée, coûts et limites</strong> (0,5 pt) :</p>
+<ul>
+<li><strong>valeur ajoutée</strong> : un historique commun et infalsifiable, que ni le fournisseur ni le blanchisseur ne peuvent retoucher ; il réglerait les contestations sur les lavages (30 000 facturés, 24 000 enregistrés), dirait sans délai qui portait quelle tenue et quand elle a été contrôlée (une semaine de recherche après l'accident de 2026), et suivrait le terme de dix ans ou de 50 lavages ; il serait commun aux trois SDIS. Mais l'essentiel du gain vient de la <strong>puce</strong>, qui supprime la saisie à la main, et non de la chaîne : la base partagée l'apporte aussi ;</li>
+<li><strong>coûts</strong> : sur trois ans, la chaîne coûterait au SDIS 20 + 40 + 3 × 30 = 150 k€, la base partagée 20 + 40 + 3 × 10 = 90 k€, soit 60 k€ de plus pour la chaîne ;</li>
+<li><strong>limites</strong> : la chaîne garantit que l'événement inscrit n'a pas été modifié, pas qu'il est vrai : une puce lue ne prouve pas que la tenue a été bien lavée (donnée d'entrée) ; la gouvernance à cinq reste à construire (admission des nœuds, évolution des règles, partage des coûts, sortie d'un acteur), alors que les deux SDIS voisins n'ont pas pris position ; si PROTÉVANCE héberge les nœuds des SDIS, la confiance redevient centrée sur le fournisseur, qui est aussi partie aux contestations, et le SDIS en dépend ; le matricule inscrit dans un registre inaltérable est une donnée personnelle qu'on ne pourra plus supprimer au terme de sa durée de conservation : il faut n'y inscrire qu'un identifiant de tenue et garder le lien avec l'agent dans le logiciel de gestion du parc ; la validation sans minage consomme peu, mais cinq copies du registre consomment davantage qu'une base unique ; il faut enfin relier la chaîne au logiciel de gestion du parc pour éviter une double saisie.</li>
+</ul>
+<p><strong>Conclusion</strong> (0,5 pt) : les acteurs sont peu nombreux, identifiés et liés par des contrats, et un tiers de confiance peut être désigné : le prestataire que retiendraient les trois SDIS, à condition que PROTÉVANCE et LAVORDÈNE l'acceptent aussi. Selon la grille d'opportunité (F11 § 2.2), une base de données partagée, avec un journal des modifications tenu par ce tiers, des droits d'écriture propres à chaque acteur et des exports réguliers, répond au besoin pour 60 k€ de moins sur trois ans. Il est recommandé d'équiper les tenues de puces et de retenir la base partagée, en prévoyant la récupération des données en fin de contrat ; la chaîne de blocs ne serait à réexaminer que si le consortium s'élargissait sans qu'un tiers soit accepté de tous, avec des nœuds tenus par chaque acteur et sans matricule inscrit.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Conclusion en faveur d'un essai limité de la chaîne de blocs, si le candidat pose des conditions précises (adhésion des deux SDIS voisins, nœud propre au SDIS, aucun matricule inscrit, comparaison au bout d'un an avec la base partagée).</li>
+<li>Consensus nommé « preuve d'autorité » ou « tolérance aux pannes byzantines », en principe, sans développement technique.</li>
+<li>Coût comparé par an (20 k€ de plus par an) plutôt que sur trois ans.</li>
+<li>Certification citée comme type d'application, si la traçabilité est reconnue comme l'usage principal.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Chaîne de blocs confondue avec une base de données distribuée</em> (<code>ET-08</code>) — « une base partagée sur plusieurs serveurs ».</li>
+<li><em>Opportunités sans limites</em> (<code>ET-19</code>) — chaîne présentée comme la solution aux oublis de saisie, alors qu'elle ne garantit pas la donnée d'entrée.</li>
+<li><em>Oubli de l'énergie ou de la gouvernance</em> — le programme impose d'intégrer les effets énergétiques ; la gouvernance à cinq est la difficulté principale.</li>
+<li><em>Cryptoactif ou jeton évoqué</em> (<code>JUR-T07</code>) — la proposition n'en comporte aucun.</li>
+<li><em>Morceau de cours</em> (<code>JUR-T01</code>) — définition sans les chiffres de l'annexe 2.4 ni la comparaison avec la base partagée.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Registre distribué, chaîne de blocs de consortium, consensus, distinction avec une base distribuée</td>
+<td>définitions</td>
+<td>F11 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Usages (traçabilité, certification), grille d'opportunité, limites (donnée d'entrée, gouvernance, énergie, données personnelles)</td>
+<td>méthode</td>
+<td>F11 § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>ISO 22739:2024, vocabulaire des chaînes de blocs et des registres distribués</td>
+<td>terminologie, donnée en annexe 2.5</td>
+<td><code>iso_22739_2024</code> / F11 § 3.4</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD) : minimisation, limitation de la conservation</td>
+<td>principe donné en annexe 2.5</td>
+<td><code>rgpd</code> / F15</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-3--tirer-les-conclusions-dun-audit-maîtriser-les-risques-et-la-sécurité-du-système-dinformation-opérationnel-et-en-réduire-lempreinte-13-points">DOSSIER 3 – TIRER LES CONCLUSIONS D'UN AUDIT, MAÎTRISER LES RISQUES ET LA SÉCURITÉ DU SYSTÈME D'INFORMATION OPÉRATIONNEL ET EN RÉDUIRE L'EMPREINTE (13 points)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1 Les conclusions de l'audit de la base des points d'eau d'incendie</td>
+<td><code>3.2.c</code> Critères de performance et de conformité : fiabilité, efficacité, sécurité, conformité RGPD, etc. ; <code>3.2.d</code> Techniques de rédaction d'un diagnostic d'audit et d'une note de synthèse</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>3.2 Les risques du logiciel de traitement de l'alerte</td>
+<td><code>4.1.a</code> Détecter, évaluer et traiter les risques associés aux systèmes d'information, en intégrant les dimensions réglementaires, éthiques et technologiques, y compris les apports de l'IA ; <code>4.1.b</code> Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers ; <code>4.1.d</code> Référentiels et cadres réglementaires : RGPD, NEP, ISO 27001, etc.</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>3.3 La sécurité des tablettes et la gouvernance du traitement de l'alerte</td>
+<td><code>4.2.b</code> Élaboration d'une politique de cybersécurité fondée sur l'analyse des risques ; <code>4.2.c</code> Notions d'architecture de confiance (authentification, chiffrement, segmentation) ; <code>4.2.e</code> Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>3.4 Les salles informatiques et la transition numérique responsable</td>
+<td><code>4.3.d</code> Bonnes pratiques Green IT : éco-conception, mutualisation, cycle de vie des équipements ; <code>4.3.e</code> Outils et indicateurs de mesure de l'impact environnemental des SI ; <code>4.3.f</code> Stratégies de transition numérique responsable (cloud éthique, datacenters verts, réduction de l'empreinte carbone)</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 3 – Tirer les conclusions d'un audit, maîtriser les risques et la sécurité du système d'information opérationnel et en réduire l'empreinte</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (critère d'appréciation, typologie des risques, ISO/IEC 27005 et EBIOS Risk Manager, architecture de confiance, transition numérique responsable) environ 3 points (items 3.1 b-1, 3.2 a-1, 3.2 b-1, 3.3 a-1, 3.3 b-1 et 3.4 a-1, chacun en partie appliqué au cas) ; analyse des annexes et recommandations environ 10 points, soit environ 77 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 58 minutes.</p>
+<hr />
+<h3 id="31--les-conclusions-de-laudit-de-la-base-des-points-deau-dincendie-3-points">3.1 – Les conclusions de l'audit de la base des points d'eau d'incendie (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.2 – Auditer, contrôler et évaluer la performance et la conformité des systèmes d'information : <code>3.2.c</code> « Critères de performance et de conformité : fiabilité, efficacité, sécurité, conformité RGPD, etc. » ; <code>3.2.d</code> « Techniques de rédaction d'un diagnostic d'audit et d'une note de synthèse ». Limites : l'exécution de tests techniques détaillés n'est pas attendue ; la mission est terminée, ni son cadrage ni sa démarche ne sont demandés ; l'organisation des contrôles des points d'eau est donnée par l'annexe, et aucune règle de droit n'est à connaître.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.1 (base, organisation fixée par le SDIS, neuf notes brutes, réactions, demande du directeur) et annexe 1.1 (base des points d'eau et système d'information géographique, logiciel de traitement de l'alerte, 60 centres dont 48 armés par des volontaires seulement, Haut-Aurande).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Note adressée au directeur, tournée vers la décision, bornée à 20 lignes ; appréciation d'ensemble nette (base non fiable, risque opérationnel direct)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Quatre constats regroupés à partir des notes brutes et hiérarchisés de façon justifiée : la carte de l'alerte et le circuit des indisponibilités en premier, au vu de l'incendie du 12/08/2026</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Pour chaque constat, le risque et une recommandation concrète, avec un responsable et une échéance réalistes</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Réponse à l'objection du lieutenant-colonel OSSELIN ; suivi du plan d'action</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Critère d'appréciation défini ; fiabilité des données, sécurité et efficacité du processus définies et appliquées à la base et à sa mise à jour</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Deux constats justement rattachés à chacun des trois critères</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.1 a) – La note de synthèse</em></p>
+<p>La note de synthèse d'audit s'adresse à un décideur : elle tient en une page, donne une appréciation d'ensemble, ne retient que les constats qui appellent une décision, les <strong>hiérarchise</strong>, et assortit chacun du risque, de la recommandation, du responsable et de l'échéance (F10 § 1.2 et § 5). Elle ne recopie pas les notes brutes : elle les <strong>regroupe</strong>.</p>
+<p>Regroupement attendu des neuf notes brutes de l'annexe 3.1 B :</p>
+<ul>
+<li><strong>la carte de l'alerte ne reflète pas l'état réel des points d'eau</strong> : indisponibilités signalées à des interlocuteurs différents et saisies en 12 jours en moyenne, chargement mensuel à la main sans contrôle, chargement de septembre 2026 échoué sans que personne le voie, 600 écarts dont 150 points indisponibles affichés disponibles, incendie du 12/08/2026 ;</li>
+<li><strong>la base n'est ni protégée ni tracée</strong> : 1 200 comptes ont le droit de la modifier, aucun historique, sauvegarde jamais restaurée et gardée dans la salle où se trouve le serveur ;</li>
+<li><strong>les données sont périmées ou inexactes</strong> : 3 500 points, un sur quatre, sans contrôle depuis plus de deux ans ; un point sur dix mal placé dans le Haut-Aurande ;</li>
+<li><strong>la collecte des contrôles est artisanale</strong> : tableurs de formats différents envoyés par 480 communes et 6 gestionnaires, ressaisis par trois agents, 1 500 résultats, un sur quatre, en attente.</li>
+</ul>
+<p>Hiérarchie : la <strong>carte de l'alerte</strong> vient en priorité 1, car c'est elle que suivent les équipages et l'incendie du 12/08/2026 montre que le risque s'est déjà réalisé. La <strong>sécurité de la base</strong> vient aussi en priorité 1 : une modification erronée ou malveillante d'un point d'eau serait invisible, et la base peut être perdue avec la salle. Les <strong>données périmées</strong> et la <strong>collecte</strong> viennent en priorité 2 : elles demandent plusieurs mois de rattrapage et un changement de processus, et la note leur donne une échéance plus lointaine.</p>
+<p>Note modèle (environ 20 lignes, à la borne) :</p>
+<!-- note -->
+
+<p><strong>Au colonel hors classe GRANVOISE – Audit de la base des points d'eau (comité de direction du 07/06/2027)</strong> <strong>Appréciation d'ensemble</strong> : base non fiable ; la carte de l'alerte peut envoyer un engin vers un point d'eau hors service. <strong>1. Carte de l'alerte en retard (priorité 1).</strong> Indisponibilités saisies en 12 jours, carte rechargée chaque mois sans contrôle ; 150 points hors service affichés disponibles. Risque : alimentation en eau retardée. Recommandation : tout signalement adressé au centre de traitement de l'alerte et saisi le jour même ; chargement hebdomadaire contrôlé, puis liaison automatique. Lt-col OSSELIN, Mme VARANGEOT : 30/06/2027. <strong>2. Base ouverte et sans trace (priorité 1).</strong> 1 200 comptes peuvent la modifier ; aucun historique ; sauvegarde jamais restaurée, gardée sur place. Risque : erreur ou malveillance invisible, base perdue. Recommandation : droits réservés à la cellule cartographie, journal des modifications, copie hors du siège et restauration essayée. Mme VARANGEOT, 30/09/2027. <strong>3. Données périmées (priorité 2).</strong> 3 500 points sans contrôle depuis deux ans ; un point sur dix mal placé dans le Haut-Aurande. Risque : point d'eau à sec ou introuvable. Recommandation : rattrapage, d'abord dans le Haut-Aurande. Lt-col OSSELIN et chefs de centre, 30/06/2028. <strong>4. Collecte artisanale (priorité 2).</strong> Tableurs de formats différents, ressaisis par trois agents ; 1 500 en attente. Risque : retards et erreurs durables. Recommandation : modèle unique, puis saisie directe par les communes et les gestionnaires. Lt-col OSSELIN, 2028. <strong>Objection</strong> : connaître son secteur ne dit pas qu'un poteau est hors service ; le 12/08/2026, l'engin a suivi la carte. La collecte simplifiée (4) soulage les trois agents. <strong>Suivi</strong> : point trimestriel, audit de suivi en 2028.</p>
+<!-- /note -->
+
+<p><strong>Réponse à l'objection du lieutenant-colonel OSSELIN</strong> (a-4) :</p>
+<ul>
+<li>l'état d'un point d'eau change (poteau en panne, citerne vide, travaux) et ne s'apprend pas par l'expérience du secteur : le 12/08/2026, l'engin a suivi la carte vers un poteau hors service depuis trois semaines. La carte sert aussi aux opérateurs du centre de traitement de l'alerte, qui ne connaissent pas chaque secteur ;</li>
+<li>c'est la ressaisie de 6 000 résultats en tableurs qui absorbe les trois agents de la cellule : le modèle unique et la saisie directe par les communes et les gestionnaires libèrent leur temps, et le rattrapage commence par le Haut-Aurande pour tenir compte de leurs moyens.</li>
+</ul>
+<p>La liaison automatique entre la base et le logiciel de l'alerte n'a pas d'échéance ferme : le calendrier de l'éditeur est chargé (réaction de Mme VARANGEOT), deux développeurs seulement connaissent les interfaces et la version actuelle n'est plus maintenue après 2029 (annexe 3.2). Elle est inscrite dans les besoins de la suite du logiciel, ou demandée à l'éditeur avec la documentation des interfaces ; le chargement hebdomadaire contrôlé, dès le 30/06/2027, tient lieu de mesure immédiate.</p>
+<p><em>3.1 b) – Les trois critères d'appréciation</em></p>
+<p><strong>Définition</strong> (b-1) : un <strong>critère d'appréciation</strong> est la référence (objectif, exigence, règle interne, norme) au regard de laquelle l'auditeur compare la situation constatée et qualifie un écart. Il rend le jugement de l'audit explicite, vérifiable et discutable par les audités ; en audit des systèmes d'information, les critères usuels portent sur la fiabilité, l'efficacité et l'efficience, la sécurité et la conformité (F10 § 1.1). Ici, la référence est l'organisation fixée par le SDIS (contrôle tous les deux ans, signalement immédiat des indisponibilités) et le besoin opérationnel : une carte juste au moment de l'alerte.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Ce qui est attendu de la base et de sa mise à jour</th>
+<th>Deux constats de l'annexe 3.1 (b-2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Fiabilité des données</strong></td>
+<td>les données sont exactes, complètes, à jour et cohérentes entre la base et la carte de l'alerte</td>
+<td>3 500 points sans contrôle depuis plus de deux ans ; 600 écarts entre la base et la carte, dont 150 points indisponibles affichés disponibles ; un point sur dix placé à plus de 100 mètres de sa position</td>
+</tr>
+<tr class="even">
+<td><strong>Sécurité</strong></td>
+<td>seules les personnes autorisées modifient la base (intégrité), chaque modification est imputable (traçabilité), la base peut être restaurée après un sinistre (disponibilité)</td>
+<td>1 200 comptes ont le droit de modifier ; aucune trace des modifications ; sauvegarde jamais restaurée, dans la même salle que le serveur</td>
+</tr>
+<tr class="odd">
+<td><strong>Efficacité du processus</strong></td>
+<td>le processus atteint son objectif, une carte à jour au moment de l'alerte, dans des délais courts et avec des moyens raisonnables</td>
+<td>indisponibilités saisies en 12 jours, puis attente du chargement mensuel ; 6 000 résultats reçus en tableurs de formats différents et ressaisis un par un, 1 500 en attente ; chargement manuel sans contrôle, échec de septembre 2026 inaperçu</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Note présentée en tableau (constat, risque, recommandation, responsable, priorité, échéance), si elle tient dans les 20 lignes et commence par une appréciation d'ensemble.</li>
+<li>Trois ou cinq regroupements au lieu de quatre, si chacun rassemble plusieurs notes brutes et si la carte de l'alerte vient en tête ; sécurité de la base en priorité 2, si la priorité 1 donnée à la carte est justifiée par l'incendie.</li>
+<li>Autres responsables plausibles : chef du groupement des opérations seul propriétaire de la base, service des systèmes d'information et de communication pour l'outil, cheffe du centre de traitement de l'alerte pour le circuit des signalements ; échéances différentes si elles sont datées et cohérentes avec la priorité.</li>
+<li>Réponse à l'objection placée en conclusion de la note, ou intégrée au premier constat ; liaison automatique fixée à la fin de 2027, si un chargement contrôlé la précède.</li>
+<li>Efficience à la place de l'efficacité pour la ressaisie, ou critère de conformité à l'organisation fixée par le SDIS ajouté, si les trois critères demandés sont traités ; un constat rattaché à deux critères (l'échec du chargement de septembre relève de la fiabilité et de l'efficacité), si c'est justifié.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Note qui dépasse 20 lignes, recopie les notes brutes dans leur ordre, ou omet le responsable et l'échéance</em> (<code>JUR-T07</code>, <code>JUR-T04</code>) — juste : quatre constats regroupés, hiérarchisés, chacun avec son risque, sa recommandation, son responsable et son échéance.</li>
+<li><em>Constats sans conséquence opérationnelle</em> (<code>JUR-T03</code>) — juste : le risque d'un point d'eau faux est un retard de l'alimentation en eau sur un feu, déjà constaté.</li>
+<li><em>Critères récités sans être reliés aux constats</em> (<code>JUR-T01</code>) — juste : ce qui est attendu de la base, puis deux constats par critère.</li>
+<li><em>Démarche ou méthodologie de l'audit exposée</em> — non demandée : la mission est terminée.</li>
+<li><em>Règles de droit sur les points d'eau, répartition légale des contrôles entre le SDIS et les communes</em> — non attendues : l'organisation est donnée par l'annexe.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Note de synthèse d'audit</td>
+<td>appréciation d'ensemble, constats hiérarchisés, recommandation, responsable, échéance</td>
+<td>F10 § 1.2 et § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Critères d'audit du SI</td>
+<td>fiabilité, efficacité, sécurité, conformité</td>
+<td>F10 § 0 et § 1.1</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="32--les-risques-du-logiciel-de-traitement-de-lalerte-3-points">3.2 – Les risques du logiciel de traitement de l'alerte (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.a</code> « Détecter, évaluer et traiter les risques associés aux systèmes d'information, en intégrant les dimensions réglementaires, éthiques et technologiques, y compris les apports de l'IA » ; <code>4.1.b</code> « Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers » ; <code>4.1.d</code> « Référentiels et cadres réglementaires : RGPD, NEP, ISO 27001, etc. ». Limites : l'analyse de sécurité technique n'est pas attendue dans le détail ; ISO/IEC 27005 et EBIOS Risk Manager sont présentées en principe, sans conduire les ateliers ; aucune analyse d'impact détaillée d'une panne, aucune procédure de choix d'un nouvel éditeur, aucun chiffrage.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.2 (logiciel, éditeur, contrat, serveurs, pannes de 2026, échelles), annexe 3.3 (réseau commun, rançongiciel du SDIS voisin), annexe 3.5 (ISO/IEC 27005:2022, EBIOS Risk Manager, guide d'hygiène, RGPD) et annexe 1.1 (logiciel installé en 2012, petit éditeur spécialisé, salle de secours de Montcerneau-Sud, 150 000 appels).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Typologie présentée (cybermenaces, défaillances opérationnelles, risques réglementaires, risques métiers, dont la dépendance envers un fournisseur) ; risques formulés comme des événements redoutés</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Quatre risques tirés de l'annexe 3.2, chacun avec sa cause et ses chiffres, et classés</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Probabilité et impact cotés de façon justifiée selon les échelles de l'annexe 3.2 C ; les deux risques de niveau 3 × 3 dégagés</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>ISO/IEC 27005 (lignes directrices, processus générique, sans méthode imposée) et EBIOS Risk Manager (méthode en cinq ateliers, sources de risque et écosystème) comparées ; choix justifié par le cas, avec sa limite</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-1</td>
+<td>Traitement de la fin de maintenance sans solution prête, justifié par la probabilité et l'impact (réduire, ou éviter défini comme l'abandon de la version avant la fin de sa maintenance, justifié ; accepter et transférer écartés)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-2</td>
+<td>Traitement du rançongiciel, justifié (réduire ; transfert discuté et jugé partiel)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.2 a) – Quatre risques, leur classement et leur cotation</em></p>
+<p><strong>Typologie</strong> (a-1) : les risques liés aux systèmes d'information se classent en <strong>cybermenaces</strong> (rançongiciel, hameçonnage, attaque par la chaîne d'approvisionnement, c'est-à-dire par un éditeur ou un prestataire), <strong>défaillances opérationnelles</strong> non intentionnelles (panne, erreur, correctif défectueux), <strong>risques réglementaires</strong> (manquement à une obligation, par exemple la sécurité des données personnelles) et <strong>risques métiers</strong>, qui touchent la mission ou la stratégie, dont la <strong>dépendance envers un fournisseur</strong> (F12 § 0 et § 5). Un risque se formule comme un <strong>événement redouté</strong>, avec sa cause et sa conséquence ; ici, le critère dominant est la <strong>disponibilité</strong> du traitement de l'alerte, mission que le projet d'établissement veut garantir jour et nuit.</p>
+<p><strong>Risques, classement et cotation</strong> (a-2 et a-3 ; quatre sont attendus, cinq sont proposés) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Risque (événement redouté) et cause</th>
+<th>Nature</th>
+<th>Probabilité</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R1 – <strong>Au 01/01/2030, le SDIS exploite un logiciel que l'éditeur ne maintient plus</strong>, sans solution de remplacement en service : plus aucun correctif, fonctionnel ou de sécurité. Causes : fin de maintenance annoncée au 31/12/2029 ; nouvelle version reportée « à partir de 2029 » et utilisée par aucun SDIS ; moins de trois ans pour préparer un changement de logiciel critique</td>
+<td>risque métier, dépendance envers l'éditeur</td>
+<td><strong>3</strong> : certain à une date connue si rien n'est fait</td>
+<td><strong>3</strong> : toute panne ou faille deviendrait impossible à corriger, donc impossible à rétablir rapidement</td>
+</tr>
+<tr class="even">
+<td>R2 – <strong>Un rançongiciel chiffre les serveurs du traitement de l'alerte dans les deux salles.</strong> Causes : système d'exploitation sans correctifs de sécurité depuis 2025 ; serveurs sur le même réseau que la bureautique et les tablettes ; accès de l'éditeur ouvert en permanence avec un compte commun</td>
+<td>cybermenace, par la bureautique ou par l'éditeur ; volet réglementaire : violation de données personnelles des appelants (annexe 3.5)</td>
+<td><strong>3</strong> : facile à provoquer en l'état ; scénario réalisé chez le SDIS voisin en février 2027</td>
+<td><strong>3</strong> : réception des appels et engagement des secours arrêtés dans les deux salles ; une journée chez le voisin</td>
+</tr>
+<tr class="odd">
+<td>R3 – <strong>Une anomalie du logiciel, installée dans les deux salles, bloque une fonction essentielle, et l'éditeur ne peut la corriger vite.</strong> Causes : correctif installé le même soir dans les deux salles ; deux développeurs seulement connaissent les interfaces, dont un part en 2028 ; aucune documentation</td>
+<td>défaillance opérationnelle ; dépendance envers les compétences de l'éditeur</td>
+<td><strong>3</strong> : constaté en novembre 2026</td>
+<td><strong>2</strong> : 2 heures de choix des engins à la main, sans arrêt de la réception des appels ; il deviendrait de niveau 3 si l'éditeur ne pouvait plus corriger</td>
+</tr>
+<tr class="even">
+<td>R4 – <strong>Les serveurs du siège s'arrêtent</strong> (climatisation de 2008, matériels de 2017) <strong>et la bascule est lente</strong></td>
+<td>défaillance opérationnelle</td>
+<td><strong>3</strong> : constaté en juillet 2026</td>
+<td><strong>2</strong> : bascule en 45 minutes, une trentaine d'appels sur papier</td>
+</tr>
+<tr class="odd">
+<td>R5 – <strong>L'éditeur cesse son activité ou abandonne le logiciel</strong>, sans remise du code source ni aide à la sortie</td>
+<td>risque métier, dépendance envers l'éditeur</td>
+<td><strong>2</strong> : société de 40 salariés dont le SDIS est un des trois principaux clients ; plausible, non constaté</td>
+<td><strong>3</strong> : plus personne ne peut corriger le logiciel</td>
+</tr>
+</tbody>
+</table>
+<p>Les deux risques dont la probabilité et l'impact sont tous deux de niveau 3, à traiter en priorité selon la règle du comité de direction, sont <strong>R1</strong> et <strong>R2</strong>. R3 et R4 sont fréquents mais leur effet reste un mode dégradé ; R5 est grave mais moins probable. Plusieurs risques ont une cause commune : la dépendance envers un petit éditeur, que l'on retrouve dans R1, R3 et R5.</p>
+<p><em>3.2 b) – ISO/IEC 27005 ou EBIOS Risk Manager</em></p>
+<p><strong>Comparaison</strong> (b-1) :</p>
+<ul>
+<li>l'<strong>ISO/IEC 27005:2022</strong> donne des <strong>lignes directrices</strong> internationales : elle décrit le processus de gestion des risques liés à la sécurité de l'information (établir le contexte, identifier, analyser, évaluer, traiter, surveiller) et les options de traitement, dans la logique du système de management de l'ISO/IEC 27001:2022. Elle ne prescrit <strong>aucune méthode</strong> : l'organisation choisit ses échelles et ses techniques. Elle n'est ni une norme d'exigences ni une solution ;</li>
+<li><strong>EBIOS Risk Manager</strong> (ANSSI, version 1.5 de 2024) est une <strong>méthode</strong> française, compatible avec l'ISO/IEC 27005, qui outille ce processus en cinq ateliers : le cadrage et le <strong>socle de sécurité</strong>, les <strong>sources de risque</strong> et leurs objectifs, les <strong>scénarios stratégiques</strong>, qui passent par l'<strong>écosystème</strong> (éditeurs, prestataires, partenaires), les scénarios opérationnels, puis le traitement (F12 § 2 ; annexe 3.5).</li>
+</ul>
+<p><strong>Choix</strong> : EBIOS Risk Manager, inscrite dans le processus de l'ISO/IEC 27005. Elle convient au SDIS pour trois raisons tirées du cas :</p>
+<ul>
+<li>les risques les plus graves passent par l'<strong>écosystème</strong> : un éditeur dont l'accès est ouvert en permanence et dont dépendent les correctifs, les SDIS voisins, le centre de régulation médicale du SAMU et les hôpitaux qui reçoivent les comptes rendus ;</li>
+<li>la menace est en partie <strong>intentionnelle</strong> : le rançongiciel du SDIS voisin appelle une analyse des sources de risque, que l'ISO/IEC 27005 prévoit sans fournir de démarche détaillée pour la conduire ;</li>
+<li>l'atelier de <strong>socle de sécurité</strong>, appuyé sur le guide d'hygiène de l'ANSSI, fait apparaître tout de suite les écarts évidents (mises à jour, cloisonnement, sauvegardes), et les scénarios sont lisibles pour le conseil d'administration.</li>
+</ul>
+<p><strong>Limite</strong> : la méthode demande du temps et des compétences, alors que le SDIS n'a ni analyse formalisée ni responsable de la sécurité. Il faut donc restreindre le périmètre au traitement de l'alerte et à ses interfaces, se faire accompagner et présenter au conseil du 01/07/2027 un premier résultat (cadrage, socle, scénarios principaux, mesures prioritaires), à compléter ensuite.</p>
+<p><em>3.2 c) – Le traitement des deux risques les plus graves</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Risque</th>
+<th>Option retenue et justification</th>
+<th>Mesures</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>R1 – Logiciel non maintenu au 01/01/2030</strong> (probabilité 3, impact 3)</td>
+<td><strong>Réduire</strong> d'ici 2030, en préparant <strong>l'évitement</strong> : le risque disparaît si le SDIS quitte la version actuelle avant le 31/12/2029, mais aucune solution de remplacement n'est prête (nouvelle version reportée, utilisée par aucun SDIS). Il faut donc d'ici là réduire la probabilité (préparer le remplacement, calendrier ferme) et l'impact (maintenance prolongée, documentation des interfaces). <strong>Accepter</strong> est exclu : le risque est certain et son impact touche une mission que le projet d'établissement veut garantir jour et nuit. <strong>Transférer</strong> est sans objet : aucun contrat ni aucune assurance ne prend en charge un traitement de l'alerte arrêté</td>
+<td>lancer dès 2027 la préparation du remplacement, avec une décision en 2028 sur la suite (nouvelle version de l'éditeur ou autre solution), sans organiser ici le choix ; exiger de l'éditeur un calendrier ferme, une période de recouvrement et une maintenance prolongée en filet de sécurité ; obtenir la documentation des interfaces avant le départ du développeur en 2028 ; prévoir, à la prochaine reconduction du contrat, la remise du code source en cas de défaillance et l'aide à la sortie, ce qui réduit aussi R5 ; informer le conseil d'administration du 01/07/2027 de l'échéance</td>
+</tr>
+<tr class="even">
+<td><strong>R2 – Rançongiciel dans les deux salles</strong> (probabilité 3, impact 3)</td>
+<td><strong>Réduire</strong> d'abord la probabilité, car elle tient à des faiblesses connues et corrigeables, puis l'impact. <strong>Transférer</strong> n'est que partiel : une assurance peut couvrir des frais de reconstruction et de gestion de crise, jamais l'arrêt de l'alerte ni ses conséquences pour les victimes ; elle complète les mesures, sans les remplacer. <strong>Accepter</strong> est inadmissible pour un système critique ; <strong>éviter</strong> est impossible</td>
+<td>séparer le réseau du traitement de l'alerte de celui de la bureautique et des tablettes, en n'ouvrant que les flux nécessaires (question 3.3) ; remplacer le compte commun de l'éditeur par des accès nominatifs, ouverts à la demande, avec une authentification forte et une trace ; tant que le système d'exploitation ne peut être mis à jour, isoler davantage ces serveurs et exiger de l'éditeur une version compatible ; sauvegardes hors ligne dont la restauration est essayée ; procédure de repli sur papier et entraide des centres de traitement de l'alerte voisins, exercées, comme en février 2027</td>
+</tr>
+</tbody>
+</table>
+<p>Après traitement, le <strong>risque résiduel</strong> est présenté au directeur départemental, qui l'accepte formellement, puis au conseil d'administration.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres risques tirés de l'annexe 3.2, si chacun est formulé comme un événement redouté et coté selon les échelles : interfaces arrêtées au départ du développeur ; intervention malveillante par le compte commun de l'éditeur.</li>
+<li>R2 coté 2 en probabilité au titre du « constaté dans un autre SDIS », si le candidat retient ensuite R1 et un autre risque de niveau 3 × 3 qu'il justifie, ou s'il explique pourquoi il traite quand même R2 ; R3 coté 3 en impact si le candidat montre qu'une anomalie plus longue arrêterait l'engagement des secours.</li>
+<li>ISO/IEC 27005 retenue seule, pour sa simplicité et le délai court avant le conseil du 01/07/2027, si la nature des deux référentiels est juste et si l'écosystème est pris en compte.</li>
+<li>« Éviter » seul pour R1, s'il est défini comme l'abandon de la situation à l'origine du risque (exploiter la version actuelle après le 31/12/2029) et si le candidat montre comment le SDIS tient jusqu'au remplacement.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Risques réduits à des constats ou génériques (« risque informatique »)</em> (<code>JUR-T01</code>, <code>JUR-T03</code>) — juste : des événements redoutés, avec leur cause et leurs chiffres, cotés selon les échelles de l'annexe.</li>
+<li><em>Norme, lignes directrices, méthode et solution confondues ; « installer EBIOS »</em> (<code>ET-01</code>, <code>JUR-S06</code>) — juste : ISO/IEC 27005, lignes directrices ; EBIOS Risk Manager, méthode ; ISO/IEC 27001, norme d'exigences.</li>
+<li><em>Risque « transféré à l'éditeur » ou à l'assureur</em> (<code>JUR-T03</code>) — juste : la responsabilité du traitement de l'alerte reste au SDIS ; l'assurance ne couvre qu'une part financière.</li>
+<li><em>Risque de niveau 3 × 3 accepté</em> — juste : réduire, et faire accepter le seul risque résiduel par le directeur.</li>
+<li><em>Choix d'un nouvel éditeur organisé, analyse d'impact détaillée des pannes, chiffrage</em> — non attendus.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des risques SI, événement redouté</td>
+<td>cybermenaces, défaillances, risques réglementaires et métiers, dépendance</td>
+<td>F12 § 0 et § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27005:2022</td>
+<td>lignes directrices de gestion des risques, options de traitement</td>
+<td><code>iso_27005_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>EBIOS Risk Manager, version 1.5 (ANSSI)</td>
+<td>méthode en cinq ateliers, sources de risque, écosystème</td>
+<td><code>ebios_rm_1_5</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27001:2022</td>
+<td>système de management fondé sur l'appréciation des risques</td>
+<td><code>iso_27001_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique (ANSSI, 2017)</td>
+<td>socle de sécurité : mises à jour, cloisonnement, sauvegardes</td>
+<td><code>guide_hygiene_anssi_2017</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="33--la-sécurité-des-tablettes-et-la-gouvernance-du-traitement-de-lalerte-4-points">3.3 – La sécurité des tablettes et la gouvernance du traitement de l'alerte (4 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.b</code> « Élaboration d'une politique de cybersécurité fondée sur l'analyse des risques » ; <code>4.2.c</code> « Notions d'architecture de confiance (authentification, chiffrement, segmentation) » ; <code>4.2.e</code> « Rôles et responsabilités des acteurs dans la gouvernance des systèmes critiques ». Limites : la mise en œuvre technique des solutions de cybersécurité n'est pas exigée ; aucun réglage d'équipement ni aucun essai technique ; le Zero Trust est un cadre d'architecture, non un produit ; aucune démarche de conformité formelle à une norme.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.3 (tablettes, comptes rendus, réseau, renouvellement de 2027, pertes et vols, incidents, répartition actuelle des rôles), annexe 3.2 (accès permanent de l'éditeur, correctifs), annexe 3.5 (modèle Zero Trust, guide d'hygiène, ISO/IEC 27001:2022, RGPD) et annexe 1.1 (300 tablettes de 2021, 60 centres, organigramme, déléguée à la protection des données).</p>
+<p><strong>Barème indicatif (4 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Architecture de confiance définie (authentification, chiffrement, segmentation ; Zero Trust comme modèle, non comme produit) ; mesures rattachées à une politique de sécurité fondée sur l'analyse des risques</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Authentification personnelle des équipages et chiffrement du stockage et de la transmission, chacun rattaché au risque traité</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Séparation des réseaux et effacement à distance, chacun rattaché au risque traité ; remplacement des tablettes de la fin de 2027 mis à profit</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-4</td>
+<td>Quatre indicateurs d'efficacité complets (formule, source, fréquence, cible, axe)</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-1</td>
+<td>Désignation d'un responsable de la sécurité des systèmes d'information, rattaché au directeur et indépendant de l'exploitation du système d'information, avec ses missions</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-2</td>
+<td>Rôles du directeur départemental, du (de la) chef(fe) du groupement et de la cheffe du service des systèmes d'information et de communication, distingués</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-3</td>
+<td>Rôles de la cheffe du centre de traitement de l'alerte et des chefs de centre</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-4</td>
+<td>Rôles de l'éditeur et de la déléguée à la protection des données, distingué du responsable de la sécurité</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.3 a) – L'architecture de confiance et quatre mesures</em></p>
+<p><strong>Définition</strong> (a-1) : une <strong>architecture de confiance</strong> organise les identités, les terminaux, les réseaux, les applications et les données de façon que seules des personnes et des équipements <strong>authentifiés</strong> accèdent, selon leurs droits, à des ressources <strong>cloisonnées</strong>, et que les données restent <strong>confidentielles et intègres</strong>, y compris hors des locaux. Elle repose sur l'authentification, le chiffrement et la segmentation. Le <strong>Zero Trust</strong> en est un modèle : aucune confiance n'est accordée d'office à une tablette parce qu'elle est connectée au réseau du siège, chaque accès est vérifié. C'est un <strong>cadre d'architecture</strong>, conduit pas à pas, et non un produit que l'on achète (F12 § 3 ; annexe 3.5). Ces mesures s'inscrivent dans une <strong>politique de sécurité fondée sur l'analyse des risques</strong> : approuvée par le directeur, elle fixe les objectifs (confidentialité des données de santé, intégrité des comptes rendus, disponibilité de l'alerte, traçabilité), le périmètre, les règles, l'organisation et les contrôles ; chaque mesure y répond à un risque apprécié, et la charte d'usage n'en est que la déclinaison pour les utilisateurs (F12 § 1).</p>
+<p>Risques à traiter, tirés de l'annexe 3.3 : la <strong>divulgation de données de santé</strong> par une tablette perdue ou volée (10 en 2026 ; plus de 1 000 comptes rendus dans la tablette volée en octobre) ou par un courriel non chiffré ; l'<strong>usage d'une tablette par n'importe qui</strong>, avec un code partagé par centre, inchangé depuis 2021 et connu d'agents partis, et des comptes rendus non imputables ; la <strong>propagation d'une attaque</strong> des tablettes ou de la bureautique vers le traitement de l'alerte, comme chez le SDIS voisin ; des <strong>tablettes sans mises à jour de sécurité</strong> (120 sur 300). Le remplacement des 300 tablettes, de septembre à décembre 2027, est l'occasion d'inscrire ces mesures dans les besoins des nouvelles tablettes, et de traiter les anciennes jusque-là.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Mesure (a-2 et a-3)</th>
+<th>Risque traité</th>
+<th>Indicateur d'efficacité (a-4) : formule ; source ; fréquence ; cible ; axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Authentification personnelle des équipages</strong> : chaque agent ouvre l'application de comptes rendus avec sa carte professionnelle sans contact et un code personnel, soit deux facteurs de nature différente (ce qu'il possède, ce qu'il sait) ; la tablette, partagée par l'équipage, ne compte pas comme facteur personnel ; fin du code commun à un centre ; fermeture automatique de la session</td>
+<td>usage par un tiers d'une tablette perdue ou volée ; compte rendu non imputable (confidentialité, traçabilité)</td>
+<td><strong>Part des comptes rendus rédigés après une authentification personnelle</strong> : nombre de comptes rendus rédigés après authentification personnelle / nombre de comptes rendus rédigés × 100 ; journaux de l'application de comptes rendus ; mensuelle ; 100 % dès la mise en service des nouvelles tablettes à la fin de 2027 ; processus</td>
+</tr>
+<tr class="even">
+<td><strong>2. Chiffrement</strong> : stockage des tablettes chiffré ; comptes rendus transmis au centre de régulation médicale du SAMU et aux six hôpitaux par une messagerie ou un espace d'échange chiffrés, et non plus en pièce jointe d'un courriel ordinaire</td>
+<td>divulgation des données de santé en cas de vol ou d'interception (confidentialité, intégrité) ; une donnée chiffrée volée reste incompréhensible, ce qui évite d'informer les personnes (annexe 3.5)</td>
+<td><strong>Part des comptes rendus transmis par un canal chiffré</strong> : nombre de comptes rendus transmis par un canal chiffré / nombre de comptes rendus transmis × 100 ; journaux de la messagerie ou de l'espace d'échange ; mensuelle ; 100 % au 31/12/2027 ; processus</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Séparation des réseaux</strong> : les tablettes n'accèdent qu'à une zone réservée à l'application de comptes rendus et à l'échange avec le logiciel de l'alerte ; les serveurs du traitement de l'alerte forment une zone à part, séparée de la bureautique ; seuls les flux nécessaires sont autorisés entre les zones</td>
+<td>propagation d'un rançongiciel de la bureautique ou d'une tablette vers le traitement de l'alerte, comme chez le SDIS voisin (disponibilité, intégrité)</td>
+<td><strong>Part des équipements rattachés à la zone de réseau prévue par la politique de sécurité</strong> : nombre de tablettes, de postes et de serveurs dans leur zone / nombre d'équipements inventoriés × 100 ; inventaire du parc et revue des zones par le service des systèmes d'information et de communication ; trimestrielle ; 100 % au 31/12/2027 ; processus</td>
+</tr>
+<tr class="even">
+<td><strong>4. Effacement à distance</strong> : toutes les tablettes inscrites dans un outil de gestion de flotte mobile (MDM, <em>Mobile Device Management</em>) qui permet de les localiser, de les bloquer, de les effacer à distance et d'imposer les mises à jour ; copie locale effacée dès que la transmission du compte rendu est confirmée ; toute perte déclarée sans délai au centre de traitement de l'alerte, ouvert jour et nuit, qui fait bloquer et effacer la tablette</td>
+<td>divulgation des données d'une tablette perdue ou volée ; tablettes sans mises à jour (confidentialité)</td>
+<td><strong>Part des tablettes perdues ou volées bloquées dans l'heure</strong> : nombre de tablettes perdues ou volées dont le blocage et l'effacement ont été ordonnés moins d'une heure après la déclaration / nombre de tablettes perdues ou volées × 100 ; outil de gestion de flotte et registre des incidents ; mensuelle ; 100 %, contre 0 % aujourd'hui (aucun blocage possible) ; processus. Une tablette hors ligne ne s'efface qu'à sa reconnexion : le SDIS mesure l'ordre qu'il maîtrise</td>
+</tr>
+</tbody>
+</table>
+<p>Chaque indicateur est suivi par le responsable de la sécurité et présenté au comité de sécurité ; une cible manquée déclenche une action.</p>
+<p><em>3.3 b) – Les rôles et les responsabilités dans la gouvernance du traitement de l'alerte</em></p>
+<p><strong>Le responsable de la sécurité des systèmes d'information</strong> (b-1) : le directeur départemental désigne un <strong>responsable de la sécurité des systèmes d'information</strong>, aujourd'hui absent. Il le <strong>rattache directement à la direction départementale</strong>, et non au service des systèmes d'information et de communication ni au groupement « Pilotage et systèmes d'information » qui exploite le système d'information : celui qui contrôle la sécurité ne doit pas contrôler son propre travail, et il doit pouvoir alerter le directeur sans filtre. Ce n'est pas un technicien : il pilote la politique de sécurité, conduit l'analyse des risques, organise la gestion des incidents et des crises, la sensibilisation et le suivi des indicateurs. Le système critique qu'est le traitement de l'alerte justifie un poste à part entière, avec un correspondant au service des systèmes d'information et de communication.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Acteur</th>
+<th>Rôle et responsabilités dans la gouvernance du traitement de l'alerte</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Directeur départemental</strong> (colonel hors classe GRANVOISE) (b-2)</td>
+<td>responsable de la sécurité de l'établissement : approuve la politique de sécurité et les niveaux de risque acceptables, accepte formellement les risques résiduels, désigne le responsable de la sécurité, donne les moyens, préside un comité de sécurité semestriel, rend compte au conseil d'administration (01/07/2027)</td>
+</tr>
+<tr class="even">
+<td><strong>Chef(fe) du groupement « Pilotage et systèmes d'information »</strong> (vous) (b-2)</td>
+<td>intègre la sécurité dans les projets (remplacement des tablettes, suite du logiciel de traitement de l'alerte, hébergement des serveurs), veille à ce que le service applique les mesures, suit la relation avec l'éditeur et prépare avec le responsable de la sécurité les décisions du directeur ; n'est pas le contrôleur de la sécurité</td>
+</tr>
+<tr class="odd">
+<td><strong>Cheffe du service des systèmes d'information et de communication</strong> (Mme VARANGEOT) (b-2)</td>
+<td>met en œuvre les mesures : séparation des réseaux, gestion de flotte des tablettes, comptes et accès, mises à jour, sauvegardes ; ouvre et ferme les accès de l'éditeur ; traite les incidents techniques et les signale au responsable de la sécurité</td>
+</tr>
+<tr class="even">
+<td><strong>Cheffe du centre de traitement de l'alerte</strong> (commandante TOURNEVAL) (b-3)</td>
+<td>propriétaire métier du système critique : exprime les besoins de disponibilité, valide la date et l'ordre d'installation des correctifs (d'abord une salle, puis l'autre, jamais aux heures chargées), décide de la bascule et du mode dégradé, reçoit jour et nuit les déclarations de perte de tablettes et fait déclencher l'effacement</td>
+</tr>
+<tr class="odd">
+<td><strong>Chefs de centre</strong> (b-3)</td>
+<td>correspondants de sécurité dans les 60 centres : font respecter l'authentification personnelle et l'interdiction de partager les codes, déclarent sans délai toute perte ou tout vol, signalent les arrivées et les départs des agents, relaient la sensibilisation</td>
+</tr>
+<tr class="even">
+<td><strong>Éditeur du logiciel de traitement de l'alerte</strong> (b-4)</td>
+<td>prestataire : livre des correctifs essayés sur sa plateforme et installés à une date validée par le centre de traitement de l'alerte, une salle après l'autre ; intervient par des accès nominatifs, ouverts à la demande et tracés ; signale ses incidents et les failles connues ; remet la documentation des interfaces ; s'engage sur le calendrier de fin de maintenance</td>
+</tr>
+<tr class="odd">
+<td><strong>Déléguée à la protection des données</strong> (Mme FAVERJON) (b-4)</td>
+<td>conseille sur la protection des données de santé (aucune copie durable sur les tablettes, chiffrement) ; est informée sans délai de toute perte, de tout vol et de tout incident ; tient le registre des violations et prépare, si la violation présente un risque, la notification à l'autorité de contrôle dans les meilleurs délais et, si possible, dans les 72 heures (annexe 3.5) ; distincte du responsable de la sécurité, qui protège tous les systèmes, elle veille aux droits des personnes</td>
+</tr>
+<tr class="even">
+<td><strong>Responsable de la sécurité des systèmes d'information</strong> (à désigner) (b-1)</td>
+<td>rédige et fait vivre la politique de sécurité, conduit l'analyse des risques (question 3.2), contrôle l'application des mesures et les indicateurs, organise la gestion des incidents et des crises et les exercices, alerte le directeur</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres mesures de même objet : code personnel seul, carte seule ou reconnaissance biométrique, si l'authentification est personnelle et que le candidat ne la présente pas comme une authentification à deux facteurs ; espace d'échange sécurisé à la place d'une messagerie chiffrée ; gestion des applications seules plutôt que de toute la tablette, si l'effacement à distance des données est assuré.</li>
+<li>Indicateurs différents s'ils mesurent l'efficacité de la mesure et sont complets : part des tablettes dont le stockage est chiffré ; nombre de flux non autorisés constatés vers la zone de l'alerte (cible zéro) ; part des tablettes à jour de leurs correctifs de sécurité.</li>
+<li>Responsable de la sécurité rattaché au (à la) chef(fe) du groupement, avec un accès direct au directeur et une indépendance garantie vis-à-vis du service qui exploite le système d'information ; poste partagé avec un autre établissement public, si la disponibilité qu'exige un système critique est discutée.</li>
+<li>Comité de sécurité, sapeurs-pompiers utilisateurs ou centre de régulation médicale du SAMU et hôpitaux ajoutés au tableau.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Zero Trust présenté comme un produit à acheter</em> (<code>ET-04</code>, <code>JUR-S03</code>) — juste : un cadre d'architecture, appliqué pas à pas aux tablettes et au réseau.</li>
+<li><em>Code à quatre chiffres « plus long » présenté comme une authentification forte</em> (<code>ET-28</code>) — juste : un moyen personnel, et deux facteurs de nature différente.</li>
+<li><em>Mesures sans indicateur, ou indicateurs génériques</em> (<code>ET-18</code>, <code>JUR-S05</code>) — juste : un indicateur par mesure, avec sa formule, sa source, sa fréquence, sa cible et son axe.</li>
+<li><em>Responsable de la sécurité présenté comme un technicien, ou placé sous la cheffe du service qui exploite le système d'information</em> (<code>ET-15</code>) — juste : rattaché au directeur, il pilote et contrôle.</li>
+<li><em>Déléguée à la protection des données confondue avec le responsable de la sécurité</em> (<code>ET-29</code>) — juste : deux rôles distincts, qui travaillent ensemble.</li>
+<li><em>Réglage des équipements, essais techniques, analyse juridique de la violation de données</em> — non attendus.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Architecture de confiance, authentification à deux facteurs, gestion de flotte mobile</td>
+<td>authentification, chiffrement, segmentation</td>
+<td>F12 § 3</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Le modèle Zero Trust, avis de l'ANSSI (2021)</td>
+<td>cadre d'architecture, non un produit</td>
+<td><code>zero_trust_anssi</code> ; F12 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique (ANSSI, 2017)</td>
+<td>authentification, cloisonnement, appareils mobiles, mises à jour</td>
+<td><code>guide_hygiene_anssi_2017</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Politique de sécurité, acteurs</td>
+<td>objectifs, périmètre, règles, organisation ; responsable de la sécurité, déléguée à la protection des données</td>
+<td>F12 § 1 ; F15 § 1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>sécurité des données de santé, registre et notification des violations, en principe</td>
+<td><code>rgpd</code> ; F15 § 6</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="34--les-salles-informatiques-et-la-transition-numérique-responsable-3-points">3.4 – Les salles informatiques et la transition numérique responsable (3 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.3 – Intégrer les enjeux de durabilité et de sobriété numérique dans le management des SI : <code>4.3.d</code> « Bonnes pratiques Green IT : éco-conception, mutualisation, cycle de vie des équipements » ; <code>4.3.e</code> « Outils et indicateurs de mesure de l'impact environnemental des SI » ; <code>4.3.f</code> « Stratégies de transition numérique responsable (cloud éthique, datacenters verts, réduction de l'empreinte carbone) ». Limites : aucun calcul d'empreinte, aucun chiffre d'étude sur l'empreinte du numérique, aucun assujettissement à un cadre de durabilité ; la durabilité est intégrée à la gouvernance du système d'information.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.4 (deux salles, consommations, serveurs peu utilisés, renouvellement, proposition du département, deux avis), annexe 3.3 (remplacement des tablettes à la fin de 2027, données de santé), annexe 3.5 (RGPD : sous-traitant) et annexe 1.1 (salle du siège et salle de secours, financement par le département à 55 %, président du conseil d'administration vice-président du conseil départemental, objectif de baisse de 20 % de l'empreinte).</p>
+<p><strong>Barème indicatif (3 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Transition numérique responsable définie ; apports de la proposition appliqués au cas (30 serveurs utilisés à 10 %, virtualisation, indicateur de 1,3 contre environ 2 au siège, chaleur récupérée, mesure continue)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Limites appliquées au cas : dépendance envers le département, exploitation sans astreinte alors que la messagerie sert jour et nuit, données de santé et sous-traitance, salle du siège conservée avec sa climatisation de 2008, empreinte déplacée</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Conclusion : proposition recommandée sous conditions précises (périmètre, convention, sécurité, réversibilité, mesure partagée, redimensionnement de la salle du siège)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Allongement de la durée de vie justifié (900 postes renouvelés tous les quatre ans ; fabrication), avec ses conditions</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Réemploi justifié (équipements détruits aujourd'hui ; tablettes de 2021 et serveurs libérés), avec un effacement sûr des données</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Deux indicateurs complets (formule, source, fréquence, cible, axe)</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.4 a) – La proposition du département</em></p>
+<p><strong>Définition</strong> (a-1) : la <strong>transition numérique responsable</strong> est la trajectoire par laquelle une organisation réduit durablement l'empreinte environnementale de son système d'information sur tout son cycle de vie (fabrication, usage, fin de vie). Elle combine la sobriété, qui interroge d'abord le besoin, les bonnes pratiques du Green IT (mutualisation, virtualisation, centres de données efficaces, durée de vie des équipements) et une gouvernance qui mesure, fixe des cibles et arbitre, sans dégrader le service rendu ni la sécurité (F14 § 3 et § 5). Pour le SDIS, elle sert l'objectif d'une baisse de 20 % de l'empreinte d'ici 2031, que rien ne permet aujourd'hui de suivre, l'empreinte du système d'information n'ayant jamais été mesurée.</p>
+<p><strong>Ce qu'apporte la proposition</strong> :</p>
+<ul>
+<li>la <strong>mutualisation</strong> et la <strong>virtualisation</strong> : 30 serveurs de gestion, dont 8 seulement virtualisés, utilisés en moyenne à 10 % de leur capacité, deviendraient des serveurs virtuels sur des équipements partagés. Moins de machines à fabriquer et à alimenter, à service égal ;</li>
+<li>une <strong>salle plus efficace</strong> : l'indicateur d'efficacité énergétique de la salle du département est de 1,3, contre environ 2 au siège (400 MWh consommés pour 200 MWh d'équipements informatiques). Au siège, la moitié de l'électricité sert à autre chose que l'informatique, surtout à une climatisation de 2008 ;</li>
+<li>la <strong>chaleur récupérée</strong> pour chauffer un collège voisin : l'énergie dissipée par les serveurs remplace une partie du chauffage d'un autre bâtiment ;</li>
+<li>la <strong>mesure continue</strong> de la consommation : elle fournit la donnée de départ qui manque pour suivre l'objectif de 2031.</li>
+</ul>
+<p><strong>Ses limites</strong> (a-2) :</p>
+<ul>
+<li>la <strong>dépendance</strong> envers le département, déjà financeur à 55 % : ses priorités passeraient d'abord, et la convention n'est pas écrite (niveaux de service, retour en arrière, sortie) ;</li>
+<li>l'<strong>exploitation</strong> : les agents du département ne sont présents que les jours ouvrés, de 8 heures à 18 heures, sans astreinte, alors que la messagerie sert jour et nuit à envoyer les comptes rendus de secours. Ces serveurs « de gestion » servent donc aussi l'activité opérationnelle ;</li>
+<li>la <strong>sécurité et la confidentialité</strong> : les comptes rendus contiennent des données de santé. Le département deviendrait un sous-traitant, lié par un contrat qui fixe les mesures de sécurité (annexe 3.5). Ses agents ne doivent pas accéder aux données, et la liaison entre les deux réseaux ne doit pas propager une attaque ;</li>
+<li>le <strong>système critique conservé</strong> dans les salles du SDIS : c'est un bon choix pour la maîtrise de l'alerte, mais la salle du siège garde ses 10 serveurs opérationnels et une climatisation de 2008, déjà tombée en panne en juillet 2026 : il faudra la remplacer, redimensionnée ;</li>
+<li>l'<strong>empreinte déplacée</strong> plutôt que supprimée : la part de la salle du département imputable au SDIS doit être comptée dans son empreinte, et la facilité de créer des serveurs virtuels peut en multiplier le nombre (effet rebond).</li>
+</ul>
+<p><strong>Conclusion</strong> (a-3) : recommander la proposition, <strong>sous conditions</strong> :</p>
+<ol type="1">
+<li>un <strong>périmètre</strong> limité aux applications de gestion qui peuvent attendre un jour ouvré (ressources humaines et paie, finances, formation, parc, indemnités) ; la messagerie et les comptes rendus de secours ne partent que si une astreinte jour et nuit et le chiffrement des données sont garantis, sinon ils restent dans les salles du SDIS ;</li>
+<li>une <strong>convention</strong> qui fixe les niveaux de service, l'astreinte, les règles de sécurité, le contrat de sous-traitance, la notification des incidents, la réversibilité, et la communication chaque mois de la consommation imputable au SDIS ;</li>
+<li>le <strong>démontage</strong> des 30 serveurs physiques, réemployés plutôt que détruits, puis le <strong>redimensionnement</strong> de la salle du siège et de sa climatisation pour les seuls serveurs de l'alerte ;</li>
+<li>l'inscription de l'opération dans la trajectoire de 2031, avec une mesure de départ en 2027.</li>
+</ol>
+<p><em>3.4 b) – Deux bonnes pratiques et deux indicateurs</em></p>
+<p><strong>Allonger la durée de vie des équipements</strong> (b-1) : passer de quatre à six ans pour les 900 postes de travail, et au-delà de quatre ans pour les serveurs conservés. Les achats de postes tomberaient d'environ 225 à 150 par an, soit un tiers de moins. Or c'est la <strong>fabrication</strong> qui pèse souvent le plus dans l'empreinte d'un équipement, plus que son électricité (F14 § 1 et § 3). Conditions : réparation et remplacement des pièces d'usure (batteries, disques), logiciels qui restent compatibles, choix de matériels réparables et mis à jour longtemps, en particulier pour les nouvelles tablettes de 2027.</p>
+<p><strong>Réemployer plutôt que détruire</strong> (b-2) : aujourd'hui, tous les équipements remplacés sont détruits. Les postes et les tablettes encore utilisables sont réemployés en interne (formation, centres armés par des volontaires), reconditionnés par une entreprise spécialisée ou donnés à des associations ou à des établissements scolaires ; seuls les équipements irréparables vont au recyclage. Les premiers candidats sont les 300 tablettes de 2021, remplacées à la fin de 2027, et les serveurs libérés par l'hébergement. Condition propre au SDIS : un <strong>effacement sûr et attesté</strong> des données avant toute sortie, car les tablettes ont contenu des comptes rendus de secours (question 3.3).</p>
+<p><strong>Deux indicateurs de l'impact environnemental du système d'information</strong> (b-3) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Électricité consommée par l'hébergement du système d'information</strong></td>
+<td>somme des MWh consommés par les deux salles du SDIS et des MWh imputés au SDIS par la salle du département</td>
+<td>compteurs des salles du SDIS ; relevé mensuel de la consommation imputée au SDIS par le département</td>
+<td>mensuelle, bilan annuel</td>
+<td>au moins − 30 % en 2029 par rapport à 2026 (430 MWh pour les deux salles du SDIS)</td>
+<td>environnement</td>
+</tr>
+<tr class="even">
+<td><strong>Taux de réemploi des équipements retirés</strong></td>
+<td>nombre d'équipements retirés réemployés ou reconditionnés / nombre d'équipements retirés × 100</td>
+<td>inventaire du parc informatique et attestations de reprise et d'effacement</td>
+<td>annuelle</td>
+<td>70 % en 2028, contre 0 % aujourd'hui</td>
+<td>environnement</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Proposition refusée, ou limitée à quelques applications, si l'argument est la sécurité des données de santé ou l'absence d'astreinte, et si une autre voie de réduction est proposée (virtualisation des 30 serveurs dans la salle du siège, puis remplacement de sa climatisation).</li>
+<li>Durée de vie portée à cinq ans, ou à sept ans pour les serveurs, si elle est justifiée et assortie de conditions.</li>
+<li>Autres indicateurs complets : âge moyen des postes à leur retrait (cible six ans) ; indicateur d'efficacité énergétique de la salle du siège après le remplacement de sa climatisation ; taux d'utilisation moyen des serveurs ; « PUE » employé pour l'indicateur d'efficacité énergétique de la salle ; part des achats d'équipements assortis de critères de durabilité.</li>
+<li>Cible de consommation différente si elle est datée, chiffrée et rapportée à une valeur de départ.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Empreinte du système d'information réduite à l'électricité</em> (<code>ET-38</code>) — juste : la fabrication des équipements renouvelés tous les quatre ans et leur destruction pèsent au moins autant ; d'où la durée de vie et le réemploi.</li>
+<li><em>Sobriété ou Green IT confondus avec une simple économie d'énergie</em> (<code>ET-12</code>) — juste : interroger le besoin (30 serveurs à 10 %), mutualiser, allonger la durée de vie.</li>
+<li><em>Hébergement chez le département présenté comme sans risque, ou « tout externaliser »</em> (<code>ET-30</code>, <code>JUR-G11</code>) — juste : astreinte, données de santé, dépendance, convention.</li>
+<li><em>Indicateurs incomplets ou génériques</em> (<code>ET-18</code>, <code>JUR-A02</code>) — juste : formule, source, fréquence, cible et axe, reliés à l'objectif de 2031.</li>
+<li><em>Calcul d'empreinte, chiffres d'études, assujettissement du SDIS à un cadre de durabilité</em> — non attendus.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Green IT, mutualisation, virtualisation, durée de vie, réemploi</td>
+<td>bonnes pratiques et leviers</td>
+<td>F14 § 3</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Indicateur d'efficacité énergétique d'une salle, consommation, durée de vie</td>
+<td>indicateurs de l'impact environnemental du SI</td>
+<td>F14 § 4</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Centres de données efficaces, chaleur récupérée, hébergement mutualisé</td>
+<td>transition numérique responsable</td>
+<td>F14 § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Règlement (UE) 2016/679 (RGPD)</td>
+<td>sous-traitant lié par un contrat qui fixe les mesures de sécurité, en principe</td>
+<td><code>rgpd</code> ; F15 § 5</td>
+<td>applicable depuis le 25/05/2018</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
