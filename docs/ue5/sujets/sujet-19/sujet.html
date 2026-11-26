@@ -1,0 +1,1310 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sujet complet n° 19</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Sujet complet</p><p>3 heures</p><p>40 points</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Sujet d'entraînement n° 19</h1><p class="cas">dossier 1, ESTRAVENT Énergies SA, producteur indépendant d'électricité éolienne et solaire coté sur Euronext Growth : effets de la fin des prix garantis sur le SI et planification stratégique, rapprochement de l'informatique de gestion et de l'informatique de conduite, urbanisation et échanges avec les organisations extérieures, préparation de la renégociation du contrat de l'ESN, transmission des savoirs du développement des parcs ; dossier 2, ESTRAVENT Énergies : modèle conceptuel et logique du référentiel des installations, lac de données et référentiel de données maîtres, analyse de l'énergie non produite, Big Data et souveraineté des données des éoliennes, sobriété des données de mesure ; dossier 3, ESTRAVENT Énergies : coûts du SI et refacturation aux sociétés de projet, fiabilité de la chaîne du comptage au chiffre d'affaires, sécurité des accès distants des tiers au réseau de conduite, critères et points de vigilance de l'audit de ces accès.</p><p>Durée de l'épreuve : 3 heures – Coefficient : 1</p>
+<p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026.</p>
+<p><strong>Document et matériel autorisés</strong> : Aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Le sujet se présente sous la forme de 3 dossiers indépendants :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dossier</th>
+<th>Intitulé</th>
+<th style="text-align: right;">Points</th>
+<th>Durée conseillée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DOSSIER 1</td>
+<td>PRÉPARER L'ÉVOLUTION DE LA STRATÉGIE ET DE L'ORGANISATION DU SYSTÈME D'INFORMATION, LA RENÉGOCIATION D'UN CONTRAT ET LA TRANSMISSION DES SAVOIRS</td>
+<td style="text-align: right;">14 points</td>
+<td>1 h 03</td>
+</tr>
+<tr class="even">
+<td>DOSSIER 2</td>
+<td>ORGANISER ET EXPLOITER LES DONNÉES DES INSTALLATIONS, EN GARDER LA MAÎTRISE</td>
+<td style="text-align: right;">13 points</td>
+<td>59 min</td>
+</tr>
+<tr class="odd">
+<td>DOSSIER 3</td>
+<td>MAÎTRISER LES COÛTS, LA FIABILITÉ ET LA SÉCURITÉ DU SYSTÈME D'INFORMATION DE CONDUITE</td>
+<td style="text-align: right;">13 points</td>
+<td>58 min</td>
+</tr>
+</tbody>
+</table>
+<p>Le sujet comporte 16 annexes, dont 1 communes aux dossiers.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dossier</th>
+<th>Annexe</th>
+<th>Intitulé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tous les dossiers</td>
+<td>Annexe 1.1</td>
+<td>Présentation d'ESTRAVENT Énergies et chiffres clés</td>
+</tr>
+<tr class="even">
+<td>DOSSIER 1</td>
+<td>Annexe 1.2</td>
+<td>Ce que la fin des prix garantis change pour ESTRAVENT (note de M. Arnaud VELDRIMONT, directeur de l'énergie, mai 2027, et témoignages)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Annexe 1.3</td>
+<td>Deux mondes dans le système d'information (constats établis par M. Olivier SAUVERNAY, responsable de la DSI, et Mme Nadège QUILLEBRAND, responsable de la cellule supervision, mai 2027)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Annexe 1.4</td>
+<td>Le contrat de maintenance de la plateforme de supervision (note de Mme Nadège QUILLEBRAND, responsable de la cellule supervision, mai 2027)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Annexe 1.5</td>
+<td>Les savoirs du développement des parcs (note de Mme Isaure TRÉMOLLAC, directrice du développement, mai 2027, et témoignages)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Annexe 1.6</td>
+<td>Repères (au 31/12/2026)</td>
+</tr>
+<tr class="odd">
+<td>DOSSIER 2</td>
+<td>Annexe 2.1</td>
+<td>Le référentiel des installations et les données de conduite (note de M. Fabien LACROUZE, responsable des ingénieurs de la performance, mai 2027)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Annexe 2.2</td>
+<td>L'énergie non produite de 2024 à 2026 (tableaux de M. Fabien LACROUZE, avril 2027)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Annexe 2.3</td>
+<td>Les données des éoliennes chez les constructeurs (note de Mme Gaëlle MONTREVIAU, directrice de l'exploitation, mai 2027, et extraits des contrats)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Annexe 2.4</td>
+<td>Le stockage des mesures (note de M. Olivier SAUVERNAY, responsable de la DSI, mai 2027)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Annexe 2.5</td>
+<td>Repères (au 31/12/2026)</td>
+</tr>
+<tr class="even">
+<td>DOSSIER 3</td>
+<td>Annexe 3.1</td>
+<td>Les coûts du système d'information et leur refacturation (note de Mme Agnès DORMEVAL, responsable du contrôle de gestion, mai 2027, et extrait du reporting annuel)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Annexe 3.2</td>
+<td>Du comptage au chiffre d'affaires (note de M. Thibault ORLANCOURT, directeur financier, mai 2027)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Annexe 3.3</td>
+<td>Les accès à distance aux installations (constats de Mme Nadège QUILLEBRAND, responsable de la cellule supervision, et de M. Olivier SAUVERNAY, responsable de la DSI, mai 2027)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Annexe 3.4</td>
+<td>La demande du comité d'audit (courriel de M. Bernard ESCOLIÈRE, président du comité d'audit, mai 2027)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Annexe 3.5</td>
+<td>Repères (au 31/12/2026)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en juin 2027. ESTRAVENT Énergies SA est un producteur indépendant d'électricité renouvelable, fondé en 2004 à Reims par trois ingénieurs. Société anonyme à conseil d'administration, elle est cotée sur Euronext Growth depuis 2015 ; ses fondateurs en détiennent 34 % du capital, un fonds d'infrastructure 21 %, et 45 % sont détenus par le public. Elle développe, construit et exploite en France 64 parcs éoliens terrestres (420 éoliennes, 1 000 MW) et 38 centrales solaires au sol (400 MW), portés chacun par une société de projet qu'elle détient à 100 %. En 2026, ses installations ont produit 2,7 TWh, et son chiffre d'affaires a atteint 250 M€. ESTRAVENT emploie 520 salariés, au siège de Reims, au centre de conduite qui surveille les installations jour et nuit, et dans quatre agences régionales. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>Le plan « ESTRAVENT 2031 », adopté en mars 2027 par le conseil d'administration, fixe quatre objectifs : porter la puissance installée à 2 500 MW, en renouvelant les éoliennes des parcs les plus anciens et en développant de nouveaux projets ; vendre 40 % de la production à des industriels par des contrats d'achat direct, contre 10 % en 2026, à mesure que les parcs sortent de leurs contrats de vente à prix garanti ; porter la disponibilité des éoliennes de 95 % à 97 %, en assurant elle-même la maintenance des machines sorties des contrats des constructeurs ; maîtriser les données et la sécurité de ses installations. Le système d'information s'est construit en deux mondes séparés : l'informatique de gestion, confiée à la DSI, et l'informatique de conduite des installations, gérée par la direction de l'exploitation avec les constructeurs et une entreprise de services du numérique.</p>
+<p>Vous êtes directeur (directrice) de la performance et des systèmes d'information d'ESTRAVENT depuis janvier 2027 ; vous dirigez la DSI et le contrôle de gestion et vous rendez compte au directeur financier. La présidente-directrice générale, Mme Sidonie VARLAMBERT, vous demande trois travaux : préparer l'évolution de la stratégie et de l'organisation du SI, la renégociation d'un contrat et la transmission des savoirs (dossier 1) ; organiser et exploiter les données des installations, et en garder la maîtrise (dossier 2) ; maîtriser les coûts, la fiabilité et la sécurité du SI de conduite (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-destravent-énergies-et-chiffres-clés">ANNEXE 1.1 – Présentation d'ESTRAVENT Énergies et chiffres clés</h3>
+<p>ESTRAVENT Énergies SA développe, construit et exploite des parcs éoliens terrestres et des centrales solaires au sol en France, dans quatre régions : Grand Est, Hauts-de-France, Centre-Val de Loire et Occitanie. Son siège est à Reims (Marne). Chaque parc éolien et chaque centrale solaire est porté par une société de projet, détenue à 100 % par ESTRAVENT : les 102 sociétés de projet n'ont aucun salarié, et ESTRAVENT leur facture ses services. Les communes où sont implantés les parcs sont fictives. L'exercice coïncide avec l'année civile : l'exercice 2026 est le dernier exercice clos.</p>
+<p><strong>L'actionnariat et la gouvernance</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Forme et cotation</td>
+<td>société anonyme à conseil d'administration, cotée sur Euronext Growth depuis 2015</td>
+</tr>
+<tr class="even">
+<td>Capital</td>
+<td>fondateurs 34 % ; fonds d'infrastructure 21 % ; public 45 %</td>
+</tr>
+<tr class="odd">
+<td>Conseil d'administration</td>
+<td>9 membres ; un comité d'audit ; présidente-directrice générale : Mme Sidonie VARLAMBERT, cofondatrice</td>
+</tr>
+<tr class="even">
+<td>Plan stratégique</td>
+<td>« ESTRAVENT 2031 », adopté en mars 2027 par le conseil d'administration</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Les installations et l'activité en 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Parcs éoliens terrestres</td>
+<td>64 parcs, 420 éoliennes, 1 000 MW ; les éoliennes viennent de trois constructeurs, désignés dans ce cas par les lettres A, B et C</td>
+</tr>
+<tr class="even">
+<td>Centrales solaires au sol</td>
+<td>38 centrales, 400 MW</td>
+</tr>
+<tr class="odd">
+<td>Puissance installée</td>
+<td>1 400 MW ; objectif du plan : 2 500 MW en 2031</td>
+</tr>
+<tr class="even">
+<td>Production</td>
+<td>2,7 TWh, dont éolien 2,2 TWh et solaire 0,5 TWh</td>
+</tr>
+<tr class="odd">
+<td>Disponibilité moyenne des éoliennes</td>
+<td>95 % ; objectif du plan : 97 %</td>
+</tr>
+<tr class="even">
+<td>Chiffre d'affaires</td>
+<td>250 M€</td>
+</tr>
+<tr class="odd">
+<td>Projets en développement</td>
+<td>70 projets ; sept à neuf ans s'écoulent entre la recherche d'un site et la mise en service</td>
+</tr>
+</tbody>
+</table>
+<p><strong>La vente de l'électricité en 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Mode de vente</th>
+<th>Part de l'électricité vendue</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contrats de vente à prix garanti de quinze ans</td>
+<td>70 %</td>
+</tr>
+<tr class="even">
+<td>Vente sur le marché par un agrégateur</td>
+<td>20 %</td>
+</tr>
+<tr class="odd">
+<td>Trois contrats d'achat direct de dix ans avec des industriels, signés en 2025 et 2026</td>
+<td>10 % ; objectif du plan : 40 % en 2031</td>
+</tr>
+</tbody>
+</table>
+<p>18 parcs éoliens sortent de leur contrat de vente à prix garanti entre 2026 et 2029.</p>
+<p><strong>L'effectif (520 salariés)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Direction</th>
+<th>Effectif</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exploitation</td>
+<td>210 : centre de conduite 40, techniciens de maintenance 150, ingénieurs de la performance 20 ; la cellule supervision (8 personnes) fait partie de la direction de l'exploitation</td>
+</tr>
+<tr class="even">
+<td>Développement</td>
+<td>130, dans quatre agences régionales</td>
+</tr>
+<tr class="odd">
+<td>Construction</td>
+<td>60</td>
+</tr>
+<tr class="even">
+<td>Énergie (vente de l'électricité)</td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td>Fonctions support</td>
+<td>95, dont 22 à la DSI et 6 au contrôle de gestion</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le système d'information en quelques lignes</strong></p>
+<p>En 2026, les dépenses du système d'information ont atteint 9 M€ : 5 M€ pour la DSI et 4 M€ pour l'informatique de conduite, dont 1,5 M€ pour le contrat de l'entreprise de services du numérique (ESN).</p>
+<ul>
+<li><strong>Informatique de conduite</strong>, gérée par la direction de l'exploitation : dans chaque parc éolien, un système de supervision et d'acquisition de données fourni par le constructeur des éoliennes (trois constructeurs, trois systèmes), dont les données remontent aussi dans le nuage de chaque constructeur ; une <strong>plateforme de supervision</strong> commune au centre de conduite, développée en 2016 pour ESTRAVENT et maintenue par une ESN au forfait jusqu'au 31/12/2027 ; des systèmes de supervision propres aux centrales solaires.</li>
+<li><strong>Informatique de gestion</strong>, confiée à la DSI : progiciel de gestion intégré (comptabilité, achats, immobilisations, facturation) ; paie ; logiciel de gestion de la maintenance en mode SaaS ; outil de prévision de la production fourni par un prestataire ; gestion des contrats de vente et facturation de l'électricité (tableurs et module du progiciel) ; système d'information géographique et gestion électronique des documents des projets ; gestion des relations avec les propriétaires des terrains et les communes ; messagerie et bureautique en ligne.</li>
+<li>Les données de production sont stockées dans une base de données relationnelle au siège.</li>
+</ul>
+<p><strong>Organigramme simplifié (juin 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Rattachement</th>
+<th>Fonction</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>—</td>
+<td>conseil d'administration, avec un comité d'audit</td>
+<td>présidente : Mme Sidonie VARLAMBERT ; président du comité d'audit : M. Bernard ESCOLIÈRE, administrateur indépendant</td>
+</tr>
+<tr class="even">
+<td>Conseil d'administration</td>
+<td>présidence-direction générale</td>
+<td>Mme Sidonie VARLAMBERT</td>
+</tr>
+<tr class="odd">
+<td>Présidente-directrice générale</td>
+<td>direction financière</td>
+<td>M. Thibault ORLANCOURT, directeur financier</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>direction de l'exploitation : centre de conduite, cellule supervision, maintenance, ingénieurs de la performance</td>
+<td>Mme Gaëlle MONTREVIAU, directrice de l'exploitation ; responsable du centre de conduite : M. Yannick FERRASSOT ; responsable de la cellule supervision : Mme Nadège QUILLEBRAND ; responsable des ingénieurs de la performance : M. Fabien LACROUZE</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>direction de l'énergie (vente de l'électricité)</td>
+<td>M. Arnaud VELDRIMONT, directeur de l'énergie</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>direction du développement, avec quatre agences régionales</td>
+<td>Mme Isaure TRÉMOLLAC, directrice du développement</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>direction de la construction</td>
+<td>M. Jérôme CALVIGNAC, directeur de la construction</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>déléguée à la protection des données</td>
+<td>Mme Léa VINCHEREAU</td>
+</tr>
+<tr class="odd">
+<td>Directeur financier</td>
+<td>direction de la performance et des systèmes d'information : DSI et contrôle de gestion</td>
+<td>vous ; responsable de la DSI : M. Olivier SAUVERNAY ; responsable du contrôle de gestion : Mme Agnès DORMEVAL</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-1--préparer-lévolution-de-la-stratégie-et-de-lorganisation-du-système-dinformation-la-renégociation-dun-contrat-et-la-transmission-des-savoirs-14-points">DOSSIER 1 – PRÉPARER L'ÉVOLUTION DE LA STRATÉGIE ET DE L'ORGANISATION DU SYSTÈME D'INFORMATION, LA RENÉGOCIATION D'UN CONTRAT ET LA TRANSMISSION DES SAVOIRS (14 points)</h2>
+<h3 id="annexe-12--ce-que-la-fin-des-prix-garantis-change-pour-estravent-note-de-m-arnaud-veldrimont-directeur-de-lénergie-mai-2027-et-témoignages">ANNEXE 1.2 – Ce que la fin des prix garantis change pour ESTRAVENT (note de M. Arnaud VELDRIMONT, directeur de l'énergie, mai 2027, et témoignages)</h3>
+<p><strong>A. La sortie des contrats à prix garanti.</strong> Les 18 parcs qui sortent de leur contrat de vente à prix garanti entre 2026 et 2029 représentent environ 250 MW. Leur production sera vendue de deux façons :</p>
+<ul>
+<li>sur le marché, par l'agrégateur, qui vend chaque jour l'électricité pour le lendemain à partir du programme de production que nous lui envoyons ; plus ce programme est juste, mieux nous vendons ;</li>
+<li>à des industriels, par des contrats d'achat direct. Chaque contrat nous engage à livrer un profil horaire, c'est-à-dire une quantité d'énergie fixée pour chaque heure, et à facturer chaque mois l'énergie livrée, heure par heure, soit environ 720 valeurs horaires par contrat et par mois. Quand nos parcs produisent moins que le profil, l'agrégateur achète l'énergie manquante sur le marché, à nos frais.</li>
+</ul>
+<p>Vendre ainsi suppose une prévision fine de la production de chaque parc, mise à jour plusieurs fois par jour, et un suivi du portefeuille de contrats : volumes engagés, prix, échéances, écarts entre le profil et la production. Nous avons trois contrats d'achat direct ; il en faudra environ 15 contrats en 2031 pour atteindre l'objectif du plan.</p>
+<p><strong>B. Comment nous travaillons aujourd'hui.</strong></p>
+<ul>
+<li>Les prévisions de production arrivent une fois par jour, à 10 heures, par un fichier du prestataire de prévision, pour le lendemain.</li>
+<li>Chaque contrat d'achat direct est suivi dans son propre tableur ; le progiciel de gestion intégré ne connaît que le montant de la facture.</li>
+<li>Les factures horaires sont préparées à la main par deux personnes de la direction de l'énergie, qui y passent chacune cinq jours par mois : elles rapprochent les données de production de la supervision, les relevés mensuels de comptage du gestionnaire du réseau et le profil de chaque contrat.</li>
+<li>En 2026, deux factures mensuelles adressées à des industriels ont été contestées, puis refaites.</li>
+</ul>
+<p><strong>C. Les autres évolutions du plan « ESTRAVENT 2031 ».</strong></p>
+<ul>
+<li><strong>Renouvellement</strong> : d'ici 2031, les éoliennes de dix parcs parmi les plus anciens seront remplacées par des machines plus puissantes, d'un autre modèle et parfois d'un autre constructeur.</li>
+<li><strong>Maintenance reprise aux constructeurs</strong> : ESTRAVENT assure elle-même la maintenance des éoliennes sorties des contrats des constructeurs, 60 éoliennes en 2027 et environ 200 en 2031, avec ses techniciens et des sous-traitants ; il faut planifier les interventions, gérer les pièces de rechange et connaître l'historique des alarmes de chaque machine.</li>
+<li><strong>Stockage</strong> : deux sites de stockage par batteries, installés à côté de parcs, seront à l'essai à partir de 2028 ; ils devront se charger quand l'électricité est abondante et se décharger quand elle est chère, ce qui suppose de piloter les batteries à partir des prévisions et des prix.</li>
+<li><strong>Développement</strong> : la puissance installée doit passer de 1 400 MW à 2 500 MW en 2031.</li>
+</ul>
+<p><strong>D. Les projets du système d'information.</strong> ESTRAVENT n'a pas de plan stratégique du système d'information. Le dernier exercice de ce type, un schéma directeur 2018-2021, n'a jamais été mis à jour. Chaque direction lance ses projets : la direction de l'énergie veut acheter un logiciel de gestion des contrats de vente, la direction de l'exploitation veut étendre le logiciel de gestion de la maintenance aux techniciens et aux sous-traitants, la direction du développement veut remplacer le système d'information géographique. Le comité de direction n'examine les dépenses du système d'information qu'une fois par an, au budget.</p>
+<p><strong>Témoignages recueillis en mai 2027</strong></p>
+<p><strong>M. Thibault ORLANCOURT, directeur financier</strong> : « Le plan "ESTRAVENT 2031" a été adopté sans un mot sur le système d'information. Le conseil a voté des objectifs de vente et de disponibilité ; personne ne lui a dit ce qu'ils supposaient en outils, en données et en compétences. »</p>
+<p><strong>Une chargée de facturation de la direction de l'énergie</strong> : « Avec trois contrats, nous tenons, en faisant attention. Avec quinze, sans autre méthode, nous ne tiendrons pas. Et quand un industriel nous demande pourquoi nous avons livré moins que le profil à telle heure, il nous faut deux jours pour lui répondre. »</p>
+<p><strong>Mme Gaëlle MONTREVIAU, directrice de l'exploitation</strong> : « Nous savons conduire des éoliennes. Ce que nous ne savons pas encore faire, c'est les entretenir nous-mêmes : nos techniciens doivent avoir sur leur tablette l'historique de la machine, les alarmes du jour et les pièces disponibles. »</p>
+<h3 id="annexe-13--deux-mondes-dans-le-système-dinformation-constats-établis-par-m-olivier-sauvernay-responsable-de-la-dsi-et-mme-nadège-quillebrand-responsable-de-la-cellule-supervision-mai-2027">ANNEXE 1.3 – Deux mondes dans le système d'information (constats établis par M. Olivier SAUVERNAY, responsable de la DSI, et Mme Nadège QUILLEBRAND, responsable de la cellule supervision, mai 2027)</h3>
+<p><strong>A. Qui fait quoi.</strong></p>
+<ul>
+<li>La <strong>DSI</strong> (22 personnes, rattachée à la direction de la performance et des systèmes d'information, elle-même rattachée au directeur financier) gère l'informatique de gestion : applications, postes de travail, messagerie, réseau du siège et des agences, support aux utilisateurs.</li>
+<li>La <strong>cellule supervision</strong> (8 personnes, direction de l'exploitation) gère la plateforme de supervision, les liens avec les systèmes des trois constructeurs et des centrales solaires, et les postes du centre de conduite, avec l'ESN qui maintient la plateforme. Elle a son propre calendrier, sa propre astreinte et ses propres achats.</li>
+<li>Les deux équipes ne se réunissent jamais. Aucune instance ne traite ensemble l'informatique de gestion et l'informatique de conduite ; le comité de direction ne les voit que dans le budget.</li>
+</ul>
+<p><strong>B. Les frictions relevées.</strong></p>
+<ol type="1">
+<li>En mars 2026, la DSI a installé une mise à jour de la messagerie un mardi soir. Les alarmes du centre de conduite, envoyées aux techniciens d'astreinte par la messagerie, ont été coupées pendant deux heures ; ni la cellule supervision ni le centre de conduite n'avaient été prévenus.</li>
+<li>En 2026, la direction de l'exploitation a souscrit seule un outil en ligne d'analyse des vibrations des éoliennes. La DSI l'a découvert à la réception de la facture ; l'outil n'est relié à aucun autre, et les ingénieurs de la performance y chargent les données à la main.</li>
+<li>Personne n'a la liste complète des postes reliés aux installations : la DSI en recense 40, la cellule supervision 55, et ni l'une ni l'autre ne sait qui doit tenir la liste.</li>
+<li>Les techniciens ont un compte dans l'annuaire de la DSI et un autre sur la plateforme de supervision, créés et supprimés séparément : 30 comptes de personnes parties sont encore actifs sur la plateforme. Chaque intervention est saisie dans le logiciel de gestion de la maintenance, puis ressaisie dans la plateforme de supervision pour suspendre les alarmes de la machine pendant les travaux.</li>
+</ol>
+<p><strong>C. Les échanges avec les organisations extérieures.</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Organisation extérieure</th>
+<th>Ce qui est échangé</th>
+<th>Comment, aujourd'hui</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Constructeurs A, B et C</td>
+<td>données de fonctionnement et alarmes des éoliennes ; rapports de maintenance des machines encore sous contrat</td>
+<td>trois liens spécifiques avec la plateforme de supervision ; pour le reste, trois portails différents, chacun avec ses formats ; les ingénieurs exportent les données à la main</td>
+</tr>
+<tr class="even">
+<td>Gestionnaire du réseau de distribution</td>
+<td>relevés de comptage mensuels de chaque parc et de chaque centrale</td>
+<td>fichiers téléchargés chaque mois sur son portail, puis copiés dans les tableurs de facturation</td>
+</tr>
+<tr class="odd">
+<td>Agrégateur</td>
+<td>programme de production du lendemain ; quantités vendues et prix obtenus</td>
+<td>programme envoyé chaque jour par courriel, en tableur ; relevés de ventes reçus en PDF</td>
+</tr>
+<tr class="even">
+<td>Industriels clients (trois contrats)</td>
+<td>profils horaires ; factures mensuelles et détail horaire</td>
+<td>profils en tableur ; factures envoyées en PDF par courriel</td>
+</tr>
+<tr class="odd">
+<td>Quatre sous-traitants de maintenance</td>
+<td>ordres de travail ; comptes rendus d'intervention</td>
+<td>ordres envoyés par courriel ; comptes rendus en PDF, ressaisis dans le logiciel de gestion de la maintenance</td>
+</tr>
+<tr class="even">
+<td>Prestataire de prévision</td>
+<td>prévisions de production par parc</td>
+<td>un fichier par jour</td>
+</tr>
+</tbody>
+</table>
+<p>Aucun de ces échanges n'a de responsable désigné ; chacun a été construit au fil des besoins, par la direction qui en avait l'usage.</p>
+<h3 id="annexe-14--le-contrat-de-maintenance-de-la-plateforme-de-supervision-note-de-mme-nadège-quillebrand-responsable-de-la-cellule-supervision-mai-2027">ANNEXE 1.4 – Le contrat de maintenance de la plateforme de supervision (note de Mme Nadège QUILLEBRAND, responsable de la cellule supervision, mai 2027)</h3>
+<p><strong>Le contrat.</strong> La plateforme de supervision du centre de conduite, développée en 2016 pour ESTRAVENT, est maintenue par KALVENTIS Services, une ESN, dans le cadre d'un contrat au forfait de trois ans qui court du 01/01/2025 au 31/12/2027, pour 1,5 M€ par an. Le forfait couvre la correction des anomalies, le support jour et nuit en cas de panne et un volume d'évolutions ; les autres évolutions sont facturées en plus, sur devis. Le contrat fixe deux niveaux de service :</p>
+<ul>
+<li>une <strong>panne bloquante</strong> (le centre de conduite ne voit plus un ou plusieurs parcs) doit être rétablie en 4 heures, jour et nuit, dans 95 % des cas ;</li>
+<li>une <strong>anomalie majeure</strong> doit être corrigée en cinq jours ouvrés, dans 90 % des cas.</li>
+</ul>
+<p>Des pénalités sont prévues en cas de manquement, dans la limite de 5 % du forfait annuel ; elles n'ont jamais été réclamées. Le contrat prévoit qu'ESTRAVENT notifie sa décision de renouveler ou non avant le 30/09/2027.</p>
+<p><strong>Le suivi de la prestation</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Cible du contrat</th>
+<th>2025</th>
+<th>2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pannes bloquantes</td>
+<td>—</td>
+<td>12</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>Part des pannes bloquantes rétablies en 4 heures</td>
+<td>95 %</td>
+<td>90 %</td>
+<td>70 %</td>
+</tr>
+<tr class="odd">
+<td>Anomalies majeures</td>
+<td>—</td>
+<td>60</td>
+<td>80</td>
+</tr>
+<tr class="even">
+<td>Part des anomalies majeures corrigées en cinq jours ouvrés</td>
+<td>90 %</td>
+<td>80 %</td>
+<td>60 %</td>
+</tr>
+<tr class="odd">
+<td>Évolutions facturées hors forfait</td>
+<td>—</td>
+<td>100 k€</td>
+<td>300 k€</td>
+</tr>
+<tr class="even">
+<td>Ingénieurs de KALVENTIS Services affectés à la plateforme</td>
+<td>—</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>dont ingénieurs remplacés dans l'année</td>
+<td>—</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mes constats.</strong></p>
+<ul>
+<li>Deux ingénieurs de KALVENTIS Services, présents depuis 2016, sont les seuls à connaître le code de la plateforme ; l'un d'eux m'a dit qu'il quitterait l'ESN en 2028. Les nouveaux venus mettent des mois à être autonomes.</li>
+<li>La documentation de la plateforme n'est plus tenue à jour depuis 2021.</li>
+<li>Aucun comité de suivi ne s'est réuni depuis janvier 2025 ; les chiffres du tableau ci-dessus sont ceux que l'ESN nous envoie, et nous ne les vérifions pas.</li>
+<li>Le contrat ne prévoit ni clause d'audit, ni plan de réversibilité. Il ne dit pas à qui appartiennent les développements spécifiques réalisés depuis 2016 ; le code source est chez KALVENTIS Services, et ESTRAVENT n'en a aucune copie.</li>
+</ul>
+<p><strong>La position de KALVENTIS Services (courrier d'avril 2027).</strong> L'ESN propose de renouveler le contrat pour trois ans, de 2028 à 2030, avec une hausse de 15 % du forfait annuel, qu'elle justifie par la hausse des salaires de ses ingénieurs et par la complexité croissante de la plateforme (nouveaux modèles d'éoliennes, futurs sites de batteries). Elle ne s'engage pas sur de nouveaux niveaux de service.</p>
+<p><strong>Les options connues.</strong> Deux autres ESN ont fait savoir qu'elles pourraient reprendre la maintenance de la plateforme, après six mois de transfert des connaissances. Une reprise partielle par une équipe interne supposerait de recruter quatre développeurs, sur un marché où ils sont rares. Aucune procédure de choix d'un prestataire n'est à organiser dans ce dossier.</p>
+<h3 id="annexe-15--les-savoirs-du-développement-des-parcs-note-de-mme-isaure-trémollac-directrice-du-développement-mai-2027-et-témoignages">ANNEXE 1.5 – Les savoirs du développement des parcs (note de Mme Isaure TRÉMOLLAC, directrice du développement, mai 2027, et témoignages)</h3>
+<p><strong>A. Un métier long, des savoirs rares.</strong> Un projet de parc demande sept à neuf ans entre la recherche d'un site et la mise en service. Il est conduit par un chef de projet d'une des quatre agences régionales, qui le suit d'un bout à l'autre. Nos 45 chefs de projet portent les 70 projets en développement ; 12 des plus expérimentés partiront d'ici 2030, 8 à la retraite et 4 vers d'autres postes ou d'autres entreprises.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Savoir</th>
+<th>Ce qu'il recouvre</th>
+<th>Où il se trouve aujourd'hui</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Choisir un site et lire les mesures de vent</td>
+<td>repérer les sites possibles ; juger si le mât de mesure est bien placé, si une année de mesures est représentative, si un écart vient du vent ou de l'appareil</td>
+<td>dans la tête de quelques chefs de projet anciens ; les rapports de mesure sont dans la gestion électronique des documents, sans le raisonnement qui a conduit à garder ou à écarter un site</td>
+</tr>
+<tr class="even">
+<td>Dialoguer avec les communes et les riverains</td>
+<td>savoir qui rencontrer, dans quel ordre, quand présenter le projet, comment répondre aux inquiétudes</td>
+<td>dans les carnets et les téléphones des chefs de projet ; un tiers des communes seulement sont renseignées dans l'outil de gestion des relations avec les propriétaires et les communes</td>
+</tr>
+<tr class="odd">
+<td>Organiser les études environnementales</td>
+<td>choisir les bureaux d'études, caler leurs observations de terrain sur une année complète, relire leurs rapports</td>
+<td>dans des modèles de cahiers des charges propres à chaque agence ; aucun retour d'expérience écrit</td>
+</tr>
+<tr class="even">
+<td>Obtenir l'accord des propriétaires et des exploitants des terrains</td>
+<td>les rencontrer, négocier, garder leur accord pendant des années</td>
+<td>dans l'outil de gestion des relations, pour les coordonnées et les dates ; le reste dans la mémoire des chefs de projet</td>
+</tr>
+<tr class="odd">
+<td>Préparer le raccordement au réseau</td>
+<td>savoir, tôt, si le poste électrique voisin pourra accueillir le parc, et préparer la demande au gestionnaire du réseau</td>
+<td>chez deux chefs de projet de l'agence Grand Est, qui partiront tous deux à la retraite d'ici 2029</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Ce qui existe.</strong></p>
+<ul>
+<li>La gestion électronique des documents des projets contient 60 000 documents ; chaque agence les classe à sa façon, et la recherche ne porte que sur le nom des fichiers.</li>
+<li>Les quatre agences se réunissent une journée par an ; chacune y présente ses mises en service.</li>
+<li>Un wiki du développement a été lancé en 2023 : il compte 12 pages, et personne ne l'a modifié depuis 2024.</li>
+<li>En 2025, l'agence Hauts-de-France a abandonné, après quatre ans d'études, un projet dont le poste électrique voisin ne pouvait plus accueillir de parc : environ 0,5 M€ d'études perdues. L'agence Grand Est avait rencontré la même difficulté en 2021, sur un site comparable ; personne aux Hauts-de-France ne le savait.</li>
+</ul>
+<p><strong>C. Ce que disent les chefs de projet et les agences (témoignages recueillis en mai 2027).</strong></p>
+<ul>
+<li>Un chef de projet de l'agence Occitanie, 30 ans de métier : « Je n'ai pas le temps d'écrire. Un projet, c'est vingt réunions publiques par an, des soirées en mairie, des week-ends chez les agriculteurs. Le wiki, je l'ai ouvert une fois. »</li>
+<li>Une cheffe de projet de l'agence Grand Est : « Mes contacts dans les mairies, c'est mon travail. Ce sont des relations de confiance, construites sur dix ans ; cela ne se met pas dans une fiche. »</li>
+<li>Le directeur de l'agence Centre-Val de Loire : « Nos primes sont calculées sur nos propres mises en service. Pourquoi passerais-je du temps à aider l'agence voisine, qui nous dispute parfois les mêmes sites ? »</li>
+<li>Un jeune chef de projet de l'agence Hauts-de-France : « Quand je cherche quelque chose, j'appelle un ancien qui sait. Quand il sera parti, j'appellerai qui ? »</li>
+</ul>
+<h3 id="annexe-16--repères-au-31122026">ANNEXE 1.6 – Repères (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Repère</th>
+<th>Nom exact et version</th>
+<th>Ce qu'il faut en retenir</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Alignement stratégique</td>
+<td>modèle d'alignement stratégique (SAM), J. C. Henderson et N. Venkatraman, <em>IBM Systems Journal</em>, 1993</td>
+<td>modèle théorique : cohérence à rechercher entre la stratégie de l'entreprise, la stratégie des technologies de l'information, l'organisation et ses processus, et l'infrastructure du SI</td>
+</tr>
+<tr class="even">
+<td>Gouvernance du système d'information</td>
+<td>COBIT 2019, ISACA (évolution de COBIT 5)</td>
+<td>référentiel de gouvernance et de management de l'information et des technologies, ni norme ni logiciel ; un domaine « aligner, planifier, organiser » (APO)</td>
+</tr>
+<tr class="odd">
+<td>Architecture d'entreprise</td>
+<td>The TOGAF Standard, 10e édition, The Open Group</td>
+<td>méthode d'architecture d'entreprise, ni norme ni logiciel ; conduit le passage d'une architecture existante à une architecture cible</td>
+</tr>
+<tr class="even">
+<td>Gestion des services informatiques</td>
+<td>ITIL 4, PeopleCert (ex-AXELOS), 2019 ; coexiste depuis 2026 avec ITIL (version 5)</td>
+<td>référentiel de bonnes pratiques, ni norme ni logiciel : gestion des incidents, des changements et des niveaux de service</td>
+</tr>
+<tr class="odd">
+<td>Gestion des connaissances</td>
+<td>modèle SECI, I. Nonaka et H. Takeuchi, <em>The Knowledge-Creating Company</em>, 1995 (traduction française : <em>La connaissance créatrice</em>, 1997)</td>
+<td>modèle théorique : la connaissance se crée par quatre conversions successives entre connaissances tacites et connaissances explicites, en spirale</td>
+</tr>
+<tr class="even">
+<td>Conduite du changement</td>
+<td>ADKAR, Prosci</td>
+<td>modèle théorique de l'adhésion individuelle à un changement, en cinq étapes successives</td>
+</tr>
+</tbody>
+</table>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>Le plan « ESTRAVENT 2031 » change le métier d'ESTRAVENT : elle devra vendre elle-même une part croissante de son électricité, entretenir ses éoliennes et piloter des batteries. Or son système d'information n'a pas de plan stratégique, ses deux mondes s'ignorent, la plateforme de supervision dépend d'une seule ESN dont le contrat arrive à échéance, et les savoirs du développement des parcs vont partir avec leurs détenteurs. Mme VARLAMBERT vous demande d'analyser les effets du plan sur le système d'information et de préparer sa planification stratégique, de rapprocher l'informatique de gestion et l'informatique de conduite et d'urbaniser le système d'information, de préparer la renégociation du contrat de l'ESN, enfin de concevoir la transmission des savoirs du développement. Vous mobiliserez pour cela les annexes 1.1 à 1.6 ainsi que vos connaissances professionnelles.</p>
+<p><strong>1.1 – Les effets du plan sur le système d'information et sa planification stratégique (3,5 points)</strong></p>
+<p>a) Analysez, à partir de l'annexe 1.2, les effets de la fin des contrats de vente à prix garanti et des autres évolutions du plan « ESTRAVENT 2031 » sur le système d'information : les fonctions nouvelles qu'il devra assurer, les données dont il aura besoin et les délais dans lesquels il devra les fournir. Proposez ensuite trois orientations du système d'information, chacune justifiée par un objectif du plan et par un constat de l'annexe.</p>
+<p>b) Après avoir défini la planification stratégique du système d'information, présentez la démarche qui permettrait de bâtir le plan stratégique du système d'information d'ESTRAVENT : ses étapes, ses acteurs, son horizon et la manière d'y rendre les arbitrages. Il n'est demandé ni portefeuille de projets, ni grille de priorisation, ni chiffrage.</p>
+<p><strong>1.2 – Le rapprochement de l'informatique de gestion et de l'informatique de conduite (4 points)</strong></p>
+<p>a) Après avoir présenté les modèles d'organisation de la fonction système d'information (centralisé, décentralisé, fédéral, bimodal), recommandez, à partir de l'annexe 1.3, l'organisation qui rapproche l'informatique de gestion et l'informatique de conduite des installations : rattachement de la cellule supervision, rôles de la DSI et de la direction de l'exploitation, instance commune. Montrez ensuite comment votre recommandation traite trois des frictions décrites dans l'annexe.</p>
+<p>b) Après avoir défini l'urbanisation du système d'information, proposez un découpage du système d'information d'ESTRAVENT en zones (gestion, conduite des installations, énergie, développement, et toute zone que vous jugerez utile), en y plaçant les applications des annexes 1.1 et 1.3. Énoncez ensuite deux règles qui rendent cohérents les échanges avec les organisations extérieures de l'annexe 1.3, en montrant ce que chacune change pour l'une d'elles. Il n'est demandé ni cartographie applicative complète, ni détail technique des échanges.</p>
+<p><strong>1.3 – La renégociation du contrat de l'ESN (3 points)</strong></p>
+<p>a) Identifiez, à partir de l'annexe 1.4, quatre risques de la relation avec KALVENTIS Services, chacun appuyé sur un constat de l'annexe.</p>
+<p>b) Préparez la négociation du renouvellement : vos objectifs prioritaires, deux concessions que vous pourriez accepter et la solution de repli si la négociation échoue, avec son calendrier. Aucune analyse juridique du contrat ni aucune procédure de choix d'un prestataire n'est attendue.</p>
+<p>c) Proposez le dispositif de gouvernance de la relation avec l'ESN (instances, clause d'audit, plan de sortie) et deux indicateurs de suivi, chacun précisé par sa formule, sa source, sa fréquence, sa cible et son axe.</p>
+<p><strong>1.4 – La transmission des savoirs du développement des parcs (3,5 points)</strong></p>
+<p>a) Après avoir distingué connaissances tacites et connaissances explicites et présenté le modèle SECI, identifiez, à partir de l'annexe 1.5, trois savoirs critiques du développement des parcs, en justifiant leur criticité, et proposez pour chacun un mode de transmission adapté.</p>
+<p>b) Décrivez l'architecture fonctionnelle du dispositif de gestion des connaissances du développement (capter, organiser, retrouver, partager, mettre à jour), en vous appuyant sur les outils existants d'ESTRAVENT. Proposez ensuite sa gouvernance : les rôles, une règle de mise à jour et un indicateur de suivi, précisé par sa formule, sa source, sa fréquence, sa cible et son axe. La gestion des compétences n'est pas à traiter.</p>
+<p>c) Proposez trois leviers d'appropriation du dispositif, chacun en réponse à une résistance exprimée dans l'annexe 1.5.</p>
+<hr />
+<h2 id="dossier-2--organiser-et-exploiter-les-données-des-installations-en-garder-la-maîtrise-13-points">DOSSIER 2 – ORGANISER ET EXPLOITER LES DONNÉES DES INSTALLATIONS, EN GARDER LA MAÎTRISE (13 points)</h2>
+<h3 id="annexe-21--le-référentiel-des-installations-et-les-données-de-conduite-note-de-m-fabien-lacrouze-responsable-des-ingénieurs-de-la-performance-mai-2027">ANNEXE 2.1 – Le référentiel des installations et les données de conduite (note de M. Fabien LACROUZE, responsable des ingénieurs de la performance, mai 2027)</h3>
+<p><strong>A. Les éoliennes et leurs données aujourd'hui</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Constructeur</th>
+<th>Éoliennes</th>
+<th>Puissance</th>
+<th>Âge moyen des éoliennes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>180</td>
+<td>420 MW</td>
+<td>9 ans</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>140</td>
+<td>330 MW</td>
+<td>14 ans</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>100</td>
+<td>250 MW</td>
+<td>6 ans</td>
+</tr>
+<tr class="even">
+<td><strong>Ensemble</strong></td>
+<td><strong>420</strong></td>
+<td><strong>1 000 MW</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Une même éolienne a trois noms, dans cinq systèmes de nommage.</strong> Le système du constructeur A désigne ses éoliennes par leur numéro de machine (« 41207 »), celui de B par l'abréviation du parc et la position (« CSV-T03 »), celui de C par un code interne (« C-7731 ») ; la plateforme de supervision et le logiciel de gestion de la maintenance donnent à chacune un autre code (pour l'éolienne CSV-T03 de B : « P07-E03 » et « ÉOL-0287 »). Les alarmes ont le même défaut : A compte 2 500 codes d'alarme, B 1 800 et C 3 000, sans aucune correspondance ; une surchauffe du multiplicateur porte trois codes différents. Mes ingénieurs tiennent à la main, dans un tableur, la correspondance des 200 alarmes les plus fréquentes.</li>
+<li><strong>Les composants sont suivis dans des tableurs.</strong> Les 2 100 composants majeurs des éoliennes (un multiplicateur, une génératrice et trois pales par machine) sont suivis par leur numéro de série dans quatre tableurs, un par région, tenus par les techniciens. En 2026, sur 200 composants contrôlés lors des visites, 30 ne correspondaient pas au tableur : composant remplacé sans mise à jour, numéro mal recopié ou saisi sur la mauvaise machine. En 2026, 60 composants majeurs ont été remplacés.</li>
+<li><strong>Les mesures saturent la base du siège.</strong> Les éoliennes transmettent à la plateforme de supervision des moyennes à dix minutes de 80 mesures (vent, puissance, températures, vibrations…), stockées dans la base de données relationnelle du siège. Depuis 2025, elle reçoit aussi les mesures à la seconde d'une cinquantaine de variables de 60 éoliennes du constructeur A, dans le cadre d'un essai. La base est passée de 4 To en 2024 à 12 To en 2026 ; elle est occupée à 95 %, et l'extraction d'une année de mesures d'un parc prend une nuit.</li>
+<li><strong>Les analyses commencent par des exports.</strong> Mes 20 ingénieurs exportent les mesures et les alarmes à la main, de la base et des portails des constructeurs, puis les mettent en forme dans des tableurs : environ 40 % de leur temps y passe.</li>
+</ul>
+<p><strong>B. Les usages attendus des données</strong></p>
+<ol type="1">
+<li><strong>Analyses de la performance</strong> : comparer les éoliennes d'un même modèle, repérer celles qui produisent moins que prévu pour le vent mesuré, expliquer l'énergie non produite.</li>
+<li><strong>Maintenance prédictive</strong> des multiplicateurs et des génératrices, à partir des mesures à la seconde.</li>
+<li><strong>Reporting mensuel</strong> de la disponibilité et de l'énergie non produite au comité de direction.</li>
+<li><strong>Études de renouvellement</strong> des parcs les plus anciens, qui comparent dix ans ou plus de production ; d'ici 2031, des éoliennes d'autres modèles, parfois d'autres constructeurs, remplaceront les plus anciennes.</li>
+</ol>
+<p><strong>C. Les deux options d'architecture étudiées par la DSI</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Option 1 : entrepôt de données</th>
+<th>Option 2 : lac de données et référentiel de données maîtres</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Données reçues</td>
+<td>moyennes à dix minutes, alarmes et interventions du logiciel de gestion de la maintenance, transformées chaque nuit</td>
+<td>toutes les données, reçues telles quelles : moyennes à dix minutes, mesures à la seconde, alarmes, rapports d'intervention en PDF, photos des inspections de pales, données météorologiques</td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td>une base structurée pour le reporting, alimentée par des traitements de chargement qui contrôlent et transforment les données</td>
+<td>un lac organisé en « lakehouse » : une zone de données brutes, et une zone de données structurées et contrôlées, interrogeable comme un entrepôt ; un référentiel de données maîtres des installations (parcs, éoliennes, modèles, composants, liste commune des alarmes), tenu par un responsable désigné</td>
+</tr>
+<tr class="odd">
+<td>Mise en service</td>
+<td>12 mois</td>
+<td>18 mois</td>
+</tr>
+</tbody>
+</table>
+<p>Aucun chiffrage du projet n'est attendu.</p>
+<p><strong>D. Les règles de gestion du référentiel des installations</strong></p>
+<p>Le référentiel ne porte, dans un premier temps, que sur les éoliennes.</p>
+<ul>
+<li><strong>RG1</strong> – Un parc est identifié par un code ; on connaît son nom, sa commune, sa région et sa date de mise en service. Un parc compte une ou plusieurs éoliennes.</li>
+<li><strong>RG2</strong> – Une éolienne est identifiée par un code unique attribué par ESTRAVENT ; on connaît son numéro de position dans le parc et sa désignation dans le système de son constructeur. Une éolienne appartient à un seul parc.</li>
+<li><strong>RG3</strong> – Une éolienne relève d'un seul modèle. Un modèle est identifié par un code ; on connaît sa désignation, son constructeur et sa puissance. Un modèle peut n'équiper encore aucune éolienne d'ESTRAVENT (modèles étudiés pour le renouvellement).</li>
+<li><strong>RG4</strong> – Un composant majeur (multiplicateur, génératrice ou pale) est identifié par son numéro de série ; on connaît son type. Une éolienne comporte au moins un composant majeur. À un moment donné, un composant est monté sur une seule éolienne, ou sur aucune lorsqu'il est en stock ou en réparation.</li>
+<li><strong>RG5</strong> – Un remplacement est identifié par un numéro ; on connaît sa date et son motif (panne, usure, maintenance préventive). Il concerne une seule éolienne ; il retire un composant, le composant déposé, et en installe un autre, le composant posé. Au cours de sa vie, un composant peut être déposé lors de plusieurs remplacements et posé lors de plusieurs autres (après une réparation), ou d'aucun ; une éolienne peut n'avoir connu aucun remplacement.</li>
+<li><strong>RG6</strong> – Un intervenant est identifié par un code ; on connaît son nom et sa catégorie (technicien d'ESTRAVENT ou entreprise sous-traitante). Un remplacement est réalisé par un ou plusieurs intervenants ; un intervenant peut n'avoir réalisé aucun remplacement.</li>
+</ul>
+<h3 id="annexe-22--lénergie-non-produite-de-2024-à-2026-tableaux-de-m-fabien-lacrouze-avril-2027">ANNEXE 2.2 – L'énergie non produite de 2024 à 2026 (tableaux de M. Fabien LACROUZE, avril 2027)</h3>
+<p>Conventions : l'<strong>énergie non produite</strong> est l'énergie que les éoliennes auraient produite, d'après le vent mesuré, pendant leurs arrêts et leurs réductions de puissance ; elle est estimée par les ingénieurs de la performance à partir des moyennes à dix minutes. La <strong>disponibilité</strong> est la part du temps pendant laquelle une éolienne est en état de produire : les pannes et la maintenance la réduisent ; les bridages, les arrêts pour la faune et le givre ne la réduisent pas, l'éolienne restant en état de produire.</p>
+<p><strong>A. Énergie non produite par cause (en GWh, chiffres publiés)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Cause</th>
+<th>2024</th>
+<th>2025</th>
+<th>2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pannes</td>
+<td>70</td>
+<td>80</td>
+<td>90</td>
+</tr>
+<tr class="even">
+<td>Maintenance programmée</td>
+<td>30</td>
+<td>25</td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td>Bridages demandés par le gestionnaire du réseau</td>
+<td>20</td>
+<td>35</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>Arrêts pour la protection des oiseaux et des chauves-souris</td>
+<td>15</td>
+<td>20</td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td>Givre</td>
+<td>10</td>
+<td>15</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td><strong>Ensemble</strong></td>
+<td><strong>145</strong></td>
+<td><strong>175</strong></td>
+<td><strong>200</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Énergie non produite en 2026 par constructeur (en GWh) et disponibilité</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Constructeur</th>
+<th>Pannes</th>
+<th>Maintenance programmée</th>
+<th>Bridages</th>
+<th>Faune</th>
+<th>Givre</th>
+<th>Ensemble</th>
+<th>Par éolienne</th>
+<th>Disponibilité 2024</th>
+<th>2025</th>
+<th>2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A (180 éoliennes)</td>
+<td>30</td>
+<td>10</td>
+<td>25</td>
+<td>5</td>
+<td>5</td>
+<td>75</td>
+<td>environ 420 MWh</td>
+<td>96 %</td>
+<td>96 %</td>
+<td>96 %</td>
+</tr>
+<tr class="even">
+<td>B (140 éoliennes)</td>
+<td>40</td>
+<td>10</td>
+<td>15</td>
+<td>15</td>
+<td>0</td>
+<td>80</td>
+<td>environ 570 MWh</td>
+<td>95 %</td>
+<td>94 %</td>
+<td>94 %</td>
+</tr>
+<tr class="odd">
+<td>C (100 éoliennes)</td>
+<td>20</td>
+<td>5</td>
+<td>10</td>
+<td>5</td>
+<td>5</td>
+<td>45</td>
+<td>450 MWh</td>
+<td>96 %</td>
+<td>95 %</td>
+<td>95 %</td>
+</tr>
+<tr class="even">
+<td><strong>Ensemble</strong></td>
+<td><strong>90</strong></td>
+<td><strong>25</strong></td>
+<td><strong>50</strong></td>
+<td><strong>25</strong></td>
+<td><strong>10</strong></td>
+<td><strong>200</strong></td>
+<td>—</td>
+<td><strong>96 %</strong></td>
+<td><strong>95 %</strong></td>
+<td><strong>95 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. Les pannes du multiplicateur</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>2024</th>
+<th>2025</th>
+<th>2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Part du multiplicateur dans l'énergie non produite par les pannes</td>
+<td>30 %</td>
+<td>35 %</td>
+<td>40 %</td>
+</tr>
+<tr class="even">
+<td>Multiplicateurs remplacés</td>
+<td>6</td>
+<td>9</td>
+<td>12, dont 8 sur des éoliennes du constructeur B</td>
+</tr>
+</tbody>
+</table>
+<p>Un multiplicateur qui casse immobilise l'éolienne 30 jours en moyenne, dont cinq jours de travaux : le reste est l'attente de la pièce et de la grue.</p>
+<p><strong>D. Ce que l'on sait de ces chiffres</strong></p>
+<ul>
+<li><strong>Définition des causes revue en 2025</strong> : depuis le 1er janvier 2025, l'attente du technicien après une panne, auparavant classée en maintenance programmée, est classée en pannes. Elle représente environ 5 GWh par an ; les chiffres de 2024 n'ont pas été recalculés.</li>
+<li><strong>Données manquantes</strong> : à la suite d'un changement de son portail, les données du constructeur C de janvier et février 2026 n'ont jamais été reçues ; l'énergie non produite de ses éoliennes pendant ces deux mois, environ 10 GWh, manque dans les chiffres de 2026.</li>
+<li><strong>Arrêts mal saisis</strong> : dans le parc de Castelvérune (20 éoliennes du constructeur B, en Occitanie), les arrêts pour la protection des chauves-souris, les soirs d'été, sont saisis comme des pannes depuis 2025, soit environ 10 GWh par an ; ils retirent environ un point à la disponibilité du constructeur B en 2025 et en 2026.</li>
+</ul>
+<p><strong>E. L'affirmation de Mme Gaëlle MONTREVIAU, directrice de l'exploitation, au comité de direction du 15/04/2027</strong></p>
+<p>« Nos pertes viennent du constructeur B ; il suffit de reprendre sa maintenance. »</p>
+<h3 id="annexe-23--les-données-des-éoliennes-chez-les-constructeurs-note-de-mme-gaëlle-montreviau-directrice-de-lexploitation-mai-2027-et-extraits-des-contrats">ANNEXE 2.3 – Les données des éoliennes chez les constructeurs (note de Mme Gaëlle MONTREVIAU, directrice de l'exploitation, mai 2027, et extraits des contrats)</h3>
+<p><strong>A. Ce que produisent les éoliennes.</strong> L'automate de chaque éolienne enregistre environ 300 variables à la seconde (vent, puissance, orientation de la nacelle et des pales, températures, vibrations, pression d'huile…) et toutes ses alarmes. Ces données partent en continu vers le système de supervision du parc, puis vers le nuage du constructeur : environ 150 To par an pour les 420 éoliennes (65 To chez A, 50 To chez B, 35 To chez C). ESTRAVENT ne reçoit, par la plateforme de supervision, que les moyennes à dix minutes de 80 de ces variables et la liste des alarmes, avec les codes de chaque constructeur.</p>
+<p><strong>B. Les conditions des trois constructeurs</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Constructeur A</th>
+<th>Constructeur B</th>
+<th>Constructeur C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lieu de stockage des données à la seconde</td>
+<td>centres de données situés dans l'Union européenne</td>
+<td>centres de données situés dans l'Union européenne</td>
+<td>nuage d'un fournisseur de services dont le siège est hors de l'Union européenne ; centres de données hors de l'Union européenne, dans des pays que le contrat ne précise pas</td>
+</tr>
+<tr class="even">
+<td>Accès d'ESTRAVENT aux données à la seconde</td>
+<td>sur abonnement, 500 € par éolienne et par an ; essai sur 60 éoliennes depuis 2025, pour une cinquantaine de variables, soit 30 k€ par an</td>
+<td>aucun : B utilise ces données pour sa propre maintenance</td>
+<td>consultation sur le portail de C, sans export ; extraction ponctuelle sur demande, en quinze jours</td>
+</tr>
+<tr class="odd">
+<td>Format</td>
+<td>propre au constructeur</td>
+<td>propre au constructeur</td>
+<td>propre au constructeur</td>
+</tr>
+<tr class="even">
+<td>Transmission à un tiers</td>
+<td>possible pour les éoliennes abonnées</td>
+<td>refusée à tout prestataire de maintenance concurrent</td>
+<td>non prévue</td>
+</tr>
+<tr class="odd">
+<td>À la fin du contrat de maintenance du constructeur</td>
+<td>accès maintenu sur abonnement</td>
+<td>accès au portail fermé ; rien n'est prévu pour la restitution des données</td>
+<td>rien n'est prévu</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Extraits des contrats de maintenance</strong></p>
+<ul>
+<li>Constructeur A : « Les données de fonctionnement à la seconde sont accessibles au client au moyen d'un abonnement annuel par éolienne, au tarif en vigueur. »</li>
+<li>Constructeur B : « Les données collectées par le système du constructeur sont réservées à l'exécution du présent contrat. Elles ne peuvent être communiquées à un prestataire de maintenance tiers sans l'accord écrit du constructeur. »</li>
+<li>Constructeur C : « Le constructeur peut héberger les données dans tout centre de données exploité par lui-même ou par ses sous-traitants. »</li>
+</ul>
+<p><strong>C. Les faits récents</strong></p>
+<ul>
+<li>En 2027, 40 éoliennes du constructeur B sortent de leur contrat de maintenance ; ESTRAVENT veut en confier l'entretien à une entreprise de maintenance indépendante, qui l'a prévenue : « Sans les mesures à la seconde, nous entretiendrons ces machines à l'aveugle. »</li>
+<li>Un ingénieur de la performance : « Quand un multiplicateur casse, je demande au constructeur les mesures des semaines précédentes. J'attends quinze jours, et je reçois un fichier que je ne peux comparer à aucun autre. »</li>
+<li>Mme MONTREVIAU : « Ces données sont produites par nos machines, sur nos parcs ; nous ne les voyons qu'à travers les constructeurs. »</li>
+</ul>
+<p>Aucune analyse juridique des contrats n'est attendue.</p>
+<h3 id="annexe-24--le-stockage-des-mesures-note-de-m-olivier-sauvernay-responsable-de-la-dsi-mai-2027">ANNEXE 2.4 – Le stockage des mesures (note de M. Olivier SAUVERNAY, responsable de la DSI, mai 2027)</h3>
+<p><strong>A. Aujourd'hui.</strong> Toutes les mesures reçues depuis la mise en service du premier parc, en 2007, sont gardées sans limite de durée, en trois copies : la base de production, une copie de secours dans une seconde salle du siège, et une copie mensuelle chez un hébergeur. Copies comprises, hors exports des ingénieurs dans les tableurs du serveur de fichiers, le volume des mesures a été multiplié par trois en deux ans : 12 To en 2024, 36 To en 2026. Aucune règle ne dit ce qui doit être gardé, ni combien de temps.</p>
+<p><strong>B. Ce que montrent les journaux de consultation de 2026</strong></p>
+<ul>
+<li>90 % des consultations portent sur des mesures de moins de deux ans.</li>
+<li>Les moyennes à dix minutes de plus de cinq ans ne servent qu'aux études de renouvellement des parcs anciens, une dizaine par an.</li>
+<li>Les mesures à la seconde ne servent qu'à analyser les pannes, sur les semaines qui les précèdent, et à construire les modèles de maintenance prédictive. Selon les ingénieurs de la performance, ces modèles n'utilisent qu'une trentaine des 300 variables.</li>
+</ul>
+<p><strong>C. Le projet de lac.</strong> Dans l'option 2 de l'annexe 2.1, le lac recevrait et garderait sans limite toutes les mesures à la seconde des 420 éoliennes, avec trois copies : environ 150 To par an, soit 450 To par an copies comprises, auxquels s'ajouteront les mesures des nouveaux parcs.</p>
+<p><strong>D. Les deux offres de centre de données reçues pour héberger le lac</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Offre 1</th>
+<th>Offre 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Localisation</td>
+<td>France, Grand Est, à 30 km de Reims</td>
+<td>France, Île-de-France</td>
+</tr>
+<tr class="even">
+<td>Consommation électrique des équipements informatiques du lac, estimée par la DSI pour la première année, pour le même matériel et sans l'effet du stockage à deux niveaux</td>
+<td>300 MWh</td>
+<td>300 MWh</td>
+</tr>
+<tr class="odd">
+<td>PUE annoncé (énergie totale du centre / énergie des équipements informatiques)</td>
+<td>1,2</td>
+<td>1,5</td>
+</tr>
+<tr class="even">
+<td>Consommation électrique totale estimée pour la première année</td>
+<td>360 MWh</td>
+<td>450 MWh</td>
+</tr>
+<tr class="odd">
+<td>Origine de l'électricité</td>
+<td>électricité du réseau</td>
+<td>électricité du réseau, et achat d'électricité solaire à un producteur pour la moitié de la consommation</td>
+</tr>
+<tr class="even">
+<td>Refroidissement</td>
+<td>par l'air extérieur la plus grande partie de l'année</td>
+<td>tours de refroidissement à eau, environ 5 000 m³ d'eau par an</td>
+</tr>
+<tr class="odd">
+<td>Chaleur dégagée par les serveurs</td>
+<td>récupérée et cédée au réseau de chaleur d'une commune voisine</td>
+<td>non récupérée</td>
+</tr>
+<tr class="even">
+<td>Stockage proposé</td>
+<td>deux niveaux : disques rapides pour les données récentes, stockage lent et peu consommateur pour les données anciennes</td>
+<td>disques rapides pour toutes les données</td>
+</tr>
+<tr class="odd">
+<td>Renouvellement des serveurs</td>
+<td>tous les sept ans</td>
+<td>tous les quatre ans</td>
+</tr>
+<tr class="even">
+<td>Informations environnementales remises au client</td>
+<td>consommation électrique et PUE, chaque mois, pour les équipements du client</td>
+<td>PUE annuel de l'ensemble du centre</td>
+</tr>
+</tbody>
+</table>
+<p>Les deux offres ont un prix voisin, et aucune procédure de choix de l'hébergeur n'est à organiser. Aucune ne fournit d'empreinte carbone. ESTRAVENT ne mesure aujourd'hui ni la consommation ni l'empreinte de son système d'information.</p>
+<h3 id="annexe-25--repères-au-31122026">ANNEXE 2.5 – Repères (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Repère</th>
+<th>Nom exact et version</th>
+<th>Ce qu'il faut en retenir</th>
+<th>Statut au 31/12/2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Accès aux données et changement de fournisseur</td>
+<td>Règlement (UE) 2023/2854 sur les données (Data Act)</td>
+<td>L'utilisateur d'un produit connecté peut accéder aux données que génère son utilisation et demander qu'elles soient transmises à un tiers de son choix ; les produits connectés mis sur le marché après le 12/09/2026 doivent être conçus de telle sorte que ces données soient, par défaut, accessibles à l'utilisateur. Les fournisseurs de services d'informatique en nuage doivent permettre à leurs clients de changer de fournisseur et d'emporter leurs données.</td>
+<td>Applicable depuis le 12/09/2025</td>
+</tr>
+<tr class="even">
+<td>Cloud de confiance</td>
+<td>Référentiel du cloud de confiance du Cigref</td>
+<td>Grille d'exigences fondée sur trois piliers : la sécurité ; l'immunité aux lois extra-européennes ; la maîtrise de la dépendance au fournisseur. Toute exigence opérationnelle doit être également exigible par contrat. Ce n'est ni un label, ni une certification.</td>
+<td>Première version publiée le 27/05/2021 ; deuxième version disponible</td>
+</tr>
+</tbody>
+</table>
+<h3 id="travail-à-faire-1">Travail à faire</h3>
+<p>ESTRAVENT a 420 éoliennes, qui produisent chaque seconde des données dont elle ne voit qu'une petite partie, sous des noms différents selon les constructeurs, dans une base saturée. Elle ne sait pas expliquer sûrement son énergie non produite, et le plan « ESTRAVENT 2031 » lui demande de reprendre la maintenance des machines et la maîtrise de ses données. Mme VARLAMBERT vous demande d'organiser les données des installations, d'en tirer une analyse fiable de l'énergie non produite, d'apprécier la dépendance d'ESTRAVENT envers les constructeurs pour ses données et de rendre leur stockage plus sobre. Vous mobiliserez pour cela les annexes 1.1 et 2.1 à 2.5 ainsi que vos connaissances professionnelles.</p>
+<p><strong>2.1 – Le référentiel des installations et l'architecture des données (4 points)</strong></p>
+<p>a) À partir des règles de gestion de l'annexe 2.1 D, établissez le modèle conceptuel des données du référentiel des installations, puis traduisez-le en modèle logique, en énonçant les règles de passage que vous appliquez. Aucune requête n'est attendue.</p>
+<p>b) Après avoir défini l'entrepôt de données, le lac de données et le référentiel de données maîtres, comparez les deux options de l'annexe 2.1 C selon trois critères que vous justifierez par les usages de l'annexe 2.1 B, puis recommandez une architecture. Montrez enfin comment elle règle les problèmes de nommage et de qualité des données décrits dans l'annexe 2.1 A.</p>
+<p><strong>2.2 – L'analyse de l'énergie non produite (4 points)</strong></p>
+<p>a) Décrivez la chaîne de traitement des données qui produira chaque mois l'analyse de l'énergie non produite, de la collecte à la restitution, en montrant à chaque étape une limite des chiffres de l'annexe 2.2 ou un problème de l'annexe 2.1 A qu'elle doit traiter.</p>
+<p>b) Formulez trois constats argumentés tirés de l'annexe 2.2, puis appréciez l'affirmation de Mme MONTREVIAU. Aucun calcul statistique n'est attendu.</p>
+<p>c) Indiquez ce qu'une démarche d'analyse prédictive apporterait à la maintenance des multiplicateurs, en précisant deux conditions de sa réussite et deux de ses limites. Proposez enfin la représentation visuelle qui montrerait le mieux au comité de direction l'énergie non produite par cause et par constructeur, et justifiez-la.</p>
+<p><strong>2.3 – Les données des éoliennes et la souveraineté d'ESTRAVENT (2,5 points)</strong></p>
+<p>a) Après avoir caractérisé le Big Data, montrez en quoi les données à la seconde des éoliennes en relèvent, et pourquoi la base de données relationnelle du siège ne peut pas les accueillir.</p>
+<p>b) Analysez, à partir de l'annexe 2.3, les enjeux de souveraineté et de dépendance que crée la détention de ces données par les constructeurs : localisation, accès, coût, liberté de choisir la maintenance. Proposez ensuite trois mesures pour en reprendre la maîtrise, en mobilisant en principe les repères de l'annexe 2.5. Aucune analyse juridique du règlement ni des contrats n'est attendue.</p>
+<p><strong>2.4 – La sobriété des données de mesure (2,5 points)</strong></p>
+<p>a) Proposez, à partir de l'annexe 2.4, une politique de sobriété des données de mesure : la granularité conservée, les durées de conservation et le nombre de copies, en tenant compte des usages de l'annexe 2.1 B. Indiquez qui la décide et qui la fait respecter.</p>
+<p>b) Après avoir défini une stratégie de transition numérique responsable, appréciez les deux offres de centre de données de l'annexe 2.4 D au regard de cette stratégie, puis concluez. Aucun calcul d'empreinte n'est attendu.</p>
+<p>c) Proposez un indicateur de mesure de l'impact environnemental du lac, précisé par sa formule, sa source, sa fréquence, sa cible et son axe.</p>
+<hr />
+<h2 id="dossier-3--maîtriser-les-coûts-la-fiabilité-et-la-sécurité-du-système-dinformation-de-conduite-13-points">DOSSIER 3 – MAÎTRISER LES COÛTS, LA FIABILITÉ ET LA SÉCURITÉ DU SYSTÈME D'INFORMATION DE CONDUITE (13 points)</h2>
+<h3 id="annexe-31--les-coûts-du-système-dinformation-et-leur-refacturation-note-de-mme-agnès-dormeval-responsable-du-contrôle-de-gestion-mai-2027-et-extrait-du-reporting-annuel">ANNEXE 3.1 – Les coûts du système d'information et leur refacturation (note de Mme Agnès DORMEVAL, responsable du contrôle de gestion, mai 2027, et extrait du reporting annuel)</h3>
+<p><strong>A. Les dépenses du système d'information en 2026, par ensemble de services.</strong> Je les ai reconstituées pour la première fois, à partir des factures et des temps déclarés.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Ensemble de services</th>
+<th>Contenu</th>
+<th>Dépenses 2026 (k€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Informatique de gestion (DSI)</td>
+<td>progiciel de gestion intégré, paie, logiciel de gestion de la maintenance, prévision de la production, gestion des contrats de vente et facturation de l'électricité, système d'information géographique et gestion électronique des documents des projets, relations avec les propriétaires et les communes, messagerie et bureautique, postes de travail, réseau du siège et des agences ; 22 personnes</td>
+<td>5 000</td>
+</tr>
+<tr class="even">
+<td><em>dont services rendus aux sociétés de projet</em></td>
+<td><em>facturation de l'électricité, gestion des contrats de vente et tenue de la comptabilité de chaque société de projet</em></td>
+<td><em>1 500</em></td>
+</tr>
+<tr class="odd">
+<td>Supervision des éoliennes</td>
+<td>plateforme de supervision et ses serveurs, contrat de l'ESN (1 500 k€), liens avec les systèmes des trois constructeurs, part de la cellule supervision</td>
+<td>2 600</td>
+</tr>
+<tr class="even">
+<td>Supervision des centrales solaires</td>
+<td>systèmes de supervision propres aux centrales, part de la cellule supervision</td>
+<td>400</td>
+</tr>
+<tr class="odd">
+<td>Liaisons de télécommunication des sites</td>
+<td>liaisons des 64 parcs et des 38 centrales avec le centre de conduite</td>
+<td>800</td>
+</tr>
+<tr class="even">
+<td>Centre de conduite</td>
+<td>postes et équipements du centre de conduite</td>
+<td>200</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>9 000</strong></td>
+</tr>
+</tbody>
+</table>
+<p>La plateforme de supervision et le contrat de l'ESN servent pour l'essentiel aux éoliennes : chaque centrale solaire n'y remonte qu'une alarme générale, et elle est suivie par son propre système.</p>
+<p><strong>B. La refacturation actuelle.</strong> Depuis 2015, la totalité des dépenses du système d'information est refacturée chaque année aux 102 sociétés de projet, au prorata de leur chiffre d'affaires.</p>
+<ul>
+<li>En 2026, les 38 sociétés de projet des centrales solaires ont réalisé 50 M€ de chiffre d'affaires, et les 64 sociétés de projet des parcs éoliens 200 M€. Les centrales solaires ont donc payé 20 % des dépenses du système d'information, y compris de la supervision des éoliennes, qu'elles n'utilisent pas.</li>
+<li>Un parc éolien du Centre-Val de Loire, arrêté quatre mois en 2026 après la casse d'un multiplicateur, a vu son chiffre d'affaires passer de 4 M€ en 2025 à 2 M€ en 2026, et sa part refacturée baisser de moitié. Ses alarmes sont passées de 2 000 à 6 000, et le centre de conduite l'a suivi de près pendant tout l'arrêt.</li>
+<li>Deux parcs voisins de même puissance paient des montants différents selon que leur électricité est vendue à prix garanti ou sur le marché.</li>
+<li>Les dépenses des outils des projets en développement (système d'information géographique, gestion électronique des documents des projets) sont refacturées aux sociétés de projet des installations en service.</li>
+</ul>
+<p>Les règles comptables, fiscales et juridiques de la refacturation ne sont pas à traiter.</p>
+<p><strong>C. Les inducteurs disponibles (2026)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Inducteur</th>
+<th>Parcs éoliens</th>
+<th>Centrales solaires</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Puissance installée</td>
+<td>1 000 MW</td>
+<td>400 MW</td>
+<td>inventaire technique des installations</td>
+</tr>
+<tr class="even">
+<td>Sites raccordés au centre de conduite</td>
+<td>64 parcs</td>
+<td>38 centrales</td>
+<td>inventaire des liaisons</td>
+</tr>
+<tr class="odd">
+<td>Machines supervisées</td>
+<td>420 éoliennes</td>
+<td>2 000 onduleurs</td>
+<td>systèmes de supervision</td>
+</tr>
+<tr class="even">
+<td>Alarmes reçues par le centre de conduite</td>
+<td>180 000</td>
+<td>20 000</td>
+<td>plateforme de supervision et systèmes des centrales</td>
+</tr>
+<tr class="odd">
+<td>Utilisateurs des applications</td>
+<td>520 salariés d'ESTRAVENT, toutes directions confondues ; les sociétés de projet n'ont aucun salarié</td>
+<td></td>
+<td>annuaire de la DSI</td>
+</tr>
+</tbody>
+</table>
+<p><strong>D. Ce que nos chiffres ne montrent pas</strong></p>
+<ul>
+<li>Les 150 techniciens de maintenance passent chacun environ trois heures par semaine à exporter des données des portails des constructeurs et des systèmes des centrales, puis à les recopier dans des tableurs pour préparer leurs interventions.</li>
+<li>Chaque matin, deux opérateurs du centre de conduite passent deux heures à recopier dans un tableur les arrêts de la nuit, pour le point quotidien de la direction de l'exploitation. Une trentaine de tableurs de ce genre circulent dans l'exploitation ; personne n'en tient la liste.</li>
+<li>En 2026, la direction de l'exploitation a acheté sur ses propres frais généraux des abonnements en ligne, des logiciels et des boîtiers de connexion pour environ 350 k€ ; ces achats ne figurent pas dans les dépenses du système d'information.</li>
+</ul>
+<p><strong>E. Extrait du reporting annuel du système d'information (présenté au comité de direction en février 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Nature des dépenses</th>
+<th>2026 (k€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Personnel</td>
+<td>2 700</td>
+</tr>
+<tr class="even">
+<td>Prestations externes</td>
+<td>2 300</td>
+</tr>
+<tr class="odd">
+<td>Licences et abonnements</td>
+<td>1 900</td>
+</tr>
+<tr class="even">
+<td>Matériel</td>
+<td>1 100</td>
+</tr>
+<tr class="odd">
+<td>Télécommunications</td>
+<td>1 000</td>
+</tr>
+<tr class="even">
+<td><strong>Total des dépenses du système d'information</strong></td>
+<td><strong>9 000</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Ce reporting est établi une fois par an, pour la préparation du budget. Il ne présente ni l'année précédente, ni objectif, ni la répartition entre l'informatique de gestion et l'informatique de conduite, ni aucun indicateur.</p>
+<p><strong>F. Deux avis</strong></p>
+<p><strong>M. Thibault ORLANCOURT, directeur financier</strong> : « La clé du chiffre d'affaires a un mérite : elle est simple, et personne ne la discute. »</p>
+<p><strong>Mme Gaëlle MONTREVIAU, directrice de l'exploitation</strong> : « Si l'on refacture au nombre d'alarmes, nos parcs les plus anciens paieront pour les défauts de leurs machines. »</p>
+<h3 id="annexe-32--du-comptage-au-chiffre-daffaires-note-de-m-thibault-orlancourt-directeur-financier-mai-2027">ANNEXE 3.2 – Du comptage au chiffre d'affaires (note de M. Thibault ORLANCOURT, directeur financier, mai 2027)</h3>
+<p><strong>A. La chaîne de facturation des contrats d'achat direct.</strong> En 2026, nos trois contrats d'achat direct ont porté sur 10 % de l'électricité vendue et sur environ 20 M€ de chiffre d'affaires ; le plan « ESTRAVENT 2031 » en suppose une quinzaine en 2031. Chaque contrat est adossé à deux à quatre parcs éoliens, et chaque facture mensuelle porte sur l'énergie livrée heure par heure.</p>
+<ol type="1">
+<li><strong>Comptage.</strong> Au point de livraison de chaque parc, un compteur mesure l'énergie injectée sur le réseau. Le gestionnaire du réseau de distribution le relève et met à disposition chaque mois, sur son portail, un fichier par parc, avec la valeur de chaque heure : environ 720 valeurs par mois.</li>
+<li><strong>Supervision.</strong> La plateforme de supervision enregistre de son côté la production de chaque éolienne. Pour un même parc, elle dépasse normalement le comptage d'environ 2 %, du fait des pertes dans les câbles du parc.</li>
+<li><strong>Calcul.</strong> Chaque contrat a son tableur. Une chargée de facturation de la direction de l'énergie y copie les fichiers de comptage des parcs du contrat et calcule l'énergie livrée à l'industriel, heure par heure. Quand le fichier d'un parc manque ou n'est pas reconnu, elle reprend les données de la supervision. Elle a sous les yeux la production enregistrée par la supervision, mais aucun seuil d'écart n'est fixé, et rien n'oblige à expliquer un écart avant d'envoyer la facture.</li>
+<li><strong>Facturation.</strong> Le montant de la facture est saisi à la main dans le module de facturation du progiciel de gestion intégré, qui émet la facture ; le détail horaire est joint en PDF.</li>
+<li><strong>Chiffre d'affaires.</strong> Le chiffre d'affaires de chaque semestre, publié par ESTRAVENT, est établi à partir des factures du progiciel. La direction financière ne rapproche ni les volumes facturés des volumes comptés, ni le chiffre d'affaires des contrats de leurs tableurs.</li>
+</ol>
+<p><strong>B. Ce qui s'est passé en 2026</strong></p>
+<ul>
+<li>En avril 2026, le fichier de comptage de mars d'un parc a été copié deux fois dans le tableur d'un contrat : l'énergie de ce parc a été comptée deux fois, et la facture a été majorée d'environ 300 k€. L'industriel l'a contestée ; elle a été refaite.</li>
+<li>De juin à août 2026, pour un parc d'un autre contrat, la production enregistrée par la supervision a dépassé de 8 % le comptage, sans que personne en cherche la cause. Le gestionnaire du réseau avait remplacé le compteur ; son fichier portait un nouveau numéro, que le tableur ne reconnaissait pas, et les volumes de ce parc ont été repris de la supervision pendant trois mois. L'industriel a contesté la facture d'août ; les trois factures ont été refaites.</li>
+<li>Dans le tableur du troisième contrat, une formule erronée, recopiée d'une ligne à l'autre, a omis pendant six mois une partie des heures livrées : l'industriel a été sous-facturé d'environ 150 k€. L'erreur n'a été découverte qu'en février 2027, après la publication du chiffre d'affaires de 2026.</li>
+<li>Les tableurs sont corrigés directement, sans historique. Les factures refaites ont remplacé les premières dans le dossier de chaque contrat, sans mention du motif. Pour une facture de 2026, nous ne savons plus dire quelles données ont servi, ni qui les a modifiées.</li>
+<li>Deux chargées de facturation préparent les factures horaires. L'une d'elles a construit les trois tableurs, et elle seule sait les modifier ou en créer un pour un nouveau contrat. Chacune prépare, vérifie et envoie ses propres factures ; personne ne relit ses calculs. Les tableurs sont rangés dans un dossier partagé auquel accèdent les 25 salariés de la direction de l'énergie.</li>
+</ul>
+<p><strong>C. Les échelles retenues par le comité de direction</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Probabilité</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 – faible</td>
+<td>jamais constaté et peu plausible</td>
+<td>erreur corrigée avant l'envoi de la facture, sans effet pour l'industriel</td>
+</tr>
+<tr class="even">
+<td>2 – moyen</td>
+<td>plausible, sans avoir été constaté chez ESTRAVENT</td>
+<td>facture retardée, ou chiffre d'affaires impossible à justifier sans recherches longues, sans facture fausse envoyée</td>
+</tr>
+<tr class="odd">
+<td>3 – fort</td>
+<td>constaté chez ESTRAVENT en 2026, ou certain en l'état</td>
+<td>facture fausse envoyée à un industriel, ou chiffre d'affaires publié inexact</td>
+</tr>
+</tbody>
+</table>
+<p>Quand plusieurs niveaux conviennent, on retient le plus élevé. Le comité de direction traite en priorité les risques dont la probabilité et l'impact sont tous deux de niveau 3. Ni règle comptable, ni écriture, ni contrôle des comptes ne sont à traiter.</p>
+<h3 id="annexe-33--les-accès-à-distance-aux-installations-constats-de-mme-nadège-quillebrand-responsable-de-la-cellule-supervision-et-de-m-olivier-sauvernay-responsable-de-la-dsi-mai-2027">ANNEXE 3.3 – Les accès à distance aux installations (constats de Mme Nadège QUILLEBRAND, responsable de la cellule supervision, et de M. Olivier SAUVERNAY, responsable de la DSI, mai 2027)</h3>
+<p><strong>A. Qui se connecte, et comment</strong></p>
+<ul>
+<li>Huit entreprises extérieures se connectent à distance aux installations : les constructeurs A, B et C, aux systèmes de supervision de leurs parcs, pour dépanner et régler leurs machines ; quatre sous-traitants de maintenance, aux systèmes des centrales solaires et des postes électriques des parcs ; l'ESN qui maintient la plateforme de supervision, à cette plateforme.</li>
+<li>Chacune utilise son propre outil de connexion à distance, soit huit outils différents. 110 boîtiers de connexion ont été installés dans les parcs et les centrales au fil des mises en service ; 20 boîtiers ne sont rattachés à aucune entreprise connue.</li>
+<li>Les huit entreprises disposent de 60 comptes d'accès, dont 50 sont partagés par tous les techniciens d'une même entreprise. La plupart des mots de passe n'ont jamais changé depuis la mise en service des installations.</li>
+<li>Les accès sont ouverts en permanence, jour et nuit ; le centre de conduite n'est pas prévenu des connexions.</li>
+<li>D'après les entreprises extérieures, il y a eu environ 9 000 connexions à distance en 2026. ESTRAVENT n'en conserve aucune trace : seuls les constructeurs gardent les journaux de leurs systèmes.</li>
+<li>Les postes du centre de conduite servent aussi à la messagerie et à la navigation sur internet. Ils sont reliés au réseau de bureautique du siège, comme les serveurs de la plateforme de supervision.</li>
+<li>Plusieurs systèmes de supervision des parcs les plus anciens fonctionnent sur des systèmes d'exploitation qui ne reçoivent plus de correctifs de sécurité ; les constructeurs n'en autorisent aucune modification.</li>
+</ul>
+<p><strong>B. Deux événements</strong></p>
+<ul>
+<li>En septembre 2026, le compte partagé d'un sous-traitant de maintenance, dont le contrat avait pris fin en juin et qui n'intervenait que sur les postes électriques, a servi à se connecter un dimanche, à 3 heures, au système de supervision d'un parc du constructeur C, pendant 40 minutes. Aucune commande n'a été envoyée aux éoliennes. C'est le constructeur C qui l'a signalé, trois semaines plus tard ; on ne sait toujours pas qui s'est connecté.</li>
+<li>En février 2027, selon l'écho qu'en a donné la presse, un autre producteur d'électricité a vu plusieurs de ses parcs arrêtés à distance pendant deux jours ; l'attaque serait passée par l'accès d'un prestataire de maintenance.</li>
+</ul>
+<p><strong>C. L'organisation de la sécurité aujourd'hui</strong></p>
+<ul>
+<li>La politique de sécurité de la DSI, approuvée par le comité de direction en 2022, ne couvre que l'informatique de gestion ; M. SAUVERNAY en a la charge. L'informatique de conduite n'a ni politique de sécurité, ni analyse des risques.</li>
+<li>Personne n'est chargé de la sécurité de l'informatique de conduite : la cellule supervision en traite les incidents « quand ils se présentent ».</li>
+<li>Les contrats des constructeurs, des sous-traitants et de l'ESN ne disent rien de la sécurité des accès à distance.</li>
+<li>Le centre de conduite fonctionne jour et nuit ; c'est lui qui décide d'arrêter ou de redémarrer une installation.</li>
+</ul>
+<p><strong>D. Ce qu'en disent les responsables</strong></p>
+<p><strong>Mme Gaëlle MONTREVIAU, directrice de l'exploitation</strong> : « Si nous fermons les accès, les constructeurs ne pourront plus dépanner la nuit, et la disponibilité baissera. Or le plan nous demande 97 %. »</p>
+<p><strong>M. Yannick FERRASSOT, responsable du centre de conduite</strong> : « Mes opérateurs voient tout ce qui se passe sur les machines, mais pas qui s'y connecte. »</p>
+<p>Aucun paramétrage d'équipement ni aucun essai technique n'est attendu ; aucune procédure de choix d'un fournisseur n'est à organiser, et aucune analyse juridique des contrats n'est demandée.</p>
+<h3 id="annexe-34--la-demande-du-comité-daudit-courriel-de-m-bernard-escolière-président-du-comité-daudit-mai-2027">ANNEXE 3.4 – La demande du comité d'audit (courriel de M. Bernard ESCOLIÈRE, président du comité d'audit, mai 2027)</h3>
+<p>« Le comité d'audit a examiné, le 12 mai, l'incident de septembre 2026 et l'attaque subie par un autre producteur. Il a pris acte de votre intention de mettre en place, d'ici la fin de 2027, de nouvelles règles pour les accès à distance des entreprises extérieures.</p>
+<p>Le comité souhaite qu'un auditeur des systèmes d'information externe en vérifie l'application six mois après leur mise en place, et lui en rende compte. Avant de lancer cette mission, il voudrait savoir sur quels critères l'auditeur jugera ces accès, sur quels éléments il s'appuiera, et à quoi il faudra veiller.</p>
+<p>Je rappelle nos contraintes : nos installations produisent jour et nuit, et aucune ne doit être arrêtée pour l'audit ; les systèmes des constructeurs ne peuvent pas être modifiés ; huit entreprises extérieures et 102 sites, dans quatre régions, sont concernés ; les journaux des systèmes des parcs sont chez les constructeurs. Le choix de l'auditeur viendra ensuite. »</p>
+<p>Ni la démarche détaillée de l'audit, ni son calendrier, ni aucun essai technique ne sont demandés.</p>
+<h3 id="annexe-35--repères-au-31122026">ANNEXE 3.5 – Repères (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Repère</th>
+<th>Nom exact et version</th>
+<th>Ce qu'il faut en retenir</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sécurité de l'information</td>
+<td>ISO/IEC 27001:2022</td>
+<td>norme d'exigences d'un système de management de la sécurité de l'information, fondé sur l'appréciation et le traitement des risques, dans une logique d'amélioration continue ; son annexe A compte 93 mesures en quatre thèmes (organisationnelles, liées aux personnes, physiques, technologiques)</td>
+</tr>
+<tr class="even">
+<td>Gestion des risques</td>
+<td>ISO/IEC 27005:2022</td>
+<td>lignes directrices de gestion des risques liés à la sécurité de l'information : établir le contexte, identifier, analyser, évaluer puis traiter les risques, et les surveiller ; quatre options de traitement : réduire le risque, l'accepter, l'éviter ou le transférer ; elle ne prescrit pas de méthode particulière</td>
+</tr>
+<tr class="odd">
+<td>Bonnes pratiques</td>
+<td>Guide d'hygiène informatique de l'ANSSI, version de 2017</td>
+<td>guide de 42 mesures de sécurité, en niveau standard et renforcé, qui portent notamment sur l'authentification, les mises à jour, le cloisonnement des réseaux, les appareils nomades et les sauvegardes</td>
+</tr>
+<tr class="even">
+<td>Architecture de confiance</td>
+<td>Le modèle Zero Trust, avis de l'ANSSI (2021)</td>
+<td>modèle d'architecture, et non un produit : aucune confiance n'est accordée d'office selon la place sur le réseau ; chaque accès est authentifié, autorisé et vérifié selon le contexte ; démarche progressive, qui ne remplace pas la défense en profondeur</td>
+</tr>
+<tr class="odd">
+<td>Gouvernance et audit du système d'information</td>
+<td>COBIT 2019 (ISACA)</td>
+<td>cadre de gouvernance et de management de l'information et des technologies, ni norme ni logiciel ; 40 objectifs de gouvernance et de management en cinq domaines ; il peut servir de référentiel à un audit du système d'information</td>
+</tr>
+</tbody>
+</table>
+<h3 id="travail-à-faire-2">Travail à faire</h3>
+<p>Les dépenses du système d'information sont refacturées aux sociétés de projet selon une clé qui ne dit rien de leur usage, et le reporting n'en dit guère plus. La facturation des contrats d'achat direct, appelés à se multiplier, repose sur des tableurs qui ont produit trois erreurs en 2026. Huit entreprises extérieures se connectent jour et nuit aux installations avec des comptes partagés, et le compte d'un sous-traitant parti a servi en 2026. Mme VARLAMBERT vous demande de revoir le pilotage et la refacturation des coûts du système d'information, de fiabiliser la chaîne qui va du comptage au chiffre d'affaires, de fonder la sécurité de l'informatique de conduite et des accès à distance, et de répondre au comité d'audit. Vous mobiliserez pour cela les annexes 1.1 et 3.1 à 3.5 ainsi que vos connaissances professionnelles.</p>
+<p><strong>3.1 – Les coûts du système d'information et leur refacturation aux sociétés de projet (3,5 points)</strong></p>
+<p>a) Après avoir présenté les fondamentaux du contrôle de gestion appliqué au système d'information (centre de coûts ou centre de services, refacturation interne, inducteurs), critiquez par trois arguments tirés de l'annexe 3.1 la refacturation actuelle des dépenses du système d'information aux sociétés de projet. Proposez ensuite une répartition fondée sur des inducteurs : associez un inducteur, ou l'absence de refacturation, à chacun des ensembles de services de l'annexe 3.1 A, et justifiez le choix de deux de ces inducteurs. Aucun calcul de répartition n'est demandé.</p>
+<p>b) Relevez, à partir de l'annexe 3.1 D, trois coûts cachés du système d'information de conduite. Pour chacun, expliquez pourquoi il échappe au suivi actuel et comment le mesurer.</p>
+<p>c) Proposez trois améliorations du reporting annuel des coûts du système d'information (annexe 3.1 E), portant respectivement sur les comparaisons, les objectifs et la revue périodique. Deux d'entre elles s'appuient sur un indicateur, précisé par sa formule, sa source, sa fréquence, sa cible et son axe.</p>
+<p><strong>3.2 – La fiabilité de la chaîne du comptage au chiffre d'affaires (3,5 points)</strong></p>
+<p>a) Après avoir présenté la typologie des risques liés aux systèmes d'information, suivez la chaîne « comptage → facturation → chiffre d'affaires » de l'annexe 3.2 étape par étape et retenez-y quatre risques, chacun formulé comme un événement redouté et rattaché à l'étape où il naît. Indiquez la catégorie de chacun dans cette typologie, puis cotez leur probabilité et leur impact selon les échelles de l'annexe 3.2 C.</p>
+<p>b) Après avoir défini la fiabilisation d'un système d'information de gestion, choisissez, pour les deux risques les plus graves, un traitement parmi les options de l'ISO/IEC 27005 (annexe 3.5), puis proposez, pour chacun d'eux, deux contrôles qui fiabilisent les données de facturation et le chiffre d'affaires publié. Pour chaque contrôle, précisez sa nature (préventive ou détective, manuelle ou automatisée), son responsable et ce qu'il garantit. Indiquez enfin comment rendre les corrections traçables et réduire la dépendance envers une seule personne. Aucune règle comptable ni aucune écriture n'est attendue.</p>
+<p><strong>3.3 – La sécurité de l'informatique de conduite et des accès à distance (3,5 points)</strong></p>
+<p>a) Après avoir défini une politique de sécurité du système d'information fondée sur l'analyse des risques, présentez, à partir de l'annexe 3.3, quatre principes de la politique de sécurité de l'informatique de conduite d'ESTRAVENT, en montrant en quoi ils se distinguent de ceux de l'informatique de gestion. Précisez ensuite le rôle que doivent y tenir la présidente-directrice générale, vous-même, la directrice de l'exploitation, la responsable de la cellule supervision, le responsable du centre de conduite et les entreprises extérieures.</p>
+<p>b) Après avoir présenté le modèle Zero Trust, proposez quatre mesures d'architecture de confiance pour les accès à distance des entreprises extérieures, portant respectivement sur l'authentification et les comptes, le point d'accès aux installations, la séparation entre l'informatique de conduite et la bureautique, l'ouverture et la traçabilité des accès. Pour chacune, précisez le constat de l'annexe 3.3 auquel elle répond et le risque qu'elle traite. Répondez enfin à la crainte de Mme MONTREVIAU. Aucun paramétrage d'équipement ni aucun essai technique n'est attendu.</p>
+<p><strong>3.4 – La réponse au comité d'audit (2,5 points)</strong></p>
+<p>a) Après avoir défini un critère d'appréciation et un élément probant en audit des systèmes d'information, présentez à M. ESCOLIÈRE trois critères sur lesquels l'auditeur jugera les accès à distance — la sécurité, la fiabilité des traces et la conformité à la politique de sécurité — en indiquant pour chacun ce qui sera attendu et un élément probant que l'auditeur demandera.</p>
+<p>b) Présentez trois points de vigilance propres à l'audit des accès à distance d'installations qui produisent jour et nuit, en indiquant pour chacun la manière d'y répondre. La démarche détaillée de l'audit et son calendrier ne sont pas demandés.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

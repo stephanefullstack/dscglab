@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Organiser et exploiter les données des installations, en garder la maîtrise : ESTRAVENT Énergies : modèle conceptuel et logique du référentiel des installations, lac de données et référentiel de données maîtres, analyse de l'énergie non produite, Big Data et souveraineté des données des éoliennes, sobriété des données de mesure</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="sujet">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 2</p><p>13 points</p><p>59 min</p><nav><a href="sujet.html" aria-current="page">Sujet</a><a href="corrige.html">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Organiser et exploiter les données des installations, en garder la maîtrise</h1><p class="cas">ESTRAVENT Énergies : modèle conceptuel et logique du référentiel des installations, lac de données et référentiel de données maîtres, analyse de l'énergie non produite, Big Data et souveraineté des données des éoliennes, sobriété des données de mesure</p><p><strong>DOSSIER 2 – ORGANISER ET EXPLOITER LES DONNÉES DES INSTALLATIONS, EN GARDER LA MAÎTRISE (13 points)</strong></p>
+<p>Durée conseillée : 59 min (13 points sur 40, pour une épreuve de 3 heures, coefficient 1 ; environ 4,5 minutes par point).</p>
+<p>Réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p><strong>Document et matériel autorisés</strong> : aucun document ni aucun matériel n'est autorisé. En conséquence, tout usage d'une calculatrice est interdit et constituerait une fraude.</p>
+<p>Ce dossier est l'un des trois dossiers indépendants du sujet d'entraînement complet n° 19, construits sur un même cas : la présentation et l'annexe 1.1 sont communes aux trois dossiers ; chaque dossier comporte en outre ses propres annexes.</p>
+<h3 id="avertissement">AVERTISSEMENT</h3>
+<p>Si le texte du sujet, de ses questions ou de ses annexes vous conduit à formuler une ou plusieurs hypothèses, il vous est demandé de la (ou les) mentionner explicitement dans votre copie. Toutes les réponses devront être justifiées.</p>
+<p>Il vous est demandé d'apporter un soin particulier à la présentation de votre copie et à la qualité rédactionnelle.</p>
+<hr />
+<h2 id="présentation">Présentation</h2>
+<p>Nous sommes en juin 2027. ESTRAVENT Énergies SA est un producteur indépendant d'électricité renouvelable, fondé en 2004 à Reims par trois ingénieurs. Société anonyme à conseil d'administration, elle est cotée sur Euronext Growth depuis 2015 ; ses fondateurs en détiennent 34 % du capital, un fonds d'infrastructure 21 %, et 45 % sont détenus par le public. Elle développe, construit et exploite en France 64 parcs éoliens terrestres (420 éoliennes, 1 000 MW) et 38 centrales solaires au sol (400 MW), portés chacun par une société de projet qu'elle détient à 100 %. En 2026, ses installations ont produit 2,7 TWh, et son chiffre d'affaires a atteint 250 M€. ESTRAVENT emploie 520 salariés, au siège de Reims, au centre de conduite qui surveille les installations jour et nuit, et dans quatre agences régionales. Les organisations, les personnes et les données de ce cas sont fictives.</p>
+<p>Le plan « ESTRAVENT 2031 », adopté en mars 2027 par le conseil d'administration, fixe quatre objectifs : porter la puissance installée à 2 500 MW, en renouvelant les éoliennes des parcs les plus anciens et en développant de nouveaux projets ; vendre 40 % de la production à des industriels par des contrats d'achat direct, contre 10 % en 2026, à mesure que les parcs sortent de leurs contrats de vente à prix garanti ; porter la disponibilité des éoliennes de 95 % à 97 %, en assurant elle-même la maintenance des machines sorties des contrats des constructeurs ; maîtriser les données et la sécurité de ses installations. Le système d'information s'est construit en deux mondes séparés : l'informatique de gestion, confiée à la DSI, et l'informatique de conduite des installations, gérée par la direction de l'exploitation avec les constructeurs et une entreprise de services du numérique.</p>
+<p>Vous êtes directeur (directrice) de la performance et des systèmes d'information d'ESTRAVENT depuis janvier 2027 ; vous dirigez la DSI et le contrôle de gestion et vous rendez compte au directeur financier. La présidente-directrice générale, Mme Sidonie VARLAMBERT, vous demande trois travaux : préparer l'évolution de la stratégie et de l'organisation du SI, la renégociation d'un contrat et la transmission des savoirs (dossier 1) ; organiser et exploiter les données des installations, et en garder la maîtrise (dossier 2) ; maîtriser les coûts, la fiabilité et la sécurité du SI de conduite (dossier 3). L'annexe 1.1 est commune aux trois dossiers, qui sont indépendants ; chaque dossier comporte en outre ses propres annexes. Pour conduire ce travail, vous vous appuierez sur les annexes fournies ainsi que sur vos connaissances professionnelles.</p>
+<h3 id="annexe-11--présentation-destravent-énergies-et-chiffres-clés">ANNEXE 1.1 – Présentation d'ESTRAVENT Énergies et chiffres clés</h3>
+<p>ESTRAVENT Énergies SA développe, construit et exploite des parcs éoliens terrestres et des centrales solaires au sol en France, dans quatre régions : Grand Est, Hauts-de-France, Centre-Val de Loire et Occitanie. Son siège est à Reims (Marne). Chaque parc éolien et chaque centrale solaire est porté par une société de projet, détenue à 100 % par ESTRAVENT : les 102 sociétés de projet n'ont aucun salarié, et ESTRAVENT leur facture ses services. Les communes où sont implantés les parcs sont fictives. L'exercice coïncide avec l'année civile : l'exercice 2026 est le dernier exercice clos.</p>
+<p><strong>L'actionnariat et la gouvernance</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Forme et cotation</td>
+<td>société anonyme à conseil d'administration, cotée sur Euronext Growth depuis 2015</td>
+</tr>
+<tr class="even">
+<td>Capital</td>
+<td>fondateurs 34 % ; fonds d'infrastructure 21 % ; public 45 %</td>
+</tr>
+<tr class="odd">
+<td>Conseil d'administration</td>
+<td>9 membres ; un comité d'audit ; présidente-directrice générale : Mme Sidonie VARLAMBERT, cofondatrice</td>
+</tr>
+<tr class="even">
+<td>Plan stratégique</td>
+<td>« ESTRAVENT 2031 », adopté en mars 2027 par le conseil d'administration</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Les installations et l'activité en 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Donnée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Parcs éoliens terrestres</td>
+<td>64 parcs, 420 éoliennes, 1 000 MW ; les éoliennes viennent de trois constructeurs, désignés dans ce cas par les lettres A, B et C</td>
+</tr>
+<tr class="even">
+<td>Centrales solaires au sol</td>
+<td>38 centrales, 400 MW</td>
+</tr>
+<tr class="odd">
+<td>Puissance installée</td>
+<td>1 400 MW ; objectif du plan : 2 500 MW en 2031</td>
+</tr>
+<tr class="even">
+<td>Production</td>
+<td>2,7 TWh, dont éolien 2,2 TWh et solaire 0,5 TWh</td>
+</tr>
+<tr class="odd">
+<td>Disponibilité moyenne des éoliennes</td>
+<td>95 % ; objectif du plan : 97 %</td>
+</tr>
+<tr class="even">
+<td>Chiffre d'affaires</td>
+<td>250 M€</td>
+</tr>
+<tr class="odd">
+<td>Projets en développement</td>
+<td>70 projets ; sept à neuf ans s'écoulent entre la recherche d'un site et la mise en service</td>
+</tr>
+</tbody>
+</table>
+<p><strong>La vente de l'électricité en 2026</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Mode de vente</th>
+<th>Part de l'électricité vendue</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contrats de vente à prix garanti de quinze ans</td>
+<td>70 %</td>
+</tr>
+<tr class="even">
+<td>Vente sur le marché par un agrégateur</td>
+<td>20 %</td>
+</tr>
+<tr class="odd">
+<td>Trois contrats d'achat direct de dix ans avec des industriels, signés en 2025 et 2026</td>
+<td>10 % ; objectif du plan : 40 % en 2031</td>
+</tr>
+</tbody>
+</table>
+<p>18 parcs éoliens sortent de leur contrat de vente à prix garanti entre 2026 et 2029.</p>
+<p><strong>L'effectif (520 salariés)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Direction</th>
+<th>Effectif</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exploitation</td>
+<td>210 : centre de conduite 40, techniciens de maintenance 150, ingénieurs de la performance 20 ; la cellule supervision (8 personnes) fait partie de la direction de l'exploitation</td>
+</tr>
+<tr class="even">
+<td>Développement</td>
+<td>130, dans quatre agences régionales</td>
+</tr>
+<tr class="odd">
+<td>Construction</td>
+<td>60</td>
+</tr>
+<tr class="even">
+<td>Énergie (vente de l'électricité)</td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td>Fonctions support</td>
+<td>95, dont 22 à la DSI et 6 au contrôle de gestion</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le système d'information en quelques lignes</strong></p>
+<p>En 2026, les dépenses du système d'information ont atteint 9 M€ : 5 M€ pour la DSI et 4 M€ pour l'informatique de conduite, dont 1,5 M€ pour le contrat de l'entreprise de services du numérique (ESN).</p>
+<ul>
+<li><strong>Informatique de conduite</strong>, gérée par la direction de l'exploitation : dans chaque parc éolien, un système de supervision et d'acquisition de données fourni par le constructeur des éoliennes (trois constructeurs, trois systèmes), dont les données remontent aussi dans le nuage de chaque constructeur ; une <strong>plateforme de supervision</strong> commune au centre de conduite, développée en 2016 pour ESTRAVENT et maintenue par une ESN au forfait jusqu'au 31/12/2027 ; des systèmes de supervision propres aux centrales solaires.</li>
+<li><strong>Informatique de gestion</strong>, confiée à la DSI : progiciel de gestion intégré (comptabilité, achats, immobilisations, facturation) ; paie ; logiciel de gestion de la maintenance en mode SaaS ; outil de prévision de la production fourni par un prestataire ; gestion des contrats de vente et facturation de l'électricité (tableurs et module du progiciel) ; système d'information géographique et gestion électronique des documents des projets ; gestion des relations avec les propriétaires des terrains et les communes ; messagerie et bureautique en ligne.</li>
+<li>Les données de production sont stockées dans une base de données relationnelle au siège.</li>
+</ul>
+<p><strong>Organigramme simplifié (juin 2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Rattachement</th>
+<th>Fonction</th>
+<th>Titulaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>—</td>
+<td>conseil d'administration, avec un comité d'audit</td>
+<td>présidente : Mme Sidonie VARLAMBERT ; président du comité d'audit : M. Bernard ESCOLIÈRE, administrateur indépendant</td>
+</tr>
+<tr class="even">
+<td>Conseil d'administration</td>
+<td>présidence-direction générale</td>
+<td>Mme Sidonie VARLAMBERT</td>
+</tr>
+<tr class="odd">
+<td>Présidente-directrice générale</td>
+<td>direction financière</td>
+<td>M. Thibault ORLANCOURT, directeur financier</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>direction de l'exploitation : centre de conduite, cellule supervision, maintenance, ingénieurs de la performance</td>
+<td>Mme Gaëlle MONTREVIAU, directrice de l'exploitation ; responsable du centre de conduite : M. Yannick FERRASSOT ; responsable de la cellule supervision : Mme Nadège QUILLEBRAND ; responsable des ingénieurs de la performance : M. Fabien LACROUZE</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>direction de l'énergie (vente de l'électricité)</td>
+<td>M. Arnaud VELDRIMONT, directeur de l'énergie</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>direction du développement, avec quatre agences régionales</td>
+<td>Mme Isaure TRÉMOLLAC, directrice du développement</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>direction de la construction</td>
+<td>M. Jérôme CALVIGNAC, directeur de la construction</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>déléguée à la protection des données</td>
+<td>Mme Léa VINCHEREAU</td>
+</tr>
+<tr class="odd">
+<td>Directeur financier</td>
+<td>direction de la performance et des systèmes d'information : DSI et contrôle de gestion</td>
+<td>vous ; responsable de la DSI : M. Olivier SAUVERNAY ; responsable du contrôle de gestion : Mme Agnès DORMEVAL</td>
+</tr>
+</tbody>
+</table>
+<h3 id="annexe-21--le-référentiel-des-installations-et-les-données-de-conduite-note-de-m-fabien-lacrouze-responsable-des-ingénieurs-de-la-performance-mai-2027">ANNEXE 2.1 – Le référentiel des installations et les données de conduite (note de M. Fabien LACROUZE, responsable des ingénieurs de la performance, mai 2027)</h3>
+<p><strong>A. Les éoliennes et leurs données aujourd'hui</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Constructeur</th>
+<th>Éoliennes</th>
+<th>Puissance</th>
+<th>Âge moyen des éoliennes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>180</td>
+<td>420 MW</td>
+<td>9 ans</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>140</td>
+<td>330 MW</td>
+<td>14 ans</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>100</td>
+<td>250 MW</td>
+<td>6 ans</td>
+</tr>
+<tr class="even">
+<td><strong>Ensemble</strong></td>
+<td><strong>420</strong></td>
+<td><strong>1 000 MW</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Une même éolienne a trois noms, dans cinq systèmes de nommage.</strong> Le système du constructeur A désigne ses éoliennes par leur numéro de machine (« 41207 »), celui de B par l'abréviation du parc et la position (« CSV-T03 »), celui de C par un code interne (« C-7731 ») ; la plateforme de supervision et le logiciel de gestion de la maintenance donnent à chacune un autre code (pour l'éolienne CSV-T03 de B : « P07-E03 » et « ÉOL-0287 »). Les alarmes ont le même défaut : A compte 2 500 codes d'alarme, B 1 800 et C 3 000, sans aucune correspondance ; une surchauffe du multiplicateur porte trois codes différents. Mes ingénieurs tiennent à la main, dans un tableur, la correspondance des 200 alarmes les plus fréquentes.</li>
+<li><strong>Les composants sont suivis dans des tableurs.</strong> Les 2 100 composants majeurs des éoliennes (un multiplicateur, une génératrice et trois pales par machine) sont suivis par leur numéro de série dans quatre tableurs, un par région, tenus par les techniciens. En 2026, sur 200 composants contrôlés lors des visites, 30 ne correspondaient pas au tableur : composant remplacé sans mise à jour, numéro mal recopié ou saisi sur la mauvaise machine. En 2026, 60 composants majeurs ont été remplacés.</li>
+<li><strong>Les mesures saturent la base du siège.</strong> Les éoliennes transmettent à la plateforme de supervision des moyennes à dix minutes de 80 mesures (vent, puissance, températures, vibrations…), stockées dans la base de données relationnelle du siège. Depuis 2025, elle reçoit aussi les mesures à la seconde d'une cinquantaine de variables de 60 éoliennes du constructeur A, dans le cadre d'un essai. La base est passée de 4 To en 2024 à 12 To en 2026 ; elle est occupée à 95 %, et l'extraction d'une année de mesures d'un parc prend une nuit.</li>
+<li><strong>Les analyses commencent par des exports.</strong> Mes 20 ingénieurs exportent les mesures et les alarmes à la main, de la base et des portails des constructeurs, puis les mettent en forme dans des tableurs : environ 40 % de leur temps y passe.</li>
+</ul>
+<p><strong>B. Les usages attendus des données</strong></p>
+<ol type="1">
+<li><strong>Analyses de la performance</strong> : comparer les éoliennes d'un même modèle, repérer celles qui produisent moins que prévu pour le vent mesuré, expliquer l'énergie non produite.</li>
+<li><strong>Maintenance prédictive</strong> des multiplicateurs et des génératrices, à partir des mesures à la seconde.</li>
+<li><strong>Reporting mensuel</strong> de la disponibilité et de l'énergie non produite au comité de direction.</li>
+<li><strong>Études de renouvellement</strong> des parcs les plus anciens, qui comparent dix ans ou plus de production ; d'ici 2031, des éoliennes d'autres modèles, parfois d'autres constructeurs, remplaceront les plus anciennes.</li>
+</ol>
+<p><strong>C. Les deux options d'architecture étudiées par la DSI</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Option 1 : entrepôt de données</th>
+<th>Option 2 : lac de données et référentiel de données maîtres</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Données reçues</td>
+<td>moyennes à dix minutes, alarmes et interventions du logiciel de gestion de la maintenance, transformées chaque nuit</td>
+<td>toutes les données, reçues telles quelles : moyennes à dix minutes, mesures à la seconde, alarmes, rapports d'intervention en PDF, photos des inspections de pales, données météorologiques</td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td>une base structurée pour le reporting, alimentée par des traitements de chargement qui contrôlent et transforment les données</td>
+<td>un lac organisé en « lakehouse » : une zone de données brutes, et une zone de données structurées et contrôlées, interrogeable comme un entrepôt ; un référentiel de données maîtres des installations (parcs, éoliennes, modèles, composants, liste commune des alarmes), tenu par un responsable désigné</td>
+</tr>
+<tr class="odd">
+<td>Mise en service</td>
+<td>12 mois</td>
+<td>18 mois</td>
+</tr>
+</tbody>
+</table>
+<p>Aucun chiffrage du projet n'est attendu.</p>
+<p><strong>D. Les règles de gestion du référentiel des installations</strong></p>
+<p>Le référentiel ne porte, dans un premier temps, que sur les éoliennes.</p>
+<ul>
+<li><strong>RG1</strong> – Un parc est identifié par un code ; on connaît son nom, sa commune, sa région et sa date de mise en service. Un parc compte une ou plusieurs éoliennes.</li>
+<li><strong>RG2</strong> – Une éolienne est identifiée par un code unique attribué par ESTRAVENT ; on connaît son numéro de position dans le parc et sa désignation dans le système de son constructeur. Une éolienne appartient à un seul parc.</li>
+<li><strong>RG3</strong> – Une éolienne relève d'un seul modèle. Un modèle est identifié par un code ; on connaît sa désignation, son constructeur et sa puissance. Un modèle peut n'équiper encore aucune éolienne d'ESTRAVENT (modèles étudiés pour le renouvellement).</li>
+<li><strong>RG4</strong> – Un composant majeur (multiplicateur, génératrice ou pale) est identifié par son numéro de série ; on connaît son type. Une éolienne comporte au moins un composant majeur. À un moment donné, un composant est monté sur une seule éolienne, ou sur aucune lorsqu'il est en stock ou en réparation.</li>
+<li><strong>RG5</strong> – Un remplacement est identifié par un numéro ; on connaît sa date et son motif (panne, usure, maintenance préventive). Il concerne une seule éolienne ; il retire un composant, le composant déposé, et en installe un autre, le composant posé. Au cours de sa vie, un composant peut être déposé lors de plusieurs remplacements et posé lors de plusieurs autres (après une réparation), ou d'aucun ; une éolienne peut n'avoir connu aucun remplacement.</li>
+<li><strong>RG6</strong> – Un intervenant est identifié par un code ; on connaît son nom et sa catégorie (technicien d'ESTRAVENT ou entreprise sous-traitante). Un remplacement est réalisé par un ou plusieurs intervenants ; un intervenant peut n'avoir réalisé aucun remplacement.</li>
+</ul>
+<h3 id="annexe-22--lénergie-non-produite-de-2024-à-2026-tableaux-de-m-fabien-lacrouze-avril-2027">ANNEXE 2.2 – L'énergie non produite de 2024 à 2026 (tableaux de M. Fabien LACROUZE, avril 2027)</h3>
+<p>Conventions : l'<strong>énergie non produite</strong> est l'énergie que les éoliennes auraient produite, d'après le vent mesuré, pendant leurs arrêts et leurs réductions de puissance ; elle est estimée par les ingénieurs de la performance à partir des moyennes à dix minutes. La <strong>disponibilité</strong> est la part du temps pendant laquelle une éolienne est en état de produire : les pannes et la maintenance la réduisent ; les bridages, les arrêts pour la faune et le givre ne la réduisent pas, l'éolienne restant en état de produire.</p>
+<p><strong>A. Énergie non produite par cause (en GWh, chiffres publiés)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Cause</th>
+<th>2024</th>
+<th>2025</th>
+<th>2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pannes</td>
+<td>70</td>
+<td>80</td>
+<td>90</td>
+</tr>
+<tr class="even">
+<td>Maintenance programmée</td>
+<td>30</td>
+<td>25</td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td>Bridages demandés par le gestionnaire du réseau</td>
+<td>20</td>
+<td>35</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>Arrêts pour la protection des oiseaux et des chauves-souris</td>
+<td>15</td>
+<td>20</td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td>Givre</td>
+<td>10</td>
+<td>15</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td><strong>Ensemble</strong></td>
+<td><strong>145</strong></td>
+<td><strong>175</strong></td>
+<td><strong>200</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. Énergie non produite en 2026 par constructeur (en GWh) et disponibilité</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Constructeur</th>
+<th>Pannes</th>
+<th>Maintenance programmée</th>
+<th>Bridages</th>
+<th>Faune</th>
+<th>Givre</th>
+<th>Ensemble</th>
+<th>Par éolienne</th>
+<th>Disponibilité 2024</th>
+<th>2025</th>
+<th>2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A (180 éoliennes)</td>
+<td>30</td>
+<td>10</td>
+<td>25</td>
+<td>5</td>
+<td>5</td>
+<td>75</td>
+<td>environ 420 MWh</td>
+<td>96 %</td>
+<td>96 %</td>
+<td>96 %</td>
+</tr>
+<tr class="even">
+<td>B (140 éoliennes)</td>
+<td>40</td>
+<td>10</td>
+<td>15</td>
+<td>15</td>
+<td>0</td>
+<td>80</td>
+<td>environ 570 MWh</td>
+<td>95 %</td>
+<td>94 %</td>
+<td>94 %</td>
+</tr>
+<tr class="odd">
+<td>C (100 éoliennes)</td>
+<td>20</td>
+<td>5</td>
+<td>10</td>
+<td>5</td>
+<td>5</td>
+<td>45</td>
+<td>450 MWh</td>
+<td>96 %</td>
+<td>95 %</td>
+<td>95 %</td>
+</tr>
+<tr class="even">
+<td><strong>Ensemble</strong></td>
+<td><strong>90</strong></td>
+<td><strong>25</strong></td>
+<td><strong>50</strong></td>
+<td><strong>25</strong></td>
+<td><strong>10</strong></td>
+<td><strong>200</strong></td>
+<td>—</td>
+<td><strong>96 %</strong></td>
+<td><strong>95 %</strong></td>
+<td><strong>95 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. Les pannes du multiplicateur</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>2024</th>
+<th>2025</th>
+<th>2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Part du multiplicateur dans l'énergie non produite par les pannes</td>
+<td>30 %</td>
+<td>35 %</td>
+<td>40 %</td>
+</tr>
+<tr class="even">
+<td>Multiplicateurs remplacés</td>
+<td>6</td>
+<td>9</td>
+<td>12, dont 8 sur des éoliennes du constructeur B</td>
+</tr>
+</tbody>
+</table>
+<p>Un multiplicateur qui casse immobilise l'éolienne 30 jours en moyenne, dont cinq jours de travaux : le reste est l'attente de la pièce et de la grue.</p>
+<p><strong>D. Ce que l'on sait de ces chiffres</strong></p>
+<ul>
+<li><strong>Définition des causes revue en 2025</strong> : depuis le 1er janvier 2025, l'attente du technicien après une panne, auparavant classée en maintenance programmée, est classée en pannes. Elle représente environ 5 GWh par an ; les chiffres de 2024 n'ont pas été recalculés.</li>
+<li><strong>Données manquantes</strong> : à la suite d'un changement de son portail, les données du constructeur C de janvier et février 2026 n'ont jamais été reçues ; l'énergie non produite de ses éoliennes pendant ces deux mois, environ 10 GWh, manque dans les chiffres de 2026.</li>
+<li><strong>Arrêts mal saisis</strong> : dans le parc de Castelvérune (20 éoliennes du constructeur B, en Occitanie), les arrêts pour la protection des chauves-souris, les soirs d'été, sont saisis comme des pannes depuis 2025, soit environ 10 GWh par an ; ils retirent environ un point à la disponibilité du constructeur B en 2025 et en 2026.</li>
+</ul>
+<p><strong>E. L'affirmation de Mme Gaëlle MONTREVIAU, directrice de l'exploitation, au comité de direction du 15/04/2027</strong></p>
+<p>« Nos pertes viennent du constructeur B ; il suffit de reprendre sa maintenance. »</p>
+<h3 id="annexe-23--les-données-des-éoliennes-chez-les-constructeurs-note-de-mme-gaëlle-montreviau-directrice-de-lexploitation-mai-2027-et-extraits-des-contrats">ANNEXE 2.3 – Les données des éoliennes chez les constructeurs (note de Mme Gaëlle MONTREVIAU, directrice de l'exploitation, mai 2027, et extraits des contrats)</h3>
+<p><strong>A. Ce que produisent les éoliennes.</strong> L'automate de chaque éolienne enregistre environ 300 variables à la seconde (vent, puissance, orientation de la nacelle et des pales, températures, vibrations, pression d'huile…) et toutes ses alarmes. Ces données partent en continu vers le système de supervision du parc, puis vers le nuage du constructeur : environ 150 To par an pour les 420 éoliennes (65 To chez A, 50 To chez B, 35 To chez C). ESTRAVENT ne reçoit, par la plateforme de supervision, que les moyennes à dix minutes de 80 de ces variables et la liste des alarmes, avec les codes de chaque constructeur.</p>
+<p><strong>B. Les conditions des trois constructeurs</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Constructeur A</th>
+<th>Constructeur B</th>
+<th>Constructeur C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lieu de stockage des données à la seconde</td>
+<td>centres de données situés dans l'Union européenne</td>
+<td>centres de données situés dans l'Union européenne</td>
+<td>nuage d'un fournisseur de services dont le siège est hors de l'Union européenne ; centres de données hors de l'Union européenne, dans des pays que le contrat ne précise pas</td>
+</tr>
+<tr class="even">
+<td>Accès d'ESTRAVENT aux données à la seconde</td>
+<td>sur abonnement, 500 € par éolienne et par an ; essai sur 60 éoliennes depuis 2025, pour une cinquantaine de variables, soit 30 k€ par an</td>
+<td>aucun : B utilise ces données pour sa propre maintenance</td>
+<td>consultation sur le portail de C, sans export ; extraction ponctuelle sur demande, en quinze jours</td>
+</tr>
+<tr class="odd">
+<td>Format</td>
+<td>propre au constructeur</td>
+<td>propre au constructeur</td>
+<td>propre au constructeur</td>
+</tr>
+<tr class="even">
+<td>Transmission à un tiers</td>
+<td>possible pour les éoliennes abonnées</td>
+<td>refusée à tout prestataire de maintenance concurrent</td>
+<td>non prévue</td>
+</tr>
+<tr class="odd">
+<td>À la fin du contrat de maintenance du constructeur</td>
+<td>accès maintenu sur abonnement</td>
+<td>accès au portail fermé ; rien n'est prévu pour la restitution des données</td>
+<td>rien n'est prévu</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Extraits des contrats de maintenance</strong></p>
+<ul>
+<li>Constructeur A : « Les données de fonctionnement à la seconde sont accessibles au client au moyen d'un abonnement annuel par éolienne, au tarif en vigueur. »</li>
+<li>Constructeur B : « Les données collectées par le système du constructeur sont réservées à l'exécution du présent contrat. Elles ne peuvent être communiquées à un prestataire de maintenance tiers sans l'accord écrit du constructeur. »</li>
+<li>Constructeur C : « Le constructeur peut héberger les données dans tout centre de données exploité par lui-même ou par ses sous-traitants. »</li>
+</ul>
+<p><strong>C. Les faits récents</strong></p>
+<ul>
+<li>En 2027, 40 éoliennes du constructeur B sortent de leur contrat de maintenance ; ESTRAVENT veut en confier l'entretien à une entreprise de maintenance indépendante, qui l'a prévenue : « Sans les mesures à la seconde, nous entretiendrons ces machines à l'aveugle. »</li>
+<li>Un ingénieur de la performance : « Quand un multiplicateur casse, je demande au constructeur les mesures des semaines précédentes. J'attends quinze jours, et je reçois un fichier que je ne peux comparer à aucun autre. »</li>
+<li>Mme MONTREVIAU : « Ces données sont produites par nos machines, sur nos parcs ; nous ne les voyons qu'à travers les constructeurs. »</li>
+</ul>
+<p>Aucune analyse juridique des contrats n'est attendue.</p>
+<h3 id="annexe-24--le-stockage-des-mesures-note-de-m-olivier-sauvernay-responsable-de-la-dsi-mai-2027">ANNEXE 2.4 – Le stockage des mesures (note de M. Olivier SAUVERNAY, responsable de la DSI, mai 2027)</h3>
+<p><strong>A. Aujourd'hui.</strong> Toutes les mesures reçues depuis la mise en service du premier parc, en 2007, sont gardées sans limite de durée, en trois copies : la base de production, une copie de secours dans une seconde salle du siège, et une copie mensuelle chez un hébergeur. Copies comprises, hors exports des ingénieurs dans les tableurs du serveur de fichiers, le volume des mesures a été multiplié par trois en deux ans : 12 To en 2024, 36 To en 2026. Aucune règle ne dit ce qui doit être gardé, ni combien de temps.</p>
+<p><strong>B. Ce que montrent les journaux de consultation de 2026</strong></p>
+<ul>
+<li>90 % des consultations portent sur des mesures de moins de deux ans.</li>
+<li>Les moyennes à dix minutes de plus de cinq ans ne servent qu'aux études de renouvellement des parcs anciens, une dizaine par an.</li>
+<li>Les mesures à la seconde ne servent qu'à analyser les pannes, sur les semaines qui les précèdent, et à construire les modèles de maintenance prédictive. Selon les ingénieurs de la performance, ces modèles n'utilisent qu'une trentaine des 300 variables.</li>
+</ul>
+<p><strong>C. Le projet de lac.</strong> Dans l'option 2 de l'annexe 2.1, le lac recevrait et garderait sans limite toutes les mesures à la seconde des 420 éoliennes, avec trois copies : environ 150 To par an, soit 450 To par an copies comprises, auxquels s'ajouteront les mesures des nouveaux parcs.</p>
+<p><strong>D. Les deux offres de centre de données reçues pour héberger le lac</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Offre 1</th>
+<th>Offre 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Localisation</td>
+<td>France, Grand Est, à 30 km de Reims</td>
+<td>France, Île-de-France</td>
+</tr>
+<tr class="even">
+<td>Consommation électrique des équipements informatiques du lac, estimée par la DSI pour la première année, pour le même matériel et sans l'effet du stockage à deux niveaux</td>
+<td>300 MWh</td>
+<td>300 MWh</td>
+</tr>
+<tr class="odd">
+<td>PUE annoncé (énergie totale du centre / énergie des équipements informatiques)</td>
+<td>1,2</td>
+<td>1,5</td>
+</tr>
+<tr class="even">
+<td>Consommation électrique totale estimée pour la première année</td>
+<td>360 MWh</td>
+<td>450 MWh</td>
+</tr>
+<tr class="odd">
+<td>Origine de l'électricité</td>
+<td>électricité du réseau</td>
+<td>électricité du réseau, et achat d'électricité solaire à un producteur pour la moitié de la consommation</td>
+</tr>
+<tr class="even">
+<td>Refroidissement</td>
+<td>par l'air extérieur la plus grande partie de l'année</td>
+<td>tours de refroidissement à eau, environ 5 000 m³ d'eau par an</td>
+</tr>
+<tr class="odd">
+<td>Chaleur dégagée par les serveurs</td>
+<td>récupérée et cédée au réseau de chaleur d'une commune voisine</td>
+<td>non récupérée</td>
+</tr>
+<tr class="even">
+<td>Stockage proposé</td>
+<td>deux niveaux : disques rapides pour les données récentes, stockage lent et peu consommateur pour les données anciennes</td>
+<td>disques rapides pour toutes les données</td>
+</tr>
+<tr class="odd">
+<td>Renouvellement des serveurs</td>
+<td>tous les sept ans</td>
+<td>tous les quatre ans</td>
+</tr>
+<tr class="even">
+<td>Informations environnementales remises au client</td>
+<td>consommation électrique et PUE, chaque mois, pour les équipements du client</td>
+<td>PUE annuel de l'ensemble du centre</td>
+</tr>
+</tbody>
+</table>
+<p>Les deux offres ont un prix voisin, et aucune procédure de choix de l'hébergeur n'est à organiser. Aucune ne fournit d'empreinte carbone. ESTRAVENT ne mesure aujourd'hui ni la consommation ni l'empreinte de son système d'information.</p>
+<h3 id="annexe-25--repères-au-31122026">ANNEXE 2.5 – Repères (au 31/12/2026)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Repère</th>
+<th>Nom exact et version</th>
+<th>Ce qu'il faut en retenir</th>
+<th>Statut au 31/12/2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Accès aux données et changement de fournisseur</td>
+<td>Règlement (UE) 2023/2854 sur les données (Data Act)</td>
+<td>L'utilisateur d'un produit connecté peut accéder aux données que génère son utilisation et demander qu'elles soient transmises à un tiers de son choix ; les produits connectés mis sur le marché après le 12/09/2026 doivent être conçus de telle sorte que ces données soient, par défaut, accessibles à l'utilisateur. Les fournisseurs de services d'informatique en nuage doivent permettre à leurs clients de changer de fournisseur et d'emporter leurs données.</td>
+<td>Applicable depuis le 12/09/2025</td>
+</tr>
+<tr class="even">
+<td>Cloud de confiance</td>
+<td>Référentiel du cloud de confiance du Cigref</td>
+<td>Grille d'exigences fondée sur trois piliers : la sécurité ; l'immunité aux lois extra-européennes ; la maîtrise de la dépendance au fournisseur. Toute exigence opérationnelle doit être également exigible par contrat. Ce n'est ni un label, ni une certification.</td>
+<td>Première version publiée le 27/05/2021 ; deuxième version disponible</td>
+</tr>
+</tbody>
+</table>
+<h3 id="travail-à-faire">Travail à faire</h3>
+<p>ESTRAVENT a 420 éoliennes, qui produisent chaque seconde des données dont elle ne voit qu'une petite partie, sous des noms différents selon les constructeurs, dans une base saturée. Elle ne sait pas expliquer sûrement son énergie non produite, et le plan « ESTRAVENT 2031 » lui demande de reprendre la maintenance des machines et la maîtrise de ses données. Mme VARLAMBERT vous demande d'organiser les données des installations, d'en tirer une analyse fiable de l'énergie non produite, d'apprécier la dépendance d'ESTRAVENT envers les constructeurs pour ses données et de rendre leur stockage plus sobre. Vous mobiliserez pour cela les annexes 1.1 et 2.1 à 2.5 ainsi que vos connaissances professionnelles.</p>
+<p><strong>2.1 – Le référentiel des installations et l'architecture des données (4 points)</strong></p>
+<p>a) À partir des règles de gestion de l'annexe 2.1 D, établissez le modèle conceptuel des données du référentiel des installations, puis traduisez-le en modèle logique, en énonçant les règles de passage que vous appliquez. Aucune requête n'est attendue.</p>
+<p>b) Après avoir défini l'entrepôt de données, le lac de données et le référentiel de données maîtres, comparez les deux options de l'annexe 2.1 C selon trois critères que vous justifierez par les usages de l'annexe 2.1 B, puis recommandez une architecture. Montrez enfin comment elle règle les problèmes de nommage et de qualité des données décrits dans l'annexe 2.1 A.</p>
+<p><strong>2.2 – L'analyse de l'énergie non produite (4 points)</strong></p>
+<p>a) Décrivez la chaîne de traitement des données qui produira chaque mois l'analyse de l'énergie non produite, de la collecte à la restitution, en montrant à chaque étape une limite des chiffres de l'annexe 2.2 ou un problème de l'annexe 2.1 A qu'elle doit traiter.</p>
+<p>b) Formulez trois constats argumentés tirés de l'annexe 2.2, puis appréciez l'affirmation de Mme MONTREVIAU. Aucun calcul statistique n'est attendu.</p>
+<p>c) Indiquez ce qu'une démarche d'analyse prédictive apporterait à la maintenance des multiplicateurs, en précisant deux conditions de sa réussite et deux de ses limites. Proposez enfin la représentation visuelle qui montrerait le mieux au comité de direction l'énergie non produite par cause et par constructeur, et justifiez-la.</p>
+<p><strong>2.3 – Les données des éoliennes et la souveraineté d'ESTRAVENT (2,5 points)</strong></p>
+<p>a) Après avoir caractérisé le Big Data, montrez en quoi les données à la seconde des éoliennes en relèvent, et pourquoi la base de données relationnelle du siège ne peut pas les accueillir.</p>
+<p>b) Analysez, à partir de l'annexe 2.3, les enjeux de souveraineté et de dépendance que crée la détention de ces données par les constructeurs : localisation, accès, coût, liberté de choisir la maintenance. Proposez ensuite trois mesures pour en reprendre la maîtrise, en mobilisant en principe les repères de l'annexe 2.5. Aucune analyse juridique du règlement ni des contrats n'est attendue.</p>
+<p><strong>2.4 – La sobriété des données de mesure (2,5 points)</strong></p>
+<p>a) Proposez, à partir de l'annexe 2.4, une politique de sobriété des données de mesure : la granularité conservée, les durées de conservation et le nombre de copies, en tenant compte des usages de l'annexe 2.1 B. Indiquez qui la décide et qui la fait respecter.</p>
+<p>b) Après avoir défini une stratégie de transition numérique responsable, appréciez les deux offres de centre de données de l'annexe 2.4 D au regard de cette stratégie, puis concluez. Aucun calcul d'empreinte n'est attendu.</p>
+<p>c) Proposez un indicateur de mesure de l'impact environnemental du lac, précisé par sa formule, sa source, sa fréquence, sa cible et son axe.</p>
+<p class="vers-corrige">Quand vous avez terminé : <a href="corrige.html">ouvrir le corrigé</a>.</p>
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>

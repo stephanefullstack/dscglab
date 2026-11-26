@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Maîtriser les coûts, la fiabilité et la sécurité du SI de conduite : ESTRAVENT Énergies : coûts du SI et refacturation aux sociétés de projet, fiabilité de la chaîne du comptage au chiffre d'affaires, sécurité des accès distants des tiers au réseau de conduite, critères et points de vigilance de l'audit de ces accès</title>
+<meta name="description" content="Entraînement à l'UE 5 du DSCG, management des systèmes d'information, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 5</span></a>
+<p>Dossier 3</p><p>13 points</p><p>58 min</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Maîtriser les coûts, la fiabilité et la sécurité du SI de conduite</h1><p class="cas">ESTRAVENT Énergies : coûts du SI et refacturation aux sociétés de projet, fiabilité de la chaîne du comptage au chiffre d'affaires, sécurité des accès distants des tiers au réseau de conduite, critères et points de vigilance de l'audit de ces accès</p><p class="avant">Corrigé indicatif et barème sur 40. Les renvois F01 à F15 désignent des fiches de travail datées, les codes JUR les constats des rapports du jury ; les erreurs types sont nommées en clair.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F09 performance du SI, F10 audit et fiabilisation, F12 sécurité et résilience, et la base des référentiels datés (vérifiés le 25/10/2026).</p>
+<p>Bien que le corrigé mentionne des modèles, des référentiels et des textes, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur la justesse des définitions, leur application aux annexes, la pertinence et la priorisation des recommandations, et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet). Le corrigé officiel du sujet zéro ne donne les points que par question : la répartition par sous-question et par item est une proposition.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1 Les coûts du système d'information et leur refacturation aux sociétés de projet</td>
+<td><code>3.1.b</code> Fondamentaux du contrôle de gestion appliqué aux SI ; <code>3.1.a</code> Mettre en œuvre des dispositifs de pilotage de la performance SI, en intégrant une analyse fine des coûts, des indicateurs et des leviers d'optimisation via des tableaux de bord ; <code>3.1.c</code> Analyse des coûts directs et indirects : TCO, coûts cachés, ROI des projets SI ; <code>3.1.d</code> Construction et suivi de tableaux de bord SI (KPI, équilibrage performance / risques / coûts) ; <code>3.1.e</code> Revue et amélioration continue des dispositifs de pilotage</td>
+<td>3,5</td>
+</tr>
+<tr class="even">
+<td>3.2 La fiabilité de la chaîne du comptage au chiffre d'affaires</td>
+<td><code>4.1.b</code> Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers ; <code>4.1.a</code> Détecter, évaluer et traiter les risques associés aux systèmes d'information, en intégrant les dimensions réglementaires, éthiques et technologiques, y compris les apports de l'IA ; <code>4.1.e</code> Fiabilisation des systèmes d'information comptables et décisionnels</td>
+<td>3,5</td>
+</tr>
+<tr class="odd">
+<td>3.3 La sécurité de l'informatique de conduite et des accès à distance</td>
+<td><code>4.2.b</code> Élaboration d'une politique de cybersécurité fondée sur l'analyse des risques ; <code>4.2.a</code> Définir et piloter une politique de sécurité du SI, en intégrant les enjeux de cybersécurité, de résilience organisationnelle et de gouvernance des systèmes critiques ; <code>4.2.c</code> Notions d'architecture de confiance (authentification, chiffrement, segmentation)</td>
+<td>3,5</td>
+</tr>
+<tr class="even">
+<td>3.4 La réponse au comité d'audit</td>
+<td><code>3.2.c</code> Critères de performance et de conformité : fiabilité, efficacité, sécurité, conformité RGPD, etc. ; <code>3.2.a</code> Conduire des missions d'audit et de contrôle des systèmes d'information afin d'évaluer leur performance, leur conformité réglementaire et la qualité de leur gouvernance ; <code>3.2.e</code> Facteurs de succès et points de vigilance spécifiques à l'audit SI</td>
+<td>2,5</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 3 – Maîtriser les coûts, la fiabilité et la sécurité du système d'information de conduite</strong></td>
+<td></td>
+<td><strong>13</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Répartition indicative : connaissances (contrôle de gestion du SI, typologie des risques, fiabilisation, politique de sécurité fondée sur les risques, Zero Trust, critère d'appréciation et élément probant) environ 3 points (items 3.1 a-1, 3.2 a-1, 3.2 b-1, 3.3 a-1, 3.3 b-1 et 3.4 a-1, chacun en partie appliqué au cas) ; analyse des annexes et recommandations environ 10 points, soit environ 77 %. Durée conseillée : 13 points × 4,5 minutes = 58,5 minutes, soit 58 minutes.</p>
+<hr />
+<h3 id="31--les-coûts-du-système-dinformation-et-leur-refacturation-aux-sociétés-de-projet-35-points">3.1 – Les coûts du système d'information et leur refacturation aux sociétés de projet (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.1 – Concevoir, construire et exploiter des outils de pilotage de la performance (budgets, indicateurs, tableaux de bord) : <code>3.1.b</code> « Fondamentaux du contrôle de gestion appliqué aux SI » ; <code>3.1.a</code> « Mettre en œuvre des dispositifs de pilotage de la performance SI, en intégrant une analyse fine des coûts, des indicateurs et des leviers d'optimisation via des tableaux de bord » ; <code>3.1.c</code> « Analyse des coûts directs et indirects : TCO, coûts cachés, ROI des projets SI » ; <code>3.1.d</code> « Construction et suivi de tableaux de bord SI (KPI, équilibrage performance / risques / coûts) » ; <code>3.1.e</code> « Revue et amélioration continue des dispositifs de pilotage ». Limites : les méthodes classiques de calcul et de décomposition des écarts ne sont pas approfondies ; aucun calcul de répartition n'est demandé ; les règles comptables, fiscales et juridiques de la refacturation entre ESTRAVENT et ses sociétés de projet ne sont pas à traiter (UE 4, UE 1).</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.1 (dépenses par ensemble de services, refacturation au chiffre d'affaires, inducteurs, coûts non suivis, reporting annuel, avis de M. ORLANCOURT et de Mme MONTREVIAU) et annexe 1.1 (102 sociétés de projet sans salarié, 1 000 MW éoliens et 400 MW solaires, dépenses du SI de 9 M€, 250 M€ de chiffre d'affaires, objectif de 2 500 MW en 2031).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Fondamentaux définis et appliqués : centre de coûts et centre de services, refacturation interne, inducteur distingué d'une clé conventionnelle ; situation d'ESTRAVENT qualifiée</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Trois arguments tirés de l'annexe : absence de lien entre chiffre d'affaires et usage du SI (parc arrêté, parcs voisins), subvention des centrales solaires à la supervision des éoliennes, périmètre refacturé trop large</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Un inducteur (ou l'absence de refacturation) pour chaque ensemble de services ; deux choix justifiés par la causalité, la mesurabilité et la stabilité ; nombre d'utilisateurs écarté pour les sociétés de projet</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Trois coûts cachés relevés (temps des techniciens, tableurs et ressaisies du centre de conduite, achats informatiques de l'exploitation), avec la raison pour laquelle chacun échappe au suivi</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Pour chacun, un moyen de mesure réaliste ; lecture en coût complet du SI de conduite</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>c-1</td>
+<td>Trois améliorations : comparaisons (par service, dans le temps, coûts unitaires), objectifs reliés au plan, revue périodique en amélioration continue</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>c-2</td>
+<td>Deux indicateurs complets (formule, source, fréquence, cible, axe), reliés à un constat de l'annexe</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.1 a) – Les fondamentaux, la critique de la clé actuelle et les inducteurs</em></p>
+<p><strong>Définitions</strong> (a-1) : le contrôle de gestion appliqué au système d'information mesure le <strong>coût complet</strong> des services numériques (coûts directs, indirects et cachés), l'<strong>impute</strong> aux entités qui les consomment et le rapproche de la valeur et de la qualité rendues (F09 § 2). Une fonction SI <strong>centre de coûts</strong> reçoit un budget et n'est jugée que sur son respect ; un <strong>centre de services</strong> facture ses services aux entités utilisatrices, au coût complet ou à un coût standard, selon des règles connues à l'avance : c'est la <strong>refacturation interne</strong>, qui rend visible ce que chaque entité consomme et la responsabilise. Un <strong>inducteur</strong> est une grandeur dont la variation explique celle du coût d'un service (nombre de machines supervisées, de sites raccordés) ; une clé conventionnelle comme le chiffre d'affaires répartit un total sans lien avec la consommation.</p>
+<p>Application : ESTRAVENT refacture bien ses dépenses du SI à ses sociétés de projet, mais en totalité et au prorata du chiffre d'affaires : c'est une <strong>répartition conventionnelle</strong>, pas une refacturation de services ; elle ne dit rien de ce que coûte la supervision d'une éolienne ou d'une centrale.</p>
+<p><strong>Trois arguments contre la refacturation actuelle</strong> (a-2) :</p>
+<ol type="1">
+<li><strong>Le chiffre d'affaires ne mesure pas l'usage du SI.</strong> Il dépend du vent, du soleil et du prix de vente, pas des services consommés. Le parc du Centre-Val de Loire arrêté quatre mois a vu sa part divisée par deux (chiffre d'affaires de 4 à 2 M€) alors que ses alarmes ont été multipliées par trois (de 2 000 à 6 000) et que le centre de conduite l'a suivi de près : la clé évolue à l'inverse de la consommation. Deux parcs voisins de même puissance paient des montants différents selon que leur électricité est vendue à prix garanti ou sur le marché.</li>
+<li><strong>Les centrales solaires paient pour les éoliennes.</strong> Avec 20 % du chiffre d'affaires (50 M€ sur 250 M€), elles supportent 20 % des 9 M€, soit 1 800 k€, dont 20 % de la supervision des éoliennes (environ 520 k€ sur 2 600 k€), qu'elles n'utilisent pas ; elles ne représentent que 10 % des alarmes (20 000 sur 200 000). Le coût de chaque filière est faussé, et les comparaisons entre parcs avec lui.</li>
+<li><strong>Le périmètre refacturé est trop large.</strong> Les 9 M€ sont refacturés en entier, y compris les outils des projets en développement (système d'information géographique, documents des projets) et les services de la DSI aux directions d'ESTRAVENT ; seuls 1 500 k€ de dépenses de la DSI sont des services rendus aux sociétés de projet. Les installations en service portent ainsi le coût du développement de futurs parcs.</li>
+</ol>
+<p>La simplicité invoquée par M. ORLANCOURT est réelle, mais elle a un prix : personne ne voit le coût des services, aucune entité n'est incitée à les utiliser mieux, et la clé masquera le coût des nouvelles machines quand la puissance passera de 1 400 à 2 500 MW.</p>
+<p><strong>Une répartition fondée sur des inducteurs</strong> (a-3) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Ensemble de services (annexe 3.1 A)</th>
+<th>Inducteur proposé</th>
+<th>Pourquoi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DSI – services rendus aux sociétés de projet (1 500 k€)</td>
+<td>nombre de sites (une société de projet par site), ou nombre de factures émises</td>
+<td>la facturation, les contrats de vente et la comptabilité se tiennent par société de projet</td>
+</tr>
+<tr class="even">
+<td>DSI – autres services (3 500 k€)</td>
+<td>pas de refacturation aux sociétés de projet ; répartition entre les directions d'ESTRAVENT selon le nombre d'utilisateurs</td>
+<td>ces services servent les salariés d'ESTRAVENT et le développement ; les sociétés de projet n'ont aucun salarié</td>
+</tr>
+<tr class="odd">
+<td>Supervision des éoliennes (2 600 k€)</td>
+<td>nombre d'éoliennes supervisées (420)</td>
+<td><strong>justifié ci-dessous</strong></td>
+</tr>
+<tr class="even">
+<td>Supervision des centrales solaires (400 k€)</td>
+<td>nombre d'onduleurs supervisés (2 000), ou puissance installée</td>
+<td>le système de chaque centrale suit ses onduleurs</td>
+</tr>
+<tr class="odd">
+<td>Liaisons de télécommunication (800 k€)</td>
+<td>nombre de sites raccordés (102)</td>
+<td><strong>justifié ci-dessous</strong></td>
+</tr>
+<tr class="even">
+<td>Centre de conduite (200 k€)</td>
+<td>nombre de sites raccordés, ou puissance installée</td>
+<td>ces postes et équipements servent à suivre l'ensemble des sites ; le temps des opérateurs n'est pas dans ces dépenses</td>
+</tr>
+</tbody>
+</table>
+<p>Justification de deux inducteurs :</p>
+<ul>
+<li><strong>Nombre d'éoliennes supervisées</strong> pour la supervision des éoliennes : le coût de la plateforme, du contrat de l'ESN et des liens avec les systèmes des constructeurs croît avec le nombre de machines raccordées (<strong>causalité</strong>) ; le nombre est connu, stable dans l'année et vérifiable dans les systèmes de supervision et l'inventaire des installations (<strong>mesurabilité</strong>) ; il ne dépend ni du vent ni du prix ; il supprime la charge indue des centrales solaires et suivra le renouvellement des parcs.</li>
+<li><strong>Nombre de sites raccordés</strong> pour les liaisons : chaque parc et chaque centrale a sa liaison avec le centre de conduite ; le coût est presque proportionnel au nombre de sites, quels que soient leur production et leur prix de vente.</li>
+</ul>
+<p>Le <strong>nombre d'utilisateurs</strong> ne peut servir à refacturer les sociétés de projet, qui n'ont aucun salarié : il sert seulement à répartir les services de la DSI entre les directions d'ESTRAVENT. Le <strong>nombre d'alarmes</strong> suit la charge de travail de la supervision, mais l'objection de Mme MONTREVIAU est fondée : il ferait payer aux parcs anciens les défauts de leurs machines et varierait fortement d'une année à l'autre. On peut le combiner à une part fixe par machine ; montrer le coût réel des parcs anciens éclaire d'ailleurs leur renouvellement.</p>
+<p><em>3.1 b) – Trois coûts cachés du système d'information de conduite</em></p>
+<p>Un <strong>coût caché</strong> est un coût réel, lié au système d'information, qui n'apparaît pas dans ses dépenses : temps passé par les utilisateurs, ressaisies, outils achetés hors de la fonction SI, interruptions. Il fait partie du coût complet (TCO) et signale souvent un défaut d'intégration du SI (F09 § 2 et § 3.1).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Coût caché (annexe 3.1 D)</th>
+<th>Pourquoi il échappe au suivi</th>
+<th>Comment le mesurer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Temps des techniciens</strong> à exporter et recopier les données des portails des constructeurs et des centrales : 150 techniciens × 3 heures, soit 450 heures par semaine, environ 20 000 heures par an, l'équivalent de plus de dix postes</td>
+<td>ce temps est payé dans la masse salariale de l'exploitation, et non dans les dépenses du SI ; il vient de systèmes non intégrés</td>
+<td>rubrique « préparation des données » dans le temps déclaré de chaque intervention du logiciel de gestion de la maintenance, ou relevé sur un échantillon de semaines, valorisé au coût horaire moyen</td>
+</tr>
+<tr class="even">
+<td><strong>Tableurs et ressaisies du centre de conduite</strong> : deux opérateurs deux heures chaque matin (environ 1 500 heures par an), une trentaine de tableurs dont personne ne tient la liste</td>
+<td>l'outil paraît gratuit et le temps se perd dans le travail des équipes ; le risque d'erreur n'est mesuré nulle part</td>
+<td>inventaire des tableurs (propriétaire, usage, fréquence, temps passé), temps de ressaisie relevé, puis valorisé ; les tableurs critiques sont signalés</td>
+</tr>
+<tr class="odd">
+<td><strong>Achats informatiques de l'exploitation</strong> sur ses frais généraux : environ 350 k€ en 2026, près d'un dixième des 4 M€ de l'informatique de conduite</td>
+<td>ils sont enregistrés comme frais de la direction, hors des dépenses du SI ; c'est de l'informatique fantôme, qui comprend des boîtiers de connexion (annexe 3.3)</td>
+<td>revue annuelle des factures par fournisseur et par nature d'achat avec la direction financière ; règle selon laquelle tout achat informatique est déclaré au contrôle de gestion et validé par la direction de la performance et des SI</td>
+</tr>
+</tbody>
+</table>
+<p>Le coût complet de l'informatique de conduite dépasse donc nettement les 4 M€ affichés.</p>
+<p><em>3.1 c) – Trois améliorations du reporting annuel</em></p>
+<ol type="1">
+<li><strong>Comparer</strong> (c-1) : présenter les dépenses par ensemble de services et par monde (gestion, conduite), et non par seule nature comptable ; les comparer à l'année précédente ; ajouter des coûts unitaires (coût de la supervision par éolienne ou par MW) et le poids du SI dans le chiffre d'affaires, qui seul permet de suivre le passage de 1 400 à 2 500 MW ; intégrer les coûts cachés recensés en b).</li>
+<li><strong>Fixer des objectifs</strong> reliés au plan « ESTRAVENT 2031 » : une cible par indicateur, des seuils d'alerte et un responsable ; ajouter, à côté des coûts, quelques indicateurs de service et de risque, pour ne pas réduire le pilotage à la dépense.</li>
+<li><strong>Revoir périodiquement</strong> : un point trimestriel au comité de direction, et non une seule lecture au budget, puis une revue annuelle des inducteurs, des cibles et des indicateurs eux-mêmes, dans une logique d'amélioration continue (planifier, faire, vérifier, agir) ; les sociétés de projet connaissent à l'avance les règles de refacturation.</li>
+</ol>
+<p><strong>Deux indicateurs</strong> (c-2) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Formule</th>
+<th>Source</th>
+<th>Fréquence</th>
+<th>Cible</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Poids du système d'information dans le chiffre d'affaires</strong></td>
+<td>dépenses du SI de l'exercice / chiffre d'affaires × 100</td>
+<td>progiciel de gestion intégré et reporting du contrôle de gestion</td>
+<td>trimestrielle en cumul, bilan annuel</td>
+<td>au plus 3,6 % chaque année jusqu'en 2031 (niveau de 2026 : 9 M€ sur 250 M€), alors que la puissance passe de 1 400 à 2 500 MW</td>
+<td>financier</td>
+</tr>
+<tr class="even">
+<td><strong>Part des achats informatiques passés hors de la fonction SI</strong></td>
+<td>achats informatiques engagés par les directions sans validation de la direction de la performance et des SI / total des dépenses informatiques × 100</td>
+<td>revue des factures par fournisseur et par nature d'achat</td>
+<td>semestrielle</td>
+<td>0 % en 2028, contre près de 4 % en 2026 (350 k€)</td>
+<td>gouvernance</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>ESTRAVENT présentée comme un centre de services sans refacturation véritable, ou comme un centre de coûts qui répartit son budget : la qualification compte moins que la distinction entre clé conventionnelle et inducteur.</li>
+<li>Autres arguments justes : la clé ne responsabilise personne ; elle empêche de comparer le coût de supervision des parcs ; elle ne prépare pas la croissance du parc. Trois arguments suffisent.</li>
+<li>Puissance installée retenue pour la supervision des éoliennes ou des centrales, si elle est justifiée (stable, connue, proche de la taille des installations) et si ses limites sont dites (une grande éolienne ne coûte pas plus à superviser qu'une petite) ; nombre d'alarmes retenu pour la supervision ou pour le centre de conduite, s'il est assorti d'une réponse à l'objection de Mme MONTREVIAU.</li>
+<li>Unités d'œuvre au lieu d'inducteurs, ou méthode ABC citée en principe, si le lien de causalité est expliqué.</li>
+<li>Autre coût caché justifié : temps des ingénieurs ou de la cellule supervision consacré à la correspondance des données, coût des pannes de la supervision ; trois coûts suffisent.</li>
+<li>Autres indicateurs complets : coût de l'informatique de conduite par MW installé (près de 3 k€ en 2026, cible en baisse en 2031) ; coût de la supervision par éolienne ; heures de ressaisie des techniciens par semaine (cible : division par deux en 2029) ; axe processus admis pour ce dernier.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Fondamentaux récités sans être appliqués à la refacturation aux sociétés de projet</em> (<code>JUR-T01</code>, <code>ET-39</code>) — juste : définir, puis montrer que la clé actuelle est une répartition conventionnelle.</li>
+<li><em>Répartition chiffrée société par société, ou calcul d'écarts</em> — non demandés : le choix et la justification des inducteurs suffisent ; l'analyse d'écarts est hors du programme de l'UE 5.</li>
+<li><em>Nombre d'utilisateurs retenu pour les sociétés de projet</em> — elles n'ont aucun salarié.</li>
+<li><em>Coût du SI limité aux dépenses affichées</em> (<code>ET-33</code>, <code>JUR-A03</code>) — juste : coût complet, avec le temps des utilisateurs et l'informatique achetée hors de la fonction SI.</li>
+<li><em>Indicateurs sans cible ni source, ou génériques</em> (<code>ET-18</code>, <code>JUR-A02</code>) — juste : cinq champs, reliés au constat.</li>
+<li><em>Règles comptables ou fiscales de la refacturation entre sociétés d'un même groupe</em> — hors sujet (UE 4, UE 1).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contrôle de gestion du SI</td>
+<td>centre de coûts, centre de services, refacturation, inducteurs, coûts directs, indirects et cachés</td>
+<td>F09 § 0 et § 2</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>TCO et coûts cachés</td>
+<td>coût complet, temps des utilisateurs, informatique fantôme</td>
+<td>F09 § 3.1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>Tableau de bord et revue</td>
+<td>indicateurs à cinq champs, critique d'un reporting, amélioration continue</td>
+<td>F09 § 4.1 à 4.3</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="32--la-fiabilité-de-la-chaîne-du-comptage-au-chiffre-daffaires-35-points">3.2 – La fiabilité de la chaîne du comptage au chiffre d'affaires (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.1 – Identifier, analyser et gérer les risques liés aux systèmes d'information : <code>4.1.b</code> « Typologies des risques SI : cybermenaces, défaillances opérationnelles, risques réglementaires et métiers » ; <code>4.1.a</code> « Détecter, évaluer et traiter les risques associés aux systèmes d'information, en intégrant les dimensions réglementaires, éthiques et technologiques, y compris les apports de l'IA » ; <code>4.1.e</code> « Fiabilisation des systèmes d'information comptables et décisionnels ». Limites : ni règle comptable, ni écriture, ni contrôle des comptes ; aucune analyse d'impact détaillée ; l'ISO/IEC 27005 est mobilisée pour ses seules options de traitement.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.2 (chaîne en cinq étapes, incidents de 2026, échelles), annexe 3.5 (options de traitement de l'ISO/IEC 27005:2022) et annexe 1.1 (trois contrats d'achat direct, 10 % de l'électricité vendue, objectif de 40 %, facturation de l'électricité dans des tableurs et le module du progiciel).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Typologie présentée (cybermenaces, défaillances opérationnelles, risques réglementaires, risques métiers) ; risques formulés comme des événements redoutés</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Quatre risques tirés de l'annexe, situés chacun à une étape de la chaîne et classés</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Probabilité et impact cotés selon les échelles de l'annexe 3.2 C, de façon justifiée ; les deux risques de niveau 3 × 3 dégagés</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Fiabilisation définie ; traitement choisi et justifié pour les deux risques</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Deux contrôles pour le risque sur les données de comptage, avec nature, responsable et garantie</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Deux contrôles pour le risque sur le calcul et le chiffre d'affaires, avec nature, responsable et garantie</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-4</td>
+<td>Traçabilité des corrections et réduction de la dépendance envers une seule personne</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.2 a) – Quatre risques de la chaîne, classés et cotés</em></p>
+<p><strong>Typologie</strong> (a-1) : les risques liés aux systèmes d'information se classent en <strong>cybermenaces</strong> (attaques et malveillances, internes ou externes), <strong>défaillances opérationnelles</strong> (pannes, erreurs humaines, défauts de traitement ou de données), <strong>risques réglementaires</strong> (manquement à une obligation) et <strong>risques métiers</strong> (atteinte à l'activité, à la relation avec les clients, dépendance envers une personne ou un fournisseur) (F12 § 0 et § 5). Un risque se formule comme un <strong>événement redouté</strong>, avec sa cause et sa conséquence, et non comme un constat.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Risque (événement redouté)</th>
+<th>Étape de la chaîne</th>
+<th>Catégorie</th>
+<th>Probabilité</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>R1 – Des données de comptage fausses, en double ou manquantes entrent dans le calcul sans être détectées</strong> (fichier copié deux fois en avril, compteur remplacé non reconnu, volumes repris de la supervision pendant trois mois)</td>
+<td>comptage (données d'entrée)</td>
+<td>défaillance opérationnelle</td>
+<td><strong>3</strong> : constaté deux fois en 2026</td>
+<td><strong>3</strong> : factures fausses envoyées, deux contestées</td>
+</tr>
+<tr class="even">
+<td><strong>R2 – Une erreur de calcul dans un tableur non contrôlé fausse l'énergie facturée et le chiffre d'affaires</strong> (formule recopiée, 150 k€ sous-facturés en six mois, découverte après la publication)</td>
+<td>calcul et chiffre d'affaires</td>
+<td>défaillance opérationnelle</td>
+<td><strong>3</strong> : constaté en 2026</td>
+<td><strong>3</strong> : facture fausse et chiffre d'affaires publié inexact</td>
+</tr>
+<tr class="odd">
+<td><strong>R3 – La seule personne qui sait construire et modifier les tableurs s'absente ou part, et la facturation est bloquée</strong>, alors que les contrats doivent passer de trois à une quinzaine</td>
+<td>calcul et facturation</td>
+<td>risque métier (dépendance envers une personne clé)</td>
+<td><strong>2</strong> : plausible, jamais constaté</td>
+<td><strong>2</strong> : factures retardées</td>
+</tr>
+<tr class="even">
+<td><strong>R4 – ESTRAVENT ne peut plus justifier une facture ou son chiffre d'affaires</strong>, faute de trace des corrections et parce que chaque chargée prépare, vérifie et envoie ses propres factures</td>
+<td>facturation et chiffre d'affaires</td>
+<td>défaillance opérationnelle (contrôle interne), à dimension réglementaire</td>
+<td><strong>3</strong> : certain en l'état</td>
+<td><strong>2</strong> : justification impossible sans recherches longues</td>
+</tr>
+<tr class="odd">
+<td>R5 – Un tableur est modifié par erreur ou par malveillance, ou rendu illisible par une attaque, depuis le dossier partagé ouvert aux 25 salariés de la direction de l'énergie</td>
+<td>calcul</td>
+<td>cybermenace (malveillance interne ou externe)</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Quatre risques sont attendus. Les deux risques prioritaires, de niveau <strong>3 × 3</strong>, sont <strong>R1</strong> et <strong>R2</strong> : ils se sont déjà réalisés et ils touchent la facture et le chiffre d'affaires publié.</p>
+<p><em>3.2 b) – Le traitement des deux risques les plus graves</em></p>
+<p><strong>Définition</strong> (b-1) : fiabiliser un système d'information de gestion, c'est mettre en place les dispositifs qui garantissent que les données qu'il produit sont <strong>exhaustives, exactes, autorisées, traçables</strong> et rattachées à la bonne période : contrôles généraux informatiques (accès, changements, exploitation), contrôles applicatifs (à la saisie, au traitement, aux interfaces, en sortie), séparation des tâches et piste d'audit (F10 § 2 et § 3). Ici, chaque passage de la chaîne est à contrôler : fichier du gestionnaire du réseau, tableur, saisie dans le progiciel, chiffre d'affaires.</p>
+<p><strong>Traitement</strong> : <strong>réduire</strong> les deux risques. On ne peut ni les <strong>accepter</strong> (niveau 3 × 3, factures contestées, chiffre d'affaires publié), ni les <strong>éviter</strong> (les contrats d'achat direct sont au cœur du plan, de 10 % à 40 % des ventes), ni les <strong>transférer</strong> (aucune assurance ne rend une facture juste ni ne restaure la confiance d'un industriel). La réduction passe, à terme, par un calcul hors des tableurs, dans un outil de gestion des contrats ou dans le progiciel, alimenté par des fichiers intégrés automatiquement ; d'ici là, par un tableur modèle unique, aux formules protégées, versionné et éprouvé sur un mois connu avant toute modification.</p>
+<p><strong>R1 – Données de comptage</strong> (b-2) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Contrôle</th>
+<th>Nature</th>
+<th>Responsable</th>
+<th>Ce qu'il garantit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Contrôle à l'intégration des fichiers de comptage</strong> : un seul fichier par parc et par mois (doublon rejeté), numéro de compteur reconnu dans une table des points de livraison tenue à jour des changements signalés par le gestionnaire du réseau, nombre de valeurs égal au nombre d'heures du mois ; tout rejet est signalé, et aucune donnée de la supervision ne remplace le comptage sans accord écrit et sans mention sur la facture</td>
+<td>préventive, automatisée</td>
+<td>direction de l'énergie, avec la DSI pour l'outil</td>
+<td>exhaustivité, unicité et bon rattachement des données d'entrée : il aurait arrêté le double import d'avril et le compteur non reconnu de juin</td>
+</tr>
+<tr class="even">
+<td><strong>Rapprochement formalisé, mensuel, de la supervision et du comptage, parc par parc, avant toute facture</strong> : aujourd'hui, les deux sources sont posées côte à côte, sans seuil ni blocage ; l'écart normal est d'environ 2 % ; au-delà d'un seuil fixé (par exemple deux fois l'écart normal), la facture est bloquée jusqu'à ce que la cause soit expliquée et notée</td>
+<td>détective, semi-automatisée</td>
+<td>chargée de facturation, avec la cellule supervision pour expliquer l'écart</td>
+<td>cohérence entre deux sources indépendantes : l'écart de 8 % aurait été vu dès juin, et non trois mois plus tard</td>
+</tr>
+</tbody>
+</table>
+<p><strong>R2 – Calcul et chiffre d'affaires</strong> (b-3) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Contrôle</th>
+<th>Nature</th>
+<th>Responsable</th>
+<th>Ce qu'il garantit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Bouclage des volumes et validation par une seconde personne avant l'émission</strong> : les volumes facturés, heure par heure et sur le mois, sont rapprochés des volumes comptés des parcs du contrat, selon les règles du contrat (profil horaire, énergie manquante achetée par l'agrégateur) ; tout écart non expliqué bloque la facture ; le montant est recalculé à partir des volumes et du prix du contrat ; la facture est validée par une autre personne que celle qui l'a préparée</td>
+<td>détective, semi-automatisée puis manuelle</td>
+<td>l'autre chargée de facturation ou le directeur de l'énergie</td>
+<td>exactitude de chaque facture et séparation entre préparation, validation et envoi : les heures omises auraient fait apparaître un écart avec le comptage dès le premier mois</td>
+</tr>
+<tr class="even">
+<td><strong>Rapprochement semestriel avant la publication du chiffre d'affaires</strong> : chiffre d'affaires des contrats dans le progiciel = factures émises = volumes facturés × prix, et volumes facturés comparés aux volumes comptés du semestre ; tout écart est expliqué avant la publication</td>
+<td>détective, manuelle</td>
+<td>direction financière</td>
+<td>exactitude et exhaustivité du chiffre d'affaires publié : l'erreur de 150 k€ aurait été vue avant la publication du chiffre d'affaires de 2026</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Traces et dépendance</strong> (b-4) :</p>
+<ul>
+<li><strong>traçabilité</strong> : les fichiers de comptage reçus sont conservés tels quels ; chaque correction d'un calcul ou d'une facture est enregistrée (qui, quand, quoi, pourquoi, validée par qui) ; la facture initiale reste conservée avec la facture refaite et le motif ; on reconstitue ainsi le chemin de chaque facture, du compteur au chiffre d'affaires (<strong>piste d'audit</strong>) ;</li>
+<li><strong>dépendance</strong> : la méthode de calcul est écrite (règles de partage entre parcs, cas du fichier manquant) ; la seconde chargée et une personne de la direction financière sont formées à construire et à modifier un calcul ; la validation croisée des factures entretient cette double compétence ; l'outil standard visé à terme réduit la dépendance ; l'accès au dossier des tableurs est restreint aux deux chargées et à leur responsable.</li>
+</ul>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres formulations des risques, si ce sont des événements redoutés tirés de l'annexe, par exemple « une facture contestée fait perdre la confiance d'un industriel » classée en risque métier ; R3 coté en impact 3, si le candidat suppose que la seconde chargée, sans les tableurs, enverrait des factures fausses.</li>
+<li>R4 classé en risque réglementaire (obligation de justifier les factures), sans analyse juridique.</li>
+<li>Remplacement du tableur par un outil présenté comme une manière d'<strong>éviter</strong> la source du risque de calcul, si la réduction des autres causes est traitée.</li>
+<li>Autres contrôles justes : contrôle de vraisemblance du volume facturé par rapport au profil horaire du contrat ; rapprochement entre le montant saisi dans le progiciel et le tableur ; interface automatique entre le calcul et le module de facturation pour supprimer la saisie à la main. Deux contrôles par risque suffisent.</li>
+<li>Seuil d'écart différent de deux fois l'écart normal, s'il est fixé et justifié.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Risques formulés comme des constats ou des causes</em> (« pas de trace ») — juste : événement redouté avec sa conséquence (<code>JUR-T03</code>).</li>
+<li><em>Contrôles sans nature, sans responsable ou sans lien avec un incident de l'annexe</em> (<code>JUR-T01</code>, <code>JUR-T08</code>).</li>
+<li><em>Réponse réduite au remplacement du logiciel</em> — juste : contrôles, séparation des tâches et traces, puis outil (<code>JUR-T09</code>).</li>
+<li><em>Fiabilisation confondue avec l'audit légal des comptes</em> (<code>ET-34</code>) — juste : la fiabilité des données de facturation est un objet de l'UE 5 ; ni écriture, ni règle comptable, ni opinion sur les comptes ne sont attendues.</li>
+<li><em>Traitement « accepter » ou « transférer » retenu pour un risque de niveau 3 × 3, sans justification</em> — juste : réduire, au vu de la probabilité, de l'impact et de la place des contrats d'achat direct dans le plan.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typologie des risques SI</td>
+<td>cybermenaces, défaillances opérationnelles, risques réglementaires et métiers</td>
+<td>F12 § 0 et § 5</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27005:2022</td>
+<td>options de traitement : réduire, accepter, éviter, transférer</td>
+<td><code>iso_27005_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Fiabilisation des SI de gestion</td>
+<td>contrôles applicatifs, interfaces, séparation des tâches, piste d'audit</td>
+<td>F10 § 2, § 3.1 et § 3.2</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="33--la-sécurité-de-linformatique-de-conduite-et-des-accès-à-distance-35-points">3.3 – La sécurité de l'informatique de conduite et des accès à distance (3,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§4.2 – Concevoir, mettre en œuvre et contrôler une politique de sécurité des systèmes d'information : <code>4.2.b</code> « Élaboration d'une politique de cybersécurité fondée sur l'analyse des risques » ; <code>4.2.a</code> « Définir et piloter une politique de sécurité du SI, en intégrant les enjeux de cybersécurité, de résilience organisationnelle et de gouvernance des systèmes critiques » ; <code>4.2.c</code> « Notions d'architecture de confiance (authentification, chiffrement, segmentation) ». Limites : la mise en œuvre technique n'est pas exigée ; aucun paramétrage d'équipement ni aucun essai technique ; ni démarche de conformité formelle à une norme, ni assujettissement à déterminer ; l'organisation de la DSI et le rattachement de la cellule supervision ne sont pas à traiter.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.3 (huit entreprises extérieures, outils, boîtiers et comptes, accès permanents, réseau commun avec la bureautique, systèmes non modifiables, incident de septembre 2026, attaque d'un autre producteur, organisation actuelle, avis), annexe 3.5 (ISO/IEC 27001:2022, ISO/IEC 27005:2022, guide d'hygiène, Zero Trust) et annexe 1.1 (organigramme, cellule supervision rattachée à l'exploitation, plateforme maintenue par l'ESN, centre de conduite jour et nuit, objectif de disponibilité de 97 %).</p>
+<p><strong>Barème indicatif (3,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Politique de sécurité fondée sur l'analyse des risques définie (objectifs, périmètre, principes, organisation, règles, contrôle ; mesures proportionnées aux risques) et appliquée à la conduite, qui n'a ni politique ni analyse des risques</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Quatre principes propres à la conduite, chacun distingué de la gestion et justifié par l'annexe</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Rôle des six acteurs demandés, cohérent avec l'organigramme</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Zero Trust présenté comme un modèle d'architecture, non un produit, et appliqué à la confiance implicite d'aujourd'hui</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Mesures sur l'authentification et les comptes, et sur le point d'accès unique, chacune avec son constat et le risque traité</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-3</td>
+<td>Mesures sur la séparation de la conduite et de la bureautique, et sur l'ouverture à la demande et la traçabilité, chacune avec son constat et le risque traité</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-4</td>
+<td>Réponse argumentée à la crainte de Mme MONTREVIAU</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.3 a) – La politique de sécurité de l'informatique de conduite</em></p>
+<p><strong>Définition</strong> (a-1) : la politique de sécurité du système d'information est le document de référence, approuvé par la direction, qui fixe les <strong>objectifs</strong> de sécurité (confidentialité, intégrité, disponibilité et traçabilité), le <strong>périmètre</strong>, les <strong>principes</strong>, l'<strong>organisation</strong> et les responsabilités, les <strong>règles</strong> et le <strong>dispositif de contrôle</strong> ; elle se décline en procédures et en chartes (F12 § 1). Elle est <strong>fondée sur l'analyse des risques</strong> quand ses mesures découlent de risques identifiés, analysés et hiérarchisés (ISO/IEC 27005:2022), au lieu d'un catalogue appliqué partout ; elle s'améliore en continu, dans la logique d'un système de management de la sécurité de l'information (ISO/IEC 27001:2022). Application : l'informatique de conduite d'ESTRAVENT n'a ni politique, ni analyse des risques, et la politique de la DSI ne la couvre pas ; la première étape est l'analyse des risques de la conduite, qui fera apparaître les accès des tiers, le réseau partagé avec la bureautique et les systèmes qui ne reçoivent plus de correctifs.</p>
+<p><strong>Quatre principes propres à la conduite</strong> (a-2) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Principe</th>
+<th>En quoi il se distingue de l'informatique de gestion</th>
+<th>Ce qui le justifie (annexe 3.3)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>La disponibilité et l'intégrité des commandes passent en premier</strong> ; aucune mesure de sécurité ne doit arrêter une installation, et tout changement est préparé avec le centre de conduite</td>
+<td>en gestion, la confidentialité des données pèse souvent autant ; en conduite, une commande malveillante ou un arrêt touchent la production, les machines et la sécurité des techniciens</td>
+<td>parcs d'un autre producteur arrêtés deux jours ; objectif de 97 % de disponibilité</td>
+</tr>
+<tr class="even">
+<td><strong>Cloisonner et protéger autour des systèmes qu'on ne peut pas corriger</strong> (défense en profondeur)</td>
+<td>en gestion, on applique les correctifs ; en conduite, les constructeurs interdisent toute modification : la protection vient des zones, des points d'entrée et de la surveillance</td>
+<td>systèmes anciens sans correctifs ; postes et plateforme reliés à la bureautique</td>
+</tr>
+<tr class="odd">
+<td><strong>Les accès des entreprises extérieures restent sous le contrôle d'ESTRAVENT</strong> : chaque tiers s'engage par contrat (comptes nominatifs, départs signalés, incidents notifiés, audit accepté)</td>
+<td>en gestion, les tiers sont peu nombreux et passent par la DSI ; en conduite, huit entreprises entrent dans les installations par leurs propres outils</td>
+<td>huit outils, 110 boîtiers dont 20 sans entreprise connue, contrats muets sur la sécurité</td>
+</tr>
+<tr class="even">
+<td><strong>Moindre privilège, imputabilité et traçabilité de chaque action sur une installation</strong>, avec des journaux conservés par ESTRAVENT et surveillés jour et nuit</td>
+<td>en gestion, les journaux servent surtout après coup ; en conduite, le centre de conduite doit voir en temps réel qui agit sur une machine</td>
+<td>50 comptes partagés, 9 000 connexions sans trace, connexion d'un dimanche à 3 heures découverte par le constructeur</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rôle des acteurs</strong> (a-3) :</p>
+<table>
+<thead>
+<tr class="header">
+<th>Acteur</th>
+<th>Rôle dans la politique de sécurité de la conduite</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Présidente-directrice générale, Mme VARLAMBERT</td>
+<td>approuve la politique, arbitre les moyens et accepte les risques résiduels ; en rend compte au conseil d'administration et au comité d'audit</td>
+</tr>
+<tr class="even">
+<td>Vous, directeur (directrice) de la performance et des SI</td>
+<td>faites conduire l'analyse des risques, élaborez la politique et la tenez cohérente avec celle de l'informatique de gestion ; pilotez sa mise en œuvre et ses indicateurs ; veillez à ce qu'une personne soit chargée de la sécurité de la conduite, ce qui n'est pas le cas aujourd'hui</td>
+</tr>
+<tr class="odd">
+<td>Directrice de l'exploitation, Mme MONTREVIAU</td>
+<td>propriétaire des risques de la conduite : exprime les besoins de disponibilité, valide les règles qui touchent l'exploitation, les fait appliquer par ses équipes et dans les contrats des sous-traitants</td>
+</tr>
+<tr class="even">
+<td>Responsable de la cellule supervision, Mme QUILLEBRAND</td>
+<td>met en œuvre les mesures sur la plateforme et les liens avec les installations, tient l'inventaire des accès, des comptes et des boîtiers, traite les incidents avec la DSI</td>
+</tr>
+<tr class="odd">
+<td>Responsable du centre de conduite, M. FERRASSOT</td>
+<td>autorise et ouvre les accès à la demande, jour et nuit ; surveille les connexions ; donne l'alerte et décide d'isoler ou d'arrêter une installation en cas d'incident</td>
+</tr>
+<tr class="even">
+<td>Entreprises extérieures</td>
+<td>respectent les engagements de sécurité de leur contrat : comptes nominatifs, liste des intervenants tenue à jour, accès par le seul point d'ESTRAVENT, incidents signalés, audits acceptés</td>
+</tr>
+</tbody>
+</table>
+<p><em>3.3 b) – Quatre mesures d'architecture de confiance pour les accès à distance</em></p>
+<p><strong>Le modèle Zero Trust</strong> (b-1) est un <strong>modèle d'architecture, et non un produit</strong> : aucune confiance n'est accordée d'office à un utilisateur ou à un équipement en raison de sa place sur le réseau ; chaque accès est authentifié, autorisé et vérifié selon le contexte (identité, équipement, moment, besoin), avec le moindre privilège, le cloisonnement et une surveillance continue ; c'est une démarche progressive, qui ne remplace pas la défense en profondeur (annexe 3.5 ; F12 § 3). Chez ESTRAVENT, la confiance est aujourd'hui implicite : quiconque connaît un mot de passe partagé et atteint l'un des 110 boîtiers entre dans une installation, à toute heure.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Mesure</th>
+<th>Constat de l'annexe 3.3</th>
+<th>Risque traité</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Authentification forte et comptes nominatifs</strong> (b-2) : un compte par technicien de chaque entreprise, avec authentification à plusieurs facteurs ; droits limités aux seules installations sur lesquelles l'entreprise intervient (moindre privilège) ; création et suppression liées à la liste des intervenants que chaque entreprise tient à jour et à la date de fin de son contrat ; revue trimestrielle des comptes</td>
+<td>50 comptes partagés sur 60, mots de passe inchangés depuis la mise en service, compte d'un sous-traitant parti, qui n'intervenait que sur les postes électriques, utilisé en septembre 2026 sur le système d'un constructeur</td>
+<td>usurpation d'un compte et accès non autorisé ; impossibilité de savoir qui a agi</td>
+</tr>
+<tr class="even">
+<td><strong>Point d'accès unique et contrôlé</strong> (b-2) : tous les accès à distance passent par une passerelle exploitée par ESTRAVENT, à l'entrée de la zone de conduite ; les huit outils et les 110 boîtiers sont retirés, en commençant par les 20 boîtiers sans entreprise connue</td>
+<td>huit outils, 110 boîtiers, dont 20 sans entreprise connue</td>
+<td>entrée dérobée inconnue, accès qui échappe à tout contrôle ; attaque passant par l'accès d'un prestataire, comme chez l'autre producteur</td>
+</tr>
+<tr class="odd">
+<td><strong>Séparation entre l'informatique de conduite et la bureautique</strong> (b-3) : la plateforme et les postes du centre de conduite forment une zone séparée ; la messagerie et internet se consultent sur d'autres postes ; les seuls échanges entre zones sont ceux qui sont nécessaires, décrits et surveillés (données de production envoyées vers la gestion, par exemple)</td>
+<td>postes du centre de conduite et serveurs de la plateforme reliés au réseau de bureautique ; systèmes anciens sans correctifs</td>
+<td>propagation vers la conduite d'une attaque partie de la bureautique (courriel piégé, rançongiciel), jusqu'à l'arrêt de parcs</td>
+</tr>
+<tr class="even">
+<td><strong>Accès ouverts à la demande, limités dans le temps et tracés</strong> (b-3) : l'entreprise demande l'accès pour une intervention liée à un ordre de travail ; le centre de conduite le valide et l'ouvre pour la durée utile ; la session est enregistrée et ses journaux sont conservés par ESTRAVENT ; toute connexion hors demande déclenche une alerte</td>
+<td>accès ouverts en permanence, centre de conduite non prévenu, 9 000 connexions en 2026 sans trace chez ESTRAVENT, connexion de 40 minutes un dimanche à 3 heures</td>
+<td>connexion malveillante non détectée ; absence de preuve en cas d'incident</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse à Mme MONTREVIAU</strong> (b-4) : il ne s'agit pas de fermer les accès, mais de les <strong>mettre sous contrôle</strong>. Le centre de conduite fonctionne jour et nuit : il peut ouvrir un accès en quelques minutes à 3 heures du matin, et une procédure d'urgence, préautorisée pour les pannes qui arrêtent une machine et revue après coup, garde la réactivité des constructeurs. L'objectif de 97 % est bien plus menacé par une attaque comme celle de l'autre producteur, qui a arrêté plusieurs parcs pendant deux jours, que par une validation de quelques minutes. Les nouvelles règles s'appliquent progressivement, constructeur par constructeur, sans interrompre les dépannages.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres principes justes : sensibilisation des opérateurs et des techniciens ; gestion des incidents propre à la conduite, avec le centre de conduite ; inventaire des installations et des accès comme préalable ; amélioration continue. Quatre principes suffisent, s'ils sont distingués de la gestion.</li>
+<li>Politique de la conduite présentée comme un chapitre d'une politique unique de l'entreprise, plutôt qu'un document séparé.</li>
+<li>Rôles complétés par la DSI (réseau, annuaire), la déléguée à la protection des données (journaux nominatifs des techniciens, en principe) ou le comité d'audit (surveillance) ; désignation d'un responsable de la sécurité des systèmes d'information couvrant les deux mondes, si elle n'occupe pas toute la réponse.</li>
+<li>Chiffrement des sessions à distance ajouté aux mesures, si les quatre mesures demandées sont traitées.</li>
+<li>« Bastion » ou « passerelle d'administration » pour le point d'accès unique ; « micro-segmentation » pour la séparation, si elle est expliquée.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Politique de sécurité confondue avec une charte d'usage, ou réduite à une liste de mesures techniques</em> (<code>ET-27</code>, <code>JUR-S01</code>).</li>
+<li><em>Zero Trust présenté comme un produit à acheter</em> (<code>ET-04</code>, <code>JUR-S03</code>) — juste : modèle d'architecture et démarche progressive.</li>
+<li><em>Norme, guide et solution confondus</em> (« installer l'ISO/IEC 27001 ») (<code>ET-01</code>, <code>JUR-S06</code>).</li>
+<li><em>Mot de passe complexe présenté comme une authentification forte</em> (<code>ET-28</code>) — juste : au moins deux facteurs de nature différente.</li>
+<li><em>Fermeture pure et simple des accès des constructeurs</em>, sans égard pour la disponibilité — juste : accès sous contrôle, ouverts à la demande jour et nuit.</li>
+<li><em>Paramétrage d'équipements ou essais techniques détaillés</em> — hors programme.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ISO/IEC 27001:2022</td>
+<td>système de management de la sécurité de l'information fondé sur l'appréciation des risques, amélioration continue</td>
+<td><code>iso_27001_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27005:2022</td>
+<td>gestion des risques liés à la sécurité de l'information</td>
+<td><code>iso_27005_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Guide d'hygiène informatique de l'ANSSI, version de 2017</td>
+<td>authentification, mises à jour, cloisonnement des réseaux</td>
+<td><code>guide_hygiene_anssi_2017</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>Le modèle Zero Trust, avis de l'ANSSI (2021)</td>
+<td>modèle d'architecture, non un produit</td>
+<td><code>zero_trust_anssi</code> ; F12 § 3</td>
+<td>en vigueur</td>
+</tr>
+<tr class="odd">
+<td>Politique de sécurité, CID et traçabilité, acteurs</td>
+<td>objectifs, principes, organisation</td>
+<td>F12 § 1</td>
+<td>notion de cours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="34--la-réponse-au-comité-daudit-25-points">3.4 – La réponse au comité d'audit (2,5 points)</h3>
+<p><strong>Référence au programme</strong></p>
+<ul>
+<li>§3.2 – Auditer, contrôler et évaluer la performance et la conformité des systèmes d'information : <code>3.2.c</code> « Critères de performance et de conformité : fiabilité, efficacité, sécurité, conformité RGPD, etc. » ; <code>3.2.a</code> « Conduire des missions d'audit et de contrôle des systèmes d'information afin d'évaluer leur performance, leur conformité réglementaire et la qualité de leur gouvernance » ; <code>3.2.e</code> « Facteurs de succès et points de vigilance spécifiques à l'audit SI ». Limites : l'exécution d'essais techniques détaillés n'est pas attendue ; ni la démarche détaillée de l'audit, ni son calendrier, ni le choix de l'auditeur ne sont demandés ; aucune conformité financière.</li>
+</ul>
+<p><strong>Annexes mobilisées</strong> : annexe 3.4 (demande du comité d'audit et contraintes), annexe 3.3 (situation des accès, que les nouvelles règles doivent corriger), annexe 3.5 (COBIT 2019, ISO/IEC 27001:2022) et annexe 1.1 (comité d'audit présidé par M. ESCOLIÈRE, 102 sites dans quatre régions, constructeurs A, B et C).</p>
+<p><strong>Barème indicatif (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Sous-question / item</th>
+<th>Attendu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a-1</td>
+<td>Critère d'appréciation et élément probant définis ; référentiel de l'audit indiqué (politique de sécurité de la conduite, appuyée sur ISO/IEC 27001 ou COBIT 2019)</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>a-2</td>
+<td>Sécurité et fiabilité des traces : ce qui est attendu, et un élément probant pertinent et fiable pour chacune</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>a-3</td>
+<td>Conformité à la politique : ce qui est attendu et un élément probant ; réponse adressée au comité</td>
+<td>0,5</td>
+</tr>
+<tr class="even">
+<td>b-1</td>
+<td>Deux premiers points de vigilance propres à des installations en production, avec la manière d'y répondre</td>
+<td>0,5</td>
+</tr>
+<tr class="odd">
+<td>b-2</td>
+<td>Troisième point de vigilance (étendue et échantillon raisonné), avec la manière d'y répondre</td>
+<td>0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponse attendue</strong></p>
+<p><em>3.4 a) – Trois critères et leurs éléments probants</em></p>
+<p><strong>Définitions</strong> (a-1) : un <strong>critère d'appréciation</strong> est la référence (objectif, exigence, règle interne, norme) à laquelle l'auditeur compare la situation constatée pour qualifier un écart ; il rend le jugement de l'audit explicite et discutable (F10 § 1.1). Un <strong>élément probant</strong> est une information que l'auditeur recueille pour fonder sa conclusion (document, journal, observation, entretien recoupé, échantillon) ; il doit être pertinent et fiable : une preuve produite par le système ou par un tiers vaut mieux qu'une déclaration de l'audité. Le référentiel de l'audit sera la <strong>politique de sécurité de la conduite</strong>, une fois approuvée, appuyée sur les mesures de l'ISO/IEC 27001:2022 ; COBIT 2019 peut structurer l'audit du point de vue de la gouvernance (annexe 3.5).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Ce qui sera attendu</th>
+<th>Élément probant que l'auditeur demandera</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Sécurité des accès</strong> (a-2)</td>
+<td>seules des personnes autorisées accèdent aux installations, avec un compte nominatif et une authentification forte, par le seul point d'accès d'ESTRAVENT ; plus aucun compte d'une entreprise dont le contrat est terminé ; plus aucun boîtier hors de ce point</td>
+<td>rapprochement de la liste des comptes actifs de la passerelle avec la liste des intervenants habilités et des contrats en cours à la date de l'audit ; inventaire des boîtiers retirés, comparé à l'inventaire de 2027 (110 boîtiers)</td>
+</tr>
+<tr class="even">
+<td><strong>Fiabilité des traces</strong> (a-2)</td>
+<td>chaque connexion est enregistrée (qui, quand, quelle installation, quelle action), les journaux sont complets, horodatés, protégés contre la modification et conservés par ESTRAVENT</td>
+<td>échantillon de connexions du semestre, rapproché des demandes validées par le centre de conduite et des ordres de travail, puis des journaux des systèmes des constructeurs : une connexion présente chez un constructeur et absente de la passerelle révèle un contournement</td>
+</tr>
+<tr class="odd">
+<td><strong>Conformité à la politique</strong> (a-3)</td>
+<td>la politique est approuvée et appliquée : procédure de demande et de validation suivie, revue trimestrielle des comptes faite, engagements de sécurité inscrits dans les contrats des huit entreprises, incidents enregistrés et traités</td>
+<td>politique approuvée par la présidente-directrice générale ; comptes rendus des revues des comptes ; contrats ou avenants des huit entreprises ; registre des incidents ; échantillon de demandes d'accès</td>
+</tr>
+</tbody>
+</table>
+<p><em>3.4 b) – Trois points de vigilance propres à des installations en production</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Point de vigilance</th>
+<th>Manière d'y répondre</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Aucune installation ne doit être arrêtée ni perturbée</strong> (b-1)</td>
+<td>l'audit travaille sur les documents, les journaux exportés, les entretiens et l'observation des sessions au centre de conduite, sans intervention sur les systèmes en service ; toute visite de site ou consultation d'un système se fait en lecture seule, accompagnée, et après accord du centre de conduite et de la directrice de l'exploitation ; aucun essai technique</td>
+</tr>
+<tr class="even">
+<td><strong>Les preuves sont en partie chez les tiers, et leurs systèmes ne peuvent pas être modifiés</strong> (b-1)</td>
+<td>obtenir dès maintenant, dans les contrats ou par avenant, l'engagement des huit entreprises de remettre leurs journaux et de coopérer à l'audit ; demander tôt les exports des constructeurs ; juger les mesures qui entourent les systèmes non modifiables plutôt que reprocher l'absence de correctifs</td>
+</tr>
+<tr class="odd">
+<td><strong>L'étendue : 102 sites dans quatre régions, huit entreprises, trois systèmes de constructeurs</strong> (b-2)</td>
+<td>un échantillon raisonné plutôt qu'un examen exhaustif : chaque constructeur, chaque région, les sous-traitants et l'ESN, et les sites des anciens boîtiers sans entreprise connue ; vérifier de loin, à partir des journaux centralisés, et ne se déplacer que sur quelques sites ; un auditeur qui connaît à la fois l'informatique de gestion et les systèmes industriels</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Autres points de vigilance justes : compétences et indépendance de l'auditeur (connaissance des systèmes industriels ; indépendance vis-à-vis de l'ESN, des constructeurs et de ceux qui ont conçu les mesures, y compris votre direction ; compte rendu direct au comité d'audit) ; adhésion de l'exploitation, qui craint pour la disponibilité ; suites données aux recommandations, avec un plan d'action suivi par le comité. Trois points suffisent.</li>
+<li>Critères complétés par l'efficacité (délai d'ouverture d'un accès la nuit), si les trois critères demandés sont traités.</li>
+<li>Référentiel de l'audit limité à l'ISO/IEC 27001:2022, ou au guide d'hygiène de l'ANSSI, s'il est distingué de la politique interne.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><em>Méthodologie ou calendrier de l'audit exposés</em> — non demandés (<code>JUR-T07</code>).</li>
+<li><em>Essais techniques sur les installations proposés comme diligences</em> — hors programme, et contraires à la contrainte de production.</li>
+<li><em>Critères cités sans ce qui est attendu ni élément probant</em> (<code>JUR-T01</code>) ; <em>élément probant réduit à une déclaration de l'audité</em>.</li>
+<li><em>Audit des accès confondu avec l'audit légal des comptes</em> (<code>ET-34</code>).</li>
+<li><em>Gouvernance et sécurité confondues</em> (<code>ET-11</code>, <code>JUR-G04</code>) — juste : COBIT 2019 pour la gouvernance, ISO/IEC 27001:2022 pour la sécurité.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Référentiel daté / fiche</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Critères d'audit du SI</td>
+<td>sécurité, fiabilité, conformité</td>
+<td>F10 § 0 et § 1.1</td>
+<td>notion de cours</td>
+</tr>
+<tr class="even">
+<td>Facteurs de succès et points de vigilance de l'audit SI</td>
+<td>indépendance, compétences, accès aux données, adhésion des audités</td>
+<td>F10 § 0</td>
+<td>notion de cours</td>
+</tr>
+<tr class="odd">
+<td>COBIT 2019 (ISACA)</td>
+<td>cadre de gouvernance et de management, référentiel d'audit possible</td>
+<td><code>cobit_2019</code> ; F09 § 5</td>
+<td>en vigueur</td>
+</tr>
+<tr class="even">
+<td>ISO/IEC 27001:2022</td>
+<td>mesures de sécurité de référence pour l'audit des accès</td>
+<td><code>iso_27001_2022</code> ; F12 § 2</td>
+<td>en vigueur</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
