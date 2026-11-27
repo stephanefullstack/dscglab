@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrigé : Fiabiliser la maintenance des locomotives : processus d'approvisionnement, planning de deux politiques de commande et risques : TERNAVAL Fret : processus de maintenance des locomotives, planning de deux politiques de commande des pièces d'usure à partir d'une consommation saisonnière, cotation des risques</title>
+<meta name="description" content="Entraînement à l'UE 3 du DSCG, contrôle de gestion et stratégie, session 2027 : sujets et corrigés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbf9'/%3E%3Cpath d='M8 0v32' stroke='%23c8475d' stroke-width='2'/%3E%3Cpath d='M0 11h32M0 19h32M0 27h32' stroke='%23a9c4e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="corrige">
+<div class="copie">
+<aside class="marge">
+<a class="sigle" href="../../../index.html"><span>DSCG</span></a><a class="sigle ue" href="../../index.html"><span>UE 3</span></a>
+<p>Dossier 2</p><p>7 points</p><p>1 h 24</p><nav><a href="sujet.html">Sujet</a><a href="corrige.html" aria-current="page">Corrigé</a></nav>
+</aside>
+<main>
+<h1>Fiabiliser la maintenance des locomotives : processus d'approvisionnement, planning de deux politiques de commande et risques</h1><p class="cas">TERNAVAL Fret : processus de maintenance des locomotives, planning de deux politiques de commande des pièces d'usure à partir d'une consommation saisonnière, cotation des risques</p><p class="avant">Corrigé indicatif et barème. Les mentions [V] signalent un point vérifié sur la source officielle ; les renvois F01 à F13 et JUR désignent des fiches de travail et les constats des rapports du jury.</p><p>Le sujet et son corrigé ont été construits sur la base de la réglementation applicable au 31/12/2026, sauf mention contraire.</p>
+<p>Textes intégrés (fiches datées) : F06 pilotage des processus support et approvisionnements (§ 0, compétences 2.3.a à 2.3.g ; § 2, modèle de Wilson ; § 5, stock de sécurité et point de commande ; § 6, plannings d'approvisionnement ; § 7, processus support ; § 8, pièges), F08 gestion des risques (§ 0 ; § 1, typologie ; § 2.1, criticité et traitement ; § 5, gabarit de réponse), F09 ressources humaines (GEPP), F12 performance globale (§ 3, tableaux de bord), F13 registre des auteurs (toutes à jour au 25/10/2026).</p>
+<p>Bien que le corrigé mentionne des auteurs, des textes et des données, il n'est pas attendu des candidats qu'ils en citent précisément les références. L'évaluation porte sur le choix et la justification des outils, la justesse des calculs, la pertinence de l'analyse au regard du cas et la qualité de la rédaction. Toute hypothèse explicite et cohérente avec l'énoncé est acceptée (avertissement du sujet) ; pour chaque question, la présentation des concepts et outils avant leur mobilisation puis la conclusion sont notées. Une erreur n'est sanctionnée qu'une fois : les calculs et les analyses qui en découlent sont notés en cohérence avec les résultats antérieurs du candidat.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Compétence visée</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 Processus de maintenance et d'approvisionnement en semelles : place parmi les activités, enjeux de coût, de délai, de qualité et de continuité, causes des incidents de 2027 ; outil adapté à une consommation saisonnière et limites d'une quantité économique annuelle</td>
+<td><code>2.3.a</code> Analyser la situation de gestion ; <code>2.3.b</code> Sélectionner des outils de gestion adaptés à l'organisation</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr class="even">
+<td>2.2 Consommations de mai à décembre 2028, plannings des deux politiques (commandes, livraisons, stocks), ruptures, mois sous le stock de sécurité, capacité du magasin, coût de chaque politique et choix au regard du service rendu</td>
+<td><code>2.3.d</code> Mettre en œuvre ces outils ; <code>2.3.e</code> Évaluer les résultats obtenus</td>
+<td style="text-align: right;">2,5</td>
+</tr>
+<tr class="odd">
+<td>2.3 Criticité des six risques du processus, hiérarchie, matrice et lien avec les plannings</td>
+<td><code>2.5.b</code> Analyser les risques rencontrés par l'organisation</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>2.4 Note au directeur administratif et financier et au directeur des opérations (20 lignes au maximum)</td>
+<td><code>2.3.f</code> Élaborer des préconisations afin de mieux piloter la performance des activités hors production ; <code>2.3.g</code> Produire une synthèse rédigée et structurée concernant les décisions liées aux processus support ; <code>2.5.e</code> Produire une synthèse rédigée et structurée sur la gestion des risques</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td><strong>Dossier 2 – Fiabiliser la maintenance des locomotives : processus d'approvisionnement, planning de deux politiques de commande et risques</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>7</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dossier-2--fiabiliser-la-maintenance-des-locomotives--processus-dapprovisionnement-planning-de-deux-politiques-de-commande-et-risques-7-points">DOSSIER 2 – FIABILISER LA MAINTENANCE DES LOCOMOTIVES : PROCESSUS D'APPROVISIONNEMENT, PLANNING DE DEUX POLITIQUES DE COMMANDE ET RISQUES (7 points)</h2>
+<h3 id="21-le-processus-de-maintenance-et-dapprovisionnement-et-loutil-adapté-15-pt">2.1 Le processus de maintenance et d'approvisionnement, et l'outil adapté (1,5 pt)</h3>
+<p><strong>Compétences visées :</strong></p>
+<ul>
+<li><code>2.3.a</code> — Analyser la situation de gestion (place du processus support, enjeux, causes des incidents de 2027)</li>
+<li><code>2.3.b</code> — Sélectionner des outils de gestion adaptés à l'organisation (planning d'approvisionnement plutôt qu'une quantité économique annuelle)</li>
+</ul>
+<p><strong>Barème (1,5 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1-01</td>
+<td>Processus présenté puis situé : la <strong>production</strong> de TERNAVAL Fret est la traction des trains ; la maintenance des locomotives et l'approvisionnement de son magasin sont des <strong>processus support</strong>, dont le client interne est l'exploitation (le nombre de locomotives demandé chaque matin) ; chaîne de valeur de Porter (1985) : approvisionnements parmi les activités de soutien ; ce support est <strong>critique</strong> ici, parce qu'une semelle manquante immobilise une locomotive et fait perdre un train pendant la campagne (38 trains de céréales perdus en 2027), alors que le plan « TERNAVAL 2031 » fait de la fiabilité avant la campagne de 2028 son deuxième axe</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2.1-02</td>
+<td>Enjeux et causes : <strong>coût</strong> (possession de 24 € par semelle et par an, 30 % du prix ; rupture de 1 500 € par mois et 200 € par semelle manquante, sans commune mesure) ; <strong>délai</strong> (deux mois, fournisseur unique étranger qui fabrique par séries) ; <strong>qualité</strong> (semelle conforme au modèle, sécurité des circulations, contrôle à l'arrivée) ; <strong>continuité</strong> (une locomotive dont la visite attend ses pièces ne repart pas ; en campagne, chaque locomotive passe à l'atelier chaque mois) ; causes de 2027 : commandes constantes, égales au douzième de la consommation annuelle, face à une consommation saisonnière (<strong>68,33 %</strong> des semelles de l'année consommées de juillet à novembre ; 90 en septembre contre 25 en mars, <strong>3,6 fois plus</strong>), d'où un magasin qui déborde au printemps et des ruptures à l'automne ; délai long sans prévision des besoins ; stock mal suivi</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>2.1-03</td>
+<td>Outil justifié : <strong>planning d'approvisionnement</strong> mensuel (besoins déduits du programme des kilomètres, stock de sécurité, délai, capacité, règle de lancement) ; limites de la quantité économique de Wilson montrées, au moins par le raisonnement : demande supposée régulière, délai et capacité ignorés ; calcul d'illustration accepté (<strong>Q* = 100 semelles, 6 commandes par an, une tous les 60 jours, 2 400 €</strong>) : un lot de 100 couvre 5 mois en janvier mais 1,11 mois en septembre, moins que le délai de deux mois ; un point de commande fixe (130 semelles en moyenne) est trop haut l'hiver (70) et trop bas en pointe (210)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choix de l'outil et alternatives acceptées</strong></p>
+<ul>
+<li>Outil retenu : le <strong>planning d'approvisionnement</strong>, c'est-à-dire la programmation, mois par mois, des besoins, des commandes, des livraisons et des stocks, avec un stock de sécurité, un délai de livraison et une capacité de stockage. Il est adapté parce que la consommation est <strong>connue à l'avance mais irrégulière</strong> : elle se déduit du programme des kilomètres, qui triple pendant la campagne. Il permet aussi de tenir compte d'un délai de deux mois et d'un magasin limité. Deux logiques sont possibles : des quantités constantes commandées à des dates variables (lots fixes déclenchés par le stock prévisionnel, la proposition de M. VERLOMBE), ou des dates fixes avec des quantités variables (recomplètement).</li>
+<li>Alternatives acceptées : un raisonnement par le point de commande (consommation pendant le délai + stock de sécurité), à condition de le recalculer mois par mois d'après le programme ; une quantité économique de Wilson <strong>utilisée seulement pour dimensionner le lot</strong>, son déclenchement restant celui du planning. Non accepté : une quantité économique annuelle présentée comme la solution, avec des commandes régulières tous les 60 jours ; un modèle avec pénurie admise, qui supposerait que l'exploitation accepte d'attendre ses locomotives.</li>
+</ul>
+<p><strong>Conventions rappelées</strong> (annexes 2.1 à 2.3)</p>
+<p>1 semelle par millier de kilomètres ; consommation annuelle 600 semelles ; coût de passation 200 € ; coût de possession 2 € par semelle et par mois, soit 24 € par an ; année de 360 jours ; délai de deux mois ; stock de sécurité de 30 semelles.</p>
+<p><strong>Calculs détaillés</strong> (illustration des limites)</p>
+<p><em>Saisonnalité.</em> Consommation de 2028 = 600 000 km / 1 000 = <strong>600 semelles</strong>, soit 50 par mois en moyenne ; de juillet à novembre, 410 semelles, soit <strong>68,33 %</strong> de l'année en cinq mois. Moyenne mensuelle de la campagne : 82 semelles, contre 27,14 hors campagne (rapport de 3,02) ; septembre (90) contre mars (25) : 3,6.</p>
+<p><em>Quantité économique sur la consommation annuelle supposée régulière.</em> Q* = √(2 × 600 × 200 / 24) = <strong>100 semelles</strong> ; nombre de commandes = 600 / 100 = <strong>6</strong> ; périodicité = 360 / 6 = <strong>60 jours</strong> ; coût de gestion = √(2 × 600 × 200 × 24) = <strong>2 400 €</strong> (1 200 € de passation, 1 200 € de possession).</p>
+<p><em>Ce que ce résultat ne dit pas.</em> Un lot de 100 semelles couvre 100 / 20 = 5 mois de consommation en janvier, mais 100 / 90 = <strong>1,11 mois</strong> en septembre, moins que le délai de livraison de deux mois. Un point de commande fixe calculé sur la moyenne vaut 50 × 2 + 30 = <strong>130 semelles</strong> ; il faudrait 20 + 20 + 30 = 70 semelles en hiver, mais 90 + 90 + 30 = <strong>210</strong> pour couvrir deux mois de pointe. Le stock de sécurité de 30 semelles ne représente que 10 jours de consommation de pointe.</p>
+<p><strong>Réponse attendue</strong></p>
+<p><em>Concepts.</em> Un processus est un enchaînement d'activités qui produit un résultat pour un client, interne ou externe. Un processus de production réalise l'offre vendue ; un processus support fournit les ressources dont il a besoin. La distinction dépend de l'organisation : la logistique est un processus de production chez un transporteur. Dans la chaîne de valeur de Porter (1985), les approvisionnements figurent parmi les activités de soutien. La gestion des approvisionnements arbitre entre les coûts de passation, les coûts de possession et le risque de rupture ; le modèle de Wilson en donne la quantité économique pour une demande <strong>certaine et régulière</strong>.</p>
+<p><em>Application.</em> TERNAVAL Fret vend la traction de trains : la conduite et la circulation des trains forment son processus de production. La maintenance des locomotives et l'approvisionnement du magasin en semelles sont des processus support, dont le client est l'exploitation de M. QUERVILLAC. Ce support est pourtant <strong>critique</strong>, parce que la société n'a que neuf locomotives, dont deux louées : une locomotive qui attend ses semelles est un train perdu au moment où les chargeurs comparent le rail et la route. En 2027, 38 trains de céréales sont partis par la route, et ce sont les associés eux-mêmes qui les ont perdus.</p>
+<ul>
+<li><strong>Coût.</strong> Une semelle en stock coûte 24 € par an, soit 30 % de son prix ; une semelle manquante coûte 200 € par mois, plus 1 500 € de commande urgente par mois de rupture. Le coût de la rupture est sans commune mesure avec celui du stock.</li>
+<li><strong>Délai.</strong> Le fournisseur unique fabrique par séries pour toute l'Europe et livre en deux mois : chaque erreur de prévision se paie deux mois plus tard, sans recours.</li>
+<li><strong>Qualité.</strong> La semelle doit être conforme au modèle des locomotives, parce que la sécurité des circulations en dépend : d'où le contrôle à l'arrivée.</li>
+<li><strong>Continuité.</strong> Une visite due bloque la locomotive. Or, pendant la campagne, chaque locomotive parcourt 10 000 km par mois et passe donc à l'atelier tous les mois.</li>
+</ul>
+<p>Les <strong>incidents de 2027</strong> ont une cause commune : l'atelier commande chaque mois le douzième de la consommation annuelle, comme si celle-ci était régulière. Or 68,33 % des semelles de l'année sont consommées de juillet à novembre, et septembre consomme 3,6 fois plus que mars. Les commandes constantes remplissent donc le magasin au printemps, au point de louer un conteneur, puis le vident à l'automne. Le délai de deux mois interdit de corriger à temps. Un stock tenu à la main, qui s'écarte de l'inventaire, aggrave encore la situation.</p>
+<p>L'outil adapté est le <strong>planning d'approvisionnement</strong>. Les besoins se déduisent du programme des kilomètres, les commandes sont lancées deux mois avant le mois qui en a besoin, et le stock de sécurité ainsi que la capacité du magasin sont contrôlés mois par mois. La quantité économique de Wilson (100 semelles tous les 60 jours) ne convient pas comme règle de commande. Elle suppose une demande régulière, alors qu'un lot de 100 dure cinq mois en hiver et un peu plus d'un mois en septembre. Elle ignore aussi le délai et la capacité. Elle peut seulement donner un ordre de grandeur du lot : le lot de 90 semelles proposé en est proche.</p>
+<p><strong>Conclusion</strong> : la maintenance des locomotives est un processus support dont dépend directement la production. Sa performance se mesure par la disponibilité des locomotives pendant la campagne plus que par le coût du stock, et sa consommation saisonnière appelle un planning calé sur le programme des kilomètres, pas une quantité économique annuelle.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Maintenance présentée comme un processus de production « au sens large » (sans elle, pas de traction), si le candidat montre qu'elle sert l'exploitation et en tire les enjeux.</li>
+<li>Limites de Wilson montrées sans calcul, par les hypothèses du modèle (demande certaine et régulière, livraison instantanée, pas de rupture), si elles sont confrontées aux faits du cas.</li>
+<li>Analyse des enjeux en coût, qualité et délai (triangle coût-qualité-délai), complétée par la continuité.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><code>JUR-T07</code> — Appliquer le modèle de Wilson parce que la question parle d'approvisionnement, sans voir que la demande est saisonnière.</li>
+<li><code>JUR-T09</code> — Considérer qu'un transporteur n'a ni stock ni fournisseur à piloter.</li>
+<li><code>JUR-T03</code> — Paraphraser les incidents de 2027 sans en expliquer la cause (commandes constantes face à une consommation saisonnière et un délai de deux mois).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programme UE 3, partie 2.3 (l. 808-812 : outils classiques de gestion des approvisionnements, plannings, exploitation dans divers processus) ; guide p. 121-122 (distinction production et support selon l'organisation ; plannings d'approvisionnement)</td>
+<td>processus support, choix de l'outil</td>
+<td>[V]</td>
+<td>F06 § 0, § 6, § 7</td>
+</tr>
+<tr class="even">
+<td>Porter, <em>Competitive Advantage</em>, 1985</td>
+<td>chaîne de valeur, activités de soutien</td>
+<td>[S]</td>
+<td>F13</td>
+</tr>
+<tr class="odd">
+<td>Modèle de Wilson (DCG)</td>
+<td>quantité économique, hypothèses, point de commande</td>
+<td>[S]</td>
+<td>F06 § 2, § 5 ; F13</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22-plannings-des-deux-politiques-de-commande-et-choix-25-pts">2.2 Plannings des deux politiques de commande et choix (2,5 pts)</h3>
+<p><strong>Compétences visées :</strong></p>
+<ul>
+<li><code>2.3.d</code> — Mettre en œuvre ces outils (consommations, plannings de commandes, de livraisons et de stocks)</li>
+<li><code>2.3.e</code> — Évaluer les résultats obtenus (ruptures, stock de sécurité, capacité, coût et service rendu)</li>
+</ul>
+<p><strong>Barème (2,5 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.2-01</td>
+<td>Consommations de mai à décembre : <strong>30, 35, 75, 85, 90, 90, 70 et 35 semelles</strong> (510 sur la période)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2.2-02</td>
+<td>Politique actuelle : livraisons de 50 semelles chaque mois (les commandes de mai à octobre sont livrées de juillet à décembre ; celles de novembre et décembre le seront en 2029) ; stocks de fin <strong>105, 120, 95, 60, 20, − 20, − 40 et − 25</strong> ; <strong>ruptures en octobre, novembre et décembre</strong> (85 semelles manquantes au total des trois fins de mois) ; septembre sous le stock de sécurité (20) ; <strong>magasin dépassé en juillet</strong> (170 semelles après livraison, 10 de trop)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>2.2-03</td>
+<td>Politique proposée : lots de 90 commandés en <strong>juin, juillet, août et septembre</strong>, livrés d'août à novembre ; stocks de fin <strong>105, 120, 45, 50, 50, 50, 70 et 35</strong> ; aucune rupture, aucun mois sous le stock de sécurité ; capacité respectée (155 semelles au plus, en juin, avec les livraisons déjà attendues)</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2.2-04</td>
+<td>Coûts sur la période : politique actuelle <strong>23 500 €</strong> (passation 1 200, possession 800, rupture 21 500 = 4 500 + 17 000) ; politique proposée <strong>1 850 €</strong> (passation 800, possession 1 050) ; économie de <strong>21 650 €</strong> ; hors rupture, 2 000 € contre 1 850 €</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>2.2-05</td>
+<td>Choix argumenté : <strong>politique proposée</strong> retenue ; service rendu : 8 mois sur 8 sans rupture contre 5 (62,50 %), aucune locomotive en attente de semelles pendant la campagne, magasin respecté ; limites relevées : stock de fin de 45 à 50 semelles pendant la campagne, à peine au-dessus du stock de sécurité (10 jours de pointe), commandes chaque mois de juin à septembre, dépendance à l'exactitude du stock prévisionnel et à la ponctualité du fournisseur ; 60 semelles de plus livrées, qui correspondent au manque de 25 et au stock de 35 à la fin de décembre</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choix de l'outil et alternatives acceptées</strong></p>
+<ul>
+<li>Outil retenu : un <strong>planning d'approvisionnement</strong> par politique, présenté en tableau mensuel (stock de début, livraison, stock après livraison, consommation, stock de fin, commande passée), suivi d'une comparaison des coûts de passation, de possession et de rupture et du service rendu (mois sans rupture, semelles manquantes, capacité).</li>
+<li>Alternatives acceptées : un seul tableau qui juxtapose les deux politiques ; une comparaison en semelles-mois de stock et en semelles manquantes avant leur valorisation ; un planning de la politique proposée qui fait apparaître le « besoin net » de chaque mois (stock de sécurité − stock de fin sans commande) avant le nombre de lots. Non accepté : une livraison placée le mois de la commande (délai ignoré), ou une commande déclenchée le mois où le stock est déjà négatif.</li>
+</ul>
+<p><strong>Conventions rappelées</strong> (annexes 2.2 et 2.3)</p>
+<p>Livraison au début du mois ; stock de fin = stock de début + livraisons − consommations ; commande du début du mois p livrée au début du mois p + 2 ; politique proposée : lot de 90 commandé deux mois avant le premier mois dont le stock de fin, sans ce lot, passerait strictement sous 30 ; stock négatif reporté ; capacité de 160 semelles après livraison ; passation 200 € par commande passée de mai à octobre ; possession 2 € par semelle en stock à la fin du mois ; rupture 1 500 € par mois de stock négatif + 200 € par semelle manquante à la fin de chaque mois.</p>
+<p><strong>Calculs détaillés</strong></p>
+<p><em>Consommations</em> (1 semelle par millier de kilomètres)</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">mai</th>
+<th style="text-align: right;">juin</th>
+<th style="text-align: right;">juil.</th>
+<th style="text-align: right;">août</th>
+<th style="text-align: right;">sept.</th>
+<th style="text-align: right;">oct.</th>
+<th style="text-align: right;">nov.</th>
+<th style="text-align: right;">déc.</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Kilomètres</td>
+<td style="text-align: right;">30 000</td>
+<td style="text-align: right;">35 000</td>
+<td style="text-align: right;">75 000</td>
+<td style="text-align: right;">85 000</td>
+<td style="text-align: right;">90 000</td>
+<td style="text-align: right;">90 000</td>
+<td style="text-align: right;">70 000</td>
+<td style="text-align: right;">35 000</td>
+<td style="text-align: right;">510 000</td>
+</tr>
+<tr class="even">
+<td><strong>Semelles consommées</strong></td>
+<td style="text-align: right;"><strong>30</strong></td>
+<td style="text-align: right;"><strong>35</strong></td>
+<td style="text-align: right;"><strong>75</strong></td>
+<td style="text-align: right;"><strong>85</strong></td>
+<td style="text-align: right;"><strong>90</strong></td>
+<td style="text-align: right;"><strong>90</strong></td>
+<td style="text-align: right;"><strong>70</strong></td>
+<td style="text-align: right;"><strong>35</strong></td>
+<td style="text-align: right;"><strong>510</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Politique actuelle : 50 semelles commandées au début de chaque mois</em> (semelles)</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">mai</th>
+<th style="text-align: right;">juin</th>
+<th style="text-align: right;">juil.</th>
+<th style="text-align: right;">août</th>
+<th style="text-align: right;">sept.</th>
+<th style="text-align: right;">oct.</th>
+<th style="text-align: right;">nov.</th>
+<th style="text-align: right;">déc.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Stock de début</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">− 20</td>
+<td style="text-align: right;">− 40</td>
+</tr>
+<tr class="even">
+<td>Livraison (début de mois)</td>
+<td style="text-align: right;">50 (déjà attendue)</td>
+<td style="text-align: right;">50 (déjà attendue)</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="odd">
+<td>Stock après livraison (capacité 160)</td>
+<td style="text-align: right;">135</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;"><strong>170</strong></td>
+<td style="text-align: right;">145</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td>Consommation</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr class="odd">
+<td><strong>Stock de fin</strong></td>
+<td style="text-align: right;"><strong>105</strong></td>
+<td style="text-align: right;"><strong>120</strong></td>
+<td style="text-align: right;"><strong>95</strong></td>
+<td style="text-align: right;"><strong>60</strong></td>
+<td style="text-align: right;"><strong>20</strong></td>
+<td style="text-align: right;"><strong>− 20</strong></td>
+<td style="text-align: right;"><strong>− 40</strong></td>
+<td style="text-align: right;"><strong>− 25</strong></td>
+</tr>
+<tr class="even">
+<td>Commande passée (livrée deux mois plus tard)</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50 (janv. 2029)</td>
+<td style="text-align: right;">50 (févr. 2029)</td>
+</tr>
+<tr class="odd">
+<td>Lecture</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">magasin dépassé de 10</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">sous la sécurité</td>
+<td style="text-align: right;">rupture</td>
+<td style="text-align: right;">rupture</td>
+<td style="text-align: right;">rupture</td>
+</tr>
+</tbody>
+</table>
+<p><em>Politique proposée : lots de 90 semelles déclenchés par le stock prévisionnel</em> (semelles)</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">mai</th>
+<th style="text-align: right;">juin</th>
+<th style="text-align: right;">juil.</th>
+<th style="text-align: right;">août</th>
+<th style="text-align: right;">sept.</th>
+<th style="text-align: right;">oct.</th>
+<th style="text-align: right;">nov.</th>
+<th style="text-align: right;">déc.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Stock de début</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr class="even">
+<td>Stock de fin sans nouvelle livraison</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;"><strong>− 40</strong></td>
+<td style="text-align: right;"><strong>− 40</strong></td>
+<td style="text-align: right;"><strong>− 40</strong></td>
+<td style="text-align: right;"><strong>− 20</strong></td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr class="odd">
+<td>Livraison (début de mois)</td>
+<td style="text-align: right;">50 (déjà attendue)</td>
+<td style="text-align: right;">50 (déjà attendue)</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">–</td>
+</tr>
+<tr class="even">
+<td>Stock après livraison (capacité 160)</td>
+<td style="text-align: right;">135</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">135</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr class="odd">
+<td>Consommation</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr class="even">
+<td><strong>Stock de fin</strong></td>
+<td style="text-align: right;"><strong>105</strong></td>
+<td style="text-align: right;"><strong>120</strong></td>
+<td style="text-align: right;"><strong>45</strong></td>
+<td style="text-align: right;"><strong>50</strong></td>
+<td style="text-align: right;"><strong>50</strong></td>
+<td style="text-align: right;"><strong>50</strong></td>
+<td style="text-align: right;"><strong>70</strong></td>
+<td style="text-align: right;"><strong>35</strong></td>
+</tr>
+<tr class="odd">
+<td>Commande passée (lot de 90)</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;"><strong>90</strong></td>
+<td style="text-align: right;"><strong>90</strong></td>
+<td style="text-align: right;"><strong>90</strong></td>
+<td style="text-align: right;"><strong>90</strong></td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+</tr>
+</tbody>
+</table>
+<p>Lecture de la règle de lancement : en août, le stock de fin sans livraison serait 45 − 85 = − 40, sous 30 : un lot est livré au début d'août, donc commandé au début de juin ; le même raisonnement conduit aux lots livrés en septembre (50 − 90 = − 40), en octobre (− 40) et en novembre (50 − 70 = − 20). En juillet (45) et en décembre (35), le stock de fin reste au-dessus de 30 : aucune livraison. Un lot suffit chaque fois.</p>
+<p><em>Coût de chaque politique, mai à décembre 2028</em> (€)</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">Politique actuelle</th>
+<th style="text-align: right;">Politique proposée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Commandes passées de mai à octobre (livrées pendant la période)</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td>Passation (× 200 €)</td>
+<td style="text-align: right;">1 200</td>
+<td style="text-align: right;">800</td>
+</tr>
+<tr class="odd">
+<td>Semelles en stock à la fin des mois (stocks de fin positifs)</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">525</td>
+</tr>
+<tr class="even">
+<td>Possession (× 2 €)</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: right;">1 050</td>
+</tr>
+<tr class="odd">
+<td>Mois de rupture × 1 500 €</td>
+<td style="text-align: right;">3 × 1 500 = 4 500</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td>Semelles manquantes à la fin des mois (20 + 40 + 25) × 200 €</td>
+<td style="text-align: right;">85 × 200 = 17 000</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td>Rupture</td>
+<td style="text-align: right;">21 500</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td><strong>Coût total</strong></td>
+<td style="text-align: right;"><strong>23 500</strong></td>
+<td style="text-align: right;"><strong>1 850</strong></td>
+</tr>
+<tr class="odd">
+<td>Coût hors rupture</td>
+<td style="text-align: right;">2 000</td>
+<td style="text-align: right;">1 850</td>
+</tr>
+</tbody>
+</table>
+<p>Économie de la politique proposée : 23 500 − 1 850 = <strong>21 650 €</strong>. Service rendu : mois sans rupture 5 / 8 = <strong>62,50 %</strong> contre 8 / 8 = 100 % ; occupation maximale du magasin 170 / 160 = <strong>106,25 %</strong> contre 155 / 160 = 96,88 %. Livraisons de juillet à décembre : 300 semelles contre 360 ; l'écart de 60 correspond aux 25 semelles qui manquent encore à la fin de décembre avec la politique actuelle et aux 35 en stock avec la politique proposée.</p>
+<p><strong>Réponse attendue</strong></p>
+<p><em>Concepts.</em> Un planning d'approvisionnement programme les commandes et les livraisons pour que le stock de chaque période couvre les besoins sans descendre sous le stock de sécurité ni dépasser la capacité de stockage. Une politique se juge par son coût (passation, possession, rupture) <strong>et</strong> par le service rendu au processus servi.</p>
+<p><em>Application.</em> La <strong>politique actuelle</strong> livre 50 semelles chaque mois, alors que la consommation passe de 30 en mai à 90 en septembre et en octobre. Le stock monte jusqu'en juin, puis le magasin déborde en juillet (170 semelles pour 160 places). Le stock passe sous la sécurité en septembre, puis tombe en rupture d'octobre à décembre : 20, puis 40, puis 25 semelles manquent à la fin du mois, au cœur de la campagne. C'est le scénario de 2027 reproduit en 2028. La <strong>politique proposée</strong> suit le programme : aucun lot en juillet, puis un lot de 90 chaque mois d'août à novembre, commandé deux mois avant. Elle ne connaît ni rupture, ni mois sous la sécurité, ni dépassement du magasin.</p>
+<p>Le coût confirme le choix : 1 850 € contre 23 500 €, parce que la rupture représente 21 500 € des 23 500 € de la politique actuelle. Même sans compter la rupture, la politique proposée coûte un peu moins (1 850 € contre 2 000 €) : deux commandes de moins compensent 125 semelles-mois de stock en plus. Le service rendu à l'exploitation est l'argument décisif : aucune locomotive n'attend ses semelles pendant la campagne. La politique proposée a pourtant des <strong>limites</strong>. Pendant la campagne, le stock de fin n'est que de 45 à 50 semelles, soit 15 à 20 au-dessus d'un stock de sécurité qui couvre dix jours. Elle exige une commande chaque mois de juin à septembre, alors que le délai reste de deux mois. Elle repose sur un stock prévisionnel exact et sur un fournisseur ponctuel (question 2.3).</p>
+<p><strong>Conclusion</strong> : la politique proposée est retenue, parce qu'elle supprime les ruptures de la campagne pour un coût de gestion plus faible (1 850 €, contre 23 500 € avec les ruptures). Elle laisse toutefois une marge étroite, qui rend la maîtrise du stock et du fournisseur décisive.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Coût de passation compté pour les huit commandes de la politique actuelle (1 600 €, total 23 900 €), si le candidat le dit : le classement ne change pas.</li>
+<li>Semelles manquantes comptées une seule fois (manque nouveau de chaque mois : 20 en octobre, 20 de plus en novembre, aucun nouveau en décembre), avec une hypothèse écrite ; l'annexe compte chaque mois les semelles qui manquent encore.</li>
+<li>Dépassement du magasin traité par une hypothèse (livraison de juillet réduite ou décalée, conteneur loué comme en 2027), s'il est d'abord repéré.</li>
+<li>Stocks présentés sans la ligne « stock après livraison », si le dépassement de juillet est relevé.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><code>JUR-P02</code> — Ne pas appliquer la règle de lancement donnée : commande passée le mois de la livraison, ou lot déclenché quand le stock est déjà négatif.</li>
+<li><code>JUR-T10</code> — Comparer les politiques sur le seul coût de gestion (passation et possession), sans valoriser les ruptures ni parler du service rendu.</li>
+<li><code>JUR-T03</code> — Présenter les plannings sans lecture : ni mois de rupture, ni mois sous la sécurité, ni dépassement du magasin.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programme UE 3, partie 2.3 (l. 808-810 et 814 : plannings d'approvisionnement, évaluer les résultats obtenus) ; guide p. 122 (« programmation des approvisionnements à travers l'élaboration de plannings »)</td>
+<td>planning, règle de lancement, comparaison des politiques</td>
+<td>[V]</td>
+<td>F06 § 0, § 6, § 8</td>
+</tr>
+<tr class="even">
+<td>Stock de sécurité, quantités constantes et périodes variables</td>
+<td>conventions du planning</td>
+<td>[S]</td>
+<td>F06 § 1, § 5, § 6</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23-criticité-des-risques-du-processus-et-lien-avec-les-plannings-1-pt">2.3 Criticité des risques du processus et lien avec les plannings (1 pt)</h3>
+<p><strong>Compétence visée :</strong></p>
+<ul>
+<li><code>2.5.b</code> — Analyser les risques rencontrés par l'organisation (criticité, hiérarchie, représentation)</li>
+</ul>
+<p><strong>Barème (1 pt)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.3-01</td>
+<td>Criticité définie puis calculée : <strong>R2 16, R1 12, R3 9, R4 8, R5 6, R6 4</strong> ; classes : R2 et R1 <strong>critiques</strong>, R3, R4 et R5 majeurs, R6 mineur ; matrice probabilité × gravité (4 × 4) qui place chaque risque ; hiérarchie écrite</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2.3-02</td>
+<td>Lien avec la question 2.2 : R2 est le risque que mesure le planning de la politique actuelle (ruptures d'octobre à décembre, 21 500 €) et que la politique proposée traite (probabilité ramenée à 1 ou 2, criticité de 4 à 8) ; R1 devient alors le premier risque : avec un stock de fin de 45 à 50 semelles en campagne, <strong>une livraison d'août retardée d'un mois</strong> crée une rupture de <strong>40 semelles</strong> et un coût de rupture de <strong>9 500 €</strong> ; R3 compromet la règle de lancement elle-même (l'écart d'inventaire de 12 semelles vaut <strong>40 %</strong> du stock de sécurité) ; limite relevée : R6, mineur par le produit, a la gravité maximale</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choix de l'outil et alternatives acceptées</strong></p>
+<ul>
+<li>Outil retenu : la <strong>criticité</strong> (probabilité × gravité) sur les échelles et les seuils de l'annexe 2.4, représentée sur une <strong>matrice</strong> probabilité × gravité (cartographie des risques du processus). Elle est adaptée parce que la question demande de hiérarchiser des risques déjà cotés, puis de rapprocher la hiérarchie des plannings.</li>
+<li>Alternatives acceptées : un tableau classé par criticité décroissante, sans matrice, si les classes sont indiquées ; une lecture qui distingue risque brut (cotation de l'annexe) et risque après la politique proposée (probabilité de R2 recotée par le candidat). Non accepté : une FFOM, qui ne hiérarchise pas ; une probabilité chiffrée en pourcentage, absente de l'énoncé, multipliée par un coût.</li>
+</ul>
+<p><strong>Conventions rappelées</strong> (annexe 2.4)</p>
+<p>Criticité = probabilité × gravité, échelles de 1 à 4 ; critique si ≥ 12, majeur de 6 à 9, mineur si ≤ 4.</p>
+<p><strong>Calculs détaillés</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rang</th>
+<th>Risque</th>
+<th style="text-align: right;">Probabilité</th>
+<th style="text-align: right;">Gravité</th>
+<th style="text-align: right;">Criticité</th>
+<th>Classe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>R2 Commandes qui ne suivent pas le programme → rupture en campagne</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>16</strong></td>
+<td>critique</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>R1 Retard ou défaillance du fournisseur unique</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>12</strong></td>
+<td>critique</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>R3 Erreur de stock (stock enregistré supérieur au stock réel)</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"><strong>9</strong></td>
+<td>majeur</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>R4 Retard d'une visite, atelier saturé en campagne</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>8</strong></td>
+<td>majeur</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>R5 Départ d'un technicien spécialiste du freinage</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"><strong>6</strong></td>
+<td>majeur</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>R6 Lot de semelles non conforme</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>4</strong></td>
+<td>mineur</td>
+</tr>
+</tbody>
+</table>
+<p><em>Matrice</em> (probabilité en lignes, gravité en colonnes)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Probabilité \ Gravité</th>
+<th>1 faible</th>
+<th>2 modérée</th>
+<th>3 forte</th>
+<th>4 très forte</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>4 très probable</td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>R2 (16)</strong></td>
+</tr>
+<tr class="even">
+<td>3 probable</td>
+<td></td>
+<td></td>
+<td>R3 (9)</td>
+<td><strong>R1 (12)</strong></td>
+</tr>
+<tr class="odd">
+<td>2 possible</td>
+<td></td>
+<td></td>
+<td>R5 (6)</td>
+<td>R4 (8)</td>
+</tr>
+<tr class="even">
+<td>1 rare</td>
+<td></td>
+<td></td>
+<td></td>
+<td>R6 (4)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Lien avec les plannings.</em></p>
+<ul>
+<li><strong>Retard d'un mois de la livraison d'août</strong> (politique proposée ; lot commandé en juin, livré en septembre) : stock de fin d'août 45 − 85 = <strong>− 40</strong>, puis septembre − 40 + 90 + 90 − 90 = 50 ; les mois suivants ne changent pas, et le magasin reste dans sa capacité (140 semelles en septembre). Coût de rupture : 1 500 + 40 × 200 = <strong>9 500 €</strong>, plus de cinq fois le coût de gestion de la politique sur la période (1 850 €) ; net de la possession évitée en août (50 semelles-mois, 100 €), le retard coûte 9 400 € et porte le coût de la politique à 11 250 €.</li>
+<li><strong>Erreur de stock</strong> : 12 semelles / 30 semelles de stock de sécurité = <strong>40 %</strong>. Un stock enregistré trop haut retarde la commande qui aurait dû partir deux mois plus tôt.</li>
+</ul>
+<p><strong>Réponse attendue</strong></p>
+<p><em>Concepts.</em> Un risque est un événement incertain qui compromet un objectif ; il s'énonce par sa cause et sa conséquence. Sa criticité combine sa probabilité et sa gravité, ce qui permet de hiérarchiser les risques et de concentrer les actions sur les plus critiques. La matrice probabilité × gravité, ou cartographie, les situe d'un coup d'œil. La cotation de l'annexe est brute : elle ne tient pas compte des mesures qui seront prises.</p>
+<p><em>Application.</em> Deux risques sont <strong>critiques</strong>.</p>
+<ul>
+<li><strong>R2 (16).</strong> Il est très probable, puisqu'il s'est réalisé en 2027, et la question 2.2 montre qu'il se reproduirait en 2028 si la politique actuelle était maintenue : trois mois de rupture, 85 semelles manquantes et 21 500 € de coût. C'est précisément le risque que la politique proposée traite. Avec des lots calés sur le programme des kilomètres, sa probabilité tombe à 1 ou 2, et sa criticité à 4 ou 8.</li>
+<li><strong>R1 (12).</strong> Le fournisseur unique devient alors le premier risque. La politique proposée laisse un stock de fin de 45 à 50 semelles pendant la campagne, pour une consommation de 85 à 90 semelles par mois : un seul lot livré avec un mois de retard en août crée une rupture de 40 semelles, soit un coût de rupture de 9 500 €. Or le fournisseur reconnaît un retard de trois semaines en 2027 et ne peut pas fabriquer plus vite.</li>
+</ul>
+<p>Trois risques sont <strong>majeurs</strong>.</p>
+<ul>
+<li><strong>R3 (9).</strong> Il touche le cœur de la nouvelle politique, puisque la règle de lancement repose sur le stock prévisionnel : l'écart de 12 semelles constaté à l'inventaire représente 40 % du stock de sécurité.</li>
+<li><strong>R4 (8) et R5 (6).</strong> Ils relèvent de la capacité et de l'expertise de l'atelier en campagne : neuf visites par mois, et deux spécialistes du freinage, dont l'un part en 2029.</li>
+</ul>
+<p><strong>R6</strong> est mineur par le produit (4), mais il a la gravité maximale, puisque la sécurité des circulations est en cause. Le contrôle à l'arrivée doit donc être maintenu, même si le risque n'est pas prioritaire.</p>
+<p><strong>Conclusion</strong> : la politique proposée fait passer le premier risque du processus d'un risque interne, la façon de commander, à un risque externe, la dépendance au fournisseur unique, aggravé par l'exactitude du stock. Ce sont ces deux risques que les préconisations doivent viser.</p>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Recotation de R2 après la politique proposée à une autre valeur (probabilité 1 ou 2), si elle est justifiée par les plannings.</li>
+<li>Lien avec la question 2.2 établi sans chiffrer le retard d'une livraison, si le candidat relève la marge étroite du stock de fin pendant la campagne.</li>
+<li>R4 rapproché de la politique proposée (les visites ne doivent pas attendre les semelles), si l'argument est développé.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><code>JUR-T03</code> — Recopier la cotation sans hiérarchie ni lecture, ou classer les risques sans les relier aux plannings.</li>
+<li><code>JUR-T07</code> — Traiter la criticité comme une fin en soi, sans voir qu'un risque mineur par le produit peut avoir une gravité extrême (R6).</li>
+<li><code>JUR-T02</code> — Énoncer des risques génériques (« risque fournisseur ») sans les faits du cas : délai de deux mois, retard de 2027, écart d'inventaire.</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programme UE 3, partie 2.5 (l. 835-837 : cartographie des risques, notion de criticité) ; guide p. 123</td>
+<td>criticité, matrice, lien avec les processus</td>
+<td>[V]</td>
+<td>F08 § 0, § 2.1</td>
+</tr>
+<tr class="even">
+<td>Typologie des risques, formulation en événements</td>
+<td>risques opérationnels du processus</td>
+<td>[S]</td>
+<td>F08 § 1, § 5</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24-note-à-m-voranche-et-à-m-quervillac-20-lignes-au-maximum-2-pts">2.4 Note à M. VORANCHE et à M. QUERVILLAC (20 lignes au maximum) (2 pts)</h3>
+<p><strong>Compétences visées :</strong></p>
+<ul>
+<li><code>2.3.f</code> — Élaborer des préconisations afin de mieux piloter la performance des activités hors production (approvisionnement des semelles, atelier)</li>
+<li><code>2.3.g</code> — Produire une synthèse rédigée et structurée concernant les décisions liées aux processus support</li>
+<li><code>2.5.e</code> — Produire une synthèse rédigée et structurée sur la gestion des risques</li>
+</ul>
+<p><strong>Barème (2 pts)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Attendu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.4-01</td>
+<td>Politique retenue (lots de 90 déclenchés par le stock prévisionnel, appliquée dès les commandes de mai) et chiffres clés (aucune rupture, 1 850 € contre 23 500 €) ; lien avec la stratégie : la fiabilité pendant la campagne est la condition pour garder les trafics céréaliers face à la route, satisfaire des associés qui sont aussi les clients, maintenir le trafic dont dépend le financement de la Région, et préparer le service vers le port maritime de 2029 ; arbitrage explicite coût du stock / coût de la rupture et délai</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2.4-02</td>
+<td>Risques hiérarchisés (fournisseur unique et exactitude du stock en tête, une fois les commandes calées) et préconisations sur le processus : inventaire des semelles avant chaque date de commande et chaque mois de campagne ; prévision mensuelle des besoins revue avec l'exploitation à partir du programme des kilomètres ; visites anticipées avant juillet pour lisser la charge de l'atelier ; transmission de l'expertise freinage avant le départ de 2029 (binôme, formation d'un troisième technicien, démarche de GEPP) ; contrôle à l'arrivée maintenu</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="odd">
+<td>2.4-03</td>
+<td>Pistes de l'annexe 2.5 appréciées et choix argumenté : <strong>A</strong> coûte 3 600 € par an (plus 100 € par prélèvement), livre en 24 heures, mais l'opérateur voisin connaît sa pointe de septembre à décembre, en même temps que TERNAVAL Fret, si bien que le stock commun risque d'être vide au moment où il serait utile ; <strong>B</strong> coûte <strong>2 160 €</strong> par an de surcoût d'achat (180 semelles × 12 €), au plus 2 760 € avec trois commandes supplémentaires de 60 (majorant : ces lots remplacent une partie des commandes au fournisseur actuel), réduit la dépendance au fournisseur unique (R1) et raccourcit le délai à un mois pour une partie des besoins ; les deux coûtent moins que le coût de rupture d'un seul retard de livraison en campagne (9 500 €) ; choix de B, éventuellement complété par A en dehors de la pointe du voisin</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr class="even">
+<td>2.4-04</td>
+<td>Deux ou trois indicateurs avec formule, cible et sens (par exemple : taux de disponibilité des locomotives pendant la campagne ; taux de visites terminées sans attente de pièces ; écart d'inventaire des semelles ; taux de livraisons du fournisseur à la date convenue) ; note structurée, qui prend position, 20 lignes au maximum</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Calculs détaillés</strong> (pistes, annexe 2.5)</p>
+<p>Piste B : 30 % × 600 = <strong>180 semelles</strong> par an ; surcoût d'achat 180 × (92 − 80) = <strong>2 160 €</strong> ; avec trois commandes supplémentaires au lot minimal de 60 semelles, 2 160 + 3 × 200 = <strong>2 760 €</strong> au plus (29,05 % du coût de rupture d'un retard de livraison, 9 500 €) : c'est un majorant, car les 180 semelles du second fournisseur évitent environ deux lots de 90 chez le fournisseur actuel (400 € de passation) ; un calcul net (environ 2 360 €) est accepté. Piste A : cotisation de 3 600 € (37,89 % de ce même coût), plus 100 € par prélèvement.</p>
+<p><strong>Réponse attendue</strong> (exemple de note, 20 lignes)</p>
+<blockquote>
+<p><strong>À M. Romain VORANCHE et à M. Bastien QUERVILLAC — Objet : approvisionnement des semelles de frein et risques de la maintenance pour la campagne de 2028</strong></p>
+<p><strong>1. La politique retenue.</strong> J'applique dès les commandes de mai la politique de M. VERLOMBE : des lots de 90 semelles, commandés deux mois avant le mois où le stock passerait sous 30. Elle évite toute rupture et tient dans le magasin, pour 1 850 € de passation et de possession. Garder 50 semelles par mois reproduirait 2027 : rupture d'octobre à décembre et 23 500 € de coût, dont 21 500 € de rupture. Une semelle en stock coûte 2 € par mois ; une semelle qui manque en coûte 200 et fait perdre des trains face à la route. La fiabilité en campagne conditionne la fidélité des chargeurs associés, le trafic qui fonde l'aide de la Région et le service vers le port maritime de 2029.</p>
+<p><strong>2. Les risques.</strong> Les commandes étant calées sur les kilomètres, le premier risque devient le fournisseur unique : notre stock de campagne ne dépasse pas 50 semelles, et une livraison d'août retardée d'un mois coûterait 9 500 € de rupture. Vient ensuite l'exactitude du stock, qui fixe la date des commandes : l'écart de 12 semelles de janvier vaut 40 % du stock de sécurité. Je préconise un inventaire avant chaque commande, une prévision revue chaque mois avec l'exploitation, des visites anticipées en juin et la formation d'un troisième technicien du freinage avant 2029.</p>
+<p><strong>3. Les pistes.</strong> Le second fournisseur (B : 2 160 € de surcoût par an pour 30 % des besoins, livrés en un mois) réduit notre dépendance là où elle coûte le plus. Le stock commun (A : 3 600 € par an) serait vide quand nous en aurions besoin, notre voisin ayant sa pointe de septembre à décembre. Je recommande B dès 2028.</p>
+<p><strong>4. Le suivi.</strong> Disponibilité des locomotives en campagne = locomotives disponibles chaque matin / locomotives demandées × 100, cible 100 % (hausse) ; visites sans attente de pièces = visites terminées sans attente / visites, cible 100 % ; écart d'inventaire = (stock enregistré − stock compté) / stock enregistré, cible 0 % (baisse).</p>
+</blockquote>
+<p><strong>Réponses tolérées</strong></p>
+<ul>
+<li>Piste A retenue, ou A et B combinées, si le candidat relève le chevauchement des pointes et en tient compte (par exemple, stock commun utilisé hors campagne, ou conditions de réservation négociées pour la campagne).</li>
+<li>Stock de sécurité relevé pendant la campagne (par exemple à 60 semelles de juillet à novembre), s'il est justifié par le délai et le risque fournisseur, et si le candidat relève la capacité du magasin.</li>
+<li>Autres indicateurs pertinents (couverture du stock en jours de consommation prévue, taux de livraisons à la date convenue, coût des ruptures par campagne), s'ils ont une formule, une cible et un sens.</li>
+<li>Note en trois parties (politique, risques et préconisations, suivi), si tous les éléments demandés y figurent.</li>
+</ul>
+<p><strong>Erreurs fréquentes</strong></p>
+<ul>
+<li><code>JUR-T05</code> — Note qui présente la politique de commande sans la relier à la stratégie de la société (trafics céréaliers, chargeurs associés, plan « TERNAVAL 2031 »).</li>
+<li><code>JUR-T06</code> — Note de plus de 20 lignes, non structurée, ou indicateurs sans formule ni cible.</li>
+<li><code>JUR-P02</code> — Pistes comparées sans utiliser leurs conditions (chevauchement des pointes pour A, part minimale de 30 % et lots de 60 pour B).</li>
+</ul>
+<p><strong>Références</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Référence</th>
+<th>Contenu mobilisé</th>
+<th>Statut</th>
+<th>Fiche</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programme UE 3, partie 2.3 (l. 815-820 : préconisations pour les activités hors production, synthèse sur les processus support)</td>
+<td>préconisations sur le processus, décision argumentée</td>
+<td>[V]</td>
+<td>F06 § 0, § 7, § 8</td>
+</tr>
+<tr class="even">
+<td>Programme UE 3, partie 2.5 (l. 843-844 : synthèse sur la gestion des risques) ; guide p. 123</td>
+<td>traitement des risques, indicateurs de risque</td>
+<td>[V]</td>
+<td>F08 § 0, § 2.1, § 5</td>
+</tr>
+<tr class="odd">
+<td>GEPP (transmission de l'expertise avant un départ)</td>
+<td>départ d'un technicien spécialiste</td>
+<td>[S]</td>
+<td>F09</td>
+</tr>
+<tr class="even">
+<td>Indicateurs de tableau de bord (formule, cible, sens)</td>
+<td>indicateurs de suivi</td>
+<td>[S]</td>
+<td>F12 § 3</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+</div>
+<footer>
+<p>Supports d'entraînement non officiels, sans lien avec le ministère ni avec les organisateurs de l'examen. Réglementation applicable au 31 décembre 2026. Les corrigés ont été contrôlés par un outil de vérification automatique ; ils peuvent néanmoins comporter des erreurs.</p>
+</footer>
+</body>
+</html>
